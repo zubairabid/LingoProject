@@ -1,0 +1,132 @@
+Document: ID=101913.in (3 sentences, 28 tokens)
+
+Sentence #1 (8 tokens):
+Paul,
+I reviewed NY's list.
+
+Tokens:
+[Text=Paul CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Paul NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=reviewed CharacterOffsetBegin=8 CharacterOffsetEnd=16 PartOfSpeech=VBD Lemma=review NamedEntityTag=O]
+[Text=NY CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=NY NamedEntityTag=STATE_OR_PROVINCE]
+[Text='s CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=list CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=list NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Paul))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBD reviewed)
+      (NP
+        (NP (NNP NY) (POS 's))
+        (NN list)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, reviewed-4)
+nsubj(reviewed-4, Paul-1)
+punct(reviewed-4, ,-2)
+nsubj(reviewed-4, I-3)
+nmod:poss(list-7, NY-5)
+case(NY-5, 's-6)
+dobj(reviewed-4, list-7)
+punct(reviewed-4, .-8)
+
+Extracted the following NER entity mentions:
+Paul	PERSON
+NY	STATE_OR_PROVINCE
+
+Sentence #2 (12 tokens):
+I agree with all of their contracts numbers and mw amounts.
+
+Tokens:
+[Text=I CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=agree CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=VBP Lemma=agree NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=46 CharacterOffsetEnd=48 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=49 CharacterOffsetEnd=54 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=contracts CharacterOffsetBegin=55 CharacterOffsetEnd=64 PartOfSpeech=NNS Lemma=contract NamedEntityTag=O]
+[Text=numbers CharacterOffsetBegin=65 CharacterOffsetEnd=72 PartOfSpeech=NNS Lemma=number NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=mw CharacterOffsetBegin=77 CharacterOffsetEnd=79 PartOfSpeech=NN Lemma=mw NamedEntityTag=O]
+[Text=amounts CharacterOffsetBegin=80 CharacterOffsetEnd=87 PartOfSpeech=NNS Lemma=amount NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=87 CharacterOffsetEnd=88 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP agree)
+      (PP (IN with)
+        (NP
+          (NP (DT all))
+          (PP (IN of)
+            (NP
+              (NP (PRP$ their) (NNS contracts) (NNS numbers))
+              (CC and)
+              (NP (NN mw) (NNS amounts)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, agree-2)
+nsubj(agree-2, I-1)
+case(all-4, with-3)
+nmod:with(agree-2, all-4)
+case(numbers-8, of-5)
+nmod:poss(numbers-8, their-6)
+compound(numbers-8, contracts-7)
+nmod:of(all-4, numbers-8)
+cc(numbers-8, and-9)
+compound(amounts-11, mw-10)
+nmod:of(all-4, amounts-11)
+conj:and(numbers-8, amounts-11)
+punct(agree-2, .-12)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (8 tokens):
+Call if you have any more questions.
+
+Tokens:
+[Text=Call CharacterOffsetBegin=89 CharacterOffsetEnd=93 PartOfSpeech=VB Lemma=call NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=94 CharacterOffsetEnd=96 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=97 CharacterOffsetEnd=100 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=101 CharacterOffsetEnd=105 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=106 CharacterOffsetEnd=109 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=110 CharacterOffsetEnd=114 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=questions CharacterOffsetBegin=115 CharacterOffsetEnd=124 PartOfSpeech=NNS Lemma=question NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=124 CharacterOffsetEnd=125 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Call)
+      (SBAR (IN if)
+        (S
+          (NP (PRP you))
+          (VP (VBP have)
+            (NP (DT any) (JJR more) (NNS questions))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Call-1)
+mark(have-4, if-2)
+nsubj(have-4, you-3)
+advcl:if(Call-1, have-4)
+det(questions-7, any-5)
+amod(questions-7, more-6)
+dobj(have-4, questions-7)
+punct(Call-1, .-8)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(2,1,[1,2]) -> (1,3,[3,4]), that is: "I" -> "I"

@@ -1,0 +1,929 @@
+Document: ID=1111635.in (10 sentences, 244 tokens)
+
+Sentence #1 (11 tokens):
+This is a follow up to my September 19 e-mail.
+
+Tokens:
+[Text=This CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=follow CharacterOffsetBegin=10 CharacterOffsetEnd=16 PartOfSpeech=VB Lemma=follow NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=September CharacterOffsetBegin=26 CharacterOffsetEnd=35 PartOfSpeech=NNP Lemma=September NamedEntityTag=DATE NormalizedNamedEntityTag=****0919]
+[Text=19 CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=CD Lemma=19 NamedEntityTag=DATE NormalizedNamedEntityTag=****0919]
+[Text=e-mail CharacterOffsetBegin=39 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=e-mail NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (S
+        (NP (DT a))
+        (VP (VB follow)
+          (PRT (RP up))
+          (PP (TO to)
+            (NP (PRP$ my) (NNP September) (CD 19) (NN e-mail))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-2)
+nsubj(is-2, This-1)
+nsubj(follow-4, a-3)
+ccomp(is-2, follow-4)
+compound:prt(follow-4, up-5)
+case(e-mail-10, to-6)
+nmod:poss(e-mail-10, my-7)
+compound(e-mail-10, September-8)
+nummod(e-mail-10, 19-9)
+nmod:to(follow-4, e-mail-10)
+punct(is-2, .-11)
+
+Extracted the following NER entity mentions:
+September 19	DATE
+
+Sentence #2 (14 tokens):
+The attached revised trial schedule was issued after the hearing held on Tuesday.
+
+Tokens:
+[Text=The CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=attached CharacterOffsetBegin=52 CharacterOffsetEnd=60 PartOfSpeech=VBN Lemma=attach NamedEntityTag=O]
+[Text=revised CharacterOffsetBegin=61 CharacterOffsetEnd=68 PartOfSpeech=VBN Lemma=revise NamedEntityTag=O]
+[Text=trial CharacterOffsetBegin=69 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=trial NamedEntityTag=O]
+[Text=schedule CharacterOffsetBegin=75 CharacterOffsetEnd=83 PartOfSpeech=NN Lemma=schedule NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=84 CharacterOffsetEnd=87 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=issued CharacterOffsetBegin=88 CharacterOffsetEnd=94 PartOfSpeech=VBN Lemma=issue NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=95 CharacterOffsetEnd=100 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=101 CharacterOffsetEnd=104 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=hearing CharacterOffsetBegin=105 CharacterOffsetEnd=112 PartOfSpeech=NN Lemma=hearing NamedEntityTag=O]
+[Text=held CharacterOffsetBegin=113 CharacterOffsetEnd=117 PartOfSpeech=VBN Lemma=hold NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=118 CharacterOffsetEnd=120 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Tuesday CharacterOffsetBegin=121 CharacterOffsetEnd=128 PartOfSpeech=NNP Lemma=Tuesday NamedEntityTag=DATE NormalizedNamedEntityTag=tuesday]
+[Text=. CharacterOffsetBegin=128 CharacterOffsetEnd=129 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (VBN attached) (VBN revised) (NN trial))
+      (SBAR
+        (S
+          (NP (NN schedule))
+          (VP (VBD was)
+            (VP (VBN issued)
+              (PP (IN after)
+                (NP (DT the) (NN hearing))))))))
+    (VP (VBN held)
+      (PP (IN on)
+        (NP (NNP Tuesday))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, held-11)
+det(trial-4, The-1)
+amod(trial-4, attached-2)
+amod(trial-4, revised-3)
+nsubj(held-11, trial-4)
+nsubjpass(issued-7, schedule-5)
+auxpass(issued-7, was-6)
+acl:relcl(trial-4, issued-7)
+case(hearing-10, after-8)
+det(hearing-10, the-9)
+nmod:after(issued-7, hearing-10)
+case(Tuesday-13, on-12)
+nmod:on(held-11, Tuesday-13)
+punct(held-11, .-14)
+
+Extracted the following NER entity mentions:
+Tuesday	DATE
+
+Sentence #3 (28 tokens):
+It reflects a recognition by the ISO of errors or omissions in its data relating to neutrality adjustments, resolved settlement disputes, penalties and OOM purchases.
+
+Tokens:
+[Text=It CharacterOffsetBegin=131 CharacterOffsetEnd=133 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=reflects CharacterOffsetBegin=134 CharacterOffsetEnd=142 PartOfSpeech=VBZ Lemma=reflect NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=143 CharacterOffsetEnd=144 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=recognition CharacterOffsetBegin=145 CharacterOffsetEnd=156 PartOfSpeech=NN Lemma=recognition NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=157 CharacterOffsetEnd=159 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=160 CharacterOffsetEnd=163 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=ISO CharacterOffsetBegin=164 CharacterOffsetEnd=167 PartOfSpeech=NN Lemma=iso NamedEntityTag=ORGANIZATION]
+[Text=of CharacterOffsetBegin=168 CharacterOffsetEnd=170 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=errors CharacterOffsetBegin=171 CharacterOffsetEnd=177 PartOfSpeech=NNS Lemma=error NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=178 CharacterOffsetEnd=180 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=omissions CharacterOffsetBegin=181 CharacterOffsetEnd=190 PartOfSpeech=NNS Lemma=omission NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=191 CharacterOffsetEnd=193 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=its CharacterOffsetBegin=194 CharacterOffsetEnd=197 PartOfSpeech=PRP$ Lemma=its NamedEntityTag=O]
+[Text=data CharacterOffsetBegin=198 CharacterOffsetEnd=202 PartOfSpeech=NNS Lemma=datum NamedEntityTag=O]
+[Text=relating CharacterOffsetBegin=203 CharacterOffsetEnd=211 PartOfSpeech=VBG Lemma=relate NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=212 CharacterOffsetEnd=214 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=neutrality CharacterOffsetBegin=215 CharacterOffsetEnd=225 PartOfSpeech=NN Lemma=neutrality NamedEntityTag=O]
+[Text=adjustments CharacterOffsetBegin=226 CharacterOffsetEnd=237 PartOfSpeech=NNS Lemma=adjustment NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=237 CharacterOffsetEnd=238 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=resolved CharacterOffsetBegin=239 CharacterOffsetEnd=247 PartOfSpeech=VBN Lemma=resolve NamedEntityTag=O]
+[Text=settlement CharacterOffsetBegin=248 CharacterOffsetEnd=258 PartOfSpeech=NN Lemma=settlement NamedEntityTag=O]
+[Text=disputes CharacterOffsetBegin=259 CharacterOffsetEnd=267 PartOfSpeech=NNS Lemma=dispute NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=267 CharacterOffsetEnd=268 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=penalties CharacterOffsetBegin=269 CharacterOffsetEnd=278 PartOfSpeech=NNS Lemma=penalty NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=279 CharacterOffsetEnd=282 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=OOM CharacterOffsetBegin=283 CharacterOffsetEnd=286 PartOfSpeech=NN Lemma=oom NamedEntityTag=O]
+[Text=purchases CharacterOffsetBegin=287 CharacterOffsetEnd=296 PartOfSpeech=NNS Lemma=purchase NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=296 CharacterOffsetEnd=297 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ reflects)
+      (NP (DT a) (NN recognition))
+      (PP (IN by)
+        (NP
+          (NP (DT the) (NN ISO))
+          (PP (IN of)
+            (NP
+              (NP (NNS errors)
+                (CC or)
+                (NNS omissions))
+              (PP (IN in)
+                (NP (PRP$ its) (NNS data)))))))
+      (VP (VBG relating)
+        (PP (TO to)
+          (NP
+            (NP (NN neutrality) (NNS adjustments))
+            (, ,)
+            (VP (VBN resolved)
+              (NP (NN settlement) (NNS disputes) (, ,) (NNS penalties)
+                (CC and)
+                (NN OOM) (NNS purchases)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, reflects-2)
+nsubj(reflects-2, It-1)
+det(recognition-4, a-3)
+dobj(reflects-2, recognition-4)
+case(ISO-7, by-5)
+det(ISO-7, the-6)
+nmod:by(reflects-2, ISO-7)
+case(errors-9, of-8)
+nmod:of(ISO-7, errors-9)
+cc(errors-9, or-10)
+nmod:of(ISO-7, omissions-11)
+conj:or(errors-9, omissions-11)
+case(data-14, in-12)
+nmod:poss(data-14, its-13)
+nmod:in(errors-9, data-14)
+dep(reflects-2, relating-15)
+case(adjustments-18, to-16)
+compound(adjustments-18, neutrality-17)
+nmod:to(relating-15, adjustments-18)
+punct(adjustments-18, ,-19)
+acl(adjustments-18, resolved-20)
+compound(penalties-24, settlement-21)
+compound(penalties-24, disputes-22)
+punct(penalties-24, ,-23)
+dobj(resolved-20, penalties-24)
+cc(penalties-24, and-25)
+compound(purchases-27, OOM-26)
+dobj(resolved-20, purchases-27)
+conj:and(penalties-24, purchases-27)
+punct(reflects-2, .-28)
+
+Extracted the following NER entity mentions:
+ISO	ORGANIZATION
+
+Sentence #4 (28 tokens):
+It postpones the end of the proceeding until March 8, to provide time for correction of these deficiencies prior to undertaking the rest of the schedule.
+
+Tokens:
+[Text=It CharacterOffsetBegin=299 CharacterOffsetEnd=301 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=postpones CharacterOffsetBegin=302 CharacterOffsetEnd=311 PartOfSpeech=VBZ Lemma=postpone NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=312 CharacterOffsetEnd=315 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=end CharacterOffsetBegin=316 CharacterOffsetEnd=319 PartOfSpeech=NN Lemma=end NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=320 CharacterOffsetEnd=322 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=323 CharacterOffsetEnd=326 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=proceeding CharacterOffsetBegin=327 CharacterOffsetEnd=337 PartOfSpeech=NN Lemma=proceeding NamedEntityTag=O]
+[Text=until CharacterOffsetBegin=338 CharacterOffsetEnd=343 PartOfSpeech=IN Lemma=until NamedEntityTag=O]
+[Text=March CharacterOffsetBegin=344 CharacterOffsetEnd=349 PartOfSpeech=NNP Lemma=March NamedEntityTag=DATE NormalizedNamedEntityTag=****0308]
+[Text=8 CharacterOffsetBegin=350 CharacterOffsetEnd=351 PartOfSpeech=CD Lemma=8 NamedEntityTag=DATE NormalizedNamedEntityTag=****0308]
+[Text=, CharacterOffsetBegin=351 CharacterOffsetEnd=352 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=353 CharacterOffsetEnd=355 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=provide CharacterOffsetBegin=356 CharacterOffsetEnd=363 PartOfSpeech=VB Lemma=provide NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=364 CharacterOffsetEnd=368 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=369 CharacterOffsetEnd=372 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=correction CharacterOffsetBegin=373 CharacterOffsetEnd=383 PartOfSpeech=NN Lemma=correction NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=384 CharacterOffsetEnd=386 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=387 CharacterOffsetEnd=392 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=deficiencies CharacterOffsetBegin=393 CharacterOffsetEnd=405 PartOfSpeech=NNS Lemma=deficiency NamedEntityTag=O]
+[Text=prior CharacterOffsetBegin=406 CharacterOffsetEnd=411 PartOfSpeech=RB Lemma=prior NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=412 CharacterOffsetEnd=414 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=undertaking CharacterOffsetBegin=415 CharacterOffsetEnd=426 PartOfSpeech=VBG Lemma=undertake NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=427 CharacterOffsetEnd=430 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=rest CharacterOffsetBegin=431 CharacterOffsetEnd=435 PartOfSpeech=NN Lemma=rest NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=436 CharacterOffsetEnd=438 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=439 CharacterOffsetEnd=442 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=schedule CharacterOffsetBegin=443 CharacterOffsetEnd=451 PartOfSpeech=NN Lemma=schedule NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=451 CharacterOffsetEnd=452 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ postpones)
+      (NP
+        (NP (DT the) (NN end))
+        (PP (IN of)
+          (NP (DT the) (NN proceeding))))
+      (PP (IN until)
+        (NP (NNP March) (CD 8)))
+      (, ,)
+      (S
+        (VP (TO to)
+          (VP (VB provide)
+            (NP (NN time))
+            (PP (IN for)
+              (NP
+                (NP (NN correction))
+                (PP (IN of)
+                  (NP (DT these) (NNS deficiencies)))))
+            (ADVP (RB prior)
+              (PP (TO to)
+                (S
+                  (VP (VBG undertaking)
+                    (NP
+                      (NP (DT the) (NN rest))
+                      (PP (IN of)
+                        (NP (DT the) (NN schedule))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, postpones-2)
+nsubj(postpones-2, It-1)
+det(end-4, the-3)
+dobj(postpones-2, end-4)
+case(proceeding-7, of-5)
+det(proceeding-7, the-6)
+nmod:of(end-4, proceeding-7)
+case(March-9, until-8)
+nmod:until(postpones-2, March-9)
+nummod(March-9, 8-10)
+punct(postpones-2, ,-11)
+mark(provide-13, to-12)
+advcl:to(postpones-2, provide-13)
+dobj(provide-13, time-14)
+case(correction-16, for-15)
+nmod:for(provide-13, correction-16)
+case(deficiencies-19, of-17)
+det(deficiencies-19, these-18)
+nmod:of(correction-16, deficiencies-19)
+advmod(provide-13, prior-20)
+mark(undertaking-22, to-21)
+advcl:to(prior-20, undertaking-22)
+det(rest-24, the-23)
+dobj(undertaking-22, rest-24)
+case(schedule-27, of-25)
+det(schedule-27, the-26)
+nmod:of(rest-24, schedule-27)
+punct(postpones-2, .-28)
+
+Extracted the following NER entity mentions:
+March 8	DATE
+
+Sentence #5 (47 tokens):
+Hearings on the various issues will be bifurcated- the hearing on Issue 1 (mitigated market clearing price) will be held 12/17-21, while the hearing on Issues 2 and 3 (amounts of refunds and offsets thereto) will be held on 2/11-15.
+
+Tokens:
+[Text=Hearings CharacterOffsetBegin=454 CharacterOffsetEnd=462 PartOfSpeech=NNS Lemma=hearing NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=463 CharacterOffsetEnd=465 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=466 CharacterOffsetEnd=469 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=various CharacterOffsetBegin=470 CharacterOffsetEnd=477 PartOfSpeech=JJ Lemma=various NamedEntityTag=O]
+[Text=issues CharacterOffsetBegin=478 CharacterOffsetEnd=484 PartOfSpeech=NNS Lemma=issue NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=485 CharacterOffsetEnd=489 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=490 CharacterOffsetEnd=492 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=bifurcated CharacterOffsetBegin=493 CharacterOffsetEnd=503 PartOfSpeech=VBN Lemma=bifurcate NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=503 CharacterOffsetEnd=504 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=505 CharacterOffsetEnd=508 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=hearing CharacterOffsetBegin=509 CharacterOffsetEnd=516 PartOfSpeech=NN Lemma=hearing NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=517 CharacterOffsetEnd=519 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Issue CharacterOffsetBegin=520 CharacterOffsetEnd=525 PartOfSpeech=NN Lemma=issue NamedEntityTag=O]
+[Text=1 CharacterOffsetBegin=526 CharacterOffsetEnd=527 PartOfSpeech=CD Lemma=1 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=-LRB- CharacterOffsetBegin=528 CharacterOffsetEnd=529 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=mitigated CharacterOffsetBegin=529 CharacterOffsetEnd=538 PartOfSpeech=VBN Lemma=mitigate NamedEntityTag=O]
+[Text=market CharacterOffsetBegin=539 CharacterOffsetEnd=545 PartOfSpeech=NN Lemma=market NamedEntityTag=O]
+[Text=clearing CharacterOffsetBegin=546 CharacterOffsetEnd=554 PartOfSpeech=NN Lemma=clearing NamedEntityTag=O]
+[Text=price CharacterOffsetBegin=555 CharacterOffsetEnd=560 PartOfSpeech=NN Lemma=price NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=560 CharacterOffsetEnd=561 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=562 CharacterOffsetEnd=566 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=567 CharacterOffsetEnd=569 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=held CharacterOffsetBegin=570 CharacterOffsetEnd=574 PartOfSpeech=VBN Lemma=hold NamedEntityTag=O]
+[Text=12/17-21 CharacterOffsetBegin=575 CharacterOffsetEnd=583 PartOfSpeech=CD Lemma=12/17-21 NamedEntityTag=NUMBER]
+[Text=, CharacterOffsetBegin=583 CharacterOffsetEnd=584 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=while CharacterOffsetBegin=585 CharacterOffsetEnd=590 PartOfSpeech=IN Lemma=while NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=591 CharacterOffsetEnd=594 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=hearing CharacterOffsetBegin=595 CharacterOffsetEnd=602 PartOfSpeech=NN Lemma=hearing NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=603 CharacterOffsetEnd=605 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Issues CharacterOffsetBegin=606 CharacterOffsetEnd=612 PartOfSpeech=NNS Lemma=issue NamedEntityTag=O]
+[Text=2 CharacterOffsetBegin=613 CharacterOffsetEnd=614 PartOfSpeech=CD Lemma=2 NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=and CharacterOffsetBegin=615 CharacterOffsetEnd=618 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=3 CharacterOffsetBegin=619 CharacterOffsetEnd=620 PartOfSpeech=CD Lemma=3 NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0]
+[Text=-LRB- CharacterOffsetBegin=621 CharacterOffsetEnd=622 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=amounts CharacterOffsetBegin=622 CharacterOffsetEnd=629 PartOfSpeech=NNS Lemma=amount NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=630 CharacterOffsetEnd=632 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=refunds CharacterOffsetBegin=633 CharacterOffsetEnd=640 PartOfSpeech=NNS Lemma=refund NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=641 CharacterOffsetEnd=644 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=offsets CharacterOffsetBegin=645 CharacterOffsetEnd=652 PartOfSpeech=NNS Lemma=offset NamedEntityTag=O]
+[Text=thereto CharacterOffsetBegin=653 CharacterOffsetEnd=660 PartOfSpeech=RB Lemma=thereto NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=660 CharacterOffsetEnd=661 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=662 CharacterOffsetEnd=666 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=667 CharacterOffsetEnd=669 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=held CharacterOffsetBegin=670 CharacterOffsetEnd=674 PartOfSpeech=VBN Lemma=hold NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=675 CharacterOffsetEnd=677 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=2/11-15 CharacterOffsetBegin=678 CharacterOffsetEnd=685 PartOfSpeech=CD Lemma=2/11-15 NamedEntityTag=NUMBER]
+[Text=. CharacterOffsetBegin=685 CharacterOffsetEnd=686 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNS Hearings))
+        (PP (IN on)
+          (NP (DT the) (JJ various) (NNS issues))))
+      (VP (MD will)
+        (VP (VB be)
+          (VP (VBN bifurcated)))))
+    (: -)
+    (S
+      (NP
+        (NP
+          (NP (DT the) (NN hearing))
+          (PP (IN on)
+            (NP (NN Issue) (CD 1))))
+        (PRN (-LRB- -LRB-)
+          (VP (VBN mitigated)
+            (NP (NN market) (NN clearing) (NN price)))
+          (-RRB- -RRB-)))
+      (VP (MD will)
+        (VP (VB be)
+          (VP (VBN held)
+            (NP (CD 12/17-21))
+            (, ,)
+            (SBAR (IN while)
+              (S
+                (NP
+                  (NP (DT the) (NN hearing))
+                  (PP (IN on)
+                    (NP
+                      (NP (NNS Issues) (CD 2)
+                        (CC and)
+                        (CD 3))
+                      (PRN (-LRB- -LRB-)
+                        (NP
+                          (NP (NNS amounts))
+                          (PP (IN of)
+                            (NP
+                              (NP (NNS refunds)
+                                (CC and)
+                                (NNS offsets))
+                              (ADVP (RB thereto)))))
+                        (-RRB- -RRB-)))))
+                (VP (MD will)
+                  (VP (VB be)
+                    (VP (VBN held)
+                      (PP (IN on)
+                        (NP (CD 2/11-15))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, bifurcated-8)
+nsubjpass(bifurcated-8, Hearings-1)
+case(issues-5, on-2)
+det(issues-5, the-3)
+amod(issues-5, various-4)
+nmod:on(Hearings-1, issues-5)
+aux(bifurcated-8, will-6)
+auxpass(bifurcated-8, be-7)
+punct(bifurcated-8, --9)
+det(hearing-11, the-10)
+nsubjpass(held-23, hearing-11)
+case(Issue-13, on-12)
+nmod:on(hearing-11, Issue-13)
+nummod(Issue-13, 1-14)
+punct(mitigated-16, -LRB--15)
+dep(hearing-11, mitigated-16)
+compound(price-19, market-17)
+compound(price-19, clearing-18)
+dobj(mitigated-16, price-19)
+punct(mitigated-16, -RRB--20)
+aux(held-23, will-21)
+auxpass(held-23, be-22)
+parataxis(bifurcated-8, held-23)
+dobj(held-23, 12/17-21-24)
+punct(held-23, ,-25)
+mark(held-44, while-26)
+det(hearing-28, the-27)
+nsubjpass(held-44, hearing-28)
+case(Issues-30, on-29)
+nmod:on(hearing-28, Issues-30)
+nummod(Issues-30, 2-31)
+cc(Issues-30, and-32)
+nmod:on(hearing-28, 3-33)
+conj:and(Issues-30, 3-33)
+punct(amounts-35, -LRB--34)
+dep(Issues-30, amounts-35)
+case(refunds-37, of-36)
+nmod:of(amounts-35, refunds-37)
+cc(refunds-37, and-38)
+nmod:of(amounts-35, offsets-39)
+conj:and(refunds-37, offsets-39)
+advmod(refunds-37, thereto-40)
+punct(amounts-35, -RRB--41)
+aux(held-44, will-42)
+auxpass(held-44, be-43)
+advcl:while(held-23, held-44)
+case(2/11-15-46, on-45)
+nmod:on(held-44, 2/11-15-46)
+punct(bifurcated-8, .-47)
+
+Extracted the following NER entity mentions:
+1	NUMBER
+12/17-21	NUMBER
+2	NUMBER
+3	NUMBER
+2/11-15	NUMBER
+
+Sentence #6 (24 tokens):
+This outcome is good because Issues 2 and 3 were not split up, and additional hearing days were incorporated into the schedule.
+
+Tokens:
+[Text=This CharacterOffsetBegin=688 CharacterOffsetEnd=692 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=outcome CharacterOffsetBegin=693 CharacterOffsetEnd=700 PartOfSpeech=NN Lemma=outcome NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=701 CharacterOffsetEnd=703 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=704 CharacterOffsetEnd=708 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=because CharacterOffsetBegin=709 CharacterOffsetEnd=716 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=Issues CharacterOffsetBegin=717 CharacterOffsetEnd=723 PartOfSpeech=NNS Lemma=issue NamedEntityTag=O]
+[Text=2 CharacterOffsetBegin=724 CharacterOffsetEnd=725 PartOfSpeech=CD Lemma=2 NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=and CharacterOffsetBegin=726 CharacterOffsetEnd=729 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=3 CharacterOffsetBegin=730 CharacterOffsetEnd=731 PartOfSpeech=CD Lemma=3 NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0]
+[Text=were CharacterOffsetBegin=732 CharacterOffsetEnd=736 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=737 CharacterOffsetEnd=740 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=split CharacterOffsetBegin=741 CharacterOffsetEnd=746 PartOfSpeech=VBN Lemma=split NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=747 CharacterOffsetEnd=749 PartOfSpeech=RB Lemma=up NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=749 CharacterOffsetEnd=750 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=751 CharacterOffsetEnd=754 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=additional CharacterOffsetBegin=755 CharacterOffsetEnd=765 PartOfSpeech=JJ Lemma=additional NamedEntityTag=O]
+[Text=hearing CharacterOffsetBegin=766 CharacterOffsetEnd=773 PartOfSpeech=NN Lemma=hearing NamedEntityTag=O]
+[Text=days CharacterOffsetBegin=774 CharacterOffsetEnd=778 PartOfSpeech=NNS Lemma=day NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=779 CharacterOffsetEnd=783 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=incorporated CharacterOffsetBegin=784 CharacterOffsetEnd=796 PartOfSpeech=VBN Lemma=incorporate NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=797 CharacterOffsetEnd=801 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=802 CharacterOffsetEnd=805 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=schedule CharacterOffsetBegin=806 CharacterOffsetEnd=814 PartOfSpeech=NN Lemma=schedule NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=814 CharacterOffsetEnd=815 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (DT This) (NN outcome))
+      (VP (VBZ is)
+        (ADJP (JJ good)
+          (PP (IN because)
+            (NP
+              (NP (NNS Issues) (CD 2)
+                (CC and)
+                (CD 3))
+              (SBAR
+                (S
+                  (VP (VBD were) (RB not)
+                    (VP (VBN split)
+                      (ADVP (RB up)))))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (JJ additional) (NN hearing) (NNS days))
+      (VP (VBD were)
+        (VP (VBN incorporated)
+          (PP (IN into)
+            (NP (DT the) (NN schedule))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, good-4)
+det(outcome-2, This-1)
+nsubj(good-4, outcome-2)
+cop(good-4, is-3)
+case(Issues-6, because-5)
+nmod:because(good-4, Issues-6)
+nummod(Issues-6, 2-7)
+cc(Issues-6, and-8)
+nmod:because(good-4, 3-9)
+conj:and(Issues-6, 3-9)
+auxpass(split-12, were-10)
+neg(split-12, not-11)
+acl:relcl(Issues-6, split-12)
+advmod(split-12, up-13)
+punct(good-4, ,-14)
+cc(good-4, and-15)
+amod(days-18, additional-16)
+compound(days-18, hearing-17)
+nsubjpass(incorporated-20, days-18)
+auxpass(incorporated-20, were-19)
+conj:and(good-4, incorporated-20)
+case(schedule-23, into-21)
+det(schedule-23, the-22)
+nmod:into(incorporated-20, schedule-23)
+punct(good-4, .-24)
+
+Extracted the following NER entity mentions:
+2	NUMBER
+3	NUMBER
+
+Sentence #7 (29 tokens):
+The immediately upcoming events include an ISO sworn statement on Issue 1, due 10/9, and participants' simultaneous responsive testimony on Issue 1, due 11/6.
+
+Tokens:
+[Text=The CharacterOffsetBegin=817 CharacterOffsetEnd=820 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=immediately CharacterOffsetBegin=821 CharacterOffsetEnd=832 PartOfSpeech=RB Lemma=immediately NamedEntityTag=O]
+[Text=upcoming CharacterOffsetBegin=833 CharacterOffsetEnd=841 PartOfSpeech=VBG Lemma=upcome NamedEntityTag=O]
+[Text=events CharacterOffsetBegin=842 CharacterOffsetEnd=848 PartOfSpeech=NNS Lemma=event NamedEntityTag=O]
+[Text=include CharacterOffsetBegin=849 CharacterOffsetEnd=856 PartOfSpeech=VBP Lemma=include NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=857 CharacterOffsetEnd=859 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=ISO CharacterOffsetBegin=860 CharacterOffsetEnd=863 PartOfSpeech=NN Lemma=iso NamedEntityTag=ORGANIZATION]
+[Text=sworn CharacterOffsetBegin=864 CharacterOffsetEnd=869 PartOfSpeech=VBN Lemma=swear NamedEntityTag=O]
+[Text=statement CharacterOffsetBegin=870 CharacterOffsetEnd=879 PartOfSpeech=NN Lemma=statement NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=880 CharacterOffsetEnd=882 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Issue CharacterOffsetBegin=883 CharacterOffsetEnd=888 PartOfSpeech=NN Lemma=issue NamedEntityTag=O]
+[Text=1 CharacterOffsetBegin=889 CharacterOffsetEnd=890 PartOfSpeech=CD Lemma=1 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=, CharacterOffsetBegin=890 CharacterOffsetEnd=891 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=due CharacterOffsetBegin=892 CharacterOffsetEnd=895 PartOfSpeech=JJ Lemma=due NamedEntityTag=O]
+[Text=10/9 CharacterOffsetBegin=896 CharacterOffsetEnd=900 PartOfSpeech=CD Lemma=10/9 NamedEntityTag=NUMBER]
+[Text=, CharacterOffsetBegin=900 CharacterOffsetEnd=901 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=902 CharacterOffsetEnd=905 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=participants CharacterOffsetBegin=906 CharacterOffsetEnd=918 PartOfSpeech=NNS Lemma=participant NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=918 CharacterOffsetEnd=919 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=simultaneous CharacterOffsetBegin=920 CharacterOffsetEnd=932 PartOfSpeech=JJ Lemma=simultaneous NamedEntityTag=O]
+[Text=responsive CharacterOffsetBegin=933 CharacterOffsetEnd=943 PartOfSpeech=JJ Lemma=responsive NamedEntityTag=O]
+[Text=testimony CharacterOffsetBegin=944 CharacterOffsetEnd=953 PartOfSpeech=NN Lemma=testimony NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=954 CharacterOffsetEnd=956 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Issue CharacterOffsetBegin=957 CharacterOffsetEnd=962 PartOfSpeech=NN Lemma=issue NamedEntityTag=O]
+[Text=1 CharacterOffsetBegin=963 CharacterOffsetEnd=964 PartOfSpeech=CD Lemma=1 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=, CharacterOffsetBegin=964 CharacterOffsetEnd=965 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=due CharacterOffsetBegin=966 CharacterOffsetEnd=969 PartOfSpeech=JJ Lemma=due NamedEntityTag=O]
+[Text=11/6 CharacterOffsetBegin=970 CharacterOffsetEnd=974 PartOfSpeech=CD Lemma=11/6 NamedEntityTag=NUMBER]
+[Text=. CharacterOffsetBegin=974 CharacterOffsetEnd=975 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The)
+      (ADJP (RB immediately)
+        (S
+          (VP (VBG upcoming))))
+      (NNS events))
+    (VP (VBP include)
+      (NP (DT an) (NN ISO) (VBN sworn) (NN statement))
+      (PP (IN on)
+        (NP
+          (NP (NN Issue) (CD 1))
+          (, ,)
+          (ADJP (JJ due)
+            (NP-TMP (CD 10/9)))
+          (, ,)
+          (CC and)
+          (NP
+            (NP
+              (NP (NNS participants) (POS '))
+              (JJ simultaneous)
+              (ADJP (JJ responsive))
+              (NN testimony))
+            (PP (IN on)
+              (NP (NN Issue) (CD 1)))
+            (, ,)
+            (ADJP (JJ due)
+              (NP-TMP (CD 11/6)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, include-5)
+det(events-4, The-1)
+amod(events-4, immediately-2)
+dep(immediately-2, upcoming-3)
+nsubj(include-5, events-4)
+det(statement-9, an-6)
+compound(statement-9, ISO-7)
+amod(statement-9, sworn-8)
+dobj(include-5, statement-9)
+case(Issue-11, on-10)
+nmod:on(include-5, Issue-11)
+nummod(Issue-11, 1-12)
+punct(Issue-11, ,-13)
+amod(Issue-11, due-14)
+nmod:tmod(due-14, 10/9-15)
+punct(Issue-11, ,-16)
+cc(Issue-11, and-17)
+nmod:poss(testimony-22, participants-18)
+case(participants-18, '-19)
+amod(testimony-22, simultaneous-20)
+amod(testimony-22, responsive-21)
+nmod:on(include-5, testimony-22)
+conj:and(Issue-11, testimony-22)
+case(Issue-24, on-23)
+nmod:on(testimony-22, Issue-24)
+nummod(Issue-24, 1-25)
+punct(testimony-22, ,-26)
+amod(testimony-22, due-27)
+nmod:tmod(due-27, 11/6-28)
+punct(include-5, .-29)
+
+Extracted the following NER entity mentions:
+ISO	ORGANIZATION
+1	NUMBER
+10/9	NUMBER
+1	NUMBER
+11/6	NUMBER
+
+Sentence #8 (38 tokens):
+I would expect that the ISO will take approximately 3 weeks to re-run its numbers to correct their neutrality adjustment errors, and this will result in a new (and likely increased) claim against us.
+
+Tokens:
+[Text=I CharacterOffsetBegin=977 CharacterOffsetEnd=978 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=979 CharacterOffsetEnd=984 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=expect CharacterOffsetBegin=985 CharacterOffsetEnd=991 PartOfSpeech=VB Lemma=expect NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=992 CharacterOffsetEnd=996 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=997 CharacterOffsetEnd=1000 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=ISO CharacterOffsetBegin=1001 CharacterOffsetEnd=1004 PartOfSpeech=NN Lemma=iso NamedEntityTag=ORGANIZATION]
+[Text=will CharacterOffsetBegin=1005 CharacterOffsetEnd=1009 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=take CharacterOffsetBegin=1010 CharacterOffsetEnd=1014 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text=approximately CharacterOffsetBegin=1015 CharacterOffsetEnd=1028 PartOfSpeech=RB Lemma=approximately NamedEntityTag=O]
+[Text=3 CharacterOffsetBegin=1029 CharacterOffsetEnd=1030 PartOfSpeech=CD Lemma=3 NamedEntityTag=DURATION]
+[Text=weeks CharacterOffsetBegin=1031 CharacterOffsetEnd=1036 PartOfSpeech=NNS Lemma=week NamedEntityTag=DURATION]
+[Text=to CharacterOffsetBegin=1037 CharacterOffsetEnd=1039 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=re-run CharacterOffsetBegin=1040 CharacterOffsetEnd=1046 PartOfSpeech=VB Lemma=re-run NamedEntityTag=O]
+[Text=its CharacterOffsetBegin=1047 CharacterOffsetEnd=1050 PartOfSpeech=PRP$ Lemma=its NamedEntityTag=O]
+[Text=numbers CharacterOffsetBegin=1051 CharacterOffsetEnd=1058 PartOfSpeech=NNS Lemma=number NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1059 CharacterOffsetEnd=1061 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=correct CharacterOffsetBegin=1062 CharacterOffsetEnd=1069 PartOfSpeech=VB Lemma=correct NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=1070 CharacterOffsetEnd=1075 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=neutrality CharacterOffsetBegin=1076 CharacterOffsetEnd=1086 PartOfSpeech=NN Lemma=neutrality NamedEntityTag=O]
+[Text=adjustment CharacterOffsetBegin=1087 CharacterOffsetEnd=1097 PartOfSpeech=NN Lemma=adjustment NamedEntityTag=O]
+[Text=errors CharacterOffsetBegin=1098 CharacterOffsetEnd=1104 PartOfSpeech=NNS Lemma=error NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1104 CharacterOffsetEnd=1105 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1106 CharacterOffsetEnd=1109 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=1110 CharacterOffsetEnd=1114 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=1115 CharacterOffsetEnd=1119 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=result CharacterOffsetBegin=1120 CharacterOffsetEnd=1126 PartOfSpeech=VB Lemma=result NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=1127 CharacterOffsetEnd=1129 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=1130 CharacterOffsetEnd=1131 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=1132 CharacterOffsetEnd=1135 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=1136 CharacterOffsetEnd=1137 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1137 CharacterOffsetEnd=1140 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=likely CharacterOffsetBegin=1141 CharacterOffsetEnd=1147 PartOfSpeech=RB Lemma=likely NamedEntityTag=O]
+[Text=increased CharacterOffsetBegin=1148 CharacterOffsetEnd=1157 PartOfSpeech=VBN Lemma=increase NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=1157 CharacterOffsetEnd=1158 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=claim CharacterOffsetBegin=1159 CharacterOffsetEnd=1164 PartOfSpeech=NN Lemma=claim NamedEntityTag=O]
+[Text=against CharacterOffsetBegin=1165 CharacterOffsetEnd=1172 PartOfSpeech=IN Lemma=against NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=1173 CharacterOffsetEnd=1175 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1175 CharacterOffsetEnd=1176 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (MD would)
+        (VP (VB expect)
+          (SBAR (IN that)
+            (S
+              (NP (DT the) (NN ISO))
+              (VP (MD will)
+                (VP (VB take)
+                  (NP
+                    (QP (RB approximately) (CD 3))
+                    (NNS weeks))
+                  (S
+                    (VP (TO to)
+                      (VP (VB re-run)
+                        (NP (PRP$ its) (NNS numbers))
+                        (S
+                          (VP (TO to)
+                            (VP (VB correct)
+                              (NP (PRP$ their) (NN neutrality) (NN adjustment) (NNS errors)))))))))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (DT this))
+      (VP (MD will)
+        (VP (VB result)
+          (PP (IN in)
+            (NP
+              (NP (DT a)
+                (ADJP
+                  (ADJP (JJ new))
+                  (PRN (-LRB- -LRB-)
+                    (CC and)
+                    (VP
+                      (ADVP (RB likely))
+                      (VBN increased))
+                    (-RRB- -RRB-)))
+                (NN claim))
+              (PP (IN against)
+                (NP (PRP us))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, expect-3)
+nsubj(expect-3, I-1)
+aux(expect-3, would-2)
+mark(take-8, that-4)
+det(ISO-6, the-5)
+nsubj(take-8, ISO-6)
+aux(take-8, will-7)
+ccomp(expect-3, take-8)
+advmod(3-10, approximately-9)
+nummod(weeks-11, 3-10)
+nmod:tmod(take-8, weeks-11)
+mark(re-run-13, to-12)
+advcl:to(take-8, re-run-13)
+nmod:poss(numbers-15, its-14)
+dobj(re-run-13, numbers-15)
+mark(correct-17, to-16)
+advcl:to(re-run-13, correct-17)
+nmod:poss(errors-21, their-18)
+compound(errors-21, neutrality-19)
+compound(errors-21, adjustment-20)
+dobj(correct-17, errors-21)
+punct(expect-3, ,-22)
+cc(expect-3, and-23)
+nsubj(result-26, this-24)
+aux(result-26, will-25)
+conj:and(expect-3, result-26)
+case(claim-35, in-27)
+det(claim-35, a-28)
+amod(claim-35, new-29)
+punct(increased-33, -LRB--30)
+cc(increased-33, and-31)
+advmod(increased-33, likely-32)
+dep(new-29, increased-33)
+punct(increased-33, -RRB--34)
+nmod:in(result-26, claim-35)
+case(us-37, against-36)
+nmod:against(claim-35, us-37)
+punct(expect-3, .-38)
+
+Extracted the following NER entity mentions:
+ISO	ORGANIZATION
+3 weeks	DURATION
+
+Sentence #9 (24 tokens):
+Initially, ISO had claimed approximately $38MM from us, and their last erroneous iteration indicated that they owed us $1MM.
+
+Tokens:
+[Text=Initially CharacterOffsetBegin=1178 CharacterOffsetEnd=1187 PartOfSpeech=RB Lemma=initially NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1187 CharacterOffsetEnd=1188 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=ISO CharacterOffsetBegin=1189 CharacterOffsetEnd=1192 PartOfSpeech=NN Lemma=iso NamedEntityTag=ORGANIZATION]
+[Text=had CharacterOffsetBegin=1193 CharacterOffsetEnd=1196 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=claimed CharacterOffsetBegin=1197 CharacterOffsetEnd=1204 PartOfSpeech=VBN Lemma=claim NamedEntityTag=O]
+[Text=approximately CharacterOffsetBegin=1205 CharacterOffsetEnd=1218 PartOfSpeech=RB Lemma=approximately NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=1219 CharacterOffsetEnd=1220 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=~$38.0]
+[Text=38MM CharacterOffsetBegin=1220 CharacterOffsetEnd=1224 PartOfSpeech=CD Lemma=38mm NamedEntityTag=MONEY NormalizedNamedEntityTag=~$38.0]
+[Text=from CharacterOffsetBegin=1225 CharacterOffsetEnd=1229 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=1230 CharacterOffsetEnd=1232 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1232 CharacterOffsetEnd=1233 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1234 CharacterOffsetEnd=1237 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=1238 CharacterOffsetEnd=1243 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=last CharacterOffsetBegin=1244 CharacterOffsetEnd=1248 PartOfSpeech=JJ Lemma=last NamedEntityTag=O]
+[Text=erroneous CharacterOffsetBegin=1249 CharacterOffsetEnd=1258 PartOfSpeech=JJ Lemma=erroneous NamedEntityTag=O]
+[Text=iteration CharacterOffsetBegin=1259 CharacterOffsetEnd=1268 PartOfSpeech=NN Lemma=iteration NamedEntityTag=O]
+[Text=indicated CharacterOffsetBegin=1269 CharacterOffsetEnd=1278 PartOfSpeech=VBD Lemma=indicate NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=1279 CharacterOffsetEnd=1283 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=1284 CharacterOffsetEnd=1288 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=owed CharacterOffsetBegin=1289 CharacterOffsetEnd=1293 PartOfSpeech=VBD Lemma=owe NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=1294 CharacterOffsetEnd=1296 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=1297 CharacterOffsetEnd=1298 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$1.0]
+[Text=1MM CharacterOffsetBegin=1298 CharacterOffsetEnd=1301 PartOfSpeech=CD Lemma=1mm NamedEntityTag=MONEY NormalizedNamedEntityTag=$1.0]
+[Text=. CharacterOffsetBegin=1301 CharacterOffsetEnd=1302 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Initially))
+    (, ,)
+    (S
+      (NP (NN ISO))
+      (VP (VBD had)
+        (VP (VBN claimed)
+          (NP
+            (QP (RB approximately) ($ $) (CD 38MM)))
+          (PP (IN from)
+            (NP (PRP us))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP$ their) (JJ last) (JJ erroneous) (NN iteration))
+      (VP (VBD indicated)
+        (SBAR (IN that)
+          (S
+            (NP (PRP they))
+            (VP (VBD owed)
+              (NP (PRP us))
+              (NP ($ $) (CD 1MM)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, claimed-5)
+advmod(claimed-5, Initially-1)
+punct(claimed-5, ,-2)
+nsubj(claimed-5, ISO-3)
+aux(claimed-5, had-4)
+advmod($-7, approximately-6)
+dobj(claimed-5, $-7)
+nummod($-7, 38MM-8)
+case(us-10, from-9)
+nmod:from(claimed-5, us-10)
+punct(claimed-5, ,-11)
+cc(claimed-5, and-12)
+nmod:poss(iteration-16, their-13)
+amod(iteration-16, last-14)
+amod(iteration-16, erroneous-15)
+nsubj(indicated-17, iteration-16)
+conj:and(claimed-5, indicated-17)
+mark(owed-20, that-18)
+nsubj(owed-20, they-19)
+ccomp(indicated-17, owed-20)
+iobj(owed-20, us-21)
+dep(1MM-23, $-22)
+dobj(owed-20, 1MM-23)
+punct(claimed-5, .-24)
+
+Extracted the following NER entity mentions:
+ISO	ORGANIZATION
+$38MM	MONEY
+$1MM	MONEY
+
+Sentence #10 (1 tokens):
+Ray
+
+Tokens:
+[Text=Ray CharacterOffsetBegin=1304 CharacterOffsetEnd=1307 PartOfSpeech=NNP Lemma=Ray NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Ray)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Ray-1)
+
+Extracted the following NER entity mentions:
+Ray	PERSON
+
+Coreference set:
+	(8,1,[1,2]) -> (1,7,[7,8]), that is: "I" -> "my"
+
+Coreference set:
+	(3,1,[1,2]) -> (2,4,[1,11]), that is: "It" -> "The attached revised trial schedule was issued after the hearing"
+	(3,13,[13,14]) -> (2,4,[1,11]), that is: "its" -> "The attached revised trial schedule was issued after the hearing"
+	(4,1,[1,2]) -> (2,4,[1,11]), that is: "It" -> "The attached revised trial schedule was issued after the hearing"
+
+Coreference set:
+	(8,6,[5,7]) -> (3,7,[6,15]), that is: "the ISO" -> "the ISO of errors or omissions in its data"
+	(8,14,[14,15]) -> (3,7,[6,15]), that is: "its" -> "the ISO of errors or omissions in its data"
+
+Coreference set:
+	(6,23,[22,24]) -> (4,27,[26,28]), that is: "the schedule" -> "the schedule"
+
+Coreference set:
+	(7,12,[12,13]) -> (5,14,[14,15]), that is: "1" -> "1"
+	(7,25,[25,26]) -> (5,14,[14,15]), that is: "1" -> "1"
+
+Coreference set:
+	(6,7,[7,8]) -> (5,31,[31,32]), that is: "2" -> "2"
+
+Coreference set:
+	(6,9,[9,10]) -> (5,33,[33,34]), that is: "3" -> "3"
+
+Coreference set:
+	(7,11,[11,13]) -> (5,13,[13,15]), that is: "Issue 1" -> "Issue 1"
+	(7,24,[24,26]) -> (5,13,[13,15]), that is: "Issue 1" -> "Issue 1"
+
+Coreference set:
+	(8,18,[18,19]) -> (7,18,[18,20]), that is: "their" -> "participants '"
+	(9,13,[13,14]) -> (7,18,[18,20]), that is: "their" -> "participants '"
+	(9,19,[19,20]) -> (7,18,[18,20]), that is: "they" -> "participants '"
+
+Coreference set:
+	(9,10,[10,11]) -> (8,37,[37,38]), that is: "us" -> "us"
+	(9,21,[21,22]) -> (8,37,[37,38]), that is: "us" -> "us"

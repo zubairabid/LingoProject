@@ -1,0 +1,342 @@
+Document: ID=104868.in (7 sentences, 76 tokens)
+
+Sentence #1 (3 tokens):
+Good News!!!
+
+Tokens:
+[Text=Good CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=News CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=News NamedEntityTag=O]
+[Text=!!! CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=CD Lemma=!!! NamedEntityTag=NUMBER]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (JJ Good) (NNP News))
+    (NP (CD !!!))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, News-2)
+amod(News-2, Good-1)
+dep(News-2, !!!-3)
+
+Extracted the following NER entity mentions:
+!!!	NUMBER
+
+Sentence #2 (7 tokens):
+The termination spreadsheets have been updated.
+
+Tokens:
+[Text=The CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=termination CharacterOffsetBegin=18 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=termination NamedEntityTag=O]
+[Text=spreadsheets CharacterOffsetBegin=30 CharacterOffsetEnd=42 PartOfSpeech=NNS Lemma=spreadsheet NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=48 CharacterOffsetEnd=52 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=updated CharacterOffsetBegin=53 CharacterOffsetEnd=60 PartOfSpeech=VBN Lemma=update NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN termination) (NNS spreadsheets))
+    (VP (VBP have)
+      (VP (VBN been)
+        (VP (VBN updated))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, updated-6)
+det(spreadsheets-3, The-1)
+compound(spreadsheets-3, termination-2)
+nsubjpass(updated-6, spreadsheets-3)
+aux(updated-6, have-4)
+auxpass(updated-6, been-5)
+punct(updated-6, .-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (14 tokens):
+There are three new counterparties for physical and one new counterparty for financial.
+
+Tokens:
+[Text=There CharacterOffsetBegin=63 CharacterOffsetEnd=68 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=three CharacterOffsetBegin=73 CharacterOffsetEnd=78 PartOfSpeech=CD Lemma=three NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0]
+[Text=new CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=counterparties CharacterOffsetBegin=83 CharacterOffsetEnd=97 PartOfSpeech=NNS Lemma=counterparty NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=98 CharacterOffsetEnd=101 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=physical CharacterOffsetBegin=102 CharacterOffsetEnd=110 PartOfSpeech=JJ Lemma=physical NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=111 CharacterOffsetEnd=114 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=115 CharacterOffsetEnd=118 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=new CharacterOffsetBegin=119 CharacterOffsetEnd=122 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=counterparty CharacterOffsetBegin=123 CharacterOffsetEnd=135 PartOfSpeech=NN Lemma=counterparty NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=136 CharacterOffsetEnd=139 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=financial CharacterOffsetBegin=140 CharacterOffsetEnd=149 PartOfSpeech=JJ Lemma=financial NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=149 CharacterOffsetEnd=150 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBP are)
+      (NP
+        (NP
+          (NP (CD three) (JJ new) (NNS counterparties))
+          (PP (IN for)
+            (NP (JJ physical))))
+        (CC and)
+        (NP
+          (NP (CD one) (JJ new) (NN counterparty))
+          (PP (IN for)
+            (NP (JJ financial))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, are-2)
+expl(are-2, There-1)
+nummod(counterparties-5, three-3)
+amod(counterparties-5, new-4)
+nsubj(are-2, counterparties-5)
+case(physical-7, for-6)
+nmod:for(counterparties-5, physical-7)
+cc(counterparties-5, and-8)
+nummod(counterparty-11, one-9)
+amod(counterparty-11, new-10)
+nsubj(are-2, counterparty-11)
+conj:and(counterparties-5, counterparty-11)
+case(financial-13, for-12)
+nmod:for(counterparty-11, financial-13)
+punct(are-2, .-14)
+
+Extracted the following NER entity mentions:
+three	NUMBER
+one	NUMBER
+
+Sentence #4 (19 tokens):
+Will Smith has moved a new version of Deal Liquidation into stage for us to use going forward.
+
+Tokens:
+[Text=Will CharacterOffsetBegin=152 CharacterOffsetEnd=156 PartOfSpeech=NNP Lemma=Will NamedEntityTag=PERSON]
+[Text=Smith CharacterOffsetBegin=157 CharacterOffsetEnd=162 PartOfSpeech=NNP Lemma=Smith NamedEntityTag=PERSON]
+[Text=has CharacterOffsetBegin=163 CharacterOffsetEnd=166 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=moved CharacterOffsetBegin=167 CharacterOffsetEnd=172 PartOfSpeech=VBN Lemma=move NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=173 CharacterOffsetEnd=174 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=175 CharacterOffsetEnd=178 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=version CharacterOffsetBegin=179 CharacterOffsetEnd=186 PartOfSpeech=NN Lemma=version NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=187 CharacterOffsetEnd=189 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Deal CharacterOffsetBegin=190 CharacterOffsetEnd=194 PartOfSpeech=NNP Lemma=Deal NamedEntityTag=O]
+[Text=Liquidation CharacterOffsetBegin=195 CharacterOffsetEnd=206 PartOfSpeech=NNP Lemma=Liquidation NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=207 CharacterOffsetEnd=211 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=stage CharacterOffsetBegin=212 CharacterOffsetEnd=217 PartOfSpeech=NN Lemma=stage NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=218 CharacterOffsetEnd=221 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=222 CharacterOffsetEnd=224 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=225 CharacterOffsetEnd=227 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=use CharacterOffsetBegin=228 CharacterOffsetEnd=231 PartOfSpeech=VB Lemma=use NamedEntityTag=O]
+[Text=going CharacterOffsetBegin=232 CharacterOffsetEnd=237 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=forward CharacterOffsetBegin=238 CharacterOffsetEnd=245 PartOfSpeech=RB Lemma=forward NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=245 CharacterOffsetEnd=246 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Will) (NNP Smith))
+    (VP (VBZ has)
+      (VP (VBN moved)
+        (NP
+          (NP (DT a) (JJ new) (NN version))
+          (PP (IN of)
+            (NP (NNP Deal) (NNP Liquidation))))
+        (PP (IN into)
+          (NP (NN stage)))
+        (SBAR (IN for)
+          (S
+            (NP (PRP us))
+            (VP (TO to)
+              (VP (VB use)
+                (S
+                  (VP (VBG going)
+                    (ADVP (RB forward))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, moved-4)
+compound(Smith-2, Will-1)
+nsubj(moved-4, Smith-2)
+aux(moved-4, has-3)
+det(version-7, a-5)
+amod(version-7, new-6)
+dobj(moved-4, version-7)
+case(Liquidation-10, of-8)
+compound(Liquidation-10, Deal-9)
+nmod:of(version-7, Liquidation-10)
+case(stage-12, into-11)
+nmod:into(moved-4, stage-12)
+mark(use-16, for-13)
+nsubj(use-16, us-14)
+mark(use-16, to-15)
+advcl:to(moved-4, use-16)
+xcomp(use-16, going-17)
+advmod(going-17, forward-18)
+punct(moved-4, .-19)
+
+Extracted the following NER entity mentions:
+Will Smith	PERSON
+
+Sentence #5 (19 tokens):
+It incorporates both his script for moving deals to Bankruptcy books and splitting deals on their termination dates.
+
+Tokens:
+[Text=It CharacterOffsetBegin=248 CharacterOffsetEnd=250 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=incorporates CharacterOffsetBegin=251 CharacterOffsetEnd=263 PartOfSpeech=VBZ Lemma=incorporate NamedEntityTag=O]
+[Text=both CharacterOffsetBegin=264 CharacterOffsetEnd=268 PartOfSpeech=DT Lemma=both NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=269 CharacterOffsetEnd=272 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=script CharacterOffsetBegin=273 CharacterOffsetEnd=279 PartOfSpeech=NN Lemma=script NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=280 CharacterOffsetEnd=283 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=moving CharacterOffsetBegin=284 CharacterOffsetEnd=290 PartOfSpeech=VBG Lemma=move NamedEntityTag=O]
+[Text=deals CharacterOffsetBegin=291 CharacterOffsetEnd=296 PartOfSpeech=NNS Lemma=deal NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=297 CharacterOffsetEnd=299 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Bankruptcy CharacterOffsetBegin=300 CharacterOffsetEnd=310 PartOfSpeech=NNP Lemma=Bankruptcy NamedEntityTag=O]
+[Text=books CharacterOffsetBegin=311 CharacterOffsetEnd=316 PartOfSpeech=NNS Lemma=book NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=317 CharacterOffsetEnd=320 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=splitting CharacterOffsetBegin=321 CharacterOffsetEnd=330 PartOfSpeech=JJ Lemma=splitting NamedEntityTag=O]
+[Text=deals CharacterOffsetBegin=331 CharacterOffsetEnd=336 PartOfSpeech=NNS Lemma=deal NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=337 CharacterOffsetEnd=339 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=340 CharacterOffsetEnd=345 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=termination CharacterOffsetBegin=346 CharacterOffsetEnd=357 PartOfSpeech=NN Lemma=termination NamedEntityTag=O]
+[Text=dates CharacterOffsetBegin=358 CharacterOffsetEnd=363 PartOfSpeech=NNS Lemma=date NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=363 CharacterOffsetEnd=364 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP
+      (VP (VBZ incorporates)
+        (NP (DT both) (PRP$ his) (NN script))
+        (PP (IN for)
+          (S
+            (VP (VBG moving)
+              (NP (NNS deals))
+              (PP (TO to)
+                (NP (NNP Bankruptcy) (NNS books)))))))
+      (CC and)
+      (VP (JJ splitting)
+        (NP (NNS deals))
+        (PP (IN on)
+          (NP (PRP$ their) (NN termination) (NNS dates)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, incorporates-2)
+nsubj(incorporates-2, It-1)
+nsubj(splitting-13, It-1)
+det(script-5, both-3)
+nmod:poss(script-5, his-4)
+dobj(incorporates-2, script-5)
+mark(moving-7, for-6)
+advcl:for(incorporates-2, moving-7)
+dobj(moving-7, deals-8)
+case(books-11, to-9)
+compound(books-11, Bankruptcy-10)
+nmod:to(moving-7, books-11)
+cc(incorporates-2, and-12)
+conj:and(incorporates-2, splitting-13)
+dobj(splitting-13, deals-14)
+case(dates-18, on-15)
+nmod:poss(dates-18, their-16)
+compound(dates-18, termination-17)
+nmod:on(splitting-13, dates-18)
+punct(incorporates-2, .-19)
+
+Extracted the following NER entity mentions:
+his	PERSON
+
+Sentence #6 (13 tokens):
+Please look at this so we can use it on our updates.
+
+Tokens:
+[Text=Please CharacterOffsetBegin=366 CharacterOffsetEnd=372 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=look CharacterOffsetBegin=373 CharacterOffsetEnd=377 PartOfSpeech=VB Lemma=look NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=378 CharacterOffsetEnd=380 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=381 CharacterOffsetEnd=385 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=386 CharacterOffsetEnd=388 PartOfSpeech=IN Lemma=so NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=389 CharacterOffsetEnd=391 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=392 CharacterOffsetEnd=395 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=use CharacterOffsetBegin=396 CharacterOffsetEnd=399 PartOfSpeech=VB Lemma=use NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=400 CharacterOffsetEnd=402 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=403 CharacterOffsetEnd=405 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=406 CharacterOffsetEnd=409 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=updates CharacterOffsetBegin=410 CharacterOffsetEnd=417 PartOfSpeech=NNS Lemma=update NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=417 CharacterOffsetEnd=418 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Please)
+      (VP (VB look)
+        (PP (IN at)
+          (NP (DT this)))
+        (SBAR (IN so)
+          (S
+            (NP (PRP we))
+            (VP (MD can)
+              (VP (VB use)
+                (NP (PRP it))
+                (PP (IN on)
+                  (NP (PRP$ our) (NNS updates)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Please-1)
+xcomp(Please-1, look-2)
+case(this-4, at-3)
+nmod:at(look-2, this-4)
+mark(use-8, so-5)
+nsubj(use-8, we-6)
+aux(use-8, can-7)
+advcl:so(look-2, use-8)
+dobj(use-8, it-9)
+case(updates-12, on-10)
+nmod:poss(updates-12, our-11)
+nmod:on(use-8, updates-12)
+punct(Please-1, .-13)
+
+Extracted the following NER entity mentions:
+
+Sentence #7 (1 tokens):
+Stacey
+
+Tokens:
+[Text=Stacey CharacterOffsetBegin=420 CharacterOffsetEnd=426 PartOfSpeech=NNP Lemma=Stacey NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Stacey)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Stacey-1)
+
+Extracted the following NER entity mentions:
+Stacey	PERSON
+
+Coreference set:
+	(5,4,[4,5]) -> (4,2,[1,3]), that is: "his" -> "Will Smith"
+
+Coreference set:
+	(5,1,[1,2]) -> (4,7,[5,11]), that is: "It" -> "a new version of Deal Liquidation"
+
+Coreference set:
+	(6,6,[6,7]) -> (4,14,[14,15]), that is: "we" -> "us"
+	(6,11,[11,12]) -> (4,14,[14,15]), that is: "our" -> "us"
+
+Coreference set:
+	(5,14,[14,15]) -> (5,8,[8,9]), that is: "deals" -> "deals"
+
+Coreference set:
+	(6,9,[9,10]) -> (6,4,[4,5]), that is: "it" -> "this"

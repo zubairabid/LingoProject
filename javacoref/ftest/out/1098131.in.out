@@ -1,0 +1,147 @@
+Document: ID=1098131.in (3 sentences, 32 tokens)
+
+Sentence #1 (26 tokens):
+Hello everyone:
+
+There will not be a V@R Lunch tomorrow, June 6th as the Research Group will be in their PRC Meeting.
+
+Tokens:
+[Text=Hello CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=UH Lemma=hello NamedEntityTag=O]
+[Text=everyone CharacterOffsetBegin=6 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=everyone NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=There CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=V CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=v NamedEntityTag=O]
+[Text=@R CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=@r NamedEntityTag=O]
+[Text=Lunch CharacterOffsetBegin=41 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=lunch NamedEntityTag=O]
+[Text=tomorrow CharacterOffsetBegin=47 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=tomorrow NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=June CharacterOffsetBegin=57 CharacterOffsetEnd=61 PartOfSpeech=NNP Lemma=June NamedEntityTag=DATE NormalizedNamedEntityTag=****0606]
+[Text=6th CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=JJ Lemma=6th NamedEntityTag=DATE NormalizedNamedEntityTag=****0606]
+[Text=as CharacterOffsetBegin=66 CharacterOffsetEnd=68 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Research CharacterOffsetBegin=73 CharacterOffsetEnd=81 PartOfSpeech=NNP Lemma=Research NamedEntityTag=ORGANIZATION]
+[Text=Group CharacterOffsetBegin=82 CharacterOffsetEnd=87 PartOfSpeech=NNP Lemma=Group NamedEntityTag=ORGANIZATION]
+[Text=will CharacterOffsetBegin=88 CharacterOffsetEnd=92 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=93 CharacterOffsetEnd=95 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=96 CharacterOffsetEnd=98 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=99 CharacterOffsetEnd=104 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=PRC CharacterOffsetBegin=105 CharacterOffsetEnd=108 PartOfSpeech=NNP Lemma=PRC NamedEntityTag=COUNTRY]
+[Text=Meeting CharacterOffsetBegin=109 CharacterOffsetEnd=116 PartOfSpeech=VBG Lemma=meet NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=116 CharacterOffsetEnd=117 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Hello))
+    (VP (NN everyone)
+      (VP
+        (PRN (: :)
+          (S
+            (NP (EX There))
+            (VP (MD will) (RB not))))
+        (VB be)
+        (NP (DT a) (NN V) (NN @R))
+        (NP
+          (NP (NN Lunch) (NN tomorrow))
+          (, ,)
+          (NP
+            (NP (NNP June))
+            (RRC
+              (ADJP (JJ 6th))
+              (SBAR (IN as)
+                (S
+                  (NP (DT the) (NNP Research) (NNP Group))
+                  (VP (MD will)
+                    (VP (VB be)
+                      (PP (IN in)
+                        (NP
+                          (NP (PRP$ their) (NNP PRC))
+                          (VP (VBG Meeting)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, @R-10)
+discourse(@R-10, Hello-1)
+dep(@R-10, everyone-2)
+punct(will-5, :-3)
+expl(will-5, There-4)
+parataxis(@R-10, will-5)
+neg(will-5, not-6)
+cop(@R-10, be-7)
+det(@R-10, a-8)
+compound(@R-10, V-9)
+compound(tomorrow-12, Lunch-11)
+dep(@R-10, tomorrow-12)
+punct(tomorrow-12, ,-13)
+appos(tomorrow-12, June-14)
+acl:relcl(June-14, 6th-15)
+mark(PRC-24, as-16)
+det(Group-19, the-17)
+compound(Group-19, Research-18)
+nsubj(PRC-24, Group-19)
+aux(PRC-24, will-20)
+cop(PRC-24, be-21)
+case(PRC-24, in-22)
+nmod:poss(PRC-24, their-23)
+dep(6th-15, PRC-24)
+acl(PRC-24, Meeting-25)
+punct(@R-10, .-26)
+
+Extracted the following NER entity mentions:
+June 6th	DATE
+Research Group	ORGANIZATION
+PRC	COUNTRY
+Meeting	LOCATION
+
+Sentence #2 (5 tokens):
+See you next week.
+
+Tokens:
+[Text=See CharacterOffsetBegin=119 CharacterOffsetEnd=122 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=123 CharacterOffsetEnd=126 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=next CharacterOffsetBegin=127 CharacterOffsetEnd=131 PartOfSpeech=JJ Lemma=next NamedEntityTag=O]
+[Text=week CharacterOffsetBegin=132 CharacterOffsetEnd=136 PartOfSpeech=NN Lemma=week NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=136 CharacterOffsetEnd=137 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB See)
+      (NP (PRP you))
+      (NP-TMP (JJ next) (NN week)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, See-1)
+dobj(See-1, you-2)
+amod(week-4, next-3)
+nmod:tmod(See-1, week-4)
+punct(See-1, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (1 tokens):
+Shirley
+
+Tokens:
+[Text=Shirley CharacterOffsetBegin=139 CharacterOffsetEnd=146 PartOfSpeech=NNP Lemma=Shirley NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Shirley)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Shirley-1)
+
+Extracted the following NER entity mentions:
+Shirley	PERSON
+
+Coreference set:
+	(1,12,[11,13]) -> (1,14,[14,26]), that is: "Lunch tomorrow" -> "June 6th as the Research Group will be in their PRC Meeting"

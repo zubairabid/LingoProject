@@ -1,0 +1,246 @@
+Document: ID=103279.in (4 sentences, 56 tokens)
+
+Sentence #1 (8 tokens):
+Dear Barry,
+Any update on EPI?
+
+Tokens:
+[Text=Dear CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Dear NamedEntityTag=O]
+[Text=Barry CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=Barry NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Any CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=update CharacterOffsetBegin=16 CharacterOffsetEnd=22 PartOfSpeech=VBP Lemma=update NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=EPI CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=NNP Lemma=EPI NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Dear) (NNP Barry))
+    (, ,)
+    (NP (DT Any))
+    (VP (VBP update)
+      (PP (IN on)
+        (NP (NNP EPI))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, update-5)
+compound(Barry-2, Dear-1)
+nsubj(update-5, Barry-2)
+punct(update-5, ,-3)
+nsubj(update-5, Any-4)
+case(EPI-7, on-6)
+nmod:on(update-5, EPI-7)
+punct(update-5, ?-8)
+
+Extracted the following NER entity mentions:
+Barry	PERSON
+
+Sentence #2 (16 tokens):
+Also, Canada hasn't yet (and is trying not to) filed bankruptcy.
+
+Tokens:
+[Text=Also CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Canada CharacterOffsetBegin=38 CharacterOffsetEnd=44 PartOfSpeech=NNP Lemma=Canada NamedEntityTag=COUNTRY]
+[Text=has CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=yet CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=RB Lemma=yet NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=trying CharacterOffsetBegin=64 CharacterOffsetEnd=70 PartOfSpeech=VBG Lemma=try NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=71 CharacterOffsetEnd=74 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=75 CharacterOffsetEnd=77 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=77 CharacterOffsetEnd=78 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=filed CharacterOffsetBegin=79 CharacterOffsetEnd=84 PartOfSpeech=VBD Lemma=file NamedEntityTag=O]
+[Text=bankruptcy CharacterOffsetBegin=85 CharacterOffsetEnd=95 PartOfSpeech=NN Lemma=bankruptcy NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=95 CharacterOffsetEnd=96 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Also))
+    (, ,)
+    (NP
+      (NP (NNP Canada))
+      (SBAR
+        (S
+          (VP (VBZ has) (RB n't)
+            (VP
+              (ADVP (RB yet)))))))
+    (PRN (-LRB- -LRB-)
+      (CC and)
+      (S
+        (VP (VBZ is)
+          (S
+            (VP (VBG trying)
+              (S (RB not)
+                (VP (TO to)))))))
+      (-RRB- -RRB-))
+    (VP (VBD filed)
+      (NP (NN bankruptcy)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, filed-14)
+advmod(filed-14, Also-1)
+punct(filed-14, ,-2)
+nsubj(filed-14, Canada-3)
+aux(yet-6, has-4)
+neg(yet-6, n't-5)
+acl:relcl(Canada-3, yet-6)
+punct(is-9, -LRB--7)
+cc(is-9, and-8)
+parataxis(filed-14, is-9)
+xcomp(is-9, trying-10)
+neg(to-12, not-11)
+xcomp(trying-10, to-12)
+punct(is-9, -RRB--13)
+dobj(filed-14, bankruptcy-15)
+punct(filed-14, .-16)
+
+Extracted the following NER entity mentions:
+Canada	COUNTRY
+
+Sentence #3 (31 tokens):
+The best people to talk to about what they should be doing in regards to recoverability of their assets are:  Peggy Hedstrom, Brian Gillis, & Kathy Reeves.
+
+Tokens:
+[Text=The CharacterOffsetBegin=98 CharacterOffsetEnd=101 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=best CharacterOffsetBegin=102 CharacterOffsetEnd=106 PartOfSpeech=JJS Lemma=best NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=107 CharacterOffsetEnd=113 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=114 CharacterOffsetEnd=116 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=talk CharacterOffsetBegin=117 CharacterOffsetEnd=121 PartOfSpeech=VB Lemma=talk NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=122 CharacterOffsetEnd=124 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=125 CharacterOffsetEnd=130 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=131 CharacterOffsetEnd=135 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=136 CharacterOffsetEnd=140 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=141 CharacterOffsetEnd=147 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=148 CharacterOffsetEnd=150 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=doing CharacterOffsetBegin=151 CharacterOffsetEnd=156 PartOfSpeech=VBG Lemma=do NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=157 CharacterOffsetEnd=159 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=regards CharacterOffsetBegin=160 CharacterOffsetEnd=167 PartOfSpeech=VBZ Lemma=regard NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=168 CharacterOffsetEnd=170 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=recoverability CharacterOffsetBegin=171 CharacterOffsetEnd=185 PartOfSpeech=NN Lemma=recoverability NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=186 CharacterOffsetEnd=188 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=189 CharacterOffsetEnd=194 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=assets CharacterOffsetBegin=195 CharacterOffsetEnd=201 PartOfSpeech=NNS Lemma=asset NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=202 CharacterOffsetEnd=205 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=205 CharacterOffsetEnd=206 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Peggy CharacterOffsetBegin=208 CharacterOffsetEnd=213 PartOfSpeech=NNP Lemma=Peggy NamedEntityTag=PERSON]
+[Text=Hedstrom CharacterOffsetBegin=214 CharacterOffsetEnd=222 PartOfSpeech=NNP Lemma=Hedstrom NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=222 CharacterOffsetEnd=223 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Brian CharacterOffsetBegin=224 CharacterOffsetEnd=229 PartOfSpeech=NNP Lemma=Brian NamedEntityTag=PERSON]
+[Text=Gillis CharacterOffsetBegin=230 CharacterOffsetEnd=236 PartOfSpeech=NNP Lemma=Gillis NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=236 CharacterOffsetEnd=237 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=238 CharacterOffsetEnd=239 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=Kathy CharacterOffsetBegin=240 CharacterOffsetEnd=245 PartOfSpeech=NNP Lemma=Kathy NamedEntityTag=PERSON]
+[Text=Reeves CharacterOffsetBegin=246 CharacterOffsetEnd=252 PartOfSpeech=NNP Lemma=Reeves NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=252 CharacterOffsetEnd=253 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJS best) (NNS people))
+      (SBAR
+        (S
+          (VP (TO to)
+            (VP (VB talk)
+              (S
+                (VP (TO to)))
+              (PP (IN about)
+                (SBAR
+                  (WHNP (WP what))
+                  (S
+                    (NP (PRP they))
+                    (VP (MD should)
+                      (VP (VB be)
+                        (VP (VBG doing)
+                          (SBAR (IN in)
+                            (S
+                              (VP (VBZ regards)
+                                (PP (TO to)
+                                  (NP
+                                    (NP (NN recoverability))
+                                    (PP (IN of)
+                                      (NP (PRP$ their) (NNS assets)))))))))))))))))))
+    (VP (VBP are) (: :)
+      (NP
+        (NP
+          (NP (NNP Peggy) (NNP Hedstrom))
+          (, ,)
+          (NP (NNP Brian) (NNP Gillis))
+          (, ,))
+        (CC &)
+        (NP (NNP Kathy) (NNP Reeves))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Hedstrom-23)
+det(people-3, The-1)
+amod(people-3, best-2)
+nsubj(Hedstrom-23, people-3)
+mark(talk-5, to-4)
+acl:to(people-3, talk-5)
+xcomp(talk-5, to-6)
+mark(doing-12, about-7)
+dobj(doing-12, what-8)
+nsubj(doing-12, they-9)
+aux(doing-12, should-10)
+aux(doing-12, be-11)
+advcl:about(talk-5, doing-12)
+mark(regards-14, in-13)
+advcl:in(doing-12, regards-14)
+case(recoverability-16, to-15)
+nmod:to(regards-14, recoverability-16)
+case(assets-19, of-17)
+nmod:poss(assets-19, their-18)
+nmod:of(recoverability-16, assets-19)
+cop(Hedstrom-23, are-20)
+punct(Hedstrom-23, :-21)
+compound(Hedstrom-23, Peggy-22)
+punct(Hedstrom-23, ,-24)
+compound(Gillis-26, Brian-25)
+appos(Hedstrom-23, Gillis-26)
+punct(Hedstrom-23, ,-27)
+cc(Hedstrom-23, &-28)
+compound(Reeves-30, Kathy-29)
+conj:&(Hedstrom-23, Reeves-30)
+punct(Hedstrom-23, .-31)
+
+Extracted the following NER entity mentions:
+Peggy Hedstrom	PERSON
+Brian Gillis	PERSON
+Kathy Reeves	PERSON
+
+Sentence #4 (1 tokens):
+Regards
+
+Tokens:
+[Text=Regards CharacterOffsetBegin=254 CharacterOffsetEnd=261 PartOfSpeech=NNS Lemma=regards NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NNS Regards)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Regards-1)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(3,3,[1,20]) -> (3,23,[22,27]), that is: "The best people to talk to about what they should be doing in regards to recoverability of their assets" -> "Peggy Hedstrom , Brian Gillis"
+	(3,23,[22,31]) -> (3,23,[22,27]), that is: "Peggy Hedstrom , Brian Gillis , & Kathy Reeves" -> "Peggy Hedstrom , Brian Gillis"
+	(3,23,[22,28]) -> (3,23,[22,27]), that is: "Peggy Hedstrom , Brian Gillis ," -> "Peggy Hedstrom , Brian Gillis"
+	(3,23,[22,24]) -> (3,23,[22,27]), that is: "Peggy Hedstrom" -> "Peggy Hedstrom , Brian Gillis"
+
+Coreference set:
+	(3,18,[18,19]) -> (3,9,[9,10]), that is: "their" -> "they"

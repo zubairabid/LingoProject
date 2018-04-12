@@ -1,0 +1,718 @@
+Document: ID=1101338.in (7 sentences, 185 tokens)
+
+Sentence #1 (16 tokens):
+NOTICE TO MARKET PARTICIPANTS
+PG&E SCIDs CHANGE
+
+Effective Trade Date Tuesday, May 1st 2001.
+
+Tokens:
+[Text=NOTICE CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NN Lemma=notice NamedEntityTag=O]
+[Text=TO CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=MARKET CharacterOffsetBegin=10 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=MARKET NamedEntityTag=O]
+[Text=PARTICIPANTS CharacterOffsetBegin=17 CharacterOffsetEnd=29 PartOfSpeech=NNPS Lemma=PARTICIPANTS NamedEntityTag=O]
+[Text=PG&E CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=PG&E NamedEntityTag=O]
+[Text=SCIDs CharacterOffsetBegin=35 CharacterOffsetEnd=40 PartOfSpeech=NNP Lemma=SCIDs NamedEntityTag=O]
+[Text=CHANGE CharacterOffsetBegin=41 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=CHANGE NamedEntityTag=O]
+[Text=Effective CharacterOffsetBegin=49 CharacterOffsetEnd=58 PartOfSpeech=NNP Lemma=Effective NamedEntityTag=O]
+[Text=Trade CharacterOffsetBegin=59 CharacterOffsetEnd=64 PartOfSpeech=NNP Lemma=Trade NamedEntityTag=O]
+[Text=Date CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=NNP Lemma=Date NamedEntityTag=O]
+[Text=Tuesday CharacterOffsetBegin=70 CharacterOffsetEnd=77 PartOfSpeech=NNP Lemma=Tuesday NamedEntityTag=DATE NormalizedNamedEntityTag=20010501]
+[Text=, CharacterOffsetBegin=77 CharacterOffsetEnd=78 PartOfSpeech=, Lemma=, NamedEntityTag=DATE NormalizedNamedEntityTag=20010501]
+[Text=May CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=NNP Lemma=May NamedEntityTag=DATE NormalizedNamedEntityTag=20010501]
+[Text=1st CharacterOffsetBegin=83 CharacterOffsetEnd=86 PartOfSpeech=CD Lemma=1st NamedEntityTag=DATE NormalizedNamedEntityTag=20010501]
+[Text=2001 CharacterOffsetBegin=87 CharacterOffsetEnd=91 PartOfSpeech=CD Lemma=2001 NamedEntityTag=DATE NormalizedNamedEntityTag=20010501]
+[Text=. CharacterOffsetBegin=91 CharacterOffsetEnd=92 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP
+      (NP (NN NOTICE))
+      (SBAR
+        (S
+          (VP (TO TO)
+            (NP (NNP MARKET) (NNPS PARTICIPANTS) (NNP PG&E) (NNP SCIDs) (NNP CHANGE) (NNP Effective) (NNP Trade) (NNP Date) (NNP Tuesday))))))
+    (, ,)
+    (NP
+      (NP (NNP May) (CD 1st))
+      (NP (CD 2001)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, NOTICE-1)
+acl(NOTICE-1, TO-2)
+compound(Tuesday-11, MARKET-3)
+compound(Tuesday-11, PARTICIPANTS-4)
+compound(Tuesday-11, PG&E-5)
+compound(Tuesday-11, SCIDs-6)
+compound(Tuesday-11, CHANGE-7)
+compound(Tuesday-11, Effective-8)
+compound(Tuesday-11, Trade-9)
+compound(Tuesday-11, Date-10)
+nmod:tmod(TO-2, Tuesday-11)
+punct(NOTICE-1, ,-12)
+appos(NOTICE-1, May-13)
+nummod(May-13, 1st-14)
+dep(May-13, 2001-15)
+punct(NOTICE-1, .-16)
+
+Extracted the following NER entity mentions:
+Tuesday, May 1st 2001	DATE
+
+Sentence #2 (12 tokens):
+PG&E will begin scheduling
+energy trades and bids under new SCIDs.
+
+Tokens:
+[Text=PG&E CharacterOffsetBegin=94 CharacterOffsetEnd=98 PartOfSpeech=NNP Lemma=PG&E NamedEntityTag=ORGANIZATION]
+[Text=will CharacterOffsetBegin=99 CharacterOffsetEnd=103 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=begin CharacterOffsetBegin=104 CharacterOffsetEnd=109 PartOfSpeech=VB Lemma=begin NamedEntityTag=O]
+[Text=scheduling CharacterOffsetBegin=110 CharacterOffsetEnd=120 PartOfSpeech=VBG Lemma=schedule NamedEntityTag=O]
+[Text=energy CharacterOffsetBegin=121 CharacterOffsetEnd=127 PartOfSpeech=NN Lemma=energy NamedEntityTag=O]
+[Text=trades CharacterOffsetBegin=128 CharacterOffsetEnd=134 PartOfSpeech=NNS Lemma=trade NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=135 CharacterOffsetEnd=138 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=bids CharacterOffsetBegin=139 CharacterOffsetEnd=143 PartOfSpeech=NNS Lemma=bid NamedEntityTag=O]
+[Text=under CharacterOffsetBegin=144 CharacterOffsetEnd=149 PartOfSpeech=IN Lemma=under NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=150 CharacterOffsetEnd=153 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=SCIDs CharacterOffsetBegin=154 CharacterOffsetEnd=159 PartOfSpeech=NNS Lemma=scid NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=159 CharacterOffsetEnd=160 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP PG&E))
+    (VP (MD will)
+      (VP (VB begin)
+        (S
+          (VP (VBG scheduling)
+            (NP (NN energy) (NNS trades)
+              (CC and)
+              (NNS bids))
+            (PP (IN under)
+              (NP (JJ new) (NNS SCIDs)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, begin-3)
+nsubj(begin-3, PG&E-1)
+aux(begin-3, will-2)
+xcomp(begin-3, scheduling-4)
+compound(trades-6, energy-5)
+dobj(scheduling-4, trades-6)
+cc(trades-6, and-7)
+dobj(scheduling-4, bids-8)
+conj:and(trades-6, bids-8)
+case(SCIDs-11, under-9)
+amod(SCIDs-11, new-10)
+nmod:under(scheduling-4, SCIDs-11)
+punct(begin-3, .-12)
+
+Extracted the following NER entity mentions:
+PG&E	ORGANIZATION
+
+Sentence #3 (10 tokens):
+The OLD PG&E SCIDs WILL NO LONGER BE
+VALID.
+
+Tokens:
+[Text=The CharacterOffsetBegin=161 CharacterOffsetEnd=164 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=OLD CharacterOffsetBegin=165 CharacterOffsetEnd=168 PartOfSpeech=NNP Lemma=OLD NamedEntityTag=O]
+[Text=PG&E CharacterOffsetBegin=169 CharacterOffsetEnd=173 PartOfSpeech=NNP Lemma=PG&E NamedEntityTag=O]
+[Text=SCIDs CharacterOffsetBegin=174 CharacterOffsetEnd=179 PartOfSpeech=NNP Lemma=SCIDs NamedEntityTag=O]
+[Text=WILL CharacterOffsetBegin=180 CharacterOffsetEnd=184 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=NO CharacterOffsetBegin=185 CharacterOffsetEnd=187 PartOfSpeech=RB Lemma=no NamedEntityTag=O]
+[Text=LONGER CharacterOffsetBegin=188 CharacterOffsetEnd=194 PartOfSpeech=RB Lemma=longer NamedEntityTag=O]
+[Text=BE CharacterOffsetBegin=195 CharacterOffsetEnd=197 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=VALID CharacterOffsetBegin=198 CharacterOffsetEnd=203 PartOfSpeech=NN Lemma=valid NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=203 CharacterOffsetEnd=204 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NNP OLD) (NNP PG&E) (NNP SCIDs))
+    (VP (MD WILL)
+      (ADVP (RB NO))
+      (ADVP (RB LONGER))
+      (VP (VB BE)
+        (NP (NN VALID))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, VALID-9)
+det(SCIDs-4, The-1)
+compound(SCIDs-4, OLD-2)
+compound(SCIDs-4, PG&E-3)
+nsubj(VALID-9, SCIDs-4)
+aux(VALID-9, WILL-5)
+advmod(VALID-9, NO-6)
+advmod(VALID-9, LONGER-7)
+cop(VALID-9, BE-8)
+punct(VALID-9, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (32 tokens):
+ALL PG&E related scheduling transactions will use these new SCIDs beginning
+with submission of Day Ahead schedules on Monday, April 30th for Trade Date,
+Tuesday May 1, 2001.
+
+Tokens:
+[Text=ALL CharacterOffsetBegin=206 CharacterOffsetEnd=209 PartOfSpeech=NN Lemma=all NamedEntityTag=O]
+[Text=PG&E CharacterOffsetBegin=210 CharacterOffsetEnd=214 PartOfSpeech=NNP Lemma=PG&E NamedEntityTag=O]
+[Text=related CharacterOffsetBegin=215 CharacterOffsetEnd=222 PartOfSpeech=JJ Lemma=related NamedEntityTag=O]
+[Text=scheduling CharacterOffsetBegin=223 CharacterOffsetEnd=233 PartOfSpeech=NN Lemma=scheduling NamedEntityTag=O]
+[Text=transactions CharacterOffsetBegin=234 CharacterOffsetEnd=246 PartOfSpeech=NNS Lemma=transaction NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=247 CharacterOffsetEnd=251 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=use CharacterOffsetBegin=252 CharacterOffsetEnd=255 PartOfSpeech=VB Lemma=use NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=256 CharacterOffsetEnd=261 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=262 CharacterOffsetEnd=265 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=SCIDs CharacterOffsetBegin=266 CharacterOffsetEnd=271 PartOfSpeech=NNS Lemma=scid NamedEntityTag=O]
+[Text=beginning CharacterOffsetBegin=272 CharacterOffsetEnd=281 PartOfSpeech=VBG Lemma=begin NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=282 CharacterOffsetEnd=286 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=submission CharacterOffsetBegin=287 CharacterOffsetEnd=297 PartOfSpeech=NN Lemma=submission NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=298 CharacterOffsetEnd=300 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Day CharacterOffsetBegin=301 CharacterOffsetEnd=304 PartOfSpeech=NNP Lemma=Day NamedEntityTag=MISC]
+[Text=Ahead CharacterOffsetBegin=305 CharacterOffsetEnd=310 PartOfSpeech=NNP Lemma=Ahead NamedEntityTag=MISC]
+[Text=schedules CharacterOffsetBegin=311 CharacterOffsetEnd=320 PartOfSpeech=NNS Lemma=schedule NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=321 CharacterOffsetEnd=323 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Monday CharacterOffsetBegin=324 CharacterOffsetEnd=330 PartOfSpeech=NNP Lemma=Monday NamedEntityTag=DATE NormalizedNamedEntityTag=****04]
+[Text=, CharacterOffsetBegin=330 CharacterOffsetEnd=331 PartOfSpeech=, Lemma=, NamedEntityTag=DATE NormalizedNamedEntityTag=****04]
+[Text=April CharacterOffsetBegin=332 CharacterOffsetEnd=337 PartOfSpeech=NNP Lemma=April NamedEntityTag=DATE NormalizedNamedEntityTag=****04]
+[Text=30th CharacterOffsetBegin=338 CharacterOffsetEnd=342 PartOfSpeech=JJ Lemma=30th NamedEntityTag=ORDINAL NormalizedNamedEntityTag=30.0]
+[Text=for CharacterOffsetBegin=343 CharacterOffsetEnd=346 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Trade CharacterOffsetBegin=347 CharacterOffsetEnd=352 PartOfSpeech=NNP Lemma=Trade NamedEntityTag=O]
+[Text=Date CharacterOffsetBegin=353 CharacterOffsetEnd=357 PartOfSpeech=NNP Lemma=Date NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=357 CharacterOffsetEnd=358 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Tuesday CharacterOffsetBegin=359 CharacterOffsetEnd=366 PartOfSpeech=NNP Lemma=Tuesday NamedEntityTag=DATE NormalizedNamedEntityTag=20010501]
+[Text=May CharacterOffsetBegin=367 CharacterOffsetEnd=370 PartOfSpeech=NNP Lemma=May NamedEntityTag=DATE NormalizedNamedEntityTag=20010501]
+[Text=1 CharacterOffsetBegin=371 CharacterOffsetEnd=372 PartOfSpeech=CD Lemma=1 NamedEntityTag=DATE NormalizedNamedEntityTag=20010501]
+[Text=, CharacterOffsetBegin=372 CharacterOffsetEnd=373 PartOfSpeech=, Lemma=, NamedEntityTag=DATE NormalizedNamedEntityTag=20010501]
+[Text=2001 CharacterOffsetBegin=374 CharacterOffsetEnd=378 PartOfSpeech=CD Lemma=2001 NamedEntityTag=DATE NormalizedNamedEntityTag=20010501]
+[Text=. CharacterOffsetBegin=378 CharacterOffsetEnd=379 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NN ALL) (NNP PG&E))
+      (NP (JJ related) (NN scheduling) (NNS transactions)))
+    (VP (MD will)
+      (VP (VB use)
+        (NP
+          (NP (DT these) (JJ new) (NNS SCIDs))
+          (VP (VBG beginning)
+            (PP (IN with)
+              (NP
+                (NP (NN submission))
+                (PP (IN of)
+                  (NP
+                    (NP (NNP Day) (NNP Ahead) (NNS schedules))
+                    (PP (IN on)
+                      (NP
+                        (NP (NNP Monday) (, ,) (NNP April))
+                        (JJ 30th) (IN for)
+                        (NP (NNP Trade) (NNP Date)))))))
+              (, ,)
+              (NP-TMP (NNP Tuesday)))
+            (NP-TMP (NNP May) (CD 1) (, ,) (CD 2001))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, use-7)
+compound(PG&E-2, ALL-1)
+nsubj(use-7, PG&E-2)
+amod(transactions-5, related-3)
+compound(transactions-5, scheduling-4)
+dep(PG&E-2, transactions-5)
+aux(use-7, will-6)
+det(SCIDs-10, these-8)
+amod(SCIDs-10, new-9)
+dobj(use-7, SCIDs-10)
+acl(SCIDs-10, beginning-11)
+case(submission-13, with-12)
+nmod:with(beginning-11, submission-13)
+case(schedules-17, of-14)
+compound(schedules-17, Day-15)
+compound(schedules-17, Ahead-16)
+nmod:of(submission-13, schedules-17)
+case(April-21, on-18)
+compound(April-21, Monday-19)
+punct(April-21, ,-20)
+nmod:on(schedules-17, April-21)
+amod(April-21, 30th-22)
+amod(April-21, for-23)
+compound(Date-25, Trade-24)
+dep(April-21, Date-25)
+punct(submission-13, ,-26)
+dep(submission-13, Tuesday-27)
+nmod:tmod(beginning-11, May-28)
+nummod(May-28, 1-29)
+punct(May-28, ,-30)
+nummod(May-28, 2001-31)
+punct(use-7, .-32)
+
+Extracted the following NER entity mentions:
+Day Ahead	MISC
+Monday, April	DATE
+30th	ORDINAL
+Tuesday May 1, 2001	DATE
+
+Sentence #5 (46 tokens):
+The new SCIDs are as follows:
+
+NEW	PRIOR
+PCGB	PCG1
+PGAB	PGAE
+COTB	COTP
+
+Any (7 day) advance schedules that may have already been submitted using the
+old SCIDs, must be removed (deleted) and rescheduled using the New SCIDs.
+
+Tokens:
+[Text=The CharacterOffsetBegin=381 CharacterOffsetEnd=384 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=385 CharacterOffsetEnd=388 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=SCIDs CharacterOffsetBegin=389 CharacterOffsetEnd=394 PartOfSpeech=NNS Lemma=scid NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=395 CharacterOffsetEnd=398 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=399 CharacterOffsetEnd=401 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=follows CharacterOffsetBegin=402 CharacterOffsetEnd=409 PartOfSpeech=VBZ Lemma=follow NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=409 CharacterOffsetEnd=410 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=NEW CharacterOffsetBegin=412 CharacterOffsetEnd=415 PartOfSpeech=NNP Lemma=NEW NamedEntityTag=O]
+[Text=PRIOR CharacterOffsetBegin=416 CharacterOffsetEnd=421 PartOfSpeech=NNP Lemma=PRIOR NamedEntityTag=O]
+[Text=PCGB CharacterOffsetBegin=422 CharacterOffsetEnd=426 PartOfSpeech=NNP Lemma=PCGB NamedEntityTag=O]
+[Text=PCG1 CharacterOffsetBegin=427 CharacterOffsetEnd=431 PartOfSpeech=NN Lemma=pcg1 NamedEntityTag=O]
+[Text=PGAB CharacterOffsetBegin=432 CharacterOffsetEnd=436 PartOfSpeech=NN Lemma=pgab NamedEntityTag=O]
+[Text=PGAE CharacterOffsetBegin=437 CharacterOffsetEnd=441 PartOfSpeech=NN Lemma=pgae NamedEntityTag=O]
+[Text=COTB CharacterOffsetBegin=442 CharacterOffsetEnd=446 PartOfSpeech=NN Lemma=cotb NamedEntityTag=O]
+[Text=COTP CharacterOffsetBegin=447 CharacterOffsetEnd=451 PartOfSpeech=NN Lemma=cotp NamedEntityTag=O]
+[Text=Any CharacterOffsetBegin=453 CharacterOffsetEnd=456 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=457 CharacterOffsetEnd=458 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=7 CharacterOffsetBegin=458 CharacterOffsetEnd=459 PartOfSpeech=CD Lemma=7 NamedEntityTag=DURATION]
+[Text=day CharacterOffsetBegin=460 CharacterOffsetEnd=463 PartOfSpeech=NN Lemma=day NamedEntityTag=DURATION]
+[Text=-RRB- CharacterOffsetBegin=463 CharacterOffsetEnd=464 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=advance CharacterOffsetBegin=465 CharacterOffsetEnd=472 PartOfSpeech=NN Lemma=advance NamedEntityTag=O]
+[Text=schedules CharacterOffsetBegin=473 CharacterOffsetEnd=482 PartOfSpeech=NNS Lemma=schedule NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=483 CharacterOffsetEnd=487 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=may CharacterOffsetBegin=488 CharacterOffsetEnd=491 PartOfSpeech=MD Lemma=may NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=492 CharacterOffsetEnd=496 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=already CharacterOffsetBegin=497 CharacterOffsetEnd=504 PartOfSpeech=RB Lemma=already NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=505 CharacterOffsetEnd=509 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=submitted CharacterOffsetBegin=510 CharacterOffsetEnd=519 PartOfSpeech=VBN Lemma=submit NamedEntityTag=O]
+[Text=using CharacterOffsetBegin=520 CharacterOffsetEnd=525 PartOfSpeech=VBG Lemma=use NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=526 CharacterOffsetEnd=529 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=old CharacterOffsetBegin=530 CharacterOffsetEnd=533 PartOfSpeech=JJ Lemma=old NamedEntityTag=O]
+[Text=SCIDs CharacterOffsetBegin=534 CharacterOffsetEnd=539 PartOfSpeech=NNS Lemma=scid NamedEntityTag=MISC]
+[Text=, CharacterOffsetBegin=539 CharacterOffsetEnd=540 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=must CharacterOffsetBegin=541 CharacterOffsetEnd=545 PartOfSpeech=MD Lemma=must NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=546 CharacterOffsetEnd=548 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=removed CharacterOffsetBegin=549 CharacterOffsetEnd=556 PartOfSpeech=VBN Lemma=remove NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=557 CharacterOffsetEnd=558 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=deleted CharacterOffsetBegin=558 CharacterOffsetEnd=565 PartOfSpeech=VBN Lemma=delete NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=565 CharacterOffsetEnd=566 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=567 CharacterOffsetEnd=570 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=rescheduled CharacterOffsetBegin=571 CharacterOffsetEnd=582 PartOfSpeech=VBN Lemma=reschedule NamedEntityTag=O]
+[Text=using CharacterOffsetBegin=583 CharacterOffsetEnd=588 PartOfSpeech=VBG Lemma=use NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=589 CharacterOffsetEnd=592 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=New CharacterOffsetBegin=593 CharacterOffsetEnd=596 PartOfSpeech=NNP Lemma=New NamedEntityTag=O]
+[Text=SCIDs CharacterOffsetBegin=597 CharacterOffsetEnd=602 PartOfSpeech=NNP Lemma=SCIDs NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=602 CharacterOffsetEnd=603 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (DT The) (JJ new) (NNS SCIDs))
+      (VP (VBP are)
+        (SBAR (IN as)
+          (S
+            (VP (VBZ follows))))))
+    (: :)
+    (S
+      (NP
+        (NP (NNP NEW) (NNP PRIOR) (NNP PCGB) (NN PCG1) (NN PGAB) (NN PGAE) (NN COTB) (NN COTP))
+        (PP
+          (NP (DT Any)
+            (PRN (-LRB- -LRB-)
+              (NP (CD 7) (NN day))
+              (-RRB- -RRB-)))
+          (NP
+            (NP (NN advance) (NNS schedules))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (MD may)
+                  (VP (VB have)
+                    (ADVP (RB already))
+                    (VP (VBN been)
+                      (VP (VBN submitted)
+                        (S
+                          (VP (VBG using)
+                            (NP (DT the) (JJ old) (NNS SCIDs))))))))))))
+        (, ,))
+      (VP (MD must)
+        (VP (VB be)
+          (VP
+            (VP (VBN removed))
+            (PRN (-LRB- -LRB-)
+              (VP (VBN deleted))
+              (-RRB- -RRB-))
+            (CC and)
+            (VP (VBN rescheduled)
+              (S
+                (VP (VBG using)
+                  (NP (DT the) (NNP New) (NNP SCIDs)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, are-4)
+det(SCIDs-3, The-1)
+amod(SCIDs-3, new-2)
+nsubj(are-4, SCIDs-3)
+mark(follows-6, as-5)
+advcl:as(are-4, follows-6)
+punct(are-4, :-7)
+compound(COTP-15, NEW-8)
+compound(COTP-15, PRIOR-9)
+compound(COTP-15, PCGB-10)
+compound(COTP-15, PCG1-11)
+compound(COTP-15, PGAB-12)
+compound(COTP-15, PGAE-13)
+compound(COTP-15, COTB-14)
+nsubjpass(removed-36, COTP-15)
+nsubjpass(rescheduled-41, COTP-15)
+det(day-19, Any-16)
+punct(day-19, -LRB--17)
+nummod(day-19, 7-18)
+nmod(COTP-15, day-19)
+punct(day-19, -RRB--20)
+compound(schedules-22, advance-21)
+dep(day-19, schedules-22)
+nsubjpass(submitted-28, schedules-22)
+ref(schedules-22, that-23)
+aux(submitted-28, may-24)
+aux(submitted-28, have-25)
+advmod(submitted-28, already-26)
+auxpass(submitted-28, been-27)
+acl:relcl(schedules-22, submitted-28)
+xcomp(submitted-28, using-29)
+det(SCIDs-32, the-30)
+amod(SCIDs-32, old-31)
+dobj(using-29, SCIDs-32)
+punct(COTP-15, ,-33)
+aux(removed-36, must-34)
+auxpass(removed-36, be-35)
+parataxis(are-4, removed-36)
+punct(deleted-38, -LRB--37)
+dep(removed-36, deleted-38)
+punct(deleted-38, -RRB--39)
+cc(removed-36, and-40)
+parataxis(are-4, rescheduled-41)
+conj:and(removed-36, rescheduled-41)
+xcomp(rescheduled-41, using-42)
+det(SCIDs-45, the-43)
+compound(SCIDs-45, New-44)
+dobj(using-42, SCIDs-45)
+punct(are-4, .-46)
+
+Extracted the following NER entity mentions:
+7 day	DURATION
+SCIDs	MISC
+
+Sentence #6 (66 tokens):
+If you have any questions regarding the scheduling of transactions with
+PG&E, please contact:
+
+For PCGB:
+Scheduling - DA / HA
+Primary 	415-973- 4500
+Real-time:
+UEPM (AKA UES)	415-973-4500
+Portfolio Mgmt	415-972-5050
+
+For PGAB and COTB:
+Scheduling - DA / HA	415-973-9130
+Real-time	415-973-1969
+
+Distributed on behalf of PG&E to facilitate their transition to the new
+SCIDs.
+
+Tokens:
+[Text=If CharacterOffsetBegin=605 CharacterOffsetEnd=607 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=608 CharacterOffsetEnd=611 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=612 CharacterOffsetEnd=616 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=617 CharacterOffsetEnd=620 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=questions CharacterOffsetBegin=621 CharacterOffsetEnd=630 PartOfSpeech=NNS Lemma=question NamedEntityTag=O]
+[Text=regarding CharacterOffsetBegin=631 CharacterOffsetEnd=640 PartOfSpeech=VBG Lemma=regard NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=641 CharacterOffsetEnd=644 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=scheduling CharacterOffsetBegin=645 CharacterOffsetEnd=655 PartOfSpeech=NN Lemma=scheduling NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=656 CharacterOffsetEnd=658 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=transactions CharacterOffsetBegin=659 CharacterOffsetEnd=671 PartOfSpeech=NNS Lemma=transaction NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=672 CharacterOffsetEnd=676 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=PG&E CharacterOffsetBegin=677 CharacterOffsetEnd=681 PartOfSpeech=NNP Lemma=PG&E NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=681 CharacterOffsetEnd=682 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=please CharacterOffsetBegin=683 CharacterOffsetEnd=689 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=contact CharacterOffsetBegin=690 CharacterOffsetEnd=697 PartOfSpeech=NN Lemma=contact NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=697 CharacterOffsetEnd=698 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=For CharacterOffsetBegin=700 CharacterOffsetEnd=703 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=PCGB CharacterOffsetBegin=704 CharacterOffsetEnd=708 PartOfSpeech=NN Lemma=pcgb NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=708 CharacterOffsetEnd=709 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Scheduling CharacterOffsetBegin=710 CharacterOffsetEnd=720 PartOfSpeech=NN Lemma=scheduling NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=721 CharacterOffsetEnd=722 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=DA CharacterOffsetBegin=723 CharacterOffsetEnd=725 PartOfSpeech=NNP Lemma=DA NamedEntityTag=O]
+[Text=/ CharacterOffsetBegin=726 CharacterOffsetEnd=727 PartOfSpeech=: Lemma=/ NamedEntityTag=O]
+[Text=HA CharacterOffsetBegin=728 CharacterOffsetEnd=730 PartOfSpeech=NNP Lemma=HA NamedEntityTag=ORGANIZATION]
+[Text=Primary CharacterOffsetBegin=731 CharacterOffsetEnd=738 PartOfSpeech=JJ Lemma=primary NamedEntityTag=ORGANIZATION]
+[Text=415-973 CharacterOffsetBegin=740 CharacterOffsetEnd=747 PartOfSpeech=CD Lemma=415-973 NamedEntityTag=NUMBER NormalizedNamedEntityTag=415.0 - 973.0]
+[Text=- CharacterOffsetBegin=747 CharacterOffsetEnd=748 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=4500 CharacterOffsetBegin=749 CharacterOffsetEnd=753 PartOfSpeech=CD Lemma=4500 NamedEntityTag=DATE NormalizedNamedEntityTag=4500 ]
+[Text=Real-time CharacterOffsetBegin=754 CharacterOffsetEnd=763 PartOfSpeech=JJ Lemma=real-time NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=763 CharacterOffsetEnd=764 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=UEPM CharacterOffsetBegin=765 CharacterOffsetEnd=769 PartOfSpeech=NN Lemma=uepm NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=770 CharacterOffsetEnd=771 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=AKA CharacterOffsetBegin=771 CharacterOffsetEnd=774 PartOfSpeech=NN Lemma=aka NamedEntityTag=O]
+[Text=UES CharacterOffsetBegin=775 CharacterOffsetEnd=778 PartOfSpeech=NN Lemma=ues NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=778 CharacterOffsetEnd=779 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=415-973-4500 CharacterOffsetBegin=780 CharacterOffsetEnd=792 PartOfSpeech=CD Lemma=415-973-4500 NamedEntityTag=NUMBER]
+[Text=Portfolio CharacterOffsetBegin=793 CharacterOffsetEnd=802 PartOfSpeech=NNP Lemma=Portfolio NamedEntityTag=O]
+[Text=Mgmt CharacterOffsetBegin=803 CharacterOffsetEnd=807 PartOfSpeech=NNP Lemma=Mgmt NamedEntityTag=O]
+[Text=415-972-5050 CharacterOffsetBegin=808 CharacterOffsetEnd=820 PartOfSpeech=CD Lemma=415-972-5050 NamedEntityTag=NUMBER]
+[Text=For CharacterOffsetBegin=822 CharacterOffsetEnd=825 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=PGAB CharacterOffsetBegin=826 CharacterOffsetEnd=830 PartOfSpeech=NN Lemma=pgab NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=831 CharacterOffsetEnd=834 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=COTB CharacterOffsetBegin=835 CharacterOffsetEnd=839 PartOfSpeech=NN Lemma=cotb NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=839 CharacterOffsetEnd=840 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Scheduling CharacterOffsetBegin=841 CharacterOffsetEnd=851 PartOfSpeech=NN Lemma=scheduling NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=852 CharacterOffsetEnd=853 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=DA CharacterOffsetBegin=854 CharacterOffsetEnd=856 PartOfSpeech=NNP Lemma=DA NamedEntityTag=O]
+[Text=/ CharacterOffsetBegin=857 CharacterOffsetEnd=858 PartOfSpeech=: Lemma=/ NamedEntityTag=O]
+[Text=HA CharacterOffsetBegin=859 CharacterOffsetEnd=861 PartOfSpeech=NNP Lemma=HA NamedEntityTag=CITY]
+[Text=415-973-9130 CharacterOffsetBegin=862 CharacterOffsetEnd=874 PartOfSpeech=CD Lemma=415-973-9130 NamedEntityTag=NUMBER]
+[Text=Real-time CharacterOffsetBegin=875 CharacterOffsetEnd=884 PartOfSpeech=JJ Lemma=real-time NamedEntityTag=O]
+[Text=415-973-1969 CharacterOffsetBegin=885 CharacterOffsetEnd=897 PartOfSpeech=CD Lemma=415-973-1969 NamedEntityTag=NUMBER]
+[Text=Distributed CharacterOffsetBegin=899 CharacterOffsetEnd=910 PartOfSpeech=VBN Lemma=distribute NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=911 CharacterOffsetEnd=913 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=behalf CharacterOffsetBegin=914 CharacterOffsetEnd=920 PartOfSpeech=NN Lemma=behalf NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=921 CharacterOffsetEnd=923 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=PG&E CharacterOffsetBegin=924 CharacterOffsetEnd=928 PartOfSpeech=NNP Lemma=PG&E NamedEntityTag=ORGANIZATION]
+[Text=to CharacterOffsetBegin=929 CharacterOffsetEnd=931 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=facilitate CharacterOffsetBegin=932 CharacterOffsetEnd=942 PartOfSpeech=VB Lemma=facilitate NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=943 CharacterOffsetEnd=948 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=transition CharacterOffsetBegin=949 CharacterOffsetEnd=959 PartOfSpeech=NN Lemma=transition NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=960 CharacterOffsetEnd=962 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=963 CharacterOffsetEnd=966 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=967 CharacterOffsetEnd=970 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=SCIDs CharacterOffsetBegin=971 CharacterOffsetEnd=976 PartOfSpeech=NNS Lemma=scid NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=976 CharacterOffsetEnd=977 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP have)
+          (NP
+            (NP (DT any) (NNS questions))
+            (PP (VBG regarding)
+              (NP
+                (NP (DT the) (NN scheduling))
+                (PP (IN of)
+                  (NP
+                    (NP (NNS transactions))
+                    (PP (IN with)
+                      (NP (NNP PG&E)))))))))))
+    (, ,)
+    (VP (VB please)
+      (S
+        (NP
+          (NP
+            (FRAG
+              (FRAG
+                (X
+                  (NP (NN contact))
+                  (: :)
+                  (PP (IN For)
+                    (NP
+                      (NP (NN PCGB))
+                      (: :)
+                      (NP (NN Scheduling)))))
+                (: -)
+                (NP (NNP DA)))
+              (: /)
+              (FRAG
+                (NP-TMP
+                  (NP (NNP HA))
+                  (NP (JJ Primary) (CD 415-973)))
+                (: -)
+                (NP
+                  (NP
+                    (NP (CD 4500))
+                    (ADJP (JJ Real-time)))
+                  (: :)
+                  (NP
+                    (NP (NN UEPM))
+                    (PRN (-LRB- -LRB-)
+                      (NP (NN AKA) (NN UES))
+                      (-RRB- -RRB-))
+                    (NP (CD 415-973-4500) (NNP Portfolio) (NNP Mgmt) (CD 415-972-5050)))))))
+          (PP (IN For)
+            (NP
+              (NP (NN PGAB)
+                (CC and)
+                (NN COTB))
+              (: :)
+              (NP
+                (NP (NN Scheduling))
+                (PRN (: -)
+                  (NP (NNP DA))
+                  (: /))
+                (SBAR
+                  (S
+                    (NP
+                      (NP (NNP HA) (CD 415-973-9130))
+                      (ADJP (JJ Real-time)
+                        (NP-TMP (CD 415-973-1969))))
+                    (VP (VBN Distributed)
+                      (PP (IN on)
+                        (NP
+                          (NP (NN behalf))
+                          (PP (IN of)
+                            (NP (NNP PG&E))))))))))))
+        (VP (TO to)
+          (VP (VB facilitate)
+            (NP (PRP$ their) (NN transition))
+            (PP (TO to)
+              (NP (DT the) (JJ new) (NNS SCIDs)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, please-14)
+mark(have-3, If-1)
+nsubj(have-3, you-2)
+advcl:if(please-14, have-3)
+det(questions-5, any-4)
+dobj(have-3, questions-5)
+case(scheduling-8, regarding-6)
+det(scheduling-8, the-7)
+nmod:regarding(questions-5, scheduling-8)
+case(transactions-10, of-9)
+nmod:of(scheduling-8, transactions-10)
+case(PG&E-12, with-11)
+nmod:with(transactions-10, PG&E-12)
+punct(please-14, ,-13)
+dep(DA-22, contact-15)
+punct(contact-15, :-16)
+case(PCGB-18, For-17)
+nmod:for(contact-15, PCGB-18)
+punct(PCGB-18, :-19)
+dep(PCGB-18, Scheduling-20)
+punct(DA-22, --21)
+dobj(please-14, DA-22)
+nsubj:xsubj(facilitate-59, DA-22)
+punct(DA-22, /-23)
+parataxis(DA-22, HA-24)
+amod(415-973-26, Primary-25)
+dep(HA-24, 415-973-26)
+punct(HA-24, --27)
+dep(HA-24, 4500-28)
+amod(4500-28, Real-time-29)
+punct(4500-28, :-30)
+dep(4500-28, UEPM-31)
+punct(UES-34, -LRB--32)
+compound(UES-34, AKA-33)
+appos(UEPM-31, UES-34)
+punct(UES-34, -RRB--35)
+nummod(Mgmt-38, 415-973-4500-36)
+compound(Mgmt-38, Portfolio-37)
+dep(UEPM-31, Mgmt-38)
+nummod(Mgmt-38, 415-972-5050-39)
+case(PGAB-41, For-40)
+nmod:for(DA-22, PGAB-41)
+cc(PGAB-41, and-42)
+nmod:for(DA-22, COTB-43)
+conj:and(PGAB-41, COTB-43)
+punct(PGAB-41, :-44)
+dep(PGAB-41, Scheduling-45)
+punct(DA-47, --46)
+dep(Scheduling-45, DA-47)
+punct(DA-47, /-48)
+nsubj(Distributed-53, HA-49)
+nummod(HA-49, 415-973-9130-50)
+amod(HA-49, Real-time-51)
+nmod:tmod(Real-time-51, 415-973-1969-52)
+acl:relcl(Scheduling-45, Distributed-53)
+case(PG&E-57, on-54)
+mwe(on-54, behalf-55)
+mwe(on-54, of-56)
+nmod:on_behalf_of(Distributed-53, PG&E-57)
+mark(facilitate-59, to-58)
+xcomp(please-14, facilitate-59)
+nmod:poss(transition-61, their-60)
+dobj(facilitate-59, transition-61)
+case(SCIDs-65, to-62)
+det(SCIDs-65, the-63)
+amod(SCIDs-65, new-64)
+nmod:to(facilitate-59, SCIDs-65)
+punct(please-14, .-66)
+
+Extracted the following NER entity mentions:
+PG&E	ORGANIZATION
+HA Primary	ORGANIZATION
+415-973	NUMBER
+4500	DATE
+415-973-4500	NUMBER
+415-972-5050	NUMBER
+PGAB	ORGANIZATION
+HA	CITY
+415-973-9130	NUMBER
+415-973-1969	NUMBER
+PG&E	ORGANIZATION
+
+Sentence #7 (3 tokens):
+Client Relations Communication
+
+Tokens:
+[Text=Client CharacterOffsetBegin=979 CharacterOffsetEnd=985 PartOfSpeech=NNP Lemma=Client NamedEntityTag=O]
+[Text=Relations CharacterOffsetBegin=986 CharacterOffsetEnd=995 PartOfSpeech=NNP Lemma=Relations NamedEntityTag=O]
+[Text=Communication CharacterOffsetBegin=996 CharacterOffsetEnd=1009 PartOfSpeech=NNP Lemma=Communication NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Client) (NNP Relations) (NNP Communication)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Communication-3)
+compound(Communication-3, Client-1)
+compound(Communication-3, Relations-2)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(1,1,[1,12]) -> (1,13,[13,16]), that is: "NOTICE TO MARKET PARTICIPANTS PG&E SCIDs CHANGE Effective Trade Date Tuesday" -> "May 1st 2001"
+
+Coreference set:
+	(4,27,[27,28]) -> (1,11,[3,12]), that is: "Tuesday" -> "MARKET PARTICIPANTS PG&E SCIDs CHANGE Effective Trade Date Tuesday"
+
+Coreference set:
+	(6,12,[12,13]) -> (2,1,[1,2]), that is: "PG&E" -> "PG&E"
+	(6,57,[57,58]) -> (2,1,[1,2]), that is: "PG&E" -> "PG&E"
+
+Coreference set:
+	(3,4,[1,5]) -> (5,32,[30,33]), that is: "The OLD PG&E SCIDs" -> "the old SCIDs"
+
+Coreference set:
+	(6,47,[47,48]) -> (4,16,[15,17]), that is: "DA" -> "Day Ahead"
+
+Coreference set:
+	(4,10,[8,32]) -> (5,32,[32,33]), that is: "these new SCIDs beginning with submission of Day Ahead schedules on Monday , April 30th for Trade Date , Tuesday May 1 , 2001" -> "SCIDs"
+	(5,3,[1,4]) -> (5,32,[32,33]), that is: "The new SCIDs" -> "SCIDs"
+	(5,45,[43,46]) -> (5,32,[32,33]), that is: "the New SCIDs" -> "SCIDs"
+	(6,60,[60,61]) -> (5,32,[32,33]), that is: "their" -> "SCIDs"
+	(6,65,[63,66]) -> (5,32,[32,33]), that is: "the new SCIDs" -> "SCIDs"

@@ -1,0 +1,105 @@
+Document: ID=1052638.in (2 sentences, 24 tokens)
+
+Sentence #1 (15 tokens):
+Armored knights raised their visors to identify themselves when they rode
+past their king.
+
+Tokens:
+[Text=Armored CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Armored NamedEntityTag=O]
+[Text=knights CharacterOffsetBegin=8 CharacterOffsetEnd=15 PartOfSpeech=NNS Lemma=knight NamedEntityTag=O]
+[Text=raised CharacterOffsetBegin=16 CharacterOffsetEnd=22 PartOfSpeech=VBD Lemma=raise NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=23 CharacterOffsetEnd=28 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=visors CharacterOffsetBegin=29 CharacterOffsetEnd=35 PartOfSpeech=NNS Lemma=visor NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=identify CharacterOffsetBegin=39 CharacterOffsetEnd=47 PartOfSpeech=VB Lemma=identify NamedEntityTag=O]
+[Text=themselves CharacterOffsetBegin=48 CharacterOffsetEnd=58 PartOfSpeech=PRP Lemma=themselves NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=64 CharacterOffsetEnd=68 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=rode CharacterOffsetBegin=69 CharacterOffsetEnd=73 PartOfSpeech=VBD Lemma=ride NamedEntityTag=O]
+[Text=past CharacterOffsetBegin=74 CharacterOffsetEnd=78 PartOfSpeech=IN Lemma=past NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=79 CharacterOffsetEnd=84 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=king CharacterOffsetBegin=85 CharacterOffsetEnd=89 PartOfSpeech=NN Lemma=king NamedEntityTag=TITLE]
+[Text=. CharacterOffsetBegin=89 CharacterOffsetEnd=90 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Armored) (NNS knights))
+    (VP (VBD raised)
+      (NP (PRP$ their) (NNS visors))
+      (S
+        (VP (TO to)
+          (VP (VB identify)
+            (NP (PRP themselves))
+            (SBAR
+              (WHADVP (WRB when))
+              (S
+                (NP (PRP they))
+                (VP (VBD rode)
+                  (PP (IN past)
+                    (NP (PRP$ their) (NN king))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, raised-3)
+compound(knights-2, Armored-1)
+nsubj(raised-3, knights-2)
+nmod:poss(visors-5, their-4)
+dobj(raised-3, visors-5)
+mark(identify-7, to-6)
+advcl:to(raised-3, identify-7)
+dobj(identify-7, themselves-8)
+advmod(rode-11, when-9)
+nsubj(rode-11, they-10)
+advcl(identify-7, rode-11)
+case(king-14, past-12)
+nmod:poss(king-14, their-13)
+nmod:past(rode-11, king-14)
+punct(raised-3, .-15)
+
+Extracted the following NER entity mentions:
+king	TITLE
+
+Sentence #2 (9 tokens):
+This custom has become the modern military salute.
+
+Tokens:
+[Text=This CharacterOffsetBegin=91 CharacterOffsetEnd=95 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=custom CharacterOffsetBegin=96 CharacterOffsetEnd=102 PartOfSpeech=NN Lemma=custom NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=103 CharacterOffsetEnd=106 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=become CharacterOffsetBegin=107 CharacterOffsetEnd=113 PartOfSpeech=VBN Lemma=become NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=114 CharacterOffsetEnd=117 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=modern CharacterOffsetBegin=118 CharacterOffsetEnd=124 PartOfSpeech=JJ Lemma=modern NamedEntityTag=O]
+[Text=military CharacterOffsetBegin=125 CharacterOffsetEnd=133 PartOfSpeech=JJ Lemma=military NamedEntityTag=O]
+[Text=salute CharacterOffsetBegin=134 CharacterOffsetEnd=140 PartOfSpeech=NN Lemma=salute NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=140 CharacterOffsetEnd=141 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This) (NN custom))
+    (VP (VBZ has)
+      (VP (VBN become)
+        (NP (DT the) (JJ modern) (JJ military) (NN salute))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, become-4)
+det(custom-2, This-1)
+nsubj(become-4, custom-2)
+aux(become-4, has-3)
+det(salute-8, the-5)
+amod(salute-8, modern-6)
+amod(salute-8, military-7)
+xcomp(become-4, salute-8)
+punct(become-4, .-9)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(1,4,[4,5]) -> (1,2,[1,3]), that is: "their" -> "Armored knights"
+	(1,8,[8,9]) -> (1,2,[1,3]), that is: "themselves" -> "Armored knights"
+	(1,10,[10,11]) -> (1,2,[1,3]), that is: "they" -> "Armored knights"
+	(1,13,[13,14]) -> (1,2,[1,3]), that is: "their" -> "Armored knights"

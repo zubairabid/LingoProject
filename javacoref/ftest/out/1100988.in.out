@@ -1,0 +1,555 @@
+Document: ID=1100988.in (9 sentences, 133 tokens)
+
+Sentence #1 (6 tokens):
+Melissa,
+
+This looks fine.
+
+Tokens:
+[Text=Melissa CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Melissa NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=This CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=looks CharacterOffsetBegin=15 CharacterOffsetEnd=20 PartOfSpeech=VBZ Lemma=look NamedEntityTag=O]
+[Text=fine CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=fine NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Melissa))
+    (, ,)
+    (NP (DT This))
+    (VP (VBZ looks)
+      (NP (NN fine)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, looks-4)
+nsubj(looks-4, Melissa-1)
+punct(looks-4, ,-2)
+nsubj(looks-4, This-3)
+dobj(looks-4, fine-5)
+punct(looks-4, .-6)
+
+Extracted the following NER entity mentions:
+Melissa	PERSON
+
+Sentence #2 (19 tokens):
+We will let you know when payments can be released for the ones on hold per the traders.
+
+Tokens:
+[Text=We CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=let CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=payments CharacterOffsetBegin=54 CharacterOffsetEnd=62 PartOfSpeech=NNS Lemma=payment NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=released CharacterOffsetBegin=70 CharacterOffsetEnd=78 PartOfSpeech=VBN Lemma=release NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=83 CharacterOffsetEnd=86 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=ones CharacterOffsetBegin=87 CharacterOffsetEnd=91 PartOfSpeech=NNS Lemma=one NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=92 CharacterOffsetEnd=94 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=hold CharacterOffsetBegin=95 CharacterOffsetEnd=99 PartOfSpeech=NN Lemma=hold NamedEntityTag=O]
+[Text=per CharacterOffsetBegin=100 CharacterOffsetEnd=103 PartOfSpeech=IN Lemma=per NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=104 CharacterOffsetEnd=107 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=traders CharacterOffsetBegin=108 CharacterOffsetEnd=115 PartOfSpeech=NNS Lemma=trader NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=115 CharacterOffsetEnd=116 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (MD will)
+      (VP (VB let)
+        (S
+          (NP (PRP you))
+          (VP (VB know)
+            (SBAR
+              (WHADVP (WRB when))
+              (S
+                (NP (NNS payments))
+                (VP (MD can)
+                  (VP (VB be)
+                    (VP (VBN released)
+                      (PP (IN for)
+                        (NP
+                          (NP (DT the) (NNS ones))
+                          (PP (IN on)
+                            (NP
+                              (NP (NN hold))
+                              (PP (IN per)
+                                (NP (DT the) (NNS traders))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, let-3)
+nsubj(let-3, We-1)
+aux(let-3, will-2)
+nsubj(know-5, you-4)
+ccomp(let-3, know-5)
+advmod(released-10, when-6)
+nsubjpass(released-10, payments-7)
+aux(released-10, can-8)
+auxpass(released-10, be-9)
+ccomp(know-5, released-10)
+case(ones-13, for-11)
+det(ones-13, the-12)
+nmod:for(released-10, ones-13)
+case(hold-15, on-14)
+nmod:on(ones-13, hold-15)
+case(traders-18, per-16)
+det(traders-18, the-17)
+nmod:per(hold-15, traders-18)
+punct(let-3, .-19)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (19 tokens):
+Amounts for Valley for September - December have been provided to Alicia for inclusion in their April billing.
+
+Tokens:
+[Text=Amounts CharacterOffsetBegin=118 CharacterOffsetEnd=125 PartOfSpeech=NNS Lemma=amount NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=126 CharacterOffsetEnd=129 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Valley CharacterOffsetBegin=130 CharacterOffsetEnd=136 PartOfSpeech=NNP Lemma=Valley NamedEntityTag=CITY]
+[Text=for CharacterOffsetBegin=137 CharacterOffsetEnd=140 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=September CharacterOffsetBegin=141 CharacterOffsetEnd=150 PartOfSpeech=NNP Lemma=September NamedEntityTag=DATE NormalizedNamedEntityTag=****09]
+[Text=- CharacterOffsetBegin=151 CharacterOffsetEnd=152 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=December CharacterOffsetBegin=153 CharacterOffsetEnd=161 PartOfSpeech=NNP Lemma=December NamedEntityTag=DATE NormalizedNamedEntityTag=****12]
+[Text=have CharacterOffsetBegin=162 CharacterOffsetEnd=166 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=167 CharacterOffsetEnd=171 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=provided CharacterOffsetBegin=172 CharacterOffsetEnd=180 PartOfSpeech=VBN Lemma=provide NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=181 CharacterOffsetEnd=183 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Alicia CharacterOffsetBegin=184 CharacterOffsetEnd=190 PartOfSpeech=NNP Lemma=Alicia NamedEntityTag=PERSON]
+[Text=for CharacterOffsetBegin=191 CharacterOffsetEnd=194 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=inclusion CharacterOffsetBegin=195 CharacterOffsetEnd=204 PartOfSpeech=NN Lemma=inclusion NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=205 CharacterOffsetEnd=207 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=208 CharacterOffsetEnd=213 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=April CharacterOffsetBegin=214 CharacterOffsetEnd=219 PartOfSpeech=NNP Lemma=April NamedEntityTag=DATE NormalizedNamedEntityTag=****04]
+[Text=billing CharacterOffsetBegin=220 CharacterOffsetEnd=227 PartOfSpeech=NN Lemma=billing NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=227 CharacterOffsetEnd=228 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP
+      (NP (NNS Amounts))
+      (PP (IN for)
+        (NP (NNP Valley)))
+      (PP (IN for)
+        (NP (NNP September))))
+    (: -)
+    (S
+      (NP (NNP December))
+      (VP (VBP have)
+        (VP (VBN been)
+          (VP (VBN provided)
+            (PP (TO to)
+              (NP (NNP Alicia)))
+            (PP (IN for)
+              (NP
+                (NP (NN inclusion))
+                (PP (IN in)
+                  (NP (PRP$ their) (NNP April) (NN billing)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Amounts-1)
+case(Valley-3, for-2)
+nmod:for(Amounts-1, Valley-3)
+case(September-5, for-4)
+nmod:for(Amounts-1, September-5)
+punct(Amounts-1, --6)
+nsubjpass(provided-10, December-7)
+aux(provided-10, have-8)
+auxpass(provided-10, been-9)
+parataxis(Amounts-1, provided-10)
+case(Alicia-12, to-11)
+nmod:to(provided-10, Alicia-12)
+case(inclusion-14, for-13)
+nmod:for(provided-10, inclusion-14)
+case(billing-18, in-15)
+nmod:poss(billing-18, their-16)
+compound(billing-18, April-17)
+nmod:in(inclusion-14, billing-18)
+punct(Amounts-1, .-19)
+
+Extracted the following NER entity mentions:
+Valley	CITY
+September	DATE
+December	DATE
+Alicia	PERSON
+April	DATE
+
+Sentence #4 (42 tokens):
+For Harbor, we will be netting the amount owed to us with all of the rest of their December transactions (gas, and day ahead energy), leaving an amount owed to Harbor of $(2,843.58).
+
+Tokens:
+[Text=For CharacterOffsetBegin=230 CharacterOffsetEnd=233 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Harbor CharacterOffsetBegin=234 CharacterOffsetEnd=240 PartOfSpeech=NNP Lemma=Harbor NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=240 CharacterOffsetEnd=241 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=242 CharacterOffsetEnd=244 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=245 CharacterOffsetEnd=249 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=250 CharacterOffsetEnd=252 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=netting CharacterOffsetBegin=253 CharacterOffsetEnd=260 PartOfSpeech=VBG Lemma=net NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=261 CharacterOffsetEnd=264 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=amount CharacterOffsetBegin=265 CharacterOffsetEnd=271 PartOfSpeech=NN Lemma=amount NamedEntityTag=O]
+[Text=owed CharacterOffsetBegin=272 CharacterOffsetEnd=276 PartOfSpeech=VBN Lemma=owe NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=277 CharacterOffsetEnd=279 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=280 CharacterOffsetEnd=282 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=283 CharacterOffsetEnd=287 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=288 CharacterOffsetEnd=291 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=292 CharacterOffsetEnd=294 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=295 CharacterOffsetEnd=298 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=rest CharacterOffsetBegin=299 CharacterOffsetEnd=303 PartOfSpeech=NN Lemma=rest NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=304 CharacterOffsetEnd=306 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=307 CharacterOffsetEnd=312 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=December CharacterOffsetBegin=313 CharacterOffsetEnd=321 PartOfSpeech=NNP Lemma=December NamedEntityTag=DATE NormalizedNamedEntityTag=****12]
+[Text=transactions CharacterOffsetBegin=322 CharacterOffsetEnd=334 PartOfSpeech=NNS Lemma=transaction NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=335 CharacterOffsetEnd=336 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=gas CharacterOffsetBegin=336 CharacterOffsetEnd=339 PartOfSpeech=NN Lemma=gas NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=339 CharacterOffsetEnd=340 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=341 CharacterOffsetEnd=344 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=day CharacterOffsetBegin=345 CharacterOffsetEnd=348 PartOfSpeech=NN Lemma=day NamedEntityTag=TIME NormalizedNamedEntityTag=D]
+[Text=ahead CharacterOffsetBegin=349 CharacterOffsetEnd=354 PartOfSpeech=RB Lemma=ahead NamedEntityTag=O]
+[Text=energy CharacterOffsetBegin=355 CharacterOffsetEnd=361 PartOfSpeech=NN Lemma=energy NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=361 CharacterOffsetEnd=362 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=362 CharacterOffsetEnd=363 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=leaving CharacterOffsetBegin=364 CharacterOffsetEnd=371 PartOfSpeech=VBG Lemma=leave NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=372 CharacterOffsetEnd=374 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=amount CharacterOffsetBegin=375 CharacterOffsetEnd=381 PartOfSpeech=NN Lemma=amount NamedEntityTag=O]
+[Text=owed CharacterOffsetBegin=382 CharacterOffsetEnd=386 PartOfSpeech=VBN Lemma=owe NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=387 CharacterOffsetEnd=389 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Harbor CharacterOffsetBegin=390 CharacterOffsetEnd=396 PartOfSpeech=NNP Lemma=Harbor NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=397 CharacterOffsetEnd=399 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=400 CharacterOffsetEnd=401 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$]
+[Text=-LRB- CharacterOffsetBegin=401 CharacterOffsetEnd=402 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=2,843.58 CharacterOffsetBegin=402 CharacterOffsetEnd=410 PartOfSpeech=CD Lemma=2,843.58 NamedEntityTag=NUMBER NormalizedNamedEntityTag=2843.58]
+[Text=-RRB- CharacterOffsetBegin=410 CharacterOffsetEnd=411 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=411 CharacterOffsetEnd=412 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN For)
+      (NP (NNP Harbor)))
+    (, ,)
+    (NP (PRP we))
+    (VP (MD will)
+      (VP (VB be)
+        (VP (VBG netting)
+          (NP
+            (NP (DT the) (NN amount))
+            (VP (VBN owed)
+              (S
+                (VP (TO to)
+                  (VP
+                    (NP (PRP us))
+                    (PP (IN with)
+                      (NP
+                        (NP (DT all))
+                        (PP (IN of)
+                          (NP
+                            (NP (DT the) (NN rest))
+                            (PP (IN of)
+                              (NP (PRP$ their) (NNP December) (NNS transactions)))
+                            (PRN (-LRB- -LRB-)
+                              (NP
+                                (NP
+                                  (NP (NN gas))
+                                  (, ,)
+                                  (CC and)
+                                  (NP (NN day)))
+                                (NP (RB ahead) (NN energy)))
+                              (-RRB- -RRB-)))))))))
+              (, ,)
+              (S
+                (VP (VBG leaving)
+                  (NP
+                    (NP (DT an) (NN amount))
+                    (VP (VBN owed)
+                      (PP (TO to)
+                        (NP
+                          (NP (NNP Harbor))
+                          (PP (IN of)
+                            (NP
+                              (QP ($ $) (-LRB- -LRB-) (CD 2,843.58)))))))))))))))
+    (-RRB- -RRB-) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, netting-7)
+case(Harbor-2, For-1)
+nmod:for(netting-7, Harbor-2)
+punct(netting-7, ,-3)
+nsubj(netting-7, we-4)
+aux(netting-7, will-5)
+aux(netting-7, be-6)
+det(amount-9, the-8)
+dobj(netting-7, amount-9)
+acl(amount-9, owed-10)
+mark(us-12, to-11)
+xcomp(owed-10, us-12)
+case(all-14, with-13)
+det:qmod(rest-17, all-14)
+mwe(all-14, of-15)
+det(rest-17, the-16)
+nmod(us-12, rest-17)
+case(transactions-21, of-18)
+nmod:poss(transactions-21, their-19)
+compound(transactions-21, December-20)
+nmod:of(rest-17, transactions-21)
+punct(gas-23, -LRB--22)
+dep(rest-17, gas-23)
+punct(gas-23, ,-24)
+cc(gas-23, and-25)
+dep(rest-17, day-26)
+conj:and(gas-23, day-26)
+advmod(energy-28, ahead-27)
+dep(gas-23, energy-28)
+punct(gas-23, -RRB--29)
+punct(owed-10, ,-30)
+xcomp(owed-10, leaving-31)
+det(amount-33, an-32)
+dobj(leaving-31, amount-33)
+acl(amount-33, owed-34)
+case(Harbor-36, to-35)
+nmod:to(owed-34, Harbor-36)
+case($-38, of-37)
+nmod:of(Harbor-36, $-38)
+punct($-38, -LRB--39)
+compound($-38, 2,843.58-40)
+punct(netting-7, -RRB--41)
+punct(netting-7, .-42)
+
+Extracted the following NER entity mentions:
+December	DATE
+day	TIME
+$	MONEY
+2,843.58	NUMBER
+
+Sentence #5 (16 tokens):
+The Gas amount = $616,304.42; Day Ahead energy = ($680,400).
+
+Tokens:
+[Text=The CharacterOffsetBegin=414 CharacterOffsetEnd=417 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Gas CharacterOffsetBegin=418 CharacterOffsetEnd=421 PartOfSpeech=NN Lemma=gas NamedEntityTag=O]
+[Text=amount CharacterOffsetBegin=422 CharacterOffsetEnd=428 PartOfSpeech=NN Lemma=amount NamedEntityTag=O]
+[Text== CharacterOffsetBegin=429 CharacterOffsetEnd=430 PartOfSpeech=JJ Lemma== NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=431 CharacterOffsetEnd=432 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$616304.42]
+[Text=616,304.42 CharacterOffsetBegin=432 CharacterOffsetEnd=442 PartOfSpeech=CD Lemma=616,304.42 NamedEntityTag=MONEY NormalizedNamedEntityTag=$616304.42]
+[Text=; CharacterOffsetBegin=442 CharacterOffsetEnd=443 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=Day CharacterOffsetBegin=444 CharacterOffsetEnd=447 PartOfSpeech=NNP Lemma=Day NamedEntityTag=O]
+[Text=Ahead CharacterOffsetBegin=448 CharacterOffsetEnd=453 PartOfSpeech=NNP Lemma=Ahead NamedEntityTag=O]
+[Text=energy CharacterOffsetBegin=454 CharacterOffsetEnd=460 PartOfSpeech=NN Lemma=energy NamedEntityTag=O]
+[Text== CharacterOffsetBegin=461 CharacterOffsetEnd=462 PartOfSpeech=JJ Lemma== NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=463 CharacterOffsetEnd=464 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=464 CharacterOffsetEnd=465 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$680400.0]
+[Text=680,400 CharacterOffsetBegin=465 CharacterOffsetEnd=472 PartOfSpeech=CD Lemma=680,400 NamedEntityTag=MONEY NormalizedNamedEntityTag=$680400.0]
+[Text=-RRB- CharacterOffsetBegin=472 CharacterOffsetEnd=473 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=473 CharacterOffsetEnd=474 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN Gas) (NN amount))
+      (ADJP (JJ =)
+        (NP ($ $) (CD 616,304.42))))
+    (: ;)
+    (S
+      (NP (NNP Day) (NNP Ahead) (NN energy))
+      (ADJP
+        (ADJP (JJ =))
+        (PRN (-LRB- -LRB-)
+          (NP ($ $) (CD 680,400))
+          (-RRB- -RRB-))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, =-4)
+det(amount-3, The-1)
+compound(amount-3, Gas-2)
+dep(=-4, amount-3)
+dep(616,304.42-6, $-5)
+dep(=-4, 616,304.42-6)
+punct(=-4, ;-7)
+compound(energy-10, Day-8)
+compound(energy-10, Ahead-9)
+dep(=-11, energy-10)
+parataxis(=-4, =-11)
+punct(680,400-14, -LRB--12)
+dep(680,400-14, $-13)
+dep(=-11, 680,400-14)
+punct(680,400-14, -RRB--15)
+punct(=-4, .-16)
+
+Extracted the following NER entity mentions:
+$616,304.42	MONEY
+$680,400	MONEY
+
+Sentence #6 (7 tokens):
+The ISO amount is $61,251.
+
+Tokens:
+[Text=The CharacterOffsetBegin=476 CharacterOffsetEnd=479 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=ISO CharacterOffsetBegin=480 CharacterOffsetEnd=483 PartOfSpeech=NN Lemma=iso NamedEntityTag=ORGANIZATION]
+[Text=amount CharacterOffsetBegin=484 CharacterOffsetEnd=490 PartOfSpeech=NN Lemma=amount NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=491 CharacterOffsetEnd=493 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=494 CharacterOffsetEnd=495 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$61251.0]
+[Text=61,251 CharacterOffsetBegin=495 CharacterOffsetEnd=501 PartOfSpeech=CD Lemma=61,251 NamedEntityTag=MONEY NormalizedNamedEntityTag=$61251.0]
+[Text=. CharacterOffsetBegin=501 CharacterOffsetEnd=502 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN ISO) (NN amount))
+    (VP (VBZ is)
+      (NP ($ $) (CD 61,251)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 61,251-6)
+det(amount-3, The-1)
+compound(amount-3, ISO-2)
+nsubj(61,251-6, amount-3)
+cop(61,251-6, is-4)
+dep(61,251-6, $-5)
+punct(61,251-6, .-7)
+
+Extracted the following NER entity mentions:
+ISO	ORGANIZATION
+$61,251	MONEY
+
+Sentence #7 (11 tokens):
+The net of these three amounts is the amount due.
+
+Tokens:
+[Text=The CharacterOffsetBegin=504 CharacterOffsetEnd=507 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=net CharacterOffsetBegin=508 CharacterOffsetEnd=511 PartOfSpeech=NN Lemma=net NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=512 CharacterOffsetEnd=514 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=515 CharacterOffsetEnd=520 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=three CharacterOffsetBegin=521 CharacterOffsetEnd=526 PartOfSpeech=CD Lemma=three NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0]
+[Text=amounts CharacterOffsetBegin=527 CharacterOffsetEnd=534 PartOfSpeech=NNS Lemma=amount NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=535 CharacterOffsetEnd=537 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=538 CharacterOffsetEnd=541 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=amount CharacterOffsetBegin=542 CharacterOffsetEnd=548 PartOfSpeech=NN Lemma=amount NamedEntityTag=O]
+[Text=due CharacterOffsetBegin=549 CharacterOffsetEnd=552 PartOfSpeech=JJ Lemma=due NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=552 CharacterOffsetEnd=553 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN net))
+      (PP (IN of)
+        (NP (DT these) (CD three) (NNS amounts))))
+    (VP (VBZ is)
+      (ADJP
+        (NP (DT the) (NN amount))
+        (JJ due)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, due-10)
+det(net-2, The-1)
+nsubj(due-10, net-2)
+case(amounts-6, of-3)
+det(amounts-6, these-4)
+nummod(amounts-6, three-5)
+nmod:of(net-2, amounts-6)
+cop(due-10, is-7)
+det(amount-9, the-8)
+nmod:npmod(due-10, amount-9)
+punct(due-10, .-11)
+
+Extracted the following NER entity mentions:
+three	NUMBER
+
+Sentence #8 (12 tokens):
+Please confirm that you are seeing these values in the system.
+
+Tokens:
+[Text=Please CharacterOffsetBegin=555 CharacterOffsetEnd=561 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=confirm CharacterOffsetBegin=562 CharacterOffsetEnd=569 PartOfSpeech=VB Lemma=confirm NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=570 CharacterOffsetEnd=574 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=575 CharacterOffsetEnd=578 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=579 CharacterOffsetEnd=582 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=seeing CharacterOffsetBegin=583 CharacterOffsetEnd=589 PartOfSpeech=VBG Lemma=see NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=590 CharacterOffsetEnd=595 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=values CharacterOffsetBegin=596 CharacterOffsetEnd=602 PartOfSpeech=NNS Lemma=value NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=603 CharacterOffsetEnd=605 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=606 CharacterOffsetEnd=609 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=system CharacterOffsetBegin=610 CharacterOffsetEnd=616 PartOfSpeech=NN Lemma=system NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=616 CharacterOffsetEnd=617 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Please)
+      (VP (VB confirm)
+        (SBAR (IN that)
+          (S
+            (NP (PRP you))
+            (VP (VBP are)
+              (VP (VBG seeing)
+                (NP (DT these) (NNS values))
+                (PP (IN in)
+                  (NP (DT the) (NN system)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Please-1)
+xcomp(Please-1, confirm-2)
+mark(seeing-6, that-3)
+nsubj(seeing-6, you-4)
+aux(seeing-6, are-5)
+ccomp(confirm-2, seeing-6)
+det(values-8, these-7)
+dobj(seeing-6, values-8)
+case(system-11, in-9)
+det(system-11, the-10)
+nmod:in(seeing-6, system-11)
+punct(Please-1, .-12)
+
+Extracted the following NER entity mentions:
+
+Sentence #9 (1 tokens):
+Caroline
+
+Tokens:
+[Text=Caroline CharacterOffsetBegin=619 CharacterOffsetEnd=627 PartOfSpeech=NNP Lemma=Caroline NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Caroline)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Caroline-1)
+
+Extracted the following NER entity mentions:
+Caroline	PERSON
+
+Coreference set:
+	(4,4,[4,5]) -> (2,1,[1,2]), that is: "we" -> "We"
+	(4,12,[12,13]) -> (2,1,[1,2]), that is: "us" -> "We"
+
+Coreference set:
+	(3,16,[16,17]) -> (2,13,[12,19]), that is: "their" -> "the ones on hold per the traders"
+	(4,19,[19,20]) -> (2,13,[12,19]), that is: "their" -> "the ones on hold per the traders"
+
+Coreference set:
+	(4,9,[8,41]) -> (5,3,[1,4]), that is: "the amount owed to us with all of the rest of their December transactions -LRB- gas , and day ahead energy -RRB- , leaving an amount owed to Harbor of $ -LRB- 2,843.58" -> "The Gas amount"
+
+Coreference set:
+	(7,9,[8,10]) -> (6,3,[1,4]), that is: "the amount" -> "The ISO amount"

@@ -1,0 +1,92 @@
+Document: ID=1104097.in (2 sentences, 17 tokens)
+
+Sentence #1 (14 tokens):
+Debra,
+
+Please contact Shari to discuss their special provisions to the GISB.
+
+Tokens:
+[Text=Debra CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Debra NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Please CharacterOffsetBegin=8 CharacterOffsetEnd=14 PartOfSpeech=UH Lemma=please NamedEntityTag=O]
+[Text=contact CharacterOffsetBegin=15 CharacterOffsetEnd=22 PartOfSpeech=VB Lemma=contact NamedEntityTag=O]
+[Text=Shari CharacterOffsetBegin=23 CharacterOffsetEnd=28 PartOfSpeech=NNP Lemma=Shari NamedEntityTag=PERSON]
+[Text=to CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=discuss CharacterOffsetBegin=32 CharacterOffsetEnd=39 PartOfSpeech=VB Lemma=discuss NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=40 CharacterOffsetEnd=45 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=special CharacterOffsetBegin=46 CharacterOffsetEnd=53 PartOfSpeech=JJ Lemma=special NamedEntityTag=O]
+[Text=provisions CharacterOffsetBegin=54 CharacterOffsetEnd=64 PartOfSpeech=NNS Lemma=provision NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=65 CharacterOffsetEnd=67 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=GISB CharacterOffsetBegin=72 CharacterOffsetEnd=76 PartOfSpeech=NNP Lemma=GISB NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP
+      (NP
+        (NP (NNP Debra))
+        (, ,)
+        (VP
+          (NP (UH Please))
+          (S
+            (VP (VB contact)
+              (S
+                (NP (NNP Shari))
+                (VP (TO to)
+                  (VP (VB discuss)
+                    (NP (PRP$ their) (JJ special) (NNS provisions))
+                    (PP (TO to)
+                      (NP (DT the) (NNP GISB)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Debra-1)
+punct(Debra-1, ,-2)
+dep(Debra-1, Please-3)
+dep(Please-3, contact-4)
+dobj(contact-4, Shari-5)
+nsubj:xsubj(discuss-7, Shari-5)
+mark(discuss-7, to-6)
+xcomp(contact-4, discuss-7)
+nmod:poss(provisions-10, their-8)
+amod(provisions-10, special-9)
+dobj(discuss-7, provisions-10)
+case(GISB-13, to-11)
+det(GISB-13, the-12)
+nmod:to(discuss-7, GISB-13)
+punct(Debra-1, .-14)
+
+Extracted the following NER entity mentions:
+Shari	PERSON
+GISB	ORGANIZATION
+
+Sentence #2 (3 tokens):
+Thanks,
+Judy
+
+Tokens:
+[Text=Thanks CharacterOffsetBegin=79 CharacterOffsetEnd=85 PartOfSpeech=NNS Lemma=thanks NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Judy CharacterOffsetBegin=87 CharacterOffsetEnd=91 PartOfSpeech=NNP Lemma=Judy NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNS Thanks))
+    (, ,)
+    (NP (NNP Judy))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Thanks-1)
+punct(Thanks-1, ,-2)
+appos(Thanks-1, Judy-3)
+
+Extracted the following NER entity mentions:
+Judy	PERSON
+
+Coreference set:
+	(1,8,[8,9]) -> (1,3,[3,4]), that is: "their" -> "Please"

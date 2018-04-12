@@ -1,0 +1,320 @@
+Document: ID=1054532.in (4 sentences, 80 tokens)
+
+Sentence #1 (13 tokens):
+Comed/Peco Powerteam have implemented an online checkout system for their
+power trades.
+
+Tokens:
+[Text=Comed/Peco CharacterOffsetBegin=0 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=Comed/Peco NamedEntityTag=O]
+[Text=Powerteam CharacterOffsetBegin=11 CharacterOffsetEnd=20 PartOfSpeech=NNP Lemma=Powerteam NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=implemented CharacterOffsetBegin=26 CharacterOffsetEnd=37 PartOfSpeech=VBN Lemma=implement NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=online CharacterOffsetBegin=41 CharacterOffsetEnd=47 PartOfSpeech=JJ Lemma=online NamedEntityTag=O]
+[Text=checkout CharacterOffsetBegin=48 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=checkout NamedEntityTag=O]
+[Text=system CharacterOffsetBegin=57 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=system NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=64 CharacterOffsetEnd=67 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=68 CharacterOffsetEnd=73 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=power CharacterOffsetBegin=74 CharacterOffsetEnd=79 PartOfSpeech=NN Lemma=power NamedEntityTag=O]
+[Text=trades CharacterOffsetBegin=80 CharacterOffsetEnd=86 PartOfSpeech=NNS Lemma=trade NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=86 CharacterOffsetEnd=87 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Comed/Peco) (NNP Powerteam))
+    (VP (VBP have)
+      (VP (VBN implemented)
+        (NP
+          (NP (DT an) (JJ online) (NN checkout) (NN system))
+          (PP (IN for)
+            (NP (PRP$ their) (NN power) (NNS trades))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, implemented-4)
+compound(Powerteam-2, Comed/Peco-1)
+nsubj(implemented-4, Powerteam-2)
+aux(implemented-4, have-3)
+det(system-8, an-5)
+amod(system-8, online-6)
+compound(system-8, checkout-7)
+dobj(implemented-4, system-8)
+case(trades-12, for-9)
+nmod:poss(trades-12, their-10)
+compound(trades-12, power-11)
+nmod:for(system-8, trades-12)
+punct(implemented-4, .-13)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (15 tokens):
+Please, use this system for nightly checkouts of both hourly
+and next-day transactions.
+
+Tokens:
+[Text=Please CharacterOffsetBegin=89 CharacterOffsetEnd=95 PartOfSpeech=UH Lemma=please NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=95 CharacterOffsetEnd=96 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=use CharacterOffsetBegin=97 CharacterOffsetEnd=100 PartOfSpeech=VB Lemma=use NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=101 CharacterOffsetEnd=105 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=system CharacterOffsetBegin=106 CharacterOffsetEnd=112 PartOfSpeech=NN Lemma=system NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=113 CharacterOffsetEnd=116 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=nightly CharacterOffsetBegin=117 CharacterOffsetEnd=124 PartOfSpeech=JJ Lemma=nightly NamedEntityTag=O]
+[Text=checkouts CharacterOffsetBegin=125 CharacterOffsetEnd=134 PartOfSpeech=NNS Lemma=checkout NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=135 CharacterOffsetEnd=137 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=both CharacterOffsetBegin=138 CharacterOffsetEnd=142 PartOfSpeech=DT Lemma=both NamedEntityTag=O]
+[Text=hourly CharacterOffsetBegin=143 CharacterOffsetEnd=149 PartOfSpeech=JJ Lemma=hourly NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=150 CharacterOffsetEnd=153 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=next-day CharacterOffsetBegin=154 CharacterOffsetEnd=162 PartOfSpeech=JJ Lemma=next-day NamedEntityTag=O]
+[Text=transactions CharacterOffsetBegin=163 CharacterOffsetEnd=175 PartOfSpeech=NNS Lemma=transaction NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=175 CharacterOffsetEnd=176 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Please))
+    (, ,)
+    (VP (VB use)
+      (NP (DT this) (NN system))
+      (PP (IN for)
+        (NP
+          (NP (JJ nightly) (NNS checkouts))
+          (PP (IN of)
+            (NP (DT both) (JJ hourly)
+              (CC and)
+              (JJ next-day) (NNS transactions))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, use-3)
+discourse(use-3, Please-1)
+punct(use-3, ,-2)
+det(system-5, this-4)
+dobj(use-3, system-5)
+case(checkouts-8, for-6)
+amod(checkouts-8, nightly-7)
+nmod:for(use-3, checkouts-8)
+case(transactions-14, of-9)
+det(transactions-14, both-10)
+amod(transactions-14, hourly-11)
+cc(hourly-11, and-12)
+conj:and(hourly-11, next-day-13)
+amod(transactions-14, next-day-13)
+nmod:of(checkouts-8, transactions-14)
+punct(use-3, .-15)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (27 tokens):
+Procedure:
+
+Navigate to: https://www.pwrteam.com/tieout
+
+(Case sensitive) Login:   UN: Enron@enron
+PW: realtime
+
+Use the links blue panel on the left.
+
+Tokens:
+[Text=Procedure CharacterOffsetBegin=178 CharacterOffsetEnd=187 PartOfSpeech=NN Lemma=procedure NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=187 CharacterOffsetEnd=188 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Navigate CharacterOffsetBegin=190 CharacterOffsetEnd=198 PartOfSpeech=VB Lemma=navigate NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=199 CharacterOffsetEnd=201 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=201 CharacterOffsetEnd=202 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=https://www.pwrteam.com/tieout CharacterOffsetBegin=203 CharacterOffsetEnd=233 PartOfSpeech=NN Lemma=https://www.pwrteam.com/tieout NamedEntityTag=URL]
+[Text=-LRB- CharacterOffsetBegin=235 CharacterOffsetEnd=236 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Case CharacterOffsetBegin=236 CharacterOffsetEnd=240 PartOfSpeech=NN Lemma=case NamedEntityTag=O]
+[Text=sensitive CharacterOffsetBegin=241 CharacterOffsetEnd=250 PartOfSpeech=JJ Lemma=sensitive NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=250 CharacterOffsetEnd=251 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=Login CharacterOffsetBegin=252 CharacterOffsetEnd=257 PartOfSpeech=NN Lemma=login NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=257 CharacterOffsetEnd=258 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=UN CharacterOffsetBegin=261 CharacterOffsetEnd=263 PartOfSpeech=NNP Lemma=UN NamedEntityTag=ORGANIZATION]
+[Text=: CharacterOffsetBegin=263 CharacterOffsetEnd=264 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Enron@enron CharacterOffsetBegin=265 CharacterOffsetEnd=276 PartOfSpeech=NN Lemma=enron@enron NamedEntityTag=URL]
+[Text=PW CharacterOffsetBegin=277 CharacterOffsetEnd=279 PartOfSpeech=NN Lemma=pw NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=279 CharacterOffsetEnd=280 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=realtime CharacterOffsetBegin=281 CharacterOffsetEnd=289 PartOfSpeech=NN Lemma=realtime NamedEntityTag=O]
+[Text=Use CharacterOffsetBegin=291 CharacterOffsetEnd=294 PartOfSpeech=VB Lemma=use NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=295 CharacterOffsetEnd=298 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=links CharacterOffsetBegin=299 CharacterOffsetEnd=304 PartOfSpeech=NNS Lemma=link NamedEntityTag=O]
+[Text=blue CharacterOffsetBegin=305 CharacterOffsetEnd=309 PartOfSpeech=JJ Lemma=blue NamedEntityTag=O]
+[Text=panel CharacterOffsetBegin=310 CharacterOffsetEnd=315 PartOfSpeech=NN Lemma=panel NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=316 CharacterOffsetEnd=318 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=319 CharacterOffsetEnd=322 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=left CharacterOffsetBegin=323 CharacterOffsetEnd=327 PartOfSpeech=NN Lemma=left NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=327 CharacterOffsetEnd=328 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NN Procedure))
+    (: :)
+    (NP
+      (S
+        (VP (VB Navigate)
+          (PP (TO to))))
+      (: :)
+      (NP
+        (NP (NN https://www.pwrteam.com/tieout))
+        (PRN (-LRB- -LRB-)
+          (S
+            (NP (NN Case))
+            (ADJP (JJ sensitive)))
+          (-RRB- -RRB-))
+        (NP (NN Login))))
+    (: :)
+    (NP
+      (NP (NNP UN))
+      (: :)
+      (NP (NN Enron@enron) (NN PW)))
+    (: :)
+    (NP (NN realtime)
+      (S
+        (VP (VB Use)
+          (S
+            (NP (DT the) (NNS links))
+            (NP
+              (NP (JJ blue) (NN panel))
+              (PP (IN on)
+                (NP (DT the) (NN left))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Procedure-1)
+punct(Procedure-1, :-2)
+dep(https://www.pwrteam.com/tieout-6, Navigate-3)
+nmod(Navigate-3, to-4)
+punct(https://www.pwrteam.com/tieout-6, :-5)
+dep(Procedure-1, https://www.pwrteam.com/tieout-6)
+punct(sensitive-9, -LRB--7)
+dep(sensitive-9, Case-8)
+dep(https://www.pwrteam.com/tieout-6, sensitive-9)
+punct(sensitive-9, -RRB--10)
+dep(https://www.pwrteam.com/tieout-6, Login-11)
+punct(Procedure-1, :-12)
+dep(Procedure-1, UN-13)
+punct(UN-13, :-14)
+compound(PW-16, Enron@enron-15)
+dep(UN-13, PW-16)
+punct(Procedure-1, :-17)
+dep(Procedure-1, realtime-18)
+dep(realtime-18, Use-19)
+det(links-21, the-20)
+nsubj(panel-23, links-21)
+amod(panel-23, blue-22)
+xcomp(Use-19, panel-23)
+case(left-26, on-24)
+det(left-26, the-25)
+nmod:on(panel-23, left-26)
+punct(Procedure-1, .-27)
+
+Extracted the following NER entity mentions:
+https://www.pwrteam.com/tieout	URL
+UN	ORGANIZATION
+Enron@enron	URL
+
+Sentence #4 (25 tokens):
+Daily Details for Hourly
+Daily Schedules for Next-day preschedule checkout
+
+Peco contact is Mellissa Snyder (610) 765-6641
+
+
+If there any questions call or e-mail me.
+
+Tokens:
+[Text=Daily CharacterOffsetBegin=329 CharacterOffsetEnd=334 PartOfSpeech=NNP Lemma=Daily NamedEntityTag=O]
+[Text=Details CharacterOffsetBegin=335 CharacterOffsetEnd=342 PartOfSpeech=NNP Lemma=Details NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=343 CharacterOffsetEnd=346 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Hourly CharacterOffsetBegin=347 CharacterOffsetEnd=353 PartOfSpeech=NNP Lemma=Hourly NamedEntityTag=O]
+[Text=Daily CharacterOffsetBegin=354 CharacterOffsetEnd=359 PartOfSpeech=NNP Lemma=Daily NamedEntityTag=O]
+[Text=Schedules CharacterOffsetBegin=360 CharacterOffsetEnd=369 PartOfSpeech=NNPS Lemma=Schedules NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=370 CharacterOffsetEnd=373 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Next-day CharacterOffsetBegin=374 CharacterOffsetEnd=382 PartOfSpeech=JJ Lemma=next-day NamedEntityTag=O]
+[Text=preschedule CharacterOffsetBegin=383 CharacterOffsetEnd=394 PartOfSpeech=JJ Lemma=preschedule NamedEntityTag=O]
+[Text=checkout CharacterOffsetBegin=395 CharacterOffsetEnd=403 PartOfSpeech=NN Lemma=checkout NamedEntityTag=O]
+[Text=Peco CharacterOffsetBegin=405 CharacterOffsetEnd=409 PartOfSpeech=NNP Lemma=Peco NamedEntityTag=ORGANIZATION]
+[Text=contact CharacterOffsetBegin=410 CharacterOffsetEnd=417 PartOfSpeech=NN Lemma=contact NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=418 CharacterOffsetEnd=420 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=Mellissa CharacterOffsetBegin=421 CharacterOffsetEnd=429 PartOfSpeech=NNP Lemma=Mellissa NamedEntityTag=PERSON]
+[Text=Snyder CharacterOffsetBegin=430 CharacterOffsetEnd=436 PartOfSpeech=NNP Lemma=Snyder NamedEntityTag=PERSON]
+[Text=-LRB-610-RRB- 765-6641 CharacterOffsetBegin=437 CharacterOffsetEnd=451 PartOfSpeech=NN Lemma=-lrb-610-rrb- 765-6641 NamedEntityTag=O]
+[Text=If CharacterOffsetBegin=454 CharacterOffsetEnd=456 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=457 CharacterOffsetEnd=462 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=463 CharacterOffsetEnd=466 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=questions CharacterOffsetBegin=467 CharacterOffsetEnd=476 PartOfSpeech=NNS Lemma=question NamedEntityTag=O]
+[Text=call CharacterOffsetBegin=477 CharacterOffsetEnd=481 PartOfSpeech=VBP Lemma=call NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=482 CharacterOffsetEnd=484 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=e-mail CharacterOffsetBegin=485 CharacterOffsetEnd=491 PartOfSpeech=VB Lemma=e-mail NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=492 CharacterOffsetEnd=494 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=494 CharacterOffsetEnd=495 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Daily) (NNP Details))
+      (PP (IN for)
+        (NP
+          (NP (NNP Hourly) (NNP Daily) (NNPS Schedules))
+          (PP (IN for)
+            (NP
+              (NP (JJ Next-day) (JJ preschedule) (NN checkout))
+              (SBAR
+                (S
+                  (NP (NNP Peco) (NN contact))
+                  (VP (VBZ is)
+                    (NP
+                      (NP (NNP Mellissa) (NNP Snyder) (NN -LRB-610-RRB- 765-6641))
+                      (SBAR (IN If)
+                        (S
+                          (NP (EX there))
+                          (NP (DT any) (NNS questions)))))))))))))
+    (VP
+      (VP (VBP call))
+      (CC or)
+      (VP (VB e-mail)
+        (NP (PRP me))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, call-21)
+compound(Details-2, Daily-1)
+nsubj(call-21, Details-2)
+nsubj(e-mail-23, Details-2)
+case(Schedules-6, for-3)
+compound(Schedules-6, Hourly-4)
+compound(Schedules-6, Daily-5)
+nmod:for(Details-2, Schedules-6)
+case(checkout-10, for-7)
+amod(checkout-10, Next-day-8)
+amod(checkout-10, preschedule-9)
+nmod:for(Schedules-6, checkout-10)
+compound(contact-12, Peco-11)
+nsubj(-LRB-610-RRB- 765-6641-16, contact-12)
+cop(-LRB-610-RRB- 765-6641-16, is-13)
+compound(-LRB-610-RRB- 765-6641-16, Mellissa-14)
+compound(-LRB-610-RRB- 765-6641-16, Snyder-15)
+acl:relcl(checkout-10, -LRB-610-RRB- 765-6641-16)
+mark(questions-20, If-17)
+expl(questions-20, there-18)
+det(questions-20, any-19)
+dep(-LRB-610-RRB- 765-6641-16, questions-20)
+cc(call-21, or-22)
+conj:or(call-21, e-mail-23)
+dobj(e-mail-23, me-24)
+punct(call-21, .-25)
+
+Extracted the following NER entity mentions:
+Peco	ORGANIZATION
+Mellissa Snyder	PERSON
+
+Coreference set:
+	(2,5,[4,6]) -> (1,8,[5,13]), that is: "this system" -> "an online checkout system for their power trades"
+
+Coreference set:
+	(4,12,[11,13]) -> (4,16,[14,21]), that is: "Peco contact" -> "Mellissa Snyder -LRB-610-RRB- 765-6641 If there any questions"

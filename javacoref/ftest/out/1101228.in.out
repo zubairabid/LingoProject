@@ -1,0 +1,379 @@
+Document: ID=1101228.in (5 sentences, 94 tokens)
+
+Sentence #1 (4 tokens):
+See note below.
+
+Tokens:
+[Text=See CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=note CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=NN Lemma=note NamedEntityTag=O]
+[Text=below CharacterOffsetBegin=9 CharacterOffsetEnd=14 PartOfSpeech=IN Lemma=below NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB See)
+      (NP (NN note))
+      (PP (IN below)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, See-1)
+dobj(See-1, note-2)
+nmod(See-1, below-3)
+punct(See-1, .-4)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (5 tokens):
+This is a mess.
+
+Tokens:
+[Text=This CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=mess CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=NN Lemma=mess NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (NP (DT a) (NN mess)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, mess-4)
+nsubj(mess-4, This-1)
+cop(mess-4, is-2)
+det(mess-4, a-3)
+punct(mess-4, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (16 tokens):
+I'm trying to get what the prices should be
+for the error referenced below.
+
+Tokens:
+[Text=I CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=trying CharacterOffsetBegin=37 CharacterOffsetEnd=43 PartOfSpeech=VBG Lemma=try NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=prices CharacterOffsetBegin=60 CharacterOffsetEnd=66 PartOfSpeech=NNS Lemma=price NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=67 CharacterOffsetEnd=73 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=74 CharacterOffsetEnd=76 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=error CharacterOffsetBegin=85 CharacterOffsetEnd=90 PartOfSpeech=NN Lemma=error NamedEntityTag=O]
+[Text=referenced CharacterOffsetBegin=91 CharacterOffsetEnd=101 PartOfSpeech=VBN Lemma=reference NamedEntityTag=O]
+[Text=below CharacterOffsetBegin=102 CharacterOffsetEnd=107 PartOfSpeech=IN Lemma=below NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=107 CharacterOffsetEnd=108 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (VP (VBG trying)
+        (S
+          (VP (TO to)
+            (VP (VB get)
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (NP (DT the) (NNS prices))
+                  (VP (MD should)
+                    (VP (VB be)
+                      (PP (IN for)
+                        (NP
+                          (NP (DT the) (NN error))
+                          (VP (VBN referenced)
+                            (PP (IN below))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, trying-3)
+nsubj(trying-3, I-1)
+nsubj:xsubj(get-5, I-1)
+aux(trying-3, 'm-2)
+mark(get-5, to-4)
+xcomp(trying-3, get-5)
+dobj(error-13, what-6)
+det(prices-8, the-7)
+nsubj(error-13, prices-8)
+aux(error-13, should-9)
+cop(error-13, be-10)
+case(error-13, for-11)
+det(error-13, the-12)
+ccomp(get-5, error-13)
+acl(error-13, referenced-14)
+nmod(referenced-14, below-15)
+punct(trying-3, .-16)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (25 tokens):
+That way you can take the correct price,
+figure out what your A/S obligation and payment should be, and pay that
+accordingly.
+
+Tokens:
+[Text=That CharacterOffsetBegin=110 CharacterOffsetEnd=114 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=way CharacterOffsetBegin=115 CharacterOffsetEnd=118 PartOfSpeech=NN Lemma=way NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=119 CharacterOffsetEnd=122 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=123 CharacterOffsetEnd=126 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=take CharacterOffsetBegin=127 CharacterOffsetEnd=131 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=132 CharacterOffsetEnd=135 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=correct CharacterOffsetBegin=136 CharacterOffsetEnd=143 PartOfSpeech=JJ Lemma=correct NamedEntityTag=O]
+[Text=price CharacterOffsetBegin=144 CharacterOffsetEnd=149 PartOfSpeech=NN Lemma=price NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=149 CharacterOffsetEnd=150 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=figure CharacterOffsetBegin=151 CharacterOffsetEnd=157 PartOfSpeech=NN Lemma=figure NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=158 CharacterOffsetEnd=161 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=162 CharacterOffsetEnd=166 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=167 CharacterOffsetEnd=171 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=A/S CharacterOffsetBegin=172 CharacterOffsetEnd=175 PartOfSpeech=NNP Lemma=A/S NamedEntityTag=O]
+[Text=obligation CharacterOffsetBegin=176 CharacterOffsetEnd=186 PartOfSpeech=NN Lemma=obligation NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=187 CharacterOffsetEnd=190 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=payment CharacterOffsetBegin=191 CharacterOffsetEnd=198 PartOfSpeech=NN Lemma=payment NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=199 CharacterOffsetEnd=205 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=206 CharacterOffsetEnd=208 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=208 CharacterOffsetEnd=209 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=210 CharacterOffsetEnd=213 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=pay CharacterOffsetBegin=214 CharacterOffsetEnd=217 PartOfSpeech=VB Lemma=pay NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=218 CharacterOffsetEnd=222 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=accordingly CharacterOffsetBegin=223 CharacterOffsetEnd=234 PartOfSpeech=RB Lemma=accordingly NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=234 CharacterOffsetEnd=235 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT That) (NN way))
+    (NP (PRP you))
+    (VP (MD can)
+      (VP (VB take)
+        (NP
+          (NP (DT the) (JJ correct) (NN price))
+          (, ,)
+          (NP
+            (NP (NN figure) (RP out))
+            (SBAR
+              (WHNP (WP what))
+              (S
+                (NP
+                  (NP (PRP$ your) (NNP A/S) (NN obligation))
+                  (CC and)
+                  (NP (NN payment)))
+                (VP (MD should)
+                  (VP
+                    (VP (VB be))
+                    (, ,)
+                    (CC and)
+                    (VP (VB pay)
+                      (NP (DT that))
+                      (ADVP (RB accordingly)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, take-5)
+det(way-2, That-1)
+nsubj(take-5, way-2)
+nsubj(take-5, you-3)
+aux(take-5, can-4)
+det(price-8, the-6)
+amod(price-8, correct-7)
+dobj(take-5, price-8)
+punct(price-8, ,-9)
+appos(price-8, figure-10)
+dobj(be-19, figure-10)
+dep(figure-10, out-11)
+ref(figure-10, what-12)
+nmod:poss(obligation-15, your-13)
+compound(obligation-15, A/S-14)
+nsubj(be-19, obligation-15)
+nsubj(pay-22, obligation-15)
+cc(obligation-15, and-16)
+conj:and(obligation-15, payment-17)
+nsubj(be-19, payment-17)
+aux(be-19, should-18)
+acl:relcl(figure-10, be-19)
+punct(be-19, ,-20)
+cc(be-19, and-21)
+acl:relcl(figure-10, pay-22)
+conj:and(be-19, pay-22)
+dobj(pay-22, that-23)
+advmod(pay-22, accordingly-24)
+punct(take-5, .-25)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (44 tokens):
+This suggestion is not recommended by the ISO as the ISO
+expects the market to pay their invoices in whole, however, when we only pay
+two cents on the dollar, this is an alternative that you may want to
+consider.
+
+Tokens:
+[Text=This CharacterOffsetBegin=237 CharacterOffsetEnd=241 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=suggestion CharacterOffsetBegin=242 CharacterOffsetEnd=252 PartOfSpeech=NN Lemma=suggestion NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=253 CharacterOffsetEnd=255 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=256 CharacterOffsetEnd=259 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=recommended CharacterOffsetBegin=260 CharacterOffsetEnd=271 PartOfSpeech=VBN Lemma=recommend NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=272 CharacterOffsetEnd=274 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=275 CharacterOffsetEnd=278 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=ISO CharacterOffsetBegin=279 CharacterOffsetEnd=282 PartOfSpeech=NN Lemma=iso NamedEntityTag=ORGANIZATION]
+[Text=as CharacterOffsetBegin=283 CharacterOffsetEnd=285 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=286 CharacterOffsetEnd=289 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=ISO CharacterOffsetBegin=290 CharacterOffsetEnd=293 PartOfSpeech=NN Lemma=iso NamedEntityTag=ORGANIZATION]
+[Text=expects CharacterOffsetBegin=294 CharacterOffsetEnd=301 PartOfSpeech=VBZ Lemma=expect NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=302 CharacterOffsetEnd=305 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=market CharacterOffsetBegin=306 CharacterOffsetEnd=312 PartOfSpeech=NN Lemma=market NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=313 CharacterOffsetEnd=315 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=pay CharacterOffsetBegin=316 CharacterOffsetEnd=319 PartOfSpeech=VB Lemma=pay NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=320 CharacterOffsetEnd=325 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=invoices CharacterOffsetBegin=326 CharacterOffsetEnd=334 PartOfSpeech=NNS Lemma=invoice NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=335 CharacterOffsetEnd=337 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=whole CharacterOffsetBegin=338 CharacterOffsetEnd=343 PartOfSpeech=JJ Lemma=whole NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=343 CharacterOffsetEnd=344 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=however CharacterOffsetBegin=345 CharacterOffsetEnd=352 PartOfSpeech=RB Lemma=however NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=352 CharacterOffsetEnd=353 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=354 CharacterOffsetEnd=358 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=359 CharacterOffsetEnd=361 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=362 CharacterOffsetEnd=366 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=pay CharacterOffsetBegin=367 CharacterOffsetEnd=370 PartOfSpeech=VBP Lemma=pay NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=371 CharacterOffsetEnd=374 PartOfSpeech=CD Lemma=two NamedEntityTag=MONEY NormalizedNamedEntityTag=$0.02]
+[Text=cents CharacterOffsetBegin=375 CharacterOffsetEnd=380 PartOfSpeech=NNS Lemma=cent NamedEntityTag=MONEY NormalizedNamedEntityTag=$0.02]
+[Text=on CharacterOffsetBegin=381 CharacterOffsetEnd=383 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=384 CharacterOffsetEnd=387 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=dollar CharacterOffsetBegin=388 CharacterOffsetEnd=394 PartOfSpeech=NN Lemma=dollar NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=394 CharacterOffsetEnd=395 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=396 CharacterOffsetEnd=400 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=401 CharacterOffsetEnd=403 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=404 CharacterOffsetEnd=406 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=alternative CharacterOffsetBegin=407 CharacterOffsetEnd=418 PartOfSpeech=NN Lemma=alternative NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=419 CharacterOffsetEnd=423 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=424 CharacterOffsetEnd=427 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=may CharacterOffsetBegin=428 CharacterOffsetEnd=431 PartOfSpeech=MD Lemma=may NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=432 CharacterOffsetEnd=436 PartOfSpeech=VB Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=437 CharacterOffsetEnd=439 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=consider CharacterOffsetBegin=440 CharacterOffsetEnd=448 PartOfSpeech=VB Lemma=consider NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=448 CharacterOffsetEnd=449 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (DT This) (NN suggestion))
+      (VP (VBZ is) (RB not)
+        (VP (VBN recommended)
+          (PP (IN by)
+            (NP (DT the) (NN ISO)))
+          (SBAR (IN as)
+            (S
+              (NP (DT the) (NN ISO))
+              (VP (VBZ expects)
+                (NP (DT the) (NN market)
+                  (S
+                    (VP (TO to)
+                      (VP (VB pay)
+                        (NP (PRP$ their) (NNS invoices))
+                        (PP (IN in)
+                          (NP (JJ whole)))
+                        (, ,)
+                        (ADVP (RB however))
+                        (, ,)
+                        (SBAR
+                          (WHADVP (WRB when))
+                          (S
+                            (NP (PRP we))
+                            (ADVP (RB only))
+                            (VP (VBP pay)
+                              (NP
+                                (NP (CD two) (NNS cents))
+                                (PP (IN on)
+                                  (NP (DT the) (NN dollar)))))))))))))))))
+    (, ,)
+    (NP (DT this))
+    (VP (VBZ is)
+      (NP (DT an) (NN alternative))
+      (SBAR (IN that)
+        (S
+          (NP (PRP you))
+          (VP (MD may)
+            (VP (VB want)
+              (S
+                (VP (TO to)
+                  (VP (VB consider)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, alternative-37)
+det(suggestion-2, This-1)
+nsubjpass(recommended-5, suggestion-2)
+auxpass(recommended-5, is-3)
+neg(recommended-5, not-4)
+ccomp(alternative-37, recommended-5)
+case(ISO-8, by-6)
+det(ISO-8, the-7)
+nmod:agent(recommended-5, ISO-8)
+mark(expects-12, as-9)
+det(ISO-11, the-10)
+nsubj(expects-12, ISO-11)
+advcl:as(recommended-5, expects-12)
+det(market-14, the-13)
+dobj(expects-12, market-14)
+mark(pay-16, to-15)
+acl:to(market-14, pay-16)
+nmod:poss(invoices-18, their-17)
+dobj(pay-16, invoices-18)
+case(whole-20, in-19)
+nmod:in(pay-16, whole-20)
+punct(pay-16, ,-21)
+advmod(pay-16, however-22)
+punct(pay-16, ,-23)
+advmod(pay-27, when-24)
+nsubj(pay-27, we-25)
+advmod(pay-27, only-26)
+advcl(pay-16, pay-27)
+nummod(cents-29, two-28)
+dobj(pay-27, cents-29)
+case(dollar-32, on-30)
+det(dollar-32, the-31)
+nmod:on(cents-29, dollar-32)
+punct(alternative-37, ,-33)
+nsubj(alternative-37, this-34)
+cop(alternative-37, is-35)
+det(alternative-37, an-36)
+mark(want-41, that-38)
+nsubj(want-41, you-39)
+nsubj:xsubj(consider-43, you-39)
+aux(want-41, may-40)
+ccomp(alternative-37, want-41)
+mark(consider-43, to-42)
+xcomp(want-41, consider-43)
+punct(alternative-37, .-44)
+
+Extracted the following NER entity mentions:
+ISO	ORGANIZATION
+ISO	ORGANIZATION
+two cents	MONEY
+
+Coreference set:
+	(2,1,[1,2]) -> (2,4,[3,5]), that is: "This" -> "a mess"
+	(5,34,[34,35]) -> (2,4,[3,5]), that is: "this" -> "a mess"
+	(5,37,[36,38]) -> (2,4,[3,5]), that is: "an alternative" -> "a mess"
+
+Coreference set:
+	(4,23,[23,24]) -> (4,8,[6,9]), that is: "that" -> "the correct price"
+
+Coreference set:
+	(5,11,[10,12]) -> (5,8,[7,9]), that is: "the ISO" -> "the ISO"

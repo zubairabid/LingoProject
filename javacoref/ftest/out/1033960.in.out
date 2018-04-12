@@ -1,0 +1,530 @@
+Document: ID=1033960.in (6 sentences, 136 tokens)
+
+Sentence #1 (12 tokens):
+PG&E filed their Schedule F which displays its nonpriority unsecured claims.
+
+Tokens:
+[Text=PG&E CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=PG&E NamedEntityTag=ORGANIZATION]
+[Text=filed CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=VBD Lemma=file NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=11 CharacterOffsetEnd=16 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=Schedule CharacterOffsetBegin=17 CharacterOffsetEnd=25 PartOfSpeech=VB Lemma=schedule NamedEntityTag=O]
+[Text=F CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=f NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=28 CharacterOffsetEnd=33 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=displays CharacterOffsetBegin=34 CharacterOffsetEnd=42 PartOfSpeech=VBZ Lemma=display NamedEntityTag=O]
+[Text=its CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=PRP$ Lemma=its NamedEntityTag=O]
+[Text=nonpriority CharacterOffsetBegin=47 CharacterOffsetEnd=58 PartOfSpeech=NN Lemma=nonpriority NamedEntityTag=O]
+[Text=unsecured CharacterOffsetBegin=59 CharacterOffsetEnd=68 PartOfSpeech=JJ Lemma=unsecured NamedEntityTag=O]
+[Text=claims CharacterOffsetBegin=69 CharacterOffsetEnd=75 PartOfSpeech=NNS Lemma=claim NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP PG&E))
+    (VP (VBD filed)
+      (S
+        (NP (PRP$ their))
+        (VP (VB Schedule)
+          (NP
+            (NP (NN F))
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (VBZ displays)
+                  (NP (PRP$ its) (NN nonpriority) (JJ unsecured) (NNS claims)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, filed-2)
+nsubj(filed-2, PG&E-1)
+nsubj(Schedule-4, their-3)
+ccomp(filed-2, Schedule-4)
+dobj(Schedule-4, F-5)
+nsubj(displays-7, F-5)
+ref(F-5, which-6)
+acl:relcl(F-5, displays-7)
+nmod:poss(claims-11, its-8)
+compound(claims-11, nonpriority-9)
+amod(claims-11, unsecured-10)
+dobj(displays-7, claims-11)
+punct(filed-2, .-12)
+
+Extracted the following NER entity mentions:
+PG&E	ORGANIZATION
+
+Sentence #2 (11 tokens):
+Many of the claims were listed as unknown in amount.
+
+Tokens:
+[Text=Many CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=82 CharacterOffsetEnd=84 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=claims CharacterOffsetBegin=89 CharacterOffsetEnd=95 PartOfSpeech=NNS Lemma=claim NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=96 CharacterOffsetEnd=100 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=listed CharacterOffsetBegin=101 CharacterOffsetEnd=107 PartOfSpeech=VBN Lemma=list NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=108 CharacterOffsetEnd=110 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=unknown CharacterOffsetBegin=111 CharacterOffsetEnd=118 PartOfSpeech=JJ Lemma=unknown NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=119 CharacterOffsetEnd=121 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=amount CharacterOffsetBegin=122 CharacterOffsetEnd=128 PartOfSpeech=NN Lemma=amount NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=128 CharacterOffsetEnd=129 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (JJ Many))
+      (PP (IN of)
+        (NP (DT the) (NNS claims))))
+    (VP (VBD were)
+      (VP (VBN listed)
+        (PP (IN as)
+          (ADJP (JJ unknown)))
+        (PP (IN in)
+          (NP (NN amount)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, listed-6)
+det:qmod(claims-4, Many-1)
+mwe(Many-1, of-2)
+det(claims-4, the-3)
+nsubjpass(listed-6, claims-4)
+auxpass(listed-6, were-5)
+case(unknown-8, as-7)
+advcl:as(listed-6, unknown-8)
+case(amount-10, in-9)
+nmod:in(listed-6, amount-10)
+punct(listed-6, .-11)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (9 tokens):
+The PX credit amounts
+were listed as disputed.
+
+Tokens:
+[Text=The CharacterOffsetBegin=131 CharacterOffsetEnd=134 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=PX CharacterOffsetBegin=135 CharacterOffsetEnd=137 PartOfSpeech=NNP Lemma=PX NamedEntityTag=O]
+[Text=credit CharacterOffsetBegin=138 CharacterOffsetEnd=144 PartOfSpeech=NN Lemma=credit NamedEntityTag=O]
+[Text=amounts CharacterOffsetBegin=145 CharacterOffsetEnd=152 PartOfSpeech=NNS Lemma=amount NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=153 CharacterOffsetEnd=157 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=listed CharacterOffsetBegin=158 CharacterOffsetEnd=164 PartOfSpeech=VBN Lemma=list NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=165 CharacterOffsetEnd=167 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=disputed CharacterOffsetBegin=168 CharacterOffsetEnd=176 PartOfSpeech=VBN Lemma=dispute NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=176 CharacterOffsetEnd=177 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NNP PX) (NN credit) (NNS amounts))
+    (VP (VBD were)
+      (VP (VBN listed)
+        (PP (IN as)
+          (ADJP (VBN disputed)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, listed-6)
+det(amounts-4, The-1)
+compound(amounts-4, PX-2)
+compound(amounts-4, credit-3)
+nsubjpass(listed-6, amounts-4)
+auxpass(listed-6, were-5)
+case(disputed-8, as-7)
+advcl:as(listed-6, disputed-8)
+punct(listed-6, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (49 tokens):
+Two PX credit amounts were specified in the
+Schedule F:
+Enron Energy Marketing      $201,964,905.64
+Enron Energy Services       $ 19,737,979.97
+Total disclosed PX credit   $221,702,885.61
+Note that in the claims that were listed as unknown in amount, none were
+described as PX Credit in nature.
+
+Tokens:
+[Text=Two CharacterOffsetBegin=180 CharacterOffsetEnd=183 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=PX CharacterOffsetBegin=184 CharacterOffsetEnd=186 PartOfSpeech=NN Lemma=px NamedEntityTag=O]
+[Text=credit CharacterOffsetBegin=187 CharacterOffsetEnd=193 PartOfSpeech=NN Lemma=credit NamedEntityTag=O]
+[Text=amounts CharacterOffsetBegin=194 CharacterOffsetEnd=201 PartOfSpeech=NNS Lemma=amount NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=202 CharacterOffsetEnd=206 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=specified CharacterOffsetBegin=207 CharacterOffsetEnd=216 PartOfSpeech=VBN Lemma=specify NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=217 CharacterOffsetEnd=219 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=220 CharacterOffsetEnd=223 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Schedule CharacterOffsetBegin=224 CharacterOffsetEnd=232 PartOfSpeech=VB Lemma=schedule NamedEntityTag=O]
+[Text=F CharacterOffsetBegin=233 CharacterOffsetEnd=234 PartOfSpeech=NN Lemma=f NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=234 CharacterOffsetEnd=235 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=236 CharacterOffsetEnd=241 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=Energy CharacterOffsetBegin=242 CharacterOffsetEnd=248 PartOfSpeech=NNP Lemma=Energy NamedEntityTag=ORGANIZATION]
+[Text=Marketing CharacterOffsetBegin=249 CharacterOffsetEnd=258 PartOfSpeech=NNP Lemma=Marketing NamedEntityTag=ORGANIZATION]
+[Text=$ CharacterOffsetBegin=264 CharacterOffsetEnd=265 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$2.0196490564E8]
+[Text=201,964,905.64 CharacterOffsetBegin=265 CharacterOffsetEnd=279 PartOfSpeech=CD Lemma=201,964,905.64 NamedEntityTag=MONEY NormalizedNamedEntityTag=$2.0196490564E8]
+[Text=Enron CharacterOffsetBegin=280 CharacterOffsetEnd=285 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=Energy CharacterOffsetBegin=286 CharacterOffsetEnd=292 PartOfSpeech=NNP Lemma=Energy NamedEntityTag=ORGANIZATION]
+[Text=Services CharacterOffsetBegin=293 CharacterOffsetEnd=301 PartOfSpeech=NNPS Lemma=Services NamedEntityTag=ORGANIZATION]
+[Text=$ CharacterOffsetBegin=308 CharacterOffsetEnd=309 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$1.973797997E7]
+[Text=19,737,979.97 CharacterOffsetBegin=310 CharacterOffsetEnd=323 PartOfSpeech=CD Lemma=19,737,979.97 NamedEntityTag=MONEY NormalizedNamedEntityTag=$1.973797997E7]
+[Text=Total CharacterOffsetBegin=324 CharacterOffsetEnd=329 PartOfSpeech=JJ Lemma=total NamedEntityTag=O]
+[Text=disclosed CharacterOffsetBegin=330 CharacterOffsetEnd=339 PartOfSpeech=VBN Lemma=disclose NamedEntityTag=O]
+[Text=PX CharacterOffsetBegin=340 CharacterOffsetEnd=342 PartOfSpeech=NN Lemma=px NamedEntityTag=ORGANIZATION]
+[Text=credit CharacterOffsetBegin=343 CharacterOffsetEnd=349 PartOfSpeech=NN Lemma=credit NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=352 CharacterOffsetEnd=353 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$2.2170288561E8]
+[Text=221,702,885.61 CharacterOffsetBegin=353 CharacterOffsetEnd=367 PartOfSpeech=CD Lemma=221,702,885.61 NamedEntityTag=MONEY NormalizedNamedEntityTag=$2.2170288561E8]
+[Text=Note CharacterOffsetBegin=368 CharacterOffsetEnd=372 PartOfSpeech=NN Lemma=note NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=373 CharacterOffsetEnd=377 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=378 CharacterOffsetEnd=380 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=381 CharacterOffsetEnd=384 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=claims CharacterOffsetBegin=385 CharacterOffsetEnd=391 PartOfSpeech=NNS Lemma=claim NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=392 CharacterOffsetEnd=396 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=397 CharacterOffsetEnd=401 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=listed CharacterOffsetBegin=402 CharacterOffsetEnd=408 PartOfSpeech=VBN Lemma=list NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=409 CharacterOffsetEnd=411 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=unknown CharacterOffsetBegin=412 CharacterOffsetEnd=419 PartOfSpeech=JJ Lemma=unknown NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=420 CharacterOffsetEnd=422 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=amount CharacterOffsetBegin=423 CharacterOffsetEnd=429 PartOfSpeech=NN Lemma=amount NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=429 CharacterOffsetEnd=430 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=none CharacterOffsetBegin=431 CharacterOffsetEnd=435 PartOfSpeech=NN Lemma=none NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=436 CharacterOffsetEnd=440 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=described CharacterOffsetBegin=441 CharacterOffsetEnd=450 PartOfSpeech=VBN Lemma=describe NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=451 CharacterOffsetEnd=453 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=PX CharacterOffsetBegin=454 CharacterOffsetEnd=456 PartOfSpeech=NNP Lemma=PX NamedEntityTag=O]
+[Text=Credit CharacterOffsetBegin=457 CharacterOffsetEnd=463 PartOfSpeech=NNP Lemma=Credit NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=464 CharacterOffsetEnd=466 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=nature CharacterOffsetBegin=467 CharacterOffsetEnd=473 PartOfSpeech=NN Lemma=nature NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=473 CharacterOffsetEnd=474 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (CD Two) (NN PX) (NN credit) (NNS amounts))
+      (VP (VBD were)
+        (VP (VBN specified)
+          (PP (IN in)
+            (NP (DT the)
+              (S
+                (VP (VB Schedule)))
+              (NN F))))))
+    (: :)
+    (X
+      (X
+        (NP
+          (NP (NNP Enron) (NNP Energy) (NNP Marketing))
+          (NP ($ $) (CD 201,964,905.64)))
+        (NP (NNP Enron))
+        (NP
+          (NP (NNP Energy) (NNPS Services))
+          (NP ($ $) (CD 19,737,979.97))))
+      (NP
+        (NP (JJ Total))
+        (VP (VBN disclosed)
+          (S
+            (NP
+              (NP (NN PX) (NN credit))
+              (NP ($ $) (CD 221,702,885.61)))
+            (VP (NN Note)
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (PP (IN in)
+                    (NP
+                      (NP (DT the) (NNS claims))
+                      (SBAR
+                        (WHNP (WDT that))
+                        (S
+                          (VP (VBD were)
+                            (VP (VBN listed)
+                              (PP (IN as)
+                                (ADJP (JJ unknown)))
+                              (PP (IN in)
+                                (NP (NN amount)))))))))
+                  (, ,)
+                  (NP (NN none))
+                  (VP (VBD were)
+                    (VP (VBN described)
+                      (PP (IN as)
+                        (NP
+                          (NP (NNP PX) (NNP Credit))
+                          (PP (IN in)
+                            (NP (NN nature))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, specified-6)
+nummod(amounts-4, Two-1)
+compound(amounts-4, PX-2)
+compound(amounts-4, credit-3)
+nsubjpass(specified-6, amounts-4)
+auxpass(specified-6, were-5)
+case(F-10, in-7)
+det(F-10, the-8)
+dep(F-10, Schedule-9)
+nmod:in(specified-6, F-10)
+punct(specified-6, :-11)
+compound(Marketing-14, Enron-12)
+compound(Marketing-14, Energy-13)
+dep(Services-19, Marketing-14)
+dep(201,964,905.64-16, $-15)
+dep(Marketing-14, 201,964,905.64-16)
+dep(Services-19, Enron-17)
+compound(Services-19, Energy-18)
+dep(Total-22, Services-19)
+dep(19,737,979.97-21, $-20)
+dep(Services-19, 19,737,979.97-21)
+dep(specified-6, Total-22)
+acl(Total-22, disclosed-23)
+compound(credit-25, PX-24)
+nsubj(Note-28, credit-25)
+dep(221,702,885.61-27, $-26)
+dep(credit-25, 221,702,885.61-27)
+ccomp(disclosed-23, Note-28)
+dobj(described-43, that-29)
+case(claims-32, in-30)
+det(claims-32, the-31)
+nsubjpass(listed-35, claims-32)
+nmod:in(described-43, claims-32)
+ref(claims-32, that-33)
+auxpass(listed-35, were-34)
+acl:relcl(claims-32, listed-35)
+case(unknown-37, as-36)
+advcl:as(listed-35, unknown-37)
+case(amount-39, in-38)
+nmod:in(listed-35, amount-39)
+punct(described-43, ,-40)
+nsubjpass(described-43, none-41)
+auxpass(described-43, were-42)
+ccomp(Note-28, described-43)
+case(Credit-46, as-44)
+compound(Credit-46, PX-45)
+nmod:as(described-43, Credit-46)
+case(nature-48, in-47)
+nmod:in(Credit-46, nature-48)
+punct(specified-6, .-49)
+
+Extracted the following NER entity mentions:
+Two	NUMBER
+Enron Energy Marketing	ORGANIZATION
+$201,964,905.64	MONEY
+Enron Energy Services	ORGANIZATION
+$ 19,737,979.97	MONEY
+PX	ORGANIZATION
+$221,702,885.61	MONEY
+
+Sentence #5 (53 tokens):
+Two points to be made: 1) this information is now public (but on page 5,066
+of 17,096 on a CD), along with $53,985,167 in other Enron related claims, and
+2) our calculation of the PX credit was $392,416,534 at the beginning of May.
+
+Tokens:
+[Text=Two CharacterOffsetBegin=475 CharacterOffsetEnd=478 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=points CharacterOffsetBegin=479 CharacterOffsetEnd=485 PartOfSpeech=NNS Lemma=point NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=486 CharacterOffsetEnd=488 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=489 CharacterOffsetEnd=491 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=made CharacterOffsetBegin=492 CharacterOffsetEnd=496 PartOfSpeech=VBN Lemma=make NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=496 CharacterOffsetEnd=497 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=1 CharacterOffsetBegin=498 CharacterOffsetEnd=499 PartOfSpeech=LS Lemma=1 NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=499 CharacterOffsetEnd=500 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=501 CharacterOffsetEnd=505 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=information CharacterOffsetBegin=506 CharacterOffsetEnd=517 PartOfSpeech=NN Lemma=information NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=518 CharacterOffsetEnd=520 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=521 CharacterOffsetEnd=524 PartOfSpeech=RB Lemma=now NamedEntityTag=O]
+[Text=public CharacterOffsetBegin=525 CharacterOffsetEnd=531 PartOfSpeech=JJ Lemma=public NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=532 CharacterOffsetEnd=533 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=533 CharacterOffsetEnd=536 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=537 CharacterOffsetEnd=539 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=page CharacterOffsetBegin=540 CharacterOffsetEnd=544 PartOfSpeech=NN Lemma=page NamedEntityTag=O]
+[Text=5,066 CharacterOffsetBegin=545 CharacterOffsetEnd=550 PartOfSpeech=CD Lemma=5,066 NamedEntityTag=NUMBER NormalizedNamedEntityTag=5066.0]
+[Text=of CharacterOffsetBegin=551 CharacterOffsetEnd=553 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=17,096 CharacterOffsetBegin=554 CharacterOffsetEnd=560 PartOfSpeech=CD Lemma=17,096 NamedEntityTag=NUMBER NormalizedNamedEntityTag=17096.0]
+[Text=on CharacterOffsetBegin=561 CharacterOffsetEnd=563 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=564 CharacterOffsetEnd=565 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=CD CharacterOffsetBegin=566 CharacterOffsetEnd=568 PartOfSpeech=NN Lemma=cd NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=568 CharacterOffsetEnd=569 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=569 CharacterOffsetEnd=570 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=along CharacterOffsetBegin=571 CharacterOffsetEnd=576 PartOfSpeech=IN Lemma=along NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=577 CharacterOffsetEnd=581 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=582 CharacterOffsetEnd=583 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$5.3985167E7]
+[Text=53,985,167 CharacterOffsetBegin=583 CharacterOffsetEnd=593 PartOfSpeech=CD Lemma=53,985,167 NamedEntityTag=MONEY NormalizedNamedEntityTag=$5.3985167E7]
+[Text=in CharacterOffsetBegin=594 CharacterOffsetEnd=596 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=597 CharacterOffsetEnd=602 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=603 CharacterOffsetEnd=608 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=related CharacterOffsetBegin=609 CharacterOffsetEnd=616 PartOfSpeech=JJ Lemma=related NamedEntityTag=O]
+[Text=claims CharacterOffsetBegin=617 CharacterOffsetEnd=623 PartOfSpeech=NNS Lemma=claim NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=623 CharacterOffsetEnd=624 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=625 CharacterOffsetEnd=628 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=2 CharacterOffsetBegin=629 CharacterOffsetEnd=630 PartOfSpeech=LS Lemma=2 NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=630 CharacterOffsetEnd=631 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=632 CharacterOffsetEnd=635 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=calculation CharacterOffsetBegin=636 CharacterOffsetEnd=647 PartOfSpeech=NN Lemma=calculation NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=648 CharacterOffsetEnd=650 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=651 CharacterOffsetEnd=654 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=PX CharacterOffsetBegin=655 CharacterOffsetEnd=657 PartOfSpeech=NNP Lemma=PX NamedEntityTag=O]
+[Text=credit CharacterOffsetBegin=658 CharacterOffsetEnd=664 PartOfSpeech=NN Lemma=credit NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=665 CharacterOffsetEnd=668 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=669 CharacterOffsetEnd=670 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$3.92416534E8]
+[Text=392,416,534 CharacterOffsetBegin=670 CharacterOffsetEnd=681 PartOfSpeech=CD Lemma=392,416,534 NamedEntityTag=MONEY NormalizedNamedEntityTag=$3.92416534E8]
+[Text=at CharacterOffsetBegin=682 CharacterOffsetEnd=684 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=685 CharacterOffsetEnd=688 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=beginning CharacterOffsetBegin=689 CharacterOffsetEnd=698 PartOfSpeech=NN Lemma=beginning NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=699 CharacterOffsetEnd=701 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=May CharacterOffsetBegin=702 CharacterOffsetEnd=705 PartOfSpeech=NNP Lemma=May NamedEntityTag=DATE NormalizedNamedEntityTag=****05]
+[Text=. CharacterOffsetBegin=705 CharacterOffsetEnd=706 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (CD Two) (NNS points))
+      (VP (TO to)
+        (VP (VB be)
+          (VP (VBN made)))))
+    (: :)
+    (S
+      (LST (LS 1) (-RRB- -RRB-))
+      (NP (DT this) (NN information))
+      (VP (VBZ is)
+        (ADJP
+          (ADVP (RB now))
+          (JJ public)
+          (PRN (-LRB- -LRB-)
+            (FRAG (CC but)
+              (PP (IN on)
+                (NP
+                  (NP (NN page) (CD 5,066))
+                  (PP (IN of)
+                    (NP
+                      (NP (CD 17,096))
+                      (PP (IN on)
+                        (NP (DT a) (NN CD))))))))
+            (-RRB- -RRB-)))
+        (, ,)
+        (PP (IN along) (IN with)
+          (NP
+            (NP
+              (NP ($ $) (CD 53,985,167))
+              (PP (IN in)
+                (NP (JJ other) (NNP Enron) (JJ related) (NNS claims))))
+            (, ,)
+            (CC and)
+            (NP
+              (LST (LS 2) (-RRB- -RRB-))
+              (NP (PRP$ our) (NN calculation))
+              (PP (IN of)
+                (NP
+                  (NP (DT the) (NNP PX) (NN credit))
+                  (SBAR
+                    (S
+                      (VP (VBD was)
+                        (NP
+                          (NP ($ $) (CD 392,416,534))
+                          (PP (IN at)
+                            (NP
+                              (NP (DT the) (NN beginning))
+                              (PP (IN of)
+                                (NP (NNP May))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, made-5)
+nummod(points-2, Two-1)
+nsubjpass(made-5, points-2)
+mark(made-5, to-3)
+auxpass(made-5, be-4)
+punct(made-5, :-6)
+dep(public-13, 1-7)
+punct(1-7, -RRB--8)
+det(information-10, this-9)
+nsubj(public-13, information-10)
+cop(public-13, is-11)
+advmod(public-13, now-12)
+parataxis(made-5, public-13)
+punct(but-15, -LRB--14)
+dep(public-13, but-15)
+case(page-17, on-16)
+nmod:on(but-15, page-17)
+nummod(page-17, 5,066-18)
+case(17,096-20, of-19)
+nmod:of(page-17, 17,096-20)
+case(CD-23, on-21)
+det(CD-23, a-22)
+nmod:on(17,096-20, CD-23)
+punct(but-15, -RRB--24)
+punct(public-13, ,-25)
+case(53,985,167-29, along-26)
+mwe(along-26, with-27)
+dep(53,985,167-29, $-28)
+nmod:along_with(public-13, 53,985,167-29)
+case(claims-34, in-30)
+amod(claims-34, other-31)
+compound(claims-34, Enron-32)
+amod(claims-34, related-33)
+nmod:in(53,985,167-29, claims-34)
+punct(53,985,167-29, ,-35)
+cc(53,985,167-29, and-36)
+dep(calculation-40, 2-37)
+punct(2-37, -RRB--38)
+nmod:poss(calculation-40, our-39)
+nmod:along_with(public-13, calculation-40)
+conj:and(53,985,167-29, calculation-40)
+case(credit-44, of-41)
+det(credit-44, the-42)
+compound(credit-44, PX-43)
+nmod:of(calculation-40, credit-44)
+cop(392,416,534-47, was-45)
+dep(392,416,534-47, $-46)
+acl:relcl(credit-44, 392,416,534-47)
+case(beginning-50, at-48)
+det(beginning-50, the-49)
+nmod:at(392,416,534-47, beginning-50)
+case(May-52, of-51)
+nmod:of(beginning-50, May-52)
+punct(made-5, .-53)
+
+Extracted the following NER entity mentions:
+Two	NUMBER
+5,066	NUMBER
+17,096	NUMBER
+$53,985,167	MONEY
+Enron	ORGANIZATION
+$392,416,534	MONEY
+May	DATE
+
+Sentence #6 (2 tokens):
+Regards,
+
+Tokens:
+[Text=Regards CharacterOffsetBegin=707 CharacterOffsetEnd=714 PartOfSpeech=NNS Lemma=regards NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=714 CharacterOffsetEnd=715 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (PP (NNS Regards))
+    (, ,)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Regards-1)
+punct(Regards-1, ,-2)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(1,8,[8,9]) -> (1,1,[1,2]), that is: "its" -> "PG&E"
+
+Coreference set:
+	(4,32,[31,40]) -> (2,4,[3,5]), that is: "the claims that were listed as unknown in amount" -> "the claims"
+
+Coreference set:
+	(5,1,[1,2]) -> (4,1,[1,2]), that is: "Two" -> "Two"
+
+Coreference set:
+	(5,32,[32,33]) -> (4,14,[12,17]), that is: "Enron" -> "Enron Energy Marketing $ 201,964,905.64"

@@ -1,0 +1,1102 @@
+Document: ID=1111874.in (9 sentences, 300 tokens)
+
+Sentence #1 (26 tokens):
+Barbara and I had the opportunity to meet with FERC Commissioner Brownell, who was in Columbus today to speak at the Ohio Energy Summit.
+
+Tokens:
+[Text=Barbara CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Barbara NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=opportunity CharacterOffsetBegin=22 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=opportunity NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=meet CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=VB Lemma=meet NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=FERC CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=NNP Lemma=FERC NamedEntityTag=ORGANIZATION]
+[Text=Commissioner CharacterOffsetBegin=52 CharacterOffsetEnd=64 PartOfSpeech=NNP Lemma=Commissioner NamedEntityTag=O]
+[Text=Brownell CharacterOffsetBegin=65 CharacterOffsetEnd=73 PartOfSpeech=NNP Lemma=Brownell NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=83 CharacterOffsetEnd=85 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Columbus CharacterOffsetBegin=86 CharacterOffsetEnd=94 PartOfSpeech=NNP Lemma=Columbus NamedEntityTag=CITY]
+[Text=today CharacterOffsetBegin=95 CharacterOffsetEnd=100 PartOfSpeech=NN Lemma=today NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=101 CharacterOffsetEnd=103 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=speak CharacterOffsetBegin=104 CharacterOffsetEnd=109 PartOfSpeech=VB Lemma=speak NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=110 CharacterOffsetEnd=112 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=113 CharacterOffsetEnd=116 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Ohio CharacterOffsetBegin=117 CharacterOffsetEnd=121 PartOfSpeech=NNP Lemma=Ohio NamedEntityTag=ORGANIZATION]
+[Text=Energy CharacterOffsetBegin=122 CharacterOffsetEnd=128 PartOfSpeech=NNP Lemma=Energy NamedEntityTag=ORGANIZATION]
+[Text=Summit CharacterOffsetBegin=129 CharacterOffsetEnd=135 PartOfSpeech=NNP Lemma=Summit NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=135 CharacterOffsetEnd=136 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Barbara)
+      (CC and)
+      (PRP I))
+    (VP (VBD had)
+      (NP (DT the) (NN opportunity)
+        (S
+          (VP (TO to)
+            (VP (VB meet)
+              (PP (IN with)
+                (NP
+                  (NP (NNP FERC) (NNP Commissioner) (NNP Brownell))
+                  (, ,)
+                  (SBAR
+                    (WHNP (WP who))
+                    (S
+                      (VP (VBD was)
+                        (PP (IN in)
+                          (NP (NNP Columbus)))
+                        (NP-TMP (NN today))
+                        (S
+                          (VP (TO to)
+                            (VP (VB speak)
+                              (PP (IN at)
+                                (NP (DT the) (NNP Ohio) (NNP Energy) (NNP Summit))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, had-4)
+nsubj(had-4, Barbara-1)
+cc(Barbara-1, and-2)
+conj:and(Barbara-1, I-3)
+nsubj(had-4, I-3)
+det(opportunity-6, the-5)
+dobj(had-4, opportunity-6)
+mark(meet-8, to-7)
+acl:to(opportunity-6, meet-8)
+case(Brownell-12, with-9)
+compound(Brownell-12, FERC-10)
+compound(Brownell-12, Commissioner-11)
+nmod:with(meet-8, Brownell-12)
+nsubj(Columbus-17, Brownell-12)
+nsubj:xsubj(speak-20, Brownell-12)
+punct(Brownell-12, ,-13)
+ref(Brownell-12, who-14)
+cop(Columbus-17, was-15)
+case(Columbus-17, in-16)
+acl:relcl(Brownell-12, Columbus-17)
+nmod:tmod(Columbus-17, today-18)
+mark(speak-20, to-19)
+xcomp(Columbus-17, speak-20)
+case(Summit-25, at-21)
+det(Summit-25, the-22)
+compound(Summit-25, Ohio-23)
+compound(Summit-25, Energy-24)
+nmod:at(speak-20, Summit-25)
+punct(had-4, .-26)
+
+Extracted the following NER entity mentions:
+Barbara	PERSON
+FERC	ORGANIZATION
+Brownell	PERSON
+Columbus	CITY
+Ohio Energy Summit	ORGANIZATION
+
+Sentence #2 (29 tokens):
+Her presentation stressed the sea change at FERC and called for aggressive cooperation of all stakeholders to develop a common market design and interconnection procedures for all RTOs.
+
+Tokens:
+[Text=Her CharacterOffsetBegin=138 CharacterOffsetEnd=141 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=presentation CharacterOffsetBegin=142 CharacterOffsetEnd=154 PartOfSpeech=NN Lemma=presentation NamedEntityTag=O]
+[Text=stressed CharacterOffsetBegin=155 CharacterOffsetEnd=163 PartOfSpeech=VBD Lemma=stress NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=164 CharacterOffsetEnd=167 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=sea CharacterOffsetBegin=168 CharacterOffsetEnd=171 PartOfSpeech=NN Lemma=sea NamedEntityTag=O]
+[Text=change CharacterOffsetBegin=172 CharacterOffsetEnd=178 PartOfSpeech=NN Lemma=change NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=179 CharacterOffsetEnd=181 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=FERC CharacterOffsetBegin=182 CharacterOffsetEnd=186 PartOfSpeech=NNP Lemma=FERC NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=187 CharacterOffsetEnd=190 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=called CharacterOffsetBegin=191 CharacterOffsetEnd=197 PartOfSpeech=VBN Lemma=call NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=198 CharacterOffsetEnd=201 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=aggressive CharacterOffsetBegin=202 CharacterOffsetEnd=212 PartOfSpeech=JJ Lemma=aggressive NamedEntityTag=O]
+[Text=cooperation CharacterOffsetBegin=213 CharacterOffsetEnd=224 PartOfSpeech=NN Lemma=cooperation NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=225 CharacterOffsetEnd=227 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=228 CharacterOffsetEnd=231 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=stakeholders CharacterOffsetBegin=232 CharacterOffsetEnd=244 PartOfSpeech=NNS Lemma=stakeholder NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=245 CharacterOffsetEnd=247 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=develop CharacterOffsetBegin=248 CharacterOffsetEnd=255 PartOfSpeech=VB Lemma=develop NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=256 CharacterOffsetEnd=257 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=common CharacterOffsetBegin=258 CharacterOffsetEnd=264 PartOfSpeech=JJ Lemma=common NamedEntityTag=O]
+[Text=market CharacterOffsetBegin=265 CharacterOffsetEnd=271 PartOfSpeech=NN Lemma=market NamedEntityTag=O]
+[Text=design CharacterOffsetBegin=272 CharacterOffsetEnd=278 PartOfSpeech=NN Lemma=design NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=279 CharacterOffsetEnd=282 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=interconnection CharacterOffsetBegin=283 CharacterOffsetEnd=298 PartOfSpeech=NN Lemma=interconnection NamedEntityTag=O]
+[Text=procedures CharacterOffsetBegin=299 CharacterOffsetEnd=309 PartOfSpeech=NNS Lemma=procedure NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=310 CharacterOffsetEnd=313 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=314 CharacterOffsetEnd=317 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=RTOs CharacterOffsetBegin=318 CharacterOffsetEnd=322 PartOfSpeech=NNS Lemma=rto NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=322 CharacterOffsetEnd=323 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP$ Her) (NN presentation))
+    (VP
+      (VP (VBD stressed)
+        (NP (DT the) (NN sea) (NN change))
+        (PP (IN at)
+          (NP (NNP FERC))))
+      (CC and)
+      (VP (VBN called)
+        (PP (IN for)
+          (NP
+            (NP (JJ aggressive) (NN cooperation))
+            (PP (IN of)
+              (NP (DT all) (NNS stakeholders)))))
+        (S
+          (VP (TO to)
+            (VP (VB develop)
+              (NP (DT a) (JJ common) (NN market) (NN design)
+                (CC and)
+                (NN interconnection) (NNS procedures))
+              (PP (IN for)
+                (NP (DT all) (NNS RTOs))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, stressed-3)
+nmod:poss(presentation-2, Her-1)
+nsubj(stressed-3, presentation-2)
+nsubj(called-10, presentation-2)
+nsubj:xsubj(develop-18, presentation-2)
+det(change-6, the-4)
+compound(change-6, sea-5)
+dobj(stressed-3, change-6)
+case(FERC-8, at-7)
+nmod:at(stressed-3, FERC-8)
+cc(stressed-3, and-9)
+conj:and(stressed-3, called-10)
+case(cooperation-13, for-11)
+amod(cooperation-13, aggressive-12)
+nmod:for(called-10, cooperation-13)
+case(stakeholders-16, of-14)
+det(stakeholders-16, all-15)
+nmod:of(cooperation-13, stakeholders-16)
+mark(develop-18, to-17)
+xcomp(called-10, develop-18)
+det(design-22, a-19)
+amod(design-22, common-20)
+compound(design-22, market-21)
+dobj(develop-18, design-22)
+cc(design-22, and-23)
+compound(procedures-25, interconnection-24)
+dobj(develop-18, procedures-25)
+conj:and(design-22, procedures-25)
+case(RTOs-28, for-26)
+det(RTOs-28, all-27)
+nmod:for(develop-18, RTOs-28)
+punct(stressed-3, .-29)
+
+Extracted the following NER entity mentions:
+FERC	ORGANIZATION
+Her	PERSON
+
+Sentence #3 (49 tokens):
+Barbara and I were able to meet her after her presentation for a half hour or so, during which time she stated that the common tariff she anticipated coming out of the RTO related discussions at FERC would likely prompt many lawsuits filed by the incumbent utilities.
+
+Tokens:
+[Text=Barbara CharacterOffsetBegin=325 CharacterOffsetEnd=332 PartOfSpeech=NNP Lemma=Barbara NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=333 CharacterOffsetEnd=336 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=337 CharacterOffsetEnd=338 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=339 CharacterOffsetEnd=343 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=able CharacterOffsetBegin=344 CharacterOffsetEnd=348 PartOfSpeech=JJ Lemma=able NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=349 CharacterOffsetEnd=351 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=meet CharacterOffsetBegin=352 CharacterOffsetEnd=356 PartOfSpeech=VB Lemma=meet NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=357 CharacterOffsetEnd=360 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=361 CharacterOffsetEnd=366 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=367 CharacterOffsetEnd=370 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=presentation CharacterOffsetBegin=371 CharacterOffsetEnd=383 PartOfSpeech=NN Lemma=presentation NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=384 CharacterOffsetEnd=387 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=388 CharacterOffsetEnd=389 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=half CharacterOffsetBegin=390 CharacterOffsetEnd=394 PartOfSpeech=JJ Lemma=half NamedEntityTag=O]
+[Text=hour CharacterOffsetBegin=395 CharacterOffsetEnd=399 PartOfSpeech=NN Lemma=hour NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=400 CharacterOffsetEnd=402 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=403 CharacterOffsetEnd=405 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=405 CharacterOffsetEnd=406 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=during CharacterOffsetBegin=407 CharacterOffsetEnd=413 PartOfSpeech=IN Lemma=during NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=414 CharacterOffsetEnd=419 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=420 CharacterOffsetEnd=424 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=425 CharacterOffsetEnd=428 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=stated CharacterOffsetBegin=429 CharacterOffsetEnd=435 PartOfSpeech=VBD Lemma=state NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=436 CharacterOffsetEnd=440 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=441 CharacterOffsetEnd=444 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=common CharacterOffsetBegin=445 CharacterOffsetEnd=451 PartOfSpeech=JJ Lemma=common NamedEntityTag=O]
+[Text=tariff CharacterOffsetBegin=452 CharacterOffsetEnd=458 PartOfSpeech=NN Lemma=tariff NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=459 CharacterOffsetEnd=462 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=anticipated CharacterOffsetBegin=463 CharacterOffsetEnd=474 PartOfSpeech=VBD Lemma=anticipate NamedEntityTag=O]
+[Text=coming CharacterOffsetBegin=475 CharacterOffsetEnd=481 PartOfSpeech=VBG Lemma=come NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=482 CharacterOffsetEnd=485 PartOfSpeech=IN Lemma=out NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=486 CharacterOffsetEnd=488 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=489 CharacterOffsetEnd=492 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=RTO CharacterOffsetBegin=493 CharacterOffsetEnd=496 PartOfSpeech=NNP Lemma=RTO NamedEntityTag=O]
+[Text=related CharacterOffsetBegin=497 CharacterOffsetEnd=504 PartOfSpeech=JJ Lemma=related NamedEntityTag=O]
+[Text=discussions CharacterOffsetBegin=505 CharacterOffsetEnd=516 PartOfSpeech=NNS Lemma=discussion NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=517 CharacterOffsetEnd=519 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=FERC CharacterOffsetBegin=520 CharacterOffsetEnd=524 PartOfSpeech=NNP Lemma=FERC NamedEntityTag=ORGANIZATION]
+[Text=would CharacterOffsetBegin=525 CharacterOffsetEnd=530 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=likely CharacterOffsetBegin=531 CharacterOffsetEnd=537 PartOfSpeech=RB Lemma=likely NamedEntityTag=O]
+[Text=prompt CharacterOffsetBegin=538 CharacterOffsetEnd=544 PartOfSpeech=VB Lemma=prompt NamedEntityTag=O]
+[Text=many CharacterOffsetBegin=545 CharacterOffsetEnd=549 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=lawsuits CharacterOffsetBegin=550 CharacterOffsetEnd=558 PartOfSpeech=NNS Lemma=lawsuit NamedEntityTag=O]
+[Text=filed CharacterOffsetBegin=559 CharacterOffsetEnd=564 PartOfSpeech=VBN Lemma=file NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=565 CharacterOffsetEnd=567 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=568 CharacterOffsetEnd=571 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=incumbent CharacterOffsetBegin=572 CharacterOffsetEnd=581 PartOfSpeech=JJ Lemma=incumbent NamedEntityTag=O]
+[Text=utilities CharacterOffsetBegin=582 CharacterOffsetEnd=591 PartOfSpeech=NNS Lemma=utility NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=591 CharacterOffsetEnd=592 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Barbara)
+      (CC and)
+      (PRP I))
+    (VP (VBD were)
+      (ADJP (JJ able)
+        (S
+          (VP (TO to)
+            (VP (VB meet)
+              (NP (PRP$ her))
+              (PP (IN after)
+                (NP
+                  (NP (PRP$ her) (NN presentation))
+                  (PP (IN for)
+                    (NP (DT a) (JJ half) (NN hour)
+                      (CC or)
+                      (RB so)))
+                  (, ,)
+                  (SBAR
+                    (WHPP (IN during)
+                      (WHNP (WDT which) (NN time)))
+                    (S
+                      (NP (PRP she))
+                      (VP (VBD stated)
+                        (SBAR (IN that)
+                          (S
+                            (NP
+                              (NP (DT the) (JJ common) (NN tariff))
+                              (SBAR
+                                (S
+                                  (NP (PRP she))
+                                  (VP (VBD anticipated)
+                                    (S
+                                      (VP (VBG coming)
+                                        (PRT (IN out))
+                                        (PP (IN of)
+                                          (NP
+                                            (NP (DT the) (NNP RTO) (JJ related) (NNS discussions))
+                                            (PP (IN at)
+                                              (NP (NNP FERC)))))))))))
+                            (VP (MD would)
+                              (ADVP (RB likely))
+                              (VP (VB prompt)
+                                (NP
+                                  (NP (JJ many) (NNS lawsuits))
+                                  (VP (VBN filed)
+                                    (PP (IN by)
+                                      (NP (DT the) (JJ incumbent) (NNS utilities)))))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, able-5)
+nsubj(able-5, Barbara-1)
+nsubj:xsubj(meet-7, Barbara-1)
+cc(Barbara-1, and-2)
+conj:and(Barbara-1, I-3)
+nsubj(able-5, I-3)
+nsubj:xsubj(meet-7, I-3)
+cop(able-5, were-4)
+mark(meet-7, to-6)
+xcomp(able-5, meet-7)
+dobj(meet-7, her-8)
+case(presentation-11, after-9)
+nmod:poss(presentation-11, her-10)
+nmod:after(meet-7, presentation-11)
+det(time-21, presentation-11)
+case(hour-15, for-12)
+det(hour-15, a-13)
+amod(hour-15, half-14)
+nmod:for(presentation-11, hour-15)
+cc(hour-15, or-16)
+advmod(hour-15, so-17)
+punct(presentation-11, ,-18)
+case(time-21, during-19)
+ref(presentation-11, which-20)
+nmod:during(stated-23, time-21)
+nsubj(stated-23, she-22)
+acl:relcl(presentation-11, stated-23)
+mark(prompt-41, that-24)
+det(tariff-27, the-25)
+amod(tariff-27, common-26)
+nsubj(prompt-41, tariff-27)
+nsubj(anticipated-29, she-28)
+acl:relcl(tariff-27, anticipated-29)
+xcomp(anticipated-29, coming-30)
+compound:prt(coming-30, out-31)
+case(discussions-36, of-32)
+det(discussions-36, the-33)
+compound(discussions-36, RTO-34)
+amod(discussions-36, related-35)
+nmod:of(coming-30, discussions-36)
+case(FERC-38, at-37)
+nmod:at(discussions-36, FERC-38)
+aux(prompt-41, would-39)
+advmod(prompt-41, likely-40)
+ccomp(stated-23, prompt-41)
+amod(lawsuits-43, many-42)
+dobj(prompt-41, lawsuits-43)
+acl(lawsuits-43, filed-44)
+case(utilities-48, by-45)
+det(utilities-48, the-46)
+amod(utilities-48, incumbent-47)
+nmod:by(filed-44, utilities-48)
+punct(able-5, .-49)
+
+Extracted the following NER entity mentions:
+Barbara	PERSON
+FERC	ORGANIZATION
+her	PERSON
+her	PERSON
+she	PERSON
+she	PERSON
+
+Sentence #4 (31 tokens):
+She urged, of course, that Enron be represented during the FERC RTO Week discussions, which will be sharply focused on technical market structure issues rather than governance.
+
+Tokens:
+[Text=She CharacterOffsetBegin=594 CharacterOffsetEnd=597 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=urged CharacterOffsetBegin=598 CharacterOffsetEnd=603 PartOfSpeech=VBD Lemma=urge NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=603 CharacterOffsetEnd=604 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=605 CharacterOffsetEnd=607 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=course CharacterOffsetBegin=608 CharacterOffsetEnd=614 PartOfSpeech=NN Lemma=course NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=614 CharacterOffsetEnd=615 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=616 CharacterOffsetEnd=620 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=621 CharacterOffsetEnd=626 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=be CharacterOffsetBegin=627 CharacterOffsetEnd=629 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=represented CharacterOffsetBegin=630 CharacterOffsetEnd=641 PartOfSpeech=VBN Lemma=represent NamedEntityTag=O]
+[Text=during CharacterOffsetBegin=642 CharacterOffsetEnd=648 PartOfSpeech=IN Lemma=during NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=649 CharacterOffsetEnd=652 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=FERC CharacterOffsetBegin=653 CharacterOffsetEnd=657 PartOfSpeech=NNP Lemma=FERC NamedEntityTag=ORGANIZATION]
+[Text=RTO CharacterOffsetBegin=658 CharacterOffsetEnd=661 PartOfSpeech=NNP Lemma=RTO NamedEntityTag=O]
+[Text=Week CharacterOffsetBegin=662 CharacterOffsetEnd=666 PartOfSpeech=NNP Lemma=Week NamedEntityTag=O]
+[Text=discussions CharacterOffsetBegin=667 CharacterOffsetEnd=678 PartOfSpeech=NNS Lemma=discussion NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=678 CharacterOffsetEnd=679 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=680 CharacterOffsetEnd=685 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=686 CharacterOffsetEnd=690 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=691 CharacterOffsetEnd=693 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=sharply CharacterOffsetBegin=694 CharacterOffsetEnd=701 PartOfSpeech=RB Lemma=sharply NamedEntityTag=O]
+[Text=focused CharacterOffsetBegin=702 CharacterOffsetEnd=709 PartOfSpeech=VBN Lemma=focus NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=710 CharacterOffsetEnd=712 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=technical CharacterOffsetBegin=713 CharacterOffsetEnd=722 PartOfSpeech=JJ Lemma=technical NamedEntityTag=O]
+[Text=market CharacterOffsetBegin=723 CharacterOffsetEnd=729 PartOfSpeech=NN Lemma=market NamedEntityTag=O]
+[Text=structure CharacterOffsetBegin=730 CharacterOffsetEnd=739 PartOfSpeech=NN Lemma=structure NamedEntityTag=O]
+[Text=issues CharacterOffsetBegin=740 CharacterOffsetEnd=746 PartOfSpeech=NNS Lemma=issue NamedEntityTag=O]
+[Text=rather CharacterOffsetBegin=747 CharacterOffsetEnd=753 PartOfSpeech=RB Lemma=rather NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=754 CharacterOffsetEnd=758 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=governance CharacterOffsetBegin=759 CharacterOffsetEnd=769 PartOfSpeech=NN Lemma=governance NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=769 CharacterOffsetEnd=770 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD urged)
+      (PRN (, ,)
+        (PP (IN of)
+          (NP (NN course)))
+        (, ,))
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (NP (NNP Enron))
+          (VP (VB be)
+            (VP (VBN represented)
+              (PP (IN during)
+                (NP
+                  (NP (DT the) (NNP FERC) (NNP RTO) (NNP Week) (NNS discussions))
+                  (, ,)
+                  (SBAR
+                    (WHNP (WDT which))
+                    (S
+                      (VP (MD will)
+                        (VP (VB be)
+                          (VP
+                            (ADVP (RB sharply))
+                            (VBN focused)
+                            (PP (IN on)
+                              (NP
+                                (NP (JJ technical) (NN market) (NN structure) (NNS issues))
+                                (CONJP (RB rather) (IN than))
+                                (NP (NN governance))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, urged-2)
+nsubj(urged-2, She-1)
+punct(course-5, ,-3)
+case(course-5, of-4)
+dep(urged-2, course-5)
+punct(course-5, ,-6)
+dobj(represented-10, that-7)
+nsubjpass(represented-10, Enron-8)
+auxpass(represented-10, be-9)
+ccomp(urged-2, represented-10)
+case(discussions-16, during-11)
+det(discussions-16, the-12)
+compound(discussions-16, FERC-13)
+compound(discussions-16, RTO-14)
+compound(discussions-16, Week-15)
+nmod:during(represented-10, discussions-16)
+nsubjpass(focused-22, discussions-16)
+punct(discussions-16, ,-17)
+ref(discussions-16, which-18)
+aux(focused-22, will-19)
+auxpass(focused-22, be-20)
+advmod(focused-22, sharply-21)
+acl:relcl(discussions-16, focused-22)
+case(issues-27, on-23)
+amod(issues-27, technical-24)
+compound(issues-27, market-25)
+compound(issues-27, structure-26)
+nmod:on(focused-22, issues-27)
+cc(issues-27, rather-28)
+mwe(rather-28, than-29)
+nmod:on(focused-22, governance-30)
+conj:negcc(issues-27, governance-30)
+punct(urged-2, .-31)
+
+Extracted the following NER entity mentions:
+Enron	ORGANIZATION
+FERC	ORGANIZATION
+She	PERSON
+
+Sentence #5 (40 tokens):
+We had the opportunity to discuss several Ohio-specific concerns, including the current complaints before the Ohio Commission regarding the incumbents' disregard of their agreements to serve all load under the same terms and conditions of the OATT.
+
+Tokens:
+[Text=We CharacterOffsetBegin=772 CharacterOffsetEnd=774 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=775 CharacterOffsetEnd=778 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=779 CharacterOffsetEnd=782 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=opportunity CharacterOffsetBegin=783 CharacterOffsetEnd=794 PartOfSpeech=NN Lemma=opportunity NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=795 CharacterOffsetEnd=797 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=discuss CharacterOffsetBegin=798 CharacterOffsetEnd=805 PartOfSpeech=VB Lemma=discuss NamedEntityTag=O]
+[Text=several CharacterOffsetBegin=806 CharacterOffsetEnd=813 PartOfSpeech=JJ Lemma=several NamedEntityTag=O]
+[Text=Ohio-specific CharacterOffsetBegin=814 CharacterOffsetEnd=827 PartOfSpeech=JJ Lemma=ohio-specific NamedEntityTag=MISC]
+[Text=concerns CharacterOffsetBegin=828 CharacterOffsetEnd=836 PartOfSpeech=NNS Lemma=concern NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=836 CharacterOffsetEnd=837 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=including CharacterOffsetBegin=838 CharacterOffsetEnd=847 PartOfSpeech=VBG Lemma=include NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=848 CharacterOffsetEnd=851 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=current CharacterOffsetBegin=852 CharacterOffsetEnd=859 PartOfSpeech=JJ Lemma=current NamedEntityTag=O]
+[Text=complaints CharacterOffsetBegin=860 CharacterOffsetEnd=870 PartOfSpeech=NNS Lemma=complaint NamedEntityTag=O]
+[Text=before CharacterOffsetBegin=871 CharacterOffsetEnd=877 PartOfSpeech=IN Lemma=before NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=878 CharacterOffsetEnd=881 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Ohio CharacterOffsetBegin=882 CharacterOffsetEnd=886 PartOfSpeech=NNP Lemma=Ohio NamedEntityTag=ORGANIZATION]
+[Text=Commission CharacterOffsetBegin=887 CharacterOffsetEnd=897 PartOfSpeech=NNP Lemma=Commission NamedEntityTag=ORGANIZATION]
+[Text=regarding CharacterOffsetBegin=898 CharacterOffsetEnd=907 PartOfSpeech=VBG Lemma=regard NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=908 CharacterOffsetEnd=911 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=incumbents CharacterOffsetBegin=912 CharacterOffsetEnd=922 PartOfSpeech=NNS Lemma=incumbent NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=922 CharacterOffsetEnd=923 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=disregard CharacterOffsetBegin=924 CharacterOffsetEnd=933 PartOfSpeech=NN Lemma=disregard NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=934 CharacterOffsetEnd=936 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=937 CharacterOffsetEnd=942 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=agreements CharacterOffsetBegin=943 CharacterOffsetEnd=953 PartOfSpeech=NNS Lemma=agreement NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=954 CharacterOffsetEnd=956 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=serve CharacterOffsetBegin=957 CharacterOffsetEnd=962 PartOfSpeech=VB Lemma=serve NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=963 CharacterOffsetEnd=966 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=load CharacterOffsetBegin=967 CharacterOffsetEnd=971 PartOfSpeech=NN Lemma=load NamedEntityTag=O]
+[Text=under CharacterOffsetBegin=972 CharacterOffsetEnd=977 PartOfSpeech=IN Lemma=under NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=978 CharacterOffsetEnd=981 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=same CharacterOffsetBegin=982 CharacterOffsetEnd=986 PartOfSpeech=JJ Lemma=same NamedEntityTag=O]
+[Text=terms CharacterOffsetBegin=987 CharacterOffsetEnd=992 PartOfSpeech=NNS Lemma=term NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=993 CharacterOffsetEnd=996 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=conditions CharacterOffsetBegin=997 CharacterOffsetEnd=1007 PartOfSpeech=NNS Lemma=condition NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=1008 CharacterOffsetEnd=1010 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1011 CharacterOffsetEnd=1014 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=OATT CharacterOffsetBegin=1015 CharacterOffsetEnd=1019 PartOfSpeech=NNP Lemma=OATT NamedEntityTag=MISC]
+[Text=. CharacterOffsetBegin=1019 CharacterOffsetEnd=1020 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBD had)
+      (NP (DT the) (NN opportunity)
+        (S
+          (VP (TO to)
+            (VP (VB discuss)
+              (NP (JJ several) (JJ Ohio-specific) (NNS concerns))))))
+      (, ,)
+      (PP (VBG including)
+        (NP
+          (NP (DT the) (JJ current) (NNS complaints))
+          (PP (IN before)
+            (NP
+              (NP (DT the) (NNP Ohio) (NNP Commission))
+              (PP (VBG regarding)
+                (NP
+                  (NP
+                    (NP (DT the) (NNS incumbents) (POS '))
+                    (NN disregard))
+                  (PP (IN of)
+                    (NP (PRP$ their) (NNS agreements)
+                      (S
+                        (VP (TO to)
+                          (VP (VB serve)
+                            (NP (DT all) (NN load))
+                            (PP (IN under)
+                              (NP
+                                (NP (DT the) (JJ same) (NNS terms)
+                                  (CC and)
+                                  (NNS conditions))
+                                (PP (IN of)
+                                  (NP (DT the) (NNP OATT)))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, had-2)
+nsubj(had-2, We-1)
+det(opportunity-4, the-3)
+dobj(had-2, opportunity-4)
+mark(discuss-6, to-5)
+acl:to(opportunity-4, discuss-6)
+amod(concerns-9, several-7)
+amod(concerns-9, Ohio-specific-8)
+dobj(discuss-6, concerns-9)
+punct(had-2, ,-10)
+case(complaints-14, including-11)
+det(complaints-14, the-12)
+amod(complaints-14, current-13)
+nmod:including(had-2, complaints-14)
+case(Commission-18, before-15)
+det(Commission-18, the-16)
+compound(Commission-18, Ohio-17)
+nmod:before(complaints-14, Commission-18)
+case(disregard-23, regarding-19)
+det(incumbents-21, the-20)
+nmod:poss(disregard-23, incumbents-21)
+case(incumbents-21, '-22)
+nmod:regarding(Commission-18, disregard-23)
+case(agreements-26, of-24)
+nmod:poss(agreements-26, their-25)
+nmod:of(disregard-23, agreements-26)
+mark(serve-28, to-27)
+acl:to(agreements-26, serve-28)
+det(load-30, all-29)
+dobj(serve-28, load-30)
+case(terms-34, under-31)
+det(terms-34, the-32)
+amod(terms-34, same-33)
+nmod:under(serve-28, terms-34)
+cc(terms-34, and-35)
+nmod:under(serve-28, conditions-36)
+conj:and(terms-34, conditions-36)
+case(OATT-39, of-37)
+det(OATT-39, the-38)
+nmod:of(terms-34, OATT-39)
+punct(had-2, .-40)
+
+Extracted the following NER entity mentions:
+Ohio-specific	MISC
+Ohio Commission	ORGANIZATION
+OATT	MISC
+
+Sentence #6 (36 tokens):
+She took note of our points regarding the impact of differential imbalance protocols and OASIS information posting, and suggested the upcoming RTO discussions would present the opportunity to discuss those and other issues generically.
+
+Tokens:
+[Text=She CharacterOffsetBegin=1022 CharacterOffsetEnd=1025 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=took CharacterOffsetBegin=1026 CharacterOffsetEnd=1030 PartOfSpeech=VBD Lemma=take NamedEntityTag=O]
+[Text=note CharacterOffsetBegin=1031 CharacterOffsetEnd=1035 PartOfSpeech=NN Lemma=note NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=1036 CharacterOffsetEnd=1038 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=1039 CharacterOffsetEnd=1042 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=points CharacterOffsetBegin=1043 CharacterOffsetEnd=1049 PartOfSpeech=NNS Lemma=point NamedEntityTag=O]
+[Text=regarding CharacterOffsetBegin=1050 CharacterOffsetEnd=1059 PartOfSpeech=VBG Lemma=regard NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1060 CharacterOffsetEnd=1063 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=impact CharacterOffsetBegin=1064 CharacterOffsetEnd=1070 PartOfSpeech=NN Lemma=impact NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=1071 CharacterOffsetEnd=1073 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=differential CharacterOffsetBegin=1074 CharacterOffsetEnd=1086 PartOfSpeech=JJ Lemma=differential NamedEntityTag=O]
+[Text=imbalance CharacterOffsetBegin=1087 CharacterOffsetEnd=1096 PartOfSpeech=NN Lemma=imbalance NamedEntityTag=O]
+[Text=protocols CharacterOffsetBegin=1097 CharacterOffsetEnd=1106 PartOfSpeech=NNS Lemma=protocol NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1107 CharacterOffsetEnd=1110 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=OASIS CharacterOffsetBegin=1111 CharacterOffsetEnd=1116 PartOfSpeech=NN Lemma=oasis NamedEntityTag=O]
+[Text=information CharacterOffsetBegin=1117 CharacterOffsetEnd=1128 PartOfSpeech=NN Lemma=information NamedEntityTag=O]
+[Text=posting CharacterOffsetBegin=1129 CharacterOffsetEnd=1136 PartOfSpeech=VBG Lemma=post NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1136 CharacterOffsetEnd=1137 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1138 CharacterOffsetEnd=1141 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=suggested CharacterOffsetBegin=1142 CharacterOffsetEnd=1151 PartOfSpeech=VBD Lemma=suggest NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1152 CharacterOffsetEnd=1155 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=upcoming CharacterOffsetBegin=1156 CharacterOffsetEnd=1164 PartOfSpeech=VBG Lemma=upcome NamedEntityTag=O]
+[Text=RTO CharacterOffsetBegin=1165 CharacterOffsetEnd=1168 PartOfSpeech=NNP Lemma=RTO NamedEntityTag=O]
+[Text=discussions CharacterOffsetBegin=1169 CharacterOffsetEnd=1180 PartOfSpeech=NNS Lemma=discussion NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=1181 CharacterOffsetEnd=1186 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=present CharacterOffsetBegin=1187 CharacterOffsetEnd=1194 PartOfSpeech=VB Lemma=present NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1195 CharacterOffsetEnd=1198 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=opportunity CharacterOffsetBegin=1199 CharacterOffsetEnd=1210 PartOfSpeech=NN Lemma=opportunity NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1211 CharacterOffsetEnd=1213 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=discuss CharacterOffsetBegin=1214 CharacterOffsetEnd=1221 PartOfSpeech=VB Lemma=discuss NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=1222 CharacterOffsetEnd=1227 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1228 CharacterOffsetEnd=1231 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=1232 CharacterOffsetEnd=1237 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=issues CharacterOffsetBegin=1238 CharacterOffsetEnd=1244 PartOfSpeech=NNS Lemma=issue NamedEntityTag=O]
+[Text=generically CharacterOffsetBegin=1245 CharacterOffsetEnd=1256 PartOfSpeech=RB Lemma=generically NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1256 CharacterOffsetEnd=1257 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP
+      (VP (VBD took)
+        (NP
+          (NP (NN note))
+          (PP (IN of)
+            (NP (PRP$ our) (NNS points))))
+        (PP (VBG regarding)
+          (NP
+            (NP
+              (NP (DT the) (NN impact))
+              (PP (IN of)
+                (NP (JJ differential) (NN imbalance) (NNS protocols))))
+            (CC and)
+            (NP
+              (NP (NN OASIS) (NN information))
+              (VP (VBG posting))))))
+      (, ,)
+      (CC and)
+      (VP (VBD suggested)
+        (SBAR
+          (S
+            (NP (DT the) (VBG upcoming) (NNP RTO) (NNS discussions))
+            (VP (MD would)
+              (VP (VB present)
+                (NP (DT the) (NN opportunity)
+                  (S
+                    (VP (TO to)
+                      (VP (VB discuss)
+                        (NP
+                          (NP (DT those))
+                          (CC and)
+                          (NP (JJ other) (NNS issues)))
+                        (ADVP (RB generically))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, took-2)
+nsubj(took-2, She-1)
+nsubj(suggested-20, She-1)
+dobj(took-2, note-3)
+case(points-6, of-4)
+nmod:poss(points-6, our-5)
+nmod:of(note-3, points-6)
+case(impact-9, regarding-7)
+det(impact-9, the-8)
+nmod:regarding(took-2, impact-9)
+case(protocols-13, of-10)
+amod(protocols-13, differential-11)
+compound(protocols-13, imbalance-12)
+nmod:of(impact-9, protocols-13)
+cc(impact-9, and-14)
+compound(information-16, OASIS-15)
+nmod:regarding(took-2, information-16)
+conj:and(impact-9, information-16)
+acl(information-16, posting-17)
+punct(took-2, ,-18)
+cc(took-2, and-19)
+conj:and(took-2, suggested-20)
+det(discussions-24, the-21)
+amod(discussions-24, upcoming-22)
+compound(discussions-24, RTO-23)
+nsubj(present-26, discussions-24)
+aux(present-26, would-25)
+ccomp(suggested-20, present-26)
+det(opportunity-28, the-27)
+dobj(present-26, opportunity-28)
+mark(discuss-30, to-29)
+acl:to(opportunity-28, discuss-30)
+dobj(discuss-30, those-31)
+cc(those-31, and-32)
+amod(issues-34, other-33)
+dobj(discuss-30, issues-34)
+conj:and(those-31, issues-34)
+advmod(discuss-30, generically-35)
+punct(took-2, .-36)
+
+Extracted the following NER entity mentions:
+She	PERSON
+
+Sentence #7 (27 tokens):
+She also commended Ohio Chariman Schriber for the interest he has expressed to her and to the Ohio congressional delegation in resolving wholesale electricity market issues.
+
+Tokens:
+[Text=She CharacterOffsetBegin=1259 CharacterOffsetEnd=1262 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=1263 CharacterOffsetEnd=1267 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=commended CharacterOffsetBegin=1268 CharacterOffsetEnd=1277 PartOfSpeech=VBD Lemma=commend NamedEntityTag=O]
+[Text=Ohio CharacterOffsetBegin=1278 CharacterOffsetEnd=1282 PartOfSpeech=NNP Lemma=Ohio NamedEntityTag=PERSON]
+[Text=Chariman CharacterOffsetBegin=1283 CharacterOffsetEnd=1291 PartOfSpeech=NNP Lemma=Chariman NamedEntityTag=PERSON]
+[Text=Schriber CharacterOffsetBegin=1292 CharacterOffsetEnd=1300 PartOfSpeech=NNP Lemma=Schriber NamedEntityTag=PERSON]
+[Text=for CharacterOffsetBegin=1301 CharacterOffsetEnd=1304 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1305 CharacterOffsetEnd=1308 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=interest CharacterOffsetBegin=1309 CharacterOffsetEnd=1317 PartOfSpeech=NN Lemma=interest NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=1318 CharacterOffsetEnd=1320 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=1321 CharacterOffsetEnd=1324 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=expressed CharacterOffsetBegin=1325 CharacterOffsetEnd=1334 PartOfSpeech=VBN Lemma=express NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1335 CharacterOffsetEnd=1337 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=1338 CharacterOffsetEnd=1341 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1342 CharacterOffsetEnd=1345 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1346 CharacterOffsetEnd=1348 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1349 CharacterOffsetEnd=1352 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Ohio CharacterOffsetBegin=1353 CharacterOffsetEnd=1357 PartOfSpeech=NNP Lemma=Ohio NamedEntityTag=STATE_OR_PROVINCE]
+[Text=congressional CharacterOffsetBegin=1358 CharacterOffsetEnd=1371 PartOfSpeech=JJ Lemma=congressional NamedEntityTag=O]
+[Text=delegation CharacterOffsetBegin=1372 CharacterOffsetEnd=1382 PartOfSpeech=NN Lemma=delegation NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=1383 CharacterOffsetEnd=1385 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=resolving CharacterOffsetBegin=1386 CharacterOffsetEnd=1395 PartOfSpeech=VBG Lemma=resolve NamedEntityTag=O]
+[Text=wholesale CharacterOffsetBegin=1396 CharacterOffsetEnd=1405 PartOfSpeech=JJ Lemma=wholesale NamedEntityTag=O]
+[Text=electricity CharacterOffsetBegin=1406 CharacterOffsetEnd=1417 PartOfSpeech=NN Lemma=electricity NamedEntityTag=O]
+[Text=market CharacterOffsetBegin=1418 CharacterOffsetEnd=1424 PartOfSpeech=NN Lemma=market NamedEntityTag=O]
+[Text=issues CharacterOffsetBegin=1425 CharacterOffsetEnd=1431 PartOfSpeech=NNS Lemma=issue NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1431 CharacterOffsetEnd=1432 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP She))
+    (ADVP (RB also))
+    (VP (VBD commended)
+      (NP
+        (NP (NNP Ohio) (NNP Chariman) (NNP Schriber))
+        (PP (IN for)
+          (NP
+            (NP (DT the) (NN interest))
+            (SBAR
+              (S
+                (NP (PRP he))
+                (VP (VBZ has)
+                  (VP (VBN expressed)
+                    (PP
+                      (PP (TO to)
+                        (NP (PRP$ her)))
+                      (CC and)
+                      (PP (TO to)
+                        (NP (DT the) (NNP Ohio) (JJ congressional) (NN delegation))))
+                    (PP (IN in)
+                      (S
+                        (VP (VBG resolving)
+                          (NP (JJ wholesale) (NN electricity) (NN market) (NNS issues)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, commended-3)
+nsubj(commended-3, She-1)
+advmod(commended-3, also-2)
+compound(Schriber-6, Ohio-4)
+compound(Schriber-6, Chariman-5)
+dobj(commended-3, Schriber-6)
+case(interest-9, for-7)
+det(interest-9, the-8)
+nmod:for(Schriber-6, interest-9)
+nsubj(expressed-12, he-10)
+nsubj(expressed-12', he-10)
+aux(expressed-12, has-11)
+acl:relcl(interest-9, expressed-12)
+acl:relcl(interest-9, expressed-12')
+conj:and(expressed-12, expressed-12')
+case(her-14, to-13)
+nmod:to(expressed-12, her-14)
+cc(expressed-12, and-15)
+case(delegation-20, to-16)
+det(delegation-20, the-17)
+compound(delegation-20, Ohio-18)
+amod(delegation-20, congressional-19)
+nmod:to(expressed-12', delegation-20)
+mark(resolving-22, in-21)
+advcl:in(expressed-12, resolving-22)
+amod(issues-26, wholesale-23)
+compound(issues-26, electricity-24)
+compound(issues-26, market-25)
+dobj(resolving-22, issues-26)
+punct(commended-3, .-27)
+
+Extracted the following NER entity mentions:
+Ohio Chariman Schriber	PERSON
+Ohio	STATE_OR_PROVINCE
+She	PERSON
+he	PERSON
+her	PERSON
+
+Sentence #8 (35 tokens):
+It was announced at the Summit by Governor Taft that Schriber will head a Federal Energy Policy Group to promote the establishment of  wholesale markets that support a robust retail choice program for Ohio.
+
+Tokens:
+[Text=It CharacterOffsetBegin=1434 CharacterOffsetEnd=1436 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=1437 CharacterOffsetEnd=1440 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=announced CharacterOffsetBegin=1441 CharacterOffsetEnd=1450 PartOfSpeech=VBN Lemma=announce NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=1451 CharacterOffsetEnd=1453 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1454 CharacterOffsetEnd=1457 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Summit CharacterOffsetBegin=1458 CharacterOffsetEnd=1464 PartOfSpeech=NNP Lemma=Summit NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=1465 CharacterOffsetEnd=1467 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Governor CharacterOffsetBegin=1468 CharacterOffsetEnd=1476 PartOfSpeech=NNP Lemma=Governor NamedEntityTag=TITLE]
+[Text=Taft CharacterOffsetBegin=1477 CharacterOffsetEnd=1481 PartOfSpeech=NNP Lemma=Taft NamedEntityTag=PERSON]
+[Text=that CharacterOffsetBegin=1482 CharacterOffsetEnd=1486 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=Schriber CharacterOffsetBegin=1487 CharacterOffsetEnd=1495 PartOfSpeech=NNP Lemma=Schriber NamedEntityTag=PERSON]
+[Text=will CharacterOffsetBegin=1496 CharacterOffsetEnd=1500 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=head CharacterOffsetBegin=1501 CharacterOffsetEnd=1505 PartOfSpeech=VB Lemma=head NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=1506 CharacterOffsetEnd=1507 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Federal CharacterOffsetBegin=1508 CharacterOffsetEnd=1515 PartOfSpeech=NNP Lemma=Federal NamedEntityTag=ORGANIZATION]
+[Text=Energy CharacterOffsetBegin=1516 CharacterOffsetEnd=1522 PartOfSpeech=NNP Lemma=Energy NamedEntityTag=ORGANIZATION]
+[Text=Policy CharacterOffsetBegin=1523 CharacterOffsetEnd=1529 PartOfSpeech=NNP Lemma=Policy NamedEntityTag=ORGANIZATION]
+[Text=Group CharacterOffsetBegin=1530 CharacterOffsetEnd=1535 PartOfSpeech=NNP Lemma=Group NamedEntityTag=ORGANIZATION]
+[Text=to CharacterOffsetBegin=1536 CharacterOffsetEnd=1538 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=promote CharacterOffsetBegin=1539 CharacterOffsetEnd=1546 PartOfSpeech=VB Lemma=promote NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1547 CharacterOffsetEnd=1550 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=establishment CharacterOffsetBegin=1551 CharacterOffsetEnd=1564 PartOfSpeech=NN Lemma=establishment NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=1565 CharacterOffsetEnd=1567 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=wholesale CharacterOffsetBegin=1569 CharacterOffsetEnd=1578 PartOfSpeech=JJ Lemma=wholesale NamedEntityTag=O]
+[Text=markets CharacterOffsetBegin=1579 CharacterOffsetEnd=1586 PartOfSpeech=NNS Lemma=market NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=1587 CharacterOffsetEnd=1591 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=support CharacterOffsetBegin=1592 CharacterOffsetEnd=1599 PartOfSpeech=VBP Lemma=support NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=1600 CharacterOffsetEnd=1601 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=robust CharacterOffsetBegin=1602 CharacterOffsetEnd=1608 PartOfSpeech=JJ Lemma=robust NamedEntityTag=O]
+[Text=retail CharacterOffsetBegin=1609 CharacterOffsetEnd=1615 PartOfSpeech=JJ Lemma=retail NamedEntityTag=O]
+[Text=choice CharacterOffsetBegin=1616 CharacterOffsetEnd=1622 PartOfSpeech=NN Lemma=choice NamedEntityTag=O]
+[Text=program CharacterOffsetBegin=1623 CharacterOffsetEnd=1630 PartOfSpeech=NN Lemma=program NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=1631 CharacterOffsetEnd=1634 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Ohio CharacterOffsetBegin=1635 CharacterOffsetEnd=1639 PartOfSpeech=NNP Lemma=Ohio NamedEntityTag=STATE_OR_PROVINCE]
+[Text=. CharacterOffsetBegin=1639 CharacterOffsetEnd=1640 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (VP (VBN announced)
+        (PP (IN at)
+          (NP (DT the) (NNP Summit)))
+        (PP (IN by)
+          (NP (NNP Governor) (NNP Taft)))
+        (SBAR (IN that)
+          (S
+            (NP (NNP Schriber))
+            (VP (MD will)
+              (VP (VB head)
+                (S
+                  (NP (DT a) (NNP Federal) (NNP Energy) (NNP Policy) (NNP Group))
+                  (VP (TO to)
+                    (VP (VB promote)
+                      (NP
+                        (NP (DT the) (NN establishment))
+                        (PP (IN of)
+                          (NP (JJ wholesale) (NNS markets)))
+                        (SBAR
+                          (WHNP (WDT that))
+                          (S
+                            (VP (VBP support)
+                              (NP
+                                (NP (DT a) (JJ robust) (JJ retail) (NN choice) (NN program))
+                                (PP (IN for)
+                                  (NP (NNP Ohio)))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, announced-3)
+nsubjpass(announced-3, It-1)
+auxpass(announced-3, was-2)
+case(Summit-6, at-4)
+det(Summit-6, the-5)
+nmod:at(announced-3, Summit-6)
+case(Taft-9, by-7)
+compound(Taft-9, Governor-8)
+nmod:agent(announced-3, Taft-9)
+mark(head-13, that-10)
+nsubj(head-13, Schriber-11)
+aux(head-13, will-12)
+ccomp(announced-3, head-13)
+det(Group-18, a-14)
+compound(Group-18, Federal-15)
+compound(Group-18, Energy-16)
+compound(Group-18, Policy-17)
+dobj(head-13, Group-18)
+nsubj:xsubj(promote-20, Group-18)
+mark(promote-20, to-19)
+xcomp(head-13, promote-20)
+det(establishment-22, the-21)
+dobj(promote-20, establishment-22)
+nsubj(support-27, establishment-22)
+case(markets-25, of-23)
+amod(markets-25, wholesale-24)
+nmod:of(establishment-22, markets-25)
+ref(establishment-22, that-26)
+acl:relcl(establishment-22, support-27)
+det(program-32, a-28)
+amod(program-32, robust-29)
+amod(program-32, retail-30)
+compound(program-32, choice-31)
+dobj(support-27, program-32)
+case(Ohio-34, for-33)
+nmod:for(program-32, Ohio-34)
+punct(announced-3, .-35)
+
+Extracted the following NER entity mentions:
+Governor	TITLE
+Taft	PERSON
+Schriber	PERSON
+Federal Energy Policy Group	ORGANIZATION
+Ohio	STATE_OR_PROVINCE
+
+Sentence #9 (27 tokens):
+Details on the formation of the group are not yet public, but we are taking steps to assure that we are represented in the Group.
+
+Tokens:
+[Text=Details CharacterOffsetBegin=1642 CharacterOffsetEnd=1649 PartOfSpeech=NNS Lemma=detail NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=1650 CharacterOffsetEnd=1652 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1653 CharacterOffsetEnd=1656 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=formation CharacterOffsetBegin=1657 CharacterOffsetEnd=1666 PartOfSpeech=NN Lemma=formation NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=1667 CharacterOffsetEnd=1669 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1670 CharacterOffsetEnd=1673 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=group CharacterOffsetBegin=1674 CharacterOffsetEnd=1679 PartOfSpeech=NN Lemma=group NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=1680 CharacterOffsetEnd=1683 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=1684 CharacterOffsetEnd=1687 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=yet CharacterOffsetBegin=1688 CharacterOffsetEnd=1691 PartOfSpeech=RB Lemma=yet NamedEntityTag=O]
+[Text=public CharacterOffsetBegin=1692 CharacterOffsetEnd=1698 PartOfSpeech=JJ Lemma=public NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1698 CharacterOffsetEnd=1699 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=1700 CharacterOffsetEnd=1703 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=1704 CharacterOffsetEnd=1706 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=1707 CharacterOffsetEnd=1710 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=taking CharacterOffsetBegin=1711 CharacterOffsetEnd=1717 PartOfSpeech=VBG Lemma=take NamedEntityTag=O]
+[Text=steps CharacterOffsetBegin=1718 CharacterOffsetEnd=1723 PartOfSpeech=NNS Lemma=step NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1724 CharacterOffsetEnd=1726 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=assure CharacterOffsetBegin=1727 CharacterOffsetEnd=1733 PartOfSpeech=VB Lemma=assure NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=1734 CharacterOffsetEnd=1738 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=1739 CharacterOffsetEnd=1741 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=1742 CharacterOffsetEnd=1745 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=represented CharacterOffsetBegin=1746 CharacterOffsetEnd=1757 PartOfSpeech=VBN Lemma=represent NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=1758 CharacterOffsetEnd=1760 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1761 CharacterOffsetEnd=1764 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Group CharacterOffsetBegin=1765 CharacterOffsetEnd=1770 PartOfSpeech=NNP Lemma=Group NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1770 CharacterOffsetEnd=1771 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNS Details))
+        (PP (IN on)
+          (NP
+            (NP (DT the) (NN formation))
+            (PP (IN of)
+              (NP (DT the) (NN group))))))
+      (VP (VBP are) (RB not)
+        (ADVP (RB yet))
+        (ADJP (JJ public))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP we))
+      (VP (VBP are)
+        (VP (VBG taking)
+          (NP (NNS steps))
+          (S
+            (VP (TO to)
+              (VP (VB assure)
+                (SBAR (IN that)
+                  (S
+                    (NP (PRP we))
+                    (VP (VBP are)
+                      (VP (VBN represented)
+                        (PP (IN in)
+                          (NP (DT the) (NNP Group)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, public-11)
+nsubj(public-11, Details-1)
+case(formation-4, on-2)
+det(formation-4, the-3)
+nmod:on(Details-1, formation-4)
+case(group-7, of-5)
+det(group-7, the-6)
+nmod:of(formation-4, group-7)
+cop(public-11, are-8)
+neg(public-11, not-9)
+advmod(public-11, yet-10)
+punct(public-11, ,-12)
+cc(public-11, but-13)
+nsubj(taking-16, we-14)
+aux(taking-16, are-15)
+conj:but(public-11, taking-16)
+dobj(taking-16, steps-17)
+mark(assure-19, to-18)
+advcl:to(taking-16, assure-19)
+mark(represented-23, that-20)
+nsubjpass(represented-23, we-21)
+auxpass(represented-23, are-22)
+ccomp(assure-19, represented-23)
+case(Group-26, in-24)
+det(Group-26, the-25)
+nmod:in(represented-23, Group-26)
+punct(public-11, .-27)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(2,1,[1,2]) -> (1,1,[1,2]), that is: "Her" -> "Barbara"
+	(3,1,[1,2]) -> (1,1,[1,2]), that is: "Barbara" -> "Barbara"
+	(3,8,[8,9]) -> (1,1,[1,2]), that is: "her" -> "Barbara"
+	(3,10,[10,11]) -> (1,1,[1,2]), that is: "her" -> "Barbara"
+	(3,22,[22,23]) -> (1,1,[1,2]), that is: "she" -> "Barbara"
+	(3,28,[28,29]) -> (1,1,[1,2]), that is: "she" -> "Barbara"
+	(4,1,[1,2]) -> (1,1,[1,2]), that is: "She" -> "Barbara"
+
+Coreference set:
+	(2,8,[8,9]) -> (1,10,[10,11]), that is: "FERC" -> "FERC"
+	(3,38,[38,39]) -> (1,10,[10,11]), that is: "FERC" -> "FERC"
+	(4,13,[13,14]) -> (1,10,[10,11]), that is: "FERC" -> "FERC"
+
+Coreference set:
+	(3,1,[1,4]) -> (1,1,[1,4]), that is: "Barbara and I" -> "Barbara and I"
+
+Coreference set:
+	(3,3,[3,4]) -> (1,3,[3,4]), that is: "I" -> "I"
+
+Coreference set:
+	(8,6,[5,7]) -> (1,25,[22,26]), that is: "the Summit" -> "the Ohio Energy Summit"
+
+Coreference set:
+	(6,1,[1,2]) -> (5,8,[8,9]), that is: "She" -> "Ohio-specific"
+	(7,1,[1,2]) -> (5,8,[8,9]), that is: "She" -> "Ohio-specific"
+	(7,14,[14,15]) -> (5,8,[8,9]), that is: "her" -> "Ohio-specific"
+
+Coreference set:
+	(6,5,[5,6]) -> (5,1,[1,2]), that is: "our" -> "We"
+	(9,14,[14,15]) -> (5,1,[1,2]), that is: "we" -> "We"
+	(9,21,[21,22]) -> (5,1,[1,2]), that is: "we" -> "We"
+
+Coreference set:
+	(5,25,[25,26]) -> (5,21,[20,23]), that is: "their" -> "the incumbents '"
+
+Coreference set:
+	(7,10,[10,11]) -> (6,31,[31,32]), that is: "he" -> "those"
+
+Coreference set:
+	(8,34,[34,35]) -> (7,18,[18,19]), that is: "Ohio" -> "Ohio"
+
+Coreference set:
+	(8,11,[11,12]) -> (7,6,[4,27]), that is: "Schriber" -> "Ohio Chariman Schriber for the interest he has expressed to her and to the Ohio congressional delegation in resolving wholesale electricity market issues"
+
+Coreference set:
+	(9,7,[6,8]) -> (8,18,[14,19]), that is: "the group" -> "a Federal Energy Policy Group"
+	(9,26,[25,27]) -> (8,18,[14,19]), that is: "the Group" -> "a Federal Energy Policy Group"

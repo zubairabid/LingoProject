@@ -1,0 +1,198 @@
+Document: ID=1101617.in (3 sentences, 47 tokens)
+
+Sentence #1 (10 tokens):
+can we meet Wednesday sometime between 10 and 12?
+
+Tokens:
+[Text=can CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=meet CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=VB Lemma=meet NamedEntityTag=O]
+[Text=Wednesday CharacterOffsetBegin=12 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=Wednesday NamedEntityTag=DATE NormalizedNamedEntityTag=wednesday]
+[Text=sometime CharacterOffsetBegin=22 CharacterOffsetEnd=30 PartOfSpeech=RB Lemma=sometime NamedEntityTag=O]
+[Text=between CharacterOffsetBegin=31 CharacterOffsetEnd=38 PartOfSpeech=IN Lemma=between NamedEntityTag=O]
+[Text=10 CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=CD Lemma=10 NamedEntityTag=NUMBER NormalizedNamedEntityTag=10.0-12.0]
+[Text=and CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=CC Lemma=and NamedEntityTag=NUMBER NormalizedNamedEntityTag=10.0-12.0]
+[Text=12 CharacterOffsetBegin=46 CharacterOffsetEnd=48 PartOfSpeech=CD Lemma=12 NamedEntityTag=NUMBER NormalizedNamedEntityTag=10.0-12.0]
+[Text=? CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (MD can)
+    (NP (PRP we))
+    (VP (VB meet)
+      (NP-TMP (NNP Wednesday))
+      (PP
+        (ADVP (RB sometime))
+        (IN between)
+        (NP (CD 10)
+          (CC and)
+          (CD 12))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, meet-3)
+aux(meet-3, can-1)
+nsubj(meet-3, we-2)
+nmod:tmod(meet-3, Wednesday-4)
+advmod(10-7, sometime-5)
+case(10-7, between-6)
+nmod:between(meet-3, 10-7)
+cc(10-7, and-8)
+nmod:between(meet-3, 12-9)
+conj:and(10-7, 12-9)
+punct(meet-3, ?-10)
+
+Extracted the following NER entity mentions:
+Wednesday	DATE
+10 and 12	NUMBER
+
+Sentence #2 (17 tokens):
+there are a couple of people from the Portland office that I'd like to attend.
+
+Tokens:
+[Text=there CharacterOffsetBegin=50 CharacterOffsetEnd=55 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=couple CharacterOffsetBegin=62 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=couple NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=72 CharacterOffsetEnd=78 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=79 CharacterOffsetEnd=83 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=84 CharacterOffsetEnd=87 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Portland CharacterOffsetBegin=88 CharacterOffsetEnd=96 PartOfSpeech=NNP Lemma=Portland NamedEntityTag=CITY]
+[Text=office CharacterOffsetBegin=97 CharacterOffsetEnd=103 PartOfSpeech=NN Lemma=office NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=104 CharacterOffsetEnd=108 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=109 CharacterOffsetEnd=110 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='d CharacterOffsetBegin=110 CharacterOffsetEnd=112 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=113 CharacterOffsetEnd=117 PartOfSpeech=VB Lemma=like NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=118 CharacterOffsetEnd=120 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=attend CharacterOffsetBegin=121 CharacterOffsetEnd=127 PartOfSpeech=VB Lemma=attend NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=127 CharacterOffsetEnd=128 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (EX there))
+    (VP (VBP are)
+      (NP
+        (NP (DT a) (NN couple))
+        (PP (IN of)
+          (NP (NNS people))))
+      (PP (IN from)
+        (NP (DT the) (NNP Portland) (NN office)))
+      (SBAR (IN that)
+        (S
+          (NP (PRP I))
+          (VP (MD 'd)
+            (VP (VB like)
+              (S
+                (VP (TO to)
+                  (VP (VB attend)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, are-2)
+expl(are-2, there-1)
+det:qmod(people-6, a-3)
+mwe(a-3, couple-4)
+mwe(a-3, of-5)
+nsubj(are-2, people-6)
+case(office-10, from-7)
+det(office-10, the-8)
+compound(office-10, Portland-9)
+nmod:from(are-2, office-10)
+mark(like-14, that-11)
+nsubj(like-14, I-12)
+nsubj:xsubj(attend-16, I-12)
+aux(like-14, 'd-13)
+ccomp(are-2, like-14)
+mark(attend-16, to-15)
+xcomp(like-14, attend-16)
+punct(are-2, .-17)
+
+Extracted the following NER entity mentions:
+Portland	CITY
+
+Sentence #3 (20 tokens):
+we can probably benefit from their knowledge of what we've done (and haven't done) in CA
+
+Tokens:
+[Text=we CharacterOffsetBegin=129 CharacterOffsetEnd=131 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=132 CharacterOffsetEnd=135 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=probably CharacterOffsetBegin=136 CharacterOffsetEnd=144 PartOfSpeech=RB Lemma=probably NamedEntityTag=O]
+[Text=benefit CharacterOffsetBegin=145 CharacterOffsetEnd=152 PartOfSpeech=VB Lemma=benefit NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=153 CharacterOffsetEnd=157 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=158 CharacterOffsetEnd=163 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=knowledge CharacterOffsetBegin=164 CharacterOffsetEnd=173 PartOfSpeech=NN Lemma=knowledge NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=174 CharacterOffsetEnd=176 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=177 CharacterOffsetEnd=181 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=182 CharacterOffsetEnd=184 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text='ve CharacterOffsetBegin=184 CharacterOffsetEnd=187 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=done CharacterOffsetBegin=188 CharacterOffsetEnd=192 PartOfSpeech=VBN Lemma=do NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=193 CharacterOffsetEnd=194 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=194 CharacterOffsetEnd=197 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=198 CharacterOffsetEnd=202 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=202 CharacterOffsetEnd=205 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=done CharacterOffsetBegin=206 CharacterOffsetEnd=210 PartOfSpeech=VBN Lemma=do NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=210 CharacterOffsetEnd=211 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=212 CharacterOffsetEnd=214 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=CA CharacterOffsetBegin=215 CharacterOffsetEnd=217 PartOfSpeech=NNP Lemma=CA NamedEntityTag=STATE_OR_PROVINCE]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP we))
+    (VP (MD can)
+      (ADVP (RB probably))
+      (VP (VB benefit)
+        (PP (IN from)
+          (NP
+            (NP (PRP$ their) (NN knowledge))
+            (PP (IN of)
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (NP (PRP we))
+                  (VP (VBP 've)
+                    (VP (VBN done)
+                      (PRN (-LRB- -LRB-)
+                        (CC and)
+                        (VP (VBP have) (RB n't)
+                          (VP (VBN done)))
+                        (-RRB- -RRB-))
+                      (PP (IN in)
+                        (NP (NNP CA))))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, benefit-4)
+nsubj(benefit-4, we-1)
+aux(benefit-4, can-2)
+advmod(benefit-4, probably-3)
+case(knowledge-7, from-5)
+nmod:poss(knowledge-7, their-6)
+nmod:from(benefit-4, knowledge-7)
+mark(done-12, of-8)
+dobj(done-12, what-9)
+nsubj(done-12, we-10)
+aux(done-12, 've-11)
+acl:of(knowledge-7, done-12)
+punct(done-17, -LRB--13)
+cc(done-17, and-14)
+aux(done-17, have-15)
+neg(done-17, n't-16)
+dep(done-12, done-17)
+punct(done-17, -RRB--18)
+case(CA-20, in-19)
+nmod:in(done-12, CA-20)
+
+Extracted the following NER entity mentions:
+CA	STATE_OR_PROVINCE
+
+Coreference set:
+	(3,1,[1,2]) -> (1,2,[2,3]), that is: "we" -> "we"
+	(3,10,[10,11]) -> (1,2,[2,3]), that is: "we" -> "we"
+
+Coreference set:
+	(3,6,[6,7]) -> (2,6,[6,7]), that is: "their" -> "people"

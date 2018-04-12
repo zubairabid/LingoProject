@@ -1,0 +1,97 @@
+Document: ID=104437.in (2 sentences, 18 tokens)
+
+Sentence #1 (16 tokens):
+Hello All,
+
+The curve manager is up and the traders can mark their curves.
+
+Tokens:
+[Text=Hello CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=UH Lemma=hello NamedEntityTag=O]
+[Text=All CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=curve CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=curve NamedEntityTag=O]
+[Text=manager CharacterOffsetBegin=22 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=manager NamedEntityTag=TITLE]
+[Text=is CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=RB Lemma=up NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=traders CharacterOffsetBegin=44 CharacterOffsetEnd=51 PartOfSpeech=NNS Lemma=trader NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=mark CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=VB Lemma=mark NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=61 CharacterOffsetEnd=66 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=curves CharacterOffsetBegin=67 CharacterOffsetEnd=73 PartOfSpeech=NNS Lemma=curve NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP
+        (NP (UH Hello))
+        (NP
+          (NP (DT All))
+          (, ,)
+          (NP (DT The)))
+        (PP (NN curve))))
+    (NP (NN manager))
+    (VP (VBZ is)
+      (UCP
+        (ADJP (RB up))
+        (CC and)
+        (NP
+          (NP (DT the) (NNS traders))
+          (SBAR
+            (S
+              (VP (MD can)
+                (VP (VB mark)
+                  (NP (PRP$ their) (NNS curves)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, up-8)
+dep(up-8, Hello-1)
+dobj(Hello-1, All-2)
+punct(All-2, ,-3)
+appos(All-2, The-4)
+advcl(Hello-1, curve-5)
+nsubj(up-8, manager-6)
+cop(up-8, is-7)
+cc(up-8, and-9)
+det(traders-11, the-10)
+conj:and(up-8, traders-11)
+aux(mark-13, can-12)
+acl:relcl(traders-11, mark-13)
+nmod:poss(curves-15, their-14)
+dobj(mark-13, curves-15)
+punct(up-8, .-16)
+
+Extracted the following NER entity mentions:
+manager	TITLE
+
+Sentence #2 (2 tokens):
+Thanks
+
+Arun
+
+Tokens:
+[Text=Thanks CharacterOffsetBegin=76 CharacterOffsetEnd=82 PartOfSpeech=NNS Lemma=thanks NamedEntityTag=O]
+[Text=Arun CharacterOffsetBegin=84 CharacterOffsetEnd=88 PartOfSpeech=VBP Lemma=arun NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNS Thanks))
+    (VP (VBP Arun))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Arun-2)
+nsubj(Arun-2, Thanks-1)
+
+Extracted the following NER entity mentions:
+Arun	PERSON
+
+Coreference set:
+	(1,14,[14,15]) -> (1,1,[1,2]), that is: "their" -> "Hello"

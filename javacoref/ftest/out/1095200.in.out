@@ -1,0 +1,651 @@
+Document: ID=1095200.in (7 sentences, 168 tokens)
+
+Sentence #1 (3 tokens):
+US Govt.
+
+Tokens:
+[Text=US CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=Govt CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Govt NamedEntityTag=TITLE]
+[Text=. CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP US) (NNP Govt) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Govt-2)
+compound(Govt-2, US-1)
+punct(Govt-2, .-3)
+
+Extracted the following NER entity mentions:
+US	COUNTRY
+Govt	TITLE
+
+Sentence #2 (26 tokens):
+data -
+
+
+Business inventories rose 0.9% in June, exceeding analysts' expectations
+of a 0.6% rise and matching the revised May figure.
+
+Tokens:
+[Text=data CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=NNS Lemma=datum NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=Business CharacterOffsetBegin=18 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=business NamedEntityTag=O]
+[Text=inventories CharacterOffsetBegin=27 CharacterOffsetEnd=38 PartOfSpeech=NNS Lemma=inventory NamedEntityTag=O]
+[Text=rose CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=VBD Lemma=rise NamedEntityTag=O]
+[Text=0.9 CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=CD Lemma=0.9 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%0.9]
+[Text=% CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%0.9]
+[Text=in CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=June CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=NNP Lemma=June NamedEntityTag=DATE NormalizedNamedEntityTag=****06]
+[Text=, CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=exceeding CharacterOffsetBegin=58 CharacterOffsetEnd=67 PartOfSpeech=VBG Lemma=exceed NamedEntityTag=O]
+[Text=analysts CharacterOffsetBegin=68 CharacterOffsetEnd=76 PartOfSpeech=NNS Lemma=analyst NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=expectations CharacterOffsetBegin=78 CharacterOffsetEnd=90 PartOfSpeech=NNS Lemma=expectation NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=91 CharacterOffsetEnd=93 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=94 CharacterOffsetEnd=95 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=0.6 CharacterOffsetBegin=96 CharacterOffsetEnd=99 PartOfSpeech=CD Lemma=0.6 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%0.6]
+[Text=% CharacterOffsetBegin=99 CharacterOffsetEnd=100 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%0.6]
+[Text=rise CharacterOffsetBegin=101 CharacterOffsetEnd=105 PartOfSpeech=NN Lemma=rise NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=106 CharacterOffsetEnd=109 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=matching CharacterOffsetBegin=110 CharacterOffsetEnd=118 PartOfSpeech=VBG Lemma=match NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=119 CharacterOffsetEnd=122 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=revised CharacterOffsetBegin=123 CharacterOffsetEnd=130 PartOfSpeech=VBN Lemma=revise NamedEntityTag=O]
+[Text=May CharacterOffsetBegin=131 CharacterOffsetEnd=134 PartOfSpeech=NNP Lemma=May NamedEntityTag=DATE NormalizedNamedEntityTag=****05]
+[Text=figure CharacterOffsetBegin=135 CharacterOffsetEnd=141 PartOfSpeech=NN Lemma=figure NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=141 CharacterOffsetEnd=142 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNS data))
+    (: -)
+    (S
+      (NP (NN Business) (NNS inventories))
+      (VP (VBD rose)
+        (NP (CD 0.9) (NN %))
+        (PP (IN in)
+          (NP (NNP June)))
+        (, ,)
+        (S
+          (VP
+            (VP (VBG exceeding)
+              (NP
+                (NP
+                  (NP (NNS analysts) (POS '))
+                  (NNS expectations))
+                (PP (IN of)
+                  (NP (DT a) (CD 0.6) (NN %) (NN rise)))))
+            (CC and)
+            (VP (VBG matching)
+              (S
+                (NP (DT the) (VBN revised) (NNP May) (NN figure))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, data-1)
+punct(data-1, --2)
+compound(inventories-4, Business-3)
+nsubj(rose-5, inventories-4)
+appos(data-1, rose-5)
+nummod(%-7, 0.9-6)
+dobj(rose-5, %-7)
+case(June-9, in-8)
+nmod:in(rose-5, June-9)
+punct(rose-5, ,-10)
+dep(rose-5, exceeding-11)
+nmod:poss(expectations-14, analysts-12)
+case(analysts-12, '-13)
+dobj(exceeding-11, expectations-14)
+case(rise-19, of-15)
+det(rise-19, a-16)
+nummod(rise-19, 0.6-17)
+compound(rise-19, %-18)
+nmod:of(expectations-14, rise-19)
+cc(exceeding-11, and-20)
+dep(rose-5, matching-21)
+conj:and(exceeding-11, matching-21)
+det(figure-25, the-22)
+amod(figure-25, revised-23)
+compound(figure-25, May-24)
+xcomp(matching-21, figure-25)
+punct(data-1, .-26)
+
+Extracted the following NER entity mentions:
+0.9%	PERCENT
+June	DATE
+0.6%	PERCENT
+May	DATE
+
+Sentence #3 (14 tokens):
+Retailers saw the
+biggest increase; their inventories rose 1.2% in June.
+
+Tokens:
+[Text=Retailers CharacterOffsetBegin=143 CharacterOffsetEnd=152 PartOfSpeech=NNS Lemma=retailer NamedEntityTag=O]
+[Text=saw CharacterOffsetBegin=153 CharacterOffsetEnd=156 PartOfSpeech=VBD Lemma=see NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=157 CharacterOffsetEnd=160 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=biggest CharacterOffsetBegin=161 CharacterOffsetEnd=168 PartOfSpeech=JJS Lemma=biggest NamedEntityTag=O]
+[Text=increase CharacterOffsetBegin=169 CharacterOffsetEnd=177 PartOfSpeech=NN Lemma=increase NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=177 CharacterOffsetEnd=178 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=179 CharacterOffsetEnd=184 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=inventories CharacterOffsetBegin=185 CharacterOffsetEnd=196 PartOfSpeech=NNS Lemma=inventory NamedEntityTag=O]
+[Text=rose CharacterOffsetBegin=197 CharacterOffsetEnd=201 PartOfSpeech=VBD Lemma=rise NamedEntityTag=O]
+[Text=1.2 CharacterOffsetBegin=202 CharacterOffsetEnd=205 PartOfSpeech=CD Lemma=1.2 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%1.2]
+[Text=% CharacterOffsetBegin=205 CharacterOffsetEnd=206 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%1.2]
+[Text=in CharacterOffsetBegin=207 CharacterOffsetEnd=209 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=June CharacterOffsetBegin=210 CharacterOffsetEnd=214 PartOfSpeech=NNP Lemma=June NamedEntityTag=DATE NormalizedNamedEntityTag=****06]
+[Text=. CharacterOffsetBegin=214 CharacterOffsetEnd=215 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NNS Retailers))
+      (VP (VBD saw)
+        (NP (DT the) (JJS biggest) (NN increase))))
+    (: ;)
+    (S
+      (NP (PRP$ their) (NNS inventories))
+      (VP (VBD rose)
+        (NP (CD 1.2) (NN %))
+        (PP (IN in)
+          (NP (NNP June)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, saw-2)
+nsubj(saw-2, Retailers-1)
+det(increase-5, the-3)
+amod(increase-5, biggest-4)
+dobj(saw-2, increase-5)
+punct(saw-2, ;-6)
+nmod:poss(inventories-8, their-7)
+nsubj(rose-9, inventories-8)
+parataxis(saw-2, rose-9)
+nummod(%-11, 1.2-10)
+dobj(rose-9, %-11)
+case(June-13, in-12)
+nmod:in(rose-9, June-13)
+punct(saw-2, .-14)
+
+Extracted the following NER entity mentions:
+1.2%	PERCENT
+June	DATE
+
+Sentence #4 (25 tokens):
+Total business sales
+were also up 0.9% in June, a slightly weaker showing than the revised 1.1%
+rise posted in May.
+
+Tokens:
+[Text=Total CharacterOffsetBegin=216 CharacterOffsetEnd=221 PartOfSpeech=JJ Lemma=total NamedEntityTag=O]
+[Text=business CharacterOffsetBegin=222 CharacterOffsetEnd=230 PartOfSpeech=NN Lemma=business NamedEntityTag=O]
+[Text=sales CharacterOffsetBegin=231 CharacterOffsetEnd=236 PartOfSpeech=NNS Lemma=sale NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=237 CharacterOffsetEnd=241 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=242 CharacterOffsetEnd=246 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=247 CharacterOffsetEnd=249 PartOfSpeech=RB Lemma=up NamedEntityTag=O]
+[Text=0.9 CharacterOffsetBegin=250 CharacterOffsetEnd=253 PartOfSpeech=CD Lemma=0.9 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%0.9]
+[Text=% CharacterOffsetBegin=253 CharacterOffsetEnd=254 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%0.9]
+[Text=in CharacterOffsetBegin=255 CharacterOffsetEnd=257 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=June CharacterOffsetBegin=258 CharacterOffsetEnd=262 PartOfSpeech=NNP Lemma=June NamedEntityTag=DATE NormalizedNamedEntityTag=****06]
+[Text=, CharacterOffsetBegin=262 CharacterOffsetEnd=263 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=264 CharacterOffsetEnd=265 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=slightly CharacterOffsetBegin=266 CharacterOffsetEnd=274 PartOfSpeech=RB Lemma=slightly NamedEntityTag=O]
+[Text=weaker CharacterOffsetBegin=275 CharacterOffsetEnd=281 PartOfSpeech=JJR Lemma=weaker NamedEntityTag=O]
+[Text=showing CharacterOffsetBegin=282 CharacterOffsetEnd=289 PartOfSpeech=NN Lemma=showing NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=290 CharacterOffsetEnd=294 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=295 CharacterOffsetEnd=298 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=revised CharacterOffsetBegin=299 CharacterOffsetEnd=306 PartOfSpeech=VBN Lemma=revise NamedEntityTag=O]
+[Text=1.1 CharacterOffsetBegin=307 CharacterOffsetEnd=310 PartOfSpeech=CD Lemma=1.1 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%1.1]
+[Text=% CharacterOffsetBegin=310 CharacterOffsetEnd=311 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%1.1]
+[Text=rise CharacterOffsetBegin=312 CharacterOffsetEnd=316 PartOfSpeech=NN Lemma=rise NamedEntityTag=O]
+[Text=posted CharacterOffsetBegin=317 CharacterOffsetEnd=323 PartOfSpeech=VBN Lemma=post NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=324 CharacterOffsetEnd=326 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=May CharacterOffsetBegin=327 CharacterOffsetEnd=330 PartOfSpeech=NNP Lemma=May NamedEntityTag=DATE NormalizedNamedEntityTag=****05]
+[Text=. CharacterOffsetBegin=330 CharacterOffsetEnd=331 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (JJ Total) (NN business) (NNS sales))
+    (VP (VBD were)
+      (ADVP (RB also))
+      (ADVP (RB up)
+        (NP (CD 0.9) (NN %))
+        (PP (IN in)
+          (NP-TMP (NNP June))))
+      (, ,)
+      (NP
+        (NP (DT a)
+          (ADJP (RB slightly) (JJR weaker))
+          (NN showing))
+        (PP (IN than)
+          (NP
+            (NP (DT the) (VBN revised) (CD 1.1) (NN %) (NN rise))
+            (VP (VBN posted)
+              (PP (IN in)
+                (NP (NNP May))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, showing-15)
+amod(sales-3, Total-1)
+compound(sales-3, business-2)
+nsubj(showing-15, sales-3)
+cop(showing-15, were-4)
+advmod(showing-15, also-5)
+advmod(showing-15, up-6)
+nummod(%-8, 0.9-7)
+nmod:npmod(up-6, %-8)
+case(June-10, in-9)
+nmod:in(up-6, June-10)
+punct(showing-15, ,-11)
+det(showing-15, a-12)
+advmod(weaker-14, slightly-13)
+amod(showing-15, weaker-14)
+case(rise-21, than-16)
+det(rise-21, the-17)
+amod(rise-21, revised-18)
+nummod(rise-21, 1.1-19)
+compound(rise-21, %-20)
+nmod:than(showing-15, rise-21)
+acl(rise-21, posted-22)
+case(May-24, in-23)
+nmod:in(posted-22, May-24)
+punct(showing-15, .-25)
+
+Extracted the following NER entity mentions:
+0.9%	PERCENT
+June	DATE
+1.1%	PERCENT
+May	DATE
+
+Sentence #5 (41 tokens):
+The inventory-to-sales ratio--the number of months it
+would take to empty the nation's warehouses, store shelves, and sales lots
+at the current rate of sales--remained at 1.32, just off its all-time low.
+
+Tokens:
+[Text=The CharacterOffsetBegin=332 CharacterOffsetEnd=335 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=inventory-to-sales CharacterOffsetBegin=336 CharacterOffsetEnd=354 PartOfSpeech=NNS Lemma=inventory-to-sale NamedEntityTag=O]
+[Text=ratio CharacterOffsetBegin=355 CharacterOffsetEnd=360 PartOfSpeech=NN Lemma=ratio NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=360 CharacterOffsetEnd=362 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=362 CharacterOffsetEnd=365 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=number CharacterOffsetBegin=366 CharacterOffsetEnd=372 PartOfSpeech=NN Lemma=number NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=373 CharacterOffsetEnd=375 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=months CharacterOffsetBegin=376 CharacterOffsetEnd=382 PartOfSpeech=NNS Lemma=month NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=383 CharacterOffsetEnd=385 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=386 CharacterOffsetEnd=391 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=take CharacterOffsetBegin=392 CharacterOffsetEnd=396 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=397 CharacterOffsetEnd=399 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=empty CharacterOffsetBegin=400 CharacterOffsetEnd=405 PartOfSpeech=VB Lemma=empty NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=406 CharacterOffsetEnd=409 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=nation CharacterOffsetBegin=410 CharacterOffsetEnd=416 PartOfSpeech=NN Lemma=nation NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=416 CharacterOffsetEnd=418 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=warehouses CharacterOffsetBegin=419 CharacterOffsetEnd=429 PartOfSpeech=NNS Lemma=warehouse NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=429 CharacterOffsetEnd=430 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=store CharacterOffsetBegin=431 CharacterOffsetEnd=436 PartOfSpeech=NN Lemma=store NamedEntityTag=O]
+[Text=shelves CharacterOffsetBegin=437 CharacterOffsetEnd=444 PartOfSpeech=NNS Lemma=shelf NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=444 CharacterOffsetEnd=445 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=446 CharacterOffsetEnd=449 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=sales CharacterOffsetBegin=450 CharacterOffsetEnd=455 PartOfSpeech=NNS Lemma=sale NamedEntityTag=O]
+[Text=lots CharacterOffsetBegin=456 CharacterOffsetEnd=460 PartOfSpeech=NNS Lemma=lot NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=461 CharacterOffsetEnd=463 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=464 CharacterOffsetEnd=467 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=current CharacterOffsetBegin=468 CharacterOffsetEnd=475 PartOfSpeech=JJ Lemma=current NamedEntityTag=O]
+[Text=rate CharacterOffsetBegin=476 CharacterOffsetEnd=480 PartOfSpeech=NN Lemma=rate NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=481 CharacterOffsetEnd=483 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=sales CharacterOffsetBegin=484 CharacterOffsetEnd=489 PartOfSpeech=NNS Lemma=sale NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=489 CharacterOffsetEnd=491 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=remained CharacterOffsetBegin=491 CharacterOffsetEnd=499 PartOfSpeech=VBD Lemma=remain NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=500 CharacterOffsetEnd=502 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=1.32 CharacterOffsetBegin=503 CharacterOffsetEnd=507 PartOfSpeech=CD Lemma=1.32 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.32]
+[Text=, CharacterOffsetBegin=507 CharacterOffsetEnd=508 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=509 CharacterOffsetEnd=513 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=514 CharacterOffsetEnd=517 PartOfSpeech=IN Lemma=off NamedEntityTag=O]
+[Text=its CharacterOffsetBegin=518 CharacterOffsetEnd=521 PartOfSpeech=PRP$ Lemma=its NamedEntityTag=O]
+[Text=all-time CharacterOffsetBegin=522 CharacterOffsetEnd=530 PartOfSpeech=JJ Lemma=all-time NamedEntityTag=O]
+[Text=low CharacterOffsetBegin=531 CharacterOffsetEnd=534 PartOfSpeech=JJ Lemma=low NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=534 CharacterOffsetEnd=535 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNS inventory-to-sales) (NN ratio))
+      (PRN (: --)
+        (NP
+          (NP
+            (NP (DT the) (NN number))
+            (PP (IN of)
+              (NP
+                (NP (NNS months))
+                (SBAR
+                  (S
+                    (NP (PRP it))
+                    (VP (MD would)
+                      (VP (VB take)
+                        (S
+                          (VP (TO to)
+                            (VP (VB empty)
+                              (NP
+                                (NP
+                                  (NP (DT the) (NN nation) (POS 's))
+                                  (NNS warehouses))
+                                (, ,)
+                                (NP (NN store) (NNS shelves))
+                                (, ,))))))))))))
+          (CC and)
+          (NP
+            (NP (NNS sales) (NNS lots))
+            (PP (IN at)
+              (NP
+                (NP (DT the) (JJ current) (NN rate))
+                (PP (IN of)
+                  (NP (NNS sales)))))))
+        (: --)))
+    (VP (VBD remained)
+      (PP (IN at)
+        (NP (CD 1.32)))
+      (, ,)
+      (ADVP (RB just))
+      (PP (IN off)
+        (NP (PRP$ its) (JJ all-time) (JJ low))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, remained-32)
+det(ratio-3, The-1)
+compound(ratio-3, inventory-to-sales-2)
+nsubj(remained-32, ratio-3)
+punct(number-6, ---4)
+det(number-6, the-5)
+dep(ratio-3, number-6)
+case(months-8, of-7)
+nmod:of(number-6, months-8)
+nsubj(take-11, it-9)
+nsubj:xsubj(empty-13, it-9)
+aux(take-11, would-10)
+acl:relcl(months-8, take-11)
+mark(empty-13, to-12)
+xcomp(take-11, empty-13)
+det(nation-15, the-14)
+nmod:poss(warehouses-17, nation-15)
+case(nation-15, 's-16)
+dobj(empty-13, warehouses-17)
+punct(warehouses-17, ,-18)
+compound(shelves-20, store-19)
+appos(warehouses-17, shelves-20)
+punct(warehouses-17, ,-21)
+cc(number-6, and-22)
+compound(lots-24, sales-23)
+dep(ratio-3, lots-24)
+conj:and(number-6, lots-24)
+case(rate-28, at-25)
+det(rate-28, the-26)
+amod(rate-28, current-27)
+nmod:at(lots-24, rate-28)
+case(sales-30, of-29)
+nmod:of(rate-28, sales-30)
+punct(number-6, ---31)
+case(1.32-34, at-33)
+nmod:at(remained-32, 1.32-34)
+punct(remained-32, ,-35)
+advmod(low-40, just-36)
+case(low-40, off-37)
+nmod:poss(low-40, its-38)
+amod(low-40, all-time-39)
+nmod:off(remained-32, low-40)
+punct(remained-32, .-41)
+
+Extracted the following NER entity mentions:
+1.32	NUMBER
+
+Sentence #6 (22 tokens):
+In a separate report, the Fed said industrial production rose 0.4% in July,
+double the pace in June.
+
+Tokens:
+[Text=In CharacterOffsetBegin=536 CharacterOffsetEnd=538 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=539 CharacterOffsetEnd=540 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=separate CharacterOffsetBegin=541 CharacterOffsetEnd=549 PartOfSpeech=JJ Lemma=separate NamedEntityTag=O]
+[Text=report CharacterOffsetBegin=550 CharacterOffsetEnd=556 PartOfSpeech=NN Lemma=report NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=556 CharacterOffsetEnd=557 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=558 CharacterOffsetEnd=561 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Fed CharacterOffsetBegin=562 CharacterOffsetEnd=565 PartOfSpeech=NNP Lemma=Fed NamedEntityTag=ORGANIZATION]
+[Text=said CharacterOffsetBegin=566 CharacterOffsetEnd=570 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=industrial CharacterOffsetBegin=571 CharacterOffsetEnd=581 PartOfSpeech=JJ Lemma=industrial NamedEntityTag=O]
+[Text=production CharacterOffsetBegin=582 CharacterOffsetEnd=592 PartOfSpeech=NN Lemma=production NamedEntityTag=O]
+[Text=rose CharacterOffsetBegin=593 CharacterOffsetEnd=597 PartOfSpeech=VBD Lemma=rise NamedEntityTag=O]
+[Text=0.4 CharacterOffsetBegin=598 CharacterOffsetEnd=601 PartOfSpeech=CD Lemma=0.4 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%0.4]
+[Text=% CharacterOffsetBegin=601 CharacterOffsetEnd=602 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%0.4]
+[Text=in CharacterOffsetBegin=603 CharacterOffsetEnd=605 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=July CharacterOffsetBegin=606 CharacterOffsetEnd=610 PartOfSpeech=NNP Lemma=July NamedEntityTag=DATE NormalizedNamedEntityTag=****07]
+[Text=, CharacterOffsetBegin=610 CharacterOffsetEnd=611 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=double CharacterOffsetBegin=612 CharacterOffsetEnd=618 PartOfSpeech=RB Lemma=double NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=619 CharacterOffsetEnd=622 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=pace CharacterOffsetBegin=623 CharacterOffsetEnd=627 PartOfSpeech=NN Lemma=pace NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=628 CharacterOffsetEnd=630 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=June CharacterOffsetBegin=631 CharacterOffsetEnd=635 PartOfSpeech=NNP Lemma=June NamedEntityTag=DATE NormalizedNamedEntityTag=****06]
+[Text=. CharacterOffsetBegin=635 CharacterOffsetEnd=636 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT a) (JJ separate) (NN report)))
+    (, ,)
+    (NP (DT the) (NNP Fed))
+    (VP (VBD said)
+      (SBAR
+        (S
+          (NP (JJ industrial) (NN production))
+          (VP (VBD rose)
+            (NP (CD 0.4) (NN %))
+            (PP (IN in)
+              (NP (NNP July)))
+            (, ,)
+            (ADVP (RB double)
+              (NP (DT the) (NN pace))
+              (PP (IN in)
+                (NP-TMP (NNP June))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, said-8)
+case(report-4, In-1)
+det(report-4, a-2)
+amod(report-4, separate-3)
+nmod:in(said-8, report-4)
+punct(said-8, ,-5)
+det(Fed-7, the-6)
+nsubj(said-8, Fed-7)
+amod(production-10, industrial-9)
+nsubj(rose-11, production-10)
+ccomp(said-8, rose-11)
+nummod(%-13, 0.4-12)
+dobj(rose-11, %-13)
+case(July-15, in-14)
+nmod:in(rose-11, July-15)
+punct(rose-11, ,-16)
+advmod(rose-11, double-17)
+det(pace-19, the-18)
+nmod:npmod(double-17, pace-19)
+case(June-21, in-20)
+nmod:in(double-17, June-21)
+punct(said-8, .-22)
+
+Extracted the following NER entity mentions:
+Fed	ORGANIZATION
+0.4%	PERCENT
+July	DATE
+June	DATE
+
+Sentence #7 (37 tokens):
+Industrial production, which measures output at
+U.S. factories, utilities, and mines, is now 5.8% stronger than it was this
+time last year, due mainly to continued growth in high-tech manufacturing.
+
+Tokens:
+[Text=Industrial CharacterOffsetBegin=637 CharacterOffsetEnd=647 PartOfSpeech=JJ Lemma=industrial NamedEntityTag=O]
+[Text=production CharacterOffsetBegin=648 CharacterOffsetEnd=658 PartOfSpeech=NN Lemma=production NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=658 CharacterOffsetEnd=659 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=660 CharacterOffsetEnd=665 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=measures CharacterOffsetBegin=666 CharacterOffsetEnd=674 PartOfSpeech=VBZ Lemma=measure NamedEntityTag=O]
+[Text=output CharacterOffsetBegin=675 CharacterOffsetEnd=681 PartOfSpeech=NN Lemma=output NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=682 CharacterOffsetEnd=684 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=U.S. CharacterOffsetBegin=685 CharacterOffsetEnd=689 PartOfSpeech=NNP Lemma=U.S. NamedEntityTag=COUNTRY]
+[Text=factories CharacterOffsetBegin=690 CharacterOffsetEnd=699 PartOfSpeech=NNS Lemma=factory NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=699 CharacterOffsetEnd=700 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=utilities CharacterOffsetBegin=701 CharacterOffsetEnd=710 PartOfSpeech=NNS Lemma=utility NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=710 CharacterOffsetEnd=711 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=712 CharacterOffsetEnd=715 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=mines CharacterOffsetBegin=716 CharacterOffsetEnd=721 PartOfSpeech=NNS Lemma=mine NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=721 CharacterOffsetEnd=722 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=723 CharacterOffsetEnd=725 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=726 CharacterOffsetEnd=729 PartOfSpeech=RB Lemma=now NamedEntityTag=O]
+[Text=5.8 CharacterOffsetBegin=730 CharacterOffsetEnd=733 PartOfSpeech=CD Lemma=5.8 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%5.8]
+[Text=% CharacterOffsetBegin=733 CharacterOffsetEnd=734 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%5.8]
+[Text=stronger CharacterOffsetBegin=735 CharacterOffsetEnd=743 PartOfSpeech=JJR Lemma=stronger NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=744 CharacterOffsetEnd=748 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=749 CharacterOffsetEnd=751 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=752 CharacterOffsetEnd=755 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=756 CharacterOffsetEnd=760 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=761 CharacterOffsetEnd=765 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=last CharacterOffsetBegin=766 CharacterOffsetEnd=770 PartOfSpeech=JJ Lemma=last NamedEntityTag=DATE NormalizedNamedEntityTag=last year ]
+[Text=year CharacterOffsetBegin=771 CharacterOffsetEnd=775 PartOfSpeech=NN Lemma=year NamedEntityTag=DATE NormalizedNamedEntityTag=last year ]
+[Text=, CharacterOffsetBegin=775 CharacterOffsetEnd=776 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=due CharacterOffsetBegin=777 CharacterOffsetEnd=780 PartOfSpeech=JJ Lemma=due NamedEntityTag=O]
+[Text=mainly CharacterOffsetBegin=781 CharacterOffsetEnd=787 PartOfSpeech=RB Lemma=mainly NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=788 CharacterOffsetEnd=790 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=continued CharacterOffsetBegin=791 CharacterOffsetEnd=800 PartOfSpeech=VBN Lemma=continue NamedEntityTag=O]
+[Text=growth CharacterOffsetBegin=801 CharacterOffsetEnd=807 PartOfSpeech=NN Lemma=growth NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=808 CharacterOffsetEnd=810 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=high-tech CharacterOffsetBegin=811 CharacterOffsetEnd=820 PartOfSpeech=JJ Lemma=high-tech NamedEntityTag=O]
+[Text=manufacturing CharacterOffsetBegin=821 CharacterOffsetEnd=834 PartOfSpeech=NN Lemma=manufacturing NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=834 CharacterOffsetEnd=835 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (JJ Industrial) (NN production))
+      (, ,)
+      (SBAR
+        (WHNP (WDT which))
+        (S
+          (VP (VBZ measures)
+            (NP (NN output))
+            (PP (IN at)
+              (NP
+                (NP (NNP U.S.) (NNS factories))
+                (, ,)
+                (NP (NNS utilities))
+                (, ,)
+                (CC and)
+                (NP (NNS mines)))))))
+      (, ,))
+    (VP (VBZ is)
+      (ADVP (RB now))
+      (ADJP
+        (ADJP
+          (NP (CD 5.8) (NN %))
+          (JJR stronger))
+        (SBAR (IN than)
+          (S
+            (NP (PRP it))
+            (VP (VBD was)
+              (NP (DT this) (NN time))
+              (NP-TMP (JJ last) (NN year))
+              (, ,)
+              (ADJP (JJ due)))))
+        (PP
+          (ADVP (RB mainly))
+          (TO to)
+          (NP
+            (NP (VBN continued) (NN growth))
+            (PP (IN in)
+              (NP (JJ high-tech) (NN manufacturing)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, stronger-20)
+amod(production-2, Industrial-1)
+nsubj(measures-5, production-2)
+nsubj(stronger-20, production-2)
+punct(production-2, ,-3)
+ref(production-2, which-4)
+acl:relcl(production-2, measures-5)
+dobj(measures-5, output-6)
+case(factories-9, at-7)
+compound(factories-9, U.S.-8)
+nmod:at(measures-5, factories-9)
+punct(factories-9, ,-10)
+nmod:at(measures-5, utilities-11)
+conj:and(factories-9, utilities-11)
+punct(factories-9, ,-12)
+cc(factories-9, and-13)
+nmod:at(measures-5, mines-14)
+conj:and(factories-9, mines-14)
+punct(production-2, ,-15)
+cop(stronger-20, is-16)
+advmod(stronger-20, now-17)
+nummod(%-19, 5.8-18)
+nmod:npmod(stronger-20, %-19)
+mark(due-29, than-21)
+nsubj(due-29, it-22)
+cop(due-29, was-23)
+det(time-25, this-24)
+dep(due-29, time-25)
+amod(year-27, last-26)
+nmod:tmod(due-29, year-27)
+punct(due-29, ,-28)
+ccomp(stronger-20, due-29)
+advmod(growth-33, mainly-30)
+case(growth-33, to-31)
+amod(growth-33, continued-32)
+nmod:to(stronger-20, growth-33)
+case(manufacturing-36, in-34)
+amod(manufacturing-36, high-tech-35)
+nmod:in(growth-33, manufacturing-36)
+punct(stronger-20, .-37)
+
+Extracted the following NER entity mentions:
+U.S.	COUNTRY
+5.8%	PERCENT
+last year	DATE
+
+Coreference set:
+	(7,9,[8,15]) -> (1,1,[1,2]), that is: "U.S. factories , utilities , and mines" -> "US"
+	(7,9,[8,10]) -> (1,1,[1,2]), that is: "U.S. factories" -> "US"
+
+Coreference set:
+	(3,8,[7,9]) -> (2,4,[3,5]), that is: "their inventories" -> "Business inventories"
+
+Coreference set:
+	(3,13,[13,14]) -> (2,9,[9,10]), that is: "June" -> "June"
+	(4,10,[10,11]) -> (2,9,[9,10]), that is: "June" -> "June"
+	(5,9,[9,10]) -> (2,9,[9,10]), that is: "it" -> "June"
+	(6,21,[21,22]) -> (2,9,[9,10]), that is: "June" -> "June"
+
+Coreference set:
+	(3,7,[7,8]) -> (3,1,[1,2]), that is: "their" -> "Retailers"
+
+Coreference set:
+	(5,30,[30,31]) -> (4,3,[1,4]), that is: "sales" -> "Total business sales"
+
+Coreference set:
+	(5,38,[38,39]) -> (5,3,[1,32]), that is: "its" -> "The inventory-to-sales ratio -- the number of months it would take to empty the nation 's warehouses , store shelves , and sales lots at the current rate of sales --"
+
+Coreference set:
+	(7,22,[22,23]) -> (6,4,[2,5]), that is: "it" -> "a separate report"
+	(7,25,[24,26]) -> (6,4,[2,5]), that is: "this time" -> "a separate report"

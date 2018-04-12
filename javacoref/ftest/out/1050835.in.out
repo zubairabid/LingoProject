@@ -1,0 +1,259 @@
+Document: ID=1050835.in (6 sentences, 50 tokens)
+
+Sentence #1 (10 tokens):
+Hi Everyone,
+
+Hope all is well for everyone!!
+
+Tokens:
+[Text=Hi CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=NNP Lemma=Hi NamedEntityTag=O]
+[Text=Everyone CharacterOffsetBegin=3 CharacterOffsetEnd=11 PartOfSpeech=NN Lemma=everyone NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=11 CharacterOffsetEnd=12 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Hope CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=NNP Lemma=Hope NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=everyone CharacterOffsetBegin=35 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=everyone NamedEntityTag=O]
+[Text=!! CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=CD Lemma=!! NamedEntityTag=NUMBER]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Hi) (NN Everyone))
+      (, ,)
+      (NP
+        (NP (NNP Hope))
+        (NP (DT all))))
+    (VP (VBZ is)
+      (ADVP (RB well))
+      (PP (IN for)
+        (NP (NN everyone) (CD !!))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, everyone-9)
+compound(Everyone-2, Hi-1)
+nsubj(everyone-9, Everyone-2)
+punct(Everyone-2, ,-3)
+appos(Everyone-2, Hope-4)
+dep(Hope-4, all-5)
+cop(everyone-9, is-6)
+advmod(everyone-9, well-7)
+case(everyone-9, for-8)
+nummod(everyone-9, !!-10)
+
+Extracted the following NER entity mentions:
+!!	NUMBER
+
+Sentence #2 (7 tokens):
+The Johnson's send their best!
+
+Tokens:
+[Text=The CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Johnson CharacterOffsetBegin=51 CharacterOffsetEnd=58 PartOfSpeech=NNP Lemma=Johnson NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=send CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=VB Lemma=send NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=66 CharacterOffsetEnd=71 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=best CharacterOffsetBegin=72 CharacterOffsetEnd=76 PartOfSpeech=JJS Lemma=best NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (DT The)
+      (NP (NNP Johnson) (POS 's)))
+    (SBAR
+      (S
+        (VP (VB send)
+          (NP (PRP$ their) (JJS best)))))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Johnson-2)
+det(Johnson-2, The-1)
+case(Johnson-2, 's-3)
+acl:relcl(Johnson-2, send-4)
+nmod:poss(best-6, their-5)
+dobj(send-4, best-6)
+punct(Johnson-2, !-7)
+
+Extracted the following NER entity mentions:
+Johnson	PERSON
+
+Sentence #3 (10 tokens):
+That's the
+Johnsons of Long Beach of course.
+
+Tokens:
+[Text=That CharacterOffsetBegin=79 CharacterOffsetEnd=83 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=83 CharacterOffsetEnd=85 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Johnsons CharacterOffsetBegin=90 CharacterOffsetEnd=98 PartOfSpeech=NNP Lemma=Johnsons NamedEntityTag=ORGANIZATION]
+[Text=of CharacterOffsetBegin=99 CharacterOffsetEnd=101 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Long CharacterOffsetBegin=102 CharacterOffsetEnd=106 PartOfSpeech=NNP Lemma=Long NamedEntityTag=CITY]
+[Text=Beach CharacterOffsetBegin=107 CharacterOffsetEnd=112 PartOfSpeech=NNP Lemma=Beach NamedEntityTag=CITY]
+[Text=of CharacterOffsetBegin=113 CharacterOffsetEnd=115 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=course CharacterOffsetBegin=116 CharacterOffsetEnd=122 PartOfSpeech=NN Lemma=course NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=122 CharacterOffsetEnd=123 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ 's)
+      (NP
+        (NP (DT the) (NNP Johnsons))
+        (PP (IN of)
+          (NP
+            (NP (NNP Long) (NNP Beach))
+            (PP (IN of)
+              (NP (NN course)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Johnsons-4)
+nsubj(Johnsons-4, That-1)
+cop(Johnsons-4, 's-2)
+det(Johnsons-4, the-3)
+case(Beach-7, of-5)
+compound(Beach-7, Long-6)
+nmod:of(Johnsons-4, Beach-7)
+case(course-9, of-8)
+nmod:of(Beach-7, course-9)
+punct(Johnsons-4, .-10)
+
+Extracted the following NER entity mentions:
+Johnsons	ORGANIZATION
+Long Beach	CITY
+
+Sentence #4 (6 tokens):
+Luke is quite the joy.
+
+Tokens:
+[Text=Luke CharacterOffsetBegin=125 CharacterOffsetEnd=129 PartOfSpeech=NNP Lemma=Luke NamedEntityTag=PERSON]
+[Text=is CharacterOffsetBegin=130 CharacterOffsetEnd=132 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=quite CharacterOffsetBegin=133 CharacterOffsetEnd=138 PartOfSpeech=RB Lemma=quite NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=139 CharacterOffsetEnd=142 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=joy CharacterOffsetBegin=143 CharacterOffsetEnd=146 PartOfSpeech=NN Lemma=joy NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=146 CharacterOffsetEnd=147 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Luke))
+    (VP (VBZ is)
+      (NP (RB quite) (DT the) (NN joy)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, joy-5)
+nsubj(joy-5, Luke-1)
+cop(joy-5, is-2)
+advmod(joy-5, quite-3)
+det(joy-5, the-4)
+punct(joy-5, .-6)
+
+Extracted the following NER entity mentions:
+Luke	PERSON
+
+Sentence #5 (7 tokens):
+Here are a couple
+of
+photos.
+
+Tokens:
+[Text=Here CharacterOffsetBegin=149 CharacterOffsetEnd=153 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=154 CharacterOffsetEnd=157 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=158 CharacterOffsetEnd=159 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=couple CharacterOffsetBegin=160 CharacterOffsetEnd=166 PartOfSpeech=NN Lemma=couple NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=167 CharacterOffsetEnd=169 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=photos CharacterOffsetBegin=170 CharacterOffsetEnd=176 PartOfSpeech=NNS Lemma=photo NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=176 CharacterOffsetEnd=177 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SINV
+    (ADVP (RB Here))
+    (VBP are)
+    (NP
+      (NP (DT a) (NN couple))
+      (PP (IN of)
+        (NP (NNS photos))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, photos-6)
+advmod(couple-4, Here-1)
+dep(couple-4, are-2)
+det:qmod(photos-6, a-3)
+mwe(a-3, couple-4)
+mwe(a-3, of-5)
+punct(couple-4, .-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #6 (10 tokens):
+All the best,
+
+Todd, Rena, and Luke
+
+Tokens:
+[Text=All CharacterOffsetBegin=179 CharacterOffsetEnd=182 PartOfSpeech=PDT Lemma=all NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=183 CharacterOffsetEnd=186 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=best CharacterOffsetBegin=187 CharacterOffsetEnd=191 PartOfSpeech=JJS Lemma=best NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=191 CharacterOffsetEnd=192 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Todd CharacterOffsetBegin=194 CharacterOffsetEnd=198 PartOfSpeech=NNP Lemma=Todd NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=198 CharacterOffsetEnd=199 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Rena CharacterOffsetBegin=200 CharacterOffsetEnd=204 PartOfSpeech=NNP Lemma=Rena NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=204 CharacterOffsetEnd=205 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=206 CharacterOffsetEnd=209 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Luke CharacterOffsetBegin=210 CharacterOffsetEnd=214 PartOfSpeech=NNP Lemma=Luke NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (PDT All) (DT the))
+    (NP
+      (NP (JJS best))
+      (, ,)
+      (NP (NNP Todd))
+      (, ,)
+      (NP (NNP Rena))
+      (, ,)
+      (CC and)
+      (NP (NNP Luke)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, the-2)
+det:predet(the-2, All-1)
+dep(the-2, best-3)
+punct(best-3, ,-4)
+dep(the-2, Todd-5)
+conj:and(best-3, Todd-5)
+punct(best-3, ,-6)
+dep(the-2, Rena-7)
+conj:and(best-3, Rena-7)
+punct(best-3, ,-8)
+cc(best-3, and-9)
+dep(the-2, Luke-10)
+conj:and(best-3, Luke-10)
+
+Extracted the following NER entity mentions:
+Todd	PERSON
+Rena	PERSON
+Luke	PERSON
+
+Coreference set:
+	(2,6,[5,7]) -> (3,4,[3,10]), that is: "their best" -> "the Johnsons of Long Beach of course"
+	(3,1,[1,2]) -> (3,4,[3,10]), that is: "That" -> "the Johnsons of Long Beach of course"
+	(6,3,[3,4]) -> (3,4,[3,10]), that is: "best" -> "the Johnsons of Long Beach of course"
+
+Coreference set:
+	(6,10,[10,11]) -> (4,1,[1,2]), that is: "Luke" -> "Luke"

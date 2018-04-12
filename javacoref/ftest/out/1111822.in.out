@@ -1,0 +1,402 @@
+Document: ID=1111822.in (5 sentences, 100 tokens)
+
+Sentence #1 (28 tokens):
+Having watched the whole string of e-mails on this issue, I fully agree with Andy's observations and those of others who have made similar statements.
+
+Tokens:
+[Text=Having CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=VBG Lemma=have NamedEntityTag=O]
+[Text=watched CharacterOffsetBegin=7 CharacterOffsetEnd=14 PartOfSpeech=VBN Lemma=watch NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=whole CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=JJ Lemma=whole NamedEntityTag=O]
+[Text=string CharacterOffsetBegin=25 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=string NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=e-mails CharacterOffsetBegin=35 CharacterOffsetEnd=42 PartOfSpeech=NNS Lemma=e-mail NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=issue CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=issue NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=fully CharacterOffsetBegin=60 CharacterOffsetEnd=65 PartOfSpeech=RB Lemma=fully NamedEntityTag=O]
+[Text=agree CharacterOffsetBegin=66 CharacterOffsetEnd=71 PartOfSpeech=VBP Lemma=agree NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=72 CharacterOffsetEnd=76 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Andy CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=NNP Lemma=Andy NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=81 CharacterOffsetEnd=83 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=observations CharacterOffsetBegin=84 CharacterOffsetEnd=96 PartOfSpeech=NNS Lemma=observation NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=97 CharacterOffsetEnd=100 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=101 CharacterOffsetEnd=106 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=107 CharacterOffsetEnd=109 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=others CharacterOffsetBegin=110 CharacterOffsetEnd=116 PartOfSpeech=NNS Lemma=other NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=117 CharacterOffsetEnd=120 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=121 CharacterOffsetEnd=125 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=made CharacterOffsetBegin=126 CharacterOffsetEnd=130 PartOfSpeech=VBN Lemma=make NamedEntityTag=O]
+[Text=similar CharacterOffsetBegin=131 CharacterOffsetEnd=138 PartOfSpeech=JJ Lemma=similar NamedEntityTag=O]
+[Text=statements CharacterOffsetBegin=139 CharacterOffsetEnd=149 PartOfSpeech=NNS Lemma=statement NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=149 CharacterOffsetEnd=150 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (VBG Having)
+        (VP (VBN watched)
+          (NP
+            (NP (DT the) (JJ whole) (NN string))
+            (PP (IN of)
+              (NP (NNS e-mails))))
+          (PP (IN on)
+            (NP (DT this) (NN issue))))))
+    (, ,)
+    (NP (PRP I))
+    (ADVP (RB fully))
+    (VP (VBP agree)
+      (PP (IN with)
+        (NP
+          (NP
+            (NP (NNP Andy) (POS 's))
+            (NNS observations))
+          (CC and)
+          (NP
+            (NP (DT those))
+            (PP (IN of)
+              (NP (NNS others))))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBP have)
+                (VP (VBN made)
+                  (NP (JJ similar) (NNS statements)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, agree-14)
+aux(watched-2, Having-1)
+advcl(agree-14, watched-2)
+det(string-5, the-3)
+amod(string-5, whole-4)
+dobj(watched-2, string-5)
+case(e-mails-7, of-6)
+nmod:of(string-5, e-mails-7)
+case(issue-10, on-8)
+det(issue-10, this-9)
+nmod:on(watched-2, issue-10)
+punct(agree-14, ,-11)
+nsubj(agree-14, I-12)
+advmod(agree-14, fully-13)
+case(observations-18, with-15)
+nmod:poss(observations-18, Andy-16)
+case(Andy-16, 's-17)
+nmod:with(agree-14, observations-18)
+cc(observations-18, and-19)
+nmod:with(agree-14, those-20)
+conj:and(observations-18, those-20)
+case(others-22, of-21)
+nmod:of(those-20, others-22)
+nsubj(made-25, who-23)
+aux(made-25, have-24)
+dep(observations-18, made-25)
+amod(statements-27, similar-26)
+dobj(made-25, statements-27)
+punct(agree-14, .-28)
+
+Extracted the following NER entity mentions:
+Andy	PERSON
+
+Sentence #2 (25 tokens):
+In response to Andy's(and Dave Perrino's) question as to whether we respond to the BS of NERC, absolutely.
+
+Tokens:
+[Text=In CharacterOffsetBegin=151 CharacterOffsetEnd=153 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=response CharacterOffsetBegin=154 CharacterOffsetEnd=162 PartOfSpeech=NN Lemma=response NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=163 CharacterOffsetEnd=165 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Andy CharacterOffsetBegin=166 CharacterOffsetEnd=170 PartOfSpeech=NNP Lemma=Andy NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=170 CharacterOffsetEnd=172 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=172 CharacterOffsetEnd=173 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=173 CharacterOffsetEnd=176 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Dave CharacterOffsetBegin=177 CharacterOffsetEnd=181 PartOfSpeech=NNP Lemma=Dave NamedEntityTag=PERSON]
+[Text=Perrino CharacterOffsetBegin=182 CharacterOffsetEnd=189 PartOfSpeech=NNP Lemma=Perrino NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=189 CharacterOffsetEnd=191 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=191 CharacterOffsetEnd=192 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=question CharacterOffsetBegin=193 CharacterOffsetEnd=201 PartOfSpeech=NN Lemma=question NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=202 CharacterOffsetEnd=204 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=205 CharacterOffsetEnd=207 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=whether CharacterOffsetBegin=208 CharacterOffsetEnd=215 PartOfSpeech=IN Lemma=whether NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=216 CharacterOffsetEnd=218 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=respond CharacterOffsetBegin=219 CharacterOffsetEnd=226 PartOfSpeech=VBP Lemma=respond NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=227 CharacterOffsetEnd=229 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=230 CharacterOffsetEnd=233 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=BS CharacterOffsetBegin=234 CharacterOffsetEnd=236 PartOfSpeech=NN Lemma=bs NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=237 CharacterOffsetEnd=239 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=NERC CharacterOffsetBegin=240 CharacterOffsetEnd=244 PartOfSpeech=NNP Lemma=NERC NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=244 CharacterOffsetEnd=245 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=absolutely CharacterOffsetBegin=246 CharacterOffsetEnd=256 PartOfSpeech=RB Lemma=absolutely NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=256 CharacterOffsetEnd=257 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (PP (IN In)
+      (NP
+        (NP
+          (NP
+            (NP
+              (NP (NN response))
+              (PP (TO to)
+                (NP (NNP Andy) (POS 's))))
+            (-LRB- -LRB-)
+            (CC and)
+            (NP (NNP Dave)
+              (NP (NNP Perrino) (POS 's)))
+            (-RRB- -RRB-))
+          (NN question))
+        (PP (IN as) (TO to)
+          (SBAR (IN whether)
+            (S
+              (NP (PRP we))
+              (VP (VBP respond)
+                (PP (TO to)
+                  (NP
+                    (NP
+                      (NP (DT the) (NN BS))
+                      (PP (IN of)
+                        (NP (NNP NERC))))
+                    (, ,)
+                    (ADVP (RB absolutely))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, question-12)
+case(question-12, In-1)
+compound(question-12, response-2)
+case(Andy-4, to-3)
+nmod:to(response-2, Andy-4)
+case(Andy-4, 's-5)
+punct(response-2, -LRB--6)
+cc(response-2, and-7)
+conj:and(response-2, Dave-8)
+compound(question-12, Dave-8)
+nmod:poss(Dave-8, Perrino-9)
+case(Perrino-9, 's-10)
+punct(response-2, -RRB--11)
+mark(respond-17, as-13)
+mwe(as-13, to-14)
+mark(respond-17, whether-15)
+nsubj(respond-17, we-16)
+acl:as_to(question-12, respond-17)
+case(BS-20, to-18)
+det(BS-20, the-19)
+nmod:to(respond-17, BS-20)
+case(NERC-22, of-21)
+nmod:of(BS-20, NERC-22)
+punct(BS-20, ,-23)
+advmod(BS-20, absolutely-24)
+punct(question-12, .-25)
+
+Extracted the following NER entity mentions:
+Andy	PERSON
+Dave Perrino	PERSON
+NERC	ORGANIZATION
+
+Sentence #3 (1 tokens):
+.
+
+Tokens:
+[Text=. CharacterOffsetBegin=257 CharacterOffsetEnd=258 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, .-1)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (38 tokens):
+We should call them on this shameless use of an American tragedy...we should correct them on the facts and use this as an opportunity to highlight their inexcusable and baseless  manipulation of the WTC tragedy.
+
+Tokens:
+[Text=We CharacterOffsetBegin=258 CharacterOffsetEnd=260 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=261 CharacterOffsetEnd=267 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=call CharacterOffsetBegin=268 CharacterOffsetEnd=272 PartOfSpeech=VB Lemma=call NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=273 CharacterOffsetEnd=277 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=278 CharacterOffsetEnd=280 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=281 CharacterOffsetEnd=285 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=shameless CharacterOffsetBegin=286 CharacterOffsetEnd=295 PartOfSpeech=JJ Lemma=shameless NamedEntityTag=O]
+[Text=use CharacterOffsetBegin=296 CharacterOffsetEnd=299 PartOfSpeech=NN Lemma=use NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=300 CharacterOffsetEnd=302 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=303 CharacterOffsetEnd=305 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=American CharacterOffsetBegin=306 CharacterOffsetEnd=314 PartOfSpeech=JJ Lemma=american NamedEntityTag=NATIONALITY]
+[Text=tragedy CharacterOffsetBegin=315 CharacterOffsetEnd=322 PartOfSpeech=NN Lemma=tragedy NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=322 CharacterOffsetEnd=325 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=325 CharacterOffsetEnd=327 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=328 CharacterOffsetEnd=334 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=correct CharacterOffsetBegin=335 CharacterOffsetEnd=342 PartOfSpeech=VB Lemma=correct NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=343 CharacterOffsetEnd=347 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=348 CharacterOffsetEnd=350 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=351 CharacterOffsetEnd=354 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=facts CharacterOffsetBegin=355 CharacterOffsetEnd=360 PartOfSpeech=NNS Lemma=fact NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=361 CharacterOffsetEnd=364 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=use CharacterOffsetBegin=365 CharacterOffsetEnd=368 PartOfSpeech=VB Lemma=use NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=369 CharacterOffsetEnd=373 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=374 CharacterOffsetEnd=376 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=377 CharacterOffsetEnd=379 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=opportunity CharacterOffsetBegin=380 CharacterOffsetEnd=391 PartOfSpeech=NN Lemma=opportunity NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=392 CharacterOffsetEnd=394 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=highlight CharacterOffsetBegin=395 CharacterOffsetEnd=404 PartOfSpeech=VB Lemma=highlight NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=405 CharacterOffsetEnd=410 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=inexcusable CharacterOffsetBegin=411 CharacterOffsetEnd=422 PartOfSpeech=JJ Lemma=inexcusable NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=423 CharacterOffsetEnd=426 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=baseless CharacterOffsetBegin=427 CharacterOffsetEnd=435 PartOfSpeech=JJ Lemma=baseless NamedEntityTag=O]
+[Text=manipulation CharacterOffsetBegin=437 CharacterOffsetEnd=449 PartOfSpeech=NN Lemma=manipulation NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=450 CharacterOffsetEnd=452 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=453 CharacterOffsetEnd=456 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=WTC CharacterOffsetBegin=457 CharacterOffsetEnd=460 PartOfSpeech=NNP Lemma=WTC NamedEntityTag=O]
+[Text=tragedy CharacterOffsetBegin=461 CharacterOffsetEnd=468 PartOfSpeech=NN Lemma=tragedy NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=468 CharacterOffsetEnd=469 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP We))
+      (VP (MD should)
+        (VP (VB call)
+          (NP (PRP them))
+          (PP (IN on)
+            (NP
+              (NP (DT this) (JJ shameless) (NN use))
+              (PP (IN of)
+                (NP (DT an) (JJ American) (NN tragedy))))))))
+    (: ...)
+    (S
+      (NP (PRP we))
+      (VP (MD should)
+        (VP
+          (VP (VB correct)
+            (NP (PRP them))
+            (PP (IN on)
+              (NP (DT the) (NNS facts))))
+          (CC and)
+          (VP (VB use)
+            (NP (DT this))
+            (PP (IN as)
+              (NP (DT an) (NN opportunity)
+                (S
+                  (VP (TO to)
+                    (VP (VB highlight)
+                      (NP
+                        (NP (PRP$ their)
+                          (ADJP (JJ inexcusable)
+                            (CC and)
+                            (JJ baseless))
+                          (NN manipulation))
+                        (PP (IN of)
+                          (NP (DT the) (NNP WTC) (NN tragedy)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, call-3)
+nsubj(call-3, We-1)
+aux(call-3, should-2)
+dobj(call-3, them-4)
+case(use-8, on-5)
+det(use-8, this-6)
+amod(use-8, shameless-7)
+nmod:on(call-3, use-8)
+case(tragedy-12, of-9)
+det(tragedy-12, an-10)
+amod(tragedy-12, American-11)
+nmod:of(use-8, tragedy-12)
+punct(call-3, ...-13)
+nsubj(correct-16, we-14)
+nsubj(use-22, we-14)
+aux(correct-16, should-15)
+parataxis(call-3, correct-16)
+dobj(correct-16, them-17)
+case(facts-20, on-18)
+det(facts-20, the-19)
+nmod:on(correct-16, facts-20)
+cc(correct-16, and-21)
+parataxis(call-3, use-22)
+conj:and(correct-16, use-22)
+dobj(use-22, this-23)
+case(opportunity-26, as-24)
+det(opportunity-26, an-25)
+nmod:as(use-22, opportunity-26)
+mark(highlight-28, to-27)
+acl:to(opportunity-26, highlight-28)
+nmod:poss(manipulation-33, their-29)
+amod(manipulation-33, inexcusable-30)
+cc(inexcusable-30, and-31)
+conj:and(inexcusable-30, baseless-32)
+amod(manipulation-33, baseless-32)
+dobj(highlight-28, manipulation-33)
+case(tragedy-37, of-34)
+det(tragedy-37, the-35)
+compound(tragedy-37, WTC-36)
+nmod:of(manipulation-33, tragedy-37)
+punct(call-3, .-38)
+
+Extracted the following NER entity mentions:
+American	NATIONALITY
+
+Sentence #5 (8 tokens):
+NERC ought to be ashamed of itself.
+
+Tokens:
+[Text=NERC CharacterOffsetBegin=470 CharacterOffsetEnd=474 PartOfSpeech=NNP Lemma=NERC NamedEntityTag=ORGANIZATION]
+[Text=ought CharacterOffsetBegin=475 CharacterOffsetEnd=480 PartOfSpeech=MD Lemma=ought NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=481 CharacterOffsetEnd=483 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=484 CharacterOffsetEnd=486 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=ashamed CharacterOffsetBegin=487 CharacterOffsetEnd=494 PartOfSpeech=JJ Lemma=ashamed NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=495 CharacterOffsetEnd=497 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=itself CharacterOffsetBegin=498 CharacterOffsetEnd=504 PartOfSpeech=PRP Lemma=itself NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=504 CharacterOffsetEnd=505 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP NERC))
+    (VP (MD ought)
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (ADJP (JJ ashamed)
+              (PP (IN of)
+                (NP (PRP itself))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ought-2)
+nsubj(ought-2, NERC-1)
+nsubj:xsubj(ashamed-5, NERC-1)
+mark(ashamed-5, to-3)
+cop(ashamed-5, be-4)
+xcomp(ought-2, ashamed-5)
+case(itself-7, of-6)
+nmod:of(ashamed-5, itself-7)
+punct(ought-2, .-8)
+
+Extracted the following NER entity mentions:
+NERC	ORGANIZATION
+
+Coreference set:
+	(2,4,[4,6]) -> (1,16,[16,18]), that is: "Andy 's" -> "Andy 's"
+
+Coreference set:
+	(5,1,[1,2]) -> (2,22,[22,23]), that is: "NERC" -> "NERC"
+	(5,7,[7,8]) -> (2,22,[22,23]), that is: "itself" -> "NERC"
+
+Coreference set:
+	(4,1,[1,2]) -> (2,16,[16,17]), that is: "We" -> "we"
+	(4,14,[14,15]) -> (2,16,[16,17]), that is: "we" -> "we"
+
+Coreference set:
+	(4,4,[4,5]) -> (3,1,[1,2]), that is: "them" -> "."
+	(4,17,[17,18]) -> (3,1,[1,2]), that is: "them" -> "."
+	(4,29,[29,30]) -> (3,1,[1,2]), that is: "their" -> "."

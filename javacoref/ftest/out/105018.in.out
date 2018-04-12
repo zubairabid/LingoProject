@@ -1,0 +1,220 @@
+Document: ID=105018.in (3 sentences, 52 tokens)
+
+Sentence #1 (23 tokens):
+Effective today Natsource will have an execute id for www.brokerclient.com which will allow them to execute transaction on EnronOnline for their customers.
+
+Tokens:
+[Text=Effective CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=JJ Lemma=effective NamedEntityTag=O]
+[Text=today CharacterOffsetBegin=10 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=today NamedEntityTag=O]
+[Text=Natsource CharacterOffsetBegin=16 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=Natsource NamedEntityTag=ORGANIZATION]
+[Text=will CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=execute CharacterOffsetBegin=39 CharacterOffsetEnd=46 PartOfSpeech=VB Lemma=execute NamedEntityTag=O]
+[Text=id CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=id NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=www.brokerclient.com CharacterOffsetBegin=54 CharacterOffsetEnd=74 PartOfSpeech=NNP Lemma=www.brokerclient.com NamedEntityTag=URL]
+[Text=which CharacterOffsetBegin=75 CharacterOffsetEnd=80 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=81 CharacterOffsetEnd=85 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=allow CharacterOffsetBegin=86 CharacterOffsetEnd=91 PartOfSpeech=VB Lemma=allow NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=92 CharacterOffsetEnd=96 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=97 CharacterOffsetEnd=99 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=execute CharacterOffsetBegin=100 CharacterOffsetEnd=107 PartOfSpeech=VB Lemma=execute NamedEntityTag=O]
+[Text=transaction CharacterOffsetBegin=108 CharacterOffsetEnd=119 PartOfSpeech=NN Lemma=transaction NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=120 CharacterOffsetEnd=122 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=EnronOnline CharacterOffsetBegin=123 CharacterOffsetEnd=134 PartOfSpeech=NNP Lemma=EnronOnline NamedEntityTag=ORGANIZATION]
+[Text=for CharacterOffsetBegin=135 CharacterOffsetEnd=138 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=139 CharacterOffsetEnd=144 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=customers CharacterOffsetBegin=145 CharacterOffsetEnd=154 PartOfSpeech=NNS Lemma=customer NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=154 CharacterOffsetEnd=155 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP-TMP (JJ Effective) (NN today))
+    (NP (NNP Natsource))
+    (VP (MD will)
+      (VP (VB have)
+        (S
+          (NP (DT an))
+          (VP (VB execute)
+            (NP
+              (NP (NN id))
+              (PP (IN for)
+                (NP (NNP www.brokerclient.com)))
+              (SBAR
+                (WHNP (WDT which))
+                (S
+                  (VP (MD will)
+                    (VP (VB allow)
+                      (S
+                        (NP (PRP them))
+                        (VP (TO to)
+                          (VP (VB execute)
+                            (NP (NN transaction))
+                            (PP (IN on)
+                              (NP
+                                (NP (NNP EnronOnline))
+                                (PP (IN for)
+                                  (NP (PRP$ their) (NNS customers)))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-5)
+amod(today-2, Effective-1)
+nmod:tmod(have-5, today-2)
+nsubj(have-5, Natsource-3)
+aux(have-5, will-4)
+nsubj(execute-7, an-6)
+ccomp(have-5, execute-7)
+dobj(execute-7, id-8)
+nsubj(allow-13, id-8)
+case(www.brokerclient.com-10, for-9)
+nmod:for(id-8, www.brokerclient.com-10)
+ref(id-8, which-11)
+aux(allow-13, will-12)
+acl:relcl(id-8, allow-13)
+dobj(allow-13, them-14)
+nsubj:xsubj(execute-16, them-14)
+mark(execute-16, to-15)
+xcomp(allow-13, execute-16)
+dobj(execute-16, transaction-17)
+case(EnronOnline-19, on-18)
+nmod:on(execute-16, EnronOnline-19)
+case(customers-22, for-20)
+nmod:poss(customers-22, their-21)
+nmod:for(EnronOnline-19, customers-22)
+punct(have-5, .-23)
+
+Extracted the following NER entity mentions:
+Natsource	ORGANIZATION
+www.brokerclient.com	URL
+EnronOnline	ORGANIZATION
+
+Sentence #2 (15 tokens):
+The Natsource agreement includes confidentiality language which prohibits discussion of the agreement with others.
+
+Tokens:
+[Text=The CharacterOffsetBegin=157 CharacterOffsetEnd=160 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Natsource CharacterOffsetBegin=161 CharacterOffsetEnd=170 PartOfSpeech=NNP Lemma=Natsource NamedEntityTag=MISC]
+[Text=agreement CharacterOffsetBegin=171 CharacterOffsetEnd=180 PartOfSpeech=NN Lemma=agreement NamedEntityTag=O]
+[Text=includes CharacterOffsetBegin=181 CharacterOffsetEnd=189 PartOfSpeech=VBZ Lemma=include NamedEntityTag=O]
+[Text=confidentiality CharacterOffsetBegin=190 CharacterOffsetEnd=205 PartOfSpeech=NN Lemma=confidentiality NamedEntityTag=O]
+[Text=language CharacterOffsetBegin=206 CharacterOffsetEnd=214 PartOfSpeech=NN Lemma=language NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=215 CharacterOffsetEnd=220 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=prohibits CharacterOffsetBegin=221 CharacterOffsetEnd=230 PartOfSpeech=VBZ Lemma=prohibit NamedEntityTag=O]
+[Text=discussion CharacterOffsetBegin=231 CharacterOffsetEnd=241 PartOfSpeech=NN Lemma=discussion NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=242 CharacterOffsetEnd=244 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=245 CharacterOffsetEnd=248 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=agreement CharacterOffsetBegin=249 CharacterOffsetEnd=258 PartOfSpeech=NN Lemma=agreement NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=259 CharacterOffsetEnd=263 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=others CharacterOffsetBegin=264 CharacterOffsetEnd=270 PartOfSpeech=NNS Lemma=other NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=270 CharacterOffsetEnd=271 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NNP Natsource) (NN agreement))
+    (VP (VBZ includes)
+      (NP
+        (NP (NN confidentiality) (NN language))
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBZ prohibits)
+              (NP
+                (NP (NN discussion))
+                (PP (IN of)
+                  (NP
+                    (NP (DT the) (NN agreement))
+                    (PP (IN with)
+                      (NP (NNS others)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, includes-4)
+det(agreement-3, The-1)
+compound(agreement-3, Natsource-2)
+nsubj(includes-4, agreement-3)
+compound(language-6, confidentiality-5)
+dobj(includes-4, language-6)
+nsubj(prohibits-8, language-6)
+ref(language-6, which-7)
+acl:relcl(language-6, prohibits-8)
+dobj(prohibits-8, discussion-9)
+case(agreement-12, of-10)
+det(agreement-12, the-11)
+nmod:of(discussion-9, agreement-12)
+case(others-14, with-13)
+nmod:with(agreement-12, others-14)
+punct(includes-4, .-15)
+
+Extracted the following NER entity mentions:
+Natsource	MISC
+
+Sentence #3 (14 tokens):
+Any questions relative to Natsource Agreement should be directed to me at 713 853-0397.
+
+Tokens:
+[Text=Any CharacterOffsetBegin=273 CharacterOffsetEnd=276 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=questions CharacterOffsetBegin=277 CharacterOffsetEnd=286 PartOfSpeech=NNS Lemma=question NamedEntityTag=O]
+[Text=relative CharacterOffsetBegin=287 CharacterOffsetEnd=295 PartOfSpeech=JJ Lemma=relative NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=296 CharacterOffsetEnd=298 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Natsource CharacterOffsetBegin=299 CharacterOffsetEnd=308 PartOfSpeech=NNP Lemma=Natsource NamedEntityTag=O]
+[Text=Agreement CharacterOffsetBegin=309 CharacterOffsetEnd=318 PartOfSpeech=NNP Lemma=Agreement NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=319 CharacterOffsetEnd=325 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=326 CharacterOffsetEnd=328 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=directed CharacterOffsetBegin=329 CharacterOffsetEnd=337 PartOfSpeech=VBN Lemma=direct NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=338 CharacterOffsetEnd=340 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=341 CharacterOffsetEnd=343 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=344 CharacterOffsetEnd=346 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=713 853-0397 CharacterOffsetBegin=347 CharacterOffsetEnd=359 PartOfSpeech=CD Lemma=713 853-0397 NamedEntityTag=NUMBER]
+[Text=. CharacterOffsetBegin=359 CharacterOffsetEnd=360 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT Any) (NNS questions))
+    (ADVP (JJ relative)
+      (PP (TO to)
+        (NP (NNP Natsource) (NNP Agreement))))
+    (VP (MD should)
+      (VP (VB be)
+        (VP (VBN directed)
+          (PP (TO to)
+            (NP (PRP me)))
+          (PP (IN at)
+            (NP (CD 713 853-0397))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, directed-9)
+det(questions-2, Any-1)
+nsubjpass(directed-9, questions-2)
+advmod(directed-9, relative-3)
+case(Agreement-6, to-4)
+compound(Agreement-6, Natsource-5)
+nmod:to(relative-3, Agreement-6)
+aux(directed-9, should-7)
+auxpass(directed-9, be-8)
+case(me-11, to-10)
+nmod:to(directed-9, me-11)
+case(713 853-0397-13, at-12)
+nmod:at(directed-9, 713 853-0397-13)
+punct(directed-9, .-14)
+
+Extracted the following NER entity mentions:
+713 853-0397	NUMBER
+
+Coreference set:
+	(2,2,[2,3]) -> (1,3,[3,4]), that is: "Natsource" -> "Natsource"
+
+Coreference set:
+	(1,14,[14,15]) -> (1,6,[6,7]), that is: "them" -> "an"
+	(1,21,[21,22]) -> (1,6,[6,7]), that is: "their" -> "an"
+
+Coreference set:
+	(2,3,[1,4]) -> (3,6,[5,7]), that is: "The Natsource agreement" -> "Natsource Agreement"

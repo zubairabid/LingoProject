@@ -1,0 +1,113 @@
+Document: ID=1064495.in (2 sentences, 30 tokens)
+
+Sentence #1 (6 tokens):
+Congratulations to the entire team.
+
+Tokens:
+[Text=Congratulations CharacterOffsetBegin=0 CharacterOffsetEnd=15 PartOfSpeech=NNS Lemma=congratulation NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=entire CharacterOffsetBegin=23 CharacterOffsetEnd=29 PartOfSpeech=JJ Lemma=entire NamedEntityTag=O]
+[Text=team CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=team NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNS Congratulations))
+    (PP (TO to)
+      (NP (DT the) (JJ entire) (NN team)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Congratulations-1)
+case(team-5, to-2)
+det(team-5, the-3)
+amod(team-5, entire-4)
+nmod:to(Congratulations-1, team-5)
+punct(Congratulations-1, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (24 tokens):
+This sale was critically important to the credit management of the company and I am grateful to each team member for their efforts.
+
+Tokens:
+[Text=This CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=sale CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=sale NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=critically CharacterOffsetBegin=50 CharacterOffsetEnd=60 PartOfSpeech=RB Lemma=critically NamedEntityTag=O]
+[Text=important CharacterOffsetBegin=61 CharacterOffsetEnd=70 PartOfSpeech=JJ Lemma=important NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=71 CharacterOffsetEnd=73 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=credit CharacterOffsetBegin=78 CharacterOffsetEnd=84 PartOfSpeech=NN Lemma=credit NamedEntityTag=O]
+[Text=management CharacterOffsetBegin=85 CharacterOffsetEnd=95 PartOfSpeech=NN Lemma=management NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=96 CharacterOffsetEnd=98 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=99 CharacterOffsetEnd=102 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=company CharacterOffsetBegin=103 CharacterOffsetEnd=110 PartOfSpeech=NN Lemma=company NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=111 CharacterOffsetEnd=114 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=115 CharacterOffsetEnd=116 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=117 CharacterOffsetEnd=119 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=grateful CharacterOffsetBegin=120 CharacterOffsetEnd=128 PartOfSpeech=JJ Lemma=grateful NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=129 CharacterOffsetEnd=131 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=each CharacterOffsetBegin=132 CharacterOffsetEnd=136 PartOfSpeech=DT Lemma=each NamedEntityTag=O]
+[Text=team CharacterOffsetBegin=137 CharacterOffsetEnd=141 PartOfSpeech=NN Lemma=team NamedEntityTag=O]
+[Text=member CharacterOffsetBegin=142 CharacterOffsetEnd=148 PartOfSpeech=NN Lemma=member NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=149 CharacterOffsetEnd=152 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=153 CharacterOffsetEnd=158 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=efforts CharacterOffsetBegin=159 CharacterOffsetEnd=166 PartOfSpeech=NNS Lemma=effort NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=166 CharacterOffsetEnd=167 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (DT This) (NN sale))
+      (VP (VBD was)
+        (ADJP (RB critically) (JJ important)
+          (PP (TO to)
+            (NP
+              (NP (DT the) (NN credit) (NN management))
+              (PP (IN of)
+                (NP (DT the) (NN company))))))))
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (VBP am)
+        (ADJP (JJ grateful)
+          (PP (TO to)
+            (NP
+              (NP (DT each) (NN team) (NN member))
+              (PP (IN for)
+                (NP (PRP$ their) (NNS efforts))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, important-5)
+det(sale-2, This-1)
+nsubj(important-5, sale-2)
+cop(important-5, was-3)
+advmod(important-5, critically-4)
+case(management-9, to-6)
+det(management-9, the-7)
+compound(management-9, credit-8)
+nmod:to(important-5, management-9)
+case(company-12, of-10)
+det(company-12, the-11)
+nmod:of(management-9, company-12)
+cc(important-5, and-13)
+nsubj(grateful-16, I-14)
+cop(grateful-16, am-15)
+conj:and(important-5, grateful-16)
+case(member-20, to-17)
+det(member-20, each-18)
+compound(member-20, team-19)
+nmod:to(grateful-16, member-20)
+case(efforts-23, for-21)
+nmod:poss(efforts-23, their-22)
+nmod:for(member-20, efforts-23)
+punct(important-5, .-24)
+
+Extracted the following NER entity mentions:

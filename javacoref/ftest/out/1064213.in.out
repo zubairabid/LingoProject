@@ -1,0 +1,253 @@
+Document: ID=1064213.in (3 sentences, 65 tokens)
+
+Sentence #1 (19 tokens):
+Attached is the Enron Americas Gas Trading violation memo for  Maturity Gap
+Risk for May 25, 2001.
+
+Tokens:
+[Text=Attached CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=VBN Lemma=attach NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=Americas CharacterOffsetBegin=22 CharacterOffsetEnd=30 PartOfSpeech=NNP Lemma=Americas NamedEntityTag=ORGANIZATION]
+[Text=Gas CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Gas NamedEntityTag=ORGANIZATION]
+[Text=Trading CharacterOffsetBegin=35 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=Trading NamedEntityTag=ORGANIZATION]
+[Text=violation CharacterOffsetBegin=43 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=violation NamedEntityTag=O]
+[Text=memo CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=memo NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Maturity CharacterOffsetBegin=63 CharacterOffsetEnd=71 PartOfSpeech=NNP Lemma=Maturity NamedEntityTag=O]
+[Text=Gap CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=NNP Lemma=Gap NamedEntityTag=O]
+[Text=Risk CharacterOffsetBegin=76 CharacterOffsetEnd=80 PartOfSpeech=NN Lemma=risk NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=May CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=NNP Lemma=May NamedEntityTag=DATE NormalizedNamedEntityTag=20010525]
+[Text=25 CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=CD Lemma=25 NamedEntityTag=DATE NormalizedNamedEntityTag=20010525]
+[Text=, CharacterOffsetBegin=91 CharacterOffsetEnd=92 PartOfSpeech=, Lemma=, NamedEntityTag=DATE NormalizedNamedEntityTag=20010525]
+[Text=2001 CharacterOffsetBegin=93 CharacterOffsetEnd=97 PartOfSpeech=CD Lemma=2001 NamedEntityTag=DATE NormalizedNamedEntityTag=20010525]
+[Text=. CharacterOffsetBegin=97 CharacterOffsetEnd=98 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SINV
+    (VP (VBN Attached))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NNP Enron) (NNP Americas) (NNP Gas) (NNP Trading) (NN violation) (NN memo))
+        (PP (IN for)
+          (NP (NNP Maturity) (NNP Gap)))))
+    (NP
+      (NP (NN Risk))
+      (PP (IN for)
+        (NP (NNP May) (CD 25) (, ,) (CD 2001))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Attached-1)
+cop(memo-9, is-2)
+det(memo-9, the-3)
+compound(memo-9, Enron-4)
+compound(memo-9, Americas-5)
+compound(memo-9, Gas-6)
+compound(memo-9, Trading-7)
+compound(memo-9, violation-8)
+auxpass(Attached-1, memo-9)
+case(Gap-12, for-10)
+compound(Gap-12, Maturity-11)
+nmod:for(memo-9, Gap-12)
+nsubjpass(Attached-1, Risk-13)
+case(May-15, for-14)
+nmod:for(Risk-13, May-15)
+nummod(May-15, 25-16)
+punct(May-15, ,-17)
+nummod(May-15, 2001-18)
+punct(Attached-1, .-19)
+
+Extracted the following NER entity mentions:
+Enron Americas Gas Trading	ORGANIZATION
+May 25, 2001	DATE
+
+Sentence #2 (44 tokens):
+The Office of the Chairman for Enron Americas is
+responsible for printing out a hard copy of this memo, signing it and
+returning the hard copy to Chris Abel at 3155a, who will forward it to RAC to
+obtain their signature.
+
+Tokens:
+[Text=The CharacterOffsetBegin=100 CharacterOffsetEnd=103 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Office CharacterOffsetBegin=104 CharacterOffsetEnd=110 PartOfSpeech=NNP Lemma=Office NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=111 CharacterOffsetEnd=113 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=114 CharacterOffsetEnd=117 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Chairman CharacterOffsetBegin=118 CharacterOffsetEnd=126 PartOfSpeech=NNP Lemma=Chairman NamedEntityTag=TITLE]
+[Text=for CharacterOffsetBegin=127 CharacterOffsetEnd=130 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=131 CharacterOffsetEnd=136 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=Americas CharacterOffsetBegin=137 CharacterOffsetEnd=145 PartOfSpeech=NNPS Lemma=Americas NamedEntityTag=ORGANIZATION]
+[Text=is CharacterOffsetBegin=146 CharacterOffsetEnd=148 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=responsible CharacterOffsetBegin=149 CharacterOffsetEnd=160 PartOfSpeech=JJ Lemma=responsible NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=161 CharacterOffsetEnd=164 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=printing CharacterOffsetBegin=165 CharacterOffsetEnd=173 PartOfSpeech=VBG Lemma=print NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=174 CharacterOffsetEnd=177 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=178 CharacterOffsetEnd=179 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=hard CharacterOffsetBegin=180 CharacterOffsetEnd=184 PartOfSpeech=JJ Lemma=hard NamedEntityTag=O]
+[Text=copy CharacterOffsetBegin=185 CharacterOffsetEnd=189 PartOfSpeech=NN Lemma=copy NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=190 CharacterOffsetEnd=192 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=193 CharacterOffsetEnd=197 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=memo CharacterOffsetBegin=198 CharacterOffsetEnd=202 PartOfSpeech=NN Lemma=memo NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=202 CharacterOffsetEnd=203 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=signing CharacterOffsetBegin=204 CharacterOffsetEnd=211 PartOfSpeech=VBG Lemma=sign NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=212 CharacterOffsetEnd=214 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=215 CharacterOffsetEnd=218 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=returning CharacterOffsetBegin=219 CharacterOffsetEnd=228 PartOfSpeech=VBG Lemma=return NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=229 CharacterOffsetEnd=232 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=hard CharacterOffsetBegin=233 CharacterOffsetEnd=237 PartOfSpeech=JJ Lemma=hard NamedEntityTag=O]
+[Text=copy CharacterOffsetBegin=238 CharacterOffsetEnd=242 PartOfSpeech=NN Lemma=copy NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=243 CharacterOffsetEnd=245 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Chris CharacterOffsetBegin=246 CharacterOffsetEnd=251 PartOfSpeech=NNP Lemma=Chris NamedEntityTag=PERSON]
+[Text=Abel CharacterOffsetBegin=252 CharacterOffsetEnd=256 PartOfSpeech=NNP Lemma=Abel NamedEntityTag=PERSON]
+[Text=at CharacterOffsetBegin=257 CharacterOffsetEnd=259 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=3155a CharacterOffsetBegin=260 CharacterOffsetEnd=265 PartOfSpeech=CD Lemma=3155a NamedEntityTag=NUMBER NormalizedNamedEntityTag=3155.0]
+[Text=, CharacterOffsetBegin=265 CharacterOffsetEnd=266 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=267 CharacterOffsetEnd=270 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=271 CharacterOffsetEnd=275 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=forward CharacterOffsetBegin=276 CharacterOffsetEnd=283 PartOfSpeech=RB Lemma=forward NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=284 CharacterOffsetEnd=286 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=287 CharacterOffsetEnd=289 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=RAC CharacterOffsetBegin=290 CharacterOffsetEnd=293 PartOfSpeech=NNP Lemma=RAC NamedEntityTag=ORGANIZATION]
+[Text=to CharacterOffsetBegin=294 CharacterOffsetEnd=296 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=obtain CharacterOffsetBegin=297 CharacterOffsetEnd=303 PartOfSpeech=VB Lemma=obtain NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=304 CharacterOffsetEnd=309 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=signature CharacterOffsetBegin=310 CharacterOffsetEnd=319 PartOfSpeech=NN Lemma=signature NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=319 CharacterOffsetEnd=320 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP Office))
+      (PP (IN of)
+        (NP
+          (NP (DT the) (NNP Chairman))
+          (PP (IN for)
+            (NP (NNP Enron) (NNPS Americas))))))
+    (VP (VBZ is)
+      (ADJP (JJ responsible)
+        (PP (IN for)
+          (S
+            (VP
+              (VP (VBG printing)
+                (PRT (RP out))
+                (NP
+                  (NP (DT a) (JJ hard) (NN copy))
+                  (PP (IN of)
+                    (NP (DT this) (NN memo)))))
+              (, ,)
+              (VP (VBG signing)
+                (NP (PRP it)))
+              (CC and)
+              (VP (VBG returning)
+                (NP (DT the) (JJ hard) (NN copy))
+                (PP (TO to)
+                  (NP
+                    (NP (NNP Chris) (NNP Abel))
+                    (PP (IN at)
+                      (NP (CD 3155a)))
+                    (, ,)
+                    (SBAR
+                      (WHNP (WP who))
+                      (S
+                        (VP (MD will)
+                          (VP
+                            (ADVP (RB forward))
+                            (NP (PRP it))
+                            (PP (TO to)
+                              (NP (NNP RAC))))))))))))))
+      (S
+        (VP (TO to)
+          (VP (VB obtain)
+            (NP (PRP$ their) (NN signature))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, responsible-10)
+det(Office-2, The-1)
+nsubj(responsible-10, Office-2)
+nsubj:xsubj(obtain-41, Office-2)
+case(Chairman-5, of-3)
+det(Chairman-5, the-4)
+nmod:of(Office-2, Chairman-5)
+case(Americas-8, for-6)
+compound(Americas-8, Enron-7)
+nmod:for(Chairman-5, Americas-8)
+cop(responsible-10, is-9)
+mark(printing-12, for-11)
+advcl:for(responsible-10, printing-12)
+compound:prt(printing-12, out-13)
+det(copy-16, a-14)
+amod(copy-16, hard-15)
+dobj(printing-12, copy-16)
+case(memo-19, of-17)
+det(memo-19, this-18)
+nmod:of(copy-16, memo-19)
+punct(printing-12, ,-20)
+advcl:for(responsible-10, signing-21)
+conj:and(printing-12, signing-21)
+dobj(signing-21, it-22)
+cc(printing-12, and-23)
+advcl:for(responsible-10, returning-24)
+conj:and(printing-12, returning-24)
+det(copy-27, the-25)
+amod(copy-27, hard-26)
+dobj(returning-24, copy-27)
+case(Abel-30, to-28)
+compound(Abel-30, Chris-29)
+nmod:to(returning-24, Abel-30)
+nsubj(it-37, Abel-30)
+case(3155a-32, at-31)
+nmod:at(Abel-30, 3155a-32)
+punct(Abel-30, ,-33)
+ref(Abel-30, who-34)
+aux(it-37, will-35)
+advmod(it-37, forward-36)
+acl:relcl(Abel-30, it-37)
+case(RAC-39, to-38)
+nmod:to(it-37, RAC-39)
+mark(obtain-41, to-40)
+xcomp(responsible-10, obtain-41)
+nmod:poss(signature-43, their-42)
+dobj(obtain-41, signature-43)
+punct(responsible-10, .-44)
+
+Extracted the following NER entity mentions:
+Chairman	TITLE
+Enron Americas	ORGANIZATION
+Chris Abel	PERSON
+3155a	NUMBER
+RAC	ORGANIZATION
+
+Sentence #3 (2 tokens):
+Thank You
+
+Tokens:
+[Text=Thank CharacterOffsetBegin=322 CharacterOffsetEnd=327 PartOfSpeech=VB Lemma=thank NamedEntityTag=O]
+[Text=You CharacterOffsetBegin=328 CharacterOffsetEnd=331 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Thank)
+      (NP (PRP You)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Thank-1)
+dobj(Thank-1, You-2)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(2,19,[18,20]) -> (1,9,[3,13]), that is: "this memo" -> "the Enron Americas Gas Trading violation memo for Maturity Gap"
+
+Coreference set:
+	(2,22,[22,23]) -> (2,16,[14,20]), that is: "it" -> "a hard copy of this memo"
+	(2,27,[25,28]) -> (2,16,[14,20]), that is: "the hard copy" -> "a hard copy of this memo"
+	(2,37,[37,38]) -> (2,16,[14,20]), that is: "it" -> "a hard copy of this memo"

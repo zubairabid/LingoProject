@@ -1,0 +1,221 @@
+Document: ID=1102750.in (5 sentences, 48 tokens)
+
+Sentence #1 (16 tokens):
+We have one tape recording of a voice mail John Zurita left for Bill Stone.
+
+Tokens:
+[Text=We CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=tape CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=tape NamedEntityTag=O]
+[Text=recording CharacterOffsetBegin=17 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=recording NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=voice CharacterOffsetBegin=32 CharacterOffsetEnd=37 PartOfSpeech=NN Lemma=voice NamedEntityTag=O]
+[Text=mail CharacterOffsetBegin=38 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=mail NamedEntityTag=O]
+[Text=John CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=John NamedEntityTag=PERSON]
+[Text=Zurita CharacterOffsetBegin=48 CharacterOffsetEnd=54 PartOfSpeech=NNP Lemma=Zurita NamedEntityTag=PERSON]
+[Text=left CharacterOffsetBegin=55 CharacterOffsetEnd=59 PartOfSpeech=VBD Lemma=leave NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Bill CharacterOffsetBegin=64 CharacterOffsetEnd=68 PartOfSpeech=NNP Lemma=Bill NamedEntityTag=PERSON]
+[Text=Stone CharacterOffsetBegin=69 CharacterOffsetEnd=74 PartOfSpeech=NNP Lemma=Stone NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=74 CharacterOffsetEnd=75 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP have)
+      (NP
+        (NP (CD one) (NN tape) (NN recording))
+        (PP (IN of)
+          (NP (DT a) (NN voice) (NN mail)))
+        (SBAR
+          (S
+            (NP (NNP John) (NNP Zurita))
+            (VP (VBD left)
+              (PP (IN for)
+                (NP (NNP Bill) (NNP Stone))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-2)
+nsubj(have-2, We-1)
+nummod(recording-5, one-3)
+compound(recording-5, tape-4)
+dobj(have-2, recording-5)
+case(mail-9, of-6)
+det(mail-9, a-7)
+compound(mail-9, voice-8)
+nmod:of(recording-5, mail-9)
+compound(Zurita-11, John-10)
+nsubj(left-12, Zurita-11)
+acl:relcl(recording-5, left-12)
+case(Stone-15, for-13)
+compound(Stone-15, Bill-14)
+nmod:for(left-12, Stone-15)
+punct(have-2, .-16)
+
+Extracted the following NER entity mentions:
+one	NUMBER
+John Zurita	PERSON
+Bill Stone	PERSON
+
+Sentence #2 (8 tokens):
+I have attached it for your review.
+
+Tokens:
+[Text=I CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=78 CharacterOffsetEnd=82 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=attached CharacterOffsetBegin=83 CharacterOffsetEnd=91 PartOfSpeech=VBN Lemma=attach NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=92 CharacterOffsetEnd=94 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=95 CharacterOffsetEnd=98 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=99 CharacterOffsetEnd=103 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=review CharacterOffsetBegin=104 CharacterOffsetEnd=110 PartOfSpeech=NN Lemma=review NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=110 CharacterOffsetEnd=111 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP have)
+      (VP (VBN attached)
+        (NP (PRP it))
+        (PP (IN for)
+          (NP (PRP$ your) (NN review)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, attached-3)
+nsubj(attached-3, I-1)
+aux(attached-3, have-2)
+dobj(attached-3, it-4)
+case(review-7, for-5)
+nmod:poss(review-7, your-6)
+nmod:for(attached-3, review-7)
+punct(attached-3, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (18 tokens):
+I plan to send this transcript to NRG in return for all the transcripts in their possession.
+
+Tokens:
+[Text=I CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=plan CharacterOffsetBegin=115 CharacterOffsetEnd=119 PartOfSpeech=VBP Lemma=plan NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=120 CharacterOffsetEnd=122 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=send CharacterOffsetBegin=123 CharacterOffsetEnd=127 PartOfSpeech=VB Lemma=send NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=128 CharacterOffsetEnd=132 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=transcript CharacterOffsetBegin=133 CharacterOffsetEnd=143 PartOfSpeech=NN Lemma=transcript NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=144 CharacterOffsetEnd=146 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=NRG CharacterOffsetBegin=147 CharacterOffsetEnd=150 PartOfSpeech=NNP Lemma=NRG NamedEntityTag=ORGANIZATION]
+[Text=in CharacterOffsetBegin=151 CharacterOffsetEnd=153 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=return CharacterOffsetBegin=154 CharacterOffsetEnd=160 PartOfSpeech=NN Lemma=return NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=161 CharacterOffsetEnd=164 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=165 CharacterOffsetEnd=168 PartOfSpeech=PDT Lemma=all NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=169 CharacterOffsetEnd=172 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=transcripts CharacterOffsetBegin=173 CharacterOffsetEnd=184 PartOfSpeech=NNS Lemma=transcript NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=185 CharacterOffsetEnd=187 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=188 CharacterOffsetEnd=193 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=possession CharacterOffsetBegin=194 CharacterOffsetEnd=204 PartOfSpeech=NN Lemma=possession NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=204 CharacterOffsetEnd=205 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP plan)
+      (S
+        (VP (TO to)
+          (VP (VB send)
+            (NP (DT this) (NN transcript))
+            (PP (TO to)
+              (NP (NNP NRG)))
+            (PP (IN in)
+              (NP
+                (NP (NN return))
+                (PP (IN for)
+                  (NP
+                    (NP (PDT all) (DT the) (NNS transcripts))
+                    (PP (IN in)
+                      (NP (PRP$ their) (NN possession)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, plan-2)
+nsubj(plan-2, I-1)
+nsubj:xsubj(send-4, I-1)
+mark(send-4, to-3)
+xcomp(plan-2, send-4)
+det(transcript-6, this-5)
+dobj(send-4, transcript-6)
+case(NRG-8, to-7)
+nmod:to(send-4, NRG-8)
+case(return-10, in-9)
+nmod:in(send-4, return-10)
+case(transcripts-14, for-11)
+det:predet(transcripts-14, all-12)
+det(transcripts-14, the-13)
+nmod:for(return-10, transcripts-14)
+case(possession-17, in-15)
+nmod:poss(possession-17, their-16)
+nmod:in(transcripts-14, possession-17)
+punct(plan-2, .-18)
+
+Extracted the following NER entity mentions:
+NRG	ORGANIZATION
+
+Sentence #4 (5 tokens):
+Talk to you soon.
+
+Tokens:
+[Text=Talk CharacterOffsetBegin=207 CharacterOffsetEnd=211 PartOfSpeech=NN Lemma=talk NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=212 CharacterOffsetEnd=214 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=215 CharacterOffsetEnd=218 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=soon CharacterOffsetBegin=219 CharacterOffsetEnd=223 PartOfSpeech=RB Lemma=soon NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=223 CharacterOffsetEnd=224 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NN Talk))
+    (PP (TO to)
+      (NP (PRP you)))
+    (ADVP (RB soon))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Talk-1)
+case(you-3, to-2)
+nmod:to(Talk-1, you-3)
+advmod(Talk-1, soon-4)
+punct(Talk-1, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (1 tokens):
+Andy
+
+Tokens:
+[Text=Andy CharacterOffsetBegin=226 CharacterOffsetEnd=230 PartOfSpeech=NNP Lemma=Andy NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Andy)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Andy-1)
+
+Extracted the following NER entity mentions:
+Andy	PERSON
+
+Coreference set:
+	(2,4,[4,5]) -> (1,5,[3,16]), that is: "it" -> "one tape recording of a voice mail John Zurita left for Bill Stone"
+
+Coreference set:
+	(3,1,[1,2]) -> (2,1,[1,2]), that is: "I" -> "I"

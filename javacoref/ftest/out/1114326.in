@@ -1,0 +1,477 @@
+ENW EBS IT -  Weekly Status Report  (as of 10/26/01)
+
+
+Executive Summary :
+
+EnFiber:   Real Estate Book requirements gathering and documentation is 100% complete; obtained all approvals; development is 25% complete.  User acceptance testing for Scheduling Phase 1 is 85% complete; the implementation date has been changed to 10/26 per user's request.  Waiting for final signoff from Jim Terrell. Successfully implemented FACT Release 1.2 on 10/15.  Completed development of IP and Local Loop options for Valuation and began QA testing.
+
+PPCS/TRPS:
+TRP demo by Dorado is well accepted by Enron audience. The prototype is able to fix the biggest problem in the current EBS bandwidth trading process -- not able to show the actual hardware inventory of network elements in order to make accurate port striping and cross connect. Through their auto hardware discovery device driver, switch inventory will be presented clearly to the users in a nice graphical layout, so provisioners don't have to spend huge amount of time to maintain various IT systems to gather the knowledge of bandwidth capacity allocation.  TRPS will gather information for both TDM and IP.
+Settlements (Saber):  Users are approximately 50% complete with User Acceptance Testing.  Users were successful in posting first invoices to SAP with no errors.  A demo of the GUI for the Flash to Actuals reconciliation process is scheduled for Monday, Oct. 29.  Production Implementation will be mid-to-late November,  a couple weeks ahead of original schedule.
+Remedy:  Started discussions for release 2.0 of the EBS Change Management application.   Changes to include schedule maintenance notices and test & turnup.  These changes does not require mandatory approval. Added automatic reporting functionality to the EBS Trouble Ticketing system.  Continued web development on the MSN document routing and approval system.   Functionalities completed include submitting new request, approvals and comments.
+Livelink thespotlight: is currently providing storage for 24606 documents. Currently work is in progress to incorporate Engineering and Operations documents into the system, as well as migrate the system into the Corp domain. Below is a more detailed description of this week's activities and next week's deliverables.
+EBS Application Infrastructure:  Provide oversight and project management activities of the EBS application infrastructure with ENW.
+
+EBS Database Technologies:   Provide on-going production and development database support for both external and internal EBS database systems.
+
+Utopia: The proof of concept was completed Sept. 21st. A demo has now been given to Rick Paiste, Inja Chun, Rick Fehl, Paul Racicot and Sue Klinke, all reactions were favorable. The next steps will be to refine the presentation and re-present to upper management for further approval. Al Nahas will be demoed the product next week. We have identified issues with several of the dBs and this would require additional work to correct these data problems between the systems, this will not be an insignificant task.
+
+Voice Minutes Trading:  USTeleNet has agreed to accept Enron routing data via an automated exchange (XML format) as opposed to the current labor-intensive process..  This will require USTeleNet to develop an interface to their TMS system.  We are also working with Nortel to interface with their Nortel switch via software (i.e. API).  Nortel has a proprietary DMS 250/300 operating system which requires manual input every time a route is changed;  we will continue to investigate the feasibility of interfacing internally-developed software to improve efficiencies & accuracies.  Many suppliers' rates have been downloaded to our environment for purpose of finding least-cost supplier's rates for our traders and creation of rate sheets for confirmation.  New Product Management and Supplier Rate Management modules have been developed and are now being tested by users.  Trader Ratesheet development should be completed & available for testing within the week.     We have scheduled 11/8 & 11/9 for the 4tel / Telesciences software demo.
+Deal Prospects / Contact Tracking:  Reviewed options including existing solutions such as EnGAGE, Siebel (off-the-shelf) and an internally developed web-based tool.  Goal is to provide a simple, cost-effective tool that can be used by commercial teams (starting with Mid-Market, DRAM, Minutes ) to track prospects & contacts.
+Enron  kicked off an enterprise-wide CRM initiative with the goal of recommending a CRM strategy (including Sales Force Automation) to senior Enron management by October 25.   EBS will only be participating in the assessment / evaluation stage.
+Media Services / Strata:  Developed a Tactical Deal Capture product ; in process of completing Sales Invoice functionality for Tactical Settlements, including the ability to generate Sales Invoices on the basis of Physical Spots, Survey-Based GRPs, Overnight-Based GRPs, or PreBill (prior to actual spot airing).  Tactical Deal + Settlements are integrated, using Strata core data coupled with Tactical Deal data.   Continued systematic daily processing of Nielsen Overnight TV & Cable Ratings data (nearly 100,000 lines/day), along with systematic aggregation of Quarter Hour data for each TV program.   Created Buy Statistics & Market Statistics UI against existing Strata data.
+EBS Contracts (tactical): Continued development of v5.2.  This release includes enhancements to add attributes for Minutes contracts.  The scheduled release date is 11/06.
+EBS Contracts (strategic): Completed updating project plans and will provide to business next week.  Completed database modeling for tasks and reminders.  Began development of client-side (browser) validation for commercial contracts.
+EBS Facilities:  Continued development of v3.3.  This release will include the ability to query key systems for their dependency on Facilities and automation of the short description.
+Global Counterparty/Common Codes:  Corrected problems with wire information and address roles that were identified during Saber/Globals testing.
+
+Project Name : Voice Minutes Trading
+Accomplishments - This Week
+Development Initiatives
+User Acceptance Testing of  Product Manager module
+User Acceptance Testing of  Supplier Rate Management module
+Started Development of Trader Ratesheet module
+Started Development of Admin module
+
+USTeleNet
+Tested USTeleNet modifications for CDR Re-Rate functionality
+Conference call to discuss additional modifications
+Draft proposed format for sending Routing data to USTeleNet via XML
+Worked with USTeleNet to Re-Rate existing data
+
+Strategic / Long-Term Solution Search
+Vendor discovery (Credit check, peers, customer base etc)
+Preparation for upcoming software demonstration  (NonDisclosure Agreement, Agenda etc)
+
+Deliverables Scheduled For Next Week
+Development Initiatives
+Migrate Product Manager module to Production
+Create Enron products for use by Traders
+Migrate Supplier Rate Management module to Production
+Create  Supplier Ratesheets for use by Traders
+Complete Admin module to accommodate new Supplier Routes/Codes used by Supplier Rate Management module
+Complete development of Trader Ratesheets & begin User Acceptance Testing
+
+USTeleNet
+Identify relationship 'map' between Enron products and USTeleNet routes
+Send sample Routing data to USTeleNet
+Determine timeline for implementing USTeleNet modifications  (Security; Subtraction Logic; NPA Copy functionality;  Completion of CDR Re-Rate functionality; Field Length Mods to accommodate specific Routes)
+Complete testing of CDR Re-Rate functionality
+Process Re-Rated results (reload database)
+
+Strategic / Long-Term Solution Search
+Vendor Discovery
+
+Key Dates
+Development	Test	Production
+MINUTES TRADING	Target	Status	Target	Target
+Development (Internal Enron)
+Product Management	10/19/01	100%	10/23/01	10/24/01
+Supplier Rate Management	10/22/01	100%	10/24/01	10/25/01
+Trader Ratesheet / Quotesheet	11/2/01	30%	11/9/01	11/11/01
+USTeleNet - Modifications (External)
+CDR ReRates	10/19/01	90%	10/26/01	10/29/01
+NPA Edits	TBD	Not Started	TBD	TBD
+Subtraction Logic / Miscellaneous Mods	TBD	Not Started	TBD	TBD
+USTeleNet - Data Exchange (API)
+Test Environment	10/15/01	Complete	TBD	TBD
+Define Enron Requirements	10/23/01	95%	TBD	TBD
+Propose Format / Method	10/24/01	95%	TBD	TBD
+Strategic Solution (External Vendor Search)
+Business Use Scenarios  	10/19/01	Complete	10/22/01
+4tel / Telesciences Software Demo	11/8/01	In Progress
+
+Dataflow
+Numberplan Download	 	Complete
+CDR Download	 	Complete
+CDR Download Mods @ ReRate 	TBD
+
+
+Project Name: Media Services/ Strata
+
+Accomplishments - This Week
+Tactical Deal Capture & Settlements
+Completed Sales Invoice functionality to support production of Final or Draft Sales Invoices for
+Spot -based movements
+Survey-based GRPs
+
+Strata Software
+Ongoing data loads (Arbitron, Nielsen ...)
+
+Media Services Data Warehouses
+No New Activity
+
+Deliverables Scheduled For Next Week
+Tactical Deal Capture & Settlements
+Wrap up remaining work on Sales Invoice functions (primarily Pre-Bill) & any outstanding bug fixes
+
+Media Services Data Warehouses
+No Activity Planned
+
+Strata Software
+Ongoing data loads (Arbitron, Nielsen ...)
+
+Key Dates
+Development	Test	Production
+MEDIA SERVICES	Target	Status	Target	Target
+Data Warehouse - Nielsen Overnights	7/31/2001	Complete	8/3/2001	Actual
+Data Warehouse - Nielsen Surveys	11/30/2001	Hold	12/3/2001	12/7/2001
+Tactical Deal Capture 	10/15/2001	Complete	10/22/2001	10/31/2001
+Tactical Settlements - Physical Basis Invoicing *	10/15/2001	Complete	10/19/2001	10/22/2001
+Tactical Settlements - Pre-Bill Basis Invoicing	10/22/2001	95%	10/26/2001	10/29/2001
+Tactical Settlements - Payment Invoicing 	10/29/2001	80%	11/2/2001	11/9/2001
+Buy + Market Statistics (Strata Data)	9/30/2001	Complete	10/1/2001	10/1/2001
+Optimization / Avails Data Integration	11/15/2001	Hold	11/23/2001	11/30/2001
+SQUAD Pricing Data 	11/30/2001	Hold	12/3/2001	12/10/2001
+
+* Survey-Based GRPs + Physical Spots
+
+Project Name: Deal Prospects / Contact Tracking
+
+Accomplishments - This Week
+The DRAM group has begun using a working model for capturing contact / deal prospect / activity associated with counterparties
+
+Deliverables Scheduled For Next Week
+No New Activity
+
+Project Name:  EBS Contracts Management (tactical):
+
+Accomplishments - This Week
+Began development of v5.2.  This release includes new attributes for Minutes contracts for settlements and rate determination.  Other items in this release include additional invoice/payment terms for Collocation agreements and additional field validation to accommodate enhancements that will be made to EnFiber later in the year.   The scheduled release date is 11/06.
+
+Deliverables Scheduled For Next Week
+Complete user interface changes for v5.2.  Begin development of changes to included new attributes in push to CDP jobs.
+
+Project Name:  EBS Contracts (strategic):
+
+Accomplishments This Week
+Completed updating project plans, one with task/reminder functionality and another without.   These will be provided to the business owner so a decision can be made on whether or not to remove tasks/reminders from the scope of the project.
+Completed database model changes for task and reminders.
+Began development of client-side (browser) validation for commercial contracts.
+
+Deliverables Scheduled For Next Week
+Complete development of stored procedure changes for task and reminders and other code tables that were recently modified.
+Provide business with project schedules so they can make decision on whether or not to remove the task/reminders from the scope of the project.
+Continued development of client-side (browser) validation for commercial contracts.
+
+Project Name:  EBS Facilities
+
+Accomplishments This Week
+Continued development of v3.3.  Design is in progress for functionality that will query other systems for their dependency on a given Facility.  Completed development of automation of Facility short description.
+
+Deliverables Scheduled For Next Week
+Complete requirements for release 3.3.   This release will include functionality to query key systems (ECOMS, EnFiber, Saber, NETS) to determine if the applications are dependent on a Facility, the ability to edit CLLI codes, and automation of the short description.  Initial development has already started.
+Continued development of v3.3.
+Work with IT Infrastructure to complete set-up of batch job that interfaces EBS Facilities with DPC to retrieve tax jurisdiction codes.
+
+Project Name:  Global Counterparty/Common Codes:
+
+Accomplishments This Week
+Corrected several problems with the GCP to CDP load.  The problems were identified during Saber/Globals testing.  One problem was related to address roles and the other wire information.
+
+Deliverables Scheduled For Next Week
+Begin enhancements to add an additional data element to determine what companies are Enron Entities.  This is an enhancement that will allow the proper classification of FTV Communications as an Enron Entity or Counterparty.
+Work with HR-GIM to make modifications to Labor Resource extract to include company 0342.
+
+Project Name:  SABER
+
+Accomplishments - This Week:
+Completed user requested changes for Period Status control functionality.
+Completed additional problem request tickets for errors/enhancements identified in UA testing
+
+Deliverables Scheduled/In Progress for Next Week:
+Continue hands- on support for UA testing
+Initial review of Flash to Actual GUI to settlement users, Monday Oct 29
+Support fixing problems found during UA testing
+Complete Account Inquiry changes
+Start rewrite of Unassigned Detail report (convert from SQR)
+
+Issues:
+None
+
+SABER  - Major Milestones (Phase I)	Completion Target Date	Status
+
+I. 	User Requirement Definition Completion	5/30	Completed
+
+II.	IT Environment Setup/ Finalize Infrastructure 	5/10	Completed
+III.	Program Development	 	In-Progress
+A.  System Wide Changes	9/1	100%
+B.  Acctg/GL	6/29	100%
+C.  Statement Group	6/19	100%
+D.  Deal	9/28	100%
+E.  Global Data Interface	7/30	100%
+F.  Statements	9/28	100%
+G.  SAP	9/28	100%
+H.  Flash to Actuals	9/28	95%
+I.  Admin	10/1	100%
+J.  Reports	9/28	95%
+IV.	Unit Testing	7/3 - 10/15	95%
+V. 	Integration  / User Acceptance Testing	10/1 - 11/30	50%
+VI. 	Transition to Production	11/12 - 11/30	0%
+
+
+Project Name: Remedy
+
+Accomplishments
+Started discussions for release 2.0 of the EBS Change Management application.   Changes to include schedule maintenance notices and test/turnup.  These changes does not require mandatory approval.
+Added automatic reporting functionality to the EBS Trouble Ticketing system.
+Continued web development on the MSN document routing and approval system.   Functionalities completed include submitting new request, approvals and comments.
+
+Deliverables Scheduled for Next Week
+Continue the development of the MSN document routing application
+Continue development of future enhancements to the EBS CRM application
+
+Issues
+Development web server needs to be reconfigured
+
+Project Name: livelink thespotlight
+
+Accomplishments - This week:
+Continuing to increase the number of users accessing thespotlight
+Obtained necessary approvals to acquire storage for Livelink integration
+Worked after hours to install patches on thespotlight Test and Production environments
+Worked after hours to support weekend outage
+Modified thespotlight Explorer module to automatically attach categories to documents as they are dragged and dropped into folders
+Resolved issue with ODBC connectivity failing in Contract Barcode application
+Performed necessary application maintenance on Contract and Invoice Bar-coding systems
+Resolved thespotlight database connectivity issue
+Met with Engineering and Operations management and Corp developers to discuss cost and options on Bulk Loader
+Supported structure and security setup for MSN documents being stored in thespotlight
+Met with Corp Livelink team to discuss SAP and thespotlight Integration for storing London Invoices
+Resolved all Livelink helpdesk request
+Modified security setup for several Corp migrated users
+Deliverables scheduled for Next week:
+Discuss with Corp Livelink team, support needs for thespotlight
+Review and submit final cost estimates or alternative to Engineering and Operations for AutoCad Bulk Loader
+Establish timeline for storage availability for integration project
+Determine the appropriate deployment scenario for Voloview product on end-users desktops
+Continue to support Engineering and Operations migration into thespotlight
+Support Livelink needs necessary for the AutoCad/Voloview/thespotlight integration
+Setup/train additional users on Input Accel and scanner process
+Issues:
+None
+
+Project Name: EBS Application Infrastructure
+
+Accomplishments - This week:
+Determined the data storage strategy for LiveLink.
+Continued the decommissioning process for ACTA/SAP data loads.
+Continued researching the decommissioning of the SAP Brio reporting environment.
+Determined the ftp strategy for Saber.
+Met with the Data Storage group to establish a NT/Unix file share for EBS applications.
+Resolved issues with the Oracle Unix client installation for the EBS application servers.
+
+Deliverables scheduled for Next week:
+Decommission the ACTA/SAP data loads.
+Continue with the NT server migrations from the Enron_Comm domain to the Corp domain.
+Continue development of the NT/Unix file share.
+
+Issues:
+
+None
+
+Project Name:  EBS Database Technologies
+
+Accomplishments - This week:
+Performed general development and production support activities.
+Continued to perform activities for the MSN go-live of 10/28.
+Resolved Oracle replication issues for the Cisco Secure NOC application.
+Decommissioned and archived the SAP development data warehouse databases.
+Continued the setup and configuration of the Oracle administration server.
+Decommission both the old database admin server and the EBS Oracle Names infrastructure.
+Implemented the OLTP Minutes database schema.
+Began transfering the Mintues data from the warehouse database into the OLTP database.
+Began the implementation and configuration of the Quest Foglight database monitoring system.
+
+Deliverables scheduled for Next week:
+Implement/configure the Quest Foglight database monitoring on the new DBA administration server.
+Decommission and archive the SAP production data warehouse databases.
+Configure the Oracle 9i development database server.
+Attend the Oracle 9i new features class.
+
+Issues:
+
+None
+
+Project Name:  EnFiber
+
+Accomplishments
+Real Estate/Deal Entry 2
+Finalized requirements and obtained project approval from Kyle Simson, Stephen Schwarz, Kristin Albrecht, and Inja Chun.  Waiting for Barry Pearce's approval.
+Created new tables in fibrdev and started coding the triggers.
+Met with Saber group to review the EnFiber data model.  Saber would like to be prepared for the incoming interfaces for Real Estate deals.
+Begin development on application migration.
+Continue existing database maintenance.
+Begin development of Deal Entry 2 for Real Estate.
+
+Scheduling/Deal Entry 1
+Held user acceptance testing with Denae Umbower and Debra Reeves.  Denae recommended that the offsets tab be renamed to physical offsets.  Another testing session is scheduled with Jim Terrell, Robert Pechar, and Jeremy Mills on 10/19.
+Fixed identified bugs in Deal Entry 1.8.
+Began discussions within IT regarding data integration of EnFiber Scheduling Module, ECOMS, NETS, and Remedy interface.
+
+FACT
+Resolved a pressing Local Loop MRC and NRC issue.
+Successfully implemented Release 1.2.
+Currently performing a knowledge transfer from Tony Cahue to James Kim.
+
+Valuation
+Completed development of IP and Local Loop options and migrated to QA test.
+Assessing changes necessary to liquidate an option premium that is due in the same month as the expiration of the option.
+Added headers for IP volatility curves (new city pairs) in fibrprod.
+Added three (3) new IP transit standard curve headers in fibrprod.
+Completed modifications to create one zip file including .complete file.
+
+Reports
+Continued development of Trader Position Report.  Scripts appear to be working to set the limits correctly.  Will migrate to user test on 10/19.
+Debbie corrected NRC in Liquidation/Settlement Report in user test.  Judi successfully re-created the oce files for each Brio query.
+Added capability of pulling deal via term_strips_lit_vw when npa/nxx not selected.
+The Cash Flow Report was displaying duplicate primary legal entities.  To correct the problem Debbie added a filter on desk view to eliminate primary legal entities that are not active and Judi set the Brio query to pull unique records only.
+
+Deal Approval
+Worked on portfolio-level security.  This will ensure that the following groups will have permission/rights to change the deal after it's been approved:  Deal Clearing, Logistics, and Risk Management.
+Also performed some cleanup of DOAsecurity code.
+
+Deal Patrol
+Fixed grid position reset bug.
+Completed auto load defaults for font size and column widths.
+Modified the code to close the database connection after the initial load and then reconnect when required by the application.
+Migrated to user test.
+Modified the code to insert legal_entity_cp_id and secondary_legal_entity_cp_id in fbr_deal_peers if the deal is desk-to-desk deal because it was generating an exception.
+Resolved the 'OnVariant' error that is generated on Deal Patrol when any EOL deal is transferred to EnFiber
+
+Cnx Monitor
+Completed development on checking multicast connectivity.
+
+Report Launcher
+Completed database changes.
+
+Deliverables Scheduled For Next Week
+Real Estate
+Complete development of the triggers for newly created Real Estate tables.
+Continue work on the data mappings between the Real Estate Access database and the EnFiber database, which is part of the data conversion process.
+Modify liquidation table view for Real Estate.
+Begin development of Real Estate valuation.
+
+Scheduling/Deal Entry 1
+Implement Scheduling Phase 1 and Deal Entry 1.8.
+
+Reports & Database
+Implement Trader Position report.
+
+Deal Blotter
+Complete Deal Blotter Deal Status and Ready to Settle modifications.
+
+Project Name: PPCS/TRPS
+
+Accomplishment - this week
+Implement a new project plan to expedite the development effort of removing Xconnect from PPCS.
+Connectivity between Pleasanton switch lab and Enron Ardmore/Greenspoint is rebuilt. Lucent 2.5 G test switch now is reachable for acceptance test.
+Identify a Lucent 10 G test switch in Portland for acceptance test.
+Identify a Lucent 4608 switch can be used for acceptance test. Since the switch is also in production. Extreme caution will be measured for port assignment. Additional coordination with Global Network Management group is required..
+Dorado provides TRP prototype demo for provisioning, capacity management, TOC, NOC, GNM and IT. The demo goes very well and receives high remarks from attendants.
+Furnish additional requirement to Dorado for TRP development.
+All switches are reachable from PPCS in the whole week.
+Test contracts running on Portland lab do not collect PM successfully. Investigation is under way. (Eric Liu)
+Implement a code check in/out process in a joint development environment without direct network connectivity
+
+Deliverables Scheduled for next week
+Finish development to remove xconnect and disconnect from PPCS.
+Coordinate with network engineering, network security, provisioning groups and NOC to determine when PPCS network security setting will be upgraded again.
+Prepare db migration and production freeze.
+Enron continues to furnish up to date business requirement of PPCS replacement product to Dorado.
+Coordinate with GNM to identify available port assignment in the San Jose production switch for acceptant test.
+Dorado deliver Red Cell API documents to Enron.
+
+Key Date
+Dorado delivers TRP prototype 1.0 date is 10-31-2001
+Ardmore server goes into production date is 11-19-2001
+
+Issue
+Need to work with GNM to reset network security for PPCS before 1.1.2 goes into production. (Eric Liu)
+Need to make sure current PPCS 1.0 contract will not send out disconnect commands after the network security setting is upgraded and before 1.1.2 goes into production. (Eric Liu)
+Need to implement and communicate the new operation procedure to filed engineer and provisioning. So physical cross connect from SNMS will occur before PPCS PM collection time and physical disconnect from SNMS will occur after PPCS stops collecting PM. (David Workman)
+Follow up with Terry Hoop's to find out whether the Luent 2.5 G test switch will be available in Shepherd. (Eric Liu)
+Dorado needs to provide a complete set of final source code of PPCS 1.1.2 to Enron. (Dorado)
+PPCS access level has been downgraded to prevent cross and disconnect commands sent to the switches. Because of the change, PPCS stop collecting PM data for newly entered contracts 'cause PM initialization requires the same level of access right as cross & disconnect. So security level for PPCS needs to be upgraded before George Babaz's team can continue to enter missing contracts to the system. But the timing is very tricky otherwise there maybe a possibility some existing contracts on version 1.0 will be terminated by PPCS. (Eric Liu)
+Dorado needs to start deliver TRP related documents to Enron. (Dorado)
+Dorado needs to package PPCS 1.1.2 delivery CDs with all the fix. (Dorado)
+Installation documents from Dorado needs to be further flushed out. (Dorado)
+Dorado needs to produce timeline and cost estimate for new requirement. (Dorado)
+Dorado needs to provide TRP architecture. (Dorado)
+Sylvix manager installation (Dorado and Rick Paiste)
+Hardware support for outages needs to defined (David Wicks)
+Final versions of 1.1.2 documents need to be updated in spotlight document management system (Eric Liu)
+
+
+FACT Weekly Status
+
+Accomplishments
+1. Finished programming for Release 1.3. Major features in Rel 1.3 includes:
+1) Supporting multiple commodities - Added IP Transit and Transport, Local Loop Protected, Unprotected, Cross Connect, and HUB.
+2) Handling Term Strips in a separate window from Peer/Leg with a master/details relationship.
+3) Added capability to export deals in grid on screen to Excel spreadsheet for printing or further manipulation.
+2. Started UAT since Tuesday (10/23/01)
+3. Determined the application metrics for FACT
+1) Active User Count
+2) Total Records during the last one week
+(1) New Deals
+(2) Revised Deals
+Generated
+Sent to Counterparty
+Executed
+3)   % Uptime
+4)   Unplanned Downtime
+
+Deliverables scheduled for next week
+1. Release 1.3 upon successful completion of UAT and user's approval
+
+Key milestones/dates
+1. None at this moment.
+2. TBD after release.
+
+Issues
+1. Need admin privilege on FACT development server (<\\iah-fx-01>), but I do not know how to get it.
+2. Currently I cannot access the application metrics spreadsheet on O: drive. I've already requested access grant.
+
+Outages - scheduled or emergency
+None.
+
+
+
+
+
+Project Name: Utopia
+
+Accomplishment - DB
+ECOMS has completed their view in Development and Production. Nothing more is needed of them at this time.
+ENFIBER has completed their view in Development and Production. Nothing more is needed of them at this time.
+IP ALLOC - A flat file is taken from Dennis Boylan (contains IP address ECOMS number) and put the data into an Oracle table in Utopia... The data will be static, but should be sufficient for the proof of concept.
+DEAL LAUNCH has now received their required for supplying the SLA information that is required for the central dB
+PPCS has to wait for the completion of their Oracle conversion top be able to supply their view in Development, this will be available sometime next week.
+IPN PROD some analysis still needs to be done to get the IPN PROD details into the UTOPIA schema
+FACILITIES has completed their view in Development (but it pulls in data from Production). Nothing more is needed of them at this time
+dB has now been created and tested on robin.enron.com
+
+Accomplishment - Application
+Firewall - The PO has been received by the vendor. The Greenspoint units should arrive at Enron by 09/20.
+Impact - The application has been configured on server jfkdev.
+Omnibus - The application has been configured on server jfkdev.
+Webtop - The application has been configured on server jfkdev.
+Clients - The client software has been loaded on all developer PCs.
+
+Deliverables Scheduled
+Continue to work with security and network engineering groups to finalize firewall diagram.
+Create examples to showcase what Utopia can accomplish.
+
+Key Dates
+Southern View consultants come to Enron to set up impact servers and train developers: 9-17-01 to 9-21-01
+Present POC to EBS management 9-24-01 to 9-30-01.
+Install Greenspoint firewall for IPsec tunnel 10-15-01
+
+Issue
+Network security - The possibility of an IPsec tunnel between the Greenspoint POP and the Ardmore DMZ has been revived. The tunnel is now dependant upon Mark Thibodeaux's approval of a revised EBS Change Management procedure. Ernest Hernandez is working to get the new CM process approved.
+SLA data will not be available in EnFiber. We will get any data that we can from Deal Launch (Nick Patel). Any remaining data will be added to the Oracle tables by hand.
+The Utopia developers have identified several bugs in the Impact v2.2 software. The bug list will be sent to Micromuse for immediate attention.
+
+
+<Embedded Microsoft Excel Worksheet>

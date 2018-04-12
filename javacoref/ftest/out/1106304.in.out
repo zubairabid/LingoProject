@@ -1,0 +1,91 @@
+Document: ID=1106304.in (1 sentences, 24 tokens)
+
+Sentence #1 (24 tokens):
+Brent is leaving for the day to monitor the construction workers while his wife takes one of their children to a doctor appointment.
+
+Tokens:
+[Text=Brent CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Brent NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=leaving CharacterOffsetBegin=9 CharacterOffsetEnd=16 PartOfSpeech=VBG Lemma=leave NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=day CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=day NamedEntityTag=TIME NormalizedNamedEntityTag=D]
+[Text=to CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=monitor CharacterOffsetBegin=32 CharacterOffsetEnd=39 PartOfSpeech=VB Lemma=monitor NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=construction CharacterOffsetBegin=44 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=construction NamedEntityTag=O]
+[Text=workers CharacterOffsetBegin=57 CharacterOffsetEnd=64 PartOfSpeech=NNS Lemma=worker NamedEntityTag=O]
+[Text=while CharacterOffsetBegin=65 CharacterOffsetEnd=70 PartOfSpeech=IN Lemma=while NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=71 CharacterOffsetEnd=74 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=wife CharacterOffsetBegin=75 CharacterOffsetEnd=79 PartOfSpeech=NN Lemma=wife NamedEntityTag=O]
+[Text=takes CharacterOffsetBegin=80 CharacterOffsetEnd=85 PartOfSpeech=VBZ Lemma=take NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=of CharacterOffsetBegin=90 CharacterOffsetEnd=92 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=93 CharacterOffsetEnd=98 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=children CharacterOffsetBegin=99 CharacterOffsetEnd=107 PartOfSpeech=NNS Lemma=child NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=108 CharacterOffsetEnd=110 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=111 CharacterOffsetEnd=112 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=doctor CharacterOffsetBegin=113 CharacterOffsetEnd=119 PartOfSpeech=NN Lemma=doctor NamedEntityTag=TITLE]
+[Text=appointment CharacterOffsetBegin=120 CharacterOffsetEnd=131 PartOfSpeech=NN Lemma=appointment NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=131 CharacterOffsetEnd=132 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Brent))
+    (VP (VBZ is)
+      (VP (VBG leaving)
+        (PP (IN for)
+          (NP (DT the) (NN day)))
+        (S
+          (VP (TO to)
+            (VP (VB monitor)
+              (NP (DT the) (NN construction) (NNS workers))
+              (SBAR (IN while)
+                (S
+                  (NP (PRP$ his) (NN wife))
+                  (VP (VBZ takes)
+                    (NP
+                      (NP (CD one))
+                      (PP (IN of)
+                        (NP (PRP$ their) (NNS children))))
+                    (PP (TO to)
+                      (NP (DT a) (NN doctor) (NN appointment)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, leaving-3)
+nsubj(leaving-3, Brent-1)
+nsubj:xsubj(monitor-8, Brent-1)
+aux(leaving-3, is-2)
+case(day-6, for-4)
+det(day-6, the-5)
+nmod:for(leaving-3, day-6)
+mark(monitor-8, to-7)
+xcomp(leaving-3, monitor-8)
+det(workers-11, the-9)
+compound(workers-11, construction-10)
+dobj(monitor-8, workers-11)
+mark(takes-15, while-12)
+nmod:poss(wife-14, his-13)
+nsubj(takes-15, wife-14)
+advcl:while(monitor-8, takes-15)
+dobj(takes-15, one-16)
+case(children-19, of-17)
+nmod:poss(children-19, their-18)
+nmod:of(one-16, children-19)
+case(appointment-23, to-20)
+det(appointment-23, a-21)
+compound(appointment-23, doctor-22)
+nmod:to(takes-15, appointment-23)
+punct(leaving-3, .-24)
+
+Extracted the following NER entity mentions:
+day	TIME
+one	NUMBER
+doctor	TITLE
+his	PERSON
+
+Coreference set:
+	(1,13,[13,14]) -> (1,1,[1,2]), that is: "his" -> "Brent"
