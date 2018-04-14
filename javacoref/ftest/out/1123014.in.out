@@ -1,0 +1,179 @@
+Document: ID=1123014.in (3 sentences, 43 tokens)
+
+Sentence #1 (6 tokens):
+Celebrating the Army's Birthday!
+
+Tokens:
+[Text=Celebrating CharacterOffsetBegin=0 CharacterOffsetEnd=11 PartOfSpeech=VBG Lemma=celebrate NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Army CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=NNP Lemma=Army NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Birthday CharacterOffsetBegin=23 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=birthday NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBG Celebrating)
+      (NP
+        (NP (DT the) (NNP Army) (POS 's))
+        (NN Birthday)))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Celebrating-1)
+det(Army-3, the-2)
+nmod:poss(Birthday-5, Army-3)
+case(Army-3, 's-4)
+dobj(Celebrating-1, Birthday-5)
+punct(Celebrating-1, !-6)
+
+Extracted the following NER entity mentions:
+Army	ORGANIZATION
+
+Sentence #2 (21 tokens):
+Chuck, and the other soldiers in Korea report that their morale is much improved by the change in headgear.
+
+Tokens:
+[Text=Chuck CharacterOffsetBegin=33 CharacterOffsetEnd=38 PartOfSpeech=NNP Lemma=Chuck NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=48 CharacterOffsetEnd=53 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=soldiers CharacterOffsetBegin=54 CharacterOffsetEnd=62 PartOfSpeech=NNS Lemma=soldier NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=63 CharacterOffsetEnd=65 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Korea CharacterOffsetBegin=66 CharacterOffsetEnd=71 PartOfSpeech=NNP Lemma=Korea NamedEntityTag=COUNTRY]
+[Text=report CharacterOffsetBegin=72 CharacterOffsetEnd=78 PartOfSpeech=NN Lemma=report NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=79 CharacterOffsetEnd=83 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=84 CharacterOffsetEnd=89 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=morale CharacterOffsetBegin=90 CharacterOffsetEnd=96 PartOfSpeech=NN Lemma=morale NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=97 CharacterOffsetEnd=99 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=100 CharacterOffsetEnd=104 PartOfSpeech=JJ Lemma=much NamedEntityTag=O]
+[Text=improved CharacterOffsetBegin=105 CharacterOffsetEnd=113 PartOfSpeech=VBN Lemma=improve NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=114 CharacterOffsetEnd=116 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=117 CharacterOffsetEnd=120 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=change CharacterOffsetBegin=121 CharacterOffsetEnd=127 PartOfSpeech=NN Lemma=change NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=128 CharacterOffsetEnd=130 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=headgear CharacterOffsetBegin=131 CharacterOffsetEnd=139 PartOfSpeech=NN Lemma=headgear NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=139 CharacterOffsetEnd=140 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Chuck))
+      (, ,)
+      (CC and)
+      (NP
+        (NP (DT the) (JJ other) (NNS soldiers))
+        (PP (IN in)
+          (NP (NNP Korea)))))
+    (VP (NN report)
+      (SBAR (IN that)
+        (S
+          (NP (PRP$ their) (NN morale))
+          (VP (VBZ is)
+            (ADVP (JJ much))
+            (VP (VBN improved)
+              (PP (IN by)
+                (NP
+                  (NP (DT the) (NN change))
+                  (PP (IN in)
+                    (NP (NN headgear))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, report-9)
+nsubj(report-9, Chuck-1)
+punct(Chuck-1, ,-2)
+cc(Chuck-1, and-3)
+det(soldiers-6, the-4)
+amod(soldiers-6, other-5)
+conj:and(Chuck-1, soldiers-6)
+nsubj(report-9, soldiers-6)
+case(Korea-8, in-7)
+nmod:in(soldiers-6, Korea-8)
+mark(improved-15, that-10)
+nmod:poss(morale-12, their-11)
+nsubjpass(improved-15, morale-12)
+auxpass(improved-15, is-13)
+advmod(improved-15, much-14)
+ccomp(report-9, improved-15)
+case(change-18, by-16)
+det(change-18, the-17)
+nmod:agent(improved-15, change-18)
+case(headgear-20, in-19)
+nmod:in(change-18, headgear-20)
+punct(report-9, .-21)
+
+Extracted the following NER entity mentions:
+Korea	COUNTRY
+
+Sentence #3 (16 tokens):
+Yahoo! Buzz Index - Spot the hottest trends in music, movies, and more .
+
+Tokens:
+[Text=Yahoo! CharacterOffsetBegin=141 CharacterOffsetEnd=147 PartOfSpeech=NN Lemma=yahoo! NamedEntityTag=MISC]
+[Text=Buzz CharacterOffsetBegin=148 CharacterOffsetEnd=152 PartOfSpeech=NNP Lemma=Buzz NamedEntityTag=MISC]
+[Text=Index CharacterOffsetBegin=153 CharacterOffsetEnd=158 PartOfSpeech=NNP Lemma=Index NamedEntityTag=MISC]
+[Text=- CharacterOffsetBegin=159 CharacterOffsetEnd=160 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=Spot CharacterOffsetBegin=161 CharacterOffsetEnd=165 PartOfSpeech=NN Lemma=spot NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=166 CharacterOffsetEnd=169 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=hottest CharacterOffsetBegin=170 CharacterOffsetEnd=177 PartOfSpeech=JJS Lemma=hottest NamedEntityTag=O]
+[Text=trends CharacterOffsetBegin=178 CharacterOffsetEnd=184 PartOfSpeech=NNS Lemma=trend NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=185 CharacterOffsetEnd=187 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=188 CharacterOffsetEnd=193 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=193 CharacterOffsetEnd=194 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=movies CharacterOffsetBegin=195 CharacterOffsetEnd=201 PartOfSpeech=NNS Lemma=movie NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=201 CharacterOffsetEnd=202 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=203 CharacterOffsetEnd=206 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=207 CharacterOffsetEnd=211 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=212 CharacterOffsetEnd=213 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NN Yahoo!) (NNP Buzz) (NNP Index))
+    (: -)
+    (NP
+      (NP (NN Spot))
+      (NP
+        (NP (DT the) (JJS hottest) (NNS trends))
+        (PP (IN in)
+          (NP
+            (NP (NN music))
+            (, ,)
+            (NP (NNS movies))
+            (, ,)
+            (CC and)
+            (NP (RBR more))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Index-3)
+compound(Index-3, Yahoo!-1)
+compound(Index-3, Buzz-2)
+punct(Index-3, --4)
+dep(Index-3, Spot-5)
+det(trends-8, the-6)
+amod(trends-8, hottest-7)
+dep(Spot-5, trends-8)
+case(music-10, in-9)
+nmod:in(trends-8, music-10)
+punct(music-10, ,-11)
+nmod:in(trends-8, movies-12)
+conj:and(music-10, movies-12)
+punct(music-10, ,-13)
+cc(music-10, and-14)
+nmod:in(trends-8, more-15)
+conj:and(music-10, more-15)
+punct(Index-3, .-16)
+
+Extracted the following NER entity mentions:
+Yahoo! Buzz Index	MISC
+
+Coreference set:
+	(2,11,[11,12]) -> (2,6,[4,9]), that is: "their" -> "the other soldiers in Korea"

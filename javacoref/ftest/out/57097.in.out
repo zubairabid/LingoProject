@@ -1,0 +1,131 @@
+Document: ID=57097.in (3 sentences, 26 tokens)
+
+Sentence #1 (16 tokens):
+Louise/John,
+
+You both OK with me sending latest NETCO 835 employee list to them.
+
+Tokens:
+[Text=Louise/John CharacterOffsetBegin=0 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=Louise/John NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=11 CharacterOffsetEnd=12 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=You CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=both CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=DT Lemma=both NamedEntityTag=O]
+[Text=OK CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=JJ Lemma=ok NamedEntityTag=STATE_OR_PROVINCE]
+[Text=with CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=sending CharacterOffsetBegin=34 CharacterOffsetEnd=41 PartOfSpeech=VBG Lemma=send NamedEntityTag=O]
+[Text=latest CharacterOffsetBegin=42 CharacterOffsetEnd=48 PartOfSpeech=JJS Lemma=latest NamedEntityTag=O]
+[Text=NETCO CharacterOffsetBegin=49 CharacterOffsetEnd=54 PartOfSpeech=NN Lemma=netco NamedEntityTag=LOCATION]
+[Text=835 CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=CD Lemma=835 NamedEntityTag=NUMBER NormalizedNamedEntityTag=835.0]
+[Text=employee CharacterOffsetBegin=59 CharacterOffsetEnd=67 PartOfSpeech=NN Lemma=employee NamedEntityTag=O]
+[Text=list CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=NN Lemma=list NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=73 CharacterOffsetEnd=75 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=76 CharacterOffsetEnd=80 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=80 CharacterOffsetEnd=81 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Louise/John))
+    (, ,)
+    (NP
+      (NP
+        (NP (PRP You))
+        (ADJP (DT both) (JJ OK)))
+      (PP (IN with)
+        (S
+          (NP (PRP me))
+          (VP (VBG sending)
+            (NP (JJS latest))
+            (NP
+              (NP (NN NETCO) (CD 835) (NN employee) (NN list))
+              (PP (TO to)
+                (NP (PRP them))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Louise/John-1)
+punct(Louise/John-1, ,-2)
+appos(Louise/John-1, You-3)
+det(OK-5, both-4)
+amod(You-3, OK-5)
+mark(sending-8, with-6)
+nsubj(sending-8, me-7)
+acl:with(You-3, sending-8)
+iobj(sending-8, latest-9)
+compound(list-13, NETCO-10)
+nummod(list-13, 835-11)
+compound(list-13, employee-12)
+dobj(sending-8, list-13)
+case(them-15, to-14)
+nmod:to(list-13, them-15)
+punct(Louise/John-1, .-16)
+
+Extracted the following NER entity mentions:
+OK	STATE_OR_PROVINCE
+NETCO	LOCATION
+835	NUMBER
+
+Sentence #2 (9 tokens):
+Also, FYI on their group b list.
+
+Tokens:
+[Text=Also CharacterOffsetBegin=82 CharacterOffsetEnd=86 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=86 CharacterOffsetEnd=87 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=FYI CharacterOffsetBegin=88 CharacterOffsetEnd=91 PartOfSpeech=NNP Lemma=FYI NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=92 CharacterOffsetEnd=94 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=95 CharacterOffsetEnd=100 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=group CharacterOffsetBegin=101 CharacterOffsetEnd=106 PartOfSpeech=NN Lemma=group NamedEntityTag=O]
+[Text=b CharacterOffsetBegin=107 CharacterOffsetEnd=108 PartOfSpeech=NN Lemma=b NamedEntityTag=NUMBER NormalizedNamedEntityTag=0.0]
+[Text=list CharacterOffsetBegin=109 CharacterOffsetEnd=113 PartOfSpeech=NN Lemma=list NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (X
+    (ADVP (RB Also))
+    (, ,)
+    (NP
+      (NP (NNP FYI))
+      (PP (IN on)
+        (NP (PRP$ their) (NN group) (NN b) (NN list))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, FYI-3)
+dep(FYI-3, Also-1)
+punct(FYI-3, ,-2)
+case(list-8, on-4)
+nmod:poss(list-8, their-5)
+compound(list-8, group-6)
+compound(list-8, b-7)
+nmod:on(FYI-3, list-8)
+punct(FYI-3, .-9)
+
+Extracted the following NER entity mentions:
+b	NUMBER
+
+Sentence #3 (1 tokens):
+David
+
+Tokens:
+[Text=David CharacterOffsetBegin=116 CharacterOffsetEnd=121 PartOfSpeech=NNP Lemma=David NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP David)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, David-1)
+
+Extracted the following NER entity mentions:
+David	PERSON
+
+Coreference set:
+	(1,3,[3,16]) -> (1,1,[1,2]), that is: "You both OK with me sending latest NETCO 835 employee list to them" -> "Louise/John"
+
+Coreference set:
+	(2,5,[5,6]) -> (1,15,[15,16]), that is: "their" -> "them"

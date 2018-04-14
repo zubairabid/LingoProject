@@ -1,0 +1,425 @@
+Document: ID=748726.in (4 sentences, 120 tokens)
+
+Sentence #1 (28 tokens):
+The Department of Trade and Industry in the UK comes out every quarter with their "Energy Trends" Fuel oil assessment for a quarter in arrears.
+
+Tokens:
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Department CharacterOffsetBegin=4 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=Department NamedEntityTag=ORGANIZATION]
+[Text=of CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=IN Lemma=of NamedEntityTag=ORGANIZATION]
+[Text=Trade CharacterOffsetBegin=18 CharacterOffsetEnd=23 PartOfSpeech=NNP Lemma=Trade NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=CC Lemma=and NamedEntityTag=ORGANIZATION]
+[Text=Industry CharacterOffsetBegin=28 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Industry NamedEntityTag=ORGANIZATION]
+[Text=in CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=UK CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=NNP Lemma=UK NamedEntityTag=COUNTRY]
+[Text=comes CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=VBZ Lemma=come NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=every CharacterOffsetBegin=57 CharacterOffsetEnd=62 PartOfSpeech=DT Lemma=every NamedEntityTag=O]
+[Text=quarter CharacterOffsetBegin=63 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=quarter NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=76 CharacterOffsetEnd=81 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Energy CharacterOffsetBegin=83 CharacterOffsetEnd=89 PartOfSpeech=NNP Lemma=Energy NamedEntityTag=O]
+[Text=Trends CharacterOffsetBegin=90 CharacterOffsetEnd=96 PartOfSpeech=NNPS Lemma=Trends NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=96 CharacterOffsetEnd=97 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=Fuel CharacterOffsetBegin=98 CharacterOffsetEnd=102 PartOfSpeech=NN Lemma=fuel NamedEntityTag=O]
+[Text=oil CharacterOffsetBegin=103 CharacterOffsetEnd=106 PartOfSpeech=NN Lemma=oil NamedEntityTag=O]
+[Text=assessment CharacterOffsetBegin=107 CharacterOffsetEnd=117 PartOfSpeech=NN Lemma=assessment NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=118 CharacterOffsetEnd=121 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=122 CharacterOffsetEnd=123 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=quarter CharacterOffsetBegin=124 CharacterOffsetEnd=131 PartOfSpeech=NN Lemma=quarter NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=132 CharacterOffsetEnd=134 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=arrears CharacterOffsetBegin=135 CharacterOffsetEnd=142 PartOfSpeech=NNS Lemma=arrears NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=142 CharacterOffsetEnd=143 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP Department))
+      (PP (IN of)
+        (NP (NNP Trade)
+          (CC and)
+          (NNP Industry)))
+      (PP (IN in)
+        (NP (DT the) (NNP UK))))
+    (VP (VBZ comes)
+      (PRT (RP out))
+      (NP
+        (NP
+          (NP (DT every) (NN quarter))
+          (PP (IN with)
+            (NP (PRP$ their) (`` ``) (NNP Energy) (NNPS Trends) ('' '') (NN Fuel) (NN oil)))
+          (NN assessment))
+        (PP (IN for)
+          (NP
+            (NP (DT a) (NN quarter))
+            (PP (IN in)
+              (NP (NNS arrears)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, comes-10)
+det(Department-2, The-1)
+nsubj(comes-10, Department-2)
+case(Trade-4, of-3)
+nmod:of(Department-2, Trade-4)
+cc(Trade-4, and-5)
+nmod:of(Department-2, Industry-6)
+conj:and(Trade-4, Industry-6)
+case(UK-9, in-7)
+det(UK-9, the-8)
+nmod:in(Department-2, UK-9)
+compound:prt(comes-10, out-11)
+det(quarter-13, every-12)
+compound(assessment-22, quarter-13)
+case(oil-21, with-14)
+nmod:poss(oil-21, their-15)
+punct(oil-21, ``-16)
+compound(oil-21, Energy-17)
+compound(oil-21, Trends-18)
+punct(oil-21, ''-19)
+compound(oil-21, Fuel-20)
+nmod:with(assessment-22, oil-21)
+dobj(comes-10, assessment-22)
+case(quarter-25, for-23)
+det(quarter-25, a-24)
+nmod:for(assessment-22, quarter-25)
+case(arrears-27, in-26)
+nmod:in(quarter-25, arrears-27)
+punct(comes-10, .-28)
+
+Extracted the following NER entity mentions:
+Department of Trade and Industry	ORGANIZATION
+UK	COUNTRY
+
+Sentence #2 (33 tokens):
+They published this week their Q2 01 figure (and revised up their Q1 01) figure - the net effect is a 423,000 hit to the book ($602,000).
+
+Tokens:
+[Text=They CharacterOffsetBegin=144 CharacterOffsetEnd=148 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=published CharacterOffsetBegin=149 CharacterOffsetEnd=158 PartOfSpeech=VBD Lemma=publish NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=159 CharacterOffsetEnd=163 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=week CharacterOffsetBegin=164 CharacterOffsetEnd=168 PartOfSpeech=NN Lemma=week NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=169 CharacterOffsetEnd=174 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=Q2 CharacterOffsetBegin=175 CharacterOffsetEnd=177 PartOfSpeech=NN Lemma=q2 NamedEntityTag=O]
+[Text=01 CharacterOffsetBegin=178 CharacterOffsetEnd=180 PartOfSpeech=CD Lemma=01 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=figure CharacterOffsetBegin=181 CharacterOffsetEnd=187 PartOfSpeech=NN Lemma=figure NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=188 CharacterOffsetEnd=189 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=189 CharacterOffsetEnd=192 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=revised CharacterOffsetBegin=193 CharacterOffsetEnd=200 PartOfSpeech=VBN Lemma=revise NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=201 CharacterOffsetEnd=203 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=204 CharacterOffsetEnd=209 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=Q1 CharacterOffsetBegin=210 CharacterOffsetEnd=212 PartOfSpeech=NN Lemma=q1 NamedEntityTag=O]
+[Text=01 CharacterOffsetBegin=213 CharacterOffsetEnd=215 PartOfSpeech=CD Lemma=01 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=-RRB- CharacterOffsetBegin=215 CharacterOffsetEnd=216 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=figure CharacterOffsetBegin=217 CharacterOffsetEnd=223 PartOfSpeech=NN Lemma=figure NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=224 CharacterOffsetEnd=225 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=226 CharacterOffsetEnd=229 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=net CharacterOffsetBegin=230 CharacterOffsetEnd=233 PartOfSpeech=JJ Lemma=net NamedEntityTag=O]
+[Text=effect CharacterOffsetBegin=234 CharacterOffsetEnd=240 PartOfSpeech=NN Lemma=effect NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=241 CharacterOffsetEnd=243 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=244 CharacterOffsetEnd=245 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=423,000 CharacterOffsetBegin=246 CharacterOffsetEnd=253 PartOfSpeech=CD Lemma=423,000 NamedEntityTag=NUMBER NormalizedNamedEntityTag=423000.0]
+[Text=hit CharacterOffsetBegin=254 CharacterOffsetEnd=257 PartOfSpeech=NN Lemma=hit NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=258 CharacterOffsetEnd=260 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=261 CharacterOffsetEnd=264 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=book CharacterOffsetBegin=265 CharacterOffsetEnd=269 PartOfSpeech=NN Lemma=book NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=270 CharacterOffsetEnd=271 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=271 CharacterOffsetEnd=272 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$602000.0]
+[Text=602,000 CharacterOffsetBegin=272 CharacterOffsetEnd=279 PartOfSpeech=CD Lemma=602,000 NamedEntityTag=MONEY NormalizedNamedEntityTag=$602000.0]
+[Text=-RRB- CharacterOffsetBegin=279 CharacterOffsetEnd=280 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=280 CharacterOffsetEnd=281 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBD published)
+      (NP
+        (NP (DT this) (NN week))
+        (NP (PRP$ their) (NN Q2) (CD 01) (NN figure)))
+      (PRN (-LRB- -LRB-)
+        (CC and)
+        (VP (VBN revised)
+          (PRT (RP up))
+          (NP
+            (NP (PRP$ their) (NN Q1))
+            (NP (CD 01))))
+        (-RRB- -RRB-))
+      (S
+        (VP (NN figure) (: -)
+          (S
+            (NP (DT the) (JJ net) (NN effect))
+            (VP (VBZ is)
+              (NP
+                (NP (DT a) (CD 423,000) (NN hit))
+                (PP (TO to)
+                  (NP
+                    (NP (DT the) (NN book))
+                    (PRN (-LRB- -LRB-)
+                      (NP ($ $) (CD 602,000))
+                      (-RRB- -RRB-))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, published-2)
+nsubj(published-2, They-1)
+det(week-4, this-3)
+dobj(published-2, week-4)
+nmod:poss(figure-8, their-5)
+compound(figure-8, Q2-6)
+nummod(figure-8, 01-7)
+dep(week-4, figure-8)
+punct(revised-11, -LRB--9)
+cc(revised-11, and-10)
+dep(published-2, revised-11)
+compound:prt(revised-11, up-12)
+nmod:poss(Q1-14, their-13)
+dobj(revised-11, Q1-14)
+dep(Q1-14, 01-15)
+punct(revised-11, -RRB--16)
+dep(published-2, figure-17)
+punct(figure-17, --18)
+det(effect-21, the-19)
+amod(effect-21, net-20)
+nsubj(hit-25, effect-21)
+cop(hit-25, is-22)
+det(hit-25, a-23)
+nummod(hit-25, 423,000-24)
+ccomp(figure-17, hit-25)
+case(book-28, to-26)
+det(book-28, the-27)
+nmod:to(hit-25, book-28)
+punct(602,000-31, -LRB--29)
+dep(602,000-31, $-30)
+appos(book-28, 602,000-31)
+punct(602,000-31, -RRB--32)
+punct(published-2, .-33)
+
+Extracted the following NER entity mentions:
+01	NUMBER
+01	NUMBER
+423,000	NUMBER
+$602,000	MONEY
+
+Sentence #3 (20 tokens):
+I would expect that they revise down these figures in their next publication (due mid Jan 2002).
+
+Tokens:
+[Text=I CharacterOffsetBegin=283 CharacterOffsetEnd=284 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=285 CharacterOffsetEnd=290 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=expect CharacterOffsetBegin=291 CharacterOffsetEnd=297 PartOfSpeech=VB Lemma=expect NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=298 CharacterOffsetEnd=302 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=303 CharacterOffsetEnd=307 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=revise CharacterOffsetBegin=308 CharacterOffsetEnd=314 PartOfSpeech=VBP Lemma=revise NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=315 CharacterOffsetEnd=319 PartOfSpeech=IN Lemma=down NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=320 CharacterOffsetEnd=325 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=figures CharacterOffsetBegin=326 CharacterOffsetEnd=333 PartOfSpeech=NNS Lemma=figure NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=334 CharacterOffsetEnd=336 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=337 CharacterOffsetEnd=342 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=next CharacterOffsetBegin=343 CharacterOffsetEnd=347 PartOfSpeech=JJ Lemma=next NamedEntityTag=O]
+[Text=publication CharacterOffsetBegin=348 CharacterOffsetEnd=359 PartOfSpeech=NN Lemma=publication NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=360 CharacterOffsetEnd=361 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=due CharacterOffsetBegin=361 CharacterOffsetEnd=364 PartOfSpeech=JJ Lemma=due NamedEntityTag=O]
+[Text=mid CharacterOffsetBegin=365 CharacterOffsetEnd=368 PartOfSpeech=JJ Lemma=mid NamedEntityTag=DATE NormalizedNamedEntityTag=200201]
+[Text=Jan CharacterOffsetBegin=369 CharacterOffsetEnd=372 PartOfSpeech=NNP Lemma=Jan NamedEntityTag=DATE NormalizedNamedEntityTag=200201]
+[Text=2002 CharacterOffsetBegin=373 CharacterOffsetEnd=377 PartOfSpeech=CD Lemma=2002 NamedEntityTag=DATE NormalizedNamedEntityTag=200201]
+[Text=-RRB- CharacterOffsetBegin=377 CharacterOffsetEnd=378 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=378 CharacterOffsetEnd=379 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD would)
+      (VP (VB expect)
+        (SBAR (IN that)
+          (S
+            (NP (PRP they))
+            (VP (VBP revise)
+              (PRT (IN down))
+              (NP
+                (NP (DT these) (NNS figures))
+                (PP (IN in)
+                  (NP (PRP$ their) (JJ next) (NN publication))))
+              (PRN (-LRB- -LRB-)
+                (ADVP (JJ due))
+                (ADJP (JJ mid)
+                  (NP-TMP (NNP Jan) (CD 2002)))
+                (-RRB- -RRB-)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, expect-3)
+nsubj(expect-3, I-1)
+aux(expect-3, would-2)
+mark(revise-6, that-4)
+nsubj(revise-6, they-5)
+ccomp(expect-3, revise-6)
+compound:prt(revise-6, down-7)
+det(figures-9, these-8)
+dobj(revise-6, figures-9)
+case(publication-13, in-10)
+nmod:poss(publication-13, their-11)
+amod(publication-13, next-12)
+nmod:in(figures-9, publication-13)
+punct(mid-16, -LRB--14)
+dep(mid-16, due-15)
+dep(revise-6, mid-16)
+nmod:tmod(mid-16, Jan-17)
+nummod(Jan-17, 2002-18)
+punct(mid-16, -RRB--19)
+punct(expect-3, .-20)
+
+Extracted the following NER entity mentions:
+mid Jan 2002	DATE
+
+Sentence #4 (39 tokens):
+We are adjusting the Energy Trends curve for the "actual" fixings tonight (since it effects a lot of other books in Enron Europe) - and will therefore take a hit of $600k tomorrow.
+
+Tokens:
+[Text=We CharacterOffsetBegin=380 CharacterOffsetEnd=382 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=383 CharacterOffsetEnd=386 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=adjusting CharacterOffsetBegin=387 CharacterOffsetEnd=396 PartOfSpeech=VBG Lemma=adjust NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=397 CharacterOffsetEnd=400 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Energy CharacterOffsetBegin=401 CharacterOffsetEnd=407 PartOfSpeech=NNP Lemma=Energy NamedEntityTag=ORGANIZATION]
+[Text=Trends CharacterOffsetBegin=408 CharacterOffsetEnd=414 PartOfSpeech=NNPS Lemma=Trends NamedEntityTag=ORGANIZATION]
+[Text=curve CharacterOffsetBegin=415 CharacterOffsetEnd=420 PartOfSpeech=NN Lemma=curve NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=421 CharacterOffsetEnd=424 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=425 CharacterOffsetEnd=428 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=429 CharacterOffsetEnd=430 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=actual CharacterOffsetBegin=430 CharacterOffsetEnd=436 PartOfSpeech=JJ Lemma=actual NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=436 CharacterOffsetEnd=437 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=fixings CharacterOffsetBegin=438 CharacterOffsetEnd=445 PartOfSpeech=NNS Lemma=fixing NamedEntityTag=O]
+[Text=tonight CharacterOffsetBegin=446 CharacterOffsetEnd=453 PartOfSpeech=NN Lemma=tonight NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=454 CharacterOffsetEnd=455 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=since CharacterOffsetBegin=455 CharacterOffsetEnd=460 PartOfSpeech=IN Lemma=since NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=461 CharacterOffsetEnd=463 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=effects CharacterOffsetBegin=464 CharacterOffsetEnd=471 PartOfSpeech=NNS Lemma=effect NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=472 CharacterOffsetEnd=473 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=lot CharacterOffsetBegin=474 CharacterOffsetEnd=477 PartOfSpeech=NN Lemma=lot NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=478 CharacterOffsetEnd=480 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=481 CharacterOffsetEnd=486 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=books CharacterOffsetBegin=487 CharacterOffsetEnd=492 PartOfSpeech=NNS Lemma=book NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=493 CharacterOffsetEnd=495 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=496 CharacterOffsetEnd=501 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=LOCATION]
+[Text=Europe CharacterOffsetBegin=502 CharacterOffsetEnd=508 PartOfSpeech=NNP Lemma=Europe NamedEntityTag=LOCATION]
+[Text=-RRB- CharacterOffsetBegin=508 CharacterOffsetEnd=509 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=510 CharacterOffsetEnd=511 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=512 CharacterOffsetEnd=515 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=516 CharacterOffsetEnd=520 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=therefore CharacterOffsetBegin=521 CharacterOffsetEnd=530 PartOfSpeech=RB Lemma=therefore NamedEntityTag=O]
+[Text=take CharacterOffsetBegin=531 CharacterOffsetEnd=535 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=536 CharacterOffsetEnd=537 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=hit CharacterOffsetBegin=538 CharacterOffsetEnd=541 PartOfSpeech=NN Lemma=hit NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=542 CharacterOffsetEnd=544 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=545 CharacterOffsetEnd=546 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$600.0]
+[Text=600k CharacterOffsetBegin=546 CharacterOffsetEnd=550 PartOfSpeech=JJ Lemma=600k NamedEntityTag=MONEY NormalizedNamedEntityTag=$600.0]
+[Text=tomorrow CharacterOffsetBegin=551 CharacterOffsetEnd=559 PartOfSpeech=NN Lemma=tomorrow NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=559 CharacterOffsetEnd=560 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP
+      (VP (VBP are)
+        (VP (VBG adjusting)
+          (NP
+            (NP (DT the) (NNP Energy) (NNPS Trends) (NN curve))
+            (PP (IN for)
+              (NP
+                (NP (DT the) (`` ``) (JJ actual) ('' '') (NNS fixings))
+                (NP-TMP (NN tonight))))
+            (PRN (-LRB- -LRB-)
+              (NP
+                (PP (IN since)
+                  (NP (PRP it)))
+                (NP
+                  (NP
+                    (NP (NNS effects))
+                    (NP (DT a) (NN lot)))
+                  (PP (IN of)
+                    (NP
+                      (NP (JJ other) (NNS books))
+                      (PP (IN in)
+                        (NP (NNP Enron) (NNP Europe)))))))
+              (-RRB- -RRB-)))))
+      (: -)
+      (CC and)
+      (VP (MD will)
+        (ADVP (RB therefore))
+        (VP (VB take)
+          (NP
+            (NP (DT a) (NN hit))
+            (PP (IN of)
+              (NP
+                (ADJP ($ $) (JJ 600k))
+                (NN tomorrow)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, adjusting-3)
+nsubj(adjusting-3, We-1)
+nsubj(take-32, We-1)
+aux(adjusting-3, are-2)
+det(curve-7, the-4)
+compound(curve-7, Energy-5)
+compound(curve-7, Trends-6)
+dobj(adjusting-3, curve-7)
+case(fixings-13, for-8)
+det(fixings-13, the-9)
+punct(fixings-13, ``-10)
+amod(fixings-13, actual-11)
+punct(fixings-13, ''-12)
+nmod:for(curve-7, fixings-13)
+nmod:tmod(fixings-13, tonight-14)
+punct(effects-18, -LRB--15)
+case(it-17, since-16)
+nmod:since(effects-18, it-17)
+dep(curve-7, effects-18)
+det(lot-20, a-19)
+dep(effects-18, lot-20)
+case(books-23, of-21)
+amod(books-23, other-22)
+nmod:of(effects-18, books-23)
+case(Europe-26, in-24)
+compound(Europe-26, Enron-25)
+nmod:in(books-23, Europe-26)
+punct(effects-18, -RRB--27)
+punct(adjusting-3, --28)
+cc(adjusting-3, and-29)
+aux(take-32, will-30)
+advmod(take-32, therefore-31)
+conj:and(adjusting-3, take-32)
+det(hit-34, a-33)
+dobj(take-32, hit-34)
+case(tomorrow-38, of-35)
+amod(tomorrow-38, $-36)
+dep($-36, 600k-37)
+nmod:of(hit-34, tomorrow-38)
+punct(adjusting-3, .-39)
+
+Extracted the following NER entity mentions:
+Energy Trends	ORGANIZATION
+Enron Europe	LOCATION
+$600k	MONEY
+
+Coreference set:
+	(2,1,[1,2]) -> (1,15,[15,16]), that is: "They" -> "their"
+	(2,5,[5,6]) -> (1,15,[15,16]), that is: "their" -> "their"
+	(2,13,[13,14]) -> (1,15,[15,16]), that is: "their" -> "their"
+	(3,5,[5,6]) -> (1,15,[15,16]), that is: "they" -> "their"
+	(3,11,[11,12]) -> (1,15,[15,16]), that is: "their" -> "their"
+
+Coreference set:
+	(2,15,[15,16]) -> (2,7,[7,8]), that is: "01" -> "01"
+
+Coreference set:
+	(4,17,[17,18]) -> (4,6,[5,7]), that is: "it" -> "Energy Trends"

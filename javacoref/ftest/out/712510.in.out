@@ -1,0 +1,315 @@
+Document: ID=712510.in (5 sentences, 77 tokens)
+
+Sentence #1 (19 tokens):
+Andy, Christi Sarah and Lloyd
+
+Please provide me your critical comments by Noon Monday, June 18.
+
+Tokens:
+[Text=Andy CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Andy NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Christi CharacterOffsetBegin=6 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Christi NamedEntityTag=PERSON]
+[Text=Sarah CharacterOffsetBegin=14 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=Sarah NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Lloyd CharacterOffsetBegin=24 CharacterOffsetEnd=29 PartOfSpeech=NNP Lemma=Lloyd NamedEntityTag=ORGANIZATION]
+[Text=Please CharacterOffsetBegin=31 CharacterOffsetEnd=37 PartOfSpeech=VB Lemma=please NamedEntityTag=ORGANIZATION]
+[Text=provide CharacterOffsetBegin=38 CharacterOffsetEnd=45 PartOfSpeech=VB Lemma=provide NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=46 CharacterOffsetEnd=48 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=critical CharacterOffsetBegin=54 CharacterOffsetEnd=62 PartOfSpeech=JJ Lemma=critical NamedEntityTag=O]
+[Text=comments CharacterOffsetBegin=63 CharacterOffsetEnd=71 PartOfSpeech=NNS Lemma=comment NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Noon CharacterOffsetBegin=75 CharacterOffsetEnd=79 PartOfSpeech=NNP Lemma=Noon NamedEntityTag=O]
+[Text=Monday CharacterOffsetBegin=80 CharacterOffsetEnd=86 PartOfSpeech=NNP Lemma=Monday NamedEntityTag=DATE NormalizedNamedEntityTag=****0618]
+[Text=, CharacterOffsetBegin=86 CharacterOffsetEnd=87 PartOfSpeech=, Lemma=, NamedEntityTag=DATE NormalizedNamedEntityTag=****0618]
+[Text=June CharacterOffsetBegin=88 CharacterOffsetEnd=92 PartOfSpeech=NNP Lemma=June NamedEntityTag=DATE NormalizedNamedEntityTag=****0618]
+[Text=18 CharacterOffsetBegin=93 CharacterOffsetEnd=95 PartOfSpeech=CD Lemma=18 NamedEntityTag=DATE NormalizedNamedEntityTag=****0618]
+[Text=. CharacterOffsetBegin=95 CharacterOffsetEnd=96 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NNP Andy) (, ,) (NNP Christi) (NNP Sarah)
+        (CC and)
+        (NNP Lloyd))
+      (INTJ (VB Please))
+      (VP (VB provide)
+        (NP (PRP me))
+        (NP (PRP$ your) (JJ critical) (NNS comments))
+        (PP (IN by)
+          (NP
+            (NP (NNP Noon) (NNP Monday))
+            (, ,)
+            (NP (NNP June) (CD 18))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, provide-8)
+compound(Sarah-4, Andy-1)
+punct(Sarah-4, ,-2)
+conj:and(Sarah-4, Christi-3)
+nsubj(provide-8, Christi-3)
+nsubj(provide-8, Sarah-4)
+cc(Sarah-4, and-5)
+conj:and(Sarah-4, Lloyd-6)
+nsubj(provide-8, Lloyd-6)
+discourse(provide-8, Please-7)
+iobj(provide-8, me-9)
+nmod:poss(comments-12, your-10)
+amod(comments-12, critical-11)
+dobj(provide-8, comments-12)
+case(Monday-15, by-13)
+compound(Monday-15, Noon-14)
+nmod:by(provide-8, Monday-15)
+punct(Monday-15, ,-16)
+appos(Monday-15, June-17)
+nummod(June-17, 18-18)
+punct(provide-8, .-19)
+
+Extracted the following NER entity mentions:
+Andy	PERSON
+Christi Sarah	PERSON
+Lloyd Please	ORGANIZATION
+Monday, June 18	DATE
+
+Sentence #2 (6 tokens):
+The
+Conference is June 19.
+
+Tokens:
+[Text=The CharacterOffsetBegin=98 CharacterOffsetEnd=101 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Conference CharacterOffsetBegin=102 CharacterOffsetEnd=112 PartOfSpeech=NN Lemma=conference NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=113 CharacterOffsetEnd=115 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=June CharacterOffsetBegin=116 CharacterOffsetEnd=120 PartOfSpeech=NNP Lemma=June NamedEntityTag=DATE NormalizedNamedEntityTag=****0619]
+[Text=19 CharacterOffsetBegin=121 CharacterOffsetEnd=123 PartOfSpeech=CD Lemma=19 NamedEntityTag=DATE NormalizedNamedEntityTag=****0619]
+[Text=. CharacterOffsetBegin=123 CharacterOffsetEnd=124 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN Conference))
+    (VP (VBZ is)
+      (NP-TMP (NNP June) (CD 19)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-3)
+det(Conference-2, The-1)
+nsubj(is-3, Conference-2)
+nmod:tmod(is-3, June-4)
+nummod(June-4, 19-5)
+punct(is-3, .-6)
+
+Extracted the following NER entity mentions:
+June 19	DATE
+
+Sentence #3 (20 tokens):
+Andy Rodriquez is preparing a handout of a technical outline based on our
+work with OATI on Electronic Scheduling.
+
+Tokens:
+[Text=Andy CharacterOffsetBegin=126 CharacterOffsetEnd=130 PartOfSpeech=NNP Lemma=Andy NamedEntityTag=PERSON]
+[Text=Rodriquez CharacterOffsetBegin=131 CharacterOffsetEnd=140 PartOfSpeech=NNP Lemma=Rodriquez NamedEntityTag=PERSON]
+[Text=is CharacterOffsetBegin=141 CharacterOffsetEnd=143 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=preparing CharacterOffsetBegin=144 CharacterOffsetEnd=153 PartOfSpeech=VBG Lemma=prepare NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=154 CharacterOffsetEnd=155 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=handout CharacterOffsetBegin=156 CharacterOffsetEnd=163 PartOfSpeech=NN Lemma=handout NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=164 CharacterOffsetEnd=166 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=167 CharacterOffsetEnd=168 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=technical CharacterOffsetBegin=169 CharacterOffsetEnd=178 PartOfSpeech=JJ Lemma=technical NamedEntityTag=O]
+[Text=outline CharacterOffsetBegin=179 CharacterOffsetEnd=186 PartOfSpeech=NN Lemma=outline NamedEntityTag=O]
+[Text=based CharacterOffsetBegin=187 CharacterOffsetEnd=192 PartOfSpeech=VBN Lemma=base NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=193 CharacterOffsetEnd=195 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=196 CharacterOffsetEnd=199 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=200 CharacterOffsetEnd=204 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=205 CharacterOffsetEnd=209 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=OATI CharacterOffsetBegin=210 CharacterOffsetEnd=214 PartOfSpeech=NN Lemma=oati NamedEntityTag=ORGANIZATION]
+[Text=on CharacterOffsetBegin=215 CharacterOffsetEnd=217 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Electronic CharacterOffsetBegin=218 CharacterOffsetEnd=228 PartOfSpeech=JJ Lemma=electronic NamedEntityTag=O]
+[Text=Scheduling CharacterOffsetBegin=229 CharacterOffsetEnd=239 PartOfSpeech=NN Lemma=scheduling NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=239 CharacterOffsetEnd=240 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Andy) (NNP Rodriquez))
+    (VP (VBZ is)
+      (VP (VBG preparing)
+        (NP
+          (NP (DT a) (NN handout))
+          (PP (IN of)
+            (NP
+              (NP (DT a) (JJ technical) (NN outline))
+              (VP (VBN based)
+                (PP (IN on)
+                  (NP (PRP$ our) (NN work)))
+                (PP (IN with)
+                  (NP
+                    (NP (NN OATI))
+                    (PP (IN on)
+                      (NP (JJ Electronic) (NN Scheduling)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, preparing-4)
+compound(Rodriquez-2, Andy-1)
+nsubj(preparing-4, Rodriquez-2)
+aux(preparing-4, is-3)
+det(handout-6, a-5)
+dobj(preparing-4, handout-6)
+case(outline-10, of-7)
+det(outline-10, a-8)
+amod(outline-10, technical-9)
+nmod:of(handout-6, outline-10)
+acl(outline-10, based-11)
+case(work-14, on-12)
+nmod:poss(work-14, our-13)
+nmod:on(based-11, work-14)
+case(OATI-16, with-15)
+nmod:with(based-11, OATI-16)
+case(Scheduling-19, on-17)
+amod(Scheduling-19, Electronic-18)
+nmod:on(OATI-16, Scheduling-19)
+punct(preparing-4, .-20)
+
+Extracted the following NER entity mentions:
+Andy Rodriquez	PERSON
+OATI	ORGANIZATION
+
+Sentence #4 (21 tokens):
+MIT has requested to speak and I have been approached by one of their
+students about a similar software approach.
+
+Tokens:
+[Text=MIT CharacterOffsetBegin=241 CharacterOffsetEnd=244 PartOfSpeech=NNP Lemma=MIT NamedEntityTag=ORGANIZATION]
+[Text=has CharacterOffsetBegin=245 CharacterOffsetEnd=248 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=requested CharacterOffsetBegin=249 CharacterOffsetEnd=258 PartOfSpeech=VBN Lemma=request NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=259 CharacterOffsetEnd=261 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=speak CharacterOffsetBegin=262 CharacterOffsetEnd=267 PartOfSpeech=VB Lemma=speak NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=268 CharacterOffsetEnd=271 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=272 CharacterOffsetEnd=273 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=274 CharacterOffsetEnd=278 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=279 CharacterOffsetEnd=283 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=approached CharacterOffsetBegin=284 CharacterOffsetEnd=294 PartOfSpeech=VBN Lemma=approach NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=295 CharacterOffsetEnd=297 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=298 CharacterOffsetEnd=301 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=of CharacterOffsetBegin=302 CharacterOffsetEnd=304 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=305 CharacterOffsetEnd=310 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=students CharacterOffsetBegin=311 CharacterOffsetEnd=319 PartOfSpeech=NNS Lemma=student NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=320 CharacterOffsetEnd=325 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=326 CharacterOffsetEnd=327 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=similar CharacterOffsetBegin=328 CharacterOffsetEnd=335 PartOfSpeech=JJ Lemma=similar NamedEntityTag=O]
+[Text=software CharacterOffsetBegin=336 CharacterOffsetEnd=344 PartOfSpeech=NN Lemma=software NamedEntityTag=O]
+[Text=approach CharacterOffsetBegin=345 CharacterOffsetEnd=353 PartOfSpeech=NN Lemma=approach NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=353 CharacterOffsetEnd=354 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NNP MIT))
+      (VP (VBZ has)
+        (VP (VBN requested)
+          (S
+            (VP (TO to)
+              (VP (VB speak)))))))
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (VBP have)
+        (VP (VBN been)
+          (VP (VBN approached)
+            (PP (IN by)
+              (NP
+                (NP (CD one))
+                (PP (IN of)
+                  (NP (PRP$ their) (NNS students)))))
+            (PP (IN about)
+              (NP (DT a) (JJ similar) (NN software) (NN approach)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, requested-3)
+nsubj(requested-3, MIT-1)
+nsubj:xsubj(speak-5, MIT-1)
+aux(requested-3, has-2)
+mark(speak-5, to-4)
+xcomp(requested-3, speak-5)
+cc(requested-3, and-6)
+nsubjpass(approached-10, I-7)
+aux(approached-10, have-8)
+auxpass(approached-10, been-9)
+conj:and(requested-3, approached-10)
+case(one-12, by-11)
+nmod:agent(approached-10, one-12)
+case(students-15, of-13)
+nmod:poss(students-15, their-14)
+nmod:of(one-12, students-15)
+case(approach-20, about-16)
+det(approach-20, a-17)
+amod(approach-20, similar-18)
+compound(approach-20, software-19)
+nmod:about(approached-10, approach-20)
+punct(requested-3, .-21)
+
+Extracted the following NER entity mentions:
+MIT	ORGANIZATION
+one	NUMBER
+
+Sentence #5 (11 tokens):
+Others cc: on this email are welcome to respond.
+
+Tokens:
+[Text=Others CharacterOffsetBegin=356 CharacterOffsetEnd=362 PartOfSpeech=NNS Lemma=other NamedEntityTag=O]
+[Text=cc CharacterOffsetBegin=363 CharacterOffsetEnd=365 PartOfSpeech=NN Lemma=cc NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=365 CharacterOffsetEnd=366 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=367 CharacterOffsetEnd=369 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=370 CharacterOffsetEnd=374 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=email CharacterOffsetBegin=375 CharacterOffsetEnd=380 PartOfSpeech=NN Lemma=email NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=381 CharacterOffsetEnd=384 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=welcome CharacterOffsetBegin=385 CharacterOffsetEnd=392 PartOfSpeech=JJ Lemma=welcome NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=393 CharacterOffsetEnd=395 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=respond CharacterOffsetBegin=396 CharacterOffsetEnd=403 PartOfSpeech=VB Lemma=respond NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=403 CharacterOffsetEnd=404 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNS Others) (NN cc))
+    (: :)
+    (S
+      (NP (IN on) (DT this) (NN email))
+      (VP (VBP are)
+        (ADJP (JJ welcome)
+          (S
+            (VP (TO to)
+              (VP (VB respond)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, cc-2)
+compound(cc-2, Others-1)
+punct(cc-2, :-3)
+amod(email-6, on-4)
+det(email-6, this-5)
+nsubj(welcome-8, email-6)
+nsubj:xsubj(respond-10, email-6)
+cop(welcome-8, are-7)
+dep(cc-2, welcome-8)
+mark(respond-10, to-9)
+xcomp(welcome-8, respond-10)
+punct(cc-2, .-11)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(1,1,[1,2]) -> (3,2,[1,3]), that is: "Andy" -> "Andy Rodriquez"
+
+Coreference set:
+	(4,7,[7,8]) -> (1,9,[9,10]), that is: "I" -> "me"

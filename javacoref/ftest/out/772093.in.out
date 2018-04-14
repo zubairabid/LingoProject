@@ -1,0 +1,229 @@
+Document: ID=772093.in (4 sentences, 55 tokens)
+
+Sentence #1 (25 tokens):
+Attached is a new journal voucher in excel format, which will allow MSR's to electronically file their JV's on the network.
+
+Tokens:
+[Text=Attached CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=VBN Lemma=attach NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=journal CharacterOffsetBegin=18 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=journal NamedEntityTag=O]
+[Text=voucher CharacterOffsetBegin=26 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=voucher NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=excel CharacterOffsetBegin=37 CharacterOffsetEnd=42 PartOfSpeech=VB Lemma=excel NamedEntityTag=O]
+[Text=format CharacterOffsetBegin=43 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=format NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=57 CharacterOffsetEnd=61 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=allow CharacterOffsetBegin=62 CharacterOffsetEnd=67 PartOfSpeech=VB Lemma=allow NamedEntityTag=O]
+[Text=MSR CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=NN Lemma=msr NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=71 CharacterOffsetEnd=73 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=74 CharacterOffsetEnd=76 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=electronically CharacterOffsetBegin=77 CharacterOffsetEnd=91 PartOfSpeech=RB Lemma=electronically NamedEntityTag=O]
+[Text=file CharacterOffsetBegin=92 CharacterOffsetEnd=96 PartOfSpeech=VB Lemma=file NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=97 CharacterOffsetEnd=102 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=JV CharacterOffsetBegin=103 CharacterOffsetEnd=105 PartOfSpeech=NN Lemma=jv NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=105 CharacterOffsetEnd=107 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=108 CharacterOffsetEnd=110 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=111 CharacterOffsetEnd=114 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=network CharacterOffsetBegin=115 CharacterOffsetEnd=122 PartOfSpeech=NN Lemma=network NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=122 CharacterOffsetEnd=123 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (VBN Attached)))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ new) (NN journal) (NN voucher))
+        (PP (IN in)
+          (NP
+            (NP (VB excel) (NN format))
+            (, ,)
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (MD will)
+                  (VP (VB allow)
+                    (NP
+                      (NP (NN MSR))
+                      (SBAR
+                        (S
+                          (NP (POS 's))
+                          (VP (TO to)
+                            (VP
+                              (ADVP (RB electronically))
+                              (VB file)
+                              (NP
+                                (NP (PRP$ their) (NN JV) (POS 's))
+                                (PP (IN on)
+                                  (NP (DT the) (NN network)))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, voucher-6)
+csubj(voucher-6, Attached-1)
+cop(voucher-6, is-2)
+det(voucher-6, a-3)
+amod(voucher-6, new-4)
+compound(voucher-6, journal-5)
+case(format-9, in-7)
+dep(format-9, excel-8)
+nmod:in(voucher-6, format-9)
+nsubj(allow-13, format-9)
+punct(format-9, ,-10)
+ref(format-9, which-11)
+aux(allow-13, will-12)
+acl:relcl(format-9, allow-13)
+dobj(allow-13, MSR-14)
+nsubj(file-18, 's-15)
+mark(file-18, to-16)
+advmod(file-18, electronically-17)
+acl:to(MSR-14, file-18)
+nmod:poss(JV-20, their-19)
+dobj(file-18, JV-20)
+case(JV-20, 's-21)
+case(network-24, on-22)
+det(network-24, the-23)
+nmod:on(JV-20, network-24)
+punct(voucher-6, .-25)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (13 tokens):
+Dan Fancler's group has approved the new JV for immediate use.
+
+Tokens:
+[Text=Dan CharacterOffsetBegin=125 CharacterOffsetEnd=128 PartOfSpeech=NNP Lemma=Dan NamedEntityTag=PERSON]
+[Text=Fancler CharacterOffsetBegin=129 CharacterOffsetEnd=136 PartOfSpeech=NNP Lemma=Fancler NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=136 CharacterOffsetEnd=138 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=group CharacterOffsetBegin=139 CharacterOffsetEnd=144 PartOfSpeech=NN Lemma=group NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=145 CharacterOffsetEnd=148 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=approved CharacterOffsetBegin=149 CharacterOffsetEnd=157 PartOfSpeech=VBN Lemma=approve NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=158 CharacterOffsetEnd=161 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=162 CharacterOffsetEnd=165 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=JV CharacterOffsetBegin=166 CharacterOffsetEnd=168 PartOfSpeech=NN Lemma=jv NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=169 CharacterOffsetEnd=172 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=immediate CharacterOffsetBegin=173 CharacterOffsetEnd=182 PartOfSpeech=JJ Lemma=immediate NamedEntityTag=O]
+[Text=use CharacterOffsetBegin=183 CharacterOffsetEnd=186 PartOfSpeech=NN Lemma=use NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=186 CharacterOffsetEnd=187 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Dan) (NNP Fancler) (POS 's))
+      (NN group))
+    (VP (VBZ has)
+      (VP (VBN approved)
+        (NP
+          (NP (DT the) (JJ new) (NN JV))
+          (PP (IN for)
+            (NP (JJ immediate) (NN use))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, approved-6)
+compound(Fancler-2, Dan-1)
+nmod:poss(group-4, Fancler-2)
+case(Fancler-2, 's-3)
+nsubj(approved-6, group-4)
+aux(approved-6, has-5)
+det(JV-9, the-7)
+amod(JV-9, new-8)
+dobj(approved-6, JV-9)
+case(use-12, for-10)
+amod(use-12, immediate-11)
+nmod:for(JV-9, use-12)
+punct(approved-6, .-13)
+
+Extracted the following NER entity mentions:
+Dan Fancler	PERSON
+
+Sentence #3 (15 tokens):
+Let me know if you have any questions or problems with the new JV.
+
+Tokens:
+[Text=Let CharacterOffsetBegin=189 CharacterOffsetEnd=192 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=193 CharacterOffsetEnd=195 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=196 CharacterOffsetEnd=200 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=201 CharacterOffsetEnd=203 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=204 CharacterOffsetEnd=207 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=208 CharacterOffsetEnd=212 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=213 CharacterOffsetEnd=216 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=questions CharacterOffsetBegin=217 CharacterOffsetEnd=226 PartOfSpeech=NNS Lemma=question NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=227 CharacterOffsetEnd=229 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=problems CharacterOffsetBegin=230 CharacterOffsetEnd=238 PartOfSpeech=NNS Lemma=problem NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=239 CharacterOffsetEnd=243 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=244 CharacterOffsetEnd=247 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=248 CharacterOffsetEnd=251 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=JV CharacterOffsetBegin=252 CharacterOffsetEnd=254 PartOfSpeech=NN Lemma=jv NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=254 CharacterOffsetEnd=255 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Let)
+      (S
+        (NP (PRP me))
+        (VP (VB know)
+          (SBAR (IN if)
+            (S
+              (NP (PRP you))
+              (VP (VBP have)
+                (NP
+                  (NP (DT any) (NNS questions)
+                    (CC or)
+                    (NNS problems))
+                  (PP (IN with)
+                    (NP (DT the) (JJ new) (NN JV))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Let-1)
+nsubj(know-3, me-2)
+ccomp(Let-1, know-3)
+mark(have-6, if-4)
+nsubj(have-6, you-5)
+advcl:if(know-3, have-6)
+det(questions-8, any-7)
+dobj(have-6, questions-8)
+cc(questions-8, or-9)
+dobj(have-6, problems-10)
+conj:or(questions-8, problems-10)
+case(JV-14, with-11)
+det(JV-14, the-12)
+amod(JV-14, new-13)
+nmod:with(questions-8, JV-14)
+punct(Let-1, .-15)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (2 tokens):
+Thanks.
+
+Tokens:
+[Text=Thanks CharacterOffsetBegin=256 CharacterOffsetEnd=262 PartOfSpeech=NNS Lemma=thanks NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=262 CharacterOffsetEnd=263 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NNS Thanks) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Thanks-1)
+punct(Thanks-1, .-2)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(1,19,[19,20]) -> (1,15,[15,16]), that is: "their" -> "'s"
+
+Coreference set:
+	(3,14,[12,15]) -> (2,9,[7,13]), that is: "the new JV" -> "the new JV for immediate use"

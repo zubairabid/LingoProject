@@ -1,0 +1,307 @@
+Document: ID=682306.in (6 sentences, 72 tokens)
+
+Sentence #1 (3 tokens):
+Good Afternoon!
+
+Tokens:
+[Text=Good CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=Afternoon CharacterOffsetBegin=5 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=afternoon NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (JJ Good) (NN Afternoon) (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Afternoon-2)
+amod(Afternoon-2, Good-1)
+punct(Afternoon-2, !-3)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (10 tokens):
+Please send me the results of your phone interviews.
+
+Tokens:
+[Text=Please CharacterOffsetBegin=17 CharacterOffsetEnd=23 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=send CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=VB Lemma=send NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=results CharacterOffsetBegin=36 CharacterOffsetEnd=43 PartOfSpeech=NNS Lemma=result NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=phone CharacterOffsetBegin=52 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=phone NamedEntityTag=O]
+[Text=interviews CharacterOffsetBegin=58 CharacterOffsetEnd=68 PartOfSpeech=NNS Lemma=interview NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Please)
+      (VP (VB send)
+        (NP (PRP me))
+        (NP
+          (NP (DT the) (NNS results))
+          (PP (IN of)
+            (NP (PRP$ your) (NN phone) (NNS interviews))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Please-1)
+xcomp(Please-1, send-2)
+iobj(send-2, me-3)
+det(results-5, the-4)
+dobj(send-2, results-5)
+case(interviews-9, of-6)
+nmod:poss(interviews-9, your-7)
+compound(interviews-9, phone-8)
+nmod:of(results-5, interviews-9)
+punct(Please-1, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (15 tokens):
+I need to begin to contact these candidates to arrange their transportation to Houston.
+
+Tokens:
+[Text=I CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=VBP Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=78 CharacterOffsetEnd=80 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=begin CharacterOffsetBegin=81 CharacterOffsetEnd=86 PartOfSpeech=VB Lemma=begin NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=87 CharacterOffsetEnd=89 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=contact CharacterOffsetBegin=90 CharacterOffsetEnd=97 PartOfSpeech=VB Lemma=contact NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=98 CharacterOffsetEnd=103 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=candidates CharacterOffsetBegin=104 CharacterOffsetEnd=114 PartOfSpeech=NNS Lemma=candidate NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=115 CharacterOffsetEnd=117 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=arrange CharacterOffsetBegin=118 CharacterOffsetEnd=125 PartOfSpeech=VB Lemma=arrange NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=126 CharacterOffsetEnd=131 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=transportation CharacterOffsetBegin=132 CharacterOffsetEnd=146 PartOfSpeech=NN Lemma=transportation NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=147 CharacterOffsetEnd=149 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Houston CharacterOffsetBegin=150 CharacterOffsetEnd=157 PartOfSpeech=NNP Lemma=Houston NamedEntityTag=CITY]
+[Text=. CharacterOffsetBegin=157 CharacterOffsetEnd=158 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP need)
+      (S
+        (VP (TO to)
+          (VP (VB begin)
+            (S
+              (VP (TO to)
+                (VP (VB contact)
+                  (S
+                    (NP (DT these) (NNS candidates))
+                    (VP (TO to)
+                      (VP (VB arrange)
+                        (NP (PRP$ their) (NN transportation))
+                        (PP (TO to)
+                          (NP (NNP Houston)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, need-2)
+nsubj(need-2, I-1)
+nsubj:xsubj(begin-4, I-1)
+mark(begin-4, to-3)
+xcomp(need-2, begin-4)
+mark(contact-6, to-5)
+xcomp(begin-4, contact-6)
+det(candidates-8, these-7)
+dobj(contact-6, candidates-8)
+nsubj:xsubj(arrange-10, candidates-8)
+mark(arrange-10, to-9)
+xcomp(contact-6, arrange-10)
+nmod:poss(transportation-12, their-11)
+dobj(arrange-10, transportation-12)
+case(Houston-14, to-13)
+nmod:to(arrange-10, Houston-14)
+punct(need-2, .-15)
+
+Extracted the following NER entity mentions:
+Houston	CITY
+
+Sentence #4 (10 tokens):
+Please e-mail a yes or no for your candidates.
+
+Tokens:
+[Text=Please CharacterOffsetBegin=160 CharacterOffsetEnd=166 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=e-mail CharacterOffsetBegin=167 CharacterOffsetEnd=173 PartOfSpeech=VB Lemma=e-mail NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=174 CharacterOffsetEnd=175 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=yes CharacterOffsetBegin=176 CharacterOffsetEnd=179 PartOfSpeech=RB Lemma=yes NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=180 CharacterOffsetEnd=182 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=183 CharacterOffsetEnd=185 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=186 CharacterOffsetEnd=189 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=190 CharacterOffsetEnd=194 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=candidates CharacterOffsetBegin=195 CharacterOffsetEnd=205 PartOfSpeech=NNS Lemma=candidate NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=205 CharacterOffsetEnd=206 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Please)
+      (VP (VB e-mail)
+        (NP (DT a)
+          (NP (RB yes))
+          (CC or)
+          (NP (DT no)))
+        (PP (IN for)
+          (NP (PRP$ your) (NNS candidates)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Please-1)
+xcomp(Please-1, e-mail-2)
+dep(yes-4, a-3)
+dobj(e-mail-2, yes-4)
+cc(yes-4, or-5)
+dobj(e-mail-2, no-6)
+conj:or(yes-4, no-6)
+case(candidates-9, for-7)
+nmod:poss(candidates-9, your-8)
+nmod:for(e-mail-2, candidates-9)
+punct(Please-1, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (32 tokens):
+John Arnold - Michael Scarlata/Donald Timpanaro/Jeffrey Zaun
+John Forney/Frank Ermis - Brandon Cochran/Ruben Lorenzo/Nicholas Watson
+Dana Davis - Carl Zavaretti/Sam Zhou/Yvan Go
+Doug Gilbert-Smith - Augustin Leon/Brian McNamara/Zoya Raynes
+
+Thank you!!!
+
+Tokens:
+[Text=John CharacterOffsetBegin=208 CharacterOffsetEnd=212 PartOfSpeech=NNP Lemma=John NamedEntityTag=PERSON]
+[Text=Arnold CharacterOffsetBegin=213 CharacterOffsetEnd=219 PartOfSpeech=NNP Lemma=Arnold NamedEntityTag=PERSON]
+[Text=- CharacterOffsetBegin=220 CharacterOffsetEnd=221 PartOfSpeech=: Lemma=- NamedEntityTag=PERSON]
+[Text=Michael CharacterOffsetBegin=222 CharacterOffsetEnd=229 PartOfSpeech=NNP Lemma=Michael NamedEntityTag=PERSON]
+[Text=Scarlata/Donald CharacterOffsetBegin=230 CharacterOffsetEnd=245 PartOfSpeech=NNP Lemma=Scarlata/Donald NamedEntityTag=PERSON]
+[Text=Timpanaro/Jeffrey CharacterOffsetBegin=246 CharacterOffsetEnd=263 PartOfSpeech=NNP Lemma=Timpanaro/Jeffrey NamedEntityTag=PERSON]
+[Text=Zaun CharacterOffsetBegin=264 CharacterOffsetEnd=268 PartOfSpeech=NNP Lemma=Zaun NamedEntityTag=PERSON]
+[Text=John CharacterOffsetBegin=269 CharacterOffsetEnd=273 PartOfSpeech=NNP Lemma=John NamedEntityTag=PERSON]
+[Text=Forney/Frank CharacterOffsetBegin=274 CharacterOffsetEnd=286 PartOfSpeech=NNP Lemma=Forney/Frank NamedEntityTag=PERSON]
+[Text=Ermis CharacterOffsetBegin=287 CharacterOffsetEnd=292 PartOfSpeech=NNP Lemma=Ermis NamedEntityTag=PERSON]
+[Text=- CharacterOffsetBegin=293 CharacterOffsetEnd=294 PartOfSpeech=: Lemma=- NamedEntityTag=PERSON]
+[Text=Brandon CharacterOffsetBegin=295 CharacterOffsetEnd=302 PartOfSpeech=NNP Lemma=Brandon NamedEntityTag=PERSON]
+[Text=Cochran/Ruben CharacterOffsetBegin=303 CharacterOffsetEnd=316 PartOfSpeech=NNP Lemma=Cochran/Ruben NamedEntityTag=PERSON]
+[Text=Lorenzo/Nicholas CharacterOffsetBegin=317 CharacterOffsetEnd=333 PartOfSpeech=NNP Lemma=Lorenzo/Nicholas NamedEntityTag=PERSON]
+[Text=Watson CharacterOffsetBegin=334 CharacterOffsetEnd=340 PartOfSpeech=NNP Lemma=Watson NamedEntityTag=PERSON]
+[Text=Dana CharacterOffsetBegin=341 CharacterOffsetEnd=345 PartOfSpeech=NNP Lemma=Dana NamedEntityTag=PERSON]
+[Text=Davis CharacterOffsetBegin=346 CharacterOffsetEnd=351 PartOfSpeech=NNP Lemma=Davis NamedEntityTag=PERSON]
+[Text=- CharacterOffsetBegin=352 CharacterOffsetEnd=353 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=Carl CharacterOffsetBegin=354 CharacterOffsetEnd=358 PartOfSpeech=NNP Lemma=Carl NamedEntityTag=PERSON]
+[Text=Zavaretti/Sam CharacterOffsetBegin=359 CharacterOffsetEnd=372 PartOfSpeech=NNP Lemma=Zavaretti/Sam NamedEntityTag=PERSON]
+[Text=Zhou/Yvan CharacterOffsetBegin=373 CharacterOffsetEnd=382 PartOfSpeech=NNP Lemma=Zhou/Yvan NamedEntityTag=O]
+[Text=Go CharacterOffsetBegin=383 CharacterOffsetEnd=385 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=Doug CharacterOffsetBegin=386 CharacterOffsetEnd=390 PartOfSpeech=NNP Lemma=Doug NamedEntityTag=PERSON]
+[Text=Gilbert-Smith CharacterOffsetBegin=391 CharacterOffsetEnd=404 PartOfSpeech=NNP Lemma=Gilbert-Smith NamedEntityTag=PERSON]
+[Text=- CharacterOffsetBegin=405 CharacterOffsetEnd=406 PartOfSpeech=: Lemma=- NamedEntityTag=PERSON]
+[Text=Augustin CharacterOffsetBegin=407 CharacterOffsetEnd=415 PartOfSpeech=NNP Lemma=Augustin NamedEntityTag=PERSON]
+[Text=Leon/Brian CharacterOffsetBegin=416 CharacterOffsetEnd=426 PartOfSpeech=NNP Lemma=Leon/Brian NamedEntityTag=PERSON]
+[Text=McNamara/Zoya CharacterOffsetBegin=427 CharacterOffsetEnd=440 PartOfSpeech=NNP Lemma=McNamara/Zoya NamedEntityTag=PERSON]
+[Text=Raynes CharacterOffsetBegin=441 CharacterOffsetEnd=447 PartOfSpeech=NNP Lemma=Raynes NamedEntityTag=PERSON]
+[Text=Thank CharacterOffsetBegin=449 CharacterOffsetEnd=454 PartOfSpeech=VB Lemma=thank NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=455 CharacterOffsetEnd=458 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=!!! CharacterOffsetBegin=458 CharacterOffsetEnd=461 PartOfSpeech=VBP Lemma=!!! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP
+      (NP (NNP John) (NNP Arnold)
+        (PRN (: -)
+          (NP
+            (NP (NNP Michael) (NNP Scarlata/Donald) (NNP Timpanaro/Jeffrey) (NNP Zaun) (NNP John) (NNP Forney/Frank) (NNP Ermis))
+            (: -)
+            (NP (NNP Brandon) (NNP Cochran/Ruben) (NNP Lorenzo/Nicholas) (NNP Watson) (NNP Dana))))
+        (NNP Davis))
+      (: -)
+      (S
+        (NP (NNP Carl) (NNP Zavaretti/Sam) (NNP Zhou/Yvan))
+        (VP (VB Go)
+          (NP
+            (NP (NNP Doug) (NNP Gilbert-Smith))
+            (: -)
+            (S
+              (NP (NNP Augustin) (NNP Leon/Brian) (NNP McNamara/Zoya) (NNP Raynes))
+              (VP (VB Thank)
+                (SBAR
+                  (S
+                    (NP (PRP you))
+                    (VP (VBP !!!))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Davis-17)
+compound(Davis-17, John-1)
+compound(Davis-17, Arnold-2)
+punct(Ermis-10, --3)
+compound(Ermis-10, Michael-4)
+compound(Ermis-10, Scarlata/Donald-5)
+compound(Ermis-10, Timpanaro/Jeffrey-6)
+compound(Ermis-10, Zaun-7)
+compound(Ermis-10, John-8)
+compound(Ermis-10, Forney/Frank-9)
+dep(Davis-17, Ermis-10)
+punct(Ermis-10, --11)
+compound(Dana-16, Brandon-12)
+compound(Dana-16, Cochran/Ruben-13)
+compound(Dana-16, Lorenzo/Nicholas-14)
+compound(Dana-16, Watson-15)
+dep(Ermis-10, Dana-16)
+punct(Davis-17, --18)
+compound(Zhou/Yvan-21, Carl-19)
+compound(Zhou/Yvan-21, Zavaretti/Sam-20)
+nsubj(Go-22, Zhou/Yvan-21)
+parataxis(Davis-17, Go-22)
+compound(Gilbert-Smith-24, Doug-23)
+dobj(Go-22, Gilbert-Smith-24)
+punct(Gilbert-Smith-24, --25)
+compound(Raynes-29, Augustin-26)
+compound(Raynes-29, Leon/Brian-27)
+compound(Raynes-29, McNamara/Zoya-28)
+nsubj(Thank-30, Raynes-29)
+parataxis(Gilbert-Smith-24, Thank-30)
+nsubj(!!!-32, you-31)
+ccomp(Thank-30, !!!-32)
+
+Extracted the following NER entity mentions:
+John Arnold - Michael Scarlata/Donald Timpanaro/Jeffrey Zaun John Forney/Frank Ermis - Brandon Cochran/Ruben Lorenzo/Nicholas Watson Dana Davis	PERSON
+Carl Zavaretti/Sam	PERSON
+Doug Gilbert-Smith - Augustin Leon/Brian McNamara/Zoya Raynes	PERSON
+
+Sentence #6 (2 tokens):
+Adrianne
+x57302
+
+Tokens:
+[Text=Adrianne CharacterOffsetBegin=463 CharacterOffsetEnd=471 PartOfSpeech=NNP Lemma=Adrianne NamedEntityTag=PERSON]
+[Text=x57302 CharacterOffsetBegin=472 CharacterOffsetEnd=478 PartOfSpeech=NN Lemma=x57302 NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Adrianne))
+    (NP (NN x57302))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Adrianne-1)
+dep(Adrianne-1, x57302-2)
+
+Extracted the following NER entity mentions:
+Adrianne x57302	PERSON
+
+Coreference set:
+	(3,1,[1,2]) -> (2,3,[3,4]), that is: "I" -> "me"
+
+Coreference set:
+	(3,11,[11,12]) -> (3,8,[7,9]), that is: "their" -> "these candidates"
+	(4,9,[8,10]) -> (3,8,[7,9]), that is: "your candidates" -> "these candidates"

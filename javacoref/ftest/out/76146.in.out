@@ -1,0 +1,116 @@
+Document: ID=76146.in (2 sentences, 28 tokens)
+
+Sentence #1 (6 tokens):
+Sorry I was not there.
+
+Tokens:
+[Text=Sorry CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=JJ Lemma=sorry NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=RB Lemma=there NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADJP (JJ Sorry))
+    (NP (PRP I))
+    (VP (VBD was) (RB not)
+      (ADVP (RB there)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, was-3)
+dep(was-3, Sorry-1)
+nsubj(was-3, I-2)
+neg(was-3, not-4)
+advmod(was-3, there-5)
+punct(was-3, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (22 tokens):
+Would have rather been there than at the El Campo
+Civic Center talking to upset people about their contaminated well water.
+
+Tokens:
+[Text=Would CharacterOffsetBegin=23 CharacterOffsetEnd=28 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=rather CharacterOffsetBegin=34 CharacterOffsetEnd=40 PartOfSpeech=RB Lemma=rather NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=46 CharacterOffsetEnd=51 PartOfSpeech=RB Lemma=there NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=El CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=NNP Lemma=El NamedEntityTag=CITY]
+[Text=Campo CharacterOffsetBegin=67 CharacterOffsetEnd=72 PartOfSpeech=NNP Lemma=Campo NamedEntityTag=CITY]
+[Text=Civic CharacterOffsetBegin=73 CharacterOffsetEnd=78 PartOfSpeech=NNP Lemma=Civic NamedEntityTag=LOCATION]
+[Text=Center CharacterOffsetBegin=79 CharacterOffsetEnd=85 PartOfSpeech=NNP Lemma=Center NamedEntityTag=LOCATION]
+[Text=talking CharacterOffsetBegin=86 CharacterOffsetEnd=93 PartOfSpeech=VBG Lemma=talk NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=94 CharacterOffsetEnd=96 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=upset CharacterOffsetBegin=97 CharacterOffsetEnd=102 PartOfSpeech=VB Lemma=upset NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=103 CharacterOffsetEnd=109 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=110 CharacterOffsetEnd=115 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=116 CharacterOffsetEnd=121 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=contaminated CharacterOffsetBegin=122 CharacterOffsetEnd=134 PartOfSpeech=VBN Lemma=contaminate NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=135 CharacterOffsetEnd=139 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=water CharacterOffsetBegin=140 CharacterOffsetEnd=145 PartOfSpeech=NN Lemma=water NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=145 CharacterOffsetEnd=146 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (MD Would)
+        (VP (VB have)
+          (ADVP (RB rather))
+          (VP (VBN been)
+            (ADVP (RB there))
+            (ADVP (IN than)
+              (PP (IN at)
+                (NP (DT the) (NNP El) (NNP Campo) (NNP Civic) (NNP Center))))
+            (VP (VBG talking)
+              (S
+                (VP (TO to)
+                  (VP (VB upset)
+                    (NP (NNS people))
+                    (PP (IN about)
+                      (NP (PRP$ their)))))))))))
+    (VP (VBN contaminated)
+      (PP (RB well)
+        (NP (NN water))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, contaminated-19)
+aux(talking-13, Would-1)
+aux(talking-13, have-2)
+advmod(talking-13, rather-3)
+aux(talking-13, been-4)
+advmod(talking-13, there-5)
+advmod(talking-13, than-6)
+case(Center-12, at-7)
+det(Center-12, the-8)
+compound(Center-12, El-9)
+compound(Center-12, Campo-10)
+compound(Center-12, Civic-11)
+nmod:at(than-6, Center-12)
+csubj(contaminated-19, talking-13)
+mark(upset-15, to-14)
+xcomp(talking-13, upset-15)
+dobj(upset-15, people-16)
+case(their-18, about-17)
+nmod:about(upset-15, their-18)
+advmod(water-21, well-20)
+nmod(contaminated-19, water-21)
+punct(contaminated-19, .-22)
+
+Extracted the following NER entity mentions:
+El Campo	CITY
+Civic Center	LOCATION
+
+Coreference set:
+	(2,18,[18,19]) -> (2,16,[16,17]), that is: "their" -> "people"

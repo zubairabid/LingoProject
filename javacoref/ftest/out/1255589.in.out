@@ -1,0 +1,1099 @@
+Document: ID=1255589.in (9 sentences, 293 tokens)
+
+Sentence #1 (26 tokens):
+FYI - When January 2002 invoices are run, please be advised that a manual adjustment will need to occur on ENA's contract 24924.
+
+Tokens:
+[Text=FYI CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=SYM Lemma=fyi NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=When CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=January CharacterOffsetBegin=11 CharacterOffsetEnd=18 PartOfSpeech=NNP Lemma=January NamedEntityTag=DATE NormalizedNamedEntityTag=200201]
+[Text=2002 CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=CD Lemma=2002 NamedEntityTag=DATE NormalizedNamedEntityTag=200201]
+[Text=invoices CharacterOffsetBegin=24 CharacterOffsetEnd=32 PartOfSpeech=NNS Lemma=invoice NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=run CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=VBN Lemma=run NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=please CharacterOffsetBegin=42 CharacterOffsetEnd=48 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=advised CharacterOffsetBegin=52 CharacterOffsetEnd=59 PartOfSpeech=VBN Lemma=advise NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=manual CharacterOffsetBegin=67 CharacterOffsetEnd=73 PartOfSpeech=JJ Lemma=manual NamedEntityTag=O]
+[Text=adjustment CharacterOffsetBegin=74 CharacterOffsetEnd=84 PartOfSpeech=NN Lemma=adjustment NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=85 CharacterOffsetEnd=89 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=90 CharacterOffsetEnd=94 PartOfSpeech=VB Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=95 CharacterOffsetEnd=97 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=occur CharacterOffsetBegin=98 CharacterOffsetEnd=103 PartOfSpeech=VB Lemma=occur NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=104 CharacterOffsetEnd=106 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=ENA CharacterOffsetBegin=107 CharacterOffsetEnd=110 PartOfSpeech=NNP Lemma=ENA NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=110 CharacterOffsetEnd=112 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=contract CharacterOffsetBegin=113 CharacterOffsetEnd=121 PartOfSpeech=NN Lemma=contract NamedEntityTag=O]
+[Text=24924 CharacterOffsetBegin=122 CharacterOffsetEnd=127 PartOfSpeech=CD Lemma=24924 NamedEntityTag=NUMBER NormalizedNamedEntityTag=24924.0]
+[Text=. CharacterOffsetBegin=127 CharacterOffsetEnd=128 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR
+      (X (SYM FYI))
+      (S
+        (NP
+          (PRN (: -)
+            (FRAG
+              (WHADVP (WRB When))
+              (ADJP
+                (ADJP (NNP January))
+                (PP
+                  (NP
+                    (QP (CD 2002)))
+                  (NP (NNS invoices)))))))
+        (VP (VBP are)
+          (VP (VBN run)))))
+    (, ,)
+    (VP (VB please)
+      (VP (VB be)
+        (VP (VBN advised)
+          (SBAR (IN that)
+            (S
+              (NP (DT a) (JJ manual) (NN adjustment))
+              (VP (MD will)
+                (VP (VB need)
+                  (S
+                    (VP (TO to)
+                      (VP (VB occur)
+                        (PP (IN on)
+                          (NP
+                            (NP (NNP ENA) (POS 's))
+                            (NN contract)))
+                        (NP-TMP (CD 24924))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, please-10)
+dep(run-8, FYI-1)
+punct(January-4, --2)
+dep(January-4, When-3)
+nsubjpass(run-8, January-4)
+nmod(January-4, 2002-5)
+dep(2002-5, invoices-6)
+auxpass(run-8, are-7)
+dep(please-10, run-8)
+punct(please-10, ,-9)
+auxpass(advised-12, be-11)
+xcomp(please-10, advised-12)
+mark(need-18, that-13)
+det(adjustment-16, a-14)
+amod(adjustment-16, manual-15)
+nsubj(need-18, adjustment-16)
+nsubj:xsubj(occur-20, adjustment-16)
+aux(need-18, will-17)
+ccomp(advised-12, need-18)
+mark(occur-20, to-19)
+xcomp(need-18, occur-20)
+case(contract-24, on-21)
+nmod:poss(contract-24, ENA-22)
+case(ENA-22, 's-23)
+nmod:on(occur-20, contract-24)
+nmod:tmod(occur-20, 24924-25)
+punct(please-10, .-26)
+
+Extracted the following NER entity mentions:
+January 2002	DATE
+ENA	ORGANIZATION
+24924	NUMBER
+
+Sentence #2 (39 tokens):
+The deal was structured whereby TW would receive a marketing fee equal to 50% of the rate negotiated in excess of the original contracted rate between ENA and TW; the other 50% goes to ENA.
+
+Tokens:
+[Text=The CharacterOffsetBegin=130 CharacterOffsetEnd=133 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=deal CharacterOffsetBegin=134 CharacterOffsetEnd=138 PartOfSpeech=NN Lemma=deal NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=139 CharacterOffsetEnd=142 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=structured CharacterOffsetBegin=143 CharacterOffsetEnd=153 PartOfSpeech=VBN Lemma=structure NamedEntityTag=O]
+[Text=whereby CharacterOffsetBegin=154 CharacterOffsetEnd=161 PartOfSpeech=WRB Lemma=whereby NamedEntityTag=O]
+[Text=TW CharacterOffsetBegin=162 CharacterOffsetEnd=164 PartOfSpeech=NNP Lemma=TW NamedEntityTag=ORGANIZATION]
+[Text=would CharacterOffsetBegin=165 CharacterOffsetEnd=170 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=receive CharacterOffsetBegin=171 CharacterOffsetEnd=178 PartOfSpeech=VB Lemma=receive NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=179 CharacterOffsetEnd=180 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=marketing CharacterOffsetBegin=181 CharacterOffsetEnd=190 PartOfSpeech=NN Lemma=marketing NamedEntityTag=O]
+[Text=fee CharacterOffsetBegin=191 CharacterOffsetEnd=194 PartOfSpeech=NN Lemma=fee NamedEntityTag=O]
+[Text=equal CharacterOffsetBegin=195 CharacterOffsetEnd=200 PartOfSpeech=JJ Lemma=equal NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=201 CharacterOffsetEnd=203 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=50 CharacterOffsetBegin=204 CharacterOffsetEnd=206 PartOfSpeech=CD Lemma=50 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%50.0]
+[Text=% CharacterOffsetBegin=206 CharacterOffsetEnd=207 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%50.0]
+[Text=of CharacterOffsetBegin=208 CharacterOffsetEnd=210 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=211 CharacterOffsetEnd=214 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=rate CharacterOffsetBegin=215 CharacterOffsetEnd=219 PartOfSpeech=NN Lemma=rate NamedEntityTag=O]
+[Text=negotiated CharacterOffsetBegin=220 CharacterOffsetEnd=230 PartOfSpeech=VBN Lemma=negotiate NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=231 CharacterOffsetEnd=233 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=excess CharacterOffsetBegin=234 CharacterOffsetEnd=240 PartOfSpeech=NN Lemma=excess NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=241 CharacterOffsetEnd=243 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=244 CharacterOffsetEnd=247 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=original CharacterOffsetBegin=248 CharacterOffsetEnd=256 PartOfSpeech=JJ Lemma=original NamedEntityTag=O]
+[Text=contracted CharacterOffsetBegin=257 CharacterOffsetEnd=267 PartOfSpeech=VBN Lemma=contract NamedEntityTag=O]
+[Text=rate CharacterOffsetBegin=268 CharacterOffsetEnd=272 PartOfSpeech=NN Lemma=rate NamedEntityTag=O]
+[Text=between CharacterOffsetBegin=273 CharacterOffsetEnd=280 PartOfSpeech=IN Lemma=between NamedEntityTag=O]
+[Text=ENA CharacterOffsetBegin=281 CharacterOffsetEnd=284 PartOfSpeech=NNP Lemma=ENA NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=285 CharacterOffsetEnd=288 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=TW CharacterOffsetBegin=289 CharacterOffsetEnd=291 PartOfSpeech=NNP Lemma=TW NamedEntityTag=ORGANIZATION]
+[Text=; CharacterOffsetBegin=291 CharacterOffsetEnd=292 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=293 CharacterOffsetEnd=296 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=297 CharacterOffsetEnd=302 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=50 CharacterOffsetBegin=303 CharacterOffsetEnd=305 PartOfSpeech=CD Lemma=50 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%50.0]
+[Text=% CharacterOffsetBegin=305 CharacterOffsetEnd=306 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%50.0]
+[Text=goes CharacterOffsetBegin=307 CharacterOffsetEnd=311 PartOfSpeech=VBZ Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=312 CharacterOffsetEnd=314 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=ENA CharacterOffsetBegin=315 CharacterOffsetEnd=318 PartOfSpeech=NN Lemma=ena NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=318 CharacterOffsetEnd=319 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN deal))
+      (VP (VBD was)
+        (VP (VBN structured)
+          (SBAR
+            (WHADVP (WRB whereby))
+            (S
+              (NP (NNP TW))
+              (VP (MD would)
+                (VP (VB receive)
+                  (S
+                    (NP (DT a) (NN marketing) (NN fee))
+                    (ADJP (JJ equal)
+                      (PP (TO to)
+                        (NP
+                          (NP (CD 50) (NN %))
+                          (PP (IN of)
+                            (NP
+                              (NP (DT the) (NN rate))
+                              (VP (VBN negotiated)
+                                (PP (IN in)
+                                  (NP
+                                    (NP (NN excess))
+                                    (PP (IN of)
+                                      (NP
+                                        (NP (DT the) (JJ original) (VBN contracted) (NN rate))
+                                        (PP (IN between)
+                                          (NP (NNP ENA)
+                                            (CC and)
+                                            (NNP TW)))))))))))))))))))))
+    (: ;)
+    (S
+      (NP (DT the) (JJ other) (CD 50) (NN %))
+      (VP (VBZ goes)
+        (PP (TO to)
+          (NP (NN ENA)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, structured-4)
+det(deal-2, The-1)
+nsubjpass(structured-4, deal-2)
+auxpass(structured-4, was-3)
+advmod(receive-8, whereby-5)
+nsubj(receive-8, TW-6)
+aux(receive-8, would-7)
+advcl(structured-4, receive-8)
+det(fee-11, a-9)
+compound(fee-11, marketing-10)
+nsubj(equal-12, fee-11)
+xcomp(receive-8, equal-12)
+case(%-15, to-13)
+nummod(%-15, 50-14)
+nmod:to(equal-12, %-15)
+case(rate-18, of-16)
+det(rate-18, the-17)
+nmod:of(%-15, rate-18)
+acl(rate-18, negotiated-19)
+case(excess-21, in-20)
+nmod:in(negotiated-19, excess-21)
+case(rate-26, of-22)
+det(rate-26, the-23)
+amod(rate-26, original-24)
+amod(rate-26, contracted-25)
+nmod:of(excess-21, rate-26)
+case(ENA-28, between-27)
+nmod:between(rate-26, ENA-28)
+cc(ENA-28, and-29)
+nmod:between(rate-26, TW-30)
+conj:and(ENA-28, TW-30)
+punct(structured-4, ;-31)
+det(%-35, the-32)
+amod(%-35, other-33)
+nummod(%-35, 50-34)
+nsubj(goes-36, %-35)
+parataxis(structured-4, goes-36)
+case(ENA-38, to-37)
+nmod:to(goes-36, ENA-38)
+punct(structured-4, .-39)
+
+Extracted the following NER entity mentions:
+TW	ORGANIZATION
+50%	PERCENT
+ENA	ORGANIZATION
+TW	ORGANIZATION
+50%	PERCENT
+ENA	ORGANIZATION
+
+Sentence #3 (139 tokens):
+Here's the basics:
+ENA's contract with TW is at a daily rate of $0.0600 (one-part)
+The release to Burlington is at a daily rate of $0.0650 (demand only plus applicable commodity and fuel based on usage)
+TW will bill Burlington through normal course of business (reservation of $34,125 [$0.0650 x 25,000 x 21days] plus applicable commodity fees)
+ENA demand invoice will need to be adjusted so that they only receive a capacity release credit of $32,812.50  [($0.0650 - $0.0025) x 25,000 x 21days]
+TW will need to book marketing fee revenues of $1,312.50 [$0.0025 x 25,000 x 21 days]  (Richard - do we need/have a separate account for these revenues??)
+
+Tokens:
+[Text=Here CharacterOffsetBegin=321 CharacterOffsetEnd=325 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=325 CharacterOffsetEnd=327 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=328 CharacterOffsetEnd=331 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=basics CharacterOffsetBegin=332 CharacterOffsetEnd=338 PartOfSpeech=NNS Lemma=basics NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=338 CharacterOffsetEnd=339 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=ENA CharacterOffsetBegin=340 CharacterOffsetEnd=343 PartOfSpeech=NN Lemma=ena NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=343 CharacterOffsetEnd=345 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=contract CharacterOffsetBegin=346 CharacterOffsetEnd=354 PartOfSpeech=NN Lemma=contract NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=355 CharacterOffsetEnd=359 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=TW CharacterOffsetBegin=360 CharacterOffsetEnd=362 PartOfSpeech=NNP Lemma=TW NamedEntityTag=ORGANIZATION]
+[Text=is CharacterOffsetBegin=363 CharacterOffsetEnd=365 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=366 CharacterOffsetEnd=368 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=369 CharacterOffsetEnd=370 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=daily CharacterOffsetBegin=371 CharacterOffsetEnd=376 PartOfSpeech=JJ Lemma=daily NamedEntityTag=O]
+[Text=rate CharacterOffsetBegin=377 CharacterOffsetEnd=381 PartOfSpeech=NN Lemma=rate NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=382 CharacterOffsetEnd=384 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=385 CharacterOffsetEnd=386 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$0.06]
+[Text=0.0600 CharacterOffsetBegin=386 CharacterOffsetEnd=392 PartOfSpeech=CD Lemma=0.0600 NamedEntityTag=MONEY NormalizedNamedEntityTag=$0.06]
+[Text=-LRB- CharacterOffsetBegin=393 CharacterOffsetEnd=394 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=one-part CharacterOffsetBegin=394 CharacterOffsetEnd=402 PartOfSpeech=JJ Lemma=one-part NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=402 CharacterOffsetEnd=403 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=404 CharacterOffsetEnd=407 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=release CharacterOffsetBegin=408 CharacterOffsetEnd=415 PartOfSpeech=NN Lemma=release NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=416 CharacterOffsetEnd=418 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Burlington CharacterOffsetBegin=419 CharacterOffsetEnd=429 PartOfSpeech=NNP Lemma=Burlington NamedEntityTag=CITY]
+[Text=is CharacterOffsetBegin=430 CharacterOffsetEnd=432 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=433 CharacterOffsetEnd=435 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=436 CharacterOffsetEnd=437 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=daily CharacterOffsetBegin=438 CharacterOffsetEnd=443 PartOfSpeech=JJ Lemma=daily NamedEntityTag=O]
+[Text=rate CharacterOffsetBegin=444 CharacterOffsetEnd=448 PartOfSpeech=NN Lemma=rate NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=449 CharacterOffsetEnd=451 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=452 CharacterOffsetEnd=453 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$0.065]
+[Text=0.0650 CharacterOffsetBegin=453 CharacterOffsetEnd=459 PartOfSpeech=CD Lemma=0.0650 NamedEntityTag=MONEY NormalizedNamedEntityTag=$0.065]
+[Text=-LRB- CharacterOffsetBegin=460 CharacterOffsetEnd=461 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=demand CharacterOffsetBegin=461 CharacterOffsetEnd=467 PartOfSpeech=NN Lemma=demand NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=468 CharacterOffsetEnd=472 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=plus CharacterOffsetBegin=473 CharacterOffsetEnd=477 PartOfSpeech=CC Lemma=plus NamedEntityTag=O]
+[Text=applicable CharacterOffsetBegin=478 CharacterOffsetEnd=488 PartOfSpeech=JJ Lemma=applicable NamedEntityTag=O]
+[Text=commodity CharacterOffsetBegin=489 CharacterOffsetEnd=498 PartOfSpeech=NN Lemma=commodity NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=499 CharacterOffsetEnd=502 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=fuel CharacterOffsetBegin=503 CharacterOffsetEnd=507 PartOfSpeech=NN Lemma=fuel NamedEntityTag=O]
+[Text=based CharacterOffsetBegin=508 CharacterOffsetEnd=513 PartOfSpeech=VBN Lemma=base NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=514 CharacterOffsetEnd=516 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=usage CharacterOffsetBegin=517 CharacterOffsetEnd=522 PartOfSpeech=NN Lemma=usage NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=522 CharacterOffsetEnd=523 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=TW CharacterOffsetBegin=524 CharacterOffsetEnd=526 PartOfSpeech=NNP Lemma=TW NamedEntityTag=ORGANIZATION]
+[Text=will CharacterOffsetBegin=527 CharacterOffsetEnd=531 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=bill CharacterOffsetBegin=532 CharacterOffsetEnd=536 PartOfSpeech=VB Lemma=bill NamedEntityTag=O]
+[Text=Burlington CharacterOffsetBegin=537 CharacterOffsetEnd=547 PartOfSpeech=NNP Lemma=Burlington NamedEntityTag=ORGANIZATION]
+[Text=through CharacterOffsetBegin=548 CharacterOffsetEnd=555 PartOfSpeech=IN Lemma=through NamedEntityTag=O]
+[Text=normal CharacterOffsetBegin=556 CharacterOffsetEnd=562 PartOfSpeech=JJ Lemma=normal NamedEntityTag=O]
+[Text=course CharacterOffsetBegin=563 CharacterOffsetEnd=569 PartOfSpeech=NN Lemma=course NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=570 CharacterOffsetEnd=572 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=business CharacterOffsetBegin=573 CharacterOffsetEnd=581 PartOfSpeech=NN Lemma=business NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=582 CharacterOffsetEnd=583 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=reservation CharacterOffsetBegin=583 CharacterOffsetEnd=594 PartOfSpeech=NN Lemma=reservation NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=595 CharacterOffsetEnd=597 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=598 CharacterOffsetEnd=599 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$34125.0]
+[Text=34,125 CharacterOffsetBegin=599 CharacterOffsetEnd=605 PartOfSpeech=CD Lemma=34,125 NamedEntityTag=MONEY NormalizedNamedEntityTag=$34125.0]
+[Text=-LSB- CharacterOffsetBegin=606 CharacterOffsetEnd=607 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=607 CharacterOffsetEnd=608 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$0.065]
+[Text=0.0650 CharacterOffsetBegin=608 CharacterOffsetEnd=614 PartOfSpeech=CD Lemma=0.0650 NamedEntityTag=MONEY NormalizedNamedEntityTag=$0.065]
+[Text=x CharacterOffsetBegin=615 CharacterOffsetEnd=616 PartOfSpeech=CC Lemma=x NamedEntityTag=O]
+[Text=25,000 CharacterOffsetBegin=617 CharacterOffsetEnd=623 PartOfSpeech=CD Lemma=25,000 NamedEntityTag=DURATION]
+[Text=x CharacterOffsetBegin=624 CharacterOffsetEnd=625 PartOfSpeech=CC Lemma=x NamedEntityTag=O]
+[Text=21days CharacterOffsetBegin=626 CharacterOffsetEnd=632 PartOfSpeech=CD Lemma=21days NamedEntityTag=DURATION]
+[Text=-RSB- CharacterOffsetBegin=632 CharacterOffsetEnd=633 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=plus CharacterOffsetBegin=634 CharacterOffsetEnd=638 PartOfSpeech=CC Lemma=plus NamedEntityTag=O]
+[Text=applicable CharacterOffsetBegin=639 CharacterOffsetEnd=649 PartOfSpeech=JJ Lemma=applicable NamedEntityTag=O]
+[Text=commodity CharacterOffsetBegin=650 CharacterOffsetEnd=659 PartOfSpeech=NN Lemma=commodity NamedEntityTag=O]
+[Text=fees CharacterOffsetBegin=660 CharacterOffsetEnd=664 PartOfSpeech=NNS Lemma=fee NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=664 CharacterOffsetEnd=665 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=ENA CharacterOffsetBegin=666 CharacterOffsetEnd=669 PartOfSpeech=NN Lemma=ena NamedEntityTag=ORGANIZATION]
+[Text=demand CharacterOffsetBegin=670 CharacterOffsetEnd=676 PartOfSpeech=NN Lemma=demand NamedEntityTag=O]
+[Text=invoice CharacterOffsetBegin=677 CharacterOffsetEnd=684 PartOfSpeech=NN Lemma=invoice NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=685 CharacterOffsetEnd=689 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=690 CharacterOffsetEnd=694 PartOfSpeech=VB Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=695 CharacterOffsetEnd=697 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=698 CharacterOffsetEnd=700 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=adjusted CharacterOffsetBegin=701 CharacterOffsetEnd=709 PartOfSpeech=VBN Lemma=adjust NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=710 CharacterOffsetEnd=712 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=713 CharacterOffsetEnd=717 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=718 CharacterOffsetEnd=722 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=723 CharacterOffsetEnd=727 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=receive CharacterOffsetBegin=728 CharacterOffsetEnd=735 PartOfSpeech=VBP Lemma=receive NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=736 CharacterOffsetEnd=737 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=capacity CharacterOffsetBegin=738 CharacterOffsetEnd=746 PartOfSpeech=NN Lemma=capacity NamedEntityTag=O]
+[Text=release CharacterOffsetBegin=747 CharacterOffsetEnd=754 PartOfSpeech=NN Lemma=release NamedEntityTag=O]
+[Text=credit CharacterOffsetBegin=755 CharacterOffsetEnd=761 PartOfSpeech=NN Lemma=credit NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=762 CharacterOffsetEnd=764 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=765 CharacterOffsetEnd=766 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$32812.5]
+[Text=32,812.50 CharacterOffsetBegin=766 CharacterOffsetEnd=775 PartOfSpeech=CD Lemma=32,812.50 NamedEntityTag=MONEY NormalizedNamedEntityTag=$32812.5]
+[Text=-LSB- CharacterOffsetBegin=777 CharacterOffsetEnd=778 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=778 CharacterOffsetEnd=779 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=779 CharacterOffsetEnd=780 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$0.065]
+[Text=0.0650 CharacterOffsetBegin=780 CharacterOffsetEnd=786 PartOfSpeech=CD Lemma=0.0650 NamedEntityTag=MONEY NormalizedNamedEntityTag=$0.065]
+[Text=- CharacterOffsetBegin=787 CharacterOffsetEnd=788 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=789 CharacterOffsetEnd=790 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$0.0025]
+[Text=0.0025 CharacterOffsetBegin=790 CharacterOffsetEnd=796 PartOfSpeech=CD Lemma=0.0025 NamedEntityTag=MONEY NormalizedNamedEntityTag=$0.0025]
+[Text=-RRB- CharacterOffsetBegin=796 CharacterOffsetEnd=797 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=x CharacterOffsetBegin=798 CharacterOffsetEnd=799 PartOfSpeech=CC Lemma=x NamedEntityTag=O]
+[Text=25,000 CharacterOffsetBegin=800 CharacterOffsetEnd=806 PartOfSpeech=CD Lemma=25,000 NamedEntityTag=DURATION]
+[Text=x CharacterOffsetBegin=807 CharacterOffsetEnd=808 PartOfSpeech=CC Lemma=x NamedEntityTag=O]
+[Text=21days CharacterOffsetBegin=809 CharacterOffsetEnd=815 PartOfSpeech=CD Lemma=21days NamedEntityTag=DURATION]
+[Text=-RSB- CharacterOffsetBegin=815 CharacterOffsetEnd=816 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=TW CharacterOffsetBegin=817 CharacterOffsetEnd=819 PartOfSpeech=NNP Lemma=TW NamedEntityTag=ORGANIZATION]
+[Text=will CharacterOffsetBegin=820 CharacterOffsetEnd=824 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=825 CharacterOffsetEnd=829 PartOfSpeech=VB Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=830 CharacterOffsetEnd=832 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=book CharacterOffsetBegin=833 CharacterOffsetEnd=837 PartOfSpeech=NN Lemma=book NamedEntityTag=O]
+[Text=marketing CharacterOffsetBegin=838 CharacterOffsetEnd=847 PartOfSpeech=NN Lemma=marketing NamedEntityTag=O]
+[Text=fee CharacterOffsetBegin=848 CharacterOffsetEnd=851 PartOfSpeech=NN Lemma=fee NamedEntityTag=O]
+[Text=revenues CharacterOffsetBegin=852 CharacterOffsetEnd=860 PartOfSpeech=NNS Lemma=revenue NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=861 CharacterOffsetEnd=863 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=864 CharacterOffsetEnd=865 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$1312.5]
+[Text=1,312.50 CharacterOffsetBegin=865 CharacterOffsetEnd=873 PartOfSpeech=CD Lemma=1,312.50 NamedEntityTag=MONEY NormalizedNamedEntityTag=$1312.5]
+[Text=-LSB- CharacterOffsetBegin=874 CharacterOffsetEnd=875 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=875 CharacterOffsetEnd=876 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$0.0025]
+[Text=0.0025 CharacterOffsetBegin=876 CharacterOffsetEnd=882 PartOfSpeech=CD Lemma=0.0025 NamedEntityTag=MONEY NormalizedNamedEntityTag=$0.0025]
+[Text=x CharacterOffsetBegin=883 CharacterOffsetEnd=884 PartOfSpeech=CC Lemma=x NamedEntityTag=O]
+[Text=25,000 CharacterOffsetBegin=885 CharacterOffsetEnd=891 PartOfSpeech=CD Lemma=25,000 NamedEntityTag=DURATION]
+[Text=x CharacterOffsetBegin=892 CharacterOffsetEnd=893 PartOfSpeech=CC Lemma=x NamedEntityTag=O]
+[Text=21 CharacterOffsetBegin=894 CharacterOffsetEnd=896 PartOfSpeech=CD Lemma=21 NamedEntityTag=DURATION]
+[Text=days CharacterOffsetBegin=897 CharacterOffsetEnd=901 PartOfSpeech=NNS Lemma=day NamedEntityTag=DURATION]
+[Text=-RSB- CharacterOffsetBegin=901 CharacterOffsetEnd=902 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=904 CharacterOffsetEnd=905 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Richard CharacterOffsetBegin=905 CharacterOffsetEnd=912 PartOfSpeech=NNP Lemma=Richard NamedEntityTag=PERSON]
+[Text=- CharacterOffsetBegin=913 CharacterOffsetEnd=914 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=915 CharacterOffsetEnd=917 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=918 CharacterOffsetEnd=920 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=need/have CharacterOffsetBegin=921 CharacterOffsetEnd=930 PartOfSpeech=VB Lemma=need/have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=931 CharacterOffsetEnd=932 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=separate CharacterOffsetBegin=933 CharacterOffsetEnd=941 PartOfSpeech=JJ Lemma=separate NamedEntityTag=O]
+[Text=account CharacterOffsetBegin=942 CharacterOffsetEnd=949 PartOfSpeech=NN Lemma=account NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=950 CharacterOffsetEnd=953 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=954 CharacterOffsetEnd=959 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=revenues CharacterOffsetBegin=960 CharacterOffsetEnd=968 PartOfSpeech=NNS Lemma=revenue NamedEntityTag=O]
+[Text=?? CharacterOffsetBegin=968 CharacterOffsetEnd=970 PartOfSpeech=VBP Lemma=?? NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=970 CharacterOffsetEnd=971 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (RB Here))
+    (VP (VBZ 's)
+      (NP (DT the) (NNS basics))
+      (: :)
+      (S
+        (S
+          (NP
+            (NP
+              (NP (NN ENA) (POS 's))
+              (NN contract))
+            (PP (IN with)
+              (NP (NNP TW))))
+          (VP (VBZ is)
+            (PP (IN at)
+              (NP
+                (NP (DT a) (JJ daily) (NN rate))
+                (PP (IN of)
+                  (NP
+                    (NP
+                      (NP ($ $) (CD 0.0600))
+                      (PRN (-LRB- -LRB-)
+                        (NP (JJ one-part))
+                        (-RRB- -RRB-))
+                      (SBAR
+                        (S
+                          (NP
+                            (NP (DT The) (NN release))
+                            (PP (TO to)
+                              (NP (NNP Burlington))))
+                          (VP (VBZ is)
+                            (PP (IN at)
+                              (NP
+                                (NP (DT a) (JJ daily) (NN rate))
+                                (PP (IN of)
+                                  (NP ($ $) (CD 0.0650)))))))))
+                    (PRN (-LRB- -LRB-)
+                      (NP
+                        (NP (NN demand) (RB only))
+                        (PP (CC plus)
+                          (NP (JJ applicable) (NN commodity)
+                            (CC and)
+                            (NN fuel)))
+                        (VP (VBN based)
+                          (PP (IN on)
+                            (NP (NN usage)))))
+                      (-RRB- -RRB-))))))))
+        (S
+          (NP (NNP TW))
+          (VP (MD will)
+            (VP (VB bill)
+              (NP (NNP Burlington))
+              (PP (IN through)
+                (NP
+                  (NP (JJ normal) (NN course))
+                  (PP (IN of)
+                    (NP
+                      (NP (NN business))
+                      (PRN (-LRB- -LRB-)
+                        (NP
+                          (NP (NN reservation))
+                          (PP (IN of)
+                            (NP
+                              (NP ($ $) (CD 34,125))
+                              (-LRB- -LSB-)
+                              (NP ($ $) (CD 0.0650))
+                              (CC x)
+                              (NP
+                                (NP (CD 25,000))
+                                (CC x)
+                                (NP
+                                  (NP (CD 21days) (-RRB- -RSB-))
+                                  (PP (CC plus)
+                                    (NP (JJ applicable) (NN commodity) (NNS fees))))))))
+                        (-RRB- -RRB-)))))))))
+        (S
+          (NP (NN ENA) (NN demand) (NN invoice))
+          (VP (MD will)
+            (VP (VB need)
+              (S
+                (VP (TO to)
+                  (VP (VB be)
+                    (VP (VBN adjusted)
+                      (SBAR (RB so) (IN that)
+                        (S
+                          (NP (PRP they))
+                          (ADVP (RB only))
+                          (VP (VBP receive)
+                            (NP
+                              (NP (DT a) (NN capacity) (NN release) (NN credit))
+                              (PP (IN of)
+                                (NP
+                                  (NP
+                                    (QP ($ $) (CD 32,812.50) (-LRB- -LSB-)))
+                                  (PRN (-LRB- -LRB-)
+                                    (NP
+                                      (NP ($ $) (CD 0.0650))
+                                      (: -)
+                                      (NP ($ $) (CD 0.0025)))
+                                    (-RRB- -RRB-)))))))))))))))
+        (S
+          (NP (CC x)
+            (NP (CD 25,000))
+            (CC x)
+            (NP (CD 21days) (-RRB- -RSB-) (NNP TW)))
+          (VP (MD will)
+            (VP (VB need)
+              (PP (TO to)
+                (NP (NN book) (NN marketing)))
+              (NP
+                (NP
+                  (NP (NN fee) (NNS revenues))
+                  (PP (IN of)
+                    (NP
+                      (QP ($ $) (CD 1,312.50) (-LRB- -LSB-) ($ $) (CD 0.0025)))))
+                (CC x)
+                (NP
+                  (NP (CD 25,000)
+                    (CC x))
+                  (NP-TMP (CD 21) (NNS days))
+                  (VP (-RRB- -RSB-) (-LRB- -LRB-)
+                    (NP
+                      (NP (NNP Richard))
+                      (: -)
+                      (SQ (VBP do)
+                        (NP (PRP we))
+                        (VP (VB need/have)
+                          (NP (DT a) (JJ separate) (NN account))
+                          (PP (IN for)
+                            (NP
+                              (NP (DT these) (NNS revenues))
+                              (VP (VBP ??)))))))
+                    (-RRB- -RRB-)))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, basics-4)
+nsubj(basics-4, Here-1)
+cop(basics-4, 's-2)
+det(basics-4, the-3)
+punct(basics-4, :-5)
+nmod:poss(contract-8, ENA-6)
+case(ENA-6, 's-7)
+nsubj(rate-15, contract-8)
+case(TW-10, with-9)
+nmod:with(contract-8, TW-10)
+cop(rate-15, is-11)
+case(rate-15, at-12)
+det(rate-15, a-13)
+amod(rate-15, daily-14)
+parataxis(basics-4, rate-15)
+case(0.0600-18, of-16)
+dep(0.0600-18, $-17)
+nmod:of(rate-15, 0.0600-18)
+punct(one-part-20, -LRB--19)
+dep(0.0600-18, one-part-20)
+punct(one-part-20, -RRB--21)
+det(release-23, The-22)
+nsubj(rate-30, release-23)
+case(Burlington-25, to-24)
+nmod:to(release-23, Burlington-25)
+cop(rate-30, is-26)
+case(rate-30, at-27)
+det(rate-30, a-28)
+amod(rate-30, daily-29)
+acl:relcl(0.0600-18, rate-30)
+case(0.0650-33, of-31)
+dep(0.0650-33, $-32)
+nmod:of(rate-30, 0.0650-33)
+punct(demand-35, -LRB--34)
+dep(0.0600-18, demand-35)
+advmod(demand-35, only-36)
+case(commodity-39, plus-37)
+amod(commodity-39, applicable-38)
+nmod:plus(demand-35, commodity-39)
+cc(commodity-39, and-40)
+nmod:plus(demand-35, fuel-41)
+conj:and(commodity-39, fuel-41)
+acl(demand-35, based-42)
+case(usage-44, on-43)
+nmod:on(based-42, usage-44)
+punct(demand-35, -RRB--45)
+nsubj(bill-48, TW-46)
+aux(bill-48, will-47)
+parataxis(rate-15, bill-48)
+dobj(bill-48, Burlington-49)
+case(course-52, through-50)
+amod(course-52, normal-51)
+nmod:through(bill-48, course-52)
+case(business-54, of-53)
+nmod:of(course-52, business-54)
+punct(reservation-56, -LRB--55)
+dep(business-54, reservation-56)
+case(34,125-59, of-57)
+dep(34,125-59, $-58)
+nmod:of(reservation-56, 34,125-59)
+punct(34,125-59, -LSB--60)
+dep(0.0650-62, $-61)
+nmod:of(reservation-56, 0.0650-62)
+conj:x(34,125-59, 0.0650-62)
+cc(34,125-59, x-63)
+nmod:of(reservation-56, 25,000-64)
+conj:x(34,125-59, 25,000-64)
+cc(25,000-64, x-65)
+conj:x(34,125-59, 21days-66)
+conj:x(25,000-64, 21days-66)
+punct(21days-66, -RSB--67)
+case(fees-71, plus-68)
+amod(fees-71, applicable-69)
+compound(fees-71, commodity-70)
+nmod:plus(21days-66, fees-71)
+punct(reservation-56, -RRB--72)
+compound(invoice-75, ENA-73)
+compound(invoice-75, demand-74)
+nsubj(need-77, invoice-75)
+nsubjpass:xsubj(adjusted-80, invoice-75)
+aux(need-77, will-76)
+parataxis(rate-15, need-77)
+mark(adjusted-80, to-78)
+auxpass(adjusted-80, be-79)
+xcomp(need-77, adjusted-80)
+mark(receive-85, so-81)
+mwe(so-81, that-82)
+nsubj(receive-85, they-83)
+advmod(receive-85, only-84)
+advcl:so_that(adjusted-80, receive-85)
+det(credit-89, a-86)
+compound(credit-89, capacity-87)
+compound(credit-89, release-88)
+dobj(receive-85, credit-89)
+case($-91, of-90)
+nmod:of(credit-89, $-91)
+compound($-91, 32,812.50-92)
+punct($-91, -LSB--93)
+punct(0.0650-96, -LRB--94)
+dep(0.0650-96, $-95)
+dep($-91, 0.0650-96)
+punct(0.0650-96, --97)
+dep(0.0025-99, $-98)
+dep(0.0650-96, 0.0025-99)
+punct(0.0650-96, -RRB--100)
+cc(25,000-102, x-101)
+nsubj(need-108, 25,000-102)
+cc(25,000-102, x-103)
+nummod(TW-106, 21days-104)
+punct(TW-106, -RSB--105)
+conj:x(25,000-102, TW-106)
+nsubj(need-108, TW-106)
+aux(need-108, will-107)
+parataxis(rate-15, need-108)
+case(marketing-111, to-109)
+compound(marketing-111, book-110)
+nmod:to(need-108, marketing-111)
+compound(revenues-113, fee-112)
+dobj(need-108, revenues-113)
+case($-118, of-114)
+dep($-118, $-115)
+compound($-118, 1,312.50-116)
+punct($-118, -LSB--117)
+nmod:of(revenues-113, $-118)
+nummod($-118, 0.0025-119)
+cc(revenues-113, x-120)
+dobj(need-108, 25,000-121)
+conj:x(revenues-113, 25,000-121)
+cc(25,000-121, x-122)
+nummod(days-124, 21-123)
+nmod:tmod(25,000-121, days-124)
+punct(Richard-127, -RSB--125)
+punct(Richard-127, -LRB--126)
+dep(25,000-121, Richard-127)
+punct(Richard-127, --128)
+aux(need/have-131, do-129)
+nsubj(need/have-131, we-130)
+parataxis(Richard-127, need/have-131)
+det(account-134, a-132)
+amod(account-134, separate-133)
+dobj(need/have-131, account-134)
+case(revenues-137, for-135)
+det(revenues-137, these-136)
+nmod:for(need/have-131, revenues-137)
+dep(revenues-137, ??-138)
+punct(Richard-127, -RRB--139)
+
+Extracted the following NER entity mentions:
+ENA	ORGANIZATION
+TW	ORGANIZATION
+$0.0600	MONEY
+Burlington	CITY
+$0.0650	MONEY
+TW	ORGANIZATION
+Burlington	ORGANIZATION
+$34,125	MONEY
+$0.0650	MONEY
+25,000	DURATION
+21days	DURATION
+ENA	ORGANIZATION
+$32,812.50	MONEY
+$0.0650	MONEY
+$0.0025	MONEY
+25,000	DURATION
+21days	DURATION
+TW	ORGANIZATION
+$1,312.50	MONEY
+$0.0025	MONEY
+25,000	DURATION
+21 days	DURATION
+Richard	PERSON
+
+Sentence #4 (26 tokens):
+Michelle - I know you indicated that ENA is looking to get a payment of $1,312.50 for their portion of the incremental fee charged.
+
+Tokens:
+[Text=Michelle CharacterOffsetBegin=973 CharacterOffsetEnd=981 PartOfSpeech=NNP Lemma=Michelle NamedEntityTag=PERSON]
+[Text=- CharacterOffsetBegin=982 CharacterOffsetEnd=983 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=984 CharacterOffsetEnd=985 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=986 CharacterOffsetEnd=990 PartOfSpeech=VBP Lemma=know NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=991 CharacterOffsetEnd=994 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=indicated CharacterOffsetBegin=995 CharacterOffsetEnd=1004 PartOfSpeech=VBD Lemma=indicate NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=1005 CharacterOffsetEnd=1009 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=ENA CharacterOffsetBegin=1010 CharacterOffsetEnd=1013 PartOfSpeech=NN Lemma=ena NamedEntityTag=ORGANIZATION]
+[Text=is CharacterOffsetBegin=1014 CharacterOffsetEnd=1016 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=looking CharacterOffsetBegin=1017 CharacterOffsetEnd=1024 PartOfSpeech=VBG Lemma=look NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1025 CharacterOffsetEnd=1027 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=1028 CharacterOffsetEnd=1031 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=1032 CharacterOffsetEnd=1033 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=payment CharacterOffsetBegin=1034 CharacterOffsetEnd=1041 PartOfSpeech=NN Lemma=payment NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=1042 CharacterOffsetEnd=1044 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=1045 CharacterOffsetEnd=1046 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$1312.5]
+[Text=1,312.50 CharacterOffsetBegin=1046 CharacterOffsetEnd=1054 PartOfSpeech=CD Lemma=1,312.50 NamedEntityTag=MONEY NormalizedNamedEntityTag=$1312.5]
+[Text=for CharacterOffsetBegin=1055 CharacterOffsetEnd=1058 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=1059 CharacterOffsetEnd=1064 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=portion CharacterOffsetBegin=1065 CharacterOffsetEnd=1072 PartOfSpeech=NN Lemma=portion NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=1073 CharacterOffsetEnd=1075 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1076 CharacterOffsetEnd=1079 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=incremental CharacterOffsetBegin=1080 CharacterOffsetEnd=1091 PartOfSpeech=JJ Lemma=incremental NamedEntityTag=O]
+[Text=fee CharacterOffsetBegin=1092 CharacterOffsetEnd=1095 PartOfSpeech=NN Lemma=fee NamedEntityTag=O]
+[Text=charged CharacterOffsetBegin=1096 CharacterOffsetEnd=1103 PartOfSpeech=VBN Lemma=charge NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1103 CharacterOffsetEnd=1104 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Michelle))
+    (: -)
+    (S
+      (NP (PRP I))
+      (VP (VBP know)
+        (SBAR
+          (S
+            (NP (PRP you))
+            (VP (VBD indicated)
+              (SBAR (IN that)
+                (S
+                  (NP (NN ENA))
+                  (VP (VBZ is)
+                    (VP (VBG looking)
+                      (S
+                        (VP (TO to)
+                          (VP (VB get)
+                            (NP
+                              (NP (DT a) (NN payment))
+                              (PP (IN of)
+                                (NP ($ $) (CD 1,312.50))))
+                            (PP (IN for)
+                              (NP
+                                (NP (PRP$ their) (NN portion))
+                                (PP (IN of)
+                                  (NP
+                                    (NP (DT the) (JJ incremental) (NN fee))
+                                    (VP (VBN charged))))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Michelle-1)
+punct(Michelle-1, --2)
+nsubj(know-4, I-3)
+parataxis(Michelle-1, know-4)
+nsubj(indicated-6, you-5)
+ccomp(know-4, indicated-6)
+mark(looking-10, that-7)
+nsubj(looking-10, ENA-8)
+nsubj:xsubj(get-12, ENA-8)
+aux(looking-10, is-9)
+ccomp(indicated-6, looking-10)
+mark(get-12, to-11)
+xcomp(looking-10, get-12)
+det(payment-14, a-13)
+dobj(get-12, payment-14)
+case(1,312.50-17, of-15)
+dep(1,312.50-17, $-16)
+nmod:of(payment-14, 1,312.50-17)
+case(portion-20, for-18)
+nmod:poss(portion-20, their-19)
+nmod:for(get-12, portion-20)
+case(fee-24, of-21)
+det(fee-24, the-22)
+amod(fee-24, incremental-23)
+nmod:of(portion-20, fee-24)
+acl(fee-24, charged-25)
+punct(Michelle-1, .-26)
+
+Extracted the following NER entity mentions:
+Michelle	PERSON
+ENA	ORGANIZATION
+$1,312.50	MONEY
+
+Sentence #5 (9 tokens):
+However, we will need to discuss further.
+
+Tokens:
+[Text=However CharacterOffsetBegin=1106 CharacterOffsetEnd=1113 PartOfSpeech=RB Lemma=however NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1113 CharacterOffsetEnd=1114 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=1115 CharacterOffsetEnd=1117 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=1118 CharacterOffsetEnd=1122 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=1123 CharacterOffsetEnd=1127 PartOfSpeech=VB Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1128 CharacterOffsetEnd=1130 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=discuss CharacterOffsetBegin=1131 CharacterOffsetEnd=1138 PartOfSpeech=VB Lemma=discuss NamedEntityTag=O]
+[Text=further CharacterOffsetBegin=1139 CharacterOffsetEnd=1146 PartOfSpeech=RB Lemma=further NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1146 CharacterOffsetEnd=1147 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB However))
+    (, ,)
+    (NP (PRP we))
+    (VP (MD will)
+      (VP (VB need)
+        (S
+          (VP (TO to)
+            (VP (VB discuss)
+              (ADVP (RB further)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, need-5)
+advmod(need-5, However-1)
+punct(need-5, ,-2)
+nsubj(need-5, we-3)
+nsubj:xsubj(discuss-7, we-3)
+aux(need-5, will-4)
+mark(discuss-7, to-6)
+xcomp(need-5, discuss-7)
+advmod(discuss-7, further-8)
+punct(need-5, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #6 (32 tokens):
+The invoice that will be generated to ENA will not represent a credit due them since we would still be billing them for the first 11 days prior to this release.
+
+Tokens:
+[Text=The CharacterOffsetBegin=1149 CharacterOffsetEnd=1152 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=invoice CharacterOffsetBegin=1153 CharacterOffsetEnd=1160 PartOfSpeech=NN Lemma=invoice NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=1161 CharacterOffsetEnd=1165 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=1166 CharacterOffsetEnd=1170 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=1171 CharacterOffsetEnd=1173 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=generated CharacterOffsetBegin=1174 CharacterOffsetEnd=1183 PartOfSpeech=VBN Lemma=generate NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1184 CharacterOffsetEnd=1186 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=ENA CharacterOffsetBegin=1187 CharacterOffsetEnd=1190 PartOfSpeech=NNP Lemma=ENA NamedEntityTag=ORGANIZATION]
+[Text=will CharacterOffsetBegin=1191 CharacterOffsetEnd=1195 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=1196 CharacterOffsetEnd=1199 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=represent CharacterOffsetBegin=1200 CharacterOffsetEnd=1209 PartOfSpeech=VB Lemma=represent NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=1210 CharacterOffsetEnd=1211 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=credit CharacterOffsetBegin=1212 CharacterOffsetEnd=1218 PartOfSpeech=NN Lemma=credit NamedEntityTag=O]
+[Text=due CharacterOffsetBegin=1219 CharacterOffsetEnd=1222 PartOfSpeech=JJ Lemma=due NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=1223 CharacterOffsetEnd=1227 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=since CharacterOffsetBegin=1228 CharacterOffsetEnd=1233 PartOfSpeech=IN Lemma=since NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=1234 CharacterOffsetEnd=1236 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=1237 CharacterOffsetEnd=1242 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=1243 CharacterOffsetEnd=1248 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=1249 CharacterOffsetEnd=1251 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=billing CharacterOffsetBegin=1252 CharacterOffsetEnd=1259 PartOfSpeech=VBG Lemma=bill NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=1260 CharacterOffsetEnd=1264 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=1265 CharacterOffsetEnd=1268 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1269 CharacterOffsetEnd=1272 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=1273 CharacterOffsetEnd=1278 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=11 CharacterOffsetBegin=1279 CharacterOffsetEnd=1281 PartOfSpeech=CD Lemma=11 NamedEntityTag=DURATION]
+[Text=days CharacterOffsetBegin=1282 CharacterOffsetEnd=1286 PartOfSpeech=NNS Lemma=day NamedEntityTag=DURATION]
+[Text=prior CharacterOffsetBegin=1287 CharacterOffsetEnd=1292 PartOfSpeech=RB Lemma=prior NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1293 CharacterOffsetEnd=1295 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=1296 CharacterOffsetEnd=1300 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=release CharacterOffsetBegin=1301 CharacterOffsetEnd=1308 PartOfSpeech=NN Lemma=release NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1308 CharacterOffsetEnd=1309 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN invoice))
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (VP (MD will)
+            (VP (VB be)
+              (VP (VBN generated)
+                (PP (TO to)
+                  (NP (NNP ENA)))))))))
+    (VP (MD will) (RB not)
+      (VP (VB represent)
+        (NP (DT a) (NN credit))
+        (PP (JJ due)
+          (NP (PRP them)))
+        (SBAR (IN since)
+          (S
+            (NP (PRP we))
+            (VP (MD would)
+              (ADVP (RB still))
+              (VP (VB be)
+                (VP (VBG billing)
+                  (NP (PRP them))
+                  (PP (IN for)
+                    (NP (DT the) (JJ first) (CD 11) (NNS days)))
+                  (ADVP (RB prior)
+                    (PP (TO to)
+                      (NP (DT this) (NN release)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, represent-11)
+det(invoice-2, The-1)
+nsubjpass(generated-6, invoice-2)
+nsubj(represent-11, invoice-2)
+ref(invoice-2, that-3)
+aux(generated-6, will-4)
+auxpass(generated-6, be-5)
+acl:relcl(invoice-2, generated-6)
+case(ENA-8, to-7)
+nmod:to(generated-6, ENA-8)
+aux(represent-11, will-9)
+neg(represent-11, not-10)
+det(credit-13, a-12)
+dobj(represent-11, credit-13)
+case(them-15, due-14)
+nmod:due(represent-11, them-15)
+mark(billing-21, since-16)
+nsubj(billing-21, we-17)
+aux(billing-21, would-18)
+advmod(billing-21, still-19)
+aux(billing-21, be-20)
+advcl:since(represent-11, billing-21)
+dobj(billing-21, them-22)
+case(days-27, for-23)
+det(days-27, the-24)
+amod(days-27, first-25)
+nummod(days-27, 11-26)
+nmod:for(billing-21, days-27)
+advmod(billing-21, prior-28)
+case(release-31, to-29)
+det(release-31, this-30)
+nmod:to(prior-28, release-31)
+punct(represent-11, .-32)
+
+Extracted the following NER entity mentions:
+ENA	ORGANIZATION
+first	ORDINAL
+11 days	DURATION
+
+Sentence #7 (10 tokens):
+We can discuss further when the billing cycle approaches.
+
+Tokens:
+[Text=We CharacterOffsetBegin=1311 CharacterOffsetEnd=1313 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=1314 CharacterOffsetEnd=1317 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=discuss CharacterOffsetBegin=1318 CharacterOffsetEnd=1325 PartOfSpeech=VB Lemma=discuss NamedEntityTag=O]
+[Text=further CharacterOffsetBegin=1326 CharacterOffsetEnd=1333 PartOfSpeech=RB Lemma=further NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=1334 CharacterOffsetEnd=1338 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1339 CharacterOffsetEnd=1342 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=billing CharacterOffsetBegin=1343 CharacterOffsetEnd=1350 PartOfSpeech=NN Lemma=billing NamedEntityTag=O]
+[Text=cycle CharacterOffsetBegin=1351 CharacterOffsetEnd=1356 PartOfSpeech=NN Lemma=cycle NamedEntityTag=O]
+[Text=approaches CharacterOffsetBegin=1357 CharacterOffsetEnd=1367 PartOfSpeech=NNS Lemma=approach NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1367 CharacterOffsetEnd=1368 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (MD can)
+      (VP (VB discuss)
+        (ADVP (RB further))
+        (SBAR
+          (WHADVP (WRB when))
+          (FRAG
+            (NP-TMP
+              (NP (DT the) (NN billing))
+              (NP (NN cycle) (NNS approaches)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, discuss-3)
+nsubj(discuss-3, We-1)
+aux(discuss-3, can-2)
+advmod(discuss-3, further-4)
+advmod(billing-7, when-5)
+det(billing-7, the-6)
+advcl(discuss-3, billing-7)
+compound(approaches-9, cycle-8)
+dep(billing-7, approaches-9)
+punct(discuss-3, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #8 (11 tokens):
+If you have any questions, please let me know.
+
+Tokens:
+[Text=If CharacterOffsetBegin=1370 CharacterOffsetEnd=1372 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=1373 CharacterOffsetEnd=1376 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=1377 CharacterOffsetEnd=1381 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=1382 CharacterOffsetEnd=1385 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=questions CharacterOffsetBegin=1386 CharacterOffsetEnd=1395 PartOfSpeech=NNS Lemma=question NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1395 CharacterOffsetEnd=1396 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=please CharacterOffsetBegin=1397 CharacterOffsetEnd=1403 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=let CharacterOffsetBegin=1404 CharacterOffsetEnd=1407 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=1408 CharacterOffsetEnd=1410 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=1411 CharacterOffsetEnd=1415 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1415 CharacterOffsetEnd=1416 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP have)
+          (NP (DT any) (NNS questions)))))
+    (, ,)
+    (VP (VB please)
+      (VP (VB let)
+        (S
+          (NP (PRP me))
+          (VP (VB know)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, please-7)
+mark(have-3, If-1)
+nsubj(have-3, you-2)
+advcl:if(please-7, have-3)
+det(questions-5, any-4)
+dobj(have-3, questions-5)
+punct(please-7, ,-6)
+xcomp(please-7, let-8)
+nsubj(know-10, me-9)
+ccomp(let-8, know-10)
+punct(please-7, .-11)
+
+Extracted the following NER entity mentions:
+
+Sentence #9 (1 tokens):
+Elizabeth
+
+Tokens:
+[Text=Elizabeth CharacterOffsetBegin=1418 CharacterOffsetEnd=1427 PartOfSpeech=NNP Lemma=Elizabeth NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Elizabeth)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Elizabeth-1)
+
+Extracted the following NER entity mentions:
+Elizabeth	PERSON
+
+Coreference set:
+	(2,28,[28,29]) -> (1,22,[22,24]), that is: "ENA" -> "ENA 's"
+	(3,6,[6,8]) -> (1,22,[22,24]), that is: "ENA 's" -> "ENA 's"
+	(6,8,[8,9]) -> (1,22,[22,24]), that is: "ENA" -> "ENA 's"
+
+Coreference set:
+	(2,6,[6,7]) -> (3,106,[104,107]), that is: "TW" -> "21days -RSB- TW"
+	(2,30,[30,31]) -> (3,106,[104,107]), that is: "TW" -> "21days -RSB- TW"
+	(3,10,[10,11]) -> (3,106,[104,107]), that is: "TW" -> "21days -RSB- TW"
+	(3,46,[46,47]) -> (3,106,[104,107]), that is: "TW" -> "21days -RSB- TW"
+
+Coreference set:
+	(3,49,[49,50]) -> (3,25,[25,26]), that is: "Burlington" -> "Burlington"
+
+Coreference set:
+	(3,1,[1,2]) -> (3,4,[3,5]), that is: "Here" -> "the basics"
+
+Coreference set:
+	(3,83,[83,84]) -> (3,20,[20,21]), that is: "they" -> "one-part"
+	(4,19,[19,20]) -> (3,20,[20,21]), that is: "their" -> "one-part"
+	(6,15,[15,16]) -> (3,20,[20,21]), that is: "them" -> "one-part"
+	(6,22,[22,23]) -> (3,20,[20,21]), that is: "them" -> "one-part"
+
+Coreference set:
+	(6,31,[30,32]) -> (3,23,[22,26]), that is: "this release" -> "The release to Burlington"
+
+Coreference set:
+	(3,102,[102,103]) -> (3,64,[64,65]), that is: "25,000" -> "25,000"
+
+Coreference set:
+	(5,3,[3,4]) -> (3,130,[130,131]), that is: "we" -> "we"
+	(6,17,[17,18]) -> (3,130,[130,131]), that is: "we" -> "we"
+	(7,1,[1,2]) -> (3,130,[130,131]), that is: "We" -> "we"
+
+Coreference set:
+	(8,9,[9,10]) -> (4,3,[3,4]), that is: "me" -> "I"

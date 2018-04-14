@@ -1,0 +1,814 @@
+Document: ID=1245292.in (14 sentences, 189 tokens)
+
+Sentence #1 (3 tokens):
+Had fun.
+
+Tokens:
+[Text=Had CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=fun CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=NN Lemma=fun NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBD Had)
+      (NP (NN fun)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Had-1)
+dobj(Had-1, fun-2)
+punct(Had-1, .-3)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (10 tokens):
+Glad to see everyone at the Hybrid man night.
+
+Tokens:
+[Text=Glad CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=JJ Lemma=glad NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=everyone CharacterOffsetBegin=21 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=everyone NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Hybrid CharacterOffsetBegin=37 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=hybrid NamedEntityTag=O]
+[Text=man CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=man NamedEntityTag=O]
+[Text=night CharacterOffsetBegin=48 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=night NamedEntityTag=TIME NormalizedNamedEntityTag=N]
+[Text=. CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (ADJP (JJ Glad))
+    (S
+      (VP (TO to)
+        (VP (VB see)
+          (NP (NN everyone))
+          (PP (IN at)
+            (NP (DT the) (NN Hybrid) (NN man)))
+          (NP-TMP (NN night)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Glad-1)
+mark(see-3, to-2)
+dep(Glad-1, see-3)
+dobj(see-3, everyone-4)
+case(man-8, at-5)
+det(man-8, the-6)
+compound(man-8, Hybrid-7)
+nmod:at(see-3, man-8)
+nmod:tmod(see-3, night-9)
+punct(Glad-1, .-10)
+
+Extracted the following NER entity mentions:
+night	TIME
+
+Sentence #3 (14 tokens):
+Reported to Zander,
+who was glad to hear we enjoyed the food.
+
+Tokens:
+[Text=Reported CharacterOffsetBegin=55 CharacterOffsetEnd=63 PartOfSpeech=VBN Lemma=report NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Zander CharacterOffsetBegin=67 CharacterOffsetEnd=73 PartOfSpeech=NNP Lemma=Zander NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=glad CharacterOffsetBegin=83 CharacterOffsetEnd=87 PartOfSpeech=JJ Lemma=glad NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=88 CharacterOffsetEnd=90 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=hear CharacterOffsetBegin=91 CharacterOffsetEnd=95 PartOfSpeech=VB Lemma=hear NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=96 CharacterOffsetEnd=98 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=enjoyed CharacterOffsetBegin=99 CharacterOffsetEnd=106 PartOfSpeech=VBD Lemma=enjoy NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=107 CharacterOffsetEnd=110 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=food CharacterOffsetBegin=111 CharacterOffsetEnd=115 PartOfSpeech=NN Lemma=food NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=115 CharacterOffsetEnd=116 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (VBN Reported)
+        (PP (TO to)
+          (NP
+            (NP (NNP Zander))
+            (, ,)
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBD was)
+                  (ADJP (JJ glad)
+                    (S
+                      (VP (TO to)
+                        (VP (VB hear)
+                          (NP (PRP we)))))))))))))
+    (VP (VBD enjoyed)
+      (NP (DT the) (NN food)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, enjoyed-11)
+csubj(enjoyed-11, Reported-1)
+case(Zander-3, to-2)
+nmod:to(Reported-1, Zander-3)
+nsubj(glad-7, Zander-3)
+nsubj:xsubj(hear-9, Zander-3)
+punct(Zander-3, ,-4)
+ref(Zander-3, who-5)
+cop(glad-7, was-6)
+acl:relcl(Zander-3, glad-7)
+mark(hear-9, to-8)
+xcomp(glad-7, hear-9)
+dobj(hear-9, we-10)
+det(food-13, the-12)
+dobj(enjoyed-11, food-13)
+punct(enjoyed-11, .-14)
+
+Extracted the following NER entity mentions:
+Zander	PERSON
+
+Sentence #4 (8 tokens):
+Joe that was not a TV dinner.
+
+Tokens:
+[Text=Joe CharacterOffsetBegin=117 CharacterOffsetEnd=120 PartOfSpeech=NNP Lemma=Joe NamedEntityTag=PERSON]
+[Text=that CharacterOffsetBegin=121 CharacterOffsetEnd=125 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=126 CharacterOffsetEnd=129 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=130 CharacterOffsetEnd=133 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=134 CharacterOffsetEnd=135 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=TV CharacterOffsetBegin=136 CharacterOffsetEnd=138 PartOfSpeech=NN Lemma=tv NamedEntityTag=O]
+[Text=dinner CharacterOffsetBegin=139 CharacterOffsetEnd=145 PartOfSpeech=NN Lemma=dinner NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=145 CharacterOffsetEnd=146 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP
+      (NP (NNP Joe))
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (VP (VBD was) (RB not)
+            (NP (DT a) (NN TV) (NN dinner))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Joe-1)
+nsubj(dinner-7, Joe-1)
+ref(Joe-1, that-2)
+cop(dinner-7, was-3)
+neg(dinner-7, not-4)
+det(dinner-7, a-5)
+compound(dinner-7, TV-6)
+acl:relcl(Joe-1, dinner-7)
+punct(Joe-1, .-8)
+
+Extracted the following NER entity mentions:
+Joe	PERSON
+
+Sentence #5 (13 tokens):
+We still need to take care of the deer lease food/beer issues.
+
+Tokens:
+[Text=We CharacterOffsetBegin=147 CharacterOffsetEnd=149 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=150 CharacterOffsetEnd=155 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=156 CharacterOffsetEnd=160 PartOfSpeech=VBP Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=161 CharacterOffsetEnd=163 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=take CharacterOffsetBegin=164 CharacterOffsetEnd=168 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text=care CharacterOffsetBegin=169 CharacterOffsetEnd=173 PartOfSpeech=NN Lemma=care NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=174 CharacterOffsetEnd=176 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=177 CharacterOffsetEnd=180 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=deer CharacterOffsetBegin=181 CharacterOffsetEnd=185 PartOfSpeech=NNS Lemma=deer NamedEntityTag=O]
+[Text=lease CharacterOffsetBegin=186 CharacterOffsetEnd=191 PartOfSpeech=NN Lemma=lease NamedEntityTag=O]
+[Text=food/beer CharacterOffsetBegin=192 CharacterOffsetEnd=201 PartOfSpeech=NN Lemma=food/beer NamedEntityTag=O]
+[Text=issues CharacterOffsetBegin=202 CharacterOffsetEnd=208 PartOfSpeech=NNS Lemma=issue NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=208 CharacterOffsetEnd=209 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (ADVP (RB still))
+    (VP (VBP need)
+      (S
+        (VP (TO to)
+          (VP (VB take)
+            (NP
+              (NP (NN care))
+              (PP (IN of)
+                (NP
+                  (NP (DT the) (NNS deer))
+                  (NP (NN lease) (NN food/beer) (NNS issues)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, need-3)
+nsubj(need-3, We-1)
+nsubj:xsubj(take-5, We-1)
+advmod(need-3, still-2)
+mark(take-5, to-4)
+xcomp(need-3, take-5)
+dobj(take-5, care-6)
+case(deer-9, of-7)
+det(deer-9, the-8)
+nmod:of(care-6, deer-9)
+compound(issues-12, lease-10)
+compound(issues-12, food/beer-11)
+dep(deer-9, issues-12)
+punct(need-3, .-13)
+
+Extracted the following NER entity mentions:
+
+Sentence #6 (3 tokens):
+....whenever.
+
+Tokens:
+[Text=... CharacterOffsetBegin=210 CharacterOffsetEnd=214 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=whenever CharacterOffsetBegin=214 CharacterOffsetEnd=222 PartOfSpeech=WRB Lemma=whenever NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=222 CharacterOffsetEnd=223 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (: ...) (WRB whenever) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, whenever-2)
+punct(whenever-2, ...-1)
+punct(whenever-2, .-3)
+
+Extracted the following NER entity mentions:
+
+Sentence #7 (8 tokens):
+FYI John (Wollam) is fine.
+
+Tokens:
+[Text=FYI CharacterOffsetBegin=224 CharacterOffsetEnd=227 PartOfSpeech=NNP Lemma=FYI NamedEntityTag=O]
+[Text=John CharacterOffsetBegin=228 CharacterOffsetEnd=232 PartOfSpeech=NNP Lemma=John NamedEntityTag=PERSON]
+[Text=-LRB- CharacterOffsetBegin=233 CharacterOffsetEnd=234 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Wollam CharacterOffsetBegin=234 CharacterOffsetEnd=240 PartOfSpeech=NNP Lemma=Wollam NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=240 CharacterOffsetEnd=241 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=242 CharacterOffsetEnd=244 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=fine CharacterOffsetBegin=245 CharacterOffsetEnd=249 PartOfSpeech=JJ Lemma=fine NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=249 CharacterOffsetEnd=250 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP FYI) (NNP John))
+      (PRN (-LRB- -LRB-)
+        (NP (NNP Wollam))
+        (-RRB- -RRB-)))
+    (VP (VBZ is)
+      (ADJP (JJ fine)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, fine-7)
+compound(John-2, FYI-1)
+nsubj(fine-7, John-2)
+punct(Wollam-4, -LRB--3)
+appos(John-2, Wollam-4)
+punct(Wollam-4, -RRB--5)
+cop(fine-7, is-6)
+punct(fine-7, .-8)
+
+Extracted the following NER entity mentions:
+John	PERSON
+
+Sentence #8 (8 tokens):
+Has a pulled muscle in his neck.
+
+Tokens:
+[Text=Has CharacterOffsetBegin=251 CharacterOffsetEnd=254 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=255 CharacterOffsetEnd=256 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=pulled CharacterOffsetBegin=257 CharacterOffsetEnd=263 PartOfSpeech=VBN Lemma=pull NamedEntityTag=O]
+[Text=muscle CharacterOffsetBegin=264 CharacterOffsetEnd=270 PartOfSpeech=NN Lemma=muscle NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=271 CharacterOffsetEnd=273 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=274 CharacterOffsetEnd=277 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=neck CharacterOffsetBegin=278 CharacterOffsetEnd=282 PartOfSpeech=NN Lemma=neck NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=282 CharacterOffsetEnd=283 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (VBZ Has)
+    (NP (DT a))
+    (VP (VBN pulled)
+      (NP
+        (NP (NN muscle))
+        (PP (IN in)
+          (NP (PRP$ his) (NN neck)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, pulled-3)
+aux(pulled-3, Has-1)
+nsubj(pulled-3, a-2)
+dobj(pulled-3, muscle-4)
+case(neck-7, in-5)
+nmod:poss(neck-7, his-6)
+nmod:in(muscle-4, neck-7)
+punct(pulled-3, .-8)
+
+Extracted the following NER entity mentions:
+his	PERSON
+
+Sentence #9 (50 tokens):
+Enjoyed eating eyes, eye socket fatty tissue, head meat, talking about how
+much I care for my dog, eating heart meat, men playing with their meat,
+bowel distress and "grapes" and seeing how it played out for the one MAN
+audience.
+
+Tokens:
+[Text=Enjoyed CharacterOffsetBegin=284 CharacterOffsetEnd=291 PartOfSpeech=VBN Lemma=enjoy NamedEntityTag=O]
+[Text=eating CharacterOffsetBegin=292 CharacterOffsetEnd=298 PartOfSpeech=JJ Lemma=eating NamedEntityTag=O]
+[Text=eyes CharacterOffsetBegin=299 CharacterOffsetEnd=303 PartOfSpeech=NNS Lemma=eye NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=303 CharacterOffsetEnd=304 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=eye CharacterOffsetBegin=305 CharacterOffsetEnd=308 PartOfSpeech=NN Lemma=eye NamedEntityTag=O]
+[Text=socket CharacterOffsetBegin=309 CharacterOffsetEnd=315 PartOfSpeech=NN Lemma=socket NamedEntityTag=O]
+[Text=fatty CharacterOffsetBegin=316 CharacterOffsetEnd=321 PartOfSpeech=NN Lemma=fatty NamedEntityTag=O]
+[Text=tissue CharacterOffsetBegin=322 CharacterOffsetEnd=328 PartOfSpeech=NN Lemma=tissue NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=328 CharacterOffsetEnd=329 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=head CharacterOffsetBegin=330 CharacterOffsetEnd=334 PartOfSpeech=NN Lemma=head NamedEntityTag=O]
+[Text=meat CharacterOffsetBegin=335 CharacterOffsetEnd=339 PartOfSpeech=NN Lemma=meat NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=339 CharacterOffsetEnd=340 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=talking CharacterOffsetBegin=341 CharacterOffsetEnd=348 PartOfSpeech=VBG Lemma=talk NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=349 CharacterOffsetEnd=354 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=355 CharacterOffsetEnd=358 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=359 CharacterOffsetEnd=363 PartOfSpeech=JJ Lemma=much NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=364 CharacterOffsetEnd=365 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=care CharacterOffsetBegin=366 CharacterOffsetEnd=370 PartOfSpeech=VBP Lemma=care NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=371 CharacterOffsetEnd=374 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=375 CharacterOffsetEnd=377 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=dog CharacterOffsetBegin=378 CharacterOffsetEnd=381 PartOfSpeech=NN Lemma=dog NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=381 CharacterOffsetEnd=382 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=eating CharacterOffsetBegin=383 CharacterOffsetEnd=389 PartOfSpeech=VBG Lemma=eat NamedEntityTag=O]
+[Text=heart CharacterOffsetBegin=390 CharacterOffsetEnd=395 PartOfSpeech=NN Lemma=heart NamedEntityTag=O]
+[Text=meat CharacterOffsetBegin=396 CharacterOffsetEnd=400 PartOfSpeech=NN Lemma=meat NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=400 CharacterOffsetEnd=401 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=men CharacterOffsetBegin=402 CharacterOffsetEnd=405 PartOfSpeech=NNS Lemma=man NamedEntityTag=O]
+[Text=playing CharacterOffsetBegin=406 CharacterOffsetEnd=413 PartOfSpeech=VBG Lemma=play NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=414 CharacterOffsetEnd=418 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=419 CharacterOffsetEnd=424 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=meat CharacterOffsetBegin=425 CharacterOffsetEnd=429 PartOfSpeech=NN Lemma=meat NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=429 CharacterOffsetEnd=430 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=bowel CharacterOffsetBegin=431 CharacterOffsetEnd=436 PartOfSpeech=NN Lemma=bowel NamedEntityTag=O]
+[Text=distress CharacterOffsetBegin=437 CharacterOffsetEnd=445 PartOfSpeech=NN Lemma=distress NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=446 CharacterOffsetEnd=449 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=450 CharacterOffsetEnd=451 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=grapes CharacterOffsetBegin=451 CharacterOffsetEnd=457 PartOfSpeech=NNS Lemma=grape NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=457 CharacterOffsetEnd=458 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=459 CharacterOffsetEnd=462 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=seeing CharacterOffsetBegin=463 CharacterOffsetEnd=469 PartOfSpeech=VBG Lemma=see NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=470 CharacterOffsetEnd=473 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=474 CharacterOffsetEnd=476 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=477 CharacterOffsetEnd=483 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=484 CharacterOffsetEnd=487 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=488 CharacterOffsetEnd=491 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=492 CharacterOffsetEnd=495 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=496 CharacterOffsetEnd=499 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=MAN CharacterOffsetBegin=500 CharacterOffsetEnd=503 PartOfSpeech=NN Lemma=man NamedEntityTag=O]
+[Text=audience CharacterOffsetBegin=504 CharacterOffsetEnd=512 PartOfSpeech=NN Lemma=audience NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=512 CharacterOffsetEnd=513 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBN Enjoyed)
+      (S
+        (NP
+          (NP (JJ eating) (NNS eyes))
+          (, ,)
+          (NP
+            (NP (NN eye) (NN socket) (NN fatty) (NN tissue))
+            (, ,)
+            (NP (NN head) (NN meat)))
+          (, ,))
+        (VP
+          (VP (VBG talking)
+            (PP (IN about)
+              (SBAR
+                (WHADJP (WRB how) (JJ much))
+                (S
+                  (NP (PRP I))
+                  (VP (VBP care)
+                    (PP (IN for)
+                      (NP (PRP$ my) (NN dog))))))))
+          (, ,)
+          (VP (VBG eating)
+            (NP
+              (NP (NN heart) (NN meat))
+              (, ,)
+              (NP
+                (NP (NNS men))
+                (VP (VBG playing)
+                  (PP (IN with)
+                    (NP
+                      (NP (PRP$ their) (NN meat))
+                      (, ,)
+                      (NP (NN bowel) (NN distress))
+                      (CC and)
+                      (NP (`` ``) (NNS grapes) ('' ''))))))))
+          (CC and)
+          (VP (VBG seeing)
+            (SBAR
+              (WHADVP (WRB how))
+              (S
+                (NP (PRP it))
+                (VP (VBD played)
+                  (PRT (RP out))
+                  (PP (IN for)
+                    (NP (DT the) (CD one) (NN MAN) (NN audience))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Enjoyed-1)
+amod(eyes-3, eating-2)
+nsubj(talking-13, eyes-3)
+nsubj(eating-23, eyes-3)
+nsubj(seeing-40, eyes-3)
+punct(eyes-3, ,-4)
+compound(tissue-8, eye-5)
+compound(tissue-8, socket-6)
+compound(tissue-8, fatty-7)
+appos(eyes-3, tissue-8)
+punct(tissue-8, ,-9)
+compound(meat-11, head-10)
+appos(tissue-8, meat-11)
+punct(eyes-3, ,-12)
+ccomp(Enjoyed-1, talking-13)
+mark(care-18, about-14)
+advmod(much-16, how-15)
+dep(care-18, much-16)
+nsubj(care-18, I-17)
+advcl:about(talking-13, care-18)
+case(dog-21, for-19)
+nmod:poss(dog-21, my-20)
+nmod:for(care-18, dog-21)
+punct(talking-13, ,-22)
+ccomp(Enjoyed-1, eating-23)
+conj:and(talking-13, eating-23)
+compound(meat-25, heart-24)
+dobj(eating-23, meat-25)
+punct(meat-25, ,-26)
+appos(meat-25, men-27)
+acl(men-27, playing-28)
+case(meat-31, with-29)
+nmod:poss(meat-31, their-30)
+nmod:with(playing-28, meat-31)
+punct(meat-31, ,-32)
+compound(distress-34, bowel-33)
+nmod:with(playing-28, distress-34)
+conj:and(meat-31, distress-34)
+cc(meat-31, and-35)
+punct(grapes-37, ``-36)
+nmod:with(playing-28, grapes-37)
+conj:and(meat-31, grapes-37)
+punct(grapes-37, ''-38)
+cc(talking-13, and-39)
+ccomp(Enjoyed-1, seeing-40)
+conj:and(talking-13, seeing-40)
+advmod(played-43, how-41)
+nsubj(played-43, it-42)
+ccomp(seeing-40, played-43)
+compound:prt(played-43, out-44)
+case(audience-49, for-45)
+det(audience-49, the-46)
+nummod(audience-49, one-47)
+compound(audience-49, MAN-48)
+nmod:for(played-43, audience-49)
+punct(Enjoyed-1, .-50)
+
+Extracted the following NER entity mentions:
+one	NUMBER
+
+Sentence #10 (27 tokens):
+I doubt Dave Wieland will join us again and Ted will likely be asked to turn
+down the next invitation to join us by his friend.
+
+Tokens:
+[Text=I CharacterOffsetBegin=514 CharacterOffsetEnd=515 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=doubt CharacterOffsetBegin=516 CharacterOffsetEnd=521 PartOfSpeech=VBP Lemma=doubt NamedEntityTag=O]
+[Text=Dave CharacterOffsetBegin=522 CharacterOffsetEnd=526 PartOfSpeech=NNP Lemma=Dave NamedEntityTag=PERSON]
+[Text=Wieland CharacterOffsetBegin=527 CharacterOffsetEnd=534 PartOfSpeech=NNP Lemma=Wieland NamedEntityTag=PERSON]
+[Text=will CharacterOffsetBegin=535 CharacterOffsetEnd=539 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=join CharacterOffsetBegin=540 CharacterOffsetEnd=544 PartOfSpeech=VB Lemma=join NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=545 CharacterOffsetEnd=547 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=again CharacterOffsetBegin=548 CharacterOffsetEnd=553 PartOfSpeech=RB Lemma=again NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=554 CharacterOffsetEnd=557 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Ted CharacterOffsetBegin=558 CharacterOffsetEnd=561 PartOfSpeech=NNP Lemma=Ted NamedEntityTag=PERSON]
+[Text=will CharacterOffsetBegin=562 CharacterOffsetEnd=566 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=likely CharacterOffsetBegin=567 CharacterOffsetEnd=573 PartOfSpeech=RB Lemma=likely NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=574 CharacterOffsetEnd=576 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=asked CharacterOffsetBegin=577 CharacterOffsetEnd=582 PartOfSpeech=VBN Lemma=ask NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=583 CharacterOffsetEnd=585 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=turn CharacterOffsetBegin=586 CharacterOffsetEnd=590 PartOfSpeech=VB Lemma=turn NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=591 CharacterOffsetEnd=595 PartOfSpeech=RP Lemma=down NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=596 CharacterOffsetEnd=599 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=next CharacterOffsetBegin=600 CharacterOffsetEnd=604 PartOfSpeech=JJ Lemma=next NamedEntityTag=O]
+[Text=invitation CharacterOffsetBegin=605 CharacterOffsetEnd=615 PartOfSpeech=NN Lemma=invitation NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=616 CharacterOffsetEnd=618 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=join CharacterOffsetBegin=619 CharacterOffsetEnd=623 PartOfSpeech=VB Lemma=join NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=624 CharacterOffsetEnd=626 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=627 CharacterOffsetEnd=629 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=630 CharacterOffsetEnd=633 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=friend CharacterOffsetBegin=634 CharacterOffsetEnd=640 PartOfSpeech=NN Lemma=friend NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=640 CharacterOffsetEnd=641 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP doubt)
+        (SBAR
+          (S
+            (NP (NNP Dave) (NNP Wieland))
+            (VP (MD will)
+              (VP (VB join)
+                (NP (PRP us))
+                (ADVP (RB again))))))))
+    (CC and)
+    (S
+      (NP (NNP Ted))
+      (VP (MD will)
+        (ADVP (RB likely))
+        (VP (VB be)
+          (VP (VBN asked)
+            (S
+              (VP (TO to)
+                (VP (VB turn)
+                  (PRT (RP down))
+                  (NP (DT the) (JJ next) (NN invitation)
+                    (S
+                      (VP (TO to)
+                        (VP (VB join)
+                          (NP (PRP us))
+                          (PP (IN by)
+                            (NP (PRP$ his) (NN friend))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, doubt-2)
+nsubj(doubt-2, I-1)
+compound(Wieland-4, Dave-3)
+nsubj(join-6, Wieland-4)
+aux(join-6, will-5)
+ccomp(doubt-2, join-6)
+dobj(join-6, us-7)
+advmod(join-6, again-8)
+cc(doubt-2, and-9)
+nsubjpass(asked-14, Ted-10)
+nsubj:xsubj(turn-16, Ted-10)
+aux(asked-14, will-11)
+advmod(asked-14, likely-12)
+auxpass(asked-14, be-13)
+conj:and(doubt-2, asked-14)
+mark(turn-16, to-15)
+xcomp(asked-14, turn-16)
+compound:prt(turn-16, down-17)
+det(invitation-20, the-18)
+amod(invitation-20, next-19)
+dobj(turn-16, invitation-20)
+mark(join-22, to-21)
+acl:to(invitation-20, join-22)
+dobj(join-22, us-23)
+case(friend-26, by-24)
+nmod:poss(friend-26, his-25)
+nmod:by(join-22, friend-26)
+punct(doubt-2, .-27)
+
+Extracted the following NER entity mentions:
+Dave Wieland	PERSON
+Ted	PERSON
+his	PERSON
+
+Sentence #11 (13 tokens):
+I give the food an A+, service was also excellent.
+
+Tokens:
+[Text=I CharacterOffsetBegin=642 CharacterOffsetEnd=643 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=give CharacterOffsetBegin=644 CharacterOffsetEnd=648 PartOfSpeech=VBP Lemma=give NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=649 CharacterOffsetEnd=652 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=food CharacterOffsetBegin=653 CharacterOffsetEnd=657 PartOfSpeech=NN Lemma=food NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=658 CharacterOffsetEnd=660 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=A CharacterOffsetBegin=661 CharacterOffsetEnd=662 PartOfSpeech=NN Lemma=a NamedEntityTag=O]
+[Text=+ CharacterOffsetBegin=662 CharacterOffsetEnd=663 PartOfSpeech=CC Lemma=+ NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=663 CharacterOffsetEnd=664 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=service CharacterOffsetBegin=665 CharacterOffsetEnd=672 PartOfSpeech=NN Lemma=service NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=673 CharacterOffsetEnd=676 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=677 CharacterOffsetEnd=681 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=excellent CharacterOffsetBegin=682 CharacterOffsetEnd=691 PartOfSpeech=JJ Lemma=excellent NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=691 CharacterOffsetEnd=692 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP give)
+      (NP (DT the) (NN food))
+      (NP (DT an) (NN A)
+        (S
+          (NP (CC +))
+          (, ,)
+          (NP (NN service))
+          (VP (VBD was)
+            (ADVP (RB also))
+            (ADJP (JJ excellent))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, give-2)
+nsubj(give-2, I-1)
+det(food-4, the-3)
+iobj(give-2, food-4)
+det(A-6, an-5)
+dobj(give-2, A-6)
+nsubj(excellent-12, +-7)
+punct(excellent-12, ,-8)
+nsubj(excellent-12, service-9)
+cop(excellent-12, was-10)
+advmod(excellent-12, also-11)
+dep(A-6, excellent-12)
+punct(give-2, .-13)
+
+Extracted the following NER entity mentions:
+
+Sentence #12 (14 tokens):
+Chad gets the award for
+being most "in" to the effort.
+
+Tokens:
+[Text=Chad CharacterOffsetBegin=693 CharacterOffsetEnd=697 PartOfSpeech=NNP Lemma=Chad NamedEntityTag=PERSON]
+[Text=gets CharacterOffsetBegin=698 CharacterOffsetEnd=702 PartOfSpeech=VBZ Lemma=get NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=703 CharacterOffsetEnd=706 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=award CharacterOffsetBegin=707 CharacterOffsetEnd=712 PartOfSpeech=NN Lemma=award NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=713 CharacterOffsetEnd=716 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=717 CharacterOffsetEnd=722 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=723 CharacterOffsetEnd=727 PartOfSpeech=RBS Lemma=most NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=728 CharacterOffsetEnd=729 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=729 CharacterOffsetEnd=731 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=731 CharacterOffsetEnd=732 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=733 CharacterOffsetEnd=735 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=736 CharacterOffsetEnd=739 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=effort CharacterOffsetBegin=740 CharacterOffsetEnd=746 PartOfSpeech=NN Lemma=effort NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=746 CharacterOffsetEnd=747 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Chad))
+    (VP (VBZ gets)
+      (NP (DT the) (NN award))
+      (PP (IN for)
+        (S
+          (VP (VBG being)
+            (S
+              (NP (RBS most))
+              (`` ``)
+              (ADJP (IN in))
+              ('' ''))
+            (PP (TO to)
+              (NP (DT the) (NN effort)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, gets-2)
+nsubj(gets-2, Chad-1)
+det(award-4, the-3)
+dobj(gets-2, award-4)
+mark(effort-13, for-5)
+cop(effort-13, being-6)
+dep(in-9, most-7)
+punct(in-9, ``-8)
+xcomp(effort-13, in-9)
+punct(in-9, ''-10)
+case(effort-13, to-11)
+det(effort-13, the-12)
+advcl:for(gets-2, effort-13)
+punct(gets-2, .-14)
+
+Extracted the following NER entity mentions:
+Chad	PERSON
+
+Sentence #13 (17 tokens):
+I will mark my calendar for 60 days to rip a thread for the next effort.
+
+Tokens:
+[Text=I CharacterOffsetBegin=748 CharacterOffsetEnd=749 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=750 CharacterOffsetEnd=754 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=mark CharacterOffsetBegin=755 CharacterOffsetEnd=759 PartOfSpeech=VB Lemma=mark NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=760 CharacterOffsetEnd=762 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=calendar CharacterOffsetBegin=763 CharacterOffsetEnd=771 PartOfSpeech=NN Lemma=calendar NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=772 CharacterOffsetEnd=775 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=60 CharacterOffsetBegin=776 CharacterOffsetEnd=778 PartOfSpeech=CD Lemma=60 NamedEntityTag=DURATION]
+[Text=days CharacterOffsetBegin=779 CharacterOffsetEnd=783 PartOfSpeech=NNS Lemma=day NamedEntityTag=DURATION]
+[Text=to CharacterOffsetBegin=784 CharacterOffsetEnd=786 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=rip CharacterOffsetBegin=787 CharacterOffsetEnd=790 PartOfSpeech=VB Lemma=rip NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=791 CharacterOffsetEnd=792 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=thread CharacterOffsetBegin=793 CharacterOffsetEnd=799 PartOfSpeech=NN Lemma=thread NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=800 CharacterOffsetEnd=803 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=804 CharacterOffsetEnd=807 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=next CharacterOffsetBegin=808 CharacterOffsetEnd=812 PartOfSpeech=JJ Lemma=next NamedEntityTag=O]
+[Text=effort CharacterOffsetBegin=813 CharacterOffsetEnd=819 PartOfSpeech=NN Lemma=effort NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=819 CharacterOffsetEnd=820 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD will)
+      (VP (VB mark)
+        (NP (PRP$ my) (NN calendar))
+        (PP (IN for)
+          (NP (CD 60) (NNS days)))
+        (S
+          (VP (TO to)
+            (VP (VB rip)
+              (NP
+                (NP (DT a) (NN thread))
+                (PP (IN for)
+                  (NP (DT the) (JJ next) (NN effort)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, mark-3)
+nsubj(mark-3, I-1)
+aux(mark-3, will-2)
+nmod:poss(calendar-5, my-4)
+dobj(mark-3, calendar-5)
+case(days-8, for-6)
+nummod(days-8, 60-7)
+nmod:for(mark-3, days-8)
+mark(rip-10, to-9)
+advcl:to(mark-3, rip-10)
+det(thread-12, a-11)
+dobj(rip-10, thread-12)
+case(effort-16, for-13)
+det(effort-16, the-14)
+amod(effort-16, next-15)
+nmod:for(thread-12, effort-16)
+punct(mark-3, .-17)
+
+Extracted the following NER entity mentions:
+60 days	DURATION
+
+Sentence #14 (1 tokens):
+e.
+
+Tokens:
+[Text=e. CharacterOffsetBegin=821 CharacterOffsetEnd=823 PartOfSpeech=IN Lemma=e. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (PP (IN e.)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, e.-1)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(5,1,[1,2]) -> (3,10,[10,11]), that is: "We" -> "we"
+
+Coreference set:
+	(11,4,[3,5]) -> (3,13,[12,14]), that is: "the food" -> "the food"
+
+Coreference set:
+	(9,30,[30,31]) -> (6,2,[1,4]), that is: "their" -> "... whenever ."
+
+Coreference set:
+	(8,6,[6,7]) -> (8,2,[2,3]), that is: "his" -> "a"
+
+Coreference set:
+	(9,11,[10,12]) -> (9,8,[5,9]), that is: "head meat" -> "eye socket fatty tissue"
+	(9,31,[30,32]) -> (9,8,[5,9]), that is: "their meat" -> "eye socket fatty tissue"
+	(9,42,[42,43]) -> (9,8,[5,9]), that is: "it" -> "eye socket fatty tissue"
+
+Coreference set:
+	(9,20,[20,21]) -> (9,17,[17,18]), that is: "my" -> "I"
+	(10,1,[1,2]) -> (9,17,[17,18]), that is: "I" -> "I"
+	(11,1,[1,2]) -> (9,17,[17,18]), that is: "I" -> "I"
+	(13,1,[1,2]) -> (9,17,[17,18]), that is: "I" -> "I"
+	(13,4,[4,5]) -> (9,17,[17,18]), that is: "my" -> "I"
+
+Coreference set:
+	(10,25,[25,26]) -> (10,10,[10,11]), that is: "his" -> "Ted"
+
+Coreference set:
+	(10,23,[23,24]) -> (10,7,[7,8]), that is: "us" -> "us"

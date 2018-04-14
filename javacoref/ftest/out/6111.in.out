@@ -1,0 +1,197 @@
+Document: ID=6111.in (4 sentences, 42 tokens)
+
+Sentence #1 (2 tokens):
+Benson.
+
+Tokens:
+[Text=Benson CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Benson NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Benson))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Benson-1)
+punct(Benson-1, .-2)
+
+Extracted the following NER entity mentions:
+Benson	PERSON
+
+Sentence #2 (27 tokens):
+CDi and Elvis are either politely asking Phi Delts to leave the
+party or demonstrating how Vermonters from the Northeast Kingdom welcome
+tourists to their town.
+
+Tokens:
+[Text=CDi CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=CDi NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Elvis CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=Elvis NamedEntityTag=PERSON]
+[Text=are CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=either CharacterOffsetBegin=26 CharacterOffsetEnd=32 PartOfSpeech=CC Lemma=either NamedEntityTag=O]
+[Text=politely CharacterOffsetBegin=33 CharacterOffsetEnd=41 PartOfSpeech=RB Lemma=politely NamedEntityTag=O]
+[Text=asking CharacterOffsetBegin=42 CharacterOffsetEnd=48 PartOfSpeech=VBG Lemma=ask NamedEntityTag=O]
+[Text=Phi CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=NNP Lemma=Phi NamedEntityTag=O]
+[Text=Delts CharacterOffsetBegin=53 CharacterOffsetEnd=58 PartOfSpeech=NNP Lemma=Delts NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=leave CharacterOffsetBegin=62 CharacterOffsetEnd=67 PartOfSpeech=VB Lemma=leave NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=party CharacterOffsetBegin=72 CharacterOffsetEnd=77 PartOfSpeech=NN Lemma=party NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=78 CharacterOffsetEnd=80 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=demonstrating CharacterOffsetBegin=81 CharacterOffsetEnd=94 PartOfSpeech=VBG Lemma=demonstrate NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=95 CharacterOffsetEnd=98 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=Vermonters CharacterOffsetBegin=99 CharacterOffsetEnd=109 PartOfSpeech=NNS Lemma=vermonter NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=110 CharacterOffsetEnd=114 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=115 CharacterOffsetEnd=118 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Northeast CharacterOffsetBegin=119 CharacterOffsetEnd=128 PartOfSpeech=NNP Lemma=Northeast NamedEntityTag=O]
+[Text=Kingdom CharacterOffsetBegin=129 CharacterOffsetEnd=136 PartOfSpeech=NNP Lemma=Kingdom NamedEntityTag=O]
+[Text=welcome CharacterOffsetBegin=137 CharacterOffsetEnd=144 PartOfSpeech=JJ Lemma=welcome NamedEntityTag=O]
+[Text=tourists CharacterOffsetBegin=145 CharacterOffsetEnd=153 PartOfSpeech=NNS Lemma=tourist NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=154 CharacterOffsetEnd=156 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=157 CharacterOffsetEnd=162 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=town CharacterOffsetBegin=163 CharacterOffsetEnd=167 PartOfSpeech=NN Lemma=town NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=167 CharacterOffsetEnd=168 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP CDi)
+      (CC and)
+      (NNP Elvis))
+    (VP (VBP are)
+      (VP (CC either)
+        (VP
+          (ADVP (RB politely))
+          (VBG asking)
+          (S
+            (NP (NNP Phi) (NNP Delts))
+            (VP (TO to)
+              (VP (VB leave)
+                (NP (DT the) (NN party))))))
+        (CC or)
+        (VP (VBG demonstrating)
+          (SBAR
+            (WHADVP (WRB how))
+            (S
+              (NP
+                (NP (NNS Vermonters))
+                (PP (IN from)
+                  (NP
+                    (NP (DT the) (NNP Northeast) (NNP Kingdom) (JJ welcome) (NNS tourists))
+                    (PP (TO to)
+                      (NP (PRP$ their) (NN town)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, asking-7)
+nsubj(asking-7, CDi-1)
+nsubj(demonstrating-15, CDi-1)
+cc(CDi-1, and-2)
+conj:and(CDi-1, Elvis-3)
+nsubj(asking-7, Elvis-3)
+aux(asking-7, are-4)
+cc:preconj(asking-7, either-5)
+advmod(asking-7, politely-6)
+compound(Delts-9, Phi-8)
+dobj(asking-7, Delts-9)
+nsubj:xsubj(leave-11, Delts-9)
+mark(leave-11, to-10)
+xcomp(asking-7, leave-11)
+det(party-13, the-12)
+dobj(leave-11, party-13)
+cc(asking-7, or-14)
+conj:or(asking-7, demonstrating-15)
+advmod(Vermonters-17, how-16)
+dep(demonstrating-15, Vermonters-17)
+case(tourists-23, from-18)
+det(tourists-23, the-19)
+compound(tourists-23, Northeast-20)
+compound(tourists-23, Kingdom-21)
+amod(tourists-23, welcome-22)
+nmod:from(Vermonters-17, tourists-23)
+case(town-26, to-24)
+nmod:poss(town-26, their-25)
+nmod:to(tourists-23, town-26)
+punct(asking-7, .-27)
+
+Extracted the following NER entity mentions:
+Elvis	PERSON
+
+Sentence #3 (12 tokens):
+I'll let you be the judge(see attached).
+
+Tokens:
+[Text=I CharacterOffsetBegin=171 CharacterOffsetEnd=172 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='ll CharacterOffsetBegin=172 CharacterOffsetEnd=175 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=let CharacterOffsetBegin=176 CharacterOffsetEnd=179 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=180 CharacterOffsetEnd=183 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=184 CharacterOffsetEnd=186 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=187 CharacterOffsetEnd=190 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=judge CharacterOffsetBegin=191 CharacterOffsetEnd=196 PartOfSpeech=NN Lemma=judge NamedEntityTag=TITLE]
+[Text=-LRB- CharacterOffsetBegin=196 CharacterOffsetEnd=197 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=197 CharacterOffsetEnd=200 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=attached CharacterOffsetBegin=201 CharacterOffsetEnd=209 PartOfSpeech=VBN Lemma=attach NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=209 CharacterOffsetEnd=210 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=210 CharacterOffsetEnd=211 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD 'll)
+      (VP (VB let)
+        (S
+          (NP (PRP you))
+          (VP (VB be)
+            (NP (DT the) (NN judge))))
+        (PRN (-LRB- -LRB-)
+          (S
+            (VP (VB see)
+              (VP (VBN attached))))
+          (-RRB- -RRB-))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, let-3)
+nsubj(let-3, I-1)
+aux(let-3, 'll-2)
+nsubj(judge-7, you-4)
+cop(judge-7, be-5)
+det(judge-7, the-6)
+ccomp(let-3, judge-7)
+punct(see-9, -LRB--8)
+parataxis(let-3, see-9)
+dep(see-9, attached-10)
+punct(see-9, -RRB--11)
+punct(let-3, .-12)
+
+Extracted the following NER entity mentions:
+judge	TITLE
+
+Sentence #4 (1 tokens):
+BEEK
+
+Tokens:
+[Text=BEEK CharacterOffsetBegin=212 CharacterOffsetEnd=216 PartOfSpeech=NNP Lemma=BEEK NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP BEEK)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, BEEK-1)
+
+Extracted the following NER entity mentions:
+BEEK	PERSON
+
+Coreference set:
+	(2,25,[25,26]) -> (2,1,[1,4]), that is: "their" -> "CDi and Elvis"
+
+Coreference set:
+	(3,4,[4,5]) -> (3,7,[6,8]), that is: "you" -> "the judge"

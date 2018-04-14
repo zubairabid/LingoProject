@@ -1,0 +1,140 @@
+Document: ID=452864.in (3 sentences, 31 tokens)
+
+Sentence #1 (20 tokens):
+Attached is the op-ed by Ken Lay we've submitted to the San Francisco
+Chronicle, at their request.
+
+Tokens:
+[Text=Attached CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=VBN Lemma=attach NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=op-ed CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=JJ Lemma=op-ed NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Ken CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=NNP Lemma=Ken NamedEntityTag=PERSON]
+[Text=Lay CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Lay NamedEntityTag=PERSON]
+[Text=we CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text='ve CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=submitted CharacterOffsetBegin=39 CharacterOffsetEnd=48 PartOfSpeech=VBN Lemma=submit NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=San CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=NNP Lemma=San NamedEntityTag=ORGANIZATION]
+[Text=Francisco CharacterOffsetBegin=60 CharacterOffsetEnd=69 PartOfSpeech=NNP Lemma=Francisco NamedEntityTag=ORGANIZATION]
+[Text=Chronicle CharacterOffsetBegin=70 CharacterOffsetEnd=79 PartOfSpeech=NNP Lemma=Chronicle NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=81 CharacterOffsetEnd=83 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=84 CharacterOffsetEnd=89 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=request CharacterOffsetBegin=90 CharacterOffsetEnd=97 PartOfSpeech=NN Lemma=request NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=97 CharacterOffsetEnd=98 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (VBN Attached)))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJ op-ed))
+        (PP (IN by)
+          (NP
+            (NP (NNP Ken) (NNP Lay))
+            (SBAR
+              (S
+                (NP (PRP we))
+                (VP (VBP 've)
+                  (VP (VBN submitted)
+                    (PP (TO to)
+                      (NP (DT the) (NNP San) (NNP Francisco) (NNP Chronicle)))
+                    (, ,)
+                    (PP (IN at)
+                      (NP (PRP$ their) (NN request)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, op-ed-4)
+csubj(op-ed-4, Attached-1)
+cop(op-ed-4, is-2)
+det(op-ed-4, the-3)
+case(Lay-7, by-5)
+compound(Lay-7, Ken-6)
+nmod:by(op-ed-4, Lay-7)
+nsubj(submitted-10, we-8)
+aux(submitted-10, 've-9)
+acl:relcl(Lay-7, submitted-10)
+case(Chronicle-15, to-11)
+det(Chronicle-15, the-12)
+compound(Chronicle-15, San-13)
+compound(Chronicle-15, Francisco-14)
+nmod:to(submitted-10, Chronicle-15)
+punct(submitted-10, ,-16)
+case(request-19, at-17)
+nmod:poss(request-19, their-18)
+nmod:at(submitted-10, request-19)
+punct(op-ed-4, .-20)
+
+Extracted the following NER entity mentions:
+Ken Lay	PERSON
+San Francisco Chronicle	ORGANIZATION
+
+Sentence #2 (10 tokens):
+It will likely run this Sunday, Feb. 18.
+
+Tokens:
+[Text=It CharacterOffsetBegin=100 CharacterOffsetEnd=102 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=103 CharacterOffsetEnd=107 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=likely CharacterOffsetBegin=108 CharacterOffsetEnd=114 PartOfSpeech=RB Lemma=likely NamedEntityTag=O]
+[Text=run CharacterOffsetBegin=115 CharacterOffsetEnd=118 PartOfSpeech=VB Lemma=run NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=119 CharacterOffsetEnd=123 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=Sunday CharacterOffsetBegin=124 CharacterOffsetEnd=130 PartOfSpeech=NNP Lemma=Sunday NamedEntityTag=DATE NormalizedNamedEntityTag=****0218]
+[Text=, CharacterOffsetBegin=130 CharacterOffsetEnd=131 PartOfSpeech=, Lemma=, NamedEntityTag=DATE NormalizedNamedEntityTag=****0218]
+[Text=Feb. CharacterOffsetBegin=132 CharacterOffsetEnd=136 PartOfSpeech=NNP Lemma=Feb. NamedEntityTag=DATE NormalizedNamedEntityTag=****0218]
+[Text=18 CharacterOffsetBegin=137 CharacterOffsetEnd=139 PartOfSpeech=CD Lemma=18 NamedEntityTag=DATE NormalizedNamedEntityTag=****0218]
+[Text=. CharacterOffsetBegin=139 CharacterOffsetEnd=140 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (MD will)
+      (ADVP (RB likely))
+      (VP (VB run)
+        (NP
+          (NP (DT this) (NNP Sunday))
+          (, ,)
+          (NP (NNP Feb.) (CD 18)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, run-4)
+nsubj(run-4, It-1)
+aux(run-4, will-2)
+advmod(run-4, likely-3)
+det(Sunday-6, this-5)
+dobj(run-4, Sunday-6)
+punct(Sunday-6, ,-7)
+appos(Sunday-6, Feb.-8)
+nummod(Feb.-8, 18-9)
+punct(run-4, .-10)
+
+Extracted the following NER entity mentions:
+Sunday, Feb. 18	DATE
+
+Sentence #3 (1 tokens):
+kd
+
+Tokens:
+[Text=kd CharacterOffsetBegin=142 CharacterOffsetEnd=144 PartOfSpeech=NN Lemma=kd NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NN kd)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, kd-1)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(2,1,[1,2]) -> (1,4,[3,20]), that is: "It" -> "the op-ed by Ken Lay we 've submitted to the San Francisco Chronicle , at their request"

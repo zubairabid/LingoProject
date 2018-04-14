@@ -1,0 +1,122 @@
+Document: ID=737831.in (2 sentences, 30 tokens)
+
+Sentence #1 (16 tokens):
+FYI -
+Quantum is choosing to shut in their production for the month of October.
+
+Tokens:
+[Text=FYI CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=SYM Lemma=fyi NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=Quantum CharacterOffsetBegin=6 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Quantum NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=choosing CharacterOffsetBegin=17 CharacterOffsetEnd=25 PartOfSpeech=VBG Lemma=choose NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=shut CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=VB Lemma=shut NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=37 CharacterOffsetEnd=42 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=production CharacterOffsetBegin=43 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=production NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=month CharacterOffsetBegin=62 CharacterOffsetEnd=67 PartOfSpeech=NN Lemma=month NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=68 CharacterOffsetEnd=70 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=October CharacterOffsetBegin=71 CharacterOffsetEnd=78 PartOfSpeech=NNP Lemma=October NamedEntityTag=DATE NormalizedNamedEntityTag=****10]
+[Text=. CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (X (SYM FYI))
+    (: -)
+    (NP (NNP Quantum))
+    (VP (VBZ is)
+      (VP (VBG choosing)
+        (S
+          (VP (TO to)
+            (VP (VB shut)
+              (PP (IN in)
+                (NP
+                  (NP (PRP$ their) (NN production))
+                  (PP (IN for)
+                    (NP
+                      (NP (DT the) (NN month))
+                      (PP (IN of)
+                        (NP (NNP October))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, choosing-5)
+dep(choosing-5, FYI-1)
+punct(choosing-5, --2)
+nsubj(choosing-5, Quantum-3)
+nsubj:xsubj(shut-7, Quantum-3)
+aux(choosing-5, is-4)
+mark(shut-7, to-6)
+xcomp(choosing-5, shut-7)
+case(production-10, in-8)
+nmod:poss(production-10, their-9)
+nmod:in(shut-7, production-10)
+case(month-13, for-11)
+det(month-13, the-12)
+nmod:for(production-10, month-13)
+case(October-15, of-14)
+nmod:of(month-13, October-15)
+punct(choosing-5, .-16)
+
+Extracted the following NER entity mentions:
+October	DATE
+
+Sentence #2 (14 tokens):
+I'll adjust our purchase volumes down by the 800 MMBtu / day.
+
+Tokens:
+[Text=I CharacterOffsetBegin=80 CharacterOffsetEnd=81 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='ll CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=adjust CharacterOffsetBegin=85 CharacterOffsetEnd=91 PartOfSpeech=VB Lemma=adjust NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=purchase CharacterOffsetBegin=96 CharacterOffsetEnd=104 PartOfSpeech=NN Lemma=purchase NamedEntityTag=O]
+[Text=volumes CharacterOffsetBegin=105 CharacterOffsetEnd=112 PartOfSpeech=NNS Lemma=volume NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=113 CharacterOffsetEnd=117 PartOfSpeech=RB Lemma=down NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=118 CharacterOffsetEnd=120 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=121 CharacterOffsetEnd=124 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=800 CharacterOffsetBegin=125 CharacterOffsetEnd=128 PartOfSpeech=CD Lemma=800 NamedEntityTag=NUMBER NormalizedNamedEntityTag=800.0]
+[Text=MMBtu CharacterOffsetBegin=129 CharacterOffsetEnd=134 PartOfSpeech=NN Lemma=mmbtu NamedEntityTag=O]
+[Text=/ CharacterOffsetBegin=135 CharacterOffsetEnd=136 PartOfSpeech=: Lemma=/ NamedEntityTag=O]
+[Text=day CharacterOffsetBegin=137 CharacterOffsetEnd=140 PartOfSpeech=NN Lemma=day NamedEntityTag=TIME NormalizedNamedEntityTag=D]
+[Text=. CharacterOffsetBegin=140 CharacterOffsetEnd=141 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD 'll)
+      (VP (VB adjust)
+        (NP (PRP$ our) (NN purchase) (NNS volumes))
+        (ADVP (RB down)
+          (PP (IN by)
+            (NP
+              (NP (DT the) (CD 800) (NN MMBtu))
+              (PRN (: /)
+                (NP (NN day))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, adjust-3)
+nsubj(adjust-3, I-1)
+aux(adjust-3, 'll-2)
+nmod:poss(volumes-6, our-4)
+compound(volumes-6, purchase-5)
+dobj(adjust-3, volumes-6)
+advmod(adjust-3, down-7)
+case(MMBtu-11, by-8)
+det(MMBtu-11, the-9)
+nummod(MMBtu-11, 800-10)
+nmod:by(down-7, MMBtu-11)
+punct(day-13, /-12)
+dep(MMBtu-11, day-13)
+punct(adjust-3, .-14)
+
+Extracted the following NER entity mentions:
+800	NUMBER
+day	TIME

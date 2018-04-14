@@ -1,0 +1,471 @@
+Document: ID=1271476.in (5 sentences, 126 tokens)
+
+Sentence #1 (27 tokens):
+Kingsgate Capacity
+
+Beginning with gas day Thursday, November 1, 2001, PG&E GTN is returning to
+their normal best efforts throughput capability at Kingsgate.
+
+Tokens:
+[Text=Kingsgate CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=Kingsgate NamedEntityTag=ORGANIZATION]
+[Text=Capacity CharacterOffsetBegin=10 CharacterOffsetEnd=18 PartOfSpeech=NNP Lemma=Capacity NamedEntityTag=ORGANIZATION]
+[Text=Beginning CharacterOffsetBegin=20 CharacterOffsetEnd=29 PartOfSpeech=VBG Lemma=begin NamedEntityTag=ORGANIZATION]
+[Text=with CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=gas CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=gas NamedEntityTag=O]
+[Text=day CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=day NamedEntityTag=TIME NormalizedNamedEntityTag=D]
+[Text=Thursday CharacterOffsetBegin=43 CharacterOffsetEnd=51 PartOfSpeech=NNP Lemma=Thursday NamedEntityTag=DATE NormalizedNamedEntityTag=20011101]
+[Text=, CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=, Lemma=, NamedEntityTag=DATE NormalizedNamedEntityTag=20011101]
+[Text=November CharacterOffsetBegin=53 CharacterOffsetEnd=61 PartOfSpeech=NNP Lemma=November NamedEntityTag=DATE NormalizedNamedEntityTag=20011101]
+[Text=1 CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech=CD Lemma=1 NamedEntityTag=DATE NormalizedNamedEntityTag=20011101]
+[Text=, CharacterOffsetBegin=63 CharacterOffsetEnd=64 PartOfSpeech=, Lemma=, NamedEntityTag=DATE NormalizedNamedEntityTag=20011101]
+[Text=2001 CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=CD Lemma=2001 NamedEntityTag=DATE NormalizedNamedEntityTag=20011101]
+[Text=, CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=PG&E CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=NNP Lemma=PG&E NamedEntityTag=ORGANIZATION]
+[Text=GTN CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=NNP Lemma=GTN NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=80 CharacterOffsetEnd=82 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=returning CharacterOffsetBegin=83 CharacterOffsetEnd=92 PartOfSpeech=VBG Lemma=return NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=93 CharacterOffsetEnd=95 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=96 CharacterOffsetEnd=101 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=normal CharacterOffsetBegin=102 CharacterOffsetEnd=108 PartOfSpeech=JJ Lemma=normal NamedEntityTag=O]
+[Text=best CharacterOffsetBegin=109 CharacterOffsetEnd=113 PartOfSpeech=JJS Lemma=best NamedEntityTag=O]
+[Text=efforts CharacterOffsetBegin=114 CharacterOffsetEnd=121 PartOfSpeech=NNS Lemma=effort NamedEntityTag=O]
+[Text=throughput CharacterOffsetBegin=122 CharacterOffsetEnd=132 PartOfSpeech=NN Lemma=throughput NamedEntityTag=O]
+[Text=capability CharacterOffsetBegin=133 CharacterOffsetEnd=143 PartOfSpeech=NN Lemma=capability NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=144 CharacterOffsetEnd=146 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Kingsgate CharacterOffsetBegin=147 CharacterOffsetEnd=156 PartOfSpeech=NNP Lemma=Kingsgate NamedEntityTag=CITY]
+[Text=. CharacterOffsetBegin=156 CharacterOffsetEnd=157 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NNP Kingsgate) (NNP Capacity))
+      (VP (VBG Beginning)
+        (PP (IN with)
+          (NP
+            (NP (NN gas) (NN day))
+            (NP-TMP (NNP Thursday)))
+          (, ,)
+          (NP-TMP (NNP November) (CD 1) (, ,) (CD 2001)))))
+    (, ,)
+    (NP (NNP PG&E) (NNP GTN))
+    (VP (VBZ is)
+      (VP (VBG returning)
+        (PP (TO to)
+          (NP (PRP$ their)
+            (ADJP (JJ normal) (JJS best))
+            (NNS efforts) (NN throughput) (NN capability)))
+        (PP (IN at)
+          (NP (NNP Kingsgate)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, returning-17)
+compound(Capacity-2, Kingsgate-1)
+nsubj(Beginning-3, Capacity-2)
+advcl(returning-17, Beginning-3)
+case(day-6, with-4)
+compound(day-6, gas-5)
+nmod:with(Beginning-3, day-6)
+nmod:tmod(day-6, Thursday-7)
+punct(day-6, ,-8)
+dep(day-6, November-9)
+nummod(November-9, 1-10)
+punct(November-9, ,-11)
+nummod(November-9, 2001-12)
+punct(returning-17, ,-13)
+compound(GTN-15, PG&E-14)
+nsubj(returning-17, GTN-15)
+aux(returning-17, is-16)
+case(capability-24, to-18)
+nmod:poss(capability-24, their-19)
+amod(capability-24, normal-20)
+dep(normal-20, best-21)
+compound(capability-24, efforts-22)
+compound(capability-24, throughput-23)
+nmod:to(returning-17, capability-24)
+case(Kingsgate-26, at-25)
+nmod:at(returning-17, Kingsgate-26)
+punct(returning-17, .-27)
+
+Extracted the following NER entity mentions:
+Kingsgate Capacity Beginning	ORGANIZATION
+day	TIME
+Thursday, November 1, 2001	DATE
+PG&E	ORGANIZATION
+Kingsgate	CITY
+
+Sentence #2 (17 tokens):
+If you have any questions, please contact our transportation coordinators at
+(503) 833-4300, option 1.
+
+Tokens:
+[Text=If CharacterOffsetBegin=159 CharacterOffsetEnd=161 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=162 CharacterOffsetEnd=165 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=166 CharacterOffsetEnd=170 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=171 CharacterOffsetEnd=174 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=questions CharacterOffsetBegin=175 CharacterOffsetEnd=184 PartOfSpeech=NNS Lemma=question NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=184 CharacterOffsetEnd=185 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=please CharacterOffsetBegin=186 CharacterOffsetEnd=192 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=contact CharacterOffsetBegin=193 CharacterOffsetEnd=200 PartOfSpeech=NN Lemma=contact NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=201 CharacterOffsetEnd=204 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=transportation CharacterOffsetBegin=205 CharacterOffsetEnd=219 PartOfSpeech=NN Lemma=transportation NamedEntityTag=O]
+[Text=coordinators CharacterOffsetBegin=220 CharacterOffsetEnd=232 PartOfSpeech=NNS Lemma=coordinator NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=233 CharacterOffsetEnd=235 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=-LRB-503-RRB- 833-4300 CharacterOffsetBegin=236 CharacterOffsetEnd=250 PartOfSpeech=NN Lemma=-lrb-503-rrb- 833-4300 NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=250 CharacterOffsetEnd=251 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=option CharacterOffsetBegin=252 CharacterOffsetEnd=258 PartOfSpeech=NN Lemma=option NamedEntityTag=O]
+[Text=1 CharacterOffsetBegin=259 CharacterOffsetEnd=260 PartOfSpeech=CD Lemma=1 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=. CharacterOffsetBegin=260 CharacterOffsetEnd=261 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP have)
+          (NP (DT any) (NNS questions)))))
+    (, ,)
+    (VP (VB please)
+      (NP (NN contact))
+      (PP
+        (NP (PRP$ our) (NN transportation) (NNS coordinators))
+        (IN at)
+        (NP
+          (NP (NN -LRB-503-RRB- 833-4300))
+          (, ,)
+          (NP (NN option) (CD 1)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, please-7)
+mark(have-3, If-1)
+nsubj(have-3, you-2)
+advcl:if(please-7, have-3)
+det(questions-5, any-4)
+dobj(have-3, questions-5)
+punct(please-7, ,-6)
+dobj(please-7, contact-8)
+nmod:poss(coordinators-11, our-9)
+compound(coordinators-11, transportation-10)
+nmod:at(please-7, coordinators-11)
+case(coordinators-11, at-12)
+dep(coordinators-11, -LRB-503-RRB- 833-4300-13)
+punct(-LRB-503-RRB- 833-4300-13, ,-14)
+appos(-LRB-503-RRB- 833-4300-13, option-15)
+nummod(option-15, 1-16)
+punct(please-7, .-17)
+
+Extracted the following NER entity mentions:
+1	NUMBER
+
+Sentence #3 (34 tokens):
+PG&E National Energy Group and any other
+company referenced herein that uses the PG&E name or
+logo are not the same company as Pacific Gas and
+Electric Company, the regulated California utility.
+
+Tokens:
+[Text=PG&E CharacterOffsetBegin=266 CharacterOffsetEnd=270 PartOfSpeech=NNP Lemma=PG&E NamedEntityTag=ORGANIZATION]
+[Text=National CharacterOffsetBegin=271 CharacterOffsetEnd=279 PartOfSpeech=NNP Lemma=National NamedEntityTag=ORGANIZATION]
+[Text=Energy CharacterOffsetBegin=280 CharacterOffsetEnd=286 PartOfSpeech=NNP Lemma=Energy NamedEntityTag=ORGANIZATION]
+[Text=Group CharacterOffsetBegin=287 CharacterOffsetEnd=292 PartOfSpeech=NNP Lemma=Group NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=293 CharacterOffsetEnd=296 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=297 CharacterOffsetEnd=300 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=301 CharacterOffsetEnd=306 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=company CharacterOffsetBegin=307 CharacterOffsetEnd=314 PartOfSpeech=NN Lemma=company NamedEntityTag=O]
+[Text=referenced CharacterOffsetBegin=315 CharacterOffsetEnd=325 PartOfSpeech=VBN Lemma=reference NamedEntityTag=O]
+[Text=herein CharacterOffsetBegin=326 CharacterOffsetEnd=332 PartOfSpeech=RB Lemma=herein NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=333 CharacterOffsetEnd=337 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=uses CharacterOffsetBegin=338 CharacterOffsetEnd=342 PartOfSpeech=VBZ Lemma=use NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=343 CharacterOffsetEnd=346 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=PG&E CharacterOffsetBegin=347 CharacterOffsetEnd=351 PartOfSpeech=NNP Lemma=PG&E NamedEntityTag=O]
+[Text=name CharacterOffsetBegin=352 CharacterOffsetEnd=356 PartOfSpeech=NN Lemma=name NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=357 CharacterOffsetEnd=359 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=logo CharacterOffsetBegin=360 CharacterOffsetEnd=364 PartOfSpeech=NN Lemma=logo NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=365 CharacterOffsetEnd=368 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=369 CharacterOffsetEnd=372 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=373 CharacterOffsetEnd=376 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=same CharacterOffsetBegin=377 CharacterOffsetEnd=381 PartOfSpeech=JJ Lemma=same NamedEntityTag=O]
+[Text=company CharacterOffsetBegin=382 CharacterOffsetEnd=389 PartOfSpeech=NN Lemma=company NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=390 CharacterOffsetEnd=392 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=Pacific CharacterOffsetBegin=393 CharacterOffsetEnd=400 PartOfSpeech=NNP Lemma=Pacific NamedEntityTag=ORGANIZATION]
+[Text=Gas CharacterOffsetBegin=401 CharacterOffsetEnd=404 PartOfSpeech=NNP Lemma=Gas NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=405 CharacterOffsetEnd=408 PartOfSpeech=CC Lemma=and NamedEntityTag=ORGANIZATION]
+[Text=Electric CharacterOffsetBegin=409 CharacterOffsetEnd=417 PartOfSpeech=NNP Lemma=Electric NamedEntityTag=ORGANIZATION]
+[Text=Company CharacterOffsetBegin=418 CharacterOffsetEnd=425 PartOfSpeech=NNP Lemma=Company NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=425 CharacterOffsetEnd=426 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=427 CharacterOffsetEnd=430 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=regulated CharacterOffsetBegin=431 CharacterOffsetEnd=440 PartOfSpeech=JJ Lemma=regulated NamedEntityTag=O]
+[Text=California CharacterOffsetBegin=441 CharacterOffsetEnd=451 PartOfSpeech=NNP Lemma=California NamedEntityTag=STATE_OR_PROVINCE]
+[Text=utility CharacterOffsetBegin=452 CharacterOffsetEnd=459 PartOfSpeech=NN Lemma=utility NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=459 CharacterOffsetEnd=460 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP PG&E) (NNP National) (NNP Energy) (NNP Group))
+      (CC and)
+      (NP (DT any) (JJ other) (NN company)))
+    (VP (VBN referenced)
+      (ADVP (RB herein))
+      (SBAR (IN that)
+        (S
+          (VP (VBZ uses)
+            (SBAR
+              (S
+                (NP
+                  (NP (DT the) (NNP PG&E) (NN name))
+                  (CC or)
+                  (NP (NN logo)))
+                (VP (VBP are) (RB not)
+                  (NP
+                    (NP
+                      (NP (DT the) (JJ same) (NN company))
+                      (PP (IN as)
+                        (NP (NNP Pacific) (NNP Gas))))
+                    (CC and)
+                    (NP
+                      (NP (NNP Electric) (NNP Company))
+                      (, ,)
+                      (NP (DT the) (JJ regulated) (NNP California) (NN utility)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, referenced-9)
+compound(Group-4, PG&E-1)
+compound(Group-4, National-2)
+compound(Group-4, Energy-3)
+nsubj(referenced-9, Group-4)
+cc(Group-4, and-5)
+det(company-8, any-6)
+amod(company-8, other-7)
+conj:and(Group-4, company-8)
+nsubj(referenced-9, company-8)
+advmod(referenced-9, herein-10)
+mark(uses-12, that-11)
+ccomp(referenced-9, uses-12)
+det(name-15, the-13)
+compound(name-15, PG&E-14)
+nsubj(company-22, name-15)
+cc(name-15, or-16)
+conj:or(name-15, logo-17)
+nsubj(company-22, logo-17)
+cop(company-22, are-18)
+neg(company-22, not-19)
+det(company-22, the-20)
+amod(company-22, same-21)
+ccomp(uses-12, company-22)
+case(Gas-25, as-23)
+compound(Gas-25, Pacific-24)
+nmod:as(company-22, Gas-25)
+cc(company-22, and-26)
+compound(Company-28, Electric-27)
+ccomp(uses-12, Company-28)
+conj:and(company-22, Company-28)
+punct(Company-28, ,-29)
+det(utility-33, the-30)
+amod(utility-33, regulated-31)
+compound(utility-33, California-32)
+appos(Company-28, utility-33)
+punct(referenced-9, .-34)
+
+Extracted the following NER entity mentions:
+PG&E National Energy Group	ORGANIZATION
+Pacific Gas and Electric Company	ORGANIZATION
+California	STATE_OR_PROVINCE
+
+Sentence #4 (19 tokens):
+Neither
+PG&E National Energy Group nor these other
+referenced companies are regulated by the California Public
+Utilities Commission.
+
+Tokens:
+[Text=Neither CharacterOffsetBegin=462 CharacterOffsetEnd=469 PartOfSpeech=DT Lemma=neither NamedEntityTag=O]
+[Text=PG&E CharacterOffsetBegin=470 CharacterOffsetEnd=474 PartOfSpeech=NNP Lemma=PG&E NamedEntityTag=ORGANIZATION]
+[Text=National CharacterOffsetBegin=475 CharacterOffsetEnd=483 PartOfSpeech=NNP Lemma=National NamedEntityTag=ORGANIZATION]
+[Text=Energy CharacterOffsetBegin=484 CharacterOffsetEnd=490 PartOfSpeech=NNP Lemma=Energy NamedEntityTag=ORGANIZATION]
+[Text=Group CharacterOffsetBegin=491 CharacterOffsetEnd=496 PartOfSpeech=NNP Lemma=Group NamedEntityTag=ORGANIZATION]
+[Text=nor CharacterOffsetBegin=497 CharacterOffsetEnd=500 PartOfSpeech=CC Lemma=nor NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=501 CharacterOffsetEnd=506 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=507 CharacterOffsetEnd=512 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=referenced CharacterOffsetBegin=513 CharacterOffsetEnd=523 PartOfSpeech=VBN Lemma=reference NamedEntityTag=O]
+[Text=companies CharacterOffsetBegin=524 CharacterOffsetEnd=533 PartOfSpeech=NNS Lemma=company NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=534 CharacterOffsetEnd=537 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=regulated CharacterOffsetBegin=538 CharacterOffsetEnd=547 PartOfSpeech=VBN Lemma=regulate NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=548 CharacterOffsetEnd=550 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=551 CharacterOffsetEnd=554 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=California CharacterOffsetBegin=555 CharacterOffsetEnd=565 PartOfSpeech=NNP Lemma=California NamedEntityTag=ORGANIZATION]
+[Text=Public CharacterOffsetBegin=566 CharacterOffsetEnd=572 PartOfSpeech=NNP Lemma=Public NamedEntityTag=ORGANIZATION]
+[Text=Utilities CharacterOffsetBegin=573 CharacterOffsetEnd=582 PartOfSpeech=NNP Lemma=Utilities NamedEntityTag=ORGANIZATION]
+[Text=Commission CharacterOffsetBegin=583 CharacterOffsetEnd=593 PartOfSpeech=NNP Lemma=Commission NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=593 CharacterOffsetEnd=594 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT Neither)
+      (NP (NNP PG&E) (NNP National) (NNP Energy) (NNP Group))
+      (CC nor)
+      (NP (DT these) (JJ other)))
+    (VP (VBN referenced)
+      (S
+        (NP (NNS companies))
+        (VP (VBP are)
+          (VP (VBN regulated)
+            (PP (IN by)
+              (NP (DT the) (NNP California) (NNP Public) (NNP Utilities) (NNP Commission)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, referenced-9)
+cc:preconj(Group-5, Neither-1)
+compound(Group-5, PG&E-2)
+compound(Group-5, National-3)
+compound(Group-5, Energy-4)
+nsubj(referenced-9, Group-5)
+cc(Group-5, nor-6)
+det(other-8, these-7)
+conj:nor(Group-5, other-8)
+nsubj(referenced-9, other-8)
+nsubjpass(regulated-12, companies-10)
+auxpass(regulated-12, are-11)
+ccomp(referenced-9, regulated-12)
+case(Commission-18, by-13)
+det(Commission-18, the-14)
+compound(Commission-18, California-15)
+compound(Commission-18, Public-16)
+compound(Commission-18, Utilities-17)
+nmod:agent(regulated-12, Commission-18)
+punct(referenced-9, .-19)
+
+Extracted the following NER entity mentions:
+PG&E National Energy Group	ORGANIZATION
+California Public Utilities Commission	ORGANIZATION
+
+Sentence #5 (29 tokens):
+Customers of Pacific Gas and Electric Company
+do not have to buy products from these companies in order
+to continue to receive quality regulated services from the utility.
+
+Tokens:
+[Text=Customers CharacterOffsetBegin=596 CharacterOffsetEnd=605 PartOfSpeech=NNS Lemma=customer NamedEntityTag=ORGANIZATION]
+[Text=of CharacterOffsetBegin=606 CharacterOffsetEnd=608 PartOfSpeech=IN Lemma=of NamedEntityTag=ORGANIZATION]
+[Text=Pacific CharacterOffsetBegin=609 CharacterOffsetEnd=616 PartOfSpeech=NNP Lemma=Pacific NamedEntityTag=ORGANIZATION]
+[Text=Gas CharacterOffsetBegin=617 CharacterOffsetEnd=620 PartOfSpeech=NNP Lemma=Gas NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=621 CharacterOffsetEnd=624 PartOfSpeech=CC Lemma=and NamedEntityTag=ORGANIZATION]
+[Text=Electric CharacterOffsetBegin=625 CharacterOffsetEnd=633 PartOfSpeech=NNP Lemma=Electric NamedEntityTag=ORGANIZATION]
+[Text=Company CharacterOffsetBegin=634 CharacterOffsetEnd=641 PartOfSpeech=NNP Lemma=Company NamedEntityTag=ORGANIZATION]
+[Text=do CharacterOffsetBegin=642 CharacterOffsetEnd=644 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=645 CharacterOffsetEnd=648 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=649 CharacterOffsetEnd=653 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=654 CharacterOffsetEnd=656 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=buy CharacterOffsetBegin=657 CharacterOffsetEnd=660 PartOfSpeech=VB Lemma=buy NamedEntityTag=O]
+[Text=products CharacterOffsetBegin=661 CharacterOffsetEnd=669 PartOfSpeech=NNS Lemma=product NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=670 CharacterOffsetEnd=674 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=675 CharacterOffsetEnd=680 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=companies CharacterOffsetBegin=681 CharacterOffsetEnd=690 PartOfSpeech=NNS Lemma=company NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=691 CharacterOffsetEnd=693 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=order CharacterOffsetBegin=694 CharacterOffsetEnd=699 PartOfSpeech=NN Lemma=order NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=700 CharacterOffsetEnd=702 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=continue CharacterOffsetBegin=703 CharacterOffsetEnd=711 PartOfSpeech=VB Lemma=continue NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=712 CharacterOffsetEnd=714 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=receive CharacterOffsetBegin=715 CharacterOffsetEnd=722 PartOfSpeech=VB Lemma=receive NamedEntityTag=O]
+[Text=quality CharacterOffsetBegin=723 CharacterOffsetEnd=730 PartOfSpeech=NN Lemma=quality NamedEntityTag=O]
+[Text=regulated CharacterOffsetBegin=731 CharacterOffsetEnd=740 PartOfSpeech=VBN Lemma=regulate NamedEntityTag=O]
+[Text=services CharacterOffsetBegin=741 CharacterOffsetEnd=749 PartOfSpeech=NNS Lemma=service NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=750 CharacterOffsetEnd=754 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=755 CharacterOffsetEnd=758 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=utility CharacterOffsetBegin=759 CharacterOffsetEnd=766 PartOfSpeech=NN Lemma=utility NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=766 CharacterOffsetEnd=767 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNS Customers))
+      (PP (IN of)
+        (NP
+          (NP (NNP Pacific) (NNP Gas))
+          (CC and)
+          (NP (NNP Electric) (NNP Company)))))
+    (VP (VBP do) (RB not)
+      (VP (VB have)
+        (S
+          (VP (TO to)
+            (VP (VB buy)
+              (NP (NNS products))
+              (PP (IN from)
+                (NP (DT these) (NNS companies))))))
+        (SBAR (IN in) (NN order)
+          (S
+            (VP (TO to)
+              (VP (VB continue)
+                (S
+                  (VP (TO to)
+                    (VP (VB receive)
+                      (NP
+                        (NP (NN quality) (VBN regulated) (NNS services))
+                        (PP (IN from)
+                          (NP (DT the) (NN utility)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-10)
+nsubj(have-10, Customers-1)
+nsubj:xsubj(buy-12, Customers-1)
+case(Gas-4, of-2)
+compound(Gas-4, Pacific-3)
+nmod:of(Customers-1, Gas-4)
+cc(Gas-4, and-5)
+compound(Company-7, Electric-6)
+nmod:of(Customers-1, Company-7)
+conj:and(Gas-4, Company-7)
+aux(have-10, do-8)
+neg(have-10, not-9)
+mark(buy-12, to-11)
+xcomp(have-10, buy-12)
+dobj(buy-12, products-13)
+case(companies-16, from-14)
+det(companies-16, these-15)
+nmod:from(buy-12, companies-16)
+mark(continue-20, in-17)
+mwe(in-17, order-18)
+mark(continue-20, to-19)
+advcl:in_order(have-10, continue-20)
+mark(receive-22, to-21)
+xcomp(continue-20, receive-22)
+compound(services-25, quality-23)
+amod(services-25, regulated-24)
+dobj(receive-22, services-25)
+case(utility-28, from-26)
+det(utility-28, the-27)
+nmod:from(services-25, utility-28)
+punct(have-10, .-29)
+
+Extracted the following NER entity mentions:
+Customers of Pacific Gas and Electric Company	ORGANIZATION
+
+Coreference set:
+	(4,5,[2,6]) -> (3,4,[1,5]), that is: "PG&E National Energy Group" -> "PG&E National Energy Group"
+
+Coreference set:
+	(3,15,[13,18]) -> (3,28,[27,34]), that is: "the PG&E name or logo" -> "Electric Company , the regulated California utility"
+	(3,22,[20,34]) -> (3,28,[27,34]), that is: "the same company as Pacific Gas and Electric Company , the regulated California utility" -> "Electric Company , the regulated California utility"
+
+Coreference set:
+	(3,22,[20,26]) -> (3,15,[13,16]), that is: "the same company as Pacific Gas" -> "the PG&E name"
+
+Coreference set:
+	(5,28,[27,29]) -> (3,33,[30,34]), that is: "the utility" -> "the regulated California utility"
+
+Coreference set:
+	(4,10,[10,11]) -> (5,16,[15,17]), that is: "companies" -> "these companies"

@@ -1,0 +1,504 @@
+Document: ID=690427.in (7 sentences, 123 tokens)
+
+Sentence #1 (19 tokens):
+TCPL intends to seek an interim 2001 Eastern Zone toll of CDN$1.1462/GJ
+starting January 1/01.
+
+Tokens:
+[Text=TCPL CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=TCPL NamedEntityTag=ORGANIZATION]
+[Text=intends CharacterOffsetBegin=5 CharacterOffsetEnd=12 PartOfSpeech=VBZ Lemma=intend NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=seek CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=VB Lemma=seek NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=interim CharacterOffsetBegin=24 CharacterOffsetEnd=31 PartOfSpeech=JJ Lemma=interim NamedEntityTag=O]
+[Text=2001 CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=CD Lemma=2001 NamedEntityTag=DATE NormalizedNamedEntityTag=2001]
+[Text=Eastern CharacterOffsetBegin=37 CharacterOffsetEnd=44 PartOfSpeech=NNP Lemma=Eastern NamedEntityTag=MISC]
+[Text=Zone CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=NNP Lemma=Zone NamedEntityTag=MISC]
+[Text=toll CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=NN Lemma=toll NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=CDN$ CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=JJ Lemma=cdn$ NamedEntityTag=O]
+[Text=1.1462 CharacterOffsetBegin=62 CharacterOffsetEnd=68 PartOfSpeech=CD Lemma=1.1462 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.1461999999999999]
+[Text=/ CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=: Lemma=/ NamedEntityTag=O]
+[Text=GJ CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=NN Lemma=gj NamedEntityTag=O]
+[Text=starting CharacterOffsetBegin=72 CharacterOffsetEnd=80 PartOfSpeech=VBG Lemma=start NamedEntityTag=O]
+[Text=January CharacterOffsetBegin=81 CharacterOffsetEnd=88 PartOfSpeech=NNP Lemma=January NamedEntityTag=DATE NormalizedNamedEntityTag=200101]
+[Text=1/01 CharacterOffsetBegin=89 CharacterOffsetEnd=93 PartOfSpeech=CD Lemma=1/01 NamedEntityTag=DATE NormalizedNamedEntityTag=200101]
+[Text=. CharacterOffsetBegin=93 CharacterOffsetEnd=94 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (S
+      (NP (NNP TCPL))
+      (VP (VBZ intends)
+        (S
+          (VP (TO to)
+            (VP (VB seek)
+              (NP (DT an) (JJ interim) (CD 2001) (NNP Eastern) (NNP Zone) (NN toll))
+              (PP (IN of)
+                (NP (JJ CDN$) (CD 1.1462))))))))
+    (: /)
+    (FRAG
+      (NP (NN GJ))
+      (PP (VBG starting)
+        (NP (NNP January) (CD 1/01))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, GJ-15)
+nsubj(intends-2, TCPL-1)
+nsubj:xsubj(seek-4, TCPL-1)
+dep(GJ-15, intends-2)
+mark(seek-4, to-3)
+xcomp(intends-2, seek-4)
+det(toll-10, an-5)
+amod(toll-10, interim-6)
+nummod(toll-10, 2001-7)
+compound(toll-10, Eastern-8)
+compound(toll-10, Zone-9)
+dobj(seek-4, toll-10)
+case(1.1462-13, of-11)
+amod(1.1462-13, CDN$-12)
+nmod:of(seek-4, 1.1462-13)
+punct(GJ-15, /-14)
+case(January-17, starting-16)
+nmod:starting(GJ-15, January-17)
+nummod(January-17, 1/01-18)
+punct(GJ-15, .-19)
+
+Extracted the following NER entity mentions:
+TCPL	ORGANIZATION
+2001	DATE
+Eastern Zone	MISC
+1.1462	NUMBER
+January 1/01	DATE
+
+Sentence #2 (7 tokens):
+This is a 13.6% increase.
+
+Tokens:
+[Text=This CharacterOffsetBegin=97 CharacterOffsetEnd=101 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=102 CharacterOffsetEnd=104 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=105 CharacterOffsetEnd=106 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=13.6 CharacterOffsetBegin=107 CharacterOffsetEnd=111 PartOfSpeech=CD Lemma=13.6 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%13.6]
+[Text=% CharacterOffsetBegin=111 CharacterOffsetEnd=112 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%13.6]
+[Text=increase CharacterOffsetBegin=113 CharacterOffsetEnd=121 PartOfSpeech=NN Lemma=increase NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=121 CharacterOffsetEnd=122 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (NP (DT a)
+        (ADJP (CD 13.6) (NN %))
+        (NN increase)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, increase-6)
+nsubj(increase-6, This-1)
+cop(increase-6, is-2)
+det(increase-6, a-3)
+compound(%-5, 13.6-4)
+amod(increase-6, %-5)
+punct(increase-6, .-7)
+
+Extracted the following NER entity mentions:
+13.6%	PERCENT
+
+Sentence #3 (30 tokens):
+They are saying to avoid
+protracted litigation over interim tolls they are only seeking an increase to
+reflect non-renewals and current costs, ROE, capital structure and
+depreciation .
+
+Tokens:
+[Text=They CharacterOffsetBegin=124 CharacterOffsetEnd=128 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=129 CharacterOffsetEnd=132 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=saying CharacterOffsetBegin=133 CharacterOffsetEnd=139 PartOfSpeech=VBG Lemma=say NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=140 CharacterOffsetEnd=142 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=avoid CharacterOffsetBegin=143 CharacterOffsetEnd=148 PartOfSpeech=VB Lemma=avoid NamedEntityTag=O]
+[Text=protracted CharacterOffsetBegin=149 CharacterOffsetEnd=159 PartOfSpeech=JJ Lemma=protracted NamedEntityTag=O]
+[Text=litigation CharacterOffsetBegin=160 CharacterOffsetEnd=170 PartOfSpeech=NN Lemma=litigation NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=171 CharacterOffsetEnd=175 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=interim CharacterOffsetBegin=176 CharacterOffsetEnd=183 PartOfSpeech=JJ Lemma=interim NamedEntityTag=O]
+[Text=tolls CharacterOffsetBegin=184 CharacterOffsetEnd=189 PartOfSpeech=NNS Lemma=toll NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=190 CharacterOffsetEnd=194 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=195 CharacterOffsetEnd=198 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=199 CharacterOffsetEnd=203 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=seeking CharacterOffsetBegin=204 CharacterOffsetEnd=211 PartOfSpeech=VBG Lemma=seek NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=212 CharacterOffsetEnd=214 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=increase CharacterOffsetBegin=215 CharacterOffsetEnd=223 PartOfSpeech=NN Lemma=increase NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=224 CharacterOffsetEnd=226 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=reflect CharacterOffsetBegin=227 CharacterOffsetEnd=234 PartOfSpeech=VB Lemma=reflect NamedEntityTag=O]
+[Text=non-renewals CharacterOffsetBegin=235 CharacterOffsetEnd=247 PartOfSpeech=NNS Lemma=non-renewal NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=248 CharacterOffsetEnd=251 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=current CharacterOffsetBegin=252 CharacterOffsetEnd=259 PartOfSpeech=JJ Lemma=current NamedEntityTag=O]
+[Text=costs CharacterOffsetBegin=260 CharacterOffsetEnd=265 PartOfSpeech=NNS Lemma=cost NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=265 CharacterOffsetEnd=266 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=ROE CharacterOffsetBegin=267 CharacterOffsetEnd=270 PartOfSpeech=NNP Lemma=ROE NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=270 CharacterOffsetEnd=271 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=capital CharacterOffsetBegin=272 CharacterOffsetEnd=279 PartOfSpeech=NN Lemma=capital NamedEntityTag=O]
+[Text=structure CharacterOffsetBegin=280 CharacterOffsetEnd=289 PartOfSpeech=NN Lemma=structure NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=290 CharacterOffsetEnd=293 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=depreciation CharacterOffsetBegin=294 CharacterOffsetEnd=306 PartOfSpeech=NN Lemma=depreciation NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=307 CharacterOffsetEnd=308 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP They))
+      (VP (VBP are)
+        (VP (VBG saying)
+          (S
+            (VP (TO to)
+              (VP (VB avoid)
+                (NP (JJ protracted) (NN litigation))
+                (PP (IN over)
+                  (NP (JJ interim) (NNS tolls)))))))))
+    (NP (PRP they))
+    (VP (VBP are)
+      (ADVP (RB only))
+      (VP (VBG seeking)
+        (NP (DT an) (NN increase)
+          (S
+            (VP (TO to)
+              (VP (VB reflect)
+                (NP
+                  (NP (NNS non-renewals))
+                  (CC and)
+                  (NP (JJ current) (NNS costs))
+                  (, ,)
+                  (NP (NNP ROE))
+                  (, ,)
+                  (NP (NN capital) (NN structure))
+                  (CC and)
+                  (NP (NN depreciation)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, seeking-14)
+nsubj(saying-3, They-1)
+nsubj:xsubj(avoid-5, They-1)
+aux(saying-3, are-2)
+dep(seeking-14, saying-3)
+mark(avoid-5, to-4)
+xcomp(saying-3, avoid-5)
+amod(litigation-7, protracted-6)
+dobj(avoid-5, litigation-7)
+case(tolls-10, over-8)
+amod(tolls-10, interim-9)
+nmod:over(avoid-5, tolls-10)
+nsubj(seeking-14, they-11)
+aux(seeking-14, are-12)
+advmod(seeking-14, only-13)
+det(increase-16, an-15)
+dobj(seeking-14, increase-16)
+mark(reflect-18, to-17)
+acl:to(increase-16, reflect-18)
+dobj(reflect-18, non-renewals-19)
+cc(non-renewals-19, and-20)
+amod(costs-22, current-21)
+dobj(reflect-18, costs-22)
+conj:and(non-renewals-19, costs-22)
+punct(non-renewals-19, ,-23)
+dobj(reflect-18, ROE-24)
+conj:and(non-renewals-19, ROE-24)
+punct(non-renewals-19, ,-25)
+compound(structure-27, capital-26)
+dobj(reflect-18, structure-27)
+conj:and(non-renewals-19, structure-27)
+cc(non-renewals-19, and-28)
+dobj(reflect-18, depreciation-29)
+conj:and(non-renewals-19, depreciation-29)
+punct(seeking-14, .-30)
+
+Extracted the following NER entity mentions:
+ROE	LOCATION
+
+Sentence #4 (19 tokens):
+This is not what they intend to seek as a final toll which
+will likely be significantly higher.
+
+Tokens:
+[Text=This CharacterOffsetBegin=310 CharacterOffsetEnd=314 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=315 CharacterOffsetEnd=317 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=318 CharacterOffsetEnd=321 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=322 CharacterOffsetEnd=326 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=327 CharacterOffsetEnd=331 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=intend CharacterOffsetBegin=332 CharacterOffsetEnd=338 PartOfSpeech=VBP Lemma=intend NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=339 CharacterOffsetEnd=341 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=seek CharacterOffsetBegin=342 CharacterOffsetEnd=346 PartOfSpeech=VB Lemma=seek NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=347 CharacterOffsetEnd=349 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=350 CharacterOffsetEnd=351 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=final CharacterOffsetBegin=352 CharacterOffsetEnd=357 PartOfSpeech=JJ Lemma=final NamedEntityTag=O]
+[Text=toll CharacterOffsetBegin=358 CharacterOffsetEnd=362 PartOfSpeech=NN Lemma=toll NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=363 CharacterOffsetEnd=368 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=369 CharacterOffsetEnd=373 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=likely CharacterOffsetBegin=374 CharacterOffsetEnd=380 PartOfSpeech=RB Lemma=likely NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=381 CharacterOffsetEnd=383 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=significantly CharacterOffsetBegin=384 CharacterOffsetEnd=397 PartOfSpeech=RB Lemma=significantly NamedEntityTag=O]
+[Text=higher CharacterOffsetBegin=398 CharacterOffsetEnd=404 PartOfSpeech=JJR Lemma=higher NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=404 CharacterOffsetEnd=405 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is) (RB not)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (NP (PRP they))
+          (VP (VBP intend)
+            (S
+              (VP (TO to)
+                (VP (VB seek)
+                  (PP (IN as)
+                    (NP
+                      (NP (DT a) (JJ final) (NN toll))
+                      (SBAR
+                        (WHNP (WDT which))
+                        (S
+                          (VP (MD will)
+                            (ADVP (RB likely))
+                            (VP (VB be)
+                              (ADJP (RB significantly) (JJR higher)))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-2)
+nsubj(is-2, This-1)
+neg(is-2, not-3)
+dobj(intend-6, what-4)
+nsubj:xsubj(seek-8, what-4)
+nsubj(intend-6, they-5)
+ccomp(is-2, intend-6)
+mark(seek-8, to-7)
+xcomp(intend-6, seek-8)
+case(toll-12, as-9)
+det(toll-12, a-10)
+amod(toll-12, final-11)
+nmod:as(seek-8, toll-12)
+nsubj(higher-18, toll-12)
+ref(toll-12, which-13)
+aux(higher-18, will-14)
+advmod(higher-18, likely-15)
+cop(higher-18, be-16)
+advmod(higher-18, significantly-17)
+acl:relcl(toll-12, higher-18)
+punct(is-2, .-19)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (38 tokens):
+In order to ensure TCPL's position is clear, Garry Mihaichuk, TCPL Exec VP
+for Operations will be attending tomorrow afternoon's briefing on their
+upcoming toll application and pitch their argument to continue negotiations.
+
+Tokens:
+[Text=In CharacterOffsetBegin=407 CharacterOffsetEnd=409 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=order CharacterOffsetBegin=410 CharacterOffsetEnd=415 PartOfSpeech=NN Lemma=order NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=416 CharacterOffsetEnd=418 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=ensure CharacterOffsetBegin=419 CharacterOffsetEnd=425 PartOfSpeech=VB Lemma=ensure NamedEntityTag=O]
+[Text=TCPL CharacterOffsetBegin=426 CharacterOffsetEnd=430 PartOfSpeech=NNP Lemma=TCPL NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=430 CharacterOffsetEnd=432 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=position CharacterOffsetBegin=433 CharacterOffsetEnd=441 PartOfSpeech=NN Lemma=position NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=442 CharacterOffsetEnd=444 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=clear CharacterOffsetBegin=445 CharacterOffsetEnd=450 PartOfSpeech=JJ Lemma=clear NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=450 CharacterOffsetEnd=451 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Garry CharacterOffsetBegin=452 CharacterOffsetEnd=457 PartOfSpeech=NNP Lemma=Garry NamedEntityTag=PERSON]
+[Text=Mihaichuk CharacterOffsetBegin=458 CharacterOffsetEnd=467 PartOfSpeech=NNP Lemma=Mihaichuk NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=467 CharacterOffsetEnd=468 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=TCPL CharacterOffsetBegin=469 CharacterOffsetEnd=473 PartOfSpeech=NNP Lemma=TCPL NamedEntityTag=ORGANIZATION]
+[Text=Exec CharacterOffsetBegin=474 CharacterOffsetEnd=478 PartOfSpeech=NNP Lemma=Exec NamedEntityTag=O]
+[Text=VP CharacterOffsetBegin=479 CharacterOffsetEnd=481 PartOfSpeech=NNP Lemma=VP NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=482 CharacterOffsetEnd=485 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Operations CharacterOffsetBegin=486 CharacterOffsetEnd=496 PartOfSpeech=NNP Lemma=Operations NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=497 CharacterOffsetEnd=501 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=502 CharacterOffsetEnd=504 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=attending CharacterOffsetBegin=505 CharacterOffsetEnd=514 PartOfSpeech=VBG Lemma=attend NamedEntityTag=O]
+[Text=tomorrow CharacterOffsetBegin=515 CharacterOffsetEnd=523 PartOfSpeech=NN Lemma=tomorrow NamedEntityTag=O]
+[Text=afternoon CharacterOffsetBegin=524 CharacterOffsetEnd=533 PartOfSpeech=NN Lemma=afternoon NamedEntityTag=TIME NormalizedNamedEntityTag=A]
+[Text='s CharacterOffsetBegin=533 CharacterOffsetEnd=535 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=briefing CharacterOffsetBegin=536 CharacterOffsetEnd=544 PartOfSpeech=NN Lemma=briefing NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=545 CharacterOffsetEnd=547 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=548 CharacterOffsetEnd=553 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=upcoming CharacterOffsetBegin=554 CharacterOffsetEnd=562 PartOfSpeech=VBG Lemma=upcome NamedEntityTag=O]
+[Text=toll CharacterOffsetBegin=563 CharacterOffsetEnd=567 PartOfSpeech=NN Lemma=toll NamedEntityTag=O]
+[Text=application CharacterOffsetBegin=568 CharacterOffsetEnd=579 PartOfSpeech=NN Lemma=application NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=580 CharacterOffsetEnd=583 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=pitch CharacterOffsetBegin=584 CharacterOffsetEnd=589 PartOfSpeech=VB Lemma=pitch NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=590 CharacterOffsetEnd=595 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=argument CharacterOffsetBegin=596 CharacterOffsetEnd=604 PartOfSpeech=NN Lemma=argument NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=605 CharacterOffsetEnd=607 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=continue CharacterOffsetBegin=608 CharacterOffsetEnd=616 PartOfSpeech=VB Lemma=continue NamedEntityTag=O]
+[Text=negotiations CharacterOffsetBegin=617 CharacterOffsetEnd=629 PartOfSpeech=NNS Lemma=negotiation NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=629 CharacterOffsetEnd=630 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN In) (NN order)
+      (S
+        (VP (TO to)
+          (VP (VB ensure)
+            (SBAR
+              (S
+                (NP
+                  (NP (NNP TCPL) (POS 's))
+                  (NN position))
+                (VP (VBZ is)
+                  (ADJP (JJ clear)))))))))
+    (, ,)
+    (NP
+      (NP (NNP Garry) (NNP Mihaichuk))
+      (, ,)
+      (NP
+        (NP (NNP TCPL) (NNP Exec) (NNP VP))
+        (PP (IN for)
+          (NP (NNP Operations)))))
+    (VP (MD will)
+      (VP
+        (VP (VB be)
+          (VP (VBG attending)
+            (NP
+              (NP (NN tomorrow) (NN afternoon) (POS 's))
+              (NN briefing))
+            (PP (IN on)
+              (NP
+                (NP (PRP$ their) (VBG upcoming) (NN toll))
+                (NP (NN application))))))
+        (CC and)
+        (VP (VB pitch)
+          (NP (PRP$ their) (NN argument)
+            (S
+              (VP (TO to)
+                (VP (VB continue)
+                  (NP (NNS negotiations)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, attending-21)
+mark(ensure-4, In-1)
+mwe(In-1, order-2)
+mark(ensure-4, to-3)
+advcl:in_order(attending-21, ensure-4)
+nmod:poss(position-7, TCPL-5)
+case(TCPL-5, 's-6)
+nsubj(clear-9, position-7)
+cop(clear-9, is-8)
+ccomp(ensure-4, clear-9)
+punct(attending-21, ,-10)
+compound(Mihaichuk-12, Garry-11)
+nsubj(attending-21, Mihaichuk-12)
+nsubj(pitch-32, Mihaichuk-12)
+punct(Mihaichuk-12, ,-13)
+compound(VP-16, TCPL-14)
+compound(VP-16, Exec-15)
+appos(Mihaichuk-12, VP-16)
+case(Operations-18, for-17)
+nmod:for(VP-16, Operations-18)
+aux(attending-21, will-19)
+aux(attending-21, be-20)
+compound(afternoon-23, tomorrow-22)
+nmod:poss(briefing-25, afternoon-23)
+case(afternoon-23, 's-24)
+dobj(attending-21, briefing-25)
+case(toll-29, on-26)
+nmod:poss(toll-29, their-27)
+amod(toll-29, upcoming-28)
+nmod:on(attending-21, toll-29)
+dep(toll-29, application-30)
+cc(attending-21, and-31)
+conj:and(attending-21, pitch-32)
+nmod:poss(argument-34, their-33)
+dobj(pitch-32, argument-34)
+mark(continue-36, to-35)
+acl:to(argument-34, continue-36)
+dobj(continue-36, negotiations-37)
+punct(attending-21, .-38)
+
+Extracted the following NER entity mentions:
+TCPL	ORGANIZATION
+Garry Mihaichuk	PERSON
+TCPL	ORGANIZATION
+afternoon	TIME
+
+Sentence #6 (9 tokens):
+Details of their proposed interim tolls are attached.
+
+Tokens:
+[Text=Details CharacterOffsetBegin=632 CharacterOffsetEnd=639 PartOfSpeech=NNS Lemma=detail NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=640 CharacterOffsetEnd=642 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=643 CharacterOffsetEnd=648 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=proposed CharacterOffsetBegin=649 CharacterOffsetEnd=657 PartOfSpeech=VBN Lemma=propose NamedEntityTag=O]
+[Text=interim CharacterOffsetBegin=658 CharacterOffsetEnd=665 PartOfSpeech=JJ Lemma=interim NamedEntityTag=O]
+[Text=tolls CharacterOffsetBegin=666 CharacterOffsetEnd=671 PartOfSpeech=NNS Lemma=toll NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=672 CharacterOffsetEnd=675 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=attached CharacterOffsetBegin=676 CharacterOffsetEnd=684 PartOfSpeech=VBN Lemma=attach NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=684 CharacterOffsetEnd=685 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNS Details))
+      (PP (IN of)
+        (NP (PRP$ their) (VBN proposed) (JJ interim) (NNS tolls))))
+    (VP (VBP are)
+      (VP (VBN attached)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, attached-8)
+nsubjpass(attached-8, Details-1)
+case(tolls-6, of-2)
+nmod:poss(tolls-6, their-3)
+amod(tolls-6, proposed-4)
+amod(tolls-6, interim-5)
+nmod:of(Details-1, tolls-6)
+auxpass(attached-8, are-7)
+punct(attached-8, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #7 (1 tokens):
+Kevin
+
+Tokens:
+[Text=Kevin CharacterOffsetBegin=687 CharacterOffsetEnd=692 PartOfSpeech=NNP Lemma=Kevin NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Kevin)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Kevin-1)
+
+Extracted the following NER entity mentions:
+Kevin	PERSON
+
+Coreference set:
+	(5,5,[5,7]) -> (1,1,[1,2]), that is: "TCPL 's" -> "TCPL"
+	(5,14,[14,15]) -> (1,1,[1,2]), that is: "TCPL" -> "TCPL"
+
+Coreference set:
+	(2,1,[1,2]) -> (2,6,[3,7]), that is: "This" -> "a 13.6 % increase"
+	(4,1,[1,2]) -> (2,6,[3,7]), that is: "This" -> "a 13.6 % increase"
+
+Coreference set:
+	(3,11,[11,12]) -> (3,1,[1,2]), that is: "they" -> "They"
+	(4,5,[5,6]) -> (3,1,[1,2]), that is: "they" -> "They"
+	(5,27,[27,28]) -> (3,1,[1,2]), that is: "their" -> "They"
+	(5,33,[33,34]) -> (3,1,[1,2]), that is: "their" -> "They"
+	(6,3,[3,4]) -> (3,1,[1,2]), that is: "their" -> "They"

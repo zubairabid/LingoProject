@@ -1,0 +1,549 @@
+Document: ID=41519.in (8 sentences, 134 tokens)
+
+Sentence #1 (22 tokens):
+Portland Employees-
+At this time Enron Portland has 5 parking spots allocated based on floor space and number of employees.
+
+Tokens:
+[Text=Portland CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Portland NamedEntityTag=CITY]
+[Text=Employees CharacterOffsetBegin=9 CharacterOffsetEnd=18 PartOfSpeech=NNP Lemma=Employees NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=At CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=33 CharacterOffsetEnd=38 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=Portland CharacterOffsetBegin=39 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=Portland NamedEntityTag=ORGANIZATION]
+[Text=has CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=5 CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=CD Lemma=5 NamedEntityTag=NUMBER NormalizedNamedEntityTag=5.0]
+[Text=parking CharacterOffsetBegin=54 CharacterOffsetEnd=61 PartOfSpeech=NN Lemma=parking NamedEntityTag=O]
+[Text=spots CharacterOffsetBegin=62 CharacterOffsetEnd=67 PartOfSpeech=NNS Lemma=spot NamedEntityTag=O]
+[Text=allocated CharacterOffsetBegin=68 CharacterOffsetEnd=77 PartOfSpeech=VBN Lemma=allocate NamedEntityTag=O]
+[Text=based CharacterOffsetBegin=78 CharacterOffsetEnd=83 PartOfSpeech=VBN Lemma=base NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=84 CharacterOffsetEnd=86 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=floor CharacterOffsetBegin=87 CharacterOffsetEnd=92 PartOfSpeech=NN Lemma=floor NamedEntityTag=O]
+[Text=space CharacterOffsetBegin=93 CharacterOffsetEnd=98 PartOfSpeech=NN Lemma=space NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=99 CharacterOffsetEnd=102 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=number CharacterOffsetBegin=103 CharacterOffsetEnd=109 PartOfSpeech=NN Lemma=number NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=110 CharacterOffsetEnd=112 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=employees CharacterOffsetBegin=113 CharacterOffsetEnd=122 PartOfSpeech=NNS Lemma=employee NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=122 CharacterOffsetEnd=123 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Portland) (NNP Employees))
+    (: -)
+    (S
+      (PP (IN At)
+        (NP (DT this) (NN time)))
+      (NP (NNP Enron) (NNP Portland))
+      (VP (VBZ has)
+        (NP
+          (NP (CD 5) (NN parking) (NNS spots))
+          (VP (VBN allocated)
+            (PP (VBN based)
+              (PP (IN on)
+                (NP
+                  (NP (NN floor) (NN space)
+                    (CC and)
+                    (NN number))
+                  (PP (IN of)
+                    (NP (NNS employees))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Employees-2)
+compound(Employees-2, Portland-1)
+punct(Employees-2, --3)
+case(time-6, At-4)
+det(time-6, this-5)
+nmod:at(has-9, time-6)
+compound(Portland-8, Enron-7)
+nsubj(has-9, Portland-8)
+parataxis(Employees-2, has-9)
+nummod(spots-12, 5-10)
+compound(spots-12, parking-11)
+dobj(has-9, spots-12)
+acl(spots-12, allocated-13)
+case(space-17, based-14)
+mwe(based-14, on-15)
+compound(space-17, floor-16)
+advcl:based_on(allocated-13, space-17)
+cc(space-17, and-18)
+advcl:based_on(allocated-13, number-19)
+conj:and(space-17, number-19)
+case(employees-21, of-20)
+nmod:of(space-17, employees-21)
+punct(Employees-2, .-22)
+
+Extracted the following NER entity mentions:
+Portland	CITY
+Enron Portland	ORGANIZATION
+5	NUMBER
+
+Sentence #2 (17 tokens):
+As UBS employees leave we do not automatically have the ability to take over their spots.
+
+Tokens:
+[Text=As CharacterOffsetBegin=125 CharacterOffsetEnd=127 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=UBS CharacterOffsetBegin=128 CharacterOffsetEnd=131 PartOfSpeech=NNP Lemma=UBS NamedEntityTag=ORGANIZATION]
+[Text=employees CharacterOffsetBegin=132 CharacterOffsetEnd=141 PartOfSpeech=NNS Lemma=employee NamedEntityTag=O]
+[Text=leave CharacterOffsetBegin=142 CharacterOffsetEnd=147 PartOfSpeech=VBP Lemma=leave NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=148 CharacterOffsetEnd=150 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=151 CharacterOffsetEnd=153 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=154 CharacterOffsetEnd=157 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=automatically CharacterOffsetBegin=158 CharacterOffsetEnd=171 PartOfSpeech=RB Lemma=automatically NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=172 CharacterOffsetEnd=176 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=177 CharacterOffsetEnd=180 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=ability CharacterOffsetBegin=181 CharacterOffsetEnd=188 PartOfSpeech=NN Lemma=ability NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=189 CharacterOffsetEnd=191 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=take CharacterOffsetBegin=192 CharacterOffsetEnd=196 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=197 CharacterOffsetEnd=201 PartOfSpeech=RP Lemma=over NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=202 CharacterOffsetEnd=207 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=spots CharacterOffsetBegin=208 CharacterOffsetEnd=213 PartOfSpeech=NNS Lemma=spot NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=213 CharacterOffsetEnd=214 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN As)
+      (NP (NNP UBS)))
+    (NP (NNS employees))
+    (VP (VBP leave)
+      (SBAR
+        (S
+          (NP (PRP we))
+          (VP (VBP do) (RB not)
+            (ADVP (RB automatically))
+            (VP (VB have)
+              (NP (DT the) (NN ability)
+                (S
+                  (VP (TO to)
+                    (VP (VB take)
+                      (PRT (RP over))
+                      (NP (PRP$ their) (NNS spots)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, leave-4)
+case(UBS-2, As-1)
+nmod:as(leave-4, UBS-2)
+nsubj(leave-4, employees-3)
+nsubj(have-9, we-5)
+aux(have-9, do-6)
+neg(have-9, not-7)
+advmod(have-9, automatically-8)
+ccomp(leave-4, have-9)
+det(ability-11, the-10)
+dobj(have-9, ability-11)
+mark(take-13, to-12)
+acl:to(ability-11, take-13)
+compound:prt(take-13, over-14)
+nmod:poss(spots-16, their-15)
+dobj(take-13, spots-16)
+punct(leave-4, .-17)
+
+Extracted the following NER entity mentions:
+UBS	ORGANIZATION
+
+Sentence #3 (23 tokens):
+However, in renegotiating our lease with PGE we will address the possibility of taking over more that the 5 allocated spots.
+
+Tokens:
+[Text=However CharacterOffsetBegin=216 CharacterOffsetEnd=223 PartOfSpeech=RB Lemma=however NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=223 CharacterOffsetEnd=224 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=225 CharacterOffsetEnd=227 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=renegotiating CharacterOffsetBegin=228 CharacterOffsetEnd=241 PartOfSpeech=VBG Lemma=renegotiate NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=242 CharacterOffsetEnd=245 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=lease CharacterOffsetBegin=246 CharacterOffsetEnd=251 PartOfSpeech=NN Lemma=lease NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=252 CharacterOffsetEnd=256 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=PGE CharacterOffsetBegin=257 CharacterOffsetEnd=260 PartOfSpeech=NN Lemma=pge NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=261 CharacterOffsetEnd=263 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=264 CharacterOffsetEnd=268 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=address CharacterOffsetBegin=269 CharacterOffsetEnd=276 PartOfSpeech=VB Lemma=address NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=277 CharacterOffsetEnd=280 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=possibility CharacterOffsetBegin=281 CharacterOffsetEnd=292 PartOfSpeech=NN Lemma=possibility NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=293 CharacterOffsetEnd=295 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=taking CharacterOffsetBegin=296 CharacterOffsetEnd=302 PartOfSpeech=VBG Lemma=take NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=303 CharacterOffsetEnd=307 PartOfSpeech=RP Lemma=over NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=308 CharacterOffsetEnd=312 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=313 CharacterOffsetEnd=317 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=318 CharacterOffsetEnd=321 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=5 CharacterOffsetBegin=322 CharacterOffsetEnd=323 PartOfSpeech=CD Lemma=5 NamedEntityTag=NUMBER NormalizedNamedEntityTag=5.0]
+[Text=allocated CharacterOffsetBegin=324 CharacterOffsetEnd=333 PartOfSpeech=VBN Lemma=allocate NamedEntityTag=O]
+[Text=spots CharacterOffsetBegin=334 CharacterOffsetEnd=339 PartOfSpeech=NNS Lemma=spot NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=339 CharacterOffsetEnd=340 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB However))
+    (, ,)
+    (PP (IN in)
+      (S
+        (VP (VBG renegotiating)
+          (NP (PRP$ our) (NN lease))
+          (PP (IN with)
+            (NP (NN PGE))))))
+    (NP (PRP we))
+    (VP (MD will)
+      (VP (VB address)
+        (NP
+          (NP (DT the) (NN possibility))
+          (PP (IN of)
+            (S
+              (VP (VBG taking)
+                (PRT (RP over))
+                (ADVP (RBR more) (IN that))
+                (S
+                  (NP (DT the) (CD 5) (VBN allocated) (NNS spots)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, address-11)
+advmod(address-11, However-1)
+punct(address-11, ,-2)
+mark(renegotiating-4, in-3)
+advcl:in(address-11, renegotiating-4)
+nmod:poss(lease-6, our-5)
+dobj(renegotiating-4, lease-6)
+case(PGE-8, with-7)
+nmod:with(renegotiating-4, PGE-8)
+nsubj(address-11, we-9)
+aux(address-11, will-10)
+det(possibility-13, the-12)
+dobj(address-11, possibility-13)
+mark(taking-15, of-14)
+acl:of(possibility-13, taking-15)
+compound:prt(taking-15, over-16)
+advmod(taking-15, more-17)
+case(more-17, that-18)
+det(spots-22, the-19)
+nummod(spots-22, 5-20)
+amod(spots-22, allocated-21)
+xcomp(taking-15, spots-22)
+punct(address-11, .-23)
+
+Extracted the following NER entity mentions:
+5	NUMBER
+
+Sentence #4 (12 tokens):
+We will keep you updated as to the progress of this.
+
+Tokens:
+[Text=We CharacterOffsetBegin=342 CharacterOffsetEnd=344 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=345 CharacterOffsetEnd=349 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=keep CharacterOffsetBegin=350 CharacterOffsetEnd=354 PartOfSpeech=VB Lemma=keep NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=355 CharacterOffsetEnd=358 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=updated CharacterOffsetBegin=359 CharacterOffsetEnd=366 PartOfSpeech=VBN Lemma=update NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=367 CharacterOffsetEnd=369 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=370 CharacterOffsetEnd=372 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=373 CharacterOffsetEnd=376 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=progress CharacterOffsetBegin=377 CharacterOffsetEnd=385 PartOfSpeech=NN Lemma=progress NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=386 CharacterOffsetEnd=388 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=389 CharacterOffsetEnd=393 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=393 CharacterOffsetEnd=394 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (MD will)
+      (VP (VB keep)
+        (S
+          (NP (PRP you))
+          (VP (VBN updated)
+            (PP (IN as)
+              (PP (TO to)
+                (NP
+                  (NP (DT the) (NN progress))
+                  (PP (IN of)
+                    (NP (DT this))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, keep-3)
+nsubj(keep-3, We-1)
+aux(keep-3, will-2)
+nsubj(updated-5, you-4)
+dep(keep-3, updated-5)
+case(progress-9, as-6)
+mwe(as-6, to-7)
+det(progress-9, the-8)
+nmod:as_to(updated-5, progress-9)
+case(this-11, of-10)
+nmod:of(progress-9, this-11)
+punct(keep-3, .-12)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (32 tokens):
+For now, Khymberly Booth is checking into the availability of 1 or more of our spots and will offer any available spots to Portland employees based on Portland office seniority.
+
+Tokens:
+[Text=For CharacterOffsetBegin=396 CharacterOffsetEnd=399 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=400 CharacterOffsetEnd=403 PartOfSpeech=RB Lemma=now NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=403 CharacterOffsetEnd=404 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Khymberly CharacterOffsetBegin=405 CharacterOffsetEnd=414 PartOfSpeech=NNP Lemma=Khymberly NamedEntityTag=PERSON]
+[Text=Booth CharacterOffsetBegin=415 CharacterOffsetEnd=420 PartOfSpeech=NNP Lemma=Booth NamedEntityTag=PERSON]
+[Text=is CharacterOffsetBegin=421 CharacterOffsetEnd=423 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=checking CharacterOffsetBegin=424 CharacterOffsetEnd=432 PartOfSpeech=VBG Lemma=check NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=433 CharacterOffsetEnd=437 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=438 CharacterOffsetEnd=441 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=availability CharacterOffsetBegin=442 CharacterOffsetEnd=454 PartOfSpeech=NN Lemma=availability NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=455 CharacterOffsetEnd=457 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=1 CharacterOffsetBegin=458 CharacterOffsetEnd=459 PartOfSpeech=CD Lemma=1 NamedEntityTag=NUMBER NormalizedNamedEntityTag=>=1.0]
+[Text=or CharacterOffsetBegin=460 CharacterOffsetEnd=462 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=463 CharacterOffsetEnd=467 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=468 CharacterOffsetEnd=470 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=471 CharacterOffsetEnd=474 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=spots CharacterOffsetBegin=475 CharacterOffsetEnd=480 PartOfSpeech=NNS Lemma=spot NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=481 CharacterOffsetEnd=484 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=485 CharacterOffsetEnd=489 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=offer CharacterOffsetBegin=490 CharacterOffsetEnd=495 PartOfSpeech=VB Lemma=offer NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=496 CharacterOffsetEnd=499 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=available CharacterOffsetBegin=500 CharacterOffsetEnd=509 PartOfSpeech=JJ Lemma=available NamedEntityTag=O]
+[Text=spots CharacterOffsetBegin=510 CharacterOffsetEnd=515 PartOfSpeech=NNS Lemma=spot NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=516 CharacterOffsetEnd=518 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Portland CharacterOffsetBegin=519 CharacterOffsetEnd=527 PartOfSpeech=NNP Lemma=Portland NamedEntityTag=CITY]
+[Text=employees CharacterOffsetBegin=528 CharacterOffsetEnd=537 PartOfSpeech=NNS Lemma=employee NamedEntityTag=O]
+[Text=based CharacterOffsetBegin=538 CharacterOffsetEnd=543 PartOfSpeech=VBN Lemma=base NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=544 CharacterOffsetEnd=546 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Portland CharacterOffsetBegin=547 CharacterOffsetEnd=555 PartOfSpeech=NNP Lemma=Portland NamedEntityTag=CITY]
+[Text=office CharacterOffsetBegin=556 CharacterOffsetEnd=562 PartOfSpeech=NN Lemma=office NamedEntityTag=O]
+[Text=seniority CharacterOffsetBegin=563 CharacterOffsetEnd=572 PartOfSpeech=NN Lemma=seniority NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=572 CharacterOffsetEnd=573 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN For)
+      (NP (RB now)))
+    (, ,)
+    (NP (NNP Khymberly) (NNP Booth))
+    (VP
+      (VP (VBZ is)
+        (VP (VBG checking)
+          (PP (IN into)
+            (NP
+              (NP (DT the) (NN availability))
+              (PP (IN of)
+                (NP
+                  (NP
+                    (QP (CD 1)
+                      (CC or)
+                      (JJR more)))
+                  (PP (IN of)
+                    (NP (PRP$ our) (NNS spots)))))))))
+      (CC and)
+      (VP (MD will)
+        (VP (VB offer)
+          (NP (DT any) (JJ available) (NNS spots))
+          (PP (TO to)
+            (NP (NNP Portland) (NNS employees)))
+          (PP (VBN based)
+            (PP (IN on)
+              (NP (NNP Portland) (NN office) (NN seniority)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, checking-7)
+case(now-2, For-1)
+nmod:for(checking-7, now-2)
+punct(checking-7, ,-3)
+compound(Booth-5, Khymberly-4)
+nsubj(checking-7, Booth-5)
+nsubj(offer-20, Booth-5)
+aux(checking-7, is-6)
+case(availability-10, into-8)
+det(availability-10, the-9)
+nmod:into(checking-7, availability-10)
+case(1-12, of-11)
+nmod:of(availability-10, 1-12)
+cc(1-12, or-13)
+nmod:of(availability-10, more-14)
+conj:or(1-12, more-14)
+case(spots-17, of-15)
+nmod:poss(spots-17, our-16)
+nmod:of(1-12, spots-17)
+cc(checking-7, and-18)
+aux(offer-20, will-19)
+conj:and(checking-7, offer-20)
+det(spots-23, any-21)
+amod(spots-23, available-22)
+dobj(offer-20, spots-23)
+case(employees-26, to-24)
+compound(employees-26, Portland-25)
+nmod:to(offer-20, employees-26)
+case(seniority-31, based-27)
+mwe(based-27, on-28)
+compound(seniority-31, Portland-29)
+compound(seniority-31, office-30)
+advcl:based_on(offer-20, seniority-31)
+punct(checking-7, .-32)
+
+Extracted the following NER entity mentions:
+Khymberly Booth	PERSON
+1	NUMBER
+Portland	CITY
+Portland	CITY
+
+Sentence #6 (11 tokens):
+We will contact you individually if a spot becomes available.
+
+Tokens:
+[Text=We CharacterOffsetBegin=575 CharacterOffsetEnd=577 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=578 CharacterOffsetEnd=582 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=contact CharacterOffsetBegin=583 CharacterOffsetEnd=590 PartOfSpeech=VB Lemma=contact NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=591 CharacterOffsetEnd=594 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=individually CharacterOffsetBegin=595 CharacterOffsetEnd=607 PartOfSpeech=RB Lemma=individually NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=608 CharacterOffsetEnd=610 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=611 CharacterOffsetEnd=612 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=spot CharacterOffsetBegin=613 CharacterOffsetEnd=617 PartOfSpeech=NN Lemma=spot NamedEntityTag=O]
+[Text=becomes CharacterOffsetBegin=618 CharacterOffsetEnd=625 PartOfSpeech=VBZ Lemma=become NamedEntityTag=O]
+[Text=available CharacterOffsetBegin=626 CharacterOffsetEnd=635 PartOfSpeech=JJ Lemma=available NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=635 CharacterOffsetEnd=636 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (MD will)
+      (VP (VB contact)
+        (NP (PRP you))
+        (ADVP (RB individually))
+        (SBAR (IN if)
+          (S
+            (NP (DT a) (NN spot))
+            (VP (VBZ becomes)
+              (ADJP (JJ available)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, contact-3)
+nsubj(contact-3, We-1)
+aux(contact-3, will-2)
+dobj(contact-3, you-4)
+advmod(contact-3, individually-5)
+mark(becomes-9, if-6)
+det(spot-8, a-7)
+nsubj(becomes-9, spot-8)
+advcl:if(contact-3, becomes-9)
+xcomp(becomes-9, available-10)
+punct(contact-3, .-11)
+
+Extracted the following NER entity mentions:
+
+Sentence #7 (13 tokens):
+If you have any questions please contact Kathy Sheppard or Khymberly Booth.
+
+Tokens:
+[Text=If CharacterOffsetBegin=638 CharacterOffsetEnd=640 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=641 CharacterOffsetEnd=644 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=645 CharacterOffsetEnd=649 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=650 CharacterOffsetEnd=653 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=questions CharacterOffsetBegin=654 CharacterOffsetEnd=663 PartOfSpeech=NNS Lemma=question NamedEntityTag=O]
+[Text=please CharacterOffsetBegin=664 CharacterOffsetEnd=670 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=contact CharacterOffsetBegin=671 CharacterOffsetEnd=678 PartOfSpeech=NN Lemma=contact NamedEntityTag=O]
+[Text=Kathy CharacterOffsetBegin=679 CharacterOffsetEnd=684 PartOfSpeech=NNP Lemma=Kathy NamedEntityTag=PERSON]
+[Text=Sheppard CharacterOffsetBegin=685 CharacterOffsetEnd=693 PartOfSpeech=NNP Lemma=Sheppard NamedEntityTag=PERSON]
+[Text=or CharacterOffsetBegin=694 CharacterOffsetEnd=696 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=Khymberly CharacterOffsetBegin=697 CharacterOffsetEnd=706 PartOfSpeech=NNP Lemma=Khymberly NamedEntityTag=O]
+[Text=Booth CharacterOffsetBegin=707 CharacterOffsetEnd=712 PartOfSpeech=NNP Lemma=Booth NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=712 CharacterOffsetEnd=713 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP have)
+          (NP (DT any) (NNS questions)))))
+    (VP (VB please)
+      (NP
+        (NP (NN contact) (NNP Kathy) (NNP Sheppard))
+        (CC or)
+        (NP (NNP Khymberly) (NNP Booth))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, please-6)
+mark(have-3, If-1)
+nsubj(have-3, you-2)
+csubj(please-6, have-3)
+det(questions-5, any-4)
+dobj(have-3, questions-5)
+compound(Sheppard-9, contact-7)
+compound(Sheppard-9, Kathy-8)
+dobj(please-6, Sheppard-9)
+cc(Sheppard-9, or-10)
+compound(Booth-12, Khymberly-11)
+dobj(please-6, Booth-12)
+conj:or(Sheppard-9, Booth-12)
+punct(please-6, .-13)
+
+Extracted the following NER entity mentions:
+Kathy Sheppard	PERSON
+
+Sentence #8 (4 tokens):
+Thanks-
+Khymberly Booth
+
+Tokens:
+[Text=Thanks CharacterOffsetBegin=714 CharacterOffsetEnd=720 PartOfSpeech=NNS Lemma=thanks NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=720 CharacterOffsetEnd=721 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=Khymberly CharacterOffsetBegin=722 CharacterOffsetEnd=731 PartOfSpeech=NNP Lemma=Khymberly NamedEntityTag=PERSON]
+[Text=Booth CharacterOffsetBegin=732 CharacterOffsetEnd=737 PartOfSpeech=NNP Lemma=Booth NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNS Thanks))
+    (: -)
+    (NP (NNP Khymberly) (NNP Booth))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Thanks-1)
+punct(Thanks-1, --2)
+compound(Booth-4, Khymberly-3)
+dep(Thanks-1, Booth-4)
+
+Extracted the following NER entity mentions:
+Khymberly Booth	PERSON
+
+Coreference set:
+	(5,25,[25,26]) -> (1,1,[1,2]), that is: "Portland" -> "Portland"
+	(5,29,[29,30]) -> (1,1,[1,2]), that is: "Portland" -> "Portland"
+
+Coreference set:
+	(3,20,[20,21]) -> (1,10,[10,11]), that is: "5" -> "5"
+
+Coreference set:
+	(2,3,[3,4]) -> (1,2,[1,3]), that is: "employees" -> "Portland Employees"
+	(2,15,[15,16]) -> (1,2,[1,3]), that is: "their" -> "Portland Employees"
+	(5,26,[25,27]) -> (1,2,[1,3]), that is: "Portland employees" -> "Portland Employees"
+
+Coreference set:
+	(1,12,[10,22]) -> (3,22,[19,23]), that is: "5 parking spots allocated based on floor space and number of employees" -> "the 5 allocated spots"
+	(2,16,[15,17]) -> (3,22,[19,23]), that is: "their spots" -> "the 5 allocated spots"
+	(5,17,[16,18]) -> (3,22,[19,23]), that is: "our spots" -> "the 5 allocated spots"
+
+Coreference set:
+	(3,5,[5,6]) -> (2,5,[5,6]), that is: "our" -> "we"
+	(3,9,[9,10]) -> (2,5,[5,6]), that is: "we" -> "we"
+	(4,1,[1,2]) -> (2,5,[5,6]), that is: "We" -> "we"
+	(5,16,[16,17]) -> (2,5,[5,6]), that is: "our" -> "we"
+	(6,1,[1,2]) -> (2,5,[5,6]), that is: "We" -> "we"
+
+Coreference set:
+	(7,12,[11,13]) -> (5,5,[4,6]), that is: "Khymberly Booth" -> "Khymberly Booth"
+	(8,4,[3,5]) -> (5,5,[4,6]), that is: "Khymberly Booth" -> "Khymberly Booth"

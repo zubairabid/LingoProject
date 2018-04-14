@@ -1,0 +1,217 @@
+Document: ID=737784.in (4 sentences, 51 tokens)
+
+Sentence #1 (12 tokens):
+Only EOL market makers are allowed to use free loading brokers.
+
+Tokens:
+[Text=Only CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=EOL CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=NN Lemma=eol NamedEntityTag=O]
+[Text=market CharacterOffsetBegin=9 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=market NamedEntityTag=O]
+[Text=makers CharacterOffsetBegin=16 CharacterOffsetEnd=22 PartOfSpeech=NNS Lemma=maker NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=allowed CharacterOffsetBegin=27 CharacterOffsetEnd=34 PartOfSpeech=VBN Lemma=allow NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=use CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=VB Lemma=use NamedEntityTag=O]
+[Text=free CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=JJ Lemma=free NamedEntityTag=O]
+[Text=loading CharacterOffsetBegin=47 CharacterOffsetEnd=54 PartOfSpeech=VBG Lemma=load NamedEntityTag=O]
+[Text=brokers CharacterOffsetBegin=55 CharacterOffsetEnd=62 PartOfSpeech=NNS Lemma=broker NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (RB Only)
+    (NP (NN EOL) (NN market) (NNS makers))
+    (VP (VBP are)
+      (VP (VBN allowed)
+        (S
+          (VP (TO to)
+            (VP (VB use)
+              (ADJP (JJ free))
+              (S
+                (VP (VBG loading)
+                  (NP (NNS brokers)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, allowed-6)
+advmod(allowed-6, Only-1)
+compound(makers-4, EOL-2)
+compound(makers-4, market-3)
+nsubjpass(allowed-6, makers-4)
+nsubj:xsubj(use-8, makers-4)
+auxpass(allowed-6, are-5)
+mark(use-8, to-7)
+xcomp(allowed-6, use-8)
+xcomp(use-8, free-9)
+xcomp(use-8, loading-10)
+dobj(loading-10, brokers-11)
+punct(allowed-6, .-12)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (14 tokens):
+Please do not use brokers for markets outside of your market making responsibility.
+
+Tokens:
+[Text=Please CharacterOffsetBegin=65 CharacterOffsetEnd=71 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=use CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=VB Lemma=use NamedEntityTag=O]
+[Text=brokers CharacterOffsetBegin=83 CharacterOffsetEnd=90 PartOfSpeech=NNS Lemma=broker NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=91 CharacterOffsetEnd=94 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=markets CharacterOffsetBegin=95 CharacterOffsetEnd=102 PartOfSpeech=NNS Lemma=market NamedEntityTag=O]
+[Text=outside CharacterOffsetBegin=103 CharacterOffsetEnd=110 PartOfSpeech=IN Lemma=outside NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=111 CharacterOffsetEnd=113 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=114 CharacterOffsetEnd=118 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=market CharacterOffsetBegin=119 CharacterOffsetEnd=125 PartOfSpeech=NN Lemma=market NamedEntityTag=O]
+[Text=making CharacterOffsetBegin=126 CharacterOffsetEnd=132 PartOfSpeech=VBG Lemma=make NamedEntityTag=O]
+[Text=responsibility CharacterOffsetBegin=133 CharacterOffsetEnd=147 PartOfSpeech=NN Lemma=responsibility NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=147 CharacterOffsetEnd=148 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Please)
+      (S
+        (VP (VB do) (RB not)
+          (VP (VB use)
+            (NP
+              (NP (NNS brokers))
+              (PP (IN for)
+                (NP
+                  (NP (NNS markets))
+                  (ADVP (IN outside))))
+              (PP (IN of)
+                (NP (PRP$ your) (NN market) (VBG making) (NN responsibility))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Please-1)
+aux(use-4, do-2)
+neg(use-4, not-3)
+ccomp(Please-1, use-4)
+dobj(use-4, brokers-5)
+case(markets-7, for-6)
+nmod:for(brokers-5, markets-7)
+advmod(markets-7, outside-8)
+case(responsibility-13, of-9)
+nmod:poss(responsibility-13, your-10)
+compound(responsibility-13, market-11)
+amod(responsibility-13, making-12)
+nmod:of(brokers-5, responsibility-13)
+punct(Please-1, .-14)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (22 tokens):
+I am going to have the back office decline to book all broker deals done by traders outside of their responsibility.
+
+Tokens:
+[Text=I CharacterOffsetBegin=150 CharacterOffsetEnd=151 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=152 CharacterOffsetEnd=154 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=going CharacterOffsetBegin=155 CharacterOffsetEnd=160 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=161 CharacterOffsetEnd=163 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=164 CharacterOffsetEnd=168 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=169 CharacterOffsetEnd=172 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=173 CharacterOffsetEnd=177 PartOfSpeech=JJ Lemma=back NamedEntityTag=O]
+[Text=office CharacterOffsetBegin=178 CharacterOffsetEnd=184 PartOfSpeech=NN Lemma=office NamedEntityTag=O]
+[Text=decline CharacterOffsetBegin=185 CharacterOffsetEnd=192 PartOfSpeech=NN Lemma=decline NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=193 CharacterOffsetEnd=195 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=book CharacterOffsetBegin=196 CharacterOffsetEnd=200 PartOfSpeech=NN Lemma=book NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=201 CharacterOffsetEnd=204 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=broker CharacterOffsetBegin=205 CharacterOffsetEnd=211 PartOfSpeech=NN Lemma=broker NamedEntityTag=TITLE]
+[Text=deals CharacterOffsetBegin=212 CharacterOffsetEnd=217 PartOfSpeech=VBZ Lemma=deal NamedEntityTag=O]
+[Text=done CharacterOffsetBegin=218 CharacterOffsetEnd=222 PartOfSpeech=VBN Lemma=do NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=223 CharacterOffsetEnd=225 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=traders CharacterOffsetBegin=226 CharacterOffsetEnd=233 PartOfSpeech=NNS Lemma=trader NamedEntityTag=O]
+[Text=outside CharacterOffsetBegin=234 CharacterOffsetEnd=241 PartOfSpeech=IN Lemma=outside NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=242 CharacterOffsetEnd=244 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=245 CharacterOffsetEnd=250 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=responsibility CharacterOffsetBegin=251 CharacterOffsetEnd=265 PartOfSpeech=NN Lemma=responsibility NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=265 CharacterOffsetEnd=266 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP am)
+        (VP (VBG going)
+          (S
+            (VP (TO to)
+              (VP (VB have)
+                (NP (DT the) (JJ back) (NN office) (NN decline))
+                (PP (TO to)
+                  (NP (NN book)))))))))
+    (NP (DT all) (NN broker))
+    (VP (VBZ deals)
+      (VP (VBN done)
+        (PP (IN by)
+          (NP
+            (NP (NNS traders))
+            (ADVP (IN outside))
+            (PP (IN of)
+              (NP (PRP$ their) (NN responsibility)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, deals-14)
+nsubj(going-3, I-1)
+nsubj:xsubj(have-5, I-1)
+aux(going-3, am-2)
+dep(deals-14, going-3)
+mark(have-5, to-4)
+xcomp(going-3, have-5)
+det(decline-9, the-6)
+amod(decline-9, back-7)
+compound(decline-9, office-8)
+dobj(have-5, decline-9)
+case(book-11, to-10)
+nmod:to(have-5, book-11)
+det(broker-13, all-12)
+nsubj(deals-14, broker-13)
+dep(deals-14, done-15)
+case(traders-17, by-16)
+nmod:by(done-15, traders-17)
+advmod(traders-17, outside-18)
+case(responsibility-21, of-19)
+nmod:poss(responsibility-21, their-20)
+nmod:of(traders-17, responsibility-21)
+punct(deals-14, .-22)
+
+Extracted the following NER entity mentions:
+broker	TITLE
+
+Sentence #4 (3 tokens):
+Thanks,
+Mike
+
+Tokens:
+[Text=Thanks CharacterOffsetBegin=268 CharacterOffsetEnd=274 PartOfSpeech=NNS Lemma=thanks NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=274 CharacterOffsetEnd=275 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Mike CharacterOffsetBegin=276 CharacterOffsetEnd=280 PartOfSpeech=NNP Lemma=Mike NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNS Thanks))
+    (, ,)
+    (NP (NNP Mike))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Thanks-1)
+punct(Thanks-1, ,-2)
+appos(Thanks-1, Mike-3)
+
+Extracted the following NER entity mentions:
+Mike	PERSON
+
+Coreference set:
+	(3,20,[20,21]) -> (2,5,[5,14]), that is: "their" -> "brokers for markets outside of your market making responsibility"
+
+Coreference set:
+	(3,21,[20,22]) -> (2,13,[10,14]), that is: "their responsibility" -> "your market making responsibility"

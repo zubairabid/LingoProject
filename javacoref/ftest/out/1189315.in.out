@@ -1,0 +1,827 @@
+Document: ID=1189315.in (11 sentences, 211 tokens)
+
+Sentence #1 (3 tokens):
+Hello again.
+
+Tokens:
+[Text=Hello CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=UH Lemma=hello NamedEntityTag=O]
+[Text=again CharacterOffsetBegin=6 CharacterOffsetEnd=11 PartOfSpeech=RB Lemma=again NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=11 CharacterOffsetEnd=12 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP
+      (NP
+        (INTJ (UH Hello))
+        (NP (RB again))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, again-2)
+discourse(again-2, Hello-1)
+punct(again-2, .-3)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (23 tokens):
+We are now passed the published cutoff to complete feedback,
+but have extended the deadline until this Thursday, April 27.
+
+Tokens:
+[Text=We CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=RB Lemma=now NamedEntityTag=O]
+[Text=passed CharacterOffsetBegin=25 CharacterOffsetEnd=31 PartOfSpeech=VBN Lemma=pass NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=published CharacterOffsetBegin=36 CharacterOffsetEnd=45 PartOfSpeech=VBN Lemma=publish NamedEntityTag=O]
+[Text=cutoff CharacterOffsetBegin=46 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=cutoff NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=53 CharacterOffsetEnd=55 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=complete CharacterOffsetBegin=56 CharacterOffsetEnd=64 PartOfSpeech=VB Lemma=complete NamedEntityTag=O]
+[Text=feedback CharacterOffsetBegin=65 CharacterOffsetEnd=73 PartOfSpeech=NN Lemma=feedback NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=79 CharacterOffsetEnd=83 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=extended CharacterOffsetBegin=84 CharacterOffsetEnd=92 PartOfSpeech=VBN Lemma=extend NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=93 CharacterOffsetEnd=96 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=deadline CharacterOffsetBegin=97 CharacterOffsetEnd=105 PartOfSpeech=NN Lemma=deadline NamedEntityTag=O]
+[Text=until CharacterOffsetBegin=106 CharacterOffsetEnd=111 PartOfSpeech=IN Lemma=until NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=112 CharacterOffsetEnd=116 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=Thursday CharacterOffsetBegin=117 CharacterOffsetEnd=125 PartOfSpeech=NNP Lemma=Thursday NamedEntityTag=DATE NormalizedNamedEntityTag=****0427]
+[Text=, CharacterOffsetBegin=125 CharacterOffsetEnd=126 PartOfSpeech=, Lemma=, NamedEntityTag=DATE NormalizedNamedEntityTag=****0427]
+[Text=April CharacterOffsetBegin=127 CharacterOffsetEnd=132 PartOfSpeech=NNP Lemma=April NamedEntityTag=DATE NormalizedNamedEntityTag=****0427]
+[Text=27 CharacterOffsetBegin=133 CharacterOffsetEnd=135 PartOfSpeech=CD Lemma=27 NamedEntityTag=DATE NormalizedNamedEntityTag=****0427]
+[Text=. CharacterOffsetBegin=135 CharacterOffsetEnd=136 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP
+      (VP (VBP are)
+        (ADVP (RB now))
+        (VP (VBN passed)
+          (S
+            (NP (DT the) (VBN published) (NN cutoff))
+            (VP (TO to)
+              (VP (VB complete)
+                (NP (NN feedback)))))))
+      (, ,)
+      (CC but)
+      (VP (VBP have)
+        (VP (VBN extended)
+          (NP (DT the) (NN deadline))
+          (PP (IN until)
+            (NP
+              (NP (DT this))
+              (NP-TMP (NNP Thursday)))
+            (, ,)
+            (NP-TMP (NNP April) (CD 27))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, passed-4)
+nsubjpass(passed-4, We-1)
+nsubjpass(extended-14, We-1)
+auxpass(passed-4, are-2)
+advmod(passed-4, now-3)
+det(cutoff-7, the-5)
+amod(cutoff-7, published-6)
+dobj(passed-4, cutoff-7)
+nsubj:xsubj(complete-9, cutoff-7)
+mark(complete-9, to-8)
+xcomp(passed-4, complete-9)
+dobj(complete-9, feedback-10)
+punct(passed-4, ,-11)
+cc(passed-4, but-12)
+aux(extended-14, have-13)
+conj:but(passed-4, extended-14)
+det(deadline-16, the-15)
+dobj(extended-14, deadline-16)
+case(this-18, until-17)
+nmod:until(extended-14, this-18)
+nmod:tmod(this-18, Thursday-19)
+punct(this-18, ,-20)
+dep(this-18, April-21)
+nummod(April-21, 27-22)
+punct(passed-4, .-23)
+
+Extracted the following NER entity mentions:
+Thursday, April 27	DATE
+
+Sentence #3 (26 tokens):
+This is one
+last reminder for you to submit your Self assessment and/or for your
+selected team of raters to return their survey score sheets.
+
+Tokens:
+[Text=This CharacterOffsetBegin=138 CharacterOffsetEnd=142 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=143 CharacterOffsetEnd=145 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=146 CharacterOffsetEnd=149 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=last CharacterOffsetBegin=150 CharacterOffsetEnd=154 PartOfSpeech=JJ Lemma=last NamedEntityTag=O]
+[Text=reminder CharacterOffsetBegin=155 CharacterOffsetEnd=163 PartOfSpeech=NN Lemma=reminder NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=164 CharacterOffsetEnd=167 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=168 CharacterOffsetEnd=171 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=172 CharacterOffsetEnd=174 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=submit CharacterOffsetBegin=175 CharacterOffsetEnd=181 PartOfSpeech=VB Lemma=submit NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=182 CharacterOffsetEnd=186 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=Self CharacterOffsetBegin=187 CharacterOffsetEnd=191 PartOfSpeech=NN Lemma=self NamedEntityTag=O]
+[Text=assessment CharacterOffsetBegin=192 CharacterOffsetEnd=202 PartOfSpeech=NN Lemma=assessment NamedEntityTag=O]
+[Text=and/or CharacterOffsetBegin=203 CharacterOffsetEnd=209 PartOfSpeech=CC Lemma=and/or NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=210 CharacterOffsetEnd=213 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=214 CharacterOffsetEnd=218 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=selected CharacterOffsetBegin=219 CharacterOffsetEnd=227 PartOfSpeech=VBN Lemma=select NamedEntityTag=O]
+[Text=team CharacterOffsetBegin=228 CharacterOffsetEnd=232 PartOfSpeech=NN Lemma=team NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=233 CharacterOffsetEnd=235 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=raters CharacterOffsetBegin=236 CharacterOffsetEnd=242 PartOfSpeech=NNS Lemma=rater NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=243 CharacterOffsetEnd=245 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=return CharacterOffsetBegin=246 CharacterOffsetEnd=252 PartOfSpeech=VB Lemma=return NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=253 CharacterOffsetEnd=258 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=survey CharacterOffsetBegin=259 CharacterOffsetEnd=265 PartOfSpeech=NN Lemma=survey NamedEntityTag=O]
+[Text=score CharacterOffsetBegin=266 CharacterOffsetEnd=271 PartOfSpeech=NN Lemma=score NamedEntityTag=O]
+[Text=sheets CharacterOffsetBegin=272 CharacterOffsetEnd=278 PartOfSpeech=NNS Lemma=sheet NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=278 CharacterOffsetEnd=279 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (NP
+        (NP (CD one) (JJ last) (NN reminder))
+        (PP (IN for)
+          (NP (PRP you)))
+        (S
+          (VP (TO to)
+            (VP (VB submit)
+              (NP
+                (NP (PRP$ your) (NN Self) (NN assessment))
+                (CC and/or)
+                (NP
+                  (PP (IN for))
+                  (NP (PRP$ your) (VBN selected) (NN team))
+                  (PP (IN of)
+                    (NP (NNS raters)))))
+              (S
+                (VP (TO to)
+                  (VP (VB return)
+                    (NP (PRP$ their) (NN survey) (NN score) (NNS sheets))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, reminder-5)
+nsubj(reminder-5, This-1)
+cop(reminder-5, is-2)
+nummod(reminder-5, one-3)
+amod(reminder-5, last-4)
+case(you-7, for-6)
+nmod:for(reminder-5, you-7)
+mark(submit-9, to-8)
+acl:to(reminder-5, submit-9)
+nmod:poss(assessment-12, your-10)
+compound(assessment-12, Self-11)
+dobj(submit-9, assessment-12)
+cc(assessment-12, and/or-13)
+acl(team-17, for-14)
+nmod:poss(team-17, your-15)
+amod(team-17, selected-16)
+dobj(submit-9, team-17)
+conj:and/or(assessment-12, team-17)
+case(raters-19, of-18)
+nmod:of(team-17, raters-19)
+mark(return-21, to-20)
+advcl:to(submit-9, return-21)
+nmod:poss(sheets-25, their-22)
+compound(sheets-25, survey-23)
+compound(sheets-25, score-24)
+dobj(return-21, sheets-25)
+punct(reminder-5, .-26)
+
+Extracted the following NER entity mentions:
+one	NUMBER
+
+Sentence #4 (10 tokens):
+The Summary Reports are shipping out early next week.
+
+Tokens:
+[Text=The CharacterOffsetBegin=281 CharacterOffsetEnd=284 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Summary CharacterOffsetBegin=285 CharacterOffsetEnd=292 PartOfSpeech=NNP Lemma=Summary NamedEntityTag=O]
+[Text=Reports CharacterOffsetBegin=293 CharacterOffsetEnd=300 PartOfSpeech=NNS Lemma=report NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=301 CharacterOffsetEnd=304 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=shipping CharacterOffsetBegin=305 CharacterOffsetEnd=313 PartOfSpeech=VBG Lemma=ship NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=314 CharacterOffsetEnd=317 PartOfSpeech=RB Lemma=out NamedEntityTag=O]
+[Text=early CharacterOffsetBegin=318 CharacterOffsetEnd=323 PartOfSpeech=RB Lemma=early NamedEntityTag=O]
+[Text=next CharacterOffsetBegin=324 CharacterOffsetEnd=328 PartOfSpeech=JJ Lemma=next NamedEntityTag=O]
+[Text=week CharacterOffsetBegin=329 CharacterOffsetEnd=333 PartOfSpeech=NN Lemma=week NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=333 CharacterOffsetEnd=334 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NNP Summary) (NNS Reports))
+    (VP (VBP are)
+      (VP (VBG shipping)
+        (ADVP (RB out))
+        (NP-TMP (RB early) (JJ next) (NN week))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, shipping-5)
+det(Reports-3, The-1)
+compound(Reports-3, Summary-2)
+nsubj(shipping-5, Reports-3)
+aux(shipping-5, are-4)
+advmod(shipping-5, out-6)
+advmod(week-9, early-7)
+amod(week-9, next-8)
+nmod:tmod(shipping-5, week-9)
+punct(shipping-5, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (26 tokens):
+In order for any
+additional data to be included in your report, FSD, our processing partner,
+must receive those surveys by Thursday.
+
+Tokens:
+[Text=In CharacterOffsetBegin=336 CharacterOffsetEnd=338 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=order CharacterOffsetBegin=339 CharacterOffsetEnd=344 PartOfSpeech=NN Lemma=order NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=345 CharacterOffsetEnd=348 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=349 CharacterOffsetEnd=352 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=additional CharacterOffsetBegin=353 CharacterOffsetEnd=363 PartOfSpeech=JJ Lemma=additional NamedEntityTag=O]
+[Text=data CharacterOffsetBegin=364 CharacterOffsetEnd=368 PartOfSpeech=NNS Lemma=datum NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=369 CharacterOffsetEnd=371 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=372 CharacterOffsetEnd=374 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=included CharacterOffsetBegin=375 CharacterOffsetEnd=383 PartOfSpeech=VBN Lemma=include NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=384 CharacterOffsetEnd=386 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=387 CharacterOffsetEnd=391 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=report CharacterOffsetBegin=392 CharacterOffsetEnd=398 PartOfSpeech=NN Lemma=report NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=398 CharacterOffsetEnd=399 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=FSD CharacterOffsetBegin=400 CharacterOffsetEnd=403 PartOfSpeech=NN Lemma=fsd NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=403 CharacterOffsetEnd=404 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=405 CharacterOffsetEnd=408 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=processing CharacterOffsetBegin=409 CharacterOffsetEnd=419 PartOfSpeech=NN Lemma=processing NamedEntityTag=O]
+[Text=partner CharacterOffsetBegin=420 CharacterOffsetEnd=427 PartOfSpeech=NN Lemma=partner NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=427 CharacterOffsetEnd=428 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=must CharacterOffsetBegin=429 CharacterOffsetEnd=433 PartOfSpeech=MD Lemma=must NamedEntityTag=O]
+[Text=receive CharacterOffsetBegin=434 CharacterOffsetEnd=441 PartOfSpeech=VB Lemma=receive NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=442 CharacterOffsetEnd=447 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=surveys CharacterOffsetBegin=448 CharacterOffsetEnd=455 PartOfSpeech=NNS Lemma=survey NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=456 CharacterOffsetEnd=458 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Thursday CharacterOffsetBegin=459 CharacterOffsetEnd=467 PartOfSpeech=NNP Lemma=Thursday NamedEntityTag=DATE NormalizedNamedEntityTag=thursday]
+[Text=. CharacterOffsetBegin=467 CharacterOffsetEnd=468 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP (NN order))
+        (PP (IN for)
+          (NP (DT any) (JJ additional) (NNS data)))
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (VP (VBN included)
+                (PP (IN in)
+                  (NP (PRP$ your) (NN report)))))))))
+    (, ,)
+    (NP
+      (NP (NN FSD))
+      (, ,)
+      (NP (PRP$ our) (NN processing) (NN partner))
+      (, ,))
+    (VP (MD must)
+      (VP (VB receive)
+        (NP (DT those) (NNS surveys))
+        (PP (IN by)
+          (NP (NNP Thursday)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, receive-21)
+case(order-2, In-1)
+nmod:in(receive-21, order-2)
+case(data-6, for-3)
+det(data-6, any-4)
+amod(data-6, additional-5)
+nmod:for(order-2, data-6)
+mark(included-9, to-7)
+auxpass(included-9, be-8)
+acl:to(order-2, included-9)
+case(report-12, in-10)
+nmod:poss(report-12, your-11)
+nmod:in(included-9, report-12)
+punct(receive-21, ,-13)
+nsubj(receive-21, FSD-14)
+punct(FSD-14, ,-15)
+nmod:poss(partner-18, our-16)
+compound(partner-18, processing-17)
+appos(FSD-14, partner-18)
+punct(FSD-14, ,-19)
+aux(receive-21, must-20)
+det(surveys-23, those-22)
+dobj(receive-21, surveys-23)
+case(Thursday-25, by-24)
+nmod:by(receive-21, Thursday-25)
+punct(receive-21, .-26)
+
+Extracted the following NER entity mentions:
+FSD	ORGANIZATION
+Thursday	DATE
+
+Sentence #6 (25 tokens):
+A Summary Report requires feedback from at least 3 Direct Reports or 3
+Peers, or 3 in a combination of the two perspectives.
+
+Tokens:
+[Text=A CharacterOffsetBegin=470 CharacterOffsetEnd=471 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Summary CharacterOffsetBegin=472 CharacterOffsetEnd=479 PartOfSpeech=NNP Lemma=Summary NamedEntityTag=O]
+[Text=Report CharacterOffsetBegin=480 CharacterOffsetEnd=486 PartOfSpeech=NNP Lemma=Report NamedEntityTag=O]
+[Text=requires CharacterOffsetBegin=487 CharacterOffsetEnd=495 PartOfSpeech=VBZ Lemma=require NamedEntityTag=O]
+[Text=feedback CharacterOffsetBegin=496 CharacterOffsetEnd=504 PartOfSpeech=NN Lemma=feedback NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=505 CharacterOffsetEnd=509 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=510 CharacterOffsetEnd=512 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=least CharacterOffsetBegin=513 CharacterOffsetEnd=518 PartOfSpeech=JJS Lemma=least NamedEntityTag=O]
+[Text=3 CharacterOffsetBegin=519 CharacterOffsetEnd=520 PartOfSpeech=CD Lemma=3 NamedEntityTag=NUMBER NormalizedNamedEntityTag=>=3.0]
+[Text=Direct CharacterOffsetBegin=521 CharacterOffsetEnd=527 PartOfSpeech=JJ Lemma=direct NamedEntityTag=O]
+[Text=Reports CharacterOffsetBegin=528 CharacterOffsetEnd=535 PartOfSpeech=NNS Lemma=report NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=536 CharacterOffsetEnd=538 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=3 CharacterOffsetBegin=539 CharacterOffsetEnd=540 PartOfSpeech=CD Lemma=3 NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0]
+[Text=Peers CharacterOffsetBegin=541 CharacterOffsetEnd=546 PartOfSpeech=NNS Lemma=peer NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=546 CharacterOffsetEnd=547 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=548 CharacterOffsetEnd=550 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=3 CharacterOffsetBegin=551 CharacterOffsetEnd=552 PartOfSpeech=CD Lemma=3 NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0]
+[Text=in CharacterOffsetBegin=553 CharacterOffsetEnd=555 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=556 CharacterOffsetEnd=557 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=combination CharacterOffsetBegin=558 CharacterOffsetEnd=569 PartOfSpeech=NN Lemma=combination NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=570 CharacterOffsetEnd=572 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=573 CharacterOffsetEnd=576 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=577 CharacterOffsetEnd=580 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=perspectives CharacterOffsetBegin=581 CharacterOffsetEnd=593 PartOfSpeech=NNS Lemma=perspective NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=593 CharacterOffsetEnd=594 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT A) (NNP Summary) (NNP Report))
+    (VP (VBZ requires)
+      (NP (NN feedback))
+      (PP (IN from)
+        (NP
+          (NP
+            (QP (IN at) (JJS least) (CD 3))
+            (JJ Direct) (NNS Reports))
+          (CC or)
+          (NP (CD 3) (NNS Peers))
+          (, ,)
+          (CC or)
+          (NP
+            (NP (CD 3))
+            (PP (IN in)
+              (NP
+                (NP (DT a) (NN combination))
+                (PP (IN of)
+                  (NP (DT the) (CD two) (NNS perspectives)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, requires-4)
+det(Report-3, A-1)
+compound(Report-3, Summary-2)
+nsubj(requires-4, Report-3)
+dobj(requires-4, feedback-5)
+case(Reports-11, from-6)
+case(least-8, at-7)
+nmod:npmod(3-9, least-8)
+nummod(Reports-11, 3-9)
+amod(Reports-11, Direct-10)
+nmod:from(requires-4, Reports-11)
+cc(Reports-11, or-12)
+nummod(Peers-14, 3-13)
+nmod:from(requires-4, Peers-14)
+conj:or(Reports-11, Peers-14)
+punct(Reports-11, ,-15)
+cc(Reports-11, or-16)
+nmod:from(requires-4, 3-17)
+conj:or(Reports-11, 3-17)
+case(combination-20, in-18)
+det(combination-20, a-19)
+nmod:in(3-17, combination-20)
+case(perspectives-24, of-21)
+det(perspectives-24, the-22)
+nummod(perspectives-24, two-23)
+nmod:of(combination-20, perspectives-24)
+punct(requires-4, .-25)
+
+Extracted the following NER entity mentions:
+3	NUMBER
+3	NUMBER
+3	NUMBER
+two	NUMBER
+
+Sentence #7 (22 tokens):
+It is equally
+important to obtain your Manager's feedback, as well as for you to provide a
+Self assessment.
+
+Tokens:
+[Text=It CharacterOffsetBegin=596 CharacterOffsetEnd=598 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=599 CharacterOffsetEnd=601 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=equally CharacterOffsetBegin=602 CharacterOffsetEnd=609 PartOfSpeech=RB Lemma=equally NamedEntityTag=O]
+[Text=important CharacterOffsetBegin=610 CharacterOffsetEnd=619 PartOfSpeech=JJ Lemma=important NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=620 CharacterOffsetEnd=622 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=obtain CharacterOffsetBegin=623 CharacterOffsetEnd=629 PartOfSpeech=VB Lemma=obtain NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=630 CharacterOffsetEnd=634 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=Manager CharacterOffsetBegin=635 CharacterOffsetEnd=642 PartOfSpeech=NN Lemma=manager NamedEntityTag=TITLE]
+[Text='s CharacterOffsetBegin=642 CharacterOffsetEnd=644 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=feedback CharacterOffsetBegin=645 CharacterOffsetEnd=653 PartOfSpeech=NN Lemma=feedback NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=653 CharacterOffsetEnd=654 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=655 CharacterOffsetEnd=657 PartOfSpeech=RB Lemma=as NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=658 CharacterOffsetEnd=662 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=663 CharacterOffsetEnd=665 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=666 CharacterOffsetEnd=669 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=670 CharacterOffsetEnd=673 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=674 CharacterOffsetEnd=676 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=provide CharacterOffsetBegin=677 CharacterOffsetEnd=684 PartOfSpeech=VB Lemma=provide NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=685 CharacterOffsetEnd=686 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Self CharacterOffsetBegin=687 CharacterOffsetEnd=691 PartOfSpeech=NN Lemma=self NamedEntityTag=O]
+[Text=assessment CharacterOffsetBegin=692 CharacterOffsetEnd=702 PartOfSpeech=NN Lemma=assessment NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=702 CharacterOffsetEnd=703 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (ADJP (RB equally) (JJ important))
+      (S
+        (VP (TO to)
+          (VP (VB obtain)
+            (NP
+              (NP (PRP$ your) (NN Manager) (POS 's))
+              (NN feedback)))))
+      (, ,)
+      (PP
+        (CONJP (RB as) (RB well) (IN as))
+        (IN for)
+        (NP
+          (NP (PRP you))
+          (SBAR
+            (S
+              (VP (TO to)
+                (VP (VB provide)
+                  (NP (DT a) (NN Self) (NN assessment)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, important-4)
+nsubj(important-4, It-1)
+nsubj:xsubj(obtain-6, It-1)
+cop(important-4, is-2)
+advmod(important-4, equally-3)
+mark(obtain-6, to-5)
+xcomp(important-4, obtain-6)
+nmod:poss(Manager-8, your-7)
+nmod:poss(feedback-10, Manager-8)
+case(Manager-8, 's-9)
+dobj(obtain-6, feedback-10)
+punct(important-4, ,-11)
+cc(you-16, as-12)
+mwe(as-12, well-13)
+mwe(as-12, as-14)
+case(you-16, for-15)
+nmod:for(important-4, you-16)
+mark(provide-18, to-17)
+acl:to(you-16, provide-18)
+det(assessment-21, a-19)
+compound(assessment-21, Self-20)
+dobj(provide-18, assessment-21)
+punct(important-4, .-22)
+
+Extracted the following NER entity mentions:
+Manager	TITLE
+
+Sentence #8 (34 tokens):
+If your Manager submits his/her feedback, but you do not
+have a sufficient number of Direct Report and/or Peer responses, you will
+only receive a report with your Manager's responses.
+
+Tokens:
+[Text=If CharacterOffsetBegin=705 CharacterOffsetEnd=707 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=708 CharacterOffsetEnd=712 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=Manager CharacterOffsetBegin=713 CharacterOffsetEnd=720 PartOfSpeech=NN Lemma=manager NamedEntityTag=TITLE]
+[Text=submits CharacterOffsetBegin=721 CharacterOffsetEnd=728 PartOfSpeech=VBZ Lemma=submit NamedEntityTag=O]
+[Text=his/her CharacterOffsetBegin=729 CharacterOffsetEnd=736 PartOfSpeech=JJR Lemma=his/her NamedEntityTag=O]
+[Text=feedback CharacterOffsetBegin=737 CharacterOffsetEnd=745 PartOfSpeech=NN Lemma=feedback NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=745 CharacterOffsetEnd=746 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=747 CharacterOffsetEnd=750 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=751 CharacterOffsetEnd=754 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=755 CharacterOffsetEnd=757 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=758 CharacterOffsetEnd=761 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=762 CharacterOffsetEnd=766 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=767 CharacterOffsetEnd=768 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=sufficient CharacterOffsetBegin=769 CharacterOffsetEnd=779 PartOfSpeech=JJ Lemma=sufficient NamedEntityTag=O]
+[Text=number CharacterOffsetBegin=780 CharacterOffsetEnd=786 PartOfSpeech=NN Lemma=number NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=787 CharacterOffsetEnd=789 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Direct CharacterOffsetBegin=790 CharacterOffsetEnd=796 PartOfSpeech=NNP Lemma=Direct NamedEntityTag=O]
+[Text=Report CharacterOffsetBegin=797 CharacterOffsetEnd=803 PartOfSpeech=NNP Lemma=Report NamedEntityTag=O]
+[Text=and/or CharacterOffsetBegin=804 CharacterOffsetEnd=810 PartOfSpeech=CC Lemma=and/or NamedEntityTag=O]
+[Text=Peer CharacterOffsetBegin=811 CharacterOffsetEnd=815 PartOfSpeech=NNP Lemma=Peer NamedEntityTag=O]
+[Text=responses CharacterOffsetBegin=816 CharacterOffsetEnd=825 PartOfSpeech=NNS Lemma=response NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=825 CharacterOffsetEnd=826 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=827 CharacterOffsetEnd=830 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=831 CharacterOffsetEnd=835 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=836 CharacterOffsetEnd=840 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=receive CharacterOffsetBegin=841 CharacterOffsetEnd=848 PartOfSpeech=VB Lemma=receive NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=849 CharacterOffsetEnd=850 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=report CharacterOffsetBegin=851 CharacterOffsetEnd=857 PartOfSpeech=NN Lemma=report NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=858 CharacterOffsetEnd=862 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=863 CharacterOffsetEnd=867 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=Manager CharacterOffsetBegin=868 CharacterOffsetEnd=875 PartOfSpeech=NN Lemma=manager NamedEntityTag=TITLE]
+[Text='s CharacterOffsetBegin=875 CharacterOffsetEnd=877 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=responses CharacterOffsetBegin=878 CharacterOffsetEnd=887 PartOfSpeech=NNS Lemma=response NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=887 CharacterOffsetEnd=888 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (S
+          (NP (PRP$ your) (NN Manager))
+          (VP (VBZ submits)
+            (NP (JJR his/her) (NN feedback))))
+        (, ,)
+        (CC but)
+        (S
+          (NP (PRP you))
+          (VP (VBP do) (RB not)
+            (VP (VB have)
+              (NP
+                (NP (DT a) (JJ sufficient) (NN number))
+                (PP (IN of)
+                  (NP (NNP Direct) (NNP Report)
+                    (CC and/or)
+                    (NNP Peer) (NNS responses)))))))))
+    (, ,)
+    (NP (PRP you))
+    (VP (MD will)
+      (ADVP (RB only))
+      (VP (VB receive)
+        (NP (DT a) (NN report))
+        (PP (IN with)
+          (NP
+            (NP (PRP$ your) (NN Manager) (POS 's))
+            (NNS responses)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, receive-26)
+mark(submits-4, If-1)
+nmod:poss(Manager-3, your-2)
+nsubj(submits-4, Manager-3)
+advcl:if(receive-26, submits-4)
+amod(feedback-6, his/her-5)
+dobj(submits-4, feedback-6)
+punct(submits-4, ,-7)
+cc(submits-4, but-8)
+nsubj(have-12, you-9)
+aux(have-12, do-10)
+neg(have-12, not-11)
+conj:but(submits-4, have-12)
+advcl:if(receive-26, have-12)
+det(number-15, a-13)
+amod(number-15, sufficient-14)
+dobj(have-12, number-15)
+case(Report-18, of-16)
+compound(Report-18, Direct-17)
+nmod:of(number-15, Report-18)
+cc(Report-18, and/or-19)
+compound(responses-21, Peer-20)
+nmod:of(number-15, responses-21)
+conj:and/or(Report-18, responses-21)
+punct(receive-26, ,-22)
+nsubj(receive-26, you-23)
+aux(receive-26, will-24)
+advmod(receive-26, only-25)
+det(report-28, a-27)
+dobj(receive-26, report-28)
+case(responses-33, with-29)
+nmod:poss(Manager-31, your-30)
+nmod:poss(responses-33, Manager-31)
+case(Manager-31, 's-32)
+nmod:with(receive-26, responses-33)
+punct(receive-26, .-34)
+
+Extracted the following NER entity mentions:
+Manager	TITLE
+Manager	TITLE
+
+Sentence #9 (21 tokens):
+You may wish to send one final reminder to your raters that their data must
+be received by April 27.
+
+Tokens:
+[Text=You CharacterOffsetBegin=890 CharacterOffsetEnd=893 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=may CharacterOffsetBegin=894 CharacterOffsetEnd=897 PartOfSpeech=MD Lemma=may NamedEntityTag=O]
+[Text=wish CharacterOffsetBegin=898 CharacterOffsetEnd=902 PartOfSpeech=VB Lemma=wish NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=903 CharacterOffsetEnd=905 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=send CharacterOffsetBegin=906 CharacterOffsetEnd=910 PartOfSpeech=VB Lemma=send NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=911 CharacterOffsetEnd=914 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=final CharacterOffsetBegin=915 CharacterOffsetEnd=920 PartOfSpeech=JJ Lemma=final NamedEntityTag=O]
+[Text=reminder CharacterOffsetBegin=921 CharacterOffsetEnd=929 PartOfSpeech=NN Lemma=reminder NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=930 CharacterOffsetEnd=932 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=933 CharacterOffsetEnd=937 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=raters CharacterOffsetBegin=938 CharacterOffsetEnd=944 PartOfSpeech=NNS Lemma=rater NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=945 CharacterOffsetEnd=949 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=950 CharacterOffsetEnd=955 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=data CharacterOffsetBegin=956 CharacterOffsetEnd=960 PartOfSpeech=NNS Lemma=datum NamedEntityTag=O]
+[Text=must CharacterOffsetBegin=961 CharacterOffsetEnd=965 PartOfSpeech=MD Lemma=must NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=966 CharacterOffsetEnd=968 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=received CharacterOffsetBegin=969 CharacterOffsetEnd=977 PartOfSpeech=VBN Lemma=receive NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=978 CharacterOffsetEnd=980 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=April CharacterOffsetBegin=981 CharacterOffsetEnd=986 PartOfSpeech=NNP Lemma=April NamedEntityTag=DATE NormalizedNamedEntityTag=****0427]
+[Text=27 CharacterOffsetBegin=987 CharacterOffsetEnd=989 PartOfSpeech=CD Lemma=27 NamedEntityTag=DATE NormalizedNamedEntityTag=****0427]
+[Text=. CharacterOffsetBegin=989 CharacterOffsetEnd=990 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (MD may)
+      (VP (VB wish)
+        (S
+          (VP (TO to)
+            (VP (VB send)
+              (NP (CD one) (JJ final) (NN reminder))
+              (PP (TO to)
+                (NP (PRP$ your) (NNS raters)))
+              (SBAR (IN that)
+                (S
+                  (NP (PRP$ their) (NNS data))
+                  (VP (MD must)
+                    (VP (VB be)
+                      (VP (VBN received)
+                        (PP (IN by)
+                          (NP (NNP April) (CD 27)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, wish-3)
+nsubj(wish-3, You-1)
+nsubj:xsubj(send-5, You-1)
+aux(wish-3, may-2)
+mark(send-5, to-4)
+xcomp(wish-3, send-5)
+nummod(reminder-8, one-6)
+amod(reminder-8, final-7)
+dobj(send-5, reminder-8)
+case(raters-11, to-9)
+nmod:poss(raters-11, your-10)
+nmod:to(send-5, raters-11)
+mark(received-17, that-12)
+nmod:poss(data-14, their-13)
+nsubjpass(received-17, data-14)
+aux(received-17, must-15)
+auxpass(received-17, be-16)
+ccomp(send-5, received-17)
+case(April-19, by-18)
+nmod:agent(received-17, April-19)
+nummod(April-19, 27-20)
+punct(wish-3, .-21)
+
+Extracted the following NER entity mentions:
+one	NUMBER
+April 27	DATE
+
+Sentence #10 (10 tokens):
+If you have any questions, please call me.
+
+Tokens:
+[Text=If CharacterOffsetBegin=992 CharacterOffsetEnd=994 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=995 CharacterOffsetEnd=998 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=999 CharacterOffsetEnd=1003 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=1004 CharacterOffsetEnd=1007 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=questions CharacterOffsetBegin=1008 CharacterOffsetEnd=1017 PartOfSpeech=NNS Lemma=question NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1017 CharacterOffsetEnd=1018 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=please CharacterOffsetBegin=1019 CharacterOffsetEnd=1025 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=call CharacterOffsetBegin=1026 CharacterOffsetEnd=1030 PartOfSpeech=VB Lemma=call NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=1031 CharacterOffsetEnd=1033 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1033 CharacterOffsetEnd=1034 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP have)
+          (NP (DT any) (NNS questions)))))
+    (, ,)
+    (VP (VB please)
+      (VP (VB call)
+        (NP (PRP me))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, please-7)
+mark(have-3, If-1)
+nsubj(have-3, you-2)
+advcl:if(please-7, have-3)
+det(questions-5, any-4)
+dobj(have-3, questions-5)
+punct(please-7, ,-6)
+xcomp(please-7, call-8)
+dobj(call-8, me-9)
+punct(please-7, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #11 (11 tokens):
+Christi L. Smith
+Keilty, Goldsmith & Company
+858/450-2554
+
+Tokens:
+[Text=Christi CharacterOffsetBegin=1037 CharacterOffsetEnd=1044 PartOfSpeech=NNP Lemma=Christi NamedEntityTag=PERSON]
+[Text=L. CharacterOffsetBegin=1045 CharacterOffsetEnd=1047 PartOfSpeech=NNP Lemma=L. NamedEntityTag=PERSON]
+[Text=Smith CharacterOffsetBegin=1048 CharacterOffsetEnd=1053 PartOfSpeech=NNP Lemma=Smith NamedEntityTag=PERSON]
+[Text=Keilty CharacterOffsetBegin=1054 CharacterOffsetEnd=1060 PartOfSpeech=NNP Lemma=Keilty NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=1060 CharacterOffsetEnd=1061 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Goldsmith CharacterOffsetBegin=1062 CharacterOffsetEnd=1071 PartOfSpeech=NNP Lemma=Goldsmith NamedEntityTag=ORGANIZATION]
+[Text=& CharacterOffsetBegin=1072 CharacterOffsetEnd=1073 PartOfSpeech=CC Lemma=& NamedEntityTag=ORGANIZATION]
+[Text=Company CharacterOffsetBegin=1074 CharacterOffsetEnd=1081 PartOfSpeech=NNP Lemma=Company NamedEntityTag=ORGANIZATION]
+[Text=858/450 CharacterOffsetBegin=1082 CharacterOffsetEnd=1089 PartOfSpeech=CD Lemma=858/450 NamedEntityTag=NUMBER]
+[Text=- CharacterOffsetBegin=1089 CharacterOffsetEnd=1090 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=2554 CharacterOffsetBegin=1090 CharacterOffsetEnd=1094 PartOfSpeech=CD Lemma=2554 NamedEntityTag=DATE NormalizedNamedEntityTag=2554]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Christi) (NNP L.) (NNP Smith))
+    (NP (NNP Keilty) (, ,) (NNP Goldsmith)
+      (CC &)
+      (NNP Company))
+    (NP (CD 858/450) (: -) (CD 2554))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Smith-3)
+compound(Smith-3, Christi-1)
+compound(Smith-3, L.-2)
+dep(Smith-3, Keilty-4)
+punct(Keilty-4, ,-5)
+dep(Smith-3, Goldsmith-6)
+conj:&(Keilty-4, Goldsmith-6)
+cc(Keilty-4, &-7)
+dep(Smith-3, Company-8)
+conj:&(Keilty-4, Company-8)
+nummod(2554-11, 858/450-9)
+punct(2554-11, --10)
+dep(Smith-3, 2554-11)
+
+Extracted the following NER entity mentions:
+Christi L. Smith Keilty	PERSON
+Goldsmith & Company	ORGANIZATION
+858/450	NUMBER
+2554	DATE
+
+Coreference set:
+	(5,16,[16,17]) -> (2,1,[1,2]), that is: "our" -> "We"
+
+Coreference set:
+	(3,1,[1,2]) -> (2,18,[18,20]), that is: "This" -> "this Thursday"
+
+Coreference set:
+	(5,25,[25,26]) -> (2,19,[19,20]), that is: "Thursday" -> "Thursday"
+
+Coreference set:
+	(9,19,[19,21]) -> (2,21,[21,23]), that is: "April 27" -> "April 27"
+
+Coreference set:
+	(3,19,[19,20]) -> (9,11,[10,12]), that is: "raters" -> "your raters"
+	(3,22,[22,23]) -> (9,11,[10,12]), that is: "their" -> "your raters"
+	(9,13,[13,14]) -> (9,11,[10,12]), that is: "their" -> "your raters"
+
+Coreference set:
+	(6,13,[13,14]) -> (6,9,[9,10]), that is: "3" -> "3"
+
+Coreference set:
+	(8,18,[18,19]) -> (6,3,[1,4]), that is: "Report" -> "A Summary Report"
+
+Coreference set:
+	(7,16,[16,22]) -> (7,8,[7,10]), that is: "you to provide a Self assessment" -> "your Manager 's"
+	(8,3,[2,4]) -> (7,8,[7,10]), that is: "your Manager" -> "your Manager 's"
+	(8,31,[30,33]) -> (7,8,[7,10]), that is: "your Manager 's" -> "your Manager 's"

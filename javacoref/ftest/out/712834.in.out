@@ -1,0 +1,2183 @@
+Document: ID=712834.in (18 sentences, 589 tokens)
+
+Sentence #1 (24 tokens):
+Yesterday, at the Midwest ISO, we successfully managed to quash the MISO's
+"at least one source-to-sink reservation" proposal.
+
+Tokens:
+[Text=Yesterday CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=yesterday NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Midwest CharacterOffsetBegin=18 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=Midwest NamedEntityTag=LOCATION]
+[Text=ISO CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=iso NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=successfully CharacterOffsetBegin=34 CharacterOffsetEnd=46 PartOfSpeech=RB Lemma=successfully NamedEntityTag=O]
+[Text=managed CharacterOffsetBegin=47 CharacterOffsetEnd=54 PartOfSpeech=VBD Lemma=manage NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=quash CharacterOffsetBegin=58 CharacterOffsetEnd=63 PartOfSpeech=VB Lemma=quash NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=64 CharacterOffsetEnd=67 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=MISO CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=NNP Lemma=MISO NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=76 CharacterOffsetEnd=78 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=least CharacterOffsetBegin=79 CharacterOffsetEnd=84 PartOfSpeech=JJS Lemma=least NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=>=1.0]
+[Text=source-to-sink CharacterOffsetBegin=89 CharacterOffsetEnd=103 PartOfSpeech=JJ Lemma=source-to-sink NamedEntityTag=O]
+[Text=reservation CharacterOffsetBegin=104 CharacterOffsetEnd=115 PartOfSpeech=NN Lemma=reservation NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=115 CharacterOffsetEnd=116 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=proposal CharacterOffsetBegin=117 CharacterOffsetEnd=125 PartOfSpeech=NN Lemma=proposal NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=125 CharacterOffsetEnd=126 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP-TMP (NN Yesterday))
+    (, ,)
+    (PP (IN at)
+      (NP (DT the) (NNP Midwest) (NN ISO)))
+    (, ,)
+    (NP (PRP we))
+    (ADVP (RB successfully))
+    (VP (VBD managed)
+      (S
+        (VP (TO to)
+          (VP (VB quash)
+            (NP
+              (NP (DT the) (NNP MISO) (POS 's))
+              (`` ``)
+              (ADJP
+                (NP
+                  (QP (IN at) (JJS least) (CD one)))
+                (ADJP (JJ source-to-sink) (NN reservation)))
+              ('' '') (NN proposal))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, managed-10)
+nmod:tmod(managed-10, Yesterday-1)
+punct(managed-10, ,-2)
+case(ISO-6, at-3)
+det(ISO-6, the-4)
+compound(ISO-6, Midwest-5)
+nmod:at(managed-10, ISO-6)
+punct(managed-10, ,-7)
+nsubj(managed-10, we-8)
+nsubj:xsubj(quash-12, we-8)
+advmod(managed-10, successfully-9)
+mark(quash-12, to-11)
+xcomp(managed-10, quash-12)
+det(MISO-14, the-13)
+nmod:poss(proposal-23, MISO-14)
+case(MISO-14, 's-15)
+punct(proposal-23, ``-16)
+case(least-18, at-17)
+nmod:npmod(one-19, least-18)
+dep(reservation-21, one-19)
+dep(reservation-21, source-to-sink-20)
+amod(proposal-23, reservation-21)
+punct(proposal-23, ''-22)
+dobj(quash-12, proposal-23)
+punct(managed-10, .-24)
+
+Extracted the following NER entity mentions:
+Midwest ISO	LOCATION
+MISO	ORGANIZATION
+one	NUMBER
+
+Sentence #2 (42 tokens):
+MISO has been attempting to figure out a way to do security analysis on
+transmission reservations, and felt that the Entergy Source/Sink policy was
+too restrictive, but the policy of not requiring source-to-sink at any point
+was too relaxed.
+
+Tokens:
+[Text=MISO CharacterOffsetBegin=128 CharacterOffsetEnd=132 PartOfSpeech=NNP Lemma=MISO NamedEntityTag=ORGANIZATION]
+[Text=has CharacterOffsetBegin=133 CharacterOffsetEnd=136 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=137 CharacterOffsetEnd=141 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=attempting CharacterOffsetBegin=142 CharacterOffsetEnd=152 PartOfSpeech=VBG Lemma=attempt NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=153 CharacterOffsetEnd=155 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=figure CharacterOffsetBegin=156 CharacterOffsetEnd=162 PartOfSpeech=VB Lemma=figure NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=163 CharacterOffsetEnd=166 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=167 CharacterOffsetEnd=168 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=way CharacterOffsetBegin=169 CharacterOffsetEnd=172 PartOfSpeech=NN Lemma=way NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=173 CharacterOffsetEnd=175 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=176 CharacterOffsetEnd=178 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=security CharacterOffsetBegin=179 CharacterOffsetEnd=187 PartOfSpeech=NN Lemma=security NamedEntityTag=O]
+[Text=analysis CharacterOffsetBegin=188 CharacterOffsetEnd=196 PartOfSpeech=NN Lemma=analysis NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=197 CharacterOffsetEnd=199 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=transmission CharacterOffsetBegin=200 CharacterOffsetEnd=212 PartOfSpeech=NN Lemma=transmission NamedEntityTag=O]
+[Text=reservations CharacterOffsetBegin=213 CharacterOffsetEnd=225 PartOfSpeech=NNS Lemma=reservation NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=225 CharacterOffsetEnd=226 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=227 CharacterOffsetEnd=230 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=felt CharacterOffsetBegin=231 CharacterOffsetEnd=235 PartOfSpeech=VBD Lemma=feel NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=236 CharacterOffsetEnd=240 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=241 CharacterOffsetEnd=244 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Entergy CharacterOffsetBegin=245 CharacterOffsetEnd=252 PartOfSpeech=NNP Lemma=Entergy NamedEntityTag=ORGANIZATION]
+[Text=Source/Sink CharacterOffsetBegin=253 CharacterOffsetEnd=264 PartOfSpeech=NNP Lemma=Source/Sink NamedEntityTag=O]
+[Text=policy CharacterOffsetBegin=265 CharacterOffsetEnd=271 PartOfSpeech=NN Lemma=policy NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=272 CharacterOffsetEnd=275 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=too CharacterOffsetBegin=276 CharacterOffsetEnd=279 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+[Text=restrictive CharacterOffsetBegin=280 CharacterOffsetEnd=291 PartOfSpeech=JJ Lemma=restrictive NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=291 CharacterOffsetEnd=292 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=293 CharacterOffsetEnd=296 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=297 CharacterOffsetEnd=300 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=policy CharacterOffsetBegin=301 CharacterOffsetEnd=307 PartOfSpeech=NN Lemma=policy NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=308 CharacterOffsetEnd=310 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=311 CharacterOffsetEnd=314 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=requiring CharacterOffsetBegin=315 CharacterOffsetEnd=324 PartOfSpeech=VBG Lemma=require NamedEntityTag=O]
+[Text=source-to-sink CharacterOffsetBegin=325 CharacterOffsetEnd=339 PartOfSpeech=JJ Lemma=source-to-sink NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=340 CharacterOffsetEnd=342 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=343 CharacterOffsetEnd=346 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=point CharacterOffsetBegin=347 CharacterOffsetEnd=352 PartOfSpeech=NN Lemma=point NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=353 CharacterOffsetEnd=356 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=too CharacterOffsetBegin=357 CharacterOffsetEnd=360 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+[Text=relaxed CharacterOffsetBegin=361 CharacterOffsetEnd=368 PartOfSpeech=VBN Lemma=relax NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=368 CharacterOffsetEnd=369 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NNP MISO))
+      (VP
+        (VP (VBZ has)
+          (VP (VBN been)
+            (VP (VBG attempting)
+              (S
+                (VP (TO to)
+                  (VP (VB figure)
+                    (PRT (RP out))
+                    (NP (DT a) (NN way)
+                      (S
+                        (VP (TO to)
+                          (VP (VB do)
+                            (NP (NN security) (NN analysis))
+                            (PP (IN on)
+                              (NP (NN transmission) (NNS reservations)))))))))))))
+        (, ,)
+        (CC and)
+        (VP (VBD felt)
+          (SBAR (IN that)
+            (S
+              (NP (DT the) (NNP Entergy) (NNP Source/Sink) (NN policy))
+              (VP (VBD was)
+                (ADJP (RB too) (JJ restrictive))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP
+        (NP (DT the) (NN policy))
+        (PP (IN of)
+          (S
+            (VP (RB not) (VBG requiring)
+              (ADJP (JJ source-to-sink))
+              (PP (IN at)
+                (NP (DT any) (NN point)))))))
+      (VP (VBD was)
+        (VP
+          (ADVP (RB too))
+          (VBN relaxed))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, attempting-4)
+nsubj(attempting-4, MISO-1)
+nsubj:xsubj(figure-6, MISO-1)
+nsubj(felt-19, MISO-1)
+aux(attempting-4, has-2)
+aux(attempting-4, been-3)
+mark(figure-6, to-5)
+xcomp(attempting-4, figure-6)
+compound:prt(figure-6, out-7)
+det(way-9, a-8)
+dobj(figure-6, way-9)
+mark(do-11, to-10)
+acl:to(way-9, do-11)
+compound(analysis-13, security-12)
+dobj(do-11, analysis-13)
+case(reservations-16, on-14)
+compound(reservations-16, transmission-15)
+nmod:on(do-11, reservations-16)
+punct(attempting-4, ,-17)
+cc(attempting-4, and-18)
+conj:and(attempting-4, felt-19)
+mark(restrictive-27, that-20)
+det(policy-24, the-21)
+compound(policy-24, Entergy-22)
+compound(policy-24, Source/Sink-23)
+nsubj(restrictive-27, policy-24)
+cop(restrictive-27, was-25)
+advmod(restrictive-27, too-26)
+ccomp(felt-19, restrictive-27)
+punct(attempting-4, ,-28)
+cc(attempting-4, but-29)
+det(policy-31, the-30)
+nsubjpass(relaxed-41, policy-31)
+mark(requiring-34, of-32)
+neg(requiring-34, not-33)
+acl:of(policy-31, requiring-34)
+xcomp(requiring-34, source-to-sink-35)
+case(point-38, at-36)
+det(point-38, any-37)
+nmod:at(requiring-34, point-38)
+auxpass(relaxed-41, was-39)
+advmod(relaxed-41, too-40)
+conj:but(attempting-4, relaxed-41)
+punct(attempting-4, .-42)
+
+Extracted the following NER entity mentions:
+MISO	ORGANIZATION
+Entergy	ORGANIZATION
+
+Sentence #3 (30 tokens):
+Their proposal was that "at least one" reservation on a
+tag/schedule must have the true source-to-sink; otherwise, the tag/schedule
+would be denied for improper use.
+
+Tokens:
+[Text=Their CharacterOffsetBegin=371 CharacterOffsetEnd=376 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=proposal CharacterOffsetBegin=377 CharacterOffsetEnd=385 PartOfSpeech=NN Lemma=proposal NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=386 CharacterOffsetEnd=389 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=390 CharacterOffsetEnd=394 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=395 CharacterOffsetEnd=396 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=396 CharacterOffsetEnd=398 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=least CharacterOffsetBegin=399 CharacterOffsetEnd=404 PartOfSpeech=JJS Lemma=least NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=405 CharacterOffsetEnd=408 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=>=1.0]
+[Text='' CharacterOffsetBegin=408 CharacterOffsetEnd=409 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=reservation CharacterOffsetBegin=410 CharacterOffsetEnd=421 PartOfSpeech=NN Lemma=reservation NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=422 CharacterOffsetEnd=424 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=425 CharacterOffsetEnd=426 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=tag/schedule CharacterOffsetBegin=427 CharacterOffsetEnd=439 PartOfSpeech=NN Lemma=tag/schedule NamedEntityTag=O]
+[Text=must CharacterOffsetBegin=440 CharacterOffsetEnd=444 PartOfSpeech=MD Lemma=must NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=445 CharacterOffsetEnd=449 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=450 CharacterOffsetEnd=453 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=true CharacterOffsetBegin=454 CharacterOffsetEnd=458 PartOfSpeech=JJ Lemma=true NamedEntityTag=O]
+[Text=source-to-sink CharacterOffsetBegin=459 CharacterOffsetEnd=473 PartOfSpeech=NN Lemma=source-to-sink NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=473 CharacterOffsetEnd=474 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=otherwise CharacterOffsetBegin=475 CharacterOffsetEnd=484 PartOfSpeech=RB Lemma=otherwise NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=484 CharacterOffsetEnd=485 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=486 CharacterOffsetEnd=489 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=tag/schedule CharacterOffsetBegin=490 CharacterOffsetEnd=502 PartOfSpeech=NN Lemma=tag/schedule NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=503 CharacterOffsetEnd=508 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=509 CharacterOffsetEnd=511 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=denied CharacterOffsetBegin=512 CharacterOffsetEnd=518 PartOfSpeech=VBN Lemma=deny NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=519 CharacterOffsetEnd=522 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=improper CharacterOffsetBegin=523 CharacterOffsetEnd=531 PartOfSpeech=JJ Lemma=improper NamedEntityTag=O]
+[Text=use CharacterOffsetBegin=532 CharacterOffsetEnd=535 PartOfSpeech=NN Lemma=use NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=535 CharacterOffsetEnd=536 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP$ Their) (NN proposal))
+      (VP (VBD was)
+        (SBAR (IN that)
+          (S
+            (NP (`` ``)
+              (NP
+                (ADVP (IN at) (JJS least))
+                (CD one))
+              ('' '')
+              (PP
+                (NP (NN reservation))
+                (IN on)
+                (NP (DT a) (NN tag/schedule))))
+            (VP (MD must)
+              (VP (VB have)
+                (NP (DT the) (JJ true) (NN source-to-sink))))))))
+    (: ;)
+    (S
+      (ADVP (RB otherwise))
+      (, ,)
+      (NP (DT the) (NN tag/schedule))
+      (VP (MD would)
+        (VP (VB be)
+          (VP (VBN denied)
+            (PP (IN for)
+              (NP (JJ improper) (NN use)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, was-3)
+nmod:poss(proposal-2, Their-1)
+nsubj(was-3, proposal-2)
+mark(have-15, that-4)
+punct(one-8, ``-5)
+case(least-7, at-6)
+advmod(one-8, least-7)
+nsubj(have-15, one-8)
+punct(one-8, ''-9)
+nmod:on(one-8, reservation-10)
+case(reservation-10, on-11)
+det(tag/schedule-13, a-12)
+dep(reservation-10, tag/schedule-13)
+aux(have-15, must-14)
+ccomp(was-3, have-15)
+det(source-to-sink-18, the-16)
+amod(source-to-sink-18, true-17)
+dobj(have-15, source-to-sink-18)
+punct(was-3, ;-19)
+advmod(denied-26, otherwise-20)
+punct(denied-26, ,-21)
+det(tag/schedule-23, the-22)
+nsubjpass(denied-26, tag/schedule-23)
+aux(denied-26, would-24)
+auxpass(denied-26, be-25)
+parataxis(was-3, denied-26)
+case(use-29, for-27)
+amod(use-29, improper-28)
+nmod:for(denied-26, use-29)
+punct(was-3, .-30)
+
+Extracted the following NER entity mentions:
+one	NUMBER
+
+Sentence #4 (37 tokens):
+Representatives from CINergy, Duke, Dynegy, ACES, Ameren and LG&E worked with
+me to fight this concept, arguing that it was effectively identical to the
+Entergy Source/Sink policy in almost all cases.
+
+Tokens:
+[Text=Representatives CharacterOffsetBegin=538 CharacterOffsetEnd=553 PartOfSpeech=NNS Lemma=representative NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=554 CharacterOffsetEnd=558 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=CINergy CharacterOffsetBegin=559 CharacterOffsetEnd=566 PartOfSpeech=NNP Lemma=CINergy NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=566 CharacterOffsetEnd=567 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Duke CharacterOffsetBegin=568 CharacterOffsetEnd=572 PartOfSpeech=NNP Lemma=Duke NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=572 CharacterOffsetEnd=573 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Dynegy CharacterOffsetBegin=574 CharacterOffsetEnd=580 PartOfSpeech=NNP Lemma=Dynegy NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=580 CharacterOffsetEnd=581 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=ACES CharacterOffsetBegin=582 CharacterOffsetEnd=586 PartOfSpeech=NNP Lemma=ACES NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=586 CharacterOffsetEnd=587 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Ameren CharacterOffsetBegin=588 CharacterOffsetEnd=594 PartOfSpeech=NNP Lemma=Ameren NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=595 CharacterOffsetEnd=598 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=LG&E CharacterOffsetBegin=599 CharacterOffsetEnd=603 PartOfSpeech=NNP Lemma=LG&E NamedEntityTag=ORGANIZATION]
+[Text=worked CharacterOffsetBegin=604 CharacterOffsetEnd=610 PartOfSpeech=VBD Lemma=work NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=611 CharacterOffsetEnd=615 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=616 CharacterOffsetEnd=618 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=619 CharacterOffsetEnd=621 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=fight CharacterOffsetBegin=622 CharacterOffsetEnd=627 PartOfSpeech=VB Lemma=fight NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=628 CharacterOffsetEnd=632 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=concept CharacterOffsetBegin=633 CharacterOffsetEnd=640 PartOfSpeech=NN Lemma=concept NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=640 CharacterOffsetEnd=641 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=arguing CharacterOffsetBegin=642 CharacterOffsetEnd=649 PartOfSpeech=VBG Lemma=argue NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=650 CharacterOffsetEnd=654 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=655 CharacterOffsetEnd=657 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=658 CharacterOffsetEnd=661 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=effectively CharacterOffsetBegin=662 CharacterOffsetEnd=673 PartOfSpeech=RB Lemma=effectively NamedEntityTag=O]
+[Text=identical CharacterOffsetBegin=674 CharacterOffsetEnd=683 PartOfSpeech=JJ Lemma=identical NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=684 CharacterOffsetEnd=686 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=687 CharacterOffsetEnd=690 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Entergy CharacterOffsetBegin=691 CharacterOffsetEnd=698 PartOfSpeech=NNP Lemma=Entergy NamedEntityTag=O]
+[Text=Source/Sink CharacterOffsetBegin=699 CharacterOffsetEnd=710 PartOfSpeech=NNP Lemma=Source/Sink NamedEntityTag=O]
+[Text=policy CharacterOffsetBegin=711 CharacterOffsetEnd=717 PartOfSpeech=NN Lemma=policy NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=718 CharacterOffsetEnd=720 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=almost CharacterOffsetBegin=721 CharacterOffsetEnd=727 PartOfSpeech=RB Lemma=almost NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=728 CharacterOffsetEnd=731 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=cases CharacterOffsetBegin=732 CharacterOffsetEnd=737 PartOfSpeech=NNS Lemma=case NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=737 CharacterOffsetEnd=738 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNS Representatives))
+      (PP (IN from)
+        (NP (NNP CINergy) (, ,) (NNP Duke) (, ,) (NNP Dynegy) (, ,) (NNP ACES) (, ,) (NNP Ameren)
+          (CC and)
+          (NNP LG&E))))
+    (VP (VBD worked)
+      (PP (IN with)
+        (NP (PRP me)))
+      (S
+        (VP (TO to)
+          (VP (VB fight)
+            (NP (DT this) (NN concept)))))
+      (, ,)
+      (S
+        (VP (VBG arguing)
+          (SBAR (IN that)
+            (S
+              (NP (PRP it))
+              (VP (VBD was)
+                (ADVP (RB effectively))
+                (ADJP (JJ identical)
+                  (PP (TO to)
+                    (NP
+                      (NP (DT the) (NNP Entergy) (NNP Source/Sink) (NN policy))
+                      (PP (IN in)
+                        (NP
+                          (QP (RB almost) (DT all))
+                          (NNS cases))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, worked-14)
+nsubj(worked-14, Representatives-1)
+nsubj:xsubj(fight-18, Representatives-1)
+case(CINergy-3, from-2)
+nmod:from(Representatives-1, CINergy-3)
+punct(CINergy-3, ,-4)
+nmod:from(Representatives-1, Duke-5)
+conj:and(CINergy-3, Duke-5)
+punct(CINergy-3, ,-6)
+nmod:from(Representatives-1, Dynegy-7)
+conj:and(CINergy-3, Dynegy-7)
+punct(CINergy-3, ,-8)
+nmod:from(Representatives-1, ACES-9)
+conj:and(CINergy-3, ACES-9)
+punct(CINergy-3, ,-10)
+nmod:from(Representatives-1, Ameren-11)
+conj:and(CINergy-3, Ameren-11)
+cc(CINergy-3, and-12)
+nmod:from(Representatives-1, LG&E-13)
+conj:and(CINergy-3, LG&E-13)
+case(me-16, with-15)
+nmod:with(worked-14, me-16)
+mark(fight-18, to-17)
+xcomp(worked-14, fight-18)
+det(concept-20, this-19)
+dobj(fight-18, concept-20)
+punct(worked-14, ,-21)
+xcomp(worked-14, arguing-22)
+mark(identical-27, that-23)
+nsubj(identical-27, it-24)
+cop(identical-27, was-25)
+advmod(identical-27, effectively-26)
+ccomp(arguing-22, identical-27)
+case(policy-32, to-28)
+det(policy-32, the-29)
+compound(policy-32, Entergy-30)
+compound(policy-32, Source/Sink-31)
+nmod:to(identical-27, policy-32)
+case(cases-36, in-33)
+advmod(all-35, almost-34)
+nummod(cases-36, all-35)
+nmod:in(policy-32, cases-36)
+punct(worked-14, .-37)
+
+Extracted the following NER entity mentions:
+CINergy	ORGANIZATION
+Duke	PERSON
+Dynegy	ORGANIZATION
+Ameren	ORGANIZATION
+LG&E	ORGANIZATION
+
+Sentence #5 (33 tokens):
+After a meeting and two
+conference calls, in which the MISO ignored our comments and continually
+pressed for their option, we finally managed to convince them that it was
+unacceptable.
+
+Tokens:
+[Text=After CharacterOffsetBegin=740 CharacterOffsetEnd=745 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=746 CharacterOffsetEnd=747 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=meeting CharacterOffsetBegin=748 CharacterOffsetEnd=755 PartOfSpeech=NN Lemma=meeting NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=756 CharacterOffsetEnd=759 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=760 CharacterOffsetEnd=763 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=conference CharacterOffsetBegin=764 CharacterOffsetEnd=774 PartOfSpeech=NN Lemma=conference NamedEntityTag=O]
+[Text=calls CharacterOffsetBegin=775 CharacterOffsetEnd=780 PartOfSpeech=NNS Lemma=call NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=780 CharacterOffsetEnd=781 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=782 CharacterOffsetEnd=784 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=785 CharacterOffsetEnd=790 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=791 CharacterOffsetEnd=794 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=MISO CharacterOffsetBegin=795 CharacterOffsetEnd=799 PartOfSpeech=NN Lemma=miso NamedEntityTag=ORGANIZATION]
+[Text=ignored CharacterOffsetBegin=800 CharacterOffsetEnd=807 PartOfSpeech=VBN Lemma=ignore NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=808 CharacterOffsetEnd=811 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=comments CharacterOffsetBegin=812 CharacterOffsetEnd=820 PartOfSpeech=NNS Lemma=comment NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=821 CharacterOffsetEnd=824 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=continually CharacterOffsetBegin=825 CharacterOffsetEnd=836 PartOfSpeech=RB Lemma=continually NamedEntityTag=O]
+[Text=pressed CharacterOffsetBegin=837 CharacterOffsetEnd=844 PartOfSpeech=VBN Lemma=press NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=845 CharacterOffsetEnd=848 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=849 CharacterOffsetEnd=854 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=option CharacterOffsetBegin=855 CharacterOffsetEnd=861 PartOfSpeech=NN Lemma=option NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=861 CharacterOffsetEnd=862 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=863 CharacterOffsetEnd=865 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=finally CharacterOffsetBegin=866 CharacterOffsetEnd=873 PartOfSpeech=RB Lemma=finally NamedEntityTag=O]
+[Text=managed CharacterOffsetBegin=874 CharacterOffsetEnd=881 PartOfSpeech=VBD Lemma=manage NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=882 CharacterOffsetEnd=884 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=convince CharacterOffsetBegin=885 CharacterOffsetEnd=893 PartOfSpeech=VB Lemma=convince NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=894 CharacterOffsetEnd=898 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=899 CharacterOffsetEnd=903 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=904 CharacterOffsetEnd=906 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=907 CharacterOffsetEnd=910 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=unacceptable CharacterOffsetBegin=911 CharacterOffsetEnd=923 PartOfSpeech=JJ Lemma=unacceptable NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=923 CharacterOffsetEnd=924 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN After)
+      (NP
+        (NP (DT a) (NN meeting))
+        (CC and)
+        (NP
+          (NP (CD two) (NN conference) (NNS calls))
+          (, ,)
+          (SBAR
+            (WHPP (IN in)
+              (WHNP (WDT which)))
+            (S
+              (NP (DT the) (NN MISO))
+              (VP
+                (VP (VBN ignored)
+                  (NP (PRP$ our) (NNS comments)))
+                (CC and)
+                (VP
+                  (ADVP (RB continually))
+                  (VBN pressed)
+                  (PP (IN for)
+                    (NP (PRP$ their) (NN option))))))))))
+    (, ,)
+    (NP (PRP we))
+    (ADVP (RB finally))
+    (VP (VBD managed)
+      (S
+        (VP (TO to)
+          (VP (VB convince)
+            (NP (PRP them))
+            (SBAR (IN that)
+              (S
+                (NP (PRP it))
+                (VP (VBD was)
+                  (ADJP (JJ unacceptable)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, managed-25)
+case(meeting-3, After-1)
+det(meeting-3, a-2)
+nmod:after(managed-25, meeting-3)
+cc(meeting-3, and-4)
+nummod(calls-7, two-5)
+compound(calls-7, conference-6)
+conj:and(meeting-3, calls-7)
+nmod:in(ignored-13, calls-7)
+nmod:after(managed-25, calls-7)
+punct(calls-7, ,-8)
+case(which-10, in-9)
+ref(calls-7, which-10)
+det(MISO-12, the-11)
+nsubj(ignored-13, MISO-12)
+nsubj(pressed-18, MISO-12)
+acl:relcl(calls-7, ignored-13)
+nmod:poss(comments-15, our-14)
+dobj(ignored-13, comments-15)
+cc(ignored-13, and-16)
+advmod(pressed-18, continually-17)
+acl:relcl(calls-7, pressed-18)
+conj:and(ignored-13, pressed-18)
+case(option-21, for-19)
+nmod:poss(option-21, their-20)
+nmod:for(pressed-18, option-21)
+punct(managed-25, ,-22)
+nsubj(managed-25, we-23)
+nsubj:xsubj(convince-27, we-23)
+advmod(managed-25, finally-24)
+mark(convince-27, to-26)
+xcomp(managed-25, convince-27)
+dobj(convince-27, them-28)
+mark(unacceptable-32, that-29)
+nsubj(unacceptable-32, it-30)
+cop(unacceptable-32, was-31)
+ccomp(convince-27, unacceptable-32)
+punct(managed-25, .-33)
+
+Extracted the following NER entity mentions:
+two	NUMBER
+MISO	ORGANIZATION
+
+Sentence #6 (17 tokens):
+The new policy that MISO is planning to operate under is as follows:
+
+1.)
+
+Tokens:
+[Text=The CharacterOffsetBegin=926 CharacterOffsetEnd=929 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=930 CharacterOffsetEnd=933 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=policy CharacterOffsetBegin=934 CharacterOffsetEnd=940 PartOfSpeech=NN Lemma=policy NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=941 CharacterOffsetEnd=945 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=MISO CharacterOffsetBegin=946 CharacterOffsetEnd=950 PartOfSpeech=NNP Lemma=MISO NamedEntityTag=ORGANIZATION]
+[Text=is CharacterOffsetBegin=951 CharacterOffsetEnd=953 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=planning CharacterOffsetBegin=954 CharacterOffsetEnd=962 PartOfSpeech=VBG Lemma=plan NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=963 CharacterOffsetEnd=965 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=operate CharacterOffsetBegin=966 CharacterOffsetEnd=973 PartOfSpeech=VB Lemma=operate NamedEntityTag=O]
+[Text=under CharacterOffsetBegin=974 CharacterOffsetEnd=979 PartOfSpeech=IN Lemma=under NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=980 CharacterOffsetEnd=982 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=983 CharacterOffsetEnd=985 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=follows CharacterOffsetBegin=986 CharacterOffsetEnd=993 PartOfSpeech=VBZ Lemma=follow NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=993 CharacterOffsetEnd=994 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=1 CharacterOffsetBegin=996 CharacterOffsetEnd=997 PartOfSpeech=CD Lemma=1 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=. CharacterOffsetBegin=997 CharacterOffsetEnd=998 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=998 CharacterOffsetEnd=999 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ new) (NN policy))
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (NP (NNP MISO))
+          (VP (VBZ is)
+            (VP (VBG planning)
+              (S
+                (VP (TO to)
+                  (VP (VB operate)
+                    (PP (IN under))))))))))
+    (VP (VBZ is)
+      (NP
+        (NP (IN as))
+        (SBAR
+          (S
+            (VP (VBZ follows)))))
+      (: :)
+      (NP (CD 1)))
+    (. .) (-RRB- -RRB-)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, as-12)
+det(policy-3, The-1)
+amod(policy-3, new-2)
+dobj(operate-9, policy-3)
+nsubj(as-12, policy-3)
+ref(policy-3, that-4)
+nsubj(planning-7, MISO-5)
+nsubj:xsubj(operate-9, MISO-5)
+aux(planning-7, is-6)
+acl:relcl(policy-3, planning-7)
+mark(operate-9, to-8)
+xcomp(planning-7, operate-9)
+nmod(operate-9, under-10)
+cop(as-12, is-11)
+acl:relcl(as-12, follows-13)
+punct(as-12, :-14)
+parataxis(as-12, 1-15)
+punct(as-12, .-16)
+punct(as-12, -RRB--17)
+
+Extracted the following NER entity mentions:
+MISO	ORGANIZATION
+1	NUMBER
+
+Sentence #7 (25 tokens):
+If, at the time a transaction is tagged/scheduled, the MISO reservation
+specified accurate source and sink, the tag/schedule will be approved.
+
+Tokens:
+[Text=If CharacterOffsetBegin=1000 CharacterOffsetEnd=1002 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1002 CharacterOffsetEnd=1003 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=1004 CharacterOffsetEnd=1006 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1007 CharacterOffsetEnd=1010 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=1011 CharacterOffsetEnd=1015 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=1016 CharacterOffsetEnd=1017 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=transaction CharacterOffsetBegin=1018 CharacterOffsetEnd=1029 PartOfSpeech=NN Lemma=transaction NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=1030 CharacterOffsetEnd=1032 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=tagged/scheduled CharacterOffsetBegin=1033 CharacterOffsetEnd=1049 PartOfSpeech=VBN Lemma=tagged/scheduled NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1049 CharacterOffsetEnd=1050 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1051 CharacterOffsetEnd=1054 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=MISO CharacterOffsetBegin=1055 CharacterOffsetEnd=1059 PartOfSpeech=NNP Lemma=MISO NamedEntityTag=O]
+[Text=reservation CharacterOffsetBegin=1060 CharacterOffsetEnd=1071 PartOfSpeech=NN Lemma=reservation NamedEntityTag=O]
+[Text=specified CharacterOffsetBegin=1072 CharacterOffsetEnd=1081 PartOfSpeech=VBN Lemma=specify NamedEntityTag=O]
+[Text=accurate CharacterOffsetBegin=1082 CharacterOffsetEnd=1090 PartOfSpeech=JJ Lemma=accurate NamedEntityTag=O]
+[Text=source CharacterOffsetBegin=1091 CharacterOffsetEnd=1097 PartOfSpeech=NN Lemma=source NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1098 CharacterOffsetEnd=1101 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=sink CharacterOffsetBegin=1102 CharacterOffsetEnd=1106 PartOfSpeech=NN Lemma=sink NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1106 CharacterOffsetEnd=1107 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1108 CharacterOffsetEnd=1111 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=tag/schedule CharacterOffsetBegin=1112 CharacterOffsetEnd=1124 PartOfSpeech=NN Lemma=tag/schedule NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=1125 CharacterOffsetEnd=1129 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=1130 CharacterOffsetEnd=1132 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=approved CharacterOffsetBegin=1133 CharacterOffsetEnd=1141 PartOfSpeech=VBN Lemma=approve NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1141 CharacterOffsetEnd=1142 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If) (, ,)
+      (S
+        (PP (IN at)
+          (NP (DT the) (NN time)))
+        (NP (DT a) (NN transaction))
+        (VP (VBZ is)
+          (VP (VBN tagged/scheduled)))))
+    (, ,)
+    (NP
+      (NP (DT the) (NNP MISO) (NN reservation) (VBN specified))
+      (ADJP (JJ accurate)
+        (NP-TMP
+          (NP (NN source)
+            (CC and)
+            (NN sink))
+          (, ,)
+          (NP (DT the) (NN tag/schedule)))))
+    (VP (MD will)
+      (VP (VB be)
+        (VP (VBN approved))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, approved-24)
+mark(tagged/scheduled-9, If-1)
+punct(tagged/scheduled-9, ,-2)
+case(time-5, at-3)
+det(time-5, the-4)
+nmod:at(tagged/scheduled-9, time-5)
+det(transaction-7, a-6)
+nsubjpass(tagged/scheduled-9, transaction-7)
+auxpass(tagged/scheduled-9, is-8)
+advcl:if(approved-24, tagged/scheduled-9)
+punct(approved-24, ,-10)
+det(reservation-13, the-11)
+compound(reservation-13, MISO-12)
+nsubjpass(approved-24, reservation-13)
+amod(reservation-13, specified-14)
+amod(reservation-13, accurate-15)
+nmod:tmod(accurate-15, source-16)
+cc(source-16, and-17)
+nmod:tmod(accurate-15, sink-18)
+conj:and(source-16, sink-18)
+punct(source-16, ,-19)
+det(tag/schedule-21, the-20)
+appos(source-16, tag/schedule-21)
+aux(approved-24, will-22)
+auxpass(approved-24, be-23)
+punct(approved-24, .-25)
+
+Extracted the following NER entity mentions:
+
+Sentence #8 (3 tokens):
+2.)
+
+Tokens:
+[Text=2 CharacterOffsetBegin=1143 CharacterOffsetEnd=1144 PartOfSpeech=LS Lemma=2 NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1144 CharacterOffsetEnd=1145 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=1145 CharacterOffsetEnd=1146 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (LS 2))
+    (. .) (-RRB- -RRB-)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 2-1)
+punct(2-1, .-2)
+punct(2-1, -RRB--3)
+
+Extracted the following NER entity mentions:
+
+Sentence #9 (40 tokens):
+If, at the time a transaction is tagged/scheduled, the MISO reservation
+did NOT specify accurate source and sink, but analysis indicates the
+transaction can flow without compromising reliability, the tag/schedule will
+be approved
+3.)
+
+Tokens:
+[Text=If CharacterOffsetBegin=1147 CharacterOffsetEnd=1149 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1149 CharacterOffsetEnd=1150 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=1151 CharacterOffsetEnd=1153 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1154 CharacterOffsetEnd=1157 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=1158 CharacterOffsetEnd=1162 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=1163 CharacterOffsetEnd=1164 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=transaction CharacterOffsetBegin=1165 CharacterOffsetEnd=1176 PartOfSpeech=NN Lemma=transaction NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=1177 CharacterOffsetEnd=1179 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=tagged/scheduled CharacterOffsetBegin=1180 CharacterOffsetEnd=1196 PartOfSpeech=VBN Lemma=tagged/scheduled NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1196 CharacterOffsetEnd=1197 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1198 CharacterOffsetEnd=1201 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=MISO CharacterOffsetBegin=1202 CharacterOffsetEnd=1206 PartOfSpeech=NNP Lemma=MISO NamedEntityTag=O]
+[Text=reservation CharacterOffsetBegin=1207 CharacterOffsetEnd=1218 PartOfSpeech=NN Lemma=reservation NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=1219 CharacterOffsetEnd=1222 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=NOT CharacterOffsetBegin=1223 CharacterOffsetEnd=1226 PartOfSpeech=NNP Lemma=NOT NamedEntityTag=O]
+[Text=specify CharacterOffsetBegin=1227 CharacterOffsetEnd=1234 PartOfSpeech=VB Lemma=specify NamedEntityTag=O]
+[Text=accurate CharacterOffsetBegin=1235 CharacterOffsetEnd=1243 PartOfSpeech=JJ Lemma=accurate NamedEntityTag=O]
+[Text=source CharacterOffsetBegin=1244 CharacterOffsetEnd=1250 PartOfSpeech=NN Lemma=source NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1251 CharacterOffsetEnd=1254 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=sink CharacterOffsetBegin=1255 CharacterOffsetEnd=1259 PartOfSpeech=NN Lemma=sink NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1259 CharacterOffsetEnd=1260 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=1261 CharacterOffsetEnd=1264 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=analysis CharacterOffsetBegin=1265 CharacterOffsetEnd=1273 PartOfSpeech=NN Lemma=analysis NamedEntityTag=O]
+[Text=indicates CharacterOffsetBegin=1274 CharacterOffsetEnd=1283 PartOfSpeech=VBZ Lemma=indicate NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1284 CharacterOffsetEnd=1287 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=transaction CharacterOffsetBegin=1288 CharacterOffsetEnd=1299 PartOfSpeech=NN Lemma=transaction NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=1300 CharacterOffsetEnd=1303 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=flow CharacterOffsetBegin=1304 CharacterOffsetEnd=1308 PartOfSpeech=VB Lemma=flow NamedEntityTag=O]
+[Text=without CharacterOffsetBegin=1309 CharacterOffsetEnd=1316 PartOfSpeech=IN Lemma=without NamedEntityTag=O]
+[Text=compromising CharacterOffsetBegin=1317 CharacterOffsetEnd=1329 PartOfSpeech=VBG Lemma=compromise NamedEntityTag=O]
+[Text=reliability CharacterOffsetBegin=1330 CharacterOffsetEnd=1341 PartOfSpeech=NN Lemma=reliability NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1341 CharacterOffsetEnd=1342 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1343 CharacterOffsetEnd=1346 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=tag/schedule CharacterOffsetBegin=1347 CharacterOffsetEnd=1359 PartOfSpeech=NN Lemma=tag/schedule NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=1360 CharacterOffsetEnd=1364 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=1365 CharacterOffsetEnd=1367 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=approved CharacterOffsetBegin=1368 CharacterOffsetEnd=1376 PartOfSpeech=VBN Lemma=approve NamedEntityTag=O]
+[Text=3 CharacterOffsetBegin=1377 CharacterOffsetEnd=1378 PartOfSpeech=CD Lemma=3 NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0]
+[Text=. CharacterOffsetBegin=1378 CharacterOffsetEnd=1379 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=1379 CharacterOffsetEnd=1380 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (S
+        (SBAR (IN If) (, ,)
+          (S
+            (PP (IN at)
+              (NP (DT the) (NN time)))
+            (NP (DT a) (NN transaction))
+            (VP (VBZ is)
+              (VP (VBN tagged/scheduled)))))
+        (, ,)
+        (NP (DT the) (NNP MISO) (NN reservation))
+        (VP (VBD did)
+          (S
+            (NP (NNP NOT))
+            (VP (VB specify)
+              (NP
+                (ADJP (JJ accurate))
+                (NN source)
+                (CC and)
+                (NN sink))))))
+      (, ,)
+      (CC but)
+      (S
+        (NP (NN analysis))
+        (VP (VBZ indicates)
+          (SBAR
+            (S
+              (NP (DT the) (NN transaction))
+              (VP (MD can)
+                (VP (VB flow)
+                  (PP (IN without)
+                    (S
+                      (VP (VBG compromising)
+                        (NP (NN reliability))))))))))))
+    (, ,)
+    (NP (DT the) (NN tag/schedule))
+    (VP (MD will)
+      (VP (VB be)
+        (VP (VBN approved)
+          (NP (CD 3)))))
+    (. .) (-RRB- -RRB-)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, approved-37)
+mark(tagged/scheduled-9, If-1)
+punct(tagged/scheduled-9, ,-2)
+case(time-5, at-3)
+det(time-5, the-4)
+nmod:at(tagged/scheduled-9, time-5)
+det(transaction-7, a-6)
+nsubjpass(tagged/scheduled-9, transaction-7)
+auxpass(tagged/scheduled-9, is-8)
+advcl:if(did-14, tagged/scheduled-9)
+punct(did-14, ,-10)
+det(reservation-13, the-11)
+compound(reservation-13, MISO-12)
+nsubj(did-14, reservation-13)
+ccomp(approved-37, did-14)
+nsubj(specify-16, NOT-15)
+ccomp(did-14, specify-16)
+amod(source-18, accurate-17)
+dobj(specify-16, source-18)
+cc(source-18, and-19)
+dobj(specify-16, sink-20)
+conj:and(source-18, sink-20)
+punct(did-14, ,-21)
+cc(did-14, but-22)
+nsubj(indicates-24, analysis-23)
+conj:but(did-14, indicates-24)
+ccomp(approved-37, indicates-24)
+det(transaction-26, the-25)
+nsubj(flow-28, transaction-26)
+aux(flow-28, can-27)
+ccomp(indicates-24, flow-28)
+mark(compromising-30, without-29)
+advcl:without(flow-28, compromising-30)
+dobj(compromising-30, reliability-31)
+punct(approved-37, ,-32)
+det(tag/schedule-34, the-33)
+nsubjpass(approved-37, tag/schedule-34)
+aux(approved-37, will-35)
+auxpass(approved-37, be-36)
+dobj(approved-37, 3-38)
+punct(approved-37, .-39)
+punct(approved-37, -RRB--40)
+
+Extracted the following NER entity mentions:
+3	NUMBER
+
+Sentence #10 (87 tokens):
+If, at the time a transaction is tagged/scheduled, the MISO reservation
+did NOT specify accurate source and sink, and analysis indicates the
+transaction cannot flow without compromising reliability (i.e., the
+transaction will cause or contribute to a constraint), the tag/schedule will
+be denied
+
+While this is not as unrestrictive as we might want, it allows us a great
+deal more flexibility that the Entergy Source/Sink barrier while at the same
+time allaying the MISO's reliability concerns.
+
+Tokens:
+[Text=If CharacterOffsetBegin=1381 CharacterOffsetEnd=1383 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1383 CharacterOffsetEnd=1384 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=1385 CharacterOffsetEnd=1387 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1388 CharacterOffsetEnd=1391 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=1392 CharacterOffsetEnd=1396 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=1397 CharacterOffsetEnd=1398 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=transaction CharacterOffsetBegin=1399 CharacterOffsetEnd=1410 PartOfSpeech=NN Lemma=transaction NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=1411 CharacterOffsetEnd=1413 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=tagged/scheduled CharacterOffsetBegin=1414 CharacterOffsetEnd=1430 PartOfSpeech=VBN Lemma=tagged/scheduled NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1430 CharacterOffsetEnd=1431 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1432 CharacterOffsetEnd=1435 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=MISO CharacterOffsetBegin=1436 CharacterOffsetEnd=1440 PartOfSpeech=NNP Lemma=MISO NamedEntityTag=O]
+[Text=reservation CharacterOffsetBegin=1441 CharacterOffsetEnd=1452 PartOfSpeech=NN Lemma=reservation NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=1453 CharacterOffsetEnd=1456 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=NOT CharacterOffsetBegin=1457 CharacterOffsetEnd=1460 PartOfSpeech=NNP Lemma=NOT NamedEntityTag=O]
+[Text=specify CharacterOffsetBegin=1461 CharacterOffsetEnd=1468 PartOfSpeech=VB Lemma=specify NamedEntityTag=O]
+[Text=accurate CharacterOffsetBegin=1469 CharacterOffsetEnd=1477 PartOfSpeech=JJ Lemma=accurate NamedEntityTag=O]
+[Text=source CharacterOffsetBegin=1478 CharacterOffsetEnd=1484 PartOfSpeech=NN Lemma=source NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1485 CharacterOffsetEnd=1488 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=sink CharacterOffsetBegin=1489 CharacterOffsetEnd=1493 PartOfSpeech=NN Lemma=sink NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1493 CharacterOffsetEnd=1494 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1495 CharacterOffsetEnd=1498 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=analysis CharacterOffsetBegin=1499 CharacterOffsetEnd=1507 PartOfSpeech=NN Lemma=analysis NamedEntityTag=O]
+[Text=indicates CharacterOffsetBegin=1508 CharacterOffsetEnd=1517 PartOfSpeech=VBZ Lemma=indicate NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1518 CharacterOffsetEnd=1521 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=transaction CharacterOffsetBegin=1522 CharacterOffsetEnd=1533 PartOfSpeech=NN Lemma=transaction NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=1534 CharacterOffsetEnd=1537 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=1537 CharacterOffsetEnd=1540 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=flow CharacterOffsetBegin=1541 CharacterOffsetEnd=1545 PartOfSpeech=VB Lemma=flow NamedEntityTag=O]
+[Text=without CharacterOffsetBegin=1546 CharacterOffsetEnd=1553 PartOfSpeech=IN Lemma=without NamedEntityTag=O]
+[Text=compromising CharacterOffsetBegin=1554 CharacterOffsetEnd=1566 PartOfSpeech=VBG Lemma=compromise NamedEntityTag=O]
+[Text=reliability CharacterOffsetBegin=1567 CharacterOffsetEnd=1578 PartOfSpeech=NN Lemma=reliability NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=1579 CharacterOffsetEnd=1580 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=i.e. CharacterOffsetBegin=1580 CharacterOffsetEnd=1584 PartOfSpeech=FW Lemma=i.e. NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1584 CharacterOffsetEnd=1585 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1586 CharacterOffsetEnd=1589 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=transaction CharacterOffsetBegin=1590 CharacterOffsetEnd=1601 PartOfSpeech=NN Lemma=transaction NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=1602 CharacterOffsetEnd=1606 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=cause CharacterOffsetBegin=1607 CharacterOffsetEnd=1612 PartOfSpeech=VB Lemma=cause NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=1613 CharacterOffsetEnd=1615 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=contribute CharacterOffsetBegin=1616 CharacterOffsetEnd=1626 PartOfSpeech=VB Lemma=contribute NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1627 CharacterOffsetEnd=1629 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=1630 CharacterOffsetEnd=1631 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=constraint CharacterOffsetBegin=1632 CharacterOffsetEnd=1642 PartOfSpeech=NN Lemma=constraint NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=1642 CharacterOffsetEnd=1643 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1643 CharacterOffsetEnd=1644 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1645 CharacterOffsetEnd=1648 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=tag/schedule CharacterOffsetBegin=1649 CharacterOffsetEnd=1661 PartOfSpeech=NN Lemma=tag/schedule NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=1662 CharacterOffsetEnd=1666 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=1667 CharacterOffsetEnd=1669 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=denied CharacterOffsetBegin=1670 CharacterOffsetEnd=1676 PartOfSpeech=VBN Lemma=deny NamedEntityTag=O]
+[Text=While CharacterOffsetBegin=1678 CharacterOffsetEnd=1683 PartOfSpeech=IN Lemma=while NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=1684 CharacterOffsetEnd=1688 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=1689 CharacterOffsetEnd=1691 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=1692 CharacterOffsetEnd=1695 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=1696 CharacterOffsetEnd=1698 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=unrestrictive CharacterOffsetBegin=1699 CharacterOffsetEnd=1712 PartOfSpeech=JJ Lemma=unrestrictive NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=1713 CharacterOffsetEnd=1715 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=1716 CharacterOffsetEnd=1718 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=might CharacterOffsetBegin=1719 CharacterOffsetEnd=1724 PartOfSpeech=MD Lemma=might NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=1725 CharacterOffsetEnd=1729 PartOfSpeech=VB Lemma=want NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1729 CharacterOffsetEnd=1730 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=1731 CharacterOffsetEnd=1733 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=allows CharacterOffsetBegin=1734 CharacterOffsetEnd=1740 PartOfSpeech=VBZ Lemma=allow NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=1741 CharacterOffsetEnd=1743 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=1744 CharacterOffsetEnd=1745 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=1746 CharacterOffsetEnd=1751 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=deal CharacterOffsetBegin=1752 CharacterOffsetEnd=1756 PartOfSpeech=NN Lemma=deal NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=1757 CharacterOffsetEnd=1761 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=flexibility CharacterOffsetBegin=1762 CharacterOffsetEnd=1773 PartOfSpeech=NN Lemma=flexibility NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=1774 CharacterOffsetEnd=1778 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1779 CharacterOffsetEnd=1782 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Entergy CharacterOffsetBegin=1783 CharacterOffsetEnd=1790 PartOfSpeech=NNP Lemma=Entergy NamedEntityTag=ORGANIZATION]
+[Text=Source/Sink CharacterOffsetBegin=1791 CharacterOffsetEnd=1802 PartOfSpeech=NNP Lemma=Source/Sink NamedEntityTag=O]
+[Text=barrier CharacterOffsetBegin=1803 CharacterOffsetEnd=1810 PartOfSpeech=NN Lemma=barrier NamedEntityTag=O]
+[Text=while CharacterOffsetBegin=1811 CharacterOffsetEnd=1816 PartOfSpeech=IN Lemma=while NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=1817 CharacterOffsetEnd=1819 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1820 CharacterOffsetEnd=1823 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=same CharacterOffsetBegin=1824 CharacterOffsetEnd=1828 PartOfSpeech=JJ Lemma=same NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=1829 CharacterOffsetEnd=1833 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=allaying CharacterOffsetBegin=1834 CharacterOffsetEnd=1842 PartOfSpeech=VBG Lemma=allay NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1843 CharacterOffsetEnd=1846 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=MISO CharacterOffsetBegin=1847 CharacterOffsetEnd=1851 PartOfSpeech=NNP Lemma=MISO NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=1851 CharacterOffsetEnd=1853 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=reliability CharacterOffsetBegin=1854 CharacterOffsetEnd=1865 PartOfSpeech=NN Lemma=reliability NamedEntityTag=O]
+[Text=concerns CharacterOffsetBegin=1866 CharacterOffsetEnd=1874 PartOfSpeech=NNS Lemma=concern NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1874 CharacterOffsetEnd=1875 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If) (, ,)
+      (S
+        (S
+          (PP (IN at)
+            (NP (DT the) (NN time)))
+          (NP (DT a) (NN transaction))
+          (VP (VBZ is)
+            (VP (VBN tagged/scheduled))))
+        (, ,)
+        (S
+          (NP (DT the) (NNP MISO) (NN reservation))
+          (VP (VBD did)
+            (S
+              (NP (NNP NOT))
+              (VP (VB specify)
+                (NP
+                  (ADJP (JJ accurate))
+                  (NN source)
+                  (CC and)
+                  (NN sink))))))
+        (, ,)
+        (CC and)
+        (S
+          (NP (NN analysis))
+          (VP (VBZ indicates)
+            (SBAR
+              (S
+                (NP (DT the) (NN transaction))
+                (VP (MD can) (RB not)
+                  (VP (VB flow)
+                    (PP (IN without)
+                      (S
+                        (VP (VBG compromising)
+                          (NP (NN reliability)))))))))))))
+    (PRN (-LRB- -LRB-)
+      (S
+        (NP (FW i.e.))
+        (, ,)
+        (NP (DT the) (NN transaction))
+        (VP (MD will)
+          (VP (VB cause)
+            (CC or)
+            (VB contribute)
+            (PP (TO to)
+              (NP (DT a) (NN constraint))))))
+      (-RRB- -RRB-))
+    (, ,)
+    (NP (DT the) (NN tag/schedule))
+    (VP (MD will)
+      (VP (VB be)
+        (VP (VBN denied)
+          (S
+            (SBAR (IN While)
+              (S
+                (NP (DT this))
+                (VP (VBZ is) (RB not)
+                  (ADJP (IN as) (JJ unrestrictive))
+                  (SBAR (IN as)
+                    (S
+                      (NP (PRP we))
+                      (VP (MD might)
+                        (VP (VB want))))))))
+            (, ,)
+            (NP (PRP it))
+            (VP (VBZ allows)
+              (S
+                (NP (PRP us))
+                (NP
+                  (NP (DT a)
+                    (ADVP
+                      (NP (JJ great) (NN deal))
+                      (RBR more))
+                    (NN flexibility))
+                  (PP (IN that)
+                    (NP (DT the) (NNP Entergy) (NNP Source/Sink) (NN barrier)))))
+              (SBAR (IN while)
+                (S
+                  (PP (IN at)
+                    (NP (DT the) (JJ same) (NN time)))
+                  (VP (VBG allaying)
+                    (NP
+                      (NP (DT the) (NNP MISO) (POS 's))
+                      (NN reliability) (NNS concerns))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, denied-51)
+mark(tagged/scheduled-9, If-1)
+punct(tagged/scheduled-9, ,-2)
+case(time-5, at-3)
+det(time-5, the-4)
+nmod:at(tagged/scheduled-9, time-5)
+det(transaction-7, a-6)
+nsubjpass(tagged/scheduled-9, transaction-7)
+auxpass(tagged/scheduled-9, is-8)
+advcl:if(denied-51, tagged/scheduled-9)
+punct(tagged/scheduled-9, ,-10)
+det(reservation-13, the-11)
+compound(reservation-13, MISO-12)
+nsubj(did-14, reservation-13)
+ccomp(tagged/scheduled-9, did-14)
+nsubj(specify-16, NOT-15)
+ccomp(did-14, specify-16)
+amod(source-18, accurate-17)
+dobj(specify-16, source-18)
+cc(source-18, and-19)
+dobj(specify-16, sink-20)
+conj:and(source-18, sink-20)
+punct(tagged/scheduled-9, ,-21)
+cc(tagged/scheduled-9, and-22)
+nsubj(indicates-24, analysis-23)
+conj:and(tagged/scheduled-9, indicates-24)
+advcl:if(denied-51, indicates-24)
+det(transaction-26, the-25)
+nsubj(flow-29, transaction-26)
+aux(flow-29, can-27)
+neg(flow-29, not-28)
+ccomp(indicates-24, flow-29)
+mark(compromising-31, without-30)
+advcl:without(flow-29, compromising-31)
+dobj(compromising-31, reliability-32)
+punct(cause-39, -LRB--33)
+nsubj(cause-39, i.e.-34)
+punct(cause-39, ,-35)
+det(transaction-37, the-36)
+nsubj(cause-39, transaction-37)
+nsubj(contribute-41, transaction-37)
+aux(cause-39, will-38)
+parataxis(denied-51, cause-39)
+cc(cause-39, or-40)
+conj:or(cause-39, contribute-41)
+parataxis(denied-51, contribute-41)
+case(constraint-44, to-42)
+det(constraint-44, a-43)
+nmod:to(cause-39, constraint-44)
+punct(cause-39, -RRB--45)
+punct(denied-51, ,-46)
+det(tag/schedule-48, the-47)
+nsubjpass(denied-51, tag/schedule-48)
+aux(denied-51, will-49)
+auxpass(denied-51, be-50)
+mark(unrestrictive-57, While-52)
+nsubj(unrestrictive-57, this-53)
+cop(unrestrictive-57, is-54)
+neg(unrestrictive-57, not-55)
+dep(unrestrictive-57, as-56)
+advcl:while(allows-64, unrestrictive-57)
+mark(want-61, as-58)
+nsubj(want-61, we-59)
+aux(want-61, might-60)
+advcl:as(unrestrictive-57, want-61)
+punct(allows-64, ,-62)
+nsubj(allows-64, it-63)
+ccomp(denied-51, allows-64)
+nsubj(flexibility-70, us-65)
+det(flexibility-70, a-66)
+amod(deal-68, great-67)
+nmod:npmod(more-69, deal-68)
+advmod(flexibility-70, more-69)
+xcomp(allows-64, flexibility-70)
+case(barrier-75, that-71)
+det(barrier-75, the-72)
+compound(barrier-75, Entergy-73)
+compound(barrier-75, Source/Sink-74)
+nmod:that(flexibility-70, barrier-75)
+mark(allaying-81, while-76)
+case(time-80, at-77)
+det(time-80, the-78)
+amod(time-80, same-79)
+nmod:at(allaying-81, time-80)
+advcl:while(allows-64, allaying-81)
+det(MISO-83, the-82)
+nmod:poss(concerns-86, MISO-83)
+case(MISO-83, 's-84)
+compound(concerns-86, reliability-85)
+dobj(allaying-81, concerns-86)
+punct(denied-51, .-87)
+
+Extracted the following NER entity mentions:
+Entergy	ORGANIZATION
+MISO	ORGANIZATION
+
+Sentence #11 (23 tokens):
+Effectively, this allows us
+to redirect both firm and non-firm at the time of tagging/scheduling without
+a loss in transmission priority.
+
+Tokens:
+[Text=Effectively CharacterOffsetBegin=1877 CharacterOffsetEnd=1888 PartOfSpeech=RB Lemma=effectively NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1888 CharacterOffsetEnd=1889 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=1890 CharacterOffsetEnd=1894 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=allows CharacterOffsetBegin=1895 CharacterOffsetEnd=1901 PartOfSpeech=VBZ Lemma=allow NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=1902 CharacterOffsetEnd=1904 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1905 CharacterOffsetEnd=1907 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=redirect CharacterOffsetBegin=1908 CharacterOffsetEnd=1916 PartOfSpeech=VB Lemma=redirect NamedEntityTag=O]
+[Text=both CharacterOffsetBegin=1917 CharacterOffsetEnd=1921 PartOfSpeech=DT Lemma=both NamedEntityTag=O]
+[Text=firm CharacterOffsetBegin=1922 CharacterOffsetEnd=1926 PartOfSpeech=NN Lemma=firm NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1927 CharacterOffsetEnd=1930 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=non-firm CharacterOffsetBegin=1931 CharacterOffsetEnd=1939 PartOfSpeech=JJ Lemma=non-firm NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=1940 CharacterOffsetEnd=1942 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1943 CharacterOffsetEnd=1946 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=1947 CharacterOffsetEnd=1951 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=1952 CharacterOffsetEnd=1954 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=tagging/scheduling CharacterOffsetBegin=1955 CharacterOffsetEnd=1973 PartOfSpeech=VBG Lemma=tagging/scheduling NamedEntityTag=O]
+[Text=without CharacterOffsetBegin=1974 CharacterOffsetEnd=1981 PartOfSpeech=IN Lemma=without NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=1982 CharacterOffsetEnd=1983 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=loss CharacterOffsetBegin=1984 CharacterOffsetEnd=1988 PartOfSpeech=NN Lemma=loss NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=1989 CharacterOffsetEnd=1991 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=transmission CharacterOffsetBegin=1992 CharacterOffsetEnd=2004 PartOfSpeech=NN Lemma=transmission NamedEntityTag=O]
+[Text=priority CharacterOffsetBegin=2005 CharacterOffsetEnd=2013 PartOfSpeech=NN Lemma=priority NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=2013 CharacterOffsetEnd=2014 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Effectively))
+    (, ,)
+    (NP (DT this))
+    (VP (VBZ allows)
+      (S
+        (NP (PRP us))
+        (VP (TO to)
+          (VP (VB redirect)
+            (NP
+              (NP (DT both) (NN firm))
+              (CC and)
+              (NP (JJ non-firm)))
+            (PP (IN at)
+              (NP
+                (NP (DT the) (NN time))
+                (PP (IN of)
+                  (S
+                    (VP (VBG tagging/scheduling)
+                      (PP (IN without)
+                        (NP
+                          (NP (DT a) (NN loss))
+                          (PP (IN in)
+                            (NP (NN transmission) (NN priority))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, allows-4)
+advmod(allows-4, Effectively-1)
+punct(allows-4, ,-2)
+nsubj(allows-4, this-3)
+dobj(allows-4, us-5)
+nsubj:xsubj(redirect-7, us-5)
+mark(redirect-7, to-6)
+xcomp(allows-4, redirect-7)
+det(firm-9, both-8)
+dobj(redirect-7, firm-9)
+cc(firm-9, and-10)
+dobj(redirect-7, non-firm-11)
+conj:and(firm-9, non-firm-11)
+case(time-14, at-12)
+det(time-14, the-13)
+nmod:at(redirect-7, time-14)
+mark(tagging/scheduling-16, of-15)
+acl:of(time-14, tagging/scheduling-16)
+case(loss-19, without-17)
+det(loss-19, a-18)
+nmod:without(tagging/scheduling-16, loss-19)
+case(priority-22, in-20)
+compound(priority-22, transmission-21)
+nmod:in(loss-19, priority-22)
+punct(allows-4, .-23)
+
+Extracted the following NER entity mentions:
+
+Sentence #12 (27 tokens):
+Not only will this give us more flexibility
+within MISO, but the MISO intends to sell it to the Alliance as well under
+the IRCA.
+
+Tokens:
+[Text=Not CharacterOffsetBegin=2016 CharacterOffsetEnd=2019 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=2020 CharacterOffsetEnd=2024 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=2025 CharacterOffsetEnd=2029 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=2030 CharacterOffsetEnd=2034 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=give CharacterOffsetBegin=2035 CharacterOffsetEnd=2039 PartOfSpeech=VB Lemma=give NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=2040 CharacterOffsetEnd=2042 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=2043 CharacterOffsetEnd=2047 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=flexibility CharacterOffsetBegin=2048 CharacterOffsetEnd=2059 PartOfSpeech=NN Lemma=flexibility NamedEntityTag=O]
+[Text=within CharacterOffsetBegin=2060 CharacterOffsetEnd=2066 PartOfSpeech=IN Lemma=within NamedEntityTag=O]
+[Text=MISO CharacterOffsetBegin=2067 CharacterOffsetEnd=2071 PartOfSpeech=NNP Lemma=MISO NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=2071 CharacterOffsetEnd=2072 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=2073 CharacterOffsetEnd=2076 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=2077 CharacterOffsetEnd=2080 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=MISO CharacterOffsetBegin=2081 CharacterOffsetEnd=2085 PartOfSpeech=NNP Lemma=MISO NamedEntityTag=ORGANIZATION]
+[Text=intends CharacterOffsetBegin=2086 CharacterOffsetEnd=2093 PartOfSpeech=VBZ Lemma=intend NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=2094 CharacterOffsetEnd=2096 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=sell CharacterOffsetBegin=2097 CharacterOffsetEnd=2101 PartOfSpeech=VB Lemma=sell NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=2102 CharacterOffsetEnd=2104 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=2105 CharacterOffsetEnd=2107 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=2108 CharacterOffsetEnd=2111 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Alliance CharacterOffsetBegin=2112 CharacterOffsetEnd=2120 PartOfSpeech=NNP Lemma=Alliance NamedEntityTag=ORGANIZATION]
+[Text=as CharacterOffsetBegin=2121 CharacterOffsetEnd=2123 PartOfSpeech=RB Lemma=as NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=2124 CharacterOffsetEnd=2128 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=under CharacterOffsetBegin=2129 CharacterOffsetEnd=2134 PartOfSpeech=IN Lemma=under NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=2135 CharacterOffsetEnd=2138 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=IRCA CharacterOffsetBegin=2139 CharacterOffsetEnd=2143 PartOfSpeech=NNP Lemma=IRCA NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=2143 CharacterOffsetEnd=2144 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (CONJP (RB Not) (RB only))
+    (SINV (MD will)
+      (NP (DT this))
+      (VP (VB give)
+        (NP (PRP us))
+        (NP (JJR more) (NN flexibility))
+        (PP (IN within)
+          (NP (NNP MISO)))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (DT the) (NNP MISO))
+      (VP (VBZ intends)
+        (S
+          (VP (TO to)
+            (VP (VB sell)
+              (NP (PRP it))
+              (PP
+                (PP (TO to)
+                  (NP (DT the) (NNP Alliance)))
+                (CONJP (RB as) (RB well))
+                (PP (IN under)
+                  (NP (DT the) (NNP IRCA)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, give-5)
+neg(only-2, Not-1)
+cc:preconj(give-5, only-2)
+aux(give-5, will-3)
+nsubj(give-5, this-4)
+iobj(give-5, us-6)
+amod(flexibility-8, more-7)
+dobj(give-5, flexibility-8)
+case(MISO-10, within-9)
+nmod:within(give-5, MISO-10)
+punct(give-5, ,-11)
+cc(give-5, but-12)
+det(MISO-14, the-13)
+nsubj(intends-15, MISO-14)
+nsubj:xsubj(sell-17, MISO-14)
+nsubj:xsubj(sell-17', MISO-14)
+conj:but(give-5, intends-15)
+mark(sell-17, to-16)
+xcomp(intends-15, sell-17)
+xcomp(intends-15, sell-17')
+conj:and(sell-17, sell-17')
+dobj(sell-17, it-18)
+case(Alliance-21, to-19)
+det(Alliance-21, the-20)
+nmod:to(sell-17, Alliance-21)
+cc(sell-17, as-22)
+mwe(as-22, well-23)
+case(IRCA-26, under-24)
+det(IRCA-26, the-25)
+nmod:under(sell-17', IRCA-26)
+punct(give-5, .-27)
+
+Extracted the following NER entity mentions:
+MISO	ORGANIZATION
+Alliance	ORGANIZATION
+IRCA	ORGANIZATION
+
+Sentence #13 (41 tokens):
+This also can give us a cornerstone in proving to the FERC that the Entergy
+S/S policy is not required for reliability, as other entities are able to
+meet reliability goals without the stifling limits Entergy claims are
+necessary.
+
+Tokens:
+[Text=This CharacterOffsetBegin=2146 CharacterOffsetEnd=2150 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=2151 CharacterOffsetEnd=2155 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=2156 CharacterOffsetEnd=2159 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=give CharacterOffsetBegin=2160 CharacterOffsetEnd=2164 PartOfSpeech=VB Lemma=give NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=2165 CharacterOffsetEnd=2167 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=2168 CharacterOffsetEnd=2169 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=cornerstone CharacterOffsetBegin=2170 CharacterOffsetEnd=2181 PartOfSpeech=NN Lemma=cornerstone NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=2182 CharacterOffsetEnd=2184 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=proving CharacterOffsetBegin=2185 CharacterOffsetEnd=2192 PartOfSpeech=VBG Lemma=prove NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=2193 CharacterOffsetEnd=2195 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=2196 CharacterOffsetEnd=2199 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=FERC CharacterOffsetBegin=2200 CharacterOffsetEnd=2204 PartOfSpeech=NNP Lemma=FERC NamedEntityTag=ORGANIZATION]
+[Text=that CharacterOffsetBegin=2205 CharacterOffsetEnd=2209 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=2210 CharacterOffsetEnd=2213 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Entergy CharacterOffsetBegin=2214 CharacterOffsetEnd=2221 PartOfSpeech=NNP Lemma=Entergy NamedEntityTag=ORGANIZATION]
+[Text=S/S CharacterOffsetBegin=2222 CharacterOffsetEnd=2225 PartOfSpeech=NN Lemma=s/s NamedEntityTag=O]
+[Text=policy CharacterOffsetBegin=2226 CharacterOffsetEnd=2232 PartOfSpeech=NN Lemma=policy NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=2233 CharacterOffsetEnd=2235 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=2236 CharacterOffsetEnd=2239 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=required CharacterOffsetBegin=2240 CharacterOffsetEnd=2248 PartOfSpeech=VBN Lemma=require NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=2249 CharacterOffsetEnd=2252 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=reliability CharacterOffsetBegin=2253 CharacterOffsetEnd=2264 PartOfSpeech=NN Lemma=reliability NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=2264 CharacterOffsetEnd=2265 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=2266 CharacterOffsetEnd=2268 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=2269 CharacterOffsetEnd=2274 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=entities CharacterOffsetBegin=2275 CharacterOffsetEnd=2283 PartOfSpeech=NNS Lemma=entity NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=2284 CharacterOffsetEnd=2287 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=able CharacterOffsetBegin=2288 CharacterOffsetEnd=2292 PartOfSpeech=JJ Lemma=able NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=2293 CharacterOffsetEnd=2295 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=meet CharacterOffsetBegin=2296 CharacterOffsetEnd=2300 PartOfSpeech=VB Lemma=meet NamedEntityTag=O]
+[Text=reliability CharacterOffsetBegin=2301 CharacterOffsetEnd=2312 PartOfSpeech=NN Lemma=reliability NamedEntityTag=O]
+[Text=goals CharacterOffsetBegin=2313 CharacterOffsetEnd=2318 PartOfSpeech=NNS Lemma=goal NamedEntityTag=O]
+[Text=without CharacterOffsetBegin=2319 CharacterOffsetEnd=2326 PartOfSpeech=IN Lemma=without NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=2327 CharacterOffsetEnd=2330 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=stifling CharacterOffsetBegin=2331 CharacterOffsetEnd=2339 PartOfSpeech=VBG Lemma=stifle NamedEntityTag=O]
+[Text=limits CharacterOffsetBegin=2340 CharacterOffsetEnd=2346 PartOfSpeech=NNS Lemma=limit NamedEntityTag=O]
+[Text=Entergy CharacterOffsetBegin=2347 CharacterOffsetEnd=2354 PartOfSpeech=NNP Lemma=Entergy NamedEntityTag=ORGANIZATION]
+[Text=claims CharacterOffsetBegin=2355 CharacterOffsetEnd=2361 PartOfSpeech=NNS Lemma=claim NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=2362 CharacterOffsetEnd=2365 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=necessary CharacterOffsetBegin=2366 CharacterOffsetEnd=2375 PartOfSpeech=JJ Lemma=necessary NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=2375 CharacterOffsetEnd=2376 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This))
+    (ADVP (RB also))
+    (VP (MD can)
+      (VP (VB give)
+        (NP (PRP us))
+        (NP
+          (NP (DT a) (NN cornerstone))
+          (PP (IN in)
+            (S
+              (VP (VBG proving)
+                (PP (TO to)
+                  (NP (DT the) (NNP FERC)))
+                (SBAR (IN that)
+                  (S
+                    (NP (DT the) (NNP Entergy) (NN S/S) (NN policy))
+                    (VP (VBZ is) (RB not)
+                      (VP (VBN required)
+                        (PP (IN for)
+                          (NP (NN reliability)))
+                        (, ,)
+                        (SBAR (IN as)
+                          (S
+                            (NP (JJ other) (NNS entities))
+                            (VP (VBP are)
+                              (ADJP (JJ able)
+                                (S
+                                  (VP (TO to)
+                                    (VP (VB meet)
+                                      (NP (NN reliability) (NNS goals))
+                                      (PP (IN without)
+                                        (NP
+                                          (NP (DT the) (VBG stifling) (NNS limits))
+                                          (SBAR
+                                            (S
+                                              (NP (NNP Entergy) (NNS claims))
+                                              (VP (VBP are)
+                                                (ADJP (JJ necessary))))))))))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, give-4)
+nsubj(give-4, This-1)
+advmod(give-4, also-2)
+aux(give-4, can-3)
+iobj(give-4, us-5)
+det(cornerstone-7, a-6)
+dobj(give-4, cornerstone-7)
+mark(proving-9, in-8)
+acl:in(cornerstone-7, proving-9)
+case(FERC-12, to-10)
+det(FERC-12, the-11)
+nmod:to(proving-9, FERC-12)
+mark(required-20, that-13)
+det(policy-17, the-14)
+compound(policy-17, Entergy-15)
+compound(policy-17, S/S-16)
+nsubjpass(required-20, policy-17)
+auxpass(required-20, is-18)
+neg(required-20, not-19)
+ccomp(proving-9, required-20)
+case(reliability-22, for-21)
+nmod:for(required-20, reliability-22)
+punct(required-20, ,-23)
+mark(able-28, as-24)
+amod(entities-26, other-25)
+nsubj(able-28, entities-26)
+nsubj:xsubj(meet-30, entities-26)
+cop(able-28, are-27)
+advcl:as(required-20, able-28)
+mark(meet-30, to-29)
+xcomp(able-28, meet-30)
+compound(goals-32, reliability-31)
+dobj(meet-30, goals-32)
+case(limits-36, without-33)
+det(limits-36, the-34)
+amod(limits-36, stifling-35)
+nmod:without(meet-30, limits-36)
+compound(claims-38, Entergy-37)
+nsubj(necessary-40, claims-38)
+cop(necessary-40, are-39)
+acl:relcl(limits-36, necessary-40)
+punct(give-4, .-41)
+
+Extracted the following NER entity mentions:
+FERC	ORGANIZATION
+Entergy	ORGANIZATION
+Entergy	ORGANIZATION
+
+Sentence #14 (40 tokens):
+As an aside, we are also pressing the MISO for a Redirection policy that will
+allow for "partial" redirects of service on a short term basis (the Separate
+proposal referenced in the attached document).
+
+Tokens:
+[Text=As CharacterOffsetBegin=2378 CharacterOffsetEnd=2380 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=2381 CharacterOffsetEnd=2383 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=aside CharacterOffsetBegin=2384 CharacterOffsetEnd=2389 PartOfSpeech=RB Lemma=aside NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=2389 CharacterOffsetEnd=2390 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=2391 CharacterOffsetEnd=2393 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=2394 CharacterOffsetEnd=2397 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=2398 CharacterOffsetEnd=2402 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=pressing CharacterOffsetBegin=2403 CharacterOffsetEnd=2411 PartOfSpeech=VBG Lemma=press NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=2412 CharacterOffsetEnd=2415 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=MISO CharacterOffsetBegin=2416 CharacterOffsetEnd=2420 PartOfSpeech=NNP Lemma=MISO NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=2421 CharacterOffsetEnd=2424 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=2425 CharacterOffsetEnd=2426 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Redirection CharacterOffsetBegin=2427 CharacterOffsetEnd=2438 PartOfSpeech=NN Lemma=redirection NamedEntityTag=MISC]
+[Text=policy CharacterOffsetBegin=2439 CharacterOffsetEnd=2445 PartOfSpeech=NN Lemma=policy NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=2446 CharacterOffsetEnd=2450 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=2451 CharacterOffsetEnd=2455 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=allow CharacterOffsetBegin=2456 CharacterOffsetEnd=2461 PartOfSpeech=VB Lemma=allow NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=2462 CharacterOffsetEnd=2465 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=2466 CharacterOffsetEnd=2467 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=partial CharacterOffsetBegin=2467 CharacterOffsetEnd=2474 PartOfSpeech=JJ Lemma=partial NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=2474 CharacterOffsetEnd=2475 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=redirects CharacterOffsetBegin=2476 CharacterOffsetEnd=2485 PartOfSpeech=NNS Lemma=redirect NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=2486 CharacterOffsetEnd=2488 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=service CharacterOffsetBegin=2489 CharacterOffsetEnd=2496 PartOfSpeech=NN Lemma=service NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=2497 CharacterOffsetEnd=2499 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=2500 CharacterOffsetEnd=2501 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=short CharacterOffsetBegin=2502 CharacterOffsetEnd=2507 PartOfSpeech=JJ Lemma=short NamedEntityTag=O]
+[Text=term CharacterOffsetBegin=2508 CharacterOffsetEnd=2512 PartOfSpeech=NN Lemma=term NamedEntityTag=O]
+[Text=basis CharacterOffsetBegin=2513 CharacterOffsetEnd=2518 PartOfSpeech=NN Lemma=basis NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=2519 CharacterOffsetEnd=2520 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=2520 CharacterOffsetEnd=2523 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Separate CharacterOffsetBegin=2524 CharacterOffsetEnd=2532 PartOfSpeech=JJ Lemma=separate NamedEntityTag=O]
+[Text=proposal CharacterOffsetBegin=2533 CharacterOffsetEnd=2541 PartOfSpeech=NN Lemma=proposal NamedEntityTag=O]
+[Text=referenced CharacterOffsetBegin=2542 CharacterOffsetEnd=2552 PartOfSpeech=VBN Lemma=reference NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=2553 CharacterOffsetEnd=2555 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=2556 CharacterOffsetEnd=2559 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=attached CharacterOffsetBegin=2560 CharacterOffsetEnd=2568 PartOfSpeech=VBN Lemma=attach NamedEntityTag=O]
+[Text=document CharacterOffsetBegin=2569 CharacterOffsetEnd=2577 PartOfSpeech=NN Lemma=document NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=2577 CharacterOffsetEnd=2578 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=2578 CharacterOffsetEnd=2579 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (DT an))
+        (ADVP (RB aside))))
+    (, ,)
+    (NP (PRP we))
+    (VP (VBP are)
+      (ADVP (RB also))
+      (VP (VBG pressing)
+        (NP
+          (NP (DT the) (NNP MISO))
+          (PP (IN for)
+            (NP (DT a) (NN Redirection) (NN policy)))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (MD will)
+                (VP (VB allow)
+                  (PP (IN for)
+                    (NP
+                      (NP (`` ``) (JJ partial) ('' '') (NNS redirects))
+                      (PP (IN of)
+                        (NP (NN service)))))
+                  (PP (IN on)
+                    (NP
+                      (NP (DT a) (JJ short) (NN term) (NN basis))
+                      (PRN (-LRB- -LRB-)
+                        (NP
+                          (NP (DT the) (JJ Separate) (NN proposal))
+                          (VP (VBN referenced)
+                            (PP (IN in)
+                              (NP (DT the) (VBN attached) (NN document)))))
+                        (-RRB- -RRB-)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, pressing-8)
+mark(an-2, As-1)
+advcl:as(pressing-8, an-2)
+advmod(an-2, aside-3)
+punct(pressing-8, ,-4)
+nsubj(pressing-8, we-5)
+aux(pressing-8, are-6)
+advmod(pressing-8, also-7)
+det(MISO-10, the-9)
+dobj(pressing-8, MISO-10)
+nsubj(allow-17, MISO-10)
+case(policy-14, for-11)
+det(policy-14, a-12)
+compound(policy-14, Redirection-13)
+nmod:for(MISO-10, policy-14)
+ref(MISO-10, that-15)
+aux(allow-17, will-16)
+acl:relcl(MISO-10, allow-17)
+case(redirects-22, for-18)
+punct(redirects-22, ``-19)
+amod(redirects-22, partial-20)
+punct(redirects-22, ''-21)
+nmod:for(allow-17, redirects-22)
+case(service-24, of-23)
+nmod:of(redirects-22, service-24)
+case(basis-29, on-25)
+det(basis-29, a-26)
+amod(basis-29, short-27)
+compound(basis-29, term-28)
+nmod:on(allow-17, basis-29)
+punct(proposal-33, -LRB--30)
+det(proposal-33, the-31)
+amod(proposal-33, Separate-32)
+dep(basis-29, proposal-33)
+acl(proposal-33, referenced-34)
+case(document-38, in-35)
+det(document-38, the-36)
+amod(document-38, attached-37)
+nmod:in(referenced-34, document-38)
+punct(proposal-33, -RRB--39)
+punct(pressing-8, .-40)
+
+Extracted the following NER entity mentions:
+Redirection	MISC
+
+Sentence #15 (34 tokens):
+This will allow us to
+accomplish the same goals as the new MISO policy, but reduce the availability
+risk by allowing us to redirect prior to the time the transaction is
+tagged/scheduled.
+
+Tokens:
+[Text=This CharacterOffsetBegin=2581 CharacterOffsetEnd=2585 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=2586 CharacterOffsetEnd=2590 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=allow CharacterOffsetBegin=2591 CharacterOffsetEnd=2596 PartOfSpeech=VB Lemma=allow NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=2597 CharacterOffsetEnd=2599 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=2600 CharacterOffsetEnd=2602 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=accomplish CharacterOffsetBegin=2603 CharacterOffsetEnd=2613 PartOfSpeech=VB Lemma=accomplish NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=2614 CharacterOffsetEnd=2617 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=same CharacterOffsetBegin=2618 CharacterOffsetEnd=2622 PartOfSpeech=JJ Lemma=same NamedEntityTag=O]
+[Text=goals CharacterOffsetBegin=2623 CharacterOffsetEnd=2628 PartOfSpeech=NNS Lemma=goal NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=2629 CharacterOffsetEnd=2631 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=2632 CharacterOffsetEnd=2635 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=2636 CharacterOffsetEnd=2639 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=MISO CharacterOffsetBegin=2640 CharacterOffsetEnd=2644 PartOfSpeech=NNP Lemma=MISO NamedEntityTag=O]
+[Text=policy CharacterOffsetBegin=2645 CharacterOffsetEnd=2651 PartOfSpeech=NN Lemma=policy NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=2651 CharacterOffsetEnd=2652 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=2653 CharacterOffsetEnd=2656 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=reduce CharacterOffsetBegin=2657 CharacterOffsetEnd=2663 PartOfSpeech=VB Lemma=reduce NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=2664 CharacterOffsetEnd=2667 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=availability CharacterOffsetBegin=2668 CharacterOffsetEnd=2680 PartOfSpeech=NN Lemma=availability NamedEntityTag=O]
+[Text=risk CharacterOffsetBegin=2681 CharacterOffsetEnd=2685 PartOfSpeech=NN Lemma=risk NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=2686 CharacterOffsetEnd=2688 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=allowing CharacterOffsetBegin=2689 CharacterOffsetEnd=2697 PartOfSpeech=VBG Lemma=allow NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=2698 CharacterOffsetEnd=2700 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=2701 CharacterOffsetEnd=2703 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=redirect CharacterOffsetBegin=2704 CharacterOffsetEnd=2712 PartOfSpeech=VB Lemma=redirect NamedEntityTag=O]
+[Text=prior CharacterOffsetBegin=2713 CharacterOffsetEnd=2718 PartOfSpeech=RB Lemma=prior NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=2719 CharacterOffsetEnd=2721 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=2722 CharacterOffsetEnd=2725 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=2726 CharacterOffsetEnd=2730 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=2731 CharacterOffsetEnd=2734 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=transaction CharacterOffsetBegin=2735 CharacterOffsetEnd=2746 PartOfSpeech=NN Lemma=transaction NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=2747 CharacterOffsetEnd=2749 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=tagged/scheduled CharacterOffsetBegin=2750 CharacterOffsetEnd=2766 PartOfSpeech=VBN Lemma=tagged/scheduled NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=2766 CharacterOffsetEnd=2767 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (DT This))
+      (VP (MD will)
+        (VP (VB allow)
+          (S
+            (NP (PRP us))
+            (VP (TO to)
+              (VP (VB accomplish)
+                (NP (DT the) (JJ same) (NNS goals))
+                (PP (IN as)
+                  (NP (DT the) (JJ new) (NNP MISO) (NN policy)))))))))
+    (, ,)
+    (CC but)
+    (S
+      (S
+        (VP (VB reduce)
+          (NP (DT the) (NN availability) (NN risk))
+          (PP (IN by)
+            (S
+              (VP (VBG allowing)
+                (S
+                  (NP (PRP us))
+                  (VP (TO to)
+                    (VP (VB redirect)
+                      (ADVP (RB prior)
+                        (PP (TO to)
+                          (NP (DT the) (NN time))))))))))))
+      (NP (DT the) (NN transaction))
+      (VP (VBZ is)
+        (VP (VBN tagged/scheduled))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, allow-3)
+nsubj(allow-3, This-1)
+aux(allow-3, will-2)
+dobj(allow-3, us-4)
+nsubj:xsubj(accomplish-6, us-4)
+mark(accomplish-6, to-5)
+xcomp(allow-3, accomplish-6)
+det(goals-9, the-7)
+amod(goals-9, same-8)
+dobj(accomplish-6, goals-9)
+case(policy-14, as-10)
+det(policy-14, the-11)
+amod(policy-14, new-12)
+compound(policy-14, MISO-13)
+nmod:as(accomplish-6, policy-14)
+punct(allow-3, ,-15)
+cc(allow-3, but-16)
+dep(tagged/scheduled-33, reduce-17)
+det(risk-20, the-18)
+compound(risk-20, availability-19)
+dobj(reduce-17, risk-20)
+mark(allowing-22, by-21)
+advcl:by(reduce-17, allowing-22)
+dobj(allowing-22, us-23)
+nsubj:xsubj(redirect-25, us-23)
+mark(redirect-25, to-24)
+xcomp(allowing-22, redirect-25)
+advmod(redirect-25, prior-26)
+case(time-29, to-27)
+det(time-29, the-28)
+nmod:to(prior-26, time-29)
+det(transaction-31, the-30)
+nsubjpass(tagged/scheduled-33, transaction-31)
+auxpass(tagged/scheduled-33, is-32)
+conj:but(allow-3, tagged/scheduled-33)
+punct(allow-3, .-34)
+
+Extracted the following NER entity mentions:
+
+Sentence #16 (32 tokens):
+These two proposals, when combined, will allow us for much
+more flexible uses of transmission without ignoring the reliability mantra
+providers chant whenever we ask for innovation and change.
+
+Tokens:
+[Text=These CharacterOffsetBegin=2769 CharacterOffsetEnd=2774 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=2775 CharacterOffsetEnd=2778 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=proposals CharacterOffsetBegin=2779 CharacterOffsetEnd=2788 PartOfSpeech=NNS Lemma=proposal NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=2788 CharacterOffsetEnd=2789 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=2790 CharacterOffsetEnd=2794 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=combined CharacterOffsetBegin=2795 CharacterOffsetEnd=2803 PartOfSpeech=VBN Lemma=combine NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=2803 CharacterOffsetEnd=2804 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=2805 CharacterOffsetEnd=2809 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=allow CharacterOffsetBegin=2810 CharacterOffsetEnd=2815 PartOfSpeech=VB Lemma=allow NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=2816 CharacterOffsetEnd=2818 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=2819 CharacterOffsetEnd=2822 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=2823 CharacterOffsetEnd=2827 PartOfSpeech=RB Lemma=much NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=2828 CharacterOffsetEnd=2832 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=flexible CharacterOffsetBegin=2833 CharacterOffsetEnd=2841 PartOfSpeech=JJ Lemma=flexible NamedEntityTag=O]
+[Text=uses CharacterOffsetBegin=2842 CharacterOffsetEnd=2846 PartOfSpeech=NNS Lemma=use NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=2847 CharacterOffsetEnd=2849 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=transmission CharacterOffsetBegin=2850 CharacterOffsetEnd=2862 PartOfSpeech=NN Lemma=transmission NamedEntityTag=O]
+[Text=without CharacterOffsetBegin=2863 CharacterOffsetEnd=2870 PartOfSpeech=IN Lemma=without NamedEntityTag=O]
+[Text=ignoring CharacterOffsetBegin=2871 CharacterOffsetEnd=2879 PartOfSpeech=VBG Lemma=ignore NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=2880 CharacterOffsetEnd=2883 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=reliability CharacterOffsetBegin=2884 CharacterOffsetEnd=2895 PartOfSpeech=NN Lemma=reliability NamedEntityTag=O]
+[Text=mantra CharacterOffsetBegin=2896 CharacterOffsetEnd=2902 PartOfSpeech=NN Lemma=mantra NamedEntityTag=O]
+[Text=providers CharacterOffsetBegin=2903 CharacterOffsetEnd=2912 PartOfSpeech=NNS Lemma=provider NamedEntityTag=O]
+[Text=chant CharacterOffsetBegin=2913 CharacterOffsetEnd=2918 PartOfSpeech=VBP Lemma=chant NamedEntityTag=O]
+[Text=whenever CharacterOffsetBegin=2919 CharacterOffsetEnd=2927 PartOfSpeech=WRB Lemma=whenever NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=2928 CharacterOffsetEnd=2930 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=ask CharacterOffsetBegin=2931 CharacterOffsetEnd=2934 PartOfSpeech=VBP Lemma=ask NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=2935 CharacterOffsetEnd=2938 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=innovation CharacterOffsetBegin=2939 CharacterOffsetEnd=2949 PartOfSpeech=NN Lemma=innovation NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=2950 CharacterOffsetEnd=2953 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=change CharacterOffsetBegin=2954 CharacterOffsetEnd=2960 PartOfSpeech=NN Lemma=change NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=2960 CharacterOffsetEnd=2961 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT These) (CD two) (NNS proposals))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (VP (VBN combined))))
+      (, ,))
+    (VP (MD will)
+      (VP (VB allow)
+        (NP (PRP us))
+        (PP (IN for)
+          (NP
+            (NP
+              (ADJP (RB much) (JJR more))
+              (JJ flexible) (NNS uses))
+            (PP (IN of)
+              (NP (NN transmission)))))
+        (PP (IN without)
+          (S
+            (VP (VBG ignoring)
+              (NP
+                (NP (DT the) (NN reliability))
+                (SBAR
+                  (S
+                    (NP (NN mantra) (NNS providers))
+                    (VP (VBP chant)
+                      (SBAR
+                        (WHADVP (WRB whenever))
+                        (S
+                          (NP (PRP we))
+                          (VP (VBP ask)
+                            (PP (IN for)
+                              (NP (NN innovation)
+                                (CC and)
+                                (NN change)))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, allow-9)
+det(proposals-3, These-1)
+nummod(proposals-3, two-2)
+nsubj(allow-9, proposals-3)
+punct(proposals-3, ,-4)
+advmod(combined-6, when-5)
+acl:relcl(proposals-3, combined-6)
+punct(proposals-3, ,-7)
+aux(allow-9, will-8)
+dobj(allow-9, us-10)
+case(uses-15, for-11)
+advmod(more-13, much-12)
+amod(uses-15, more-13)
+amod(uses-15, flexible-14)
+nmod:for(allow-9, uses-15)
+case(transmission-17, of-16)
+nmod:of(uses-15, transmission-17)
+mark(ignoring-19, without-18)
+advcl:without(allow-9, ignoring-19)
+det(reliability-21, the-20)
+dobj(ignoring-19, reliability-21)
+compound(providers-23, mantra-22)
+nsubj(chant-24, providers-23)
+acl:relcl(reliability-21, chant-24)
+advmod(ask-27, whenever-25)
+nsubj(ask-27, we-26)
+advcl(chant-24, ask-27)
+case(innovation-29, for-28)
+nmod:for(ask-27, innovation-29)
+cc(innovation-29, and-30)
+nmod:for(ask-27, change-31)
+conj:and(innovation-29, change-31)
+punct(allow-9, .-32)
+
+Extracted the following NER entity mentions:
+two	NUMBER
+
+Sentence #17 (10 tokens):
+A detailed write-up of the work accomplished is attached.
+
+Tokens:
+[Text=A CharacterOffsetBegin=2963 CharacterOffsetEnd=2964 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=detailed CharacterOffsetBegin=2965 CharacterOffsetEnd=2973 PartOfSpeech=JJ Lemma=detailed NamedEntityTag=O]
+[Text=write-up CharacterOffsetBegin=2974 CharacterOffsetEnd=2982 PartOfSpeech=NN Lemma=write-up NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=2983 CharacterOffsetEnd=2985 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=2986 CharacterOffsetEnd=2989 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=2990 CharacterOffsetEnd=2994 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text=accomplished CharacterOffsetBegin=2995 CharacterOffsetEnd=3007 PartOfSpeech=VBN Lemma=accomplish NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=3008 CharacterOffsetEnd=3010 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=attached CharacterOffsetBegin=3011 CharacterOffsetEnd=3019 PartOfSpeech=VBN Lemma=attach NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=3019 CharacterOffsetEnd=3020 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (JJ detailed) (NN write-up))
+      (PP (IN of)
+        (NP
+          (NP (DT the) (NN work))
+          (VP (VBN accomplished)))))
+    (VP (VBZ is)
+      (VP (VBN attached)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, attached-9)
+det(write-up-3, A-1)
+amod(write-up-3, detailed-2)
+nsubjpass(attached-9, write-up-3)
+case(work-6, of-4)
+det(work-6, the-5)
+nmod:of(write-up-3, work-6)
+acl(work-6, accomplished-7)
+auxpass(attached-9, is-8)
+punct(attached-9, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #18 (44 tokens):
+Proposal 4,
+Discussion item "Confusing POR/POD Naming," Discussion Item "MISO Proposal
+...time of scheduling," and the Resolutions should be of primary interest to
+those wishing to see more detail on the directions MISO is heading.
+
+Tokens:
+[Text=Proposal CharacterOffsetBegin=3022 CharacterOffsetEnd=3030 PartOfSpeech=NN Lemma=proposal NamedEntityTag=O]
+[Text=4 CharacterOffsetBegin=3031 CharacterOffsetEnd=3032 PartOfSpeech=CD Lemma=4 NamedEntityTag=NUMBER NormalizedNamedEntityTag=4.0]
+[Text=, CharacterOffsetBegin=3032 CharacterOffsetEnd=3033 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Discussion CharacterOffsetBegin=3034 CharacterOffsetEnd=3044 PartOfSpeech=NNP Lemma=Discussion NamedEntityTag=O]
+[Text=item CharacterOffsetBegin=3045 CharacterOffsetEnd=3049 PartOfSpeech=NN Lemma=item NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=3050 CharacterOffsetEnd=3051 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Confusing CharacterOffsetBegin=3051 CharacterOffsetEnd=3060 PartOfSpeech=JJ Lemma=confusing NamedEntityTag=O]
+[Text=POR/POD CharacterOffsetBegin=3061 CharacterOffsetEnd=3068 PartOfSpeech=NN Lemma=por/pod NamedEntityTag=O]
+[Text=Naming CharacterOffsetBegin=3069 CharacterOffsetEnd=3075 PartOfSpeech=NN Lemma=naming NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=3075 CharacterOffsetEnd=3076 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=3076 CharacterOffsetEnd=3077 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=Discussion CharacterOffsetBegin=3078 CharacterOffsetEnd=3088 PartOfSpeech=NNP Lemma=Discussion NamedEntityTag=O]
+[Text=Item CharacterOffsetBegin=3089 CharacterOffsetEnd=3093 PartOfSpeech=NNP Lemma=Item NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=3094 CharacterOffsetEnd=3095 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=MISO CharacterOffsetBegin=3095 CharacterOffsetEnd=3099 PartOfSpeech=NNP Lemma=MISO NamedEntityTag=O]
+[Text=Proposal CharacterOffsetBegin=3100 CharacterOffsetEnd=3108 PartOfSpeech=NNP Lemma=Proposal NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=3109 CharacterOffsetEnd=3112 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=3112 CharacterOffsetEnd=3116 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=3117 CharacterOffsetEnd=3119 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=scheduling CharacterOffsetBegin=3120 CharacterOffsetEnd=3130 PartOfSpeech=NN Lemma=scheduling NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=3130 CharacterOffsetEnd=3131 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=3131 CharacterOffsetEnd=3132 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=3133 CharacterOffsetEnd=3136 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=3137 CharacterOffsetEnd=3140 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Resolutions CharacterOffsetBegin=3141 CharacterOffsetEnd=3152 PartOfSpeech=NNS Lemma=resolution NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=3153 CharacterOffsetEnd=3159 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=3160 CharacterOffsetEnd=3162 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=3163 CharacterOffsetEnd=3165 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=primary CharacterOffsetBegin=3166 CharacterOffsetEnd=3173 PartOfSpeech=JJ Lemma=primary NamedEntityTag=O]
+[Text=interest CharacterOffsetBegin=3174 CharacterOffsetEnd=3182 PartOfSpeech=NN Lemma=interest NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=3183 CharacterOffsetEnd=3185 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=3186 CharacterOffsetEnd=3191 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=wishing CharacterOffsetBegin=3192 CharacterOffsetEnd=3199 PartOfSpeech=VBG Lemma=wish NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=3200 CharacterOffsetEnd=3202 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=3203 CharacterOffsetEnd=3206 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=3207 CharacterOffsetEnd=3211 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=detail CharacterOffsetBegin=3212 CharacterOffsetEnd=3218 PartOfSpeech=NN Lemma=detail NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=3219 CharacterOffsetEnd=3221 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=3222 CharacterOffsetEnd=3225 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=directions CharacterOffsetBegin=3226 CharacterOffsetEnd=3236 PartOfSpeech=NNS Lemma=direction NamedEntityTag=O]
+[Text=MISO CharacterOffsetBegin=3237 CharacterOffsetEnd=3241 PartOfSpeech=NNP Lemma=MISO NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=3242 CharacterOffsetEnd=3244 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=heading CharacterOffsetBegin=3245 CharacterOffsetEnd=3252 PartOfSpeech=VBG Lemma=head NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=3252 CharacterOffsetEnd=3253 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NN Proposal) (CD 4))
+    (, ,)
+    (NP
+      (NP (NNP Discussion) (NN item))
+      (SBAR
+        (S
+          (NP (`` ``)
+            (NP (JJ Confusing) (NN POR/POD) (NN Naming))
+            (, ,) ('' '')
+            (NP
+              (NP (NNP Discussion) (NNP Item) (`` ``) (NNP MISO) (NNP Proposal))
+              (: ...)
+              (NP
+                (NP (NN time))
+                (PP (IN of)
+                  (NP
+                    (NP (NN scheduling))
+                    (, ,) ('' '')
+                    (CC and)
+                    (NP (DT the) (NNS Resolutions)))))))
+          (VP (MD should)
+            (VP (VB be)
+              (PP (IN of)
+                (NP (JJ primary) (NN interest)))
+              (PP (TO to)
+                (NP
+                  (NP (DT those))
+                  (VP (VBG wishing)
+                    (S
+                      (VP (TO to)
+                        (VP (VB see)
+                          (NP (JJR more) (NN detail))
+                          (PP (IN on)
+                            (NP
+                              (NP (DT the) (NNS directions))
+                              (SBAR
+                                (S
+                                  (NP (NNP MISO))
+                                  (VP (VBZ is)
+                                    (VP (VBG heading))))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Proposal-1)
+nummod(Proposal-1, 4-2)
+punct(Proposal-1, ,-3)
+compound(item-5, Discussion-4)
+appos(Proposal-1, item-5)
+punct(Naming-9, ``-6)
+amod(Naming-9, Confusing-7)
+compound(Naming-9, POR/POD-8)
+nsubj(interest-30, Naming-9)
+punct(Naming-9, ,-10)
+punct(Naming-9, ''-11)
+compound(Proposal-16, Discussion-12)
+compound(Proposal-16, Item-13)
+punct(Proposal-16, ``-14)
+compound(Proposal-16, MISO-15)
+dep(Naming-9, Proposal-16)
+punct(Proposal-16, ...-17)
+dep(Proposal-16, time-18)
+case(scheduling-20, of-19)
+nmod:of(time-18, scheduling-20)
+punct(scheduling-20, ,-21)
+punct(scheduling-20, ''-22)
+cc(scheduling-20, and-23)
+det(Resolutions-25, the-24)
+nmod:of(time-18, Resolutions-25)
+conj:and(scheduling-20, Resolutions-25)
+aux(interest-30, should-26)
+cop(interest-30, be-27)
+case(interest-30, of-28)
+amod(interest-30, primary-29)
+acl:relcl(item-5, interest-30)
+case(those-32, to-31)
+nmod:to(interest-30, those-32)
+acl(those-32, wishing-33)
+mark(see-35, to-34)
+xcomp(wishing-33, see-35)
+amod(detail-37, more-36)
+dobj(see-35, detail-37)
+case(directions-40, on-38)
+det(directions-40, the-39)
+nmod:on(see-35, directions-40)
+nsubj(heading-43, MISO-41)
+aux(heading-43, is-42)
+acl:relcl(directions-40, heading-43)
+punct(Proposal-1, .-44)
+
+Extracted the following NER entity mentions:
+4	NUMBER
+
+Coreference set:
+	(1,6,[5,7]) -> (1,6,[4,7]), that is: "Midwest ISO" -> "the Midwest ISO"
+	(1,14,[13,16]) -> (1,6,[4,7]), that is: "the MISO 's" -> "the Midwest ISO"
+	(2,1,[1,2]) -> (1,6,[4,7]), that is: "MISO" -> "the Midwest ISO"
+	(5,12,[11,13]) -> (1,6,[4,7]), that is: "the MISO" -> "the Midwest ISO"
+	(6,5,[5,6]) -> (1,6,[4,7]), that is: "MISO" -> "the Midwest ISO"
+	(10,83,[82,85]) -> (1,6,[4,7]), that is: "the MISO 's" -> "the Midwest ISO"
+	(12,10,[10,11]) -> (1,6,[4,7]), that is: "MISO" -> "the Midwest ISO"
+	(12,14,[13,15]) -> (1,6,[4,7]), that is: "the MISO" -> "the Midwest ISO"
+	(12,18,[18,19]) -> (1,6,[4,7]), that is: "it" -> "the Midwest ISO"
+	(18,41,[41,42]) -> (1,6,[4,7]), that is: "MISO" -> "the Midwest ISO"
+
+Coreference set:
+	(3,2,[1,3]) -> (1,23,[13,24]), that is: "Their proposal" -> "the MISO 's `` at least one source-to-sink reservation '' proposal"
+
+Coreference set:
+	(10,73,[73,74]) -> (2,22,[22,23]), that is: "Entergy" -> "Entergy"
+	(13,15,[15,16]) -> (2,22,[22,23]), that is: "Entergy" -> "Entergy"
+	(13,37,[37,38]) -> (2,22,[22,23]), that is: "Entergy" -> "Entergy"
+
+Coreference set:
+	(18,1,[1,3]) -> (18,16,[12,26]), that is: "Proposal 4" -> "Discussion Item `` MISO Proposal ... time of scheduling , '' and the Resolutions"
+	(18,5,[4,44]) -> (18,16,[12,26]), that is: "Discussion item `` Confusing POR/POD Naming , '' Discussion Item `` MISO Proposal ... time of scheduling , '' and the Resolutions should be of primary interest to those wishing to see more detail on the directions MISO is heading" -> "Discussion Item `` MISO Proposal ... time of scheduling , '' and the Resolutions"
+
+Coreference set:
+	(3,23,[22,24]) -> (3,13,[12,14]), that is: "the tag/schedule" -> "a tag/schedule"
+	(7,21,[20,22]) -> (3,13,[12,14]), that is: "the tag/schedule" -> "a tag/schedule"
+	(9,34,[33,35]) -> (3,13,[12,14]), that is: "the tag/schedule" -> "a tag/schedule"
+	(10,48,[47,49]) -> (3,13,[12,14]), that is: "the tag/schedule" -> "a tag/schedule"
+
+Coreference set:
+	(4,24,[24,25]) -> (4,3,[3,4]), that is: "it" -> "CINergy"
+
+Coreference set:
+	(5,20,[20,21]) -> (4,1,[1,14]), that is: "their" -> "Representatives from CINergy , Duke , Dynegy , ACES , Ameren and LG&E"
+	(5,28,[28,29]) -> (4,1,[1,14]), that is: "them" -> "Representatives from CINergy , Duke , Dynegy , ACES , Ameren and LG&E"
+
+Coreference set:
+	(16,2,[2,3]) -> (5,5,[5,6]), that is: "two" -> "two"
+
+Coreference set:
+	(5,30,[30,31]) -> (5,3,[2,4]), that is: "it" -> "a meeting"
+
+Coreference set:
+	(5,23,[23,24]) -> (5,14,[14,15]), that is: "we" -> "our"
+
+Coreference set:
+	(6,3,[1,11]) -> (6,15,[15,16]), that is: "The new policy that MISO is planning to operate under" -> "1"
+	(6,12,[12,14]) -> (6,15,[15,16]), that is: "as follows" -> "1"
+	(15,14,[11,15]) -> (6,15,[15,16]), that is: "the new MISO policy" -> "1"
+
+Coreference set:
+	(9,5,[4,6]) -> (7,5,[4,6]), that is: "the time" -> "the time"
+	(10,5,[4,6]) -> (7,5,[4,6]), that is: "the time" -> "the time"
+	(15,29,[28,30]) -> (7,5,[4,6]), that is: "the time" -> "the time"
+
+Coreference set:
+	(9,7,[6,8]) -> (7,7,[6,8]), that is: "a transaction" -> "a transaction"
+	(9,26,[25,27]) -> (7,7,[6,8]), that is: "the transaction" -> "a transaction"
+	(10,7,[6,8]) -> (7,7,[6,8]), that is: "a transaction" -> "a transaction"
+	(10,26,[25,27]) -> (7,7,[6,8]), that is: "the transaction" -> "a transaction"
+	(10,37,[36,38]) -> (7,7,[6,8]), that is: "the transaction" -> "a transaction"
+	(15,31,[30,32]) -> (7,7,[6,8]), that is: "the transaction" -> "a transaction"
+
+Coreference set:
+	(9,13,[11,14]) -> (7,13,[11,22]), that is: "the MISO reservation" -> "the MISO reservation specified accurate source and sink , the tag/schedule"
+	(10,13,[11,14]) -> (7,13,[11,22]), that is: "the MISO reservation" -> "the MISO reservation specified accurate source and sink , the tag/schedule"
+
+Coreference set:
+	(10,63,[63,64]) -> (10,53,[53,54]), that is: "it" -> "this"
+	(11,3,[3,4]) -> (10,53,[53,54]), that is: "this" -> "this"
+	(12,4,[4,5]) -> (10,53,[53,54]), that is: "this" -> "this"
+	(13,1,[1,2]) -> (10,53,[53,54]), that is: "This" -> "this"
+	(15,1,[1,2]) -> (10,53,[53,54]), that is: "This" -> "this"
+
+Coreference set:
+	(10,65,[65,66]) -> (10,59,[59,60]), that is: "us" -> "we"
+	(11,5,[5,6]) -> (10,59,[59,60]), that is: "us" -> "we"
+	(12,6,[6,7]) -> (10,59,[59,60]), that is: "us" -> "we"
+	(13,5,[5,6]) -> (10,59,[59,60]), that is: "us" -> "we"
+	(14,5,[5,6]) -> (10,59,[59,60]), that is: "we" -> "we"
+	(15,4,[4,5]) -> (10,59,[59,60]), that is: "us" -> "we"
+	(15,23,[23,24]) -> (10,59,[59,60]), that is: "us" -> "we"
+	(16,10,[10,11]) -> (10,59,[59,60]), that is: "us" -> "we"
+	(16,26,[26,27]) -> (10,59,[59,60]), that is: "we" -> "we"

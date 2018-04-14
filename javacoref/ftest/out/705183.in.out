@@ -1,0 +1,786 @@
+Document: ID=705183.in (6 sentences, 209 tokens)
+
+Sentence #1 (27 tokens):
+I received a call from Ralph Komai, PCB engineer with SoCal, about a pipeline
+liquids collection SoCal wants to take at our Needles facility.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=received CharacterOffsetBegin=2 CharacterOffsetEnd=10 PartOfSpeech=VBD Lemma=receive NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=11 CharacterOffsetEnd=12 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=call CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=call NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Ralph CharacterOffsetBegin=23 CharacterOffsetEnd=28 PartOfSpeech=NNP Lemma=Ralph NamedEntityTag=PERSON]
+[Text=Komai CharacterOffsetBegin=29 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Komai NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=PCB CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=NNP Lemma=PCB NamedEntityTag=ORGANIZATION]
+[Text=engineer CharacterOffsetBegin=40 CharacterOffsetEnd=48 PartOfSpeech=NN Lemma=engineer NamedEntityTag=TITLE]
+[Text=with CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=SoCal CharacterOffsetBegin=54 CharacterOffsetEnd=59 PartOfSpeech=NN Lemma=socal NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=59 CharacterOffsetEnd=60 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=61 CharacterOffsetEnd=66 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=pipeline CharacterOffsetBegin=69 CharacterOffsetEnd=77 PartOfSpeech=NN Lemma=pipeline NamedEntityTag=O]
+[Text=liquids CharacterOffsetBegin=78 CharacterOffsetEnd=85 PartOfSpeech=NNS Lemma=liquid NamedEntityTag=O]
+[Text=collection CharacterOffsetBegin=86 CharacterOffsetEnd=96 PartOfSpeech=NN Lemma=collection NamedEntityTag=O]
+[Text=SoCal CharacterOffsetBegin=97 CharacterOffsetEnd=102 PartOfSpeech=NN Lemma=socal NamedEntityTag=O]
+[Text=wants CharacterOffsetBegin=103 CharacterOffsetEnd=108 PartOfSpeech=VBZ Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=109 CharacterOffsetEnd=111 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=take CharacterOffsetBegin=112 CharacterOffsetEnd=116 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=117 CharacterOffsetEnd=119 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=120 CharacterOffsetEnd=123 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=Needles CharacterOffsetBegin=124 CharacterOffsetEnd=131 PartOfSpeech=NNP Lemma=Needles NamedEntityTag=O]
+[Text=facility CharacterOffsetBegin=132 CharacterOffsetEnd=140 PartOfSpeech=NN Lemma=facility NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=140 CharacterOffsetEnd=141 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD received)
+      (NP (DT a) (NN call))
+      (PP (IN from)
+        (NP
+          (NP (NNP Ralph) (NNP Komai))
+          (, ,)
+          (NP (NNP PCB) (NN engineer))))
+      (PP (IN with)
+        (NP (NN SoCal)))
+      (, ,)
+      (PP (IN about)
+        (NP
+          (NP (DT a) (NN pipeline) (NNS liquids) (NN collection) (NN SoCal))
+          (SBAR
+            (S
+              (VP (VBZ wants)
+                (S
+                  (VP (TO to)
+                    (VP (VB take)
+                      (PP (IN at)
+                        (NP (PRP$ our) (NNP Needles) (NN facility))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, received-2)
+nsubj(received-2, I-1)
+det(call-4, a-3)
+dobj(received-2, call-4)
+case(Komai-7, from-5)
+compound(Komai-7, Ralph-6)
+nmod:from(received-2, Komai-7)
+punct(Komai-7, ,-8)
+compound(engineer-10, PCB-9)
+appos(Komai-7, engineer-10)
+case(SoCal-12, with-11)
+nmod:with(received-2, SoCal-12)
+punct(received-2, ,-13)
+case(SoCal-19, about-14)
+det(SoCal-19, a-15)
+compound(SoCal-19, pipeline-16)
+compound(SoCal-19, liquids-17)
+compound(SoCal-19, collection-18)
+nmod:about(received-2, SoCal-19)
+acl:relcl(SoCal-19, wants-20)
+mark(take-22, to-21)
+xcomp(wants-20, take-22)
+case(facility-26, at-23)
+nmod:poss(facility-26, our-24)
+compound(facility-26, Needles-25)
+nmod:at(take-22, facility-26)
+punct(received-2, .-27)
+
+Extracted the following NER entity mentions:
+Ralph Komai	PERSON
+PCB	ORGANIZATION
+engineer	TITLE
+
+Sentence #2 (38 tokens):
+Ralph said
+that SoCal will be undertaking a study on their pipeline to determine why the
+concentration and liquids volume of PCB's has reduced into their system in
+the past couple of  years (97-2000).
+
+Tokens:
+[Text=Ralph CharacterOffsetBegin=143 CharacterOffsetEnd=148 PartOfSpeech=NNP Lemma=Ralph NamedEntityTag=PERSON]
+[Text=said CharacterOffsetBegin=149 CharacterOffsetEnd=153 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=154 CharacterOffsetEnd=158 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=SoCal CharacterOffsetBegin=159 CharacterOffsetEnd=164 PartOfSpeech=NNP Lemma=SoCal NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=165 CharacterOffsetEnd=169 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=170 CharacterOffsetEnd=172 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=undertaking CharacterOffsetBegin=173 CharacterOffsetEnd=184 PartOfSpeech=VBG Lemma=undertake NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=185 CharacterOffsetEnd=186 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=study CharacterOffsetBegin=187 CharacterOffsetEnd=192 PartOfSpeech=NN Lemma=study NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=193 CharacterOffsetEnd=195 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=196 CharacterOffsetEnd=201 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=pipeline CharacterOffsetBegin=202 CharacterOffsetEnd=210 PartOfSpeech=NN Lemma=pipeline NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=211 CharacterOffsetEnd=213 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=determine CharacterOffsetBegin=214 CharacterOffsetEnd=223 PartOfSpeech=VB Lemma=determine NamedEntityTag=O]
+[Text=why CharacterOffsetBegin=224 CharacterOffsetEnd=227 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=228 CharacterOffsetEnd=231 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=concentration CharacterOffsetBegin=232 CharacterOffsetEnd=245 PartOfSpeech=NN Lemma=concentration NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=246 CharacterOffsetEnd=249 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=liquids CharacterOffsetBegin=250 CharacterOffsetEnd=257 PartOfSpeech=NNS Lemma=liquid NamedEntityTag=O]
+[Text=volume CharacterOffsetBegin=258 CharacterOffsetEnd=264 PartOfSpeech=NN Lemma=volume NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=265 CharacterOffsetEnd=267 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=PCB CharacterOffsetBegin=268 CharacterOffsetEnd=271 PartOfSpeech=NNP Lemma=PCB NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=271 CharacterOffsetEnd=273 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=274 CharacterOffsetEnd=277 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=reduced CharacterOffsetBegin=278 CharacterOffsetEnd=285 PartOfSpeech=VBN Lemma=reduce NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=286 CharacterOffsetEnd=290 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=291 CharacterOffsetEnd=296 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=system CharacterOffsetBegin=297 CharacterOffsetEnd=303 PartOfSpeech=NN Lemma=system NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=304 CharacterOffsetEnd=306 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=307 CharacterOffsetEnd=310 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=past CharacterOffsetBegin=311 CharacterOffsetEnd=315 PartOfSpeech=JJ Lemma=past NamedEntityTag=O]
+[Text=couple CharacterOffsetBegin=316 CharacterOffsetEnd=322 PartOfSpeech=NN Lemma=couple NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=323 CharacterOffsetEnd=325 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=years CharacterOffsetBegin=327 CharacterOffsetEnd=332 PartOfSpeech=NNS Lemma=year NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=333 CharacterOffsetEnd=334 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=97-2000 CharacterOffsetBegin=334 CharacterOffsetEnd=341 PartOfSpeech=CD Lemma=97-2000 NamedEntityTag=NUMBER NormalizedNamedEntityTag=97.0 - 2000.0]
+[Text=-RRB- CharacterOffsetBegin=341 CharacterOffsetEnd=342 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=342 CharacterOffsetEnd=343 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Ralph))
+    (VP (VBD said)
+      (SBAR (IN that)
+        (S
+          (NP (NNP SoCal))
+          (VP (MD will)
+            (VP (VB be)
+              (VP (VBG undertaking)
+                (NP (DT a) (NN study))
+                (PP (IN on)
+                  (NP (PRP$ their) (NN pipeline)
+                    (S
+                      (VP (TO to)
+                        (VP (VB determine)
+                          (SBAR
+                            (WHADVP (WRB why))
+                            (S
+                              (NP
+                                (NP (DT the) (NN concentration)
+                                  (CC and)
+                                  (NNS liquids) (NN volume))
+                                (PP (IN of)
+                                  (NP (NNP PCB) (POS 's))))
+                              (VP (VBZ has)
+                                (VP (VBN reduced)
+                                  (PP (IN into)
+                                    (NP
+                                      (NP (PRP$ their) (NN system))
+                                      (PP (IN in)
+                                        (NP
+                                          (NP (DT the) (JJ past) (NN couple))
+                                          (PP (IN of)
+                                            (NP
+                                              (NP (NNS years))
+                                              (PRN (-LRB- -LRB-)
+                                                (NP (CD 97-2000))
+                                                (-RRB- -RRB-)))))))))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, said-2)
+nsubj(said-2, Ralph-1)
+mark(undertaking-7, that-3)
+nsubj(undertaking-7, SoCal-4)
+aux(undertaking-7, will-5)
+aux(undertaking-7, be-6)
+ccomp(said-2, undertaking-7)
+det(study-9, a-8)
+dobj(undertaking-7, study-9)
+case(pipeline-12, on-10)
+nmod:poss(pipeline-12, their-11)
+nmod:on(undertaking-7, pipeline-12)
+mark(determine-14, to-13)
+acl:to(pipeline-12, determine-14)
+advmod(reduced-25, why-15)
+det(volume-20, the-16)
+compound(volume-20, concentration-17)
+cc(concentration-17, and-18)
+conj:and(concentration-17, liquids-19)
+compound(volume-20, liquids-19)
+nsubj(reduced-25, volume-20)
+case(PCB-22, of-21)
+nmod:'s(volume-20, PCB-22)
+case(PCB-22, 's-23)
+aux(reduced-25, has-24)
+advcl(determine-14, reduced-25)
+case(system-28, into-26)
+nmod:poss(system-28, their-27)
+nmod:into(reduced-25, system-28)
+case(couple-32, in-29)
+det(couple-32, the-30)
+amod(couple-32, past-31)
+nmod:in(system-28, couple-32)
+case(years-34, of-33)
+nmod:of(couple-32, years-34)
+punct(97-2000-36, -LRB--35)
+appos(years-34, 97-2000-36)
+punct(97-2000-36, -RRB--37)
+punct(said-2, .-38)
+
+Extracted the following NER entity mentions:
+Ralph	PERSON
+PCB	ORGANIZATION
+97-2000	NUMBER
+
+Sentence #3 (22 tokens):
+I shared with Ralph and up until this
+year, we have not had liquids at the Needles facility since 1994.
+
+Tokens:
+[Text=I CharacterOffsetBegin=344 CharacterOffsetEnd=345 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=shared CharacterOffsetBegin=346 CharacterOffsetEnd=352 PartOfSpeech=VBD Lemma=share NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=353 CharacterOffsetEnd=357 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Ralph CharacterOffsetBegin=358 CharacterOffsetEnd=363 PartOfSpeech=NNP Lemma=Ralph NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=364 CharacterOffsetEnd=367 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=368 CharacterOffsetEnd=370 PartOfSpeech=RB Lemma=up NamedEntityTag=O]
+[Text=until CharacterOffsetBegin=371 CharacterOffsetEnd=376 PartOfSpeech=IN Lemma=until NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=377 CharacterOffsetEnd=381 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=year CharacterOffsetBegin=382 CharacterOffsetEnd=386 PartOfSpeech=NN Lemma=year NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=386 CharacterOffsetEnd=387 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=388 CharacterOffsetEnd=390 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=391 CharacterOffsetEnd=395 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=396 CharacterOffsetEnd=399 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=400 CharacterOffsetEnd=403 PartOfSpeech=VBN Lemma=have NamedEntityTag=O]
+[Text=liquids CharacterOffsetBegin=404 CharacterOffsetEnd=411 PartOfSpeech=NNS Lemma=liquid NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=412 CharacterOffsetEnd=414 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=415 CharacterOffsetEnd=418 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Needles CharacterOffsetBegin=419 CharacterOffsetEnd=426 PartOfSpeech=NNP Lemma=Needles NamedEntityTag=O]
+[Text=facility CharacterOffsetBegin=427 CharacterOffsetEnd=435 PartOfSpeech=NN Lemma=facility NamedEntityTag=O]
+[Text=since CharacterOffsetBegin=436 CharacterOffsetEnd=441 PartOfSpeech=IN Lemma=since NamedEntityTag=O]
+[Text=1994 CharacterOffsetBegin=442 CharacterOffsetEnd=446 PartOfSpeech=CD Lemma=1994 NamedEntityTag=DATE NormalizedNamedEntityTag=1994]
+[Text=. CharacterOffsetBegin=446 CharacterOffsetEnd=447 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBD shared)
+        (PP (IN with)
+          (NP (NNP Ralph)))))
+    (CC and)
+    (S
+      (ADVP (RB up)
+        (PP (IN until)
+          (NP (DT this) (NN year))))
+      (, ,)
+      (NP (PRP we))
+      (VP (VBP have) (RB not)
+        (VP (VBN had)
+          (NP (NNS liquids))
+          (PP (IN at)
+            (NP (DT the) (NNP Needles) (NN facility)))
+          (PP (IN since)
+            (NP (CD 1994))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, shared-2)
+nsubj(shared-2, I-1)
+case(Ralph-4, with-3)
+nmod:with(shared-2, Ralph-4)
+cc(shared-2, and-5)
+advmod(had-14, up-6)
+case(year-9, until-7)
+det(year-9, this-8)
+nmod:until(up-6, year-9)
+punct(had-14, ,-10)
+nsubj(had-14, we-11)
+aux(had-14, have-12)
+neg(had-14, not-13)
+conj:and(shared-2, had-14)
+dobj(had-14, liquids-15)
+case(facility-19, at-16)
+det(facility-19, the-17)
+compound(facility-19, Needles-18)
+nmod:at(had-14, facility-19)
+case(1994-21, since-20)
+nmod:since(had-14, 1994-21)
+punct(shared-2, .-22)
+
+Extracted the following NER entity mentions:
+Ralph	PERSON
+1994	DATE
+
+Sentence #4 (27 tokens):
+He stated
+that they have seen reduced concentrations and are curious as to why this
+trend is occurring (sounds like good news to me).
+
+Tokens:
+[Text=He CharacterOffsetBegin=449 CharacterOffsetEnd=451 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=stated CharacterOffsetBegin=452 CharacterOffsetEnd=458 PartOfSpeech=VBD Lemma=state NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=459 CharacterOffsetEnd=463 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=464 CharacterOffsetEnd=468 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=469 CharacterOffsetEnd=473 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=seen CharacterOffsetBegin=474 CharacterOffsetEnd=478 PartOfSpeech=VBN Lemma=see NamedEntityTag=O]
+[Text=reduced CharacterOffsetBegin=479 CharacterOffsetEnd=486 PartOfSpeech=VBN Lemma=reduce NamedEntityTag=O]
+[Text=concentrations CharacterOffsetBegin=487 CharacterOffsetEnd=501 PartOfSpeech=NNS Lemma=concentration NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=502 CharacterOffsetEnd=505 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=506 CharacterOffsetEnd=509 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=curious CharacterOffsetBegin=510 CharacterOffsetEnd=517 PartOfSpeech=JJ Lemma=curious NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=518 CharacterOffsetEnd=520 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=521 CharacterOffsetEnd=523 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=why CharacterOffsetBegin=524 CharacterOffsetEnd=527 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=528 CharacterOffsetEnd=532 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=trend CharacterOffsetBegin=533 CharacterOffsetEnd=538 PartOfSpeech=NN Lemma=trend NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=539 CharacterOffsetEnd=541 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=occurring CharacterOffsetBegin=542 CharacterOffsetEnd=551 PartOfSpeech=VBG Lemma=occur NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=552 CharacterOffsetEnd=553 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=sounds CharacterOffsetBegin=553 CharacterOffsetEnd=559 PartOfSpeech=NNS Lemma=sound NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=560 CharacterOffsetEnd=564 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=565 CharacterOffsetEnd=569 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=news CharacterOffsetBegin=570 CharacterOffsetEnd=574 PartOfSpeech=NN Lemma=news NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=575 CharacterOffsetEnd=577 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=578 CharacterOffsetEnd=580 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=580 CharacterOffsetEnd=581 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=581 CharacterOffsetEnd=582 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD stated)
+        (SBAR (IN that)
+          (S
+            (NP (PRP they))
+            (VP (VBP have)
+              (VP (VBN seen)
+                (NP (VBN reduced) (NNS concentrations)))))))
+      (CC and)
+      (VP (VBP are)
+        (ADJP (JJ curious)
+          (PP (IN as)
+            (PP (TO to)
+              (SBAR
+                (WHADVP (WRB why))
+                (S
+                  (NP (DT this) (NN trend))
+                  (VP (VBZ is)
+                    (S
+                      (VP (VBG occurring)
+                        (PRN (-LRB- -LRB-)
+                          (NP
+                            (NP (NNS sounds))
+                            (PP (IN like)
+                              (NP
+                                (NP (JJ good) (NN news))
+                                (PP (TO to)
+                                  (NP (PRP me))))))
+                          (-RRB- -RRB-))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, stated-2)
+nsubj(stated-2, He-1)
+nsubj(curious-11, He-1)
+mark(seen-6, that-3)
+nsubj(seen-6, they-4)
+aux(seen-6, have-5)
+ccomp(stated-2, seen-6)
+amod(concentrations-8, reduced-7)
+dobj(seen-6, concentrations-8)
+cc(stated-2, and-9)
+cop(curious-11, are-10)
+conj:and(stated-2, curious-11)
+case(is-17, as-12)
+mark(is-17, to-13)
+advmod(is-17, why-14)
+det(trend-16, this-15)
+nsubj(is-17, trend-16)
+dep(curious-11, is-17)
+xcomp(is-17, occurring-18)
+punct(sounds-20, -LRB--19)
+dep(occurring-18, sounds-20)
+case(news-23, like-21)
+amod(news-23, good-22)
+nmod:like(sounds-20, news-23)
+case(me-25, to-24)
+nmod:to(news-23, me-25)
+punct(sounds-20, -RRB--26)
+punct(stated-2, .-27)
+
+Extracted the following NER entity mentions:
+He	PERSON
+
+Sentence #5 (61 tokens):
+He said that their data
+shows the following:
+
+1998 liquids concentrations  only 1% regulated at the federal level
+
+1999 liquids concentrations only 8% regulated at the federal level
+
+Ralph has requested that SoCal be allowed to collect a  liquids sample at the
+Needles M/S and I have contacted the Needles team about assisting SoCal with
+the collection.
+
+Tokens:
+[Text=He CharacterOffsetBegin=584 CharacterOffsetEnd=586 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=587 CharacterOffsetEnd=591 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=592 CharacterOffsetEnd=596 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=597 CharacterOffsetEnd=602 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=data CharacterOffsetBegin=603 CharacterOffsetEnd=607 PartOfSpeech=NNS Lemma=datum NamedEntityTag=O]
+[Text=shows CharacterOffsetBegin=608 CharacterOffsetEnd=613 PartOfSpeech=VBZ Lemma=show NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=614 CharacterOffsetEnd=617 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=following CharacterOffsetBegin=618 CharacterOffsetEnd=627 PartOfSpeech=NN Lemma=following NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=627 CharacterOffsetEnd=628 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=1998 CharacterOffsetBegin=630 CharacterOffsetEnd=634 PartOfSpeech=CD Lemma=1998 NamedEntityTag=DATE NormalizedNamedEntityTag=1998]
+[Text=liquids CharacterOffsetBegin=635 CharacterOffsetEnd=642 PartOfSpeech=NNS Lemma=liquid NamedEntityTag=O]
+[Text=concentrations CharacterOffsetBegin=643 CharacterOffsetEnd=657 PartOfSpeech=NNS Lemma=concentration NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=659 CharacterOffsetEnd=663 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=1 CharacterOffsetBegin=664 CharacterOffsetEnd=665 PartOfSpeech=CD Lemma=1 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%1.0]
+[Text=% CharacterOffsetBegin=665 CharacterOffsetEnd=666 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%1.0]
+[Text=regulated CharacterOffsetBegin=667 CharacterOffsetEnd=676 PartOfSpeech=VBN Lemma=regulate NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=677 CharacterOffsetEnd=679 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=680 CharacterOffsetEnd=683 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=federal CharacterOffsetBegin=684 CharacterOffsetEnd=691 PartOfSpeech=JJ Lemma=federal NamedEntityTag=O]
+[Text=level CharacterOffsetBegin=692 CharacterOffsetEnd=697 PartOfSpeech=NN Lemma=level NamedEntityTag=O]
+[Text=1999 CharacterOffsetBegin=699 CharacterOffsetEnd=703 PartOfSpeech=CD Lemma=1999 NamedEntityTag=DATE NormalizedNamedEntityTag=1999]
+[Text=liquids CharacterOffsetBegin=704 CharacterOffsetEnd=711 PartOfSpeech=NNS Lemma=liquid NamedEntityTag=O]
+[Text=concentrations CharacterOffsetBegin=712 CharacterOffsetEnd=726 PartOfSpeech=NNS Lemma=concentration NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=727 CharacterOffsetEnd=731 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=8 CharacterOffsetBegin=732 CharacterOffsetEnd=733 PartOfSpeech=CD Lemma=8 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%8.0]
+[Text=% CharacterOffsetBegin=733 CharacterOffsetEnd=734 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%8.0]
+[Text=regulated CharacterOffsetBegin=735 CharacterOffsetEnd=744 PartOfSpeech=VBN Lemma=regulate NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=745 CharacterOffsetEnd=747 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=748 CharacterOffsetEnd=751 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=federal CharacterOffsetBegin=752 CharacterOffsetEnd=759 PartOfSpeech=JJ Lemma=federal NamedEntityTag=O]
+[Text=level CharacterOffsetBegin=760 CharacterOffsetEnd=765 PartOfSpeech=NN Lemma=level NamedEntityTag=O]
+[Text=Ralph CharacterOffsetBegin=767 CharacterOffsetEnd=772 PartOfSpeech=NNP Lemma=Ralph NamedEntityTag=PERSON]
+[Text=has CharacterOffsetBegin=773 CharacterOffsetEnd=776 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=requested CharacterOffsetBegin=777 CharacterOffsetEnd=786 PartOfSpeech=VBN Lemma=request NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=787 CharacterOffsetEnd=791 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=SoCal CharacterOffsetBegin=792 CharacterOffsetEnd=797 PartOfSpeech=NNP Lemma=SoCal NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=798 CharacterOffsetEnd=800 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=allowed CharacterOffsetBegin=801 CharacterOffsetEnd=808 PartOfSpeech=VBN Lemma=allow NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=809 CharacterOffsetEnd=811 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=collect CharacterOffsetBegin=812 CharacterOffsetEnd=819 PartOfSpeech=VB Lemma=collect NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=820 CharacterOffsetEnd=821 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=liquids CharacterOffsetBegin=823 CharacterOffsetEnd=830 PartOfSpeech=NNS Lemma=liquid NamedEntityTag=O]
+[Text=sample CharacterOffsetBegin=831 CharacterOffsetEnd=837 PartOfSpeech=NN Lemma=sample NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=838 CharacterOffsetEnd=840 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=841 CharacterOffsetEnd=844 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Needles CharacterOffsetBegin=845 CharacterOffsetEnd=852 PartOfSpeech=NNP Lemma=Needles NamedEntityTag=O]
+[Text=M/S CharacterOffsetBegin=853 CharacterOffsetEnd=856 PartOfSpeech=NNP Lemma=M/S NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=857 CharacterOffsetEnd=860 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=861 CharacterOffsetEnd=862 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=863 CharacterOffsetEnd=867 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=contacted CharacterOffsetBegin=868 CharacterOffsetEnd=877 PartOfSpeech=VBN Lemma=contact NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=878 CharacterOffsetEnd=881 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Needles CharacterOffsetBegin=882 CharacterOffsetEnd=889 PartOfSpeech=NNP Lemma=Needles NamedEntityTag=O]
+[Text=team CharacterOffsetBegin=890 CharacterOffsetEnd=894 PartOfSpeech=NN Lemma=team NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=895 CharacterOffsetEnd=900 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=assisting CharacterOffsetBegin=901 CharacterOffsetEnd=910 PartOfSpeech=VBG Lemma=assist NamedEntityTag=O]
+[Text=SoCal CharacterOffsetBegin=911 CharacterOffsetEnd=916 PartOfSpeech=JJ Lemma=socal NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=917 CharacterOffsetEnd=921 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=922 CharacterOffsetEnd=925 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=collection CharacterOffsetBegin=926 CharacterOffsetEnd=936 PartOfSpeech=NN Lemma=collection NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=936 CharacterOffsetEnd=937 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBD said)
+        (SBAR (IN that)
+          (S
+            (NP (PRP$ their) (NNS data))
+            (VP (VBZ shows)
+              (NP
+                (NP (DT the) (NN following))
+                (: :)
+                (NP
+                  (NP
+                    (NP (CD 1998) (NNS liquids) (NNS concentrations))
+                    (VP
+                      (ADVP (RB only)
+                        (NP (CD 1) (NN %)))
+                      (VBN regulated)
+                      (PP (IN at)
+                        (NP (DT the) (JJ federal) (NN level)))))
+                  (NP
+                    (NP (CD 1999) (NNS liquids) (NNS concentrations))
+                    (VP
+                      (NP (RB only) (CD 8) (NN %))
+                      (VBN regulated)
+                      (PP (IN at)
+                        (NP
+                          (NP (DT the) (JJ federal) (NN level))
+                          (SBAR
+                            (S
+                              (NP (NNP Ralph))
+                              (VP (VBZ has)
+                                (VP (VBN requested)
+                                  (SBAR (IN that)
+                                    (S
+                                      (NP (NNP SoCal))
+                                      (VP (VB be)
+                                        (VP (VBN allowed)
+                                          (S
+                                            (VP (TO to)
+                                              (VP (VB collect)
+                                                (NP (DT a) (NNS liquids) (NN sample))
+                                                (PP (IN at)
+                                                  (NP (DT the) (NNP Needles) (NNP M/S)))))))))))))))))))))))))
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (VBP have)
+        (VP (VBN contacted)
+          (NP (DT the) (NNP Needles) (NN team))
+          (PP (IN about)
+            (S
+              (VP (VBG assisting)
+                (NP (JJ SoCal))
+                (PP (IN with)
+                  (NP (DT the) (NN collection)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, said-2)
+nsubj(said-2, He-1)
+mark(shows-6, that-3)
+nmod:poss(data-5, their-4)
+nsubj(shows-6, data-5)
+ccomp(said-2, shows-6)
+det(following-8, the-7)
+dobj(shows-6, following-8)
+punct(following-8, :-9)
+nummod(concentrations-12, 1998-10)
+compound(concentrations-12, liquids-11)
+dep(following-8, concentrations-12)
+advmod(regulated-16, only-13)
+nummod(%-15, 1-14)
+nmod:npmod(only-13, %-15)
+acl(concentrations-12, regulated-16)
+case(level-20, at-17)
+det(level-20, the-18)
+amod(level-20, federal-19)
+nmod:at(regulated-16, level-20)
+nummod(concentrations-23, 1999-21)
+compound(concentrations-23, liquids-22)
+dep(concentrations-12, concentrations-23)
+advmod(%-26, only-24)
+nummod(%-26, 8-25)
+dobj(regulated-27, %-26)
+acl(concentrations-23, regulated-27)
+case(level-31, at-28)
+det(level-31, the-29)
+amod(level-31, federal-30)
+nmod:at(regulated-27, level-31)
+mark(allowed-38, level-31)
+nsubj(requested-34, Ralph-32)
+aux(requested-34, has-33)
+acl:relcl(level-31, requested-34)
+ref(level-31, that-35)
+nsubjpass(allowed-38, SoCal-36)
+nsubj:xsubj(collect-40, SoCal-36)
+auxpass(allowed-38, be-37)
+ccomp(requested-34, allowed-38)
+mark(collect-40, to-39)
+xcomp(allowed-38, collect-40)
+det(sample-43, a-41)
+compound(sample-43, liquids-42)
+dobj(collect-40, sample-43)
+case(M/S-47, at-44)
+det(M/S-47, the-45)
+compound(M/S-47, Needles-46)
+nmod:at(collect-40, M/S-47)
+cc(said-2, and-48)
+nsubj(contacted-51, I-49)
+aux(contacted-51, have-50)
+conj:and(said-2, contacted-51)
+det(team-54, the-52)
+compound(team-54, Needles-53)
+dobj(contacted-51, team-54)
+mark(assisting-56, about-55)
+advcl:about(contacted-51, assisting-56)
+dobj(assisting-56, SoCal-57)
+case(collection-60, with-58)
+det(collection-60, the-59)
+nmod:with(assisting-56, collection-60)
+punct(said-2, .-61)
+
+Extracted the following NER entity mentions:
+1998	DATE
+1%	PERCENT
+1999	DATE
+8%	PERCENT
+Ralph	PERSON
+He	PERSON
+
+Sentence #6 (34 tokens):
+I would expect that this may have implications with respect to slight
+increased billing for analytical charges that SoCal will be charging us for
+and we reveiw on a quarterly basis with them.
+
+Tokens:
+[Text=I CharacterOffsetBegin=939 CharacterOffsetEnd=940 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=941 CharacterOffsetEnd=946 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=expect CharacterOffsetBegin=947 CharacterOffsetEnd=953 PartOfSpeech=VB Lemma=expect NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=954 CharacterOffsetEnd=958 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=959 CharacterOffsetEnd=963 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=may CharacterOffsetBegin=964 CharacterOffsetEnd=967 PartOfSpeech=MD Lemma=may NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=968 CharacterOffsetEnd=972 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=implications CharacterOffsetBegin=973 CharacterOffsetEnd=985 PartOfSpeech=NNS Lemma=implication NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=986 CharacterOffsetEnd=990 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=respect CharacterOffsetBegin=991 CharacterOffsetEnd=998 PartOfSpeech=NN Lemma=respect NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=999 CharacterOffsetEnd=1001 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=slight CharacterOffsetBegin=1002 CharacterOffsetEnd=1008 PartOfSpeech=JJ Lemma=slight NamedEntityTag=O]
+[Text=increased CharacterOffsetBegin=1009 CharacterOffsetEnd=1018 PartOfSpeech=VBN Lemma=increase NamedEntityTag=O]
+[Text=billing CharacterOffsetBegin=1019 CharacterOffsetEnd=1026 PartOfSpeech=NN Lemma=billing NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=1027 CharacterOffsetEnd=1030 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=analytical CharacterOffsetBegin=1031 CharacterOffsetEnd=1041 PartOfSpeech=JJ Lemma=analytical NamedEntityTag=O]
+[Text=charges CharacterOffsetBegin=1042 CharacterOffsetEnd=1049 PartOfSpeech=NNS Lemma=charge NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=1050 CharacterOffsetEnd=1054 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=SoCal CharacterOffsetBegin=1055 CharacterOffsetEnd=1060 PartOfSpeech=NNP Lemma=SoCal NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=1061 CharacterOffsetEnd=1065 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=1066 CharacterOffsetEnd=1068 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=charging CharacterOffsetBegin=1069 CharacterOffsetEnd=1077 PartOfSpeech=VBG Lemma=charge NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=1078 CharacterOffsetEnd=1080 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=1081 CharacterOffsetEnd=1084 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1085 CharacterOffsetEnd=1088 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=1089 CharacterOffsetEnd=1091 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=reveiw CharacterOffsetBegin=1092 CharacterOffsetEnd=1098 PartOfSpeech=VBP Lemma=reveiw NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=1099 CharacterOffsetEnd=1101 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=1102 CharacterOffsetEnd=1103 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=quarterly CharacterOffsetBegin=1104 CharacterOffsetEnd=1113 PartOfSpeech=JJ Lemma=quarterly NamedEntityTag=O]
+[Text=basis CharacterOffsetBegin=1114 CharacterOffsetEnd=1119 PartOfSpeech=NN Lemma=basis NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=1120 CharacterOffsetEnd=1124 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=1125 CharacterOffsetEnd=1129 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1129 CharacterOffsetEnd=1130 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (MD would)
+        (VP (VB expect)
+          (SBAR (IN that)
+            (S
+              (NP (DT this))
+              (VP (MD may)
+                (VP (VB have)
+                  (NP
+                    (NP (NNS implications))
+                    (PP (IN with)
+                      (NP
+                        (NP (NN respect))
+                        (PP (TO to)
+                          (NP
+                            (NP (JJ slight) (VBN increased) (NN billing))
+                            (PP (IN for)
+                              (NP (JJ analytical) (NNS charges)))
+                            (SBAR
+                              (WHNP (WDT that))
+                              (S
+                                (NP (NNP SoCal))
+                                (VP (MD will)
+                                  (VP (VB be)
+                                    (VP (VBG charging)
+                                      (NP (PRP us))
+                                      (PP (IN for)))))))))))))))))))
+    (CC and)
+    (S
+      (NP (PRP we))
+      (VP (VBP reveiw)
+        (PP (IN on)
+          (NP
+            (NP (DT a) (JJ quarterly) (NN basis))
+            (PP (IN with)
+              (NP (PRP them)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, expect-3)
+nsubj(expect-3, I-1)
+aux(expect-3, would-2)
+mark(have-7, that-4)
+nsubj(have-7, this-5)
+aux(have-7, may-6)
+ccomp(expect-3, have-7)
+dobj(have-7, implications-8)
+case(billing-14, with-9)
+mwe(with-9, respect-10)
+mwe(with-9, to-11)
+amod(billing-14, slight-12)
+amod(billing-14, increased-13)
+nmod:with_respect_to(implications-8, billing-14)
+nmod:for(charging-22, billing-14)
+case(charges-17, for-15)
+amod(charges-17, analytical-16)
+nmod:for(billing-14, charges-17)
+ref(billing-14, that-18)
+nsubj(charging-22, SoCal-19)
+aux(charging-22, will-20)
+aux(charging-22, be-21)
+acl:relcl(billing-14, charging-22)
+dobj(charging-22, us-23)
+case(that-18, for-24)
+cc(expect-3, and-25)
+nsubj(reveiw-27, we-26)
+conj:and(expect-3, reveiw-27)
+case(basis-31, on-28)
+det(basis-31, a-29)
+amod(basis-31, quarterly-30)
+nmod:on(reveiw-27, basis-31)
+case(them-33, with-32)
+nmod:with(basis-31, them-33)
+punct(expect-3, .-34)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(1,10,[9,11]) -> (1,7,[6,8]), that is: "PCB engineer" -> "Ralph Komai"
+	(2,1,[1,2]) -> (1,7,[6,8]), that is: "Ralph" -> "Ralph Komai"
+	(3,4,[4,5]) -> (1,7,[6,8]), that is: "Ralph" -> "Ralph Komai"
+	(4,1,[1,2]) -> (1,7,[6,8]), that is: "He" -> "Ralph Komai"
+	(5,1,[1,2]) -> (1,7,[6,8]), that is: "He" -> "Ralph Komai"
+	(5,32,[32,33]) -> (1,7,[6,8]), that is: "Ralph" -> "Ralph Komai"
+
+Coreference set:
+	(2,22,[22,24]) -> (1,9,[9,10]), that is: "PCB 's" -> "PCB"
+
+Coreference set:
+	(3,1,[1,2]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(4,25,[25,26]) -> (1,1,[1,2]), that is: "me" -> "I"
+	(5,49,[49,50]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(6,1,[1,2]) -> (1,1,[1,2]), that is: "I" -> "I"
+
+Coreference set:
+	(1,19,[15,27]) -> (2,4,[4,5]), that is: "a pipeline liquids collection SoCal wants to take at our Needles facility" -> "SoCal"
+	(5,36,[36,37]) -> (2,4,[4,5]), that is: "SoCal" -> "SoCal"
+	(5,57,[57,58]) -> (2,4,[4,5]), that is: "SoCal" -> "SoCal"
+	(6,19,[19,20]) -> (2,4,[4,5]), that is: "SoCal" -> "SoCal"
+
+Coreference set:
+	(3,19,[17,20]) -> (1,26,[24,27]), that is: "the Needles facility" -> "our Needles facility"
+
+Coreference set:
+	(3,11,[11,12]) -> (1,24,[24,25]), that is: "we" -> "our"
+	(6,23,[23,24]) -> (1,24,[24,25]), that is: "us" -> "our"
+	(6,26,[26,27]) -> (1,24,[24,25]), that is: "we" -> "our"
+
+Coreference set:
+	(2,27,[27,28]) -> (2,11,[11,12]), that is: "their" -> "their"
+	(4,4,[4,5]) -> (2,11,[11,12]), that is: "they" -> "their"
+	(5,4,[4,5]) -> (2,11,[11,12]), that is: "their" -> "their"
+
+Coreference set:
+	(6,33,[33,34]) -> (6,5,[5,6]), that is: "them" -> "this"

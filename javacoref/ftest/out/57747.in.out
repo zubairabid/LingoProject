@@ -1,0 +1,436 @@
+Document: ID=57747.in (7 sentences, 103 tokens)
+
+Sentence #1 (19 tokens):
+Per the broker statement received this morning the initial margin for Mann increased by only $6.1MM.
+
+Tokens:
+[Text=Per CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=IN Lemma=per NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=broker CharacterOffsetBegin=8 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=broker NamedEntityTag=TITLE]
+[Text=statement CharacterOffsetBegin=15 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=statement NamedEntityTag=O]
+[Text=received CharacterOffsetBegin=25 CharacterOffsetEnd=33 PartOfSpeech=VBD Lemma=receive NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=morning CharacterOffsetBegin=39 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=morning NamedEntityTag=TIME NormalizedNamedEntityTag=M]
+[Text=the CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=initial CharacterOffsetBegin=51 CharacterOffsetEnd=58 PartOfSpeech=JJ Lemma=initial NamedEntityTag=O]
+[Text=margin CharacterOffsetBegin=59 CharacterOffsetEnd=65 PartOfSpeech=NN Lemma=margin NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Mann CharacterOffsetBegin=70 CharacterOffsetEnd=74 PartOfSpeech=NNP Lemma=Mann NamedEntityTag=PERSON]
+[Text=increased CharacterOffsetBegin=75 CharacterOffsetEnd=84 PartOfSpeech=VBN Lemma=increase NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=85 CharacterOffsetEnd=87 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=88 CharacterOffsetEnd=92 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=93 CharacterOffsetEnd=94 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$6.1]
+[Text=6.1 CharacterOffsetBegin=94 CharacterOffsetEnd=97 PartOfSpeech=CD Lemma=6.1 NamedEntityTag=MONEY NormalizedNamedEntityTag=$6.1]
+[Text=MM CharacterOffsetBegin=97 CharacterOffsetEnd=99 PartOfSpeech=NN Lemma=mm NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=99 CharacterOffsetEnd=100 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SINV
+    (PP (IN Per)
+      (NP (DT the) (NN broker) (NN statement)))
+    (VP (VBD received)
+      (NP-TMP (DT this) (NN morning)))
+    (NP
+      (NP (DT the) (JJ initial) (NN margin))
+      (PP (IN for)
+        (NP (NNP Mann)))
+      (VP (VBN increased)
+        (PP (IN by)
+          (NP
+            (QP (RB only) ($ $) (CD 6.1))
+            (NN MM)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, received-5)
+case(statement-4, Per-1)
+det(statement-4, the-2)
+compound(statement-4, broker-3)
+nmod:per(received-5, statement-4)
+det(morning-7, this-6)
+nmod:tmod(received-5, morning-7)
+det(margin-10, the-8)
+amod(margin-10, initial-9)
+nsubj(received-5, margin-10)
+case(Mann-12, for-11)
+nmod:for(margin-10, Mann-12)
+acl(margin-10, increased-13)
+case(MM-18, by-14)
+advmod($-16, only-15)
+nummod(MM-18, $-16)
+nummod($-16, 6.1-17)
+nmod:by(increased-13, MM-18)
+punct(received-5, .-19)
+
+Extracted the following NER entity mentions:
+broker	TITLE
+morning	TIME
+Mann	PERSON
+$6.1	MONEY
+
+Sentence #2 (15 tokens):
+It does not appear that they have changed their margin calculation method from this.
+
+Tokens:
+[Text=It CharacterOffsetBegin=102 CharacterOffsetEnd=104 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=105 CharacterOffsetEnd=109 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=110 CharacterOffsetEnd=113 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=appear CharacterOffsetBegin=114 CharacterOffsetEnd=120 PartOfSpeech=VB Lemma=appear NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=121 CharacterOffsetEnd=125 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=126 CharacterOffsetEnd=130 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=131 CharacterOffsetEnd=135 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=changed CharacterOffsetBegin=136 CharacterOffsetEnd=143 PartOfSpeech=VBN Lemma=change NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=144 CharacterOffsetEnd=149 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=margin CharacterOffsetBegin=150 CharacterOffsetEnd=156 PartOfSpeech=NN Lemma=margin NamedEntityTag=O]
+[Text=calculation CharacterOffsetBegin=157 CharacterOffsetEnd=168 PartOfSpeech=NN Lemma=calculation NamedEntityTag=O]
+[Text=method CharacterOffsetBegin=169 CharacterOffsetEnd=175 PartOfSpeech=NN Lemma=method NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=176 CharacterOffsetEnd=180 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=181 CharacterOffsetEnd=185 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=185 CharacterOffsetEnd=186 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ does) (RB not)
+      (VP (VB appear)
+        (SBAR (IN that)
+          (S
+            (NP (PRP they))
+            (VP (VBP have)
+              (VP (VBN changed)
+                (NP (PRP$ their) (NN margin) (NN calculation) (NN method))
+                (PP (IN from)
+                  (NP (DT this)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, appear-4)
+nsubj(appear-4, It-1)
+aux(appear-4, does-2)
+neg(appear-4, not-3)
+mark(changed-8, that-5)
+nsubj(changed-8, they-6)
+aux(changed-8, have-7)
+ccomp(appear-4, changed-8)
+nmod:poss(method-12, their-9)
+compound(method-12, margin-10)
+compound(method-12, calculation-11)
+dobj(changed-8, method-12)
+case(this-14, from-13)
+nmod:from(changed-8, this-14)
+punct(appear-4, .-15)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (36 tokens):
+I have contacted the Enron person responsible for confirming the amounts to be settled with Mann and instructed her to contact me if Mann requests any settlement that differs from the statement received this morning.
+
+Tokens:
+[Text=I CharacterOffsetBegin=188 CharacterOffsetEnd=189 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=190 CharacterOffsetEnd=194 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=contacted CharacterOffsetBegin=195 CharacterOffsetEnd=204 PartOfSpeech=VBN Lemma=contact NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=205 CharacterOffsetEnd=208 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=209 CharacterOffsetEnd=214 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=person CharacterOffsetBegin=215 CharacterOffsetEnd=221 PartOfSpeech=NN Lemma=person NamedEntityTag=O]
+[Text=responsible CharacterOffsetBegin=222 CharacterOffsetEnd=233 PartOfSpeech=JJ Lemma=responsible NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=234 CharacterOffsetEnd=237 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=confirming CharacterOffsetBegin=238 CharacterOffsetEnd=248 PartOfSpeech=VBG Lemma=confirm NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=249 CharacterOffsetEnd=252 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=amounts CharacterOffsetBegin=253 CharacterOffsetEnd=260 PartOfSpeech=NNS Lemma=amount NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=261 CharacterOffsetEnd=263 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=264 CharacterOffsetEnd=266 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=settled CharacterOffsetBegin=267 CharacterOffsetEnd=274 PartOfSpeech=VBN Lemma=settle NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=275 CharacterOffsetEnd=279 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Mann CharacterOffsetBegin=280 CharacterOffsetEnd=284 PartOfSpeech=NNP Lemma=Mann NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=285 CharacterOffsetEnd=288 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=instructed CharacterOffsetBegin=289 CharacterOffsetEnd=299 PartOfSpeech=VBD Lemma=instruct NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=300 CharacterOffsetEnd=303 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=304 CharacterOffsetEnd=306 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=contact CharacterOffsetBegin=307 CharacterOffsetEnd=314 PartOfSpeech=VB Lemma=contact NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=315 CharacterOffsetEnd=317 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=318 CharacterOffsetEnd=320 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=Mann CharacterOffsetBegin=321 CharacterOffsetEnd=325 PartOfSpeech=NNP Lemma=Mann NamedEntityTag=PERSON]
+[Text=requests CharacterOffsetBegin=326 CharacterOffsetEnd=334 PartOfSpeech=NNS Lemma=request NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=335 CharacterOffsetEnd=338 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=settlement CharacterOffsetBegin=339 CharacterOffsetEnd=349 PartOfSpeech=NN Lemma=settlement NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=350 CharacterOffsetEnd=354 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=differs CharacterOffsetBegin=355 CharacterOffsetEnd=362 PartOfSpeech=VBZ Lemma=differ NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=363 CharacterOffsetEnd=367 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=368 CharacterOffsetEnd=371 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=statement CharacterOffsetBegin=372 CharacterOffsetEnd=381 PartOfSpeech=NN Lemma=statement NamedEntityTag=O]
+[Text=received CharacterOffsetBegin=382 CharacterOffsetEnd=390 PartOfSpeech=VBD Lemma=receive NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=391 CharacterOffsetEnd=395 PartOfSpeech=DT Lemma=this NamedEntityTag=TIME NormalizedNamedEntityTag=M]
+[Text=morning CharacterOffsetBegin=396 CharacterOffsetEnd=403 PartOfSpeech=NN Lemma=morning NamedEntityTag=TIME NormalizedNamedEntityTag=M]
+[Text=. CharacterOffsetBegin=403 CharacterOffsetEnd=404 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP
+      (VP (VBP have)
+        (VP (VBN contacted)
+          (S
+            (NP (DT the) (NNP Enron) (NN person))
+            (ADJP (JJ responsible)
+              (PP (IN for)
+                (S
+                  (VP (VBG confirming)
+                    (S
+                      (NP (DT the) (NNS amounts))
+                      (VP (TO to)
+                        (VP (VB be)
+                          (VP (VBN settled)
+                            (PP (IN with)
+                              (NP (NNP Mann))))))))))))))
+      (CC and)
+      (VP (VBD instructed)
+        (S
+          (NP (PRP her))
+          (VP (TO to)
+            (VP (VB contact)
+              (NP (PRP me))
+              (SBAR (IN if)
+                (S
+                  (NP
+                    (NP
+                      (NP (NNP Mann) (NNS requests))
+                      (NP (DT any) (NN settlement)))
+                    (SBAR
+                      (WHNP (WDT that))
+                      (S
+                        (VP (VBZ differs)
+                          (PP (IN from)
+                            (NP (DT the) (NN statement)))))))
+                  (VP (VBD received)
+                    (NP-TMP (DT this) (NN morning))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, contacted-3)
+nsubj(contacted-3, I-1)
+nsubj(instructed-18, I-1)
+aux(contacted-3, have-2)
+det(person-6, the-4)
+compound(person-6, Enron-5)
+nsubj(responsible-7, person-6)
+xcomp(contacted-3, responsible-7)
+mark(confirming-9, for-8)
+advcl:for(responsible-7, confirming-9)
+det(amounts-11, the-10)
+dobj(confirming-9, amounts-11)
+nsubjpass:xsubj(settled-14, amounts-11)
+mark(settled-14, to-12)
+auxpass(settled-14, be-13)
+xcomp(confirming-9, settled-14)
+case(Mann-16, with-15)
+nmod:with(settled-14, Mann-16)
+cc(contacted-3, and-17)
+conj:and(contacted-3, instructed-18)
+dobj(instructed-18, her-19)
+nsubj:xsubj(contact-21, her-19)
+mark(contact-21, to-20)
+xcomp(instructed-18, contact-21)
+dobj(contact-21, me-22)
+mark(received-33, if-23)
+compound(requests-25, Mann-24)
+nsubj(differs-29, requests-25)
+nsubj(received-33, requests-25)
+det(settlement-27, any-26)
+dep(requests-25, settlement-27)
+ref(requests-25, that-28)
+acl:relcl(requests-25, differs-29)
+case(statement-32, from-30)
+det(statement-32, the-31)
+nmod:from(differs-29, statement-32)
+advcl:if(contact-21, received-33)
+det(morning-35, this-34)
+nmod:tmod(received-33, morning-35)
+punct(contacted-3, .-36)
+
+Extracted the following NER entity mentions:
+Enron	ORGANIZATION
+Mann	PERSON
+Mann	PERSON
+this morning	TIME
+her	PERSON
+
+Sentence #4 (20 tokens):
+The preliminary number for Mann's initial margin and variation margin was a net inflow of $4.8MM.
+
+Tokens:
+[Text=The CharacterOffsetBegin=406 CharacterOffsetEnd=409 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=preliminary CharacterOffsetBegin=410 CharacterOffsetEnd=421 PartOfSpeech=JJ Lemma=preliminary NamedEntityTag=O]
+[Text=number CharacterOffsetBegin=422 CharacterOffsetEnd=428 PartOfSpeech=NN Lemma=number NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=429 CharacterOffsetEnd=432 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Mann CharacterOffsetBegin=433 CharacterOffsetEnd=437 PartOfSpeech=NNP Lemma=Mann NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=437 CharacterOffsetEnd=439 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=initial CharacterOffsetBegin=440 CharacterOffsetEnd=447 PartOfSpeech=JJ Lemma=initial NamedEntityTag=O]
+[Text=margin CharacterOffsetBegin=448 CharacterOffsetEnd=454 PartOfSpeech=NN Lemma=margin NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=455 CharacterOffsetEnd=458 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=variation CharacterOffsetBegin=459 CharacterOffsetEnd=468 PartOfSpeech=NN Lemma=variation NamedEntityTag=O]
+[Text=margin CharacterOffsetBegin=469 CharacterOffsetEnd=475 PartOfSpeech=NN Lemma=margin NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=476 CharacterOffsetEnd=479 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=480 CharacterOffsetEnd=481 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=net CharacterOffsetBegin=482 CharacterOffsetEnd=485 PartOfSpeech=JJ Lemma=net NamedEntityTag=O]
+[Text=inflow CharacterOffsetBegin=486 CharacterOffsetEnd=492 PartOfSpeech=NN Lemma=inflow NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=493 CharacterOffsetEnd=495 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=496 CharacterOffsetEnd=497 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$4.8]
+[Text=4.8 CharacterOffsetBegin=497 CharacterOffsetEnd=500 PartOfSpeech=CD Lemma=4.8 NamedEntityTag=MONEY NormalizedNamedEntityTag=$4.8]
+[Text=MM CharacterOffsetBegin=500 CharacterOffsetEnd=502 PartOfSpeech=NN Lemma=mm NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=502 CharacterOffsetEnd=503 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ preliminary) (NN number))
+      (PP (IN for)
+        (NP
+          (NP (NNP Mann) (POS 's))
+          (JJ initial) (NN margin)
+          (CC and)
+          (NN variation) (NN margin))))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (JJ net) (NN inflow))
+        (PP (IN of)
+          (NP
+            (NP ($ $) (CD 4.8))
+            (NP (NN MM))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, inflow-15)
+det(number-3, The-1)
+amod(number-3, preliminary-2)
+nsubj(inflow-15, number-3)
+case(margin-8, for-4)
+nmod:poss(margin-8, Mann-5)
+case(Mann-5, 's-6)
+amod(margin-8, initial-7)
+nmod:for(number-3, margin-8)
+cc(margin-8, and-9)
+compound(margin-11, variation-10)
+nmod:for(number-3, margin-11)
+conj:and(margin-8, margin-11)
+cop(inflow-15, was-12)
+det(inflow-15, a-13)
+amod(inflow-15, net-14)
+case(4.8-18, of-16)
+dep(4.8-18, $-17)
+nmod:of(inflow-15, 4.8-18)
+dep(4.8-18, MM-19)
+punct(inflow-15, .-20)
+
+Extracted the following NER entity mentions:
+Mann	PERSON
+$4.8	MONEY
+
+Sentence #5 (9 tokens):
+I will let you know of any changes.
+
+Tokens:
+[Text=I CharacterOffsetBegin=505 CharacterOffsetEnd=506 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=507 CharacterOffsetEnd=511 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=let CharacterOffsetBegin=512 CharacterOffsetEnd=515 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=516 CharacterOffsetEnd=519 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=520 CharacterOffsetEnd=524 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=525 CharacterOffsetEnd=527 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=528 CharacterOffsetEnd=531 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=changes CharacterOffsetBegin=532 CharacterOffsetEnd=539 PartOfSpeech=NNS Lemma=change NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=539 CharacterOffsetEnd=540 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD will)
+      (VP (VB let)
+        (S
+          (NP (PRP you))
+          (VP (VB know)
+            (PP (IN of)
+              (NP (DT any) (NNS changes)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, let-3)
+nsubj(let-3, I-1)
+aux(let-3, will-2)
+nsubj(know-5, you-4)
+ccomp(let-3, know-5)
+case(changes-8, of-6)
+det(changes-8, any-7)
+nmod:of(know-5, changes-8)
+punct(let-3, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #6 (2 tokens):
+Thanks.
+
+Tokens:
+[Text=Thanks CharacterOffsetBegin=542 CharacterOffsetEnd=548 PartOfSpeech=NNS Lemma=thanks NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=548 CharacterOffsetEnd=549 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NNS Thanks) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Thanks-1)
+punct(Thanks-1, .-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #7 (2 tokens):
+Greg x35399
+
+Tokens:
+[Text=Greg CharacterOffsetBegin=551 CharacterOffsetEnd=555 PartOfSpeech=NNP Lemma=Greg NamedEntityTag=PERSON]
+[Text=x35399 CharacterOffsetBegin=556 CharacterOffsetEnd=562 PartOfSpeech=NN Lemma=x35399 NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Greg))
+    (NP (NN x35399))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Greg-1)
+dep(Greg-1, x35399-2)
+
+Extracted the following NER entity mentions:
+Greg x35399	PERSON
+
+Coreference set:
+	(3,16,[16,17]) -> (1,12,[12,13]), that is: "Mann" -> "Mann"
+	(3,24,[24,25]) -> (1,12,[12,13]), that is: "Mann" -> "Mann"
+	(4,5,[5,7]) -> (1,12,[12,13]), that is: "Mann 's" -> "Mann"
+
+Coreference set:
+	(2,1,[1,2]) -> (1,4,[2,5]), that is: "It" -> "the broker statement"
+	(3,32,[31,33]) -> (1,4,[2,5]), that is: "the statement" -> "the broker statement"
+
+Coreference set:
+	(3,35,[34,36]) -> (1,7,[6,8]), that is: "this morning" -> "this morning"
+
+Coreference set:
+	(2,9,[9,10]) -> (2,6,[6,7]), that is: "their" -> "they"
+
+Coreference set:
+	(3,22,[22,23]) -> (3,1,[1,2]), that is: "me" -> "I"
+	(5,1,[1,2]) -> (3,1,[1,2]), that is: "I" -> "I"
+
+Coreference set:
+	(4,15,[13,20]) -> (4,3,[1,12]), that is: "a net inflow of $ 4.8 MM" -> "The preliminary number for Mann 's initial margin and variation margin"

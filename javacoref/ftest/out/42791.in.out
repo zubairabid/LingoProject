@@ -1,0 +1,455 @@
+Document: ID=42791.in (11 sentences, 90 tokens)
+
+Sentence #1 (12 tokens):
+Columbian Natural Resources (CNR) sent actuals for April 2002.
+
+Tokens:
+[Text=Columbian CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=Columbian NamedEntityTag=O]
+[Text=Natural CharacterOffsetBegin=10 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=Natural NamedEntityTag=O]
+[Text=Resources CharacterOffsetBegin=18 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=Resources NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=CNR CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=CNR NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=sent CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=VBD Lemma=send NamedEntityTag=O]
+[Text=actuals CharacterOffsetBegin=39 CharacterOffsetEnd=46 PartOfSpeech=NNS Lemma=actual NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=April CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=NNP Lemma=April NamedEntityTag=DATE NormalizedNamedEntityTag=200204]
+[Text=2002 CharacterOffsetBegin=57 CharacterOffsetEnd=61 PartOfSpeech=CD Lemma=2002 NamedEntityTag=DATE NormalizedNamedEntityTag=200204]
+[Text=. CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Columbian) (NNP Natural) (NNP Resources))
+      (PRN (-LRB- -LRB-)
+        (NP (NNP CNR))
+        (-RRB- -RRB-)))
+    (VP (VBD sent)
+      (NP (NNS actuals))
+      (PP (IN for)
+        (NP (NNP April) (CD 2002))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, sent-7)
+compound(Resources-3, Columbian-1)
+compound(Resources-3, Natural-2)
+nsubj(sent-7, Resources-3)
+punct(CNR-5, -LRB--4)
+appos(Resources-3, CNR-5)
+punct(CNR-5, -RRB--6)
+dobj(sent-7, actuals-8)
+case(April-10, for-9)
+nmod:for(sent-7, April-10)
+nummod(April-10, 2002-11)
+punct(sent-7, .-12)
+
+Extracted the following NER entity mentions:
+April 2002	DATE
+
+Sentence #2 (10 tokens):
+4 producers for ENA,  Elton is for EES.
+
+Tokens:
+[Text=4 CharacterOffsetBegin=64 CharacterOffsetEnd=65 PartOfSpeech=CD Lemma=4 NamedEntityTag=NUMBER NormalizedNamedEntityTag=4.0]
+[Text=producers CharacterOffsetBegin=66 CharacterOffsetEnd=75 PartOfSpeech=NNS Lemma=producer NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=ENA CharacterOffsetBegin=80 CharacterOffsetEnd=83 PartOfSpeech=NNP Lemma=ENA NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=83 CharacterOffsetEnd=84 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Elton CharacterOffsetBegin=86 CharacterOffsetEnd=91 PartOfSpeech=NNP Lemma=Elton NamedEntityTag=PERSON]
+[Text=is CharacterOffsetBegin=92 CharacterOffsetEnd=94 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=95 CharacterOffsetEnd=98 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=EES CharacterOffsetBegin=99 CharacterOffsetEnd=102 PartOfSpeech=NN Lemma=ees NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=102 CharacterOffsetEnd=103 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (CD 4) (NNS producers))
+      (PP (IN for)
+        (NP (NNP ENA) (, ,) (NNP Elton))))
+    (VP (VBZ is)
+      (PP (IN for)
+        (NP (NN EES))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, EES-9)
+nummod(producers-2, 4-1)
+nsubj(EES-9, producers-2)
+case(Elton-6, for-3)
+compound(Elton-6, ENA-4)
+punct(Elton-6, ,-5)
+nmod:for(producers-2, Elton-6)
+cop(EES-9, is-7)
+case(EES-9, for-8)
+punct(EES-9, .-10)
+
+Extracted the following NER entity mentions:
+4	NUMBER
+ENA	ORGANIZATION
+Elton	PERSON
+
+Sentence #3 (3 tokens):
+File provided.
+
+Tokens:
+[Text=File CharacterOffsetBegin=104 CharacterOffsetEnd=108 PartOfSpeech=VB Lemma=file NamedEntityTag=O]
+[Text=provided CharacterOffsetBegin=109 CharacterOffsetEnd=117 PartOfSpeech=VBN Lemma=provide NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=117 CharacterOffsetEnd=118 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB File)
+      (VP (VBN provided)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, File-1)
+dep(File-1, provided-2)
+punct(File-1, .-3)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (14 tokens):
+Gatherco and CGAS actuals are in also for April-02 for ENA and EES .
+
+Tokens:
+[Text=Gatherco CharacterOffsetBegin=120 CharacterOffsetEnd=128 PartOfSpeech=NNP Lemma=Gatherco NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=129 CharacterOffsetEnd=132 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=CGAS CharacterOffsetBegin=133 CharacterOffsetEnd=137 PartOfSpeech=NNP Lemma=CGAS NamedEntityTag=O]
+[Text=actuals CharacterOffsetBegin=138 CharacterOffsetEnd=145 PartOfSpeech=NNS Lemma=actual NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=146 CharacterOffsetEnd=149 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=150 CharacterOffsetEnd=152 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=153 CharacterOffsetEnd=157 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=158 CharacterOffsetEnd=161 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=April-02 CharacterOffsetBegin=162 CharacterOffsetEnd=170 PartOfSpeech=NN Lemma=april-02 NamedEntityTag=DATE NormalizedNamedEntityTag=****04/******02]
+[Text=for CharacterOffsetBegin=171 CharacterOffsetEnd=174 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=ENA CharacterOffsetBegin=175 CharacterOffsetEnd=178 PartOfSpeech=NN Lemma=ena NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=179 CharacterOffsetEnd=182 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=EES CharacterOffsetBegin=183 CharacterOffsetEnd=186 PartOfSpeech=NN Lemma=ees NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=187 CharacterOffsetEnd=188 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Gatherco)
+      (CC and)
+      (NNP CGAS) (NNS actuals))
+    (VP (VBP are)
+      (PP (IN in)
+        (PP
+          (ADVP (RB also))
+          (IN for)
+          (NP
+            (NP (NN April-02))
+            (PP (IN for)
+              (NP (NN ENA)
+                (CC and)
+                (NN EES)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, April-02-9)
+compound(actuals-4, Gatherco-1)
+cc(Gatherco-1, and-2)
+conj:and(Gatherco-1, CGAS-3)
+compound(actuals-4, CGAS-3)
+nsubj(April-02-9, actuals-4)
+cop(April-02-9, are-5)
+case(April-02-9, in-6)
+advmod(April-02-9, also-7)
+case(April-02-9, for-8)
+case(ENA-11, for-10)
+nmod:for(April-02-9, ENA-11)
+cc(ENA-11, and-12)
+nmod:for(April-02-9, EES-13)
+conj:and(ENA-11, EES-13)
+punct(April-02-9, .-14)
+
+Extracted the following NER entity mentions:
+April-02	DATE
+ENA	ORGANIZATION
+
+Sentence #5 (6 tokens):
+Files provided from their websites.
+
+Tokens:
+[Text=Files CharacterOffsetBegin=190 CharacterOffsetEnd=195 PartOfSpeech=NNS Lemma=file NamedEntityTag=O]
+[Text=provided CharacterOffsetBegin=196 CharacterOffsetEnd=204 PartOfSpeech=VBN Lemma=provide NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=205 CharacterOffsetEnd=209 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=210 CharacterOffsetEnd=215 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=websites CharacterOffsetBegin=216 CharacterOffsetEnd=224 PartOfSpeech=NNS Lemma=website NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=224 CharacterOffsetEnd=225 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNS Files))
+    (VP (VBN provided)
+      (PP (IN from)
+        (NP (PRP$ their) (NNS websites))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, provided-2)
+nsubj(provided-2, Files-1)
+case(websites-5, from-3)
+nmod:poss(websites-5, their-4)
+nmod:from(provided-2, websites-5)
+punct(provided-2, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #6 (7 tokens):
+Mark - heard from Kevin Brady?
+
+Tokens:
+[Text=Mark CharacterOffsetBegin=227 CharacterOffsetEnd=231 PartOfSpeech=NNP Lemma=Mark NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=232 CharacterOffsetEnd=233 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=234 CharacterOffsetEnd=239 PartOfSpeech=VBN Lemma=hear NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=240 CharacterOffsetEnd=244 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Kevin CharacterOffsetBegin=245 CharacterOffsetEnd=250 PartOfSpeech=NNP Lemma=Kevin NamedEntityTag=PERSON]
+[Text=Brady CharacterOffsetBegin=251 CharacterOffsetEnd=256 PartOfSpeech=NNP Lemma=Brady NamedEntityTag=PERSON]
+[Text=? CharacterOffsetBegin=256 CharacterOffsetEnd=257 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (X
+    (NP (NNP Mark))
+    (: -)
+    (VP (VBN heard)
+      (PP (IN from)
+        (NP (NNP Kevin) (NNP Brady))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, heard-3)
+dep(heard-3, Mark-1)
+punct(heard-3, --2)
+case(Brady-6, from-4)
+compound(Brady-6, Kevin-5)
+nmod:from(heard-3, Brady-6)
+punct(heard-3, ?-7)
+
+Extracted the following NER entity mentions:
+Kevin Brady	PERSON
+
+Sentence #7 (5 tokens):
+Will he path these?
+
+Tokens:
+[Text=Will CharacterOffsetBegin=259 CharacterOffsetEnd=263 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=264 CharacterOffsetEnd=266 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=path CharacterOffsetBegin=267 CharacterOffsetEnd=271 PartOfSpeech=NN Lemma=path NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=272 CharacterOffsetEnd=277 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=277 CharacterOffsetEnd=278 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (MD Will)
+      (VP
+        (NP (PRP he)
+          (NP
+            (NP (NN path))
+            (NP (DT these))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, path-3)
+aux(path-3, Will-1)
+dep(path-3, he-2)
+dep(path-3, these-4)
+punct(path-3, ?-5)
+
+Extracted the following NER entity mentions:
+he	PERSON
+
+Sentence #8 (10 tokens):
+I can provide a list of deals and meters.
+
+Tokens:
+[Text=I CharacterOffsetBegin=279 CharacterOffsetEnd=280 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=281 CharacterOffsetEnd=284 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=provide CharacterOffsetBegin=285 CharacterOffsetEnd=292 PartOfSpeech=VB Lemma=provide NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=293 CharacterOffsetEnd=294 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=list CharacterOffsetBegin=295 CharacterOffsetEnd=299 PartOfSpeech=NN Lemma=list NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=300 CharacterOffsetEnd=302 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=deals CharacterOffsetBegin=303 CharacterOffsetEnd=308 PartOfSpeech=NNS Lemma=deal NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=309 CharacterOffsetEnd=312 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=meters CharacterOffsetBegin=313 CharacterOffsetEnd=319 PartOfSpeech=NNS Lemma=meter NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=319 CharacterOffsetEnd=320 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD can)
+      (VP (VB provide)
+        (NP
+          (NP (DT a) (NN list))
+          (PP (IN of)
+            (NP (NNS deals)
+              (CC and)
+              (NNS meters))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, provide-3)
+nsubj(provide-3, I-1)
+aux(provide-3, can-2)
+det(list-5, a-4)
+dobj(provide-3, list-5)
+case(deals-7, of-6)
+nmod:of(list-5, deals-7)
+cc(deals-7, and-8)
+nmod:of(list-5, meters-9)
+conj:and(deals-7, meters-9)
+punct(provide-3, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #9 (1 tokens):
+.
+
+Tokens:
+[Text=. CharacterOffsetBegin=320 CharacterOffsetEnd=321 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, .-1)
+
+Extracted the following NER entity mentions:
+
+Sentence #10 (21 tokens):
+Chris / Donna - Are we taking / using gas from CNR, Gatherco, CGAS for ENA and/or EES ?
+
+Tokens:
+[Text=Chris CharacterOffsetBegin=323 CharacterOffsetEnd=328 PartOfSpeech=NNP Lemma=Chris NamedEntityTag=PERSON]
+[Text=/ CharacterOffsetBegin=329 CharacterOffsetEnd=330 PartOfSpeech=: Lemma=/ NamedEntityTag=O]
+[Text=Donna CharacterOffsetBegin=331 CharacterOffsetEnd=336 PartOfSpeech=NNP Lemma=Donna NamedEntityTag=PERSON]
+[Text=- CharacterOffsetBegin=337 CharacterOffsetEnd=338 PartOfSpeech=: Lemma=- NamedEntityTag=PERSON]
+[Text=Are CharacterOffsetBegin=339 CharacterOffsetEnd=342 PartOfSpeech=VBP Lemma=be NamedEntityTag=PERSON]
+[Text=we CharacterOffsetBegin=343 CharacterOffsetEnd=345 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=taking CharacterOffsetBegin=346 CharacterOffsetEnd=352 PartOfSpeech=VBG Lemma=take NamedEntityTag=O]
+[Text=/ CharacterOffsetBegin=353 CharacterOffsetEnd=354 PartOfSpeech=: Lemma=/ NamedEntityTag=O]
+[Text=using CharacterOffsetBegin=355 CharacterOffsetEnd=360 PartOfSpeech=VBG Lemma=use NamedEntityTag=O]
+[Text=gas CharacterOffsetBegin=361 CharacterOffsetEnd=364 PartOfSpeech=NN Lemma=gas NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=365 CharacterOffsetEnd=369 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=CNR CharacterOffsetBegin=370 CharacterOffsetEnd=373 PartOfSpeech=NNP Lemma=CNR NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=373 CharacterOffsetEnd=374 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Gatherco CharacterOffsetBegin=375 CharacterOffsetEnd=383 PartOfSpeech=NNP Lemma=Gatherco NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=383 CharacterOffsetEnd=384 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=CGAS CharacterOffsetBegin=385 CharacterOffsetEnd=389 PartOfSpeech=NNP Lemma=CGAS NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=390 CharacterOffsetEnd=393 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=ENA CharacterOffsetBegin=394 CharacterOffsetEnd=397 PartOfSpeech=NNP Lemma=ENA NamedEntityTag=ORGANIZATION]
+[Text=and/or CharacterOffsetBegin=398 CharacterOffsetEnd=404 PartOfSpeech=CC Lemma=and/or NamedEntityTag=O]
+[Text=EES CharacterOffsetBegin=405 CharacterOffsetEnd=408 PartOfSpeech=NNP Lemma=EES NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=409 CharacterOffsetEnd=410 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP
+      (NP (NNP Chris))
+      (PRN (: /)
+        (NP (NNP Donna))))
+    (: -)
+    (SQ (VBP Are)
+      (NP (PRP we))
+      (VP
+        (VP (VBG taking))
+        (PRN (: /)
+          (S
+            (VP (VBG using)
+              (NP (NN gas))
+              (PP (IN from)
+                (NP
+                  (NP (NNP CNR) (, ,) (NNP Gatherco) (, ,) (NNP CGAS))
+                  (PP (IN for)
+                    (NP (NNP ENA)
+                      (CC and/or)
+                      (NNP EES))))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Chris-1)
+punct(Donna-3, /-2)
+dep(Chris-1, Donna-3)
+punct(Chris-1, --4)
+aux(taking-7, Are-5)
+nsubj(taking-7, we-6)
+parataxis(Chris-1, taking-7)
+punct(using-9, /-8)
+parataxis(taking-7, using-9)
+dobj(using-9, gas-10)
+case(CGAS-16, from-11)
+compound(CGAS-16, CNR-12)
+punct(CGAS-16, ,-13)
+appos(CGAS-16, Gatherco-14)
+punct(CGAS-16, ,-15)
+nmod:from(using-9, CGAS-16)
+case(ENA-18, for-17)
+nmod:for(CGAS-16, ENA-18)
+cc(ENA-18, and/or-19)
+nmod:for(CGAS-16, EES-20)
+conj:and/or(ENA-18, EES-20)
+punct(Chris-1, ?-21)
+
+Extracted the following NER entity mentions:
+Chris	PERSON
+Donna - Are	PERSON
+CNR	ORGANIZATION
+Gatherco	LOCATION
+ENA	ORGANIZATION
+
+Sentence #11 (1 tokens):
+WRP
+
+Tokens:
+[Text=WRP CharacterOffsetBegin=412 CharacterOffsetEnd=415 PartOfSpeech=NN Lemma=wrp NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NN WRP)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, WRP-1)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(1,5,[5,6]) -> (10,12,[12,13]), that is: "CNR" -> "CNR"
+
+Coreference set:
+	(10,18,[18,19]) -> (2,4,[4,5]), that is: "ENA" -> "ENA"
+
+Coreference set:
+	(5,4,[4,5]) -> (2,2,[1,7]), that is: "their" -> "4 producers for ENA , Elton"
+
+Coreference set:
+	(10,18,[18,21]) -> (4,11,[11,14]), that is: "ENA and/or EES" -> "ENA and EES"
+
+Coreference set:
+	(4,1,[1,2]) -> (10,14,[14,15]), that is: "Gatherco" -> "Gatherco"
+
+Coreference set:
+	(7,2,[2,3]) -> (6,6,[5,7]), that is: "he" -> "Kevin Brady"

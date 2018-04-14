@@ -1,0 +1,449 @@
+Document: ID=60169.in (6 sentences, 111 tokens)
+
+Sentence #1 (7 tokens):
+I spoke with LeDain in Calgary.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=spoke CharacterOffsetBegin=2 CharacterOffsetEnd=7 PartOfSpeech=VBD Lemma=speak NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=LeDain CharacterOffsetBegin=13 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=LeDain NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Calgary CharacterOffsetBegin=23 CharacterOffsetEnd=30 PartOfSpeech=NNP Lemma=Calgary NamedEntityTag=CITY]
+[Text=. CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD spoke)
+      (PP (IN with)
+        (NP (NNP LeDain)))
+      (PP (IN in)
+        (NP (NNP Calgary))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, spoke-2)
+nsubj(spoke-2, I-1)
+case(LeDain-4, with-3)
+nmod:with(spoke-2, LeDain-4)
+case(Calgary-6, in-5)
+nmod:in(spoke-2, Calgary-6)
+punct(spoke-2, .-7)
+
+Extracted the following NER entity mentions:
+Calgary	CITY
+
+Sentence #2 (12 tokens):
+They had a bid for C$3MM w/out the ABB turbines.
+
+Tokens:
+[Text=They CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=bid CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=bid NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=C$ CharacterOffsetBegin=52 CharacterOffsetEnd=54 PartOfSpeech=$ Lemma=c$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$3.0]
+[Text=3MM CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=CD Lemma=3mm NamedEntityTag=MONEY NormalizedNamedEntityTag=$3.0]
+[Text=w/out CharacterOffsetBegin=58 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=w/out NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=64 CharacterOffsetEnd=67 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=ABB CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=NNP Lemma=ABB NamedEntityTag=ORGANIZATION]
+[Text=turbines CharacterOffsetBegin=72 CharacterOffsetEnd=80 PartOfSpeech=NNS Lemma=turbine NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=80 CharacterOffsetEnd=81 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBD had)
+      (NP
+        (NP (DT a) (NN bid))
+        (PP (IN for)
+          (NP
+            (NP ($ C$) (CD 3MM) (NN w/out))
+            (NP (DT the) (NNP ABB) (NNS turbines))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, had-2)
+nsubj(had-2, They-1)
+det(bid-4, a-3)
+dobj(had-2, bid-4)
+case(w/out-8, for-5)
+dep(w/out-8, C$-6)
+nummod(w/out-8, 3MM-7)
+nmod:for(bid-4, w/out-8)
+det(turbines-11, the-9)
+compound(turbines-11, ABB-10)
+dep(w/out-8, turbines-11)
+punct(had-2, .-12)
+
+Extracted the following NER entity mentions:
+C$3MM	MONEY
+ABB	ORGANIZATION
+
+Sentence #3 (22 tokens):
+They are not planning to pursue because Lavorato commented that it is better to hold onto the site at that price.
+
+Tokens:
+[Text=They CharacterOffsetBegin=83 CharacterOffsetEnd=87 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=88 CharacterOffsetEnd=91 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=planning CharacterOffsetBegin=96 CharacterOffsetEnd=104 PartOfSpeech=VBG Lemma=plan NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=105 CharacterOffsetEnd=107 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=pursue CharacterOffsetBegin=108 CharacterOffsetEnd=114 PartOfSpeech=VB Lemma=pursue NamedEntityTag=O]
+[Text=because CharacterOffsetBegin=115 CharacterOffsetEnd=122 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=Lavorato CharacterOffsetBegin=123 CharacterOffsetEnd=131 PartOfSpeech=NNP Lemma=Lavorato NamedEntityTag=PERSON]
+[Text=commented CharacterOffsetBegin=132 CharacterOffsetEnd=141 PartOfSpeech=VBD Lemma=comment NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=142 CharacterOffsetEnd=146 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=147 CharacterOffsetEnd=149 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=150 CharacterOffsetEnd=152 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=better CharacterOffsetBegin=153 CharacterOffsetEnd=159 PartOfSpeech=JJR Lemma=better NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=160 CharacterOffsetEnd=162 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=hold CharacterOffsetBegin=163 CharacterOffsetEnd=167 PartOfSpeech=VB Lemma=hold NamedEntityTag=O]
+[Text=onto CharacterOffsetBegin=168 CharacterOffsetEnd=172 PartOfSpeech=IN Lemma=onto NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=173 CharacterOffsetEnd=176 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=site CharacterOffsetBegin=177 CharacterOffsetEnd=181 PartOfSpeech=NN Lemma=site NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=182 CharacterOffsetEnd=184 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=185 CharacterOffsetEnd=189 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=price CharacterOffsetBegin=190 CharacterOffsetEnd=195 PartOfSpeech=NN Lemma=price NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=195 CharacterOffsetEnd=196 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP are) (RB not)
+      (VP (VBG planning)
+        (S
+          (VP (TO to)
+            (VP (VB pursue)
+              (SBAR (IN because)
+                (S
+                  (NP (NNP Lavorato))
+                  (VP (VBD commented)
+                    (SBAR (IN that)
+                      (S
+                        (NP (PRP it))
+                        (VP (VBZ is)
+                          (ADJP (JJR better))
+                          (S
+                            (VP (TO to)
+                              (VP (VB hold)
+                                (PP (IN onto)
+                                  (NP
+                                    (NP (DT the) (NN site))
+                                    (PP (IN at)
+                                      (NP (DT that) (NN price)))))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, planning-4)
+nsubj(planning-4, They-1)
+nsubj:xsubj(pursue-6, They-1)
+aux(planning-4, are-2)
+neg(planning-4, not-3)
+mark(pursue-6, to-5)
+xcomp(planning-4, pursue-6)
+mark(commented-9, because-7)
+nsubj(commented-9, Lavorato-8)
+advcl:because(pursue-6, commented-9)
+mark(better-13, that-10)
+nsubj(better-13, it-11)
+nsubj:xsubj(hold-15, it-11)
+cop(better-13, is-12)
+ccomp(commented-9, better-13)
+mark(hold-15, to-14)
+xcomp(better-13, hold-15)
+case(site-18, onto-16)
+det(site-18, the-17)
+nmod:onto(hold-15, site-18)
+case(price-21, at-19)
+det(price-21, that-20)
+nmod:at(site-18, price-21)
+punct(planning-4, .-22)
+
+Extracted the following NER entity mentions:
+Lavorato	PERSON
+
+Sentence #4 (9 tokens):
+The site is permitted for the ABB's.
+
+Tokens:
+[Text=The CharacterOffsetBegin=198 CharacterOffsetEnd=201 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=site CharacterOffsetBegin=202 CharacterOffsetEnd=206 PartOfSpeech=NN Lemma=site NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=207 CharacterOffsetEnd=209 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=permitted CharacterOffsetBegin=210 CharacterOffsetEnd=219 PartOfSpeech=VBN Lemma=permit NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=220 CharacterOffsetEnd=223 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=224 CharacterOffsetEnd=227 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=ABB CharacterOffsetBegin=228 CharacterOffsetEnd=231 PartOfSpeech=NNP Lemma=ABB NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=231 CharacterOffsetEnd=233 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=233 CharacterOffsetEnd=234 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN site))
+    (VP (VBZ is)
+      (VP (VBN permitted)
+        (PP (IN for)
+          (NP (DT the) (NNP ABB) (POS 's)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, permitted-4)
+det(site-2, The-1)
+nsubjpass(permitted-4, site-2)
+auxpass(permitted-4, is-3)
+case(ABB-7, for-5)
+det(ABB-7, the-6)
+nmod:for(permitted-4, ABB-7)
+case(ABB-7, 's-8)
+punct(permitted-4, .-9)
+
+Extracted the following NER entity mentions:
+ABB	ORGANIZATION
+
+Sentence #5 (58 tokens):
+I have asked LeDain to send me their original info memo for the sale of the site (w/ turbines); it might be worth trying to market that project again - time has passed, the market there may open soon, Ontario just set a new peak and East prices rallied last week.
+
+Tokens:
+[Text=I CharacterOffsetBegin=236 CharacterOffsetEnd=237 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=238 CharacterOffsetEnd=242 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=asked CharacterOffsetBegin=243 CharacterOffsetEnd=248 PartOfSpeech=VBN Lemma=ask NamedEntityTag=O]
+[Text=LeDain CharacterOffsetBegin=249 CharacterOffsetEnd=255 PartOfSpeech=NNP Lemma=LeDain NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=256 CharacterOffsetEnd=258 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=send CharacterOffsetBegin=259 CharacterOffsetEnd=263 PartOfSpeech=VB Lemma=send NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=264 CharacterOffsetEnd=266 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=267 CharacterOffsetEnd=272 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=original CharacterOffsetBegin=273 CharacterOffsetEnd=281 PartOfSpeech=JJ Lemma=original NamedEntityTag=O]
+[Text=info CharacterOffsetBegin=282 CharacterOffsetEnd=286 PartOfSpeech=NN Lemma=info NamedEntityTag=O]
+[Text=memo CharacterOffsetBegin=287 CharacterOffsetEnd=291 PartOfSpeech=NN Lemma=memo NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=292 CharacterOffsetEnd=295 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=296 CharacterOffsetEnd=299 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=sale CharacterOffsetBegin=300 CharacterOffsetEnd=304 PartOfSpeech=NN Lemma=sale NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=305 CharacterOffsetEnd=307 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=308 CharacterOffsetEnd=311 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=site CharacterOffsetBegin=312 CharacterOffsetEnd=316 PartOfSpeech=NN Lemma=site NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=317 CharacterOffsetEnd=318 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=w CharacterOffsetBegin=318 CharacterOffsetEnd=319 PartOfSpeech=NN Lemma=w NamedEntityTag=O]
+[Text=/ CharacterOffsetBegin=319 CharacterOffsetEnd=320 PartOfSpeech=: Lemma=/ NamedEntityTag=O]
+[Text=turbines CharacterOffsetBegin=321 CharacterOffsetEnd=329 PartOfSpeech=NNS Lemma=turbine NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=329 CharacterOffsetEnd=330 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=330 CharacterOffsetEnd=331 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=332 CharacterOffsetEnd=334 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=might CharacterOffsetBegin=335 CharacterOffsetEnd=340 PartOfSpeech=MD Lemma=might NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=341 CharacterOffsetEnd=343 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=worth CharacterOffsetBegin=344 CharacterOffsetEnd=349 PartOfSpeech=JJ Lemma=worth NamedEntityTag=O]
+[Text=trying CharacterOffsetBegin=350 CharacterOffsetEnd=356 PartOfSpeech=VBG Lemma=try NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=357 CharacterOffsetEnd=359 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=market CharacterOffsetBegin=360 CharacterOffsetEnd=366 PartOfSpeech=NN Lemma=market NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=367 CharacterOffsetEnd=371 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=project CharacterOffsetBegin=372 CharacterOffsetEnd=379 PartOfSpeech=NN Lemma=project NamedEntityTag=O]
+[Text=again CharacterOffsetBegin=380 CharacterOffsetEnd=385 PartOfSpeech=RB Lemma=again NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=386 CharacterOffsetEnd=387 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=388 CharacterOffsetEnd=392 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=393 CharacterOffsetEnd=396 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=passed CharacterOffsetBegin=397 CharacterOffsetEnd=403 PartOfSpeech=VBN Lemma=pass NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=403 CharacterOffsetEnd=404 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=405 CharacterOffsetEnd=408 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=market CharacterOffsetBegin=409 CharacterOffsetEnd=415 PartOfSpeech=NN Lemma=market NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=416 CharacterOffsetEnd=421 PartOfSpeech=RB Lemma=there NamedEntityTag=O]
+[Text=may CharacterOffsetBegin=422 CharacterOffsetEnd=425 PartOfSpeech=MD Lemma=may NamedEntityTag=O]
+[Text=open CharacterOffsetBegin=426 CharacterOffsetEnd=430 PartOfSpeech=VB Lemma=open NamedEntityTag=O]
+[Text=soon CharacterOffsetBegin=431 CharacterOffsetEnd=435 PartOfSpeech=RB Lemma=soon NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=435 CharacterOffsetEnd=436 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Ontario CharacterOffsetBegin=437 CharacterOffsetEnd=444 PartOfSpeech=NNP Lemma=Ontario NamedEntityTag=STATE_OR_PROVINCE]
+[Text=just CharacterOffsetBegin=445 CharacterOffsetEnd=449 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=set CharacterOffsetBegin=450 CharacterOffsetEnd=453 PartOfSpeech=VBD Lemma=set NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=454 CharacterOffsetEnd=455 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=456 CharacterOffsetEnd=459 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=peak CharacterOffsetBegin=460 CharacterOffsetEnd=464 PartOfSpeech=NN Lemma=peak NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=465 CharacterOffsetEnd=468 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=East CharacterOffsetBegin=469 CharacterOffsetEnd=473 PartOfSpeech=JJ Lemma=east NamedEntityTag=LOCATION]
+[Text=prices CharacterOffsetBegin=474 CharacterOffsetEnd=480 PartOfSpeech=NNS Lemma=price NamedEntityTag=O]
+[Text=rallied CharacterOffsetBegin=481 CharacterOffsetEnd=488 PartOfSpeech=VBD Lemma=rally NamedEntityTag=O]
+[Text=last CharacterOffsetBegin=489 CharacterOffsetEnd=493 PartOfSpeech=JJ Lemma=last NamedEntityTag=O]
+[Text=week CharacterOffsetBegin=494 CharacterOffsetEnd=498 PartOfSpeech=NN Lemma=week NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=498 CharacterOffsetEnd=499 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP have)
+        (VP (VBN asked)
+          (S
+            (NP (NNP LeDain))
+            (VP (TO to)
+              (VP (VB send)
+                (NP (PRP me))
+                (NP
+                  (NP (PRP$ their) (JJ original) (NN info) (NN memo))
+                  (PP (IN for)
+                    (NP
+                      (NP (DT the) (NN sale))
+                      (PP (IN of)
+                        (NP
+                          (NP
+                            (NP (DT the) (NN site))
+                            (-LRB- -LRB-)
+                            (NP (NN w))
+                            (PRN (: /)
+                              (NP (NNS turbines)))
+                            (-RRB- -RRB-))
+                          (: ;)
+                          (S
+                            (NP (PRP it))
+                            (VP (MD might)
+                              (VP (VB be)
+                                (ADJP (JJ worth))
+                                (S
+                                  (VP (VBG trying)
+                                    (PP (TO to)
+                                      (NP (NN market)))))
+                                (SBAR (IN that)
+                                  (S
+                                    (NP
+                                      (NP (NN project))
+                                      (RRC
+                                        (ADVP (RB again) (: -))
+                                        (NP (NN time))))
+                                    (VP (VBZ has)
+                                      (VP (VBN passed)))))))))))))))))))
+    (, ,)
+    (S
+      (NP (DT the) (NN market))
+      (ADVP (RB there))
+      (VP (MD may)
+        (VP (VB open)
+          (ADVP (RB soon)))))
+    (, ,)
+    (S
+      (NP (NNP Ontario))
+      (ADVP (RB just))
+      (VP (VBD set)
+        (NP (DT a) (JJ new) (NN peak))))
+    (CC and)
+    (S
+      (NP (JJ East) (NNS prices))
+      (VP (VBD rallied)
+        (NP-TMP (JJ last) (NN week))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, asked-3)
+nsubj(asked-3, I-1)
+aux(asked-3, have-2)
+dobj(asked-3, LeDain-4)
+nsubj:xsubj(send-6, LeDain-4)
+mark(send-6, to-5)
+xcomp(asked-3, send-6)
+iobj(send-6, me-7)
+nmod:poss(memo-11, their-8)
+amod(memo-11, original-9)
+compound(memo-11, info-10)
+dobj(send-6, memo-11)
+case(sale-14, for-12)
+det(sale-14, the-13)
+nmod:for(memo-11, sale-14)
+case(site-17, of-15)
+det(site-17, the-16)
+nmod:of(sale-14, site-17)
+punct(site-17, -LRB--18)
+dep(site-17, w-19)
+punct(turbines-21, /-20)
+dep(site-17, turbines-21)
+punct(site-17, -RRB--22)
+punct(site-17, ;-23)
+nsubj(worth-27, it-24)
+aux(worth-27, might-25)
+cop(worth-27, be-26)
+dep(site-17, worth-27)
+xcomp(worth-27, trying-28)
+case(market-30, to-29)
+nmod:to(trying-28, market-30)
+mark(passed-37, that-31)
+nsubj(passed-37, project-32)
+advmod(time-35, again-33)
+punct(again-33, --34)
+acl:relcl(project-32, time-35)
+aux(passed-37, has-36)
+ccomp(worth-27, passed-37)
+punct(asked-3, ,-38)
+det(market-40, the-39)
+nsubj(open-43, market-40)
+advmod(open-43, there-41)
+aux(open-43, may-42)
+ccomp(asked-3, open-43)
+advmod(open-43, soon-44)
+punct(asked-3, ,-45)
+nsubj(set-48, Ontario-46)
+advmod(set-48, just-47)
+conj:and(asked-3, set-48)
+det(peak-51, a-49)
+amod(peak-51, new-50)
+dobj(set-48, peak-51)
+cc(asked-3, and-52)
+amod(prices-54, East-53)
+nsubj(rallied-55, prices-54)
+conj:and(asked-3, rallied-55)
+amod(week-57, last-56)
+nmod:tmod(rallied-55, week-57)
+punct(asked-3, .-58)
+
+Extracted the following NER entity mentions:
+Ontario	STATE_OR_PROVINCE
+East	LOCATION
+
+Sentence #6 (3 tokens):
+Chris Calger
+503-464-3735
+
+Tokens:
+[Text=Chris CharacterOffsetBegin=501 CharacterOffsetEnd=506 PartOfSpeech=NNP Lemma=Chris NamedEntityTag=PERSON]
+[Text=Calger CharacterOffsetBegin=507 CharacterOffsetEnd=513 PartOfSpeech=NNP Lemma=Calger NamedEntityTag=PERSON]
+[Text=503-464-3735 CharacterOffsetBegin=514 CharacterOffsetEnd=526 PartOfSpeech=CD Lemma=503-464-3735 NamedEntityTag=NUMBER]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Chris) (NNP Calger))
+    (NP (CD 503-464-3735))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Calger-2)
+compound(Calger-2, Chris-1)
+dep(Calger-2, 503-464-3735-3)
+
+Extracted the following NER entity mentions:
+Chris Calger	PERSON
+503-464-3735	NUMBER
+
+Coreference set:
+	(5,1,[1,2]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(5,7,[7,8]) -> (1,1,[1,2]), that is: "me" -> "I"
+
+Coreference set:
+	(5,4,[4,5]) -> (1,4,[4,5]), that is: "LeDain" -> "LeDain"
+
+Coreference set:
+	(2,10,[10,11]) -> (4,7,[6,9]), that is: "ABB" -> "the ABB 's"
+
+Coreference set:
+	(3,1,[1,2]) -> (2,1,[1,2]), that is: "They" -> "They"
+	(5,8,[8,9]) -> (2,1,[1,2]), that is: "their" -> "They"
+
+Coreference set:
+	(5,21,[21,22]) -> (2,11,[9,12]), that is: "turbines" -> "the ABB turbines"
+
+Coreference set:
+	(4,2,[1,3]) -> (3,18,[17,22]), that is: "The site" -> "the site at that price"

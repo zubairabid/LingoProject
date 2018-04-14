@@ -1,0 +1,168 @@
+Document: ID=1265101.in (3 sentences, 38 tokens)
+
+Sentence #1 (25 tokens):
+FYI, attached is our response to Los Angeles Department of Water and Power's request that we execute their new Spot Gas Contract.
+
+Tokens:
+[Text=FYI CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=FYI NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=attached CharacterOffsetBegin=5 CharacterOffsetEnd=13 PartOfSpeech=VBN Lemma=attach NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=response CharacterOffsetBegin=21 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=response NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Los CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Los NamedEntityTag=ORGANIZATION]
+[Text=Angeles CharacterOffsetBegin=37 CharacterOffsetEnd=44 PartOfSpeech=NNP Lemma=Angeles NamedEntityTag=ORGANIZATION]
+[Text=Department CharacterOffsetBegin=45 CharacterOffsetEnd=55 PartOfSpeech=NNP Lemma=Department NamedEntityTag=ORGANIZATION]
+[Text=of CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=IN Lemma=of NamedEntityTag=ORGANIZATION]
+[Text=Water CharacterOffsetBegin=59 CharacterOffsetEnd=64 PartOfSpeech=NNP Lemma=Water NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=65 CharacterOffsetEnd=68 PartOfSpeech=CC Lemma=and NamedEntityTag=ORGANIZATION]
+[Text=Power CharacterOffsetBegin=69 CharacterOffsetEnd=74 PartOfSpeech=NNP Lemma=Power NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=74 CharacterOffsetEnd=76 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=request CharacterOffsetBegin=77 CharacterOffsetEnd=84 PartOfSpeech=NN Lemma=request NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=85 CharacterOffsetEnd=89 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=90 CharacterOffsetEnd=92 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=execute CharacterOffsetBegin=93 CharacterOffsetEnd=100 PartOfSpeech=VBP Lemma=execute NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=101 CharacterOffsetEnd=106 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=107 CharacterOffsetEnd=110 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=Spot CharacterOffsetBegin=111 CharacterOffsetEnd=115 PartOfSpeech=NNP Lemma=Spot NamedEntityTag=O]
+[Text=Gas CharacterOffsetBegin=116 CharacterOffsetEnd=119 PartOfSpeech=NNP Lemma=Gas NamedEntityTag=O]
+[Text=Contract CharacterOffsetBegin=120 CharacterOffsetEnd=128 PartOfSpeech=NNP Lemma=Contract NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=128 CharacterOffsetEnd=129 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP FYI))
+      (, ,)
+      (VP (VBN attached)))
+    (VP (VBZ is)
+      (NP (PRP$ our) (NN response))
+      (PP (TO to)
+        (NP
+          (NP
+            (NP (NNP Los) (NNP Angeles) (NNP Department))
+            (PP (IN of)
+              (NP (NNP Water))))
+          (CC and)
+          (NP
+            (NP (NNP Power) (POS 's))
+            (NN request))))
+      (SBAR (IN that)
+        (S
+          (NP (PRP we))
+          (VP (VBP execute)
+            (S
+              (NP (PRP$ their) (JJ new) (NNP Spot))
+              (NP (NNP Gas) (NNP Contract)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, response-6)
+nsubj(response-6, FYI-1)
+punct(FYI-1, ,-2)
+acl(FYI-1, attached-3)
+cop(response-6, is-4)
+nmod:poss(response-6, our-5)
+case(Department-10, to-7)
+compound(Department-10, Los-8)
+compound(Department-10, Angeles-9)
+nmod:to(response-6, Department-10)
+case(Water-12, of-11)
+nmod:of(Department-10, Water-12)
+cc(Department-10, and-13)
+nmod:poss(request-16, Power-14)
+case(Power-14, 's-15)
+nmod:to(response-6, request-16)
+conj:and(Department-10, request-16)
+mark(execute-19, that-17)
+nsubj(execute-19, we-18)
+ccomp(response-6, execute-19)
+nmod:poss(Spot-22, their-20)
+amod(Spot-22, new-21)
+nsubj(Contract-24, Spot-22)
+compound(Contract-24, Gas-23)
+xcomp(execute-19, Contract-24)
+punct(response-6, .-25)
+
+Extracted the following NER entity mentions:
+Los Angeles Department of Water and Power	ORGANIZATION
+
+Sentence #2 (10 tokens):
+Please let me know if you have any questions.
+
+Tokens:
+[Text=Please CharacterOffsetBegin=131 CharacterOffsetEnd=137 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=let CharacterOffsetBegin=138 CharacterOffsetEnd=141 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=142 CharacterOffsetEnd=144 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=145 CharacterOffsetEnd=149 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=150 CharacterOffsetEnd=152 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=153 CharacterOffsetEnd=156 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=157 CharacterOffsetEnd=161 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=162 CharacterOffsetEnd=165 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=questions CharacterOffsetBegin=166 CharacterOffsetEnd=175 PartOfSpeech=NNS Lemma=question NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=175 CharacterOffsetEnd=176 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Please)
+      (VP (VB let)
+        (S
+          (NP (PRP me))
+          (VP (VB know)
+            (SBAR (IN if)
+              (S
+                (NP (PRP you))
+                (VP (VBP have)
+                  (NP (DT any) (NNS questions)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Please-1)
+xcomp(Please-1, let-2)
+nsubj(know-4, me-3)
+ccomp(let-2, know-4)
+mark(have-7, if-5)
+nsubj(have-7, you-6)
+advcl:if(know-4, have-7)
+det(questions-9, any-8)
+dobj(have-7, questions-9)
+punct(Please-1, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (3 tokens):
+Thanks,
+
+Kim
+
+Tokens:
+[Text=Thanks CharacterOffsetBegin=178 CharacterOffsetEnd=184 PartOfSpeech=NNS Lemma=thanks NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=184 CharacterOffsetEnd=185 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Kim CharacterOffsetBegin=187 CharacterOffsetEnd=190 PartOfSpeech=NNP Lemma=Kim NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNS Thanks))
+    (, ,)
+    (NP (NNP Kim))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Thanks-1)
+punct(Thanks-1, ,-2)
+appos(Thanks-1, Kim-3)
+
+Extracted the following NER entity mentions:
+Kim	PERSON
+
+Coreference set:
+	(1,6,[5,7]) -> (1,1,[1,2]), that is: "our response" -> "FYI"
+
+Coreference set:
+	(1,18,[18,19]) -> (1,5,[5,6]), that is: "we" -> "our"

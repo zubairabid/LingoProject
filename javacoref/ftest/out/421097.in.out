@@ -1,0 +1,256 @@
+Document: ID=421097.in (4 sentences, 57 tokens)
+
+Sentence #1 (8 tokens):
+Tana,
+Can Houston accomplish the below?
+
+Tokens:
+[Text=Tana CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Tana NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Can CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=Houston CharacterOffsetBegin=10 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=Houston NamedEntityTag=CITY]
+[Text=accomplish CharacterOffsetBegin=18 CharacterOffsetEnd=28 PartOfSpeech=VB Lemma=accomplish NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=below CharacterOffsetBegin=33 CharacterOffsetEnd=38 PartOfSpeech=RB Lemma=below NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Tana) (, ,))
+    (VP (MD Can)
+      (NP (NNP Houston))
+      (S
+        (VP (VB accomplish)
+          (NP (DT the) (RB below)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Can-3)
+nsubj(Can-3, Tana-1)
+punct(Tana-1, ,-2)
+dobj(Can-3, Houston-4)
+dep(Can-3, accomplish-5)
+det(below-7, the-6)
+dobj(accomplish-5, below-7)
+punct(Can-3, ?-8)
+
+Extracted the following NER entity mentions:
+Tana	PERSON
+Houston	CITY
+
+Sentence #2 (16 tokens):
+London is about to stop sending the Annex
+A (GTC) with their omnibus.
+
+Tokens:
+[Text=London CharacterOffsetBegin=41 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=London NamedEntityTag=CITY]
+[Text=is CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=stop CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=VB Lemma=stop NamedEntityTag=O]
+[Text=sending CharacterOffsetBegin=65 CharacterOffsetEnd=72 PartOfSpeech=VBG Lemma=send NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Annex CharacterOffsetBegin=77 CharacterOffsetEnd=82 PartOfSpeech=NNP Lemma=Annex NamedEntityTag=MISC]
+[Text=A CharacterOffsetBegin=83 CharacterOffsetEnd=84 PartOfSpeech=NN Lemma=a NamedEntityTag=MISC]
+[Text=-LRB- CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=GTC CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=NN Lemma=gtc NamedEntityTag=ORGANIZATION]
+[Text=-RRB- CharacterOffsetBegin=89 CharacterOffsetEnd=90 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=91 CharacterOffsetEnd=95 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=96 CharacterOffsetEnd=101 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=omnibus CharacterOffsetBegin=102 CharacterOffsetEnd=109 PartOfSpeech=NN Lemma=omnibus NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=109 CharacterOffsetEnd=110 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP London))
+    (VP (VBZ is)
+      (VP (IN about)
+        (S
+          (VP (TO to)
+            (VP (VB stop)
+              (S
+                (VP (VBG sending)
+                  (NP
+                    (NP (DT the) (NNP Annex) (NN A))
+                    (PRN (-LRB- -LRB-)
+                      (NP (NN GTC))
+                      (-RRB- -RRB-)))
+                  (PP (IN with)
+                    (NP (PRP$ their) (NN omnibus))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, about-3)
+nsubj(about-3, London-1)
+nsubj:xsubj(stop-5, London-1)
+aux(about-3, is-2)
+mark(stop-5, to-4)
+xcomp(about-3, stop-5)
+xcomp(stop-5, sending-6)
+det(A-9, the-7)
+compound(A-9, Annex-8)
+dobj(sending-6, A-9)
+punct(GTC-11, -LRB--10)
+appos(A-9, GTC-11)
+punct(GTC-11, -RRB--12)
+case(omnibus-15, with-13)
+nmod:poss(omnibus-15, their-14)
+nmod:with(sending-6, omnibus-15)
+punct(about-3, .-16)
+
+Extracted the following NER entity mentions:
+London	CITY
+Annex A	MISC
+GTC	ORGANIZATION
+
+Sentence #3 (18 tokens):
+I think this would save a lot of fax headaches
+(and paper) on our end.
+
+Tokens:
+[Text=I CharacterOffsetBegin=112 CharacterOffsetEnd=113 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=114 CharacterOffsetEnd=119 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=120 CharacterOffsetEnd=124 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=125 CharacterOffsetEnd=130 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=save CharacterOffsetBegin=131 CharacterOffsetEnd=135 PartOfSpeech=VB Lemma=save NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=136 CharacterOffsetEnd=137 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=lot CharacterOffsetBegin=138 CharacterOffsetEnd=141 PartOfSpeech=NN Lemma=lot NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=142 CharacterOffsetEnd=144 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=fax CharacterOffsetBegin=145 CharacterOffsetEnd=148 PartOfSpeech=NN Lemma=fax NamedEntityTag=O]
+[Text=headaches CharacterOffsetBegin=149 CharacterOffsetEnd=158 PartOfSpeech=NNS Lemma=headache NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=159 CharacterOffsetEnd=160 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=160 CharacterOffsetEnd=163 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=paper CharacterOffsetBegin=164 CharacterOffsetEnd=169 PartOfSpeech=NN Lemma=paper NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=169 CharacterOffsetEnd=170 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=171 CharacterOffsetEnd=173 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=174 CharacterOffsetEnd=177 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=end CharacterOffsetBegin=178 CharacterOffsetEnd=181 PartOfSpeech=NN Lemma=end NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=181 CharacterOffsetEnd=182 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (DT this))
+          (VP (MD would)
+            (VP (VB save)
+              (NP
+                (NP (DT a) (NN lot))
+                (PP (IN of)
+                  (NP
+                    (NP (NN fax) (NNS headaches))
+                    (PRN (-LRB- -LRB-)
+                      (PP (CC and)
+                        (NP (NN paper)))
+                      (-RRB- -RRB-)))))
+              (PP (IN on)
+                (NP (PRP$ our) (NN end))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, think-2)
+nsubj(think-2, I-1)
+nsubj(save-5, this-3)
+aux(save-5, would-4)
+ccomp(think-2, save-5)
+det:qmod(headaches-10, a-6)
+mwe(a-6, lot-7)
+mwe(a-6, of-8)
+compound(headaches-10, fax-9)
+dobj(save-5, headaches-10)
+punct(paper-13, -LRB--11)
+case(paper-13, and-12)
+nmod:and(headaches-10, paper-13)
+punct(paper-13, -RRB--14)
+case(end-17, on-15)
+nmod:poss(end-17, our-16)
+nmod:on(save-5, end-17)
+punct(think-2, .-18)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (15 tokens):
+Let me know if it's ok and we'll set it up
+immediately.
+
+Tokens:
+[Text=Let CharacterOffsetBegin=184 CharacterOffsetEnd=187 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=188 CharacterOffsetEnd=190 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=191 CharacterOffsetEnd=195 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=196 CharacterOffsetEnd=198 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=199 CharacterOffsetEnd=201 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=201 CharacterOffsetEnd=203 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=ok CharacterOffsetBegin=204 CharacterOffsetEnd=206 PartOfSpeech=JJ Lemma=ok NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=207 CharacterOffsetEnd=210 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=211 CharacterOffsetEnd=213 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text='ll CharacterOffsetBegin=213 CharacterOffsetEnd=216 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=set CharacterOffsetBegin=217 CharacterOffsetEnd=220 PartOfSpeech=VB Lemma=set NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=221 CharacterOffsetEnd=223 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=224 CharacterOffsetEnd=226 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=immediately CharacterOffsetBegin=227 CharacterOffsetEnd=238 PartOfSpeech=RB Lemma=immediately NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=238 CharacterOffsetEnd=239 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Let)
+      (S
+        (NP (PRP me))
+        (VP (VB know)
+          (SBAR (IN if)
+            (S
+              (S
+                (NP (PRP it))
+                (VP (VBZ 's)
+                  (ADJP (JJ ok))))
+              (CC and)
+              (S
+                (NP (PRP we))
+                (VP (MD 'll)
+                  (VP (VB set)
+                    (NP (PRP it))
+                    (PRT (RP up))
+                    (ADVP (RB immediately))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Let-1)
+nsubj(know-3, me-2)
+ccomp(Let-1, know-3)
+mark(ok-7, if-4)
+nsubj(ok-7, it-5)
+cop(ok-7, 's-6)
+advcl:if(know-3, ok-7)
+cc(ok-7, and-8)
+nsubj(set-11, we-9)
+aux(set-11, 'll-10)
+advcl:if(know-3, set-11)
+conj:and(ok-7, set-11)
+dobj(set-11, it-12)
+compound:prt(set-11, up-13)
+advmod(set-11, immediately-14)
+punct(Let-1, .-15)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(2,14,[14,15]) -> (1,7,[6,8]), that is: "their" -> "the below"
+
+Coreference set:
+	(4,2,[2,3]) -> (3,1,[1,2]), that is: "me" -> "I"
+
+Coreference set:
+	(4,5,[5,6]) -> (3,3,[3,4]), that is: "it" -> "this"
+	(4,12,[12,13]) -> (3,3,[3,4]), that is: "it" -> "this"
+
+Coreference set:
+	(4,9,[9,10]) -> (3,16,[16,17]), that is: "we" -> "our"

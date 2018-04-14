@@ -1,0 +1,732 @@
+Document: ID=779807.in (12 sentences, 164 tokens)
+
+Sentence #1 (8 tokens):
+Hi Britt
+A quick update:
+1.
+
+Tokens:
+[Text=Hi CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=NNP Lemma=Hi NamedEntityTag=O]
+[Text=Britt CharacterOffsetBegin=3 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Britt NamedEntityTag=PERSON]
+[Text=A CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=A NamedEntityTag=O]
+[Text=quick CharacterOffsetBegin=11 CharacterOffsetEnd=16 PartOfSpeech=JJ Lemma=quick NamedEntityTag=O]
+[Text=update CharacterOffsetBegin=17 CharacterOffsetEnd=23 PartOfSpeech=VBP Lemma=update NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=1 CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=CD Lemma=1 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=. CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Hi) (NNP Britt) (NNP A))
+      (ADJP (JJ quick)))
+    (VP (VBP update) (: :)
+      (NP (CD 1)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, update-5)
+compound(A-3, Hi-1)
+compound(A-3, Britt-2)
+nsubj(update-5, A-3)
+amod(A-3, quick-4)
+punct(update-5, :-6)
+dobj(update-5, 1-7)
+punct(update-5, .-8)
+
+Extracted the following NER entity mentions:
+Britt	PERSON
+1	NUMBER
+
+Sentence #2 (20 tokens):
+Joint testing is being planned for the end of next week (16, 17 or 18
+August).
+
+Tokens:
+[Text=Joint CharacterOffsetBegin=28 CharacterOffsetEnd=33 PartOfSpeech=NNP Lemma=Joint NamedEntityTag=O]
+[Text=testing CharacterOffsetBegin=34 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=testing NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=45 CharacterOffsetEnd=50 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=planned CharacterOffsetBegin=51 CharacterOffsetEnd=58 PartOfSpeech=VBN Lemma=plan NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=end CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=end NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=71 CharacterOffsetEnd=73 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=next CharacterOffsetBegin=74 CharacterOffsetEnd=78 PartOfSpeech=JJ Lemma=next NamedEntityTag=O]
+[Text=week CharacterOffsetBegin=79 CharacterOffsetEnd=83 PartOfSpeech=NN Lemma=week NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=84 CharacterOffsetEnd=85 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=16 CharacterOffsetBegin=85 CharacterOffsetEnd=87 PartOfSpeech=CD Lemma=16 NamedEntityTag=NUMBER NormalizedNamedEntityTag=16.0]
+[Text=, CharacterOffsetBegin=87 CharacterOffsetEnd=88 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=17 CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=CD Lemma=17 NamedEntityTag=NUMBER NormalizedNamedEntityTag=17.0]
+[Text=or CharacterOffsetBegin=92 CharacterOffsetEnd=94 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=18 CharacterOffsetBegin=95 CharacterOffsetEnd=97 PartOfSpeech=CD Lemma=18 NamedEntityTag=DATE NormalizedNamedEntityTag=****0818]
+[Text=August CharacterOffsetBegin=98 CharacterOffsetEnd=104 PartOfSpeech=NNP Lemma=August NamedEntityTag=DATE NormalizedNamedEntityTag=****0818]
+[Text=-RRB- CharacterOffsetBegin=104 CharacterOffsetEnd=105 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=105 CharacterOffsetEnd=106 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Joint) (NN testing))
+    (VP (VBZ is)
+      (VP (VBG being)
+        (VP (VBN planned)
+          (PP (IN for)
+            (NP
+              (NP (DT the) (NN end))
+              (PP (IN of)
+                (NP
+                  (NP (JJ next) (NN week))
+                  (PRN (-LRB- -LRB-)
+                    (NP
+                      (NP (CD 16))
+                      (, ,)
+                      (NP (CD 17))
+                      (CC or)
+                      (NP (CD 18) (NNP August)))
+                    (-RRB- -RRB-)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, planned-5)
+compound(testing-2, Joint-1)
+nsubjpass(planned-5, testing-2)
+aux(planned-5, is-3)
+auxpass(planned-5, being-4)
+case(end-8, for-6)
+det(end-8, the-7)
+nmod:for(planned-5, end-8)
+case(week-11, of-9)
+amod(week-11, next-10)
+nmod:of(end-8, week-11)
+punct(16-13, -LRB--12)
+dep(week-11, 16-13)
+punct(16-13, ,-14)
+dep(week-11, 17-15)
+conj:or(16-13, 17-15)
+cc(16-13, or-16)
+nummod(August-18, 18-17)
+dep(week-11, August-18)
+conj:or(16-13, August-18)
+punct(16-13, -RRB--19)
+punct(planned-5, .-20)
+
+Extracted the following NER entity mentions:
+16	NUMBER
+17	NUMBER
+18 August	DATE
+
+Sentence #3 (21 tokens):
+Please confirm that David Best's recommendation of Steve Jones of
+APC Petroleum (UK) is acceptable to you.
+
+Tokens:
+[Text=Please CharacterOffsetBegin=107 CharacterOffsetEnd=113 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=confirm CharacterOffsetBegin=114 CharacterOffsetEnd=121 PartOfSpeech=VB Lemma=confirm NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=122 CharacterOffsetEnd=126 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=David CharacterOffsetBegin=127 CharacterOffsetEnd=132 PartOfSpeech=NNP Lemma=David NamedEntityTag=PERSON]
+[Text=Best CharacterOffsetBegin=133 CharacterOffsetEnd=137 PartOfSpeech=NN Lemma=best NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=137 CharacterOffsetEnd=139 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=recommendation CharacterOffsetBegin=140 CharacterOffsetEnd=154 PartOfSpeech=NN Lemma=recommendation NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=155 CharacterOffsetEnd=157 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Steve CharacterOffsetBegin=158 CharacterOffsetEnd=163 PartOfSpeech=NNP Lemma=Steve NamedEntityTag=PERSON]
+[Text=Jones CharacterOffsetBegin=164 CharacterOffsetEnd=169 PartOfSpeech=NNP Lemma=Jones NamedEntityTag=PERSON]
+[Text=of CharacterOffsetBegin=170 CharacterOffsetEnd=172 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=APC CharacterOffsetBegin=173 CharacterOffsetEnd=176 PartOfSpeech=NN Lemma=apc NamedEntityTag=ORGANIZATION]
+[Text=Petroleum CharacterOffsetBegin=177 CharacterOffsetEnd=186 PartOfSpeech=NN Lemma=petroleum NamedEntityTag=ORGANIZATION]
+[Text=-LRB- CharacterOffsetBegin=187 CharacterOffsetEnd=188 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=UK CharacterOffsetBegin=188 CharacterOffsetEnd=190 PartOfSpeech=NNP Lemma=UK NamedEntityTag=COUNTRY]
+[Text=-RRB- CharacterOffsetBegin=190 CharacterOffsetEnd=191 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=192 CharacterOffsetEnd=194 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=acceptable CharacterOffsetBegin=195 CharacterOffsetEnd=205 PartOfSpeech=JJ Lemma=acceptable NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=206 CharacterOffsetEnd=208 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=209 CharacterOffsetEnd=212 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=212 CharacterOffsetEnd=213 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (INTJ (VB Please))
+      (VP (VB confirm)
+        (NP
+          (NP
+            (NP (DT that) (NNP David) (NN Best) (POS 's))
+            (NN recommendation))
+          (PP (IN of)
+            (NP
+              (NP (NNP Steve) (NNP Jones))
+              (PP (IN of)
+                (NP (NN APC))))))))
+    (NP
+      (NP (NN Petroleum))
+      (PRN (-LRB- -LRB-)
+        (NP (NNP UK))
+        (-RRB- -RRB-)))
+    (VP (VBZ is)
+      (ADJP (JJ acceptable)
+        (PP (TO to)
+          (NP (PRP you)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, acceptable-18)
+discourse(confirm-2, Please-1)
+dep(acceptable-18, confirm-2)
+det(Best-5, that-3)
+compound(Best-5, David-4)
+nmod:poss(recommendation-7, Best-5)
+case(Best-5, 's-6)
+dobj(confirm-2, recommendation-7)
+case(Jones-10, of-8)
+compound(Jones-10, Steve-9)
+nmod:of(recommendation-7, Jones-10)
+case(APC-12, of-11)
+nmod:of(Jones-10, APC-12)
+nsubj(acceptable-18, Petroleum-13)
+punct(UK-15, -LRB--14)
+appos(Petroleum-13, UK-15)
+punct(UK-15, -RRB--16)
+cop(acceptable-18, is-17)
+case(you-20, to-19)
+nmod:to(acceptable-18, you-20)
+punct(acceptable-18, .-21)
+
+Extracted the following NER entity mentions:
+David Best	PERSON
+Steve Jones	PERSON
+APC Petroleum	ORGANIZATION
+UK	COUNTRY
+
+Sentence #4 (28 tokens):
+I understand Steve Jones will be
+available from tomorrow and, if retained, should be briefed ASAP for his trip
+to Singapore for the joint testing.
+
+Tokens:
+[Text=I CharacterOffsetBegin=214 CharacterOffsetEnd=215 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=understand CharacterOffsetBegin=216 CharacterOffsetEnd=226 PartOfSpeech=VBP Lemma=understand NamedEntityTag=O]
+[Text=Steve CharacterOffsetBegin=227 CharacterOffsetEnd=232 PartOfSpeech=NNP Lemma=Steve NamedEntityTag=PERSON]
+[Text=Jones CharacterOffsetBegin=233 CharacterOffsetEnd=238 PartOfSpeech=NNP Lemma=Jones NamedEntityTag=PERSON]
+[Text=will CharacterOffsetBegin=239 CharacterOffsetEnd=243 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=244 CharacterOffsetEnd=246 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=available CharacterOffsetBegin=247 CharacterOffsetEnd=256 PartOfSpeech=JJ Lemma=available NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=257 CharacterOffsetEnd=261 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=tomorrow CharacterOffsetBegin=262 CharacterOffsetEnd=270 PartOfSpeech=NN Lemma=tomorrow NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=271 CharacterOffsetEnd=274 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=274 CharacterOffsetEnd=275 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=276 CharacterOffsetEnd=278 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=retained CharacterOffsetBegin=279 CharacterOffsetEnd=287 PartOfSpeech=VBN Lemma=retain NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=287 CharacterOffsetEnd=288 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=289 CharacterOffsetEnd=295 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=296 CharacterOffsetEnd=298 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=briefed CharacterOffsetBegin=299 CharacterOffsetEnd=306 PartOfSpeech=VBN Lemma=brief NamedEntityTag=O]
+[Text=ASAP CharacterOffsetBegin=307 CharacterOffsetEnd=311 PartOfSpeech=NNP Lemma=ASAP NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=312 CharacterOffsetEnd=315 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=316 CharacterOffsetEnd=319 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=trip CharacterOffsetBegin=320 CharacterOffsetEnd=324 PartOfSpeech=NN Lemma=trip NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=325 CharacterOffsetEnd=327 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Singapore CharacterOffsetBegin=328 CharacterOffsetEnd=337 PartOfSpeech=NNP Lemma=Singapore NamedEntityTag=COUNTRY]
+[Text=for CharacterOffsetBegin=338 CharacterOffsetEnd=341 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=342 CharacterOffsetEnd=345 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=joint CharacterOffsetBegin=346 CharacterOffsetEnd=351 PartOfSpeech=JJ Lemma=joint NamedEntityTag=O]
+[Text=testing CharacterOffsetBegin=352 CharacterOffsetEnd=359 PartOfSpeech=NN Lemma=testing NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=359 CharacterOffsetEnd=360 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP understand)
+      (SBAR
+        (S
+          (NP (NNP Steve) (NNP Jones))
+          (VP
+            (VP (MD will)
+              (VP (VB be)
+                (ADJP (JJ available)
+                  (PP (IN from)
+                    (NP (NN tomorrow))))))
+            (CC and)
+            (PRN (, ,)
+              (SBAR (IN if)
+                (S
+                  (VP (VBN retained))))
+              (, ,))
+            (VP (MD should)
+              (VP (VB be)
+                (VP (VBN briefed)
+                  (NP
+                    (NP (NNP ASAP))
+                    (PP (IN for)
+                      (NP (PRP$ his) (NN trip))))
+                  (PP (TO to)
+                    (NP (NNP Singapore)))
+                  (PP (IN for)
+                    (NP (DT the) (JJ joint) (NN testing))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, understand-2)
+nsubj(understand-2, I-1)
+compound(Jones-4, Steve-3)
+nsubj(available-7, Jones-4)
+nsubjpass(briefed-17, Jones-4)
+aux(available-7, will-5)
+cop(available-7, be-6)
+ccomp(understand-2, available-7)
+case(tomorrow-9, from-8)
+nmod:from(available-7, tomorrow-9)
+cc(available-7, and-10)
+punct(retained-13, ,-11)
+mark(retained-13, if-12)
+parataxis(available-7, retained-13)
+punct(retained-13, ,-14)
+aux(briefed-17, should-15)
+auxpass(briefed-17, be-16)
+ccomp(understand-2, briefed-17)
+conj:and(available-7, briefed-17)
+dobj(briefed-17, ASAP-18)
+case(trip-21, for-19)
+nmod:poss(trip-21, his-20)
+nmod:for(ASAP-18, trip-21)
+case(Singapore-23, to-22)
+nmod:to(briefed-17, Singapore-23)
+case(testing-27, for-24)
+det(testing-27, the-25)
+amod(testing-27, joint-26)
+nmod:for(briefed-17, testing-27)
+punct(understand-2, .-28)
+
+Extracted the following NER entity mentions:
+Steve Jones	PERSON
+Singapore	COUNTRY
+his	PERSON
+
+Sentence #5 (2 tokens):
+2.
+
+Tokens:
+[Text=2 CharacterOffsetBegin=361 CharacterOffsetEnd=362 PartOfSpeech=LS Lemma=2 NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=362 CharacterOffsetEnd=363 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (LS 2))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 2-1)
+punct(2-1, .-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #6 (13 tokens):
+David  had directed that Neale Gregson take a statement from Eric Tan.
+
+Tokens:
+[Text=David CharacterOffsetBegin=364 CharacterOffsetEnd=369 PartOfSpeech=NNP Lemma=David NamedEntityTag=PERSON]
+[Text=had CharacterOffsetBegin=371 CharacterOffsetEnd=374 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=directed CharacterOffsetBegin=375 CharacterOffsetEnd=383 PartOfSpeech=VBN Lemma=direct NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=384 CharacterOffsetEnd=388 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=Neale CharacterOffsetBegin=389 CharacterOffsetEnd=394 PartOfSpeech=NNP Lemma=Neale NamedEntityTag=PERSON]
+[Text=Gregson CharacterOffsetBegin=395 CharacterOffsetEnd=402 PartOfSpeech=NNP Lemma=Gregson NamedEntityTag=PERSON]
+[Text=take CharacterOffsetBegin=403 CharacterOffsetEnd=407 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=408 CharacterOffsetEnd=409 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=statement CharacterOffsetBegin=410 CharacterOffsetEnd=419 PartOfSpeech=NN Lemma=statement NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=420 CharacterOffsetEnd=424 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Eric CharacterOffsetBegin=425 CharacterOffsetEnd=429 PartOfSpeech=NNP Lemma=Eric NamedEntityTag=PERSON]
+[Text=Tan CharacterOffsetBegin=430 CharacterOffsetEnd=433 PartOfSpeech=NNP Lemma=Tan NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=433 CharacterOffsetEnd=434 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP David))
+    (VP (VBD had)
+      (VP (VBN directed)
+        (SBAR (IN that)
+          (S
+            (NP (NNP Neale) (NNP Gregson))
+            (VP (VB take)
+              (NP (DT a) (NN statement))
+              (PP (IN from)
+                (NP (NNP Eric) (NNP Tan))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, directed-3)
+nsubj(directed-3, David-1)
+aux(directed-3, had-2)
+mark(take-7, that-4)
+compound(Gregson-6, Neale-5)
+nsubj(take-7, Gregson-6)
+ccomp(directed-3, take-7)
+det(statement-9, a-8)
+dobj(take-7, statement-9)
+case(Tan-12, from-10)
+compound(Tan-12, Eric-11)
+nmod:from(take-7, Tan-12)
+punct(directed-3, .-13)
+
+Extracted the following NER entity mentions:
+David	PERSON
+Neale Gregson	PERSON
+Eric Tan	PERSON
+
+Sentence #7 (15 tokens):
+Neale and I have since attended with Eric and a statement is being prepared.
+
+Tokens:
+[Text=Neale CharacterOffsetBegin=435 CharacterOffsetEnd=440 PartOfSpeech=NNP Lemma=Neale NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=441 CharacterOffsetEnd=444 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=445 CharacterOffsetEnd=446 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=447 CharacterOffsetEnd=451 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=since CharacterOffsetBegin=452 CharacterOffsetEnd=457 PartOfSpeech=IN Lemma=since NamedEntityTag=O]
+[Text=attended CharacterOffsetBegin=458 CharacterOffsetEnd=466 PartOfSpeech=VBN Lemma=attend NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=467 CharacterOffsetEnd=471 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Eric CharacterOffsetBegin=472 CharacterOffsetEnd=476 PartOfSpeech=NNP Lemma=Eric NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=477 CharacterOffsetEnd=480 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=481 CharacterOffsetEnd=482 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=statement CharacterOffsetBegin=483 CharacterOffsetEnd=492 PartOfSpeech=NN Lemma=statement NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=493 CharacterOffsetEnd=495 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=496 CharacterOffsetEnd=501 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=prepared CharacterOffsetBegin=502 CharacterOffsetEnd=510 PartOfSpeech=VBN Lemma=prepare NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=510 CharacterOffsetEnd=511 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NNP Neale)
+        (CC and)
+        (PRP I))
+      (VP (VBP have)
+        (ADVP (IN since))
+        (VP (VBN attended)
+          (PP (IN with)
+            (NP (NNP Eric))))))
+    (CC and)
+    (S
+      (NP (DT a) (NN statement))
+      (VP (VBZ is)
+        (VP (VBG being)
+          (VP (VBN prepared)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, attended-6)
+nsubj(attended-6, Neale-1)
+cc(Neale-1, and-2)
+conj:and(Neale-1, I-3)
+nsubj(attended-6, I-3)
+aux(attended-6, have-4)
+advmod(attended-6, since-5)
+case(Eric-8, with-7)
+nmod:with(attended-6, Eric-8)
+cc(attended-6, and-9)
+det(statement-11, a-10)
+nsubjpass(prepared-14, statement-11)
+aux(prepared-14, is-12)
+auxpass(prepared-14, being-13)
+conj:and(attended-6, prepared-14)
+punct(attended-6, .-15)
+
+Extracted the following NER entity mentions:
+Eric	PERSON
+
+Sentence #8 (8 tokens):
+PacMarine is also preparing their second/supplementary report.
+
+Tokens:
+[Text=PacMarine CharacterOffsetBegin=512 CharacterOffsetEnd=521 PartOfSpeech=NN Lemma=pacmarine NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=522 CharacterOffsetEnd=524 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=525 CharacterOffsetEnd=529 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=preparing CharacterOffsetBegin=530 CharacterOffsetEnd=539 PartOfSpeech=VBG Lemma=prepare NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=540 CharacterOffsetEnd=545 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=second/supplementary CharacterOffsetBegin=546 CharacterOffsetEnd=566 PartOfSpeech=JJ Lemma=second/supplementary NamedEntityTag=O]
+[Text=report CharacterOffsetBegin=567 CharacterOffsetEnd=573 PartOfSpeech=NN Lemma=report NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=573 CharacterOffsetEnd=574 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN PacMarine))
+    (VP (VBZ is)
+      (ADVP (RB also))
+      (VP (VBG preparing)
+        (NP (PRP$ their) (JJ second/supplementary) (NN report))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, preparing-4)
+nsubj(preparing-4, PacMarine-1)
+aux(preparing-4, is-2)
+advmod(preparing-4, also-3)
+nmod:poss(report-7, their-5)
+amod(report-7, second/supplementary-6)
+dobj(preparing-4, report-7)
+punct(preparing-4, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #9 (32 tokens):
+I hope to have
+both Eric's statement and PacMarine's report up to David by the end of the
+week for him to give his final opinion on the merits.
+
+Tokens:
+[Text=I CharacterOffsetBegin=575 CharacterOffsetEnd=576 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=hope CharacterOffsetBegin=577 CharacterOffsetEnd=581 PartOfSpeech=VBP Lemma=hope NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=582 CharacterOffsetEnd=584 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=585 CharacterOffsetEnd=589 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=both CharacterOffsetBegin=590 CharacterOffsetEnd=594 PartOfSpeech=DT Lemma=both NamedEntityTag=O]
+[Text=Eric CharacterOffsetBegin=595 CharacterOffsetEnd=599 PartOfSpeech=NNP Lemma=Eric NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=599 CharacterOffsetEnd=601 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=statement CharacterOffsetBegin=602 CharacterOffsetEnd=611 PartOfSpeech=NN Lemma=statement NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=612 CharacterOffsetEnd=615 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=PacMarine CharacterOffsetBegin=616 CharacterOffsetEnd=625 PartOfSpeech=NN Lemma=pacmarine NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=625 CharacterOffsetEnd=627 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=report CharacterOffsetBegin=628 CharacterOffsetEnd=634 PartOfSpeech=NN Lemma=report NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=635 CharacterOffsetEnd=637 PartOfSpeech=IN Lemma=up NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=638 CharacterOffsetEnd=640 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=David CharacterOffsetBegin=641 CharacterOffsetEnd=646 PartOfSpeech=NNP Lemma=David NamedEntityTag=PERSON]
+[Text=by CharacterOffsetBegin=647 CharacterOffsetEnd=649 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=650 CharacterOffsetEnd=653 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=end CharacterOffsetBegin=654 CharacterOffsetEnd=657 PartOfSpeech=NN Lemma=end NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=658 CharacterOffsetEnd=660 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=661 CharacterOffsetEnd=664 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=week CharacterOffsetBegin=665 CharacterOffsetEnd=669 PartOfSpeech=NN Lemma=week NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=670 CharacterOffsetEnd=673 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=674 CharacterOffsetEnd=677 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=678 CharacterOffsetEnd=680 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=give CharacterOffsetBegin=681 CharacterOffsetEnd=685 PartOfSpeech=VB Lemma=give NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=686 CharacterOffsetEnd=689 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=final CharacterOffsetBegin=690 CharacterOffsetEnd=695 PartOfSpeech=JJ Lemma=final NamedEntityTag=O]
+[Text=opinion CharacterOffsetBegin=696 CharacterOffsetEnd=703 PartOfSpeech=NN Lemma=opinion NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=704 CharacterOffsetEnd=706 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=707 CharacterOffsetEnd=710 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=merits CharacterOffsetBegin=711 CharacterOffsetEnd=717 PartOfSpeech=NNS Lemma=merit NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=717 CharacterOffsetEnd=718 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP hope)
+      (S
+        (VP (TO to)
+          (VP (VB have)
+            (S
+              (NP (DT both)
+                (NP
+                  (NP (NNP Eric) (POS 's))
+                  (NN statement))
+                (CC and)
+                (NP
+                  (NP (NN PacMarine) (POS 's))
+                  (NN report))
+                (ADJP (IN up)
+                  (PP (TO to)
+                    (NP (NNP David)))
+                  (PP (IN by)
+                    (NP
+                      (NP (DT the) (NN end))
+                      (PP (IN of)
+                        (NP
+                          (NP (DT the) (NN week))
+                          (PP (IN for)
+                            (NP (PRP him)))))))))
+              (VP (TO to)
+                (VP (VB give)
+                  (NP (PRP$ his) (JJ final) (NN opinion))
+                  (PP (IN on)
+                    (NP (DT the) (NNS merits))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, hope-2)
+nsubj(hope-2, I-1)
+nsubj:xsubj(have-4, I-1)
+mark(have-4, to-3)
+xcomp(hope-2, have-4)
+cc:preconj(statement-8, both-5)
+nmod:poss(statement-8, Eric-6)
+case(Eric-6, 's-7)
+dobj(have-4, statement-8)
+cc(statement-8, and-9)
+nmod:poss(report-12, PacMarine-10)
+case(PacMarine-10, 's-11)
+dobj(have-4, report-12)
+conj:and(statement-8, report-12)
+amod(statement-8, up-13)
+case(David-15, to-14)
+nmod:to(up-13, David-15)
+case(end-18, by-16)
+det(end-18, the-17)
+nmod:by(up-13, end-18)
+case(week-21, of-19)
+det(week-21, the-20)
+nmod:of(end-18, week-21)
+case(him-23, for-22)
+nmod:for(week-21, him-23)
+mark(give-25, to-24)
+ccomp(have-4, give-25)
+nmod:poss(opinion-28, his-26)
+amod(opinion-28, final-27)
+dobj(give-25, opinion-28)
+case(merits-31, on-29)
+det(merits-31, the-30)
+nmod:on(give-25, merits-31)
+punct(hope-2, .-32)
+
+Extracted the following NER entity mentions:
+Eric	PERSON
+David	PERSON
+him	PERSON
+his	PERSON
+
+Sentence #10 (2 tokens):
+3.
+
+Tokens:
+[Text=3 CharacterOffsetBegin=719 CharacterOffsetEnd=720 PartOfSpeech=LS Lemma=3 NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=720 CharacterOffsetEnd=721 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (LS 3))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 3-1)
+punct(3-1, .-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #11 (12 tokens):
+We have today sent to Mitsubishi the statement drafted by David.
+
+Tokens:
+[Text=We CharacterOffsetBegin=723 CharacterOffsetEnd=725 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=726 CharacterOffsetEnd=730 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=today CharacterOffsetBegin=731 CharacterOffsetEnd=736 PartOfSpeech=NN Lemma=today NamedEntityTag=O]
+[Text=sent CharacterOffsetBegin=737 CharacterOffsetEnd=741 PartOfSpeech=VBD Lemma=send NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=742 CharacterOffsetEnd=744 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Mitsubishi CharacterOffsetBegin=745 CharacterOffsetEnd=755 PartOfSpeech=NNP Lemma=Mitsubishi NamedEntityTag=ORGANIZATION]
+[Text=the CharacterOffsetBegin=756 CharacterOffsetEnd=759 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=statement CharacterOffsetBegin=760 CharacterOffsetEnd=769 PartOfSpeech=NN Lemma=statement NamedEntityTag=O]
+[Text=drafted CharacterOffsetBegin=770 CharacterOffsetEnd=777 PartOfSpeech=VBN Lemma=draft NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=778 CharacterOffsetEnd=780 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=David CharacterOffsetBegin=781 CharacterOffsetEnd=786 PartOfSpeech=NNP Lemma=David NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=786 CharacterOffsetEnd=787 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP have)
+      (VP
+        (NP-TMP (NN today))
+        (VBD sent)
+        (PP (TO to)
+          (NP (NNP Mitsubishi)))
+        (S
+          (NP
+            (NP (DT the) (NN statement))
+            (VP (VBN drafted)
+              (PP (IN by)
+                (NP (NNP David))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, sent-4)
+nsubj(sent-4, We-1)
+aux(sent-4, have-2)
+nmod:tmod(sent-4, today-3)
+case(Mitsubishi-6, to-5)
+nmod:to(sent-4, Mitsubishi-6)
+det(statement-8, the-7)
+xcomp(sent-4, statement-8)
+acl(statement-8, drafted-9)
+case(David-11, by-10)
+nmod:by(drafted-9, David-11)
+punct(sent-4, .-12)
+
+Extracted the following NER entity mentions:
+Mitsubishi	ORGANIZATION
+David	PERSON
+
+Sentence #12 (3 tokens):
+Best regards
+Matt
+
+Tokens:
+[Text=Best CharacterOffsetBegin=788 CharacterOffsetEnd=792 PartOfSpeech=JJS Lemma=best NamedEntityTag=O]
+[Text=regards CharacterOffsetBegin=793 CharacterOffsetEnd=800 PartOfSpeech=VBZ Lemma=regard NamedEntityTag=O]
+[Text=Matt CharacterOffsetBegin=801 CharacterOffsetEnd=805 PartOfSpeech=NNP Lemma=Matt NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (JJS Best))
+    (VP (VBZ regards)
+      (NP (NNP Matt)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, regards-2)
+nsubj(regards-2, Best-1)
+dobj(regards-2, Matt-3)
+
+Extracted the following NER entity mentions:
+Matt	PERSON
+
+Coreference set:
+	(2,2,[1,3]) -> (4,27,[25,28]), that is: "Joint testing" -> "the joint testing"
+
+Coreference set:
+	(9,18,[17,24]) -> (2,8,[7,20]), that is: "the end of the week for him" -> "the end of next week -LRB- 16 , 17 or 18 August -RRB-"
+
+Coreference set:
+	(2,11,[10,20]) -> (9,21,[20,24]), that is: "next week -LRB- 16 , 17 or 18 August -RRB-" -> "the week for him"
+
+Coreference set:
+	(6,1,[1,2]) -> (3,5,[3,7]), that is: "David" -> "that David Best 's"
+	(9,15,[15,16]) -> (3,5,[3,7]), that is: "David" -> "that David Best 's"
+	(11,11,[11,12]) -> (3,5,[3,7]), that is: "David" -> "that David Best 's"
+	(12,1,[1,2]) -> (3,5,[3,7]), that is: "Best" -> "that David Best 's"
+
+Coreference set:
+	(4,4,[3,5]) -> (3,10,[9,13]), that is: "Steve Jones" -> "Steve Jones of APC"
+	(4,20,[20,21]) -> (3,10,[9,13]), that is: "his" -> "Steve Jones of APC"
+
+Coreference set:
+	(7,3,[3,4]) -> (4,1,[1,2]), that is: "I" -> "I"
+	(9,1,[1,2]) -> (4,1,[1,2]), that is: "I" -> "I"
+
+Coreference set:
+	(7,8,[8,9]) -> (6,12,[11,13]), that is: "Eric" -> "Eric Tan"
+	(9,6,[6,8]) -> (6,12,[11,13]), that is: "Eric 's" -> "Eric Tan"
+	(9,23,[23,24]) -> (6,12,[11,13]), that is: "him" -> "Eric Tan"
+	(9,26,[26,27]) -> (6,12,[11,13]), that is: "his" -> "Eric Tan"
+
+Coreference set:
+	(7,11,[10,12]) -> (6,9,[8,10]), that is: "a statement" -> "a statement"
+
+Coreference set:
+	(8,5,[5,6]) -> (7,1,[1,4]), that is: "their" -> "Neale and I"

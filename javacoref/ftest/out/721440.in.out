@@ -1,0 +1,215 @@
+Document: ID=721440.in (4 sentences, 49 tokens)
+
+Sentence #1 (5 tokens):
+Spoke to Ray Welch.
+
+Tokens:
+[Text=Spoke CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Spoke NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Ray CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Ray NamedEntityTag=PERSON]
+[Text=Welch CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=NNP Lemma=Welch NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Spoke))
+    (PP (TO to)
+      (NP (NNP Ray) (NNP Welch)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Spoke-1)
+case(Welch-4, to-2)
+compound(Welch-4, Ray-3)
+nmod:to(Spoke-1, Welch-4)
+punct(Spoke-1, .-5)
+
+Extracted the following NER entity mentions:
+Ray Welch	PERSON
+
+Sentence #2 (16 tokens):
+They were supposed to meet with their lawyer yesterday - the lawyer never showed up.
+
+Tokens:
+[Text=They CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=supposed CharacterOffsetBegin=30 CharacterOffsetEnd=38 PartOfSpeech=VBN Lemma=suppose NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=meet CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=VB Lemma=meet NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=52 CharacterOffsetEnd=57 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=lawyer CharacterOffsetBegin=58 CharacterOffsetEnd=64 PartOfSpeech=NN Lemma=lawyer NamedEntityTag=TITLE]
+[Text=yesterday CharacterOffsetBegin=65 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=yesterday NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=lawyer CharacterOffsetBegin=81 CharacterOffsetEnd=87 PartOfSpeech=NN Lemma=lawyer NamedEntityTag=TITLE]
+[Text=never CharacterOffsetBegin=88 CharacterOffsetEnd=93 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=showed CharacterOffsetBegin=94 CharacterOffsetEnd=100 PartOfSpeech=VBD Lemma=show NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=101 CharacterOffsetEnd=103 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=103 CharacterOffsetEnd=104 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP They))
+      (VP (VBD were)
+        (VP (VBN supposed)
+          (S
+            (VP (TO to)
+              (VP (VB meet)
+                (PP (IN with)
+                  (NP (PRP$ their) (NN lawyer)))
+                (NP-TMP (NN yesterday))))))))
+    (: -)
+    (S
+      (NP (DT the) (NN lawyer))
+      (ADVP (RB never))
+      (VP (VBD showed)
+        (PRT (RP up))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, supposed-3)
+nsubjpass(supposed-3, They-1)
+nsubj:xsubj(meet-5, They-1)
+auxpass(supposed-3, were-2)
+mark(meet-5, to-4)
+xcomp(supposed-3, meet-5)
+case(lawyer-8, with-6)
+nmod:poss(lawyer-8, their-7)
+nmod:with(meet-5, lawyer-8)
+nmod:tmod(meet-5, yesterday-9)
+punct(supposed-3, --10)
+det(lawyer-12, the-11)
+nsubj(showed-14, lawyer-12)
+neg(showed-14, never-13)
+parataxis(supposed-3, showed-14)
+compound:prt(showed-14, up-15)
+punct(supposed-3, .-16)
+
+Extracted the following NER entity mentions:
+lawyer	TITLE
+lawyer	TITLE
+
+Sentence #3 (14 tokens):
+They'll try to get their comments together in the next few days.
+
+Tokens:
+[Text=They CharacterOffsetBegin=105 CharacterOffsetEnd=109 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text='ll CharacterOffsetBegin=109 CharacterOffsetEnd=112 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=try CharacterOffsetBegin=113 CharacterOffsetEnd=116 PartOfSpeech=VB Lemma=try NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=117 CharacterOffsetEnd=119 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=120 CharacterOffsetEnd=123 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=124 CharacterOffsetEnd=129 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=comments CharacterOffsetBegin=130 CharacterOffsetEnd=138 PartOfSpeech=NNS Lemma=comment NamedEntityTag=O]
+[Text=together CharacterOffsetBegin=139 CharacterOffsetEnd=147 PartOfSpeech=RB Lemma=together NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=148 CharacterOffsetEnd=150 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=151 CharacterOffsetEnd=154 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=next CharacterOffsetBegin=155 CharacterOffsetEnd=159 PartOfSpeech=JJ Lemma=next NamedEntityTag=O]
+[Text=few CharacterOffsetBegin=160 CharacterOffsetEnd=163 PartOfSpeech=JJ Lemma=few NamedEntityTag=O]
+[Text=days CharacterOffsetBegin=164 CharacterOffsetEnd=168 PartOfSpeech=NNS Lemma=day NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=168 CharacterOffsetEnd=169 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (MD 'll)
+      (VP (VB try)
+        (S
+          (VP (TO to)
+            (VP (VB get)
+              (NP (PRP$ their) (NNS comments))
+              (ADVP (RB together))
+              (PP (IN in)
+                (NP (DT the) (JJ next) (JJ few) (NNS days))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, try-3)
+nsubj(try-3, They-1)
+nsubj:xsubj(get-5, They-1)
+aux(try-3, 'll-2)
+mark(get-5, to-4)
+xcomp(try-3, get-5)
+nmod:poss(comments-7, their-6)
+dobj(get-5, comments-7)
+advmod(get-5, together-8)
+case(days-13, in-9)
+det(days-13, the-10)
+amod(days-13, next-11)
+amod(days-13, few-12)
+nmod:in(get-5, days-13)
+punct(try-3, .-14)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (14 tokens):
+He mentioned that they were meeting internally on your transport swap structure Barry.
+
+Tokens:
+[Text=He CharacterOffsetBegin=170 CharacterOffsetEnd=172 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=mentioned CharacterOffsetBegin=173 CharacterOffsetEnd=182 PartOfSpeech=VBD Lemma=mention NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=183 CharacterOffsetEnd=187 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=188 CharacterOffsetEnd=192 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=193 CharacterOffsetEnd=197 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=meeting CharacterOffsetBegin=198 CharacterOffsetEnd=205 PartOfSpeech=VBG Lemma=meet NamedEntityTag=O]
+[Text=internally CharacterOffsetBegin=206 CharacterOffsetEnd=216 PartOfSpeech=RB Lemma=internally NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=217 CharacterOffsetEnd=219 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=220 CharacterOffsetEnd=224 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=transport CharacterOffsetBegin=225 CharacterOffsetEnd=234 PartOfSpeech=NN Lemma=transport NamedEntityTag=O]
+[Text=swap CharacterOffsetBegin=235 CharacterOffsetEnd=239 PartOfSpeech=NN Lemma=swap NamedEntityTag=O]
+[Text=structure CharacterOffsetBegin=240 CharacterOffsetEnd=249 PartOfSpeech=NN Lemma=structure NamedEntityTag=O]
+[Text=Barry CharacterOffsetBegin=250 CharacterOffsetEnd=255 PartOfSpeech=NNP Lemma=Barry NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=255 CharacterOffsetEnd=256 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD mentioned)
+      (SBAR (IN that)
+        (S
+          (NP (PRP they))
+          (VP (VBD were)
+            (VP (VBG meeting)
+              (ADVP (RB internally))
+              (PP (IN on)
+                (NP (PRP$ your) (NN transport) (NN swap) (NN structure) (NNP Barry))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, mentioned-2)
+nsubj(mentioned-2, He-1)
+mark(meeting-6, that-3)
+nsubj(meeting-6, they-4)
+aux(meeting-6, were-5)
+ccomp(mentioned-2, meeting-6)
+advmod(meeting-6, internally-7)
+case(Barry-13, on-8)
+nmod:poss(Barry-13, your-9)
+compound(Barry-13, transport-10)
+compound(Barry-13, swap-11)
+compound(Barry-13, structure-12)
+nmod:on(meeting-6, Barry-13)
+punct(mentioned-2, .-14)
+
+Extracted the following NER entity mentions:
+Barry	PERSON
+He	PERSON
+
+Coreference set:
+	(2,7,[7,8]) -> (2,1,[1,2]), that is: "their" -> "They"
+	(3,1,[1,2]) -> (2,1,[1,2]), that is: "They" -> "They"
+	(3,6,[6,7]) -> (2,1,[1,2]), that is: "their" -> "They"
+	(4,4,[4,5]) -> (2,1,[1,2]), that is: "they" -> "They"
+
+Coreference set:
+	(2,12,[11,13]) -> (2,8,[7,9]), that is: "the lawyer" -> "their lawyer"
+	(4,1,[1,2]) -> (2,8,[7,9]), that is: "He" -> "their lawyer"

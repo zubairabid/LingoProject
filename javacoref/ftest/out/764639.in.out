@@ -1,0 +1,103 @@
+Document: ID=764639.in (2 sentences, 23 tokens)
+
+Sentence #1 (13 tokens):
+TW received $125,448.39 from Burlington in payment of their shipper imbalances.
+
+Tokens:
+[Text=TW CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=NNP Lemma=TW NamedEntityTag=ORGANIZATION]
+[Text=received CharacterOffsetBegin=3 CharacterOffsetEnd=11 PartOfSpeech=VBD Lemma=receive NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$125448.39]
+[Text=125,448.39 CharacterOffsetBegin=13 CharacterOffsetEnd=23 PartOfSpeech=CD Lemma=125,448.39 NamedEntityTag=MONEY NormalizedNamedEntityTag=$125448.39]
+[Text=from CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Burlington CharacterOffsetBegin=29 CharacterOffsetEnd=39 PartOfSpeech=NNP Lemma=Burlington NamedEntityTag=CITY]
+[Text=in CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=payment CharacterOffsetBegin=43 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=payment NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=51 CharacterOffsetEnd=53 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=54 CharacterOffsetEnd=59 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=shipper CharacterOffsetBegin=60 CharacterOffsetEnd=67 PartOfSpeech=NN Lemma=shipper NamedEntityTag=O]
+[Text=imbalances CharacterOffsetBegin=68 CharacterOffsetEnd=78 PartOfSpeech=NNS Lemma=imbalance NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP TW))
+    (VP (VBD received)
+      (NP ($ $) (CD 125,448.39))
+      (PP (IN from)
+        (NP (NNP Burlington)))
+      (PP (IN in)
+        (NP
+          (NP (NN payment))
+          (PP (IN of)
+            (NP (PRP$ their) (NN shipper) (NNS imbalances))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, received-2)
+nsubj(received-2, TW-1)
+dep(125,448.39-4, $-3)
+dobj(received-2, 125,448.39-4)
+case(Burlington-6, from-5)
+nmod:from(received-2, Burlington-6)
+case(payment-8, in-7)
+nmod:in(received-2, payment-8)
+case(imbalances-12, of-9)
+nmod:poss(imbalances-12, their-10)
+compound(imbalances-12, shipper-11)
+nmod:of(payment-8, imbalances-12)
+punct(received-2, .-13)
+
+Extracted the following NER entity mentions:
+TW	ORGANIZATION
+$125,448.39	MONEY
+Burlington	CITY
+
+Sentence #2 (10 tokens):
+good job by Tracey in following up on this payment
+
+Tokens:
+[Text=good CharacterOffsetBegin=81 CharacterOffsetEnd=85 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=job CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=NN Lemma=job NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=90 CharacterOffsetEnd=92 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Tracey CharacterOffsetBegin=93 CharacterOffsetEnd=99 PartOfSpeech=NNP Lemma=Tracey NamedEntityTag=PERSON]
+[Text=in CharacterOffsetBegin=100 CharacterOffsetEnd=102 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=following CharacterOffsetBegin=103 CharacterOffsetEnd=112 PartOfSpeech=VBG Lemma=follow NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=113 CharacterOffsetEnd=115 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=116 CharacterOffsetEnd=118 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=119 CharacterOffsetEnd=123 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=payment CharacterOffsetBegin=124 CharacterOffsetEnd=131 PartOfSpeech=NN Lemma=payment NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (JJ good) (NN job))
+    (PP (IN by)
+      (NP
+        (NP (NNP Tracey))
+        (PP (IN in)
+          (S
+            (VP (VBG following)
+              (PRT (RP up))
+              (PP (IN on)
+                (NP (DT this) (NN payment))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, job-2)
+amod(job-2, good-1)
+case(Tracey-4, by-3)
+nmod:by(job-2, Tracey-4)
+mark(following-6, in-5)
+acl:in(Tracey-4, following-6)
+compound:prt(following-6, up-7)
+case(payment-10, on-8)
+det(payment-10, this-9)
+nmod:on(following-6, payment-10)
+
+Extracted the following NER entity mentions:
+Tracey	PERSON
+
+Coreference set:
+	(1,8,[8,13]) -> (2,10,[9,11]), that is: "payment of their shipper imbalances" -> "this payment"

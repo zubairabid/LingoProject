@@ -1,0 +1,914 @@
+Document: ID=1143919.in (13 sentences, 216 tokens)
+
+Sentence #1 (15 tokens):
+Mike,
+
+Embassy Natural Gas is the operator for POI 4879 - Vantage Plainview.
+
+Tokens:
+[Text=Mike CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Mike NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Embassy CharacterOffsetBegin=7 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=Embassy NamedEntityTag=ORGANIZATION]
+[Text=Natural CharacterOffsetBegin=15 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=Natural NamedEntityTag=ORGANIZATION]
+[Text=Gas CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=NNP Lemma=Gas NamedEntityTag=ORGANIZATION]
+[Text=is CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=operator CharacterOffsetBegin=34 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=operator NamedEntityTag=TITLE]
+[Text=for CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=POI CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=NNP Lemma=POI NamedEntityTag=O]
+[Text=4879 CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=CD Lemma=4879 NamedEntityTag=DATE NormalizedNamedEntityTag=4879 ]
+[Text=- CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=Vantage CharacterOffsetBegin=58 CharacterOffsetEnd=65 PartOfSpeech=NNP Lemma=Vantage NamedEntityTag=O]
+[Text=Plainview CharacterOffsetBegin=66 CharacterOffsetEnd=75 PartOfSpeech=NNP Lemma=Plainview NamedEntityTag=CITY]
+[Text=. CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Mike) (, ,) (NNP Embassy) (NNP Natural) (NNP Gas))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (DT the) (NN operator))
+          (PP (IN for)
+            (NP (NNP POI) (CD 4879))))
+        (: -)
+        (NP (NNP Vantage) (NNP Plainview))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, operator-8)
+compound(Gas-5, Mike-1)
+punct(Gas-5, ,-2)
+appos(Gas-5, Embassy-3)
+compound(Gas-5, Natural-4)
+nsubj(operator-8, Gas-5)
+cop(operator-8, is-6)
+det(operator-8, the-7)
+case(POI-10, for-9)
+nmod:for(operator-8, POI-10)
+nummod(POI-10, 4879-11)
+punct(operator-8, --12)
+compound(Plainview-14, Vantage-13)
+dep(operator-8, Plainview-14)
+punct(operator-8, .-15)
+
+Extracted the following NER entity mentions:
+Mike	PERSON
+Embassy Natural Gas	ORGANIZATION
+operator	TITLE
+4879	DATE
+Plainview	CITY
+
+Sentence #2 (7 tokens):
+John Wollaston is the contact 915-685-4103.
+
+Tokens:
+[Text=John CharacterOffsetBegin=78 CharacterOffsetEnd=82 PartOfSpeech=NNP Lemma=John NamedEntityTag=PERSON]
+[Text=Wollaston CharacterOffsetBegin=83 CharacterOffsetEnd=92 PartOfSpeech=NNP Lemma=Wollaston NamedEntityTag=PERSON]
+[Text=is CharacterOffsetBegin=93 CharacterOffsetEnd=95 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=96 CharacterOffsetEnd=99 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=contact CharacterOffsetBegin=100 CharacterOffsetEnd=107 PartOfSpeech=NN Lemma=contact NamedEntityTag=O]
+[Text=915-685-4103 CharacterOffsetBegin=108 CharacterOffsetEnd=120 PartOfSpeech=CD Lemma=915-685-4103 NamedEntityTag=NUMBER]
+[Text=. CharacterOffsetBegin=120 CharacterOffsetEnd=121 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP John) (NNP Wollaston))
+    (VP (VBZ is)
+      (NP (DT the) (NN contact) (CD 915-685-4103)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, contact-5)
+compound(Wollaston-2, John-1)
+nsubj(contact-5, Wollaston-2)
+cop(contact-5, is-3)
+det(contact-5, the-4)
+nummod(contact-5, 915-685-4103-6)
+punct(contact-5, .-7)
+
+Extracted the following NER entity mentions:
+John Wollaston	PERSON
+915-685-4103	NUMBER
+
+Sentence #3 (39 tokens):
+Embassy purchased gas from ENA (2,500 dth/day) to service Azteca Milling, LP - This is a $250 million  plant that mills flour for tortillas - one of the largest employers in Midland, TX.
+
+Tokens:
+[Text=Embassy CharacterOffsetBegin=123 CharacterOffsetEnd=130 PartOfSpeech=NNP Lemma=Embassy NamedEntityTag=O]
+[Text=purchased CharacterOffsetBegin=131 CharacterOffsetEnd=140 PartOfSpeech=VBD Lemma=purchase NamedEntityTag=O]
+[Text=gas CharacterOffsetBegin=141 CharacterOffsetEnd=144 PartOfSpeech=NN Lemma=gas NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=145 CharacterOffsetEnd=149 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=ENA CharacterOffsetBegin=150 CharacterOffsetEnd=153 PartOfSpeech=NN Lemma=ena NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=154 CharacterOffsetEnd=155 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=2,500 CharacterOffsetBegin=155 CharacterOffsetEnd=160 PartOfSpeech=CD Lemma=2,500 NamedEntityTag=NUMBER NormalizedNamedEntityTag=2500.0]
+[Text=dth/day CharacterOffsetBegin=161 CharacterOffsetEnd=168 PartOfSpeech=NN Lemma=dth/day NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=168 CharacterOffsetEnd=169 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=170 CharacterOffsetEnd=172 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=service CharacterOffsetBegin=173 CharacterOffsetEnd=180 PartOfSpeech=VB Lemma=service NamedEntityTag=O]
+[Text=Azteca CharacterOffsetBegin=181 CharacterOffsetEnd=187 PartOfSpeech=NNP Lemma=Azteca NamedEntityTag=O]
+[Text=Milling CharacterOffsetBegin=188 CharacterOffsetEnd=195 PartOfSpeech=NNP Lemma=Milling NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=195 CharacterOffsetEnd=196 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=LP CharacterOffsetBegin=197 CharacterOffsetEnd=199 PartOfSpeech=NN Lemma=lp NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=200 CharacterOffsetEnd=201 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=This CharacterOffsetBegin=202 CharacterOffsetEnd=206 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=207 CharacterOffsetEnd=209 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=210 CharacterOffsetEnd=211 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=212 CharacterOffsetEnd=213 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$2.5E8]
+[Text=250 CharacterOffsetBegin=213 CharacterOffsetEnd=216 PartOfSpeech=CD Lemma=250 NamedEntityTag=MONEY NormalizedNamedEntityTag=$2.5E8]
+[Text=million CharacterOffsetBegin=217 CharacterOffsetEnd=224 PartOfSpeech=CD Lemma=million NamedEntityTag=MONEY NormalizedNamedEntityTag=$2.5E8]
+[Text=plant CharacterOffsetBegin=226 CharacterOffsetEnd=231 PartOfSpeech=NN Lemma=plant NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=232 CharacterOffsetEnd=236 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=mills CharacterOffsetBegin=237 CharacterOffsetEnd=242 PartOfSpeech=NNS Lemma=mill NamedEntityTag=O]
+[Text=flour CharacterOffsetBegin=243 CharacterOffsetEnd=248 PartOfSpeech=VBP Lemma=flour NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=249 CharacterOffsetEnd=252 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=tortillas CharacterOffsetBegin=253 CharacterOffsetEnd=262 PartOfSpeech=NNS Lemma=tortilla NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=263 CharacterOffsetEnd=264 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=265 CharacterOffsetEnd=268 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=of CharacterOffsetBegin=269 CharacterOffsetEnd=271 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=272 CharacterOffsetEnd=275 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=largest CharacterOffsetBegin=276 CharacterOffsetEnd=283 PartOfSpeech=JJS Lemma=largest NamedEntityTag=O]
+[Text=employers CharacterOffsetBegin=284 CharacterOffsetEnd=293 PartOfSpeech=NNS Lemma=employer NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=294 CharacterOffsetEnd=296 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Midland CharacterOffsetBegin=297 CharacterOffsetEnd=304 PartOfSpeech=NNP Lemma=Midland NamedEntityTag=CITY]
+[Text=, CharacterOffsetBegin=304 CharacterOffsetEnd=305 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=TX CharacterOffsetBegin=306 CharacterOffsetEnd=308 PartOfSpeech=NNP Lemma=TX NamedEntityTag=STATE_OR_PROVINCE]
+[Text=. CharacterOffsetBegin=308 CharacterOffsetEnd=309 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NNP Embassy))
+      (VP (VBD purchased)
+        (NP (NN gas))
+        (PP (IN from)
+          (NP (NN ENA)
+            (PRN (-LRB- -LRB-)
+              (NP (CD 2,500) (NN dth/day))
+              (-RRB- -RRB-))
+            (S
+              (VP (TO to)
+                (VP (VB service)
+                  (NP
+                    (NP (NNP Azteca) (NNP Milling))
+                    (, ,)
+                    (NP (NN LP))))))))))
+    (: -)
+    (S
+      (NP (DT This))
+      (VP (VBZ is)
+        (NP
+          (NP
+            (NP (DT a)
+              (ADJP
+                (QP ($ $) (CD 250) (CD million)))
+              (NN plant))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (NP (NNS mills))
+                (VP (VBP flour)
+                  (PP (IN for)
+                    (NP (NNS tortillas)))))))
+          (: -)
+          (NP
+            (NP (CD one))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (JJS largest) (NNS employers))
+                (PP (IN in)
+                  (NP (NNP Midland) (, ,) (NNP TX)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, purchased-2)
+nsubj(purchased-2, Embassy-1)
+dobj(purchased-2, gas-3)
+case(ENA-5, from-4)
+nmod:from(purchased-2, ENA-5)
+punct(dth/day-8, -LRB--6)
+nummod(dth/day-8, 2,500-7)
+appos(ENA-5, dth/day-8)
+punct(dth/day-8, -RRB--9)
+mark(service-11, to-10)
+acl:to(ENA-5, service-11)
+compound(Milling-13, Azteca-12)
+dobj(service-11, Milling-13)
+punct(Milling-13, ,-14)
+appos(Milling-13, LP-15)
+punct(purchased-2, --16)
+nsubj(plant-23, This-17)
+cop(plant-23, is-18)
+det(plant-23, a-19)
+amod(plant-23, $-20)
+compound(million-22, 250-21)
+nummod($-20, million-22)
+parataxis(purchased-2, plant-23)
+dobj(flour-26, plant-23)
+ref(plant-23, that-24)
+nsubj(flour-26, mills-25)
+acl:relcl(plant-23, flour-26)
+case(tortillas-28, for-27)
+nmod:for(flour-26, tortillas-28)
+punct(plant-23, --29)
+det:qmod(employers-34, one-30)
+mwe(one-30, of-31)
+det(employers-34, the-32)
+amod(employers-34, largest-33)
+dep(plant-23, employers-34)
+case(TX-38, in-35)
+compound(TX-38, Midland-36)
+punct(TX-38, ,-37)
+nmod:in(employers-34, TX-38)
+punct(purchased-2, .-39)
+
+Extracted the following NER entity mentions:
+2,500	NUMBER
+$250 million	MONEY
+one	NUMBER
+Midland	CITY
+TX	STATE_OR_PROVINCE
+
+Sentence #4 (11 tokens):
+ENA was transporting the gas on their contract for Embassy.
+
+Tokens:
+[Text=ENA CharacterOffsetBegin=311 CharacterOffsetEnd=314 PartOfSpeech=NN Lemma=ena NamedEntityTag=ORGANIZATION]
+[Text=was CharacterOffsetBegin=315 CharacterOffsetEnd=318 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=transporting CharacterOffsetBegin=319 CharacterOffsetEnd=331 PartOfSpeech=VBG Lemma=transport NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=332 CharacterOffsetEnd=335 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=gas CharacterOffsetBegin=336 CharacterOffsetEnd=339 PartOfSpeech=NN Lemma=gas NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=340 CharacterOffsetEnd=342 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=343 CharacterOffsetEnd=348 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=contract CharacterOffsetBegin=349 CharacterOffsetEnd=357 PartOfSpeech=NN Lemma=contract NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=358 CharacterOffsetEnd=361 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Embassy CharacterOffsetBegin=362 CharacterOffsetEnd=369 PartOfSpeech=NNP Lemma=Embassy NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=369 CharacterOffsetEnd=370 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN ENA))
+    (VP (VBD was)
+      (VP (VBG transporting)
+        (NP (DT the) (NN gas))
+        (PP (IN on)
+          (NP
+            (NP (PRP$ their) (NN contract))
+            (PP (IN for)
+              (NP (NNP Embassy)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, transporting-3)
+nsubj(transporting-3, ENA-1)
+aux(transporting-3, was-2)
+det(gas-5, the-4)
+dobj(transporting-3, gas-5)
+case(contract-8, on-6)
+nmod:poss(contract-8, their-7)
+nmod:on(transporting-3, contract-8)
+case(Embassy-10, for-9)
+nmod:for(contract-8, Embassy-10)
+punct(transporting-3, .-11)
+
+Extracted the following NER entity mentions:
+ENA	ORGANIZATION
+
+Sentence #5 (24 tokens):
+They had a hedging deal : TOK index plus 15cents ($2.08 + .15) - present day ($2.95).
+
+Tokens:
+[Text=They CharacterOffsetBegin=372 CharacterOffsetEnd=376 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=377 CharacterOffsetEnd=380 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=381 CharacterOffsetEnd=382 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=hedging CharacterOffsetBegin=383 CharacterOffsetEnd=390 PartOfSpeech=NN Lemma=hedging NamedEntityTag=O]
+[Text=deal CharacterOffsetBegin=391 CharacterOffsetEnd=395 PartOfSpeech=NN Lemma=deal NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=396 CharacterOffsetEnd=397 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=TOK CharacterOffsetBegin=398 CharacterOffsetEnd=401 PartOfSpeech=CD Lemma=tok NamedEntityTag=NUMBER NormalizedNamedEntityTag=0.0]
+[Text=index CharacterOffsetBegin=402 CharacterOffsetEnd=407 PartOfSpeech=NN Lemma=index NamedEntityTag=O]
+[Text=plus CharacterOffsetBegin=408 CharacterOffsetEnd=412 PartOfSpeech=CC Lemma=plus NamedEntityTag=O]
+[Text=15cents CharacterOffsetBegin=413 CharacterOffsetEnd=420 PartOfSpeech=NNS Lemma=15cent NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=421 CharacterOffsetEnd=422 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=422 CharacterOffsetEnd=423 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$2.08]
+[Text=2.08 CharacterOffsetBegin=423 CharacterOffsetEnd=427 PartOfSpeech=CD Lemma=2.08 NamedEntityTag=MONEY NormalizedNamedEntityTag=$2.08]
+[Text=+ CharacterOffsetBegin=428 CharacterOffsetEnd=429 PartOfSpeech=CC Lemma=+ NamedEntityTag=O]
+[Text=.15 CharacterOffsetBegin=430 CharacterOffsetEnd=433 PartOfSpeech=CD Lemma=.15 NamedEntityTag=NUMBER NormalizedNamedEntityTag=0.15]
+[Text=-RRB- CharacterOffsetBegin=433 CharacterOffsetEnd=434 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=435 CharacterOffsetEnd=436 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=present CharacterOffsetBegin=437 CharacterOffsetEnd=444 PartOfSpeech=JJ Lemma=present NamedEntityTag=O]
+[Text=day CharacterOffsetBegin=445 CharacterOffsetEnd=448 PartOfSpeech=NN Lemma=day NamedEntityTag=TIME NormalizedNamedEntityTag=D]
+[Text=-LRB- CharacterOffsetBegin=449 CharacterOffsetEnd=450 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=450 CharacterOffsetEnd=451 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$2.95]
+[Text=2.95 CharacterOffsetBegin=451 CharacterOffsetEnd=455 PartOfSpeech=CD Lemma=2.95 NamedEntityTag=MONEY NormalizedNamedEntityTag=$2.95]
+[Text=-RRB- CharacterOffsetBegin=455 CharacterOffsetEnd=456 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=456 CharacterOffsetEnd=457 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBD had)
+      (NP
+        (NP
+          (NP (DT a) (NN hedging) (NN deal))
+          (: :)
+          (NP (CD TOK) (NN index)))
+        (CC plus)
+        (NP
+          (NP
+            (NP (NNS 15cents))
+            (PRN (-LRB- -LRB-)
+              (NP
+                (NP ($ $) (CD 2.08))
+                (CC +)
+                (NP (CD .15)))
+              (-RRB- -RRB-)))
+          (: -)
+          (NP
+            (NP (JJ present) (NN day))
+            (PRN (-LRB- -LRB-)
+              (NP ($ $) (CD 2.95))
+              (-RRB- -RRB-))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, had-2)
+nsubj(had-2, They-1)
+det(deal-5, a-3)
+compound(deal-5, hedging-4)
+dobj(had-2, deal-5)
+punct(deal-5, :-6)
+nummod(index-8, TOK-7)
+dep(deal-5, index-8)
+cc(deal-5, plus-9)
+dobj(had-2, 15cents-10)
+conj:plus(deal-5, 15cents-10)
+punct(2.08-13, -LRB--11)
+dep(2.08-13, $-12)
+dep(15cents-10, 2.08-13)
+cc(2.08-13, +-14)
+dep(15cents-10, .15-15)
+conj:+(2.08-13, .15-15)
+punct(2.08-13, -RRB--16)
+punct(15cents-10, --17)
+amod(day-19, present-18)
+dep(15cents-10, day-19)
+punct(2.95-22, -LRB--20)
+dep(2.95-22, $-21)
+appos(day-19, 2.95-22)
+punct(2.95-22, -RRB--23)
+punct(had-2, .-24)
+
+Extracted the following NER entity mentions:
+TOK	NUMBER
+$2.08	MONEY
+.15	NUMBER
+day	TIME
+$2.95	MONEY
+
+Sentence #6 (17 tokens):
+He is concerned that he will have to go out and pay more $ for gas.
+
+Tokens:
+[Text=He CharacterOffsetBegin=459 CharacterOffsetEnd=461 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=462 CharacterOffsetEnd=464 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=concerned CharacterOffsetBegin=465 CharacterOffsetEnd=474 PartOfSpeech=VBN Lemma=concern NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=475 CharacterOffsetEnd=479 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=480 CharacterOffsetEnd=482 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=483 CharacterOffsetEnd=487 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=488 CharacterOffsetEnd=492 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=493 CharacterOffsetEnd=495 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=496 CharacterOffsetEnd=498 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=499 CharacterOffsetEnd=502 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=503 CharacterOffsetEnd=506 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=pay CharacterOffsetBegin=507 CharacterOffsetEnd=510 PartOfSpeech=VB Lemma=pay NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=511 CharacterOffsetEnd=515 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=516 CharacterOffsetEnd=517 PartOfSpeech=$ Lemma=$ NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=518 CharacterOffsetEnd=521 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=gas CharacterOffsetBegin=522 CharacterOffsetEnd=525 PartOfSpeech=NN Lemma=gas NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=525 CharacterOffsetEnd=526 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (ADJP (VBN concerned)
+        (SBAR (IN that)
+          (S
+            (NP (PRP he))
+            (VP (MD will)
+              (VP (VB have)
+                (S
+                  (VP (TO to)
+                    (VP
+                      (VP (VB go)
+                        (PRT (RP out)))
+                      (CC and)
+                      (VP (VB pay)
+                        (NP (JJR more) ($ $))
+                        (PP (IN for)
+                          (NP (NN gas)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, concerned-3)
+nsubjpass(concerned-3, He-1)
+auxpass(concerned-3, is-2)
+mark(have-7, that-4)
+nsubj(have-7, he-5)
+nsubj:xsubj(go-9, he-5)
+nsubj:xsubj(pay-12, he-5)
+aux(have-7, will-6)
+ccomp(concerned-3, have-7)
+mark(go-9, to-8)
+xcomp(have-7, go-9)
+compound:prt(go-9, out-10)
+cc(go-9, and-11)
+xcomp(have-7, pay-12)
+conj:and(go-9, pay-12)
+dobj(pay-12, more-13)
+dep(more-13, $-14)
+case(gas-16, for-15)
+nmod:for(pay-12, gas-16)
+punct(concerned-3, .-17)
+
+Extracted the following NER entity mentions:
+He	PERSON
+he	PERSON
+
+Sentence #7 (53 tokens):
+I  put him in touch with Kevin Brady (3-7750) with ENA and Kevin gave him the marketer Jason Williams (3-1929) to contact about Embassy getting in touch with the upstream supplier for ENA so that they could perhaps buy the gas directly and hopefully at the same price.
+
+Tokens:
+[Text=I CharacterOffsetBegin=528 CharacterOffsetEnd=529 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=put CharacterOffsetBegin=531 CharacterOffsetEnd=534 PartOfSpeech=VBD Lemma=put NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=535 CharacterOffsetEnd=538 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=539 CharacterOffsetEnd=541 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=touch CharacterOffsetBegin=542 CharacterOffsetEnd=547 PartOfSpeech=NN Lemma=touch NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=548 CharacterOffsetEnd=552 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Kevin CharacterOffsetBegin=553 CharacterOffsetEnd=558 PartOfSpeech=NNP Lemma=Kevin NamedEntityTag=PERSON]
+[Text=Brady CharacterOffsetBegin=559 CharacterOffsetEnd=564 PartOfSpeech=NNP Lemma=Brady NamedEntityTag=PERSON]
+[Text=-LRB- CharacterOffsetBegin=565 CharacterOffsetEnd=566 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=3-7750 CharacterOffsetBegin=566 CharacterOffsetEnd=572 PartOfSpeech=CD Lemma=3-7750 NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0 - 7750.0]
+[Text=-RRB- CharacterOffsetBegin=572 CharacterOffsetEnd=573 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=574 CharacterOffsetEnd=578 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=ENA CharacterOffsetBegin=579 CharacterOffsetEnd=582 PartOfSpeech=NN Lemma=ena NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=583 CharacterOffsetEnd=586 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Kevin CharacterOffsetBegin=587 CharacterOffsetEnd=592 PartOfSpeech=NNP Lemma=Kevin NamedEntityTag=PERSON]
+[Text=gave CharacterOffsetBegin=593 CharacterOffsetEnd=597 PartOfSpeech=VBD Lemma=give NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=598 CharacterOffsetEnd=601 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=602 CharacterOffsetEnd=605 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=marketer CharacterOffsetBegin=606 CharacterOffsetEnd=614 PartOfSpeech=NN Lemma=marketer NamedEntityTag=O]
+[Text=Jason CharacterOffsetBegin=615 CharacterOffsetEnd=620 PartOfSpeech=NNP Lemma=Jason NamedEntityTag=PERSON]
+[Text=Williams CharacterOffsetBegin=621 CharacterOffsetEnd=629 PartOfSpeech=NNP Lemma=Williams NamedEntityTag=PERSON]
+[Text=-LRB- CharacterOffsetBegin=630 CharacterOffsetEnd=631 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=3-1929 CharacterOffsetBegin=631 CharacterOffsetEnd=637 PartOfSpeech=CD Lemma=3-1929 NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0 - 1929.0]
+[Text=-RRB- CharacterOffsetBegin=637 CharacterOffsetEnd=638 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=639 CharacterOffsetEnd=641 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=contact CharacterOffsetBegin=642 CharacterOffsetEnd=649 PartOfSpeech=VB Lemma=contact NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=650 CharacterOffsetEnd=655 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=Embassy CharacterOffsetBegin=656 CharacterOffsetEnd=663 PartOfSpeech=NNP Lemma=Embassy NamedEntityTag=O]
+[Text=getting CharacterOffsetBegin=664 CharacterOffsetEnd=671 PartOfSpeech=VBG Lemma=get NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=672 CharacterOffsetEnd=674 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=touch CharacterOffsetBegin=675 CharacterOffsetEnd=680 PartOfSpeech=NN Lemma=touch NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=681 CharacterOffsetEnd=685 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=686 CharacterOffsetEnd=689 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=upstream CharacterOffsetBegin=690 CharacterOffsetEnd=698 PartOfSpeech=JJ Lemma=upstream NamedEntityTag=O]
+[Text=supplier CharacterOffsetBegin=699 CharacterOffsetEnd=707 PartOfSpeech=NN Lemma=supplier NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=708 CharacterOffsetEnd=711 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=ENA CharacterOffsetBegin=712 CharacterOffsetEnd=715 PartOfSpeech=NNP Lemma=ENA NamedEntityTag=ORGANIZATION]
+[Text=so CharacterOffsetBegin=716 CharacterOffsetEnd=718 PartOfSpeech=IN Lemma=so NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=719 CharacterOffsetEnd=723 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=724 CharacterOffsetEnd=728 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=729 CharacterOffsetEnd=734 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=perhaps CharacterOffsetBegin=735 CharacterOffsetEnd=742 PartOfSpeech=RB Lemma=perhaps NamedEntityTag=O]
+[Text=buy CharacterOffsetBegin=743 CharacterOffsetEnd=746 PartOfSpeech=VB Lemma=buy NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=747 CharacterOffsetEnd=750 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=gas CharacterOffsetBegin=751 CharacterOffsetEnd=754 PartOfSpeech=NN Lemma=gas NamedEntityTag=O]
+[Text=directly CharacterOffsetBegin=755 CharacterOffsetEnd=763 PartOfSpeech=RB Lemma=directly NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=764 CharacterOffsetEnd=767 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=hopefully CharacterOffsetBegin=768 CharacterOffsetEnd=777 PartOfSpeech=RB Lemma=hopefully NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=778 CharacterOffsetEnd=780 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=781 CharacterOffsetEnd=784 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=same CharacterOffsetBegin=785 CharacterOffsetEnd=789 PartOfSpeech=JJ Lemma=same NamedEntityTag=O]
+[Text=price CharacterOffsetBegin=790 CharacterOffsetEnd=795 PartOfSpeech=NN Lemma=price NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=795 CharacterOffsetEnd=796 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBD put)
+        (NP (PRP him))
+        (PP (IN in)
+          (NP (NN touch)))
+        (PP (IN with)
+          (NP
+            (NP
+              (NP (NNP Kevin) (NNP Brady))
+              (PRN (-LRB- -LRB-)
+                (NP (CD 3-7750))
+                (-RRB- -RRB-)))
+            (PP (IN with)
+              (NP (NN ENA)))))))
+    (CC and)
+    (S
+      (NP (NNP Kevin))
+      (VP
+        (VP (VBD gave)
+          (NP (PRP him))
+          (NP
+            (NP (DT the) (NN marketer) (NNP Jason) (NNP Williams))
+            (PRN (-LRB- -LRB-)
+              (NP (CD 3-1929))
+              (-RRB- -RRB-)))
+          (S
+            (VP (TO to)
+              (VP (VB contact)
+                (PP (IN about)
+                  (NP
+                    (NP (NNP Embassy))
+                    (VP (VBG getting)
+                      (PP (IN in)
+                        (NP
+                          (NP (NN touch))
+                          (PP (IN with)
+                            (NP
+                              (NP (DT the) (JJ upstream) (NN supplier))
+                              (PP (IN for)
+                                (NP (NNP ENA)))))))
+                      (SBAR (IN so) (IN that)
+                        (S
+                          (NP (PRP they))
+                          (VP (MD could)
+                            (ADVP (RB perhaps))
+                            (VP (VB buy)
+                              (NP (DT the) (NN gas))
+                              (ADVP (RB directly)))))))))))))
+        (CC and)
+        (VP
+          (ADVP (RB hopefully))
+          (PP (IN at)
+            (NP (DT the) (JJ same) (NN price))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, put-2)
+nsubj(put-2, I-1)
+dobj(put-2, him-3)
+case(touch-5, in-4)
+nmod:in(put-2, touch-5)
+case(Brady-8, with-6)
+compound(Brady-8, Kevin-7)
+nmod:with(put-2, Brady-8)
+punct(3-7750-10, -LRB--9)
+appos(Brady-8, 3-7750-10)
+punct(3-7750-10, -RRB--11)
+case(ENA-13, with-12)
+nmod:with(Brady-8, ENA-13)
+cc(put-2, and-14)
+nsubj(gave-16, Kevin-15)
+conj:and(put-2, gave-16)
+iobj(gave-16, him-17)
+det(Williams-21, the-18)
+compound(Williams-21, marketer-19)
+compound(Williams-21, Jason-20)
+dobj(gave-16, Williams-21)
+punct(3-1929-23, -LRB--22)
+appos(Williams-21, 3-1929-23)
+punct(3-1929-23, -RRB--24)
+mark(contact-26, to-25)
+advcl:to(gave-16, contact-26)
+case(Embassy-28, about-27)
+nmod:about(contact-26, Embassy-28)
+acl(Embassy-28, getting-29)
+case(touch-31, in-30)
+nmod:in(getting-29, touch-31)
+case(supplier-35, with-32)
+det(supplier-35, the-33)
+amod(supplier-35, upstream-34)
+nmod:with(touch-31, supplier-35)
+case(ENA-37, for-36)
+nmod:for(supplier-35, ENA-37)
+mark(buy-43, so-38)
+mwe(so-38, that-39)
+nsubj(buy-43, they-40)
+aux(buy-43, could-41)
+advmod(buy-43, perhaps-42)
+advcl:so_that(getting-29, buy-43)
+det(gas-45, the-44)
+dobj(buy-43, gas-45)
+advmod(buy-43, directly-46)
+cc(gave-16, and-47)
+conj:and(put-2, hopefully-48)
+conj:and(gave-16, hopefully-48)
+case(price-52, at-49)
+det(price-52, the-50)
+amod(price-52, same-51)
+nmod:at(hopefully-48, price-52)
+punct(put-2, .-53)
+
+Extracted the following NER entity mentions:
+Kevin Brady	PERSON
+3-7750	NUMBER
+ENA	ORGANIZATION
+Kevin	PERSON
+Jason Williams	PERSON
+3-1929	NUMBER
+ENA	ORGANIZATION
+him	PERSON
+him	PERSON
+
+Sentence #8 (10 tokens):
+I don't know the outcome of their conversation.
+
+Tokens:
+[Text=I CharacterOffsetBegin=798 CharacterOffsetEnd=799 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=800 CharacterOffsetEnd=802 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=802 CharacterOffsetEnd=805 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=806 CharacterOffsetEnd=810 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=811 CharacterOffsetEnd=814 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=outcome CharacterOffsetBegin=815 CharacterOffsetEnd=822 PartOfSpeech=NN Lemma=outcome NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=823 CharacterOffsetEnd=825 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=826 CharacterOffsetEnd=831 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=conversation CharacterOffsetBegin=832 CharacterOffsetEnd=844 PartOfSpeech=NN Lemma=conversation NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=844 CharacterOffsetEnd=845 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP do) (RB n't)
+      (VP (VB know)
+        (NP
+          (NP (DT the) (NN outcome))
+          (PP (IN of)
+            (NP (PRP$ their) (NN conversation))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, know-4)
+nsubj(know-4, I-1)
+aux(know-4, do-2)
+neg(know-4, n't-3)
+det(outcome-6, the-5)
+dobj(know-4, outcome-6)
+case(conversation-9, of-7)
+nmod:poss(conversation-9, their-8)
+nmod:of(outcome-6, conversation-9)
+punct(know-4, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #9 (11 tokens):
+I thought your group might be able to help him.
+
+Tokens:
+[Text=I CharacterOffsetBegin=847 CharacterOffsetEnd=848 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=thought CharacterOffsetBegin=849 CharacterOffsetEnd=856 PartOfSpeech=VBD Lemma=think NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=857 CharacterOffsetEnd=861 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=group CharacterOffsetBegin=862 CharacterOffsetEnd=867 PartOfSpeech=NN Lemma=group NamedEntityTag=O]
+[Text=might CharacterOffsetBegin=868 CharacterOffsetEnd=873 PartOfSpeech=MD Lemma=might NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=874 CharacterOffsetEnd=876 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=able CharacterOffsetBegin=877 CharacterOffsetEnd=881 PartOfSpeech=JJ Lemma=able NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=882 CharacterOffsetEnd=884 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=help CharacterOffsetBegin=885 CharacterOffsetEnd=889 PartOfSpeech=VB Lemma=help NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=890 CharacterOffsetEnd=893 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=893 CharacterOffsetEnd=894 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD thought)
+      (SBAR
+        (S
+          (NP (PRP$ your) (NN group))
+          (VP (MD might)
+            (VP (VB be)
+              (ADJP (JJ able)
+                (S
+                  (VP (TO to)
+                    (VP (VB help)
+                      (NP (PRP him)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, thought-2)
+nsubj(thought-2, I-1)
+nmod:poss(group-4, your-3)
+nsubj(able-7, group-4)
+nsubj:xsubj(help-9, group-4)
+aux(able-7, might-5)
+cop(able-7, be-6)
+ccomp(thought-2, able-7)
+mark(help-9, to-8)
+xcomp(able-7, help-9)
+dobj(help-9, him-10)
+punct(thought-2, .-11)
+
+Extracted the following NER entity mentions:
+him	PERSON
+
+Sentence #10 (9 tokens):
+I have not mentioned this possiblilty to him.
+
+Tokens:
+[Text=I CharacterOffsetBegin=896 CharacterOffsetEnd=897 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=898 CharacterOffsetEnd=902 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=903 CharacterOffsetEnd=906 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=mentioned CharacterOffsetBegin=907 CharacterOffsetEnd=916 PartOfSpeech=VBN Lemma=mention NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=917 CharacterOffsetEnd=921 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=possiblilty CharacterOffsetBegin=922 CharacterOffsetEnd=933 PartOfSpeech=NN Lemma=possiblilty NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=934 CharacterOffsetEnd=936 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=937 CharacterOffsetEnd=940 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=940 CharacterOffsetEnd=941 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP have) (RB not)
+      (VP (VBN mentioned)
+        (NP (DT this) (NN possiblilty))
+        (PP (TO to)
+          (NP (PRP him)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, mentioned-4)
+nsubj(mentioned-4, I-1)
+aux(mentioned-4, have-2)
+neg(mentioned-4, not-3)
+det(possiblilty-6, this-5)
+dobj(mentioned-4, possiblilty-6)
+case(him-8, to-7)
+nmod:to(mentioned-4, him-8)
+punct(mentioned-4, .-9)
+
+Extracted the following NER entity mentions:
+him	PERSON
+
+Sentence #11 (11 tokens):
+Would you let me know if you plan to pursue?
+
+Tokens:
+[Text=Would CharacterOffsetBegin=943 CharacterOffsetEnd=948 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=949 CharacterOffsetEnd=952 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=let CharacterOffsetBegin=953 CharacterOffsetEnd=956 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=957 CharacterOffsetEnd=959 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=960 CharacterOffsetEnd=964 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=965 CharacterOffsetEnd=967 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=968 CharacterOffsetEnd=971 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=plan CharacterOffsetBegin=972 CharacterOffsetEnd=976 PartOfSpeech=VBP Lemma=plan NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=977 CharacterOffsetEnd=979 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=pursue CharacterOffsetBegin=980 CharacterOffsetEnd=986 PartOfSpeech=VB Lemma=pursue NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=986 CharacterOffsetEnd=987 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (MD Would)
+    (NP (PRP you))
+    (VP (VB let)
+      (S
+        (NP (PRP me))
+        (VP (VB know)
+          (SBAR (IN if)
+            (S
+              (NP (PRP you))
+              (VP (VBP plan)
+                (S
+                  (VP (TO to)
+                    (VP (VB pursue))))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, let-3)
+aux(let-3, Would-1)
+nsubj(let-3, you-2)
+nsubj(know-5, me-4)
+ccomp(let-3, know-5)
+mark(plan-8, if-6)
+nsubj(plan-8, you-7)
+nsubj:xsubj(pursue-10, you-7)
+advcl:if(know-5, plan-8)
+mark(pursue-10, to-9)
+xcomp(plan-8, pursue-10)
+punct(let-3, ?-11)
+
+Extracted the following NER entity mentions:
+
+Sentence #12 (7 tokens):
+Call me if you have questions.
+
+Tokens:
+[Text=Call CharacterOffsetBegin=989 CharacterOffsetEnd=993 PartOfSpeech=VB Lemma=call NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=994 CharacterOffsetEnd=996 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=997 CharacterOffsetEnd=999 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=1000 CharacterOffsetEnd=1003 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=1004 CharacterOffsetEnd=1008 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=questions CharacterOffsetBegin=1009 CharacterOffsetEnd=1018 PartOfSpeech=NNS Lemma=question NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1018 CharacterOffsetEnd=1019 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Call)
+      (NP (PRP me))
+      (SBAR (IN if)
+        (S
+          (NP (PRP you))
+          (VP (VBP have)
+            (NP (NNS questions))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Call-1)
+dobj(Call-1, me-2)
+mark(have-5, if-3)
+nsubj(have-5, you-4)
+advcl:if(Call-1, have-5)
+dobj(have-5, questions-6)
+punct(Call-1, .-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #13 (2 tokens):
+Jean
+3-7757
+
+Tokens:
+[Text=Jean CharacterOffsetBegin=1021 CharacterOffsetEnd=1025 PartOfSpeech=NNP Lemma=Jean NamedEntityTag=PERSON]
+[Text=3-7757 CharacterOffsetBegin=1026 CharacterOffsetEnd=1032 PartOfSpeech=CD Lemma=3-7757 NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0 - 7757.0]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Jean))
+    (NP (CD 3-7757))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Jean-1)
+dep(Jean-1, 3-7757-2)
+
+Extracted the following NER entity mentions:
+Jean	PERSON
+3-7757	NUMBER
+
+Coreference set:
+	(1,8,[7,15]) -> (1,5,[1,6]), that is: "the operator for POI 4879 - Vantage Plainview" -> "Mike , Embassy Natural Gas"
+	(4,5,[4,6]) -> (1,5,[1,6]), that is: "the gas" -> "Mike , Embassy Natural Gas"
+	(7,45,[44,46]) -> (1,5,[1,6]), that is: "the gas" -> "Mike , Embassy Natural Gas"
+
+Coreference set:
+	(4,10,[10,11]) -> (3,1,[1,2]), that is: "Embassy" -> "Embassy"
+
+Coreference set:
+	(3,5,[5,16]) -> (7,37,[37,38]), that is: "ENA -LRB- 2,500 dth/day -RRB- to service Azteca Milling , LP" -> "ENA"
+
+Coreference set:
+	(6,1,[1,2]) -> (3,8,[7,9]), that is: "He" -> "2,500 dth/day"
+	(6,5,[5,6]) -> (3,8,[7,9]), that is: "he" -> "2,500 dth/day"
+	(7,3,[3,4]) -> (3,8,[7,9]), that is: "him" -> "2,500 dth/day"
+	(9,10,[10,11]) -> (3,8,[7,9]), that is: "him" -> "2,500 dth/day"
+
+Coreference set:
+	(3,17,[17,18]) -> (3,23,[19,39]), that is: "This" -> "a $ 250 million plant that mills flour for tortillas - one of the largest employers in Midland , TX"
+
+Coreference set:
+	(5,1,[1,2]) -> (4,7,[7,8]), that is: "They" -> "their"
+	(7,40,[40,41]) -> (4,7,[7,8]), that is: "they" -> "their"
+	(8,8,[8,9]) -> (4,7,[7,8]), that is: "their" -> "their"
+
+Coreference set:
+	(8,1,[1,2]) -> (7,1,[1,2]), that is: "I" -> "I"
+	(9,1,[1,2]) -> (7,1,[1,2]), that is: "I" -> "I"
+	(10,1,[1,2]) -> (7,1,[1,2]), that is: "I" -> "I"
+	(11,4,[4,5]) -> (7,1,[1,2]), that is: "me" -> "I"
+	(12,2,[2,3]) -> (7,1,[1,2]), that is: "me" -> "I"
+
+Coreference set:
+	(7,15,[15,16]) -> (7,8,[7,14]), that is: "Kevin" -> "Kevin Brady -LRB- 3-7750 -RRB- with ENA"
+	(7,17,[17,18]) -> (7,8,[7,14]), that is: "him" -> "Kevin Brady -LRB- 3-7750 -RRB- with ENA"
+
+Coreference set:
+	(10,8,[8,9]) -> (10,6,[5,7]), that is: "him" -> "this possiblilty"

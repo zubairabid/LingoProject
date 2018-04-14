@@ -1,0 +1,364 @@
+Document: ID=776091.in (7 sentences, 80 tokens)
+
+Sentence #1 (2 tokens):
+FYI.
+
+Tokens:
+[Text=FYI CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=FYI NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP FYI))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, FYI-1)
+punct(FYI-1, .-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (23 tokens):
+There is a private company called Piers which tracks trade flows by ports by examining the vessel manifests and bills of lading.
+
+Tokens:
+[Text=There CharacterOffsetBegin=6 CharacterOffsetEnd=11 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=private CharacterOffsetBegin=17 CharacterOffsetEnd=24 PartOfSpeech=JJ Lemma=private NamedEntityTag=O]
+[Text=company CharacterOffsetBegin=25 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=company NamedEntityTag=O]
+[Text=called CharacterOffsetBegin=33 CharacterOffsetEnd=39 PartOfSpeech=VBD Lemma=call NamedEntityTag=O]
+[Text=Piers CharacterOffsetBegin=40 CharacterOffsetEnd=45 PartOfSpeech=NNP Lemma=Piers NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=46 CharacterOffsetEnd=51 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=tracks CharacterOffsetBegin=52 CharacterOffsetEnd=58 PartOfSpeech=VBZ Lemma=track NamedEntityTag=O]
+[Text=trade CharacterOffsetBegin=59 CharacterOffsetEnd=64 PartOfSpeech=NN Lemma=trade NamedEntityTag=O]
+[Text=flows CharacterOffsetBegin=65 CharacterOffsetEnd=70 PartOfSpeech=NNS Lemma=flow NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=71 CharacterOffsetEnd=73 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=ports CharacterOffsetBegin=74 CharacterOffsetEnd=79 PartOfSpeech=NNS Lemma=port NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=80 CharacterOffsetEnd=82 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=examining CharacterOffsetBegin=83 CharacterOffsetEnd=92 PartOfSpeech=VBG Lemma=examine NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=93 CharacterOffsetEnd=96 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=vessel CharacterOffsetBegin=97 CharacterOffsetEnd=103 PartOfSpeech=NN Lemma=vessel NamedEntityTag=O]
+[Text=manifests CharacterOffsetBegin=104 CharacterOffsetEnd=113 PartOfSpeech=VBZ Lemma=manifest NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=114 CharacterOffsetEnd=117 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=bills CharacterOffsetBegin=118 CharacterOffsetEnd=123 PartOfSpeech=NNS Lemma=bill NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=124 CharacterOffsetEnd=126 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=lading CharacterOffsetBegin=127 CharacterOffsetEnd=133 PartOfSpeech=NN Lemma=lading NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=133 CharacterOffsetEnd=134 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ private) (NN company))
+        (SBAR
+          (S
+            (VP (VBD called)
+              (NP
+                (NP
+                  (NP (NNP Piers))
+                  (SBAR
+                    (WHNP (WDT which))
+                    (S
+                      (VP (VBZ tracks)
+                        (NP (NN trade) (NNS flows))
+                        (PP (IN by)
+                          (NP (NNS ports)))
+                        (PP (IN by)
+                          (S
+                            (VP (VBG examining)
+                              (SBAR
+                                (S
+                                  (NP (DT the) (NN vessel))
+                                  (VP (VBZ manifests)))))))))))
+                (CC and)
+                (NP
+                  (NP (NNS bills))
+                  (PP (IN of)
+                    (NP (NN lading))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-2)
+expl(is-2, There-1)
+det(company-5, a-3)
+amod(company-5, private-4)
+nsubj(is-2, company-5)
+nsubj(tracks-9, company-5)
+acl:relcl(company-5, called-6)
+dobj(called-6, Piers-7)
+nsubj(tracks-9, Piers-7)
+ref(company-5, which-8)
+ref(Piers-7, which-8)
+acl:relcl(Piers-7, tracks-9)
+compound(flows-11, trade-10)
+dobj(tracks-9, flows-11)
+case(ports-13, by-12)
+nmod:by(tracks-9, ports-13)
+mark(examining-15, by-14)
+advcl:by(tracks-9, examining-15)
+det(vessel-17, the-16)
+nsubj(manifests-18, vessel-17)
+ccomp(examining-15, manifests-18)
+cc(Piers-7, and-19)
+dobj(called-6, bills-20)
+conj:and(Piers-7, bills-20)
+nsubj(tracks-9, bills-20)
+case(lading-22, of-21)
+nmod:of(bills-20, lading-22)
+punct(is-2, .-23)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (14 tokens):
+They have a website which Luis Velez is familiar with and is www.piers.com.
+
+Tokens:
+[Text=They CharacterOffsetBegin=136 CharacterOffsetEnd=140 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=141 CharacterOffsetEnd=145 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=146 CharacterOffsetEnd=147 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=website CharacterOffsetBegin=148 CharacterOffsetEnd=155 PartOfSpeech=NN Lemma=website NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=156 CharacterOffsetEnd=161 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=Luis CharacterOffsetBegin=162 CharacterOffsetEnd=166 PartOfSpeech=NNP Lemma=Luis NamedEntityTag=PERSON]
+[Text=Velez CharacterOffsetBegin=167 CharacterOffsetEnd=172 PartOfSpeech=NNP Lemma=Velez NamedEntityTag=PERSON]
+[Text=is CharacterOffsetBegin=173 CharacterOffsetEnd=175 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=familiar CharacterOffsetBegin=176 CharacterOffsetEnd=184 PartOfSpeech=JJ Lemma=familiar NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=185 CharacterOffsetEnd=189 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=190 CharacterOffsetEnd=193 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=194 CharacterOffsetEnd=196 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=www.piers.com CharacterOffsetBegin=197 CharacterOffsetEnd=210 PartOfSpeech=NNP Lemma=www.piers.com NamedEntityTag=URL]
+[Text=. CharacterOffsetBegin=210 CharacterOffsetEnd=211 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP
+      (VP (VBP have)
+        (NP
+          (NP (DT a) (NN website))
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (NP (NNP Luis) (NNP Velez))
+              (VP (VBZ is)
+                (ADJP (JJ familiar)
+                  (PP (IN with))))))))
+      (CC and)
+      (VP (VBZ is)
+        (NP (NNP www.piers.com))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-2)
+nsubj(have-2, They-1)
+det(website-4, a-3)
+dobj(have-2, website-4)
+dobj(familiar-9, website-4)
+ref(website-4, which-5)
+compound(Velez-7, Luis-6)
+nsubj(familiar-9, Velez-7)
+cop(familiar-9, is-8)
+acl:relcl(website-4, familiar-9)
+nmod(familiar-9, with-10)
+cc(have-2, and-11)
+cop(www.piers.com-13, is-12)
+conj:and(have-2, www.piers.com-13)
+punct(have-2, .-14)
+
+Extracted the following NER entity mentions:
+Luis Velez	PERSON
+www.piers.com	URL
+
+Sentence #4 (18 tokens):
+While they don't track all regions of the world, they do provide data by port.
+
+Tokens:
+[Text=While CharacterOffsetBegin=213 CharacterOffsetEnd=218 PartOfSpeech=IN Lemma=while NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=219 CharacterOffsetEnd=223 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=224 CharacterOffsetEnd=226 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=226 CharacterOffsetEnd=229 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=track CharacterOffsetBegin=230 CharacterOffsetEnd=235 PartOfSpeech=VB Lemma=track NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=236 CharacterOffsetEnd=239 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=regions CharacterOffsetBegin=240 CharacterOffsetEnd=247 PartOfSpeech=NNS Lemma=region NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=248 CharacterOffsetEnd=250 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=251 CharacterOffsetEnd=254 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=world CharacterOffsetBegin=255 CharacterOffsetEnd=260 PartOfSpeech=NN Lemma=world NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=260 CharacterOffsetEnd=261 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=262 CharacterOffsetEnd=266 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=267 CharacterOffsetEnd=269 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=provide CharacterOffsetBegin=270 CharacterOffsetEnd=277 PartOfSpeech=VB Lemma=provide NamedEntityTag=O]
+[Text=data CharacterOffsetBegin=278 CharacterOffsetEnd=282 PartOfSpeech=NNS Lemma=datum NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=283 CharacterOffsetEnd=285 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=port CharacterOffsetBegin=286 CharacterOffsetEnd=290 PartOfSpeech=NN Lemma=port NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=290 CharacterOffsetEnd=291 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN While)
+      (S
+        (NP (PRP they))
+        (VP (VBP do) (RB n't)
+          (VP (VB track)
+            (NP
+              (NP (DT all) (NNS regions))
+              (PP (IN of)
+                (NP (DT the) (NN world))))))))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBP do)
+      (VP (VB provide)
+        (NP (NNS data))
+        (PP (IN by)
+          (NP (NN port)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, provide-14)
+mark(track-5, While-1)
+nsubj(track-5, they-2)
+aux(track-5, do-3)
+neg(track-5, n't-4)
+advcl:while(provide-14, track-5)
+det(regions-7, all-6)
+dobj(track-5, regions-7)
+case(world-10, of-8)
+det(world-10, the-9)
+nmod:of(regions-7, world-10)
+punct(provide-14, ,-11)
+nsubj(provide-14, they-12)
+aux(provide-14, do-13)
+dobj(provide-14, data-15)
+case(port-17, by-16)
+nmod:by(provide-14, port-17)
+punct(provide-14, .-18)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (7 tokens):
+Unfortunately, this information requires payment.
+
+Tokens:
+[Text=Unfortunately CharacterOffsetBegin=293 CharacterOffsetEnd=306 PartOfSpeech=RB Lemma=unfortunately NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=306 CharacterOffsetEnd=307 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=308 CharacterOffsetEnd=312 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=information CharacterOffsetBegin=313 CharacterOffsetEnd=324 PartOfSpeech=NN Lemma=information NamedEntityTag=O]
+[Text=requires CharacterOffsetBegin=325 CharacterOffsetEnd=333 PartOfSpeech=VBZ Lemma=require NamedEntityTag=O]
+[Text=payment CharacterOffsetBegin=334 CharacterOffsetEnd=341 PartOfSpeech=NN Lemma=payment NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=341 CharacterOffsetEnd=342 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Unfortunately))
+    (, ,)
+    (NP (DT this) (NN information))
+    (VP (VBZ requires)
+      (NP (NN payment)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, requires-5)
+advmod(requires-5, Unfortunately-1)
+punct(requires-5, ,-2)
+det(information-4, this-3)
+nsubj(requires-5, information-4)
+dobj(requires-5, payment-6)
+punct(requires-5, .-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #6 (15 tokens):
+I would suggest looking on their website to see what they have to offer.
+
+Tokens:
+[Text=I CharacterOffsetBegin=344 CharacterOffsetEnd=345 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=346 CharacterOffsetEnd=351 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=suggest CharacterOffsetBegin=352 CharacterOffsetEnd=359 PartOfSpeech=VB Lemma=suggest NamedEntityTag=O]
+[Text=looking CharacterOffsetBegin=360 CharacterOffsetEnd=367 PartOfSpeech=VBG Lemma=look NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=368 CharacterOffsetEnd=370 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=371 CharacterOffsetEnd=376 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=website CharacterOffsetBegin=377 CharacterOffsetEnd=384 PartOfSpeech=NN Lemma=website NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=385 CharacterOffsetEnd=387 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=388 CharacterOffsetEnd=391 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=392 CharacterOffsetEnd=396 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=397 CharacterOffsetEnd=401 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=402 CharacterOffsetEnd=406 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=407 CharacterOffsetEnd=409 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=offer CharacterOffsetBegin=410 CharacterOffsetEnd=415 PartOfSpeech=VB Lemma=offer NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=415 CharacterOffsetEnd=416 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD would)
+      (VP (VB suggest)
+        (S
+          (VP (VBG looking)
+            (PP (IN on)
+              (NP (PRP$ their) (NN website)
+                (S
+                  (VP (TO to)
+                    (VP (VB see)
+                      (SBAR
+                        (WHNP (WP what))
+                        (S
+                          (NP (PRP they))
+                          (VP (VBP have)
+                            (S
+                              (VP (TO to)
+                                (VP (VB offer))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, suggest-3)
+nsubj(suggest-3, I-1)
+aux(suggest-3, would-2)
+xcomp(suggest-3, looking-4)
+case(website-7, on-5)
+nmod:poss(website-7, their-6)
+nmod:on(looking-4, website-7)
+mark(see-9, to-8)
+acl:to(website-7, see-9)
+dobj(have-12, what-10)
+nsubj:xsubj(offer-14, what-10)
+nsubj(have-12, they-11)
+ccomp(see-9, have-12)
+mark(offer-14, to-13)
+xcomp(have-12, offer-14)
+punct(suggest-3, .-15)
+
+Extracted the following NER entity mentions:
+
+Sentence #7 (1 tokens):
+KC
+
+Tokens:
+[Text=KC CharacterOffsetBegin=418 CharacterOffsetEnd=420 PartOfSpeech=NN Lemma=kc NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NN KC)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, KC-1)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(4,2,[2,3]) -> (3,1,[1,2]), that is: "they" -> "They"
+	(4,12,[12,13]) -> (3,1,[1,2]), that is: "they" -> "They"
+	(6,6,[6,7]) -> (3,1,[1,2]), that is: "their" -> "They"
+	(6,11,[11,12]) -> (3,1,[1,2]), that is: "they" -> "They"

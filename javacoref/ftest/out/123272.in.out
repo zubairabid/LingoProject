@@ -1,0 +1,259 @@
+Document: ID=123272.in (4 sentences, 58 tokens)
+
+Sentence #1 (15 tokens):
+I typed up the schedule of play for our league which might be  helpful.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=typed CharacterOffsetBegin=2 CharacterOffsetEnd=7 PartOfSpeech=VBD Lemma=type NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=schedule CharacterOffsetBegin=15 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=schedule NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=play CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=play NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=league CharacterOffsetBegin=40 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=league NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=might CharacterOffsetBegin=53 CharacterOffsetEnd=58 PartOfSpeech=MD Lemma=might NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=helpful CharacterOffsetBegin=63 CharacterOffsetEnd=70 PartOfSpeech=JJ Lemma=helpful NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD typed)
+      (PRT (RP up))
+      (NP
+        (NP (DT the) (NN schedule))
+        (PP (IN of)
+          (NP (NN play))))
+      (PP (IN for)
+        (NP
+          (NP (PRP$ our) (NN league))
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (MD might)
+                (VP (VB be)
+                  (ADJP (JJ helpful)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, typed-2)
+nsubj(typed-2, I-1)
+compound:prt(typed-2, up-3)
+det(schedule-5, the-4)
+dobj(typed-2, schedule-5)
+case(play-7, of-6)
+nmod:of(schedule-5, play-7)
+case(league-10, for-8)
+nmod:poss(league-10, our-9)
+nmod:for(typed-2, league-10)
+nsubj(helpful-14, league-10)
+ref(league-10, which-11)
+aux(helpful-14, might-12)
+cop(helpful-14, be-13)
+acl:relcl(league-10, helpful-14)
+punct(typed-2, .-15)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (15 tokens):
+It is
+attached, so forward it to anyone you think may want  it.
+
+Tokens:
+[Text=It CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=75 CharacterOffsetEnd=77 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=attached CharacterOffsetBegin=78 CharacterOffsetEnd=86 PartOfSpeech=VBN Lemma=attach NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=86 CharacterOffsetEnd=87 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=88 CharacterOffsetEnd=90 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=forward CharacterOffsetBegin=91 CharacterOffsetEnd=98 PartOfSpeech=RB Lemma=forward NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=99 CharacterOffsetEnd=101 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=102 CharacterOffsetEnd=104 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=anyone CharacterOffsetBegin=105 CharacterOffsetEnd=111 PartOfSpeech=NN Lemma=anyone NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=112 CharacterOffsetEnd=115 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=116 CharacterOffsetEnd=121 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=may CharacterOffsetBegin=122 CharacterOffsetEnd=125 PartOfSpeech=MD Lemma=may NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=126 CharacterOffsetEnd=130 PartOfSpeech=VB Lemma=want NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=132 CharacterOffsetEnd=134 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=134 CharacterOffsetEnd=135 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (S
+        (NP (PRP It))
+        (VP (VBZ is)
+          (VP (VBN attached))))
+      (, ,) (RB so)
+      (S
+        (ADVP (RB forward))
+        (NP
+          (NP (PRP it))
+          (PP (TO to)
+            (NP (NN anyone))))))
+    (NP (PRP you))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (VP (MD may)
+            (VP (VB want)
+              (NP (PRP it)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, think-11)
+nsubjpass(attached-3, It-1)
+auxpass(attached-3, is-2)
+dep(think-11, attached-3)
+punct(attached-3, ,-4)
+advmod(attached-3, so-5)
+advmod(it-7, forward-6)
+parataxis(attached-3, it-7)
+case(anyone-9, to-8)
+nmod:to(it-7, anyone-9)
+nsubj(think-11, you-10)
+aux(want-13, may-12)
+ccomp(think-11, want-13)
+dobj(want-13, it-14)
+punct(think-11, .-15)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (17 tokens):
+If they are not
+included,
+it's because I don't have their email address.
+
+Tokens:
+[Text=If CharacterOffsetBegin=136 CharacterOffsetEnd=138 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=139 CharacterOffsetEnd=143 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=144 CharacterOffsetEnd=147 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=148 CharacterOffsetEnd=151 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=included CharacterOffsetBegin=152 CharacterOffsetEnd=160 PartOfSpeech=VBN Lemma=include NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=160 CharacterOffsetEnd=161 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=162 CharacterOffsetEnd=164 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=164 CharacterOffsetEnd=166 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=because CharacterOffsetBegin=167 CharacterOffsetEnd=174 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=175 CharacterOffsetEnd=176 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=177 CharacterOffsetEnd=179 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=179 CharacterOffsetEnd=182 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=183 CharacterOffsetEnd=187 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=188 CharacterOffsetEnd=193 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=email CharacterOffsetBegin=194 CharacterOffsetEnd=199 PartOfSpeech=NN Lemma=email NamedEntityTag=O]
+[Text=address CharacterOffsetBegin=200 CharacterOffsetEnd=207 PartOfSpeech=NN Lemma=address NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=207 CharacterOffsetEnd=208 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP they))
+        (VP (VBP are) (RB not)
+          (VP (VBN included)))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ 's)
+      (SBAR (IN because)
+        (S
+          (NP (PRP I))
+          (VP (VBP do) (RB n't)
+            (VP (VB have)
+              (NP (PRP$ their) (NN email) (NN address)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 's-8)
+mark(included-5, If-1)
+nsubjpass(included-5, they-2)
+auxpass(included-5, are-3)
+neg(included-5, not-4)
+advcl:if('s-8, included-5)
+punct('s-8, ,-6)
+nsubj('s-8, it-7)
+mark(have-13, because-9)
+nsubj(have-13, I-10)
+aux(have-13, do-11)
+neg(have-13, n't-12)
+advcl:because('s-8, have-13)
+nmod:poss(address-16, their-14)
+compound(address-16, email-15)
+dobj(have-13, address-16)
+punct('s-8, .-17)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (11 tokens):
+Cas Moll
+Tel:713-435-6704
+Fax: 713-435-6905
+Email: cmoll@loomisfargo.com
+
+Tokens:
+[Text=Cas CharacterOffsetBegin=211 CharacterOffsetEnd=214 PartOfSpeech=NNP Lemma=Cas NamedEntityTag=MISC]
+[Text=Moll CharacterOffsetBegin=215 CharacterOffsetEnd=219 PartOfSpeech=NNP Lemma=Moll NamedEntityTag=MISC]
+[Text=Tel CharacterOffsetBegin=220 CharacterOffsetEnd=223 PartOfSpeech=NNP Lemma=Tel NamedEntityTag=MISC]
+[Text=: CharacterOffsetBegin=223 CharacterOffsetEnd=224 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=713-435-6704 CharacterOffsetBegin=224 CharacterOffsetEnd=236 PartOfSpeech=CD Lemma=713-435-6704 NamedEntityTag=NUMBER]
+[Text=Fax CharacterOffsetBegin=237 CharacterOffsetEnd=240 PartOfSpeech=NN Lemma=fax NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=240 CharacterOffsetEnd=241 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=713-435-6905 CharacterOffsetBegin=242 CharacterOffsetEnd=254 PartOfSpeech=CD Lemma=713-435-6905 NamedEntityTag=NUMBER]
+[Text=Email CharacterOffsetBegin=255 CharacterOffsetEnd=260 PartOfSpeech=VB Lemma=email NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=260 CharacterOffsetEnd=261 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=cmoll@loomisfargo.com CharacterOffsetBegin=262 CharacterOffsetEnd=283 PartOfSpeech=NNP Lemma=cmoll@loomisfargo.com NamedEntityTag=EMAIL]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Cas) (NNP Moll) (NNP Tel))
+    (: :)
+    (NP
+      (NP
+        (NP (CD 713-435-6704) (NN Fax))
+        (: :)
+        (S
+          (NP (CD 713-435-6905))
+          (VP (VB Email))))
+      (PRN (: :)
+        (NP (NNP cmoll@loomisfargo.com))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Tel-3)
+compound(Tel-3, Cas-1)
+compound(Tel-3, Moll-2)
+punct(Tel-3, :-4)
+nummod(Fax-6, 713-435-6704-5)
+dep(Tel-3, Fax-6)
+punct(Fax-6, :-7)
+nsubj(Email-9, 713-435-6905-8)
+dep(Fax-6, Email-9)
+punct(cmoll@loomisfargo.com-11, :-10)
+dep(Fax-6, cmoll@loomisfargo.com-11)
+
+Extracted the following NER entity mentions:
+Cas Moll Tel	MISC
+713-435-6704	NUMBER
+713-435-6905	NUMBER
+cmoll@loomisfargo.com	EMAIL
+
+Coreference set:
+	(3,10,[10,11]) -> (1,1,[1,2]), that is: "I" -> "I"
+
+Coreference set:
+	(2,1,[1,2]) -> (1,5,[4,8]), that is: "It" -> "the schedule of play"
+	(2,7,[7,10]) -> (1,5,[4,8]), that is: "it to anyone" -> "the schedule of play"
+	(2,14,[14,15]) -> (1,5,[4,8]), that is: "it" -> "the schedule of play"
+	(3,7,[7,8]) -> (1,5,[4,8]), that is: "it" -> "the schedule of play"
+
+Coreference set:
+	(3,14,[14,15]) -> (3,2,[2,3]), that is: "their" -> "they"

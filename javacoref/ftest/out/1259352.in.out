@@ -1,0 +1,420 @@
+Document: ID=1259352.in (8 sentences, 96 tokens)
+
+Sentence #1 (9 tokens):
+We received the cash PSCC promised to pay.
+
+Tokens:
+[Text=We CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=received CharacterOffsetBegin=3 CharacterOffsetEnd=11 PartOfSpeech=VBD Lemma=receive NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=cash CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=NN Lemma=cash NamedEntityTag=O]
+[Text=PSCC CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=pscc NamedEntityTag=ORGANIZATION]
+[Text=promised CharacterOffsetBegin=26 CharacterOffsetEnd=34 PartOfSpeech=VBD Lemma=promise NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=pay CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=VB Lemma=pay NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBD received)
+      (SBAR
+        (S
+          (NP (DT the) (NN cash) (NN PSCC))
+          (VP (VBD promised)
+            (S
+              (VP (TO to)
+                (VP (VB pay))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, received-2)
+nsubj(received-2, We-1)
+det(PSCC-5, the-3)
+compound(PSCC-5, cash-4)
+nsubj(promised-6, PSCC-5)
+nsubj:xsubj(pay-8, PSCC-5)
+ccomp(received-2, promised-6)
+mark(pay-8, to-7)
+xcomp(promised-6, pay-8)
+punct(received-2, .-9)
+
+Extracted the following NER entity mentions:
+PSCC	ORGANIZATION
+
+Sentence #2 (18 tokens):
+As best we can determine they are paid in full and their financial positions are now expired.
+
+Tokens:
+[Text=As CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=best CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=JJS Lemma=best NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=52 CharacterOffsetEnd=54 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=determine CharacterOffsetBegin=59 CharacterOffsetEnd=68 PartOfSpeech=VB Lemma=determine NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=69 CharacterOffsetEnd=73 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=paid CharacterOffsetBegin=78 CharacterOffsetEnd=82 PartOfSpeech=VBN Lemma=pay NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=83 CharacterOffsetEnd=85 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=full CharacterOffsetBegin=86 CharacterOffsetEnd=90 PartOfSpeech=JJ Lemma=full NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=91 CharacterOffsetEnd=94 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=95 CharacterOffsetEnd=100 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=financial CharacterOffsetBegin=101 CharacterOffsetEnd=110 PartOfSpeech=JJ Lemma=financial NamedEntityTag=O]
+[Text=positions CharacterOffsetBegin=111 CharacterOffsetEnd=120 PartOfSpeech=NNS Lemma=position NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=121 CharacterOffsetEnd=124 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=125 CharacterOffsetEnd=128 PartOfSpeech=RB Lemma=now NamedEntityTag=O]
+[Text=expired CharacterOffsetBegin=129 CharacterOffsetEnd=136 PartOfSpeech=VBN Lemma=expire NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=136 CharacterOffsetEnd=137 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN As)
+      (ADJP (JJS best)))
+    (NP (PRP we))
+    (VP (MD can)
+      (VP (VB determine)
+        (S
+          (S
+            (NP (PRP they))
+            (VP (VBP are)
+              (VP (VBN paid)
+                (PP (IN in)
+                  (ADJP (JJ full))))))
+          (CC and)
+          (S
+            (NP (PRP$ their) (JJ financial) (NNS positions))
+            (VP (VBP are)
+              (ADVP (RB now))
+              (VP (VBN expired)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, determine-5)
+case(best-2, As-1)
+advcl:as(determine-5, best-2)
+nsubj(determine-5, we-3)
+aux(determine-5, can-4)
+nsubjpass(paid-8, they-6)
+auxpass(paid-8, are-7)
+xcomp(determine-5, paid-8)
+case(full-10, in-9)
+advcl:in(paid-8, full-10)
+cc(paid-8, and-11)
+nmod:poss(positions-14, their-12)
+amod(positions-14, financial-13)
+nsubjpass(expired-17, positions-14)
+auxpass(expired-17, are-15)
+advmod(expired-17, now-16)
+xcomp(determine-5, expired-17)
+conj:and(paid-8, expired-17)
+punct(determine-5, .-18)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (20 tokens):
+Susan: Please note both "paid in full" and "expired" on the Demand Letter Log.
+
+Tokens:
+[Text=Susan CharacterOffsetBegin=139 CharacterOffsetEnd=144 PartOfSpeech=NNP Lemma=Susan NamedEntityTag=PERSON]
+[Text=: CharacterOffsetBegin=144 CharacterOffsetEnd=145 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Please CharacterOffsetBegin=146 CharacterOffsetEnd=152 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=note CharacterOffsetBegin=153 CharacterOffsetEnd=157 PartOfSpeech=NN Lemma=note NamedEntityTag=O]
+[Text=both CharacterOffsetBegin=158 CharacterOffsetEnd=162 PartOfSpeech=CC Lemma=both NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=163 CharacterOffsetEnd=164 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=paid CharacterOffsetBegin=164 CharacterOffsetEnd=168 PartOfSpeech=VBN Lemma=pay NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=169 CharacterOffsetEnd=171 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=full CharacterOffsetBegin=172 CharacterOffsetEnd=176 PartOfSpeech=JJ Lemma=full NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=176 CharacterOffsetEnd=177 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=178 CharacterOffsetEnd=181 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=182 CharacterOffsetEnd=183 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=expired CharacterOffsetBegin=183 CharacterOffsetEnd=190 PartOfSpeech=VBD Lemma=expire NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=190 CharacterOffsetEnd=191 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=192 CharacterOffsetEnd=194 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=195 CharacterOffsetEnd=198 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Demand CharacterOffsetBegin=199 CharacterOffsetEnd=205 PartOfSpeech=NN Lemma=demand NamedEntityTag=MISC]
+[Text=Letter CharacterOffsetBegin=206 CharacterOffsetEnd=212 PartOfSpeech=NN Lemma=letter NamedEntityTag=MISC]
+[Text=Log CharacterOffsetBegin=213 CharacterOffsetEnd=216 PartOfSpeech=NN Lemma=log NamedEntityTag=MISC]
+[Text=. CharacterOffsetBegin=216 CharacterOffsetEnd=217 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (X
+    (NP (NNP Susan))
+    (: :)
+    (FRAG
+      (VP (VB Please)
+        (NP
+          (NP (NN note))
+          (ADVP (CC both)))
+        (`` ``)
+        (S
+          (S
+            (VP (VBN paid)
+              (PP (IN in)
+                (ADJP (JJ full)))))
+          ('' '')
+          (CC and)
+          (S
+            (VP (`` ``) (VBD expired) ('' '')
+              (PP (IN on)
+                (NP (DT the) (NN Demand) (NN Letter) (NN Log))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Susan-1)
+punct(Susan-1, :-2)
+dep(Susan-1, Please-3)
+dobj(Please-3, note-4)
+advmod(note-4, both-5)
+punct(Please-3, ``-6)
+xcomp(Please-3, paid-7)
+case(full-9, in-8)
+advcl:in(paid-7, full-9)
+punct(paid-7, ''-10)
+cc(paid-7, and-11)
+punct(expired-13, ``-12)
+xcomp(Please-3, expired-13)
+conj:and(paid-7, expired-13)
+punct(expired-13, ''-14)
+case(Log-19, on-15)
+det(Log-19, the-16)
+compound(Log-19, Demand-17)
+compound(Log-19, Letter-18)
+nmod:on(expired-13, Log-19)
+punct(Susan-1, .-20)
+
+Extracted the following NER entity mentions:
+Susan	PERSON
+Demand Letter Log	MISC
+
+Sentence #4 (14 tokens):
+Maria: Please reclassify this CP as "expired" on our list.
+
+Tokens:
+[Text=Maria CharacterOffsetBegin=219 CharacterOffsetEnd=224 PartOfSpeech=NNP Lemma=Maria NamedEntityTag=PERSON]
+[Text=: CharacterOffsetBegin=224 CharacterOffsetEnd=225 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Please CharacterOffsetBegin=226 CharacterOffsetEnd=232 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=reclassify CharacterOffsetBegin=233 CharacterOffsetEnd=243 PartOfSpeech=VB Lemma=reclassify NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=244 CharacterOffsetEnd=248 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=CP CharacterOffsetBegin=249 CharacterOffsetEnd=251 PartOfSpeech=NN Lemma=cp NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=252 CharacterOffsetEnd=254 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=255 CharacterOffsetEnd=256 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=expired CharacterOffsetBegin=256 CharacterOffsetEnd=263 PartOfSpeech=VBD Lemma=expire NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=263 CharacterOffsetEnd=264 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=265 CharacterOffsetEnd=267 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=268 CharacterOffsetEnd=271 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=list CharacterOffsetBegin=272 CharacterOffsetEnd=276 PartOfSpeech=NN Lemma=list NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=276 CharacterOffsetEnd=277 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Maria))
+    (: :)
+    (S
+      (S
+        (INTJ (VB Please))
+        (VP (VB reclassify)
+          (NP (DT this) (NN CP))
+          (PP (IN as))))
+      (VP (`` ``) (VBD expired) ('' '')
+        (PP (IN on)
+          (NP (PRP$ our) (NN list)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, expired-9)
+dep(expired-9, Maria-1)
+punct(expired-9, :-2)
+discourse(reclassify-4, Please-3)
+csubj(expired-9, reclassify-4)
+det(CP-6, this-5)
+dobj(reclassify-4, CP-6)
+nmod(reclassify-4, as-7)
+punct(expired-9, ``-8)
+punct(expired-9, ''-10)
+case(list-13, on-11)
+nmod:poss(list-13, our-12)
+nmod:on(expired-9, list-13)
+punct(expired-9, .-14)
+
+Extracted the following NER entity mentions:
+Maria	PERSON
+
+Sentence #5 (13 tokens):
+When you rerun the Apr02-forward MTM this CP should show $0.
+
+Tokens:
+[Text=When CharacterOffsetBegin=279 CharacterOffsetEnd=283 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=284 CharacterOffsetEnd=287 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=rerun CharacterOffsetBegin=288 CharacterOffsetEnd=293 PartOfSpeech=VBP Lemma=rerun NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=294 CharacterOffsetEnd=297 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Apr02-forward CharacterOffsetBegin=298 CharacterOffsetEnd=311 PartOfSpeech=JJ Lemma=apr02-forward NamedEntityTag=O]
+[Text=MTM CharacterOffsetBegin=312 CharacterOffsetEnd=315 PartOfSpeech=NNP Lemma=MTM NamedEntityTag=ORGANIZATION]
+[Text=this CharacterOffsetBegin=316 CharacterOffsetEnd=320 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=CP CharacterOffsetBegin=321 CharacterOffsetEnd=323 PartOfSpeech=NN Lemma=cp NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=324 CharacterOffsetEnd=330 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=show CharacterOffsetBegin=331 CharacterOffsetEnd=335 PartOfSpeech=VB Lemma=show NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=336 CharacterOffsetEnd=337 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$0.0]
+[Text=0 CharacterOffsetBegin=337 CharacterOffsetEnd=338 PartOfSpeech=CD Lemma=0 NamedEntityTag=MONEY NormalizedNamedEntityTag=$0.0]
+[Text=. CharacterOffsetBegin=338 CharacterOffsetEnd=339 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (PRP you))
+        (VP (VBP rerun)
+          (NP (DT the) (JJ Apr02-forward) (NNP MTM)))))
+    (NP (DT this) (NN CP))
+    (VP (MD should)
+      (VP (VB show)
+        (NP ($ $) (CD 0))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, show-10)
+advmod(rerun-3, When-1)
+nsubj(rerun-3, you-2)
+advcl(show-10, rerun-3)
+det(MTM-6, the-4)
+amod(MTM-6, Apr02-forward-5)
+dobj(rerun-3, MTM-6)
+det(CP-8, this-7)
+nsubj(show-10, CP-8)
+aux(show-10, should-9)
+dep(0-12, $-11)
+dobj(show-10, 0-12)
+punct(show-10, .-13)
+
+Extracted the following NER entity mentions:
+MTM	ORGANIZATION
+$0	MONEY
+
+Sentence #6 (7 tokens):
+If not, let's investigate.
+
+Tokens:
+[Text=If CharacterOffsetBegin=341 CharacterOffsetEnd=343 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=344 CharacterOffsetEnd=347 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=347 CharacterOffsetEnd=348 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=let CharacterOffsetBegin=349 CharacterOffsetEnd=352 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=352 CharacterOffsetEnd=354 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=investigate CharacterOffsetBegin=355 CharacterOffsetEnd=366 PartOfSpeech=VB Lemma=investigate NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=366 CharacterOffsetEnd=367 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN If) (RB not))
+    (, ,)
+    (VP (VB let)
+      (S
+        (NP (POS 's))
+        (VP (VB investigate))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, let-4)
+case(not-2, If-1)
+advcl:if(let-4, not-2)
+punct(let-4, ,-3)
+nsubj(investigate-6, 's-5)
+ccomp(let-4, investigate-6)
+punct(let-4, .-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #7 (3 tokens):
+Thanks all.
+
+Tokens:
+[Text=Thanks CharacterOffsetBegin=369 CharacterOffsetEnd=375 PartOfSpeech=NNS Lemma=thanks NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=376 CharacterOffsetEnd=379 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=379 CharacterOffsetEnd=380 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNS Thanks))
+    (NP (DT all))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Thanks-1)
+dep(Thanks-1, all-2)
+punct(Thanks-1, .-3)
+
+Extracted the following NER entity mentions:
+
+Sentence #8 (12 tokens):
+Louis R. DiCarlo
+ENA Gas Structuring
+Phone: 713-345-4666
+Email: louis.dicarlo@enron.com
+
+Tokens:
+[Text=Louis CharacterOffsetBegin=382 CharacterOffsetEnd=387 PartOfSpeech=NNP Lemma=Louis NamedEntityTag=PERSON]
+[Text=R. CharacterOffsetBegin=388 CharacterOffsetEnd=390 PartOfSpeech=NNP Lemma=R. NamedEntityTag=PERSON]
+[Text=DiCarlo CharacterOffsetBegin=391 CharacterOffsetEnd=398 PartOfSpeech=NNP Lemma=DiCarlo NamedEntityTag=PERSON]
+[Text=ENA CharacterOffsetBegin=399 CharacterOffsetEnd=402 PartOfSpeech=NNP Lemma=ENA NamedEntityTag=O]
+[Text=Gas CharacterOffsetBegin=403 CharacterOffsetEnd=406 PartOfSpeech=NNP Lemma=Gas NamedEntityTag=O]
+[Text=Structuring CharacterOffsetBegin=407 CharacterOffsetEnd=418 PartOfSpeech=NNP Lemma=Structuring NamedEntityTag=O]
+[Text=Phone CharacterOffsetBegin=419 CharacterOffsetEnd=424 PartOfSpeech=NNP Lemma=Phone NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=424 CharacterOffsetEnd=425 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=713-345-4666 CharacterOffsetBegin=426 CharacterOffsetEnd=438 PartOfSpeech=CD Lemma=713-345-4666 NamedEntityTag=NUMBER]
+[Text=Email CharacterOffsetBegin=439 CharacterOffsetEnd=444 PartOfSpeech=VB Lemma=email NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=444 CharacterOffsetEnd=445 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=louis.dicarlo@enron.com CharacterOffsetBegin=446 CharacterOffsetEnd=469 PartOfSpeech=NNP Lemma=louis.dicarlo@enron.com NamedEntityTag=EMAIL]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Louis) (NNP R.) (NNP DiCarlo) (NNP ENA) (NNP Gas) (NNP Structuring) (NNP Phone))
+    (: :)
+    (NP
+      (NP (CD 713-345-4666))
+      (S
+        (VP (VB Email)))
+      (PRN (: :)
+        (NP (NNP louis.dicarlo@enron.com))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Phone-7)
+compound(Phone-7, Louis-1)
+compound(Phone-7, R.-2)
+compound(Phone-7, DiCarlo-3)
+compound(Phone-7, ENA-4)
+compound(Phone-7, Gas-5)
+compound(Phone-7, Structuring-6)
+punct(Phone-7, :-8)
+dep(Phone-7, 713-345-4666-9)
+dep(713-345-4666-9, Email-10)
+punct(louis.dicarlo@enron.com-12, :-11)
+dep(713-345-4666-9, louis.dicarlo@enron.com-12)
+
+Extracted the following NER entity mentions:
+Louis R. DiCarlo	PERSON
+713-345-4666	NUMBER
+louis.dicarlo@enron.com	EMAIL
+
+Coreference set:
+	(2,3,[3,4]) -> (1,1,[1,2]), that is: "we" -> "We"
+	(4,12,[12,13]) -> (1,1,[1,2]), that is: "our" -> "We"
+
+Coreference set:
+	(2,12,[12,13]) -> (2,6,[6,7]), that is: "their" -> "they"
+
+Coreference set:
+	(5,8,[7,9]) -> (4,6,[5,7]), that is: "this CP" -> "this CP"

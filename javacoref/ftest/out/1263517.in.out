@@ -1,0 +1,615 @@
+Document: ID=1263517.in (8 sentences, 152 tokens)
+
+Sentence #1 (9 tokens):
+Shelley,  Tim is looking into these balances.
+
+Tokens:
+[Text=Shelley CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Shelley NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Tim CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Tim NamedEntityTag=PERSON]
+[Text=is CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=looking CharacterOffsetBegin=17 CharacterOffsetEnd=24 PartOfSpeech=VBG Lemma=look NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=30 CharacterOffsetEnd=35 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=balances CharacterOffsetBegin=36 CharacterOffsetEnd=44 PartOfSpeech=NNS Lemma=balance NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Shelley) (, ,) (NNP Tim))
+    (VP (VBZ is)
+      (VP (VBG looking)
+        (PP (IN into)
+          (NP (DT these) (NNS balances)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, looking-5)
+compound(Tim-3, Shelley-1)
+punct(Tim-3, ,-2)
+nsubj(looking-5, Tim-3)
+aux(looking-5, is-4)
+case(balances-8, into-6)
+det(balances-8, these-7)
+nmod:into(looking-5, balances-8)
+punct(looking-5, .-9)
+
+Extracted the following NER entity mentions:
+Shelley	PERSON
+Tim	PERSON
+
+Sentence #2 (15 tokens):
+Tejas has an imbalance we're checking into that developed in December for 211K.
+
+Tokens:
+[Text=Tejas CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=NNP Lemma=Tejas NamedEntityTag=ORGANIZATION]
+[Text=has CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=imbalance CharacterOffsetBegin=60 CharacterOffsetEnd=69 PartOfSpeech=NN Lemma=imbalance NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=70 CharacterOffsetEnd=72 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text='re CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=checking CharacterOffsetBegin=76 CharacterOffsetEnd=84 PartOfSpeech=VBG Lemma=check NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=85 CharacterOffsetEnd=89 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=90 CharacterOffsetEnd=94 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=developed CharacterOffsetBegin=95 CharacterOffsetEnd=104 PartOfSpeech=VBN Lemma=develop NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=105 CharacterOffsetEnd=107 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=December CharacterOffsetBegin=108 CharacterOffsetEnd=116 PartOfSpeech=NNP Lemma=December NamedEntityTag=DATE NormalizedNamedEntityTag=****12]
+[Text=for CharacterOffsetBegin=117 CharacterOffsetEnd=120 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=211K CharacterOffsetBegin=121 CharacterOffsetEnd=125 PartOfSpeech=CD Lemma=211k NamedEntityTag=NUMBER NormalizedNamedEntityTag=211.0]
+[Text=. CharacterOffsetBegin=125 CharacterOffsetEnd=126 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Tejas))
+    (VP (VBZ has)
+      (NP
+        (NP (DT an) (NN imbalance))
+        (SBAR
+          (S
+            (NP (PRP we))
+            (VP (VBP 're)
+              (VP (VBG checking)
+                (PP (IN into)
+                  (NP
+                    (NP (DT that))
+                    (VP (VBN developed)
+                      (PP (IN in)
+                        (NP
+                          (NP (NNP December))
+                          (PP (IN for)
+                            (NP (CD 211K))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, has-2)
+nsubj(has-2, Tejas-1)
+det(imbalance-4, an-3)
+dobj(has-2, imbalance-4)
+nmod:into(checking-7, imbalance-4)
+nsubj(checking-7, we-5)
+aux(checking-7, 're-6)
+acl:relcl(imbalance-4, checking-7)
+case(that-9, into-8)
+ref(imbalance-4, that-9)
+acl(that-9, developed-10)
+case(December-12, in-11)
+nmod:in(developed-10, December-12)
+case(211K-14, for-13)
+nmod:for(December-12, 211K-14)
+punct(has-2, .-15)
+
+Extracted the following NER entity mentions:
+Tejas	ORGANIZATION
+December	DATE
+211K	NUMBER
+
+Sentence #3 (24 tokens):
+It appears estimates were used for actual flow & we don't have a lot of confidence that that much gas actually flowed.
+
+Tokens:
+[Text=It CharacterOffsetBegin=128 CharacterOffsetEnd=130 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=appears CharacterOffsetBegin=131 CharacterOffsetEnd=138 PartOfSpeech=VBZ Lemma=appear NamedEntityTag=O]
+[Text=estimates CharacterOffsetBegin=139 CharacterOffsetEnd=148 PartOfSpeech=NNS Lemma=estimate NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=149 CharacterOffsetEnd=153 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=used CharacterOffsetBegin=154 CharacterOffsetEnd=158 PartOfSpeech=VBN Lemma=use NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=159 CharacterOffsetEnd=162 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=actual CharacterOffsetBegin=163 CharacterOffsetEnd=169 PartOfSpeech=JJ Lemma=actual NamedEntityTag=O]
+[Text=flow CharacterOffsetBegin=170 CharacterOffsetEnd=174 PartOfSpeech=NN Lemma=flow NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=175 CharacterOffsetEnd=176 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=177 CharacterOffsetEnd=179 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=180 CharacterOffsetEnd=182 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=182 CharacterOffsetEnd=185 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=186 CharacterOffsetEnd=190 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=191 CharacterOffsetEnd=192 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=lot CharacterOffsetBegin=193 CharacterOffsetEnd=196 PartOfSpeech=NN Lemma=lot NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=197 CharacterOffsetEnd=199 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=confidence CharacterOffsetBegin=200 CharacterOffsetEnd=210 PartOfSpeech=NN Lemma=confidence NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=211 CharacterOffsetEnd=215 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=216 CharacterOffsetEnd=220 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=221 CharacterOffsetEnd=225 PartOfSpeech=JJ Lemma=much NamedEntityTag=O]
+[Text=gas CharacterOffsetBegin=226 CharacterOffsetEnd=229 PartOfSpeech=NN Lemma=gas NamedEntityTag=O]
+[Text=actually CharacterOffsetBegin=230 CharacterOffsetEnd=238 PartOfSpeech=RB Lemma=actually NamedEntityTag=O]
+[Text=flowed CharacterOffsetBegin=239 CharacterOffsetEnd=245 PartOfSpeech=VBD Lemma=flow NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=245 CharacterOffsetEnd=246 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ appears)
+      (SBAR
+        (S
+          (NP (NNS estimates))
+          (VP (VBD were)
+            (VP (VBN used)
+              (SBAR (IN for)
+                (S
+                  (NP
+                    (NP (JJ actual) (NN flow))
+                    (CC &)
+                    (NP (PRP we)))
+                  (VP (VBP do) (RB n't)
+                    (VP (VB have)
+                      (NP
+                        (NP (DT a) (NN lot))
+                        (PP (IN of)
+                          (NP (NN confidence))))
+                      (SBAR (IN that)
+                        (S
+                          (NP (DT that) (JJ much) (NN gas))
+                          (ADVP (RB actually))
+                          (VP (VBD flowed)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, appears-2)
+nsubj(appears-2, It-1)
+nsubjpass(used-5, estimates-3)
+auxpass(used-5, were-4)
+ccomp(appears-2, used-5)
+mark(have-13, for-6)
+amod(flow-8, actual-7)
+nsubj(have-13, flow-8)
+cc(flow-8, &-9)
+conj:&(flow-8, we-10)
+nsubj(have-13, we-10)
+aux(have-13, do-11)
+neg(have-13, n't-12)
+advcl:for(used-5, have-13)
+det:qmod(confidence-17, a-14)
+mwe(a-14, lot-15)
+mwe(a-14, of-16)
+dobj(have-13, confidence-17)
+mark(flowed-23, that-18)
+det(gas-21, that-19)
+amod(gas-21, much-20)
+nsubj(flowed-23, gas-21)
+advmod(flowed-23, actually-22)
+ccomp(have-13, flowed-23)
+punct(appears-2, .-24)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (22 tokens):
+Mike Wagner tells me the check meter is not working and he has had no luck getting anyone to fix it.
+
+Tokens:
+[Text=Mike CharacterOffsetBegin=248 CharacterOffsetEnd=252 PartOfSpeech=NNP Lemma=Mike NamedEntityTag=PERSON]
+[Text=Wagner CharacterOffsetBegin=253 CharacterOffsetEnd=259 PartOfSpeech=NNP Lemma=Wagner NamedEntityTag=PERSON]
+[Text=tells CharacterOffsetBegin=260 CharacterOffsetEnd=265 PartOfSpeech=VBZ Lemma=tell NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=266 CharacterOffsetEnd=268 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=269 CharacterOffsetEnd=272 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=check CharacterOffsetBegin=273 CharacterOffsetEnd=278 PartOfSpeech=NN Lemma=check NamedEntityTag=O]
+[Text=meter CharacterOffsetBegin=279 CharacterOffsetEnd=284 PartOfSpeech=NN Lemma=meter NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=285 CharacterOffsetEnd=287 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=288 CharacterOffsetEnd=291 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=working CharacterOffsetBegin=292 CharacterOffsetEnd=299 PartOfSpeech=VBG Lemma=work NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=300 CharacterOffsetEnd=303 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=304 CharacterOffsetEnd=306 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=307 CharacterOffsetEnd=310 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=311 CharacterOffsetEnd=314 PartOfSpeech=VBN Lemma=have NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=315 CharacterOffsetEnd=317 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=luck CharacterOffsetBegin=318 CharacterOffsetEnd=322 PartOfSpeech=NN Lemma=luck NamedEntityTag=O]
+[Text=getting CharacterOffsetBegin=323 CharacterOffsetEnd=330 PartOfSpeech=VBG Lemma=get NamedEntityTag=O]
+[Text=anyone CharacterOffsetBegin=331 CharacterOffsetEnd=337 PartOfSpeech=NN Lemma=anyone NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=338 CharacterOffsetEnd=340 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=fix CharacterOffsetBegin=341 CharacterOffsetEnd=344 PartOfSpeech=VB Lemma=fix NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=345 CharacterOffsetEnd=347 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=347 CharacterOffsetEnd=348 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NNP Mike) (NNP Wagner))
+      (VP (VBZ tells)
+        (NP (PRP me))
+        (NP
+          (NP (DT the) (NN check) (NN meter))
+          (SBAR
+            (S
+              (VP (VBZ is) (RB not)
+                (VP (VBG working))))))))
+    (CC and)
+    (S
+      (NP (PRP he))
+      (VP (VBZ has)
+        (VP (VBN had)
+          (NP (DT no) (NN luck))
+          (S
+            (VP (VBG getting)
+              (NP (NN anyone))
+              (S
+                (VP (TO to)
+                  (VP (VB fix)
+                    (NP (PRP it))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, tells-3)
+compound(Wagner-2, Mike-1)
+nsubj(tells-3, Wagner-2)
+iobj(tells-3, me-4)
+det(meter-7, the-5)
+compound(meter-7, check-6)
+dobj(tells-3, meter-7)
+aux(working-10, is-8)
+neg(working-10, not-9)
+acl:relcl(meter-7, working-10)
+cc(tells-3, and-11)
+nsubj(had-14, he-12)
+aux(had-14, has-13)
+conj:and(tells-3, had-14)
+neg(luck-16, no-15)
+dobj(had-14, luck-16)
+xcomp(had-14, getting-17)
+dobj(getting-17, anyone-18)
+mark(fix-20, to-19)
+advcl:to(getting-17, fix-20)
+dobj(fix-20, it-21)
+punct(tells-3, .-22)
+
+Extracted the following NER entity mentions:
+Mike Wagner	PERSON
+he	PERSON
+
+Sentence #5 (16 tokens):
+Tim is following up w/Tejas to find out what the actual flow for Dec was.
+
+Tokens:
+[Text=Tim CharacterOffsetBegin=350 CharacterOffsetEnd=353 PartOfSpeech=NNP Lemma=Tim NamedEntityTag=PERSON]
+[Text=is CharacterOffsetBegin=354 CharacterOffsetEnd=356 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=following CharacterOffsetBegin=357 CharacterOffsetEnd=366 PartOfSpeech=VBG Lemma=follow NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=367 CharacterOffsetEnd=369 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=w/Tejas CharacterOffsetBegin=370 CharacterOffsetEnd=377 PartOfSpeech=NNS Lemma=w/tejas NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=378 CharacterOffsetEnd=380 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=find CharacterOffsetBegin=381 CharacterOffsetEnd=385 PartOfSpeech=VB Lemma=find NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=386 CharacterOffsetEnd=389 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=390 CharacterOffsetEnd=394 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=395 CharacterOffsetEnd=398 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=actual CharacterOffsetBegin=399 CharacterOffsetEnd=405 PartOfSpeech=JJ Lemma=actual NamedEntityTag=O]
+[Text=flow CharacterOffsetBegin=406 CharacterOffsetEnd=410 PartOfSpeech=NN Lemma=flow NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=411 CharacterOffsetEnd=414 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Dec CharacterOffsetBegin=415 CharacterOffsetEnd=418 PartOfSpeech=NNP Lemma=Dec NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=419 CharacterOffsetEnd=422 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=422 CharacterOffsetEnd=423 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Tim))
+    (VP (VBZ is)
+      (VP (VBG following)
+        (PRT (RP up))
+        (NP (NNS w/Tejas))
+        (S
+          (VP (TO to)
+            (VP (VB find)
+              (PRT (RP out))
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (NP
+                    (NP (DT the) (JJ actual) (NN flow))
+                    (PP (IN for)
+                      (NP (NNP Dec))))
+                  (VP (VBD was)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, following-3)
+nsubj(following-3, Tim-1)
+aux(following-3, is-2)
+compound:prt(following-3, up-4)
+dobj(following-3, w/Tejas-5)
+mark(find-7, to-6)
+advcl:to(following-3, find-7)
+compound:prt(find-7, out-8)
+dobj(was-15, what-9)
+det(flow-12, the-10)
+amod(flow-12, actual-11)
+nsubj(was-15, flow-12)
+case(Dec-14, for-13)
+nmod:for(flow-12, Dec-14)
+ccomp(find-7, was-15)
+punct(following-3, .-16)
+
+Extracted the following NER entity mentions:
+Tim	PERSON
+
+Sentence #6 (30 tokens):
+Also, we're currently working trying to take some of the balances in payback to cover FPL working off their imbalance during the outages we have in process.
+
+Tokens:
+[Text=Also CharacterOffsetBegin=425 CharacterOffsetEnd=429 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=429 CharacterOffsetEnd=430 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=431 CharacterOffsetEnd=433 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text='re CharacterOffsetBegin=433 CharacterOffsetEnd=436 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=currently CharacterOffsetBegin=437 CharacterOffsetEnd=446 PartOfSpeech=RB Lemma=currently NamedEntityTag=O]
+[Text=working CharacterOffsetBegin=447 CharacterOffsetEnd=454 PartOfSpeech=VBG Lemma=work NamedEntityTag=O]
+[Text=trying CharacterOffsetBegin=455 CharacterOffsetEnd=461 PartOfSpeech=VBG Lemma=try NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=462 CharacterOffsetEnd=464 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=take CharacterOffsetBegin=465 CharacterOffsetEnd=469 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=470 CharacterOffsetEnd=474 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=475 CharacterOffsetEnd=477 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=478 CharacterOffsetEnd=481 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=balances CharacterOffsetBegin=482 CharacterOffsetEnd=490 PartOfSpeech=NNS Lemma=balance NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=491 CharacterOffsetEnd=493 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=payback CharacterOffsetBegin=494 CharacterOffsetEnd=501 PartOfSpeech=NN Lemma=payback NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=502 CharacterOffsetEnd=504 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=cover CharacterOffsetBegin=505 CharacterOffsetEnd=510 PartOfSpeech=VB Lemma=cover NamedEntityTag=O]
+[Text=FPL CharacterOffsetBegin=511 CharacterOffsetEnd=514 PartOfSpeech=NNP Lemma=FPL NamedEntityTag=ORGANIZATION]
+[Text=working CharacterOffsetBegin=515 CharacterOffsetEnd=522 PartOfSpeech=VBG Lemma=work NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=523 CharacterOffsetEnd=526 PartOfSpeech=RP Lemma=off NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=527 CharacterOffsetEnd=532 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=imbalance CharacterOffsetBegin=533 CharacterOffsetEnd=542 PartOfSpeech=NN Lemma=imbalance NamedEntityTag=O]
+[Text=during CharacterOffsetBegin=543 CharacterOffsetEnd=549 PartOfSpeech=IN Lemma=during NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=550 CharacterOffsetEnd=553 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=outages CharacterOffsetBegin=554 CharacterOffsetEnd=561 PartOfSpeech=NNS Lemma=outage NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=562 CharacterOffsetEnd=564 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=565 CharacterOffsetEnd=569 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=570 CharacterOffsetEnd=572 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=process CharacterOffsetBegin=573 CharacterOffsetEnd=580 PartOfSpeech=NN Lemma=process NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=580 CharacterOffsetEnd=581 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Also))
+    (, ,)
+    (NP (PRP we))
+    (VP (VBP 're)
+      (ADVP (RB currently))
+      (VP (VBG working)
+        (S
+          (VP (VBG trying)
+            (S
+              (VP (TO to)
+                (VP (VB take)
+                  (NP
+                    (NP (DT some))
+                    (PP (IN of)
+                      (NP
+                        (NP (DT the) (NNS balances))
+                        (PP (IN in)
+                          (NP (NN payback))))))
+                  (S
+                    (VP (TO to)
+                      (VP (VB cover)
+                        (NP
+                          (NP (NNP FPL))
+                          (VP (VBG working)
+                            (PRT (RP off))
+                            (NP (PRP$ their) (NN imbalance))
+                            (PP (IN during)
+                              (NP
+                                (NP (DT the) (NNS outages))
+                                (SBAR
+                                  (S
+                                    (NP (PRP we))
+                                    (VP (VBP have)
+                                      (VP
+                                        (PP (IN in)
+                                          (NP (NN process)))))))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, working-6)
+advmod(working-6, Also-1)
+punct(working-6, ,-2)
+nsubj(working-6, we-3)
+aux(working-6, 're-4)
+advmod(working-6, currently-5)
+advcl(working-6, trying-7)
+mark(take-9, to-8)
+xcomp(trying-7, take-9)
+det:qmod(balances-13, some-10)
+mwe(some-10, of-11)
+det(balances-13, the-12)
+dobj(take-9, balances-13)
+case(payback-15, in-14)
+nmod:in(balances-13, payback-15)
+mark(cover-17, to-16)
+advcl:to(take-9, cover-17)
+dobj(cover-17, FPL-18)
+acl(FPL-18, working-19)
+compound:prt(working-19, off-20)
+nmod:poss(imbalance-22, their-21)
+dobj(working-19, imbalance-22)
+case(outages-25, during-23)
+det(outages-25, the-24)
+nmod:during(working-19, outages-25)
+nsubj(process-29, we-26)
+aux(process-29, have-27)
+case(process-29, in-28)
+acl:relcl(outages-25, process-29)
+punct(working-6, .-30)
+
+Extracted the following NER entity mentions:
+FPL	ORGANIZATION
+
+Sentence #7 (35 tokens):
+We're implementing a process with the team to ensure scheduled quantites are tied out each month so Tim & Cynthia can concentrate on actual flow volumes and reconciliation of any old unreconciled imbalances.
+
+Tokens:
+[Text=We CharacterOffsetBegin=583 CharacterOffsetEnd=585 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text='re CharacterOffsetBegin=585 CharacterOffsetEnd=588 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=implementing CharacterOffsetBegin=589 CharacterOffsetEnd=601 PartOfSpeech=VBG Lemma=implement NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=602 CharacterOffsetEnd=603 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=process CharacterOffsetBegin=604 CharacterOffsetEnd=611 PartOfSpeech=NN Lemma=process NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=612 CharacterOffsetEnd=616 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=617 CharacterOffsetEnd=620 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=team CharacterOffsetBegin=621 CharacterOffsetEnd=625 PartOfSpeech=NN Lemma=team NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=626 CharacterOffsetEnd=628 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=ensure CharacterOffsetBegin=629 CharacterOffsetEnd=635 PartOfSpeech=VB Lemma=ensure NamedEntityTag=O]
+[Text=scheduled CharacterOffsetBegin=636 CharacterOffsetEnd=645 PartOfSpeech=JJ Lemma=scheduled NamedEntityTag=O]
+[Text=quantites CharacterOffsetBegin=646 CharacterOffsetEnd=655 PartOfSpeech=NNS Lemma=quantite NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=656 CharacterOffsetEnd=659 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=tied CharacterOffsetBegin=660 CharacterOffsetEnd=664 PartOfSpeech=VBN Lemma=tie NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=665 CharacterOffsetEnd=668 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=each CharacterOffsetBegin=669 CharacterOffsetEnd=673 PartOfSpeech=DT Lemma=each NamedEntityTag=O]
+[Text=month CharacterOffsetBegin=674 CharacterOffsetEnd=679 PartOfSpeech=NN Lemma=month NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=680 CharacterOffsetEnd=682 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=Tim CharacterOffsetBegin=683 CharacterOffsetEnd=686 PartOfSpeech=NNP Lemma=Tim NamedEntityTag=PERSON]
+[Text=& CharacterOffsetBegin=687 CharacterOffsetEnd=688 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=Cynthia CharacterOffsetBegin=689 CharacterOffsetEnd=696 PartOfSpeech=NNP Lemma=Cynthia NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=697 CharacterOffsetEnd=700 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=concentrate CharacterOffsetBegin=701 CharacterOffsetEnd=712 PartOfSpeech=VB Lemma=concentrate NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=713 CharacterOffsetEnd=715 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=actual CharacterOffsetBegin=716 CharacterOffsetEnd=722 PartOfSpeech=JJ Lemma=actual NamedEntityTag=O]
+[Text=flow CharacterOffsetBegin=723 CharacterOffsetEnd=727 PartOfSpeech=NN Lemma=flow NamedEntityTag=O]
+[Text=volumes CharacterOffsetBegin=728 CharacterOffsetEnd=735 PartOfSpeech=NNS Lemma=volume NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=736 CharacterOffsetEnd=739 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=reconciliation CharacterOffsetBegin=740 CharacterOffsetEnd=754 PartOfSpeech=NN Lemma=reconciliation NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=755 CharacterOffsetEnd=757 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=758 CharacterOffsetEnd=761 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=old CharacterOffsetBegin=762 CharacterOffsetEnd=765 PartOfSpeech=JJ Lemma=old NamedEntityTag=O]
+[Text=unreconciled CharacterOffsetBegin=766 CharacterOffsetEnd=778 PartOfSpeech=JJ Lemma=unreconciled NamedEntityTag=O]
+[Text=imbalances CharacterOffsetBegin=779 CharacterOffsetEnd=789 PartOfSpeech=NNS Lemma=imbalance NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=789 CharacterOffsetEnd=790 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP 're)
+      (VP (VBG implementing)
+        (NP (DT a) (NN process))
+        (PP (IN with)
+          (NP (DT the) (NN team)
+            (S
+              (VP (TO to)
+                (VP (VB ensure)
+                  (SBAR
+                    (S
+                      (NP (JJ scheduled) (NNS quantites))
+                      (VP (VBP are)
+                        (VP (VBN tied)
+                          (PRT (RP out))
+                          (NP-TMP (DT each) (NN month))
+                          (SBAR (RB so)
+                            (S
+                              (NP (NNP Tim)
+                                (CC &)
+                                (NNP Cynthia))
+                              (VP (MD can)
+                                (VP (VB concentrate)
+                                  (PP (IN on)
+                                    (NP
+                                      (NP (JJ actual) (NN flow) (NNS volumes))
+                                      (CC and)
+                                      (NP
+                                        (NP (NN reconciliation))
+                                        (PP (IN of)
+                                          (NP (DT any) (JJ old) (JJ unreconciled) (NNS imbalances)))))))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, implementing-3)
+nsubj(implementing-3, We-1)
+aux(implementing-3, 're-2)
+det(process-5, a-4)
+dobj(implementing-3, process-5)
+case(team-8, with-6)
+det(team-8, the-7)
+nmod:with(implementing-3, team-8)
+mark(ensure-10, to-9)
+acl:to(team-8, ensure-10)
+amod(quantites-12, scheduled-11)
+nsubjpass(tied-14, quantites-12)
+auxpass(tied-14, are-13)
+ccomp(ensure-10, tied-14)
+compound:prt(tied-14, out-15)
+det(month-17, each-16)
+nmod:tmod(tied-14, month-17)
+advmod(concentrate-23, so-18)
+nsubj(concentrate-23, Tim-19)
+cc(Tim-19, &-20)
+conj:&(Tim-19, Cynthia-21)
+nsubj(concentrate-23, Cynthia-21)
+aux(concentrate-23, can-22)
+ccomp(tied-14, concentrate-23)
+case(volumes-27, on-24)
+amod(volumes-27, actual-25)
+compound(volumes-27, flow-26)
+nmod:on(concentrate-23, volumes-27)
+cc(volumes-27, and-28)
+nmod:on(concentrate-23, reconciliation-29)
+conj:and(volumes-27, reconciliation-29)
+case(imbalances-34, of-30)
+det(imbalances-34, any-31)
+amod(imbalances-34, old-32)
+amod(imbalances-34, unreconciled-33)
+nmod:of(reconciliation-29, imbalances-34)
+punct(implementing-3, .-35)
+
+Extracted the following NER entity mentions:
+Tim	PERSON
+
+Sentence #8 (1 tokens):
+Sheila
+
+Tokens:
+[Text=Sheila CharacterOffsetBegin=792 CharacterOffsetEnd=798 PartOfSpeech=NNP Lemma=Sheila NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Sheila)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Sheila-1)
+
+Extracted the following NER entity mentions:
+Sheila	PERSON
+
+Coreference set:
+	(5,1,[1,2]) -> (1,3,[1,4]), that is: "Tim" -> "Shelley , Tim"
+	(7,19,[19,20]) -> (1,3,[1,4]), that is: "Tim" -> "Shelley , Tim"
+
+Coreference set:
+	(6,22,[21,23]) -> (2,4,[3,15]), that is: "their imbalance" -> "an imbalance we 're checking into that developed in December for 211K"
+
+Coreference set:
+	(3,10,[10,11]) -> (2,5,[5,6]), that is: "we" -> "we"
+	(6,3,[3,4]) -> (2,5,[5,6]), that is: "we" -> "we"
+	(6,26,[26,27]) -> (2,5,[5,6]), that is: "we" -> "we"
+	(7,1,[1,2]) -> (2,5,[5,6]), that is: "We" -> "we"
+
+Coreference set:
+	(4,12,[12,13]) -> (4,2,[1,3]), that is: "he" -> "Mike Wagner"
+
+Coreference set:
+	(4,21,[21,22]) -> (4,16,[15,17]), that is: "it" -> "no luck"
+
+Coreference set:
+	(6,21,[21,22]) -> (6,10,[10,16]), that is: "their" -> "some of the balances in payback"

@@ -1,0 +1,54 @@
+Document: ID=781942.in (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+People who haven't paid their bills -- Enron not named.
+
+Tokens:
+[Text=People CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=paid CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=VBN Lemma=pay NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=24 CharacterOffsetEnd=29 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=bills CharacterOffsetBegin=30 CharacterOffsetEnd=35 PartOfSpeech=NNS Lemma=bill NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=not CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=named CharacterOffsetBegin=49 CharacterOffsetEnd=54 PartOfSpeech=VBN Lemma=name NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP
+      (NP (NNS People))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBP have) (RB n't)
+            (VP (VBN paid)
+              (NP
+                (NP (PRP$ their) (NNS bills))
+                (: --)
+                (NP (NNP Enron))))))))
+    (VP (RB not) (VBN named))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, People-1)
+nsubj(paid-5, People-1)
+ref(People-1, who-2)
+aux(paid-5, have-3)
+neg(paid-5, n't-4)
+acl:relcl(People-1, paid-5)
+nmod:poss(bills-7, their-6)
+dobj(paid-5, bills-7)
+punct(bills-7, ---8)
+dep(bills-7, Enron-9)
+neg(named-11, not-10)
+acl(People-1, named-11)
+punct(People-1, .-12)
+
+Extracted the following NER entity mentions:
+Enron	ORGANIZATION

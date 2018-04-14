@@ -1,0 +1,268 @@
+Document: ID=541723.in (4 sentences, 65 tokens)
+
+Sentence #1 (15 tokens):
+Attached is a draft of the Closing Checklist for the East Coast Power
+transaction.
+
+Tokens:
+[Text=Attached CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=VBN Lemma=attach NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=draft CharacterOffsetBegin=14 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=draft NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Closing CharacterOffsetBegin=27 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=closing NamedEntityTag=O]
+[Text=Checklist CharacterOffsetBegin=35 CharacterOffsetEnd=44 PartOfSpeech=NNP Lemma=Checklist NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=East CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=NNP Lemma=East NamedEntityTag=ORGANIZATION]
+[Text=Coast CharacterOffsetBegin=58 CharacterOffsetEnd=63 PartOfSpeech=NNP Lemma=Coast NamedEntityTag=ORGANIZATION]
+[Text=Power CharacterOffsetBegin=64 CharacterOffsetEnd=69 PartOfSpeech=NNP Lemma=Power NamedEntityTag=ORGANIZATION]
+[Text=transaction CharacterOffsetBegin=70 CharacterOffsetEnd=81 PartOfSpeech=NN Lemma=transaction NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SINV
+    (VP (VBN Attached))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN draft))
+        (PP (IN of)
+          (NP (DT the) (NN Closing)))))
+    (NP
+      (NP (NNP Checklist))
+      (PP (IN for)
+        (NP (DT the) (NNP East) (NNP Coast) (NNP Power) (NN transaction))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Attached-1)
+cop(draft-4, is-2)
+det(draft-4, a-3)
+auxpass(Attached-1, draft-4)
+case(Closing-7, of-5)
+det(Closing-7, the-6)
+nmod:of(draft-4, Closing-7)
+nsubjpass(Attached-1, Checklist-8)
+case(transaction-14, for-9)
+det(transaction-14, the-10)
+compound(transaction-14, East-11)
+compound(transaction-14, Coast-12)
+compound(transaction-14, Power-13)
+nmod:for(Checklist-8, transaction-14)
+punct(Attached-1, .-15)
+
+Extracted the following NER entity mentions:
+East Coast Power	ORGANIZATION
+
+Sentence #2 (10 tokens):
+Let me know if I've left anything off.
+
+Tokens:
+[Text=Let CharacterOffsetBegin=84 CharacterOffsetEnd=87 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=88 CharacterOffsetEnd=90 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=91 CharacterOffsetEnd=95 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=96 CharacterOffsetEnd=98 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=99 CharacterOffsetEnd=100 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='ve CharacterOffsetBegin=100 CharacterOffsetEnd=103 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=left CharacterOffsetBegin=104 CharacterOffsetEnd=108 PartOfSpeech=VBN Lemma=leave NamedEntityTag=O]
+[Text=anything CharacterOffsetBegin=109 CharacterOffsetEnd=117 PartOfSpeech=NN Lemma=anything NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=118 CharacterOffsetEnd=121 PartOfSpeech=RB Lemma=off NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=121 CharacterOffsetEnd=122 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Let)
+      (S
+        (NP (PRP me))
+        (VP (VB know)
+          (SBAR (IN if)
+            (S
+              (NP (PRP I))
+              (VP (VBP 've)
+                (VP (VBN left)
+                  (NP (NN anything))
+                  (ADVP (RB off)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Let-1)
+nsubj(know-3, me-2)
+ccomp(Let-1, know-3)
+mark(left-7, if-4)
+nsubj(left-7, I-5)
+aux(left-7, 've-6)
+advcl:if(know-3, left-7)
+dobj(left-7, anything-8)
+advmod(left-7, off-9)
+punct(Let-1, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (16 tokens):
+As Enron has not reviewed this checklist, it is sent subject to their
+review.
+
+Tokens:
+[Text=As CharacterOffsetBegin=124 CharacterOffsetEnd=126 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=127 CharacterOffsetEnd=132 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=has CharacterOffsetBegin=133 CharacterOffsetEnd=136 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=137 CharacterOffsetEnd=140 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=reviewed CharacterOffsetBegin=141 CharacterOffsetEnd=149 PartOfSpeech=VBN Lemma=review NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=150 CharacterOffsetEnd=154 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=checklist CharacterOffsetBegin=155 CharacterOffsetEnd=164 PartOfSpeech=NN Lemma=checklist NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=164 CharacterOffsetEnd=165 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=166 CharacterOffsetEnd=168 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=169 CharacterOffsetEnd=171 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=sent CharacterOffsetBegin=172 CharacterOffsetEnd=176 PartOfSpeech=VBN Lemma=send NamedEntityTag=O]
+[Text=subject CharacterOffsetBegin=177 CharacterOffsetEnd=184 PartOfSpeech=NN Lemma=subject NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=185 CharacterOffsetEnd=187 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=188 CharacterOffsetEnd=193 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=review CharacterOffsetBegin=194 CharacterOffsetEnd=200 PartOfSpeech=NN Lemma=review NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=200 CharacterOffsetEnd=201 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (NNP Enron))
+        (VP (VBZ has) (RB not)
+          (VP (VBN reviewed)
+            (NP (DT this) (NN checklist))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ is)
+      (VP (VBN sent)
+        (S
+          (ADJP (NN subject)
+            (PP (TO to)
+              (NP (PRP$ their) (NN review)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, sent-11)
+mark(reviewed-5, As-1)
+nsubj(reviewed-5, Enron-2)
+aux(reviewed-5, has-3)
+neg(reviewed-5, not-4)
+advcl:as(sent-11, reviewed-5)
+det(checklist-7, this-6)
+dobj(reviewed-5, checklist-7)
+punct(sent-11, ,-8)
+nsubjpass(sent-11, it-9)
+auxpass(sent-11, is-10)
+xcomp(sent-11, subject-12)
+case(review-15, to-13)
+nmod:poss(review-15, their-14)
+nmod:to(subject-12, review-15)
+punct(sent-11, .-16)
+
+Extracted the following NER entity mentions:
+Enron	ORGANIZATION
+
+Sentence #4 (24 tokens):
+S. Matthew Cook
+Vinson & Elkins, LLP
+1001 Fannin St, Suite 3307
+Houston, TX 77002
+Ph:  (713) 758-4530
+Fax: (713) 615-5759
+
+Tokens:
+[Text=S. CharacterOffsetBegin=203 CharacterOffsetEnd=205 PartOfSpeech=NNP Lemma=S. NamedEntityTag=ORGANIZATION]
+[Text=Matthew CharacterOffsetBegin=206 CharacterOffsetEnd=213 PartOfSpeech=NNP Lemma=Matthew NamedEntityTag=ORGANIZATION]
+[Text=Cook CharacterOffsetBegin=214 CharacterOffsetEnd=218 PartOfSpeech=NNP Lemma=Cook NamedEntityTag=ORGANIZATION]
+[Text=Vinson CharacterOffsetBegin=219 CharacterOffsetEnd=225 PartOfSpeech=NNP Lemma=Vinson NamedEntityTag=ORGANIZATION]
+[Text=& CharacterOffsetBegin=226 CharacterOffsetEnd=227 PartOfSpeech=CC Lemma=& NamedEntityTag=ORGANIZATION]
+[Text=Elkins CharacterOffsetBegin=228 CharacterOffsetEnd=234 PartOfSpeech=NNP Lemma=Elkins NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=234 CharacterOffsetEnd=235 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=LLP CharacterOffsetBegin=236 CharacterOffsetEnd=239 PartOfSpeech=NNP Lemma=LLP NamedEntityTag=O]
+[Text=1001 CharacterOffsetBegin=240 CharacterOffsetEnd=244 PartOfSpeech=CD Lemma=1001 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1001.0]
+[Text=Fannin CharacterOffsetBegin=245 CharacterOffsetEnd=251 PartOfSpeech=NNP Lemma=Fannin NamedEntityTag=ORGANIZATION]
+[Text=St CharacterOffsetBegin=252 CharacterOffsetEnd=254 PartOfSpeech=NNP Lemma=St NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=254 CharacterOffsetEnd=255 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Suite CharacterOffsetBegin=256 CharacterOffsetEnd=261 PartOfSpeech=NNP Lemma=Suite NamedEntityTag=O]
+[Text=3307 CharacterOffsetBegin=262 CharacterOffsetEnd=266 PartOfSpeech=CD Lemma=3307 NamedEntityTag=NUMBER NormalizedNamedEntityTag=3307.0]
+[Text=Houston CharacterOffsetBegin=267 CharacterOffsetEnd=274 PartOfSpeech=NNP Lemma=Houston NamedEntityTag=CITY]
+[Text=, CharacterOffsetBegin=274 CharacterOffsetEnd=275 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=TX CharacterOffsetBegin=276 CharacterOffsetEnd=278 PartOfSpeech=NNP Lemma=TX NamedEntityTag=STATE_OR_PROVINCE]
+[Text=77002 CharacterOffsetBegin=279 CharacterOffsetEnd=284 PartOfSpeech=CD Lemma=77002 NamedEntityTag=NUMBER NormalizedNamedEntityTag=77002.0]
+[Text=Ph CharacterOffsetBegin=285 CharacterOffsetEnd=287 PartOfSpeech=NN Lemma=ph NamedEntityTag=COUNTRY]
+[Text=: CharacterOffsetBegin=287 CharacterOffsetEnd=288 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=-LRB-713-RRB- 758-4530 CharacterOffsetBegin=290 CharacterOffsetEnd=304 PartOfSpeech=NN Lemma=-lrb-713-rrb- 758-4530 NamedEntityTag=O]
+[Text=Fax CharacterOffsetBegin=305 CharacterOffsetEnd=308 PartOfSpeech=NN Lemma=fax NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=308 CharacterOffsetEnd=309 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=-LRB-713-RRB- 615-5759 CharacterOffsetBegin=310 CharacterOffsetEnd=324 PartOfSpeech=NN Lemma=-lrb-713-rrb- 615-5759 NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP S.) (NNP Matthew))
+    (X
+      (NP
+        (NP (NNP Cook) (NNP Vinson)
+          (CC &)
+          (NNP Elkins))
+        (, ,)
+        (NP (NNP LLP) (CD 1001) (NNP Fannin) (NNP St))
+        (, ,)
+        (NP (NNP Suite)))
+      (NP (CD 3307))
+      (NP
+        (NP (NNP Houston) (, ,) (NNP TX))
+        (NP (CD 77002) (NN Ph))))
+    (: :)
+    (NP
+      (NP (NN -LRB-713-RRB- 758-4530) (NN Fax))
+      (: :)
+      (NP (NN -LRB-713-RRB- 615-5759)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Matthew-2)
+compound(Matthew-2, S.-1)
+compound(Vinson-4, Cook-3)
+dep(TX-17, Vinson-4)
+cc(Vinson-4, &-5)
+conj:&(Vinson-4, Elkins-6)
+dep(TX-17, Elkins-6)
+punct(Vinson-4, ,-7)
+compound(St-11, LLP-8)
+nummod(St-11, 1001-9)
+compound(St-11, Fannin-10)
+appos(Vinson-4, St-11)
+punct(Vinson-4, ,-12)
+appos(Vinson-4, Suite-13)
+dep(TX-17, 3307-14)
+compound(TX-17, Houston-15)
+punct(TX-17, ,-16)
+dep(Matthew-2, TX-17)
+nummod(Ph-19, 77002-18)
+dep(TX-17, Ph-19)
+punct(Matthew-2, :-20)
+compound(Fax-22, -LRB-713-RRB- 758-4530-21)
+dep(Matthew-2, Fax-22)
+punct(Fax-22, :-23)
+dep(Fax-22, -LRB-713-RRB- 615-5759-24)
+
+Extracted the following NER entity mentions:
+S. Matthew Cook Vinson & Elkins	ORGANIZATION
+1001	NUMBER
+Fannin St	ORGANIZATION
+3307	NUMBER
+Houston	CITY
+TX	STATE_OR_PROVINCE
+77002	NUMBER
+Ph	COUNTRY
+
+Coreference set:
+	(3,7,[6,8]) -> (1,8,[8,15]), that is: "this checklist" -> "Checklist for the East Coast Power transaction"
+
+Coreference set:
+	(2,5,[5,6]) -> (2,2,[2,3]), that is: "I" -> "me"

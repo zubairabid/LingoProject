@@ -1,0 +1,174 @@
+Document: ID=683968.in (4 sentences, 36 tokens)
+
+Sentence #1 (2 tokens):
+FYI.
+
+Tokens:
+[Text=FYI CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=FYI NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP FYI))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, FYI-1)
+punct(FYI-1, .-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (22 tokens):
+Big customers were hesitant to sign on to the ARM filing, but they were cajoled into filing on their own.
+
+Tokens:
+[Text=Big CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=JJ Lemma=big NamedEntityTag=O]
+[Text=customers CharacterOffsetBegin=10 CharacterOffsetEnd=19 PartOfSpeech=NNS Lemma=customer NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=hesitant CharacterOffsetBegin=25 CharacterOffsetEnd=33 PartOfSpeech=JJ Lemma=hesitant NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=sign CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=VB Lemma=sign NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=ARM CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=arm NamedEntityTag=MISC]
+[Text=filing CharacterOffsetBegin=56 CharacterOffsetEnd=62 PartOfSpeech=NN Lemma=filing NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=64 CharacterOffsetEnd=67 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=cajoled CharacterOffsetBegin=78 CharacterOffsetEnd=85 PartOfSpeech=VBN Lemma=cajole NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=86 CharacterOffsetEnd=90 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=filing CharacterOffsetBegin=91 CharacterOffsetEnd=97 PartOfSpeech=NN Lemma=filing NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=98 CharacterOffsetEnd=100 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=101 CharacterOffsetEnd=106 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=107 CharacterOffsetEnd=110 PartOfSpeech=JJ Lemma=own NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=110 CharacterOffsetEnd=111 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (JJ Big) (NNS customers))
+      (VP (VBD were)
+        (ADJP (JJ hesitant)
+          (S
+            (VP (TO to)
+              (VP (VB sign)
+                (PP (IN on)
+                  (PP (TO to)
+                    (NP (DT the) (NN ARM) (NN filing))))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP they))
+      (VP (VBD were)
+        (VP (VBN cajoled)
+          (PP (IN into)
+            (NP
+              (NP (NN filing))
+              (PP (IN on)
+                (NP (PRP$ their) (JJ own))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, hesitant-4)
+amod(customers-2, Big-1)
+nsubj(hesitant-4, customers-2)
+nsubj:xsubj(sign-6, customers-2)
+cop(hesitant-4, were-3)
+mark(sign-6, to-5)
+xcomp(hesitant-4, sign-6)
+case(filing-11, on-7)
+case(filing-11, to-8)
+det(filing-11, the-9)
+compound(filing-11, ARM-10)
+nmod:to(sign-6, filing-11)
+punct(hesitant-4, ,-12)
+cc(hesitant-4, but-13)
+nsubjpass(cajoled-16, they-14)
+auxpass(cajoled-16, were-15)
+conj:but(hesitant-4, cajoled-16)
+case(filing-18, into-17)
+nmod:into(cajoled-16, filing-18)
+case(own-21, on-19)
+nmod:poss(own-21, their-20)
+nmod:on(filing-18, own-21)
+punct(hesitant-4, .-22)
+
+Extracted the following NER entity mentions:
+ARM	MISC
+
+Sentence #3 (9 tokens):
+They seem to hit the mark pretty well.
+
+Tokens:
+[Text=They CharacterOffsetBegin=113 CharacterOffsetEnd=117 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=seem CharacterOffsetBegin=118 CharacterOffsetEnd=122 PartOfSpeech=VBP Lemma=seem NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=123 CharacterOffsetEnd=125 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=hit CharacterOffsetBegin=126 CharacterOffsetEnd=129 PartOfSpeech=VB Lemma=hit NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=130 CharacterOffsetEnd=133 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=mark CharacterOffsetBegin=134 CharacterOffsetEnd=138 PartOfSpeech=NN Lemma=mark NamedEntityTag=O]
+[Text=pretty CharacterOffsetBegin=139 CharacterOffsetEnd=145 PartOfSpeech=RB Lemma=pretty NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=146 CharacterOffsetEnd=150 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=150 CharacterOffsetEnd=151 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP seem)
+      (S
+        (VP (TO to)
+          (VP (VB hit)
+            (NP (DT the) (NN mark))
+            (ADVP (RB pretty) (RB well))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, seem-2)
+nsubj(seem-2, They-1)
+nsubj:xsubj(hit-4, They-1)
+mark(hit-4, to-3)
+xcomp(seem-2, hit-4)
+det(mark-6, the-5)
+dobj(hit-4, mark-6)
+advmod(well-8, pretty-7)
+advmod(hit-4, well-8)
+punct(seem-2, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (3 tokens):
+Best,
+Jeff
+
+Tokens:
+[Text=Best CharacterOffsetBegin=153 CharacterOffsetEnd=157 PartOfSpeech=NN Lemma=best NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=157 CharacterOffsetEnd=158 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Jeff CharacterOffsetBegin=159 CharacterOffsetEnd=163 PartOfSpeech=NNP Lemma=Jeff NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NN Best))
+    (, ,)
+    (NP (NNP Jeff))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Best-1)
+punct(Best-1, ,-2)
+appos(Best-1, Jeff-3)
+
+Extracted the following NER entity mentions:
+Jeff	PERSON
+
+Coreference set:
+	(2,14,[14,15]) -> (2,2,[1,3]), that is: "they" -> "Big customers"
+	(2,20,[20,21]) -> (2,2,[1,3]), that is: "their" -> "Big customers"
+	(3,1,[1,2]) -> (2,2,[1,3]), that is: "They" -> "Big customers"

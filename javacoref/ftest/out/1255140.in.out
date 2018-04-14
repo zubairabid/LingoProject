@@ -1,0 +1,923 @@
+Document: ID=1255140.in (13 sentences, 226 tokens)
+
+Sentence #1 (24 tokens):
+Lorraine:
+I ran a test case for the BP 100,000 Dth from WTX Pool to Oasis for the term 3/01/01 to 2/28/02.
+
+Tokens:
+[Text=Lorraine CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Lorraine NamedEntityTag=PERSON]
+[Text=: CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=ran CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=VBD Lemma=run NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=16 CharacterOffsetEnd=17 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=test CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=test NamedEntityTag=O]
+[Text=case CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=case NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=BP CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=NNP Lemma=BP NamedEntityTag=O]
+[Text=100,000 CharacterOffsetBegin=39 CharacterOffsetEnd=46 PartOfSpeech=CD Lemma=100,000 NamedEntityTag=NUMBER NormalizedNamedEntityTag=100000.0]
+[Text=Dth CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=NNP Lemma=Dth NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=WTX CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=NNP Lemma=WTX NamedEntityTag=O]
+[Text=Pool CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=NNP Lemma=Pool NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=65 CharacterOffsetEnd=67 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Oasis CharacterOffsetBegin=68 CharacterOffsetEnd=73 PartOfSpeech=NNP Lemma=Oasis NamedEntityTag=ORGANIZATION]
+[Text=for CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=term CharacterOffsetBegin=82 CharacterOffsetEnd=86 PartOfSpeech=NN Lemma=term NamedEntityTag=O]
+[Text=3/01/01 CharacterOffsetBegin=87 CharacterOffsetEnd=94 PartOfSpeech=CD Lemma=3/01/01 NamedEntityTag=NUMBER]
+[Text=to CharacterOffsetBegin=95 CharacterOffsetEnd=97 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=2/28/02 CharacterOffsetBegin=98 CharacterOffsetEnd=105 PartOfSpeech=CD Lemma=2/28/02 NamedEntityTag=NUMBER]
+[Text=. CharacterOffsetBegin=105 CharacterOffsetEnd=106 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Lorraine))
+    (: :)
+    (S
+      (NP (PRP I))
+      (VP (VBD ran)
+        (NP (DT a) (NN test) (NN case))
+        (PP (IN for)
+          (NP
+            (NP (DT the) (NNP BP) (CD 100,000) (NNP Dth))
+            (PP (IN from)
+              (NP (NNP WTX) (NNP Pool)))))
+        (PP (TO to)
+          (NP
+            (NP (NNP Oasis))
+            (PP (IN for)
+              (NP (DT the) (NN term)
+                (QP (CD 3/01/01) (TO to) (CD 2/28/02))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Lorraine-1)
+punct(Lorraine-1, :-2)
+nsubj(ran-4, I-3)
+parataxis(Lorraine-1, ran-4)
+det(case-7, a-5)
+compound(case-7, test-6)
+dobj(ran-4, case-7)
+case(Dth-12, for-8)
+det(Dth-12, the-9)
+compound(Dth-12, BP-10)
+nummod(Dth-12, 100,000-11)
+nmod:for(ran-4, Dth-12)
+case(Pool-15, from-13)
+compound(Pool-15, WTX-14)
+nmod:from(Dth-12, Pool-15)
+case(Oasis-17, to-16)
+nmod:to(ran-4, Oasis-17)
+case(term-20, for-18)
+det(term-20, the-19)
+nmod:for(Oasis-17, term-20)
+compound(2/28/02-23, 3/01/01-21)
+dep(2/28/02-23, to-22)
+nummod(term-20, 2/28/02-23)
+punct(Lorraine-1, .-24)
+
+Extracted the following NER entity mentions:
+Lorraine	PERSON
+100,000	NUMBER
+Oasis	ORGANIZATION
+3/01/01	NUMBER
+2/28/02	NUMBER
+
+Sentence #2 (21 tokens):
+Below are the findings:
+
+-- Point capacities for Oasis, Valero and Delhi Ward are okay for the term.
+
+Tokens:
+[Text=Below CharacterOffsetBegin=108 CharacterOffsetEnd=113 PartOfSpeech=NNP Lemma=Below NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=114 CharacterOffsetEnd=117 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=118 CharacterOffsetEnd=121 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=findings CharacterOffsetBegin=122 CharacterOffsetEnd=130 PartOfSpeech=NNS Lemma=finding NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=130 CharacterOffsetEnd=131 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=133 CharacterOffsetEnd=135 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=Point CharacterOffsetBegin=136 CharacterOffsetEnd=141 PartOfSpeech=JJ Lemma=point NamedEntityTag=O]
+[Text=capacities CharacterOffsetBegin=142 CharacterOffsetEnd=152 PartOfSpeech=NNS Lemma=capacity NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=153 CharacterOffsetEnd=156 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Oasis CharacterOffsetBegin=157 CharacterOffsetEnd=162 PartOfSpeech=NNP Lemma=Oasis NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=162 CharacterOffsetEnd=163 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Valero CharacterOffsetBegin=164 CharacterOffsetEnd=170 PartOfSpeech=NNP Lemma=Valero NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=171 CharacterOffsetEnd=174 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Delhi CharacterOffsetBegin=175 CharacterOffsetEnd=180 PartOfSpeech=NNP Lemma=Delhi NamedEntityTag=PERSON]
+[Text=Ward CharacterOffsetBegin=181 CharacterOffsetEnd=185 PartOfSpeech=NNP Lemma=Ward NamedEntityTag=PERSON]
+[Text=are CharacterOffsetBegin=186 CharacterOffsetEnd=189 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=okay CharacterOffsetBegin=190 CharacterOffsetEnd=194 PartOfSpeech=JJ Lemma=okay NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=195 CharacterOffsetEnd=198 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=199 CharacterOffsetEnd=202 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=term CharacterOffsetBegin=203 CharacterOffsetEnd=207 PartOfSpeech=NN Lemma=term NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=207 CharacterOffsetEnd=208 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NNP Below))
+      (VP (VBP are)
+        (NP (DT the) (NNS findings))))
+    (: :) (: --)
+    (S
+      (NP
+        (NP (JJ Point) (NNS capacities))
+        (PP (IN for)
+          (NP (NNP Oasis) (, ,) (NNP Valero)
+            (CC and)
+            (NNP Delhi) (NNP Ward))))
+      (VP (VBP are)
+        (ADJP (JJ okay)
+          (PP (IN for)
+            (NP (DT the) (NN term))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, findings-4)
+nsubj(findings-4, Below-1)
+cop(findings-4, are-2)
+det(findings-4, the-3)
+punct(findings-4, :-5)
+punct(findings-4, ---6)
+amod(capacities-8, Point-7)
+nsubj(okay-17, capacities-8)
+case(Ward-15, for-9)
+compound(Ward-15, Oasis-10)
+punct(Oasis-10, ,-11)
+conj:and(Oasis-10, Valero-12)
+compound(Ward-15, Valero-12)
+cc(Oasis-10, and-13)
+conj:and(Oasis-10, Delhi-14)
+compound(Ward-15, Delhi-14)
+nmod:for(capacities-8, Ward-15)
+cop(okay-17, are-16)
+parataxis(findings-4, okay-17)
+case(term-20, for-18)
+det(term-20, the-19)
+nmod:for(okay-17, term-20)
+punct(findings-4, .-21)
+
+Extracted the following NER entity mentions:
+Oasis	ORGANIZATION
+Valero	ORGANIZATION
+Delhi Ward	PERSON
+
+Sentence #3 (31 tokens):
+-- The 24" lateral supplying these 3 points is slighly over the path capacity of 350,000 mcfd vs the FT of 366,000 Dth, for the remainder of 2001.
+
+Tokens:
+[Text=-- CharacterOffsetBegin=210 CharacterOffsetEnd=212 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=213 CharacterOffsetEnd=216 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=24 CharacterOffsetBegin=217 CharacterOffsetEnd=219 PartOfSpeech=CD Lemma=24 NamedEntityTag=NUMBER NormalizedNamedEntityTag=24.0]
+[Text='' CharacterOffsetBegin=219 CharacterOffsetEnd=220 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=lateral CharacterOffsetBegin=221 CharacterOffsetEnd=228 PartOfSpeech=JJ Lemma=lateral NamedEntityTag=O]
+[Text=supplying CharacterOffsetBegin=229 CharacterOffsetEnd=238 PartOfSpeech=VBG Lemma=supply NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=239 CharacterOffsetEnd=244 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=3 CharacterOffsetBegin=245 CharacterOffsetEnd=246 PartOfSpeech=CD Lemma=3 NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0]
+[Text=points CharacterOffsetBegin=247 CharacterOffsetEnd=253 PartOfSpeech=NNS Lemma=point NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=254 CharacterOffsetEnd=256 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=slighly CharacterOffsetBegin=257 CharacterOffsetEnd=264 PartOfSpeech=RB Lemma=slighly NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=265 CharacterOffsetEnd=269 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=270 CharacterOffsetEnd=273 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=path CharacterOffsetBegin=274 CharacterOffsetEnd=278 PartOfSpeech=NN Lemma=path NamedEntityTag=O]
+[Text=capacity CharacterOffsetBegin=279 CharacterOffsetEnd=287 PartOfSpeech=NN Lemma=capacity NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=288 CharacterOffsetEnd=290 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=350,000 CharacterOffsetBegin=291 CharacterOffsetEnd=298 PartOfSpeech=CD Lemma=350,000 NamedEntityTag=NUMBER NormalizedNamedEntityTag=350000.0]
+[Text=mcfd CharacterOffsetBegin=299 CharacterOffsetEnd=303 PartOfSpeech=NN Lemma=mcfd NamedEntityTag=O]
+[Text=vs CharacterOffsetBegin=304 CharacterOffsetEnd=306 PartOfSpeech=CC Lemma=vs NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=307 CharacterOffsetEnd=310 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=FT CharacterOffsetBegin=311 CharacterOffsetEnd=313 PartOfSpeech=NNP Lemma=FT NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=314 CharacterOffsetEnd=316 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=366,000 CharacterOffsetBegin=317 CharacterOffsetEnd=324 PartOfSpeech=CD Lemma=366,000 NamedEntityTag=NUMBER NormalizedNamedEntityTag=366000.0]
+[Text=Dth CharacterOffsetBegin=325 CharacterOffsetEnd=328 PartOfSpeech=NN Lemma=dth NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=328 CharacterOffsetEnd=329 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=330 CharacterOffsetEnd=333 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=334 CharacterOffsetEnd=337 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=remainder CharacterOffsetBegin=338 CharacterOffsetEnd=347 PartOfSpeech=NN Lemma=remainder NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=348 CharacterOffsetEnd=350 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=2001 CharacterOffsetBegin=351 CharacterOffsetEnd=355 PartOfSpeech=CD Lemma=2001 NamedEntityTag=DATE NormalizedNamedEntityTag=2001]
+[Text=. CharacterOffsetBegin=355 CharacterOffsetEnd=356 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (: --)
+    (NP
+      (NP (DT The) (CD 24))
+      ('' '')
+      (VP
+        (ADJP (JJ lateral)
+          (S
+            (VP (VBG supplying)
+              (SBAR
+                (S
+                  (NP (DT these) (CD 3) (NNS points))
+                  (VP (VBZ is)
+                    (ADVP (RB slighly))
+                    (PP (IN over)
+                      (NP
+                        (NP (DT the) (NN path) (NN capacity))
+                        (PP (IN of)
+                          (NP
+                            (NP (CD 350,000) (NN mcfd))
+                            (CC vs)
+                            (NP (DT the) (NNP FT))))))))))))
+        (PP (IN of)
+          (NP (CD 366,000) (NN Dth))))
+      (, ,)
+      (PP (IN for)
+        (NP
+          (NP (DT the) (NN remainder))
+          (PP (IN of)
+            (NP (CD 2001))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 24-3)
+punct(24-3, ---1)
+det(24-3, The-2)
+punct(24-3, ''-4)
+dep(24-3, lateral-5)
+dep(lateral-5, supplying-6)
+det(points-9, these-7)
+nummod(points-9, 3-8)
+nsubj(capacity-15, points-9)
+cop(capacity-15, is-10)
+advmod(capacity-15, slighly-11)
+case(capacity-15, over-12)
+det(capacity-15, the-13)
+compound(capacity-15, path-14)
+ccomp(supplying-6, capacity-15)
+case(mcfd-18, of-16)
+nummod(mcfd-18, 350,000-17)
+nmod:of(capacity-15, mcfd-18)
+cc(mcfd-18, vs-19)
+det(FT-21, the-20)
+nmod:of(capacity-15, FT-21)
+conj:vs(mcfd-18, FT-21)
+case(Dth-24, of-22)
+nummod(Dth-24, 366,000-23)
+nmod:of(lateral-5, Dth-24)
+punct(24-3, ,-25)
+case(remainder-28, for-26)
+det(remainder-28, the-27)
+nmod:for(24-3, remainder-28)
+case(2001-30, of-29)
+nmod:of(remainder-28, 2001-30)
+punct(24-3, .-31)
+
+Extracted the following NER entity mentions:
+24	NUMBER
+3	NUMBER
+350,000	NUMBER
+366,000	NUMBER
+2001	DATE
+
+Sentence #4 (10 tokens):
+Lateral capacity opens a little the first of 2002.
+
+Tokens:
+[Text=Lateral CharacterOffsetBegin=358 CharacterOffsetEnd=365 PartOfSpeech=JJ Lemma=lateral NamedEntityTag=O]
+[Text=capacity CharacterOffsetBegin=366 CharacterOffsetEnd=374 PartOfSpeech=NN Lemma=capacity NamedEntityTag=O]
+[Text=opens CharacterOffsetBegin=375 CharacterOffsetEnd=380 PartOfSpeech=VBZ Lemma=open NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=381 CharacterOffsetEnd=382 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=little CharacterOffsetBegin=383 CharacterOffsetEnd=389 PartOfSpeech=JJ Lemma=little NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=390 CharacterOffsetEnd=393 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=394 CharacterOffsetEnd=399 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=of CharacterOffsetBegin=400 CharacterOffsetEnd=402 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=2002 CharacterOffsetBegin=403 CharacterOffsetEnd=407 PartOfSpeech=CD Lemma=2002 NamedEntityTag=DATE NormalizedNamedEntityTag=2002]
+[Text=. CharacterOffsetBegin=407 CharacterOffsetEnd=408 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (JJ Lateral) (NN capacity))
+    (VP (VBZ opens)
+      (NP (DT a) (JJ little))
+      (NP-TMP
+        (NP (DT the) (JJ first))
+        (PP (IN of)
+          (NP (CD 2002)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, opens-3)
+amod(capacity-2, Lateral-1)
+nsubj(opens-3, capacity-2)
+det(little-5, a-4)
+dobj(opens-3, little-5)
+det(first-7, the-6)
+nmod:tmod(opens-3, first-7)
+case(2002-9, of-8)
+nmod:of(first-7, 2002-9)
+punct(opens-3, .-10)
+
+Extracted the following NER entity mentions:
+first	ORDINAL
+2002	DATE
+
+Sentence #5 (28 tokens):
+--  Btu content of the gas is 1050
+
+--  Need 348,000 mcf of 1050 btu gas to get 366,000 Dth through the lateral to the delivery points.
+
+Tokens:
+[Text=-- CharacterOffsetBegin=410 CharacterOffsetEnd=412 PartOfSpeech=: Lemma=-- NamedEntityTag=PERSON]
+[Text=Btu CharacterOffsetBegin=414 CharacterOffsetEnd=417 PartOfSpeech=NN Lemma=btu NamedEntityTag=PERSON]
+[Text=content CharacterOffsetBegin=418 CharacterOffsetEnd=425 PartOfSpeech=NN Lemma=content NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=426 CharacterOffsetEnd=428 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=429 CharacterOffsetEnd=432 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=gas CharacterOffsetBegin=433 CharacterOffsetEnd=436 PartOfSpeech=NN Lemma=gas NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=437 CharacterOffsetEnd=439 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=1050 CharacterOffsetBegin=440 CharacterOffsetEnd=444 PartOfSpeech=CD Lemma=1050 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1050.0]
+[Text=-- CharacterOffsetBegin=446 CharacterOffsetEnd=448 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=Need CharacterOffsetBegin=450 CharacterOffsetEnd=454 PartOfSpeech=VBD Lemma=need NamedEntityTag=O]
+[Text=348,000 CharacterOffsetBegin=455 CharacterOffsetEnd=462 PartOfSpeech=CD Lemma=348,000 NamedEntityTag=NUMBER NormalizedNamedEntityTag=348000.0]
+[Text=mcf CharacterOffsetBegin=463 CharacterOffsetEnd=466 PartOfSpeech=NN Lemma=mcf NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=467 CharacterOffsetEnd=469 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=1050 CharacterOffsetBegin=470 CharacterOffsetEnd=474 PartOfSpeech=CD Lemma=1050 NamedEntityTag=DATE NormalizedNamedEntityTag=1050]
+[Text=btu CharacterOffsetBegin=475 CharacterOffsetEnd=478 PartOfSpeech=NN Lemma=btu NamedEntityTag=O]
+[Text=gas CharacterOffsetBegin=479 CharacterOffsetEnd=482 PartOfSpeech=NN Lemma=gas NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=483 CharacterOffsetEnd=485 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=486 CharacterOffsetEnd=489 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=366,000 CharacterOffsetBegin=490 CharacterOffsetEnd=497 PartOfSpeech=CD Lemma=366,000 NamedEntityTag=NUMBER NormalizedNamedEntityTag=366000.0]
+[Text=Dth CharacterOffsetBegin=498 CharacterOffsetEnd=501 PartOfSpeech=NNP Lemma=Dth NamedEntityTag=O]
+[Text=through CharacterOffsetBegin=502 CharacterOffsetEnd=509 PartOfSpeech=IN Lemma=through NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=510 CharacterOffsetEnd=513 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=lateral CharacterOffsetBegin=514 CharacterOffsetEnd=521 PartOfSpeech=JJ Lemma=lateral NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=522 CharacterOffsetEnd=524 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=525 CharacterOffsetEnd=528 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=delivery CharacterOffsetBegin=529 CharacterOffsetEnd=537 PartOfSpeech=NN Lemma=delivery NamedEntityTag=O]
+[Text=points CharacterOffsetBegin=538 CharacterOffsetEnd=544 PartOfSpeech=NNS Lemma=point NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=544 CharacterOffsetEnd=545 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (: --)
+    (NP
+      (NP (NN Btu) (NN content))
+      (PP (IN of)
+        (NP (DT the) (NN gas))))
+    (VP (VBZ is)
+      (NP (CD 1050))
+      (: --)
+      (FRAG
+        (VP (VBD Need)
+          (NP
+            (NP (CD 348,000) (NN mcf))
+            (PP (IN of)
+              (NP (CD 1050) (NN btu) (NN gas))))
+          (S
+            (VP (TO to)
+              (VP (VB get)
+                (NP (CD 366,000) (NNP Dth))
+                (PP (IN through)
+                  (NP (DT the)
+                    (ADJP (JJ lateral)
+                      (PP (TO to)
+                        (NP (DT the) (NN delivery))))
+                    (NNS points)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 1050-8)
+punct(1050-8, ---1)
+compound(content-3, Btu-2)
+nsubj(1050-8, content-3)
+case(gas-6, of-4)
+det(gas-6, the-5)
+nmod:of(content-3, gas-6)
+cop(1050-8, is-7)
+punct(1050-8, ---9)
+dep(1050-8, Need-10)
+nummod(mcf-12, 348,000-11)
+dobj(Need-10, mcf-12)
+case(gas-16, of-13)
+nummod(gas-16, 1050-14)
+compound(gas-16, btu-15)
+nmod:of(mcf-12, gas-16)
+mark(get-18, to-17)
+advcl:to(Need-10, get-18)
+nummod(Dth-20, 366,000-19)
+dobj(get-18, Dth-20)
+case(points-27, through-21)
+det(points-27, the-22)
+amod(points-27, lateral-23)
+case(delivery-26, to-24)
+det(delivery-26, the-25)
+nmod:to(lateral-23, delivery-26)
+nmod:through(get-18, points-27)
+punct(1050-8, .-28)
+
+Extracted the following NER entity mentions:
+-- Btu	PERSON
+1050	NUMBER
+348,000	NUMBER
+1050	DATE
+366,000	NUMBER
+
+Sentence #6 (32 tokens):
+--  Risk -- If there is a call for all the gas at these delivery points (USGT @ 95,000 Dth, Astra @ 40,000, BP @ 100,000 & Misc.
+
+Tokens:
+[Text=-- CharacterOffsetBegin=547 CharacterOffsetEnd=549 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=Risk CharacterOffsetBegin=551 CharacterOffsetEnd=555 PartOfSpeech=NN Lemma=risk NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=556 CharacterOffsetEnd=558 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=If CharacterOffsetBegin=559 CharacterOffsetEnd=561 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=562 CharacterOffsetEnd=567 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=568 CharacterOffsetEnd=570 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=571 CharacterOffsetEnd=572 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=call CharacterOffsetBegin=573 CharacterOffsetEnd=577 PartOfSpeech=NN Lemma=call NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=578 CharacterOffsetEnd=581 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=582 CharacterOffsetEnd=585 PartOfSpeech=PDT Lemma=all NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=586 CharacterOffsetEnd=589 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=gas CharacterOffsetBegin=590 CharacterOffsetEnd=593 PartOfSpeech=NN Lemma=gas NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=594 CharacterOffsetEnd=596 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=597 CharacterOffsetEnd=602 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=delivery CharacterOffsetBegin=603 CharacterOffsetEnd=611 PartOfSpeech=NN Lemma=delivery NamedEntityTag=O]
+[Text=points CharacterOffsetBegin=612 CharacterOffsetEnd=618 PartOfSpeech=NNS Lemma=point NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=619 CharacterOffsetEnd=620 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=USGT CharacterOffsetBegin=620 CharacterOffsetEnd=624 PartOfSpeech=NNP Lemma=USGT NamedEntityTag=O]
+[Text=@ CharacterOffsetBegin=625 CharacterOffsetEnd=626 PartOfSpeech=IN Lemma=@ NamedEntityTag=O]
+[Text=95,000 CharacterOffsetBegin=627 CharacterOffsetEnd=633 PartOfSpeech=CD Lemma=95,000 NamedEntityTag=NUMBER NormalizedNamedEntityTag=95000.0]
+[Text=Dth CharacterOffsetBegin=634 CharacterOffsetEnd=637 PartOfSpeech=NN Lemma=dth NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=637 CharacterOffsetEnd=638 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Astra CharacterOffsetBegin=639 CharacterOffsetEnd=644 PartOfSpeech=NNP Lemma=Astra NamedEntityTag=ORGANIZATION]
+[Text=@ CharacterOffsetBegin=645 CharacterOffsetEnd=646 PartOfSpeech=SYM Lemma=@ NamedEntityTag=O]
+[Text=40,000 CharacterOffsetBegin=647 CharacterOffsetEnd=653 PartOfSpeech=CD Lemma=40,000 NamedEntityTag=NUMBER NormalizedNamedEntityTag=40000.0]
+[Text=, CharacterOffsetBegin=653 CharacterOffsetEnd=654 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=BP CharacterOffsetBegin=655 CharacterOffsetEnd=657 PartOfSpeech=NNP Lemma=BP NamedEntityTag=O]
+[Text=@ CharacterOffsetBegin=658 CharacterOffsetEnd=659 PartOfSpeech=SYM Lemma=@ NamedEntityTag=O]
+[Text=100,000 CharacterOffsetBegin=660 CharacterOffsetEnd=667 PartOfSpeech=CD Lemma=100,000 NamedEntityTag=NUMBER NormalizedNamedEntityTag=100000.0]
+[Text=& CharacterOffsetBegin=668 CharacterOffsetEnd=669 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=Misc CharacterOffsetBegin=670 CharacterOffsetEnd=674 PartOfSpeech=NNP Lemma=Misc NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=674 CharacterOffsetEnd=675 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (: --)
+    (NP
+      (NP (NN Risk))
+      (: --)
+      (SBAR (IN If)
+        (S
+          (NP (EX there))
+          (VP (VBZ is)
+            (NP
+              (NP
+                (NP (DT a) (NN call))
+                (PP (IN for)
+                  (NP
+                    (NP
+                      (NP (PDT all) (DT the) (NN gas))
+                      (PP (IN at)
+                        (NP
+                          (NP
+                            (NP (DT these) (NN delivery) (NNS points))
+                            (PRN (-LRB- -LRB-)
+                              (NP (NNP USGT))
+                              (PP (IN @)
+                                (NP (CD 95,000) (NN Dth)))
+                              (, ,)))
+                          (NP (NNP Astra))))
+                      (X
+                        (X (SYM @))
+                        (NP (CD 40,000))))
+                    (, ,)
+                    (NP (NNP BP))))
+                (X
+                  (X (SYM @))
+                  (NP (CD 100,000))))
+              (CC &)
+              (NP (NNP Misc)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Risk-2)
+punct(Risk-2, ---1)
+punct(Risk-2, ---3)
+mark(is-6, If-4)
+expl(is-6, there-5)
+dep(Risk-2, is-6)
+det(call-8, a-7)
+nsubj(is-6, call-8)
+case(gas-12, for-9)
+det:predet(gas-12, all-10)
+det(gas-12, the-11)
+nmod:for(call-8, gas-12)
+case(points-16, at-13)
+det(points-16, these-14)
+compound(points-16, delivery-15)
+nmod:at(gas-12, points-16)
+punct(USGT-18, -LRB--17)
+dep(points-16, USGT-18)
+case(Dth-21, @-19)
+nummod(Dth-21, 95,000-20)
+nmod:@(USGT-18, Dth-21)
+punct(USGT-18, ,-22)
+appos(points-16, Astra-23)
+dep(40,000-25, @-24)
+dep(gas-12, 40,000-25)
+punct(gas-12, ,-26)
+appos(gas-12, BP-27)
+dep(100,000-29, @-28)
+dep(call-8, 100,000-29)
+cc(call-8, &-30)
+nsubj(is-6, Misc-31)
+conj:&(call-8, Misc-31)
+punct(Risk-2, .-32)
+
+Extracted the following NER entity mentions:
+95,000	NUMBER
+Astra	ORGANIZATION
+40,000	NUMBER
+100,000	NUMBER
+Misc	LOCATION
+
+Sentence #7 (11 tokens):
+@ 131,000) then  we are at the maximium flow.
+
+Tokens:
+[Text=@ CharacterOffsetBegin=676 CharacterOffsetEnd=677 PartOfSpeech=SYM Lemma=@ NamedEntityTag=O]
+[Text=131,000 CharacterOffsetBegin=678 CharacterOffsetEnd=685 PartOfSpeech=CD Lemma=131,000 NamedEntityTag=NUMBER NormalizedNamedEntityTag=131000.0]
+[Text=-RRB- CharacterOffsetBegin=685 CharacterOffsetEnd=686 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=687 CharacterOffsetEnd=691 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=693 CharacterOffsetEnd=695 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=696 CharacterOffsetEnd=699 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=700 CharacterOffsetEnd=702 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=703 CharacterOffsetEnd=706 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=maximium CharacterOffsetBegin=707 CharacterOffsetEnd=715 PartOfSpeech=NN Lemma=maximium NamedEntityTag=O]
+[Text=flow CharacterOffsetBegin=716 CharacterOffsetEnd=720 PartOfSpeech=NN Lemma=flow NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=720 CharacterOffsetEnd=721 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (FRAG
+      (X (SYM @))
+      (NP (CD 131,000)))
+    (-RRB- -RRB-)
+    (S
+      (ADVP (RB then))
+      (NP (PRP we))
+      (VP (VBP are)
+        (PP (IN at)
+          (NP (DT the) (NN maximium) (NN flow)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, flow-10)
+dep(131,000-2, @-1)
+dep(flow-10, 131,000-2)
+punct(flow-10, -RRB--3)
+advmod(flow-10, then-4)
+nsubj(flow-10, we-5)
+cop(flow-10, are-6)
+case(flow-10, at-7)
+det(flow-10, the-8)
+compound(flow-10, maximium-9)
+punct(flow-10, .-11)
+
+Extracted the following NER entity mentions:
+131,000	NUMBER
+
+Sentence #8 (17 tokens):
+Any facilities problems or summer temperature extremes and we might not operationally make the delivery volumes.
+
+Tokens:
+[Text=Any CharacterOffsetBegin=723 CharacterOffsetEnd=726 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=facilities CharacterOffsetBegin=727 CharacterOffsetEnd=737 PartOfSpeech=NNS Lemma=facility NamedEntityTag=O]
+[Text=problems CharacterOffsetBegin=738 CharacterOffsetEnd=746 PartOfSpeech=NNS Lemma=problem NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=747 CharacterOffsetEnd=749 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=summer CharacterOffsetBegin=750 CharacterOffsetEnd=756 PartOfSpeech=NN Lemma=summer NamedEntityTag=DATE NormalizedNamedEntityTag=summer ]
+[Text=temperature CharacterOffsetBegin=757 CharacterOffsetEnd=768 PartOfSpeech=NN Lemma=temperature NamedEntityTag=O]
+[Text=extremes CharacterOffsetBegin=769 CharacterOffsetEnd=777 PartOfSpeech=NNS Lemma=extreme NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=778 CharacterOffsetEnd=781 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=782 CharacterOffsetEnd=784 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=might CharacterOffsetBegin=785 CharacterOffsetEnd=790 PartOfSpeech=MD Lemma=might NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=791 CharacterOffsetEnd=794 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=operationally CharacterOffsetBegin=795 CharacterOffsetEnd=808 PartOfSpeech=RB Lemma=operationally NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=809 CharacterOffsetEnd=813 PartOfSpeech=VB Lemma=make NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=814 CharacterOffsetEnd=817 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=delivery CharacterOffsetBegin=818 CharacterOffsetEnd=826 PartOfSpeech=NN Lemma=delivery NamedEntityTag=O]
+[Text=volumes CharacterOffsetBegin=827 CharacterOffsetEnd=834 PartOfSpeech=NNS Lemma=volume NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=834 CharacterOffsetEnd=835 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT Any) (NNS facilities) (NNS problems))
+      (CC or)
+      (NP
+        (NP (NN summer) (NN temperature) (NNS extremes))
+        (CC and)
+        (NP (PRP we))))
+    (VP (MD might) (RB not)
+      (ADVP (RB operationally))
+      (VP (VB make)
+        (NP (DT the) (NN delivery) (NNS volumes))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, make-13)
+det(problems-3, Any-1)
+compound(problems-3, facilities-2)
+nsubj(make-13, problems-3)
+cc(problems-3, or-4)
+compound(extremes-7, summer-5)
+compound(extremes-7, temperature-6)
+conj:or(problems-3, extremes-7)
+nsubj(make-13, extremes-7)
+cc(extremes-7, and-8)
+conj:or(problems-3, we-9)
+conj:and(extremes-7, we-9)
+aux(make-13, might-10)
+neg(make-13, not-11)
+advmod(make-13, operationally-12)
+det(volumes-16, the-14)
+compound(volumes-16, delivery-15)
+dobj(make-13, volumes-16)
+punct(make-13, .-17)
+
+Extracted the following NER entity mentions:
+summer	DATE
+
+Sentence #9 (12 tokens):
+My recommendation would be to only allow 90,000 Dth from BP.
+
+Tokens:
+[Text=My CharacterOffsetBegin=837 CharacterOffsetEnd=839 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=recommendation CharacterOffsetBegin=840 CharacterOffsetEnd=854 PartOfSpeech=NN Lemma=recommendation NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=855 CharacterOffsetEnd=860 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=861 CharacterOffsetEnd=863 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=864 CharacterOffsetEnd=866 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=867 CharacterOffsetEnd=871 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=allow CharacterOffsetBegin=872 CharacterOffsetEnd=877 PartOfSpeech=VB Lemma=allow NamedEntityTag=O]
+[Text=90,000 CharacterOffsetBegin=878 CharacterOffsetEnd=884 PartOfSpeech=CD Lemma=90,000 NamedEntityTag=NUMBER NormalizedNamedEntityTag=90000.0]
+[Text=Dth CharacterOffsetBegin=885 CharacterOffsetEnd=888 PartOfSpeech=NNP Lemma=Dth NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=889 CharacterOffsetEnd=893 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=BP CharacterOffsetBegin=894 CharacterOffsetEnd=896 PartOfSpeech=NNP Lemma=BP NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=896 CharacterOffsetEnd=897 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP$ My) (NN recommendation))
+    (VP (MD would)
+      (VP (VB be)
+        (S
+          (VP (TO to)
+            (VP
+              (ADVP (RB only))
+              (VB allow)
+              (NP (CD 90,000) (NNP Dth))
+              (PP (IN from)
+                (NP (NNP BP))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, be-4)
+nmod:poss(recommendation-2, My-1)
+nsubj(be-4, recommendation-2)
+nsubj:xsubj(allow-7, recommendation-2)
+aux(be-4, would-3)
+mark(allow-7, to-5)
+advmod(allow-7, only-6)
+xcomp(be-4, allow-7)
+nummod(Dth-9, 90,000-8)
+dobj(allow-7, Dth-9)
+case(BP-11, from-10)
+nmod:from(allow-7, BP-11)
+punct(be-4, .-12)
+
+Extracted the following NER entity mentions:
+90,000	NUMBER
+
+Sentence #10 (10 tokens):
+Historically USGT has not utilized their full 95,000 Dth.
+
+Tokens:
+[Text=Historically CharacterOffsetBegin=899 CharacterOffsetEnd=911 PartOfSpeech=NNP Lemma=Historically NamedEntityTag=O]
+[Text=USGT CharacterOffsetBegin=912 CharacterOffsetEnd=916 PartOfSpeech=NNP Lemma=USGT NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=917 CharacterOffsetEnd=920 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=921 CharacterOffsetEnd=924 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=utilized CharacterOffsetBegin=925 CharacterOffsetEnd=933 PartOfSpeech=VBN Lemma=utilize NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=934 CharacterOffsetEnd=939 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=full CharacterOffsetBegin=940 CharacterOffsetEnd=944 PartOfSpeech=JJ Lemma=full NamedEntityTag=O]
+[Text=95,000 CharacterOffsetBegin=945 CharacterOffsetEnd=951 PartOfSpeech=CD Lemma=95,000 NamedEntityTag=NUMBER NormalizedNamedEntityTag=95000.0]
+[Text=Dth CharacterOffsetBegin=952 CharacterOffsetEnd=955 PartOfSpeech=NN Lemma=dth NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=955 CharacterOffsetEnd=956 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Historically) (NNP USGT))
+    (VP (VBZ has) (RB not)
+      (VP (VBN utilized)
+        (NP (PRP$ their) (JJ full) (CD 95,000) (NN Dth))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, utilized-5)
+compound(USGT-2, Historically-1)
+nsubj(utilized-5, USGT-2)
+aux(utilized-5, has-3)
+neg(utilized-5, not-4)
+nmod:poss(Dth-9, their-6)
+amod(Dth-9, full-7)
+nummod(Dth-9, 95,000-8)
+dobj(utilized-5, Dth-9)
+punct(utilized-5, .-10)
+
+Extracted the following NER entity mentions:
+95,000	NUMBER
+
+Sentence #11 (15 tokens):
+Do we want to take the risk and allow BP the full 100,000 Dth.
+
+Tokens:
+[Text=Do CharacterOffsetBegin=958 CharacterOffsetEnd=960 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=961 CharacterOffsetEnd=963 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=964 CharacterOffsetEnd=968 PartOfSpeech=VBP Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=969 CharacterOffsetEnd=971 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=take CharacterOffsetBegin=972 CharacterOffsetEnd=976 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=977 CharacterOffsetEnd=980 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=risk CharacterOffsetBegin=981 CharacterOffsetEnd=985 PartOfSpeech=NN Lemma=risk NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=986 CharacterOffsetEnd=989 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=allow CharacterOffsetBegin=990 CharacterOffsetEnd=995 PartOfSpeech=VB Lemma=allow NamedEntityTag=O]
+[Text=BP CharacterOffsetBegin=996 CharacterOffsetEnd=998 PartOfSpeech=NNP Lemma=BP NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=999 CharacterOffsetEnd=1002 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=full CharacterOffsetBegin=1003 CharacterOffsetEnd=1007 PartOfSpeech=JJ Lemma=full NamedEntityTag=O]
+[Text=100,000 CharacterOffsetBegin=1008 CharacterOffsetEnd=1015 PartOfSpeech=CD Lemma=100,000 NamedEntityTag=NUMBER NormalizedNamedEntityTag=100000.0]
+[Text=Dth CharacterOffsetBegin=1016 CharacterOffsetEnd=1019 PartOfSpeech=NN Lemma=dth NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1019 CharacterOffsetEnd=1020 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Do)
+      (SBAR
+        (S
+          (NP (PRP we))
+          (VP (VBP want)
+            (S
+              (VP (TO to)
+                (VP
+                  (VP (VB take)
+                    (NP (DT the) (NN risk)))
+                  (CC and)
+                  (VP (VB allow)
+                    (NP (NNP BP))
+                    (NP (DT the) (JJ full) (CD 100,000) (NN Dth))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Do-1)
+nsubj(want-3, we-2)
+nsubj:xsubj(take-5, we-2)
+nsubj:xsubj(allow-9, we-2)
+ccomp(Do-1, want-3)
+mark(take-5, to-4)
+xcomp(want-3, take-5)
+det(risk-7, the-6)
+dobj(take-5, risk-7)
+cc(take-5, and-8)
+xcomp(want-3, allow-9)
+conj:and(take-5, allow-9)
+iobj(allow-9, BP-10)
+det(Dth-14, the-11)
+amod(Dth-14, full-12)
+nummod(Dth-14, 100,000-13)
+dobj(allow-9, Dth-14)
+punct(Do-1, .-15)
+
+Extracted the following NER entity mentions:
+100,000	NUMBER
+
+Sentence #12 (10 tokens):
+Darrell, I need some help with this one.
+
+Tokens:
+[Text=Darrell CharacterOffsetBegin=1022 CharacterOffsetEnd=1029 PartOfSpeech=NNP Lemma=Darrell NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=1029 CharacterOffsetEnd=1030 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=1031 CharacterOffsetEnd=1032 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=1033 CharacterOffsetEnd=1037 PartOfSpeech=VBP Lemma=need NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=1038 CharacterOffsetEnd=1042 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=help CharacterOffsetBegin=1043 CharacterOffsetEnd=1047 PartOfSpeech=NN Lemma=help NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=1048 CharacterOffsetEnd=1052 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=1053 CharacterOffsetEnd=1057 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=1058 CharacterOffsetEnd=1061 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=. CharacterOffsetBegin=1061 CharacterOffsetEnd=1062 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Darrell))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP need)
+      (NP
+        (NP (DT some) (NN help))
+        (PP (IN with)
+          (NP (DT this) (CD one)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, need-4)
+nsubj(need-4, Darrell-1)
+punct(need-4, ,-2)
+nsubj(need-4, I-3)
+det(help-6, some-5)
+dobj(need-4, help-6)
+case(one-9, with-7)
+det(one-9, this-8)
+nmod:with(help-6, one-9)
+punct(need-4, .-10)
+
+Extracted the following NER entity mentions:
+Darrell	PERSON
+one	NUMBER
+
+Sentence #13 (5 tokens):
+Give me a call.
+
+Tokens:
+[Text=Give CharacterOffsetBegin=1064 CharacterOffsetEnd=1068 PartOfSpeech=VB Lemma=give NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=1069 CharacterOffsetEnd=1071 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=1072 CharacterOffsetEnd=1073 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=call CharacterOffsetBegin=1074 CharacterOffsetEnd=1078 PartOfSpeech=NN Lemma=call NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1078 CharacterOffsetEnd=1079 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT a) (NN call)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Give-1)
+iobj(Give-1, me-2)
+det(call-4, a-3)
+dobj(Give-1, call-4)
+punct(Give-1, .-5)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(6,29,[29,30]) -> (1,11,[11,12]), that is: "100,000" -> "100,000"
+	(11,13,[13,14]) -> (1,11,[11,12]), that is: "100,000" -> "100,000"
+
+Coreference set:
+	(9,1,[1,2]) -> (1,3,[3,4]), that is: "My" -> "I"
+	(12,3,[3,4]) -> (1,3,[3,4]), that is: "I" -> "I"
+	(13,2,[2,3]) -> (1,3,[3,4]), that is: "me" -> "I"
+
+Coreference set:
+	(2,10,[10,11]) -> (1,17,[17,24]), that is: "Oasis" -> "Oasis for the term 3/01/01 to 2/28/02"
+
+Coreference set:
+	(2,20,[19,21]) -> (1,20,[19,24]), that is: "the term" -> "the term 3/01/01 to 2/28/02"
+
+Coreference set:
+	(5,19,[19,20]) -> (3,23,[23,24]), that is: "366,000" -> "366,000"
+
+Coreference set:
+	(3,24,[23,25]) -> (5,20,[19,21]), that is: "366,000 Dth" -> "366,000 Dth"
+	(9,9,[8,10]) -> (5,20,[19,21]), that is: "90,000 Dth" -> "366,000 Dth"
+
+Coreference set:
+	(5,3,[2,7]) -> (5,8,[8,9]), that is: "Btu content of the gas" -> "1050"
+
+Coreference set:
+	(10,8,[8,9]) -> (6,20,[20,21]), that is: "95,000" -> "95,000"
+
+Coreference set:
+	(11,7,[6,8]) -> (6,2,[1,33]), that is: "the risk" -> "-- Risk -- If there is a call for all the gas at these delivery points -LRB- USGT @ 95,000 Dth , Astra @ 40,000 , BP @ 100,000 & Misc ."
+
+Coreference set:
+	(6,18,[18,19]) -> (10,2,[1,3]), that is: "USGT" -> "Historically USGT"
+
+Coreference set:
+	(9,11,[11,12]) -> (6,27,[27,28]), that is: "BP" -> "BP"
+	(11,10,[10,11]) -> (6,27,[27,28]), that is: "BP" -> "BP"
+
+Coreference set:
+	(8,9,[9,10]) -> (7,5,[5,6]), that is: "we" -> "we"
+	(11,2,[2,3]) -> (7,5,[5,6]), that is: "we" -> "we"

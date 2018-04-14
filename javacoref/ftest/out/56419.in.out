@@ -1,0 +1,966 @@
+Document: ID=56419.in (11 sentences, 257 tokens)
+
+Sentence #1 (26 tokens):
+The 2001 annual allocated premium for these assets for property insurance is $670,000 based upon ENA's 2001 reported value of approximately $470,000,000.
+
+Tokens:
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=2001 CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=CD Lemma=2001 NamedEntityTag=DATE NormalizedNamedEntityTag=2001]
+[Text=annual CharacterOffsetBegin=9 CharacterOffsetEnd=15 PartOfSpeech=JJ Lemma=annual NamedEntityTag=O]
+[Text=allocated CharacterOffsetBegin=16 CharacterOffsetEnd=25 PartOfSpeech=VBN Lemma=allocate NamedEntityTag=O]
+[Text=premium CharacterOffsetBegin=26 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=premium NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=38 CharacterOffsetEnd=43 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=assets CharacterOffsetBegin=44 CharacterOffsetEnd=50 PartOfSpeech=NNS Lemma=asset NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=property CharacterOffsetBegin=55 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=property NamedEntityTag=O]
+[Text=insurance CharacterOffsetBegin=64 CharacterOffsetEnd=73 PartOfSpeech=NN Lemma=insurance NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=74 CharacterOffsetEnd=76 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=77 CharacterOffsetEnd=78 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$670000.0]
+[Text=670,000 CharacterOffsetBegin=78 CharacterOffsetEnd=85 PartOfSpeech=CD Lemma=670,000 NamedEntityTag=MONEY NormalizedNamedEntityTag=$670000.0]
+[Text=based CharacterOffsetBegin=86 CharacterOffsetEnd=91 PartOfSpeech=VBN Lemma=base NamedEntityTag=O]
+[Text=upon CharacterOffsetBegin=92 CharacterOffsetEnd=96 PartOfSpeech=IN Lemma=upon NamedEntityTag=O]
+[Text=ENA CharacterOffsetBegin=97 CharacterOffsetEnd=100 PartOfSpeech=NNP Lemma=ENA NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=100 CharacterOffsetEnd=102 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=2001 CharacterOffsetBegin=103 CharacterOffsetEnd=107 PartOfSpeech=CD Lemma=2001 NamedEntityTag=DATE NormalizedNamedEntityTag=2001]
+[Text=reported CharacterOffsetBegin=108 CharacterOffsetEnd=116 PartOfSpeech=VBN Lemma=report NamedEntityTag=O]
+[Text=value CharacterOffsetBegin=117 CharacterOffsetEnd=122 PartOfSpeech=NN Lemma=value NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=123 CharacterOffsetEnd=125 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=approximately CharacterOffsetBegin=126 CharacterOffsetEnd=139 PartOfSpeech=RB Lemma=approximately NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=140 CharacterOffsetEnd=141 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=~$4.7E8]
+[Text=470,000,000 CharacterOffsetBegin=141 CharacterOffsetEnd=152 PartOfSpeech=CD Lemma=470,000,000 NamedEntityTag=MONEY NormalizedNamedEntityTag=~$4.7E8]
+[Text=. CharacterOffsetBegin=152 CharacterOffsetEnd=153 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (CD 2001))
+      (SBAR
+        (S
+          (NP
+            (NP (JJ annual) (VBN allocated) (NN premium))
+            (PP (IN for)
+              (NP
+                (NP (DT these) (NNS assets))
+                (PP (IN for)
+                  (NP (NN property) (NN insurance))))))
+          (VP (VBZ is)
+            (NP
+              (NP ($ $) (CD 670,000))
+              (PP (VBN based)
+                (PP (IN upon)
+                  (NP
+                    (NP (NNP ENA) (POS 's))
+                    (CD 2001)))))))))
+    (VP (VBN reported)
+      (NP
+        (NP (NN value))
+        (PP (IN of)
+          (NP
+            (QP (RB approximately) ($ $) (CD 470,000,000))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, reported-20)
+det(2001-2, The-1)
+nsubj(reported-20, 2001-2)
+amod(premium-5, annual-3)
+amod(premium-5, allocated-4)
+nsubj(670,000-14, premium-5)
+case(assets-8, for-6)
+det(assets-8, these-7)
+nmod:for(premium-5, assets-8)
+case(insurance-11, for-9)
+compound(insurance-11, property-10)
+nmod:for(assets-8, insurance-11)
+cop(670,000-14, is-12)
+dep(670,000-14, $-13)
+acl:relcl(2001-2, 670,000-14)
+case(ENA-17, based-15)
+case(ENA-17, upon-16)
+nmod:based(670,000-14, ENA-17)
+case(ENA-17, 's-18)
+nummod(ENA-17, 2001-19)
+dobj(reported-20, value-21)
+case($-24, of-22)
+advmod($-24, approximately-23)
+nmod:of(value-21, $-24)
+nummod($-24, 470,000,000-25)
+punct(reported-20, .-26)
+
+Extracted the following NER entity mentions:
+2001	DATE
+$670,000	MONEY
+ENA	ORGANIZATION
+2001	DATE
+$470,000,000	MONEY
+
+Sentence #2 (18 tokens):
+The pro-rata credit for 7 months, assuming a 5-31-01 sale date, would be $390,833.
+
+Tokens:
+[Text=The CharacterOffsetBegin=155 CharacterOffsetEnd=158 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=pro-rata CharacterOffsetBegin=159 CharacterOffsetEnd=167 PartOfSpeech=JJ Lemma=pro-rata NamedEntityTag=O]
+[Text=credit CharacterOffsetBegin=168 CharacterOffsetEnd=174 PartOfSpeech=NN Lemma=credit NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=175 CharacterOffsetEnd=178 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=7 CharacterOffsetBegin=179 CharacterOffsetEnd=180 PartOfSpeech=CD Lemma=7 NamedEntityTag=DURATION]
+[Text=months CharacterOffsetBegin=181 CharacterOffsetEnd=187 PartOfSpeech=NNS Lemma=month NamedEntityTag=DURATION]
+[Text=, CharacterOffsetBegin=187 CharacterOffsetEnd=188 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=assuming CharacterOffsetBegin=189 CharacterOffsetEnd=197 PartOfSpeech=VBG Lemma=assume NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=198 CharacterOffsetEnd=199 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=5-31-01 CharacterOffsetBegin=200 CharacterOffsetEnd=207 PartOfSpeech=CD Lemma=5-31-01 NamedEntityTag=NUMBER]
+[Text=sale CharacterOffsetBegin=208 CharacterOffsetEnd=212 PartOfSpeech=NN Lemma=sale NamedEntityTag=O]
+[Text=date CharacterOffsetBegin=213 CharacterOffsetEnd=217 PartOfSpeech=NN Lemma=date NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=217 CharacterOffsetEnd=218 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=219 CharacterOffsetEnd=224 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=225 CharacterOffsetEnd=227 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=228 CharacterOffsetEnd=229 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$390833.0]
+[Text=390,833 CharacterOffsetBegin=229 CharacterOffsetEnd=236 PartOfSpeech=CD Lemma=390,833 NamedEntityTag=MONEY NormalizedNamedEntityTag=$390833.0]
+[Text=. CharacterOffsetBegin=236 CharacterOffsetEnd=237 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ pro-rata) (NN credit))
+      (PP (IN for)
+        (NP (CD 7) (NNS months))))
+    (, ,)
+    (S
+      (VP (VBG assuming)
+        (NP (DT a) (CD 5-31-01) (NN sale) (NN date))))
+    (, ,)
+    (VP (MD would)
+      (VP (VB be)
+        (NP ($ $) (CD 390,833))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 390,833-17)
+det(credit-3, The-1)
+amod(credit-3, pro-rata-2)
+nsubj(390,833-17, credit-3)
+case(months-6, for-4)
+nummod(months-6, 7-5)
+nmod:for(credit-3, months-6)
+punct(390,833-17, ,-7)
+advcl(390,833-17, assuming-8)
+det(date-12, a-9)
+nummod(date-12, 5-31-01-10)
+compound(date-12, sale-11)
+dobj(assuming-8, date-12)
+punct(390,833-17, ,-13)
+aux(390,833-17, would-14)
+cop(390,833-17, be-15)
+dep(390,833-17, $-16)
+punct(390,833-17, .-18)
+
+Extracted the following NER entity mentions:
+7 months	DURATION
+5-31-01	NUMBER
+$390,833	MONEY
+
+Sentence #3 (12 tokens):
+Underwriters require an update of values and exposures annually at renewal.
+
+Tokens:
+[Text=Underwriters CharacterOffsetBegin=239 CharacterOffsetEnd=251 PartOfSpeech=NNS Lemma=underwriter NamedEntityTag=O]
+[Text=require CharacterOffsetBegin=252 CharacterOffsetEnd=259 PartOfSpeech=VBP Lemma=require NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=260 CharacterOffsetEnd=262 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=update CharacterOffsetBegin=263 CharacterOffsetEnd=269 PartOfSpeech=VBP Lemma=update NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=270 CharacterOffsetEnd=272 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=values CharacterOffsetBegin=273 CharacterOffsetEnd=279 PartOfSpeech=NNS Lemma=value NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=280 CharacterOffsetEnd=283 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=exposures CharacterOffsetBegin=284 CharacterOffsetEnd=293 PartOfSpeech=NNS Lemma=exposure NamedEntityTag=O]
+[Text=annually CharacterOffsetBegin=294 CharacterOffsetEnd=302 PartOfSpeech=RB Lemma=annually NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=303 CharacterOffsetEnd=305 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=renewal CharacterOffsetBegin=306 CharacterOffsetEnd=313 PartOfSpeech=NN Lemma=renewal NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=313 CharacterOffsetEnd=314 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNS Underwriters))
+    (VP (VBP require)
+      (SBAR
+        (S
+          (NP (DT an))
+          (VP (VBP update)
+            (PP (IN of)
+              (NP (NNS values)
+                (CC and)
+                (NNS exposures)))
+            (ADVP (RB annually))
+            (PP (IN at)
+              (NP (NN renewal)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, require-2)
+nsubj(require-2, Underwriters-1)
+nsubj(update-4, an-3)
+ccomp(require-2, update-4)
+case(values-6, of-5)
+nmod:of(update-4, values-6)
+cc(values-6, and-7)
+nmod:of(update-4, exposures-8)
+conj:and(values-6, exposures-8)
+advmod(update-4, annually-9)
+case(renewal-11, at-10)
+nmod:at(update-4, renewal-11)
+punct(require-2, .-12)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (12 tokens):
+Gathering these values within Enron normally requires 30 to 45 days.
+
+Tokens:
+[Text=Gathering CharacterOffsetBegin=315 CharacterOffsetEnd=324 PartOfSpeech=VBG Lemma=gather NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=325 CharacterOffsetEnd=330 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=values CharacterOffsetBegin=331 CharacterOffsetEnd=337 PartOfSpeech=NNS Lemma=value NamedEntityTag=O]
+[Text=within CharacterOffsetBegin=338 CharacterOffsetEnd=344 PartOfSpeech=IN Lemma=within NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=345 CharacterOffsetEnd=350 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=normally CharacterOffsetBegin=351 CharacterOffsetEnd=359 PartOfSpeech=RB Lemma=normally NamedEntityTag=O]
+[Text=requires CharacterOffsetBegin=360 CharacterOffsetEnd=368 PartOfSpeech=VBZ Lemma=require NamedEntityTag=O]
+[Text=30 CharacterOffsetBegin=369 CharacterOffsetEnd=371 PartOfSpeech=CD Lemma=30 NamedEntityTag=DURATION]
+[Text=to CharacterOffsetBegin=372 CharacterOffsetEnd=374 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=45 CharacterOffsetBegin=375 CharacterOffsetEnd=377 PartOfSpeech=CD Lemma=45 NamedEntityTag=DURATION]
+[Text=days CharacterOffsetBegin=378 CharacterOffsetEnd=382 PartOfSpeech=NNS Lemma=day NamedEntityTag=DURATION]
+[Text=. CharacterOffsetBegin=382 CharacterOffsetEnd=383 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (VBG Gathering)
+        (NP (DT these) (NNS values))
+        (PP (IN within)
+          (NP (NNP Enron)))))
+    (ADVP (RB normally))
+    (VP (VBZ requires)
+      (NP-TMP
+        (QP (CD 30) (TO to) (CD 45))
+        (NNS days)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, requires-7)
+csubj(requires-7, Gathering-1)
+det(values-3, these-2)
+dobj(Gathering-1, values-3)
+case(Enron-5, within-4)
+nmod:within(Gathering-1, Enron-5)
+advmod(requires-7, normally-6)
+compound(45-10, 30-8)
+dep(45-10, to-9)
+nummod(days-11, 45-10)
+nmod:tmod(requires-7, days-11)
+punct(requires-7, .-12)
+
+Extracted the following NER entity mentions:
+Enron	ORGANIZATION
+30	DURATION
+45 days	DURATION
+
+Sentence #5 (10 tokens):
+We use these same values in the allocation system.
+
+Tokens:
+[Text=We CharacterOffsetBegin=385 CharacterOffsetEnd=387 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=use CharacterOffsetBegin=388 CharacterOffsetEnd=391 PartOfSpeech=VBP Lemma=use NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=392 CharacterOffsetEnd=397 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=same CharacterOffsetBegin=398 CharacterOffsetEnd=402 PartOfSpeech=JJ Lemma=same NamedEntityTag=O]
+[Text=values CharacterOffsetBegin=403 CharacterOffsetEnd=409 PartOfSpeech=NNS Lemma=value NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=410 CharacterOffsetEnd=412 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=413 CharacterOffsetEnd=416 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=allocation CharacterOffsetBegin=417 CharacterOffsetEnd=427 PartOfSpeech=NN Lemma=allocation NamedEntityTag=O]
+[Text=system CharacterOffsetBegin=428 CharacterOffsetEnd=434 PartOfSpeech=NN Lemma=system NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=434 CharacterOffsetEnd=435 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP use)
+      (NP
+        (NP (DT these) (JJ same) (NNS values))
+        (PP (IN in)
+          (NP (DT the) (NN allocation) (NN system)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, use-2)
+nsubj(use-2, We-1)
+det(values-5, these-3)
+amod(values-5, same-4)
+dobj(use-2, values-5)
+case(system-9, in-6)
+det(system-9, the-7)
+compound(system-9, allocation-8)
+nmod:in(values-5, system-9)
+punct(use-2, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #6 (39 tokens):
+Unless the value change is significant, the actual cost of insurance to the outside insurers will not change  Once you complete your entire study of replacement cost values, we can discuss whether approaching underwriters is warranted.
+
+Tokens:
+[Text=Unless CharacterOffsetBegin=436 CharacterOffsetEnd=442 PartOfSpeech=IN Lemma=unless NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=443 CharacterOffsetEnd=446 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=value CharacterOffsetBegin=447 CharacterOffsetEnd=452 PartOfSpeech=NN Lemma=value NamedEntityTag=O]
+[Text=change CharacterOffsetBegin=453 CharacterOffsetEnd=459 PartOfSpeech=NN Lemma=change NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=460 CharacterOffsetEnd=462 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=significant CharacterOffsetBegin=463 CharacterOffsetEnd=474 PartOfSpeech=JJ Lemma=significant NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=474 CharacterOffsetEnd=475 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=476 CharacterOffsetEnd=479 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=actual CharacterOffsetBegin=480 CharacterOffsetEnd=486 PartOfSpeech=JJ Lemma=actual NamedEntityTag=O]
+[Text=cost CharacterOffsetBegin=487 CharacterOffsetEnd=491 PartOfSpeech=NN Lemma=cost NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=492 CharacterOffsetEnd=494 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=insurance CharacterOffsetBegin=495 CharacterOffsetEnd=504 PartOfSpeech=NN Lemma=insurance NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=505 CharacterOffsetEnd=507 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=508 CharacterOffsetEnd=511 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=outside CharacterOffsetBegin=512 CharacterOffsetEnd=519 PartOfSpeech=JJ Lemma=outside NamedEntityTag=O]
+[Text=insurers CharacterOffsetBegin=520 CharacterOffsetEnd=528 PartOfSpeech=NNS Lemma=insurer NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=529 CharacterOffsetEnd=533 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=534 CharacterOffsetEnd=537 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=change CharacterOffsetBegin=538 CharacterOffsetEnd=544 PartOfSpeech=VB Lemma=change NamedEntityTag=O]
+[Text=Once CharacterOffsetBegin=546 CharacterOffsetEnd=550 PartOfSpeech=RB Lemma=once NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=551 CharacterOffsetEnd=554 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=complete CharacterOffsetBegin=555 CharacterOffsetEnd=563 PartOfSpeech=VB Lemma=complete NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=564 CharacterOffsetEnd=568 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=entire CharacterOffsetBegin=569 CharacterOffsetEnd=575 PartOfSpeech=JJ Lemma=entire NamedEntityTag=O]
+[Text=study CharacterOffsetBegin=576 CharacterOffsetEnd=581 PartOfSpeech=NN Lemma=study NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=582 CharacterOffsetEnd=584 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=replacement CharacterOffsetBegin=585 CharacterOffsetEnd=596 PartOfSpeech=NN Lemma=replacement NamedEntityTag=O]
+[Text=cost CharacterOffsetBegin=597 CharacterOffsetEnd=601 PartOfSpeech=NN Lemma=cost NamedEntityTag=O]
+[Text=values CharacterOffsetBegin=602 CharacterOffsetEnd=608 PartOfSpeech=NNS Lemma=value NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=608 CharacterOffsetEnd=609 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=610 CharacterOffsetEnd=612 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=613 CharacterOffsetEnd=616 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=discuss CharacterOffsetBegin=617 CharacterOffsetEnd=624 PartOfSpeech=VB Lemma=discuss NamedEntityTag=O]
+[Text=whether CharacterOffsetBegin=625 CharacterOffsetEnd=632 PartOfSpeech=IN Lemma=whether NamedEntityTag=O]
+[Text=approaching CharacterOffsetBegin=633 CharacterOffsetEnd=644 PartOfSpeech=VBG Lemma=approach NamedEntityTag=O]
+[Text=underwriters CharacterOffsetBegin=645 CharacterOffsetEnd=657 PartOfSpeech=NNS Lemma=underwriter NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=658 CharacterOffsetEnd=660 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=warranted CharacterOffsetBegin=661 CharacterOffsetEnd=670 PartOfSpeech=VBN Lemma=warrant NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=670 CharacterOffsetEnd=671 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN Unless)
+      (S
+        (NP (DT the) (NN value) (NN change))
+        (VP (VBZ is)
+          (ADJP (JJ significant)))))
+    (, ,)
+    (NP
+      (NP (DT the) (JJ actual) (NN cost))
+      (PP (IN of)
+        (NP
+          (NP (NN insurance))
+          (PP (TO to)
+            (NP (DT the) (JJ outside) (NNS insurers))))))
+    (VP (MD will) (RB not)
+      (VP (VB change)
+        (S
+          (SBAR (RB Once)
+            (S
+              (NP (PRP you))
+              (VP (VB complete)
+                (NP
+                  (NP (PRP$ your) (JJ entire) (NN study))
+                  (PP (IN of)
+                    (NP (NN replacement) (NN cost) (NNS values)))))))
+          (, ,)
+          (NP (PRP we))
+          (VP (MD can)
+            (VP (VB discuss)
+              (SBAR (IN whether)
+                (S
+                  (S
+                    (VP (VBG approaching)
+                      (NP (NNS underwriters))))
+                  (VP (VBZ is)
+                    (VP (VBN warranted))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, change-19)
+mark(significant-6, Unless-1)
+det(change-4, the-2)
+compound(change-4, value-3)
+nsubj(significant-6, change-4)
+cop(significant-6, is-5)
+advcl:unless(change-19, significant-6)
+punct(change-19, ,-7)
+det(cost-10, the-8)
+amod(cost-10, actual-9)
+nsubj(change-19, cost-10)
+case(insurance-12, of-11)
+nmod:of(cost-10, insurance-12)
+case(insurers-16, to-13)
+det(insurers-16, the-14)
+amod(insurers-16, outside-15)
+nmod:to(insurance-12, insurers-16)
+aux(change-19, will-17)
+neg(change-19, not-18)
+advmod(complete-22, Once-20)
+nsubj(complete-22, you-21)
+advcl(discuss-33, complete-22)
+nmod:poss(study-25, your-23)
+amod(study-25, entire-24)
+dobj(complete-22, study-25)
+case(values-29, of-26)
+compound(values-29, replacement-27)
+compound(values-29, cost-28)
+nmod:of(study-25, values-29)
+punct(discuss-33, ,-30)
+nsubj(discuss-33, we-31)
+aux(discuss-33, can-32)
+ccomp(change-19, discuss-33)
+mark(warranted-38, whether-34)
+csubjpass(warranted-38, approaching-35)
+dobj(approaching-35, underwriters-36)
+auxpass(warranted-38, is-37)
+ccomp(discuss-33, warranted-38)
+punct(change-19, .-39)
+
+Extracted the following NER entity mentions:
+
+Sentence #7 (27 tokens):
+If we internally adjust your allocation mid-year, we must move the premium that we take away from you to the other participants in the program.
+
+Tokens:
+[Text=If CharacterOffsetBegin=673 CharacterOffsetEnd=675 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=676 CharacterOffsetEnd=678 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=internally CharacterOffsetBegin=679 CharacterOffsetEnd=689 PartOfSpeech=RB Lemma=internally NamedEntityTag=O]
+[Text=adjust CharacterOffsetBegin=690 CharacterOffsetEnd=696 PartOfSpeech=VBP Lemma=adjust NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=697 CharacterOffsetEnd=701 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=allocation CharacterOffsetBegin=702 CharacterOffsetEnd=712 PartOfSpeech=NN Lemma=allocation NamedEntityTag=O]
+[Text=mid-year CharacterOffsetBegin=713 CharacterOffsetEnd=721 PartOfSpeech=JJ Lemma=mid-year NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=721 CharacterOffsetEnd=722 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=723 CharacterOffsetEnd=725 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=must CharacterOffsetBegin=726 CharacterOffsetEnd=730 PartOfSpeech=MD Lemma=must NamedEntityTag=O]
+[Text=move CharacterOffsetBegin=731 CharacterOffsetEnd=735 PartOfSpeech=VB Lemma=move NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=736 CharacterOffsetEnd=739 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=premium CharacterOffsetBegin=740 CharacterOffsetEnd=747 PartOfSpeech=NN Lemma=premium NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=748 CharacterOffsetEnd=752 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=753 CharacterOffsetEnd=755 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=take CharacterOffsetBegin=756 CharacterOffsetEnd=760 PartOfSpeech=VBP Lemma=take NamedEntityTag=O]
+[Text=away CharacterOffsetBegin=761 CharacterOffsetEnd=765 PartOfSpeech=RB Lemma=away NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=766 CharacterOffsetEnd=770 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=771 CharacterOffsetEnd=774 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=775 CharacterOffsetEnd=777 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=778 CharacterOffsetEnd=781 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=782 CharacterOffsetEnd=787 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=participants CharacterOffsetBegin=788 CharacterOffsetEnd=800 PartOfSpeech=NNS Lemma=participant NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=801 CharacterOffsetEnd=803 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=804 CharacterOffsetEnd=807 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=program CharacterOffsetBegin=808 CharacterOffsetEnd=815 PartOfSpeech=NN Lemma=program NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=815 CharacterOffsetEnd=816 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP we))
+        (ADVP (RB internally))
+        (VP (VBP adjust)
+          (S
+            (NP (PRP$ your) (NN allocation))
+            (ADJP (JJ mid-year))))))
+    (, ,)
+    (NP (PRP we))
+    (VP (MD must)
+      (VP (VB move)
+        (NP (DT the) (NN premium))
+        (SBAR (IN that)
+          (S
+            (NP (PRP we))
+            (VP (VBP take)
+              (ADVP (RB away)
+                (PP (IN from)
+                  (NP (PRP you))))
+              (PP (TO to)
+                (NP
+                  (NP (DT the) (JJ other) (NNS participants))
+                  (PP (IN in)
+                    (NP (DT the) (NN program))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, move-11)
+mark(adjust-4, If-1)
+nsubj(adjust-4, we-2)
+advmod(adjust-4, internally-3)
+advcl:if(move-11, adjust-4)
+nmod:poss(allocation-6, your-5)
+nsubj(mid-year-7, allocation-6)
+xcomp(adjust-4, mid-year-7)
+punct(move-11, ,-8)
+nsubj(move-11, we-9)
+aux(move-11, must-10)
+det(premium-13, the-12)
+dobj(move-11, premium-13)
+mark(take-16, that-14)
+nsubj(take-16, we-15)
+ccomp(move-11, take-16)
+case(you-19, away-17)
+mwe(away-17, from-18)
+nmod:away_from(take-16, you-19)
+case(participants-23, to-20)
+det(participants-23, the-21)
+amod(participants-23, other-22)
+nmod:to(take-16, participants-23)
+case(program-26, in-24)
+det(program-26, the-25)
+nmod:in(participants-23, program-26)
+punct(move-11, .-27)
+
+Extracted the following NER entity mentions:
+
+Sentence #8 (17 tokens):
+As you know, the remainder of Enron did not stand still while you sold Bammel.
+
+Tokens:
+[Text=As CharacterOffsetBegin=818 CharacterOffsetEnd=820 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=821 CharacterOffsetEnd=824 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=825 CharacterOffsetEnd=829 PartOfSpeech=VBP Lemma=know NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=829 CharacterOffsetEnd=830 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=831 CharacterOffsetEnd=834 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=remainder CharacterOffsetBegin=835 CharacterOffsetEnd=844 PartOfSpeech=NN Lemma=remainder NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=845 CharacterOffsetEnd=847 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=848 CharacterOffsetEnd=853 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=did CharacterOffsetBegin=854 CharacterOffsetEnd=857 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=858 CharacterOffsetEnd=861 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=stand CharacterOffsetBegin=862 CharacterOffsetEnd=867 PartOfSpeech=VB Lemma=stand NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=868 CharacterOffsetEnd=873 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=while CharacterOffsetBegin=874 CharacterOffsetEnd=879 PartOfSpeech=IN Lemma=while NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=880 CharacterOffsetEnd=883 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=sold CharacterOffsetBegin=884 CharacterOffsetEnd=888 PartOfSpeech=VBD Lemma=sell NamedEntityTag=O]
+[Text=Bammel CharacterOffsetBegin=889 CharacterOffsetEnd=895 PartOfSpeech=NNP Lemma=Bammel NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=895 CharacterOffsetEnd=896 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (PRP you))
+        (VP (VBP know))))
+    (, ,)
+    (NP
+      (NP (DT the) (NN remainder))
+      (PP (IN of)
+        (NP (NNP Enron))))
+    (VP (VBD did) (RB not)
+      (VP (VB stand)
+        (ADVP (RB still))
+        (SBAR (IN while)
+          (S
+            (NP (PRP you))
+            (VP (VBD sold)
+              (NP (NNP Bammel)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, stand-11)
+mark(know-3, As-1)
+nsubj(know-3, you-2)
+advcl:as(stand-11, know-3)
+punct(stand-11, ,-4)
+det(remainder-6, the-5)
+nsubj(stand-11, remainder-6)
+case(Enron-8, of-7)
+nmod:of(remainder-6, Enron-8)
+aux(stand-11, did-9)
+neg(stand-11, not-10)
+advmod(stand-11, still-12)
+mark(sold-15, while-13)
+nsubj(sold-15, you-14)
+advcl:while(stand-11, sold-15)
+dobj(sold-15, Bammel-16)
+punct(stand-11, .-17)
+
+Extracted the following NER entity mentions:
+Enron	ORGANIZATION
+Bammel	PERSON
+
+Sentence #9 (51 tokens):
+We have not tried this before, however, I suspect if approached with the additional premium as a result reducing ENA's allocation, all the other operating entities would want to re-submit their revised  values as well and we would find ourselves in a constant state of adjustment.
+
+Tokens:
+[Text=We CharacterOffsetBegin=898 CharacterOffsetEnd=900 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=901 CharacterOffsetEnd=905 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=906 CharacterOffsetEnd=909 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=tried CharacterOffsetBegin=910 CharacterOffsetEnd=915 PartOfSpeech=VBN Lemma=try NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=916 CharacterOffsetEnd=920 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=before CharacterOffsetBegin=921 CharacterOffsetEnd=927 PartOfSpeech=RB Lemma=before NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=927 CharacterOffsetEnd=928 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=however CharacterOffsetBegin=929 CharacterOffsetEnd=936 PartOfSpeech=RB Lemma=however NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=936 CharacterOffsetEnd=937 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=938 CharacterOffsetEnd=939 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=suspect CharacterOffsetBegin=940 CharacterOffsetEnd=947 PartOfSpeech=VBP Lemma=suspect NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=948 CharacterOffsetEnd=950 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=approached CharacterOffsetBegin=951 CharacterOffsetEnd=961 PartOfSpeech=VBN Lemma=approach NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=962 CharacterOffsetEnd=966 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=967 CharacterOffsetEnd=970 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=additional CharacterOffsetBegin=971 CharacterOffsetEnd=981 PartOfSpeech=JJ Lemma=additional NamedEntityTag=O]
+[Text=premium CharacterOffsetBegin=982 CharacterOffsetEnd=989 PartOfSpeech=NN Lemma=premium NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=990 CharacterOffsetEnd=992 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=993 CharacterOffsetEnd=994 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=result CharacterOffsetBegin=995 CharacterOffsetEnd=1001 PartOfSpeech=NN Lemma=result NamedEntityTag=O]
+[Text=reducing CharacterOffsetBegin=1002 CharacterOffsetEnd=1010 PartOfSpeech=VBG Lemma=reduce NamedEntityTag=O]
+[Text=ENA CharacterOffsetBegin=1011 CharacterOffsetEnd=1014 PartOfSpeech=NNP Lemma=ENA NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=1014 CharacterOffsetEnd=1016 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=allocation CharacterOffsetBegin=1017 CharacterOffsetEnd=1027 PartOfSpeech=NN Lemma=allocation NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1027 CharacterOffsetEnd=1028 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=1029 CharacterOffsetEnd=1032 PartOfSpeech=PDT Lemma=all NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1033 CharacterOffsetEnd=1036 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=1037 CharacterOffsetEnd=1042 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=operating CharacterOffsetBegin=1043 CharacterOffsetEnd=1052 PartOfSpeech=VBG Lemma=operate NamedEntityTag=O]
+[Text=entities CharacterOffsetBegin=1053 CharacterOffsetEnd=1061 PartOfSpeech=NNS Lemma=entity NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=1062 CharacterOffsetEnd=1067 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=1068 CharacterOffsetEnd=1072 PartOfSpeech=VB Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1073 CharacterOffsetEnd=1075 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=re-submit CharacterOffsetBegin=1076 CharacterOffsetEnd=1085 PartOfSpeech=VB Lemma=re-submit NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=1086 CharacterOffsetEnd=1091 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=revised CharacterOffsetBegin=1092 CharacterOffsetEnd=1099 PartOfSpeech=VBN Lemma=revise NamedEntityTag=O]
+[Text=values CharacterOffsetBegin=1101 CharacterOffsetEnd=1107 PartOfSpeech=NNS Lemma=value NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=1108 CharacterOffsetEnd=1110 PartOfSpeech=RB Lemma=as NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=1111 CharacterOffsetEnd=1115 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1116 CharacterOffsetEnd=1119 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=1120 CharacterOffsetEnd=1122 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=1123 CharacterOffsetEnd=1128 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=find CharacterOffsetBegin=1129 CharacterOffsetEnd=1133 PartOfSpeech=VB Lemma=find NamedEntityTag=O]
+[Text=ourselves CharacterOffsetBegin=1134 CharacterOffsetEnd=1143 PartOfSpeech=PRP Lemma=ourselves NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=1144 CharacterOffsetEnd=1146 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=1147 CharacterOffsetEnd=1148 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=constant CharacterOffsetBegin=1149 CharacterOffsetEnd=1157 PartOfSpeech=JJ Lemma=constant NamedEntityTag=O]
+[Text=state CharacterOffsetBegin=1158 CharacterOffsetEnd=1163 PartOfSpeech=NN Lemma=state NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=1164 CharacterOffsetEnd=1166 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=adjustment CharacterOffsetBegin=1167 CharacterOffsetEnd=1177 PartOfSpeech=NN Lemma=adjustment NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1177 CharacterOffsetEnd=1178 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP We))
+      (VP (VBP have) (RB not)
+        (VP (VBN tried)
+          (S
+            (NP (DT this))
+            (ADVP (RB before))))))
+    (, ,)
+    (S
+      (S
+        (ADVP (RB however))
+        (, ,)
+        (NP (PRP I))
+        (VP (VBP suspect)
+          (SBAR (IN if)
+            (S
+              (VP (VBN approached)
+                (PP (IN with)
+                  (NP (DT the) (JJ additional) (NN premium)))
+                (PP (IN as)
+                  (NP
+                    (NP (DT a) (NN result))
+                    (VP (VBG reducing)
+                      (NP
+                        (NP (NNP ENA) (POS 's))
+                        (NN allocation))))))))))
+      (, ,)
+      (ADVP (PDT all) (DT the) (JJ other))
+      (S
+        (NP (VBG operating) (NNS entities))
+        (VP (MD would)
+          (VP (VB want)
+            (S
+              (VP (TO to)
+                (VP (VB re-submit)
+                  (NP (PRP$ their) (VBN revised) (NNS values))
+                  (ADVP (RB as) (RB well)))))))))
+    (CC and)
+    (S
+      (NP (PRP we))
+      (VP (MD would)
+        (VP (VB find)
+          (NP (PRP ourselves))
+          (PP (IN in)
+            (NP
+              (NP (DT a) (JJ constant) (NN state))
+              (PP (IN of)
+                (NP (NN adjustment))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, tried-4)
+nsubj(tried-4, We-1)
+aux(tried-4, have-2)
+neg(tried-4, not-3)
+xcomp(tried-4, this-5)
+advmod(this-5, before-6)
+punct(tried-4, ,-7)
+advmod(suspect-11, however-8)
+punct(suspect-11, ,-9)
+nsubj(suspect-11, I-10)
+conj:and(tried-4, suspect-11)
+mark(approached-13, if-12)
+advcl:if(suspect-11, approached-13)
+case(premium-17, with-14)
+det(premium-17, the-15)
+amod(premium-17, additional-16)
+nmod:with(approached-13, premium-17)
+case(result-20, as-18)
+det(result-20, a-19)
+nmod:as(approached-13, result-20)
+acl(result-20, reducing-21)
+nmod:poss(allocation-24, ENA-22)
+case(ENA-22, 's-23)
+dobj(reducing-21, allocation-24)
+punct(suspect-11, ,-25)
+dep(other-28, all-26)
+det(other-28, the-27)
+advmod(suspect-11, other-28)
+amod(entities-30, operating-29)
+nsubj(want-32, entities-30)
+nsubj:xsubj(re-submit-34, entities-30)
+aux(want-32, would-31)
+parataxis(suspect-11, want-32)
+mark(re-submit-34, to-33)
+xcomp(want-32, re-submit-34)
+nmod:poss(values-37, their-35)
+amod(values-37, revised-36)
+dobj(re-submit-34, values-37)
+advmod(re-submit-34, as-38)
+mwe(as-38, well-39)
+cc(tried-4, and-40)
+nsubj(find-43, we-41)
+aux(find-43, would-42)
+conj:and(tried-4, find-43)
+dobj(find-43, ourselves-44)
+case(state-48, in-45)
+det(state-48, a-46)
+amod(state-48, constant-47)
+nmod:in(find-43, state-48)
+case(adjustment-50, of-49)
+nmod:of(state-48, adjustment-50)
+punct(tried-4, .-51)
+
+Extracted the following NER entity mentions:
+ENA	ORGANIZATION
+
+Sentence #10 (17 tokens):
+In view of the time required, this is neither practical nor cost effective for Enron.
+
+Tokens:
+[Text=In CharacterOffsetBegin=1180 CharacterOffsetEnd=1182 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=view CharacterOffsetBegin=1183 CharacterOffsetEnd=1187 PartOfSpeech=NN Lemma=view NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=1188 CharacterOffsetEnd=1190 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1191 CharacterOffsetEnd=1194 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=1195 CharacterOffsetEnd=1199 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=required CharacterOffsetBegin=1200 CharacterOffsetEnd=1208 PartOfSpeech=VBN Lemma=require NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1208 CharacterOffsetEnd=1209 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=1210 CharacterOffsetEnd=1214 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=1215 CharacterOffsetEnd=1217 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=neither CharacterOffsetBegin=1218 CharacterOffsetEnd=1225 PartOfSpeech=DT Lemma=neither NamedEntityTag=O]
+[Text=practical CharacterOffsetBegin=1226 CharacterOffsetEnd=1235 PartOfSpeech=JJ Lemma=practical NamedEntityTag=O]
+[Text=nor CharacterOffsetBegin=1236 CharacterOffsetEnd=1239 PartOfSpeech=CC Lemma=nor NamedEntityTag=O]
+[Text=cost CharacterOffsetBegin=1240 CharacterOffsetEnd=1244 PartOfSpeech=NN Lemma=cost NamedEntityTag=O]
+[Text=effective CharacterOffsetBegin=1245 CharacterOffsetEnd=1254 PartOfSpeech=JJ Lemma=effective NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=1255 CharacterOffsetEnd=1258 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=1259 CharacterOffsetEnd=1264 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=1264 CharacterOffsetEnd=1265 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP (NN view))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN time))
+            (VP (VBN required))))))
+    (, ,)
+    (NP (DT this))
+    (VP (VBZ is)
+      (ADJP (DT neither)
+        (ADJP (JJ practical))
+        (CC nor)
+        (ADJP (NN cost) (JJ effective)))
+      (PP (IN for)
+        (NP (NNP Enron))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, practical-11)
+case(view-2, In-1)
+nmod:in(practical-11, view-2)
+case(time-5, of-3)
+det(time-5, the-4)
+nmod:of(view-2, time-5)
+acl(time-5, required-6)
+punct(practical-11, ,-7)
+nsubj(practical-11, this-8)
+nsubj(effective-14, this-8)
+cop(practical-11, is-9)
+cc:preconj(practical-11, neither-10)
+cc(practical-11, nor-12)
+nmod:npmod(effective-14, cost-13)
+conj:nor(practical-11, effective-14)
+case(Enron-16, for-15)
+nmod:for(practical-11, Enron-16)
+punct(practical-11, .-17)
+
+Extracted the following NER entity mentions:
+Enron	ORGANIZATION
+
+Sentence #11 (28 tokens):
+In view of the relatively small numbers, I doubt that Corp. would entertain this proposition either, however, we can approach them if you wish.
+
+Tokens:
+[Text=In CharacterOffsetBegin=1267 CharacterOffsetEnd=1269 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=view CharacterOffsetBegin=1270 CharacterOffsetEnd=1274 PartOfSpeech=NN Lemma=view NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=1275 CharacterOffsetEnd=1277 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1278 CharacterOffsetEnd=1281 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=relatively CharacterOffsetBegin=1282 CharacterOffsetEnd=1292 PartOfSpeech=RB Lemma=relatively NamedEntityTag=O]
+[Text=small CharacterOffsetBegin=1293 CharacterOffsetEnd=1298 PartOfSpeech=JJ Lemma=small NamedEntityTag=O]
+[Text=numbers CharacterOffsetBegin=1299 CharacterOffsetEnd=1306 PartOfSpeech=NNS Lemma=number NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1306 CharacterOffsetEnd=1307 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=1308 CharacterOffsetEnd=1309 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=doubt CharacterOffsetBegin=1310 CharacterOffsetEnd=1315 PartOfSpeech=VBP Lemma=doubt NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=1316 CharacterOffsetEnd=1320 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=Corp. CharacterOffsetBegin=1321 CharacterOffsetEnd=1326 PartOfSpeech=NNP Lemma=Corp. NamedEntityTag=ORGANIZATION]
+[Text=would CharacterOffsetBegin=1327 CharacterOffsetEnd=1332 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=entertain CharacterOffsetBegin=1333 CharacterOffsetEnd=1342 PartOfSpeech=VB Lemma=entertain NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=1343 CharacterOffsetEnd=1347 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=proposition CharacterOffsetBegin=1348 CharacterOffsetEnd=1359 PartOfSpeech=NN Lemma=proposition NamedEntityTag=O]
+[Text=either CharacterOffsetBegin=1360 CharacterOffsetEnd=1366 PartOfSpeech=RB Lemma=either NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1366 CharacterOffsetEnd=1367 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=however CharacterOffsetBegin=1368 CharacterOffsetEnd=1375 PartOfSpeech=RB Lemma=however NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1375 CharacterOffsetEnd=1376 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=1377 CharacterOffsetEnd=1379 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=1380 CharacterOffsetEnd=1383 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=approach CharacterOffsetBegin=1384 CharacterOffsetEnd=1392 PartOfSpeech=VB Lemma=approach NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=1393 CharacterOffsetEnd=1397 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=1398 CharacterOffsetEnd=1400 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=1401 CharacterOffsetEnd=1404 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=wish CharacterOffsetBegin=1405 CharacterOffsetEnd=1409 PartOfSpeech=VBP Lemma=wish NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1409 CharacterOffsetEnd=1410 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP (NN view))
+        (PP (IN of)
+          (NP (DT the)
+            (ADJP (RB relatively) (JJ small))
+            (NNS numbers)))))
+    (PRN (, ,)
+      (S
+        (NP (PRP I))
+        (VP (VBP doubt)
+          (SBAR (IN that)
+            (S
+              (NP (NNP Corp.))
+              (VP (MD would)
+                (VP (VB entertain)
+                  (NP (DT this) (NN proposition))
+                  (ADVP (RB either))
+                  (, ,)
+                  (ADVP (RB however))))))))
+      (, ,))
+    (NP (PRP we))
+    (VP (MD can)
+      (VP (VB approach)
+        (NP (PRP them))
+        (SBAR (IN if)
+          (S
+            (NP (PRP you))
+            (VP (VBP wish))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, approach-23)
+case(view-2, In-1)
+nmod:in(approach-23, view-2)
+case(numbers-7, of-3)
+det(numbers-7, the-4)
+advmod(small-6, relatively-5)
+amod(numbers-7, small-6)
+nmod:of(view-2, numbers-7)
+punct(doubt-10, ,-8)
+nsubj(doubt-10, I-9)
+parataxis(approach-23, doubt-10)
+mark(entertain-14, that-11)
+nsubj(entertain-14, Corp.-12)
+aux(entertain-14, would-13)
+ccomp(doubt-10, entertain-14)
+det(proposition-16, this-15)
+dobj(entertain-14, proposition-16)
+advmod(entertain-14, either-17)
+punct(entertain-14, ,-18)
+advmod(entertain-14, however-19)
+punct(doubt-10, ,-20)
+nsubj(approach-23, we-21)
+aux(approach-23, can-22)
+dobj(approach-23, them-24)
+mark(wish-27, if-25)
+nsubj(wish-27, you-26)
+advcl:if(approach-23, wish-27)
+punct(approach-23, .-28)
+
+Extracted the following NER entity mentions:
+Corp.	ORGANIZATION
+
+Coreference set:
+	(9,22,[22,24]) -> (1,17,[17,20]), that is: "ENA 's" -> "ENA 's 2001"
+
+Coreference set:
+	(6,36,[36,37]) -> (3,1,[1,2]), that is: "underwriters" -> "Underwriters"
+
+Coreference set:
+	(3,6,[6,9]) -> (4,3,[2,4]), that is: "values and exposures" -> "these values"
+
+Coreference set:
+	(8,8,[8,9]) -> (4,5,[5,6]), that is: "Enron" -> "Enron"
+	(10,16,[16,17]) -> (4,5,[5,6]), that is: "Enron" -> "Enron"
+
+Coreference set:
+	(6,31,[31,32]) -> (5,1,[1,2]), that is: "we" -> "We"
+	(7,2,[2,3]) -> (5,1,[1,2]), that is: "we" -> "We"
+	(7,9,[9,10]) -> (5,1,[1,2]), that is: "we" -> "We"
+	(7,15,[15,16]) -> (5,1,[1,2]), that is: "we" -> "We"
+	(9,1,[1,2]) -> (5,1,[1,2]), that is: "We" -> "We"
+	(9,41,[41,42]) -> (5,1,[1,2]), that is: "we" -> "We"
+	(9,44,[44,45]) -> (5,1,[1,2]), that is: "ourselves" -> "We"
+	(11,21,[21,22]) -> (5,1,[1,2]), that is: "we" -> "We"
+
+Coreference set:
+	(9,35,[35,36]) -> (9,5,[5,6]), that is: "their" -> "this"
+	(10,8,[8,9]) -> (9,5,[5,6]), that is: "this" -> "this"
+	(11,24,[24,25]) -> (9,5,[5,6]), that is: "them" -> "this"
+
+Coreference set:
+	(11,9,[9,10]) -> (9,10,[10,11]), that is: "I" -> "I"

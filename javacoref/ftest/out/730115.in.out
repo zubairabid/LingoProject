@@ -1,0 +1,287 @@
+Document: ID=730115.in (5 sentences, 69 tokens)
+
+Sentence #1 (13 tokens):
+Marcus,
+New Power wants to close out their gas hedge positions.
+
+Tokens:
+[Text=Marcus CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Marcus NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=New CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=New NamedEntityTag=ORGANIZATION]
+[Text=Power CharacterOffsetBegin=12 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=Power NamedEntityTag=ORGANIZATION]
+[Text=wants CharacterOffsetBegin=18 CharacterOffsetEnd=23 PartOfSpeech=VBZ Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=close CharacterOffsetBegin=27 CharacterOffsetEnd=32 PartOfSpeech=VB Lemma=close NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=37 CharacterOffsetEnd=42 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=gas CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=gas NamedEntityTag=O]
+[Text=hedge CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=hedge NamedEntityTag=O]
+[Text=positions CharacterOffsetBegin=53 CharacterOffsetEnd=62 PartOfSpeech=NNS Lemma=position NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Marcus))
+    (, ,)
+    (NP (NNP New) (NNP Power))
+    (VP (VBZ wants)
+      (S
+        (VP (TO to)
+          (VP (VB close)
+            (PRT (RP out))
+            (NP (PRP$ their) (NN gas) (NN hedge) (NNS positions))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, wants-5)
+nsubj(wants-5, Marcus-1)
+nsubj:xsubj(close-7, Marcus-1)
+punct(wants-5, ,-2)
+compound(Power-4, New-3)
+nsubj(wants-5, Power-4)
+nsubj:xsubj(close-7, Power-4)
+mark(close-7, to-6)
+xcomp(wants-5, close-7)
+compound:prt(close-7, out-8)
+nmod:poss(positions-12, their-9)
+compound(positions-12, gas-10)
+compound(positions-12, hedge-11)
+dobj(close-7, positions-12)
+punct(wants-5, .-13)
+
+Extracted the following NER entity mentions:
+Marcus	PERSON
+New Power	ORGANIZATION
+
+Sentence #2 (10 tokens):
+Under which Enron entity were these financial deals confirmed.
+
+Tokens:
+[Text=Under CharacterOffsetBegin=65 CharacterOffsetEnd=70 PartOfSpeech=IN Lemma=under NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=71 CharacterOffsetEnd=76 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=77 CharacterOffsetEnd=82 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=entity CharacterOffsetBegin=83 CharacterOffsetEnd=89 PartOfSpeech=NN Lemma=entity NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=90 CharacterOffsetEnd=94 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=95 CharacterOffsetEnd=100 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=financial CharacterOffsetBegin=101 CharacterOffsetEnd=110 PartOfSpeech=JJ Lemma=financial NamedEntityTag=O]
+[Text=deals CharacterOffsetBegin=111 CharacterOffsetEnd=116 PartOfSpeech=NNS Lemma=deal NamedEntityTag=O]
+[Text=confirmed CharacterOffsetBegin=117 CharacterOffsetEnd=126 PartOfSpeech=VBD Lemma=confirm NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=126 CharacterOffsetEnd=127 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN Under)
+      (SBAR
+        (WHNP (WDT which))
+        (S
+          (NP (NNP Enron) (NN entity))
+          (VP (VBD were)))))
+    (NP (DT these) (JJ financial) (NNS deals))
+    (VP (VBD confirmed))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, confirmed-9)
+mark(were-5, Under-1)
+dobj(were-5, which-2)
+compound(entity-4, Enron-3)
+nsubj(were-5, entity-4)
+advcl:under(confirmed-9, were-5)
+det(deals-8, these-6)
+amod(deals-8, financial-7)
+nsubj(confirmed-9, deals-8)
+punct(confirmed-9, .-10)
+
+Extracted the following NER entity mentions:
+Enron	ORGANIZATION
+
+Sentence #3 (26 tokens):
+It probably makes sense to have them execute the opposite trades within the same legal entity to improve netting rights and cap exposure by entity.
+
+Tokens:
+[Text=It CharacterOffsetBegin=129 CharacterOffsetEnd=131 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=probably CharacterOffsetBegin=132 CharacterOffsetEnd=140 PartOfSpeech=RB Lemma=probably NamedEntityTag=O]
+[Text=makes CharacterOffsetBegin=141 CharacterOffsetEnd=146 PartOfSpeech=VBZ Lemma=make NamedEntityTag=O]
+[Text=sense CharacterOffsetBegin=147 CharacterOffsetEnd=152 PartOfSpeech=NN Lemma=sense NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=153 CharacterOffsetEnd=155 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=156 CharacterOffsetEnd=160 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=161 CharacterOffsetEnd=165 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=execute CharacterOffsetBegin=166 CharacterOffsetEnd=173 PartOfSpeech=VB Lemma=execute NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=174 CharacterOffsetEnd=177 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=opposite CharacterOffsetBegin=178 CharacterOffsetEnd=186 PartOfSpeech=JJ Lemma=opposite NamedEntityTag=O]
+[Text=trades CharacterOffsetBegin=187 CharacterOffsetEnd=193 PartOfSpeech=NNS Lemma=trade NamedEntityTag=O]
+[Text=within CharacterOffsetBegin=194 CharacterOffsetEnd=200 PartOfSpeech=IN Lemma=within NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=201 CharacterOffsetEnd=204 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=same CharacterOffsetBegin=205 CharacterOffsetEnd=209 PartOfSpeech=JJ Lemma=same NamedEntityTag=O]
+[Text=legal CharacterOffsetBegin=210 CharacterOffsetEnd=215 PartOfSpeech=JJ Lemma=legal NamedEntityTag=O]
+[Text=entity CharacterOffsetBegin=216 CharacterOffsetEnd=222 PartOfSpeech=NN Lemma=entity NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=223 CharacterOffsetEnd=225 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=improve CharacterOffsetBegin=226 CharacterOffsetEnd=233 PartOfSpeech=VB Lemma=improve NamedEntityTag=O]
+[Text=netting CharacterOffsetBegin=234 CharacterOffsetEnd=241 PartOfSpeech=VBG Lemma=net NamedEntityTag=O]
+[Text=rights CharacterOffsetBegin=242 CharacterOffsetEnd=248 PartOfSpeech=NNS Lemma=rights NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=249 CharacterOffsetEnd=252 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=cap CharacterOffsetBegin=253 CharacterOffsetEnd=256 PartOfSpeech=NN Lemma=cap NamedEntityTag=O]
+[Text=exposure CharacterOffsetBegin=257 CharacterOffsetEnd=265 PartOfSpeech=NN Lemma=exposure NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=266 CharacterOffsetEnd=268 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=entity CharacterOffsetBegin=269 CharacterOffsetEnd=275 PartOfSpeech=NN Lemma=entity NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=275 CharacterOffsetEnd=276 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (ADVP (RB probably))
+    (VP (VBZ makes)
+      (NP (NN sense))
+      (S
+        (VP (TO to)
+          (VP (VB have)
+            (S
+              (NP (PRP them))
+              (VP (VB execute)
+                (NP
+                  (NP (DT the) (JJ opposite) (NNS trades))
+                  (PP (IN within)
+                    (NP (DT the) (JJ same) (JJ legal) (NN entity))))
+                (S
+                  (VP (TO to)
+                    (VP (VB improve)
+                      (S
+                        (VP (VBG netting)
+                          (NP (NNS rights)
+                            (CC and)
+                            (NN cap) (NN exposure))
+                          (PP (IN by)
+                            (NP (NN entity))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, makes-3)
+nsubj(makes-3, It-1)
+advmod(makes-3, probably-2)
+dobj(makes-3, sense-4)
+mark(have-6, to-5)
+advcl:to(makes-3, have-6)
+nsubj(execute-8, them-7)
+ccomp(have-6, execute-8)
+det(trades-11, the-9)
+amod(trades-11, opposite-10)
+dobj(execute-8, trades-11)
+case(entity-16, within-12)
+det(entity-16, the-13)
+amod(entity-16, same-14)
+amod(entity-16, legal-15)
+nmod:within(trades-11, entity-16)
+mark(improve-18, to-17)
+advcl:to(execute-8, improve-18)
+xcomp(improve-18, netting-19)
+dobj(netting-19, rights-20)
+cc(rights-20, and-21)
+compound(exposure-23, cap-22)
+dobj(netting-19, exposure-23)
+conj:and(rights-20, exposure-23)
+case(entity-25, by-24)
+nmod:by(netting-19, entity-25)
+punct(makes-3, .-26)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (19 tokens):
+Please advise so I can inform the EES trading desk and ENA trading desk of how to proceed.
+
+Tokens:
+[Text=Please CharacterOffsetBegin=277 CharacterOffsetEnd=283 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=advise CharacterOffsetBegin=284 CharacterOffsetEnd=290 PartOfSpeech=VB Lemma=advise NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=291 CharacterOffsetEnd=293 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=294 CharacterOffsetEnd=295 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=296 CharacterOffsetEnd=299 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=inform CharacterOffsetBegin=300 CharacterOffsetEnd=306 PartOfSpeech=VB Lemma=inform NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=307 CharacterOffsetEnd=310 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=EES CharacterOffsetBegin=311 CharacterOffsetEnd=314 PartOfSpeech=NN Lemma=ees NamedEntityTag=O]
+[Text=trading CharacterOffsetBegin=315 CharacterOffsetEnd=322 PartOfSpeech=NN Lemma=trading NamedEntityTag=O]
+[Text=desk CharacterOffsetBegin=323 CharacterOffsetEnd=327 PartOfSpeech=NN Lemma=desk NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=328 CharacterOffsetEnd=331 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=ENA CharacterOffsetBegin=332 CharacterOffsetEnd=335 PartOfSpeech=NN Lemma=ena NamedEntityTag=ORGANIZATION]
+[Text=trading CharacterOffsetBegin=336 CharacterOffsetEnd=343 PartOfSpeech=NN Lemma=trading NamedEntityTag=O]
+[Text=desk CharacterOffsetBegin=344 CharacterOffsetEnd=348 PartOfSpeech=NN Lemma=desk NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=349 CharacterOffsetEnd=351 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=352 CharacterOffsetEnd=355 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=356 CharacterOffsetEnd=358 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=proceed CharacterOffsetBegin=359 CharacterOffsetEnd=366 PartOfSpeech=VB Lemma=proceed NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=366 CharacterOffsetEnd=367 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Please)
+      (VP (VB advise)
+        (SBAR (RB so)
+          (S
+            (NP (PRP I))
+            (VP (MD can)
+              (VP (VB inform)
+                (NP
+                  (NP (DT the) (NN EES) (NN trading) (NN desk)
+                    (CC and)
+                    (NN ENA) (NN trading) (NN desk))
+                  (PP (IN of)
+                    (SBAR
+                      (WHADVP (WRB how))
+                      (S
+                        (VP (TO to)
+                          (VP (VB proceed)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Please-1)
+xcomp(Please-1, advise-2)
+advmod(inform-6, so-3)
+nsubj(inform-6, I-4)
+aux(inform-6, can-5)
+ccomp(advise-2, inform-6)
+det(desk-10, the-7)
+compound(desk-10, EES-8)
+compound(desk-10, trading-9)
+dobj(inform-6, desk-10)
+cc(desk-10, and-11)
+compound(desk-14, ENA-12)
+compound(desk-14, trading-13)
+dobj(inform-6, desk-14)
+conj:and(desk-10, desk-14)
+mark(proceed-18, of-15)
+advmod(proceed-18, how-16)
+mark(proceed-18, to-17)
+acl:to(desk-10, proceed-18)
+punct(Please-1, .-19)
+
+Extracted the following NER entity mentions:
+ENA	ORGANIZATION
+
+Sentence #5 (1 tokens):
+Bill
+
+Tokens:
+[Text=Bill CharacterOffsetBegin=368 CharacterOffsetEnd=372 PartOfSpeech=NNP Lemma=Bill NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Bill)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Bill-1)
+
+Extracted the following NER entity mentions:
+Bill	PERSON
+
+Coreference set:
+	(3,7,[7,8]) -> (1,9,[9,10]), that is: "them" -> "their"
+
+Coreference set:
+	(3,1,[1,2]) -> (2,4,[3,5]), that is: "It" -> "Enron entity"

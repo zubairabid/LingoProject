@@ -1,0 +1,269 @@
+Document: ID=415270.in (3 sentences, 70 tokens)
+
+Sentence #1 (26 tokens):
+Per my discussions with Leslie Hansen and Dave Forster, please restrict
+Australian based counterparties from trading US physical power on a going
+forward basis.
+
+Tokens:
+[Text=Per CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=IN Lemma=per NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=discussions CharacterOffsetBegin=7 CharacterOffsetEnd=18 PartOfSpeech=NNS Lemma=discussion NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Leslie CharacterOffsetBegin=24 CharacterOffsetEnd=30 PartOfSpeech=NNP Lemma=Leslie NamedEntityTag=PERSON]
+[Text=Hansen CharacterOffsetBegin=31 CharacterOffsetEnd=37 PartOfSpeech=NNP Lemma=Hansen NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Dave CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=NNP Lemma=Dave NamedEntityTag=PERSON]
+[Text=Forster CharacterOffsetBegin=47 CharacterOffsetEnd=54 PartOfSpeech=NNP Lemma=Forster NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=please CharacterOffsetBegin=56 CharacterOffsetEnd=62 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=restrict CharacterOffsetBegin=63 CharacterOffsetEnd=71 PartOfSpeech=VB Lemma=restrict NamedEntityTag=O]
+[Text=Australian CharacterOffsetBegin=72 CharacterOffsetEnd=82 PartOfSpeech=JJ Lemma=australian NamedEntityTag=NATIONALITY]
+[Text=based CharacterOffsetBegin=83 CharacterOffsetEnd=88 PartOfSpeech=VBN Lemma=base NamedEntityTag=O]
+[Text=counterparties CharacterOffsetBegin=89 CharacterOffsetEnd=103 PartOfSpeech=NNS Lemma=counterparty NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=104 CharacterOffsetEnd=108 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=trading CharacterOffsetBegin=109 CharacterOffsetEnd=116 PartOfSpeech=NN Lemma=trading NamedEntityTag=O]
+[Text=US CharacterOffsetBegin=117 CharacterOffsetEnd=119 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=physical CharacterOffsetBegin=120 CharacterOffsetEnd=128 PartOfSpeech=JJ Lemma=physical NamedEntityTag=O]
+[Text=power CharacterOffsetBegin=129 CharacterOffsetEnd=134 PartOfSpeech=NN Lemma=power NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=135 CharacterOffsetEnd=137 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=138 CharacterOffsetEnd=139 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=going CharacterOffsetBegin=140 CharacterOffsetEnd=145 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=forward CharacterOffsetBegin=146 CharacterOffsetEnd=153 PartOfSpeech=RB Lemma=forward NamedEntityTag=O]
+[Text=basis CharacterOffsetBegin=154 CharacterOffsetEnd=159 PartOfSpeech=NN Lemma=basis NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=159 CharacterOffsetEnd=160 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN Per)
+      (NP
+        (NP (PRP$ my) (NNS discussions))
+        (PP (IN with)
+          (NP
+            (NP (NNP Leslie) (NNP Hansen))
+            (CC and)
+            (NP (NNP Dave) (NNP Forster))))))
+    (, ,)
+    (INTJ (VB please))
+    (VP (VB restrict)
+      (NP
+        (NP (JJ Australian) (VBN based) (NNS counterparties))
+        (PP (IN from)
+          (NP (NN trading) (NNP US) (JJ physical) (NN power)))
+        (PP (IN on)
+          (NP (DT a)
+            (S
+              (VP (VBG going)
+                (ADVP (RB forward))))
+            (NN basis)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, restrict-12)
+case(discussions-3, Per-1)
+nmod:poss(discussions-3, my-2)
+nmod:per(restrict-12, discussions-3)
+case(Hansen-6, with-4)
+compound(Hansen-6, Leslie-5)
+nmod:with(discussions-3, Hansen-6)
+cc(Hansen-6, and-7)
+compound(Forster-9, Dave-8)
+nmod:with(discussions-3, Forster-9)
+conj:and(Hansen-6, Forster-9)
+punct(restrict-12, ,-10)
+discourse(restrict-12, please-11)
+amod(counterparties-15, Australian-13)
+amod(counterparties-15, based-14)
+dobj(restrict-12, counterparties-15)
+case(power-20, from-16)
+compound(power-20, trading-17)
+compound(power-20, US-18)
+amod(power-20, physical-19)
+nmod:from(counterparties-15, power-20)
+case(basis-25, on-21)
+det(basis-25, a-22)
+dep(basis-25, going-23)
+advmod(going-23, forward-24)
+nmod:on(counterparties-15, basis-25)
+punct(restrict-12, .-26)
+
+Extracted the following NER entity mentions:
+Leslie Hansen	PERSON
+Dave Forster	PERSON
+Australian	NATIONALITY
+US	COUNTRY
+
+Sentence #2 (23 tokens):
+To the best of our knowledge, no Australian based
+counterparty has been granted a FERC license to trade physical US power.
+
+Tokens:
+[Text=To CharacterOffsetBegin=162 CharacterOffsetEnd=164 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=165 CharacterOffsetEnd=168 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=best CharacterOffsetBegin=169 CharacterOffsetEnd=173 PartOfSpeech=JJS Lemma=best NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=174 CharacterOffsetEnd=176 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=177 CharacterOffsetEnd=180 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=knowledge CharacterOffsetBegin=181 CharacterOffsetEnd=190 PartOfSpeech=NN Lemma=knowledge NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=190 CharacterOffsetEnd=191 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=192 CharacterOffsetEnd=194 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=Australian CharacterOffsetBegin=195 CharacterOffsetEnd=205 PartOfSpeech=JJ Lemma=australian NamedEntityTag=NATIONALITY]
+[Text=based CharacterOffsetBegin=206 CharacterOffsetEnd=211 PartOfSpeech=VBN Lemma=base NamedEntityTag=O]
+[Text=counterparty CharacterOffsetBegin=212 CharacterOffsetEnd=224 PartOfSpeech=NN Lemma=counterparty NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=225 CharacterOffsetEnd=228 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=229 CharacterOffsetEnd=233 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=granted CharacterOffsetBegin=234 CharacterOffsetEnd=241 PartOfSpeech=VBN Lemma=grant NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=242 CharacterOffsetEnd=243 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=FERC CharacterOffsetBegin=244 CharacterOffsetEnd=248 PartOfSpeech=NNP Lemma=FERC NamedEntityTag=ORGANIZATION]
+[Text=license CharacterOffsetBegin=249 CharacterOffsetEnd=256 PartOfSpeech=NN Lemma=license NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=257 CharacterOffsetEnd=259 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=trade CharacterOffsetBegin=260 CharacterOffsetEnd=265 PartOfSpeech=VB Lemma=trade NamedEntityTag=O]
+[Text=physical CharacterOffsetBegin=266 CharacterOffsetEnd=274 PartOfSpeech=JJ Lemma=physical NamedEntityTag=O]
+[Text=US CharacterOffsetBegin=275 CharacterOffsetEnd=277 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=power CharacterOffsetBegin=278 CharacterOffsetEnd=283 PartOfSpeech=NN Lemma=power NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=283 CharacterOffsetEnd=284 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (TO To)
+      (NP
+        (NP (DT the) (JJS best))
+        (PP (IN of)
+          (NP (PRP$ our) (NN knowledge)))))
+    (, ,)
+    (NP (DT no) (JJ Australian) (VBN based) (NN counterparty))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (VP (VBN granted)
+          (NP (DT a) (NNP FERC) (NN license))
+          (S
+            (VP (TO to)
+              (VP (VB trade)
+                (NP (JJ physical) (NNP US) (NN power))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, granted-14)
+case(best-3, To-1)
+det(best-3, the-2)
+nmod:to(granted-14, best-3)
+case(knowledge-6, of-4)
+nmod:poss(knowledge-6, our-5)
+nmod:of(best-3, knowledge-6)
+punct(granted-14, ,-7)
+neg(counterparty-11, no-8)
+amod(counterparty-11, Australian-9)
+amod(counterparty-11, based-10)
+nsubjpass(granted-14, counterparty-11)
+aux(granted-14, has-12)
+auxpass(granted-14, been-13)
+det(license-17, a-15)
+compound(license-17, FERC-16)
+dobj(granted-14, license-17)
+mark(trade-19, to-18)
+advcl:to(granted-14, trade-19)
+amod(power-22, physical-20)
+compound(power-22, US-21)
+dobj(trade-19, power-22)
+punct(granted-14, .-23)
+
+Extracted the following NER entity mentions:
+Australian	NATIONALITY
+FERC	ORGANIZATION
+US	COUNTRY
+
+Sentence #3 (21 tokens):
+This situation, of course, can change if a counterparty were to provide us
+evidence of their FERC licensing.
+
+Tokens:
+[Text=This CharacterOffsetBegin=285 CharacterOffsetEnd=289 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=situation CharacterOffsetBegin=290 CharacterOffsetEnd=299 PartOfSpeech=NN Lemma=situation NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=299 CharacterOffsetEnd=300 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=301 CharacterOffsetEnd=303 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=course CharacterOffsetBegin=304 CharacterOffsetEnd=310 PartOfSpeech=NN Lemma=course NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=310 CharacterOffsetEnd=311 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=312 CharacterOffsetEnd=315 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=change CharacterOffsetBegin=316 CharacterOffsetEnd=322 PartOfSpeech=VB Lemma=change NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=323 CharacterOffsetEnd=325 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=326 CharacterOffsetEnd=327 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=counterparty CharacterOffsetBegin=328 CharacterOffsetEnd=340 PartOfSpeech=NN Lemma=counterparty NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=341 CharacterOffsetEnd=345 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=346 CharacterOffsetEnd=348 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=provide CharacterOffsetBegin=349 CharacterOffsetEnd=356 PartOfSpeech=VB Lemma=provide NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=357 CharacterOffsetEnd=359 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=evidence CharacterOffsetBegin=360 CharacterOffsetEnd=368 PartOfSpeech=NN Lemma=evidence NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=369 CharacterOffsetEnd=371 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=372 CharacterOffsetEnd=377 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=FERC CharacterOffsetBegin=378 CharacterOffsetEnd=382 PartOfSpeech=NNP Lemma=FERC NamedEntityTag=ORGANIZATION]
+[Text=licensing CharacterOffsetBegin=383 CharacterOffsetEnd=392 PartOfSpeech=NN Lemma=licensing NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=392 CharacterOffsetEnd=393 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT This) (NN situation))
+      (, ,)
+      (PP (IN of)
+        (NP (NN course)))
+      (, ,))
+    (VP (MD can)
+      (VP (VB change)
+        (SBAR (IN if)
+          (S
+            (NP (DT a) (NN counterparty))
+            (VP (VBD were)
+              (S
+                (VP (TO to)
+                  (VP (VB provide)
+                    (NP (PRP us))
+                    (NP
+                      (NP (NN evidence))
+                      (PP (IN of)
+                        (NP (PRP$ their) (NNP FERC) (NN licensing))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, change-8)
+det(situation-2, This-1)
+nsubj(change-8, situation-2)
+punct(situation-2, ,-3)
+case(course-5, of-4)
+nmod:of(situation-2, course-5)
+punct(situation-2, ,-6)
+aux(change-8, can-7)
+mark(were-12, if-9)
+det(counterparty-11, a-10)
+nsubj(were-12, counterparty-11)
+nsubj:xsubj(provide-14, counterparty-11)
+advcl:if(change-8, were-12)
+mark(provide-14, to-13)
+xcomp(were-12, provide-14)
+iobj(provide-14, us-15)
+dobj(provide-14, evidence-16)
+case(licensing-20, of-17)
+nmod:poss(licensing-20, their-18)
+compound(licensing-20, FERC-19)
+nmod:of(evidence-16, licensing-20)
+punct(change-8, .-21)
+
+Extracted the following NER entity mentions:
+FERC	ORGANIZATION
+
+Coreference set:
+	(1,2,[2,3]) -> (1,18,[18,19]), that is: "my" -> "US"
+	(2,21,[21,22]) -> (1,18,[18,19]), that is: "US" -> "US"
+
+Coreference set:
+	(3,18,[18,19]) -> (1,6,[5,10]), that is: "their" -> "Leslie Hansen and Dave Forster"
+
+Coreference set:
+	(3,19,[19,20]) -> (2,16,[16,17]), that is: "FERC" -> "FERC"
+
+Coreference set:
+	(3,15,[15,16]) -> (2,5,[5,6]), that is: "us" -> "our"

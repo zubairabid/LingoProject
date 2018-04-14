@@ -1,0 +1,594 @@
+Document: ID=125654.in (9 sentences, 144 tokens)
+
+Sentence #1 (12 tokens):
+Just wanted to thank everybody who works with Mobil Beaumont Refinery.
+
+Tokens:
+[Text=Just CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=wanted CharacterOffsetBegin=5 CharacterOffsetEnd=11 PartOfSpeech=VBD Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=thank CharacterOffsetBegin=15 CharacterOffsetEnd=20 PartOfSpeech=VB Lemma=thank NamedEntityTag=O]
+[Text=everybody CharacterOffsetBegin=21 CharacterOffsetEnd=30 PartOfSpeech=NN Lemma=everybody NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=works CharacterOffsetBegin=35 CharacterOffsetEnd=40 PartOfSpeech=VBZ Lemma=work NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Mobil CharacterOffsetBegin=46 CharacterOffsetEnd=51 PartOfSpeech=NNP Lemma=Mobil NamedEntityTag=ORGANIZATION]
+[Text=Beaumont CharacterOffsetBegin=52 CharacterOffsetEnd=60 PartOfSpeech=NNP Lemma=Beaumont NamedEntityTag=ORGANIZATION]
+[Text=Refinery CharacterOffsetBegin=61 CharacterOffsetEnd=69 PartOfSpeech=NNP Lemma=Refinery NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SINV
+    (ADVP (RB Just))
+    (VP (VBD wanted)
+      (S
+        (VP (TO to)
+          (VP (VB thank)))))
+    (NP
+      (NP (NN everybody))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBZ works)
+            (PP (IN with)
+              (NP (NNP Mobil) (NNP Beaumont) (NNP Refinery)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, wanted-2)
+advmod(wanted-2, Just-1)
+mark(thank-4, to-3)
+xcomp(wanted-2, thank-4)
+nsubj(wanted-2, everybody-5)
+nsubj:xsubj(thank-4, everybody-5)
+nsubj(works-7, everybody-5)
+ref(everybody-5, who-6)
+acl:relcl(everybody-5, works-7)
+case(Refinery-11, with-8)
+compound(Refinery-11, Mobil-9)
+compound(Refinery-11, Beaumont-10)
+nmod:with(works-7, Refinery-11)
+punct(wanted-2, .-12)
+
+Extracted the following NER entity mentions:
+Mobil Beaumont Refinery	ORGANIZATION
+
+Sentence #2 (11 tokens):
+Our former three year deal with them expired September 30.
+
+Tokens:
+[Text=Our CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=former CharacterOffsetBegin=76 CharacterOffsetEnd=82 PartOfSpeech=JJ Lemma=former NamedEntityTag=O]
+[Text=three CharacterOffsetBegin=83 CharacterOffsetEnd=88 PartOfSpeech=CD Lemma=three NamedEntityTag=DURATION]
+[Text=year CharacterOffsetBegin=89 CharacterOffsetEnd=93 PartOfSpeech=NN Lemma=year NamedEntityTag=DURATION]
+[Text=deal CharacterOffsetBegin=94 CharacterOffsetEnd=98 PartOfSpeech=NN Lemma=deal NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=99 CharacterOffsetEnd=103 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=104 CharacterOffsetEnd=108 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=expired CharacterOffsetBegin=109 CharacterOffsetEnd=116 PartOfSpeech=VBD Lemma=expire NamedEntityTag=O]
+[Text=September CharacterOffsetBegin=117 CharacterOffsetEnd=126 PartOfSpeech=NNP Lemma=September NamedEntityTag=DATE NormalizedNamedEntityTag=****0930]
+[Text=30 CharacterOffsetBegin=127 CharacterOffsetEnd=129 PartOfSpeech=CD Lemma=30 NamedEntityTag=DATE NormalizedNamedEntityTag=****0930]
+[Text=. CharacterOffsetBegin=129 CharacterOffsetEnd=130 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (PRP$ Our) (JJ former) (CD three) (NN year) (NN deal))
+      (PP (IN with)
+        (NP (PRP them))))
+    (VP (VBD expired)
+      (NP-TMP (NNP September) (CD 30)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, expired-8)
+nmod:poss(deal-5, Our-1)
+amod(deal-5, former-2)
+nummod(deal-5, three-3)
+compound(deal-5, year-4)
+nsubj(expired-8, deal-5)
+case(them-7, with-6)
+nmod:with(deal-5, them-7)
+nmod:tmod(expired-8, September-9)
+nummod(September-9, 30-10)
+punct(expired-8, .-11)
+
+Extracted the following NER entity mentions:
+three year	DURATION
+September 30	DATE
+
+Sentence #3 (26 tokens):
+Last week, we
+(finally) executed a new contract that keeps HPL as their largest natural gas
+supplier through September 30, 2002.
+
+Tokens:
+[Text=Last CharacterOffsetBegin=132 CharacterOffsetEnd=136 PartOfSpeech=JJ Lemma=last NamedEntityTag=O]
+[Text=week CharacterOffsetBegin=137 CharacterOffsetEnd=141 PartOfSpeech=NN Lemma=week NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=141 CharacterOffsetEnd=142 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=143 CharacterOffsetEnd=145 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=146 CharacterOffsetEnd=147 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=finally CharacterOffsetBegin=147 CharacterOffsetEnd=154 PartOfSpeech=RB Lemma=finally NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=154 CharacterOffsetEnd=155 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=executed CharacterOffsetBegin=156 CharacterOffsetEnd=164 PartOfSpeech=VBD Lemma=execute NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=165 CharacterOffsetEnd=166 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=167 CharacterOffsetEnd=170 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=contract CharacterOffsetBegin=171 CharacterOffsetEnd=179 PartOfSpeech=NN Lemma=contract NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=180 CharacterOffsetEnd=184 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=keeps CharacterOffsetBegin=185 CharacterOffsetEnd=190 PartOfSpeech=VBZ Lemma=keep NamedEntityTag=O]
+[Text=HPL CharacterOffsetBegin=191 CharacterOffsetEnd=194 PartOfSpeech=NN Lemma=hpl NamedEntityTag=ORGANIZATION]
+[Text=as CharacterOffsetBegin=195 CharacterOffsetEnd=197 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=198 CharacterOffsetEnd=203 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=largest CharacterOffsetBegin=204 CharacterOffsetEnd=211 PartOfSpeech=JJS Lemma=largest NamedEntityTag=O]
+[Text=natural CharacterOffsetBegin=212 CharacterOffsetEnd=219 PartOfSpeech=JJ Lemma=natural NamedEntityTag=O]
+[Text=gas CharacterOffsetBegin=220 CharacterOffsetEnd=223 PartOfSpeech=NN Lemma=gas NamedEntityTag=O]
+[Text=supplier CharacterOffsetBegin=224 CharacterOffsetEnd=232 PartOfSpeech=NN Lemma=supplier NamedEntityTag=O]
+[Text=through CharacterOffsetBegin=233 CharacterOffsetEnd=240 PartOfSpeech=IN Lemma=through NamedEntityTag=O]
+[Text=September CharacterOffsetBegin=241 CharacterOffsetEnd=250 PartOfSpeech=NNP Lemma=September NamedEntityTag=DATE NormalizedNamedEntityTag=20020930]
+[Text=30 CharacterOffsetBegin=251 CharacterOffsetEnd=253 PartOfSpeech=CD Lemma=30 NamedEntityTag=DATE NormalizedNamedEntityTag=20020930]
+[Text=, CharacterOffsetBegin=253 CharacterOffsetEnd=254 PartOfSpeech=, Lemma=, NamedEntityTag=DATE NormalizedNamedEntityTag=20020930]
+[Text=2002 CharacterOffsetBegin=255 CharacterOffsetEnd=259 PartOfSpeech=CD Lemma=2002 NamedEntityTag=DATE NormalizedNamedEntityTag=20020930]
+[Text=. CharacterOffsetBegin=259 CharacterOffsetEnd=260 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP-TMP (JJ Last) (NN week))
+    (, ,)
+    (NP (PRP we)
+      (PRN (-LRB- -LRB-)
+        (ADVP (RB finally))
+        (-RRB- -RRB-)))
+    (VP (VBD executed)
+      (NP
+        (NP (DT a) (JJ new) (NN contract))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ keeps)
+              (NP (NN HPL))
+              (PP (IN as)
+                (NP
+                  (NP (PRP$ their) (JJS largest) (JJ natural) (NN gas) (NN supplier))
+                  (PP (IN through)
+                    (NP (NNP September) (CD 30) (, ,) (CD 2002))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, executed-8)
+amod(week-2, Last-1)
+nmod:tmod(executed-8, week-2)
+punct(executed-8, ,-3)
+nsubj(executed-8, we-4)
+punct(finally-6, -LRB--5)
+dep(we-4, finally-6)
+punct(finally-6, -RRB--7)
+det(contract-11, a-9)
+amod(contract-11, new-10)
+dobj(executed-8, contract-11)
+nsubj(keeps-13, contract-11)
+ref(contract-11, that-12)
+acl:relcl(contract-11, keeps-13)
+dobj(keeps-13, HPL-14)
+case(supplier-20, as-15)
+nmod:poss(supplier-20, their-16)
+amod(supplier-20, largest-17)
+amod(supplier-20, natural-18)
+compound(supplier-20, gas-19)
+nmod:as(keeps-13, supplier-20)
+case(September-22, through-21)
+nmod:through(supplier-20, September-22)
+nummod(September-22, 30-23)
+punct(September-22, ,-24)
+nummod(September-22, 2002-25)
+punct(executed-8, .-26)
+
+Extracted the following NER entity mentions:
+HPL	ORGANIZATION
+September 30, 2002	DATE
+
+Sentence #4 (23 tokens):
+Also, when their volumes go up in early
+2001, they will once again be HPL's single largest industrial customer.
+
+Tokens:
+[Text=Also CharacterOffsetBegin=262 CharacterOffsetEnd=266 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=266 CharacterOffsetEnd=267 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=268 CharacterOffsetEnd=272 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=273 CharacterOffsetEnd=278 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=volumes CharacterOffsetBegin=279 CharacterOffsetEnd=286 PartOfSpeech=NNS Lemma=volume NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=287 CharacterOffsetEnd=289 PartOfSpeech=VBP Lemma=go NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=290 CharacterOffsetEnd=292 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=293 CharacterOffsetEnd=295 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=early CharacterOffsetBegin=296 CharacterOffsetEnd=301 PartOfSpeech=JJ Lemma=early NamedEntityTag=O]
+[Text=2001 CharacterOffsetBegin=302 CharacterOffsetEnd=306 PartOfSpeech=CD Lemma=2001 NamedEntityTag=DATE NormalizedNamedEntityTag=2001]
+[Text=, CharacterOffsetBegin=306 CharacterOffsetEnd=307 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=308 CharacterOffsetEnd=312 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=313 CharacterOffsetEnd=317 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=once CharacterOffsetBegin=318 CharacterOffsetEnd=322 PartOfSpeech=RB Lemma=once NamedEntityTag=O]
+[Text=again CharacterOffsetBegin=323 CharacterOffsetEnd=328 PartOfSpeech=RB Lemma=again NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=329 CharacterOffsetEnd=331 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=HPL CharacterOffsetBegin=332 CharacterOffsetEnd=335 PartOfSpeech=NN Lemma=hpl NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=335 CharacterOffsetEnd=337 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=single CharacterOffsetBegin=338 CharacterOffsetEnd=344 PartOfSpeech=JJ Lemma=single NamedEntityTag=O]
+[Text=largest CharacterOffsetBegin=345 CharacterOffsetEnd=352 PartOfSpeech=JJS Lemma=largest NamedEntityTag=O]
+[Text=industrial CharacterOffsetBegin=353 CharacterOffsetEnd=363 PartOfSpeech=JJ Lemma=industrial NamedEntityTag=O]
+[Text=customer CharacterOffsetBegin=364 CharacterOffsetEnd=372 PartOfSpeech=NN Lemma=customer NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=372 CharacterOffsetEnd=373 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Also))
+    (, ,)
+    (SBAR
+      (WHADVP (WRB when))
+      (S
+        (NP (PRP$ their) (NNS volumes))
+        (VP (VBP go)
+          (PRT (RP up))
+          (PP (IN in)
+            (NP (JJ early) (CD 2001))))))
+    (, ,)
+    (NP (PRP they))
+    (VP (MD will)
+      (ADVP (RB once) (RB again))
+      (VP (VB be)
+        (NP
+          (NP (NN HPL) (POS 's))
+          (ADJP (JJ single) (JJS largest))
+          (JJ industrial) (NN customer))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, customer-22)
+advmod(customer-22, Also-1)
+punct(customer-22, ,-2)
+advmod(go-6, when-3)
+nmod:poss(volumes-5, their-4)
+nsubj(go-6, volumes-5)
+advcl(customer-22, go-6)
+compound:prt(go-6, up-7)
+case(2001-10, in-8)
+amod(2001-10, early-9)
+nmod:in(go-6, 2001-10)
+punct(customer-22, ,-11)
+nsubj(customer-22, they-12)
+aux(customer-22, will-13)
+advmod(again-15, once-14)
+advmod(customer-22, again-15)
+cop(customer-22, be-16)
+nmod:poss(customer-22, HPL-17)
+case(HPL-17, 's-18)
+amod(customer-22, single-19)
+dep(single-19, largest-20)
+amod(customer-22, industrial-21)
+punct(customer-22, .-23)
+
+Extracted the following NER entity mentions:
+2001	DATE
+HPL	ORGANIZATION
+
+Sentence #5 (13 tokens):
+Everybody's hard work in keeping this customer happy has paid off.
+
+Tokens:
+[Text=Everybody CharacterOffsetBegin=375 CharacterOffsetEnd=384 PartOfSpeech=NN Lemma=everybody NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=384 CharacterOffsetEnd=386 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=hard CharacterOffsetBegin=387 CharacterOffsetEnd=391 PartOfSpeech=JJ Lemma=hard NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=392 CharacterOffsetEnd=396 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=397 CharacterOffsetEnd=399 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=keeping CharacterOffsetBegin=400 CharacterOffsetEnd=407 PartOfSpeech=VBG Lemma=keep NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=408 CharacterOffsetEnd=412 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=customer CharacterOffsetBegin=413 CharacterOffsetEnd=421 PartOfSpeech=NN Lemma=customer NamedEntityTag=O]
+[Text=happy CharacterOffsetBegin=422 CharacterOffsetEnd=427 PartOfSpeech=JJ Lemma=happy NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=428 CharacterOffsetEnd=431 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=paid CharacterOffsetBegin=432 CharacterOffsetEnd=436 PartOfSpeech=VBN Lemma=pay NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=437 CharacterOffsetEnd=440 PartOfSpeech=RP Lemma=off NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=440 CharacterOffsetEnd=441 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NN Everybody) (POS 's))
+        (JJ hard) (NN work))
+      (PP (IN in)
+        (S
+          (VP (VBG keeping)
+            (S
+              (NP (DT this) (NN customer))
+              (ADJP (JJ happy)))))))
+    (VP (VBZ has)
+      (VP (VBN paid)
+        (PRT (RP off))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, paid-11)
+nmod:poss(work-4, Everybody-1)
+case(Everybody-1, 's-2)
+amod(work-4, hard-3)
+nsubj(paid-11, work-4)
+mark(keeping-6, in-5)
+acl:in(work-4, keeping-6)
+det(customer-8, this-7)
+nsubj(happy-9, customer-8)
+xcomp(keeping-6, happy-9)
+aux(paid-11, has-10)
+compound:prt(paid-11, off-12)
+punct(paid-11, .-13)
+
+Extracted the following NER entity mentions:
+
+Sentence #6 (31 tokens):
+Although
+they can be very demanding to work with (particularly now that they are part
+of Exxon), they know that HPL provides them the best overall service.
+
+Tokens:
+[Text=Although CharacterOffsetBegin=443 CharacterOffsetEnd=451 PartOfSpeech=IN Lemma=although NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=452 CharacterOffsetEnd=456 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=457 CharacterOffsetEnd=460 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=461 CharacterOffsetEnd=463 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=464 CharacterOffsetEnd=468 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=demanding CharacterOffsetBegin=469 CharacterOffsetEnd=478 PartOfSpeech=VBG Lemma=demand NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=479 CharacterOffsetEnd=481 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=482 CharacterOffsetEnd=486 PartOfSpeech=VB Lemma=work NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=487 CharacterOffsetEnd=491 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=492 CharacterOffsetEnd=493 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=particularly CharacterOffsetBegin=493 CharacterOffsetEnd=505 PartOfSpeech=RB Lemma=particularly NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=506 CharacterOffsetEnd=509 PartOfSpeech=RB Lemma=now NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=510 CharacterOffsetEnd=514 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=515 CharacterOffsetEnd=519 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=520 CharacterOffsetEnd=523 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=part CharacterOffsetBegin=524 CharacterOffsetEnd=528 PartOfSpeech=NN Lemma=part NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=529 CharacterOffsetEnd=531 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Exxon CharacterOffsetBegin=532 CharacterOffsetEnd=537 PartOfSpeech=NNP Lemma=Exxon NamedEntityTag=ORGANIZATION]
+[Text=-RRB- CharacterOffsetBegin=537 CharacterOffsetEnd=538 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=538 CharacterOffsetEnd=539 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=540 CharacterOffsetEnd=544 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=545 CharacterOffsetEnd=549 PartOfSpeech=VBP Lemma=know NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=550 CharacterOffsetEnd=554 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=HPL CharacterOffsetBegin=555 CharacterOffsetEnd=558 PartOfSpeech=NN Lemma=hpl NamedEntityTag=ORGANIZATION]
+[Text=provides CharacterOffsetBegin=559 CharacterOffsetEnd=567 PartOfSpeech=VBZ Lemma=provide NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=568 CharacterOffsetEnd=572 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=573 CharacterOffsetEnd=576 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=best CharacterOffsetBegin=577 CharacterOffsetEnd=581 PartOfSpeech=JJS Lemma=best NamedEntityTag=O]
+[Text=overall CharacterOffsetBegin=582 CharacterOffsetEnd=589 PartOfSpeech=JJ Lemma=overall NamedEntityTag=O]
+[Text=service CharacterOffsetBegin=590 CharacterOffsetEnd=597 PartOfSpeech=NN Lemma=service NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=597 CharacterOffsetEnd=598 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN Although)
+      (S
+        (NP (PRP they))
+        (VP (MD can)
+          (VP (VB be)
+            (ADJP (RB very)
+              (S
+                (VP
+                  (VP (VBG demanding)
+                    (S
+                      (VP (TO to)
+                        (VP (VB work)
+                          (PP (IN with))))))
+                  (-LRB- -LRB-)
+                  (SBAR (RB particularly) (RB now) (IN that)
+                    (S
+                      (NP (PRP they))
+                      (VP (VBP are)
+                        (NP
+                          (NP (NN part))
+                          (PP (IN of)
+                            (NP (NNP Exxon)))))))
+                  (-RRB- -RRB-))))))))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBP know)
+      (SBAR (IN that)
+        (S
+          (NP (NN HPL))
+          (VP (VBZ provides)
+            (NP (PRP them))
+            (NP (DT the) (JJS best) (JJ overall) (NN service))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, know-22)
+mark(very-5, Although-1)
+nsubj(very-5, they-2)
+aux(very-5, can-3)
+cop(very-5, be-4)
+advcl:although(know-22, very-5)
+dep(very-5, demanding-6)
+mark(work-8, to-7)
+xcomp(demanding-6, work-8)
+nmod(work-8, with-9)
+punct(demanding-6, -LRB--10)
+advmod(part-16, particularly-11)
+advmod(part-16, now-12)
+mark(part-16, that-13)
+nsubj(part-16, they-14)
+cop(part-16, are-15)
+advcl:that(demanding-6, part-16)
+case(Exxon-18, of-17)
+nmod:of(part-16, Exxon-18)
+punct(demanding-6, -RRB--19)
+punct(know-22, ,-20)
+nsubj(know-22, they-21)
+mark(provides-25, that-23)
+nsubj(provides-25, HPL-24)
+ccomp(know-22, provides-25)
+iobj(provides-25, them-26)
+det(service-30, the-27)
+amod(service-30, best-28)
+amod(service-30, overall-29)
+dobj(provides-25, service-30)
+punct(know-22, .-31)
+
+Extracted the following NER entity mentions:
+Exxon	ORGANIZATION
+HPL	ORGANIZATION
+
+Sentence #7 (20 tokens):
+Please pass on thanks to anyone I've left off the list who has worked with
+Mobil Beaumont Refinery.
+
+Tokens:
+[Text=Please CharacterOffsetBegin=600 CharacterOffsetEnd=606 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=pass CharacterOffsetBegin=607 CharacterOffsetEnd=611 PartOfSpeech=VB Lemma=pass NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=612 CharacterOffsetEnd=614 PartOfSpeech=RP Lemma=on NamedEntityTag=O]
+[Text=thanks CharacterOffsetBegin=615 CharacterOffsetEnd=621 PartOfSpeech=NNS Lemma=thanks NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=622 CharacterOffsetEnd=624 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=anyone CharacterOffsetBegin=625 CharacterOffsetEnd=631 PartOfSpeech=NN Lemma=anyone NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=632 CharacterOffsetEnd=633 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='ve CharacterOffsetBegin=633 CharacterOffsetEnd=636 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=left CharacterOffsetBegin=637 CharacterOffsetEnd=641 PartOfSpeech=VBN Lemma=leave NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=642 CharacterOffsetEnd=645 PartOfSpeech=RP Lemma=off NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=646 CharacterOffsetEnd=649 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=list CharacterOffsetBegin=650 CharacterOffsetEnd=654 PartOfSpeech=NN Lemma=list NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=655 CharacterOffsetEnd=658 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=659 CharacterOffsetEnd=662 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=worked CharacterOffsetBegin=663 CharacterOffsetEnd=669 PartOfSpeech=VBN Lemma=work NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=670 CharacterOffsetEnd=674 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Mobil CharacterOffsetBegin=675 CharacterOffsetEnd=680 PartOfSpeech=NNP Lemma=Mobil NamedEntityTag=ORGANIZATION]
+[Text=Beaumont CharacterOffsetBegin=681 CharacterOffsetEnd=689 PartOfSpeech=NNP Lemma=Beaumont NamedEntityTag=ORGANIZATION]
+[Text=Refinery CharacterOffsetBegin=690 CharacterOffsetEnd=698 PartOfSpeech=NNP Lemma=Refinery NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=698 CharacterOffsetEnd=699 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (VB Please)
+        (VP (VB pass)
+          (PRT (RP on))
+          (ADVP (NNS thanks)
+            (PP (TO to)
+              (NP (NN anyone)))))))
+    (NP (PRP I))
+    (VP (VBP 've)
+      (VP (VBN left)
+        (PRT (RP off))
+        (NP
+          (NP (DT the) (NN list))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBZ has)
+                (VP (VBN worked)
+                  (PP (IN with)
+                    (NP (NNP Mobil) (NNP Beaumont) (NNP Refinery))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, left-9)
+dep(left-9, Please-1)
+xcomp(Please-1, pass-2)
+compound:prt(pass-2, on-3)
+advmod(pass-2, thanks-4)
+case(anyone-6, to-5)
+nmod:to(thanks-4, anyone-6)
+nsubj(left-9, I-7)
+aux(left-9, 've-8)
+compound:prt(left-9, off-10)
+det(list-12, the-11)
+dobj(left-9, list-12)
+nsubj(worked-15, list-12)
+ref(list-12, who-13)
+aux(worked-15, has-14)
+acl:relcl(list-12, worked-15)
+case(Refinery-19, with-16)
+compound(Refinery-19, Mobil-17)
+compound(Refinery-19, Beaumont-18)
+nmod:with(worked-15, Refinery-19)
+punct(left-9, .-20)
+
+Extracted the following NER entity mentions:
+Mobil Beaumont Refinery	ORGANIZATION
+
+Sentence #8 (5 tokens):
+Have a great 2001.
+
+Tokens:
+[Text=Have CharacterOffsetBegin=701 CharacterOffsetEnd=705 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=706 CharacterOffsetEnd=707 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=708 CharacterOffsetEnd=713 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=2001 CharacterOffsetBegin=714 CharacterOffsetEnd=718 PartOfSpeech=CD Lemma=2001 NamedEntityTag=DATE NormalizedNamedEntityTag=2001]
+[Text=. CharacterOffsetBegin=718 CharacterOffsetEnd=719 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBP Have)
+      (NP (DT a) (JJ great) (CD 2001)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Have-1)
+det(2001-4, a-2)
+amod(2001-4, great-3)
+dobj(Have-1, 2001-4)
+punct(Have-1, .-5)
+
+Extracted the following NER entity mentions:
+2001	DATE
+
+Sentence #9 (3 tokens):
+Lee Papayoti
+713-853-5923
+
+Tokens:
+[Text=Lee CharacterOffsetBegin=721 CharacterOffsetEnd=724 PartOfSpeech=NNP Lemma=Lee NamedEntityTag=PERSON]
+[Text=Papayoti CharacterOffsetBegin=725 CharacterOffsetEnd=733 PartOfSpeech=NNP Lemma=Papayoti NamedEntityTag=PERSON]
+[Text=713-853-5923 CharacterOffsetBegin=734 CharacterOffsetEnd=746 PartOfSpeech=CD Lemma=713-853-5923 NamedEntityTag=NUMBER]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Lee) (NNP Papayoti))
+    (NP (CD 713-853-5923))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Papayoti-2)
+compound(Papayoti-2, Lee-1)
+dep(Papayoti-2, 713-853-5923-3)
+
+Extracted the following NER entity mentions:
+Lee Papayoti	PERSON
+713-853-5923	NUMBER
+
+Coreference set:
+	(7,19,[17,20]) -> (1,11,[9,12]), that is: "Mobil Beaumont Refinery" -> "Mobil Beaumont Refinery"
+
+Coreference set:
+	(3,4,[4,8]) -> (2,1,[1,2]), that is: "we -LRB- finally -RRB-" -> "Our"
+
+Coreference set:
+	(3,16,[16,17]) -> (2,7,[7,8]), that is: "their" -> "them"
+	(4,4,[4,5]) -> (2,7,[7,8]), that is: "their" -> "them"
+	(4,12,[12,13]) -> (2,7,[7,8]), that is: "they" -> "them"
+	(6,2,[2,3]) -> (2,7,[7,8]), that is: "they" -> "them"
+	(6,14,[14,15]) -> (2,7,[7,8]), that is: "they" -> "them"
+	(6,21,[21,22]) -> (2,7,[7,8]), that is: "they" -> "them"
+	(6,26,[26,27]) -> (2,7,[7,8]), that is: "them" -> "them"
+
+Coreference set:
+	(3,22,[22,26]) -> (2,9,[9,11]), that is: "September 30 , 2002" -> "September 30"
+
+Coreference set:
+	(5,8,[7,9]) -> (4,22,[17,23]), that is: "this customer" -> "HPL 's single largest industrial customer"

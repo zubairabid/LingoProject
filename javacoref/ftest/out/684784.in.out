@@ -1,0 +1,254 @@
+Document: ID=684784.in (4 sentences, 59 tokens)
+
+Sentence #1 (16 tokens):
+Tom --
+There does appear to be some intelligence gathering going on at the CPUC.
+
+Tokens:
+[Text=Tom CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=Tom NamedEntityTag=PERSON]
+[Text=-- CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=There CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=appear CharacterOffsetBegin=18 CharacterOffsetEnd=24 PartOfSpeech=VB Lemma=appear NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=intelligence CharacterOffsetBegin=36 CharacterOffsetEnd=48 PartOfSpeech=NN Lemma=intelligence NamedEntityTag=O]
+[Text=gathering CharacterOffsetBegin=49 CharacterOffsetEnd=58 PartOfSpeech=NN Lemma=gathering NamedEntityTag=O]
+[Text=going CharacterOffsetBegin=59 CharacterOffsetEnd=64 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=65 CharacterOffsetEnd=67 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=68 CharacterOffsetEnd=70 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=71 CharacterOffsetEnd=74 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=CPUC CharacterOffsetBegin=75 CharacterOffsetEnd=79 PartOfSpeech=NNP Lemma=CPUC NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Tom))
+    (: --)
+    (S
+      (NP (EX There))
+      (VP (VBZ does)
+        (VP (VB appear)
+          (S
+            (VP (TO to)
+              (VP (VB be)
+                (NP
+                  (NP (DT some) (NN intelligence) (NN gathering))
+                  (VP (VBG going)
+                    (PP (IN on)
+                      (PP (IN at)
+                        (NP (DT the) (NNP CPUC))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Tom-1)
+punct(Tom-1, ---2)
+expl(appear-5, There-3)
+aux(appear-5, does-4)
+parataxis(Tom-1, appear-5)
+mark(gathering-10, to-6)
+cop(gathering-10, be-7)
+det(gathering-10, some-8)
+compound(gathering-10, intelligence-9)
+xcomp(appear-5, gathering-10)
+acl(gathering-10, going-11)
+case(CPUC-15, on-12)
+case(CPUC-15, at-13)
+det(CPUC-15, the-14)
+nmod:at(going-11, CPUC-15)
+punct(Tom-1, .-16)
+
+Extracted the following NER entity mentions:
+Tom	PERSON
+CPUC	ORGANIZATION
+
+Sentence #2 (9 tokens):
+You should speak with legal about the inquiry.
+
+Tokens:
+[Text=You CharacterOffsetBegin=82 CharacterOffsetEnd=85 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=86 CharacterOffsetEnd=92 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=speak CharacterOffsetBegin=93 CharacterOffsetEnd=98 PartOfSpeech=VB Lemma=speak NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=99 CharacterOffsetEnd=103 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=legal CharacterOffsetBegin=104 CharacterOffsetEnd=109 PartOfSpeech=JJ Lemma=legal NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=110 CharacterOffsetEnd=115 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=116 CharacterOffsetEnd=119 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=inquiry CharacterOffsetBegin=120 CharacterOffsetEnd=127 PartOfSpeech=NN Lemma=inquiry NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=127 CharacterOffsetEnd=128 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (MD should)
+      (VP (VB speak)
+        (PP (IN with)
+          (NP
+            (NP (JJ legal))
+            (PP (IN about)
+              (NP (DT the) (NN inquiry)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, speak-3)
+nsubj(speak-3, You-1)
+aux(speak-3, should-2)
+case(legal-5, with-4)
+nmod:with(speak-3, legal-5)
+case(inquiry-8, about-6)
+det(inquiry-8, the-7)
+nmod:about(legal-5, inquiry-8)
+punct(speak-3, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (33 tokens):
+Clearly the CPUC has a right to ask anything they want - it is my understanding is that our customers have a confidentiality clause in their contract that prohibits them from responding.
+
+Tokens:
+[Text=Clearly CharacterOffsetBegin=130 CharacterOffsetEnd=137 PartOfSpeech=RB Lemma=clearly NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=138 CharacterOffsetEnd=141 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=CPUC CharacterOffsetBegin=142 CharacterOffsetEnd=146 PartOfSpeech=NNP Lemma=CPUC NamedEntityTag=ORGANIZATION]
+[Text=has CharacterOffsetBegin=147 CharacterOffsetEnd=150 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=151 CharacterOffsetEnd=152 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=153 CharacterOffsetEnd=158 PartOfSpeech=NN Lemma=right NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=159 CharacterOffsetEnd=161 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=ask CharacterOffsetBegin=162 CharacterOffsetEnd=165 PartOfSpeech=VB Lemma=ask NamedEntityTag=O]
+[Text=anything CharacterOffsetBegin=166 CharacterOffsetEnd=174 PartOfSpeech=NN Lemma=anything NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=175 CharacterOffsetEnd=179 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=180 CharacterOffsetEnd=184 PartOfSpeech=VBP Lemma=want NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=185 CharacterOffsetEnd=186 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=187 CharacterOffsetEnd=189 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=190 CharacterOffsetEnd=192 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=193 CharacterOffsetEnd=195 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=understanding CharacterOffsetBegin=196 CharacterOffsetEnd=209 PartOfSpeech=NN Lemma=understanding NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=210 CharacterOffsetEnd=212 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=213 CharacterOffsetEnd=217 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=218 CharacterOffsetEnd=221 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=customers CharacterOffsetBegin=222 CharacterOffsetEnd=231 PartOfSpeech=NNS Lemma=customer NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=232 CharacterOffsetEnd=236 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=237 CharacterOffsetEnd=238 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=confidentiality CharacterOffsetBegin=239 CharacterOffsetEnd=254 PartOfSpeech=NN Lemma=confidentiality NamedEntityTag=O]
+[Text=clause CharacterOffsetBegin=255 CharacterOffsetEnd=261 PartOfSpeech=NN Lemma=clause NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=262 CharacterOffsetEnd=264 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=265 CharacterOffsetEnd=270 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=contract CharacterOffsetBegin=271 CharacterOffsetEnd=279 PartOfSpeech=NN Lemma=contract NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=280 CharacterOffsetEnd=284 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=prohibits CharacterOffsetBegin=285 CharacterOffsetEnd=294 PartOfSpeech=VBZ Lemma=prohibit NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=295 CharacterOffsetEnd=299 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=300 CharacterOffsetEnd=304 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=responding CharacterOffsetBegin=305 CharacterOffsetEnd=315 PartOfSpeech=VBG Lemma=respond NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=315 CharacterOffsetEnd=316 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (ADVP (RB Clearly))
+      (NP (DT the) (NNP CPUC))
+      (VP (VBZ has)
+        (NP (DT a) (NN right)
+          (S
+            (VP (TO to)
+              (VP (VB ask)
+                (NP
+                  (NP (NN anything))
+                  (SBAR
+                    (S
+                      (NP (PRP they))
+                      (VP (VBP want)))))))))))
+    (: -)
+    (S
+      (NP (PRP it))
+      (VP (VBZ is)
+        (NP
+          (NP (PRP$ my) (NN understanding))
+          (SBAR
+            (S
+              (VP (VBZ is)
+                (SBAR (IN that)
+                  (S
+                    (NP (PRP$ our) (NNS customers))
+                    (VP (VBP have)
+                      (NP
+                        (NP (DT a) (NN confidentiality) (NN clause))
+                        (PP (IN in)
+                          (NP (PRP$ their) (NN contract)))
+                        (SBAR
+                          (WHNP (IN that))
+                          (S
+                            (VP (VBZ prohibits)
+                              (NP (PRP them))
+                              (PP (IN from)
+                                (S
+                                  (VP (VBG responding)))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, has-4)
+advmod(has-4, Clearly-1)
+det(CPUC-3, the-2)
+nsubj(has-4, CPUC-3)
+det(right-6, a-5)
+dobj(has-4, right-6)
+mark(ask-8, to-7)
+acl:to(right-6, ask-8)
+dobj(ask-8, anything-9)
+nsubj(want-11, they-10)
+acl:relcl(anything-9, want-11)
+punct(has-4, --12)
+nsubj(understanding-16, it-13)
+cop(understanding-16, is-14)
+nmod:poss(understanding-16, my-15)
+parataxis(has-4, understanding-16)
+mark(have-21, understanding-16)
+acl:relcl(understanding-16, is-17)
+ref(understanding-16, that-18)
+nmod:poss(customers-20, our-19)
+nsubj(have-21, customers-20)
+ccomp(is-17, have-21)
+det(clause-24, a-22)
+compound(clause-24, confidentiality-23)
+dobj(have-21, clause-24)
+nsubj(prohibits-29, clause-24)
+case(contract-27, in-25)
+nmod:poss(contract-27, their-26)
+nmod:in(clause-24, contract-27)
+ref(clause-24, that-28)
+acl:relcl(clause-24, prohibits-29)
+dobj(prohibits-29, them-30)
+mark(responding-32, from-31)
+advcl:from(prohibits-29, responding-32)
+punct(has-4, .-33)
+
+Extracted the following NER entity mentions:
+CPUC	ORGANIZATION
+
+Sentence #4 (1 tokens):
+Jim
+
+Tokens:
+[Text=Jim CharacterOffsetBegin=317 CharacterOffsetEnd=320 PartOfSpeech=NNP Lemma=Jim NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Jim)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Jim-1)
+
+Extracted the following NER entity mentions:
+Jim	PERSON
+
+Coreference set:
+	(3,3,[2,4]) -> (1,15,[14,16]), that is: "the CPUC" -> "the CPUC"
+
+Coreference set:
+	(3,26,[26,27]) -> (3,20,[19,21]), that is: "their" -> "our customers"
+	(3,30,[30,31]) -> (3,20,[19,21]), that is: "them" -> "our customers"

@@ -1,0 +1,142 @@
+Document: ID=1251669.in (3 sentences, 31 tokens)
+
+Sentence #1 (16 tokens):
+All,
+
+Please review and call your customers if they have not paid their invoice.
+
+Tokens:
+[Text=All CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Please CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=review CharacterOffsetBegin=13 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=review NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=call CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=VB Lemma=call NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=customers CharacterOffsetBegin=34 CharacterOffsetEnd=43 PartOfSpeech=NNS Lemma=customer NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=paid CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=VBN Lemma=pay NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=66 CharacterOffsetEnd=71 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=invoice CharacterOffsetBegin=72 CharacterOffsetEnd=79 PartOfSpeech=NN Lemma=invoice NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT All))
+    (, ,)
+    (VP
+      (VP (VB Please)
+        (NP (NN review)))
+      (CC and)
+      (VP (VB call)
+        (NP (PRP$ your) (NNS customers))
+        (SBAR (IN if)
+          (S
+            (NP (PRP they))
+            (VP (VBP have) (RB not)
+              (VP (VBN paid)
+                (NP (PRP$ their) (NN invoice))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Please-3)
+nsubj(Please-3, All-1)
+nsubj(call-6, All-1)
+punct(Please-3, ,-2)
+dobj(Please-3, review-4)
+cc(Please-3, and-5)
+conj:and(Please-3, call-6)
+nmod:poss(customers-8, your-7)
+dobj(call-6, customers-8)
+mark(paid-13, if-9)
+nsubj(paid-13, they-10)
+aux(paid-13, have-11)
+neg(paid-13, not-12)
+advcl:if(call-6, paid-13)
+nmod:poss(invoice-15, their-14)
+dobj(paid-13, invoice-15)
+punct(Please-3, .-16)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (11 tokens):
+Keep Market Services plugged into your conversations with the customer.
+
+Tokens:
+[Text=Keep CharacterOffsetBegin=82 CharacterOffsetEnd=86 PartOfSpeech=VB Lemma=keep NamedEntityTag=O]
+[Text=Market CharacterOffsetBegin=87 CharacterOffsetEnd=93 PartOfSpeech=NNP Lemma=Market NamedEntityTag=O]
+[Text=Services CharacterOffsetBegin=94 CharacterOffsetEnd=102 PartOfSpeech=NNP Lemma=Services NamedEntityTag=O]
+[Text=plugged CharacterOffsetBegin=103 CharacterOffsetEnd=110 PartOfSpeech=VBD Lemma=plug NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=111 CharacterOffsetEnd=115 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=116 CharacterOffsetEnd=120 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=conversations CharacterOffsetBegin=121 CharacterOffsetEnd=134 PartOfSpeech=NNS Lemma=conversation NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=135 CharacterOffsetEnd=139 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=140 CharacterOffsetEnd=143 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=customer CharacterOffsetBegin=144 CharacterOffsetEnd=152 PartOfSpeech=NN Lemma=customer NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=152 CharacterOffsetEnd=153 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Keep)
+      (SBAR
+        (S
+          (NP (NNP Market) (NNP Services))
+          (VP (VBD plugged)
+            (PP (IN into)
+              (NP (PRP$ your) (NNS conversations)))
+            (PP (IN with)
+              (NP (DT the) (NN customer)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Keep-1)
+compound(Services-3, Market-2)
+nsubj(plugged-4, Services-3)
+ccomp(Keep-1, plugged-4)
+case(conversations-7, into-5)
+nmod:poss(conversations-7, your-6)
+nmod:into(plugged-4, conversations-7)
+case(customer-10, with-8)
+det(customer-10, the-9)
+nmod:with(plugged-4, customer-10)
+punct(Keep-1, .-11)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (4 tokens):
+Thanks, Kim.
+
+Tokens:
+[Text=Thanks CharacterOffsetBegin=155 CharacterOffsetEnd=161 PartOfSpeech=NNS Lemma=thanks NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=161 CharacterOffsetEnd=162 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Kim CharacterOffsetBegin=163 CharacterOffsetEnd=166 PartOfSpeech=NNP Lemma=Kim NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=166 CharacterOffsetEnd=167 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNS Thanks))
+    (, ,)
+    (NP (NNP Kim))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Thanks-1)
+punct(Thanks-1, ,-2)
+appos(Thanks-1, Kim-3)
+punct(Thanks-1, .-4)
+
+Extracted the following NER entity mentions:
+Kim	PERSON
+
+Coreference set:
+	(1,10,[10,11]) -> (1,8,[7,9]), that is: "they" -> "your customers"
+	(1,14,[14,15]) -> (1,8,[7,9]), that is: "their" -> "your customers"

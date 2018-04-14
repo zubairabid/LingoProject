@@ -1,0 +1,538 @@
+Document: ID=40980.in (8 sentences, 134 tokens)
+
+Sentence #1 (25 tokens):
+I just received notice from COR that they do "not intend to schedule or pay for any further energy deliveries" by Enron.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=received CharacterOffsetBegin=7 CharacterOffsetEnd=15 PartOfSpeech=VBD Lemma=receive NamedEntityTag=O]
+[Text=notice CharacterOffsetBegin=16 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=notice NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=COR CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=NNP Lemma=COR NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=intend CharacterOffsetBegin=50 CharacterOffsetEnd=56 PartOfSpeech=VB Lemma=intend NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=schedule CharacterOffsetBegin=60 CharacterOffsetEnd=68 PartOfSpeech=VB Lemma=schedule NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=pay CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=VB Lemma=pay NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=80 CharacterOffsetEnd=83 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=further CharacterOffsetBegin=84 CharacterOffsetEnd=91 PartOfSpeech=JJ Lemma=further NamedEntityTag=O]
+[Text=energy CharacterOffsetBegin=92 CharacterOffsetEnd=98 PartOfSpeech=NN Lemma=energy NamedEntityTag=O]
+[Text=deliveries CharacterOffsetBegin=99 CharacterOffsetEnd=109 PartOfSpeech=NNS Lemma=delivery NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=109 CharacterOffsetEnd=110 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=111 CharacterOffsetEnd=113 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=114 CharacterOffsetEnd=119 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=119 CharacterOffsetEnd=120 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB just))
+    (VP (VBD received)
+      (NP (NN notice))
+      (PP (IN from)
+        (NP (NNP COR)))
+      (SBAR (IN that)
+        (S
+          (NP (PRP they))
+          (VP (VBP do) (`` ``)
+            (S
+              (VP (RB not)
+                (VP (VB intend)
+                  (S
+                    (VP (TO to)
+                      (VP (VB schedule)
+                        (CC or)
+                        (VB pay)
+                        (PP (IN for)
+                          (NP (DT any) (JJ further) (NN energy) (NNS deliveries)))
+                        ('' ''))))
+                  (PP (IN by)
+                    (NP (NNP Enron))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, received-3)
+nsubj(received-3, I-1)
+advmod(received-3, just-2)
+dobj(received-3, notice-4)
+case(COR-6, from-5)
+nmod:from(received-3, COR-6)
+mark(do-9, that-7)
+nsubj(do-9, they-8)
+ccomp(received-3, do-9)
+punct(do-9, ``-10)
+neg(intend-12, not-11)
+ccomp(do-9, intend-12)
+mark(schedule-14, to-13)
+xcomp(intend-12, schedule-14)
+cc(schedule-14, or-15)
+xcomp(intend-12, pay-16)
+conj:or(schedule-14, pay-16)
+case(deliveries-21, for-17)
+det(deliveries-21, any-18)
+amod(deliveries-21, further-19)
+compound(deliveries-21, energy-20)
+nmod:for(schedule-14, deliveries-21)
+punct(schedule-14, ''-22)
+case(Enron-24, by-23)
+nmod:by(intend-12, Enron-24)
+punct(received-3, .-25)
+
+Extracted the following NER entity mentions:
+Enron	ORGANIZATION
+
+Sentence #2 (7 tokens):
+The notice is dated May 30.
+
+Tokens:
+[Text=The CharacterOffsetBegin=121 CharacterOffsetEnd=124 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=notice CharacterOffsetBegin=125 CharacterOffsetEnd=131 PartOfSpeech=NN Lemma=notice NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=132 CharacterOffsetEnd=134 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=dated CharacterOffsetBegin=135 CharacterOffsetEnd=140 PartOfSpeech=VBN Lemma=date NamedEntityTag=O]
+[Text=May CharacterOffsetBegin=141 CharacterOffsetEnd=144 PartOfSpeech=NNP Lemma=May NamedEntityTag=DATE NormalizedNamedEntityTag=****0530]
+[Text=30 CharacterOffsetBegin=145 CharacterOffsetEnd=147 PartOfSpeech=CD Lemma=30 NamedEntityTag=DATE NormalizedNamedEntityTag=****0530]
+[Text=. CharacterOffsetBegin=147 CharacterOffsetEnd=148 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN notice))
+    (VP (VBZ is)
+      (VP (VBN dated)
+        (NP-TMP (NNP May) (CD 30))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, dated-4)
+det(notice-2, The-1)
+nsubjpass(dated-4, notice-2)
+auxpass(dated-4, is-3)
+nmod:tmod(dated-4, May-5)
+nummod(May-5, 30-6)
+punct(dated-4, .-7)
+
+Extracted the following NER entity mentions:
+May 30	DATE
+
+Sentence #3 (13 tokens):
+Please let me know the instant Riverside refuses our energy delivery schedule.
+
+Tokens:
+[Text=Please CharacterOffsetBegin=149 CharacterOffsetEnd=155 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=let CharacterOffsetBegin=156 CharacterOffsetEnd=159 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=160 CharacterOffsetEnd=162 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=163 CharacterOffsetEnd=167 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=168 CharacterOffsetEnd=171 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=instant CharacterOffsetBegin=172 CharacterOffsetEnd=179 PartOfSpeech=JJ Lemma=instant NamedEntityTag=O]
+[Text=Riverside CharacterOffsetBegin=180 CharacterOffsetEnd=189 PartOfSpeech=NNP Lemma=Riverside NamedEntityTag=CITY]
+[Text=refuses CharacterOffsetBegin=190 CharacterOffsetEnd=197 PartOfSpeech=VBZ Lemma=refuse NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=198 CharacterOffsetEnd=201 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=energy CharacterOffsetBegin=202 CharacterOffsetEnd=208 PartOfSpeech=NN Lemma=energy NamedEntityTag=O]
+[Text=delivery CharacterOffsetBegin=209 CharacterOffsetEnd=217 PartOfSpeech=NN Lemma=delivery NamedEntityTag=O]
+[Text=schedule CharacterOffsetBegin=218 CharacterOffsetEnd=226 PartOfSpeech=NN Lemma=schedule NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=226 CharacterOffsetEnd=227 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (INTJ (VB Please))
+      (VP (VB let)
+        (S
+          (NP (PRP me))
+          (VP (VB know)
+            (NP (DT the) (JJ instant) (NNP Riverside))))))
+    (VP (VBZ refuses)
+      (NP (PRP$ our) (NN energy) (NN delivery) (NN schedule)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, refuses-8)
+discourse(let-2, Please-1)
+csubj(refuses-8, let-2)
+nsubj(know-4, me-3)
+ccomp(let-2, know-4)
+det(Riverside-7, the-5)
+amod(Riverside-7, instant-6)
+dobj(know-4, Riverside-7)
+nmod:poss(schedule-12, our-9)
+compound(schedule-12, energy-10)
+compound(schedule-12, delivery-11)
+dobj(refuses-8, schedule-12)
+punct(refuses-8, .-13)
+
+Extracted the following NER entity mentions:
+Riverside	CITY
+
+Sentence #4 (25 tokens):
+Since we have purchased the entire month of June, we will be in a position of liquidating that length should Riverside refuse delivery.
+
+Tokens:
+[Text=Since CharacterOffsetBegin=228 CharacterOffsetEnd=233 PartOfSpeech=IN Lemma=since NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=234 CharacterOffsetEnd=236 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=237 CharacterOffsetEnd=241 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=purchased CharacterOffsetBegin=242 CharacterOffsetEnd=251 PartOfSpeech=VBN Lemma=purchase NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=252 CharacterOffsetEnd=255 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=entire CharacterOffsetBegin=256 CharacterOffsetEnd=262 PartOfSpeech=JJ Lemma=entire NamedEntityTag=DATE NormalizedNamedEntityTag=****06]
+[Text=month CharacterOffsetBegin=263 CharacterOffsetEnd=268 PartOfSpeech=NN Lemma=month NamedEntityTag=DATE NormalizedNamedEntityTag=****06]
+[Text=of CharacterOffsetBegin=269 CharacterOffsetEnd=271 PartOfSpeech=IN Lemma=of NamedEntityTag=DATE NormalizedNamedEntityTag=****06]
+[Text=June CharacterOffsetBegin=272 CharacterOffsetEnd=276 PartOfSpeech=NNP Lemma=June NamedEntityTag=DATE NormalizedNamedEntityTag=****06]
+[Text=, CharacterOffsetBegin=276 CharacterOffsetEnd=277 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=278 CharacterOffsetEnd=280 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=281 CharacterOffsetEnd=285 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=286 CharacterOffsetEnd=288 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=289 CharacterOffsetEnd=291 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=292 CharacterOffsetEnd=293 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=position CharacterOffsetBegin=294 CharacterOffsetEnd=302 PartOfSpeech=NN Lemma=position NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=303 CharacterOffsetEnd=305 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=liquidating CharacterOffsetBegin=306 CharacterOffsetEnd=317 PartOfSpeech=VBG Lemma=liquidate NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=318 CharacterOffsetEnd=322 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=length CharacterOffsetBegin=323 CharacterOffsetEnd=329 PartOfSpeech=NN Lemma=length NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=330 CharacterOffsetEnd=336 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=Riverside CharacterOffsetBegin=337 CharacterOffsetEnd=346 PartOfSpeech=NNP Lemma=Riverside NamedEntityTag=O]
+[Text=refuse CharacterOffsetBegin=347 CharacterOffsetEnd=353 PartOfSpeech=VBP Lemma=refuse NamedEntityTag=O]
+[Text=delivery CharacterOffsetBegin=354 CharacterOffsetEnd=362 PartOfSpeech=NN Lemma=delivery NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=362 CharacterOffsetEnd=363 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (SBAR (IN Since)
+        (S
+          (NP (PRP we))
+          (VP (VBP have)
+            (VP (VBN purchased)
+              (NP
+                (NP (DT the) (JJ entire) (NN month))
+                (PP (IN of)
+                  (NP (NNP June))))))))
+      (, ,)
+      (NP (PRP we))
+      (VP (MD will)
+        (VP (VB be)
+          (PP (IN in)
+            (NP
+              (NP (DT a) (NN position))
+              (PP (IN of)
+                (S
+                  (VP (VBG liquidating)
+                    (SBAR (IN that)
+                      (S
+                        (NP (NN length))
+                        (VP (MD should))))))))))))
+    (NP (NNP Riverside))
+    (VP (VBP refuse)
+      (NP (NN delivery)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, refuse-23)
+mark(purchased-4, Since-1)
+nsubj(purchased-4, we-2)
+aux(purchased-4, have-3)
+advcl:since(position-16, purchased-4)
+det(month-7, the-5)
+amod(month-7, entire-6)
+dobj(purchased-4, month-7)
+case(June-9, of-8)
+nmod:of(month-7, June-9)
+punct(position-16, ,-10)
+nsubj(position-16, we-11)
+aux(position-16, will-12)
+cop(position-16, be-13)
+case(position-16, in-14)
+det(position-16, a-15)
+dep(refuse-23, position-16)
+mark(liquidating-18, of-17)
+acl:of(position-16, liquidating-18)
+mark(should-21, that-19)
+nsubj(should-21, length-20)
+ccomp(liquidating-18, should-21)
+nsubj(refuse-23, Riverside-22)
+dobj(refuse-23, delivery-24)
+punct(refuse-23, .-25)
+
+Extracted the following NER entity mentions:
+entire month of June	DATE
+
+Sentence #5 (26 tokens):
+Once Riverside refuses delivery,  we should plan on attempting to schedule at least once again to demonstrate their intent to continue to refuse delivery.
+
+Tokens:
+[Text=Once CharacterOffsetBegin=364 CharacterOffsetEnd=368 PartOfSpeech=RB Lemma=once NamedEntityTag=O]
+[Text=Riverside CharacterOffsetBegin=369 CharacterOffsetEnd=378 PartOfSpeech=NNP Lemma=Riverside NamedEntityTag=O]
+[Text=refuses CharacterOffsetBegin=379 CharacterOffsetEnd=386 PartOfSpeech=VBZ Lemma=refuse NamedEntityTag=O]
+[Text=delivery CharacterOffsetBegin=387 CharacterOffsetEnd=395 PartOfSpeech=NN Lemma=delivery NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=395 CharacterOffsetEnd=396 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=398 CharacterOffsetEnd=400 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=401 CharacterOffsetEnd=407 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=plan CharacterOffsetBegin=408 CharacterOffsetEnd=412 PartOfSpeech=VB Lemma=plan NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=413 CharacterOffsetEnd=415 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=attempting CharacterOffsetBegin=416 CharacterOffsetEnd=426 PartOfSpeech=VBG Lemma=attempt NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=427 CharacterOffsetEnd=429 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=schedule CharacterOffsetBegin=430 CharacterOffsetEnd=438 PartOfSpeech=VB Lemma=schedule NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=439 CharacterOffsetEnd=441 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=least CharacterOffsetBegin=442 CharacterOffsetEnd=447 PartOfSpeech=JJS Lemma=least NamedEntityTag=O]
+[Text=once CharacterOffsetBegin=448 CharacterOffsetEnd=452 PartOfSpeech=RB Lemma=once NamedEntityTag=O]
+[Text=again CharacterOffsetBegin=453 CharacterOffsetEnd=458 PartOfSpeech=RB Lemma=again NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=459 CharacterOffsetEnd=461 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=demonstrate CharacterOffsetBegin=462 CharacterOffsetEnd=473 PartOfSpeech=VB Lemma=demonstrate NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=474 CharacterOffsetEnd=479 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=intent CharacterOffsetBegin=480 CharacterOffsetEnd=486 PartOfSpeech=NN Lemma=intent NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=487 CharacterOffsetEnd=489 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=continue CharacterOffsetBegin=490 CharacterOffsetEnd=498 PartOfSpeech=VB Lemma=continue NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=499 CharacterOffsetEnd=501 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=refuse CharacterOffsetBegin=502 CharacterOffsetEnd=508 PartOfSpeech=VB Lemma=refuse NamedEntityTag=O]
+[Text=delivery CharacterOffsetBegin=509 CharacterOffsetEnd=517 PartOfSpeech=NN Lemma=delivery NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=517 CharacterOffsetEnd=518 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (RB Once)
+      (S
+        (NP (NNP Riverside))
+        (VP (VBZ refuses)
+          (NP (NN delivery)))))
+    (, ,)
+    (NP (PRP we))
+    (VP (MD should)
+      (VP (VB plan)
+        (PP (IN on)
+          (S
+            (VP (VBG attempting)
+              (S
+                (VP (TO to)
+                  (VP (VB schedule)
+                    (ADVP (IN at) (JJS least) (RB once) (RB again))
+                    (S
+                      (VP (TO to)
+                        (VP (VB demonstrate)
+                          (NP (PRP$ their) (NN intent)
+                            (S
+                              (VP (TO to)
+                                (VP (VB continue)
+                                  (S
+                                    (VP (TO to)
+                                      (VP (VB refuse)
+                                        (NP (NN delivery))))))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, plan-8)
+advmod(refuses-3, Once-1)
+nsubj(refuses-3, Riverside-2)
+advcl(plan-8, refuses-3)
+dobj(refuses-3, delivery-4)
+punct(plan-8, ,-5)
+nsubj(plan-8, we-6)
+aux(plan-8, should-7)
+mark(attempting-10, on-9)
+advcl:on(plan-8, attempting-10)
+mark(schedule-12, to-11)
+xcomp(attempting-10, schedule-12)
+dep(again-16, at-13)
+mwe(at-13, least-14)
+advmod(again-16, once-15)
+advmod(schedule-12, again-16)
+mark(demonstrate-18, to-17)
+xcomp(schedule-12, demonstrate-18)
+nmod:poss(intent-20, their-19)
+dobj(demonstrate-18, intent-20)
+mark(continue-22, to-21)
+acl:to(intent-20, continue-22)
+mark(refuse-24, to-23)
+xcomp(continue-22, refuse-24)
+dobj(refuse-24, delivery-25)
+punct(plan-8, .-26)
+
+Extracted the following NER entity mentions:
+
+Sentence #6 (26 tokens):
+Therefore, we need to discuss strategy before selling Riverside length back into the market or, alternatively, booking out with the energy supplier.
+
+Tokens:
+[Text=Therefore CharacterOffsetBegin=519 CharacterOffsetEnd=528 PartOfSpeech=RB Lemma=therefore NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=528 CharacterOffsetEnd=529 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=530 CharacterOffsetEnd=532 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=533 CharacterOffsetEnd=537 PartOfSpeech=VBP Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=538 CharacterOffsetEnd=540 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=discuss CharacterOffsetBegin=541 CharacterOffsetEnd=548 PartOfSpeech=VB Lemma=discuss NamedEntityTag=O]
+[Text=strategy CharacterOffsetBegin=549 CharacterOffsetEnd=557 PartOfSpeech=NN Lemma=strategy NamedEntityTag=O]
+[Text=before CharacterOffsetBegin=558 CharacterOffsetEnd=564 PartOfSpeech=IN Lemma=before NamedEntityTag=O]
+[Text=selling CharacterOffsetBegin=565 CharacterOffsetEnd=572 PartOfSpeech=VBG Lemma=sell NamedEntityTag=O]
+[Text=Riverside CharacterOffsetBegin=573 CharacterOffsetEnd=582 PartOfSpeech=NNP Lemma=Riverside NamedEntityTag=O]
+[Text=length CharacterOffsetBegin=583 CharacterOffsetEnd=589 PartOfSpeech=NN Lemma=length NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=590 CharacterOffsetEnd=594 PartOfSpeech=RB Lemma=back NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=595 CharacterOffsetEnd=599 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=600 CharacterOffsetEnd=603 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=market CharacterOffsetBegin=604 CharacterOffsetEnd=610 PartOfSpeech=NN Lemma=market NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=611 CharacterOffsetEnd=613 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=613 CharacterOffsetEnd=614 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=alternatively CharacterOffsetBegin=615 CharacterOffsetEnd=628 PartOfSpeech=RB Lemma=alternatively NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=628 CharacterOffsetEnd=629 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=booking CharacterOffsetBegin=630 CharacterOffsetEnd=637 PartOfSpeech=VBG Lemma=book NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=638 CharacterOffsetEnd=641 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=642 CharacterOffsetEnd=646 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=647 CharacterOffsetEnd=650 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=energy CharacterOffsetBegin=651 CharacterOffsetEnd=657 PartOfSpeech=NN Lemma=energy NamedEntityTag=O]
+[Text=supplier CharacterOffsetBegin=658 CharacterOffsetEnd=666 PartOfSpeech=NN Lemma=supplier NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=666 CharacterOffsetEnd=667 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Therefore))
+    (, ,)
+    (NP (PRP we))
+    (VP (VBP need)
+      (S
+        (VP (TO to)
+          (VP (VB discuss)
+            (NP (NN strategy))
+            (PP (IN before)
+              (S
+                (VP
+                  (VP (VBG selling)
+                    (NP (NNP Riverside) (NN length))
+                    (ADVP (RB back))
+                    (PP
+                      (PP (IN into)
+                        (NP (DT the) (NN market)))
+                      (CC or)
+                      (, ,)
+                      (ADVP (RB alternatively))))
+                  (, ,)
+                  (VP (VBG booking)
+                    (PRT (RP out))
+                    (PP (IN with)
+                      (NP (DT the) (NN energy) (NN supplier)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, need-4)
+advmod(need-4, Therefore-1)
+punct(need-4, ,-2)
+nsubj(need-4, we-3)
+nsubj:xsubj(discuss-6, we-3)
+mark(discuss-6, to-5)
+xcomp(need-4, discuss-6)
+dobj(discuss-6, strategy-7)
+mark(selling-9, before-8)
+advcl:before(discuss-6, selling-9)
+compound(length-11, Riverside-10)
+dobj(selling-9, length-11)
+advmod(selling-9, back-12)
+case(market-15, into-13)
+det(market-15, the-14)
+nmod:into(alternatively-18, market-15)
+cc(alternatively-18, or-16)
+punct(alternatively-18, ,-17)
+nmod(selling-9, alternatively-18)
+punct(selling-9, ,-19)
+dep(selling-9, booking-20)
+compound:prt(booking-20, out-21)
+case(supplier-25, with-22)
+det(supplier-25, the-23)
+compound(supplier-25, energy-24)
+nmod:with(booking-20, supplier-25)
+punct(need-4, .-26)
+
+Extracted the following NER entity mentions:
+
+Sentence #7 (9 tokens):
+Let me know if you have any questions.
+
+Tokens:
+[Text=Let CharacterOffsetBegin=668 CharacterOffsetEnd=671 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=672 CharacterOffsetEnd=674 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=675 CharacterOffsetEnd=679 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=680 CharacterOffsetEnd=682 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=683 CharacterOffsetEnd=686 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=687 CharacterOffsetEnd=691 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=692 CharacterOffsetEnd=695 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=questions CharacterOffsetBegin=696 CharacterOffsetEnd=705 PartOfSpeech=NNS Lemma=question NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=705 CharacterOffsetEnd=706 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Let)
+      (S
+        (NP (PRP me))
+        (VP (VB know)
+          (SBAR (IN if)
+            (S
+              (NP (PRP you))
+              (VP (VBP have)
+                (NP (DT any) (NNS questions))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Let-1)
+nsubj(know-3, me-2)
+ccomp(Let-1, know-3)
+mark(have-6, if-4)
+nsubj(have-6, you-5)
+advcl:if(know-3, have-6)
+det(questions-8, any-7)
+dobj(have-6, questions-8)
+punct(Let-1, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #8 (3 tokens):
+Thanks,
+
+Ed
+
+Tokens:
+[Text=Thanks CharacterOffsetBegin=708 CharacterOffsetEnd=714 PartOfSpeech=NNS Lemma=thanks NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=714 CharacterOffsetEnd=715 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Ed CharacterOffsetBegin=717 CharacterOffsetEnd=719 PartOfSpeech=NNP Lemma=Ed NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNS Thanks))
+    (, ,)
+    (NP (NNP Ed))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Thanks-1)
+punct(Thanks-1, ,-2)
+appos(Thanks-1, Ed-3)
+
+Extracted the following NER entity mentions:
+Ed	PERSON
+
+Coreference set:
+	(3,3,[3,4]) -> (1,1,[1,2]), that is: "me" -> "I"
+	(7,2,[2,3]) -> (1,1,[1,2]), that is: "me" -> "I"
+
+Coreference set:
+	(4,22,[22,23]) -> (3,7,[5,8]), that is: "Riverside" -> "the instant Riverside"
+	(5,2,[2,3]) -> (3,7,[5,8]), that is: "Riverside" -> "the instant Riverside"
+
+Coreference set:
+	(4,2,[2,3]) -> (3,9,[9,10]), that is: "we" -> "our"
+	(4,11,[11,12]) -> (3,9,[9,10]), that is: "we" -> "our"
+	(5,6,[6,7]) -> (3,9,[9,10]), that is: "we" -> "our"
+	(6,3,[3,4]) -> (3,9,[9,10]), that is: "we" -> "our"

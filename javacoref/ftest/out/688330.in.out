@@ -1,0 +1,94 @@
+Document: ID=688330.in (2 sentences, 22 tokens)
+
+Sentence #1 (16 tokens):
+Here is a list of all the natural gas brokers with their corresponding short
+name.
+
+Tokens:
+[Text=Here CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=list CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=list NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=PDT Lemma=all NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=natural CharacterOffsetBegin=26 CharacterOffsetEnd=33 PartOfSpeech=JJ Lemma=natural NamedEntityTag=O]
+[Text=gas CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=NN Lemma=gas NamedEntityTag=O]
+[Text=brokers CharacterOffsetBegin=38 CharacterOffsetEnd=45 PartOfSpeech=NNS Lemma=broker NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=corresponding CharacterOffsetBegin=57 CharacterOffsetEnd=70 PartOfSpeech=JJ Lemma=corresponding NamedEntityTag=O]
+[Text=short CharacterOffsetBegin=71 CharacterOffsetEnd=76 PartOfSpeech=JJ Lemma=short NamedEntityTag=O]
+[Text=name CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=NN Lemma=name NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (RB Here))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN list))
+        (PP (IN of)
+          (NP
+            (NP (PDT all) (DT the) (JJ natural) (NN gas) (NNS brokers))
+            (PP (IN with)
+              (NP (PRP$ their) (JJ corresponding) (JJ short) (NN name)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, list-4)
+nsubj(list-4, Here-1)
+cop(list-4, is-2)
+det(list-4, a-3)
+case(brokers-10, of-5)
+det:predet(brokers-10, all-6)
+det(brokers-10, the-7)
+amod(brokers-10, natural-8)
+compound(brokers-10, gas-9)
+nmod:of(list-4, brokers-10)
+case(name-15, with-11)
+nmod:poss(name-15, their-12)
+amod(name-15, corresponding-13)
+amod(name-15, short-14)
+nmod:with(brokers-10, name-15)
+punct(list-4, .-16)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (6 tokens):
+Sorry if I forgot anybody.
+
+Tokens:
+[Text=Sorry CharacterOffsetBegin=84 CharacterOffsetEnd=89 PartOfSpeech=JJ Lemma=sorry NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=90 CharacterOffsetEnd=92 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=93 CharacterOffsetEnd=94 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=forgot CharacterOffsetBegin=95 CharacterOffsetEnd=101 PartOfSpeech=VBD Lemma=forget NamedEntityTag=O]
+[Text=anybody CharacterOffsetBegin=102 CharacterOffsetEnd=109 PartOfSpeech=NN Lemma=anybody NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=109 CharacterOffsetEnd=110 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (ADJP (JJ Sorry))
+    (SBAR (IN if)
+      (S
+        (NP (PRP I))
+        (VP (VBD forgot)
+          (NP (NN anybody)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Sorry-1)
+mark(forgot-4, if-2)
+nsubj(forgot-4, I-3)
+dep(Sorry-1, forgot-4)
+dobj(forgot-4, anybody-5)
+punct(Sorry-1, .-6)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(1,1,[1,2]) -> (1,4,[3,16]), that is: "Here" -> "a list of all the natural gas brokers with their corresponding short name"

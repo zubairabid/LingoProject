@@ -1,0 +1,537 @@
+Document: ID=1251032.in (9 sentences, 125 tokens)
+
+Sentence #1 (14 tokens):
+Duke does plan to build a merchant plant in Curry County, NM.
+
+Tokens:
+[Text=Duke CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Duke NamedEntityTag=PERSON]
+[Text=does CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=plan CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=plan NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=build CharacterOffsetBegin=18 CharacterOffsetEnd=23 PartOfSpeech=VB Lemma=build NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=merchant CharacterOffsetBegin=26 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=merchant NamedEntityTag=TITLE]
+[Text=plant CharacterOffsetBegin=35 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=plant NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Curry CharacterOffsetBegin=44 CharacterOffsetEnd=49 PartOfSpeech=NNP Lemma=Curry NamedEntityTag=CITY]
+[Text=County CharacterOffsetBegin=50 CharacterOffsetEnd=56 PartOfSpeech=NNP Lemma=County NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=NM CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=NNP Lemma=NM NamedEntityTag=STATE_OR_PROVINCE]
+[Text=. CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Duke))
+    (VP (VBZ does)
+      (NP (NN plan))
+      (S
+        (VP (TO to)
+          (VP (VB build)
+            (NP (DT a) (NN merchant) (NN plant))
+            (PP (IN in)
+              (NP
+                (NP (NNP Curry) (NNP County))
+                (, ,)
+                (NP (NNP NM))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, does-2)
+nsubj(does-2, Duke-1)
+dobj(does-2, plan-3)
+mark(build-5, to-4)
+advcl:to(does-2, build-5)
+det(plant-8, a-6)
+compound(plant-8, merchant-7)
+dobj(build-5, plant-8)
+case(County-11, in-9)
+compound(County-11, Curry-10)
+nmod:in(build-5, County-11)
+punct(County-11, ,-12)
+appos(County-11, NM-13)
+punct(does-2, .-14)
+
+Extracted the following NER entity mentions:
+Duke	PERSON
+merchant	TITLE
+Curry	CITY
+County	LOCATION
+NM	STATE_OR_PROVINCE
+
+Sentence #2 (14 tokens):
+They think it will be a 2-stage project with each stage 600 megawatts.
+
+Tokens:
+[Text=They CharacterOffsetBegin=63 CharacterOffsetEnd=67 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=68 CharacterOffsetEnd=73 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=74 CharacterOffsetEnd=76 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=82 CharacterOffsetEnd=84 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=2-stage CharacterOffsetBegin=87 CharacterOffsetEnd=94 PartOfSpeech=JJ Lemma=2-stage NamedEntityTag=O]
+[Text=project CharacterOffsetBegin=95 CharacterOffsetEnd=102 PartOfSpeech=NN Lemma=project NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=103 CharacterOffsetEnd=107 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=each CharacterOffsetBegin=108 CharacterOffsetEnd=112 PartOfSpeech=DT Lemma=each NamedEntityTag=O]
+[Text=stage CharacterOffsetBegin=113 CharacterOffsetEnd=118 PartOfSpeech=NN Lemma=stage NamedEntityTag=O]
+[Text=600 CharacterOffsetBegin=119 CharacterOffsetEnd=122 PartOfSpeech=CD Lemma=600 NamedEntityTag=NUMBER NormalizedNamedEntityTag=600.0]
+[Text=megawatts CharacterOffsetBegin=123 CharacterOffsetEnd=132 PartOfSpeech=NNS Lemma=megawatt NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=132 CharacterOffsetEnd=133 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (PRP it))
+          (VP (MD will)
+            (VP (VB be)
+              (NP
+                (NP (DT a) (JJ 2-stage) (NN project))
+                (PP (IN with)
+                  (NP
+                    (NP (DT each) (NN stage))
+                    (NP (CD 600) (NNS megawatts))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, think-2)
+nsubj(think-2, They-1)
+nsubj(project-8, it-3)
+aux(project-8, will-4)
+cop(project-8, be-5)
+det(project-8, a-6)
+amod(project-8, 2-stage-7)
+ccomp(think-2, project-8)
+case(stage-11, with-9)
+det(stage-11, each-10)
+nmod:with(project-8, stage-11)
+nummod(megawatts-13, 600-12)
+dep(stage-11, megawatts-13)
+punct(think-2, .-14)
+
+Extracted the following NER entity mentions:
+600	NUMBER
+
+Sentence #3 (11 tokens):
+The proposed in-service date of the 1st phase is 2Q04.
+
+Tokens:
+[Text=The CharacterOffsetBegin=135 CharacterOffsetEnd=138 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=proposed CharacterOffsetBegin=139 CharacterOffsetEnd=147 PartOfSpeech=VBN Lemma=propose NamedEntityTag=O]
+[Text=in-service CharacterOffsetBegin=148 CharacterOffsetEnd=158 PartOfSpeech=JJ Lemma=in-service NamedEntityTag=O]
+[Text=date CharacterOffsetBegin=159 CharacterOffsetEnd=163 PartOfSpeech=NN Lemma=date NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=164 CharacterOffsetEnd=166 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=167 CharacterOffsetEnd=170 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=1st CharacterOffsetBegin=171 CharacterOffsetEnd=174 PartOfSpeech=JJ Lemma=1st NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=phase CharacterOffsetBegin=175 CharacterOffsetEnd=180 PartOfSpeech=NN Lemma=phase NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=181 CharacterOffsetEnd=183 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=2Q04 CharacterOffsetBegin=184 CharacterOffsetEnd=188 PartOfSpeech=NN Lemma=2q04 NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=188 CharacterOffsetEnd=189 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (VBN proposed) (JJ in-service) (NN date))
+      (PP (IN of)
+        (NP (DT the) (JJ 1st) (NN phase))))
+    (VP (VBZ is)
+      (NP (NN 2Q04)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 2Q04-10)
+det(date-4, The-1)
+amod(date-4, proposed-2)
+amod(date-4, in-service-3)
+nsubj(2Q04-10, date-4)
+case(phase-8, of-5)
+det(phase-8, the-6)
+amod(phase-8, 1st-7)
+nmod:of(date-4, phase-8)
+cop(2Q04-10, is-9)
+punct(2Q04-10, .-11)
+
+Extracted the following NER entity mentions:
+1st	ORDINAL
+
+Sentence #4 (13 tokens):
+They will need a minimum pipeline pressure off TW of 500 psi.
+
+Tokens:
+[Text=They CharacterOffsetBegin=191 CharacterOffsetEnd=195 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=196 CharacterOffsetEnd=200 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=201 CharacterOffsetEnd=205 PartOfSpeech=VB Lemma=need NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=206 CharacterOffsetEnd=207 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=minimum CharacterOffsetBegin=208 CharacterOffsetEnd=215 PartOfSpeech=JJ Lemma=minimum NamedEntityTag=O]
+[Text=pipeline CharacterOffsetBegin=216 CharacterOffsetEnd=224 PartOfSpeech=NN Lemma=pipeline NamedEntityTag=O]
+[Text=pressure CharacterOffsetBegin=225 CharacterOffsetEnd=233 PartOfSpeech=NN Lemma=pressure NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=234 CharacterOffsetEnd=237 PartOfSpeech=IN Lemma=off NamedEntityTag=O]
+[Text=TW CharacterOffsetBegin=238 CharacterOffsetEnd=240 PartOfSpeech=NNP Lemma=TW NamedEntityTag=ORGANIZATION]
+[Text=of CharacterOffsetBegin=241 CharacterOffsetEnd=243 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=500 CharacterOffsetBegin=244 CharacterOffsetEnd=247 PartOfSpeech=CD Lemma=500 NamedEntityTag=NUMBER NormalizedNamedEntityTag=500.0]
+[Text=psi CharacterOffsetBegin=248 CharacterOffsetEnd=251 PartOfSpeech=NNS Lemma=psus NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=251 CharacterOffsetEnd=252 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (MD will)
+      (VP (VB need)
+        (NP (DT a) (JJ minimum) (NN pipeline) (NN pressure))
+        (PP (IN off)
+          (NP
+            (NP (NNP TW))
+            (PP (IN of)
+              (NP (CD 500) (NNS psi)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, need-3)
+nsubj(need-3, They-1)
+aux(need-3, will-2)
+det(pressure-7, a-4)
+amod(pressure-7, minimum-5)
+compound(pressure-7, pipeline-6)
+dobj(need-3, pressure-7)
+case(TW-9, off-8)
+nmod:off(need-3, TW-9)
+case(psi-12, of-10)
+nummod(psi-12, 500-11)
+nmod:of(TW-9, psi-12)
+punct(need-3, .-13)
+
+Extracted the following NER entity mentions:
+TW	ORGANIZATION
+500	NUMBER
+
+Sentence #5 (18 tokens):
+Perry Frazier and I have met with Duke reps as recently as Jan. 02 about this plant.
+
+Tokens:
+[Text=Perry CharacterOffsetBegin=254 CharacterOffsetEnd=259 PartOfSpeech=NNP Lemma=Perry NamedEntityTag=PERSON]
+[Text=Frazier CharacterOffsetBegin=260 CharacterOffsetEnd=267 PartOfSpeech=NNP Lemma=Frazier NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=268 CharacterOffsetEnd=271 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=272 CharacterOffsetEnd=273 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=274 CharacterOffsetEnd=278 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=met CharacterOffsetBegin=279 CharacterOffsetEnd=282 PartOfSpeech=VBN Lemma=meet NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=283 CharacterOffsetEnd=287 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Duke CharacterOffsetBegin=288 CharacterOffsetEnd=292 PartOfSpeech=NNP Lemma=Duke NamedEntityTag=PERSON]
+[Text=reps CharacterOffsetBegin=293 CharacterOffsetEnd=297 PartOfSpeech=NNS Lemma=rep NamedEntityTag=TITLE]
+[Text=as CharacterOffsetBegin=298 CharacterOffsetEnd=300 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=recently CharacterOffsetBegin=301 CharacterOffsetEnd=309 PartOfSpeech=RB Lemma=recently NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=310 CharacterOffsetEnd=312 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=Jan. CharacterOffsetBegin=313 CharacterOffsetEnd=317 PartOfSpeech=NNP Lemma=Jan. NamedEntityTag=DATE NormalizedNamedEntityTag=****0102]
+[Text=02 CharacterOffsetBegin=318 CharacterOffsetEnd=320 PartOfSpeech=CD Lemma=02 NamedEntityTag=DATE NormalizedNamedEntityTag=****0102]
+[Text=about CharacterOffsetBegin=321 CharacterOffsetEnd=326 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=327 CharacterOffsetEnd=331 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=plant CharacterOffsetBegin=332 CharacterOffsetEnd=337 PartOfSpeech=NN Lemma=plant NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=337 CharacterOffsetEnd=338 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Perry) (NNP Frazier))
+      (CC and)
+      (NP (PRP I)))
+    (VP (VBP have)
+      (VP (VBN met)
+        (PP (IN with)
+          (NP (NNP Duke) (NNS reps)))
+        (PP (IN as)
+          (ADVP (RB recently)))
+        (PP (IN as)
+          (NP
+            (NP (NNP Jan.) (CD 02))
+            (PP (IN about)
+              (NP (DT this) (NN plant)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, met-6)
+compound(Frazier-2, Perry-1)
+nsubj(met-6, Frazier-2)
+cc(Frazier-2, and-3)
+conj:and(Frazier-2, I-4)
+nsubj(met-6, I-4)
+aux(met-6, have-5)
+case(reps-9, with-7)
+compound(reps-9, Duke-8)
+nmod:with(met-6, reps-9)
+case(recently-11, as-10)
+advcl:as(met-6, recently-11)
+case(Jan.-13, as-12)
+nmod:as(met-6, Jan.-13)
+nummod(Jan.-13, 02-14)
+case(plant-17, about-15)
+det(plant-17, this-16)
+nmod:about(Jan.-13, plant-17)
+punct(met-6, .-18)
+
+Extracted the following NER entity mentions:
+Perry Frazier	PERSON
+Duke	PERSON
+reps	TITLE
+Jan. 02	DATE
+
+Sentence #6 (19 tokens):
+A draft interconnect agreement has been forwarded to Duke who is working on providing their comments to TW.
+
+Tokens:
+[Text=A CharacterOffsetBegin=340 CharacterOffsetEnd=341 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=draft CharacterOffsetBegin=342 CharacterOffsetEnd=347 PartOfSpeech=NN Lemma=draft NamedEntityTag=O]
+[Text=interconnect CharacterOffsetBegin=348 CharacterOffsetEnd=360 PartOfSpeech=VB Lemma=interconnect NamedEntityTag=O]
+[Text=agreement CharacterOffsetBegin=361 CharacterOffsetEnd=370 PartOfSpeech=NN Lemma=agreement NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=371 CharacterOffsetEnd=374 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=375 CharacterOffsetEnd=379 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=forwarded CharacterOffsetBegin=380 CharacterOffsetEnd=389 PartOfSpeech=VBN Lemma=forward NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=390 CharacterOffsetEnd=392 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Duke CharacterOffsetBegin=393 CharacterOffsetEnd=397 PartOfSpeech=NNP Lemma=Duke NamedEntityTag=PERSON]
+[Text=who CharacterOffsetBegin=398 CharacterOffsetEnd=401 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=402 CharacterOffsetEnd=404 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=working CharacterOffsetBegin=405 CharacterOffsetEnd=412 PartOfSpeech=VBG Lemma=work NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=413 CharacterOffsetEnd=415 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=providing CharacterOffsetBegin=416 CharacterOffsetEnd=425 PartOfSpeech=VBG Lemma=provide NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=426 CharacterOffsetEnd=431 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=comments CharacterOffsetBegin=432 CharacterOffsetEnd=440 PartOfSpeech=NNS Lemma=comment NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=441 CharacterOffsetEnd=443 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=TW CharacterOffsetBegin=444 CharacterOffsetEnd=446 PartOfSpeech=NNP Lemma=TW NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=446 CharacterOffsetEnd=447 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT A) (NN draft)
+      (S
+        (VP (VB interconnect)
+          (NP (NN agreement)))))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (VP (VBN forwarded)
+          (PP (TO to)
+            (NP
+              (NP (NNP Duke))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBZ is)
+                    (VP (VBG working)
+                      (PP (IN on)
+                        (S
+                          (VP (VBG providing)
+                            (NP (PRP$ their) (NNS comments))
+                            (PP (TO to)
+                              (NP (NNP TW)))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, forwarded-7)
+det(draft-2, A-1)
+nsubjpass(forwarded-7, draft-2)
+dep(draft-2, interconnect-3)
+dobj(interconnect-3, agreement-4)
+aux(forwarded-7, has-5)
+auxpass(forwarded-7, been-6)
+case(Duke-9, to-8)
+nmod:to(forwarded-7, Duke-9)
+nsubj(working-12, Duke-9)
+ref(Duke-9, who-10)
+aux(working-12, is-11)
+acl:relcl(Duke-9, working-12)
+mark(providing-14, on-13)
+advcl:on(working-12, providing-14)
+nmod:poss(comments-16, their-15)
+dobj(providing-14, comments-16)
+case(TW-18, to-17)
+nmod:to(providing-14, TW-18)
+punct(forwarded-7, .-19)
+
+Extracted the following NER entity mentions:
+Duke	PERSON
+
+Sentence #7 (26 tokens):
+So far, we have not determined any items such as who will build a line to the plant and pay for and operate it.
+
+Tokens:
+[Text=So CharacterOffsetBegin=449 CharacterOffsetEnd=451 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=far CharacterOffsetBegin=452 CharacterOffsetEnd=455 PartOfSpeech=RB Lemma=far NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=455 CharacterOffsetEnd=456 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=457 CharacterOffsetEnd=459 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=460 CharacterOffsetEnd=464 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=465 CharacterOffsetEnd=468 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=determined CharacterOffsetBegin=469 CharacterOffsetEnd=479 PartOfSpeech=VBN Lemma=determine NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=480 CharacterOffsetEnd=483 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=items CharacterOffsetBegin=484 CharacterOffsetEnd=489 PartOfSpeech=NNS Lemma=item NamedEntityTag=O]
+[Text=such CharacterOffsetBegin=490 CharacterOffsetEnd=494 PartOfSpeech=JJ Lemma=such NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=495 CharacterOffsetEnd=497 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=498 CharacterOffsetEnd=501 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=502 CharacterOffsetEnd=506 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=build CharacterOffsetBegin=507 CharacterOffsetEnd=512 PartOfSpeech=VB Lemma=build NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=513 CharacterOffsetEnd=514 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=line CharacterOffsetBegin=515 CharacterOffsetEnd=519 PartOfSpeech=NN Lemma=line NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=520 CharacterOffsetEnd=522 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=523 CharacterOffsetEnd=526 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=plant CharacterOffsetBegin=527 CharacterOffsetEnd=532 PartOfSpeech=NN Lemma=plant NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=533 CharacterOffsetEnd=536 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=pay CharacterOffsetBegin=537 CharacterOffsetEnd=540 PartOfSpeech=NN Lemma=pay NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=541 CharacterOffsetEnd=544 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=545 CharacterOffsetEnd=548 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=operate CharacterOffsetBegin=549 CharacterOffsetEnd=556 PartOfSpeech=VB Lemma=operate NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=557 CharacterOffsetEnd=559 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=559 CharacterOffsetEnd=560 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB So) (RB far))
+    (, ,)
+    (NP (PRP we))
+    (VP (VBP have) (RB not)
+      (VP (VBN determined)
+        (NP (DT any) (NNS items))
+        (PP (JJ such) (IN as)
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (MD will)
+                (VP
+                  (VP (VB build)
+                    (NP (DT a) (NN line))
+                    (PP (TO to)
+                      (NP (DT the) (NN plant)
+                        (CC and)
+                        (NN pay)))
+                    (PP (IN for)))
+                  (CC and)
+                  (VP (VB operate)
+                    (NP (PRP it))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, determined-7)
+advmod(far-2, So-1)
+advmod(determined-7, far-2)
+punct(determined-7, ,-3)
+nsubj(determined-7, we-4)
+aux(determined-7, have-5)
+neg(determined-7, not-6)
+det(items-9, any-8)
+dobj(determined-7, items-9)
+mark(build-14, such-10)
+mwe(such-10, as-11)
+nsubj(build-14, who-12)
+nsubj(operate-24, who-12)
+aux(build-14, will-13)
+advcl:such_as(determined-7, build-14)
+det(line-16, a-15)
+dobj(build-14, line-16)
+case(plant-19, to-17)
+det(plant-19, the-18)
+nmod:to(build-14, plant-19)
+cc(plant-19, and-20)
+nmod:to(build-14, pay-21)
+conj:and(plant-19, pay-21)
+case(plant-19, for-22)
+cc(build-14, and-23)
+advcl:such_as(determined-7, operate-24)
+conj:and(build-14, operate-24)
+dobj(operate-24, it-25)
+punct(determined-7, .-26)
+
+Extracted the following NER entity mentions:
+
+Sentence #8 (9 tokens):
+I will keep everyone posted as this develops.
+
+Tokens:
+[Text=I CharacterOffsetBegin=562 CharacterOffsetEnd=563 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=564 CharacterOffsetEnd=568 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=keep CharacterOffsetBegin=569 CharacterOffsetEnd=573 PartOfSpeech=VB Lemma=keep NamedEntityTag=O]
+[Text=everyone CharacterOffsetBegin=574 CharacterOffsetEnd=582 PartOfSpeech=NN Lemma=everyone NamedEntityTag=O]
+[Text=posted CharacterOffsetBegin=583 CharacterOffsetEnd=589 PartOfSpeech=VBN Lemma=post NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=590 CharacterOffsetEnd=592 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=593 CharacterOffsetEnd=597 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=develops CharacterOffsetBegin=598 CharacterOffsetEnd=606 PartOfSpeech=VBZ Lemma=develop NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=606 CharacterOffsetEnd=607 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD will)
+      (VP (VB keep)
+        (NP
+          (NP (NN everyone))
+          (VP (VBN posted)
+            (SBAR (IN as)
+              (S
+                (NP (DT this))
+                (VP (VBZ develops))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, keep-3)
+nsubj(keep-3, I-1)
+aux(keep-3, will-2)
+dobj(keep-3, everyone-4)
+acl(everyone-4, posted-5)
+mark(develops-8, as-6)
+nsubj(develops-8, this-7)
+advcl:as(posted-5, develops-8)
+punct(keep-3, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #9 (1 tokens):
+Lorraine
+
+Tokens:
+[Text=Lorraine CharacterOffsetBegin=609 CharacterOffsetEnd=617 PartOfSpeech=NNP Lemma=Lorraine NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Lorraine)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Lorraine-1)
+
+Extracted the following NER entity mentions:
+Lorraine	PERSON
+
+Coreference set:
+	(5,8,[8,9]) -> (1,1,[1,2]), that is: "Duke" -> "Duke"
+	(6,9,[9,19]) -> (1,1,[1,2]), that is: "Duke who is working on providing their comments to TW" -> "Duke"
+
+Coreference set:
+	(2,3,[3,4]) -> (1,8,[6,9]), that is: "it" -> "a merchant plant"
+	(2,8,[6,14]) -> (1,8,[6,9]), that is: "a 2-stage project with each stage 600 megawatts" -> "a merchant plant"
+	(5,17,[16,18]) -> (1,8,[6,9]), that is: "this plant" -> "a merchant plant"
+
+Coreference set:
+	(4,1,[1,2]) -> (2,1,[1,2]), that is: "They" -> "They"
+
+Coreference set:
+	(6,18,[18,19]) -> (4,9,[9,13]), that is: "TW" -> "TW of 500 psi"
+
+Coreference set:
+	(6,15,[15,16]) -> (5,2,[1,5]), that is: "their" -> "Perry Frazier and I"
+
+Coreference set:
+	(8,1,[1,2]) -> (5,4,[4,5]), that is: "I" -> "I"
+
+Coreference set:
+	(7,25,[25,26]) -> (7,16,[15,17]), that is: "it" -> "a line"

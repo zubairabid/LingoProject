@@ -1,0 +1,107 @@
+Document: ID=1129906.in (2 sentences, 24 tokens)
+
+Sentence #1 (2 tokens):
+FYI.
+
+Tokens:
+[Text=FYI CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=FYI NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP FYI))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, FYI-1)
+punct(FYI-1, .-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (22 tokens):
+Roger Wieck of Midland Power is to call me back yet today or tomorrow with an update on their future intentions.
+
+Tokens:
+[Text=Roger CharacterOffsetBegin=6 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=Roger NamedEntityTag=PERSON]
+[Text=Wieck CharacterOffsetBegin=12 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=Wieck NamedEntityTag=PERSON]
+[Text=of CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Midland CharacterOffsetBegin=21 CharacterOffsetEnd=28 PartOfSpeech=NNP Lemma=Midland NamedEntityTag=CITY]
+[Text=Power CharacterOffsetBegin=29 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Power NamedEntityTag=LOCATION]
+[Text=is CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=call CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=VB Lemma=call NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=46 CharacterOffsetEnd=48 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=RB Lemma=back NamedEntityTag=O]
+[Text=yet CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=RB Lemma=yet NamedEntityTag=O]
+[Text=today CharacterOffsetBegin=58 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=today NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=tomorrow CharacterOffsetBegin=67 CharacterOffsetEnd=75 PartOfSpeech=NN Lemma=tomorrow NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=76 CharacterOffsetEnd=80 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=81 CharacterOffsetEnd=83 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=update CharacterOffsetBegin=84 CharacterOffsetEnd=90 PartOfSpeech=VBP Lemma=update NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=91 CharacterOffsetEnd=93 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=94 CharacterOffsetEnd=99 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=future CharacterOffsetBegin=100 CharacterOffsetEnd=106 PartOfSpeech=JJ Lemma=future NamedEntityTag=O]
+[Text=intentions CharacterOffsetBegin=107 CharacterOffsetEnd=117 PartOfSpeech=NNS Lemma=intention NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=117 CharacterOffsetEnd=118 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Roger) (NNP Wieck))
+      (PP (IN of)
+        (NP (NNP Midland) (NNP Power))))
+    (VP (VBZ is)
+      (S
+        (VP (TO to)
+          (VP (VB call)
+            (NP (PRP me))
+            (ADVP (RB back) (RB yet))
+            (NP-TMP (NN today)
+              (CC or)
+              (NN tomorrow))
+            (SBAR (IN with)
+              (S
+                (NP (DT an))
+                (VP (VBP update)
+                  (PP (IN on)
+                    (NP (PRP$ their) (JJ future) (NNS intentions))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-6)
+compound(Wieck-2, Roger-1)
+nsubj(is-6, Wieck-2)
+nsubj:xsubj(call-8, Wieck-2)
+case(Power-5, of-3)
+compound(Power-5, Midland-4)
+nmod:of(Wieck-2, Power-5)
+mark(call-8, to-7)
+xcomp(is-6, call-8)
+dobj(call-8, me-9)
+advmod(yet-11, back-10)
+advmod(call-8, yet-11)
+nmod:tmod(call-8, today-12)
+cc(today-12, or-13)
+nmod:tmod(call-8, tomorrow-14)
+conj:or(today-12, tomorrow-14)
+mark(update-17, with-15)
+nsubj(update-17, an-16)
+advcl:with(call-8, update-17)
+case(intentions-21, on-18)
+nmod:poss(intentions-21, their-19)
+amod(intentions-21, future-20)
+nmod:on(update-17, intentions-21)
+punct(is-6, .-22)
+
+Extracted the following NER entity mentions:
+Roger Wieck	PERSON
+Midland	CITY
+Power	LOCATION
+
+Coreference set:
+	(2,19,[19,20]) -> (2,16,[16,17]), that is: "their" -> "an"

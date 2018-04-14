@@ -1,0 +1,538 @@
+Document: ID=705443.in (5 sentences, 141 tokens)
+
+Sentence #1 (29 tokens):
+Bob, James, Roger,
+
+Im having a hard time getting a response from the teams in the Midland Region
+in completing the attached EOTT tank spreadsheet.
+
+Tokens:
+[Text=Bob CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=Bob NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=James CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=James NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Roger CharacterOffsetBegin=12 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=Roger NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Im CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=Im NamedEntityTag=O]
+[Text=having CharacterOffsetBegin=23 CharacterOffsetEnd=29 PartOfSpeech=VBG Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=hard CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=JJ Lemma=hard NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=getting CharacterOffsetBegin=42 CharacterOffsetEnd=49 PartOfSpeech=VBG Lemma=get NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=response CharacterOffsetBegin=52 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=response NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=teams CharacterOffsetBegin=70 CharacterOffsetEnd=75 PartOfSpeech=NNS Lemma=team NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=76 CharacterOffsetEnd=78 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Midland CharacterOffsetBegin=83 CharacterOffsetEnd=90 PartOfSpeech=NNP Lemma=Midland NamedEntityTag=CITY]
+[Text=Region CharacterOffsetBegin=91 CharacterOffsetEnd=97 PartOfSpeech=NNP Lemma=Region NamedEntityTag=LOCATION]
+[Text=in CharacterOffsetBegin=98 CharacterOffsetEnd=100 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=completing CharacterOffsetBegin=101 CharacterOffsetEnd=111 PartOfSpeech=VBG Lemma=complete NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=112 CharacterOffsetEnd=115 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=attached CharacterOffsetBegin=116 CharacterOffsetEnd=124 PartOfSpeech=VBN Lemma=attach NamedEntityTag=O]
+[Text=EOTT CharacterOffsetBegin=125 CharacterOffsetEnd=129 PartOfSpeech=NNP Lemma=EOTT NamedEntityTag=ORGANIZATION]
+[Text=tank CharacterOffsetBegin=130 CharacterOffsetEnd=134 PartOfSpeech=NN Lemma=tank NamedEntityTag=O]
+[Text=spreadsheet CharacterOffsetBegin=135 CharacterOffsetEnd=146 PartOfSpeech=NN Lemma=spreadsheet NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=146 CharacterOffsetEnd=147 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Bob) (, ,) (NNP James) (, ,) (NNP Roger) (, ,) (NNP Im))
+    (VP (VBG having)
+      (NP (DT a) (JJ hard) (NN time))
+      (S
+        (VP (VBG getting)
+          (NP (DT a) (NN response))
+          (PP (IN from)
+            (NP
+              (NP (DT the) (NNS teams))
+              (PP (IN in)
+                (NP (DT the) (NNP Midland) (NNP Region)))))
+          (PP (IN in)
+            (S
+              (VP (VBG completing)
+                (NP (DT the)
+                  (ADJP (VBN attached))
+                  (NNP EOTT) (NN tank) (NN spreadsheet))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Im-7)
+compound(Im-7, Bob-1)
+punct(Im-7, ,-2)
+appos(Im-7, James-3)
+punct(Im-7, ,-4)
+appos(Im-7, Roger-5)
+punct(Im-7, ,-6)
+acl(Im-7, having-8)
+det(time-11, a-9)
+amod(time-11, hard-10)
+dobj(having-8, time-11)
+advcl(having-8, getting-12)
+det(response-14, a-13)
+dobj(getting-12, response-14)
+case(teams-17, from-15)
+det(teams-17, the-16)
+nmod:from(getting-12, teams-17)
+case(Region-21, in-18)
+det(Region-21, the-19)
+compound(Region-21, Midland-20)
+nmod:in(teams-17, Region-21)
+mark(completing-23, in-22)
+advcl:in(getting-12, completing-23)
+det(spreadsheet-28, the-24)
+amod(spreadsheet-28, attached-25)
+compound(spreadsheet-28, EOTT-26)
+compound(spreadsheet-28, tank-27)
+dobj(completing-23, spreadsheet-28)
+punct(Im-7, .-29)
+
+Extracted the following NER entity mentions:
+Bob	PERSON
+James	PERSON
+Roger	PERSON
+Midland	CITY
+Region	LOCATION
+EOTT	ORGANIZATION
+
+Sentence #2 (12 tokens):
+Ive heard from some of the
+teams but nothing from others.
+
+Tokens:
+[Text=Ive CharacterOffsetBegin=149 CharacterOffsetEnd=152 PartOfSpeech=NN Lemma=ive NamedEntityTag=PERSON]
+[Text=heard CharacterOffsetBegin=153 CharacterOffsetEnd=158 PartOfSpeech=VBD Lemma=hear NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=159 CharacterOffsetEnd=163 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=164 CharacterOffsetEnd=168 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=169 CharacterOffsetEnd=171 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=172 CharacterOffsetEnd=175 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=teams CharacterOffsetBegin=176 CharacterOffsetEnd=181 PartOfSpeech=NNS Lemma=team NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=182 CharacterOffsetEnd=185 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=nothing CharacterOffsetBegin=186 CharacterOffsetEnd=193 PartOfSpeech=NN Lemma=nothing NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=194 CharacterOffsetEnd=198 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=others CharacterOffsetBegin=199 CharacterOffsetEnd=205 PartOfSpeech=NNS Lemma=other NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=205 CharacterOffsetEnd=206 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN Ive))
+    (VP (VBD heard)
+      (PP (IN from)
+        (NP
+          (NP (DT some))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NNS teams))
+              (PP (CC but)
+                (NP (NN nothing)))))))
+      (PP (IN from)
+        (NP (NNS others))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, heard-2)
+nsubj(heard-2, Ive-1)
+case(some-4, from-3)
+det:qmod(teams-7, some-4)
+mwe(some-4, of-5)
+det(teams-7, the-6)
+nmod(heard-2, teams-7)
+case(nothing-9, but-8)
+nmod:but(teams-7, nothing-9)
+case(others-11, from-10)
+nmod:from(heard-2, others-11)
+punct(heard-2, .-12)
+
+Extracted the following NER entity mentions:
+Ive	PERSON
+
+Sentence #3 (43 tokens):
+Im under the gun as to finding  out where the
+MIdland Region is in term of permits and and environmental compliance and the
+only way I can begin to make the evaluation is to have the field data inputed
+onto the spreadsheet.
+
+Tokens:
+[Text=Im CharacterOffsetBegin=208 CharacterOffsetEnd=210 PartOfSpeech=NN Lemma=im NamedEntityTag=O]
+[Text=under CharacterOffsetBegin=211 CharacterOffsetEnd=216 PartOfSpeech=IN Lemma=under NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=217 CharacterOffsetEnd=220 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=gun CharacterOffsetBegin=221 CharacterOffsetEnd=224 PartOfSpeech=NN Lemma=gun NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=225 CharacterOffsetEnd=227 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=228 CharacterOffsetEnd=230 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=finding CharacterOffsetBegin=231 CharacterOffsetEnd=238 PartOfSpeech=VBG Lemma=find NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=240 CharacterOffsetEnd=243 PartOfSpeech=IN Lemma=out NamedEntityTag=O]
+[Text=where CharacterOffsetBegin=244 CharacterOffsetEnd=249 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=250 CharacterOffsetEnd=253 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=MIdland CharacterOffsetBegin=254 CharacterOffsetEnd=261 PartOfSpeech=NNP Lemma=MIdland NamedEntityTag=O]
+[Text=Region CharacterOffsetBegin=262 CharacterOffsetEnd=268 PartOfSpeech=NNP Lemma=Region NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=269 CharacterOffsetEnd=271 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=272 CharacterOffsetEnd=274 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=term CharacterOffsetBegin=275 CharacterOffsetEnd=279 PartOfSpeech=NN Lemma=term NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=280 CharacterOffsetEnd=282 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=permits CharacterOffsetBegin=283 CharacterOffsetEnd=290 PartOfSpeech=NNS Lemma=permit NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=291 CharacterOffsetEnd=294 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=295 CharacterOffsetEnd=298 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=environmental CharacterOffsetBegin=299 CharacterOffsetEnd=312 PartOfSpeech=JJ Lemma=environmental NamedEntityTag=O]
+[Text=compliance CharacterOffsetBegin=313 CharacterOffsetEnd=323 PartOfSpeech=NN Lemma=compliance NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=324 CharacterOffsetEnd=327 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=328 CharacterOffsetEnd=331 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=332 CharacterOffsetEnd=336 PartOfSpeech=JJ Lemma=only NamedEntityTag=O]
+[Text=way CharacterOffsetBegin=337 CharacterOffsetEnd=340 PartOfSpeech=NN Lemma=way NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=341 CharacterOffsetEnd=342 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=343 CharacterOffsetEnd=346 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=begin CharacterOffsetBegin=347 CharacterOffsetEnd=352 PartOfSpeech=VB Lemma=begin NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=353 CharacterOffsetEnd=355 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=356 CharacterOffsetEnd=360 PartOfSpeech=VB Lemma=make NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=361 CharacterOffsetEnd=364 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=evaluation CharacterOffsetBegin=365 CharacterOffsetEnd=375 PartOfSpeech=NN Lemma=evaluation NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=376 CharacterOffsetEnd=378 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=379 CharacterOffsetEnd=381 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=382 CharacterOffsetEnd=386 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=387 CharacterOffsetEnd=390 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=field CharacterOffsetBegin=391 CharacterOffsetEnd=396 PartOfSpeech=NN Lemma=field NamedEntityTag=O]
+[Text=data CharacterOffsetBegin=397 CharacterOffsetEnd=401 PartOfSpeech=NNS Lemma=datum NamedEntityTag=O]
+[Text=inputed CharacterOffsetBegin=402 CharacterOffsetEnd=409 PartOfSpeech=VBD Lemma=inpute NamedEntityTag=O]
+[Text=onto CharacterOffsetBegin=410 CharacterOffsetEnd=414 PartOfSpeech=IN Lemma=onto NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=415 CharacterOffsetEnd=418 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=spreadsheet CharacterOffsetBegin=419 CharacterOffsetEnd=430 PartOfSpeech=NN Lemma=spreadsheet NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=430 CharacterOffsetEnd=431 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NN Im))
+      (PP (IN under)
+        (NP
+          (NP
+            (NP (DT the) (NN gun))
+            (PP (IN as)
+              (PP (TO to)
+                (S
+                  (VP (VBG finding)
+                    (PRT (IN out))
+                    (SBAR
+                      (WHADVP (WRB where))
+                      (S
+                        (NP (DT the) (NNP MIdland) (NNP Region))
+                        (VP (VBZ is)
+                          (PP (IN in)
+                            (NP
+                              (NP (NN term))
+                              (PP (IN of)
+                                (NP (NNS permits)))))))))))))
+          (CC and)
+          (CC and)
+          (NP
+            (NP (JJ environmental) (NN compliance))
+            (CC and)
+            (NP
+              (NP (DT the) (JJ only) (NN way))
+              (SBAR
+                (S
+                  (NP (PRP I))
+                  (VP (MD can)
+                    (VP (VB begin)
+                      (S
+                        (VP (TO to)
+                          (VP (VB make)
+                            (NP (DT the) (NN evaluation))))))))))))))
+    (VP (VBZ is)
+      (S
+        (VP (TO to)
+          (VP (VB have)
+            (NP
+              (NP (DT the) (NN field))
+              (SBAR
+                (S
+                  (NP (NNS data))
+                  (VP (VBD inputed)
+                    (PP (IN onto)
+                      (NP (DT the) (NN spreadsheet)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-33)
+nsubj(is-33, Im-1)
+nsubj:xsubj(have-35, Im-1)
+case(gun-4, under-2)
+det(gun-4, the-3)
+nmod:under(Im-1, gun-4)
+case(finding-7, as-5)
+mark(finding-7, to-6)
+acl:to(gun-4, finding-7)
+compound:prt(finding-7, out-8)
+advmod(term-15, where-9)
+det(Region-12, the-10)
+compound(Region-12, MIdland-11)
+nsubj(term-15, Region-12)
+cop(term-15, is-13)
+case(term-15, in-14)
+advcl:in(finding-7, term-15)
+case(permits-17, of-16)
+nmod:of(term-15, permits-17)
+cc(gun-4, and-18)
+cc(gun-4, and-19)
+amod(compliance-21, environmental-20)
+nmod:under(Im-1, compliance-21)
+conj:and(gun-4, compliance-21)
+cc(compliance-21, and-22)
+det(way-25, the-23)
+amod(way-25, only-24)
+conj:and(gun-4, way-25)
+conj:and(compliance-21, way-25)
+nsubj(begin-28, I-26)
+nsubj:xsubj(make-30, I-26)
+aux(begin-28, can-27)
+acl:relcl(way-25, begin-28)
+mark(make-30, to-29)
+xcomp(begin-28, make-30)
+det(evaluation-32, the-31)
+dobj(make-30, evaluation-32)
+mark(have-35, to-34)
+xcomp(is-33, have-35)
+det(field-37, the-36)
+dobj(have-35, field-37)
+nsubj(inputed-39, data-38)
+acl:relcl(field-37, inputed-39)
+case(spreadsheet-42, onto-40)
+det(spreadsheet-42, the-41)
+nmod:onto(inputed-39, spreadsheet-42)
+punct(is-33, .-43)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (9 tokens):
+This is where the teams assistance is required.
+
+Tokens:
+[Text=This CharacterOffsetBegin=433 CharacterOffsetEnd=437 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=438 CharacterOffsetEnd=440 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=where CharacterOffsetBegin=441 CharacterOffsetEnd=446 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=447 CharacterOffsetEnd=450 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=teams CharacterOffsetBegin=451 CharacterOffsetEnd=456 PartOfSpeech=NNS Lemma=team NamedEntityTag=O]
+[Text=assistance CharacterOffsetBegin=457 CharacterOffsetEnd=467 PartOfSpeech=NN Lemma=assistance NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=468 CharacterOffsetEnd=470 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=required CharacterOffsetBegin=471 CharacterOffsetEnd=479 PartOfSpeech=VBN Lemma=require NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=479 CharacterOffsetEnd=480 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (DT the) (NNS teams) (NN assistance))
+          (VP (VBZ is)
+            (VP (VBN required))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-2)
+nsubj(is-2, This-1)
+advmod(required-8, where-3)
+det(assistance-6, the-4)
+compound(assistance-6, teams-5)
+nsubjpass(required-8, assistance-6)
+auxpass(required-8, is-7)
+advcl(is-2, required-8)
+punct(is-2, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (48 tokens):
+I
+have attached the latest version of the spreadsheet in the hope that you will
+deliver it to the following teams for their valued input:
+
+Monahans Team
+Hamlin/Haskel Team
+Lamesa Team
+Big Lake Team
+Midland Team
+Eunice Team
+
+
+
+
+
+Your assistance in this will be greatly appreciated.
+
+Tokens:
+[Text=I CharacterOffsetBegin=482 CharacterOffsetEnd=483 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=484 CharacterOffsetEnd=488 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=attached CharacterOffsetBegin=489 CharacterOffsetEnd=497 PartOfSpeech=VBN Lemma=attach NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=498 CharacterOffsetEnd=501 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=latest CharacterOffsetBegin=502 CharacterOffsetEnd=508 PartOfSpeech=JJS Lemma=latest NamedEntityTag=O]
+[Text=version CharacterOffsetBegin=509 CharacterOffsetEnd=516 PartOfSpeech=NN Lemma=version NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=517 CharacterOffsetEnd=519 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=520 CharacterOffsetEnd=523 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=spreadsheet CharacterOffsetBegin=524 CharacterOffsetEnd=535 PartOfSpeech=NN Lemma=spreadsheet NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=536 CharacterOffsetEnd=538 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=539 CharacterOffsetEnd=542 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=hope CharacterOffsetBegin=543 CharacterOffsetEnd=547 PartOfSpeech=NN Lemma=hope NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=548 CharacterOffsetEnd=552 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=553 CharacterOffsetEnd=556 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=557 CharacterOffsetEnd=561 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=deliver CharacterOffsetBegin=562 CharacterOffsetEnd=569 PartOfSpeech=VB Lemma=deliver NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=570 CharacterOffsetEnd=572 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=573 CharacterOffsetEnd=575 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=576 CharacterOffsetEnd=579 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=following CharacterOffsetBegin=580 CharacterOffsetEnd=589 PartOfSpeech=VBG Lemma=follow NamedEntityTag=O]
+[Text=teams CharacterOffsetBegin=590 CharacterOffsetEnd=595 PartOfSpeech=NNS Lemma=team NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=596 CharacterOffsetEnd=599 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=600 CharacterOffsetEnd=605 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=valued CharacterOffsetBegin=606 CharacterOffsetEnd=612 PartOfSpeech=VBN Lemma=value NamedEntityTag=O]
+[Text=input CharacterOffsetBegin=613 CharacterOffsetEnd=618 PartOfSpeech=NN Lemma=input NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=618 CharacterOffsetEnd=619 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Monahans CharacterOffsetBegin=621 CharacterOffsetEnd=629 PartOfSpeech=NNP Lemma=Monahans NamedEntityTag=ORGANIZATION]
+[Text=Team CharacterOffsetBegin=630 CharacterOffsetEnd=634 PartOfSpeech=NNP Lemma=Team NamedEntityTag=ORGANIZATION]
+[Text=Hamlin/Haskel CharacterOffsetBegin=635 CharacterOffsetEnd=648 PartOfSpeech=NNP Lemma=Hamlin/Haskel NamedEntityTag=ORGANIZATION]
+[Text=Team CharacterOffsetBegin=649 CharacterOffsetEnd=653 PartOfSpeech=NNP Lemma=Team NamedEntityTag=ORGANIZATION]
+[Text=Lamesa CharacterOffsetBegin=654 CharacterOffsetEnd=660 PartOfSpeech=NNP Lemma=Lamesa NamedEntityTag=ORGANIZATION]
+[Text=Team CharacterOffsetBegin=661 CharacterOffsetEnd=665 PartOfSpeech=NNP Lemma=Team NamedEntityTag=ORGANIZATION]
+[Text=Big CharacterOffsetBegin=666 CharacterOffsetEnd=669 PartOfSpeech=NNP Lemma=Big NamedEntityTag=ORGANIZATION]
+[Text=Lake CharacterOffsetBegin=670 CharacterOffsetEnd=674 PartOfSpeech=NNP Lemma=Lake NamedEntityTag=ORGANIZATION]
+[Text=Team CharacterOffsetBegin=675 CharacterOffsetEnd=679 PartOfSpeech=NNP Lemma=Team NamedEntityTag=ORGANIZATION]
+[Text=Midland CharacterOffsetBegin=680 CharacterOffsetEnd=687 PartOfSpeech=NNP Lemma=Midland NamedEntityTag=ORGANIZATION]
+[Text=Team CharacterOffsetBegin=688 CharacterOffsetEnd=692 PartOfSpeech=NNP Lemma=Team NamedEntityTag=ORGANIZATION]
+[Text=Eunice CharacterOffsetBegin=693 CharacterOffsetEnd=699 PartOfSpeech=NNP Lemma=Eunice NamedEntityTag=ORGANIZATION]
+[Text=Team CharacterOffsetBegin=700 CharacterOffsetEnd=704 PartOfSpeech=NNP Lemma=Team NamedEntityTag=ORGANIZATION]
+[Text=Your CharacterOffsetBegin=710 CharacterOffsetEnd=714 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=ORGANIZATION]
+[Text=assistance CharacterOffsetBegin=715 CharacterOffsetEnd=725 PartOfSpeech=NN Lemma=assistance NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=726 CharacterOffsetEnd=728 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=729 CharacterOffsetEnd=733 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=734 CharacterOffsetEnd=738 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=739 CharacterOffsetEnd=741 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=greatly CharacterOffsetBegin=742 CharacterOffsetEnd=749 PartOfSpeech=RB Lemma=greatly NamedEntityTag=O]
+[Text=appreciated CharacterOffsetBegin=750 CharacterOffsetEnd=761 PartOfSpeech=VBN Lemma=appreciate NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=761 CharacterOffsetEnd=762 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP have)
+      (VP (VBN attached)
+        (NP
+          (NP (DT the) (JJS latest) (NN version))
+          (PP (IN of)
+            (NP (DT the) (NN spreadsheet))))
+        (PP (IN in)
+          (NP (DT the) (NN hope)))
+        (SBAR (IN that)
+          (S
+            (NP (PRP you))
+            (VP (MD will)
+              (VP (VB deliver)
+                (NP (PRP it))
+                (PP (TO to)
+                  (NP
+                    (NP (DT the) (VBG following) (NNS teams))
+                    (PP (IN for)
+                      (NP (PRP$ their)
+                        (ADJP (VBN valued))
+                        (NN input)))))))))
+        (: :)
+        (NP
+          (NP (NNP Monahans) (NNP Team) (NNP Hamlin/Haskel) (NNP Team) (NNP Lamesa) (NNP Team) (NNP Big) (NNP Lake) (NNP Team) (NNP Midland) (NNP Team) (NNP Eunice) (NNP Team))
+          (SBAR
+            (S
+              (NP
+                (NP (PRP$ Your) (NN assistance))
+                (PP (IN in)
+                  (NP (DT this))))
+              (VP (MD will)
+                (VP (VB be)
+                  (VP
+                    (ADVP (RB greatly))
+                    (VBN appreciated)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, attached-3)
+nsubj(attached-3, I-1)
+aux(attached-3, have-2)
+det(version-6, the-4)
+amod(version-6, latest-5)
+dobj(attached-3, version-6)
+case(spreadsheet-9, of-7)
+det(spreadsheet-9, the-8)
+nmod:of(version-6, spreadsheet-9)
+case(hope-12, in-10)
+det(hope-12, the-11)
+nmod:in(attached-3, hope-12)
+mark(deliver-16, that-13)
+nsubj(deliver-16, you-14)
+aux(deliver-16, will-15)
+ccomp(attached-3, deliver-16)
+dobj(deliver-16, it-17)
+case(teams-21, to-18)
+det(teams-21, the-19)
+amod(teams-21, following-20)
+nmod:to(deliver-16, teams-21)
+case(input-25, for-22)
+nmod:poss(input-25, their-23)
+amod(input-25, valued-24)
+nmod:for(teams-21, input-25)
+punct(attached-3, :-26)
+compound(Team-39, Monahans-27)
+compound(Team-39, Team-28)
+compound(Team-39, Hamlin/Haskel-29)
+compound(Team-39, Team-30)
+compound(Team-39, Lamesa-31)
+compound(Team-39, Team-32)
+compound(Team-39, Big-33)
+compound(Team-39, Lake-34)
+compound(Team-39, Team-35)
+compound(Team-39, Midland-36)
+compound(Team-39, Team-37)
+compound(Team-39, Eunice-38)
+parataxis(attached-3, Team-39)
+nmod:poss(assistance-41, Your-40)
+nsubjpass(appreciated-47, assistance-41)
+case(this-43, in-42)
+nmod:in(assistance-41, this-43)
+aux(appreciated-47, will-44)
+auxpass(appreciated-47, be-45)
+advmod(appreciated-47, greatly-46)
+acl:relcl(Team-39, appreciated-47)
+punct(attached-3, .-48)
+
+Extracted the following NER entity mentions:
+Monahans Team Hamlin/Haskel Team Lamesa Team Big Lake Team Midland Team Eunice Team Your	ORGANIZATION
+
+Coreference set:
+	(2,7,[6,8]) -> (1,17,[16,22]), that is: "the teams" -> "the teams in the Midland Region"
+
+Coreference set:
+	(3,12,[10,13]) -> (1,21,[19,22]), that is: "the MIdland Region" -> "the Midland Region"
+
+Coreference set:
+	(3,42,[41,43]) -> (1,28,[24,29]), that is: "the spreadsheet" -> "the attached EOTT tank spreadsheet"
+	(5,9,[8,10]) -> (1,28,[24,29]), that is: "the spreadsheet" -> "the attached EOTT tank spreadsheet"
+
+Coreference set:
+	(3,26,[26,27]) -> (5,40,[27,41]), that is: "I" -> "Monahans Team Hamlin/Haskel Team Lamesa Team Big Lake Team Midland Team Eunice Team Your"
+	(5,1,[1,2]) -> (5,40,[27,41]), that is: "I" -> "Monahans Team Hamlin/Haskel Team Lamesa Team Big Lake Team Midland Team Eunice Team Your"
+
+Coreference set:
+	(5,23,[23,24]) -> (4,1,[1,2]), that is: "their" -> "This"
+	(5,43,[43,44]) -> (4,1,[1,2]), that is: "this" -> "This"
+
+Coreference set:
+	(5,41,[40,44]) -> (4,6,[4,7]), that is: "Your assistance in this" -> "the teams assistance"
+
+Coreference set:
+	(5,17,[17,18]) -> (5,6,[4,10]), that is: "it" -> "the latest version of the spreadsheet"

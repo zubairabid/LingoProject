@@ -1,0 +1,203 @@
+Document: ID=76181.in (3 sentences, 48 tokens)
+
+Sentence #1 (16 tokens):
+Chris' remarks are true with one wheeled trailers, but still worth a shot.
+
+Tokens:
+[Text=Chris CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Chris NamedEntityTag=PERSON]
+[Text=' CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=remarks CharacterOffsetBegin=7 CharacterOffsetEnd=14 PartOfSpeech=NNS Lemma=remark NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=true CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=JJ Lemma=true NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=wheeled CharacterOffsetBegin=33 CharacterOffsetEnd=40 PartOfSpeech=VBD Lemma=wheel NamedEntityTag=O]
+[Text=trailers CharacterOffsetBegin=41 CharacterOffsetEnd=49 PartOfSpeech=NNS Lemma=trailer NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=55 CharacterOffsetEnd=60 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=worth CharacterOffsetBegin=61 CharacterOffsetEnd=66 PartOfSpeech=IN Lemma=worth NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=shot CharacterOffsetBegin=69 CharacterOffsetEnd=73 PartOfSpeech=NN Lemma=shot NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Chris) (POS '))
+      (NNS remarks))
+    (VP (VBP are)
+      (ADJP (JJ true)
+        (PP (IN with)
+          (NP
+            (NP (CD one))
+            (SBAR
+              (S
+                (VP
+                  (VP (VBD wheeled)
+                    (NP (NNS trailers)))
+                  (, ,)
+                  (CC but)
+                  (VP
+                    (PP
+                      (ADVP (RB still))
+                      (IN worth)
+                      (NP (DT a) (NN shot)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, true-5)
+nmod:poss(remarks-3, Chris-1)
+case(Chris-1, '-2)
+nsubj(true-5, remarks-3)
+cop(true-5, are-4)
+case(one-7, with-6)
+nmod:with(true-5, one-7)
+acl:relcl(one-7, wheeled-8)
+dobj(wheeled-8, trailers-9)
+punct(wheeled-8, ,-10)
+cc(wheeled-8, but-11)
+advmod(shot-15, still-12)
+case(shot-15, worth-13)
+det(shot-15, a-14)
+acl:relcl(one-7, shot-15)
+conj:but(wheeled-8, shot-15)
+punct(true-5, .-16)
+
+Extracted the following NER entity mentions:
+Chris	PERSON
+one	NUMBER
+
+Sentence #2 (12 tokens):
+I am hesitant to blow 800 at Mission for their work.
+
+Tokens:
+[Text=I CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=77 CharacterOffsetEnd=79 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=hesitant CharacterOffsetBegin=80 CharacterOffsetEnd=88 PartOfSpeech=JJ Lemma=hesitant NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=blow CharacterOffsetBegin=92 CharacterOffsetEnd=96 PartOfSpeech=VB Lemma=blow NamedEntityTag=O]
+[Text=800 CharacterOffsetBegin=97 CharacterOffsetEnd=100 PartOfSpeech=CD Lemma=800 NamedEntityTag=NUMBER NormalizedNamedEntityTag=800.0]
+[Text=at CharacterOffsetBegin=101 CharacterOffsetEnd=103 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Mission CharacterOffsetBegin=104 CharacterOffsetEnd=111 PartOfSpeech=NNP Lemma=Mission NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=112 CharacterOffsetEnd=115 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=116 CharacterOffsetEnd=121 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=122 CharacterOffsetEnd=126 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=126 CharacterOffsetEnd=127 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP am)
+      (ADJP (JJ hesitant)
+        (S
+          (VP (TO to)
+            (VP (VB blow)
+              (NP (CD 800))
+              (PP (IN at)
+                (NP
+                  (NP (NNP Mission))
+                  (PP (IN for)
+                    (NP (PRP$ their) (NN work))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, hesitant-3)
+nsubj(hesitant-3, I-1)
+nsubj:xsubj(blow-5, I-1)
+cop(hesitant-3, am-2)
+mark(blow-5, to-4)
+xcomp(hesitant-3, blow-5)
+dobj(blow-5, 800-6)
+case(Mission-8, at-7)
+nmod:at(blow-5, Mission-8)
+case(work-11, for-9)
+nmod:poss(work-11, their-10)
+nmod:for(Mission-8, work-11)
+punct(hesitant-3, .-12)
+
+Extracted the following NER entity mentions:
+800	NUMBER
+
+Sentence #3 (20 tokens):
+I think we can shop around for parts and piece this thing together over time---certainly no hurry.
+
+Tokens:
+[Text=I CharacterOffsetBegin=129 CharacterOffsetEnd=130 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=131 CharacterOffsetEnd=136 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=137 CharacterOffsetEnd=139 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=140 CharacterOffsetEnd=143 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=shop CharacterOffsetBegin=144 CharacterOffsetEnd=148 PartOfSpeech=VB Lemma=shop NamedEntityTag=O]
+[Text=around CharacterOffsetBegin=149 CharacterOffsetEnd=155 PartOfSpeech=IN Lemma=around NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=156 CharacterOffsetEnd=159 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=parts CharacterOffsetBegin=160 CharacterOffsetEnd=165 PartOfSpeech=NNS Lemma=part NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=166 CharacterOffsetEnd=169 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=piece CharacterOffsetBegin=170 CharacterOffsetEnd=175 PartOfSpeech=NN Lemma=piece NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=176 CharacterOffsetEnd=180 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=thing CharacterOffsetBegin=181 CharacterOffsetEnd=186 PartOfSpeech=NN Lemma=thing NamedEntityTag=O]
+[Text=together CharacterOffsetBegin=187 CharacterOffsetEnd=195 PartOfSpeech=RB Lemma=together NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=196 CharacterOffsetEnd=200 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=201 CharacterOffsetEnd=205 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=205 CharacterOffsetEnd=208 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=certainly CharacterOffsetBegin=208 CharacterOffsetEnd=217 PartOfSpeech=RB Lemma=certainly NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=218 CharacterOffsetEnd=220 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=hurry CharacterOffsetBegin=221 CharacterOffsetEnd=226 PartOfSpeech=NN Lemma=hurry NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=226 CharacterOffsetEnd=227 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (PRP we))
+          (VP (MD can)
+            (VP (VB shop)
+              (ADVP (IN around)
+                (PP (IN for)
+                  (NP (NNS parts)
+                    (CC and)
+                    (NN piece))
+                  (ADVP
+                    (NP (DT this) (NN thing))
+                    (RB together))))
+              (PP (IN over)
+                (NP (NN time)))
+              (: --)
+              (ADVP (RB certainly)
+                (NP (DT no) (NN hurry))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, think-2)
+nsubj(think-2, I-1)
+nsubj(shop-5, we-3)
+aux(shop-5, can-4)
+ccomp(think-2, shop-5)
+advmod(shop-5, around-6)
+case(parts-8, for-7)
+nmod:for(around-6, parts-8)
+cc(parts-8, and-9)
+nmod:for(around-6, piece-10)
+conj:and(parts-8, piece-10)
+det(thing-12, this-11)
+nmod:npmod(together-13, thing-12)
+advmod(parts-8, together-13)
+case(time-15, over-14)
+nmod:over(shop-5, time-15)
+punct(shop-5, ---16)
+advmod(shop-5, certainly-17)
+neg(hurry-19, no-18)
+nmod:npmod(certainly-17, hurry-19)
+punct(think-2, .-20)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(3,1,[1,2]) -> (2,1,[1,2]), that is: "I" -> "I"

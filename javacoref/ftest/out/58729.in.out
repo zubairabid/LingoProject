@@ -1,0 +1,1648 @@
+Document: ID=58729.in (29 sentences, 395 tokens)
+
+Sentence #1 (26 tokens):
+The Enron Management Conference will be held Wednesday through Friday, November 14-16, 2001, at the Westin La Cantera Resort in San Antonio.
+
+Tokens:
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=Management CharacterOffsetBegin=10 CharacterOffsetEnd=20 PartOfSpeech=NNP Lemma=Management NamedEntityTag=ORGANIZATION]
+[Text=Conference CharacterOffsetBegin=21 CharacterOffsetEnd=31 PartOfSpeech=NNP Lemma=Conference NamedEntityTag=ORGANIZATION]
+[Text=will CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=held CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=VBN Lemma=hold NamedEntityTag=O]
+[Text=Wednesday CharacterOffsetBegin=45 CharacterOffsetEnd=54 PartOfSpeech=NNP Lemma=Wednesday NamedEntityTag=DATE NormalizedNamedEntityTag=wednesday]
+[Text=through CharacterOffsetBegin=55 CharacterOffsetEnd=62 PartOfSpeech=IN Lemma=through NamedEntityTag=O]
+[Text=Friday CharacterOffsetBegin=63 CharacterOffsetEnd=69 PartOfSpeech=NNP Lemma=Friday NamedEntityTag=DATE NormalizedNamedEntityTag=****1114/2001**16]
+[Text=, CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=, Lemma=, NamedEntityTag=DATE NormalizedNamedEntityTag=****1114/2001**16]
+[Text=November CharacterOffsetBegin=71 CharacterOffsetEnd=79 PartOfSpeech=NNP Lemma=November NamedEntityTag=DATE NormalizedNamedEntityTag=****1114/2001**16]
+[Text=14-16 CharacterOffsetBegin=80 CharacterOffsetEnd=85 PartOfSpeech=CD Lemma=14-16 NamedEntityTag=DATE NormalizedNamedEntityTag=****1114/2001**16]
+[Text=, CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=, Lemma=, NamedEntityTag=DATE NormalizedNamedEntityTag=****1114/2001**16]
+[Text=2001 CharacterOffsetBegin=87 CharacterOffsetEnd=91 PartOfSpeech=CD Lemma=2001 NamedEntityTag=DATE NormalizedNamedEntityTag=****1114/2001**16]
+[Text=, CharacterOffsetBegin=91 CharacterOffsetEnd=92 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=93 CharacterOffsetEnd=95 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=96 CharacterOffsetEnd=99 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Westin CharacterOffsetBegin=100 CharacterOffsetEnd=106 PartOfSpeech=NNP Lemma=Westin NamedEntityTag=LOCATION]
+[Text=La CharacterOffsetBegin=107 CharacterOffsetEnd=109 PartOfSpeech=NNP Lemma=La NamedEntityTag=STATE_OR_PROVINCE]
+[Text=Cantera CharacterOffsetBegin=110 CharacterOffsetEnd=117 PartOfSpeech=NNP Lemma=Cantera NamedEntityTag=LOCATION]
+[Text=Resort CharacterOffsetBegin=118 CharacterOffsetEnd=124 PartOfSpeech=NNP Lemma=Resort NamedEntityTag=LOCATION]
+[Text=in CharacterOffsetBegin=125 CharacterOffsetEnd=127 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=San CharacterOffsetBegin=128 CharacterOffsetEnd=131 PartOfSpeech=NNP Lemma=San NamedEntityTag=CITY]
+[Text=Antonio CharacterOffsetBegin=132 CharacterOffsetEnd=139 PartOfSpeech=NNP Lemma=Antonio NamedEntityTag=CITY]
+[Text=. CharacterOffsetBegin=139 CharacterOffsetEnd=140 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NNP Enron) (NNP Management) (NNP Conference))
+    (VP (MD will)
+      (VP (VB be)
+        (VP (VBN held)
+          (NP-TMP (NNP Wednesday))
+          (PP (IN through)
+            (NP (NNP Friday) (, ,) (NNP November) (CD 14-16) (, ,) (CD 2001) (, ,)))
+          (PP (IN at)
+            (NP (DT the) (NNP Westin) (NNP La) (NNP Cantera) (NNP Resort)))
+          (PP (IN in)
+            (NP (NNP San) (NNP Antonio))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, held-7)
+det(Conference-4, The-1)
+compound(Conference-4, Enron-2)
+compound(Conference-4, Management-3)
+nsubjpass(held-7, Conference-4)
+aux(held-7, will-5)
+auxpass(held-7, be-6)
+nmod:tmod(held-7, Wednesday-8)
+case(November-12, through-9)
+compound(November-12, Friday-10)
+punct(November-12, ,-11)
+nmod:through(held-7, November-12)
+nummod(November-12, 14-16-13)
+punct(November-12, ,-14)
+nummod(November-12, 2001-15)
+punct(November-12, ,-16)
+case(Resort-22, at-17)
+det(Resort-22, the-18)
+compound(Resort-22, Westin-19)
+compound(Resort-22, La-20)
+compound(Resort-22, Cantera-21)
+nmod:at(held-7, Resort-22)
+case(Antonio-25, in-23)
+compound(Antonio-25, San-24)
+nmod:in(held-7, Antonio-25)
+punct(held-7, .-26)
+
+Extracted the following NER entity mentions:
+Enron Management Conference	ORGANIZATION
+Wednesday	DATE
+Friday, November 14-16, 2001	DATE
+Westin	LOCATION
+La	STATE_OR_PROVINCE
+Cantera Resort	LOCATION
+San Antonio	CITY
+
+Sentence #2 (27 tokens):
+While the business agenda is still being finalized, there is one thing that is certain ... we want to inject some humor into the event.
+
+Tokens:
+[Text=While CharacterOffsetBegin=142 CharacterOffsetEnd=147 PartOfSpeech=IN Lemma=while NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=148 CharacterOffsetEnd=151 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=business CharacterOffsetBegin=152 CharacterOffsetEnd=160 PartOfSpeech=NN Lemma=business NamedEntityTag=O]
+[Text=agenda CharacterOffsetBegin=161 CharacterOffsetEnd=167 PartOfSpeech=NN Lemma=agenda NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=168 CharacterOffsetEnd=170 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=171 CharacterOffsetEnd=176 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=177 CharacterOffsetEnd=182 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=finalized CharacterOffsetBegin=183 CharacterOffsetEnd=192 PartOfSpeech=VBN Lemma=finalize NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=192 CharacterOffsetEnd=193 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=194 CharacterOffsetEnd=199 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=200 CharacterOffsetEnd=202 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=203 CharacterOffsetEnd=206 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=thing CharacterOffsetBegin=207 CharacterOffsetEnd=212 PartOfSpeech=NN Lemma=thing NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=213 CharacterOffsetEnd=217 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=218 CharacterOffsetEnd=220 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=certain CharacterOffsetBegin=221 CharacterOffsetEnd=228 PartOfSpeech=JJ Lemma=certain NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=229 CharacterOffsetEnd=232 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=233 CharacterOffsetEnd=235 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=236 CharacterOffsetEnd=240 PartOfSpeech=VBP Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=241 CharacterOffsetEnd=243 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=inject CharacterOffsetBegin=244 CharacterOffsetEnd=250 PartOfSpeech=VB Lemma=inject NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=251 CharacterOffsetEnd=255 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=humor CharacterOffsetBegin=256 CharacterOffsetEnd=261 PartOfSpeech=NN Lemma=humor NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=262 CharacterOffsetEnd=266 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=267 CharacterOffsetEnd=270 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=event CharacterOffsetBegin=271 CharacterOffsetEnd=276 PartOfSpeech=NN Lemma=event NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=276 CharacterOffsetEnd=277 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (SBAR (IN While)
+        (S
+          (NP (DT the) (NN business) (NN agenda))
+          (VP (VBZ is)
+            (ADVP (RB still))
+            (VP (VBG being)
+              (VP (VBN finalized))))))
+      (, ,)
+      (NP (EX there))
+      (VP (VBZ is)
+        (NP
+          (NP (CD one) (NN thing))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBZ is)
+                (ADJP (JJ certain))))))))
+    (: ...)
+    (S
+      (NP (PRP we))
+      (VP (VBP want)
+        (S
+          (VP (TO to)
+            (VP (VB inject)
+              (NP (DT some) (NN humor))
+              (PP (IN into)
+                (NP (DT the) (NN event))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-11)
+mark(finalized-8, While-1)
+det(agenda-4, the-2)
+compound(agenda-4, business-3)
+nsubjpass(finalized-8, agenda-4)
+aux(finalized-8, is-5)
+advmod(finalized-8, still-6)
+auxpass(finalized-8, being-7)
+advcl:while(is-11, finalized-8)
+punct(is-11, ,-9)
+expl(is-11, there-10)
+nummod(thing-13, one-12)
+nsubj(is-11, thing-13)
+nsubj(certain-16, thing-13)
+ref(thing-13, that-14)
+cop(certain-16, is-15)
+acl:relcl(thing-13, certain-16)
+punct(is-11, ...-17)
+nsubj(want-19, we-18)
+nsubj:xsubj(inject-21, we-18)
+parataxis(is-11, want-19)
+mark(inject-21, to-20)
+xcomp(want-19, inject-21)
+det(humor-23, some-22)
+dobj(inject-21, humor-23)
+case(event-26, into-24)
+det(event-26, the-25)
+nmod:into(inject-21, event-26)
+punct(is-11, .-27)
+
+Extracted the following NER entity mentions:
+one	NUMBER
+
+Sentence #3 (18 tokens):
+The past year has been eventful, and at times challenging, for Enron and its employees.
+
+Tokens:
+[Text=The CharacterOffsetBegin=279 CharacterOffsetEnd=282 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=past CharacterOffsetBegin=283 CharacterOffsetEnd=287 PartOfSpeech=JJ Lemma=past NamedEntityTag=O]
+[Text=year CharacterOffsetBegin=288 CharacterOffsetEnd=292 PartOfSpeech=NN Lemma=year NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=293 CharacterOffsetEnd=296 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=297 CharacterOffsetEnd=301 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=eventful CharacterOffsetBegin=302 CharacterOffsetEnd=310 PartOfSpeech=JJ Lemma=eventful NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=310 CharacterOffsetEnd=311 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=312 CharacterOffsetEnd=315 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=316 CharacterOffsetEnd=318 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=times CharacterOffsetBegin=319 CharacterOffsetEnd=324 PartOfSpeech=NNS Lemma=time NamedEntityTag=O]
+[Text=challenging CharacterOffsetBegin=325 CharacterOffsetEnd=336 PartOfSpeech=VBG Lemma=challenge NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=336 CharacterOffsetEnd=337 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=338 CharacterOffsetEnd=341 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=342 CharacterOffsetEnd=347 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=348 CharacterOffsetEnd=351 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=its CharacterOffsetBegin=352 CharacterOffsetEnd=355 PartOfSpeech=PRP$ Lemma=its NamedEntityTag=O]
+[Text=employees CharacterOffsetBegin=356 CharacterOffsetEnd=365 PartOfSpeech=NNS Lemma=employee NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=365 CharacterOffsetEnd=366 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (JJ past) (NN year))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (ADJP (JJ eventful)
+          (PRN (, ,)
+            (CC and)
+            (PP (IN at)
+              (NP (NNS times))))
+          (S
+            (VP (VBG challenging))))
+        (, ,)
+        (PP (IN for)
+          (NP
+            (NP (NNP Enron))
+            (CC and)
+            (NP (PRP$ its) (NNS employees))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, eventful-6)
+det(year-3, The-1)
+amod(year-3, past-2)
+nsubj(eventful-6, year-3)
+aux(eventful-6, has-4)
+cop(eventful-6, been-5)
+punct(times-10, ,-7)
+cc(times-10, and-8)
+case(times-10, at-9)
+dep(eventful-6, times-10)
+dep(eventful-6, challenging-11)
+punct(eventful-6, ,-12)
+case(Enron-14, for-13)
+nmod:for(eventful-6, Enron-14)
+cc(Enron-14, and-15)
+nmod:poss(employees-17, its-16)
+nmod:for(eventful-6, employees-17)
+conj:and(Enron-14, employees-17)
+punct(eventful-6, .-18)
+
+Extracted the following NER entity mentions:
+Enron	ORGANIZATION
+
+Sentence #4 (16 tokens):
+However, it's not in Enron's corporate fabric to focus on the past.
+
+Tokens:
+[Text=However CharacterOffsetBegin=368 CharacterOffsetEnd=375 PartOfSpeech=RB Lemma=however NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=375 CharacterOffsetEnd=376 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=377 CharacterOffsetEnd=379 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=379 CharacterOffsetEnd=381 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=382 CharacterOffsetEnd=385 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=386 CharacterOffsetEnd=388 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=389 CharacterOffsetEnd=394 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=394 CharacterOffsetEnd=396 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=corporate CharacterOffsetBegin=397 CharacterOffsetEnd=406 PartOfSpeech=JJ Lemma=corporate NamedEntityTag=O]
+[Text=fabric CharacterOffsetBegin=407 CharacterOffsetEnd=413 PartOfSpeech=NN Lemma=fabric NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=414 CharacterOffsetEnd=416 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=focus CharacterOffsetBegin=417 CharacterOffsetEnd=422 PartOfSpeech=VB Lemma=focus NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=423 CharacterOffsetEnd=425 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=426 CharacterOffsetEnd=429 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=past CharacterOffsetBegin=430 CharacterOffsetEnd=434 PartOfSpeech=NN Lemma=past NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=434 CharacterOffsetEnd=435 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB However))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ 's) (RB not)
+      (PP (IN in)
+        (NP
+          (NP (NNP Enron) (POS 's))
+          (JJ corporate) (NN fabric)
+          (S
+            (VP (TO to)
+              (VP (VB focus)
+                (PP (IN on)
+                  (NP (DT the) (NN past)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, fabric-10)
+advmod(fabric-10, However-1)
+punct(fabric-10, ,-2)
+nsubj(fabric-10, it-3)
+cop(fabric-10, 's-4)
+neg(fabric-10, not-5)
+case(fabric-10, in-6)
+nmod:poss(fabric-10, Enron-7)
+case(Enron-7, 's-8)
+amod(fabric-10, corporate-9)
+mark(focus-12, to-11)
+acl:to(fabric-10, focus-12)
+case(past-15, on-13)
+det(past-15, the-14)
+nmod:on(focus-12, past-15)
+punct(fabric-10, .-16)
+
+Extracted the following NER entity mentions:
+Enron	ORGANIZATION
+
+Sentence #5 (14 tokens):
+Instead, we want to look ahead, and even laugh at ourselves.
+
+Tokens:
+[Text=Instead CharacterOffsetBegin=437 CharacterOffsetEnd=444 PartOfSpeech=RB Lemma=instead NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=444 CharacterOffsetEnd=445 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=446 CharacterOffsetEnd=448 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=449 CharacterOffsetEnd=453 PartOfSpeech=VBP Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=454 CharacterOffsetEnd=456 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=look CharacterOffsetBegin=457 CharacterOffsetEnd=461 PartOfSpeech=VB Lemma=look NamedEntityTag=O]
+[Text=ahead CharacterOffsetBegin=462 CharacterOffsetEnd=467 PartOfSpeech=RB Lemma=ahead NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=467 CharacterOffsetEnd=468 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=469 CharacterOffsetEnd=472 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=even CharacterOffsetBegin=473 CharacterOffsetEnd=477 PartOfSpeech=RB Lemma=even NamedEntityTag=O]
+[Text=laugh CharacterOffsetBegin=478 CharacterOffsetEnd=483 PartOfSpeech=NN Lemma=laugh NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=484 CharacterOffsetEnd=486 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=ourselves CharacterOffsetBegin=487 CharacterOffsetEnd=496 PartOfSpeech=PRP Lemma=ourselves NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=496 CharacterOffsetEnd=497 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Instead))
+    (, ,)
+    (NP (PRP we))
+    (VP (VBP want)
+      (S
+        (VP (TO to)
+          (VP
+            (VP (VB look)
+              (ADVP (RB ahead)))
+            (, ,)
+            (CC and)
+            (RB even)
+            (VP (NN laugh)
+              (PP (IN at)
+                (NP (PRP ourselves))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, want-4)
+advmod(want-4, Instead-1)
+punct(want-4, ,-2)
+nsubj(want-4, we-3)
+nsubj:xsubj(look-6, we-3)
+mark(look-6, to-5)
+xcomp(want-4, look-6)
+advmod(look-6, ahead-7)
+punct(look-6, ,-8)
+cc(look-6, and-9)
+advmod(look-6, even-10)
+dep(look-6, laugh-11)
+case(ourselves-13, at-12)
+nmod:at(laugh-11, ourselves-13)
+punct(want-4, .-14)
+
+Extracted the following NER entity mentions:
+
+Sentence #6 (11 tokens):
+The Management Conference will provide a platform for just that.
+
+Tokens:
+[Text=The CharacterOffsetBegin=499 CharacterOffsetEnd=502 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Management CharacterOffsetBegin=503 CharacterOffsetEnd=513 PartOfSpeech=NNP Lemma=Management NamedEntityTag=O]
+[Text=Conference CharacterOffsetBegin=514 CharacterOffsetEnd=524 PartOfSpeech=NNP Lemma=Conference NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=525 CharacterOffsetEnd=529 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=provide CharacterOffsetBegin=530 CharacterOffsetEnd=537 PartOfSpeech=VB Lemma=provide NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=538 CharacterOffsetEnd=539 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=platform CharacterOffsetBegin=540 CharacterOffsetEnd=548 PartOfSpeech=NN Lemma=platform NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=549 CharacterOffsetEnd=552 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=553 CharacterOffsetEnd=557 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=558 CharacterOffsetEnd=562 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=562 CharacterOffsetEnd=563 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NNP Management) (NNP Conference))
+    (VP (MD will)
+      (VP (VB provide)
+        (NP
+          (NP (DT a) (NN platform))
+          (PP (IN for)
+            (NP (RB just) (DT that))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, provide-5)
+det(Conference-3, The-1)
+compound(Conference-3, Management-2)
+nsubj(provide-5, Conference-3)
+aux(provide-5, will-4)
+det(platform-7, a-6)
+dobj(provide-5, platform-7)
+case(that-10, for-8)
+advmod(that-10, just-9)
+nmod:for(platform-7, that-10)
+punct(provide-5, .-11)
+
+Extracted the following NER entity mentions:
+
+Sentence #7 (27 tokens):
+We want to challenge each of the business units to develop and submit a humorous "Home Video" to be presented at the Management Conference.
+
+Tokens:
+[Text=We CharacterOffsetBegin=565 CharacterOffsetEnd=567 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=568 CharacterOffsetEnd=572 PartOfSpeech=VBP Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=573 CharacterOffsetEnd=575 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=challenge CharacterOffsetBegin=576 CharacterOffsetEnd=585 PartOfSpeech=VB Lemma=challenge NamedEntityTag=O]
+[Text=each CharacterOffsetBegin=586 CharacterOffsetEnd=590 PartOfSpeech=DT Lemma=each NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=591 CharacterOffsetEnd=593 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=594 CharacterOffsetEnd=597 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=business CharacterOffsetBegin=598 CharacterOffsetEnd=606 PartOfSpeech=NN Lemma=business NamedEntityTag=O]
+[Text=units CharacterOffsetBegin=607 CharacterOffsetEnd=612 PartOfSpeech=NNS Lemma=unit NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=613 CharacterOffsetEnd=615 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=develop CharacterOffsetBegin=616 CharacterOffsetEnd=623 PartOfSpeech=VB Lemma=develop NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=624 CharacterOffsetEnd=627 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=submit CharacterOffsetBegin=628 CharacterOffsetEnd=634 PartOfSpeech=VB Lemma=submit NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=635 CharacterOffsetEnd=636 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=humorous CharacterOffsetBegin=637 CharacterOffsetEnd=645 PartOfSpeech=JJ Lemma=humorous NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=646 CharacterOffsetEnd=647 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Home CharacterOffsetBegin=647 CharacterOffsetEnd=651 PartOfSpeech=NNP Lemma=Home NamedEntityTag=O]
+[Text=Video CharacterOffsetBegin=652 CharacterOffsetEnd=657 PartOfSpeech=NNP Lemma=Video NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=657 CharacterOffsetEnd=658 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=659 CharacterOffsetEnd=661 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=662 CharacterOffsetEnd=664 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=presented CharacterOffsetBegin=665 CharacterOffsetEnd=674 PartOfSpeech=VBN Lemma=present NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=675 CharacterOffsetEnd=677 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=678 CharacterOffsetEnd=681 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Management CharacterOffsetBegin=682 CharacterOffsetEnd=692 PartOfSpeech=NNP Lemma=Management NamedEntityTag=O]
+[Text=Conference CharacterOffsetBegin=693 CharacterOffsetEnd=703 PartOfSpeech=NNP Lemma=Conference NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=703 CharacterOffsetEnd=704 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP want)
+      (S
+        (VP (TO to)
+          (VP (VB challenge)
+            (NP
+              (NP (DT each))
+              (PP (IN of)
+                (NP (DT the) (NN business) (NNS units))))
+            (S
+              (VP (TO to)
+                (VP (VB develop)
+                  (CC and)
+                  (VB submit)
+                  (NP
+                    (NP (DT a) (JJ humorous) (`` ``) (NNP Home) (NNP Video) ('' ''))
+                    (SBAR
+                      (S
+                        (VP (TO to)
+                          (VP (VB be)
+                            (VP (VBN presented)
+                              (PP (IN at)
+                                (NP (DT the) (NNP Management) (NNP Conference))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, want-2)
+nsubj(want-2, We-1)
+nsubj:xsubj(challenge-4, We-1)
+mark(challenge-4, to-3)
+xcomp(want-2, challenge-4)
+dobj(challenge-4, each-5)
+case(units-9, of-6)
+det(units-9, the-7)
+compound(units-9, business-8)
+nmod:of(each-5, units-9)
+mark(develop-11, to-10)
+advcl:to(challenge-4, develop-11)
+cc(develop-11, and-12)
+advcl:to(challenge-4, submit-13)
+conj:and(develop-11, submit-13)
+det(Video-18, a-14)
+amod(Video-18, humorous-15)
+punct(Video-18, ``-16)
+compound(Video-18, Home-17)
+dobj(develop-11, Video-18)
+punct(Video-18, ''-19)
+mark(presented-22, to-20)
+auxpass(presented-22, be-21)
+acl:to(Video-18, presented-22)
+case(Conference-26, at-23)
+det(Conference-26, the-24)
+compound(Conference-26, Management-25)
+nmod:at(presented-22, Conference-26)
+punct(want-2, .-27)
+
+Extracted the following NER entity mentions:
+
+Sentence #8 (13 tokens):
+The video can address any Enron-related topic that your business unit chooses.
+
+Tokens:
+[Text=The CharacterOffsetBegin=706 CharacterOffsetEnd=709 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=video CharacterOffsetBegin=710 CharacterOffsetEnd=715 PartOfSpeech=NN Lemma=video NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=716 CharacterOffsetEnd=719 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=address CharacterOffsetBegin=720 CharacterOffsetEnd=727 PartOfSpeech=VB Lemma=address NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=728 CharacterOffsetEnd=731 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=Enron-related CharacterOffsetBegin=732 CharacterOffsetEnd=745 PartOfSpeech=JJ Lemma=enron-related NamedEntityTag=MISC]
+[Text=topic CharacterOffsetBegin=746 CharacterOffsetEnd=751 PartOfSpeech=NN Lemma=topic NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=752 CharacterOffsetEnd=756 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=757 CharacterOffsetEnd=761 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=business CharacterOffsetBegin=762 CharacterOffsetEnd=770 PartOfSpeech=NN Lemma=business NamedEntityTag=O]
+[Text=unit CharacterOffsetBegin=771 CharacterOffsetEnd=775 PartOfSpeech=NN Lemma=unit NamedEntityTag=O]
+[Text=chooses CharacterOffsetBegin=776 CharacterOffsetEnd=783 PartOfSpeech=VBZ Lemma=choose NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=783 CharacterOffsetEnd=784 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN video))
+    (VP (MD can)
+      (VP (VB address)
+        (NP
+          (NP (DT any) (JJ Enron-related) (NN topic))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (NP (PRP$ your) (NN business) (NN unit))
+              (VP (VBZ chooses)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, address-4)
+det(video-2, The-1)
+nsubj(address-4, video-2)
+aux(address-4, can-3)
+det(topic-7, any-5)
+amod(topic-7, Enron-related-6)
+dobj(address-4, topic-7)
+dobj(chooses-12, topic-7)
+ref(topic-7, that-8)
+nmod:poss(unit-11, your-9)
+compound(unit-11, business-10)
+nsubj(chooses-12, unit-11)
+acl:relcl(topic-7, chooses-12)
+punct(address-4, .-13)
+
+Extracted the following NER entity mentions:
+Enron-related	MISC
+
+Sentence #9 (10 tokens):
+However, there are a few rules to follow.
+
+Tokens:
+[Text=However CharacterOffsetBegin=786 CharacterOffsetEnd=793 PartOfSpeech=RB Lemma=however NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=793 CharacterOffsetEnd=794 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=795 CharacterOffsetEnd=800 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=801 CharacterOffsetEnd=804 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=805 CharacterOffsetEnd=806 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=few CharacterOffsetBegin=807 CharacterOffsetEnd=810 PartOfSpeech=JJ Lemma=few NamedEntityTag=O]
+[Text=rules CharacterOffsetBegin=811 CharacterOffsetEnd=816 PartOfSpeech=NNS Lemma=rule NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=817 CharacterOffsetEnd=819 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=follow CharacterOffsetBegin=820 CharacterOffsetEnd=826 PartOfSpeech=VB Lemma=follow NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=826 CharacterOffsetEnd=827 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB However))
+    (, ,)
+    (NP (EX there))
+    (VP (VBP are)
+      (NP (DT a) (JJ few) (NNS rules)
+        (S
+          (VP (TO to)
+            (VP (VB follow))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, are-4)
+advmod(are-4, However-1)
+punct(are-4, ,-2)
+expl(are-4, there-3)
+det(rules-7, a-5)
+amod(rules-7, few-6)
+nsubj(are-4, rules-7)
+mark(follow-9, to-8)
+acl:to(rules-7, follow-9)
+punct(are-4, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #10 (3 tokens):
+1.)
+
+Tokens:
+[Text=1 CharacterOffsetBegin=828 CharacterOffsetEnd=829 PartOfSpeech=LS Lemma=1 NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=829 CharacterOffsetEnd=830 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=830 CharacterOffsetEnd=831 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (LS 1))
+    (. .) (-RRB- -RRB-)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 1-1)
+punct(1-1, .-2)
+punct(1-1, -RRB--3)
+
+Extracted the following NER entity mentions:
+
+Sentence #11 (11 tokens):
+The videos should be no more than five minutes long.
+
+Tokens:
+[Text=The CharacterOffsetBegin=832 CharacterOffsetEnd=835 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=videos CharacterOffsetBegin=836 CharacterOffsetEnd=842 PartOfSpeech=NNS Lemma=video NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=843 CharacterOffsetEnd=849 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=850 CharacterOffsetEnd=852 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=853 CharacterOffsetEnd=855 PartOfSpeech=RB Lemma=no NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=856 CharacterOffsetEnd=860 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=861 CharacterOffsetEnd=865 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=five CharacterOffsetBegin=866 CharacterOffsetEnd=870 PartOfSpeech=CD Lemma=five NamedEntityTag=DURATION]
+[Text=minutes CharacterOffsetBegin=871 CharacterOffsetEnd=878 PartOfSpeech=NNS Lemma=minute NamedEntityTag=DURATION]
+[Text=long CharacterOffsetBegin=879 CharacterOffsetEnd=883 PartOfSpeech=RB Lemma=long NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=883 CharacterOffsetEnd=884 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NNS videos))
+    (VP (MD should)
+      (VP (VB be)
+        (ADVP (RB no)
+          (NP
+            (QP (JJR more) (IN than) (CD five))
+            (NNS minutes)))
+        (ADVP (RB long))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, be-4)
+det(videos-2, The-1)
+nsubj(be-4, videos-2)
+aux(be-4, should-3)
+advmod(be-4, no-5)
+advmod(five-8, more-6)
+mwe(more-6, than-7)
+nummod(minutes-9, five-8)
+nmod:npmod(no-5, minutes-9)
+advmod(be-4, long-10)
+punct(be-4, .-11)
+
+Extracted the following NER entity mentions:
+five minutes	DURATION
+
+Sentence #12 (3 tokens):
+2.)
+
+Tokens:
+[Text=2 CharacterOffsetBegin=885 CharacterOffsetEnd=886 PartOfSpeech=LS Lemma=2 NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=886 CharacterOffsetEnd=887 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=887 CharacterOffsetEnd=888 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (LS 2))
+    (. .) (-RRB- -RRB-)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 2-1)
+punct(2-1, .-2)
+punct(2-1, -RRB--3)
+
+Extracted the following NER entity mentions:
+
+Sentence #13 (19 tokens):
+Business units should spend as little as possible on the videos, and no more than $10,000.
+
+Tokens:
+[Text=Business CharacterOffsetBegin=889 CharacterOffsetEnd=897 PartOfSpeech=NN Lemma=business NamedEntityTag=O]
+[Text=units CharacterOffsetBegin=898 CharacterOffsetEnd=903 PartOfSpeech=NNS Lemma=unit NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=904 CharacterOffsetEnd=910 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=spend CharacterOffsetBegin=911 CharacterOffsetEnd=916 PartOfSpeech=VB Lemma=spend NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=917 CharacterOffsetEnd=919 PartOfSpeech=RB Lemma=as NamedEntityTag=O]
+[Text=little CharacterOffsetBegin=920 CharacterOffsetEnd=926 PartOfSpeech=JJ Lemma=little NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=927 CharacterOffsetEnd=929 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=possible CharacterOffsetBegin=930 CharacterOffsetEnd=938 PartOfSpeech=JJ Lemma=possible NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=939 CharacterOffsetEnd=941 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=942 CharacterOffsetEnd=945 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=videos CharacterOffsetBegin=946 CharacterOffsetEnd=952 PartOfSpeech=NNS Lemma=video NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=952 CharacterOffsetEnd=953 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=954 CharacterOffsetEnd=957 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=958 CharacterOffsetEnd=960 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=961 CharacterOffsetEnd=965 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=966 CharacterOffsetEnd=970 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=971 CharacterOffsetEnd=972 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=<=$10000.0]
+[Text=10,000 CharacterOffsetBegin=972 CharacterOffsetEnd=978 PartOfSpeech=CD Lemma=10,000 NamedEntityTag=MONEY NormalizedNamedEntityTag=<=$10000.0]
+[Text=. CharacterOffsetBegin=978 CharacterOffsetEnd=979 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN Business) (NNS units))
+    (VP (MD should)
+      (VP (VB spend)
+        (ADJP (RB as) (JJ little)
+          (PP (IN as)
+            (ADJP (JJ possible))))
+        (PP (IN on)
+          (NP
+            (NP (DT the) (NNS videos))
+            (, ,)
+            (CC and)
+            (NP (DT no)
+              (QP (JJR more) (IN than) ($ $) (CD 10,000)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, spend-4)
+compound(units-2, Business-1)
+nsubj(spend-4, units-2)
+aux(spend-4, should-3)
+advmod(little-6, as-5)
+xcomp(spend-4, little-6)
+case(possible-8, as-7)
+advcl:as(little-6, possible-8)
+case(videos-11, on-9)
+det(videos-11, the-10)
+nmod:on(spend-4, videos-11)
+punct(videos-11, ,-12)
+cc(videos-11, and-13)
+neg($-17, no-14)
+advmod($-17, more-15)
+mwe(more-15, than-16)
+nmod:on(spend-4, $-17)
+conj:and(videos-11, $-17)
+nummod($-17, 10,000-18)
+punct(spend-4, .-19)
+
+Extracted the following NER entity mentions:
+$10,000	MONEY
+
+Sentence #14 (24 tokens):
+Innovision Communications (Beth Stier) has agreed to work with any business unit to help them create an original, inexpensive video.
+
+Tokens:
+[Text=Innovision CharacterOffsetBegin=981 CharacterOffsetEnd=991 PartOfSpeech=NNP Lemma=Innovision NamedEntityTag=ORGANIZATION]
+[Text=Communications CharacterOffsetBegin=992 CharacterOffsetEnd=1006 PartOfSpeech=NNP Lemma=Communications NamedEntityTag=ORGANIZATION]
+[Text=-LRB- CharacterOffsetBegin=1007 CharacterOffsetEnd=1008 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Beth CharacterOffsetBegin=1008 CharacterOffsetEnd=1012 PartOfSpeech=NNP Lemma=Beth NamedEntityTag=PERSON]
+[Text=Stier CharacterOffsetBegin=1013 CharacterOffsetEnd=1018 PartOfSpeech=NNP Lemma=Stier NamedEntityTag=PERSON]
+[Text=-RRB- CharacterOffsetBegin=1018 CharacterOffsetEnd=1019 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=1020 CharacterOffsetEnd=1023 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=agreed CharacterOffsetBegin=1024 CharacterOffsetEnd=1030 PartOfSpeech=VBN Lemma=agree NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1031 CharacterOffsetEnd=1033 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=1034 CharacterOffsetEnd=1038 PartOfSpeech=VB Lemma=work NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=1039 CharacterOffsetEnd=1043 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=1044 CharacterOffsetEnd=1047 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=business CharacterOffsetBegin=1048 CharacterOffsetEnd=1056 PartOfSpeech=NN Lemma=business NamedEntityTag=O]
+[Text=unit CharacterOffsetBegin=1057 CharacterOffsetEnd=1061 PartOfSpeech=NN Lemma=unit NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1062 CharacterOffsetEnd=1064 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=help CharacterOffsetBegin=1065 CharacterOffsetEnd=1069 PartOfSpeech=VB Lemma=help NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=1070 CharacterOffsetEnd=1074 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=create CharacterOffsetBegin=1075 CharacterOffsetEnd=1081 PartOfSpeech=VB Lemma=create NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=1082 CharacterOffsetEnd=1084 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=original CharacterOffsetBegin=1085 CharacterOffsetEnd=1093 PartOfSpeech=JJ Lemma=original NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1093 CharacterOffsetEnd=1094 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=inexpensive CharacterOffsetBegin=1095 CharacterOffsetEnd=1106 PartOfSpeech=JJ Lemma=inexpensive NamedEntityTag=O]
+[Text=video CharacterOffsetBegin=1107 CharacterOffsetEnd=1112 PartOfSpeech=NN Lemma=video NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1112 CharacterOffsetEnd=1113 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Innovision) (NNP Communications))
+      (PRN (-LRB- -LRB-)
+        (NP (NNP Beth) (NNP Stier))
+        (-RRB- -RRB-)))
+    (VP (VBZ has)
+      (VP (VBN agreed)
+        (S
+          (VP (TO to)
+            (VP (VB work)
+              (PP (IN with)
+                (NP (DT any) (NN business) (NN unit)))
+              (S
+                (VP (TO to)
+                  (VP (VB help)
+                    (S
+                      (NP (PRP them))
+                      (VP (VB create)
+                        (NP (DT an) (JJ original) (, ,) (JJ inexpensive) (NN video))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, agreed-8)
+compound(Communications-2, Innovision-1)
+nsubj(agreed-8, Communications-2)
+nsubj:xsubj(work-10, Communications-2)
+punct(Stier-5, -LRB--3)
+compound(Stier-5, Beth-4)
+appos(Communications-2, Stier-5)
+punct(Stier-5, -RRB--6)
+aux(agreed-8, has-7)
+mark(work-10, to-9)
+xcomp(agreed-8, work-10)
+case(unit-14, with-11)
+det(unit-14, any-12)
+compound(unit-14, business-13)
+nmod:with(work-10, unit-14)
+mark(help-16, to-15)
+xcomp(work-10, help-16)
+nsubj(create-18, them-17)
+ccomp(help-16, create-18)
+det(video-23, an-19)
+amod(video-23, original-20)
+punct(video-23, ,-21)
+amod(video-23, inexpensive-22)
+dobj(create-18, video-23)
+punct(agreed-8, .-24)
+
+Extracted the following NER entity mentions:
+Innovision Communications	ORGANIZATION
+Beth Stier	PERSON
+
+Sentence #15 (7 tokens):
+Innovision can be contacted at 713-446-4424.
+
+Tokens:
+[Text=Innovision CharacterOffsetBegin=1115 CharacterOffsetEnd=1125 PartOfSpeech=NNP Lemma=Innovision NamedEntityTag=MISC]
+[Text=can CharacterOffsetBegin=1126 CharacterOffsetEnd=1129 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=1130 CharacterOffsetEnd=1132 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=contacted CharacterOffsetBegin=1133 CharacterOffsetEnd=1142 PartOfSpeech=VBN Lemma=contact NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=1143 CharacterOffsetEnd=1145 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=713-446-4424 CharacterOffsetBegin=1146 CharacterOffsetEnd=1158 PartOfSpeech=CD Lemma=713-446-4424 NamedEntityTag=NUMBER]
+[Text=. CharacterOffsetBegin=1158 CharacterOffsetEnd=1159 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Innovision))
+    (VP (MD can)
+      (VP (VB be)
+        (VP (VBN contacted)
+          (PP (IN at)
+            (NP (CD 713-446-4424))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, contacted-4)
+nsubjpass(contacted-4, Innovision-1)
+aux(contacted-4, can-2)
+auxpass(contacted-4, be-3)
+case(713-446-4424-6, at-5)
+nmod:at(contacted-4, 713-446-4424-6)
+punct(contacted-4, .-7)
+
+Extracted the following NER entity mentions:
+Innovision	MISC
+713-446-4424	NUMBER
+
+Sentence #16 (3 tokens):
+3.)
+
+Tokens:
+[Text=3 CharacterOffsetBegin=1160 CharacterOffsetEnd=1161 PartOfSpeech=LS Lemma=3 NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1161 CharacterOffsetEnd=1162 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=1162 CharacterOffsetEnd=1163 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (LS 3))
+    (. .) (-RRB- -RRB-)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 3-1)
+punct(3-1, .-2)
+punct(3-1, -RRB--3)
+
+Extracted the following NER entity mentions:
+
+Sentence #17 (10 tokens):
+The videos should be fun, but not disparaging.
+
+Tokens:
+[Text=The CharacterOffsetBegin=1164 CharacterOffsetEnd=1167 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=videos CharacterOffsetBegin=1168 CharacterOffsetEnd=1174 PartOfSpeech=NNS Lemma=video NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=1175 CharacterOffsetEnd=1181 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=1182 CharacterOffsetEnd=1184 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=fun CharacterOffsetBegin=1185 CharacterOffsetEnd=1188 PartOfSpeech=NN Lemma=fun NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1188 CharacterOffsetEnd=1189 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=1190 CharacterOffsetEnd=1193 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=1194 CharacterOffsetEnd=1197 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=disparaging CharacterOffsetBegin=1198 CharacterOffsetEnd=1209 PartOfSpeech=VBG Lemma=disparage NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1209 CharacterOffsetEnd=1210 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NNS videos))
+      (VP (MD should)
+        (VP (VB be)
+          (NP (NN fun)))))
+    (, ,)
+    (CC but)
+    (S (RB not)
+      (VP (VBG disparaging)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, fun-5)
+det(videos-2, The-1)
+nsubj(fun-5, videos-2)
+nsubj(disparaging-9, videos-2)
+aux(fun-5, should-3)
+cop(fun-5, be-4)
+punct(fun-5, ,-6)
+cc(fun-5, but-7)
+neg(disparaging-9, not-8)
+conj:but(fun-5, disparaging-9)
+punct(fun-5, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #18 (16 tokens):
+They should adhere to Enron's values of respect, integrity, communication and excellence.
+
+Tokens:
+[Text=They CharacterOffsetBegin=1212 CharacterOffsetEnd=1216 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=1217 CharacterOffsetEnd=1223 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=adhere CharacterOffsetBegin=1224 CharacterOffsetEnd=1230 PartOfSpeech=VB Lemma=adhere NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1231 CharacterOffsetEnd=1233 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=1234 CharacterOffsetEnd=1239 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=1239 CharacterOffsetEnd=1241 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=values CharacterOffsetBegin=1242 CharacterOffsetEnd=1248 PartOfSpeech=NNS Lemma=value NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=1249 CharacterOffsetEnd=1251 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=respect CharacterOffsetBegin=1252 CharacterOffsetEnd=1259 PartOfSpeech=NN Lemma=respect NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1259 CharacterOffsetEnd=1260 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=integrity CharacterOffsetBegin=1261 CharacterOffsetEnd=1270 PartOfSpeech=NN Lemma=integrity NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1270 CharacterOffsetEnd=1271 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=communication CharacterOffsetBegin=1272 CharacterOffsetEnd=1285 PartOfSpeech=NN Lemma=communication NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1286 CharacterOffsetEnd=1289 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=excellence CharacterOffsetBegin=1290 CharacterOffsetEnd=1300 PartOfSpeech=NN Lemma=excellence NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1300 CharacterOffsetEnd=1301 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (MD should)
+      (VP (VB adhere)
+        (PP (TO to)
+          (NP
+            (NP
+              (NP (NNP Enron) (POS 's))
+              (NNS values))
+            (PP (IN of)
+              (NP (NN respect) (, ,) (NN integrity) (, ,) (NN communication)
+                (CC and)
+                (NN excellence)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, adhere-3)
+nsubj(adhere-3, They-1)
+aux(adhere-3, should-2)
+case(values-7, to-4)
+nmod:poss(values-7, Enron-5)
+case(Enron-5, 's-6)
+nmod:to(adhere-3, values-7)
+case(respect-9, of-8)
+nmod:of(values-7, respect-9)
+punct(respect-9, ,-10)
+nmod:of(values-7, integrity-11)
+conj:and(respect-9, integrity-11)
+punct(respect-9, ,-12)
+nmod:of(values-7, communication-13)
+conj:and(respect-9, communication-13)
+cc(respect-9, and-14)
+nmod:of(values-7, excellence-15)
+conj:and(respect-9, excellence-15)
+punct(adhere-3, .-16)
+
+Extracted the following NER entity mentions:
+Enron	ORGANIZATION
+
+Sentence #19 (3 tokens):
+4.)
+
+Tokens:
+[Text=4 CharacterOffsetBegin=1302 CharacterOffsetEnd=1303 PartOfSpeech=LS Lemma=4 NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1303 CharacterOffsetEnd=1304 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=1304 CharacterOffsetEnd=1305 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (LS 4))
+    (. .) (-RRB- -RRB-)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 4-1)
+punct(4-1, .-2)
+punct(4-1, -RRB--3)
+
+Extracted the following NER entity mentions:
+
+Sentence #20 (20 tokens):
+By Monday, October 15, business units need to notify me of their intention to submit a video.
+
+Tokens:
+[Text=By CharacterOffsetBegin=1307 CharacterOffsetEnd=1309 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Monday CharacterOffsetBegin=1310 CharacterOffsetEnd=1316 PartOfSpeech=NNP Lemma=Monday NamedEntityTag=DATE NormalizedNamedEntityTag=****1015]
+[Text=, CharacterOffsetBegin=1316 CharacterOffsetEnd=1317 PartOfSpeech=, Lemma=, NamedEntityTag=DATE NormalizedNamedEntityTag=****1015]
+[Text=October CharacterOffsetBegin=1318 CharacterOffsetEnd=1325 PartOfSpeech=NNP Lemma=October NamedEntityTag=DATE NormalizedNamedEntityTag=****1015]
+[Text=15 CharacterOffsetBegin=1326 CharacterOffsetEnd=1328 PartOfSpeech=CD Lemma=15 NamedEntityTag=DATE NormalizedNamedEntityTag=****1015]
+[Text=, CharacterOffsetBegin=1328 CharacterOffsetEnd=1329 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=business CharacterOffsetBegin=1330 CharacterOffsetEnd=1338 PartOfSpeech=NN Lemma=business NamedEntityTag=O]
+[Text=units CharacterOffsetBegin=1339 CharacterOffsetEnd=1344 PartOfSpeech=NNS Lemma=unit NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=1345 CharacterOffsetEnd=1349 PartOfSpeech=VBP Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1350 CharacterOffsetEnd=1352 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=notify CharacterOffsetBegin=1353 CharacterOffsetEnd=1359 PartOfSpeech=VB Lemma=notify NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=1360 CharacterOffsetEnd=1362 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=1363 CharacterOffsetEnd=1365 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=1366 CharacterOffsetEnd=1371 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=intention CharacterOffsetBegin=1372 CharacterOffsetEnd=1381 PartOfSpeech=NN Lemma=intention NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1382 CharacterOffsetEnd=1384 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=submit CharacterOffsetBegin=1385 CharacterOffsetEnd=1391 PartOfSpeech=VB Lemma=submit NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=1392 CharacterOffsetEnd=1393 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=video CharacterOffsetBegin=1394 CharacterOffsetEnd=1399 PartOfSpeech=NN Lemma=video NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1399 CharacterOffsetEnd=1400 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN By)
+      (NP (NNP Monday)))
+    (, ,)
+    (NP-TMP (NNP October) (CD 15))
+    (, ,)
+    (NP (NN business) (NNS units))
+    (VP (VBP need)
+      (S
+        (VP (TO to)
+          (VP (VB notify)
+            (NP (PRP me))
+            (PP (IN of)
+              (NP (PRP$ their) (NN intention)
+                (S
+                  (VP (TO to)
+                    (VP (VB submit)
+                      (NP (DT a) (NN video)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, need-9)
+case(Monday-2, By-1)
+nmod:by(need-9, Monday-2)
+punct(need-9, ,-3)
+nmod:tmod(need-9, October-4)
+nummod(October-4, 15-5)
+punct(need-9, ,-6)
+compound(units-8, business-7)
+nsubj(need-9, units-8)
+nsubj:xsubj(notify-11, units-8)
+mark(notify-11, to-10)
+xcomp(need-9, notify-11)
+dobj(notify-11, me-12)
+case(intention-15, of-13)
+nmod:poss(intention-15, their-14)
+nmod:of(notify-11, intention-15)
+mark(submit-17, to-16)
+acl:to(intention-15, submit-17)
+det(video-19, a-18)
+dobj(submit-17, video-19)
+punct(need-9, .-20)
+
+Extracted the following NER entity mentions:
+Monday, October 15	DATE
+
+Sentence #21 (18 tokens):
+To avoid duplication, business units will also need to identify a topic they intend to address.
+
+Tokens:
+[Text=To CharacterOffsetBegin=1402 CharacterOffsetEnd=1404 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=avoid CharacterOffsetBegin=1405 CharacterOffsetEnd=1410 PartOfSpeech=VB Lemma=avoid NamedEntityTag=O]
+[Text=duplication CharacterOffsetBegin=1411 CharacterOffsetEnd=1422 PartOfSpeech=NN Lemma=duplication NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1422 CharacterOffsetEnd=1423 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=business CharacterOffsetBegin=1424 CharacterOffsetEnd=1432 PartOfSpeech=NN Lemma=business NamedEntityTag=O]
+[Text=units CharacterOffsetBegin=1433 CharacterOffsetEnd=1438 PartOfSpeech=NNS Lemma=unit NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=1439 CharacterOffsetEnd=1443 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=1444 CharacterOffsetEnd=1448 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=1449 CharacterOffsetEnd=1453 PartOfSpeech=VB Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1454 CharacterOffsetEnd=1456 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=identify CharacterOffsetBegin=1457 CharacterOffsetEnd=1465 PartOfSpeech=VB Lemma=identify NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=1466 CharacterOffsetEnd=1467 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=topic CharacterOffsetBegin=1468 CharacterOffsetEnd=1473 PartOfSpeech=NN Lemma=topic NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=1474 CharacterOffsetEnd=1478 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=intend CharacterOffsetBegin=1479 CharacterOffsetEnd=1485 PartOfSpeech=VBP Lemma=intend NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1486 CharacterOffsetEnd=1488 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=address CharacterOffsetBegin=1489 CharacterOffsetEnd=1496 PartOfSpeech=VB Lemma=address NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1496 CharacterOffsetEnd=1497 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (TO To)
+        (VP (VB avoid)
+          (NP (NN duplication)))))
+    (, ,)
+    (NP (NN business) (NNS units))
+    (VP (MD will)
+      (ADVP (RB also))
+      (VP (VB need)
+        (S
+          (VP (TO to)
+            (VP (VB identify)
+              (NP
+                (NP (DT a) (NN topic))
+                (SBAR
+                  (S
+                    (NP (PRP they))
+                    (VP (VBP intend)
+                      (S
+                        (VP (TO to)
+                          (VP (VB address)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, need-9)
+mark(avoid-2, To-1)
+advcl:to(need-9, avoid-2)
+dobj(avoid-2, duplication-3)
+punct(need-9, ,-4)
+compound(units-6, business-5)
+nsubj(need-9, units-6)
+nsubj:xsubj(identify-11, units-6)
+aux(need-9, will-7)
+advmod(need-9, also-8)
+mark(identify-11, to-10)
+xcomp(need-9, identify-11)
+det(topic-13, a-12)
+dobj(identify-11, topic-13)
+nsubj(intend-15, they-14)
+nsubj:xsubj(address-17, they-14)
+acl:relcl(topic-13, intend-15)
+mark(address-17, to-16)
+xcomp(intend-15, address-17)
+punct(need-9, .-18)
+
+Extracted the following NER entity mentions:
+
+Sentence #22 (3 tokens):
+5.)
+
+Tokens:
+[Text=5 CharacterOffsetBegin=1498 CharacterOffsetEnd=1499 PartOfSpeech=CD Lemma=5 NamedEntityTag=NUMBER NormalizedNamedEntityTag=5.0]
+[Text=. CharacterOffsetBegin=1499 CharacterOffsetEnd=1500 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=1500 CharacterOffsetEnd=1501 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (CD 5) (. .))
+    (VP (-RRB- -RRB-))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, -RRB--3)
+nsubj(-RRB--3, 5-1)
+punct(5-1, .-2)
+
+Extracted the following NER entity mentions:
+5	NUMBER
+
+Sentence #23 (22 tokens):
+To ensure inclusion in the Management Conference agenda, videos need to be submitted to me by Friday, November 9.
+
+Tokens:
+[Text=To CharacterOffsetBegin=1502 CharacterOffsetEnd=1504 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=ensure CharacterOffsetBegin=1505 CharacterOffsetEnd=1511 PartOfSpeech=VB Lemma=ensure NamedEntityTag=O]
+[Text=inclusion CharacterOffsetBegin=1512 CharacterOffsetEnd=1521 PartOfSpeech=NN Lemma=inclusion NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=1522 CharacterOffsetEnd=1524 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1525 CharacterOffsetEnd=1528 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Management CharacterOffsetBegin=1529 CharacterOffsetEnd=1539 PartOfSpeech=NNP Lemma=Management NamedEntityTag=O]
+[Text=Conference CharacterOffsetBegin=1540 CharacterOffsetEnd=1550 PartOfSpeech=NNP Lemma=Conference NamedEntityTag=O]
+[Text=agenda CharacterOffsetBegin=1551 CharacterOffsetEnd=1557 PartOfSpeech=NN Lemma=agenda NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1557 CharacterOffsetEnd=1558 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=videos CharacterOffsetBegin=1559 CharacterOffsetEnd=1565 PartOfSpeech=NNS Lemma=video NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=1566 CharacterOffsetEnd=1570 PartOfSpeech=VBP Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1571 CharacterOffsetEnd=1573 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=1574 CharacterOffsetEnd=1576 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=submitted CharacterOffsetBegin=1577 CharacterOffsetEnd=1586 PartOfSpeech=VBN Lemma=submit NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1587 CharacterOffsetEnd=1589 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=1590 CharacterOffsetEnd=1592 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=1593 CharacterOffsetEnd=1595 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Friday CharacterOffsetBegin=1596 CharacterOffsetEnd=1602 PartOfSpeech=NNP Lemma=Friday NamedEntityTag=DATE NormalizedNamedEntityTag=****1109]
+[Text=, CharacterOffsetBegin=1602 CharacterOffsetEnd=1603 PartOfSpeech=, Lemma=, NamedEntityTag=DATE NormalizedNamedEntityTag=****1109]
+[Text=November CharacterOffsetBegin=1604 CharacterOffsetEnd=1612 PartOfSpeech=NNP Lemma=November NamedEntityTag=DATE NormalizedNamedEntityTag=****1109]
+[Text=9 CharacterOffsetBegin=1613 CharacterOffsetEnd=1614 PartOfSpeech=CD Lemma=9 NamedEntityTag=DATE NormalizedNamedEntityTag=****1109]
+[Text=. CharacterOffsetBegin=1614 CharacterOffsetEnd=1615 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (TO To)
+        (VP (VB ensure)
+          (NP (NN inclusion))
+          (PP (IN in)
+            (NP (DT the) (NNP Management) (NNP Conference) (NN agenda))))))
+    (, ,)
+    (NP (NNS videos))
+    (VP (VBP need)
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (VP (VBN submitted)
+              (PP (TO to)
+                (NP (PRP me)))
+              (PP (IN by)
+                (NP
+                  (NP (NNP Friday))
+                  (, ,)
+                  (NP (NNP November) (CD 9)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, need-11)
+mark(ensure-2, To-1)
+advcl:to(need-11, ensure-2)
+dobj(ensure-2, inclusion-3)
+case(agenda-8, in-4)
+det(agenda-8, the-5)
+compound(agenda-8, Management-6)
+compound(agenda-8, Conference-7)
+nmod:in(ensure-2, agenda-8)
+punct(need-11, ,-9)
+nsubj(need-11, videos-10)
+nsubjpass:xsubj(submitted-14, videos-10)
+mark(submitted-14, to-12)
+auxpass(submitted-14, be-13)
+xcomp(need-11, submitted-14)
+case(me-16, to-15)
+nmod:to(submitted-14, me-16)
+case(Friday-18, by-17)
+nmod:agent(submitted-14, Friday-18)
+punct(Friday-18, ,-19)
+appos(Friday-18, November-20)
+nummod(November-20, 9-21)
+punct(need-11, .-22)
+
+Extracted the following NER entity mentions:
+Friday, November 9	DATE
+
+Sentence #24 (3 tokens):
+6.)
+
+Tokens:
+[Text=6 CharacterOffsetBegin=1616 CharacterOffsetEnd=1617 PartOfSpeech=CD Lemma=6 NamedEntityTag=NUMBER NormalizedNamedEntityTag=6.0]
+[Text=. CharacterOffsetBegin=1617 CharacterOffsetEnd=1618 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=1618 CharacterOffsetEnd=1619 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (CD 6) (. .))
+    (VP (-RRB- -RRB-))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, -RRB--3)
+nsubj(-RRB--3, 6-1)
+punct(6-1, .-2)
+
+Extracted the following NER entity mentions:
+6	NUMBER
+
+Sentence #25 (9 tokens):
+Awards will be given for creativity and humor.
+
+Tokens:
+[Text=Awards CharacterOffsetBegin=1621 CharacterOffsetEnd=1627 PartOfSpeech=NNS Lemma=award NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=1628 CharacterOffsetEnd=1632 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=1633 CharacterOffsetEnd=1635 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=given CharacterOffsetBegin=1636 CharacterOffsetEnd=1641 PartOfSpeech=VBN Lemma=give NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=1642 CharacterOffsetEnd=1645 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=creativity CharacterOffsetBegin=1646 CharacterOffsetEnd=1656 PartOfSpeech=NN Lemma=creativity NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1657 CharacterOffsetEnd=1660 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=humor CharacterOffsetBegin=1661 CharacterOffsetEnd=1666 PartOfSpeech=NN Lemma=humor NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1666 CharacterOffsetEnd=1667 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNS Awards))
+    (VP (MD will)
+      (VP (VB be)
+        (VP (VBN given)
+          (PP (IN for)
+            (NP (NN creativity)
+              (CC and)
+              (NN humor))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, given-4)
+nsubjpass(given-4, Awards-1)
+aux(given-4, will-2)
+auxpass(given-4, be-3)
+case(creativity-6, for-5)
+nmod:for(given-4, creativity-6)
+cc(creativity-6, and-7)
+nmod:for(given-4, humor-8)
+conj:and(creativity-6, humor-8)
+punct(given-4, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #26 (21 tokens):
+The first annual, and soon-to-be-coveted, "Enny" will also be awarded for "Best Overall Video."
+
+Tokens:
+[Text=The CharacterOffsetBegin=1669 CharacterOffsetEnd=1672 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=1673 CharacterOffsetEnd=1678 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=annual CharacterOffsetBegin=1679 CharacterOffsetEnd=1685 PartOfSpeech=JJ Lemma=annual NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1685 CharacterOffsetEnd=1686 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1687 CharacterOffsetEnd=1690 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=soon-to-be-coveted CharacterOffsetBegin=1691 CharacterOffsetEnd=1709 PartOfSpeech=JJ Lemma=soon-to-be-coveted NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1709 CharacterOffsetEnd=1710 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=1711 CharacterOffsetEnd=1712 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Enny CharacterOffsetBegin=1712 CharacterOffsetEnd=1716 PartOfSpeech=NNP Lemma=Enny NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=1716 CharacterOffsetEnd=1717 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=1718 CharacterOffsetEnd=1722 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=1723 CharacterOffsetEnd=1727 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=1728 CharacterOffsetEnd=1730 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=awarded CharacterOffsetBegin=1731 CharacterOffsetEnd=1738 PartOfSpeech=VBN Lemma=award NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=1739 CharacterOffsetEnd=1742 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=1743 CharacterOffsetEnd=1744 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Best CharacterOffsetBegin=1744 CharacterOffsetEnd=1748 PartOfSpeech=JJS Lemma=best NamedEntityTag=O]
+[Text=Overall CharacterOffsetBegin=1749 CharacterOffsetEnd=1756 PartOfSpeech=JJ Lemma=overall NamedEntityTag=O]
+[Text=Video CharacterOffsetBegin=1757 CharacterOffsetEnd=1762 PartOfSpeech=NNP Lemma=Video NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1762 CharacterOffsetEnd=1763 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=1763 CharacterOffsetEnd=1764 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT The) (JJ first) (JJ annual))
+        (, ,)
+        (CC and)
+        (NP (JJ soon-to-be-coveted))))
+    (, ,) (`` ``)
+    (NP (NNP Enny))
+    ('' '')
+    (VP (MD will)
+      (ADVP (RB also))
+      (VP (VB be)
+        (VP (VBN awarded)
+          (PP (IN for) (`` ``)
+            (NP
+              (NP (JJS Best))
+              (NP (JJ Overall) (NNP Video)))))))
+    (. .) ('' '')))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, awarded-14)
+det(annual-3, The-1)
+amod(annual-3, first-2)
+ccomp(awarded-14, annual-3)
+punct(annual-3, ,-4)
+cc(annual-3, and-5)
+conj:and(annual-3, soon-to-be-coveted-6)
+ccomp(awarded-14, soon-to-be-coveted-6)
+punct(awarded-14, ,-7)
+punct(awarded-14, ``-8)
+nsubjpass(awarded-14, Enny-9)
+punct(awarded-14, ''-10)
+aux(awarded-14, will-11)
+advmod(awarded-14, also-12)
+auxpass(awarded-14, be-13)
+case(Best-17, for-15)
+punct(Best-17, ``-16)
+nmod:for(awarded-14, Best-17)
+amod(Video-19, Overall-18)
+dep(Best-17, Video-19)
+punct(awarded-14, .-20)
+punct(awarded-14, ''-21)
+
+Extracted the following NER entity mentions:
+first	ORDINAL
+
+Sentence #27 (20 tokens):
+If you have any questions about the "Home Video" project, please contact myself or Mary Clark.
+
+Tokens:
+[Text=If CharacterOffsetBegin=1766 CharacterOffsetEnd=1768 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=1769 CharacterOffsetEnd=1772 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=1773 CharacterOffsetEnd=1777 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=1778 CharacterOffsetEnd=1781 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=questions CharacterOffsetBegin=1782 CharacterOffsetEnd=1791 PartOfSpeech=NNS Lemma=question NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=1792 CharacterOffsetEnd=1797 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1798 CharacterOffsetEnd=1801 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=1802 CharacterOffsetEnd=1803 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Home CharacterOffsetBegin=1803 CharacterOffsetEnd=1807 PartOfSpeech=NNP Lemma=Home NamedEntityTag=O]
+[Text=Video CharacterOffsetBegin=1808 CharacterOffsetEnd=1813 PartOfSpeech=NNP Lemma=Video NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=1813 CharacterOffsetEnd=1814 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=project CharacterOffsetBegin=1815 CharacterOffsetEnd=1822 PartOfSpeech=NN Lemma=project NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1822 CharacterOffsetEnd=1823 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=please CharacterOffsetBegin=1824 CharacterOffsetEnd=1830 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=contact CharacterOffsetBegin=1831 CharacterOffsetEnd=1838 PartOfSpeech=NN Lemma=contact NamedEntityTag=O]
+[Text=myself CharacterOffsetBegin=1839 CharacterOffsetEnd=1845 PartOfSpeech=PRP Lemma=myself NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=1846 CharacterOffsetEnd=1848 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=Mary CharacterOffsetBegin=1849 CharacterOffsetEnd=1853 PartOfSpeech=NNP Lemma=Mary NamedEntityTag=PERSON]
+[Text=Clark CharacterOffsetBegin=1854 CharacterOffsetEnd=1859 PartOfSpeech=NNP Lemma=Clark NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=1859 CharacterOffsetEnd=1860 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP have)
+          (NP
+            (NP (DT any) (NNS questions))
+            (PP (IN about)
+              (NP (DT the) (`` ``) (NNP Home) (NNP Video) ('' '') (NN project)))))))
+    (, ,)
+    (VP (VB please)
+      (S
+        (NP (NN contact))
+        (NP
+          (NP (PRP myself))
+          (CC or)
+          (NP (NNP Mary) (NNP Clark)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, please-14)
+mark(have-3, If-1)
+nsubj(have-3, you-2)
+advcl:if(please-14, have-3)
+det(questions-5, any-4)
+dobj(have-3, questions-5)
+case(project-12, about-6)
+det(project-12, the-7)
+punct(project-12, ``-8)
+compound(project-12, Home-9)
+compound(project-12, Video-10)
+punct(project-12, ''-11)
+nmod:about(questions-5, project-12)
+punct(please-14, ,-13)
+nsubj(myself-16, contact-15)
+xcomp(please-14, myself-16)
+cc(myself-16, or-17)
+compound(Clark-19, Mary-18)
+xcomp(please-14, Clark-19)
+conj:or(myself-16, Clark-19)
+punct(please-14, .-20)
+
+Extracted the following NER entity mentions:
+Mary Clark	PERSON
+
+Sentence #28 (16 tokens):
+Terrie James
+ph. 713-853-7727
+terrie.james@enron.com
+
+Mary Clark
+ph. 713-853-7325
+mary.clark@enron.com
+
+Good luck and happy filming!
+
+Tokens:
+[Text=Terrie CharacterOffsetBegin=1862 CharacterOffsetEnd=1868 PartOfSpeech=NNP Lemma=Terrie NamedEntityTag=PERSON]
+[Text=James CharacterOffsetBegin=1869 CharacterOffsetEnd=1874 PartOfSpeech=NNP Lemma=James NamedEntityTag=PERSON]
+[Text=ph. CharacterOffsetBegin=1875 CharacterOffsetEnd=1878 PartOfSpeech=NNP Lemma=ph. NamedEntityTag=O]
+[Text=713-853-7727 CharacterOffsetBegin=1879 CharacterOffsetEnd=1891 PartOfSpeech=CD Lemma=713-853-7727 NamedEntityTag=NUMBER]
+[Text=terrie.james@enron.com CharacterOffsetBegin=1892 CharacterOffsetEnd=1914 PartOfSpeech=NNP Lemma=terrie.james@enron.com NamedEntityTag=EMAIL]
+[Text=Mary CharacterOffsetBegin=1916 CharacterOffsetEnd=1920 PartOfSpeech=NNP Lemma=Mary NamedEntityTag=PERSON]
+[Text=Clark CharacterOffsetBegin=1921 CharacterOffsetEnd=1926 PartOfSpeech=NNP Lemma=Clark NamedEntityTag=PERSON]
+[Text=ph. CharacterOffsetBegin=1927 CharacterOffsetEnd=1930 PartOfSpeech=FW Lemma=ph. NamedEntityTag=O]
+[Text=713-853-7325 CharacterOffsetBegin=1931 CharacterOffsetEnd=1943 PartOfSpeech=CD Lemma=713-853-7325 NamedEntityTag=NUMBER]
+[Text=mary.clark@enron.com CharacterOffsetBegin=1944 CharacterOffsetEnd=1964 PartOfSpeech=NNP Lemma=mary.clark@enron.com NamedEntityTag=EMAIL]
+[Text=Good CharacterOffsetBegin=1966 CharacterOffsetEnd=1970 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=luck CharacterOffsetBegin=1971 CharacterOffsetEnd=1975 PartOfSpeech=NN Lemma=luck NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1976 CharacterOffsetEnd=1979 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=happy CharacterOffsetBegin=1980 CharacterOffsetEnd=1985 PartOfSpeech=JJ Lemma=happy NamedEntityTag=O]
+[Text=filming CharacterOffsetBegin=1986 CharacterOffsetEnd=1993 PartOfSpeech=VBG Lemma=film NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=1993 CharacterOffsetEnd=1994 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP
+      (NP (NNP Terrie) (NNP James) (NNP ph.) (CD 713-853-7727) (NNP terrie.james@enron.com))
+      (NP (NNP Mary) (NNP Clark))
+      (NP (FW ph.)))
+    (SBAR
+      (S
+        (S
+          (NP (CD 713-853-7325) (NNP mary.clark@enron.com) (JJ Good) (NN luck)))
+        (CC and)
+        (S
+          (ADJP (JJ happy)
+            (S
+              (VP (VBG filming)))))))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, terrie.james@enron.com-5)
+compound(terrie.james@enron.com-5, Terrie-1)
+compound(terrie.james@enron.com-5, James-2)
+compound(terrie.james@enron.com-5, ph.-3)
+nummod(terrie.james@enron.com-5, 713-853-7727-4)
+compound(Clark-7, Mary-6)
+dep(terrie.james@enron.com-5, Clark-7)
+dep(terrie.james@enron.com-5, ph.-8)
+nummod(luck-12, 713-853-7325-9)
+compound(luck-12, mary.clark@enron.com-10)
+amod(luck-12, Good-11)
+acl:relcl(terrie.james@enron.com-5, luck-12)
+cc(luck-12, and-13)
+acl:relcl(terrie.james@enron.com-5, happy-14)
+conj:and(luck-12, happy-14)
+dep(happy-14, filming-15)
+punct(terrie.james@enron.com-5, !-16)
+
+Extracted the following NER entity mentions:
+Terrie James	PERSON
+713-853-7727	NUMBER
+terrie.james@enron.com	EMAIL
+Mary Clark	PERSON
+713-853-7325	NUMBER
+mary.clark@enron.com	EMAIL
+
+Sentence #29 (2 tokens):
+Terrie James
+
+Tokens:
+[Text=Terrie CharacterOffsetBegin=1995 CharacterOffsetEnd=2001 PartOfSpeech=NNP Lemma=Terrie NamedEntityTag=PERSON]
+[Text=James CharacterOffsetBegin=2002 CharacterOffsetEnd=2007 PartOfSpeech=NNP Lemma=James NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Terrie) (NNP James)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, James-2)
+compound(James-2, Terrie-1)
+
+Extracted the following NER entity mentions:
+Terrie James	PERSON
+
+Coreference set:
+	(3,14,[14,15]) -> (1,4,[1,5]), that is: "Enron" -> "The Enron Management Conference"
+	(4,7,[7,9]) -> (1,4,[1,5]), that is: "Enron 's" -> "The Enron Management Conference"
+	(6,3,[1,4]) -> (1,4,[1,5]), that is: "The Management Conference" -> "The Enron Management Conference"
+	(7,26,[24,27]) -> (1,4,[1,5]), that is: "the Management Conference" -> "The Enron Management Conference"
+	(18,5,[5,7]) -> (1,4,[1,5]), that is: "Enron 's" -> "The Enron Management Conference"
+
+Coreference set:
+	(23,18,[18,22]) -> (1,10,[10,11]), that is: "Friday , November 9" -> "Friday"
+	(23,18,[18,19]) -> (1,10,[10,11]), that is: "Friday" -> "Friday"
+
+Coreference set:
+	(5,3,[3,4]) -> (2,18,[18,19]), that is: "we" -> "we"
+	(5,13,[13,14]) -> (2,18,[18,19]), that is: "ourselves" -> "we"
+	(7,1,[1,2]) -> (2,18,[18,19]), that is: "We" -> "we"
+
+Coreference set:
+	(3,16,[16,17]) -> (3,3,[1,4]), that is: "its" -> "The past year"
+	(4,3,[3,4]) -> (3,3,[1,4]), that is: "it" -> "The past year"
+
+Coreference set:
+	(13,2,[1,3]) -> (7,9,[7,10]), that is: "Business units" -> "the business units"
+	(20,8,[7,9]) -> (7,9,[7,10]), that is: "business units" -> "the business units"
+	(21,6,[5,7]) -> (7,9,[7,10]), that is: "business units" -> "the business units"
+
+Coreference set:
+	(8,2,[1,3]) -> (7,18,[14,27]), that is: "The video" -> "a humorous `` Home Video '' to be presented at the Management Conference"
+
+Coreference set:
+	(13,11,[10,12]) -> (11,2,[1,3]), that is: "the videos" -> "The videos"
+	(17,2,[1,3]) -> (11,2,[1,3]), that is: "The videos" -> "The videos"
+	(23,10,[10,11]) -> (11,2,[1,3]), that is: "videos" -> "The videos"
+
+Coreference set:
+	(20,14,[14,15]) -> (18,1,[1,2]), that is: "their" -> "They"
+	(21,14,[14,15]) -> (18,1,[1,2]), that is: "they" -> "They"
+
+Coreference set:
+	(23,16,[16,17]) -> (20,12,[12,13]), that is: "me" -> "me"
+	(27,16,[16,17]) -> (20,12,[12,13]), that is: "myself" -> "me"
+
+Coreference set:
+	(28,7,[6,8]) -> (27,19,[18,20]), that is: "Mary Clark" -> "Mary Clark"
+
+Coreference set:
+	(29,2,[1,3]) -> (28,2,[1,3]), that is: "Terrie James" -> "Terrie James"

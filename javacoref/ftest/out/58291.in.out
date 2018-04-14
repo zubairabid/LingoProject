@@ -1,0 +1,405 @@
+Document: ID=58291.in (5 sentences, 103 tokens)
+
+Sentence #1 (23 tokens):
+Louise,
+I believe what you are seeing is names of Enron Networks employees who are placing orders on behalf of ENA.
+
+Tokens:
+[Text=Louise CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Louise NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=believe CharacterOffsetBegin=10 CharacterOffsetEnd=17 PartOfSpeech=VBP Lemma=believe NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=seeing CharacterOffsetBegin=31 CharacterOffsetEnd=37 PartOfSpeech=VBG Lemma=see NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=names CharacterOffsetBegin=41 CharacterOffsetEnd=46 PartOfSpeech=NNS Lemma=name NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=50 CharacterOffsetEnd=55 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=Networks CharacterOffsetBegin=56 CharacterOffsetEnd=64 PartOfSpeech=NNP Lemma=Networks NamedEntityTag=ORGANIZATION]
+[Text=employees CharacterOffsetBegin=65 CharacterOffsetEnd=74 PartOfSpeech=NNS Lemma=employee NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=placing CharacterOffsetBegin=83 CharacterOffsetEnd=90 PartOfSpeech=VBG Lemma=place NamedEntityTag=O]
+[Text=orders CharacterOffsetBegin=91 CharacterOffsetEnd=97 PartOfSpeech=NNS Lemma=order NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=98 CharacterOffsetEnd=100 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=behalf CharacterOffsetBegin=101 CharacterOffsetEnd=107 PartOfSpeech=NN Lemma=behalf NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=108 CharacterOffsetEnd=110 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=ENA CharacterOffsetBegin=111 CharacterOffsetEnd=114 PartOfSpeech=NN Lemma=ena NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=114 CharacterOffsetEnd=115 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Louise))
+    (PRN (, ,)
+      (S
+        (NP (PRP I))
+        (VP (VBP believe)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (NP (PRP you))
+              (VP (VBP are)
+                (VP (VBG seeing))))))))
+    (VP (VBZ is)
+      (NP
+        (NP (NNS names))
+        (PP (IN of)
+          (NP (NNP Enron) (NNP Networks) (NNS employees)))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBP are)
+              (VP (VBG placing)
+                (NP (NNS orders))
+                (PP (IN on)
+                  (NP
+                    (NP (NN behalf))
+                    (PP (IN of)
+                      (NP (NN ENA)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, names-10)
+nsubj(names-10, Louise-1)
+punct(believe-4, ,-2)
+nsubj(believe-4, I-3)
+parataxis(names-10, believe-4)
+dobj(seeing-8, what-5)
+nsubj(seeing-8, you-6)
+aux(seeing-8, are-7)
+ccomp(believe-4, seeing-8)
+cop(names-10, is-9)
+nsubj(placing-17, names-10)
+case(employees-14, of-11)
+compound(employees-14, Enron-12)
+compound(employees-14, Networks-13)
+nmod:of(names-10, employees-14)
+ref(names-10, who-15)
+aux(placing-17, are-16)
+acl:relcl(names-10, placing-17)
+dobj(placing-17, orders-18)
+case(ENA-22, on-19)
+mwe(on-19, behalf-20)
+mwe(on-19, of-21)
+nmod:on_behalf_of(placing-17, ENA-22)
+punct(names-10, .-23)
+
+Extracted the following NER entity mentions:
+Louise	PERSON
+Enron Networks	ORGANIZATION
+ENA	ORGANIZATION
+
+Sentence #2 (24 tokens):
+When this happens these employees are responsible for obtaining prior approval for the responsible party within the cost center their are ordering for.
+
+Tokens:
+[Text=When CharacterOffsetBegin=116 CharacterOffsetEnd=120 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=121 CharacterOffsetEnd=125 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=happens CharacterOffsetBegin=126 CharacterOffsetEnd=133 PartOfSpeech=VBZ Lemma=happen NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=134 CharacterOffsetEnd=139 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=employees CharacterOffsetBegin=140 CharacterOffsetEnd=149 PartOfSpeech=NNS Lemma=employee NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=150 CharacterOffsetEnd=153 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=responsible CharacterOffsetBegin=154 CharacterOffsetEnd=165 PartOfSpeech=JJ Lemma=responsible NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=166 CharacterOffsetEnd=169 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=obtaining CharacterOffsetBegin=170 CharacterOffsetEnd=179 PartOfSpeech=VBG Lemma=obtain NamedEntityTag=O]
+[Text=prior CharacterOffsetBegin=180 CharacterOffsetEnd=185 PartOfSpeech=JJ Lemma=prior NamedEntityTag=O]
+[Text=approval CharacterOffsetBegin=186 CharacterOffsetEnd=194 PartOfSpeech=NN Lemma=approval NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=195 CharacterOffsetEnd=198 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=199 CharacterOffsetEnd=202 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=responsible CharacterOffsetBegin=203 CharacterOffsetEnd=214 PartOfSpeech=JJ Lemma=responsible NamedEntityTag=O]
+[Text=party CharacterOffsetBegin=215 CharacterOffsetEnd=220 PartOfSpeech=NN Lemma=party NamedEntityTag=O]
+[Text=within CharacterOffsetBegin=221 CharacterOffsetEnd=227 PartOfSpeech=IN Lemma=within NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=228 CharacterOffsetEnd=231 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=cost CharacterOffsetBegin=232 CharacterOffsetEnd=236 PartOfSpeech=NN Lemma=cost NamedEntityTag=O]
+[Text=center CharacterOffsetBegin=237 CharacterOffsetEnd=243 PartOfSpeech=NN Lemma=center NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=244 CharacterOffsetEnd=249 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=250 CharacterOffsetEnd=253 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=ordering CharacterOffsetBegin=254 CharacterOffsetEnd=262 PartOfSpeech=VBG Lemma=order NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=263 CharacterOffsetEnd=266 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=266 CharacterOffsetEnd=267 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (DT this))
+        (VP (VBZ happens)
+          (SBAR
+            (S
+              (NP (DT these) (NNS employees))
+              (VP (VBP are)
+                (ADJP (JJ responsible)
+                  (PP (IN for)
+                    (S
+                      (VP (VBG obtaining)
+                        (NP (JJ prior) (NN approval))
+                        (PP (IN for)
+                          (NP
+                            (NP (DT the) (JJ responsible) (NN party))
+                            (PP (IN within)
+                              (NP (DT the) (NN cost) (NN center)))))))))))))))
+    (NP (PRP$ their))
+    (VP (VBP are)
+      (VP (VBG ordering)
+        (PP (IN for))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ordering-22)
+advmod(happens-3, When-1)
+nsubj(happens-3, this-2)
+advcl(ordering-22, happens-3)
+det(employees-5, these-4)
+nsubj(responsible-7, employees-5)
+cop(responsible-7, are-6)
+ccomp(happens-3, responsible-7)
+mark(obtaining-9, for-8)
+advcl:for(responsible-7, obtaining-9)
+amod(approval-11, prior-10)
+dobj(obtaining-9, approval-11)
+case(party-15, for-12)
+det(party-15, the-13)
+amod(party-15, responsible-14)
+nmod:for(obtaining-9, party-15)
+case(center-19, within-16)
+det(center-19, the-17)
+compound(center-19, cost-18)
+nmod:within(party-15, center-19)
+nsubj(ordering-22, their-20)
+aux(ordering-22, are-21)
+nmod(ordering-22, for-23)
+punct(ordering-22, .-24)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (23 tokens):
+Additionally all IT hardware purchases must be reviewed and approved by a technical buyer once the cost center financial approval is obtained.
+
+Tokens:
+[Text=Additionally CharacterOffsetBegin=268 CharacterOffsetEnd=280 PartOfSpeech=RB Lemma=additionally NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=281 CharacterOffsetEnd=284 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=IT CharacterOffsetBegin=285 CharacterOffsetEnd=287 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=hardware CharacterOffsetBegin=288 CharacterOffsetEnd=296 PartOfSpeech=NN Lemma=hardware NamedEntityTag=O]
+[Text=purchases CharacterOffsetBegin=297 CharacterOffsetEnd=306 PartOfSpeech=NNS Lemma=purchase NamedEntityTag=O]
+[Text=must CharacterOffsetBegin=307 CharacterOffsetEnd=311 PartOfSpeech=MD Lemma=must NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=312 CharacterOffsetEnd=314 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=reviewed CharacterOffsetBegin=315 CharacterOffsetEnd=323 PartOfSpeech=VBN Lemma=review NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=324 CharacterOffsetEnd=327 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=approved CharacterOffsetBegin=328 CharacterOffsetEnd=336 PartOfSpeech=VBN Lemma=approve NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=337 CharacterOffsetEnd=339 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=340 CharacterOffsetEnd=341 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=technical CharacterOffsetBegin=342 CharacterOffsetEnd=351 PartOfSpeech=JJ Lemma=technical NamedEntityTag=O]
+[Text=buyer CharacterOffsetBegin=352 CharacterOffsetEnd=357 PartOfSpeech=NN Lemma=buyer NamedEntityTag=TITLE]
+[Text=once CharacterOffsetBegin=358 CharacterOffsetEnd=362 PartOfSpeech=IN Lemma=once NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=363 CharacterOffsetEnd=366 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=cost CharacterOffsetBegin=367 CharacterOffsetEnd=371 PartOfSpeech=NN Lemma=cost NamedEntityTag=O]
+[Text=center CharacterOffsetBegin=372 CharacterOffsetEnd=378 PartOfSpeech=NN Lemma=center NamedEntityTag=O]
+[Text=financial CharacterOffsetBegin=379 CharacterOffsetEnd=388 PartOfSpeech=JJ Lemma=financial NamedEntityTag=O]
+[Text=approval CharacterOffsetBegin=389 CharacterOffsetEnd=397 PartOfSpeech=NN Lemma=approval NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=398 CharacterOffsetEnd=400 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=obtained CharacterOffsetBegin=401 CharacterOffsetEnd=409 PartOfSpeech=VBN Lemma=obtain NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=409 CharacterOffsetEnd=410 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Additionally))
+    (NP
+      (NP (DT all) (PRP IT))
+      (NP (NN hardware) (NNS purchases)))
+    (VP (MD must)
+      (VP (VB be)
+        (VP (VBN reviewed)
+          (CC and)
+          (VBN approved)
+          (PP (IN by)
+            (NP (DT a) (JJ technical) (NN buyer)))
+          (SBAR (IN once)
+            (S
+              (NP
+                (NP (DT the) (NN cost) (NN center))
+                (NP (JJ financial) (NN approval)))
+              (VP (VBZ is)
+                (VP (VBN obtained))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, reviewed-8)
+advmod(reviewed-8, Additionally-1)
+det(IT-3, all-2)
+nsubjpass(reviewed-8, IT-3)
+nsubjpass(approved-10, IT-3)
+compound(purchases-5, hardware-4)
+dep(IT-3, purchases-5)
+aux(reviewed-8, must-6)
+auxpass(reviewed-8, be-7)
+cc(reviewed-8, and-9)
+conj:and(reviewed-8, approved-10)
+case(buyer-14, by-11)
+det(buyer-14, a-12)
+amod(buyer-14, technical-13)
+nmod:agent(reviewed-8, buyer-14)
+mark(obtained-22, once-15)
+det(center-18, the-16)
+compound(center-18, cost-17)
+nsubjpass(obtained-22, center-18)
+amod(approval-20, financial-19)
+dep(center-18, approval-20)
+auxpass(obtained-22, is-21)
+advcl:once(reviewed-8, obtained-22)
+punct(reviewed-8, .-23)
+
+Extracted the following NER entity mentions:
+buyer	TITLE
+
+Sentence #4 (24 tokens):
+Therefore, some of the individuals which you see listed in the approver 1 and approver 2 columns will not be ENA employees.
+
+Tokens:
+[Text=Therefore CharacterOffsetBegin=411 CharacterOffsetEnd=420 PartOfSpeech=RB Lemma=therefore NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=420 CharacterOffsetEnd=421 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=422 CharacterOffsetEnd=426 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=427 CharacterOffsetEnd=429 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=430 CharacterOffsetEnd=433 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=individuals CharacterOffsetBegin=434 CharacterOffsetEnd=445 PartOfSpeech=NNS Lemma=individual NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=446 CharacterOffsetEnd=451 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=452 CharacterOffsetEnd=455 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=456 CharacterOffsetEnd=459 PartOfSpeech=VBP Lemma=see NamedEntityTag=O]
+[Text=listed CharacterOffsetBegin=460 CharacterOffsetEnd=466 PartOfSpeech=VBN Lemma=list NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=467 CharacterOffsetEnd=469 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=470 CharacterOffsetEnd=473 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=approver CharacterOffsetBegin=474 CharacterOffsetEnd=482 PartOfSpeech=NN Lemma=approver NamedEntityTag=O]
+[Text=1 CharacterOffsetBegin=483 CharacterOffsetEnd=484 PartOfSpeech=CD Lemma=1 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=and CharacterOffsetBegin=485 CharacterOffsetEnd=488 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=approver CharacterOffsetBegin=489 CharacterOffsetEnd=497 PartOfSpeech=NN Lemma=approver NamedEntityTag=O]
+[Text=2 CharacterOffsetBegin=498 CharacterOffsetEnd=499 PartOfSpeech=CD Lemma=2 NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=columns CharacterOffsetBegin=500 CharacterOffsetEnd=507 PartOfSpeech=NNS Lemma=column NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=508 CharacterOffsetEnd=512 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=513 CharacterOffsetEnd=516 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=517 CharacterOffsetEnd=519 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=ENA CharacterOffsetBegin=520 CharacterOffsetEnd=523 PartOfSpeech=NN Lemma=ena NamedEntityTag=ORGANIZATION]
+[Text=employees CharacterOffsetBegin=524 CharacterOffsetEnd=533 PartOfSpeech=NNS Lemma=employee NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=533 CharacterOffsetEnd=534 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Therefore))
+    (, ,)
+    (NP
+      (NP (DT some))
+      (PP (IN of)
+        (NP
+          (NP
+            (NP (DT the) (NNS individuals))
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (NP (PRP you))
+                (VP (VBP see)
+                  (VP (VBN listed)
+                    (PP (IN in)
+                      (NP (DT the) (NN approver) (CD 1))))))))
+          (CC and)
+          (NP
+            (NP (NN approver))
+            (NP (CD 2) (NNS columns))))))
+    (VP (MD will) (RB not)
+      (VP (VB be)
+        (NP (NN ENA) (NNS employees))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, employees-23)
+advmod(employees-23, Therefore-1)
+punct(employees-23, ,-2)
+det:qmod(individuals-6, some-3)
+mwe(some-3, of-4)
+det(individuals-6, the-5)
+dobj(see-9, individuals-6)
+nsubj(employees-23, individuals-6)
+ref(individuals-6, which-7)
+nsubj(see-9, you-8)
+acl:relcl(individuals-6, see-9)
+dep(see-9, listed-10)
+case(approver-13, in-11)
+det(approver-13, the-12)
+nmod:in(listed-10, approver-13)
+nummod(approver-13, 1-14)
+cc(individuals-6, and-15)
+conj:and(individuals-6, approver-16)
+dobj(see-9, approver-16)
+nsubj(employees-23, approver-16)
+nummod(columns-18, 2-17)
+dep(approver-16, columns-18)
+aux(employees-23, will-19)
+neg(employees-23, not-20)
+cop(employees-23, be-21)
+compound(employees-23, ENA-22)
+punct(employees-23, .-24)
+
+Extracted the following NER entity mentions:
+1	NUMBER
+2	NUMBER
+ENA	ORGANIZATION
+
+Sentence #5 (9 tokens):
+Please advise if you have any additional questions.
+
+Tokens:
+[Text=Please CharacterOffsetBegin=535 CharacterOffsetEnd=541 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=advise CharacterOffsetBegin=542 CharacterOffsetEnd=548 PartOfSpeech=VB Lemma=advise NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=549 CharacterOffsetEnd=551 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=552 CharacterOffsetEnd=555 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=556 CharacterOffsetEnd=560 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=561 CharacterOffsetEnd=564 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=additional CharacterOffsetBegin=565 CharacterOffsetEnd=575 PartOfSpeech=JJ Lemma=additional NamedEntityTag=O]
+[Text=questions CharacterOffsetBegin=576 CharacterOffsetEnd=585 PartOfSpeech=NNS Lemma=question NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=585 CharacterOffsetEnd=586 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Please)
+      (VP (VB advise)
+        (SBAR (IN if)
+          (S
+            (NP (PRP you))
+            (VP (VBP have)
+              (NP (DT any) (JJ additional) (NNS questions)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Please-1)
+xcomp(Please-1, advise-2)
+mark(have-5, if-3)
+nsubj(have-5, you-4)
+advcl:if(advise-2, have-5)
+det(questions-8, any-6)
+amod(questions-8, additional-7)
+dobj(have-5, questions-8)
+punct(Please-1, .-9)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(2,5,[4,6]) -> (1,14,[12,15]), that is: "these employees" -> "Enron Networks employees"
+
+Coreference set:
+	(2,20,[20,21]) -> (2,2,[2,3]), that is: "their" -> "this"
+
+Coreference set:
+	(3,3,[3,4]) -> (2,19,[17,20]), that is: "IT" -> "the cost center"
+
+Coreference set:
+	(4,3,[3,19]) -> (4,23,[22,24]), that is: "some of the individuals which you see listed in the approver 1 and approver 2 columns" -> "ENA employees"

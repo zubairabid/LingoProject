@@ -1,0 +1,154 @@
+Document: ID=1242000.in (3 sentences, 34 tokens)
+
+Sentence #1 (25 tokens):
+As of the Jan. 11 Amy got them to take their schedule down from .444 to .088 and TW is now receiving make up.
+
+Tokens:
+[Text=As CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Jan. CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=Jan. NamedEntityTag=DATE NormalizedNamedEntityTag=****0111]
+[Text=11 CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=CD Lemma=11 NamedEntityTag=DATE NormalizedNamedEntityTag=****0111]
+[Text=Amy CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=Amy NamedEntityTag=PERSON]
+[Text=got CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=VBD Lemma=get NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=take CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=schedule CharacterOffsetBegin=45 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=schedule NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=RB Lemma=down NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=.444 CharacterOffsetBegin=64 CharacterOffsetEnd=68 PartOfSpeech=CD Lemma=.444 NamedEntityTag=NUMBER NormalizedNamedEntityTag=0.444-0.088]
+[Text=to CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=TO Lemma=to NamedEntityTag=NUMBER NormalizedNamedEntityTag=0.444-0.088]
+[Text=.088 CharacterOffsetBegin=72 CharacterOffsetEnd=76 PartOfSpeech=CD Lemma=.088 NamedEntityTag=NUMBER NormalizedNamedEntityTag=0.444-0.088]
+[Text=and CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=TW CharacterOffsetBegin=81 CharacterOffsetEnd=83 PartOfSpeech=NNP Lemma=TW NamedEntityTag=ORGANIZATION]
+[Text=is CharacterOffsetBegin=84 CharacterOffsetEnd=86 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=87 CharacterOffsetEnd=90 PartOfSpeech=RB Lemma=now NamedEntityTag=O]
+[Text=receiving CharacterOffsetBegin=91 CharacterOffsetEnd=100 PartOfSpeech=VBG Lemma=receive NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=101 CharacterOffsetEnd=105 PartOfSpeech=VB Lemma=make NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=106 CharacterOffsetEnd=108 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=108 CharacterOffsetEnd=109 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (PP (IN As)
+        (PP (IN of)
+          (NP (DT the) (NNP Jan.) (CD 11))))
+      (NP (NNP Amy))
+      (VP (VBD got)
+        (S
+          (NP (PRP them))
+          (VP (TO to)
+            (VP (VB take)
+              (NP (PRP$ their) (NN schedule))
+              (ADVP (RB down)
+                (PP (IN from)
+                  (NP
+                    (QP (CD .444) (TO to) (CD .088))))))))))
+    (CC and)
+    (S
+      (NP (NNP TW))
+      (VP (VBZ is)
+        (ADVP (RB now))
+        (VP (VBG receiving)
+          (S
+            (VP (VB make)
+              (PRT (RP up)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, got-7)
+case(Jan.-4, As-1)
+mwe(As-1, of-2)
+det(Jan.-4, the-3)
+nmod:as_of(got-7, Jan.-4)
+nummod(Jan.-4, 11-5)
+nsubj(got-7, Amy-6)
+dobj(got-7, them-8)
+nsubj:xsubj(take-10, them-8)
+mark(take-10, to-9)
+xcomp(got-7, take-10)
+nmod:poss(schedule-12, their-11)
+dobj(take-10, schedule-12)
+advmod(take-10, down-13)
+case(.088-17, from-14)
+compound(.088-17, .444-15)
+dep(.088-17, to-16)
+nmod:from(down-13, .088-17)
+cc(got-7, and-18)
+nsubj(receiving-22, TW-19)
+aux(receiving-22, is-20)
+advmod(receiving-22, now-21)
+conj:and(got-7, receiving-22)
+ccomp(receiving-22, make-23)
+compound:prt(make-23, up-24)
+punct(got-7, .-25)
+
+Extracted the following NER entity mentions:
+Jan. 11	DATE
+Amy	PERSON
+.444 to .088	NUMBER
+TW	ORGANIZATION
+
+Sentence #2 (8 tokens):
+We
+will continue to watch this point.
+
+Tokens:
+[Text=We CharacterOffsetBegin=111 CharacterOffsetEnd=113 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=114 CharacterOffsetEnd=118 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=continue CharacterOffsetBegin=119 CharacterOffsetEnd=127 PartOfSpeech=VB Lemma=continue NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=128 CharacterOffsetEnd=130 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=watch CharacterOffsetBegin=131 CharacterOffsetEnd=136 PartOfSpeech=VB Lemma=watch NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=137 CharacterOffsetEnd=141 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=point CharacterOffsetBegin=142 CharacterOffsetEnd=147 PartOfSpeech=NN Lemma=point NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=147 CharacterOffsetEnd=148 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (MD will)
+      (VP (VB continue)
+        (S
+          (VP (TO to)
+            (VP (VB watch)
+              (NP (DT this) (NN point)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, continue-3)
+nsubj(continue-3, We-1)
+nsubj:xsubj(watch-5, We-1)
+aux(continue-3, will-2)
+mark(watch-5, to-4)
+xcomp(continue-3, watch-5)
+det(point-7, this-6)
+dobj(watch-5, point-7)
+punct(continue-3, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (1 tokens):
+ds
+
+Tokens:
+[Text=ds CharacterOffsetBegin=149 CharacterOffsetEnd=151 PartOfSpeech=JJ Lemma=ds NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (ADJP (JJ ds)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ds-1)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(1,11,[11,12]) -> (1,8,[8,9]), that is: "their" -> "them"

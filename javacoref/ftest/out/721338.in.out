@@ -1,0 +1,103 @@
+Document: ID=721338.in (2 sentences, 22 tokens)
+
+Sentence #1 (21 tokens):
+Please let Don or myself know if you are aware of any qualified candidates to assist EES in their rebuilding.
+
+Tokens:
+[Text=Please CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=let CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=Don CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=Don NamedEntityTag=PERSON]
+[Text=or CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=myself CharacterOffsetBegin=18 CharacterOffsetEnd=24 PartOfSpeech=PRP Lemma=myself NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=VBP Lemma=know NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=aware CharacterOffsetBegin=41 CharacterOffsetEnd=46 PartOfSpeech=JJ Lemma=aware NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=qualified CharacterOffsetBegin=54 CharacterOffsetEnd=63 PartOfSpeech=JJ Lemma=qualified NamedEntityTag=O]
+[Text=candidates CharacterOffsetBegin=64 CharacterOffsetEnd=74 PartOfSpeech=NNS Lemma=candidate NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=75 CharacterOffsetEnd=77 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=assist CharacterOffsetBegin=78 CharacterOffsetEnd=84 PartOfSpeech=VB Lemma=assist NamedEntityTag=O]
+[Text=EES CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=NNP Lemma=EES NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=92 CharacterOffsetEnd=97 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=rebuilding CharacterOffsetBegin=98 CharacterOffsetEnd=108 PartOfSpeech=NN Lemma=rebuilding NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=108 CharacterOffsetEnd=109 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (INTJ (VB Please))
+      (VP (VB let)
+        (NP
+          (NP (NNP Don))
+          (CC or)
+          (NP (PRP myself)))))
+    (VP (VBP know)
+      (SBAR (IN if)
+        (S
+          (NP (PRP you))
+          (VP (VBP are)
+            (ADJP (JJ aware)
+              (PP (IN of)
+                (NP (DT any) (JJ qualified) (NNS candidates)))
+              (S
+                (VP (TO to)
+                  (VP (VB assist)
+                    (NP
+                      (NP (NNP EES))
+                      (PP (IN in)
+                        (NP (PRP$ their) (NN rebuilding))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, know-6)
+discourse(let-2, Please-1)
+csubj(know-6, let-2)
+dobj(let-2, Don-3)
+cc(Don-3, or-4)
+dobj(let-2, myself-5)
+conj:or(Don-3, myself-5)
+mark(aware-10, if-7)
+nsubj(aware-10, you-8)
+nsubj:xsubj(assist-16, you-8)
+cop(aware-10, are-9)
+advcl:if(know-6, aware-10)
+case(candidates-14, of-11)
+det(candidates-14, any-12)
+amod(candidates-14, qualified-13)
+nmod:of(aware-10, candidates-14)
+mark(assist-16, to-15)
+xcomp(aware-10, assist-16)
+dobj(assist-16, EES-17)
+case(rebuilding-20, in-18)
+nmod:poss(rebuilding-20, their-19)
+nmod:in(EES-17, rebuilding-20)
+punct(know-6, .-21)
+
+Extracted the following NER entity mentions:
+Don	PERSON
+
+Sentence #2 (1 tokens):
+Mike
+
+Tokens:
+[Text=Mike CharacterOffsetBegin=111 CharacterOffsetEnd=115 PartOfSpeech=NNP Lemma=Mike NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Mike)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Mike-1)
+
+Extracted the following NER entity mentions:
+Mike	PERSON
+
+Coreference set:
+	(1,19,[19,20]) -> (1,3,[3,6]), that is: "their" -> "Don or myself"

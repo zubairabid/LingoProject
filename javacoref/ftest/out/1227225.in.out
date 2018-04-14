@@ -1,0 +1,156 @@
+Document: ID=1227225.in (2 sentences, 40 tokens)
+
+Sentence #1 (27 tokens):
+Richard,
+It looks like the London office has been able to set up a way their traders
+can record trades, via their cellular phones.
+
+Tokens:
+[Text=Richard CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Richard NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=It CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=looks CharacterOffsetBegin=12 CharacterOffsetEnd=17 PartOfSpeech=VBZ Lemma=look NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=London CharacterOffsetBegin=27 CharacterOffsetEnd=33 PartOfSpeech=NNP Lemma=London NamedEntityTag=CITY]
+[Text=office CharacterOffsetBegin=34 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=office NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=able CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=JJ Lemma=able NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=set CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=VB Lemma=set NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=62 CharacterOffsetEnd=64 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=way CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=way NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=71 CharacterOffsetEnd=76 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=traders CharacterOffsetBegin=77 CharacterOffsetEnd=84 PartOfSpeech=NNS Lemma=trader NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=record CharacterOffsetBegin=89 CharacterOffsetEnd=95 PartOfSpeech=VB Lemma=record NamedEntityTag=O]
+[Text=trades CharacterOffsetBegin=96 CharacterOffsetEnd=102 PartOfSpeech=NNS Lemma=trade NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=102 CharacterOffsetEnd=103 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=via CharacterOffsetBegin=104 CharacterOffsetEnd=107 PartOfSpeech=IN Lemma=via NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=108 CharacterOffsetEnd=113 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=cellular CharacterOffsetBegin=114 CharacterOffsetEnd=122 PartOfSpeech=JJ Lemma=cellular NamedEntityTag=O]
+[Text=phones CharacterOffsetBegin=123 CharacterOffsetEnd=129 PartOfSpeech=NNS Lemma=phone NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=129 CharacterOffsetEnd=130 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Richard))
+    (, ,)
+    (S
+      (NP (PRP It))
+      (VP (VBZ looks)
+        (SBAR (IN like)
+          (S
+            (NP (DT the) (NNP London) (NN office))
+            (VP (VBZ has)
+              (VP (VBN been)
+                (ADJP (JJ able)
+                  (S
+                    (VP (TO to)
+                      (VP (VB set)
+                        (PRT (RP up))
+                        (NP
+                          (NP (DT a) (NN way))
+                          (SBAR
+                            (S
+                              (NP (PRP$ their) (NNS traders))
+                              (VP (MD can)
+                                (VP (VB record)
+                                  (NP (NNS trades)))))))))))))))))
+    (, ,)
+    (PP (IN via)
+      (NP (PRP$ their) (JJ cellular) (NNS phones)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Richard-1)
+punct(Richard-1, ,-2)
+nsubj(looks-4, It-3)
+dep(Richard-1, looks-4)
+mark(able-11, like-5)
+det(office-8, the-6)
+compound(office-8, London-7)
+nsubj(able-11, office-8)
+nsubj:xsubj(set-13, office-8)
+aux(able-11, has-9)
+cop(able-11, been-10)
+advcl:like(looks-4, able-11)
+mark(set-13, to-12)
+xcomp(able-11, set-13)
+compound:prt(set-13, up-14)
+det(way-16, a-15)
+dobj(set-13, way-16)
+nmod:poss(traders-18, their-17)
+nsubj(record-20, traders-18)
+aux(record-20, can-19)
+acl:relcl(way-16, record-20)
+dobj(record-20, trades-21)
+punct(Richard-1, ,-22)
+case(phones-26, via-23)
+nmod:poss(phones-26, their-24)
+amod(phones-26, cellular-25)
+nmod:via(Richard-1, phones-26)
+punct(Richard-1, .-27)
+
+Extracted the following NER entity mentions:
+Richard	PERSON
+London	CITY
+
+Sentence #2 (13 tokens):
+Can you tell us if this is
+putting Enron at legal risk?
+
+Tokens:
+[Text=Can CharacterOffsetBegin=132 CharacterOffsetEnd=135 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=136 CharacterOffsetEnd=139 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=tell CharacterOffsetBegin=140 CharacterOffsetEnd=144 PartOfSpeech=VB Lemma=tell NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=145 CharacterOffsetEnd=147 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=148 CharacterOffsetEnd=150 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=151 CharacterOffsetEnd=155 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=156 CharacterOffsetEnd=158 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=putting CharacterOffsetBegin=159 CharacterOffsetEnd=166 PartOfSpeech=VBG Lemma=put NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=167 CharacterOffsetEnd=172 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=at CharacterOffsetBegin=173 CharacterOffsetEnd=175 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=legal CharacterOffsetBegin=176 CharacterOffsetEnd=181 PartOfSpeech=JJ Lemma=legal NamedEntityTag=O]
+[Text=risk CharacterOffsetBegin=182 CharacterOffsetEnd=186 PartOfSpeech=NN Lemma=risk NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=186 CharacterOffsetEnd=187 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (MD Can)
+    (NP (PRP you))
+    (VP (VB tell)
+      (NP (PRP us))
+      (SBAR (IN if)
+        (S
+          (NP (DT this))
+          (VP (VBZ is)
+            (VP (VBG putting)
+              (NP
+                (NP (NNP Enron))
+                (PP (IN at)
+                  (NP (JJ legal) (NN risk)))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, tell-3)
+aux(tell-3, Can-1)
+nsubj(tell-3, you-2)
+dobj(tell-3, us-4)
+mark(putting-8, if-5)
+nsubj(putting-8, this-6)
+aux(putting-8, is-7)
+advcl:if(tell-3, putting-8)
+dobj(putting-8, Enron-9)
+case(risk-12, at-10)
+amod(risk-12, legal-11)
+nmod:at(Enron-9, risk-12)
+punct(tell-3, ?-13)
+
+Extracted the following NER entity mentions:
+Enron	ORGANIZATION

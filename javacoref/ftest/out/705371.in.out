@@ -1,0 +1,326 @@
+Document: ID=705371.in (4 sentences, 80 tokens)
+
+Sentence #1 (8 tokens):
+Rich, I agree with  your concern.
+
+Tokens:
+[Text=Rich CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Rich NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=agree CharacterOffsetBegin=8 CharacterOffsetEnd=13 PartOfSpeech=VBP Lemma=agree NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=concern CharacterOffsetBegin=25 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=concern NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Rich))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP agree)
+      (PP (IN with)
+        (NP (PRP$ your) (NN concern))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, agree-4)
+nsubj(agree-4, Rich-1)
+punct(agree-4, ,-2)
+nsubj(agree-4, I-3)
+case(concern-7, with-5)
+nmod:poss(concern-7, your-6)
+nmod:with(agree-4, concern-7)
+punct(agree-4, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (15 tokens):
+The entire Arizona mainline is a potential
+concern for carrying PCB's into California.
+
+Tokens:
+[Text=The CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=entire CharacterOffsetBegin=39 CharacterOffsetEnd=45 PartOfSpeech=JJ Lemma=entire NamedEntityTag=O]
+[Text=Arizona CharacterOffsetBegin=46 CharacterOffsetEnd=53 PartOfSpeech=NNP Lemma=Arizona NamedEntityTag=STATE_OR_PROVINCE]
+[Text=mainline CharacterOffsetBegin=54 CharacterOffsetEnd=62 PartOfSpeech=NN Lemma=mainline NamedEntityTag=IDEOLOGY]
+[Text=is CharacterOffsetBegin=63 CharacterOffsetEnd=65 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=potential CharacterOffsetBegin=68 CharacterOffsetEnd=77 PartOfSpeech=JJ Lemma=potential NamedEntityTag=O]
+[Text=concern CharacterOffsetBegin=78 CharacterOffsetEnd=85 PartOfSpeech=NN Lemma=concern NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=carrying CharacterOffsetBegin=90 CharacterOffsetEnd=98 PartOfSpeech=VBG Lemma=carry NamedEntityTag=O]
+[Text=PCB CharacterOffsetBegin=99 CharacterOffsetEnd=102 PartOfSpeech=NNP Lemma=PCB NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=102 CharacterOffsetEnd=104 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=105 CharacterOffsetEnd=109 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=California CharacterOffsetBegin=110 CharacterOffsetEnd=120 PartOfSpeech=NNP Lemma=California NamedEntityTag=STATE_OR_PROVINCE]
+[Text=. CharacterOffsetBegin=120 CharacterOffsetEnd=121 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (JJ entire) (NNP Arizona) (NN mainline))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ potential) (NN concern))
+        (PP (IN for)
+          (S
+            (VP (VBG carrying)
+              (S
+                (NP (NNP PCB) (POS 's)))
+              (PP (IN into)
+                (NP (NNP California))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, concern-8)
+det(mainline-4, The-1)
+amod(mainline-4, entire-2)
+compound(mainline-4, Arizona-3)
+nsubj(concern-8, mainline-4)
+cop(concern-8, is-5)
+det(concern-8, a-6)
+amod(concern-8, potential-7)
+mark(carrying-10, for-9)
+acl:for(concern-8, carrying-10)
+xcomp(carrying-10, PCB-11)
+case(PCB-11, 's-12)
+case(California-14, into-13)
+nmod:into(carrying-10, California-14)
+punct(concern-8, .-15)
+
+Extracted the following NER entity mentions:
+Arizona	STATE_OR_PROVINCE
+mainline	IDEOLOGY
+PCB	ORGANIZATION
+California	STATE_OR_PROVINCE
+
+Sentence #3 (36 tokens):
+We have verification of this
+from the last cleaning we did on the San Juan lateral where liquids got past
+the Gallup C/S scrubbers and PG&E and SoCal both reported elevated liquids in
+their systems.
+
+Tokens:
+[Text=We CharacterOffsetBegin=123 CharacterOffsetEnd=125 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=126 CharacterOffsetEnd=130 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=verification CharacterOffsetBegin=131 CharacterOffsetEnd=143 PartOfSpeech=NN Lemma=verification NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=144 CharacterOffsetEnd=146 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=147 CharacterOffsetEnd=151 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=152 CharacterOffsetEnd=156 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=157 CharacterOffsetEnd=160 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=last CharacterOffsetBegin=161 CharacterOffsetEnd=165 PartOfSpeech=JJ Lemma=last NamedEntityTag=O]
+[Text=cleaning CharacterOffsetBegin=166 CharacterOffsetEnd=174 PartOfSpeech=NN Lemma=cleaning NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=175 CharacterOffsetEnd=177 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=178 CharacterOffsetEnd=181 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=182 CharacterOffsetEnd=184 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=185 CharacterOffsetEnd=188 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=San CharacterOffsetBegin=189 CharacterOffsetEnd=192 PartOfSpeech=NNP Lemma=San NamedEntityTag=CITY]
+[Text=Juan CharacterOffsetBegin=193 CharacterOffsetEnd=197 PartOfSpeech=NNP Lemma=Juan NamedEntityTag=CITY]
+[Text=lateral CharacterOffsetBegin=198 CharacterOffsetEnd=205 PartOfSpeech=JJ Lemma=lateral NamedEntityTag=O]
+[Text=where CharacterOffsetBegin=206 CharacterOffsetEnd=211 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=liquids CharacterOffsetBegin=212 CharacterOffsetEnd=219 PartOfSpeech=NNS Lemma=liquid NamedEntityTag=O]
+[Text=got CharacterOffsetBegin=220 CharacterOffsetEnd=223 PartOfSpeech=VBD Lemma=get NamedEntityTag=O]
+[Text=past CharacterOffsetBegin=224 CharacterOffsetEnd=228 PartOfSpeech=IN Lemma=past NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=229 CharacterOffsetEnd=232 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Gallup CharacterOffsetBegin=233 CharacterOffsetEnd=239 PartOfSpeech=NNP Lemma=Gallup NamedEntityTag=ORGANIZATION]
+[Text=C/S CharacterOffsetBegin=240 CharacterOffsetEnd=243 PartOfSpeech=NNP Lemma=C/S NamedEntityTag=O]
+[Text=scrubbers CharacterOffsetBegin=244 CharacterOffsetEnd=253 PartOfSpeech=NNS Lemma=scrubber NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=254 CharacterOffsetEnd=257 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=PG&E CharacterOffsetBegin=258 CharacterOffsetEnd=262 PartOfSpeech=NNP Lemma=PG&E NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=263 CharacterOffsetEnd=266 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=SoCal CharacterOffsetBegin=267 CharacterOffsetEnd=272 PartOfSpeech=NNP Lemma=SoCal NamedEntityTag=O]
+[Text=both CharacterOffsetBegin=273 CharacterOffsetEnd=277 PartOfSpeech=DT Lemma=both NamedEntityTag=O]
+[Text=reported CharacterOffsetBegin=278 CharacterOffsetEnd=286 PartOfSpeech=VBD Lemma=report NamedEntityTag=O]
+[Text=elevated CharacterOffsetBegin=287 CharacterOffsetEnd=295 PartOfSpeech=JJ Lemma=elevated NamedEntityTag=O]
+[Text=liquids CharacterOffsetBegin=296 CharacterOffsetEnd=303 PartOfSpeech=NNS Lemma=liquid NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=304 CharacterOffsetEnd=306 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=307 CharacterOffsetEnd=312 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=systems CharacterOffsetBegin=313 CharacterOffsetEnd=320 PartOfSpeech=NNS Lemma=system NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=320 CharacterOffsetEnd=321 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP have)
+      (NP
+        (NP (NN verification))
+        (PP (IN of)
+          (NP
+            (NP (DT this))
+            (PP (IN from)
+              (NP
+                (NP (DT the) (JJ last) (NN cleaning))
+                (SBAR
+                  (S
+                    (NP (PRP we))
+                    (VP (VBD did)
+                      (PP (IN on)
+                        (NP (DT the) (NNP San) (NNP Juan)))
+                      (NP
+                        (NP
+                          (ADJP (JJ lateral)
+                            (SBAR
+                              (WHADVP (WRB where))
+                              (S
+                                (NP (NNS liquids))
+                                (VP (VBD got)
+                                  (PP (IN past)
+                                    (NP (DT the) (NNP Gallup) (NNP C/S)))))))
+                          (NNS scrubbers))
+                        (CC and)
+                        (NP
+                          (NP (NNP PG&E)
+                            (CC and)
+                            (NNP SoCal))
+                          (SBAR
+                            (WHNP (DT both))
+                            (S
+                              (VP (VBD reported)
+                                (NP (JJ elevated) (NNS liquids))
+                                (PP (IN in)
+                                  (NP (PRP$ their) (NNS systems)))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-2)
+nsubj(have-2, We-1)
+dobj(have-2, verification-3)
+case(this-5, of-4)
+nmod:of(verification-3, this-5)
+case(cleaning-9, from-6)
+det(cleaning-9, the-7)
+amod(cleaning-9, last-8)
+nmod:from(this-5, cleaning-9)
+nsubj(did-11, we-10)
+acl:relcl(cleaning-9, did-11)
+case(Juan-15, on-12)
+det(Juan-15, the-13)
+compound(Juan-15, San-14)
+nmod:on(did-11, Juan-15)
+amod(scrubbers-24, lateral-16)
+advmod(got-19, where-17)
+nsubj(got-19, liquids-18)
+ccomp(lateral-16, got-19)
+case(C/S-23, past-20)
+det(C/S-23, the-21)
+compound(C/S-23, Gallup-22)
+nmod:past(got-19, C/S-23)
+dobj(did-11, scrubbers-24)
+cc(scrubbers-24, and-25)
+dobj(did-11, PG&E-26)
+conj:and(scrubbers-24, PG&E-26)
+cc(PG&E-26, and-27)
+conj:and(scrubbers-24, SoCal-28)
+conj:and(PG&E-26, SoCal-28)
+nsubj(reported-30, both-29)
+acl:relcl(PG&E-26, reported-30)
+amod(liquids-32, elevated-31)
+dobj(reported-30, liquids-32)
+case(systems-35, in-33)
+nmod:poss(systems-35, their-34)
+nmod:in(reported-30, systems-35)
+punct(have-2, .-36)
+
+Extracted the following NER entity mentions:
+San Juan	CITY
+Gallup	ORGANIZATION
+PG&E	ORGANIZATION
+
+Sentence #4 (21 tokens):
+Analytical results of these liquids in California showed PCB's
+at regulated levels (ie greater than 50 ppm).
+
+Tokens:
+[Text=Analytical CharacterOffsetBegin=322 CharacterOffsetEnd=332 PartOfSpeech=NNP Lemma=Analytical NamedEntityTag=O]
+[Text=results CharacterOffsetBegin=333 CharacterOffsetEnd=340 PartOfSpeech=NNS Lemma=result NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=341 CharacterOffsetEnd=343 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=344 CharacterOffsetEnd=349 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=liquids CharacterOffsetBegin=350 CharacterOffsetEnd=357 PartOfSpeech=NNS Lemma=liquid NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=358 CharacterOffsetEnd=360 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=California CharacterOffsetBegin=361 CharacterOffsetEnd=371 PartOfSpeech=NNP Lemma=California NamedEntityTag=STATE_OR_PROVINCE]
+[Text=showed CharacterOffsetBegin=372 CharacterOffsetEnd=378 PartOfSpeech=VBD Lemma=show NamedEntityTag=O]
+[Text=PCB CharacterOffsetBegin=379 CharacterOffsetEnd=382 PartOfSpeech=NNP Lemma=PCB NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=382 CharacterOffsetEnd=384 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=385 CharacterOffsetEnd=387 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=regulated CharacterOffsetBegin=388 CharacterOffsetEnd=397 PartOfSpeech=JJ Lemma=regulated NamedEntityTag=O]
+[Text=levels CharacterOffsetBegin=398 CharacterOffsetEnd=404 PartOfSpeech=NNS Lemma=level NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=405 CharacterOffsetEnd=406 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=ie CharacterOffsetBegin=406 CharacterOffsetEnd=408 PartOfSpeech=FW Lemma=ie NamedEntityTag=O]
+[Text=greater CharacterOffsetBegin=409 CharacterOffsetEnd=416 PartOfSpeech=JJR Lemma=greater NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=417 CharacterOffsetEnd=421 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=50 CharacterOffsetBegin=422 CharacterOffsetEnd=424 PartOfSpeech=CD Lemma=50 NamedEntityTag=NUMBER NormalizedNamedEntityTag=>50.0]
+[Text=ppm CharacterOffsetBegin=425 CharacterOffsetEnd=428 PartOfSpeech=NN Lemma=ppm NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=428 CharacterOffsetEnd=429 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=429 CharacterOffsetEnd=430 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Analytical) (NNS results))
+      (PP (IN of)
+        (NP
+          (NP (DT these) (NNS liquids))
+          (PP (IN in)
+            (NP (NNP California))))))
+    (VP (VBD showed)
+      (NP (NNP PCB) (POS 's))
+      (PP (IN at)
+        (NP
+          (NP (JJ regulated) (NNS levels))
+          (PRN (-LRB- -LRB-)
+            (NP
+              (NP (FW ie))
+              (NP
+                (NP
+                  (QP (JJR greater) (IN than) (CD 50)))
+                (NP (NN ppm))))
+            (-RRB- -RRB-)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, showed-8)
+compound(results-2, Analytical-1)
+nsubj(showed-8, results-2)
+case(liquids-5, of-3)
+det(liquids-5, these-4)
+nmod:of(results-2, liquids-5)
+case(California-7, in-6)
+nmod:in(liquids-5, California-7)
+dobj(showed-8, PCB-9)
+case(PCB-9, 's-10)
+case(levels-13, at-11)
+amod(levels-13, regulated-12)
+nmod:at(showed-8, levels-13)
+punct(ie-15, -LRB--14)
+dep(levels-13, ie-15)
+advmod(50-18, greater-16)
+advmod(50-18, than-17)
+dep(ie-15, 50-18)
+dep(50-18, ppm-19)
+punct(ie-15, -RRB--20)
+punct(showed-8, .-21)
+
+Extracted the following NER entity mentions:
+California	STATE_OR_PROVINCE
+PCB	ORGANIZATION
+50	NUMBER
+
+Coreference set:
+	(4,9,[9,11]) -> (2,11,[11,13]), that is: "PCB 's" -> "PCB 's"
+
+Coreference set:
+	(4,7,[7,8]) -> (2,14,[14,15]), that is: "California" -> "California"
+
+Coreference set:
+	(2,8,[6,15]) -> (2,4,[1,5]), that is: "a potential concern for carrying PCB 's into California" -> "The entire Arizona mainline"
+
+Coreference set:
+	(3,10,[10,11]) -> (3,1,[1,2]), that is: "we" -> "We"

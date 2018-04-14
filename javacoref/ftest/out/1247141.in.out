@@ -1,0 +1,970 @@
+Document: ID=1247141.in (14 sentences, 238 tokens)
+
+Sentence #1 (12 tokens):
+My child, Dane, was previously enrolled in Enron Kids.
+
+Tokens:
+[Text=My CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=child CharacterOffsetBegin=3 CharacterOffsetEnd=8 PartOfSpeech=NN Lemma=child NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Dane CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=dane NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=previously CharacterOffsetBegin=20 CharacterOffsetEnd=30 PartOfSpeech=RB Lemma=previously NamedEntityTag=O]
+[Text=enrolled CharacterOffsetBegin=31 CharacterOffsetEnd=39 PartOfSpeech=VBN Lemma=enrol NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=43 CharacterOffsetEnd=48 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=Kids CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=NNPS Lemma=Kids NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (PRP$ My) (NN child))
+      (, ,)
+      (NP (NN Dane))
+      (, ,))
+    (VP (VBD was)
+      (ADVP (RB previously))
+      (VP (VBN enrolled)
+        (PP (IN in)
+          (NP (NNP Enron) (NNPS Kids)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, enrolled-8)
+nmod:poss(child-2, My-1)
+nsubjpass(enrolled-8, child-2)
+punct(child-2, ,-3)
+appos(child-2, Dane-4)
+punct(child-2, ,-5)
+auxpass(enrolled-8, was-6)
+advmod(enrolled-8, previously-7)
+case(Kids-11, in-9)
+compound(Kids-11, Enron-10)
+nmod:in(enrolled-8, Kids-11)
+punct(enrolled-8, .-12)
+
+Extracted the following NER entity mentions:
+Dane	PERSON
+Enron Kids	ORGANIZATION
+
+Sentence #2 (15 tokens):
+Since I was laid off last Monday, I had to take him out.
+
+Tokens:
+[Text=Since CharacterOffsetBegin=56 CharacterOffsetEnd=61 PartOfSpeech=IN Lemma=since NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=64 CharacterOffsetEnd=67 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=laid CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=VBN Lemma=lay NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=RP Lemma=off NamedEntityTag=O]
+[Text=last CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=JJ Lemma=last NamedEntityTag=DATE NormalizedNamedEntityTag=monday]
+[Text=Monday CharacterOffsetBegin=82 CharacterOffsetEnd=88 PartOfSpeech=NNP Lemma=Monday NamedEntityTag=DATE NormalizedNamedEntityTag=monday]
+[Text=, CharacterOffsetBegin=88 CharacterOffsetEnd=89 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=90 CharacterOffsetEnd=91 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=96 CharacterOffsetEnd=98 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=take CharacterOffsetBegin=99 CharacterOffsetEnd=103 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=104 CharacterOffsetEnd=107 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=108 CharacterOffsetEnd=111 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=111 CharacterOffsetEnd=112 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN Since)
+      (S
+        (NP (PRP I))
+        (VP (VBD was)
+          (VP (VBN laid)
+            (PRT (RP off))
+            (NP-TMP (JJ last) (NNP Monday))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBD had)
+      (S
+        (VP (TO to)
+          (VP (VB take)
+            (NP (PRP him))
+            (PRT (RP out))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, had-10)
+mark(laid-4, Since-1)
+nsubjpass(laid-4, I-2)
+auxpass(laid-4, was-3)
+advcl:since(had-10, laid-4)
+compound:prt(laid-4, off-5)
+amod(Monday-7, last-6)
+nmod:tmod(laid-4, Monday-7)
+punct(had-10, ,-8)
+nsubj(had-10, I-9)
+nsubj:xsubj(take-12, I-9)
+mark(take-12, to-11)
+xcomp(had-10, take-12)
+dobj(take-12, him-13)
+compound:prt(take-12, out-14)
+punct(had-10, .-15)
+
+Extracted the following NER entity mentions:
+last Monday	DATE
+him	PERSON
+
+Sentence #3 (16 tokens):
+I understand through Lorraine Gibbs that the daycare has now opened up to the public.
+
+Tokens:
+[Text=I CharacterOffsetBegin=114 CharacterOffsetEnd=115 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=understand CharacterOffsetBegin=116 CharacterOffsetEnd=126 PartOfSpeech=VBP Lemma=understand NamedEntityTag=O]
+[Text=through CharacterOffsetBegin=127 CharacterOffsetEnd=134 PartOfSpeech=IN Lemma=through NamedEntityTag=O]
+[Text=Lorraine CharacterOffsetBegin=135 CharacterOffsetEnd=143 PartOfSpeech=NNP Lemma=Lorraine NamedEntityTag=PERSON]
+[Text=Gibbs CharacterOffsetBegin=144 CharacterOffsetEnd=149 PartOfSpeech=NNP Lemma=Gibbs NamedEntityTag=PERSON]
+[Text=that CharacterOffsetBegin=150 CharacterOffsetEnd=154 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=155 CharacterOffsetEnd=158 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=daycare CharacterOffsetBegin=159 CharacterOffsetEnd=166 PartOfSpeech=NN Lemma=daycare NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=167 CharacterOffsetEnd=170 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=171 CharacterOffsetEnd=174 PartOfSpeech=RB Lemma=now NamedEntityTag=O]
+[Text=opened CharacterOffsetBegin=175 CharacterOffsetEnd=181 PartOfSpeech=VBN Lemma=open NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=182 CharacterOffsetEnd=184 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=185 CharacterOffsetEnd=187 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=188 CharacterOffsetEnd=191 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=public CharacterOffsetBegin=192 CharacterOffsetEnd=198 PartOfSpeech=NN Lemma=public NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=198 CharacterOffsetEnd=199 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP understand)
+      (PP (IN through)
+        (NP (NNP Lorraine) (NNP Gibbs)))
+      (SBAR (IN that)
+        (S
+          (NP (DT the) (NN daycare))
+          (VP (VBZ has)
+            (ADVP (RB now))
+            (VP (VBN opened)
+              (PRT (RP up))
+              (PP (TO to)
+                (NP (DT the) (NN public))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, understand-2)
+nsubj(understand-2, I-1)
+case(Gibbs-5, through-3)
+compound(Gibbs-5, Lorraine-4)
+nmod:through(understand-2, Gibbs-5)
+mark(opened-11, that-6)
+det(daycare-8, the-7)
+nsubj(opened-11, daycare-8)
+aux(opened-11, has-9)
+advmod(opened-11, now-10)
+ccomp(understand-2, opened-11)
+compound:prt(opened-11, up-12)
+case(public-15, to-13)
+det(public-15, the-14)
+nmod:to(opened-11, public-15)
+punct(understand-2, .-16)
+
+Extracted the following NER entity mentions:
+Lorraine Gibbs	PERSON
+
+Sentence #4 (12 tokens):
+What is the possibility of coming down on the monthly charge?
+
+Tokens:
+[Text=What CharacterOffsetBegin=201 CharacterOffsetEnd=205 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=206 CharacterOffsetEnd=208 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=209 CharacterOffsetEnd=212 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=possibility CharacterOffsetBegin=213 CharacterOffsetEnd=224 PartOfSpeech=NN Lemma=possibility NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=225 CharacterOffsetEnd=227 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=coming CharacterOffsetBegin=228 CharacterOffsetEnd=234 PartOfSpeech=VBG Lemma=come NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=235 CharacterOffsetEnd=239 PartOfSpeech=RP Lemma=down NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=240 CharacterOffsetEnd=242 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=243 CharacterOffsetEnd=246 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=monthly CharacterOffsetBegin=247 CharacterOffsetEnd=254 PartOfSpeech=JJ Lemma=monthly NamedEntityTag=O]
+[Text=charge CharacterOffsetBegin=255 CharacterOffsetEnd=261 PartOfSpeech=NN Lemma=charge NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=261 CharacterOffsetEnd=262 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN possibility))
+        (PP (IN of)
+          (S
+            (VP (VBG coming)
+              (PRT (RP down))
+              (PP (IN on)
+                (NP (DT the) (JJ monthly) (NN charge))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, What-1)
+cop(What-1, is-2)
+det(possibility-4, the-3)
+nsubj(What-1, possibility-4)
+mark(coming-6, of-5)
+acl:of(possibility-4, coming-6)
+compound:prt(coming-6, down-7)
+case(charge-11, on-8)
+det(charge-11, the-9)
+amod(charge-11, monthly-10)
+nmod:on(coming-6, charge-11)
+punct(What-1, ?-12)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (38 tokens):
+I think it would be a nice gesture to the parents that previously had kids enrolled there to be able to bring their child(ren) back instead of having to enroll them into another daycare.
+
+Tokens:
+[Text=I CharacterOffsetBegin=264 CharacterOffsetEnd=265 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=266 CharacterOffsetEnd=271 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=272 CharacterOffsetEnd=274 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=275 CharacterOffsetEnd=280 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=281 CharacterOffsetEnd=283 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=284 CharacterOffsetEnd=285 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=nice CharacterOffsetBegin=286 CharacterOffsetEnd=290 PartOfSpeech=JJ Lemma=nice NamedEntityTag=O]
+[Text=gesture CharacterOffsetBegin=291 CharacterOffsetEnd=298 PartOfSpeech=NN Lemma=gesture NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=299 CharacterOffsetEnd=301 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=302 CharacterOffsetEnd=305 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=parents CharacterOffsetBegin=306 CharacterOffsetEnd=313 PartOfSpeech=NNS Lemma=parent NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=314 CharacterOffsetEnd=318 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=previously CharacterOffsetBegin=319 CharacterOffsetEnd=329 PartOfSpeech=RB Lemma=previously NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=330 CharacterOffsetEnd=333 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=kids CharacterOffsetBegin=334 CharacterOffsetEnd=338 PartOfSpeech=NNS Lemma=kid NamedEntityTag=O]
+[Text=enrolled CharacterOffsetBegin=339 CharacterOffsetEnd=347 PartOfSpeech=VBN Lemma=enrol NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=348 CharacterOffsetEnd=353 PartOfSpeech=RB Lemma=there NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=354 CharacterOffsetEnd=356 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=357 CharacterOffsetEnd=359 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=able CharacterOffsetBegin=360 CharacterOffsetEnd=364 PartOfSpeech=JJ Lemma=able NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=365 CharacterOffsetEnd=367 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=bring CharacterOffsetBegin=368 CharacterOffsetEnd=373 PartOfSpeech=VB Lemma=bring NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=374 CharacterOffsetEnd=379 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=child CharacterOffsetBegin=380 CharacterOffsetEnd=385 PartOfSpeech=NN Lemma=child NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=385 CharacterOffsetEnd=386 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=ren CharacterOffsetBegin=386 CharacterOffsetEnd=389 PartOfSpeech=NN Lemma=ren NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=389 CharacterOffsetEnd=390 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=391 CharacterOffsetEnd=395 PartOfSpeech=RB Lemma=back NamedEntityTag=O]
+[Text=instead CharacterOffsetBegin=396 CharacterOffsetEnd=403 PartOfSpeech=RB Lemma=instead NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=404 CharacterOffsetEnd=406 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=having CharacterOffsetBegin=407 CharacterOffsetEnd=413 PartOfSpeech=VBG Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=414 CharacterOffsetEnd=416 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=enroll CharacterOffsetBegin=417 CharacterOffsetEnd=423 PartOfSpeech=VB Lemma=enroll NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=424 CharacterOffsetEnd=428 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=429 CharacterOffsetEnd=433 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=another CharacterOffsetBegin=434 CharacterOffsetEnd=441 PartOfSpeech=DT Lemma=another NamedEntityTag=O]
+[Text=daycare CharacterOffsetBegin=442 CharacterOffsetEnd=449 PartOfSpeech=NN Lemma=daycare NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=449 CharacterOffsetEnd=450 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (PRP it))
+          (VP (MD would)
+            (VP (VB be)
+              (NP
+                (NP (DT a) (JJ nice) (NN gesture))
+                (PP (TO to)
+                  (NP
+                    (NP (DT the) (NNS parents))
+                    (SBAR
+                      (WHNP (WDT that))
+                      (S
+                        (ADVP (RB previously))
+                        (VP (VBD had)
+                          (NP
+                            (NP (NNS kids))
+                            (VP (VBN enrolled)
+                              (ADVP (RB there))
+                              (S
+                                (VP (TO to)
+                                  (VP (VB be)
+                                    (ADJP (JJ able)
+                                      (S
+                                        (VP (TO to)
+                                          (VP (VB bring)
+                                            (NP
+                                              (NP (PRP$ their) (NN child))
+                                              (PRN (-LRB- -LRB-)
+                                                (NP (NN ren))
+                                                (-RRB- -RRB-))
+                                              (PP (RB back) (RB instead) (IN of)
+                                                (S
+                                                  (VP (VBG having)
+                                                    (S
+                                                      (VP (TO to)
+                                                        (VP (VB enroll)
+                                                          (NP (PRP them))
+                                                          (PP (IN into)
+                                                            (NP (DT another) (NN daycare))))))))))))))))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, think-2)
+nsubj(think-2, I-1)
+nsubj(gesture-8, it-3)
+aux(gesture-8, would-4)
+cop(gesture-8, be-5)
+det(gesture-8, a-6)
+amod(gesture-8, nice-7)
+ccomp(think-2, gesture-8)
+case(parents-11, to-9)
+det(parents-11, the-10)
+nmod:to(gesture-8, parents-11)
+nsubj(had-14, parents-11)
+ref(parents-11, that-12)
+advmod(had-14, previously-13)
+acl:relcl(parents-11, had-14)
+dobj(had-14, kids-15)
+acl(kids-15, enrolled-16)
+advmod(enrolled-16, there-17)
+mark(able-20, to-18)
+cop(able-20, be-19)
+xcomp(enrolled-16, able-20)
+mark(bring-22, to-21)
+xcomp(able-20, bring-22)
+nmod:poss(child-24, their-23)
+dobj(bring-22, child-24)
+punct(ren-26, -LRB--25)
+appos(child-24, ren-26)
+punct(ren-26, -RRB--27)
+advmod(having-31, back-28)
+mark(having-31, instead-29)
+mwe(instead-29, of-30)
+acl:instead_of(child-24, having-31)
+mark(enroll-33, to-32)
+xcomp(having-31, enroll-33)
+dobj(enroll-33, them-34)
+case(daycare-37, into-35)
+det(daycare-37, another-36)
+nmod:into(enroll-33, daycare-37)
+punct(think-2, .-38)
+
+Extracted the following NER entity mentions:
+
+Sentence #6 (38 tokens):
+I understand that I will not be able to pay $560 a month since Enron will not be subsidizing, but it would be nice if Enron could lower the rate to $600 per child.
+
+Tokens:
+[Text=I CharacterOffsetBegin=452 CharacterOffsetEnd=453 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=understand CharacterOffsetBegin=454 CharacterOffsetEnd=464 PartOfSpeech=VBP Lemma=understand NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=465 CharacterOffsetEnd=469 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=470 CharacterOffsetEnd=471 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=472 CharacterOffsetEnd=476 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=477 CharacterOffsetEnd=480 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=481 CharacterOffsetEnd=483 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=able CharacterOffsetBegin=484 CharacterOffsetEnd=488 PartOfSpeech=JJ Lemma=able NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=489 CharacterOffsetEnd=491 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=pay CharacterOffsetBegin=492 CharacterOffsetEnd=495 PartOfSpeech=VB Lemma=pay NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=496 CharacterOffsetEnd=497 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$560.0]
+[Text=560 CharacterOffsetBegin=497 CharacterOffsetEnd=500 PartOfSpeech=CD Lemma=560 NamedEntityTag=MONEY NormalizedNamedEntityTag=$560.0]
+[Text=a CharacterOffsetBegin=501 CharacterOffsetEnd=502 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=month CharacterOffsetBegin=503 CharacterOffsetEnd=508 PartOfSpeech=NN Lemma=month NamedEntityTag=O]
+[Text=since CharacterOffsetBegin=509 CharacterOffsetEnd=514 PartOfSpeech=IN Lemma=since NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=515 CharacterOffsetEnd=520 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=will CharacterOffsetBegin=521 CharacterOffsetEnd=525 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=526 CharacterOffsetEnd=529 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=530 CharacterOffsetEnd=532 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=subsidizing CharacterOffsetBegin=533 CharacterOffsetEnd=544 PartOfSpeech=VBG Lemma=subsidize NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=544 CharacterOffsetEnd=545 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=546 CharacterOffsetEnd=549 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=550 CharacterOffsetEnd=552 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=553 CharacterOffsetEnd=558 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=559 CharacterOffsetEnd=561 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=nice CharacterOffsetBegin=562 CharacterOffsetEnd=566 PartOfSpeech=JJ Lemma=nice NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=567 CharacterOffsetEnd=569 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=570 CharacterOffsetEnd=575 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=could CharacterOffsetBegin=576 CharacterOffsetEnd=581 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=lower CharacterOffsetBegin=582 CharacterOffsetEnd=587 PartOfSpeech=VB Lemma=lower NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=588 CharacterOffsetEnd=591 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=rate CharacterOffsetBegin=592 CharacterOffsetEnd=596 PartOfSpeech=NN Lemma=rate NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=597 CharacterOffsetEnd=599 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=600 CharacterOffsetEnd=601 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$600.0]
+[Text=600 CharacterOffsetBegin=601 CharacterOffsetEnd=604 PartOfSpeech=CD Lemma=600 NamedEntityTag=MONEY NormalizedNamedEntityTag=$600.0]
+[Text=per CharacterOffsetBegin=605 CharacterOffsetEnd=608 PartOfSpeech=IN Lemma=per NamedEntityTag=O]
+[Text=child CharacterOffsetBegin=609 CharacterOffsetEnd=614 PartOfSpeech=NN Lemma=child NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=614 CharacterOffsetEnd=615 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP understand)
+        (SBAR (IN that)
+          (S
+            (NP (PRP I))
+            (VP (MD will) (RB not)
+              (VP (VB be)
+                (ADJP (JJ able)
+                  (S
+                    (VP (TO to)
+                      (VP (VB pay)
+                        (NP ($ $) (CD 560))
+                        (NP-TMP (DT a) (NN month))))))
+                (SBAR (IN since)
+                  (S
+                    (NP (NNP Enron))
+                    (VP (MD will) (RB not)
+                      (VP (VB be)
+                        (VP (VBG subsidizing))))))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP it))
+      (VP (MD would)
+        (VP (VB be)
+          (ADJP (JJ nice))
+          (SBAR (IN if)
+            (S
+              (NP (NNP Enron))
+              (VP (MD could)
+                (VP (VB lower)
+                  (NP (DT the) (NN rate))
+                  (PP (TO to)
+                    (NP
+                      (NP ($ $) (CD 600))
+                      (PP (IN per)
+                        (NP (NN child))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, understand-2)
+nsubj(understand-2, I-1)
+mark(able-8, that-3)
+nsubj(able-8, I-4)
+nsubj:xsubj(pay-10, I-4)
+aux(able-8, will-5)
+neg(able-8, not-6)
+cop(able-8, be-7)
+ccomp(understand-2, able-8)
+mark(pay-10, to-9)
+xcomp(able-8, pay-10)
+dep(560-12, $-11)
+dobj(pay-10, 560-12)
+det(month-14, a-13)
+nmod:tmod(pay-10, month-14)
+mark(subsidizing-20, since-15)
+nsubj(subsidizing-20, Enron-16)
+aux(subsidizing-20, will-17)
+neg(subsidizing-20, not-18)
+aux(subsidizing-20, be-19)
+advcl:since(able-8, subsidizing-20)
+punct(understand-2, ,-21)
+cc(understand-2, but-22)
+nsubj(nice-26, it-23)
+aux(nice-26, would-24)
+cop(nice-26, be-25)
+conj:but(understand-2, nice-26)
+mark(lower-30, if-27)
+nsubj(lower-30, Enron-28)
+aux(lower-30, could-29)
+advcl:if(nice-26, lower-30)
+det(rate-32, the-31)
+dobj(lower-30, rate-32)
+case(600-35, to-33)
+dep(600-35, $-34)
+nmod:to(lower-30, 600-35)
+case(child-37, per-36)
+nmod:per(600-35, child-37)
+punct(understand-2, .-38)
+
+Extracted the following NER entity mentions:
+$560	MONEY
+Enron	ORGANIZATION
+Enron	ORGANIZATION
+$600	MONEY
+
+Sentence #7 (10 tokens):
+Enron Kids is a wonderful place with wonderful teachers.
+
+Tokens:
+[Text=Enron CharacterOffsetBegin=617 CharacterOffsetEnd=622 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=Kids CharacterOffsetBegin=623 CharacterOffsetEnd=627 PartOfSpeech=NNPS Lemma=Kids NamedEntityTag=ORGANIZATION]
+[Text=is CharacterOffsetBegin=628 CharacterOffsetEnd=630 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=631 CharacterOffsetEnd=632 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=wonderful CharacterOffsetBegin=633 CharacterOffsetEnd=642 PartOfSpeech=JJ Lemma=wonderful NamedEntityTag=O]
+[Text=place CharacterOffsetBegin=643 CharacterOffsetEnd=648 PartOfSpeech=NN Lemma=place NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=649 CharacterOffsetEnd=653 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=wonderful CharacterOffsetBegin=654 CharacterOffsetEnd=663 PartOfSpeech=JJ Lemma=wonderful NamedEntityTag=O]
+[Text=teachers CharacterOffsetBegin=664 CharacterOffsetEnd=672 PartOfSpeech=NNS Lemma=teacher NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=672 CharacterOffsetEnd=673 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Enron) (NNPS Kids))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ wonderful) (NN place))
+        (PP (IN with)
+          (NP (JJ wonderful) (NNS teachers)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, place-6)
+compound(Kids-2, Enron-1)
+nsubj(place-6, Kids-2)
+cop(place-6, is-3)
+det(place-6, a-4)
+amod(place-6, wonderful-5)
+case(teachers-9, with-7)
+amod(teachers-9, wonderful-8)
+nmod:with(place-6, teachers-9)
+punct(place-6, .-10)
+
+Extracted the following NER entity mentions:
+Enron Kids	ORGANIZATION
+
+Sentence #8 (13 tokens):
+It would be a shame to have to close such a facility.
+
+Tokens:
+[Text=It CharacterOffsetBegin=675 CharacterOffsetEnd=677 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=678 CharacterOffsetEnd=683 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=684 CharacterOffsetEnd=686 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=687 CharacterOffsetEnd=688 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=shame CharacterOffsetBegin=689 CharacterOffsetEnd=694 PartOfSpeech=NN Lemma=shame NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=695 CharacterOffsetEnd=697 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=698 CharacterOffsetEnd=702 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=703 CharacterOffsetEnd=705 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=close CharacterOffsetBegin=706 CharacterOffsetEnd=711 PartOfSpeech=VB Lemma=close NamedEntityTag=O]
+[Text=such CharacterOffsetBegin=712 CharacterOffsetEnd=716 PartOfSpeech=PDT Lemma=such NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=717 CharacterOffsetEnd=718 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=facility CharacterOffsetBegin=719 CharacterOffsetEnd=727 PartOfSpeech=NN Lemma=facility NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=727 CharacterOffsetEnd=728 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (MD would)
+      (VP (VB be)
+        (NP (DT a) (NN shame)
+          (S
+            (VP (TO to)
+              (VP (VB have)
+                (S
+                  (VP (TO to)
+                    (VP (VB close)
+                      (NP (PDT such) (DT a) (NN facility)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, shame-5)
+nsubj(shame-5, It-1)
+aux(shame-5, would-2)
+cop(shame-5, be-3)
+det(shame-5, a-4)
+mark(have-7, to-6)
+acl:to(shame-5, have-7)
+mark(close-9, to-8)
+xcomp(have-7, close-9)
+det:predet(facility-12, such-10)
+det(facility-12, a-11)
+dobj(close-9, facility-12)
+punct(shame-5, .-13)
+
+Extracted the following NER entity mentions:
+
+Sentence #9 (4 tokens):
+Please consider this.
+
+Tokens:
+[Text=Please CharacterOffsetBegin=730 CharacterOffsetEnd=736 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=consider CharacterOffsetBegin=737 CharacterOffsetEnd=745 PartOfSpeech=VB Lemma=consider NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=746 CharacterOffsetEnd=750 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=750 CharacterOffsetEnd=751 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Please)
+      (VP (VB consider)
+        (NP (DT this))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Please-1)
+xcomp(Please-1, consider-2)
+dobj(consider-2, this-3)
+punct(Please-1, .-4)
+
+Extracted the following NER entity mentions:
+
+Sentence #10 (24 tokens):
+It would be very important to several parents if they could have their child(ren) back downtown at the same daycare.
+
+Tokens:
+[Text=It CharacterOffsetBegin=753 CharacterOffsetEnd=755 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=756 CharacterOffsetEnd=761 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=762 CharacterOffsetEnd=764 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=765 CharacterOffsetEnd=769 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=important CharacterOffsetBegin=770 CharacterOffsetEnd=779 PartOfSpeech=JJ Lemma=important NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=780 CharacterOffsetEnd=782 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=several CharacterOffsetBegin=783 CharacterOffsetEnd=790 PartOfSpeech=JJ Lemma=several NamedEntityTag=O]
+[Text=parents CharacterOffsetBegin=791 CharacterOffsetEnd=798 PartOfSpeech=NNS Lemma=parent NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=799 CharacterOffsetEnd=801 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=802 CharacterOffsetEnd=806 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=807 CharacterOffsetEnd=812 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=813 CharacterOffsetEnd=817 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=818 CharacterOffsetEnd=823 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=child CharacterOffsetBegin=824 CharacterOffsetEnd=829 PartOfSpeech=NN Lemma=child NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=829 CharacterOffsetEnd=830 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=ren CharacterOffsetBegin=830 CharacterOffsetEnd=833 PartOfSpeech=NN Lemma=ren NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=833 CharacterOffsetEnd=834 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=835 CharacterOffsetEnd=839 PartOfSpeech=RB Lemma=back NamedEntityTag=O]
+[Text=downtown CharacterOffsetBegin=840 CharacterOffsetEnd=848 PartOfSpeech=NN Lemma=downtown NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=849 CharacterOffsetEnd=851 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=852 CharacterOffsetEnd=855 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=same CharacterOffsetBegin=856 CharacterOffsetEnd=860 PartOfSpeech=JJ Lemma=same NamedEntityTag=O]
+[Text=daycare CharacterOffsetBegin=861 CharacterOffsetEnd=868 PartOfSpeech=NN Lemma=daycare NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=868 CharacterOffsetEnd=869 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (MD would)
+      (VP (VB be)
+        (ADJP (RB very) (JJ important)
+          (PP (TO to)
+            (NP (JJ several) (NNS parents))))
+        (SBAR (IN if)
+          (S
+            (NP (PRP they))
+            (VP (MD could)
+              (VP (VB have)
+                (ADVP
+                  (NP
+                    (NP (PRP$ their) (NN child))
+                    (PRN (-LRB- -LRB-)
+                      (NP (NN ren))
+                      (-RRB- -RRB-)))
+                  (RB back))
+                (NP
+                  (NP (NN downtown))
+                  (PP (IN at)
+                    (NP (DT the) (JJ same) (NN daycare))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, important-5)
+nsubj(important-5, It-1)
+aux(important-5, would-2)
+cop(important-5, be-3)
+advmod(important-5, very-4)
+case(parents-8, to-6)
+amod(parents-8, several-7)
+nmod:to(important-5, parents-8)
+mark(have-12, if-9)
+nsubj(have-12, they-10)
+aux(have-12, could-11)
+advcl:if(important-5, have-12)
+nmod:poss(child-14, their-13)
+nmod:npmod(back-18, child-14)
+punct(ren-16, -LRB--15)
+appos(child-14, ren-16)
+punct(ren-16, -RRB--17)
+advmod(have-12, back-18)
+dobj(have-12, downtown-19)
+case(daycare-23, at-20)
+det(daycare-23, the-21)
+amod(daycare-23, same-22)
+nmod:at(downtown-19, daycare-23)
+punct(important-5, .-24)
+
+Extracted the following NER entity mentions:
+
+Sentence #11 (17 tokens):
+I know that there are many parents interested in bringing their child back to Enron Kids.
+
+Tokens:
+[Text=I CharacterOffsetBegin=871 CharacterOffsetEnd=872 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=873 CharacterOffsetEnd=877 PartOfSpeech=VBP Lemma=know NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=878 CharacterOffsetEnd=882 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=883 CharacterOffsetEnd=888 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=889 CharacterOffsetEnd=892 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=many CharacterOffsetBegin=893 CharacterOffsetEnd=897 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=parents CharacterOffsetBegin=898 CharacterOffsetEnd=905 PartOfSpeech=NNS Lemma=parent NamedEntityTag=O]
+[Text=interested CharacterOffsetBegin=906 CharacterOffsetEnd=916 PartOfSpeech=JJ Lemma=interested NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=917 CharacterOffsetEnd=919 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=bringing CharacterOffsetBegin=920 CharacterOffsetEnd=928 PartOfSpeech=VBG Lemma=bring NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=929 CharacterOffsetEnd=934 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=child CharacterOffsetBegin=935 CharacterOffsetEnd=940 PartOfSpeech=NN Lemma=child NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=941 CharacterOffsetEnd=945 PartOfSpeech=RB Lemma=back NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=946 CharacterOffsetEnd=948 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=949 CharacterOffsetEnd=954 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=Kids CharacterOffsetBegin=955 CharacterOffsetEnd=959 PartOfSpeech=NNPS Lemma=Kids NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=959 CharacterOffsetEnd=960 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP know)
+      (SBAR (IN that)
+        (S
+          (NP (EX there))
+          (VP (VBP are)
+            (NP
+              (NP (JJ many) (NNS parents))
+              (ADJP (JJ interested)
+                (PP (IN in)
+                  (S
+                    (VP (VBG bringing)
+                      (NP (PRP$ their) (NN child))
+                      (ADVP (RB back))
+                      (PP (TO to)
+                        (NP (NNP Enron) (NNPS Kids))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, know-2)
+nsubj(know-2, I-1)
+mark(are-5, that-3)
+expl(are-5, there-4)
+ccomp(know-2, are-5)
+amod(parents-7, many-6)
+nsubj(are-5, parents-7)
+amod(parents-7, interested-8)
+mark(bringing-10, in-9)
+advcl:in(interested-8, bringing-10)
+nmod:poss(child-12, their-11)
+dobj(bringing-10, child-12)
+advmod(bringing-10, back-13)
+case(Kids-16, to-14)
+compound(Kids-16, Enron-15)
+nmod:to(bringing-10, Kids-16)
+punct(know-2, .-17)
+
+Extracted the following NER entity mentions:
+Enron Kids	ORGANIZATION
+
+Sentence #12 (24 tokens):
+I also have talk to other downtown parents who would possibly be interested in brining their child downtown if the rate was lowered.
+
+Tokens:
+[Text=I CharacterOffsetBegin=962 CharacterOffsetEnd=963 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=964 CharacterOffsetEnd=968 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=969 CharacterOffsetEnd=973 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=talk CharacterOffsetBegin=974 CharacterOffsetEnd=978 PartOfSpeech=NN Lemma=talk NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=979 CharacterOffsetEnd=981 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=982 CharacterOffsetEnd=987 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=downtown CharacterOffsetBegin=988 CharacterOffsetEnd=996 PartOfSpeech=NN Lemma=downtown NamedEntityTag=O]
+[Text=parents CharacterOffsetBegin=997 CharacterOffsetEnd=1004 PartOfSpeech=NNS Lemma=parent NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=1005 CharacterOffsetEnd=1008 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=1009 CharacterOffsetEnd=1014 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=possibly CharacterOffsetBegin=1015 CharacterOffsetEnd=1023 PartOfSpeech=RB Lemma=possibly NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=1024 CharacterOffsetEnd=1026 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=interested CharacterOffsetBegin=1027 CharacterOffsetEnd=1037 PartOfSpeech=JJ Lemma=interested NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=1038 CharacterOffsetEnd=1040 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=brining CharacterOffsetBegin=1041 CharacterOffsetEnd=1048 PartOfSpeech=VBG Lemma=brine NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=1049 CharacterOffsetEnd=1054 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=child CharacterOffsetBegin=1055 CharacterOffsetEnd=1060 PartOfSpeech=NN Lemma=child NamedEntityTag=O]
+[Text=downtown CharacterOffsetBegin=1061 CharacterOffsetEnd=1069 PartOfSpeech=NN Lemma=downtown NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=1070 CharacterOffsetEnd=1072 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1073 CharacterOffsetEnd=1076 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=rate CharacterOffsetBegin=1077 CharacterOffsetEnd=1081 PartOfSpeech=NN Lemma=rate NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=1082 CharacterOffsetEnd=1085 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=lowered CharacterOffsetBegin=1086 CharacterOffsetEnd=1093 PartOfSpeech=VBN Lemma=lower NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1093 CharacterOffsetEnd=1094 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB also))
+    (VP (VBP have)
+      (NP
+        (NP (NN talk))
+        (PP (TO to)
+          (NP (JJ other) (NN downtown) (NNS parents)))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (MD would)
+              (ADVP (RB possibly))
+              (VP (VB be)
+                (ADJP (JJ interested)
+                  (PP (IN in)
+                    (S
+                      (VP (VBG brining)
+                        (NP (PRP$ their) (NN child) (NN downtown))))))
+                (SBAR (IN if)
+                  (S
+                    (NP (DT the) (NN rate))
+                    (VP (VBD was)
+                      (VP (VBN lowered)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-3)
+nsubj(have-3, I-1)
+advmod(have-3, also-2)
+dobj(have-3, talk-4)
+nsubj(interested-13, talk-4)
+case(parents-8, to-5)
+amod(parents-8, other-6)
+compound(parents-8, downtown-7)
+nmod:to(talk-4, parents-8)
+ref(talk-4, who-9)
+aux(interested-13, would-10)
+advmod(interested-13, possibly-11)
+cop(interested-13, be-12)
+acl:relcl(talk-4, interested-13)
+mark(brining-15, in-14)
+advcl:in(interested-13, brining-15)
+nmod:poss(downtown-18, their-16)
+compound(downtown-18, child-17)
+dobj(brining-15, downtown-18)
+mark(lowered-23, if-19)
+det(rate-21, the-20)
+nsubjpass(lowered-23, rate-21)
+auxpass(lowered-23, was-22)
+advcl:if(interested-13, lowered-23)
+punct(have-3, .-24)
+
+Extracted the following NER entity mentions:
+
+Sentence #13 (8 tokens):
+Thank you for your time and consideration.
+
+Tokens:
+[Text=Thank CharacterOffsetBegin=1096 CharacterOffsetEnd=1101 PartOfSpeech=VB Lemma=thank NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=1102 CharacterOffsetEnd=1105 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=1106 CharacterOffsetEnd=1109 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=1110 CharacterOffsetEnd=1114 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=1115 CharacterOffsetEnd=1119 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1120 CharacterOffsetEnd=1123 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=consideration CharacterOffsetBegin=1124 CharacterOffsetEnd=1137 PartOfSpeech=NN Lemma=consideration NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1137 CharacterOffsetEnd=1138 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Thank)
+      (NP (PRP you))
+      (PP (IN for)
+        (NP (PRP$ your) (NN time)
+          (CC and)
+          (NN consideration))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Thank-1)
+dobj(Thank-1, you-2)
+case(time-5, for-3)
+nmod:poss(time-5, your-4)
+nmod:for(Thank-1, time-5)
+cc(time-5, and-6)
+nmod:for(Thank-1, consideration-7)
+conj:and(time-5, consideration-7)
+punct(Thank-1, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #14 (7 tokens):
+Susan Laird
+Email address:  danesmommy0702@msn.com
+713-941-1850
+
+Tokens:
+[Text=Susan CharacterOffsetBegin=1140 CharacterOffsetEnd=1145 PartOfSpeech=NNP Lemma=Susan NamedEntityTag=PERSON]
+[Text=Laird CharacterOffsetBegin=1146 CharacterOffsetEnd=1151 PartOfSpeech=NNP Lemma=Laird NamedEntityTag=PERSON]
+[Text=Email CharacterOffsetBegin=1152 CharacterOffsetEnd=1157 PartOfSpeech=VB Lemma=email NamedEntityTag=O]
+[Text=address CharacterOffsetBegin=1158 CharacterOffsetEnd=1165 PartOfSpeech=NN Lemma=address NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=1165 CharacterOffsetEnd=1166 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=danesmommy0702@msn.com CharacterOffsetBegin=1168 CharacterOffsetEnd=1190 PartOfSpeech=NNP Lemma=danesmommy0702@msn.com NamedEntityTag=EMAIL]
+[Text=713-941-1850 CharacterOffsetBegin=1191 CharacterOffsetEnd=1203 PartOfSpeech=CD Lemma=713-941-1850 NamedEntityTag=NUMBER]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Susan) (NNP Laird))
+    (VP (VB Email)
+      (NP
+        (NP (NN address))
+        (: :)
+        (NP (NNP danesmommy0702@msn.com) (CD 713-941-1850))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Laird-2)
+compound(Laird-2, Susan-1)
+dep(Laird-2, Email-3)
+dobj(Email-3, address-4)
+punct(address-4, :-5)
+dep(address-4, danesmommy0702@msn.com-6)
+nummod(danesmommy0702@msn.com-6, 713-941-1850-7)
+
+Extracted the following NER entity mentions:
+Susan Laird	PERSON
+danesmommy0702@msn.com	EMAIL
+713-941-1850	NUMBER
+
+Coreference set:
+	(6,16,[16,17]) -> (1,11,[10,12]), that is: "Enron" -> "Enron Kids"
+	(6,28,[28,29]) -> (1,11,[10,12]), that is: "Enron" -> "Enron Kids"
+	(7,2,[1,3]) -> (1,11,[10,12]), that is: "Enron Kids" -> "Enron Kids"
+	(7,6,[4,10]) -> (1,11,[10,12]), that is: "a wonderful place with wonderful teachers" -> "Enron Kids"
+	(11,16,[15,17]) -> (1,11,[10,12]), that is: "Enron Kids" -> "Enron Kids"
+
+Coreference set:
+	(2,13,[13,14]) -> (1,2,[1,3]), that is: "him" -> "My child"
+
+Coreference set:
+	(2,2,[2,3]) -> (1,1,[1,2]), that is: "I" -> "My"
+	(2,9,[9,10]) -> (1,1,[1,2]), that is: "I" -> "My"
+	(3,1,[1,2]) -> (1,1,[1,2]), that is: "I" -> "My"
+	(5,1,[1,2]) -> (1,1,[1,2]), that is: "I" -> "My"
+	(6,1,[1,2]) -> (1,1,[1,2]), that is: "I" -> "My"
+	(6,4,[4,5]) -> (1,1,[1,2]), that is: "I" -> "My"
+	(11,1,[1,2]) -> (1,1,[1,2]), that is: "I" -> "My"
+	(12,1,[1,2]) -> (1,1,[1,2]), that is: "I" -> "My"
+
+Coreference set:
+	(4,4,[3,12]) -> (5,8,[6,38]), that is: "the possibility of coming down on the monthly charge" -> "a nice gesture to the parents that previously had kids enrolled there to be able to bring their child -LRB- ren -RRB- back instead of having to enroll them into another daycare"
+	(5,3,[3,4]) -> (5,8,[6,38]), that is: "it" -> "a nice gesture to the parents that previously had kids enrolled there to be able to bring their child -LRB- ren -RRB- back instead of having to enroll them into another daycare"
+
+Coreference set:
+	(10,14,[13,18]) -> (5,24,[23,38]), that is: "their child -LRB- ren -RRB-" -> "their child -LRB- ren -RRB- back instead of having to enroll them into another daycare"
+	(11,12,[11,13]) -> (5,24,[23,38]), that is: "their child" -> "their child -LRB- ren -RRB- back instead of having to enroll them into another daycare"
+
+Coreference set:
+	(5,34,[34,35]) -> (5,23,[23,24]), that is: "them" -> "their"
+
+Coreference set:
+	(12,21,[20,22]) -> (6,32,[31,33]), that is: "the rate" -> "the rate"
+
+Coreference set:
+	(10,10,[10,11]) -> (10,8,[7,9]), that is: "they" -> "several parents"
+	(10,13,[13,14]) -> (10,8,[7,9]), that is: "their" -> "several parents"
+	(11,11,[11,12]) -> (10,8,[7,9]), that is: "their" -> "several parents"
+
+Coreference set:
+	(12,16,[16,17]) -> (12,8,[6,9]), that is: "their" -> "other downtown parents"

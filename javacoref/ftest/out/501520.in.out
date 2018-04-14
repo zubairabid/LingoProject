@@ -1,0 +1,61 @@
+Document: ID=501520.in (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+http://sun-sentinel.com/news/sfl-cpower27mar27.story?coll=sfla%2Dhome%2Dheadli
+nes
+
+Poor Broward County they just can't escape their ignorance.
+
+Tokens:
+[Text=http://sun-sentinel.com/news/sfl-cpower27mar27.story?coll=sfla%2Dhome%2Dheadli CharacterOffsetBegin=0 CharacterOffsetEnd=78 PartOfSpeech=NN Lemma=http://sun-sentinel.com/news/sfl-cpower27mar27.story?coll=sfla%2dhome%2dheadli NamedEntityTag=URL]
+[Text=nes CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=VBZ Lemma=ne NamedEntityTag=O]
+[Text=Poor CharacterOffsetBegin=84 CharacterOffsetEnd=88 PartOfSpeech=NNP Lemma=Poor NamedEntityTag=O]
+[Text=Broward CharacterOffsetBegin=89 CharacterOffsetEnd=96 PartOfSpeech=NNP Lemma=Broward NamedEntityTag=LOCATION]
+[Text=County CharacterOffsetBegin=97 CharacterOffsetEnd=103 PartOfSpeech=NNP Lemma=County NamedEntityTag=LOCATION]
+[Text=they CharacterOffsetBegin=104 CharacterOffsetEnd=108 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=109 CharacterOffsetEnd=113 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=ca CharacterOffsetBegin=114 CharacterOffsetEnd=116 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=116 CharacterOffsetEnd=119 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=escape CharacterOffsetBegin=120 CharacterOffsetEnd=126 PartOfSpeech=VB Lemma=escape NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=127 CharacterOffsetEnd=132 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=ignorance CharacterOffsetBegin=133 CharacterOffsetEnd=142 PartOfSpeech=NN Lemma=ignorance NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=142 CharacterOffsetEnd=143 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN http://sun-sentinel.com/news/sfl-cpower27mar27.story?coll=sfla%2Dhome%2Dheadli))
+    (VP (VBZ nes)
+      (NP
+        (NP (NNP Poor) (NNP Broward) (NNP County))
+        (SBAR
+          (S
+            (NP (PRP they))
+            (ADVP (RB just))
+            (VP (MD ca) (RB n't)
+              (VP (VB escape)
+                (NP (PRP$ their) (NN ignorance))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, nes-2)
+nsubj(nes-2, http://sun-sentinel.com/news/sfl-cpower27mar27.story?coll=sfla%2Dhome%2Dheadli-1)
+compound(County-5, Poor-3)
+compound(County-5, Broward-4)
+dobj(nes-2, County-5)
+nsubj(escape-10, they-6)
+advmod(escape-10, just-7)
+aux(escape-10, ca-8)
+neg(escape-10, n't-9)
+acl:relcl(County-5, escape-10)
+nmod:poss(ignorance-12, their-11)
+dobj(escape-10, ignorance-12)
+punct(nes-2, .-13)
+
+Extracted the following NER entity mentions:
+http://sun-sentinel.com/news/sfl-cpower27mar27.story?coll=sfla%2Dhome%2Dheadli	URL
+Broward County	LOCATION
+
+Coreference set:
+	(1,11,[11,12]) -> (1,6,[6,7]), that is: "their" -> "they"

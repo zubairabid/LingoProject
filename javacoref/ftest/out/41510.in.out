@@ -1,0 +1,90 @@
+Document: ID=41510.in (2 sentences, 18 tokens)
+
+Sentence #1 (15 tokens):
+Lisa I will need to call Hafslund today and request their December 01 detail.
+
+Tokens:
+[Text=Lisa CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Lisa NamedEntityTag=PERSON]
+[Text=I CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=VB Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=call CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=VB Lemma=call NamedEntityTag=O]
+[Text=Hafslund CharacterOffsetBegin=25 CharacterOffsetEnd=33 PartOfSpeech=NNP Lemma=Hafslund NamedEntityTag=LOCATION]
+[Text=today CharacterOffsetBegin=34 CharacterOffsetEnd=39 PartOfSpeech=NN Lemma=today NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=request CharacterOffsetBegin=44 CharacterOffsetEnd=51 PartOfSpeech=NN Lemma=request NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=52 CharacterOffsetEnd=57 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=December CharacterOffsetBegin=58 CharacterOffsetEnd=66 PartOfSpeech=NNP Lemma=December NamedEntityTag=DATE NormalizedNamedEntityTag=****1201]
+[Text=01 CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=NN Lemma=01 NamedEntityTag=DATE NormalizedNamedEntityTag=****1201]
+[Text=detail CharacterOffsetBegin=70 CharacterOffsetEnd=76 PartOfSpeech=NN Lemma=detail NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Lisa) (PRP I))
+    (VP (MD will)
+      (VP (VB need)
+        (S
+          (VP (TO to)
+            (VP
+              (VP (VB call)
+                (NP-TMP (NNP Hafslund) (NN today)))
+              (CC and)
+              (VP (NN request)
+                (NP (PRP$ their) (NNP December) (NN 01) (NN detail))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, need-4)
+nsubj(need-4, Lisa-1)
+nsubj:xsubj(call-6, Lisa-1)
+dep(Lisa-1, I-2)
+aux(need-4, will-3)
+mark(call-6, to-5)
+xcomp(need-4, call-6)
+compound(today-8, Hafslund-7)
+nmod:tmod(call-6, today-8)
+cc(call-6, and-9)
+xcomp(need-4, request-10)
+conj:and(call-6, request-10)
+nmod:poss(detail-14, their-11)
+compound(detail-14, December-12)
+compound(detail-14, 01-13)
+dobj(request-10, detail-14)
+punct(need-4, .-15)
+
+Extracted the following NER entity mentions:
+Lisa	PERSON
+Hafslund	LOCATION
+December 01	DATE
+
+Sentence #2 (3 tokens):
+Thanks
+
+Mark
+
+713-345-7179
+
+Tokens:
+[Text=Thanks CharacterOffsetBegin=79 CharacterOffsetEnd=85 PartOfSpeech=NNS Lemma=thanks NamedEntityTag=O]
+[Text=Mark CharacterOffsetBegin=87 CharacterOffsetEnd=91 PartOfSpeech=NNP Lemma=Mark NamedEntityTag=PERSON]
+[Text=713-345-7179 CharacterOffsetBegin=93 CharacterOffsetEnd=105 PartOfSpeech=CD Lemma=713-345-7179 NamedEntityTag=NUMBER]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNS Thanks))
+    (NP (NNP Mark) (CD 713-345-7179))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Thanks-1)
+dep(Thanks-1, Mark-2)
+nummod(Mark-2, 713-345-7179-3)
+
+Extracted the following NER entity mentions:
+Mark	PERSON
+713-345-7179	NUMBER

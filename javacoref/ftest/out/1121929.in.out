@@ -1,0 +1,874 @@
+Document: ID=1121929.in (10 sentences, 217 tokens)
+
+Sentence #1 (25 tokens):
+Senator Ray Haynes (R) held a press conference this morning to discuss a
+report his office produced regarding municipal utility energy charges.
+
+Tokens:
+[Text=Senator CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Senator NamedEntityTag=TITLE]
+[Text=Ray CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=Ray NamedEntityTag=PERSON]
+[Text=Haynes CharacterOffsetBegin=12 CharacterOffsetEnd=18 PartOfSpeech=NNP Lemma=Haynes NamedEntityTag=PERSON]
+[Text=-LRB- CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=R CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=R NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=held CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=VBD Lemma=hold NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=press CharacterOffsetBegin=30 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=press NamedEntityTag=O]
+[Text=conference CharacterOffsetBegin=36 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=conference NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=morning CharacterOffsetBegin=52 CharacterOffsetEnd=59 PartOfSpeech=NN Lemma=morning NamedEntityTag=TIME NormalizedNamedEntityTag=M]
+[Text=to CharacterOffsetBegin=60 CharacterOffsetEnd=62 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=discuss CharacterOffsetBegin=63 CharacterOffsetEnd=70 PartOfSpeech=VB Lemma=discuss NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=report CharacterOffsetBegin=73 CharacterOffsetEnd=79 PartOfSpeech=NN Lemma=report NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=80 CharacterOffsetEnd=83 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=office CharacterOffsetBegin=84 CharacterOffsetEnd=90 PartOfSpeech=NN Lemma=office NamedEntityTag=O]
+[Text=produced CharacterOffsetBegin=91 CharacterOffsetEnd=99 PartOfSpeech=VBD Lemma=produce NamedEntityTag=O]
+[Text=regarding CharacterOffsetBegin=100 CharacterOffsetEnd=109 PartOfSpeech=VBG Lemma=regard NamedEntityTag=O]
+[Text=municipal CharacterOffsetBegin=110 CharacterOffsetEnd=119 PartOfSpeech=JJ Lemma=municipal NamedEntityTag=O]
+[Text=utility CharacterOffsetBegin=120 CharacterOffsetEnd=127 PartOfSpeech=NN Lemma=utility NamedEntityTag=O]
+[Text=energy CharacterOffsetBegin=128 CharacterOffsetEnd=134 PartOfSpeech=NN Lemma=energy NamedEntityTag=O]
+[Text=charges CharacterOffsetBegin=135 CharacterOffsetEnd=142 PartOfSpeech=NNS Lemma=charge NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=142 CharacterOffsetEnd=143 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Senator) (NNP Ray) (NNP Haynes))
+      (PRN (-LRB- -LRB-)
+        (NP (NNP R))
+        (-RRB- -RRB-)))
+    (VP (VBD held)
+      (NP (DT a) (NN press) (NN conference))
+      (NP-TMP (DT this) (NN morning))
+      (S
+        (VP (TO to)
+          (VP (VB discuss)
+            (NP
+              (NP (DT a) (NN report))
+              (SBAR
+                (S
+                  (NP (PRP$ his) (NN office))
+                  (VP (VBD produced)
+                    (S
+                      (VP (VBG regarding)
+                        (NP (JJ municipal) (NN utility) (NN energy) (NNS charges))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, held-7)
+compound(Haynes-3, Senator-1)
+compound(Haynes-3, Ray-2)
+nsubj(held-7, Haynes-3)
+punct(R-5, -LRB--4)
+appos(Haynes-3, R-5)
+punct(R-5, -RRB--6)
+det(conference-10, a-8)
+compound(conference-10, press-9)
+dobj(held-7, conference-10)
+det(morning-12, this-11)
+nmod:tmod(held-7, morning-12)
+mark(discuss-14, to-13)
+advcl:to(held-7, discuss-14)
+det(report-16, a-15)
+dobj(discuss-14, report-16)
+nmod:poss(office-18, his-17)
+nsubj(produced-19, office-18)
+acl:relcl(report-16, produced-19)
+xcomp(produced-19, regarding-20)
+amod(charges-24, municipal-21)
+compound(charges-24, utility-22)
+compound(charges-24, energy-23)
+dobj(regarding-20, charges-24)
+punct(held-7, .-25)
+
+Extracted the following NER entity mentions:
+Senator	TITLE
+Ray Haynes	PERSON
+morning	TIME
+his	PERSON
+
+Sentence #2 (7 tokens):
+Twelve reporters attended the press conference.
+
+Tokens:
+[Text=Twelve CharacterOffsetBegin=144 CharacterOffsetEnd=150 PartOfSpeech=CD Lemma=twelve NamedEntityTag=NUMBER NormalizedNamedEntityTag=12.0]
+[Text=reporters CharacterOffsetBegin=151 CharacterOffsetEnd=160 PartOfSpeech=NNS Lemma=reporter NamedEntityTag=O]
+[Text=attended CharacterOffsetBegin=161 CharacterOffsetEnd=169 PartOfSpeech=VBD Lemma=attend NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=170 CharacterOffsetEnd=173 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=press CharacterOffsetBegin=174 CharacterOffsetEnd=179 PartOfSpeech=NN Lemma=press NamedEntityTag=O]
+[Text=conference CharacterOffsetBegin=180 CharacterOffsetEnd=190 PartOfSpeech=NN Lemma=conference NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=190 CharacterOffsetEnd=191 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (CD Twelve) (NNS reporters))
+    (VP (VBD attended)
+      (NP (DT the) (NN press) (NN conference)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, attended-3)
+nummod(reporters-2, Twelve-1)
+nsubj(attended-3, reporters-2)
+det(conference-6, the-4)
+compound(conference-6, press-5)
+dobj(attended-3, conference-6)
+punct(attended-3, .-7)
+
+Extracted the following NER entity mentions:
+Twelve	NUMBER
+
+Sentence #3 (19 tokens):
+According to Senator
+Haynes, none of municipal utilities provided him with documentation or
+assistance with his report.
+
+Tokens:
+[Text=According CharacterOffsetBegin=193 CharacterOffsetEnd=202 PartOfSpeech=VBG Lemma=accord NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=203 CharacterOffsetEnd=205 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Senator CharacterOffsetBegin=206 CharacterOffsetEnd=213 PartOfSpeech=NNP Lemma=Senator NamedEntityTag=TITLE]
+[Text=Haynes CharacterOffsetBegin=214 CharacterOffsetEnd=220 PartOfSpeech=NNP Lemma=Haynes NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=220 CharacterOffsetEnd=221 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=none CharacterOffsetBegin=222 CharacterOffsetEnd=226 PartOfSpeech=NN Lemma=none NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=227 CharacterOffsetEnd=229 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=municipal CharacterOffsetBegin=230 CharacterOffsetEnd=239 PartOfSpeech=JJ Lemma=municipal NamedEntityTag=O]
+[Text=utilities CharacterOffsetBegin=240 CharacterOffsetEnd=249 PartOfSpeech=NNS Lemma=utility NamedEntityTag=O]
+[Text=provided CharacterOffsetBegin=250 CharacterOffsetEnd=258 PartOfSpeech=VBD Lemma=provide NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=259 CharacterOffsetEnd=262 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=263 CharacterOffsetEnd=267 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=documentation CharacterOffsetBegin=268 CharacterOffsetEnd=281 PartOfSpeech=NN Lemma=documentation NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=282 CharacterOffsetEnd=284 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=assistance CharacterOffsetBegin=285 CharacterOffsetEnd=295 PartOfSpeech=NN Lemma=assistance NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=296 CharacterOffsetEnd=300 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=301 CharacterOffsetEnd=304 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=report CharacterOffsetBegin=305 CharacterOffsetEnd=311 PartOfSpeech=NN Lemma=report NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=311 CharacterOffsetEnd=312 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (VBG According)
+      (PP (TO to)
+        (NP (NNP Senator) (NNP Haynes))))
+    (, ,)
+    (NP
+      (NP (NN none))
+      (PP (IN of)
+        (NP (JJ municipal) (NNS utilities))))
+    (VP (VBD provided)
+      (NP (PRP him))
+      (PP (IN with)
+        (NP (NN documentation)
+          (CC or)
+          (NN assistance)))
+      (PP (IN with)
+        (NP (PRP$ his) (NN report))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, provided-10)
+case(Haynes-4, According-1)
+mwe(According-1, to-2)
+compound(Haynes-4, Senator-3)
+nmod:according_to(provided-10, Haynes-4)
+punct(provided-10, ,-5)
+nsubj(provided-10, none-6)
+case(utilities-9, of-7)
+amod(utilities-9, municipal-8)
+nmod:of(none-6, utilities-9)
+dobj(provided-10, him-11)
+case(documentation-13, with-12)
+nmod:with(provided-10, documentation-13)
+cc(documentation-13, or-14)
+nmod:with(provided-10, assistance-15)
+conj:or(documentation-13, assistance-15)
+case(report-18, with-16)
+nmod:poss(report-18, his-17)
+nmod:with(provided-10, report-18)
+punct(provided-10, .-19)
+
+Extracted the following NER entity mentions:
+Senator	TITLE
+Haynes	PERSON
+him	PERSON
+his	PERSON
+
+Sentence #4 (21 tokens):
+Senator Haynes delivered the report to Senator
+Dunn and has requested that he open an investigation into municipal utility
+practices.
+
+Tokens:
+[Text=Senator CharacterOffsetBegin=314 CharacterOffsetEnd=321 PartOfSpeech=NNP Lemma=Senator NamedEntityTag=TITLE]
+[Text=Haynes CharacterOffsetBegin=322 CharacterOffsetEnd=328 PartOfSpeech=NNP Lemma=Haynes NamedEntityTag=PERSON]
+[Text=delivered CharacterOffsetBegin=329 CharacterOffsetEnd=338 PartOfSpeech=VBD Lemma=deliver NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=339 CharacterOffsetEnd=342 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=report CharacterOffsetBegin=343 CharacterOffsetEnd=349 PartOfSpeech=NN Lemma=report NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=350 CharacterOffsetEnd=352 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Senator CharacterOffsetBegin=353 CharacterOffsetEnd=360 PartOfSpeech=NNP Lemma=Senator NamedEntityTag=TITLE]
+[Text=Dunn CharacterOffsetBegin=361 CharacterOffsetEnd=365 PartOfSpeech=NNP Lemma=Dunn NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=366 CharacterOffsetEnd=369 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=370 CharacterOffsetEnd=373 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=requested CharacterOffsetBegin=374 CharacterOffsetEnd=383 PartOfSpeech=VBN Lemma=request NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=384 CharacterOffsetEnd=388 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=389 CharacterOffsetEnd=391 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=open CharacterOffsetBegin=392 CharacterOffsetEnd=396 PartOfSpeech=VB Lemma=open NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=397 CharacterOffsetEnd=399 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=investigation CharacterOffsetBegin=400 CharacterOffsetEnd=413 PartOfSpeech=NN Lemma=investigation NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=414 CharacterOffsetEnd=418 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=municipal CharacterOffsetBegin=419 CharacterOffsetEnd=428 PartOfSpeech=JJ Lemma=municipal NamedEntityTag=O]
+[Text=utility CharacterOffsetBegin=429 CharacterOffsetEnd=436 PartOfSpeech=NN Lemma=utility NamedEntityTag=O]
+[Text=practices CharacterOffsetBegin=437 CharacterOffsetEnd=446 PartOfSpeech=NNS Lemma=practice NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=446 CharacterOffsetEnd=447 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Senator) (NNP Haynes))
+    (VP
+      (VP (VBD delivered)
+        (NP (DT the) (NN report))
+        (PP (TO to)
+          (NP (NNP Senator) (NNP Dunn))))
+      (CC and)
+      (VP (VBZ has)
+        (VP (VBN requested)
+          (SBAR (IN that)
+            (S
+              (NP (PRP he))
+              (VP (VB open)
+                (NP (DT an) (NN investigation))
+                (PP (IN into)
+                  (NP (JJ municipal) (NN utility) (NNS practices)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, delivered-3)
+compound(Haynes-2, Senator-1)
+nsubj(delivered-3, Haynes-2)
+nsubj(requested-11, Haynes-2)
+det(report-5, the-4)
+dobj(delivered-3, report-5)
+case(Dunn-8, to-6)
+compound(Dunn-8, Senator-7)
+nmod:to(delivered-3, Dunn-8)
+cc(delivered-3, and-9)
+aux(requested-11, has-10)
+conj:and(delivered-3, requested-11)
+mark(open-14, that-12)
+nsubj(open-14, he-13)
+ccomp(requested-11, open-14)
+det(investigation-16, an-15)
+dobj(open-14, investigation-16)
+case(practices-20, into-17)
+amod(practices-20, municipal-18)
+compound(practices-20, utility-19)
+nmod:into(open-14, practices-20)
+punct(delivered-3, .-21)
+
+Extracted the following NER entity mentions:
+Senator	TITLE
+Haynes	PERSON
+Senator	TITLE
+Dunn	PERSON
+he	PERSON
+
+Sentence #5 (27 tokens):
+He also expressed continued disappointment over the Senate's
+unwillingness to adopt his legislative amendment which would establish a
+windfall profit's tax for municipal utilities.
+
+Tokens:
+[Text=He CharacterOffsetBegin=449 CharacterOffsetEnd=451 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=452 CharacterOffsetEnd=456 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=expressed CharacterOffsetBegin=457 CharacterOffsetEnd=466 PartOfSpeech=VBD Lemma=express NamedEntityTag=O]
+[Text=continued CharacterOffsetBegin=467 CharacterOffsetEnd=476 PartOfSpeech=VBN Lemma=continue NamedEntityTag=O]
+[Text=disappointment CharacterOffsetBegin=477 CharacterOffsetEnd=491 PartOfSpeech=NN Lemma=disappointment NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=492 CharacterOffsetEnd=496 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=497 CharacterOffsetEnd=500 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Senate CharacterOffsetBegin=501 CharacterOffsetEnd=507 PartOfSpeech=NNP Lemma=Senate NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=507 CharacterOffsetEnd=509 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=unwillingness CharacterOffsetBegin=510 CharacterOffsetEnd=523 PartOfSpeech=NN Lemma=unwillingness NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=524 CharacterOffsetEnd=526 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=adopt CharacterOffsetBegin=527 CharacterOffsetEnd=532 PartOfSpeech=VB Lemma=adopt NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=533 CharacterOffsetEnd=536 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=legislative CharacterOffsetBegin=537 CharacterOffsetEnd=548 PartOfSpeech=JJ Lemma=legislative NamedEntityTag=O]
+[Text=amendment CharacterOffsetBegin=549 CharacterOffsetEnd=558 PartOfSpeech=NN Lemma=amendment NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=559 CharacterOffsetEnd=564 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=565 CharacterOffsetEnd=570 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=establish CharacterOffsetBegin=571 CharacterOffsetEnd=580 PartOfSpeech=VB Lemma=establish NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=581 CharacterOffsetEnd=582 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=windfall CharacterOffsetBegin=583 CharacterOffsetEnd=591 PartOfSpeech=NN Lemma=windfall NamedEntityTag=O]
+[Text=profit CharacterOffsetBegin=592 CharacterOffsetEnd=598 PartOfSpeech=NN Lemma=profit NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=598 CharacterOffsetEnd=600 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=tax CharacterOffsetBegin=601 CharacterOffsetEnd=604 PartOfSpeech=NN Lemma=tax NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=605 CharacterOffsetEnd=608 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=municipal CharacterOffsetBegin=609 CharacterOffsetEnd=618 PartOfSpeech=JJ Lemma=municipal NamedEntityTag=O]
+[Text=utilities CharacterOffsetBegin=619 CharacterOffsetEnd=628 PartOfSpeech=NNS Lemma=utility NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=628 CharacterOffsetEnd=629 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB also))
+    (VP (VBD expressed)
+      (NP
+        (NP (VBN continued) (NN disappointment))
+        (PP (IN over)
+          (NP
+            (NP (DT the) (NNP Senate) (POS 's))
+            (NN unwillingness)
+            (S
+              (VP (TO to)
+                (VP (VB adopt)
+                  (NP
+                    (NP (PRP$ his) (JJ legislative) (NN amendment))
+                    (SBAR
+                      (WHNP (WDT which))
+                      (S
+                        (VP (MD would)
+                          (VP (VB establish)
+                            (NP
+                              (NP
+                                (NP (DT a) (NN windfall) (NN profit) (POS 's))
+                                (NN tax))
+                              (PP (IN for)
+                                (NP (JJ municipal) (NNS utilities))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, expressed-3)
+nsubj(expressed-3, He-1)
+advmod(expressed-3, also-2)
+amod(disappointment-5, continued-4)
+dobj(expressed-3, disappointment-5)
+case(unwillingness-10, over-6)
+det(Senate-8, the-7)
+nmod:poss(unwillingness-10, Senate-8)
+case(Senate-8, 's-9)
+nmod:over(disappointment-5, unwillingness-10)
+mark(adopt-12, to-11)
+acl:to(unwillingness-10, adopt-12)
+nmod:poss(amendment-15, his-13)
+amod(amendment-15, legislative-14)
+dobj(adopt-12, amendment-15)
+nsubj(establish-18, amendment-15)
+ref(amendment-15, which-16)
+aux(establish-18, would-17)
+acl:relcl(amendment-15, establish-18)
+det(profit-21, a-19)
+compound(profit-21, windfall-20)
+nmod:poss(tax-23, profit-21)
+case(profit-21, 's-22)
+dobj(establish-18, tax-23)
+case(utilities-26, for-24)
+amod(utilities-26, municipal-25)
+nmod:for(tax-23, utilities-26)
+punct(expressed-3, .-27)
+
+Extracted the following NER entity mentions:
+Senate	ORGANIZATION
+He	PERSON
+his	PERSON
+
+Sentence #6 (20 tokens):
+Senator Haynes referenced Enron several times by comparing Enron's rates to
+those rates charged by LADWP and SMUD.
+
+Tokens:
+[Text=Senator CharacterOffsetBegin=631 CharacterOffsetEnd=638 PartOfSpeech=NNP Lemma=Senator NamedEntityTag=TITLE]
+[Text=Haynes CharacterOffsetBegin=639 CharacterOffsetEnd=645 PartOfSpeech=NNP Lemma=Haynes NamedEntityTag=PERSON]
+[Text=referenced CharacterOffsetBegin=646 CharacterOffsetEnd=656 PartOfSpeech=VBD Lemma=reference NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=657 CharacterOffsetEnd=662 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=several CharacterOffsetBegin=663 CharacterOffsetEnd=670 PartOfSpeech=JJ Lemma=several NamedEntityTag=O]
+[Text=times CharacterOffsetBegin=671 CharacterOffsetEnd=676 PartOfSpeech=NNS Lemma=time NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=677 CharacterOffsetEnd=679 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=comparing CharacterOffsetBegin=680 CharacterOffsetEnd=689 PartOfSpeech=VBG Lemma=compare NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=690 CharacterOffsetEnd=695 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=695 CharacterOffsetEnd=697 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=rates CharacterOffsetBegin=698 CharacterOffsetEnd=703 PartOfSpeech=NNS Lemma=rate NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=704 CharacterOffsetEnd=706 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=707 CharacterOffsetEnd=712 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=rates CharacterOffsetBegin=713 CharacterOffsetEnd=718 PartOfSpeech=NNS Lemma=rate NamedEntityTag=O]
+[Text=charged CharacterOffsetBegin=719 CharacterOffsetEnd=726 PartOfSpeech=VBN Lemma=charge NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=727 CharacterOffsetEnd=729 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=LADWP CharacterOffsetBegin=730 CharacterOffsetEnd=735 PartOfSpeech=NN Lemma=ladwp NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=736 CharacterOffsetEnd=739 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=SMUD CharacterOffsetBegin=740 CharacterOffsetEnd=744 PartOfSpeech=NN Lemma=smud NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=744 CharacterOffsetEnd=745 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Senator) (NNP Haynes))
+    (VP (VBD referenced)
+      (NP (NNP Enron))
+      (NP-TMP (JJ several) (NNS times))
+      (PP (IN by)
+        (S
+          (VP (VBG comparing)
+            (NP
+              (NP (NNP Enron) (POS 's))
+              (NNS rates))
+            (PP (TO to)
+              (NP
+                (NP (DT those) (NNS rates))
+                (VP (VBN charged)
+                  (PP (IN by)
+                    (NP (NN LADWP)
+                      (CC and)
+                      (NN SMUD))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, referenced-3)
+compound(Haynes-2, Senator-1)
+nsubj(referenced-3, Haynes-2)
+dobj(referenced-3, Enron-4)
+amod(times-6, several-5)
+nmod:tmod(referenced-3, times-6)
+mark(comparing-8, by-7)
+advcl:by(referenced-3, comparing-8)
+nmod:poss(rates-11, Enron-9)
+case(Enron-9, 's-10)
+dobj(comparing-8, rates-11)
+case(rates-14, to-12)
+det(rates-14, those-13)
+nmod:to(comparing-8, rates-14)
+acl(rates-14, charged-15)
+case(LADWP-17, by-16)
+nmod:by(charged-15, LADWP-17)
+cc(LADWP-17, and-18)
+nmod:by(charged-15, SMUD-19)
+conj:and(LADWP-17, SMUD-19)
+punct(referenced-3, .-20)
+
+Extracted the following NER entity mentions:
+Senator	TITLE
+Haynes	PERSON
+Enron	ORGANIZATION
+Enron	ORGANIZATION
+LADWP	ORGANIZATION
+SMUD	ORGANIZATION
+
+Sentence #7 (46 tokens):
+In developing the report, Senator Haynes' office did not analyze peak versus
+off peak energy prices, what percentage of power was being sold by municipal
+utilities, or, what the cost for producing or procuring power was for the
+municipal utilities.
+
+Tokens:
+[Text=In CharacterOffsetBegin=747 CharacterOffsetEnd=749 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=developing CharacterOffsetBegin=750 CharacterOffsetEnd=760 PartOfSpeech=VBG Lemma=develop NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=761 CharacterOffsetEnd=764 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=report CharacterOffsetBegin=765 CharacterOffsetEnd=771 PartOfSpeech=NN Lemma=report NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=771 CharacterOffsetEnd=772 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Senator CharacterOffsetBegin=773 CharacterOffsetEnd=780 PartOfSpeech=NNP Lemma=Senator NamedEntityTag=TITLE]
+[Text=Haynes CharacterOffsetBegin=781 CharacterOffsetEnd=787 PartOfSpeech=NNP Lemma=Haynes NamedEntityTag=PERSON]
+[Text=' CharacterOffsetBegin=787 CharacterOffsetEnd=788 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=office CharacterOffsetBegin=789 CharacterOffsetEnd=795 PartOfSpeech=NN Lemma=office NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=796 CharacterOffsetEnd=799 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=800 CharacterOffsetEnd=803 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=analyze CharacterOffsetBegin=804 CharacterOffsetEnd=811 PartOfSpeech=VB Lemma=analyze NamedEntityTag=O]
+[Text=peak CharacterOffsetBegin=812 CharacterOffsetEnd=816 PartOfSpeech=JJ Lemma=peak NamedEntityTag=O]
+[Text=versus CharacterOffsetBegin=817 CharacterOffsetEnd=823 PartOfSpeech=CC Lemma=versus NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=824 CharacterOffsetEnd=827 PartOfSpeech=IN Lemma=off NamedEntityTag=O]
+[Text=peak CharacterOffsetBegin=828 CharacterOffsetEnd=832 PartOfSpeech=JJ Lemma=peak NamedEntityTag=O]
+[Text=energy CharacterOffsetBegin=833 CharacterOffsetEnd=839 PartOfSpeech=NN Lemma=energy NamedEntityTag=O]
+[Text=prices CharacterOffsetBegin=840 CharacterOffsetEnd=846 PartOfSpeech=NNS Lemma=price NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=846 CharacterOffsetEnd=847 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=848 CharacterOffsetEnd=852 PartOfSpeech=WDT Lemma=what NamedEntityTag=O]
+[Text=percentage CharacterOffsetBegin=853 CharacterOffsetEnd=863 PartOfSpeech=NN Lemma=percentage NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=864 CharacterOffsetEnd=866 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=power CharacterOffsetBegin=867 CharacterOffsetEnd=872 PartOfSpeech=NN Lemma=power NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=873 CharacterOffsetEnd=876 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=877 CharacterOffsetEnd=882 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=sold CharacterOffsetBegin=883 CharacterOffsetEnd=887 PartOfSpeech=VBN Lemma=sell NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=888 CharacterOffsetEnd=890 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=municipal CharacterOffsetBegin=891 CharacterOffsetEnd=900 PartOfSpeech=JJ Lemma=municipal NamedEntityTag=O]
+[Text=utilities CharacterOffsetBegin=901 CharacterOffsetEnd=910 PartOfSpeech=NNS Lemma=utility NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=910 CharacterOffsetEnd=911 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=912 CharacterOffsetEnd=914 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=914 CharacterOffsetEnd=915 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=916 CharacterOffsetEnd=920 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=921 CharacterOffsetEnd=924 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=cost CharacterOffsetBegin=925 CharacterOffsetEnd=929 PartOfSpeech=NN Lemma=cost NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=930 CharacterOffsetEnd=933 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=producing CharacterOffsetBegin=934 CharacterOffsetEnd=943 PartOfSpeech=VBG Lemma=produce NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=944 CharacterOffsetEnd=946 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=procuring CharacterOffsetBegin=947 CharacterOffsetEnd=956 PartOfSpeech=VBG Lemma=procure NamedEntityTag=O]
+[Text=power CharacterOffsetBegin=957 CharacterOffsetEnd=962 PartOfSpeech=NN Lemma=power NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=963 CharacterOffsetEnd=966 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=967 CharacterOffsetEnd=970 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=971 CharacterOffsetEnd=974 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=municipal CharacterOffsetBegin=975 CharacterOffsetEnd=984 PartOfSpeech=JJ Lemma=municipal NamedEntityTag=O]
+[Text=utilities CharacterOffsetBegin=985 CharacterOffsetEnd=994 PartOfSpeech=NNS Lemma=utility NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=994 CharacterOffsetEnd=995 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN In)
+      (S
+        (VP (VBG developing)
+          (NP (DT the) (NN report)))))
+    (, ,)
+    (NP
+      (NP (NNP Senator) (NNP Haynes) (POS '))
+      (NN office))
+    (VP (VBD did) (RB not)
+      (VP
+        (VP (VB analyze)
+          (NP (JJ peak))
+          (PP (CC versus)
+            (PP (IN off)
+              (NP
+                (NP (JJ peak) (NN energy) (NNS prices))
+                (, ,)
+                (SBAR
+                  (WHNP
+                    (WHNP (WDT what) (NN percentage))
+                    (PP (IN of)
+                      (NP (NN power))))
+                  (S
+                    (VP (VBD was)
+                      (VP (VBG being)
+                        (VP (VBN sold)
+                          (PP (IN by)
+                            (NP (JJ municipal) (NNS utilities))))))))))))
+        (, ,)
+        (CC or)
+        (VP (, ,)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (NP
+                (NP (DT the) (NN cost))
+                (PP (IN for)
+                  (S
+                    (VP (VBG producing)
+                      (CC or)
+                      (VBG procuring)
+                      (NP (NN power))))))
+              (VP (VBD was)
+                (PP (IN for)
+                  (NP (DT the) (JJ municipal) (NNS utilities)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, analyze-12)
+mark(developing-2, In-1)
+advcl:in(analyze-12, developing-2)
+det(report-4, the-3)
+dobj(developing-2, report-4)
+punct(analyze-12, ,-5)
+compound(Haynes-7, Senator-6)
+nmod:poss(office-9, Haynes-7)
+case(Haynes-7, '-8)
+nsubj(analyze-12, office-9)
+aux(analyze-12, did-10)
+neg(analyze-12, not-11)
+dobj(analyze-12, peak-13)
+cc(prices-18, versus-14)
+case(prices-18, off-15)
+amod(prices-18, peak-16)
+compound(prices-18, energy-17)
+nmod:off(analyze-12, prices-18)
+det(percentage-21, prices-18)
+punct(prices-18, ,-19)
+ref(prices-18, what-20)
+nsubjpass(sold-26, percentage-21)
+case(power-23, of-22)
+nmod:of(percentage-21, power-23)
+aux(sold-26, was-24)
+auxpass(sold-26, being-25)
+acl:relcl(prices-18, sold-26)
+case(utilities-29, by-27)
+amod(utilities-29, municipal-28)
+nmod:agent(sold-26, utilities-29)
+punct(analyze-12, ,-30)
+cc(analyze-12, or-31)
+punct(utilities-45, ,-32)
+dobj(utilities-45, what-33)
+det(cost-35, the-34)
+nsubj(utilities-45, cost-35)
+mark(producing-37, for-36)
+acl:for(cost-35, producing-37)
+cc(producing-37, or-38)
+acl:for(cost-35, procuring-39)
+conj:or(producing-37, procuring-39)
+dobj(producing-37, power-40)
+cop(utilities-45, was-41)
+case(utilities-45, for-42)
+det(utilities-45, the-43)
+amod(utilities-45, municipal-44)
+conj:or(analyze-12, utilities-45)
+punct(analyze-12, .-46)
+
+Extracted the following NER entity mentions:
+Senator	TITLE
+Haynes	PERSON
+
+Sentence #8 (8 tokens):
+These items were raised by a reporter.
+
+Tokens:
+[Text=These CharacterOffsetBegin=997 CharacterOffsetEnd=1002 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=items CharacterOffsetBegin=1003 CharacterOffsetEnd=1008 PartOfSpeech=NNS Lemma=item NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=1009 CharacterOffsetEnd=1013 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=raised CharacterOffsetBegin=1014 CharacterOffsetEnd=1020 PartOfSpeech=VBN Lemma=raise NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=1021 CharacterOffsetEnd=1023 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=1024 CharacterOffsetEnd=1025 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=reporter CharacterOffsetBegin=1026 CharacterOffsetEnd=1034 PartOfSpeech=NN Lemma=reporter NamedEntityTag=TITLE]
+[Text=. CharacterOffsetBegin=1034 CharacterOffsetEnd=1035 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT These) (NNS items))
+    (VP (VBD were)
+      (VP (VBN raised)
+        (PP (IN by)
+          (NP (DT a) (NN reporter)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, raised-4)
+det(items-2, These-1)
+nsubjpass(raised-4, items-2)
+auxpass(raised-4, were-3)
+case(reporter-7, by-5)
+det(reporter-7, a-6)
+nmod:agent(raised-4, reporter-7)
+punct(raised-4, .-8)
+
+Extracted the following NER entity mentions:
+reporter	TITLE
+
+Sentence #9 (25 tokens):
+After the
+press conference, reporters met privately with SMUD and other municipal
+utilities who defended their actions and refuted Senator Haynes' claims.
+
+Tokens:
+[Text=After CharacterOffsetBegin=1037 CharacterOffsetEnd=1042 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1043 CharacterOffsetEnd=1046 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=press CharacterOffsetBegin=1047 CharacterOffsetEnd=1052 PartOfSpeech=NN Lemma=press NamedEntityTag=O]
+[Text=conference CharacterOffsetBegin=1053 CharacterOffsetEnd=1063 PartOfSpeech=NN Lemma=conference NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1063 CharacterOffsetEnd=1064 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=reporters CharacterOffsetBegin=1065 CharacterOffsetEnd=1074 PartOfSpeech=NNS Lemma=reporter NamedEntityTag=O]
+[Text=met CharacterOffsetBegin=1075 CharacterOffsetEnd=1078 PartOfSpeech=VBD Lemma=meet NamedEntityTag=O]
+[Text=privately CharacterOffsetBegin=1079 CharacterOffsetEnd=1088 PartOfSpeech=RB Lemma=privately NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=1089 CharacterOffsetEnd=1093 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=SMUD CharacterOffsetBegin=1094 CharacterOffsetEnd=1098 PartOfSpeech=NN Lemma=smud NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=1099 CharacterOffsetEnd=1102 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=1103 CharacterOffsetEnd=1108 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=municipal CharacterOffsetBegin=1109 CharacterOffsetEnd=1118 PartOfSpeech=JJ Lemma=municipal NamedEntityTag=O]
+[Text=utilities CharacterOffsetBegin=1119 CharacterOffsetEnd=1128 PartOfSpeech=NNS Lemma=utility NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=1129 CharacterOffsetEnd=1132 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=defended CharacterOffsetBegin=1133 CharacterOffsetEnd=1141 PartOfSpeech=VBD Lemma=defend NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=1142 CharacterOffsetEnd=1147 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=actions CharacterOffsetBegin=1148 CharacterOffsetEnd=1155 PartOfSpeech=NNS Lemma=action NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1156 CharacterOffsetEnd=1159 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=refuted CharacterOffsetBegin=1160 CharacterOffsetEnd=1167 PartOfSpeech=VBD Lemma=refute NamedEntityTag=O]
+[Text=Senator CharacterOffsetBegin=1168 CharacterOffsetEnd=1175 PartOfSpeech=NNP Lemma=Senator NamedEntityTag=TITLE]
+[Text=Haynes CharacterOffsetBegin=1176 CharacterOffsetEnd=1182 PartOfSpeech=NNP Lemma=Haynes NamedEntityTag=PERSON]
+[Text=' CharacterOffsetBegin=1182 CharacterOffsetEnd=1183 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=claims CharacterOffsetBegin=1184 CharacterOffsetEnd=1190 PartOfSpeech=NNS Lemma=claim NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1190 CharacterOffsetEnd=1191 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN After)
+      (NP (DT the) (NN press) (NN conference)))
+    (, ,)
+    (NP (NNS reporters))
+    (VP (VBD met)
+      (ADVP (RB privately))
+      (PP (IN with)
+        (NP
+          (NP (NN SMUD))
+          (CC and)
+          (NP
+            (NP (JJ other) (JJ municipal) (NNS utilities))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP
+                  (VP (VBD defended)
+                    (NP (PRP$ their) (NNS actions)))
+                  (CC and)
+                  (VP (VBD refuted)
+                    (NP
+                      (NP (NNP Senator) (NNP Haynes) (POS '))
+                      (NNS claims))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, met-7)
+case(conference-4, After-1)
+det(conference-4, the-2)
+compound(conference-4, press-3)
+nmod:after(met-7, conference-4)
+punct(met-7, ,-5)
+nsubj(met-7, reporters-6)
+advmod(met-7, privately-8)
+case(SMUD-10, with-9)
+nmod:with(met-7, SMUD-10)
+cc(SMUD-10, and-11)
+amod(utilities-14, other-12)
+amod(utilities-14, municipal-13)
+nmod:with(met-7, utilities-14)
+conj:and(SMUD-10, utilities-14)
+nsubj(defended-16, utilities-14)
+nsubj(refuted-20, utilities-14)
+ref(utilities-14, who-15)
+acl:relcl(utilities-14, defended-16)
+nmod:poss(actions-18, their-17)
+dobj(defended-16, actions-18)
+cc(defended-16, and-19)
+acl:relcl(utilities-14, refuted-20)
+conj:and(defended-16, refuted-20)
+compound(Haynes-22, Senator-21)
+nmod:poss(claims-24, Haynes-22)
+case(Haynes-22, '-23)
+dobj(refuted-20, claims-24)
+punct(met-7, .-25)
+
+Extracted the following NER entity mentions:
+SMUD	ORGANIZATION
+Senator	TITLE
+Haynes	PERSON
+
+Sentence #10 (19 tokens):
+I was able to obtain one copy of the report and will FedEx it to Karen in
+Houston.
+
+Tokens:
+[Text=I CharacterOffsetBegin=1193 CharacterOffsetEnd=1194 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=1195 CharacterOffsetEnd=1198 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=able CharacterOffsetBegin=1199 CharacterOffsetEnd=1203 PartOfSpeech=JJ Lemma=able NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1204 CharacterOffsetEnd=1206 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=obtain CharacterOffsetBegin=1207 CharacterOffsetEnd=1213 PartOfSpeech=VB Lemma=obtain NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=1214 CharacterOffsetEnd=1217 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=copy CharacterOffsetBegin=1218 CharacterOffsetEnd=1222 PartOfSpeech=NN Lemma=copy NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=1223 CharacterOffsetEnd=1225 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1226 CharacterOffsetEnd=1229 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=report CharacterOffsetBegin=1230 CharacterOffsetEnd=1236 PartOfSpeech=NN Lemma=report NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1237 CharacterOffsetEnd=1240 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=1241 CharacterOffsetEnd=1245 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=FedEx CharacterOffsetBegin=1246 CharacterOffsetEnd=1251 PartOfSpeech=VB Lemma=fedex NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=1252 CharacterOffsetEnd=1254 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1255 CharacterOffsetEnd=1257 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Karen CharacterOffsetBegin=1258 CharacterOffsetEnd=1263 PartOfSpeech=NNP Lemma=Karen NamedEntityTag=PERSON]
+[Text=in CharacterOffsetBegin=1264 CharacterOffsetEnd=1266 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Houston CharacterOffsetBegin=1267 CharacterOffsetEnd=1274 PartOfSpeech=NNP Lemma=Houston NamedEntityTag=CITY]
+[Text=. CharacterOffsetBegin=1274 CharacterOffsetEnd=1275 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP
+      (VP (VBD was)
+        (ADJP (JJ able)
+          (S
+            (VP (TO to)
+              (VP (VB obtain)
+                (NP
+                  (NP (CD one) (NN copy))
+                  (PP (IN of)
+                    (NP (DT the) (NN report)))))))))
+      (CC and)
+      (VP (MD will)
+        (VP (VB FedEx)
+          (NP (PRP it))
+          (PP (TO to)
+            (NP
+              (NP (NNP Karen))
+              (PP (IN in)
+                (NP (NNP Houston))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, able-3)
+nsubj(able-3, I-1)
+nsubj:xsubj(obtain-5, I-1)
+nsubj(FedEx-13, I-1)
+cop(able-3, was-2)
+mark(obtain-5, to-4)
+xcomp(able-3, obtain-5)
+nummod(copy-7, one-6)
+dobj(obtain-5, copy-7)
+case(report-10, of-8)
+det(report-10, the-9)
+nmod:of(copy-7, report-10)
+cc(able-3, and-11)
+aux(FedEx-13, will-12)
+conj:and(able-3, FedEx-13)
+dobj(FedEx-13, it-14)
+case(Karen-16, to-15)
+nmod:to(FedEx-13, Karen-16)
+case(Houston-18, in-17)
+nmod:in(Karen-16, Houston-18)
+punct(able-3, .-19)
+
+Extracted the following NER entity mentions:
+one	NUMBER
+Karen	PERSON
+Houston	CITY
+
+Coreference set:
+	(10,14,[14,15]) -> (10,7,[6,11]), that is: "it" -> "one copy of the report"
+
+Coreference set:
+	(1,17,[17,18]) -> (1,3,[1,7]), that is: "his" -> "Senator Ray Haynes -LRB- R -RRB-"
+	(3,4,[3,5]) -> (1,3,[1,7]), that is: "Senator Haynes" -> "Senator Ray Haynes -LRB- R -RRB-"
+	(3,4,[4,5]) -> (1,3,[1,7]), that is: "Haynes" -> "Senator Ray Haynes -LRB- R -RRB-"
+	(3,11,[11,12]) -> (1,3,[1,7]), that is: "him" -> "Senator Ray Haynes -LRB- R -RRB-"
+	(3,17,[17,18]) -> (1,3,[1,7]), that is: "his" -> "Senator Ray Haynes -LRB- R -RRB-"
+	(4,2,[1,3]) -> (1,3,[1,7]), that is: "Senator Haynes" -> "Senator Ray Haynes -LRB- R -RRB-"
+	(4,13,[13,14]) -> (1,3,[1,7]), that is: "he" -> "Senator Ray Haynes -LRB- R -RRB-"
+	(5,1,[1,2]) -> (1,3,[1,7]), that is: "He" -> "Senator Ray Haynes -LRB- R -RRB-"
+	(5,13,[13,14]) -> (1,3,[1,7]), that is: "his" -> "Senator Ray Haynes -LRB- R -RRB-"
+	(6,2,[1,3]) -> (1,3,[1,7]), that is: "Senator Haynes" -> "Senator Ray Haynes -LRB- R -RRB-"
+
+Coreference set:
+	(2,6,[4,7]) -> (1,10,[8,11]), that is: "the press conference" -> "a press conference"
+	(9,4,[2,5]) -> (1,10,[8,11]), that is: "the press conference" -> "a press conference"
+
+Coreference set:
+	(3,18,[17,19]) -> (1,16,[15,25]), that is: "his report" -> "a report his office produced regarding municipal utility energy charges"
+	(4,5,[4,6]) -> (1,16,[15,25]), that is: "the report" -> "a report his office produced regarding municipal utility energy charges"
+	(7,4,[3,5]) -> (1,16,[15,25]), that is: "the report" -> "a report his office produced regarding municipal utility energy charges"
+	(10,10,[9,11]) -> (1,16,[15,25]), that is: "the report" -> "a report his office produced regarding municipal utility energy charges"
+
+Coreference set:
+	(9,6,[6,7]) -> (2,2,[1,3]), that is: "reporters" -> "Twelve reporters"
+	(9,17,[17,18]) -> (2,2,[1,3]), that is: "their" -> "Twelve reporters"
+
+Coreference set:
+	(3,9,[8,10]) -> (7,45,[43,46]), that is: "municipal utilities" -> "the municipal utilities"
+	(5,26,[25,27]) -> (7,45,[43,46]), that is: "municipal utilities" -> "the municipal utilities"
+	(7,29,[28,30]) -> (7,45,[43,46]), that is: "municipal utilities" -> "the municipal utilities"
+
+Coreference set:
+	(6,9,[9,11]) -> (6,4,[4,5]), that is: "Enron 's" -> "Enron"
+
+Coreference set:
+	(9,22,[21,24]) -> (7,7,[6,9]), that is: "Senator Haynes '" -> "Senator Haynes '"

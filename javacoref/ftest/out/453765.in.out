@@ -1,0 +1,550 @@
+Document: ID=453765.in (6 sentences, 138 tokens)
+
+Sentence #1 (9 tokens):
+Brief summary of the proposed decision:
+
+1.
+
+Tokens:
+[Text=Brief CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=JJ Lemma=brief NamedEntityTag=O]
+[Text=summary CharacterOffsetBegin=6 CharacterOffsetEnd=13 PartOfSpeech=NN Lemma=summary NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=proposed CharacterOffsetBegin=21 CharacterOffsetEnd=29 PartOfSpeech=VBN Lemma=propose NamedEntityTag=O]
+[Text=decision CharacterOffsetBegin=30 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=decision NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=1 CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech=CD Lemma=1 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=. CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP
+      (NP
+        (NP (JJ Brief) (NN summary))
+        (PP (IN of)
+          (NP (DT the) (VBN proposed) (NN decision)))
+        (: :)
+        (NP (CD 1))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, summary-2)
+amod(summary-2, Brief-1)
+case(decision-6, of-3)
+det(decision-6, the-4)
+amod(decision-6, proposed-5)
+nmod:of(summary-2, decision-6)
+punct(summary-2, :-7)
+dep(summary-2, 1-8)
+punct(summary-2, .-9)
+
+Extracted the following NER entity mentions:
+1	NUMBER
+
+Sentence #2 (20 tokens):
+Commission will issue a final decision on rate adjustments and the end of
+the rate freeze on January 4.
+
+Tokens:
+[Text=Commission CharacterOffsetBegin=44 CharacterOffsetEnd=54 PartOfSpeech=NNP Lemma=Commission NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=55 CharacterOffsetEnd=59 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=issue CharacterOffsetBegin=60 CharacterOffsetEnd=65 PartOfSpeech=VB Lemma=issue NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=final CharacterOffsetBegin=68 CharacterOffsetEnd=73 PartOfSpeech=JJ Lemma=final NamedEntityTag=O]
+[Text=decision CharacterOffsetBegin=74 CharacterOffsetEnd=82 PartOfSpeech=NN Lemma=decision NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=83 CharacterOffsetEnd=85 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=rate CharacterOffsetBegin=86 CharacterOffsetEnd=90 PartOfSpeech=NN Lemma=rate NamedEntityTag=O]
+[Text=adjustments CharacterOffsetBegin=91 CharacterOffsetEnd=102 PartOfSpeech=NNS Lemma=adjustment NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=103 CharacterOffsetEnd=106 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=107 CharacterOffsetEnd=110 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=end CharacterOffsetBegin=111 CharacterOffsetEnd=114 PartOfSpeech=NN Lemma=end NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=115 CharacterOffsetEnd=117 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=118 CharacterOffsetEnd=121 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=rate CharacterOffsetBegin=122 CharacterOffsetEnd=126 PartOfSpeech=NN Lemma=rate NamedEntityTag=O]
+[Text=freeze CharacterOffsetBegin=127 CharacterOffsetEnd=133 PartOfSpeech=NN Lemma=freeze NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=134 CharacterOffsetEnd=136 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=January CharacterOffsetBegin=137 CharacterOffsetEnd=144 PartOfSpeech=NNP Lemma=January NamedEntityTag=DATE NormalizedNamedEntityTag=****0104]
+[Text=4 CharacterOffsetBegin=145 CharacterOffsetEnd=146 PartOfSpeech=CD Lemma=4 NamedEntityTag=DATE NormalizedNamedEntityTag=****0104]
+[Text=. CharacterOffsetBegin=146 CharacterOffsetEnd=147 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Commission))
+    (VP (MD will)
+      (VP (VB issue)
+        (NP
+          (NP
+            (NP (DT a) (JJ final) (NN decision))
+            (PP (IN on)
+              (NP (NN rate) (NNS adjustments))))
+          (CC and)
+          (NP
+            (NP (DT the) (NN end))
+            (PP (IN of)
+              (NP (DT the) (NN rate) (NN freeze)))))
+        (PP (IN on)
+          (NP (NNP January) (CD 4)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, issue-3)
+nsubj(issue-3, Commission-1)
+aux(issue-3, will-2)
+det(decision-6, a-4)
+amod(decision-6, final-5)
+dobj(issue-3, decision-6)
+case(adjustments-9, on-7)
+compound(adjustments-9, rate-8)
+nmod:on(decision-6, adjustments-9)
+cc(decision-6, and-10)
+det(end-12, the-11)
+dobj(issue-3, end-12)
+conj:and(decision-6, end-12)
+case(freeze-16, of-13)
+det(freeze-16, the-14)
+compound(freeze-16, rate-15)
+nmod:of(end-12, freeze-16)
+case(January-18, on-17)
+nmod:on(issue-3, January-18)
+nummod(January-18, 4-19)
+punct(issue-3, .-20)
+
+Extracted the following NER entity mentions:
+January 4	DATE
+
+Sentence #3 (68 tokens):
+To reach the final decision, the Commission
+will hold expedited hearings beginning December 27 to address:
+
+a. when rate freeze will end;
+b. rate adjustments neccesary to maintain utility solvency;
+c. whether utilities should retain remaining assets;
+d. whether utilies should use their retained assets to serve native load
+(and what rate adjustments are necessary to accomplish such a result).
+
+Tokens:
+[Text=To CharacterOffsetBegin=151 CharacterOffsetEnd=153 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=reach CharacterOffsetBegin=154 CharacterOffsetEnd=159 PartOfSpeech=VB Lemma=reach NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=160 CharacterOffsetEnd=163 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=final CharacterOffsetBegin=164 CharacterOffsetEnd=169 PartOfSpeech=JJ Lemma=final NamedEntityTag=O]
+[Text=decision CharacterOffsetBegin=170 CharacterOffsetEnd=178 PartOfSpeech=NN Lemma=decision NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=178 CharacterOffsetEnd=179 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=180 CharacterOffsetEnd=183 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Commission CharacterOffsetBegin=184 CharacterOffsetEnd=194 PartOfSpeech=NNP Lemma=Commission NamedEntityTag=ORGANIZATION]
+[Text=will CharacterOffsetBegin=195 CharacterOffsetEnd=199 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=hold CharacterOffsetBegin=200 CharacterOffsetEnd=204 PartOfSpeech=VB Lemma=hold NamedEntityTag=O]
+[Text=expedited CharacterOffsetBegin=205 CharacterOffsetEnd=214 PartOfSpeech=JJ Lemma=expedited NamedEntityTag=O]
+[Text=hearings CharacterOffsetBegin=215 CharacterOffsetEnd=223 PartOfSpeech=NNS Lemma=hearing NamedEntityTag=O]
+[Text=beginning CharacterOffsetBegin=224 CharacterOffsetEnd=233 PartOfSpeech=VBG Lemma=begin NamedEntityTag=O]
+[Text=December CharacterOffsetBegin=234 CharacterOffsetEnd=242 PartOfSpeech=NNP Lemma=December NamedEntityTag=DATE NormalizedNamedEntityTag=****1227]
+[Text=27 CharacterOffsetBegin=243 CharacterOffsetEnd=245 PartOfSpeech=CD Lemma=27 NamedEntityTag=DATE NormalizedNamedEntityTag=****1227]
+[Text=to CharacterOffsetBegin=246 CharacterOffsetEnd=248 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=address CharacterOffsetBegin=249 CharacterOffsetEnd=256 PartOfSpeech=VB Lemma=address NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=256 CharacterOffsetEnd=257 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=a. CharacterOffsetBegin=259 CharacterOffsetEnd=261 PartOfSpeech=VB Lemma=a. NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=262 CharacterOffsetEnd=266 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=rate CharacterOffsetBegin=267 CharacterOffsetEnd=271 PartOfSpeech=NN Lemma=rate NamedEntityTag=O]
+[Text=freeze CharacterOffsetBegin=272 CharacterOffsetEnd=278 PartOfSpeech=NN Lemma=freeze NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=279 CharacterOffsetEnd=283 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=end CharacterOffsetBegin=284 CharacterOffsetEnd=287 PartOfSpeech=VB Lemma=end NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=287 CharacterOffsetEnd=288 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=b. CharacterOffsetBegin=289 CharacterOffsetEnd=291 PartOfSpeech=FW Lemma=b. NamedEntityTag=O]
+[Text=rate CharacterOffsetBegin=292 CharacterOffsetEnd=296 PartOfSpeech=NN Lemma=rate NamedEntityTag=O]
+[Text=adjustments CharacterOffsetBegin=297 CharacterOffsetEnd=308 PartOfSpeech=NNS Lemma=adjustment NamedEntityTag=O]
+[Text=neccesary CharacterOffsetBegin=309 CharacterOffsetEnd=318 PartOfSpeech=JJ Lemma=neccesary NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=319 CharacterOffsetEnd=321 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=maintain CharacterOffsetBegin=322 CharacterOffsetEnd=330 PartOfSpeech=VB Lemma=maintain NamedEntityTag=O]
+[Text=utility CharacterOffsetBegin=331 CharacterOffsetEnd=338 PartOfSpeech=NN Lemma=utility NamedEntityTag=O]
+[Text=solvency CharacterOffsetBegin=339 CharacterOffsetEnd=347 PartOfSpeech=NN Lemma=solvency NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=347 CharacterOffsetEnd=348 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=c. CharacterOffsetBegin=349 CharacterOffsetEnd=351 PartOfSpeech=NN Lemma=c. NamedEntityTag=O]
+[Text=whether CharacterOffsetBegin=352 CharacterOffsetEnd=359 PartOfSpeech=IN Lemma=whether NamedEntityTag=O]
+[Text=utilities CharacterOffsetBegin=360 CharacterOffsetEnd=369 PartOfSpeech=NNS Lemma=utility NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=370 CharacterOffsetEnd=376 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=retain CharacterOffsetBegin=377 CharacterOffsetEnd=383 PartOfSpeech=VB Lemma=retain NamedEntityTag=O]
+[Text=remaining CharacterOffsetBegin=384 CharacterOffsetEnd=393 PartOfSpeech=VBG Lemma=remain NamedEntityTag=O]
+[Text=assets CharacterOffsetBegin=394 CharacterOffsetEnd=400 PartOfSpeech=NNS Lemma=asset NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=400 CharacterOffsetEnd=401 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=d. CharacterOffsetBegin=402 CharacterOffsetEnd=404 PartOfSpeech=NN Lemma=d. NamedEntityTag=O]
+[Text=whether CharacterOffsetBegin=405 CharacterOffsetEnd=412 PartOfSpeech=IN Lemma=whether NamedEntityTag=O]
+[Text=utilies CharacterOffsetBegin=413 CharacterOffsetEnd=420 PartOfSpeech=NNS Lemma=utily NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=421 CharacterOffsetEnd=427 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=use CharacterOffsetBegin=428 CharacterOffsetEnd=431 PartOfSpeech=VB Lemma=use NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=432 CharacterOffsetEnd=437 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=retained CharacterOffsetBegin=438 CharacterOffsetEnd=446 PartOfSpeech=VBN Lemma=retain NamedEntityTag=O]
+[Text=assets CharacterOffsetBegin=447 CharacterOffsetEnd=453 PartOfSpeech=NNS Lemma=asset NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=454 CharacterOffsetEnd=456 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=serve CharacterOffsetBegin=457 CharacterOffsetEnd=462 PartOfSpeech=VB Lemma=serve NamedEntityTag=O]
+[Text=native CharacterOffsetBegin=463 CharacterOffsetEnd=469 PartOfSpeech=JJ Lemma=native NamedEntityTag=O]
+[Text=load CharacterOffsetBegin=470 CharacterOffsetEnd=474 PartOfSpeech=NN Lemma=load NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=475 CharacterOffsetEnd=476 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=476 CharacterOffsetEnd=479 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=480 CharacterOffsetEnd=484 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=rate CharacterOffsetBegin=485 CharacterOffsetEnd=489 PartOfSpeech=NN Lemma=rate NamedEntityTag=O]
+[Text=adjustments CharacterOffsetBegin=490 CharacterOffsetEnd=501 PartOfSpeech=NNS Lemma=adjustment NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=502 CharacterOffsetEnd=505 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=necessary CharacterOffsetBegin=506 CharacterOffsetEnd=515 PartOfSpeech=JJ Lemma=necessary NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=516 CharacterOffsetEnd=518 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=accomplish CharacterOffsetBegin=519 CharacterOffsetEnd=529 PartOfSpeech=VB Lemma=accomplish NamedEntityTag=O]
+[Text=such CharacterOffsetBegin=530 CharacterOffsetEnd=534 PartOfSpeech=PDT Lemma=such NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=535 CharacterOffsetEnd=536 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=result CharacterOffsetBegin=537 CharacterOffsetEnd=543 PartOfSpeech=NN Lemma=result NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=543 CharacterOffsetEnd=544 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=544 CharacterOffsetEnd=545 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (TO To)
+        (VP (VB reach)
+          (NP (DT the) (JJ final) (NN decision)))))
+    (, ,)
+    (NP (DT the) (NNP Commission))
+    (VP (MD will)
+      (VP (VB hold)
+        (NP
+          (NP (JJ expedited) (NNS hearings))
+          (PP (VBG beginning)
+            (NP
+              (NP
+                (NP (NNP December) (CD 27))
+                (SBAR
+                  (S
+                    (VP (TO to)
+                      (VP
+                        (VP (VB address))
+                        (: :)
+                        (VP (VB a.)
+                          (SBAR
+                            (WHADVP (WRB when))
+                            (S
+                              (NP (NN rate) (NN freeze))
+                              (VP (MD will)
+                                (VP (VB end)))))))))))
+              (: ;)
+              (NP
+                (NP
+                  (NP (FW b.))
+                  (NP (NN rate) (NNS adjustments)))
+                (ADJP (JJ neccesary)
+                  (S
+                    (VP (TO to)
+                      (VP (VB maintain)
+                        (NP (NN utility) (NN solvency)))))))
+              (: ;)
+              (NP
+                (NP (NN c.))
+                (SBAR (IN whether)
+                  (S
+                    (NP (NNS utilities))
+                    (VP (MD should)
+                      (VP (VB retain)
+                        (NP
+                          (NP (VBG remaining) (NNS assets))
+                          (: ;)
+                          (NP
+                            (NP
+                              (NP (NN d.))
+                              (SBAR (IN whether)
+                                (S
+                                  (NP (NNS utilies))
+                                  (VP (MD should)
+                                    (VP (VB use)
+                                      (S
+                                        (NP (PRP$ their))
+                                        (VP (VBN retained)
+                                          (S
+                                            (NP (NNS assets))
+                                            (VP (TO to)
+                                              (VP (VB serve)
+                                                (NP (JJ native) (NN load))))))))))))
+                            (PRN (-LRB- -LRB-)
+                              (CC and)
+                              (NP
+                                (NP (WP what) (NN rate))
+                                (SBAR
+                                  (S
+                                    (NP (NNS adjustments))
+                                    (VP (VBP are)
+                                      (ADJP (JJ necessary)
+                                        (S
+                                          (VP (TO to)
+                                            (VP (VB accomplish)
+                                              (NP (PDT such) (DT a) (NN result))))))))))
+                              (-RRB- -RRB-))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, hold-10)
+mark(reach-2, To-1)
+advcl:to(hold-10, reach-2)
+det(decision-5, the-3)
+amod(decision-5, final-4)
+dobj(reach-2, decision-5)
+punct(hold-10, ,-6)
+det(Commission-8, the-7)
+nsubj(hold-10, Commission-8)
+aux(hold-10, will-9)
+amod(hearings-12, expedited-11)
+dobj(hold-10, hearings-12)
+case(December-14, beginning-13)
+nmod:beginning(hearings-12, December-14)
+nummod(December-14, 27-15)
+mark(address-17, to-16)
+acl:to(December-14, address-17)
+punct(address-17, :-18)
+dep(address-17, a.-19)
+advmod(end-24, when-20)
+compound(freeze-22, rate-21)
+nsubj(end-24, freeze-22)
+aux(end-24, will-23)
+advcl(a.-19, end-24)
+punct(December-14, ;-25)
+dep(December-14, b.-26)
+compound(adjustments-28, rate-27)
+dep(b.-26, adjustments-28)
+amod(b.-26, neccesary-29)
+mark(maintain-31, to-30)
+xcomp(neccesary-29, maintain-31)
+compound(solvency-33, utility-32)
+dobj(maintain-31, solvency-33)
+punct(December-14, ;-34)
+dep(December-14, c.-35)
+mark(retain-39, whether-36)
+nsubj(retain-39, utilities-37)
+aux(retain-39, should-38)
+dep(c.-35, retain-39)
+amod(assets-41, remaining-40)
+dobj(retain-39, assets-41)
+punct(assets-41, ;-42)
+dep(assets-41, d.-43)
+mark(use-47, whether-44)
+nsubj(use-47, utilies-45)
+aux(use-47, should-46)
+dep(d.-43, use-47)
+nsubj(retained-49, their-48)
+dep(use-47, retained-49)
+dobj(retained-49, assets-50)
+nsubj:xsubj(serve-52, assets-50)
+mark(serve-52, to-51)
+xcomp(retained-49, serve-52)
+amod(load-54, native-53)
+dobj(serve-52, load-54)
+punct(rate-58, -LRB--55)
+cc(rate-58, and-56)
+det(rate-58, what-57)
+dep(d.-43, rate-58)
+nsubj(necessary-61, adjustments-59)
+nsubj:xsubj(accomplish-63, adjustments-59)
+cop(necessary-61, are-60)
+acl:relcl(rate-58, necessary-61)
+mark(accomplish-63, to-62)
+xcomp(necessary-61, accomplish-63)
+det:predet(result-66, such-64)
+det(result-66, a-65)
+dobj(accomplish-63, result-66)
+punct(rate-58, -RRB--67)
+punct(hold-10, .-68)
+
+Extracted the following NER entity mentions:
+Commission	ORGANIZATION
+December 27	DATE
+
+Sentence #4 (2 tokens):
+2.
+
+Tokens:
+[Text=2 CharacterOffsetBegin=547 CharacterOffsetEnd=548 PartOfSpeech=LS Lemma=2 NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=548 CharacterOffsetEnd=549 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (LS 2))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 2-1)
+punct(2-1, .-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (26 tokens):
+Commission will take action to maintain solvency of utilities and the
+ability of the utilities to continue to provide service at just and
+reasonable rates.
+
+Tokens:
+[Text=Commission CharacterOffsetBegin=550 CharacterOffsetEnd=560 PartOfSpeech=NNP Lemma=Commission NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=561 CharacterOffsetEnd=565 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=take CharacterOffsetBegin=566 CharacterOffsetEnd=570 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text=action CharacterOffsetBegin=571 CharacterOffsetEnd=577 PartOfSpeech=NN Lemma=action NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=578 CharacterOffsetEnd=580 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=maintain CharacterOffsetBegin=581 CharacterOffsetEnd=589 PartOfSpeech=VB Lemma=maintain NamedEntityTag=O]
+[Text=solvency CharacterOffsetBegin=590 CharacterOffsetEnd=598 PartOfSpeech=NN Lemma=solvency NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=599 CharacterOffsetEnd=601 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=utilities CharacterOffsetBegin=602 CharacterOffsetEnd=611 PartOfSpeech=NNS Lemma=utility NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=612 CharacterOffsetEnd=615 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=616 CharacterOffsetEnd=619 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=ability CharacterOffsetBegin=620 CharacterOffsetEnd=627 PartOfSpeech=NN Lemma=ability NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=628 CharacterOffsetEnd=630 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=631 CharacterOffsetEnd=634 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=utilities CharacterOffsetBegin=635 CharacterOffsetEnd=644 PartOfSpeech=NNS Lemma=utility NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=645 CharacterOffsetEnd=647 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=continue CharacterOffsetBegin=648 CharacterOffsetEnd=656 PartOfSpeech=VB Lemma=continue NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=657 CharacterOffsetEnd=659 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=provide CharacterOffsetBegin=660 CharacterOffsetEnd=667 PartOfSpeech=VB Lemma=provide NamedEntityTag=O]
+[Text=service CharacterOffsetBegin=668 CharacterOffsetEnd=675 PartOfSpeech=NN Lemma=service NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=676 CharacterOffsetEnd=678 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=679 CharacterOffsetEnd=683 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=684 CharacterOffsetEnd=687 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=reasonable CharacterOffsetBegin=688 CharacterOffsetEnd=698 PartOfSpeech=JJ Lemma=reasonable NamedEntityTag=O]
+[Text=rates CharacterOffsetBegin=699 CharacterOffsetEnd=704 PartOfSpeech=NNS Lemma=rate NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=704 CharacterOffsetEnd=705 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Commission))
+    (VP (MD will)
+      (VP (VB take)
+        (NP (NN action))
+        (S
+          (VP (TO to)
+            (VP (VB maintain)
+              (NP
+                (NP
+                  (NP (NN solvency))
+                  (PP (IN of)
+                    (NP (NNS utilities))))
+                (CC and)
+                (NP
+                  (NP (DT the) (NN ability))
+                  (PP (IN of)
+                    (NP (DT the) (NNS utilities)))))
+              (S
+                (VP (TO to)
+                  (VP (VB continue)
+                    (S
+                      (VP (TO to)
+                        (VP (VB provide)
+                          (NP (NN service))
+                          (PP (IN at)
+                            (NP
+                              (UCP
+                                (ADVP (RB just))
+                                (CC and)
+                                (ADJP (JJ reasonable)))
+                              (NNS rates))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, take-3)
+nsubj(take-3, Commission-1)
+aux(take-3, will-2)
+dobj(take-3, action-4)
+mark(maintain-6, to-5)
+advcl:to(take-3, maintain-6)
+dobj(maintain-6, solvency-7)
+case(utilities-9, of-8)
+nmod:of(solvency-7, utilities-9)
+cc(solvency-7, and-10)
+det(ability-12, the-11)
+dobj(maintain-6, ability-12)
+conj:and(solvency-7, ability-12)
+case(utilities-15, of-13)
+det(utilities-15, the-14)
+nmod:of(ability-12, utilities-15)
+mark(continue-17, to-16)
+advcl:to(maintain-6, continue-17)
+mark(provide-19, to-18)
+xcomp(continue-17, provide-19)
+dobj(provide-19, service-20)
+case(rates-25, at-21)
+advmod(rates-25, just-22)
+cc(just-22, and-23)
+conj:and(just-22, reasonable-24)
+advmod(rates-25, reasonable-24)
+nmod:at(provide-19, rates-25)
+punct(take-3, .-26)
+
+Extracted the following NER entity mentions:
+
+Sentence #6 (13 tokens):
+We will give a full report on the conference call scheduled below.
+
+Tokens:
+[Text=We CharacterOffsetBegin=708 CharacterOffsetEnd=710 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=711 CharacterOffsetEnd=715 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=give CharacterOffsetBegin=716 CharacterOffsetEnd=720 PartOfSpeech=VB Lemma=give NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=721 CharacterOffsetEnd=722 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=full CharacterOffsetBegin=723 CharacterOffsetEnd=727 PartOfSpeech=JJ Lemma=full NamedEntityTag=O]
+[Text=report CharacterOffsetBegin=728 CharacterOffsetEnd=734 PartOfSpeech=NN Lemma=report NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=735 CharacterOffsetEnd=737 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=738 CharacterOffsetEnd=741 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=conference CharacterOffsetBegin=742 CharacterOffsetEnd=752 PartOfSpeech=NN Lemma=conference NamedEntityTag=O]
+[Text=call CharacterOffsetBegin=753 CharacterOffsetEnd=757 PartOfSpeech=NN Lemma=call NamedEntityTag=O]
+[Text=scheduled CharacterOffsetBegin=758 CharacterOffsetEnd=767 PartOfSpeech=VBN Lemma=schedule NamedEntityTag=O]
+[Text=below CharacterOffsetBegin=768 CharacterOffsetEnd=773 PartOfSpeech=IN Lemma=below NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=773 CharacterOffsetEnd=774 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (MD will)
+      (VP (VB give)
+        (NP (DT a) (JJ full) (NN report))
+        (PP (IN on)
+          (NP
+            (NP (DT the) (NN conference) (NN call))
+            (VP (VBN scheduled)
+              (PP (IN below)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, give-3)
+nsubj(give-3, We-1)
+aux(give-3, will-2)
+det(report-6, a-4)
+amod(report-6, full-5)
+dobj(give-3, report-6)
+case(call-10, on-7)
+det(call-10, the-8)
+compound(call-10, conference-9)
+nmod:on(give-3, call-10)
+acl(call-10, scheduled-11)
+nmod(scheduled-11, below-12)
+punct(give-3, .-13)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(2,1,[1,2]) -> (3,8,[7,9]), that is: "Commission" -> "the Commission"
+	(5,1,[1,2]) -> (3,8,[7,9]), that is: "Commission" -> "the Commission"
+
+Coreference set:
+	(3,5,[3,6]) -> (2,6,[4,10]), that is: "the final decision" -> "a final decision on rate adjustments"
+
+Coreference set:
+	(3,28,[27,29]) -> (2,9,[8,10]), that is: "rate adjustments" -> "rate adjustments"
+	(3,59,[59,60]) -> (2,9,[8,10]), that is: "adjustments" -> "rate adjustments"
+
+Coreference set:
+	(3,22,[21,23]) -> (2,16,[14,17]), that is: "rate freeze" -> "the rate freeze"
+
+Coreference set:
+	(3,37,[37,38]) -> (5,15,[14,16]), that is: "utilities" -> "the utilities"
+	(5,9,[9,10]) -> (5,15,[14,16]), that is: "utilities" -> "the utilities"
+
+Coreference set:
+	(3,48,[48,49]) -> (3,45,[45,46]), that is: "their" -> "utilies"

@@ -1,0 +1,115 @@
+Document: ID=76144.in (2 sentences, 27 tokens)
+
+Sentence #1 (2 tokens):
+Excellent.
+
+Tokens:
+[Text=Excellent CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=JJ Lemma=excellent NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (ADJP (JJ Excellent))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Excellent-1)
+punct(Excellent-1, .-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (25 tokens):
+I'm sure the motorists trailing behind the pig mobile enjoyed
+the
+beer cans, bottle tops and copenhagen cans bouncing off their windshields.
+
+Tokens:
+[Text=I CharacterOffsetBegin=11 CharacterOffsetEnd=12 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=sure CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=JJ Lemma=sure NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=motorists CharacterOffsetBegin=24 CharacterOffsetEnd=33 PartOfSpeech=NNS Lemma=motorist NamedEntityTag=O]
+[Text=trailing CharacterOffsetBegin=34 CharacterOffsetEnd=42 PartOfSpeech=VBG Lemma=trail NamedEntityTag=O]
+[Text=behind CharacterOffsetBegin=43 CharacterOffsetEnd=49 PartOfSpeech=IN Lemma=behind NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=pig CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=pig NamedEntityTag=O]
+[Text=mobile CharacterOffsetBegin=58 CharacterOffsetEnd=64 PartOfSpeech=JJ Lemma=mobile NamedEntityTag=TITLE]
+[Text=enjoyed CharacterOffsetBegin=65 CharacterOffsetEnd=72 PartOfSpeech=VBD Lemma=enjoy NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=beer CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=NN Lemma=beer NamedEntityTag=O]
+[Text=cans CharacterOffsetBegin=82 CharacterOffsetEnd=86 PartOfSpeech=NNS Lemma=can NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=86 CharacterOffsetEnd=87 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=bottle CharacterOffsetBegin=88 CharacterOffsetEnd=94 PartOfSpeech=NN Lemma=bottle NamedEntityTag=O]
+[Text=tops CharacterOffsetBegin=95 CharacterOffsetEnd=99 PartOfSpeech=NNS Lemma=top NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=100 CharacterOffsetEnd=103 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=copenhagen CharacterOffsetBegin=104 CharacterOffsetEnd=114 PartOfSpeech=NN Lemma=copenhagen NamedEntityTag=O]
+[Text=cans CharacterOffsetBegin=115 CharacterOffsetEnd=119 PartOfSpeech=NNS Lemma=can NamedEntityTag=O]
+[Text=bouncing CharacterOffsetBegin=120 CharacterOffsetEnd=128 PartOfSpeech=VBG Lemma=bounce NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=129 CharacterOffsetEnd=132 PartOfSpeech=RP Lemma=off NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=133 CharacterOffsetEnd=138 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=windshields CharacterOffsetBegin=139 CharacterOffsetEnd=150 PartOfSpeech=NNS Lemma=windshield NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=150 CharacterOffsetEnd=151 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (ADJP (JJ sure)
+        (SBAR
+          (S
+            (NP
+              (NP (DT the) (NNS motorists))
+              (VP (VBG trailing)
+                (PP (IN behind)
+                  (NP (DT the) (NN pig) (JJ mobile)))))
+            (VP (VBD enjoyed)
+              (NP
+                (NP (DT the) (NN beer) (NNS cans))
+                (, ,)
+                (NP (NN bottle) (NNS tops))
+                (CC and)
+                (NP (NN copenhagen) (NNS cans)))
+              (S
+                (VP (VBG bouncing)
+                  (PRT (RP off))
+                  (NP (PRP$ their) (NNS windshields)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, sure-3)
+nsubj(sure-3, I-1)
+cop(sure-3, 'm-2)
+det(motorists-5, the-4)
+nsubj(enjoyed-11, motorists-5)
+acl(motorists-5, trailing-6)
+case(pig-9, behind-7)
+det(pig-9, the-8)
+nmod:behind(trailing-6, pig-9)
+amod(pig-9, mobile-10)
+ccomp(sure-3, enjoyed-11)
+det(cans-14, the-12)
+compound(cans-14, beer-13)
+dobj(enjoyed-11, cans-14)
+punct(cans-14, ,-15)
+compound(tops-17, bottle-16)
+dobj(enjoyed-11, tops-17)
+conj:and(cans-14, tops-17)
+cc(cans-14, and-18)
+compound(cans-20, copenhagen-19)
+dobj(enjoyed-11, cans-20)
+conj:and(cans-14, cans-20)
+xcomp(enjoyed-11, bouncing-21)
+compound:prt(bouncing-21, off-22)
+nmod:poss(windshields-24, their-23)
+dobj(bouncing-21, windshields-24)
+punct(sure-3, .-25)
+
+Extracted the following NER entity mentions:
+mobile	TITLE
+
+Coreference set:
+	(2,23,[23,24]) -> (2,5,[4,11]), that is: "their" -> "the motorists trailing behind the pig mobile"

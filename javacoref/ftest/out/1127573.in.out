@@ -1,0 +1,59 @@
+Document: ID=1127573.in (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+This is what received from Northern Border for their direct IT projects.
+
+Tokens:
+[Text=This CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=received CharacterOffsetBegin=13 CharacterOffsetEnd=21 PartOfSpeech=VBD Lemma=receive NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Northern CharacterOffsetBegin=27 CharacterOffsetEnd=35 PartOfSpeech=NNP Lemma=Northern NamedEntityTag=O]
+[Text=Border CharacterOffsetBegin=36 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=Border NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=direct CharacterOffsetBegin=53 CharacterOffsetEnd=59 PartOfSpeech=JJ Lemma=direct NamedEntityTag=O]
+[Text=IT CharacterOffsetBegin=60 CharacterOffsetEnd=62 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=projects CharacterOffsetBegin=63 CharacterOffsetEnd=71 PartOfSpeech=NNS Lemma=project NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (VP (VBD received)
+            (PP (IN from)
+              (NP
+                (NP (NNP Northern) (NNP Border))
+                (PP (IN for)
+                  (NP (PRP$ their)
+                    (ADJP (JJ direct)
+                      (NP (PRP IT)))
+                    (NNS projects)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-2)
+nsubj(is-2, This-1)
+nsubj(received-4, what-3)
+ccomp(is-2, received-4)
+case(Border-7, from-5)
+compound(Border-7, Northern-6)
+nmod:from(received-4, Border-7)
+case(projects-12, for-8)
+nmod:poss(projects-12, their-9)
+amod(projects-12, direct-10)
+dep(direct-10, IT-11)
+nmod:for(Border-7, projects-12)
+punct(is-2, .-13)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(1,9,[9,10]) -> (1,1,[1,2]), that is: "their" -> "This"

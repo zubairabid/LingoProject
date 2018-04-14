@@ -1,0 +1,538 @@
+Document: ID=75053.in (7 sentences, 130 tokens)
+
+Sentence #1 (12 tokens):
+Many of you have received an Enron check for MetLife coverage.
+
+Tokens:
+[Text=Many CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=received CharacterOffsetBegin=17 CharacterOffsetEnd=25 PartOfSpeech=VBN Lemma=receive NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=29 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=check CharacterOffsetBegin=35 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=check NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=MetLife CharacterOffsetBegin=45 CharacterOffsetEnd=52 PartOfSpeech=NNP Lemma=MetLife NamedEntityTag=ORGANIZATION]
+[Text=coverage CharacterOffsetBegin=53 CharacterOffsetEnd=61 PartOfSpeech=NN Lemma=coverage NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (JJ Many))
+      (PP (IN of)
+        (NP (PRP you))))
+    (VP (VBP have)
+      (VP (VBN received)
+        (NP (DT an) (NNP Enron) (NN check))
+        (PP (IN for)
+          (NP (NNP MetLife) (NN coverage)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, received-5)
+det:qmod(you-3, Many-1)
+mwe(Many-1, of-2)
+nsubj(received-5, you-3)
+aux(received-5, have-4)
+det(check-8, an-6)
+compound(check-8, Enron-7)
+dobj(received-5, check-8)
+case(coverage-11, for-9)
+compound(coverage-11, MetLife-10)
+nmod:for(received-5, coverage-11)
+punct(received-5, .-12)
+
+Extracted the following NER entity mentions:
+Enron	ORGANIZATION
+MetLife	ORGANIZATION
+
+Sentence #2 (8 tokens):
+Below is the explanation for this payment.
+
+Tokens:
+[Text=Below CharacterOffsetBegin=64 CharacterOffsetEnd=69 PartOfSpeech=NNP Lemma=Below NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=70 CharacterOffsetEnd=72 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=explanation CharacterOffsetBegin=77 CharacterOffsetEnd=88 PartOfSpeech=NN Lemma=explanation NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=89 CharacterOffsetEnd=92 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=93 CharacterOffsetEnd=97 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=payment CharacterOffsetBegin=98 CharacterOffsetEnd=105 PartOfSpeech=NN Lemma=payment NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=105 CharacterOffsetEnd=106 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Below))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN explanation))
+        (PP (IN for)
+          (NP (DT this) (NN payment)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, explanation-4)
+nsubj(explanation-4, Below-1)
+cop(explanation-4, is-2)
+det(explanation-4, the-3)
+case(payment-7, for-5)
+det(payment-7, this-6)
+nmod:for(explanation-4, payment-7)
+punct(explanation-4, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (43 tokens):
+_________________________________
+
+The check was from a company called ULR who Enron hired to disburse the monies we received from MetLife resulting from their demutualization - after their IPO stock offering, they became publicly traded instead of being a mutual insurance company.
+
+Tokens:
+[Text=_________________________________ CharacterOffsetBegin=108 CharacterOffsetEnd=141 PartOfSpeech=NN Lemma=_________________________________ NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=143 CharacterOffsetEnd=146 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=check CharacterOffsetBegin=147 CharacterOffsetEnd=152 PartOfSpeech=NN Lemma=check NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=153 CharacterOffsetEnd=156 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=157 CharacterOffsetEnd=161 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=162 CharacterOffsetEnd=163 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=company CharacterOffsetBegin=164 CharacterOffsetEnd=171 PartOfSpeech=NN Lemma=company NamedEntityTag=O]
+[Text=called CharacterOffsetBegin=172 CharacterOffsetEnd=178 PartOfSpeech=VBD Lemma=call NamedEntityTag=O]
+[Text=ULR CharacterOffsetBegin=179 CharacterOffsetEnd=182 PartOfSpeech=NNP Lemma=ULR NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=183 CharacterOffsetEnd=186 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=187 CharacterOffsetEnd=192 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=hired CharacterOffsetBegin=193 CharacterOffsetEnd=198 PartOfSpeech=VBD Lemma=hire NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=199 CharacterOffsetEnd=201 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=disburse CharacterOffsetBegin=202 CharacterOffsetEnd=210 PartOfSpeech=VB Lemma=disburse NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=211 CharacterOffsetEnd=214 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=monies CharacterOffsetBegin=215 CharacterOffsetEnd=221 PartOfSpeech=NNS Lemma=money NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=222 CharacterOffsetEnd=224 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=received CharacterOffsetBegin=225 CharacterOffsetEnd=233 PartOfSpeech=VBD Lemma=receive NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=234 CharacterOffsetEnd=238 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=MetLife CharacterOffsetBegin=239 CharacterOffsetEnd=246 PartOfSpeech=NNP Lemma=MetLife NamedEntityTag=ORGANIZATION]
+[Text=resulting CharacterOffsetBegin=247 CharacterOffsetEnd=256 PartOfSpeech=VBG Lemma=result NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=257 CharacterOffsetEnd=261 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=262 CharacterOffsetEnd=267 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=demutualization CharacterOffsetBegin=268 CharacterOffsetEnd=283 PartOfSpeech=NN Lemma=demutualization NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=284 CharacterOffsetEnd=285 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=286 CharacterOffsetEnd=291 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=292 CharacterOffsetEnd=297 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=IPO CharacterOffsetBegin=298 CharacterOffsetEnd=301 PartOfSpeech=NNP Lemma=IPO NamedEntityTag=O]
+[Text=stock CharacterOffsetBegin=302 CharacterOffsetEnd=307 PartOfSpeech=NN Lemma=stock NamedEntityTag=O]
+[Text=offering CharacterOffsetBegin=308 CharacterOffsetEnd=316 PartOfSpeech=NN Lemma=offering NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=316 CharacterOffsetEnd=317 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=318 CharacterOffsetEnd=322 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=became CharacterOffsetBegin=323 CharacterOffsetEnd=329 PartOfSpeech=VBD Lemma=become NamedEntityTag=O]
+[Text=publicly CharacterOffsetBegin=330 CharacterOffsetEnd=338 PartOfSpeech=RB Lemma=publicly NamedEntityTag=O]
+[Text=traded CharacterOffsetBegin=339 CharacterOffsetEnd=345 PartOfSpeech=VBN Lemma=trade NamedEntityTag=O]
+[Text=instead CharacterOffsetBegin=346 CharacterOffsetEnd=353 PartOfSpeech=RB Lemma=instead NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=354 CharacterOffsetEnd=356 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=357 CharacterOffsetEnd=362 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=363 CharacterOffsetEnd=364 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=mutual CharacterOffsetBegin=365 CharacterOffsetEnd=371 PartOfSpeech=JJ Lemma=mutual NamedEntityTag=O]
+[Text=insurance CharacterOffsetBegin=372 CharacterOffsetEnd=381 PartOfSpeech=NN Lemma=insurance NamedEntityTag=O]
+[Text=company CharacterOffsetBegin=382 CharacterOffsetEnd=389 PartOfSpeech=NN Lemma=company NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=389 CharacterOffsetEnd=390 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NN _________________________________))
+        (SBAR
+          (S
+            (NP (DT The) (NN check))
+            (VP (VBD was)
+              (PP (IN from)
+                (NP (DT a) (NN company)))))))
+      (VP (VBD called)
+        (NP
+          (NP (NNP ULR))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (NP (NNP Enron))
+              (VP (VBD hired)
+                (S
+                  (VP (TO to)
+                    (VP (VB disburse)
+                      (NP
+                        (NP (DT the) (NNS monies))
+                        (SBAR
+                          (S
+                            (NP (PRP we))
+                            (VP (VBD received)
+                              (PP (IN from)
+                                (NP (NNP MetLife)))
+                              (S
+                                (VP (VBG resulting)
+                                  (PP (IN from)
+                                    (NP (PRP$ their) (NN demutualization))))))))))))))))))
+    (: -)
+    (S
+      (PP (IN after)
+        (NP (PRP$ their) (NNP IPO) (NN stock) (NN offering)))
+      (, ,)
+      (NP (PRP they))
+      (VP (VBD became)
+        (VP
+          (ADVP (RB publicly))
+          (VBN traded)
+          (PP (RB instead) (IN of)
+            (S
+              (VP (VBG being)
+                (NP (DT a) (JJ mutual) (NN insurance) (NN company))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, called-8)
+nsubj(called-8, _________________________________-1)
+det(check-3, The-2)
+nsubj(company-7, check-3)
+cop(company-7, was-4)
+case(company-7, from-5)
+det(company-7, a-6)
+acl:relcl(_________________________________-1, company-7)
+dobj(called-8, ULR-9)
+dobj(hired-12, ULR-9)
+nsubj:xsubj(disburse-14, ULR-9)
+ref(ULR-9, who-10)
+nsubj(hired-12, Enron-11)
+acl:relcl(ULR-9, hired-12)
+mark(disburse-14, to-13)
+xcomp(hired-12, disburse-14)
+det(monies-16, the-15)
+dobj(disburse-14, monies-16)
+nsubj(received-18, we-17)
+acl:relcl(monies-16, received-18)
+case(MetLife-20, from-19)
+nmod:from(received-18, MetLife-20)
+xcomp(received-18, resulting-21)
+case(demutualization-24, from-22)
+nmod:poss(demutualization-24, their-23)
+nmod:from(resulting-21, demutualization-24)
+punct(called-8, --25)
+case(offering-30, after-26)
+nmod:poss(offering-30, their-27)
+compound(offering-30, IPO-28)
+compound(offering-30, stock-29)
+nmod:after(became-33, offering-30)
+punct(became-33, ,-31)
+nsubj(became-33, they-32)
+parataxis(called-8, became-33)
+advmod(traded-35, publicly-34)
+xcomp(became-33, traded-35)
+mark(company-42, instead-36)
+mwe(instead-36, of-37)
+cop(company-42, being-38)
+det(company-42, a-39)
+amod(company-42, mutual-40)
+compound(company-42, insurance-41)
+advcl:instead_of(traded-35, company-42)
+punct(called-8, .-43)
+
+Extracted the following NER entity mentions:
+Enron	ORGANIZATION
+MetLife	ORGANIZATION
+
+Sentence #4 (23 tokens):
+Because of Enron's past association with MetLife, we received a cash distribution and that's what we gave eligible employees.
+
+Tokens:
+[Text=Because CharacterOffsetBegin=392 CharacterOffsetEnd=399 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=400 CharacterOffsetEnd=402 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=403 CharacterOffsetEnd=408 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=408 CharacterOffsetEnd=410 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=past CharacterOffsetBegin=411 CharacterOffsetEnd=415 PartOfSpeech=JJ Lemma=past NamedEntityTag=O]
+[Text=association CharacterOffsetBegin=416 CharacterOffsetEnd=427 PartOfSpeech=NN Lemma=association NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=428 CharacterOffsetEnd=432 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=MetLife CharacterOffsetBegin=433 CharacterOffsetEnd=440 PartOfSpeech=NNP Lemma=MetLife NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=440 CharacterOffsetEnd=441 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=442 CharacterOffsetEnd=444 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=received CharacterOffsetBegin=445 CharacterOffsetEnd=453 PartOfSpeech=VBD Lemma=receive NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=454 CharacterOffsetEnd=455 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=cash CharacterOffsetBegin=456 CharacterOffsetEnd=460 PartOfSpeech=NN Lemma=cash NamedEntityTag=O]
+[Text=distribution CharacterOffsetBegin=461 CharacterOffsetEnd=473 PartOfSpeech=NN Lemma=distribution NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=474 CharacterOffsetEnd=477 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=478 CharacterOffsetEnd=482 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=482 CharacterOffsetEnd=484 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=485 CharacterOffsetEnd=489 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=490 CharacterOffsetEnd=492 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=gave CharacterOffsetBegin=493 CharacterOffsetEnd=497 PartOfSpeech=VBD Lemma=give NamedEntityTag=O]
+[Text=eligible CharacterOffsetBegin=498 CharacterOffsetEnd=506 PartOfSpeech=JJ Lemma=eligible NamedEntityTag=O]
+[Text=employees CharacterOffsetBegin=507 CharacterOffsetEnd=516 PartOfSpeech=NNS Lemma=employee NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=516 CharacterOffsetEnd=517 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN Because)
+      (PP (IN of)
+        (NP
+          (NP
+            (NP (NNP Enron) (POS 's))
+            (JJ past) (NN association))
+          (PP (IN with)
+            (NP (NNP MetLife))))))
+    (, ,)
+    (NP (PRP we))
+    (VP (VBD received)
+      (SBAR
+        (S
+          (NP
+            (NP (DT a) (NN cash) (NN distribution))
+            (CC and)
+            (NP (DT that)))
+          (VP (VBZ 's)
+            (SBAR
+              (WHNP (WP what))
+              (S
+                (NP (PRP we))
+                (VP (VBD gave)
+                  (NP (JJ eligible) (NNS employees)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, received-11)
+case(association-6, Because-1)
+case(association-6, of-2)
+nmod:poss(association-6, Enron-3)
+case(Enron-3, 's-4)
+amod(association-6, past-5)
+nmod:of(received-11, association-6)
+case(MetLife-8, with-7)
+nmod:with(association-6, MetLife-8)
+punct(received-11, ,-9)
+nsubj(received-11, we-10)
+det(distribution-14, a-12)
+compound(distribution-14, cash-13)
+nsubj('s-17, distribution-14)
+cc(distribution-14, and-15)
+conj:and(distribution-14, that-16)
+nsubj('s-17, that-16)
+ccomp(received-11, 's-17)
+dobj(gave-20, what-18)
+nsubj(gave-20, we-19)
+ccomp('s-17, gave-20)
+amod(employees-22, eligible-21)
+dobj(gave-20, employees-22)
+punct(received-11, .-23)
+
+Extracted the following NER entity mentions:
+Enron	ORGANIZATION
+MetLife	ORGANIZATION
+
+Sentence #5 (19 tokens):
+Employees who were active as of 9-28-99 and on the payroll 9-28-01 received a share of the distribution.
+
+Tokens:
+[Text=Employees CharacterOffsetBegin=519 CharacterOffsetEnd=528 PartOfSpeech=NNS Lemma=employee NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=529 CharacterOffsetEnd=532 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=533 CharacterOffsetEnd=537 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=active CharacterOffsetBegin=538 CharacterOffsetEnd=544 PartOfSpeech=JJ Lemma=active NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=545 CharacterOffsetEnd=547 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=548 CharacterOffsetEnd=550 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=9-28-99 CharacterOffsetBegin=551 CharacterOffsetEnd=558 PartOfSpeech=CD Lemma=9-28-99 NamedEntityTag=NUMBER]
+[Text=and CharacterOffsetBegin=559 CharacterOffsetEnd=562 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=563 CharacterOffsetEnd=565 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=566 CharacterOffsetEnd=569 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=payroll CharacterOffsetBegin=570 CharacterOffsetEnd=577 PartOfSpeech=NN Lemma=payroll NamedEntityTag=O]
+[Text=9-28-01 CharacterOffsetBegin=578 CharacterOffsetEnd=585 PartOfSpeech=CD Lemma=9-28-01 NamedEntityTag=NUMBER]
+[Text=received CharacterOffsetBegin=586 CharacterOffsetEnd=594 PartOfSpeech=VBD Lemma=receive NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=595 CharacterOffsetEnd=596 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=share CharacterOffsetBegin=597 CharacterOffsetEnd=602 PartOfSpeech=NN Lemma=share NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=603 CharacterOffsetEnd=605 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=606 CharacterOffsetEnd=609 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=distribution CharacterOffsetBegin=610 CharacterOffsetEnd=622 PartOfSpeech=NN Lemma=distribution NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=622 CharacterOffsetEnd=623 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNS Employees))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBD were)
+            (ADJP (JJ active))
+            (PP
+              (PP (IN as)
+                (PP (IN of)
+                  (NP (CD 9-28-99))))
+              (CC and)
+              (PP (IN on)
+                (NP (DT the) (NN payroll)))
+              (NP (CD 9-28-01)))))))
+    (VP (VBD received)
+      (NP
+        (NP (DT a) (NN share))
+        (PP (IN of)
+          (NP (DT the) (NN distribution)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, received-13)
+nsubj(active-4, Employees-1)
+nsubj(received-13, Employees-1)
+ref(Employees-1, who-2)
+cop(active-4, were-3)
+acl:relcl(Employees-1, active-4)
+case(9-28-99-7, as-5)
+mwe(as-5, of-6)
+nmod:as_of(9-28-01-12, 9-28-99-7)
+cc(9-28-01-12, and-8)
+case(payroll-11, on-9)
+det(payroll-11, the-10)
+nmod(active-4, payroll-11)
+conj:and(9-28-01-12, payroll-11)
+nmod(active-4, 9-28-01-12)
+det(share-15, a-14)
+dobj(received-13, share-15)
+case(distribution-18, of-16)
+det(distribution-18, the-17)
+nmod:of(share-15, distribution-18)
+punct(received-13, .-19)
+
+Extracted the following NER entity mentions:
+9-28-99	NUMBER
+9-28-01	NUMBER
+
+Sentence #6 (21 tokens):
+If you fall within that criteria and you did not receive a check please call ULR at 866-286-1434 to inquire.
+
+Tokens:
+[Text=If CharacterOffsetBegin=625 CharacterOffsetEnd=627 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=628 CharacterOffsetEnd=631 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=fall CharacterOffsetBegin=632 CharacterOffsetEnd=636 PartOfSpeech=VBP Lemma=fall NamedEntityTag=O]
+[Text=within CharacterOffsetBegin=637 CharacterOffsetEnd=643 PartOfSpeech=IN Lemma=within NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=644 CharacterOffsetEnd=648 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=criteria CharacterOffsetBegin=649 CharacterOffsetEnd=657 PartOfSpeech=NNS Lemma=criterion NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=658 CharacterOffsetEnd=661 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=662 CharacterOffsetEnd=665 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=666 CharacterOffsetEnd=669 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=670 CharacterOffsetEnd=673 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=receive CharacterOffsetBegin=674 CharacterOffsetEnd=681 PartOfSpeech=VB Lemma=receive NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=682 CharacterOffsetEnd=683 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=check CharacterOffsetBegin=684 CharacterOffsetEnd=689 PartOfSpeech=NN Lemma=check NamedEntityTag=O]
+[Text=please CharacterOffsetBegin=690 CharacterOffsetEnd=696 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=call CharacterOffsetBegin=697 CharacterOffsetEnd=701 PartOfSpeech=JJ Lemma=call NamedEntityTag=O]
+[Text=ULR CharacterOffsetBegin=702 CharacterOffsetEnd=705 PartOfSpeech=NN Lemma=ulr NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=706 CharacterOffsetEnd=708 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=866-286-1434 CharacterOffsetBegin=709 CharacterOffsetEnd=721 PartOfSpeech=CD Lemma=866-286-1434 NamedEntityTag=NUMBER]
+[Text=to CharacterOffsetBegin=722 CharacterOffsetEnd=724 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=inquire CharacterOffsetBegin=725 CharacterOffsetEnd=732 PartOfSpeech=VB Lemma=inquire NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=732 CharacterOffsetEnd=733 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (S
+          (NP (PRP you))
+          (VP (VBP fall)
+            (PP (IN within)
+              (NP (DT that) (NNS criteria)))))
+        (CC and)
+        (S
+          (NP (PRP you))
+          (VP (VBD did) (RB not)
+            (VP (VB receive)
+              (NP (DT a) (NN check)))))))
+    (VP (VB please)
+      (NP
+        (NP (JJ call) (NN ULR))
+        (PP (IN at)
+          (NP (CD 866-286-1434))))
+      (S
+        (VP (TO to)
+          (VP (VB inquire)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, please-14)
+mark(fall-3, If-1)
+nsubj(fall-3, you-2)
+csubj(please-14, fall-3)
+case(criteria-6, within-4)
+det(criteria-6, that-5)
+nmod:within(fall-3, criteria-6)
+cc(fall-3, and-7)
+nsubj(receive-11, you-8)
+aux(receive-11, did-9)
+neg(receive-11, not-10)
+conj:and(fall-3, receive-11)
+csubj(please-14, receive-11)
+det(check-13, a-12)
+dobj(receive-11, check-13)
+amod(ULR-16, call-15)
+dobj(please-14, ULR-16)
+case(866-286-1434-18, at-17)
+nmod:at(ULR-16, 866-286-1434-18)
+mark(inquire-20, to-19)
+advcl:to(please-14, inquire-20)
+punct(please-14, .-21)
+
+Extracted the following NER entity mentions:
+866-286-1434	NUMBER
+
+Sentence #7 (4 tokens):
+___________________________________
+
+ENA Human Resources
+
+Tokens:
+[Text=___________________________________ CharacterOffsetBegin=736 CharacterOffsetEnd=771 PartOfSpeech=NNP Lemma=___________________________________ NamedEntityTag=O]
+[Text=ENA CharacterOffsetBegin=773 CharacterOffsetEnd=776 PartOfSpeech=NNP Lemma=ENA NamedEntityTag=ORGANIZATION]
+[Text=Human CharacterOffsetBegin=777 CharacterOffsetEnd=782 PartOfSpeech=NNP Lemma=Human NamedEntityTag=O]
+[Text=Resources CharacterOffsetBegin=783 CharacterOffsetEnd=792 PartOfSpeech=NNPS Lemma=Resources NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP ___________________________________) (NNP ENA) (NNP Human) (NNPS Resources)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Resources-4)
+compound(Resources-4, ___________________________________-1)
+compound(Resources-4, ENA-2)
+compound(Resources-4, Human-3)
+
+Extracted the following NER entity mentions:
+ENA	ORGANIZATION
+
+Coreference set:
+	(3,11,[11,12]) -> (1,7,[7,8]), that is: "Enron" -> "Enron"
+	(4,3,[3,5]) -> (1,7,[7,8]), that is: "Enron 's" -> "Enron"
+
+Coreference set:
+	(3,20,[20,21]) -> (1,10,[10,11]), that is: "MetLife" -> "MetLife"
+	(4,8,[8,9]) -> (1,10,[10,11]), that is: "MetLife" -> "MetLife"
+
+Coreference set:
+	(3,23,[23,24]) -> (1,1,[1,4]), that is: "their" -> "Many of you"
+	(3,27,[27,28]) -> (1,1,[1,4]), that is: "their" -> "Many of you"
+	(3,32,[32,33]) -> (1,1,[1,4]), that is: "they" -> "Many of you"
+
+Coreference set:
+	(3,3,[2,4]) -> (1,8,[6,9]), that is: "The check" -> "an Enron check"
+
+Coreference set:
+	(2,4,[3,8]) -> (2,1,[1,2]), that is: "the explanation for this payment" -> "Below"
+
+Coreference set:
+	(4,10,[10,11]) -> (3,17,[17,18]), that is: "we" -> "we"
+	(4,16,[16,17]) -> (3,17,[17,18]), that is: "that" -> "we"
+	(4,19,[19,20]) -> (3,17,[17,18]), that is: "we" -> "we"
+
+Coreference set:
+	(5,18,[17,19]) -> (4,14,[12,15]), that is: "the distribution" -> "a cash distribution"

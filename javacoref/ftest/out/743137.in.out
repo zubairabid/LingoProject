@@ -1,0 +1,197 @@
+Document: ID=743137.in (3 sentences, 49 tokens)
+
+Sentence #1 (14 tokens):
+ALJ is allowing CDWR to assert $1.7B in Pacific NW case.
+
+Tokens:
+[Text=ALJ CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=ALJ NamedEntityTag=ORGANIZATION]
+[Text=is CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=allowing CharacterOffsetBegin=7 CharacterOffsetEnd=15 PartOfSpeech=VBG Lemma=allow NamedEntityTag=O]
+[Text=CDWR CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=NN Lemma=cdwr NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=assert CharacterOffsetBegin=24 CharacterOffsetEnd=30 PartOfSpeech=VB Lemma=assert NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$1.7]
+[Text=1.7 CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=CD Lemma=1.7 NamedEntityTag=MONEY NormalizedNamedEntityTag=$1.7]
+[Text=B CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=b NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Pacific CharacterOffsetBegin=40 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=Pacific NamedEntityTag=LOCATION]
+[Text=NW CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=NNP Lemma=NW NamedEntityTag=LOCATION]
+[Text=case CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=case NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP ALJ))
+    (VP (VBZ is)
+      (VP (VBG allowing)
+        (NP (NN CDWR))
+        (S
+          (VP (TO to)
+            (VP (VB assert)
+              (NP
+                (ADJP ($ $) (CD 1.7))
+                (NN B))
+              (PP (IN in)
+                (NP (NNP Pacific) (NNP NW) (NN case))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, allowing-3)
+nsubj(allowing-3, ALJ-1)
+aux(allowing-3, is-2)
+dobj(allowing-3, CDWR-4)
+nsubj:xsubj(assert-6, CDWR-4)
+mark(assert-6, to-5)
+xcomp(allowing-3, assert-6)
+amod(B-9, $-7)
+compound($-7, 1.7-8)
+dobj(assert-6, B-9)
+case(case-13, in-10)
+compound(case-13, Pacific-11)
+compound(case-13, NW-12)
+nmod:in(assert-6, case-13)
+punct(allowing-3, .-14)
+
+Extracted the following NER entity mentions:
+ALJ	ORGANIZATION
+$1.7	MONEY
+Pacific NW	LOCATION
+
+Sentence #2 (28 tokens):
+As noted the other day, their claim against Enron is small ($200,000), but this will expand ripple claims in a big way.
+
+Tokens:
+[Text=As CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=noted CharacterOffsetBegin=60 CharacterOffsetEnd=65 PartOfSpeech=VBN Lemma=note NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=70 CharacterOffsetEnd=75 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=day CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=NN Lemma=day NamedEntityTag=TIME NormalizedNamedEntityTag=D]
+[Text=, CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=81 CharacterOffsetEnd=86 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=claim CharacterOffsetBegin=87 CharacterOffsetEnd=92 PartOfSpeech=NN Lemma=claim NamedEntityTag=O]
+[Text=against CharacterOffsetBegin=93 CharacterOffsetEnd=100 PartOfSpeech=IN Lemma=against NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=101 CharacterOffsetEnd=106 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=is CharacterOffsetBegin=107 CharacterOffsetEnd=109 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=small CharacterOffsetBegin=110 CharacterOffsetEnd=115 PartOfSpeech=JJ Lemma=small NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=116 CharacterOffsetEnd=117 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=117 CharacterOffsetEnd=118 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$200000.0]
+[Text=200,000 CharacterOffsetBegin=118 CharacterOffsetEnd=125 PartOfSpeech=CD Lemma=200,000 NamedEntityTag=MONEY NormalizedNamedEntityTag=$200000.0]
+[Text=-RRB- CharacterOffsetBegin=125 CharacterOffsetEnd=126 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=126 CharacterOffsetEnd=127 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=128 CharacterOffsetEnd=131 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=132 CharacterOffsetEnd=136 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=137 CharacterOffsetEnd=141 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=expand CharacterOffsetBegin=142 CharacterOffsetEnd=148 PartOfSpeech=VB Lemma=expand NamedEntityTag=O]
+[Text=ripple CharacterOffsetBegin=149 CharacterOffsetEnd=155 PartOfSpeech=JJ Lemma=ripple NamedEntityTag=O]
+[Text=claims CharacterOffsetBegin=156 CharacterOffsetEnd=162 PartOfSpeech=NNS Lemma=claim NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=163 CharacterOffsetEnd=165 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=166 CharacterOffsetEnd=167 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=big CharacterOffsetBegin=168 CharacterOffsetEnd=171 PartOfSpeech=JJ Lemma=big NamedEntityTag=O]
+[Text=way CharacterOffsetBegin=172 CharacterOffsetEnd=175 PartOfSpeech=NN Lemma=way NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=175 CharacterOffsetEnd=176 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (SBAR (IN As)
+        (S
+          (VP (VBN noted)
+            (NP-TMP (DT the) (JJ other) (NN day)))))
+      (, ,)
+      (NP
+        (NP (PRP$ their) (NN claim))
+        (PP (IN against)
+          (NP (NNP Enron))))
+      (VP (VBZ is)
+        (ADJP (JJ small))
+        (PRN (-LRB- -LRB-)
+          (NP ($ $) (CD 200,000))
+          (-RRB- -RRB-))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (DT this))
+      (VP (MD will)
+        (VP (VB expand)
+          (NP (JJ ripple) (NNS claims))
+          (PP (IN in)
+            (NP (DT a) (JJ big) (NN way))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, small-12)
+mark(noted-2, As-1)
+advcl:as(small-12, noted-2)
+det(day-5, the-3)
+amod(day-5, other-4)
+nmod:tmod(noted-2, day-5)
+punct(small-12, ,-6)
+nmod:poss(claim-8, their-7)
+nsubj(small-12, claim-8)
+case(Enron-10, against-9)
+nmod:against(claim-8, Enron-10)
+cop(small-12, is-11)
+punct(200,000-15, -LRB--13)
+dep(200,000-15, $-14)
+dep(small-12, 200,000-15)
+punct(200,000-15, -RRB--16)
+punct(small-12, ,-17)
+cc(small-12, but-18)
+nsubj(expand-21, this-19)
+aux(expand-21, will-20)
+conj:but(small-12, expand-21)
+amod(claims-23, ripple-22)
+dobj(expand-21, claims-23)
+case(way-27, in-24)
+det(way-27, a-25)
+amod(way-27, big-26)
+nmod:in(expand-21, way-27)
+punct(small-12, .-28)
+
+Extracted the following NER entity mentions:
+day	TIME
+Enron	ORGANIZATION
+$200,000	MONEY
+
+Sentence #3 (7 tokens):
+Link to Judge Cintron's Order
+
+
+http://cips.ferc.fed.us/Q/CIPS/ELECTRIC/EL/EL01-10.0AA.TXT
+
+Tokens:
+[Text=Link CharacterOffsetBegin=179 CharacterOffsetEnd=183 PartOfSpeech=NN Lemma=link NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=184 CharacterOffsetEnd=186 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Judge CharacterOffsetBegin=187 CharacterOffsetEnd=192 PartOfSpeech=NNP Lemma=Judge NamedEntityTag=TITLE]
+[Text=Cintron CharacterOffsetBegin=193 CharacterOffsetEnd=200 PartOfSpeech=NNP Lemma=Cintron NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=200 CharacterOffsetEnd=202 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Order CharacterOffsetBegin=203 CharacterOffsetEnd=208 PartOfSpeech=NNP Lemma=Order NamedEntityTag=O]
+[Text=http://cips.ferc.fed.us/Q/CIPS/ELECTRIC/EL/EL01-10.0AA.TXT CharacterOffsetBegin=211 CharacterOffsetEnd=269 PartOfSpeech=NN Lemma=http://cips.ferc.fed.us/q/cips/electric/el/el01-10.0aa.txt NamedEntityTag=URL]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NN Link))
+    (PP (TO to)
+      (NP
+        (NP (NNP Judge) (NNP Cintron) (POS 's))
+        (NNP Order) (NN http://cips.ferc.fed.us/Q/CIPS/ELECTRIC/EL/EL01-10.0AA.TXT)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Link-1)
+case(http://cips.ferc.fed.us/Q/CIPS/ELECTRIC/EL/EL01-10.0AA.TXT-7, to-2)
+compound(Cintron-4, Judge-3)
+nmod:poss(http://cips.ferc.fed.us/Q/CIPS/ELECTRIC/EL/EL01-10.0AA.TXT-7, Cintron-4)
+case(Cintron-4, 's-5)
+compound(http://cips.ferc.fed.us/Q/CIPS/ELECTRIC/EL/EL01-10.0AA.TXT-7, Order-6)
+nmod:to(Link-1, http://cips.ferc.fed.us/Q/CIPS/ELECTRIC/EL/EL01-10.0AA.TXT-7)
+
+Extracted the following NER entity mentions:
+Judge	TITLE
+Cintron	PERSON
+http://cips.ferc.fed.us/Q/CIPS/ELECTRIC/EL/EL01-10.0AA.TXT	URL

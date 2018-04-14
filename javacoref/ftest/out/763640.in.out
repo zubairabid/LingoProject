@@ -1,0 +1,251 @@
+Document: ID=763640.in (3 sentences, 66 tokens)
+
+Sentence #1 (16 tokens):
+Attached is an updated Interstate Pipeline Capacity to California Report with changes and additions highlighted.
+
+Tokens:
+[Text=Attached CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=VBN Lemma=attach NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=updated CharacterOffsetBegin=15 CharacterOffsetEnd=22 PartOfSpeech=VBN Lemma=update NamedEntityTag=O]
+[Text=Interstate CharacterOffsetBegin=23 CharacterOffsetEnd=33 PartOfSpeech=NNP Lemma=Interstate NamedEntityTag=ORGANIZATION]
+[Text=Pipeline CharacterOffsetBegin=34 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=Pipeline NamedEntityTag=ORGANIZATION]
+[Text=Capacity CharacterOffsetBegin=43 CharacterOffsetEnd=51 PartOfSpeech=NNP Lemma=Capacity NamedEntityTag=ORGANIZATION]
+[Text=to CharacterOffsetBegin=52 CharacterOffsetEnd=54 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=California CharacterOffsetBegin=55 CharacterOffsetEnd=65 PartOfSpeech=NNP Lemma=California NamedEntityTag=STATE_OR_PROVINCE]
+[Text=Report CharacterOffsetBegin=66 CharacterOffsetEnd=72 PartOfSpeech=NNP Lemma=Report NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=changes CharacterOffsetBegin=78 CharacterOffsetEnd=85 PartOfSpeech=NNS Lemma=change NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=additions CharacterOffsetBegin=90 CharacterOffsetEnd=99 PartOfSpeech=NNS Lemma=addition NamedEntityTag=O]
+[Text=highlighted CharacterOffsetBegin=100 CharacterOffsetEnd=111 PartOfSpeech=VBD Lemma=highlight NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=111 CharacterOffsetEnd=112 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (S
+        (VP (VBN Attached)))
+      (VP (VBZ is)
+        (NP
+          (NP (DT an) (VBN updated) (NNP Interstate) (NNP Pipeline) (NNP Capacity))
+          (PP (TO to)
+            (NP
+              (NP (NNP California) (NNP Report))
+              (PP (IN with)
+                (NP (NNS changes))))))))
+    (CC and)
+    (S
+      (NP (NNS additions))
+      (VP (VBD highlighted)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Capacity-7)
+csubj(Capacity-7, Attached-1)
+cop(Capacity-7, is-2)
+det(Capacity-7, an-3)
+amod(Capacity-7, updated-4)
+compound(Capacity-7, Interstate-5)
+compound(Capacity-7, Pipeline-6)
+case(Report-10, to-8)
+compound(Report-10, California-9)
+nmod:to(Capacity-7, Report-10)
+case(changes-12, with-11)
+nmod:with(Report-10, changes-12)
+cc(Capacity-7, and-13)
+nsubj(highlighted-15, additions-14)
+conj:and(Capacity-7, highlighted-15)
+punct(Capacity-7, .-16)
+
+Extracted the following NER entity mentions:
+Interstate Pipeline Capacity	ORGANIZATION
+California	STATE_OR_PROVINCE
+
+Sentence #2 (11 tokens):
+Two projects received the green light from FERC this week.
+
+Tokens:
+[Text=Two CharacterOffsetBegin=114 CharacterOffsetEnd=117 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=projects CharacterOffsetBegin=118 CharacterOffsetEnd=126 PartOfSpeech=NNS Lemma=project NamedEntityTag=O]
+[Text=received CharacterOffsetBegin=127 CharacterOffsetEnd=135 PartOfSpeech=VBD Lemma=receive NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=136 CharacterOffsetEnd=139 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=green CharacterOffsetBegin=140 CharacterOffsetEnd=145 PartOfSpeech=JJ Lemma=green NamedEntityTag=O]
+[Text=light CharacterOffsetBegin=146 CharacterOffsetEnd=151 PartOfSpeech=NN Lemma=light NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=152 CharacterOffsetEnd=156 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=FERC CharacterOffsetBegin=157 CharacterOffsetEnd=161 PartOfSpeech=NNP Lemma=FERC NamedEntityTag=ORGANIZATION]
+[Text=this CharacterOffsetBegin=162 CharacterOffsetEnd=166 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=week CharacterOffsetBegin=167 CharacterOffsetEnd=171 PartOfSpeech=NN Lemma=week NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=171 CharacterOffsetEnd=172 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (CD Two) (NNS projects))
+    (VP (VBD received)
+      (NP (DT the) (JJ green) (NN light))
+      (PP (IN from)
+        (NP (NNP FERC)))
+      (NP-TMP (DT this) (NN week)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, received-3)
+nummod(projects-2, Two-1)
+nsubj(received-3, projects-2)
+det(light-6, the-4)
+amod(light-6, green-5)
+dobj(received-3, light-6)
+case(FERC-8, from-7)
+nmod:from(received-3, FERC-8)
+det(week-10, this-9)
+nmod:tmod(received-3, week-10)
+punct(received-3, .-11)
+
+Extracted the following NER entity mentions:
+Two	NUMBER
+FERC	ORGANIZATION
+
+Sentence #3 (39 tokens):
+PG&E Northwest received approved to proceed with their 212MM/d 2002 expansion project and Kern River received approval to amend their 2002 project to include the previously approved CA Action emergency capacity of 10.5MM/d on a permenant basis.
+
+Tokens:
+[Text=PG&E CharacterOffsetBegin=174 CharacterOffsetEnd=178 PartOfSpeech=NNP Lemma=PG&E NamedEntityTag=ORGANIZATION]
+[Text=Northwest CharacterOffsetBegin=179 CharacterOffsetEnd=188 PartOfSpeech=NNP Lemma=Northwest NamedEntityTag=ORGANIZATION]
+[Text=received CharacterOffsetBegin=189 CharacterOffsetEnd=197 PartOfSpeech=VBD Lemma=receive NamedEntityTag=O]
+[Text=approved CharacterOffsetBegin=198 CharacterOffsetEnd=206 PartOfSpeech=VBN Lemma=approve NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=207 CharacterOffsetEnd=209 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=proceed CharacterOffsetBegin=210 CharacterOffsetEnd=217 PartOfSpeech=VB Lemma=proceed NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=218 CharacterOffsetEnd=222 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=223 CharacterOffsetEnd=228 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=212MM/d CharacterOffsetBegin=229 CharacterOffsetEnd=236 PartOfSpeech=JJ Lemma=212mm/d NamedEntityTag=O]
+[Text=2002 CharacterOffsetBegin=237 CharacterOffsetEnd=241 PartOfSpeech=CD Lemma=2002 NamedEntityTag=DATE NormalizedNamedEntityTag=2002]
+[Text=expansion CharacterOffsetBegin=242 CharacterOffsetEnd=251 PartOfSpeech=NN Lemma=expansion NamedEntityTag=O]
+[Text=project CharacterOffsetBegin=252 CharacterOffsetEnd=259 PartOfSpeech=NN Lemma=project NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=260 CharacterOffsetEnd=263 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Kern CharacterOffsetBegin=264 CharacterOffsetEnd=268 PartOfSpeech=NNP Lemma=Kern NamedEntityTag=LOCATION]
+[Text=River CharacterOffsetBegin=269 CharacterOffsetEnd=274 PartOfSpeech=NNP Lemma=River NamedEntityTag=TITLE]
+[Text=received CharacterOffsetBegin=275 CharacterOffsetEnd=283 PartOfSpeech=VBD Lemma=receive NamedEntityTag=O]
+[Text=approval CharacterOffsetBegin=284 CharacterOffsetEnd=292 PartOfSpeech=NN Lemma=approval NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=293 CharacterOffsetEnd=295 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=amend CharacterOffsetBegin=296 CharacterOffsetEnd=301 PartOfSpeech=VB Lemma=amend NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=302 CharacterOffsetEnd=307 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=2002 CharacterOffsetBegin=308 CharacterOffsetEnd=312 PartOfSpeech=CD Lemma=2002 NamedEntityTag=DATE NormalizedNamedEntityTag=2002]
+[Text=project CharacterOffsetBegin=313 CharacterOffsetEnd=320 PartOfSpeech=NN Lemma=project NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=321 CharacterOffsetEnd=323 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=include CharacterOffsetBegin=324 CharacterOffsetEnd=331 PartOfSpeech=VB Lemma=include NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=332 CharacterOffsetEnd=335 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=previously CharacterOffsetBegin=336 CharacterOffsetEnd=346 PartOfSpeech=RB Lemma=previously NamedEntityTag=O]
+[Text=approved CharacterOffsetBegin=347 CharacterOffsetEnd=355 PartOfSpeech=VBN Lemma=approve NamedEntityTag=O]
+[Text=CA CharacterOffsetBegin=356 CharacterOffsetEnd=358 PartOfSpeech=NNP Lemma=CA NamedEntityTag=ORGANIZATION]
+[Text=Action CharacterOffsetBegin=359 CharacterOffsetEnd=365 PartOfSpeech=NNP Lemma=Action NamedEntityTag=ORGANIZATION]
+[Text=emergency CharacterOffsetBegin=366 CharacterOffsetEnd=375 PartOfSpeech=NN Lemma=emergency NamedEntityTag=O]
+[Text=capacity CharacterOffsetBegin=376 CharacterOffsetEnd=384 PartOfSpeech=NN Lemma=capacity NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=385 CharacterOffsetEnd=387 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=10.5 CharacterOffsetBegin=388 CharacterOffsetEnd=392 PartOfSpeech=CD Lemma=10.5 NamedEntityTag=NUMBER NormalizedNamedEntityTag=10.5]
+[Text=MM/d CharacterOffsetBegin=392 CharacterOffsetEnd=396 PartOfSpeech=NN Lemma=mm/d NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=397 CharacterOffsetEnd=399 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=400 CharacterOffsetEnd=401 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=permenant CharacterOffsetBegin=402 CharacterOffsetEnd=411 PartOfSpeech=JJ Lemma=permenant NamedEntityTag=O]
+[Text=basis CharacterOffsetBegin=412 CharacterOffsetEnd=417 PartOfSpeech=NN Lemma=basis NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=417 CharacterOffsetEnd=418 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SINV
+    (S
+      (NP (NNP PG&E) (NNP Northwest))
+      (VP (VBD received)
+        (VP (VBN approved)
+          (S
+            (VP (TO to)
+              (VP (VB proceed)
+                (PP (IN with)
+                  (NP
+                    (NP (PRP$ their) (JJ 212MM/d) (CD 2002) (NN expansion) (NN project))
+                    (CC and)
+                    (NP (NNP Kern) (NNP River))))))))))
+    (VP (VBD received)
+      (NP (NN approval))
+      (S
+        (VP (TO to)
+          (VP (VB amend)
+            (NP (PRP$ their) (CD 2002) (NN project))
+            (S
+              (VP (TO to)
+                (VP (VB include)
+                  (NP (DT the)
+                    (ADJP (RB previously) (VBN approved))
+                    (NNP CA)))))))))
+    (NP
+      (NP (NNP Action) (NN emergency) (NN capacity))
+      (PP (IN of)
+        (NP
+          (NP (CD 10.5) (NN MM/d))
+          (PP (IN on)
+            (NP (DT a) (JJ permenant) (NN basis))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, received-16)
+compound(Northwest-2, PG&E-1)
+nsubj(received-3, Northwest-2)
+dep(received-16, received-3)
+dep(received-3, approved-4)
+mark(proceed-6, to-5)
+xcomp(approved-4, proceed-6)
+case(project-12, with-7)
+nmod:poss(project-12, their-8)
+amod(project-12, 212MM/d-9)
+nummod(project-12, 2002-10)
+compound(project-12, expansion-11)
+nmod:with(proceed-6, project-12)
+cc(project-12, and-13)
+compound(River-15, Kern-14)
+nmod:with(proceed-6, River-15)
+conj:and(project-12, River-15)
+dobj(received-16, approval-17)
+mark(amend-19, to-18)
+advcl:to(received-16, amend-19)
+nmod:poss(project-22, their-20)
+nummod(project-22, 2002-21)
+dobj(amend-19, project-22)
+mark(include-24, to-23)
+advcl:to(amend-19, include-24)
+det(CA-28, the-25)
+advmod(approved-27, previously-26)
+amod(CA-28, approved-27)
+dobj(include-24, CA-28)
+compound(capacity-31, Action-29)
+compound(capacity-31, emergency-30)
+nsubj(received-16, capacity-31)
+case(MM/d-34, of-32)
+nummod(MM/d-34, 10.5-33)
+nmod:of(capacity-31, MM/d-34)
+case(basis-38, on-35)
+det(basis-38, a-36)
+amod(basis-38, permenant-37)
+nmod:on(MM/d-34, basis-38)
+punct(received-16, .-39)
+
+Extracted the following NER entity mentions:
+PG&E Northwest	ORGANIZATION
+2002	DATE
+Kern	LOCATION
+River	TITLE
+2002	DATE
+CA Action	ORGANIZATION
+10.5	NUMBER
+
+Coreference set:
+	(3,22,[20,23]) -> (3,12,[8,13]), that is: "their 2002 project" -> "their 212MM/d 2002 expansion project"
+
+Coreference set:
+	(3,20,[20,21]) -> (3,8,[8,9]), that is: "their" -> "their"
+
+Coreference set:
+	(3,29,[28,30]) -> (3,28,[25,29]), that is: "CA Action" -> "the previously approved CA"

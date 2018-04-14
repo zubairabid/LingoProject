@@ -1,0 +1,265 @@
+Document: ID=111828.in (3 sentences, 68 tokens)
+
+Sentence #1 (21 tokens):
+Attached is the Enron Global Markets EOL Crude 24/7Trading violation memo
+for  Net Open Position for June 18, 2001.
+
+Tokens:
+[Text=Attached CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=VBN Lemma=attach NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=Global CharacterOffsetBegin=22 CharacterOffsetEnd=28 PartOfSpeech=NNP Lemma=Global NamedEntityTag=ORGANIZATION]
+[Text=Markets CharacterOffsetBegin=29 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Markets NamedEntityTag=ORGANIZATION]
+[Text=EOL CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=NNP Lemma=EOL NamedEntityTag=ORGANIZATION]
+[Text=Crude CharacterOffsetBegin=41 CharacterOffsetEnd=46 PartOfSpeech=NNP Lemma=Crude NamedEntityTag=ORGANIZATION]
+[Text=24/7Trading CharacterOffsetBegin=47 CharacterOffsetEnd=58 PartOfSpeech=VBG Lemma=24/7trading NamedEntityTag=O]
+[Text=violation CharacterOffsetBegin=59 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=violation NamedEntityTag=O]
+[Text=memo CharacterOffsetBegin=69 CharacterOffsetEnd=73 PartOfSpeech=NN Lemma=memo NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Net CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=JJ Lemma=net NamedEntityTag=MISC]
+[Text=Open CharacterOffsetBegin=83 CharacterOffsetEnd=87 PartOfSpeech=NNP Lemma=Open NamedEntityTag=MISC]
+[Text=Position CharacterOffsetBegin=88 CharacterOffsetEnd=96 PartOfSpeech=NN Lemma=position NamedEntityTag=MISC]
+[Text=for CharacterOffsetBegin=97 CharacterOffsetEnd=100 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=June CharacterOffsetBegin=101 CharacterOffsetEnd=105 PartOfSpeech=NNP Lemma=June NamedEntityTag=DATE NormalizedNamedEntityTag=20010618]
+[Text=18 CharacterOffsetBegin=106 CharacterOffsetEnd=108 PartOfSpeech=CD Lemma=18 NamedEntityTag=DATE NormalizedNamedEntityTag=20010618]
+[Text=, CharacterOffsetBegin=108 CharacterOffsetEnd=109 PartOfSpeech=, Lemma=, NamedEntityTag=DATE NormalizedNamedEntityTag=20010618]
+[Text=2001 CharacterOffsetBegin=110 CharacterOffsetEnd=114 PartOfSpeech=CD Lemma=2001 NamedEntityTag=DATE NormalizedNamedEntityTag=20010618]
+[Text=. CharacterOffsetBegin=114 CharacterOffsetEnd=115 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (VBN Attached)))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NNP Enron) (NNP Global) (NNP Markets) (NNP EOL) (NNP Crude))
+        (VP (VBG 24/7Trading)
+          (NP
+            (NP (NN violation) (NN memo))
+            (PP (IN for)
+              (NP (JJ Net) (NNP Open) (NN Position))))
+          (PP (IN for)
+            (NP (NNP June) (CD 18) (, ,) (CD 2001))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Crude-8)
+csubj(Crude-8, Attached-1)
+cop(Crude-8, is-2)
+det(Crude-8, the-3)
+compound(Crude-8, Enron-4)
+compound(Crude-8, Global-5)
+compound(Crude-8, Markets-6)
+compound(Crude-8, EOL-7)
+acl(Crude-8, 24/7Trading-9)
+compound(memo-11, violation-10)
+dobj(24/7Trading-9, memo-11)
+case(Position-15, for-12)
+amod(Position-15, Net-13)
+compound(Position-15, Open-14)
+nmod:for(memo-11, Position-15)
+case(June-17, for-16)
+nmod:for(24/7Trading-9, June-17)
+nummod(June-17, 18-18)
+punct(June-17, ,-19)
+nummod(June-17, 2001-20)
+punct(Crude-8, .-21)
+
+Extracted the following NER entity mentions:
+Enron Global Markets EOL Crude	ORGANIZATION
+Net Open Position	MISC
+June 18, 2001	DATE
+
+Sentence #2 (45 tokens):
+The Office of the Chairman for
+Enron Global Markets is responsible for printing out a hard copy of this
+memo, signing it and returning the hard copy to Chris Abel at 3155a, who will
+forward it to RAC to obtain their signature.
+
+Tokens:
+[Text=The CharacterOffsetBegin=117 CharacterOffsetEnd=120 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Office CharacterOffsetBegin=121 CharacterOffsetEnd=127 PartOfSpeech=NNP Lemma=Office NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=128 CharacterOffsetEnd=130 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=131 CharacterOffsetEnd=134 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Chairman CharacterOffsetBegin=135 CharacterOffsetEnd=143 PartOfSpeech=NNP Lemma=Chairman NamedEntityTag=TITLE]
+[Text=for CharacterOffsetBegin=144 CharacterOffsetEnd=147 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=148 CharacterOffsetEnd=153 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=Global CharacterOffsetBegin=154 CharacterOffsetEnd=160 PartOfSpeech=NNP Lemma=Global NamedEntityTag=ORGANIZATION]
+[Text=Markets CharacterOffsetBegin=161 CharacterOffsetEnd=168 PartOfSpeech=NNP Lemma=Markets NamedEntityTag=ORGANIZATION]
+[Text=is CharacterOffsetBegin=169 CharacterOffsetEnd=171 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=responsible CharacterOffsetBegin=172 CharacterOffsetEnd=183 PartOfSpeech=JJ Lemma=responsible NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=184 CharacterOffsetEnd=187 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=printing CharacterOffsetBegin=188 CharacterOffsetEnd=196 PartOfSpeech=VBG Lemma=print NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=197 CharacterOffsetEnd=200 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=201 CharacterOffsetEnd=202 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=hard CharacterOffsetBegin=203 CharacterOffsetEnd=207 PartOfSpeech=JJ Lemma=hard NamedEntityTag=O]
+[Text=copy CharacterOffsetBegin=208 CharacterOffsetEnd=212 PartOfSpeech=NN Lemma=copy NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=213 CharacterOffsetEnd=215 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=216 CharacterOffsetEnd=220 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=memo CharacterOffsetBegin=221 CharacterOffsetEnd=225 PartOfSpeech=NN Lemma=memo NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=225 CharacterOffsetEnd=226 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=signing CharacterOffsetBegin=227 CharacterOffsetEnd=234 PartOfSpeech=VBG Lemma=sign NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=235 CharacterOffsetEnd=237 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=238 CharacterOffsetEnd=241 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=returning CharacterOffsetBegin=242 CharacterOffsetEnd=251 PartOfSpeech=VBG Lemma=return NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=252 CharacterOffsetEnd=255 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=hard CharacterOffsetBegin=256 CharacterOffsetEnd=260 PartOfSpeech=JJ Lemma=hard NamedEntityTag=O]
+[Text=copy CharacterOffsetBegin=261 CharacterOffsetEnd=265 PartOfSpeech=NN Lemma=copy NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=266 CharacterOffsetEnd=268 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Chris CharacterOffsetBegin=269 CharacterOffsetEnd=274 PartOfSpeech=NNP Lemma=Chris NamedEntityTag=PERSON]
+[Text=Abel CharacterOffsetBegin=275 CharacterOffsetEnd=279 PartOfSpeech=NNP Lemma=Abel NamedEntityTag=PERSON]
+[Text=at CharacterOffsetBegin=280 CharacterOffsetEnd=282 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=3155a CharacterOffsetBegin=283 CharacterOffsetEnd=288 PartOfSpeech=CD Lemma=3155a NamedEntityTag=NUMBER NormalizedNamedEntityTag=3155.0]
+[Text=, CharacterOffsetBegin=288 CharacterOffsetEnd=289 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=290 CharacterOffsetEnd=293 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=294 CharacterOffsetEnd=298 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=forward CharacterOffsetBegin=299 CharacterOffsetEnd=306 PartOfSpeech=RB Lemma=forward NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=307 CharacterOffsetEnd=309 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=310 CharacterOffsetEnd=312 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=RAC CharacterOffsetBegin=313 CharacterOffsetEnd=316 PartOfSpeech=NNP Lemma=RAC NamedEntityTag=ORGANIZATION]
+[Text=to CharacterOffsetBegin=317 CharacterOffsetEnd=319 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=obtain CharacterOffsetBegin=320 CharacterOffsetEnd=326 PartOfSpeech=VB Lemma=obtain NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=327 CharacterOffsetEnd=332 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=signature CharacterOffsetBegin=333 CharacterOffsetEnd=342 PartOfSpeech=NN Lemma=signature NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=342 CharacterOffsetEnd=343 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP Office))
+      (PP (IN of)
+        (NP
+          (NP (DT the) (NNP Chairman))
+          (PP (IN for)
+            (NP (NNP Enron) (NNP Global) (NNP Markets))))))
+    (VP (VBZ is)
+      (ADJP (JJ responsible)
+        (PP (IN for)
+          (S
+            (VP
+              (VP (VBG printing)
+                (PRT (RP out))
+                (NP
+                  (NP (DT a) (JJ hard) (NN copy))
+                  (PP (IN of)
+                    (NP (DT this) (NN memo)))))
+              (, ,)
+              (VP (VBG signing)
+                (NP (PRP it)))
+              (CC and)
+              (VP (VBG returning)
+                (NP (DT the) (JJ hard) (NN copy))
+                (PP (TO to)
+                  (NP
+                    (NP (NNP Chris) (NNP Abel))
+                    (PP (IN at)
+                      (NP (CD 3155a)))
+                    (, ,)
+                    (SBAR
+                      (WHNP (WP who))
+                      (S
+                        (VP (MD will)
+                          (VP
+                            (ADVP (RB forward))
+                            (NP (PRP it))
+                            (PP (TO to)
+                              (NP (NNP RAC))))))))))))))
+      (S
+        (VP (TO to)
+          (VP (VB obtain)
+            (NP (PRP$ their) (NN signature))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, responsible-11)
+det(Office-2, The-1)
+nsubj(responsible-11, Office-2)
+nsubj:xsubj(obtain-42, Office-2)
+case(Chairman-5, of-3)
+det(Chairman-5, the-4)
+nmod:of(Office-2, Chairman-5)
+case(Markets-9, for-6)
+compound(Markets-9, Enron-7)
+compound(Markets-9, Global-8)
+nmod:for(Chairman-5, Markets-9)
+cop(responsible-11, is-10)
+mark(printing-13, for-12)
+advcl:for(responsible-11, printing-13)
+compound:prt(printing-13, out-14)
+det(copy-17, a-15)
+amod(copy-17, hard-16)
+dobj(printing-13, copy-17)
+case(memo-20, of-18)
+det(memo-20, this-19)
+nmod:of(copy-17, memo-20)
+punct(printing-13, ,-21)
+advcl:for(responsible-11, signing-22)
+conj:and(printing-13, signing-22)
+dobj(signing-22, it-23)
+cc(printing-13, and-24)
+advcl:for(responsible-11, returning-25)
+conj:and(printing-13, returning-25)
+det(copy-28, the-26)
+amod(copy-28, hard-27)
+dobj(returning-25, copy-28)
+case(Abel-31, to-29)
+compound(Abel-31, Chris-30)
+nmod:to(returning-25, Abel-31)
+nsubj(it-38, Abel-31)
+case(3155a-33, at-32)
+nmod:at(Abel-31, 3155a-33)
+punct(Abel-31, ,-34)
+ref(Abel-31, who-35)
+aux(it-38, will-36)
+advmod(it-38, forward-37)
+acl:relcl(Abel-31, it-38)
+case(RAC-40, to-39)
+nmod:to(it-38, RAC-40)
+mark(obtain-42, to-41)
+xcomp(responsible-11, obtain-42)
+nmod:poss(signature-44, their-43)
+dobj(obtain-42, signature-44)
+punct(responsible-11, .-45)
+
+Extracted the following NER entity mentions:
+Chairman	TITLE
+Enron Global Markets	ORGANIZATION
+Chris Abel	PERSON
+3155a	NUMBER
+RAC	ORGANIZATION
+
+Sentence #3 (2 tokens):
+Thank You
+
+Tokens:
+[Text=Thank CharacterOffsetBegin=345 CharacterOffsetEnd=350 PartOfSpeech=VB Lemma=thank NamedEntityTag=O]
+[Text=You CharacterOffsetBegin=351 CharacterOffsetEnd=354 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Thank)
+      (NP (PRP You)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Thank-1)
+dobj(Thank-1, You-2)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(2,9,[7,10]) -> (1,8,[3,21]), that is: "Enron Global Markets" -> "the Enron Global Markets EOL Crude 24/7Trading violation memo for Net Open Position for June 18 , 2001"
+
+Coreference set:
+	(2,20,[19,21]) -> (1,11,[10,16]), that is: "this memo" -> "violation memo for Net Open Position"
+
+Coreference set:
+	(2,23,[23,24]) -> (2,17,[15,21]), that is: "it" -> "a hard copy of this memo"
+	(2,28,[26,29]) -> (2,17,[15,21]), that is: "the hard copy" -> "a hard copy of this memo"
+	(2,38,[38,39]) -> (2,17,[15,21]), that is: "it" -> "a hard copy of this memo"

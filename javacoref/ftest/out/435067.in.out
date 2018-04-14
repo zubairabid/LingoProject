@@ -1,0 +1,103 @@
+Document: ID=435067.in (2 sentences, 23 tokens)
+
+Sentence #1 (20 tokens):
+Tana,
+Can we accomplish that by you initiating a change to their current trading
+profile in Profile Manager ??
+
+Tokens:
+[Text=Tana CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Tana NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Can CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=accomplish CharacterOffsetBegin=13 CharacterOffsetEnd=23 PartOfSpeech=VB Lemma=accomplish NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=initiating CharacterOffsetBegin=36 CharacterOffsetEnd=46 PartOfSpeech=VBG Lemma=initiate NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=change CharacterOffsetBegin=49 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=change NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=59 CharacterOffsetEnd=64 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=current CharacterOffsetBegin=65 CharacterOffsetEnd=72 PartOfSpeech=JJ Lemma=current NamedEntityTag=O]
+[Text=trading CharacterOffsetBegin=73 CharacterOffsetEnd=80 PartOfSpeech=NN Lemma=trading NamedEntityTag=O]
+[Text=profile CharacterOffsetBegin=81 CharacterOffsetEnd=88 PartOfSpeech=NN Lemma=profile NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Profile CharacterOffsetBegin=92 CharacterOffsetEnd=99 PartOfSpeech=NNP Lemma=Profile NamedEntityTag=O]
+[Text=Manager CharacterOffsetBegin=100 CharacterOffsetEnd=107 PartOfSpeech=NNP Lemma=Manager NamedEntityTag=TITLE]
+[Text=?? CharacterOffsetBegin=108 CharacterOffsetEnd=110 PartOfSpeech=IN Lemma=?? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Tana) (, ,))
+    (VP (MD Can)
+      (NP (PRP we))
+      (S
+        (VP (VB accomplish)
+          (NP (DT that))
+          (PP (IN by)
+            (S
+              (NP (PRP you))
+              (VP (VBG initiating)
+                (NP (DT a) (NN change))
+                (PP (TO to)
+                  (NP
+                    (NP (PRP$ their) (JJ current) (NN trading) (NN profile))
+                    (PP (IN in)
+                      (NP (NNP Profile) (NNP Manager)))))
+                (PP (IN ??))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Can-3)
+nsubj(Can-3, Tana-1)
+punct(Tana-1, ,-2)
+dobj(Can-3, we-4)
+dep(Can-3, accomplish-5)
+dobj(accomplish-5, that-6)
+mark(initiating-9, by-7)
+nsubj(initiating-9, you-8)
+advcl:by(accomplish-5, initiating-9)
+det(change-11, a-10)
+dobj(initiating-9, change-11)
+case(profile-16, to-12)
+nmod:poss(profile-16, their-13)
+amod(profile-16, current-14)
+compound(profile-16, trading-15)
+nmod:??(initiating-9, profile-16)
+case(Manager-19, in-17)
+compound(Manager-19, Profile-18)
+nmod:in(profile-16, Manager-19)
+case(profile-16, ??-20)
+
+Extracted the following NER entity mentions:
+Tana	PERSON
+Manager	TITLE
+
+Sentence #2 (3 tokens):
+Regards,
+tm
+
+Tokens:
+[Text=Regards CharacterOffsetBegin=111 CharacterOffsetEnd=118 PartOfSpeech=NNS Lemma=regards NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=118 CharacterOffsetEnd=119 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=tm CharacterOffsetBegin=120 CharacterOffsetEnd=122 PartOfSpeech=NN Lemma=tm NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNS Regards))
+    (, ,)
+    (NP (NN tm))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Regards-1)
+punct(Regards-1, ,-2)
+appos(Regards-1, tm-3)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(1,6,[6,7]) -> (1,4,[4,5]), that is: "that" -> "we"

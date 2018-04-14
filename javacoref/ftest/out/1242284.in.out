@@ -1,0 +1,657 @@
+Document: ID=1242284.in (10 sentences, 164 tokens)
+
+Sentence #1 (24 tokens):
+Randy Lord with building maintenance advised us that HL&P had a switch problem that caused the Enron building to lose all commercial power.
+
+Tokens:
+[Text=Randy CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Randy NamedEntityTag=PERSON]
+[Text=Lord CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=Lord NamedEntityTag=PERSON]
+[Text=with CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=building CharacterOffsetBegin=16 CharacterOffsetEnd=24 PartOfSpeech=VBG Lemma=build NamedEntityTag=O]
+[Text=maintenance CharacterOffsetBegin=25 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=maintenance NamedEntityTag=O]
+[Text=advised CharacterOffsetBegin=37 CharacterOffsetEnd=44 PartOfSpeech=VBD Lemma=advise NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=48 CharacterOffsetEnd=52 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=HL&P CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=NNP Lemma=HL&P NamedEntityTag=ORGANIZATION]
+[Text=had CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=switch CharacterOffsetBegin=64 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=switch NamedEntityTag=O]
+[Text=problem CharacterOffsetBegin=71 CharacterOffsetEnd=78 PartOfSpeech=NN Lemma=problem NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=79 CharacterOffsetEnd=83 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=caused CharacterOffsetBegin=84 CharacterOffsetEnd=90 PartOfSpeech=VBD Lemma=cause NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=91 CharacterOffsetEnd=94 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=95 CharacterOffsetEnd=100 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=building CharacterOffsetBegin=101 CharacterOffsetEnd=109 PartOfSpeech=NN Lemma=building NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=110 CharacterOffsetEnd=112 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=lose CharacterOffsetBegin=113 CharacterOffsetEnd=117 PartOfSpeech=VB Lemma=lose NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=118 CharacterOffsetEnd=121 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=commercial CharacterOffsetBegin=122 CharacterOffsetEnd=132 PartOfSpeech=JJ Lemma=commercial NamedEntityTag=O]
+[Text=power CharacterOffsetBegin=133 CharacterOffsetEnd=138 PartOfSpeech=NN Lemma=power NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=138 CharacterOffsetEnd=139 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Randy) (NNP Lord))
+      (PP (IN with)
+        (S
+          (VP (VBG building)
+            (NP (NN maintenance))))))
+    (VP (VBD advised)
+      (NP (PRP us))
+      (SBAR (IN that)
+        (S
+          (NP (NNP HL&P))
+          (VP (VBD had)
+            (NP
+              (NP (DT a) (NN switch) (NN problem))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBD caused)
+                    (NP (DT the) (NNP Enron) (NN building))
+                    (S
+                      (VP (TO to)
+                        (VP (VB lose)
+                          (NP (DT all) (JJ commercial) (NN power)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, advised-6)
+compound(Lord-2, Randy-1)
+nsubj(advised-6, Lord-2)
+mark(building-4, with-3)
+acl:with(Lord-2, building-4)
+dobj(building-4, maintenance-5)
+dobj(advised-6, us-7)
+mark(had-10, that-8)
+nsubj(had-10, HL&P-9)
+ccomp(advised-6, had-10)
+det(problem-13, a-11)
+compound(problem-13, switch-12)
+dobj(had-10, problem-13)
+nsubj(caused-15, problem-13)
+ref(problem-13, that-14)
+acl:relcl(problem-13, caused-15)
+det(building-18, the-16)
+compound(building-18, Enron-17)
+dobj(caused-15, building-18)
+mark(lose-20, to-19)
+advcl:to(caused-15, lose-20)
+det(power-23, all-21)
+amod(power-23, commercial-22)
+dobj(lose-20, power-23)
+punct(advised-6, .-24)
+
+Extracted the following NER entity mentions:
+Randy Lord	PERSON
+HL&P	ORGANIZATION
+Enron	ORGANIZATION
+
+Sentence #2 (25 tokens):
+The UPS systems switched to the auxillary generators and there was minimal impact to the computer rooms and Gas Control Center during the outage.
+
+Tokens:
+[Text=The CharacterOffsetBegin=140 CharacterOffsetEnd=143 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=UPS CharacterOffsetBegin=144 CharacterOffsetEnd=147 PartOfSpeech=NNP Lemma=UPS NamedEntityTag=O]
+[Text=systems CharacterOffsetBegin=148 CharacterOffsetEnd=155 PartOfSpeech=NNS Lemma=system NamedEntityTag=O]
+[Text=switched CharacterOffsetBegin=156 CharacterOffsetEnd=164 PartOfSpeech=VBD Lemma=switch NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=165 CharacterOffsetEnd=167 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=168 CharacterOffsetEnd=171 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=auxillary CharacterOffsetBegin=172 CharacterOffsetEnd=181 PartOfSpeech=JJ Lemma=auxillary NamedEntityTag=O]
+[Text=generators CharacterOffsetBegin=182 CharacterOffsetEnd=192 PartOfSpeech=NNS Lemma=generator NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=193 CharacterOffsetEnd=196 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=197 CharacterOffsetEnd=202 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=203 CharacterOffsetEnd=206 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=minimal CharacterOffsetBegin=207 CharacterOffsetEnd=214 PartOfSpeech=JJ Lemma=minimal NamedEntityTag=O]
+[Text=impact CharacterOffsetBegin=215 CharacterOffsetEnd=221 PartOfSpeech=NN Lemma=impact NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=222 CharacterOffsetEnd=224 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=225 CharacterOffsetEnd=228 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=computer CharacterOffsetBegin=229 CharacterOffsetEnd=237 PartOfSpeech=NN Lemma=computer NamedEntityTag=O]
+[Text=rooms CharacterOffsetBegin=238 CharacterOffsetEnd=243 PartOfSpeech=NNS Lemma=room NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=244 CharacterOffsetEnd=247 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Gas CharacterOffsetBegin=248 CharacterOffsetEnd=251 PartOfSpeech=NNP Lemma=Gas NamedEntityTag=ORGANIZATION]
+[Text=Control CharacterOffsetBegin=252 CharacterOffsetEnd=259 PartOfSpeech=NNP Lemma=Control NamedEntityTag=ORGANIZATION]
+[Text=Center CharacterOffsetBegin=260 CharacterOffsetEnd=266 PartOfSpeech=NNP Lemma=Center NamedEntityTag=ORGANIZATION]
+[Text=during CharacterOffsetBegin=267 CharacterOffsetEnd=273 PartOfSpeech=IN Lemma=during NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=274 CharacterOffsetEnd=277 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=outage CharacterOffsetBegin=278 CharacterOffsetEnd=284 PartOfSpeech=NN Lemma=outage NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=284 CharacterOffsetEnd=285 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NNP UPS) (NNS systems))
+      (VP (VBD switched)
+        (PP (TO to)
+          (NP (DT the) (JJ auxillary) (NNS generators)))))
+    (CC and)
+    (S
+      (NP (EX there))
+      (VP (VBD was)
+        (NP
+          (NP
+            (NP (JJ minimal) (NN impact))
+            (PP (TO to)
+              (NP (DT the) (NN computer) (NNS rooms))))
+          (CC and)
+          (NP
+            (NP (NNP Gas) (NNP Control) (NNP Center))
+            (PP (IN during)
+              (NP (DT the) (NN outage)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, switched-4)
+det(systems-3, The-1)
+compound(systems-3, UPS-2)
+nsubj(switched-4, systems-3)
+case(generators-8, to-5)
+det(generators-8, the-6)
+amod(generators-8, auxillary-7)
+nmod:to(switched-4, generators-8)
+cc(switched-4, and-9)
+expl(was-11, there-10)
+conj:and(switched-4, was-11)
+amod(impact-13, minimal-12)
+nsubj(was-11, impact-13)
+case(rooms-17, to-14)
+det(rooms-17, the-15)
+compound(rooms-17, computer-16)
+nmod:to(impact-13, rooms-17)
+cc(impact-13, and-18)
+compound(Center-21, Gas-19)
+compound(Center-21, Control-20)
+nsubj(was-11, Center-21)
+conj:and(impact-13, Center-21)
+case(outage-24, during-22)
+det(outage-24, the-23)
+nmod:during(Center-21, outage-24)
+punct(switched-4, .-25)
+
+Extracted the following NER entity mentions:
+Gas Control Center	ORGANIZATION
+
+Sentence #3 (19 tokens):
+The backup chiller on the roof did not kick in automatically and building maintenance performed the switch manually.
+
+Tokens:
+[Text=The CharacterOffsetBegin=286 CharacterOffsetEnd=289 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=backup CharacterOffsetBegin=290 CharacterOffsetEnd=296 PartOfSpeech=NN Lemma=backup NamedEntityTag=O]
+[Text=chiller CharacterOffsetBegin=297 CharacterOffsetEnd=304 PartOfSpeech=NN Lemma=chiller NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=305 CharacterOffsetEnd=307 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=308 CharacterOffsetEnd=311 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=roof CharacterOffsetBegin=312 CharacterOffsetEnd=316 PartOfSpeech=NN Lemma=roof NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=317 CharacterOffsetEnd=320 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=321 CharacterOffsetEnd=324 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=kick CharacterOffsetBegin=325 CharacterOffsetEnd=329 PartOfSpeech=VB Lemma=kick NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=330 CharacterOffsetEnd=332 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=automatically CharacterOffsetBegin=333 CharacterOffsetEnd=346 PartOfSpeech=RB Lemma=automatically NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=347 CharacterOffsetEnd=350 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=building CharacterOffsetBegin=351 CharacterOffsetEnd=359 PartOfSpeech=VBG Lemma=build NamedEntityTag=O]
+[Text=maintenance CharacterOffsetBegin=360 CharacterOffsetEnd=371 PartOfSpeech=NN Lemma=maintenance NamedEntityTag=O]
+[Text=performed CharacterOffsetBegin=372 CharacterOffsetEnd=381 PartOfSpeech=VBD Lemma=perform NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=382 CharacterOffsetEnd=385 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=switch CharacterOffsetBegin=386 CharacterOffsetEnd=392 PartOfSpeech=NN Lemma=switch NamedEntityTag=O]
+[Text=manually CharacterOffsetBegin=393 CharacterOffsetEnd=401 PartOfSpeech=RB Lemma=manually NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=401 CharacterOffsetEnd=402 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT The) (NN backup) (NN chiller))
+        (PP (IN on)
+          (NP (DT the) (NN roof))))
+      (VP (VBD did) (RB not)
+        (VP (VB kick)
+          (PP (IN in)
+            (ADVP (RB automatically))))))
+    (CC and)
+    (S
+      (NP (VBG building) (NN maintenance))
+      (VP (VBD performed)
+        (NP (DT the) (NN switch))
+        (ADVP (RB manually))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, kick-9)
+det(chiller-3, The-1)
+compound(chiller-3, backup-2)
+nsubj(kick-9, chiller-3)
+case(roof-6, on-4)
+det(roof-6, the-5)
+nmod:on(chiller-3, roof-6)
+aux(kick-9, did-7)
+neg(kick-9, not-8)
+case(automatically-11, in-10)
+advcl:in(kick-9, automatically-11)
+cc(kick-9, and-12)
+amod(maintenance-14, building-13)
+nsubj(performed-15, maintenance-14)
+conj:and(kick-9, performed-15)
+det(switch-17, the-16)
+dobj(performed-15, switch-17)
+advmod(performed-15, manually-18)
+punct(kick-9, .-19)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (16 tokens):
+The computer rooms warmed up a bit, but not enough to be a problem.
+
+Tokens:
+[Text=The CharacterOffsetBegin=403 CharacterOffsetEnd=406 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=computer CharacterOffsetBegin=407 CharacterOffsetEnd=415 PartOfSpeech=NN Lemma=computer NamedEntityTag=O]
+[Text=rooms CharacterOffsetBegin=416 CharacterOffsetEnd=421 PartOfSpeech=NNS Lemma=room NamedEntityTag=O]
+[Text=warmed CharacterOffsetBegin=422 CharacterOffsetEnd=428 PartOfSpeech=VBD Lemma=warm NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=429 CharacterOffsetEnd=431 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=432 CharacterOffsetEnd=433 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=bit CharacterOffsetBegin=434 CharacterOffsetEnd=437 PartOfSpeech=NN Lemma=bit NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=437 CharacterOffsetEnd=438 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=439 CharacterOffsetEnd=442 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=443 CharacterOffsetEnd=446 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=enough CharacterOffsetBegin=447 CharacterOffsetEnd=453 PartOfSpeech=JJ Lemma=enough NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=454 CharacterOffsetEnd=456 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=457 CharacterOffsetEnd=459 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=460 CharacterOffsetEnd=461 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=problem CharacterOffsetBegin=462 CharacterOffsetEnd=469 PartOfSpeech=NN Lemma=problem NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=469 CharacterOffsetEnd=470 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN computer) (NNS rooms))
+    (VP (VBD warmed)
+      (PRT (RP up))
+      (NP
+        (NP (DT a) (NN bit))
+        (PRN (, ,)
+          (CC but)
+          (ADJP (RB not) (JJ enough)
+            (S
+              (VP (TO to)
+                (VP (VB be)
+                  (NP (DT a) (NN problem)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, warmed-4)
+det(rooms-3, The-1)
+compound(rooms-3, computer-2)
+nsubj(warmed-4, rooms-3)
+compound:prt(warmed-4, up-5)
+det(bit-7, a-6)
+dobj(warmed-4, bit-7)
+punct(enough-11, ,-8)
+cc(enough-11, but-9)
+neg(enough-11, not-10)
+dep(bit-7, enough-11)
+mark(problem-15, to-12)
+cop(problem-15, be-13)
+det(problem-15, a-14)
+xcomp(enough-11, problem-15)
+punct(warmed-4, .-16)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (19 tokens):
+They plan to bring contractors in tomorrow morning to determine what the problem was with the backup chiller.
+
+Tokens:
+[Text=They CharacterOffsetBegin=471 CharacterOffsetEnd=475 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=plan CharacterOffsetBegin=476 CharacterOffsetEnd=480 PartOfSpeech=VBP Lemma=plan NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=481 CharacterOffsetEnd=483 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=bring CharacterOffsetBegin=484 CharacterOffsetEnd=489 PartOfSpeech=VB Lemma=bring NamedEntityTag=O]
+[Text=contractors CharacterOffsetBegin=490 CharacterOffsetEnd=501 PartOfSpeech=NNS Lemma=contractor NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=502 CharacterOffsetEnd=504 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=tomorrow CharacterOffsetBegin=505 CharacterOffsetEnd=513 PartOfSpeech=NN Lemma=tomorrow NamedEntityTag=O]
+[Text=morning CharacterOffsetBegin=514 CharacterOffsetEnd=521 PartOfSpeech=NN Lemma=morning NamedEntityTag=TIME NormalizedNamedEntityTag=M]
+[Text=to CharacterOffsetBegin=522 CharacterOffsetEnd=524 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=determine CharacterOffsetBegin=525 CharacterOffsetEnd=534 PartOfSpeech=VB Lemma=determine NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=535 CharacterOffsetEnd=539 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=540 CharacterOffsetEnd=543 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=problem CharacterOffsetBegin=544 CharacterOffsetEnd=551 PartOfSpeech=NN Lemma=problem NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=552 CharacterOffsetEnd=555 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=556 CharacterOffsetEnd=560 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=561 CharacterOffsetEnd=564 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=backup CharacterOffsetBegin=565 CharacterOffsetEnd=571 PartOfSpeech=NN Lemma=backup NamedEntityTag=O]
+[Text=chiller CharacterOffsetBegin=572 CharacterOffsetEnd=579 PartOfSpeech=NN Lemma=chiller NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=579 CharacterOffsetEnd=580 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP plan)
+      (S
+        (VP (TO to)
+          (VP (VB bring)
+            (NP
+              (NP (NNS contractors))
+              (PP (IN in)
+                (NP (NN tomorrow) (NN morning))))
+            (S
+              (VP (TO to)
+                (VP (VB determine)
+                  (SBAR
+                    (WHNP (WP what))
+                    (S
+                      (NP (DT the) (NN problem))
+                      (VP (VBD was)
+                        (PP (IN with)
+                          (NP (DT the) (NN backup) (NN chiller)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, plan-2)
+nsubj(plan-2, They-1)
+nsubj:xsubj(bring-4, They-1)
+mark(bring-4, to-3)
+xcomp(plan-2, bring-4)
+dobj(bring-4, contractors-5)
+case(morning-8, in-6)
+compound(morning-8, tomorrow-7)
+nmod:in(contractors-5, morning-8)
+mark(determine-10, to-9)
+advcl:to(bring-4, determine-10)
+dobj(chiller-18, what-11)
+det(problem-13, the-12)
+nsubj(chiller-18, problem-13)
+cop(chiller-18, was-14)
+case(chiller-18, with-15)
+det(chiller-18, the-16)
+compound(chiller-18, backup-17)
+ccomp(determine-10, chiller-18)
+punct(plan-2, .-19)
+
+Extracted the following NER entity mentions:
+morning	TIME
+
+Sentence #6 (18 tokens):
+The Gas Logistics business systems did lose one server but there was minimal to no business impact.
+
+Tokens:
+[Text=The CharacterOffsetBegin=581 CharacterOffsetEnd=584 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Gas CharacterOffsetBegin=585 CharacterOffsetEnd=588 PartOfSpeech=NN Lemma=gas NamedEntityTag=ORGANIZATION]
+[Text=Logistics CharacterOffsetBegin=589 CharacterOffsetEnd=598 PartOfSpeech=NNP Lemma=Logistics NamedEntityTag=ORGANIZATION]
+[Text=business CharacterOffsetBegin=599 CharacterOffsetEnd=607 PartOfSpeech=NN Lemma=business NamedEntityTag=O]
+[Text=systems CharacterOffsetBegin=608 CharacterOffsetEnd=615 PartOfSpeech=NNS Lemma=system NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=616 CharacterOffsetEnd=619 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=lose CharacterOffsetBegin=620 CharacterOffsetEnd=624 PartOfSpeech=VB Lemma=lose NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=625 CharacterOffsetEnd=628 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=server CharacterOffsetBegin=629 CharacterOffsetEnd=635 PartOfSpeech=NN Lemma=server NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=636 CharacterOffsetEnd=639 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=640 CharacterOffsetEnd=645 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=646 CharacterOffsetEnd=649 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=minimal CharacterOffsetBegin=650 CharacterOffsetEnd=657 PartOfSpeech=JJ Lemma=minimal NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=658 CharacterOffsetEnd=660 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=661 CharacterOffsetEnd=663 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=business CharacterOffsetBegin=664 CharacterOffsetEnd=672 PartOfSpeech=NN Lemma=business NamedEntityTag=O]
+[Text=impact CharacterOffsetBegin=673 CharacterOffsetEnd=679 PartOfSpeech=NN Lemma=impact NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=679 CharacterOffsetEnd=680 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT The) (NN Gas))
+        (NP (NNP Logistics) (NN business) (NNS systems)))
+      (VP (VBD did)
+        (VP (VB lose)
+          (NP (CD one) (NN server)))))
+    (CC but)
+    (S
+      (NP (EX there))
+      (VP (VBD was)
+        (ADJP (JJ minimal)
+          (PP (TO to)
+            (NP (DT no) (NN business) (NN impact))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, lose-7)
+det(Gas-2, The-1)
+nsubj(lose-7, Gas-2)
+nsubj(was-12, Gas-2)
+compound(systems-5, Logistics-3)
+compound(systems-5, business-4)
+dep(Gas-2, systems-5)
+aux(lose-7, did-6)
+nummod(server-9, one-8)
+dobj(lose-7, server-9)
+cc(lose-7, but-10)
+expl(was-12, there-11)
+conj:but(lose-7, was-12)
+xcomp(was-12, minimal-13)
+case(impact-17, to-14)
+neg(impact-17, no-15)
+compound(impact-17, business-16)
+nmod:to(minimal-13, impact-17)
+punct(lose-7, .-18)
+
+Extracted the following NER entity mentions:
+Gas Logistics	ORGANIZATION
+one	NUMBER
+
+Sentence #7 (6 tokens):
+Gas Control was not impacted.
+
+Tokens:
+[Text=Gas CharacterOffsetBegin=681 CharacterOffsetEnd=684 PartOfSpeech=NNP Lemma=Gas NamedEntityTag=O]
+[Text=Control CharacterOffsetBegin=685 CharacterOffsetEnd=692 PartOfSpeech=NNP Lemma=Control NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=693 CharacterOffsetEnd=696 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=697 CharacterOffsetEnd=700 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=impacted CharacterOffsetBegin=701 CharacterOffsetEnd=709 PartOfSpeech=VBN Lemma=impact NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=709 CharacterOffsetEnd=710 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Gas) (NNP Control))
+    (VP (VBD was) (RB not)
+      (VP (VBN impacted)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, impacted-5)
+compound(Control-2, Gas-1)
+nsubjpass(impacted-5, Control-2)
+auxpass(impacted-5, was-3)
+neg(impacted-5, not-4)
+punct(impacted-5, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #8 (21 tokens):
+We will check with Randy tomorrow morning to see if HL&P has determined the root cause of their equipment failure.
+
+Tokens:
+[Text=We CharacterOffsetBegin=712 CharacterOffsetEnd=714 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=715 CharacterOffsetEnd=719 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=check CharacterOffsetBegin=720 CharacterOffsetEnd=725 PartOfSpeech=VB Lemma=check NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=726 CharacterOffsetEnd=730 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Randy CharacterOffsetBegin=731 CharacterOffsetEnd=736 PartOfSpeech=NNP Lemma=Randy NamedEntityTag=PERSON]
+[Text=tomorrow CharacterOffsetBegin=737 CharacterOffsetEnd=745 PartOfSpeech=NN Lemma=tomorrow NamedEntityTag=O]
+[Text=morning CharacterOffsetBegin=746 CharacterOffsetEnd=753 PartOfSpeech=NN Lemma=morning NamedEntityTag=TIME NormalizedNamedEntityTag=M]
+[Text=to CharacterOffsetBegin=754 CharacterOffsetEnd=756 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=757 CharacterOffsetEnd=760 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=761 CharacterOffsetEnd=763 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=HL&P CharacterOffsetBegin=764 CharacterOffsetEnd=768 PartOfSpeech=NNP Lemma=HL&P NamedEntityTag=ORGANIZATION]
+[Text=has CharacterOffsetBegin=769 CharacterOffsetEnd=772 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=determined CharacterOffsetBegin=773 CharacterOffsetEnd=783 PartOfSpeech=VBN Lemma=determine NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=784 CharacterOffsetEnd=787 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=root CharacterOffsetBegin=788 CharacterOffsetEnd=792 PartOfSpeech=NN Lemma=root NamedEntityTag=O]
+[Text=cause CharacterOffsetBegin=793 CharacterOffsetEnd=798 PartOfSpeech=NN Lemma=cause NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=799 CharacterOffsetEnd=801 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=802 CharacterOffsetEnd=807 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=equipment CharacterOffsetBegin=808 CharacterOffsetEnd=817 PartOfSpeech=NN Lemma=equipment NamedEntityTag=O]
+[Text=failure CharacterOffsetBegin=818 CharacterOffsetEnd=825 PartOfSpeech=NN Lemma=failure NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=825 CharacterOffsetEnd=826 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (MD will)
+      (VP (VB check)
+        (PP (IN with)
+          (NP (NNP Randy) (NN tomorrow)))
+        (NP-TMP (NN morning))
+        (S
+          (VP (TO to)
+            (VP (VB see)
+              (SBAR (IN if)
+                (S
+                  (NP (NNP HL&P))
+                  (VP (VBZ has)
+                    (VP (VBN determined)
+                      (NP
+                        (NP (DT the) (NN root) (NN cause))
+                        (PP (IN of)
+                          (NP (PRP$ their) (NN equipment) (NN failure)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, check-3)
+nsubj(check-3, We-1)
+nsubj:xsubj(see-9, We-1)
+aux(check-3, will-2)
+case(tomorrow-6, with-4)
+compound(tomorrow-6, Randy-5)
+nmod:with(check-3, tomorrow-6)
+nmod:tmod(check-3, morning-7)
+mark(see-9, to-8)
+xcomp(check-3, see-9)
+mark(determined-13, if-10)
+nsubj(determined-13, HL&P-11)
+aux(determined-13, has-12)
+advcl:if(see-9, determined-13)
+det(cause-16, the-14)
+compound(cause-16, root-15)
+dobj(determined-13, cause-16)
+case(failure-20, of-17)
+nmod:poss(failure-20, their-18)
+compound(failure-20, equipment-19)
+nmod:of(cause-16, failure-20)
+punct(check-3, .-21)
+
+Extracted the following NER entity mentions:
+Randy	PERSON
+morning	TIME
+HL&P	ORGANIZATION
+
+Sentence #9 (11 tokens):
+Let us know if you have any questions or concerns.
+
+Tokens:
+[Text=Let CharacterOffsetBegin=827 CharacterOffsetEnd=830 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=831 CharacterOffsetEnd=833 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=834 CharacterOffsetEnd=838 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=839 CharacterOffsetEnd=841 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=842 CharacterOffsetEnd=845 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=846 CharacterOffsetEnd=850 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=851 CharacterOffsetEnd=854 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=questions CharacterOffsetBegin=855 CharacterOffsetEnd=864 PartOfSpeech=NNS Lemma=question NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=865 CharacterOffsetEnd=867 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=concerns CharacterOffsetBegin=868 CharacterOffsetEnd=876 PartOfSpeech=NNS Lemma=concern NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=876 CharacterOffsetEnd=877 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Let)
+      (S
+        (NP (PRP us))
+        (VP (VB know)
+          (SBAR (IN if)
+            (S
+              (NP (PRP you))
+              (VP (VBP have)
+                (NP (DT any) (NNS questions)
+                  (CC or)
+                  (NNS concerns))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Let-1)
+nsubj(know-3, us-2)
+ccomp(Let-1, know-3)
+mark(have-6, if-4)
+nsubj(have-6, you-5)
+advcl:if(know-3, have-6)
+det(questions-8, any-7)
+dobj(have-6, questions-8)
+cc(questions-8, or-9)
+dobj(have-6, concerns-10)
+conj:or(questions-8, concerns-10)
+punct(Let-1, .-11)
+
+Extracted the following NER entity mentions:
+
+Sentence #10 (5 tokens):
+Gary Kenagy and Scott Abshire
+
+Tokens:
+[Text=Gary CharacterOffsetBegin=879 CharacterOffsetEnd=883 PartOfSpeech=NNP Lemma=Gary NamedEntityTag=PERSON]
+[Text=Kenagy CharacterOffsetBegin=884 CharacterOffsetEnd=890 PartOfSpeech=NNP Lemma=Kenagy NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=891 CharacterOffsetEnd=894 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Scott CharacterOffsetBegin=895 CharacterOffsetEnd=900 PartOfSpeech=NNP Lemma=Scott NamedEntityTag=PERSON]
+[Text=Abshire CharacterOffsetBegin=901 CharacterOffsetEnd=908 PartOfSpeech=NNP Lemma=Abshire NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Gary) (NNP Kenagy))
+    (CC and)
+    (NP (NNP Scott) (NNP Abshire))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Kenagy-2)
+compound(Kenagy-2, Gary-1)
+cc(Kenagy-2, and-3)
+compound(Abshire-5, Scott-4)
+conj:and(Kenagy-2, Abshire-5)
+
+Extracted the following NER entity mentions:
+Gary Kenagy	PERSON
+Scott Abshire	PERSON
+
+Coreference set:
+	(8,11,[11,12]) -> (1,9,[9,10]), that is: "HL&P" -> "HL&P"
+
+Coreference set:
+	(8,5,[5,6]) -> (1,2,[1,6]), that is: "Randy" -> "Randy Lord with building maintenance"
+
+Coreference set:
+	(4,3,[1,4]) -> (2,17,[15,18]), that is: "The computer rooms" -> "the computer rooms"
+
+Coreference set:
+	(5,18,[16,19]) -> (3,3,[1,7]), that is: "the backup chiller" -> "The backup chiller on the roof"
+
+Coreference set:
+	(5,13,[12,14]) -> (4,15,[14,16]), that is: "the problem" -> "a problem"
+
+Coreference set:
+	(8,18,[18,19]) -> (5,1,[1,2]), that is: "their" -> "They"
+
+Coreference set:
+	(8,7,[7,8]) -> (5,8,[7,9]), that is: "morning" -> "tomorrow morning"
+
+Coreference set:
+	(9,2,[2,3]) -> (8,1,[1,2]), that is: "us" -> "We"

@@ -1,0 +1,318 @@
+Document: ID=418693.in (6 sentences, 70 tokens)
+
+Sentence #1 (15 tokens):
+While I was on vacation, trade nx9526 was entered into with this customer.
+
+Tokens:
+[Text=While CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=IN Lemma=while NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=vacation CharacterOffsetBegin=15 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=vacation NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=trade CharacterOffsetBegin=25 CharacterOffsetEnd=30 PartOfSpeech=NN Lemma=trade NamedEntityTag=O]
+[Text=nx9526 CharacterOffsetBegin=31 CharacterOffsetEnd=37 PartOfSpeech=NN Lemma=nx9526 NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=entered CharacterOffsetBegin=42 CharacterOffsetEnd=49 PartOfSpeech=VBN Lemma=enter NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=55 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=customer CharacterOffsetBegin=65 CharacterOffsetEnd=73 PartOfSpeech=NN Lemma=customer NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN While)
+      (S
+        (NP (PRP I))
+        (VP (VBD was)
+          (PP (IN on)
+            (NP (NN vacation))))))
+    (, ,)
+    (NP (NN trade) (NN nx9526))
+    (VP (VBD was)
+      (VP (VBN entered)
+        (PP (IN into)
+          (PP (IN with)
+            (NP (DT this) (NN customer))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, entered-10)
+mark(vacation-5, While-1)
+nsubj(vacation-5, I-2)
+cop(vacation-5, was-3)
+case(vacation-5, on-4)
+advcl:while(entered-10, vacation-5)
+punct(entered-10, ,-6)
+compound(nx9526-8, trade-7)
+nsubjpass(entered-10, nx9526-8)
+auxpass(entered-10, was-9)
+case(customer-14, into-11)
+case(customer-14, with-12)
+det(customer-14, this-13)
+nmod:into(entered-10, customer-14)
+punct(entered-10, .-15)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (13 tokens):
+I
+attempted to pull the confirmation in TAG but their was none.
+
+Tokens:
+[Text=I CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=attempted CharacterOffsetBegin=78 CharacterOffsetEnd=87 PartOfSpeech=VBD Lemma=attempt NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=88 CharacterOffsetEnd=90 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=pull CharacterOffsetBegin=91 CharacterOffsetEnd=95 PartOfSpeech=VB Lemma=pull NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=96 CharacterOffsetEnd=99 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=confirmation CharacterOffsetBegin=100 CharacterOffsetEnd=112 PartOfSpeech=NN Lemma=confirmation NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=113 CharacterOffsetEnd=115 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=TAG CharacterOffsetBegin=116 CharacterOffsetEnd=119 PartOfSpeech=NN Lemma=tag NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=120 CharacterOffsetEnd=123 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=124 CharacterOffsetEnd=129 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=130 CharacterOffsetEnd=133 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=none CharacterOffsetBegin=134 CharacterOffsetEnd=138 PartOfSpeech=NN Lemma=none NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=138 CharacterOffsetEnd=139 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBD attempted)
+        (S
+          (VP (TO to)
+            (VP (VB pull)
+              (NP
+                (NP (DT the) (NN confirmation))
+                (PP (IN in)
+                  (NP (NN TAG)))))))))
+    (CC but)
+    (S
+      (NP (PRP$ their))
+      (VP (VBD was)
+        (NP (NN none))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, attempted-2)
+nsubj(attempted-2, I-1)
+nsubj:xsubj(pull-4, I-1)
+mark(pull-4, to-3)
+xcomp(attempted-2, pull-4)
+det(confirmation-6, the-5)
+dobj(pull-4, confirmation-6)
+case(TAG-8, in-7)
+nmod:in(confirmation-6, TAG-8)
+cc(attempted-2, but-9)
+nsubj(none-12, their-10)
+cop(none-12, was-11)
+conj:but(attempted-2, none-12)
+punct(attempted-2, .-13)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (7 tokens):
+Did we ever
+confirm this trade?
+
+Tokens:
+[Text=Did CharacterOffsetBegin=141 CharacterOffsetEnd=144 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=145 CharacterOffsetEnd=147 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=ever CharacterOffsetBegin=148 CharacterOffsetEnd=152 PartOfSpeech=RB Lemma=ever NamedEntityTag=O]
+[Text=confirm CharacterOffsetBegin=153 CharacterOffsetEnd=160 PartOfSpeech=VBP Lemma=confirm NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=161 CharacterOffsetEnd=165 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=trade CharacterOffsetBegin=166 CharacterOffsetEnd=171 PartOfSpeech=NN Lemma=trade NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=171 CharacterOffsetEnd=172 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBD Did)
+      (SBAR
+        (S
+          (NP (PRP we))
+          (ADVP (RB ever))
+          (VP (VBP confirm)
+            (NP (DT this) (NN trade))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Did-1)
+nsubj(confirm-4, we-2)
+advmod(confirm-4, ever-3)
+ccomp(Did-1, confirm-4)
+det(trade-6, this-5)
+dobj(confirm-4, trade-6)
+punct(Did-1, ?-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (23 tokens):
+If not, I would like to go ahead and confirm it using
+the credit language prepared and adopted for trade nx3782.
+
+Tokens:
+[Text=If CharacterOffsetBegin=174 CharacterOffsetEnd=176 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=177 CharacterOffsetEnd=180 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=180 CharacterOffsetEnd=181 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=182 CharacterOffsetEnd=183 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=184 CharacterOffsetEnd=189 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=190 CharacterOffsetEnd=194 PartOfSpeech=VB Lemma=like NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=195 CharacterOffsetEnd=197 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=198 CharacterOffsetEnd=200 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=ahead CharacterOffsetBegin=201 CharacterOffsetEnd=206 PartOfSpeech=RB Lemma=ahead NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=207 CharacterOffsetEnd=210 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=confirm CharacterOffsetBegin=211 CharacterOffsetEnd=218 PartOfSpeech=VBP Lemma=confirm NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=219 CharacterOffsetEnd=221 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=using CharacterOffsetBegin=222 CharacterOffsetEnd=227 PartOfSpeech=VBG Lemma=use NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=228 CharacterOffsetEnd=231 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=credit CharacterOffsetBegin=232 CharacterOffsetEnd=238 PartOfSpeech=NN Lemma=credit NamedEntityTag=O]
+[Text=language CharacterOffsetBegin=239 CharacterOffsetEnd=247 PartOfSpeech=NN Lemma=language NamedEntityTag=O]
+[Text=prepared CharacterOffsetBegin=248 CharacterOffsetEnd=256 PartOfSpeech=JJ Lemma=prepared NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=257 CharacterOffsetEnd=260 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=adopted CharacterOffsetBegin=261 CharacterOffsetEnd=268 PartOfSpeech=VBN Lemma=adopt NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=269 CharacterOffsetEnd=272 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=trade CharacterOffsetBegin=273 CharacterOffsetEnd=278 PartOfSpeech=NN Lemma=trade NamedEntityTag=O]
+[Text=nx3782 CharacterOffsetBegin=279 CharacterOffsetEnd=285 PartOfSpeech=NN Lemma=nx3782 NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=285 CharacterOffsetEnd=286 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (FRAG (IN If) (RB not))
+    (, ,)
+    (NP (PRP I))
+    (VP
+      (VP (MD would)
+        (VP (VB like)
+          (S
+            (VP (TO to)
+              (VP (VB go)
+                (ADVP (RB ahead)))))))
+      (CC and)
+      (VP (VBP confirm)
+        (NP (PRP it))
+        (S
+          (VP (VBG using)
+            (NP
+              (NP (DT the) (NN credit) (NN language))
+              (ADJP (JJ prepared)
+                (CC and)
+                (VBN adopted)))
+            (PP (IN for)
+              (NP (NN trade) (NN nx3782)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, like-6)
+dep(like-6, If-1)
+neg(If-1, not-2)
+punct(like-6, ,-3)
+nsubj(like-6, I-4)
+nsubj:xsubj(go-8, I-4)
+nsubj(confirm-11, I-4)
+aux(like-6, would-5)
+mark(go-8, to-7)
+xcomp(like-6, go-8)
+advmod(go-8, ahead-9)
+cc(like-6, and-10)
+conj:and(like-6, confirm-11)
+dobj(confirm-11, it-12)
+xcomp(confirm-11, using-13)
+det(language-16, the-14)
+compound(language-16, credit-15)
+dobj(using-13, language-16)
+amod(language-16, prepared-17)
+cc(prepared-17, and-18)
+amod(language-16, adopted-19)
+conj:and(prepared-17, adopted-19)
+case(nx3782-22, for-20)
+compound(nx3782-22, trade-21)
+nmod:for(using-13, nx3782-22)
+punct(like-6, .-23)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (10 tokens):
+Attached is the
+worksheet that was provided for nx3782.
+
+Tokens:
+[Text=Attached CharacterOffsetBegin=288 CharacterOffsetEnd=296 PartOfSpeech=VBN Lemma=attach NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=297 CharacterOffsetEnd=299 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=300 CharacterOffsetEnd=303 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=worksheet CharacterOffsetBegin=304 CharacterOffsetEnd=313 PartOfSpeech=NN Lemma=worksheet NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=314 CharacterOffsetEnd=318 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=319 CharacterOffsetEnd=322 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=provided CharacterOffsetBegin=323 CharacterOffsetEnd=331 PartOfSpeech=VBN Lemma=provide NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=332 CharacterOffsetEnd=335 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=nx3782 CharacterOffsetBegin=336 CharacterOffsetEnd=342 PartOfSpeech=NN Lemma=nx3782 NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=342 CharacterOffsetEnd=343 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (VBN Attached)))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN worksheet))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBD was)
+              (VP (VBN provided)
+                (PP (IN for)
+                  (NP (NN nx3782)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, worksheet-4)
+csubj(worksheet-4, Attached-1)
+cop(worksheet-4, is-2)
+det(worksheet-4, the-3)
+nsubjpass(provided-7, worksheet-4)
+ref(worksheet-4, that-5)
+auxpass(provided-7, was-6)
+acl:relcl(worksheet-4, provided-7)
+case(nx3782-9, for-8)
+nmod:for(provided-7, nx3782-9)
+punct(worksheet-4, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #6 (2 tokens):
+thanks
+brant
+
+Tokens:
+[Text=thanks CharacterOffsetBegin=345 CharacterOffsetEnd=351 PartOfSpeech=NNS Lemma=thanks NamedEntityTag=O]
+[Text=brant CharacterOffsetBegin=352 CharacterOffsetEnd=357 PartOfSpeech=VBP Lemma=brant NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNS thanks))
+    (VP (VBP brant))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, brant-2)
+nsubj(brant-2, thanks-1)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(2,1,[1,2]) -> (1,2,[2,3]), that is: "I" -> "I"
+	(4,4,[4,5]) -> (1,2,[2,3]), that is: "I" -> "I"
+
+Coreference set:
+	(4,12,[12,13]) -> (3,6,[5,7]), that is: "it" -> "this trade"

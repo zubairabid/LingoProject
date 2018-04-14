@@ -1,0 +1,94 @@
+Document: ID=47399.in (2 sentences, 23 tokens)
+
+Sentence #1 (10 tokens):
+NSP has changed their name to Xcel Energy Inc.
+
+Tokens:
+[Text=NSP CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=NSP NamedEntityTag=ORGANIZATION]
+[Text=has CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=changed CharacterOffsetBegin=8 CharacterOffsetEnd=15 PartOfSpeech=VBN Lemma=change NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=name CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=name NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Xcel CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Xcel NamedEntityTag=ORGANIZATION]
+[Text=Energy CharacterOffsetBegin=35 CharacterOffsetEnd=41 PartOfSpeech=NNP Lemma=Energy NamedEntityTag=ORGANIZATION]
+[Text=Inc. CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=NNP Lemma=Inc. NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP NSP))
+    (VP (VBZ has)
+      (VP (VBN changed)
+        (NP (PRP$ their) (NN name))
+        (PP (TO to)
+          (NP (NNP Xcel) (NNP Energy) (NNP Inc.)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, changed-3)
+nsubj(changed-3, NSP-1)
+aux(changed-3, has-2)
+nmod:poss(name-5, their-4)
+dobj(changed-3, name-5)
+case(Inc.-9, to-6)
+compound(Inc.-9, Xcel-7)
+compound(Inc.-9, Energy-8)
+nmod:to(changed-3, Inc.-9)
+punct(changed-3, .-10)
+
+Extracted the following NER entity mentions:
+NSP	ORGANIZATION
+Xcel Energy Inc.	ORGANIZATION
+
+Sentence #2 (13 tokens):
+Global Counterparty will
+overlay the NSP record with this new name tomorrow.
+
+Tokens:
+[Text=Global CharacterOffsetBegin=48 CharacterOffsetEnd=54 PartOfSpeech=JJ Lemma=global NamedEntityTag=ORGANIZATION]
+[Text=Counterparty CharacterOffsetBegin=55 CharacterOffsetEnd=67 PartOfSpeech=NN Lemma=counterparty NamedEntityTag=ORGANIZATION]
+[Text=will CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=overlay CharacterOffsetBegin=73 CharacterOffsetEnd=80 PartOfSpeech=NN Lemma=overlay NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=NSP CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=NN Lemma=nsp NamedEntityTag=ORGANIZATION]
+[Text=record CharacterOffsetBegin=89 CharacterOffsetEnd=95 PartOfSpeech=NN Lemma=record NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=96 CharacterOffsetEnd=100 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=101 CharacterOffsetEnd=105 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=106 CharacterOffsetEnd=109 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=name CharacterOffsetBegin=110 CharacterOffsetEnd=114 PartOfSpeech=NN Lemma=name NamedEntityTag=O]
+[Text=tomorrow CharacterOffsetBegin=115 CharacterOffsetEnd=123 PartOfSpeech=NN Lemma=tomorrow NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=123 CharacterOffsetEnd=124 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (JJ Global) (NN Counterparty))
+    (VP (MD will)
+      (VP (NN overlay)
+        (NP (DT the) (NN NSP) (NN record))
+        (PP (IN with)
+          (NP (DT this) (JJ new) (NN name) (NN tomorrow)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, overlay-4)
+amod(Counterparty-2, Global-1)
+nsubj(overlay-4, Counterparty-2)
+aux(overlay-4, will-3)
+det(record-7, the-5)
+compound(record-7, NSP-6)
+dobj(overlay-4, record-7)
+case(tomorrow-12, with-8)
+det(tomorrow-12, this-9)
+amod(tomorrow-12, new-10)
+compound(tomorrow-12, name-11)
+nmod:with(overlay-4, tomorrow-12)
+punct(overlay-4, .-13)
+
+Extracted the following NER entity mentions:
+Global Counterparty	ORGANIZATION
+NSP	ORGANIZATION

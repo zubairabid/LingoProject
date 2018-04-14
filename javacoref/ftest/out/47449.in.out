@@ -1,0 +1,110 @@
+Document: ID=47449.in (2 sentences, 29 tokens)
+
+Sentence #1 (16 tokens):
+Southern Company Energy Marketing LP changed their name to Mirant Americas
+Energy Marketing, LP.
+
+Tokens:
+[Text=Southern CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Southern NamedEntityTag=ORGANIZATION]
+[Text=Company CharacterOffsetBegin=9 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=Company NamedEntityTag=ORGANIZATION]
+[Text=Energy CharacterOffsetBegin=17 CharacterOffsetEnd=23 PartOfSpeech=NNP Lemma=Energy NamedEntityTag=ORGANIZATION]
+[Text=Marketing CharacterOffsetBegin=24 CharacterOffsetEnd=33 PartOfSpeech=NNP Lemma=Marketing NamedEntityTag=ORGANIZATION]
+[Text=LP CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=lp NamedEntityTag=ORGANIZATION]
+[Text=changed CharacterOffsetBegin=37 CharacterOffsetEnd=44 PartOfSpeech=VBD Lemma=change NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=45 CharacterOffsetEnd=50 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=name CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=name NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Mirant CharacterOffsetBegin=59 CharacterOffsetEnd=65 PartOfSpeech=NNP Lemma=Mirant NamedEntityTag=ORGANIZATION]
+[Text=Americas CharacterOffsetBegin=66 CharacterOffsetEnd=74 PartOfSpeech=NNP Lemma=Americas NamedEntityTag=ORGANIZATION]
+[Text=Energy CharacterOffsetBegin=75 CharacterOffsetEnd=81 PartOfSpeech=NNP Lemma=Energy NamedEntityTag=ORGANIZATION]
+[Text=Marketing CharacterOffsetBegin=82 CharacterOffsetEnd=91 PartOfSpeech=NNP Lemma=Marketing NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=91 CharacterOffsetEnd=92 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=LP CharacterOffsetBegin=93 CharacterOffsetEnd=95 PartOfSpeech=NN Lemma=lp NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=95 CharacterOffsetEnd=96 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Southern) (NNP Company) (NNP Energy) (NNP Marketing) (NN LP))
+    (VP (VBD changed)
+      (NP (PRP$ their) (NN name))
+      (PP (TO to)
+        (NP
+          (NP (NNP Mirant) (NNP Americas) (NNP Energy) (NNP Marketing))
+          (, ,)
+          (NP (NN LP)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, changed-6)
+compound(LP-5, Southern-1)
+compound(LP-5, Company-2)
+compound(LP-5, Energy-3)
+compound(LP-5, Marketing-4)
+nsubj(changed-6, LP-5)
+nmod:poss(name-8, their-7)
+dobj(changed-6, name-8)
+case(Marketing-13, to-9)
+compound(Marketing-13, Mirant-10)
+compound(Marketing-13, Americas-11)
+compound(Marketing-13, Energy-12)
+nmod:to(changed-6, Marketing-13)
+punct(Marketing-13, ,-14)
+appos(Marketing-13, LP-15)
+punct(changed-6, .-16)
+
+Extracted the following NER entity mentions:
+Southern Company Energy Marketing LP	ORGANIZATION
+Mirant Americas Energy Marketing	ORGANIZATION
+
+Sentence #2 (13 tokens):
+This record will be overlayed in GCP in the next few
+days.
+
+Tokens:
+[Text=This CharacterOffsetBegin=98 CharacterOffsetEnd=102 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=record CharacterOffsetBegin=103 CharacterOffsetEnd=109 PartOfSpeech=NN Lemma=record NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=110 CharacterOffsetEnd=114 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=115 CharacterOffsetEnd=117 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=overlayed CharacterOffsetBegin=118 CharacterOffsetEnd=127 PartOfSpeech=VBN Lemma=overlay NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=128 CharacterOffsetEnd=130 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=GCP CharacterOffsetBegin=131 CharacterOffsetEnd=134 PartOfSpeech=NNP Lemma=GCP NamedEntityTag=ORGANIZATION]
+[Text=in CharacterOffsetBegin=135 CharacterOffsetEnd=137 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=138 CharacterOffsetEnd=141 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=next CharacterOffsetBegin=142 CharacterOffsetEnd=146 PartOfSpeech=JJ Lemma=next NamedEntityTag=O]
+[Text=few CharacterOffsetBegin=147 CharacterOffsetEnd=150 PartOfSpeech=JJ Lemma=few NamedEntityTag=O]
+[Text=days CharacterOffsetBegin=151 CharacterOffsetEnd=155 PartOfSpeech=NNS Lemma=day NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=155 CharacterOffsetEnd=156 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This) (NN record))
+    (VP (MD will)
+      (VP (VB be)
+        (VP (VBN overlayed)
+          (PP (IN in)
+            (NP (NNP GCP)))
+          (PP (IN in)
+            (NP (DT the) (JJ next) (JJ few) (NNS days))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, overlayed-5)
+det(record-2, This-1)
+nsubjpass(overlayed-5, record-2)
+aux(overlayed-5, will-3)
+auxpass(overlayed-5, be-4)
+case(GCP-7, in-6)
+nmod:in(overlayed-5, GCP-7)
+case(days-12, in-8)
+det(days-12, the-9)
+amod(days-12, next-10)
+amod(days-12, few-11)
+nmod:in(overlayed-5, days-12)
+punct(overlayed-5, .-13)
+
+Extracted the following NER entity mentions:
+GCP	ORGANIZATION

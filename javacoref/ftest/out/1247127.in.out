@@ -1,0 +1,185 @@
+Document: ID=1247127.in (4 sentences, 41 tokens)
+
+Sentence #1 (12 tokens):
+Ken,
+
+AIG's surety exposure is approximately $132 million.
+
+Tokens:
+[Text=Ken CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=Ken NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=AIG CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=AIG NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=surety CharacterOffsetBegin=12 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=surety NamedEntityTag=O]
+[Text=exposure CharacterOffsetBegin=19 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=exposure NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=approximately CharacterOffsetBegin=31 CharacterOffsetEnd=44 PartOfSpeech=RB Lemma=approximately NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=~$1.32E8]
+[Text=132 CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=CD Lemma=132 NamedEntityTag=MONEY NormalizedNamedEntityTag=~$1.32E8]
+[Text=million CharacterOffsetBegin=50 CharacterOffsetEnd=57 PartOfSpeech=CD Lemma=million NamedEntityTag=MONEY NormalizedNamedEntityTag=~$1.32E8]
+[Text=. CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Ken))
+      (, ,)
+      (NP
+        (NP (NNP AIG) (POS 's))
+        (NN surety) (NN exposure)))
+    (VP (VBZ is)
+      (NP
+        (QP (RB approximately) ($ $) (CD 132) (CD million))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, $-9)
+nsubj($-9, Ken-1)
+punct(Ken-1, ,-2)
+nmod:poss(exposure-6, AIG-3)
+case(AIG-3, 's-4)
+compound(exposure-6, surety-5)
+appos(Ken-1, exposure-6)
+cop($-9, is-7)
+advmod($-9, approximately-8)
+compound(million-11, 132-10)
+nummod($-9, million-11)
+punct($-9, .-12)
+
+Extracted the following NER entity mentions:
+Ken	PERSON
+AIG	ORGANIZATION
+$132 million	MONEY
+
+Sentence #2 (16 tokens):
+It is all related to a tax exempt prepay done a couple of years ago.
+
+Tokens:
+[Text=It CharacterOffsetBegin=60 CharacterOffsetEnd=62 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=63 CharacterOffsetEnd=65 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=related CharacterOffsetBegin=70 CharacterOffsetEnd=77 PartOfSpeech=JJ Lemma=related NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=78 CharacterOffsetEnd=80 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=tax CharacterOffsetBegin=83 CharacterOffsetEnd=86 PartOfSpeech=NN Lemma=tax NamedEntityTag=O]
+[Text=exempt CharacterOffsetBegin=87 CharacterOffsetEnd=93 PartOfSpeech=JJ Lemma=exempt NamedEntityTag=O]
+[Text=prepay CharacterOffsetBegin=94 CharacterOffsetEnd=100 PartOfSpeech=VB Lemma=prepay NamedEntityTag=O]
+[Text=done CharacterOffsetBegin=101 CharacterOffsetEnd=105 PartOfSpeech=VBN Lemma=do NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=106 CharacterOffsetEnd=107 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=couple CharacterOffsetBegin=108 CharacterOffsetEnd=114 PartOfSpeech=NN Lemma=couple NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=115 CharacterOffsetEnd=117 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=years CharacterOffsetBegin=118 CharacterOffsetEnd=123 PartOfSpeech=NNS Lemma=year NamedEntityTag=O]
+[Text=ago CharacterOffsetBegin=124 CharacterOffsetEnd=127 PartOfSpeech=RB Lemma=ago NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=127 CharacterOffsetEnd=128 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (ADJP (DT all) (JJ related)
+        (PP (TO to)
+          (NP
+            (NP (DT a) (NN tax))
+            (ADJP (JJ exempt)))))
+      (S
+        (VP (VB prepay)
+          (VP (VBN done)
+            (NP
+              (NP (DT a) (NN couple))
+              (PP (IN of)
+                (NP (NNS years) (RB ago))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, related-4)
+nsubj(related-4, It-1)
+cop(related-4, is-2)
+det(related-4, all-3)
+case(tax-7, to-5)
+det(tax-7, a-6)
+nmod:to(related-4, tax-7)
+amod(tax-7, exempt-8)
+ccomp(related-4, prepay-9)
+dep(prepay-9, done-10)
+det:qmod(years-14, a-11)
+mwe(a-11, couple-12)
+mwe(a-11, of-13)
+dobj(done-10, years-14)
+advmod(years-14, ago-15)
+punct(related-4, .-16)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (12 tokens):
+Obviously, we will not be able to collateralize their exposure.
+
+Tokens:
+[Text=Obviously CharacterOffsetBegin=130 CharacterOffsetEnd=139 PartOfSpeech=RB Lemma=obviously NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=139 CharacterOffsetEnd=140 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=141 CharacterOffsetEnd=143 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=144 CharacterOffsetEnd=148 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=149 CharacterOffsetEnd=152 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=153 CharacterOffsetEnd=155 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=able CharacterOffsetBegin=156 CharacterOffsetEnd=160 PartOfSpeech=JJ Lemma=able NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=161 CharacterOffsetEnd=163 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=collateralize CharacterOffsetBegin=164 CharacterOffsetEnd=177 PartOfSpeech=VB Lemma=collateralize NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=178 CharacterOffsetEnd=183 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=exposure CharacterOffsetBegin=184 CharacterOffsetEnd=192 PartOfSpeech=NN Lemma=exposure NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=192 CharacterOffsetEnd=193 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Obviously))
+    (, ,)
+    (NP (PRP we))
+    (VP (MD will) (RB not)
+      (VP (VB be)
+        (ADJP (JJ able)
+          (S
+            (VP (TO to)
+              (VP (VB collateralize)
+                (NP (PRP$ their) (NN exposure))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, able-7)
+advmod(able-7, Obviously-1)
+punct(able-7, ,-2)
+nsubj(able-7, we-3)
+nsubj:xsubj(collateralize-9, we-3)
+aux(able-7, will-4)
+neg(able-7, not-5)
+cop(able-7, be-6)
+mark(collateralize-9, to-8)
+xcomp(able-7, collateralize-9)
+nmod:poss(exposure-11, their-10)
+dobj(collateralize-9, exposure-11)
+punct(able-7, .-12)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (1 tokens):
+Ray
+
+Tokens:
+[Text=Ray CharacterOffsetBegin=195 CharacterOffsetEnd=198 PartOfSpeech=NNP Lemma=Ray NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Ray)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Ray-1)
+
+Extracted the following NER entity mentions:
+Ray	PERSON
+
+Coreference set:
+	(3,11,[10,12]) -> (1,6,[3,7]), that is: "their exposure" -> "AIG 's surety exposure"

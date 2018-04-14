@@ -1,0 +1,84 @@
+Document: ID=57720.in (2 sentences, 16 tokens)
+
+Sentence #1 (14 tokens):
+Can you tell us on those where we avg what their mark is?
+
+Tokens:
+[Text=Can CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=tell CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=VB Lemma=tell NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=where CharacterOffsetBegin=25 CharacterOffsetEnd=30 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=avg CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=VBP Lemma=avg NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=38 CharacterOffsetEnd=42 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=43 CharacterOffsetEnd=48 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=mark CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=mark NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (MD Can)
+    (NP (PRP you))
+    (VP (VB tell)
+      (NP (PRP us))
+      (PP (IN on)
+        (NP
+          (NP (DT those))
+          (SBAR
+            (WHADVP (WRB where))
+            (S
+              (NP (PRP we))
+              (VP (VBP avg)
+                (SBAR
+                  (WHNP (WP what))
+                  (S
+                    (NP (PRP$ their) (NN mark))
+                    (VP (VBZ is))))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, tell-3)
+aux(tell-3, Can-1)
+nsubj(tell-3, you-2)
+dobj(tell-3, us-4)
+case(those-6, on-5)
+nmod:on(tell-3, those-6)
+dobj(is-13, those-6)
+advmod(avg-9, where-7)
+nsubj(avg-9, we-8)
+acl:relcl(those-6, avg-9)
+ref(those-6, what-10)
+nmod:poss(mark-12, their-11)
+nsubj(is-13, mark-12)
+ccomp(avg-9, is-13)
+punct(tell-3, ?-14)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (2 tokens):
+Quickly?
+
+Tokens:
+[Text=Quickly CharacterOffsetBegin=58 CharacterOffsetEnd=65 PartOfSpeech=RB Lemma=quickly NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (ADVP (RB Quickly))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Quickly-1)
+punct(Quickly-1, ?-2)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(1,8,[8,9]) -> (1,4,[4,5]), that is: "we" -> "us"

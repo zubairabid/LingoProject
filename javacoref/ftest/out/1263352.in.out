@@ -1,0 +1,806 @@
+Document: ID=1263352.in (13 sentences, 201 tokens)
+
+Sentence #1 (6 tokens):
+California:
+
+I99-07-003  SoCalGas Unbundling.
+
+Tokens:
+[Text=California CharacterOffsetBegin=0 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=California NamedEntityTag=STATE_OR_PROVINCE]
+[Text=: CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=I99-07-003 CharacterOffsetBegin=13 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=i99-07-003 NamedEntityTag=O]
+[Text=SoCalGas CharacterOffsetBegin=25 CharacterOffsetEnd=33 PartOfSpeech=NNP Lemma=SoCalGas NamedEntityTag=ORGANIZATION]
+[Text=Unbundling CharacterOffsetBegin=34 CharacterOffsetEnd=44 PartOfSpeech=NNP Lemma=Unbundling NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP California))
+    (: :)
+    (NP (NN I99-07-003) (NNP SoCalGas) (NNP Unbundling))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, California-1)
+punct(California-1, :-2)
+compound(Unbundling-5, I99-07-003-3)
+compound(Unbundling-5, SoCalGas-4)
+dep(California-1, Unbundling-5)
+punct(California-1, .-6)
+
+Extracted the following NER entity mentions:
+California	STATE_OR_PROVINCE
+SoCalGas	ORGANIZATION
+
+Sentence #2 (17 tokens):
+On December 17, 2001, the CPUC published the SoCalGas unbundling order issued last week.
+
+Tokens:
+[Text=On CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=December CharacterOffsetBegin=50 CharacterOffsetEnd=58 PartOfSpeech=NNP Lemma=December NamedEntityTag=DATE NormalizedNamedEntityTag=20011217]
+[Text=17 CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=CD Lemma=17 NamedEntityTag=DATE NormalizedNamedEntityTag=20011217]
+[Text=, CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=, Lemma=, NamedEntityTag=DATE NormalizedNamedEntityTag=20011217]
+[Text=2001 CharacterOffsetBegin=63 CharacterOffsetEnd=67 PartOfSpeech=CD Lemma=2001 NamedEntityTag=DATE NormalizedNamedEntityTag=20011217]
+[Text=, CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=CPUC CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=NNP Lemma=CPUC NamedEntityTag=ORGANIZATION]
+[Text=published CharacterOffsetBegin=78 CharacterOffsetEnd=87 PartOfSpeech=VBD Lemma=publish NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=88 CharacterOffsetEnd=91 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=SoCalGas CharacterOffsetBegin=92 CharacterOffsetEnd=100 PartOfSpeech=NNP Lemma=SoCalGas NamedEntityTag=ORGANIZATION]
+[Text=unbundling CharacterOffsetBegin=101 CharacterOffsetEnd=111 PartOfSpeech=VBG Lemma=unbundle NamedEntityTag=O]
+[Text=order CharacterOffsetBegin=112 CharacterOffsetEnd=117 PartOfSpeech=NN Lemma=order NamedEntityTag=O]
+[Text=issued CharacterOffsetBegin=118 CharacterOffsetEnd=124 PartOfSpeech=VBN Lemma=issue NamedEntityTag=O]
+[Text=last CharacterOffsetBegin=125 CharacterOffsetEnd=129 PartOfSpeech=JJ Lemma=last NamedEntityTag=O]
+[Text=week CharacterOffsetBegin=130 CharacterOffsetEnd=134 PartOfSpeech=NN Lemma=week NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=134 CharacterOffsetEnd=135 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN On)
+      (NP (NNP December) (CD 17) (, ,) (CD 2001)))
+    (, ,)
+    (NP (DT the) (NNP CPUC))
+    (VP (VBD published)
+      (NP
+        (NP (DT the) (NNP SoCalGas) (VBG unbundling) (NN order))
+        (VP (VBN issued)
+          (NP-TMP (JJ last) (NN week)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, published-9)
+case(December-2, On-1)
+nmod:on(published-9, December-2)
+nummod(December-2, 17-3)
+punct(December-2, ,-4)
+nummod(December-2, 2001-5)
+punct(published-9, ,-6)
+det(CPUC-8, the-7)
+nsubj(published-9, CPUC-8)
+det(order-13, the-10)
+compound(order-13, SoCalGas-11)
+amod(order-13, unbundling-12)
+dobj(published-9, order-13)
+acl(order-13, issued-14)
+amod(week-16, last-15)
+nmod:tmod(issued-14, week-16)
+punct(published-9, .-17)
+
+Extracted the following NER entity mentions:
+December 17, 2001	DATE
+CPUC	ORGANIZATION
+SoCalGas	ORGANIZATION
+
+Sentence #3 (21 tokens):
+Significantly, the Commission directed SoCal to include an additional 375mm/d of new backbone capacity in the open season process.
+
+Tokens:
+[Text=Significantly CharacterOffsetBegin=137 CharacterOffsetEnd=150 PartOfSpeech=RB Lemma=significantly NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=150 CharacterOffsetEnd=151 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=152 CharacterOffsetEnd=155 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Commission CharacterOffsetBegin=156 CharacterOffsetEnd=166 PartOfSpeech=NNP Lemma=Commission NamedEntityTag=ORGANIZATION]
+[Text=directed CharacterOffsetBegin=167 CharacterOffsetEnd=175 PartOfSpeech=VBD Lemma=direct NamedEntityTag=O]
+[Text=SoCal CharacterOffsetBegin=176 CharacterOffsetEnd=181 PartOfSpeech=NNP Lemma=SoCal NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=182 CharacterOffsetEnd=184 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=include CharacterOffsetBegin=185 CharacterOffsetEnd=192 PartOfSpeech=VB Lemma=include NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=193 CharacterOffsetEnd=195 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=additional CharacterOffsetBegin=196 CharacterOffsetEnd=206 PartOfSpeech=JJ Lemma=additional NamedEntityTag=O]
+[Text=375mm/d CharacterOffsetBegin=207 CharacterOffsetEnd=214 PartOfSpeech=NN Lemma=375mm/d NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=215 CharacterOffsetEnd=217 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=218 CharacterOffsetEnd=221 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=backbone CharacterOffsetBegin=222 CharacterOffsetEnd=230 PartOfSpeech=NN Lemma=backbone NamedEntityTag=O]
+[Text=capacity CharacterOffsetBegin=231 CharacterOffsetEnd=239 PartOfSpeech=NN Lemma=capacity NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=240 CharacterOffsetEnd=242 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=243 CharacterOffsetEnd=246 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=open CharacterOffsetBegin=247 CharacterOffsetEnd=251 PartOfSpeech=JJ Lemma=open NamedEntityTag=O]
+[Text=season CharacterOffsetBegin=252 CharacterOffsetEnd=258 PartOfSpeech=NN Lemma=season NamedEntityTag=O]
+[Text=process CharacterOffsetBegin=259 CharacterOffsetEnd=266 PartOfSpeech=NN Lemma=process NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=266 CharacterOffsetEnd=267 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Significantly))
+    (, ,)
+    (NP (DT the) (NNP Commission))
+    (VP (VBD directed)
+      (S
+        (NP (NNP SoCal))
+        (VP (TO to)
+          (VP (VB include)
+            (NP
+              (NP (DT an) (JJ additional) (NN 375mm/d))
+              (PP (IN of)
+                (NP
+                  (NP (JJ new) (NN backbone) (NN capacity))
+                  (PP (IN in)
+                    (NP (DT the) (JJ open) (NN season) (NN process))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, directed-5)
+advmod(directed-5, Significantly-1)
+punct(directed-5, ,-2)
+det(Commission-4, the-3)
+nsubj(directed-5, Commission-4)
+dobj(directed-5, SoCal-6)
+nsubj:xsubj(include-8, SoCal-6)
+mark(include-8, to-7)
+xcomp(directed-5, include-8)
+det(375mm/d-11, an-9)
+amod(375mm/d-11, additional-10)
+dobj(include-8, 375mm/d-11)
+case(capacity-15, of-12)
+amod(capacity-15, new-13)
+compound(capacity-15, backbone-14)
+nmod:of(375mm/d-11, capacity-15)
+case(process-20, in-16)
+det(process-20, the-17)
+amod(process-20, open-18)
+compound(process-20, season-19)
+nmod:in(capacity-15, process-20)
+punct(directed-5, .-21)
+
+Extracted the following NER entity mentions:
+Commission	ORGANIZATION
+
+Sentence #4 (11 tokens):
+This capacity includes 50mm/d of receipt point capacity at Needles.
+
+Tokens:
+[Text=This CharacterOffsetBegin=269 CharacterOffsetEnd=273 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=capacity CharacterOffsetBegin=274 CharacterOffsetEnd=282 PartOfSpeech=NN Lemma=capacity NamedEntityTag=O]
+[Text=includes CharacterOffsetBegin=283 CharacterOffsetEnd=291 PartOfSpeech=VBZ Lemma=include NamedEntityTag=O]
+[Text=50mm/d CharacterOffsetBegin=292 CharacterOffsetEnd=298 PartOfSpeech=NN Lemma=50mm/d NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=299 CharacterOffsetEnd=301 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=receipt CharacterOffsetBegin=302 CharacterOffsetEnd=309 PartOfSpeech=NN Lemma=receipt NamedEntityTag=O]
+[Text=point CharacterOffsetBegin=310 CharacterOffsetEnd=315 PartOfSpeech=NN Lemma=point NamedEntityTag=O]
+[Text=capacity CharacterOffsetBegin=316 CharacterOffsetEnd=324 PartOfSpeech=NN Lemma=capacity NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=325 CharacterOffsetEnd=327 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Needles CharacterOffsetBegin=328 CharacterOffsetEnd=335 PartOfSpeech=NNP Lemma=Needles NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=335 CharacterOffsetEnd=336 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This) (NN capacity))
+    (VP (VBZ includes)
+      (NP
+        (NP (NN 50mm/d))
+        (PP (IN of)
+          (NP
+            (NP (NN receipt) (NN point) (NN capacity))
+            (PP (IN at)
+              (NP (NNP Needles)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, includes-3)
+det(capacity-2, This-1)
+nsubj(includes-3, capacity-2)
+dobj(includes-3, 50mm/d-4)
+case(capacity-8, of-5)
+compound(capacity-8, receipt-6)
+compound(capacity-8, point-7)
+nmod:of(50mm/d-4, capacity-8)
+case(Needles-10, at-9)
+nmod:at(capacity-8, Needles-10)
+punct(includes-3, .-11)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (18 tokens):
+Marketing will contact SoCal regarding the inclusion of this RP capacity as Primary Access Rights from Transwestern.
+
+Tokens:
+[Text=Marketing CharacterOffsetBegin=338 CharacterOffsetEnd=347 PartOfSpeech=NNP Lemma=Marketing NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=348 CharacterOffsetEnd=352 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=contact CharacterOffsetBegin=353 CharacterOffsetEnd=360 PartOfSpeech=VB Lemma=contact NamedEntityTag=O]
+[Text=SoCal CharacterOffsetBegin=361 CharacterOffsetEnd=366 PartOfSpeech=NNP Lemma=SoCal NamedEntityTag=O]
+[Text=regarding CharacterOffsetBegin=367 CharacterOffsetEnd=376 PartOfSpeech=VBG Lemma=regard NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=377 CharacterOffsetEnd=380 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=inclusion CharacterOffsetBegin=381 CharacterOffsetEnd=390 PartOfSpeech=NN Lemma=inclusion NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=391 CharacterOffsetEnd=393 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=394 CharacterOffsetEnd=398 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=RP CharacterOffsetBegin=399 CharacterOffsetEnd=401 PartOfSpeech=NN Lemma=rp NamedEntityTag=O]
+[Text=capacity CharacterOffsetBegin=402 CharacterOffsetEnd=410 PartOfSpeech=NN Lemma=capacity NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=411 CharacterOffsetEnd=413 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=Primary CharacterOffsetBegin=414 CharacterOffsetEnd=421 PartOfSpeech=JJ Lemma=primary NamedEntityTag=O]
+[Text=Access CharacterOffsetBegin=422 CharacterOffsetEnd=428 PartOfSpeech=NN Lemma=access NamedEntityTag=O]
+[Text=Rights CharacterOffsetBegin=429 CharacterOffsetEnd=435 PartOfSpeech=NNS Lemma=rights NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=436 CharacterOffsetEnd=440 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Transwestern CharacterOffsetBegin=441 CharacterOffsetEnd=453 PartOfSpeech=NNP Lemma=Transwestern NamedEntityTag=MISC]
+[Text=. CharacterOffsetBegin=453 CharacterOffsetEnd=454 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Marketing))
+    (VP (MD will)
+      (VP (VB contact)
+        (NP
+          (NP (NNP SoCal))
+          (PP (VBG regarding)
+            (NP
+              (NP (DT the) (NN inclusion))
+              (PP (IN of)
+                (NP (DT this) (NN RP) (NN capacity))))))
+        (PP (IN as)
+          (NP (JJ Primary) (NN Access) (NNS Rights)))
+        (PP (IN from)
+          (NP (NNP Transwestern)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, contact-3)
+nsubj(contact-3, Marketing-1)
+aux(contact-3, will-2)
+dobj(contact-3, SoCal-4)
+case(inclusion-7, regarding-5)
+det(inclusion-7, the-6)
+nmod:regarding(SoCal-4, inclusion-7)
+case(capacity-11, of-8)
+det(capacity-11, this-9)
+compound(capacity-11, RP-10)
+nmod:of(inclusion-7, capacity-11)
+case(Rights-15, as-12)
+amod(Rights-15, Primary-13)
+compound(Rights-15, Access-14)
+nmod:as(contact-3, Rights-15)
+case(Transwestern-17, from-16)
+nmod:from(contact-3, Transwestern-17)
+punct(contact-3, .-18)
+
+Extracted the following NER entity mentions:
+Transwestern	MISC
+
+Sentence #6 (17 tokens):
+Provided supporting references/data for this position in the Systems Adequacy proceeding and original Comprehensive Settlement document.
+
+Tokens:
+[Text=Provided CharacterOffsetBegin=456 CharacterOffsetEnd=464 PartOfSpeech=VBN Lemma=provide NamedEntityTag=O]
+[Text=supporting CharacterOffsetBegin=465 CharacterOffsetEnd=475 PartOfSpeech=VBG Lemma=support NamedEntityTag=O]
+[Text=references/data CharacterOffsetBegin=476 CharacterOffsetEnd=491 PartOfSpeech=NN Lemma=references/data NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=492 CharacterOffsetEnd=495 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=496 CharacterOffsetEnd=500 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=position CharacterOffsetBegin=501 CharacterOffsetEnd=509 PartOfSpeech=NN Lemma=position NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=510 CharacterOffsetEnd=512 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=513 CharacterOffsetEnd=516 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Systems CharacterOffsetBegin=517 CharacterOffsetEnd=524 PartOfSpeech=NNPS Lemma=Systems NamedEntityTag=O]
+[Text=Adequacy CharacterOffsetBegin=525 CharacterOffsetEnd=533 PartOfSpeech=NN Lemma=adequacy NamedEntityTag=O]
+[Text=proceeding CharacterOffsetBegin=534 CharacterOffsetEnd=544 PartOfSpeech=NN Lemma=proceeding NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=545 CharacterOffsetEnd=548 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=original CharacterOffsetBegin=549 CharacterOffsetEnd=557 PartOfSpeech=JJ Lemma=original NamedEntityTag=O]
+[Text=Comprehensive CharacterOffsetBegin=558 CharacterOffsetEnd=571 PartOfSpeech=JJ Lemma=comprehensive NamedEntityTag=O]
+[Text=Settlement CharacterOffsetBegin=572 CharacterOffsetEnd=582 PartOfSpeech=NNP Lemma=Settlement NamedEntityTag=O]
+[Text=document CharacterOffsetBegin=583 CharacterOffsetEnd=591 PartOfSpeech=NN Lemma=document NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=591 CharacterOffsetEnd=592 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBN Provided)
+      (S
+        (VP (VBG supporting)
+          (NP (NN references/data))
+          (PP (IN for)
+            (NP
+              (NP
+                (NP (DT this) (NN position))
+                (PP (IN in)
+                  (NP (DT the) (NNPS Systems) (NN Adequacy) (NN proceeding))))
+              (CC and)
+              (NP
+                (ADJP (JJ original) (JJ Comprehensive))
+                (NNP Settlement) (NN document)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Provided-1)
+xcomp(Provided-1, supporting-2)
+dobj(supporting-2, references/data-3)
+case(position-6, for-4)
+det(position-6, this-5)
+nmod:for(supporting-2, position-6)
+case(proceeding-11, in-7)
+det(proceeding-11, the-8)
+compound(proceeding-11, Systems-9)
+compound(proceeding-11, Adequacy-10)
+nmod:in(position-6, proceeding-11)
+cc(position-6, and-12)
+amod(Comprehensive-14, original-13)
+amod(document-16, Comprehensive-14)
+compound(document-16, Settlement-15)
+nmod:for(supporting-2, document-16)
+conj:and(position-6, document-16)
+punct(Provided-1, .-17)
+
+Extracted the following NER entity mentions:
+
+Sentence #7 (32 tokens):
+SoCal was directed to file an Advice Letter to establish tariff revisions and a schedule for implementation within 15 business days of the effective date which is December 11, 2001.
+
+Tokens:
+[Text=SoCal CharacterOffsetBegin=594 CharacterOffsetEnd=599 PartOfSpeech=NNP Lemma=SoCal NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=600 CharacterOffsetEnd=603 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=directed CharacterOffsetBegin=604 CharacterOffsetEnd=612 PartOfSpeech=VBN Lemma=direct NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=613 CharacterOffsetEnd=615 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=file CharacterOffsetBegin=616 CharacterOffsetEnd=620 PartOfSpeech=VB Lemma=file NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=621 CharacterOffsetEnd=623 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Advice CharacterOffsetBegin=624 CharacterOffsetEnd=630 PartOfSpeech=NNP Lemma=Advice NamedEntityTag=O]
+[Text=Letter CharacterOffsetBegin=631 CharacterOffsetEnd=637 PartOfSpeech=NNP Lemma=Letter NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=638 CharacterOffsetEnd=640 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=establish CharacterOffsetBegin=641 CharacterOffsetEnd=650 PartOfSpeech=VB Lemma=establish NamedEntityTag=O]
+[Text=tariff CharacterOffsetBegin=651 CharacterOffsetEnd=657 PartOfSpeech=NN Lemma=tariff NamedEntityTag=O]
+[Text=revisions CharacterOffsetBegin=658 CharacterOffsetEnd=667 PartOfSpeech=NNS Lemma=revision NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=668 CharacterOffsetEnd=671 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=672 CharacterOffsetEnd=673 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=schedule CharacterOffsetBegin=674 CharacterOffsetEnd=682 PartOfSpeech=NN Lemma=schedule NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=683 CharacterOffsetEnd=686 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=implementation CharacterOffsetBegin=687 CharacterOffsetEnd=701 PartOfSpeech=NN Lemma=implementation NamedEntityTag=O]
+[Text=within CharacterOffsetBegin=702 CharacterOffsetEnd=708 PartOfSpeech=IN Lemma=within NamedEntityTag=O]
+[Text=15 CharacterOffsetBegin=709 CharacterOffsetEnd=711 PartOfSpeech=CD Lemma=15 NamedEntityTag=NUMBER NormalizedNamedEntityTag=<=15.0]
+[Text=business CharacterOffsetBegin=712 CharacterOffsetEnd=720 PartOfSpeech=NN Lemma=business NamedEntityTag=O]
+[Text=days CharacterOffsetBegin=721 CharacterOffsetEnd=725 PartOfSpeech=NNS Lemma=day NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=726 CharacterOffsetEnd=728 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=729 CharacterOffsetEnd=732 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=effective CharacterOffsetBegin=733 CharacterOffsetEnd=742 PartOfSpeech=JJ Lemma=effective NamedEntityTag=O]
+[Text=date CharacterOffsetBegin=743 CharacterOffsetEnd=747 PartOfSpeech=NN Lemma=date NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=748 CharacterOffsetEnd=753 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=754 CharacterOffsetEnd=756 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=December CharacterOffsetBegin=757 CharacterOffsetEnd=765 PartOfSpeech=NNP Lemma=December NamedEntityTag=DATE NormalizedNamedEntityTag=20011211]
+[Text=11 CharacterOffsetBegin=766 CharacterOffsetEnd=768 PartOfSpeech=CD Lemma=11 NamedEntityTag=DATE NormalizedNamedEntityTag=20011211]
+[Text=, CharacterOffsetBegin=768 CharacterOffsetEnd=769 PartOfSpeech=, Lemma=, NamedEntityTag=DATE NormalizedNamedEntityTag=20011211]
+[Text=2001 CharacterOffsetBegin=770 CharacterOffsetEnd=774 PartOfSpeech=CD Lemma=2001 NamedEntityTag=DATE NormalizedNamedEntityTag=20011211]
+[Text=. CharacterOffsetBegin=774 CharacterOffsetEnd=775 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP SoCal))
+    (VP (VBD was)
+      (VP (VBN directed)
+        (S
+          (VP (TO to)
+            (VP (VB file)
+              (S
+                (NP (DT an) (NNP Advice) (NNP Letter))
+                (VP (TO to)
+                  (VP (VB establish)
+                    (NP
+                      (NP (NN tariff) (NNS revisions))
+                      (CC and)
+                      (NP
+                        (NP (DT a) (NN schedule))
+                        (PP (IN for)
+                          (NP (NN implementation)))))
+                    (PP (IN within)
+                      (NP
+                        (NP (CD 15) (NN business) (NNS days))
+                        (PP (IN of)
+                          (NP
+                            (NP (DT the) (JJ effective) (NN date))
+                            (SBAR
+                              (WHNP (WDT which))
+                              (S
+                                (VP (VBZ is)
+                                  (NP-TMP (NNP December) (CD 11) (, ,) (CD 2001)))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, directed-3)
+nsubjpass(directed-3, SoCal-1)
+nsubj:xsubj(file-5, SoCal-1)
+auxpass(directed-3, was-2)
+mark(file-5, to-4)
+xcomp(directed-3, file-5)
+det(Letter-8, an-6)
+compound(Letter-8, Advice-7)
+dobj(file-5, Letter-8)
+nsubj:xsubj(establish-10, Letter-8)
+mark(establish-10, to-9)
+xcomp(file-5, establish-10)
+compound(revisions-12, tariff-11)
+dobj(establish-10, revisions-12)
+cc(revisions-12, and-13)
+det(schedule-15, a-14)
+dobj(establish-10, schedule-15)
+conj:and(revisions-12, schedule-15)
+case(implementation-17, for-16)
+nmod:for(schedule-15, implementation-17)
+case(days-21, within-18)
+nummod(days-21, 15-19)
+compound(days-21, business-20)
+nmod:within(establish-10, days-21)
+case(date-25, of-22)
+det(date-25, the-23)
+amod(date-25, effective-24)
+nmod:of(days-21, date-25)
+nsubj(is-27, date-25)
+ref(date-25, which-26)
+acl:relcl(date-25, is-27)
+nmod:tmod(is-27, December-28)
+nummod(December-28, 11-29)
+punct(December-28, ,-30)
+nummod(December-28, 2001-31)
+punct(directed-3, .-32)
+
+Extracted the following NER entity mentions:
+15	NUMBER
+December 11, 2001	DATE
+
+Sentence #8 (16 tokens):
+Taking into consideration two holidays, this makes their filing due January 3, 2002.
+
+Tokens:
+[Text=Taking CharacterOffsetBegin=777 CharacterOffsetEnd=783 PartOfSpeech=VBG Lemma=take NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=784 CharacterOffsetEnd=788 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=consideration CharacterOffsetBegin=789 CharacterOffsetEnd=802 PartOfSpeech=NN Lemma=consideration NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=803 CharacterOffsetEnd=806 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=holidays CharacterOffsetBegin=807 CharacterOffsetEnd=815 PartOfSpeech=NNS Lemma=holiday NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=815 CharacterOffsetEnd=816 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=817 CharacterOffsetEnd=821 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=makes CharacterOffsetBegin=822 CharacterOffsetEnd=827 PartOfSpeech=VBZ Lemma=make NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=828 CharacterOffsetEnd=833 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=filing CharacterOffsetBegin=834 CharacterOffsetEnd=840 PartOfSpeech=NN Lemma=filing NamedEntityTag=O]
+[Text=due CharacterOffsetBegin=841 CharacterOffsetEnd=844 PartOfSpeech=JJ Lemma=due NamedEntityTag=DATE NormalizedNamedEntityTag=20020103]
+[Text=January CharacterOffsetBegin=845 CharacterOffsetEnd=852 PartOfSpeech=NNP Lemma=January NamedEntityTag=DATE NormalizedNamedEntityTag=20020103]
+[Text=3 CharacterOffsetBegin=853 CharacterOffsetEnd=854 PartOfSpeech=CD Lemma=3 NamedEntityTag=DATE NormalizedNamedEntityTag=20020103]
+[Text=, CharacterOffsetBegin=854 CharacterOffsetEnd=855 PartOfSpeech=, Lemma=, NamedEntityTag=DATE NormalizedNamedEntityTag=20020103]
+[Text=2002 CharacterOffsetBegin=856 CharacterOffsetEnd=860 PartOfSpeech=CD Lemma=2002 NamedEntityTag=DATE NormalizedNamedEntityTag=20020103]
+[Text=. CharacterOffsetBegin=860 CharacterOffsetEnd=861 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (VBG Taking)
+        (PP (IN into)
+          (NP (NN consideration) (CD two) (NNS holidays)))))
+    (, ,)
+    (NP (DT this))
+    (VP (VBZ makes)
+      (NP
+        (NP (PRP$ their) (NN filing))
+        (ADJP (JJ due)
+          (NP-TMP (NNP January) (CD 3) (, ,) (CD 2002)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, makes-8)
+advcl(makes-8, Taking-1)
+case(holidays-5, into-2)
+compound(holidays-5, consideration-3)
+nummod(holidays-5, two-4)
+nmod:into(Taking-1, holidays-5)
+punct(makes-8, ,-6)
+nsubj(makes-8, this-7)
+nmod:poss(filing-10, their-9)
+dobj(makes-8, filing-10)
+amod(filing-10, due-11)
+nmod:tmod(due-11, January-12)
+nummod(January-12, 3-13)
+punct(January-12, ,-14)
+nummod(January-12, 2002-15)
+punct(makes-8, .-16)
+
+Extracted the following NER entity mentions:
+two	NUMBER
+due January 3, 2002	DATE
+
+Sentence #9 (20 tokens):
+Comments and/or protests of the Advice Letter will be due 20 days later (Jan. 23, 2001).
+
+Tokens:
+[Text=Comments CharacterOffsetBegin=863 CharacterOffsetEnd=871 PartOfSpeech=NNS Lemma=comment NamedEntityTag=O]
+[Text=and/or CharacterOffsetBegin=872 CharacterOffsetEnd=878 PartOfSpeech=CC Lemma=and/or NamedEntityTag=O]
+[Text=protests CharacterOffsetBegin=879 CharacterOffsetEnd=887 PartOfSpeech=NNS Lemma=protest NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=888 CharacterOffsetEnd=890 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=891 CharacterOffsetEnd=894 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Advice CharacterOffsetBegin=895 CharacterOffsetEnd=901 PartOfSpeech=NNP Lemma=Advice NamedEntityTag=O]
+[Text=Letter CharacterOffsetBegin=902 CharacterOffsetEnd=908 PartOfSpeech=NNP Lemma=Letter NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=909 CharacterOffsetEnd=913 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=914 CharacterOffsetEnd=916 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=due CharacterOffsetBegin=917 CharacterOffsetEnd=920 PartOfSpeech=JJ Lemma=due NamedEntityTag=O]
+[Text=20 CharacterOffsetBegin=921 CharacterOffsetEnd=923 PartOfSpeech=CD Lemma=20 NamedEntityTag=DURATION]
+[Text=days CharacterOffsetBegin=924 CharacterOffsetEnd=928 PartOfSpeech=NNS Lemma=day NamedEntityTag=DURATION]
+[Text=later CharacterOffsetBegin=929 CharacterOffsetEnd=934 PartOfSpeech=RB Lemma=later NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=935 CharacterOffsetEnd=936 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Jan. CharacterOffsetBegin=936 CharacterOffsetEnd=940 PartOfSpeech=NNP Lemma=Jan. NamedEntityTag=DATE NormalizedNamedEntityTag=20010123]
+[Text=23 CharacterOffsetBegin=941 CharacterOffsetEnd=943 PartOfSpeech=CD Lemma=23 NamedEntityTag=DATE NormalizedNamedEntityTag=20010123]
+[Text=, CharacterOffsetBegin=943 CharacterOffsetEnd=944 PartOfSpeech=, Lemma=, NamedEntityTag=DATE NormalizedNamedEntityTag=20010123]
+[Text=2001 CharacterOffsetBegin=945 CharacterOffsetEnd=949 PartOfSpeech=CD Lemma=2001 NamedEntityTag=DATE NormalizedNamedEntityTag=20010123]
+[Text=-RRB- CharacterOffsetBegin=949 CharacterOffsetEnd=950 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=950 CharacterOffsetEnd=951 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNS Comments))
+        (CC and/or)
+        (NP (NNS protests)))
+      (PP (IN of)
+        (NP (DT the) (NNP Advice) (NNP Letter))))
+    (VP (MD will)
+      (VP (VB be)
+        (ADJP (JJ due))
+        (ADVP
+          (ADVP
+            (NP (CD 20) (NNS days))
+            (RB later))
+          (PRN (-LRB- -LRB-)
+            (NP
+              (NP (NNP Jan.) (CD 23))
+              (, ,)
+              (NP (CD 2001)))
+            (-RRB- -RRB-)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, due-10)
+nsubj(due-10, Comments-1)
+cc(Comments-1, and/or-2)
+conj:and/or(Comments-1, protests-3)
+nsubj(due-10, protests-3)
+case(Letter-7, of-4)
+det(Letter-7, the-5)
+compound(Letter-7, Advice-6)
+nmod:of(Comments-1, Letter-7)
+aux(due-10, will-8)
+cop(due-10, be-9)
+nummod(days-12, 20-11)
+nmod:npmod(later-13, days-12)
+advmod(due-10, later-13)
+punct(Jan.-15, -LRB--14)
+dep(later-13, Jan.-15)
+nummod(Jan.-15, 23-16)
+punct(Jan.-15, ,-17)
+nummod(Jan.-15, 2001-18)
+punct(Jan.-15, -RRB--19)
+punct(due-10, .-20)
+
+Extracted the following NER entity mentions:
+20 days	DURATION
+Jan. 23, 2001	DATE
+
+Sentence #10 (6 tokens):
+A01-10-011  PG&E's Gas Accord.
+
+Tokens:
+[Text=A01-10-011 CharacterOffsetBegin=953 CharacterOffsetEnd=963 PartOfSpeech=NN Lemma=a01-10-011 NamedEntityTag=O]
+[Text=PG&E CharacterOffsetBegin=965 CharacterOffsetEnd=969 PartOfSpeech=NNP Lemma=PG&E NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=969 CharacterOffsetEnd=971 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Gas CharacterOffsetBegin=972 CharacterOffsetEnd=975 PartOfSpeech=NN Lemma=gas NamedEntityTag=O]
+[Text=Accord CharacterOffsetBegin=976 CharacterOffsetEnd=982 PartOfSpeech=NNP Lemma=Accord NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=982 CharacterOffsetEnd=983 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NN A01-10-011))
+    (NP
+      (NP
+        (NP (NNP PG&E) (POS 's))
+        (NN Gas))
+      (NP (NNP Accord)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, A01-10-011-1)
+nmod:poss(Gas-4, PG&E-2)
+case(PG&E-2, 's-3)
+dep(A01-10-011-1, Gas-4)
+appos(Gas-4, Accord-5)
+punct(A01-10-011-1, .-6)
+
+Extracted the following NER entity mentions:
+PG&E	ORGANIZATION
+
+Sentence #11 (18 tokens):
+The CPUC issued a Notice of the Prehearing Conference to be held on January 7, 2002.
+
+Tokens:
+[Text=The CharacterOffsetBegin=985 CharacterOffsetEnd=988 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=CPUC CharacterOffsetBegin=989 CharacterOffsetEnd=993 PartOfSpeech=NNP Lemma=CPUC NamedEntityTag=ORGANIZATION]
+[Text=issued CharacterOffsetBegin=994 CharacterOffsetEnd=1000 PartOfSpeech=VBD Lemma=issue NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=1001 CharacterOffsetEnd=1002 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Notice CharacterOffsetBegin=1003 CharacterOffsetEnd=1009 PartOfSpeech=NNP Lemma=Notice NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=1010 CharacterOffsetEnd=1012 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1013 CharacterOffsetEnd=1016 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Prehearing CharacterOffsetBegin=1017 CharacterOffsetEnd=1027 PartOfSpeech=NNP Lemma=Prehearing NamedEntityTag=O]
+[Text=Conference CharacterOffsetBegin=1028 CharacterOffsetEnd=1038 PartOfSpeech=NN Lemma=conference NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1039 CharacterOffsetEnd=1041 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=1042 CharacterOffsetEnd=1044 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=held CharacterOffsetBegin=1045 CharacterOffsetEnd=1049 PartOfSpeech=VBN Lemma=hold NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=1050 CharacterOffsetEnd=1052 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=January CharacterOffsetBegin=1053 CharacterOffsetEnd=1060 PartOfSpeech=NNP Lemma=January NamedEntityTag=DATE NormalizedNamedEntityTag=20020107]
+[Text=7 CharacterOffsetBegin=1061 CharacterOffsetEnd=1062 PartOfSpeech=CD Lemma=7 NamedEntityTag=DATE NormalizedNamedEntityTag=20020107]
+[Text=, CharacterOffsetBegin=1062 CharacterOffsetEnd=1063 PartOfSpeech=, Lemma=, NamedEntityTag=DATE NormalizedNamedEntityTag=20020107]
+[Text=2002 CharacterOffsetBegin=1064 CharacterOffsetEnd=1068 PartOfSpeech=CD Lemma=2002 NamedEntityTag=DATE NormalizedNamedEntityTag=20020107]
+[Text=. CharacterOffsetBegin=1068 CharacterOffsetEnd=1069 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NNP CPUC))
+    (VP (VBD issued)
+      (NP
+        (NP (DT a) (NNP Notice))
+        (PP (IN of)
+          (NP (DT the) (NNP Prehearing) (NN Conference))))
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (VP (VBN held)
+              (PP (IN on)
+                (NP (NNP January) (CD 7) (, ,) (CD 2002))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, issued-3)
+det(CPUC-2, The-1)
+nsubj(issued-3, CPUC-2)
+det(Notice-5, a-4)
+dobj(issued-3, Notice-5)
+case(Conference-9, of-6)
+det(Conference-9, the-7)
+compound(Conference-9, Prehearing-8)
+nmod:of(Notice-5, Conference-9)
+mark(held-12, to-10)
+auxpass(held-12, be-11)
+advcl:to(issued-3, held-12)
+case(January-14, on-13)
+nmod:on(held-12, January-14)
+nummod(January-14, 7-15)
+punct(January-14, ,-16)
+nummod(January-14, 2002-17)
+punct(issued-3, .-18)
+
+Extracted the following NER entity mentions:
+CPUC	ORGANIZATION
+January 7, 2002	DATE
+
+Sentence #12 (10 tokens):
+Prehearing Conference statements are due January 2, 2002.
+
+Tokens:
+[Text=Prehearing CharacterOffsetBegin=1071 CharacterOffsetEnd=1081 PartOfSpeech=VBG Lemma=prehear NamedEntityTag=O]
+[Text=Conference CharacterOffsetBegin=1082 CharacterOffsetEnd=1092 PartOfSpeech=NN Lemma=conference NamedEntityTag=O]
+[Text=statements CharacterOffsetBegin=1093 CharacterOffsetEnd=1103 PartOfSpeech=NNS Lemma=statement NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=1104 CharacterOffsetEnd=1107 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=due CharacterOffsetBegin=1108 CharacterOffsetEnd=1111 PartOfSpeech=JJ Lemma=due NamedEntityTag=DATE NormalizedNamedEntityTag=20020102]
+[Text=January CharacterOffsetBegin=1112 CharacterOffsetEnd=1119 PartOfSpeech=NNP Lemma=January NamedEntityTag=DATE NormalizedNamedEntityTag=20020102]
+[Text=2 CharacterOffsetBegin=1120 CharacterOffsetEnd=1121 PartOfSpeech=CD Lemma=2 NamedEntityTag=DATE NormalizedNamedEntityTag=20020102]
+[Text=, CharacterOffsetBegin=1121 CharacterOffsetEnd=1122 PartOfSpeech=, Lemma=, NamedEntityTag=DATE NormalizedNamedEntityTag=20020102]
+[Text=2002 CharacterOffsetBegin=1123 CharacterOffsetEnd=1127 PartOfSpeech=CD Lemma=2002 NamedEntityTag=DATE NormalizedNamedEntityTag=20020102]
+[Text=. CharacterOffsetBegin=1127 CharacterOffsetEnd=1128 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (VBG Prehearing) (NN Conference) (NNS statements))
+    (VP (VBP are)
+      (ADJP (JJ due)
+        (NP-TMP (NNP January) (CD 2) (, ,) (CD 2002))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, due-5)
+amod(statements-3, Prehearing-1)
+compound(statements-3, Conference-2)
+nsubj(due-5, statements-3)
+cop(due-5, are-4)
+nmod:tmod(due-5, January-6)
+nummod(January-6, 2-7)
+punct(January-6, ,-8)
+nummod(January-6, 2002-9)
+punct(due-5, .-10)
+
+Extracted the following NER entity mentions:
+due January 2, 2002	DATE
+
+Sentence #13 (9 tokens):
+Schedule:
+
+Week of 12/24
+
+Vacation 12/26-28 & 12/31
+
+Tokens:
+[Text=Schedule CharacterOffsetBegin=1130 CharacterOffsetEnd=1138 PartOfSpeech=VB Lemma=schedule NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=1138 CharacterOffsetEnd=1139 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Week CharacterOffsetBegin=1141 CharacterOffsetEnd=1145 PartOfSpeech=NN Lemma=week NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=1146 CharacterOffsetEnd=1148 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=12/24 CharacterOffsetBegin=1149 CharacterOffsetEnd=1154 PartOfSpeech=CD Lemma=12/24 NamedEntityTag=NUMBER]
+[Text=Vacation CharacterOffsetBegin=1156 CharacterOffsetEnd=1164 PartOfSpeech=NN Lemma=vacation NamedEntityTag=O]
+[Text=12/26-28 CharacterOffsetBegin=1165 CharacterOffsetEnd=1173 PartOfSpeech=CD Lemma=12/26-28 NamedEntityTag=NUMBER]
+[Text=& CharacterOffsetBegin=1174 CharacterOffsetEnd=1175 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=12/31 CharacterOffsetBegin=1176 CharacterOffsetEnd=1181 PartOfSpeech=CD Lemma=12/31 NamedEntityTag=NUMBER]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP
+      (VP (VB Schedule))
+      (: :)
+      (VP
+        (NP-TMP (NN Week))
+        (PP (IN of)
+          (NP
+            (NP (CD 12/24) (NN Vacation))
+            (NP
+              (NP (CD 12/26-28))
+              (CC &)
+              (NP (CD 12/31)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Schedule-1)
+punct(Schedule-1, :-2)
+nmod:tmod(Schedule-1, Week-3)
+case(Vacation-6, of-4)
+nummod(Vacation-6, 12/24-5)
+nmod:of(Week-3, Vacation-6)
+dep(Vacation-6, 12/26-28-7)
+cc(12/26-28-7, &-8)
+dep(Vacation-6, 12/31-9)
+conj:&(12/26-28-7, 12/31-9)
+
+Extracted the following NER entity mentions:
+12/24	NUMBER
+12/26-28	NUMBER
+12/31	NUMBER
+
+Coreference set:
+	(2,11,[11,12]) -> (1,4,[4,5]), that is: "SoCalGas" -> "SoCalGas"
+
+Coreference set:
+	(11,2,[1,3]) -> (2,8,[7,9]), that is: "The CPUC" -> "the CPUC"
+
+Coreference set:
+	(13,3,[3,4]) -> (2,16,[15,17]), that is: "Week" -> "last week"
+
+Coreference set:
+	(7,1,[1,2]) -> (3,6,[6,7]), that is: "SoCal" -> "SoCal"
+
+Coreference set:
+	(9,7,[5,8]) -> (7,8,[6,9]), that is: "the Advice Letter" -> "an Advice Letter"
+
+Coreference set:
+	(8,9,[9,10]) -> (8,7,[7,8]), that is: "their" -> "this"

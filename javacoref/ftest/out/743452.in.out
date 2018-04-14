@@ -1,0 +1,577 @@
+Document: ID=743452.in (8 sentences, 142 tokens)
+
+Sentence #1 (12 tokens):
+Jose
+
+We will discuss this on the 2:30 pm call Tues.
+
+Tokens:
+[Text=Jose CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Jose NamedEntityTag=PERSON]
+[Text=We CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=discuss CharacterOffsetBegin=14 CharacterOffsetEnd=21 PartOfSpeech=VB Lemma=discuss NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=2:30 CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=CD Lemma=2:30 NamedEntityTag=TIME NormalizedNamedEntityTag=2:30pm]
+[Text=pm CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=pm NamedEntityTag=TIME NormalizedNamedEntityTag=2:30pm]
+[Text=call CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=call NamedEntityTag=O]
+[Text=Tues. CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=NN Lemma=tues. NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Jose) (PRP We))
+    (VP (MD will)
+      (VP (VB discuss)
+        (NP
+          (NP (DT this))
+          (PP (IN on)
+            (NP (DT the) (CD 2:30) (NN pm) (NN call) (NN Tues.))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, discuss-4)
+nsubj(discuss-4, Jose-1)
+dep(Jose-1, We-2)
+aux(discuss-4, will-3)
+dobj(discuss-4, this-5)
+case(Tues.-11, on-6)
+det(Tues.-11, the-7)
+nummod(Tues.-11, 2:30-8)
+compound(Tues.-11, pm-9)
+compound(Tues.-11, call-10)
+nmod:on(this-5, Tues.-11)
+punct(discuss-4, .-12)
+
+Extracted the following NER entity mentions:
+Jose	PERSON
+2:30 pm	TIME
+
+Sentence #2 (15 tokens):
+I think what NERC needs to know is that their job is not done.
+
+Tokens:
+[Text=I CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=56 CharacterOffsetEnd=61 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=62 CharacterOffsetEnd=66 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=NERC CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=NNP Lemma=NERC NamedEntityTag=ORGANIZATION]
+[Text=needs CharacterOffsetBegin=72 CharacterOffsetEnd=77 PartOfSpeech=VBZ Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=78 CharacterOffsetEnd=80 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=81 CharacterOffsetEnd=85 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=86 CharacterOffsetEnd=88 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=89 CharacterOffsetEnd=93 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=94 CharacterOffsetEnd=99 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=job CharacterOffsetBegin=100 CharacterOffsetEnd=103 PartOfSpeech=NN Lemma=job NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=104 CharacterOffsetEnd=106 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=107 CharacterOffsetEnd=110 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=done CharacterOffsetBegin=111 CharacterOffsetEnd=115 PartOfSpeech=VBN Lemma=do NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=115 CharacterOffsetEnd=116 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (NP (NNP NERC))
+          (VP (VBZ needs)
+            (S
+              (VP (TO to)
+                (VP (VB know)
+                  (SBAR
+                    (S
+                      (VP (VBZ is)
+                        (SBAR (IN that)
+                          (S
+                            (NP (PRP$ their) (NN job))
+                            (VP (VBZ is) (RB not)
+                              (VP (VBN done)))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, think-2)
+nsubj(think-2, I-1)
+dobj(needs-5, what-3)
+nsubj:xsubj(know-7, what-3)
+nsubj(needs-5, NERC-4)
+ccomp(think-2, needs-5)
+mark(know-7, to-6)
+xcomp(needs-5, know-7)
+ccomp(know-7, is-8)
+mark(done-14, that-9)
+nmod:poss(job-11, their-10)
+nsubjpass(done-14, job-11)
+auxpass(done-14, is-12)
+neg(done-14, not-13)
+ccomp(is-8, done-14)
+punct(think-2, .-15)
+
+Extracted the following NER entity mentions:
+NERC	ORGANIZATION
+
+Sentence #3 (18 tokens):
+Big issues were tied into the Stakeholder's recommendation - changes in governance, voting, funding.
+
+Tokens:
+[Text=Big CharacterOffsetBegin=117 CharacterOffsetEnd=120 PartOfSpeech=JJ Lemma=big NamedEntityTag=O]
+[Text=issues CharacterOffsetBegin=121 CharacterOffsetEnd=127 PartOfSpeech=NNS Lemma=issue NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=128 CharacterOffsetEnd=132 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=tied CharacterOffsetBegin=133 CharacterOffsetEnd=137 PartOfSpeech=VBN Lemma=tie NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=138 CharacterOffsetEnd=142 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=143 CharacterOffsetEnd=146 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Stakeholder CharacterOffsetBegin=147 CharacterOffsetEnd=158 PartOfSpeech=NNP Lemma=Stakeholder NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=158 CharacterOffsetEnd=160 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=recommendation CharacterOffsetBegin=161 CharacterOffsetEnd=175 PartOfSpeech=NN Lemma=recommendation NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=176 CharacterOffsetEnd=177 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=changes CharacterOffsetBegin=178 CharacterOffsetEnd=185 PartOfSpeech=NNS Lemma=change NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=186 CharacterOffsetEnd=188 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=governance CharacterOffsetBegin=189 CharacterOffsetEnd=199 PartOfSpeech=NN Lemma=governance NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=199 CharacterOffsetEnd=200 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=voting CharacterOffsetBegin=201 CharacterOffsetEnd=207 PartOfSpeech=NN Lemma=voting NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=207 CharacterOffsetEnd=208 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=funding CharacterOffsetBegin=209 CharacterOffsetEnd=216 PartOfSpeech=NN Lemma=funding NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=216 CharacterOffsetEnd=217 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (JJ Big) (NNS issues))
+    (VP (VBD were)
+      (VP (VBN tied)
+        (PP (IN into)
+          (NP
+            (NP
+              (NP (DT the) (NNP Stakeholder) (POS 's))
+              (NN recommendation))
+            (: -)
+            (NP
+              (NP (NNS changes))
+              (PP (IN in)
+                (NP (NN governance) (, ,) (NN voting) (, ,) (NN funding))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, tied-4)
+amod(issues-2, Big-1)
+nsubjpass(tied-4, issues-2)
+auxpass(tied-4, were-3)
+case(recommendation-9, into-5)
+det(Stakeholder-7, the-6)
+nmod:poss(recommendation-9, Stakeholder-7)
+case(Stakeholder-7, 's-8)
+nmod:into(tied-4, recommendation-9)
+punct(recommendation-9, --10)
+dep(recommendation-9, changes-11)
+case(funding-17, in-12)
+compound(funding-17, governance-13)
+punct(funding-17, ,-14)
+dep(funding-17, voting-15)
+punct(funding-17, ,-16)
+nmod:in(changes-11, funding-17)
+punct(tied-4, .-18)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (37 tokens):
+The idea of expanding NERC's role is not for the sole purpose of getting NERC to develop business practices - but rather get NERC to recognize the market and commercial needs in its reliability rules.
+
+Tokens:
+[Text=The CharacterOffsetBegin=219 CharacterOffsetEnd=222 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=idea CharacterOffsetBegin=223 CharacterOffsetEnd=227 PartOfSpeech=NN Lemma=idea NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=228 CharacterOffsetEnd=230 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=expanding CharacterOffsetBegin=231 CharacterOffsetEnd=240 PartOfSpeech=VBG Lemma=expand NamedEntityTag=O]
+[Text=NERC CharacterOffsetBegin=241 CharacterOffsetEnd=245 PartOfSpeech=NNP Lemma=NERC NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=245 CharacterOffsetEnd=247 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=role CharacterOffsetBegin=248 CharacterOffsetEnd=252 PartOfSpeech=NN Lemma=role NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=253 CharacterOffsetEnd=255 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=256 CharacterOffsetEnd=259 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=260 CharacterOffsetEnd=263 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=264 CharacterOffsetEnd=267 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=sole CharacterOffsetBegin=268 CharacterOffsetEnd=272 PartOfSpeech=JJ Lemma=sole NamedEntityTag=O]
+[Text=purpose CharacterOffsetBegin=273 CharacterOffsetEnd=280 PartOfSpeech=NN Lemma=purpose NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=281 CharacterOffsetEnd=283 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=getting CharacterOffsetBegin=284 CharacterOffsetEnd=291 PartOfSpeech=VBG Lemma=get NamedEntityTag=O]
+[Text=NERC CharacterOffsetBegin=292 CharacterOffsetEnd=296 PartOfSpeech=NNP Lemma=NERC NamedEntityTag=ORGANIZATION]
+[Text=to CharacterOffsetBegin=297 CharacterOffsetEnd=299 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=develop CharacterOffsetBegin=300 CharacterOffsetEnd=307 PartOfSpeech=VB Lemma=develop NamedEntityTag=O]
+[Text=business CharacterOffsetBegin=308 CharacterOffsetEnd=316 PartOfSpeech=NN Lemma=business NamedEntityTag=O]
+[Text=practices CharacterOffsetBegin=317 CharacterOffsetEnd=326 PartOfSpeech=NNS Lemma=practice NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=327 CharacterOffsetEnd=328 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=329 CharacterOffsetEnd=332 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=rather CharacterOffsetBegin=333 CharacterOffsetEnd=339 PartOfSpeech=RB Lemma=rather NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=340 CharacterOffsetEnd=343 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=NERC CharacterOffsetBegin=344 CharacterOffsetEnd=348 PartOfSpeech=NNP Lemma=NERC NamedEntityTag=ORGANIZATION]
+[Text=to CharacterOffsetBegin=349 CharacterOffsetEnd=351 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=recognize CharacterOffsetBegin=352 CharacterOffsetEnd=361 PartOfSpeech=VB Lemma=recognize NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=362 CharacterOffsetEnd=365 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=market CharacterOffsetBegin=366 CharacterOffsetEnd=372 PartOfSpeech=NN Lemma=market NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=373 CharacterOffsetEnd=376 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=commercial CharacterOffsetBegin=377 CharacterOffsetEnd=387 PartOfSpeech=JJ Lemma=commercial NamedEntityTag=O]
+[Text=needs CharacterOffsetBegin=388 CharacterOffsetEnd=393 PartOfSpeech=NNS Lemma=need NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=394 CharacterOffsetEnd=396 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=its CharacterOffsetBegin=397 CharacterOffsetEnd=400 PartOfSpeech=PRP$ Lemma=its NamedEntityTag=O]
+[Text=reliability CharacterOffsetBegin=401 CharacterOffsetEnd=412 PartOfSpeech=NN Lemma=reliability NamedEntityTag=O]
+[Text=rules CharacterOffsetBegin=413 CharacterOffsetEnd=418 PartOfSpeech=NNS Lemma=rule NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=418 CharacterOffsetEnd=419 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN idea))
+      (PP (IN of)
+        (S
+          (VP (VBG expanding)
+            (NP
+              (NP (NNP NERC) (POS 's))
+              (NN role))))))
+    (VP (VBZ is) (RB not)
+      (PP
+        (PP (IN for)
+          (NP
+            (NP (DT the) (JJ sole) (NN purpose))
+            (PP (IN of)
+              (S
+                (VP (VBG getting)
+                  (S
+                    (NP (NNP NERC))
+                    (VP (TO to)
+                      (VP (VB develop)
+                        (NP (NN business) (NNS practices))))))))))
+        (: -)
+        (CONJP (CC but)
+          (RB rather))
+        (PP
+          (NP
+            (S
+              (VP (VB get)
+                (S
+                  (NP (NNP NERC))
+                  (VP (TO to)
+                    (VP (VB recognize)
+                      (NP (DT the) (NN market)))))))
+            (CC and)
+            (NP (JJ commercial) (NNS needs)))
+          (IN in)
+          (NP (PRP$ its) (NN reliability) (NNS rules)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, purpose-13)
+det(idea-2, The-1)
+nsubj(purpose-13, idea-2)
+nsubj(get-24, idea-2)
+mark(expanding-4, of-3)
+acl:of(idea-2, expanding-4)
+nmod:poss(role-7, NERC-5)
+case(NERC-5, 's-6)
+dobj(expanding-4, role-7)
+cop(purpose-13, is-8)
+neg(purpose-13, not-9)
+case(purpose-13, for-10)
+det(purpose-13, the-11)
+amod(purpose-13, sole-12)
+mark(getting-15, of-14)
+acl:of(purpose-13, getting-15)
+dobj(getting-15, NERC-16)
+nsubj:xsubj(develop-18, NERC-16)
+mark(develop-18, to-17)
+xcomp(getting-15, develop-18)
+compound(practices-20, business-19)
+dobj(develop-18, practices-20)
+punct(purpose-13, --21)
+cc(rather-23, but-22)
+cc(purpose-13, rather-23)
+conj:rather(purpose-13, get-24)
+dobj(get-24, NERC-25)
+nsubj:xsubj(recognize-27, NERC-25)
+mark(recognize-27, to-26)
+xcomp(get-24, recognize-27)
+det(market-29, the-28)
+dobj(recognize-27, market-29)
+cc(get-24, and-30)
+amod(needs-32, commercial-31)
+conj:rather(purpose-13, needs-32)
+conj:and(get-24, needs-32)
+case(get-24, in-33)
+nmod:poss(rules-36, its-34)
+compound(rules-36, reliability-35)
+dep(get-24, rules-36)
+punct(purpose-13, .-37)
+
+Extracted the following NER entity mentions:
+NERC	ORGANIZATION
+NERC	ORGANIZATION
+NERC	ORGANIZATION
+
+Sentence #5 (16 tokens):
+Presently, NERC focuses on reliability rules and considers commercial impacts as a secondary issue.
+
+Tokens:
+[Text=Presently CharacterOffsetBegin=421 CharacterOffsetEnd=430 PartOfSpeech=RB Lemma=presently NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=430 CharacterOffsetEnd=431 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=NERC CharacterOffsetBegin=432 CharacterOffsetEnd=436 PartOfSpeech=NNP Lemma=NERC NamedEntityTag=ORGANIZATION]
+[Text=focuses CharacterOffsetBegin=437 CharacterOffsetEnd=444 PartOfSpeech=VBZ Lemma=focus NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=445 CharacterOffsetEnd=447 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=reliability CharacterOffsetBegin=448 CharacterOffsetEnd=459 PartOfSpeech=NN Lemma=reliability NamedEntityTag=O]
+[Text=rules CharacterOffsetBegin=460 CharacterOffsetEnd=465 PartOfSpeech=NNS Lemma=rule NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=466 CharacterOffsetEnd=469 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=considers CharacterOffsetBegin=470 CharacterOffsetEnd=479 PartOfSpeech=VBZ Lemma=consider NamedEntityTag=O]
+[Text=commercial CharacterOffsetBegin=480 CharacterOffsetEnd=490 PartOfSpeech=JJ Lemma=commercial NamedEntityTag=O]
+[Text=impacts CharacterOffsetBegin=491 CharacterOffsetEnd=498 PartOfSpeech=NNS Lemma=impact NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=499 CharacterOffsetEnd=501 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=502 CharacterOffsetEnd=503 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=secondary CharacterOffsetBegin=504 CharacterOffsetEnd=513 PartOfSpeech=JJ Lemma=secondary NamedEntityTag=O]
+[Text=issue CharacterOffsetBegin=514 CharacterOffsetEnd=519 PartOfSpeech=NN Lemma=issue NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=519 CharacterOffsetEnd=520 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Presently))
+    (, ,)
+    (NP (NNP NERC))
+    (VP
+      (VP (VBZ focuses)
+        (PP (IN on)
+          (NP (NN reliability) (NNS rules))))
+      (CC and)
+      (VP (VBZ considers)
+        (NP (JJ commercial) (NNS impacts))
+        (PP (IN as)
+          (NP (DT a) (JJ secondary) (NN issue)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, focuses-4)
+advmod(focuses-4, Presently-1)
+punct(focuses-4, ,-2)
+nsubj(focuses-4, NERC-3)
+nsubj(considers-9, NERC-3)
+case(rules-7, on-5)
+compound(rules-7, reliability-6)
+nmod:on(focuses-4, rules-7)
+cc(focuses-4, and-8)
+conj:and(focuses-4, considers-9)
+amod(impacts-11, commercial-10)
+dobj(considers-9, impacts-11)
+case(issue-15, as-12)
+det(issue-15, a-13)
+amod(issue-15, secondary-14)
+nmod:as(considers-9, issue-15)
+punct(focuses-4, .-16)
+
+Extracted the following NER entity mentions:
+NERC	ORGANIZATION
+
+Sentence #6 (9 tokens):
+This is what the Stakeholders wish to change.
+
+Tokens:
+[Text=This CharacterOffsetBegin=522 CharacterOffsetEnd=526 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=527 CharacterOffsetEnd=529 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=530 CharacterOffsetEnd=534 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=535 CharacterOffsetEnd=538 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Stakeholders CharacterOffsetBegin=539 CharacterOffsetEnd=551 PartOfSpeech=NNPS Lemma=Stakeholders NamedEntityTag=O]
+[Text=wish CharacterOffsetBegin=552 CharacterOffsetEnd=556 PartOfSpeech=NN Lemma=wish NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=557 CharacterOffsetEnd=559 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=change CharacterOffsetBegin=560 CharacterOffsetEnd=566 PartOfSpeech=VB Lemma=change NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=566 CharacterOffsetEnd=567 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (NP (DT the) (NNPS Stakeholders))
+          (VP (NN wish)
+            (S
+              (VP (TO to)
+                (VP (VB change))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-2)
+nsubj(is-2, This-1)
+dobj(wish-6, what-3)
+nsubj:xsubj(change-8, what-3)
+det(Stakeholders-5, the-4)
+nsubj(wish-6, Stakeholders-5)
+ccomp(is-2, wish-6)
+mark(change-8, to-7)
+xcomp(wish-6, change-8)
+punct(is-2, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #7 (12 tokens):
+We must make sure that message is not misconstrued by spin-doctors.
+
+Tokens:
+[Text=We CharacterOffsetBegin=569 CharacterOffsetEnd=571 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=must CharacterOffsetBegin=572 CharacterOffsetEnd=576 PartOfSpeech=MD Lemma=must NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=577 CharacterOffsetEnd=581 PartOfSpeech=VB Lemma=make NamedEntityTag=O]
+[Text=sure CharacterOffsetBegin=582 CharacterOffsetEnd=586 PartOfSpeech=JJ Lemma=sure NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=587 CharacterOffsetEnd=591 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=message CharacterOffsetBegin=592 CharacterOffsetEnd=599 PartOfSpeech=NN Lemma=message NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=600 CharacterOffsetEnd=602 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=603 CharacterOffsetEnd=606 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=misconstrued CharacterOffsetBegin=607 CharacterOffsetEnd=619 PartOfSpeech=VBN Lemma=misconstrue NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=620 CharacterOffsetEnd=622 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=spin-doctors CharacterOffsetBegin=623 CharacterOffsetEnd=635 PartOfSpeech=NNS Lemma=spin-doctor NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=635 CharacterOffsetEnd=636 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (MD must)
+      (VP (VB make)
+        (ADJP (JJ sure))
+        (SBAR (IN that)
+          (S
+            (NP (NN message))
+            (VP (VBZ is) (RB not)
+              (VP (VBN misconstrued)
+                (PP (IN by)
+                  (NP (NNS spin-doctors)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, make-3)
+nsubj(make-3, We-1)
+aux(make-3, must-2)
+xcomp(make-3, sure-4)
+mark(misconstrued-9, that-5)
+nsubjpass(misconstrued-9, message-6)
+auxpass(misconstrued-9, is-7)
+neg(misconstrued-9, not-8)
+ccomp(make-3, misconstrued-9)
+case(spin-doctors-11, by-10)
+nmod:agent(misconstrued-9, spin-doctors-11)
+punct(make-3, .-12)
+
+Extracted the following NER entity mentions:
+
+Sentence #8 (23 tokens):
+To ensure, this, the charter of NERC would need to change and the idea of a Self-Regulated Organization should cease.
+
+Tokens:
+[Text=To CharacterOffsetBegin=638 CharacterOffsetEnd=640 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=ensure CharacterOffsetBegin=641 CharacterOffsetEnd=647 PartOfSpeech=VB Lemma=ensure NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=647 CharacterOffsetEnd=648 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=649 CharacterOffsetEnd=653 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=653 CharacterOffsetEnd=654 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=655 CharacterOffsetEnd=658 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=charter CharacterOffsetBegin=659 CharacterOffsetEnd=666 PartOfSpeech=NN Lemma=charter NamedEntityTag=TITLE]
+[Text=of CharacterOffsetBegin=667 CharacterOffsetEnd=669 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=NERC CharacterOffsetBegin=670 CharacterOffsetEnd=674 PartOfSpeech=NNP Lemma=NERC NamedEntityTag=ORGANIZATION]
+[Text=would CharacterOffsetBegin=675 CharacterOffsetEnd=680 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=681 CharacterOffsetEnd=685 PartOfSpeech=VB Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=686 CharacterOffsetEnd=688 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=change CharacterOffsetBegin=689 CharacterOffsetEnd=695 PartOfSpeech=VB Lemma=change NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=696 CharacterOffsetEnd=699 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=700 CharacterOffsetEnd=703 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=idea CharacterOffsetBegin=704 CharacterOffsetEnd=708 PartOfSpeech=NN Lemma=idea NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=709 CharacterOffsetEnd=711 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=712 CharacterOffsetEnd=713 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Self-Regulated CharacterOffsetBegin=714 CharacterOffsetEnd=728 PartOfSpeech=NNP Lemma=Self-Regulated NamedEntityTag=O]
+[Text=Organization CharacterOffsetBegin=729 CharacterOffsetEnd=741 PartOfSpeech=NNP Lemma=Organization NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=742 CharacterOffsetEnd=748 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=cease CharacterOffsetBegin=749 CharacterOffsetEnd=754 PartOfSpeech=VB Lemma=cease NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=754 CharacterOffsetEnd=755 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (S
+        (VP (TO To)
+          (VP (VB ensure))))
+      (, ,)
+      (NP
+        (NP (DT this))
+        (, ,)
+        (NP
+          (NP (DT the) (NN charter))
+          (PP (IN of)
+            (NP (NNP NERC)))))
+      (VP (MD would)
+        (VP (VB need)
+          (S
+            (VP (TO to)
+              (VP (VB change)))))))
+    (CC and)
+    (S
+      (NP
+        (NP (DT the) (NN idea))
+        (PP (IN of)
+          (NP (DT a) (NNP Self-Regulated) (NNP Organization))))
+      (VP (MD should)
+        (VP (VB cease))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, need-11)
+mark(ensure-2, To-1)
+advcl:to(need-11, ensure-2)
+punct(need-11, ,-3)
+nsubj(need-11, this-4)
+nsubj:xsubj(change-13, this-4)
+punct(this-4, ,-5)
+det(charter-7, the-6)
+appos(this-4, charter-7)
+case(NERC-9, of-8)
+nmod:of(charter-7, NERC-9)
+aux(need-11, would-10)
+mark(change-13, to-12)
+xcomp(need-11, change-13)
+cc(need-11, and-14)
+det(idea-16, the-15)
+nsubj(cease-22, idea-16)
+case(Organization-20, of-17)
+det(Organization-20, a-18)
+compound(Organization-20, Self-Regulated-19)
+nmod:of(idea-16, Organization-20)
+aux(cease-22, should-21)
+conj:and(need-11, cease-22)
+punct(need-11, .-23)
+
+Extracted the following NER entity mentions:
+charter	TITLE
+NERC	ORGANIZATION
+
+Coreference set:
+	(2,10,[10,11]) -> (1,5,[5,12]), that is: "their" -> "this on the 2:30 pm call Tues."
+
+Coreference set:
+	(4,5,[5,7]) -> (2,4,[4,5]), that is: "NERC 's" -> "NERC"
+	(4,16,[16,17]) -> (2,4,[4,5]), that is: "NERC" -> "NERC"
+	(4,25,[25,26]) -> (2,4,[4,5]), that is: "NERC" -> "NERC"
+	(5,3,[3,4]) -> (2,4,[4,5]), that is: "NERC" -> "NERC"
+	(8,9,[9,10]) -> (2,4,[4,5]), that is: "NERC" -> "NERC"
+
+Coreference set:
+	(4,34,[34,35]) -> (4,2,[1,8]), that is: "its" -> "The idea of expanding NERC 's role"
+
+Coreference set:
+	(5,7,[6,8]) -> (4,36,[34,37]), that is: "reliability rules" -> "its reliability rules"
+
+Coreference set:
+	(6,1,[1,2]) -> (8,7,[6,10]), that is: "This" -> "the charter of NERC"
+	(8,4,[4,5]) -> (8,7,[6,10]), that is: "this" -> "the charter of NERC"

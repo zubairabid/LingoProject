@@ -1,0 +1,116 @@
+Document: ID=1260743.in (2 sentences, 26 tokens)
+
+Sentence #1 (15 tokens):
+It was my understanding that Dynegy would send an e-mail formally documenting their approval.
+
+Tokens:
+[Text=It CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=understanding CharacterOffsetBegin=10 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=understanding NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=Dynegy CharacterOffsetBegin=29 CharacterOffsetEnd=35 PartOfSpeech=NNP Lemma=Dynegy NamedEntityTag=ORGANIZATION]
+[Text=would CharacterOffsetBegin=36 CharacterOffsetEnd=41 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=send CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=VB Lemma=send NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=e-mail CharacterOffsetBegin=50 CharacterOffsetEnd=56 PartOfSpeech=JJ Lemma=e-mail NamedEntityTag=O]
+[Text=formally CharacterOffsetBegin=57 CharacterOffsetEnd=65 PartOfSpeech=RB Lemma=formally NamedEntityTag=O]
+[Text=documenting CharacterOffsetBegin=66 CharacterOffsetEnd=77 PartOfSpeech=VBG Lemma=document NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=78 CharacterOffsetEnd=83 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=approval CharacterOffsetBegin=84 CharacterOffsetEnd=92 PartOfSpeech=NN Lemma=approval NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=92 CharacterOffsetEnd=93 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (NP (PRP$ my) (NN understanding))
+      (SBAR (IN that)
+        (S
+          (NP (NNP Dynegy))
+          (VP (MD would)
+            (VP (VB send)
+              (NP (DT an) (JJ e-mail))
+              (ADVP (RB formally))
+              (S
+                (VP (VBG documenting)
+                  (NP (PRP$ their) (NN approval)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, understanding-4)
+nsubj(understanding-4, It-1)
+cop(understanding-4, was-2)
+nmod:poss(understanding-4, my-3)
+mark(send-8, that-5)
+nsubj(send-8, Dynegy-6)
+aux(send-8, would-7)
+ccomp(understanding-4, send-8)
+det(e-mail-10, an-9)
+dobj(send-8, e-mail-10)
+advmod(send-8, formally-11)
+xcomp(send-8, documenting-12)
+nmod:poss(approval-14, their-13)
+dobj(documenting-12, approval-14)
+punct(understanding-4, .-15)
+
+Extracted the following NER entity mentions:
+Dynegy	ORGANIZATION
+
+Sentence #2 (11 tokens):
+Shelley, were they going to send that to you?
+
+Tokens:
+[Text=Shelley CharacterOffsetBegin=94 CharacterOffsetEnd=101 PartOfSpeech=NNP Lemma=Shelley NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=101 CharacterOffsetEnd=102 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=103 CharacterOffsetEnd=107 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=108 CharacterOffsetEnd=112 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=going CharacterOffsetBegin=113 CharacterOffsetEnd=118 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=119 CharacterOffsetEnd=121 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=send CharacterOffsetBegin=122 CharacterOffsetEnd=126 PartOfSpeech=VB Lemma=send NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=127 CharacterOffsetEnd=131 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=132 CharacterOffsetEnd=134 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=135 CharacterOffsetEnd=138 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=138 CharacterOffsetEnd=139 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Shelley) (, ,))
+    (VP (VBD were)
+      (NP
+        (NP (PRP they))
+        (VP (VBG going)
+          (S
+            (VP (TO to)
+              (VP (VB send)
+                (NP (DT that))
+                (PP (TO to)
+                  (NP (PRP you)))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, they-4)
+nsubj(they-4, Shelley-1)
+punct(Shelley-1, ,-2)
+cop(they-4, were-3)
+acl(they-4, going-5)
+mark(send-7, to-6)
+xcomp(going-5, send-7)
+dobj(send-7, that-8)
+case(you-10, to-9)
+nmod:to(send-7, you-10)
+punct(they-4, ?-11)
+
+Extracted the following NER entity mentions:
+Shelley	PERSON
+
+Coreference set:
+	(1,1,[1,2]) -> (1,4,[3,5]), that is: "It" -> "my understanding"
+	(2,8,[8,9]) -> (1,4,[3,5]), that is: "that" -> "my understanding"
+
+Coreference set:
+	(2,4,[4,11]) -> (1,13,[13,14]), that is: "they going to send that to you" -> "their"

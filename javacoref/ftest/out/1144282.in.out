@@ -1,0 +1,827 @@
+Document: ID=1144282.in (14 sentences, 200 tokens)
+
+Sentence #1 (10 tokens):
+I just spoke to Terry regarding the September dispute.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=spoke CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=VBD Lemma=speak NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Terry CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=Terry NamedEntityTag=PERSON]
+[Text=regarding CharacterOffsetBegin=22 CharacterOffsetEnd=31 PartOfSpeech=VBG Lemma=regard NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=September CharacterOffsetBegin=36 CharacterOffsetEnd=45 PartOfSpeech=NNP Lemma=September NamedEntityTag=DATE NormalizedNamedEntityTag=****09]
+[Text=dispute CharacterOffsetBegin=46 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=dispute NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB just))
+    (VP (VBD spoke)
+      (PP (TO to)
+        (NP
+          (NP (NNP Terry))
+          (PP (VBG regarding)
+            (NP (DT the) (NNP September) (NN dispute))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, spoke-3)
+nsubj(spoke-3, I-1)
+advmod(spoke-3, just-2)
+case(Terry-5, to-4)
+nmod:to(spoke-3, Terry-5)
+case(dispute-9, regarding-6)
+det(dispute-9, the-7)
+compound(dispute-9, September-8)
+nmod:regarding(Terry-5, dispute-9)
+punct(spoke-3, .-10)
+
+Extracted the following NER entity mentions:
+Terry	PERSON
+September	DATE
+
+Sentence #2 (18 tokens):
+He is willing to spilt the difference if we can come up with an appropriate letter agreement .
+
+Tokens:
+[Text=He CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=willing CharacterOffsetBegin=62 CharacterOffsetEnd=69 PartOfSpeech=JJ Lemma=willing NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=70 CharacterOffsetEnd=72 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=spilt CharacterOffsetBegin=73 CharacterOffsetEnd=78 PartOfSpeech=VB Lemma=spill NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=difference CharacterOffsetBegin=83 CharacterOffsetEnd=93 PartOfSpeech=NN Lemma=difference NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=94 CharacterOffsetEnd=96 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=97 CharacterOffsetEnd=99 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=100 CharacterOffsetEnd=103 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=come CharacterOffsetBegin=104 CharacterOffsetEnd=108 PartOfSpeech=VB Lemma=come NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=109 CharacterOffsetEnd=111 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=112 CharacterOffsetEnd=116 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=117 CharacterOffsetEnd=119 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=appropriate CharacterOffsetBegin=120 CharacterOffsetEnd=131 PartOfSpeech=JJ Lemma=appropriate NamedEntityTag=O]
+[Text=letter CharacterOffsetBegin=132 CharacterOffsetEnd=138 PartOfSpeech=NN Lemma=letter NamedEntityTag=O]
+[Text=agreement CharacterOffsetBegin=139 CharacterOffsetEnd=148 PartOfSpeech=NN Lemma=agreement NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=149 CharacterOffsetEnd=150 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (ADJP (JJ willing)
+        (S
+          (VP (TO to)
+            (VP (VB spilt)
+              (NP (DT the) (NN difference))
+              (SBAR (IN if)
+                (S
+                  (NP (PRP we))
+                  (VP (MD can)
+                    (VP (VB come)
+                      (PRT (RP up))
+                      (PP (IN with)
+                        (NP (DT an) (JJ appropriate) (NN letter) (NN agreement))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, willing-3)
+nsubj(willing-3, He-1)
+nsubj:xsubj(spilt-5, He-1)
+cop(willing-3, is-2)
+mark(spilt-5, to-4)
+xcomp(willing-3, spilt-5)
+det(difference-7, the-6)
+dobj(spilt-5, difference-7)
+mark(come-11, if-8)
+nsubj(come-11, we-9)
+aux(come-11, can-10)
+advcl:if(spilt-5, come-11)
+compound:prt(come-11, up-12)
+case(agreement-17, with-13)
+det(agreement-17, an-14)
+amod(agreement-17, appropriate-15)
+compound(agreement-17, letter-16)
+nmod:with(come-11, agreement-17)
+punct(willing-3, .-18)
+
+Extracted the following NER entity mentions:
+He	PERSON
+
+Sentence #3 (20 tokens):
+He would like us to draft a letter stating that both parties are agreeing to a negotiated volume/dollar amount.
+
+Tokens:
+[Text=He CharacterOffsetBegin=152 CharacterOffsetEnd=154 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=155 CharacterOffsetEnd=160 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=161 CharacterOffsetEnd=165 PartOfSpeech=VB Lemma=like NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=166 CharacterOffsetEnd=168 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=169 CharacterOffsetEnd=171 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=draft CharacterOffsetBegin=172 CharacterOffsetEnd=177 PartOfSpeech=VB Lemma=draft NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=178 CharacterOffsetEnd=179 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=letter CharacterOffsetBegin=180 CharacterOffsetEnd=186 PartOfSpeech=NN Lemma=letter NamedEntityTag=O]
+[Text=stating CharacterOffsetBegin=187 CharacterOffsetEnd=194 PartOfSpeech=VBG Lemma=state NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=195 CharacterOffsetEnd=199 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=both CharacterOffsetBegin=200 CharacterOffsetEnd=204 PartOfSpeech=DT Lemma=both NamedEntityTag=O]
+[Text=parties CharacterOffsetBegin=205 CharacterOffsetEnd=212 PartOfSpeech=NNS Lemma=party NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=213 CharacterOffsetEnd=216 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=agreeing CharacterOffsetBegin=217 CharacterOffsetEnd=225 PartOfSpeech=VBG Lemma=agree NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=226 CharacterOffsetEnd=228 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=229 CharacterOffsetEnd=230 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=negotiated CharacterOffsetBegin=231 CharacterOffsetEnd=241 PartOfSpeech=VBN Lemma=negotiate NamedEntityTag=O]
+[Text=volume/dollar CharacterOffsetBegin=242 CharacterOffsetEnd=255 PartOfSpeech=NN Lemma=volume/dollar NamedEntityTag=O]
+[Text=amount CharacterOffsetBegin=256 CharacterOffsetEnd=262 PartOfSpeech=NN Lemma=amount NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=262 CharacterOffsetEnd=263 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (MD would)
+      (VP (VB like)
+        (S
+          (NP (PRP us))
+          (VP (TO to)
+            (VP (VB draft)
+              (NP
+                (NP (DT a) (NN letter))
+                (VP (VBG stating)
+                  (SBAR (IN that)
+                    (S
+                      (NP (DT both) (NNS parties))
+                      (VP (VBP are)
+                        (VP (VBG agreeing)
+                          (PP (TO to)
+                            (NP (DT a) (VBN negotiated) (NN volume/dollar) (NN amount))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, like-3)
+nsubj(like-3, He-1)
+aux(like-3, would-2)
+dobj(like-3, us-4)
+nsubj:xsubj(draft-6, us-4)
+mark(draft-6, to-5)
+xcomp(like-3, draft-6)
+det(letter-8, a-7)
+dobj(draft-6, letter-8)
+acl(letter-8, stating-9)
+mark(agreeing-14, that-10)
+det(parties-12, both-11)
+nsubj(agreeing-14, parties-12)
+aux(agreeing-14, are-13)
+ccomp(stating-9, agreeing-14)
+case(amount-19, to-15)
+det(amount-19, a-16)
+amod(amount-19, negotiated-17)
+compound(amount-19, volume/dollar-18)
+nmod:to(agreeing-14, amount-19)
+punct(like-3, .-20)
+
+Extracted the following NER entity mentions:
+He	PERSON
+
+Sentence #4 (20 tokens):
+The language should state that both parties are not setting a precedence and are not waiving any existing rights.
+
+Tokens:
+[Text=The CharacterOffsetBegin=265 CharacterOffsetEnd=268 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=language CharacterOffsetBegin=269 CharacterOffsetEnd=277 PartOfSpeech=NN Lemma=language NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=278 CharacterOffsetEnd=284 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=state CharacterOffsetBegin=285 CharacterOffsetEnd=290 PartOfSpeech=VB Lemma=state NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=291 CharacterOffsetEnd=295 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=both CharacterOffsetBegin=296 CharacterOffsetEnd=300 PartOfSpeech=DT Lemma=both NamedEntityTag=O]
+[Text=parties CharacterOffsetBegin=301 CharacterOffsetEnd=308 PartOfSpeech=NNS Lemma=party NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=309 CharacterOffsetEnd=312 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=313 CharacterOffsetEnd=316 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=setting CharacterOffsetBegin=317 CharacterOffsetEnd=324 PartOfSpeech=VBG Lemma=set NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=325 CharacterOffsetEnd=326 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=precedence CharacterOffsetBegin=327 CharacterOffsetEnd=337 PartOfSpeech=NN Lemma=precedence NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=338 CharacterOffsetEnd=341 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=342 CharacterOffsetEnd=345 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=346 CharacterOffsetEnd=349 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=waiving CharacterOffsetBegin=350 CharacterOffsetEnd=357 PartOfSpeech=VBG Lemma=waive NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=358 CharacterOffsetEnd=361 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=existing CharacterOffsetBegin=362 CharacterOffsetEnd=370 PartOfSpeech=VBG Lemma=exist NamedEntityTag=O]
+[Text=rights CharacterOffsetBegin=371 CharacterOffsetEnd=377 PartOfSpeech=NNS Lemma=rights NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=377 CharacterOffsetEnd=378 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN language))
+    (VP
+      (VP (MD should)
+        (VP (VB state)
+          (SBAR (IN that)
+            (S
+              (NP (DT both) (NNS parties))
+              (VP (VBP are) (RB not)
+                (VP (VBG setting)
+                  (NP (DT a) (NN precedence))))))))
+      (CC and)
+      (VP (VBP are) (RB not)
+        (VP (VBG waiving)
+          (NP (DT any) (VBG existing) (NNS rights)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, state-4)
+det(language-2, The-1)
+nsubj(state-4, language-2)
+nsubj(waiving-16, language-2)
+aux(state-4, should-3)
+mark(setting-10, that-5)
+det(parties-7, both-6)
+nsubj(setting-10, parties-7)
+aux(setting-10, are-8)
+neg(setting-10, not-9)
+ccomp(state-4, setting-10)
+det(precedence-12, a-11)
+dobj(setting-10, precedence-12)
+cc(state-4, and-13)
+aux(waiving-16, are-14)
+neg(waiving-16, not-15)
+conj:and(state-4, waiving-16)
+det(rights-19, any-17)
+amod(rights-19, existing-18)
+dobj(waiving-16, rights-19)
+punct(state-4, .-20)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (10 tokens):
+The volume/dollar amount is not based on anything specific.
+
+Tokens:
+[Text=The CharacterOffsetBegin=380 CharacterOffsetEnd=383 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=volume/dollar CharacterOffsetBegin=384 CharacterOffsetEnd=397 PartOfSpeech=NN Lemma=volume/dollar NamedEntityTag=O]
+[Text=amount CharacterOffsetBegin=398 CharacterOffsetEnd=404 PartOfSpeech=NN Lemma=amount NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=405 CharacterOffsetEnd=407 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=408 CharacterOffsetEnd=411 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=based CharacterOffsetBegin=412 CharacterOffsetEnd=417 PartOfSpeech=VBN Lemma=base NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=418 CharacterOffsetEnd=420 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=anything CharacterOffsetBegin=421 CharacterOffsetEnd=429 PartOfSpeech=NN Lemma=anything NamedEntityTag=O]
+[Text=specific CharacterOffsetBegin=430 CharacterOffsetEnd=438 PartOfSpeech=JJ Lemma=specific NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=438 CharacterOffsetEnd=439 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN volume/dollar) (NN amount))
+    (VP (VBZ is) (RB not)
+      (VP (VBN based)
+        (PP (IN on)
+          (NP (NN anything) (JJ specific)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, based-6)
+det(amount-3, The-1)
+compound(amount-3, volume/dollar-2)
+nsubjpass(based-6, amount-3)
+auxpass(based-6, is-4)
+neg(based-6, not-5)
+case(anything-8, on-7)
+nmod:on(based-6, anything-8)
+amod(anything-8, specific-9)
+punct(based-6, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #6 (8 tokens):
+Please do not send dispute notice response.
+
+Tokens:
+[Text=Please CharacterOffsetBegin=441 CharacterOffsetEnd=447 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=448 CharacterOffsetEnd=450 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=451 CharacterOffsetEnd=454 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=send CharacterOffsetBegin=455 CharacterOffsetEnd=459 PartOfSpeech=VB Lemma=send NamedEntityTag=O]
+[Text=dispute CharacterOffsetBegin=460 CharacterOffsetEnd=467 PartOfSpeech=NN Lemma=dispute NamedEntityTag=O]
+[Text=notice CharacterOffsetBegin=468 CharacterOffsetEnd=474 PartOfSpeech=NN Lemma=notice NamedEntityTag=O]
+[Text=response CharacterOffsetBegin=475 CharacterOffsetEnd=483 PartOfSpeech=NN Lemma=response NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=483 CharacterOffsetEnd=484 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Please)
+      (S
+        (VP (VB do) (RB not)
+          (VP (VB send)
+            (NP (NN dispute) (NN notice) (NN response))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Please-1)
+aux(send-4, do-2)
+neg(send-4, not-3)
+ccomp(Please-1, send-4)
+compound(response-7, dispute-5)
+compound(response-7, notice-6)
+dobj(send-4, response-7)
+punct(Please-1, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #7 (9 tokens):
+I believe that we will have a deal.
+
+Tokens:
+[Text=I CharacterOffsetBegin=486 CharacterOffsetEnd=487 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=believe CharacterOffsetBegin=488 CharacterOffsetEnd=495 PartOfSpeech=VBP Lemma=believe NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=496 CharacterOffsetEnd=500 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=501 CharacterOffsetEnd=503 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=504 CharacterOffsetEnd=508 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=509 CharacterOffsetEnd=513 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=514 CharacterOffsetEnd=515 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=deal CharacterOffsetBegin=516 CharacterOffsetEnd=520 PartOfSpeech=NN Lemma=deal NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=520 CharacterOffsetEnd=521 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP believe)
+      (SBAR (IN that)
+        (S
+          (NP (PRP we))
+          (VP (MD will)
+            (VP (VB have)
+              (NP (DT a) (NN deal)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, believe-2)
+nsubj(believe-2, I-1)
+mark(have-6, that-3)
+nsubj(have-6, we-4)
+aux(have-6, will-5)
+ccomp(believe-2, have-6)
+det(deal-8, a-7)
+dobj(have-6, deal-8)
+punct(believe-2, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #8 (16 tokens):
+He is also mentioned that we should see their response to the test protocol tomorrow.
+
+Tokens:
+[Text=He CharacterOffsetBegin=523 CharacterOffsetEnd=525 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=526 CharacterOffsetEnd=528 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=529 CharacterOffsetEnd=533 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=mentioned CharacterOffsetBegin=534 CharacterOffsetEnd=543 PartOfSpeech=VBN Lemma=mention NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=544 CharacterOffsetEnd=548 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=549 CharacterOffsetEnd=551 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=552 CharacterOffsetEnd=558 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=559 CharacterOffsetEnd=562 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=563 CharacterOffsetEnd=568 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=response CharacterOffsetBegin=569 CharacterOffsetEnd=577 PartOfSpeech=NN Lemma=response NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=578 CharacterOffsetEnd=580 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=581 CharacterOffsetEnd=584 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=test CharacterOffsetBegin=585 CharacterOffsetEnd=589 PartOfSpeech=NN Lemma=test NamedEntityTag=O]
+[Text=protocol CharacterOffsetBegin=590 CharacterOffsetEnd=598 PartOfSpeech=NN Lemma=protocol NamedEntityTag=O]
+[Text=tomorrow CharacterOffsetBegin=599 CharacterOffsetEnd=607 PartOfSpeech=NN Lemma=tomorrow NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=607 CharacterOffsetEnd=608 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (ADVP (RB also))
+      (VP (VBN mentioned)
+        (SBAR (IN that)
+          (S
+            (NP (PRP we))
+            (VP (MD should)
+              (VP (VB see)
+                (NP (PRP$ their) (NN response))
+                (PP (TO to)
+                  (NP (DT the) (NN test) (NN protocol)))
+                (NP-TMP (NN tomorrow))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, mentioned-4)
+nsubjpass(mentioned-4, He-1)
+auxpass(mentioned-4, is-2)
+advmod(mentioned-4, also-3)
+mark(see-8, that-5)
+nsubj(see-8, we-6)
+aux(see-8, should-7)
+ccomp(mentioned-4, see-8)
+nmod:poss(response-10, their-9)
+dobj(see-8, response-10)
+case(protocol-14, to-11)
+det(protocol-14, the-12)
+compound(protocol-14, test-13)
+nmod:to(see-8, protocol-14)
+nmod:tmod(see-8, tomorrow-15)
+punct(mentioned-4, .-16)
+
+Extracted the following NER entity mentions:
+He	PERSON
+
+Sentence #9 (12 tokens):
+They received the CO2 response and it was what he expected.
+
+Tokens:
+[Text=They CharacterOffsetBegin=610 CharacterOffsetEnd=614 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=received CharacterOffsetBegin=615 CharacterOffsetEnd=623 PartOfSpeech=VBD Lemma=receive NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=624 CharacterOffsetEnd=627 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=CO2 CharacterOffsetBegin=628 CharacterOffsetEnd=631 PartOfSpeech=NN Lemma=co2 NamedEntityTag=O]
+[Text=response CharacterOffsetBegin=632 CharacterOffsetEnd=640 PartOfSpeech=NN Lemma=response NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=641 CharacterOffsetEnd=644 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=645 CharacterOffsetEnd=647 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=648 CharacterOffsetEnd=651 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=652 CharacterOffsetEnd=656 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=657 CharacterOffsetEnd=659 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=expected CharacterOffsetBegin=660 CharacterOffsetEnd=668 PartOfSpeech=VBD Lemma=expect NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=668 CharacterOffsetEnd=669 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP They))
+      (VP (VBD received)
+        (NP (DT the) (NN CO2) (NN response))))
+    (CC and)
+    (S
+      (NP (PRP it))
+      (VP (VBD was)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (PRP he))
+            (VP (VBD expected))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, received-2)
+nsubj(received-2, They-1)
+det(response-5, the-3)
+compound(response-5, CO2-4)
+dobj(received-2, response-5)
+cc(received-2, and-6)
+nsubj(was-8, it-7)
+conj:and(received-2, was-8)
+dobj(expected-11, what-9)
+nsubj(expected-11, he-10)
+ccomp(was-8, expected-11)
+punct(received-2, .-12)
+
+Extracted the following NER entity mentions:
+he	PERSON
+
+Sentence #10 (18 tokens):
+They are currently claiming Force Majuere on their Praxair contract, but have not been sued yet.
+
+Tokens:
+[Text=They CharacterOffsetBegin=671 CharacterOffsetEnd=675 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=676 CharacterOffsetEnd=679 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=currently CharacterOffsetBegin=680 CharacterOffsetEnd=689 PartOfSpeech=RB Lemma=currently NamedEntityTag=O]
+[Text=claiming CharacterOffsetBegin=690 CharacterOffsetEnd=698 PartOfSpeech=VBG Lemma=claim NamedEntityTag=O]
+[Text=Force CharacterOffsetBegin=699 CharacterOffsetEnd=704 PartOfSpeech=NNP Lemma=Force NamedEntityTag=O]
+[Text=Majuere CharacterOffsetBegin=705 CharacterOffsetEnd=712 PartOfSpeech=NNP Lemma=Majuere NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=713 CharacterOffsetEnd=715 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=716 CharacterOffsetEnd=721 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=Praxair CharacterOffsetBegin=722 CharacterOffsetEnd=729 PartOfSpeech=NNP Lemma=Praxair NamedEntityTag=ORGANIZATION]
+[Text=contract CharacterOffsetBegin=730 CharacterOffsetEnd=738 PartOfSpeech=NN Lemma=contract NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=738 CharacterOffsetEnd=739 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=740 CharacterOffsetEnd=743 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=744 CharacterOffsetEnd=748 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=749 CharacterOffsetEnd=752 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=753 CharacterOffsetEnd=757 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=sued CharacterOffsetBegin=758 CharacterOffsetEnd=762 PartOfSpeech=VBN Lemma=sue NamedEntityTag=O]
+[Text=yet CharacterOffsetBegin=763 CharacterOffsetEnd=766 PartOfSpeech=RB Lemma=yet NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=766 CharacterOffsetEnd=767 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP
+      (VP (VBP are)
+        (ADVP (RB currently))
+        (VP (VBG claiming)
+          (NP
+            (NP (NNP Force) (NNP Majuere))
+            (PP (IN on)
+              (NP (PRP$ their) (NNP Praxair) (NN contract))))))
+      (, ,)
+      (CC but)
+      (VP (VBP have) (RB not)
+        (VP (VBN been)
+          (VP (VBN sued)
+            (ADVP (RB yet))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, claiming-4)
+nsubj(claiming-4, They-1)
+nsubjpass(sued-16, They-1)
+aux(claiming-4, are-2)
+advmod(claiming-4, currently-3)
+compound(Majuere-6, Force-5)
+dobj(claiming-4, Majuere-6)
+case(contract-10, on-7)
+nmod:poss(contract-10, their-8)
+compound(contract-10, Praxair-9)
+nmod:on(Majuere-6, contract-10)
+punct(claiming-4, ,-11)
+cc(claiming-4, but-12)
+aux(sued-16, have-13)
+neg(sued-16, not-14)
+auxpass(sued-16, been-15)
+conj:but(claiming-4, sued-16)
+advmod(sued-16, yet-17)
+punct(claiming-4, .-18)
+
+Extracted the following NER entity mentions:
+Praxair	ORGANIZATION
+
+Sentence #11 (27 tokens):
+They were pleased with the fact that we are posting a quality reminder and are feeling better about their chances of a commercial solution with CIG.
+
+Tokens:
+[Text=They CharacterOffsetBegin=768 CharacterOffsetEnd=772 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=773 CharacterOffsetEnd=777 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=pleased CharacterOffsetBegin=778 CharacterOffsetEnd=785 PartOfSpeech=VBN Lemma=please NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=786 CharacterOffsetEnd=790 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=791 CharacterOffsetEnd=794 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=fact CharacterOffsetBegin=795 CharacterOffsetEnd=799 PartOfSpeech=NN Lemma=fact NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=800 CharacterOffsetEnd=804 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=805 CharacterOffsetEnd=807 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=808 CharacterOffsetEnd=811 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=posting CharacterOffsetBegin=812 CharacterOffsetEnd=819 PartOfSpeech=VBG Lemma=post NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=820 CharacterOffsetEnd=821 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=quality CharacterOffsetBegin=822 CharacterOffsetEnd=829 PartOfSpeech=NN Lemma=quality NamedEntityTag=O]
+[Text=reminder CharacterOffsetBegin=830 CharacterOffsetEnd=838 PartOfSpeech=NN Lemma=reminder NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=839 CharacterOffsetEnd=842 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=843 CharacterOffsetEnd=846 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=feeling CharacterOffsetBegin=847 CharacterOffsetEnd=854 PartOfSpeech=VBG Lemma=feel NamedEntityTag=O]
+[Text=better CharacterOffsetBegin=855 CharacterOffsetEnd=861 PartOfSpeech=JJR Lemma=better NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=862 CharacterOffsetEnd=867 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=868 CharacterOffsetEnd=873 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=chances CharacterOffsetBegin=874 CharacterOffsetEnd=881 PartOfSpeech=NNS Lemma=chance NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=882 CharacterOffsetEnd=884 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=885 CharacterOffsetEnd=886 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=commercial CharacterOffsetBegin=887 CharacterOffsetEnd=897 PartOfSpeech=JJ Lemma=commercial NamedEntityTag=O]
+[Text=solution CharacterOffsetBegin=898 CharacterOffsetEnd=906 PartOfSpeech=NN Lemma=solution NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=907 CharacterOffsetEnd=911 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=CIG CharacterOffsetBegin=912 CharacterOffsetEnd=915 PartOfSpeech=NN Lemma=cig NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=915 CharacterOffsetEnd=916 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP
+      (VP (VBD were)
+        (VP (VBN pleased)
+          (PP (IN with)
+            (NP (DT the) (NN fact)))
+          (SBAR (IN that)
+            (S
+              (NP (PRP we))
+              (VP (VBP are)
+                (VP (VBG posting)
+                  (NP (DT a) (NN quality) (NN reminder))))))))
+      (CC and)
+      (VP (VBP are)
+        (VP (VBG feeling)
+          (NP (JJR better))
+          (PP (IN about)
+            (NP
+              (NP (PRP$ their) (NNS chances))
+              (PP (IN of)
+                (NP
+                  (NP (DT a) (JJ commercial) (NN solution))
+                  (PP (IN with)
+                    (NP (NN CIG))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, pleased-3)
+nsubjpass(pleased-3, They-1)
+nsubjpass(feeling-16, They-1)
+auxpass(pleased-3, were-2)
+case(fact-6, with-4)
+det(fact-6, the-5)
+nmod:with(pleased-3, fact-6)
+mark(posting-10, that-7)
+nsubj(posting-10, we-8)
+aux(posting-10, are-9)
+ccomp(pleased-3, posting-10)
+det(reminder-13, a-11)
+compound(reminder-13, quality-12)
+dobj(posting-10, reminder-13)
+cc(pleased-3, and-14)
+aux(feeling-16, are-15)
+conj:and(pleased-3, feeling-16)
+dobj(feeling-16, better-17)
+case(chances-20, about-18)
+nmod:poss(chances-20, their-19)
+nmod:about(feeling-16, chances-20)
+case(solution-24, of-21)
+det(solution-24, a-22)
+amod(solution-24, commercial-23)
+nmod:of(chances-20, solution-24)
+case(CIG-26, with-25)
+nmod:with(solution-24, CIG-26)
+punct(pleased-3, .-27)
+
+Extracted the following NER entity mentions:
+
+Sentence #12 (18 tokens):
+They are also planning to send us some kind of communication (demand letter) on EPPI.
+
+Tokens:
+[Text=They CharacterOffsetBegin=918 CharacterOffsetEnd=922 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=923 CharacterOffsetEnd=926 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=927 CharacterOffsetEnd=931 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=planning CharacterOffsetBegin=932 CharacterOffsetEnd=940 PartOfSpeech=VBG Lemma=plan NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=941 CharacterOffsetEnd=943 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=send CharacterOffsetBegin=944 CharacterOffsetEnd=948 PartOfSpeech=VB Lemma=send NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=949 CharacterOffsetEnd=951 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=952 CharacterOffsetEnd=956 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=kind CharacterOffsetBegin=957 CharacterOffsetEnd=961 PartOfSpeech=NN Lemma=kind NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=962 CharacterOffsetEnd=964 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=communication CharacterOffsetBegin=965 CharacterOffsetEnd=978 PartOfSpeech=NN Lemma=communication NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=979 CharacterOffsetEnd=980 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=demand CharacterOffsetBegin=980 CharacterOffsetEnd=986 PartOfSpeech=NN Lemma=demand NamedEntityTag=O]
+[Text=letter CharacterOffsetBegin=987 CharacterOffsetEnd=993 PartOfSpeech=NN Lemma=letter NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=993 CharacterOffsetEnd=994 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=995 CharacterOffsetEnd=997 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=EPPI CharacterOffsetBegin=998 CharacterOffsetEnd=1002 PartOfSpeech=NN Lemma=eppi NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1002 CharacterOffsetEnd=1003 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP are)
+      (ADVP (RB also))
+      (VP (VBG planning)
+        (S
+          (VP (TO to)
+            (VP (VB send)
+              (NP (PRP us))
+              (NP
+                (NP (DT some) (NN kind))
+                (PP (IN of)
+                  (NP
+                    (NP
+                      (NP (NN communication))
+                      (PRN (-LRB- -LRB-)
+                        (NP (NN demand) (NN letter))
+                        (-RRB- -RRB-)))
+                    (PP (IN on)
+                      (NP (NN EPPI)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, planning-4)
+nsubj(planning-4, They-1)
+nsubj:xsubj(send-6, They-1)
+aux(planning-4, are-2)
+advmod(planning-4, also-3)
+mark(send-6, to-5)
+xcomp(planning-4, send-6)
+iobj(send-6, us-7)
+det(kind-9, some-8)
+dobj(send-6, kind-9)
+case(communication-11, of-10)
+nmod:of(kind-9, communication-11)
+punct(letter-14, -LRB--12)
+compound(letter-14, demand-13)
+appos(communication-11, letter-14)
+punct(letter-14, -RRB--15)
+case(EPPI-17, on-16)
+nmod:on(communication-11, EPPI-17)
+punct(planning-4, .-18)
+
+Extracted the following NER entity mentions:
+
+Sentence #13 (6 tokens):
+Sorry for the abbreviated note.
+
+Tokens:
+[Text=Sorry CharacterOffsetBegin=1005 CharacterOffsetEnd=1010 PartOfSpeech=JJ Lemma=sorry NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=1011 CharacterOffsetEnd=1014 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1015 CharacterOffsetEnd=1018 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=abbreviated CharacterOffsetBegin=1019 CharacterOffsetEnd=1030 PartOfSpeech=JJ Lemma=abbreviated NamedEntityTag=O]
+[Text=note CharacterOffsetBegin=1031 CharacterOffsetEnd=1035 PartOfSpeech=NN Lemma=note NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1035 CharacterOffsetEnd=1036 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (JJ Sorry))
+    (PP (IN for)
+      (NP (DT the) (JJ abbreviated) (NN note)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Sorry-1)
+case(note-5, for-2)
+det(note-5, the-3)
+amod(note-5, abbreviated-4)
+nmod:for(Sorry-1, note-5)
+punct(Sorry-1, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #14 (8 tokens):
+If you have questions, call me.
+
+Tokens:
+[Text=If CharacterOffsetBegin=1038 CharacterOffsetEnd=1040 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=1041 CharacterOffsetEnd=1044 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=1045 CharacterOffsetEnd=1049 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=questions CharacterOffsetBegin=1050 CharacterOffsetEnd=1059 PartOfSpeech=NNS Lemma=question NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1059 CharacterOffsetEnd=1060 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=call CharacterOffsetBegin=1061 CharacterOffsetEnd=1065 PartOfSpeech=VB Lemma=call NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=1066 CharacterOffsetEnd=1068 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1068 CharacterOffsetEnd=1069 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP have)
+          (NP (NNS questions)))))
+    (, ,)
+    (VP (VB call)
+      (NP (PRP me)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, call-6)
+mark(have-3, If-1)
+nsubj(have-3, you-2)
+advcl:if(call-6, have-3)
+dobj(have-3, questions-4)
+punct(call-6, ,-5)
+dobj(call-6, me-7)
+punct(call-6, .-8)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(7,1,[1,2]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(14,7,[7,8]) -> (1,1,[1,2]), that is: "me" -> "I"
+
+Coreference set:
+	(2,1,[1,2]) -> (1,5,[5,10]), that is: "He" -> "Terry regarding the September dispute"
+	(3,1,[1,2]) -> (1,5,[5,10]), that is: "He" -> "Terry regarding the September dispute"
+
+Coreference set:
+	(3,4,[4,5]) -> (2,9,[9,10]), that is: "us" -> "we"
+
+Coreference set:
+	(5,3,[1,4]) -> (3,19,[16,20]), that is: "The volume/dollar amount" -> "a negotiated volume/dollar amount"
+
+Coreference set:
+	(8,10,[9,11]) -> (6,7,[5,8]), that is: "their response" -> "dispute notice response"
+
+Coreference set:
+	(8,6,[6,7]) -> (7,4,[4,5]), that is: "we" -> "we"
+	(11,8,[8,9]) -> (7,4,[4,5]), that is: "we" -> "we"
+	(12,7,[7,8]) -> (7,4,[4,5]), that is: "us" -> "we"
+
+Coreference set:
+	(9,10,[10,11]) -> (8,1,[1,2]), that is: "he" -> "He"
+
+Coreference set:
+	(9,1,[1,2]) -> (8,9,[9,10]), that is: "They" -> "their"
+	(10,1,[1,2]) -> (8,9,[9,10]), that is: "They" -> "their"
+	(10,8,[8,9]) -> (8,9,[9,10]), that is: "their" -> "their"
+	(11,1,[1,2]) -> (8,9,[9,10]), that is: "They" -> "their"
+	(11,19,[19,20]) -> (8,9,[9,10]), that is: "their" -> "their"
+	(12,1,[1,2]) -> (8,9,[9,10]), that is: "They" -> "their"
+
+Coreference set:
+	(9,7,[7,8]) -> (9,5,[3,6]), that is: "it" -> "the CO2 response"

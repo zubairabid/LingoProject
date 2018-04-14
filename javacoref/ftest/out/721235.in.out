@@ -1,0 +1,211 @@
+Document: ID=721235.in (4 sentences, 47 tokens)
+
+Sentence #1 (12 tokens):
+Anne,
+I just got another phone call from Palo Alto.
+
+Tokens:
+[Text=Anne CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Anne NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=got CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=VBD Lemma=get NamedEntityTag=O]
+[Text=another CharacterOffsetBegin=17 CharacterOffsetEnd=24 PartOfSpeech=DT Lemma=another NamedEntityTag=O]
+[Text=phone CharacterOffsetBegin=25 CharacterOffsetEnd=30 PartOfSpeech=NN Lemma=phone NamedEntityTag=O]
+[Text=call CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=call NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Palo CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=NNP Lemma=Palo NamedEntityTag=CITY]
+[Text=Alto CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=NNP Lemma=Alto NamedEntityTag=CITY]
+[Text=. CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Anne))
+    (, ,)
+    (NP (PRP I))
+    (ADVP (RB just))
+    (VP (VBD got)
+      (NP (DT another) (NN phone) (NN call))
+      (PP (IN from)
+        (NP (NNP Palo) (NNP Alto))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, got-5)
+nsubj(got-5, Anne-1)
+punct(got-5, ,-2)
+nsubj(got-5, I-3)
+advmod(got-5, just-4)
+det(call-8, another-6)
+compound(call-8, phone-7)
+dobj(got-5, call-8)
+case(Alto-11, from-9)
+compound(Alto-11, Palo-10)
+nmod:from(got-5, Alto-11)
+punct(got-5, .-12)
+
+Extracted the following NER entity mentions:
+Anne	PERSON
+Palo Alto	CITY
+
+Sentence #2 (18 tokens):
+They still have not received three of their confirms from deals done around the 20th of July.
+
+Tokens:
+[Text=They CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=58 CharacterOffsetEnd=63 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=64 CharacterOffsetEnd=68 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=received CharacterOffsetBegin=73 CharacterOffsetEnd=81 PartOfSpeech=VBN Lemma=receive NamedEntityTag=O]
+[Text=three CharacterOffsetBegin=82 CharacterOffsetEnd=87 PartOfSpeech=CD Lemma=three NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0]
+[Text=of CharacterOffsetBegin=88 CharacterOffsetEnd=90 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=91 CharacterOffsetEnd=96 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=confirms CharacterOffsetBegin=97 CharacterOffsetEnd=105 PartOfSpeech=VBZ Lemma=confirm NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=106 CharacterOffsetEnd=110 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=deals CharacterOffsetBegin=111 CharacterOffsetEnd=116 PartOfSpeech=NNS Lemma=deal NamedEntityTag=O]
+[Text=done CharacterOffsetBegin=117 CharacterOffsetEnd=121 PartOfSpeech=VBN Lemma=do NamedEntityTag=O]
+[Text=around CharacterOffsetBegin=122 CharacterOffsetEnd=128 PartOfSpeech=IN Lemma=around NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=129 CharacterOffsetEnd=132 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=20th CharacterOffsetBegin=133 CharacterOffsetEnd=137 PartOfSpeech=JJ Lemma=20th NamedEntityTag=DATE NormalizedNamedEntityTag=****0720]
+[Text=of CharacterOffsetBegin=138 CharacterOffsetEnd=140 PartOfSpeech=IN Lemma=of NamedEntityTag=DATE NormalizedNamedEntityTag=****0720]
+[Text=July CharacterOffsetBegin=141 CharacterOffsetEnd=145 PartOfSpeech=NNP Lemma=July NamedEntityTag=DATE NormalizedNamedEntityTag=****0720]
+[Text=. CharacterOffsetBegin=145 CharacterOffsetEnd=146 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (ADVP (RB still))
+    (VP (VBP have) (RB not)
+      (VP (VBN received)
+        (SBAR
+          (S
+            (NP
+              (NP (CD three))
+              (PP (IN of)
+                (NP (PRP$ their))))
+            (VP (VBZ confirms)
+              (PP (IN from)
+                (NP
+                  (NP (NNS deals))
+                  (VP (VBN done)
+                    (PP (IN around)
+                      (NP
+                        (NP (DT the) (JJ 20th))
+                        (PP (IN of)
+                          (NP (NNP July)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, received-5)
+nsubj(received-5, They-1)
+advmod(received-5, still-2)
+aux(received-5, have-3)
+neg(received-5, not-4)
+det:qmod(their-8, three-6)
+mwe(three-6, of-7)
+nsubj(confirms-9, their-8)
+ccomp(received-5, confirms-9)
+case(deals-11, from-10)
+nmod:from(confirms-9, deals-11)
+acl(deals-11, done-12)
+case(20th-15, around-13)
+det(20th-15, the-14)
+nmod:around(done-12, 20th-15)
+case(July-17, of-16)
+nmod:of(20th-15, July-17)
+punct(received-5, .-18)
+
+Extracted the following NER entity mentions:
+three	NUMBER
+20th of July	DATE
+
+Sentence #3 (15 tokens):
+They have ceased to do additional business with us until they receive these confirms.
+
+Tokens:
+[Text=They CharacterOffsetBegin=148 CharacterOffsetEnd=152 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=153 CharacterOffsetEnd=157 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=ceased CharacterOffsetBegin=158 CharacterOffsetEnd=164 PartOfSpeech=VBN Lemma=cease NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=165 CharacterOffsetEnd=167 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=168 CharacterOffsetEnd=170 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=additional CharacterOffsetBegin=171 CharacterOffsetEnd=181 PartOfSpeech=JJ Lemma=additional NamedEntityTag=O]
+[Text=business CharacterOffsetBegin=182 CharacterOffsetEnd=190 PartOfSpeech=NN Lemma=business NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=191 CharacterOffsetEnd=195 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=196 CharacterOffsetEnd=198 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=until CharacterOffsetBegin=199 CharacterOffsetEnd=204 PartOfSpeech=IN Lemma=until NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=205 CharacterOffsetEnd=209 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=receive CharacterOffsetBegin=210 CharacterOffsetEnd=217 PartOfSpeech=VBP Lemma=receive NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=218 CharacterOffsetEnd=223 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=confirms CharacterOffsetBegin=224 CharacterOffsetEnd=232 PartOfSpeech=VBZ Lemma=confirm NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=232 CharacterOffsetEnd=233 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP have)
+      (VP (VBN ceased)
+        (S
+          (VP (TO to)
+            (VP (VB do)
+              (NP (JJ additional) (NN business))
+              (PP (IN with)
+                (NP (PRP us)))
+              (SBAR (IN until)
+                (S
+                  (NP (PRP they))
+                  (VP (VBP receive)
+                    (SBAR
+                      (S
+                        (NP (DT these))
+                        (VP (VBZ confirms))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ceased-3)
+nsubj(ceased-3, They-1)
+nsubj:xsubj(do-5, They-1)
+aux(ceased-3, have-2)
+mark(do-5, to-4)
+xcomp(ceased-3, do-5)
+amod(business-7, additional-6)
+dobj(do-5, business-7)
+case(us-9, with-8)
+nmod:with(do-5, us-9)
+mark(receive-12, until-10)
+nsubj(receive-12, they-11)
+advcl:until(do-5, receive-12)
+nsubj(confirms-14, these-13)
+ccomp(receive-12, confirms-14)
+punct(ceased-3, .-15)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (2 tokens):
+thanks,
+
+Tokens:
+[Text=thanks CharacterOffsetBegin=234 CharacterOffsetEnd=240 PartOfSpeech=NNS Lemma=thanks NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=240 CharacterOffsetEnd=241 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (PP (NNS thanks))
+    (, ,)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, thanks-1)
+punct(thanks-1, ,-2)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(3,1,[1,2]) -> (2,1,[1,2]), that is: "They" -> "They"
+	(3,11,[11,12]) -> (2,1,[1,2]), that is: "they" -> "They"

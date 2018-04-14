@@ -1,0 +1,145 @@
+Document: ID=1114371.in (4 sentences, 27 tokens)
+
+Sentence #1 (7 tokens):
+Any interest in participating in this?
+
+Tokens:
+[Text=Any CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=interest CharacterOffsetBegin=4 CharacterOffsetEnd=12 PartOfSpeech=NN Lemma=interest NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=participating CharacterOffsetBegin=16 CharacterOffsetEnd=29 PartOfSpeech=VBG Lemma=participate NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (DT Any) (NN interest))
+    (PP (IN in)
+      (S
+        (VP (VBG participating)
+          (PP (IN in)
+            (NP (DT this))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, interest-2)
+det(interest-2, Any-1)
+mark(participating-4, in-3)
+acl:in(interest-2, participating-4)
+case(this-6, in-5)
+nmod:in(participating-4, this-6)
+punct(interest-2, ?-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (16 tokens):
+If so, we need to get moving, since their deadline is Nov. 2.
+
+Tokens:
+[Text=If CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=VBP Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=moving CharacterOffsetBegin=62 CharacterOffsetEnd=68 PartOfSpeech=VBG Lemma=move NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=since CharacterOffsetBegin=70 CharacterOffsetEnd=75 PartOfSpeech=IN Lemma=since NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=76 CharacterOffsetEnd=81 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=deadline CharacterOffsetBegin=82 CharacterOffsetEnd=90 PartOfSpeech=NN Lemma=deadline NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=91 CharacterOffsetEnd=93 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=Nov. CharacterOffsetBegin=94 CharacterOffsetEnd=98 PartOfSpeech=NNP Lemma=Nov. NamedEntityTag=DATE NormalizedNamedEntityTag=****1102]
+[Text=2 CharacterOffsetBegin=99 CharacterOffsetEnd=100 PartOfSpeech=CD Lemma=2 NamedEntityTag=DATE NormalizedNamedEntityTag=****1102]
+[Text=. CharacterOffsetBegin=100 CharacterOffsetEnd=101 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (FRAG
+        (ADVP (RB so))))
+    (, ,)
+    (NP (PRP we))
+    (VP (VBP need)
+      (S
+        (VP (TO to)
+          (VP (VB get)
+            (S
+              (VP (VBG moving)))
+            (, ,)
+            (SBAR (IN since)
+              (S
+                (NP (PRP$ their) (NN deadline))
+                (VP (VBZ is)
+                  (NP-TMP (NNP Nov.) (CD 2)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, need-5)
+mark(so-2, If-1)
+advcl:if(need-5, so-2)
+punct(need-5, ,-3)
+nsubj(need-5, we-4)
+nsubj:xsubj(get-7, we-4)
+mark(get-7, to-6)
+xcomp(need-5, get-7)
+xcomp(get-7, moving-8)
+punct(get-7, ,-9)
+mark(is-13, since-10)
+nmod:poss(deadline-12, their-11)
+nsubj(is-13, deadline-12)
+advcl:since(get-7, is-13)
+nmod:tmod(is-13, Nov.-14)
+nummod(Nov.-14, 2-15)
+punct(need-5, .-16)
+
+Extracted the following NER entity mentions:
+Nov. 2	DATE
+
+Sentence #3 (3 tokens):
+Please advise.
+
+Tokens:
+[Text=Please CharacterOffsetBegin=103 CharacterOffsetEnd=109 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=advise CharacterOffsetBegin=110 CharacterOffsetEnd=116 PartOfSpeech=VB Lemma=advise NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=116 CharacterOffsetEnd=117 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Please)
+      (VP (VB advise)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Please-1)
+xcomp(Please-1, advise-2)
+punct(Please-1, .-3)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (1 tokens):
+Eric
+
+Tokens:
+[Text=Eric CharacterOffsetBegin=119 CharacterOffsetEnd=123 PartOfSpeech=NNP Lemma=Eric NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Eric)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Eric-1)
+
+Extracted the following NER entity mentions:
+Eric	PERSON
+
+Coreference set:
+	(2,11,[11,12]) -> (1,6,[6,7]), that is: "their" -> "this"

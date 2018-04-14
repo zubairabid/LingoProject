@@ -1,0 +1,2328 @@
+Document: ID=451314.in (13 sentences, 647 tokens)
+
+Sentence #1 (12 tokens):
+I attended both the House and Senate energy committee hearings today.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=attended CharacterOffsetBegin=2 CharacterOffsetEnd=10 PartOfSpeech=VBD Lemma=attend NamedEntityTag=O]
+[Text=both CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=CC Lemma=both NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=House CharacterOffsetBegin=20 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=House NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Senate CharacterOffsetBegin=30 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Senate NamedEntityTag=ORGANIZATION]
+[Text=energy CharacterOffsetBegin=37 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=energy NamedEntityTag=O]
+[Text=committee CharacterOffsetBegin=44 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=committee NamedEntityTag=O]
+[Text=hearings CharacterOffsetBegin=54 CharacterOffsetEnd=62 PartOfSpeech=NNS Lemma=hearing NamedEntityTag=O]
+[Text=today CharacterOffsetBegin=63 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=today NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD attended)
+      (PP (CC both)
+        (NP (DT the) (NNP House)
+          (CC and)
+          (NNP Senate) (NN energy) (NN committee) (NNS hearings)))
+      (NP-TMP (NN today)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, attended-2)
+nsubj(attended-2, I-1)
+case(House-5, both-3)
+det(House-5, the-4)
+nmod:both(attended-2, House-5)
+cc(House-5, and-6)
+compound(hearings-10, Senate-7)
+compound(hearings-10, energy-8)
+compound(hearings-10, committee-9)
+nmod:both(attended-2, hearings-10)
+conj:and(House-5, hearings-10)
+nmod:tmod(attended-2, today-11)
+punct(attended-2, .-12)
+
+Extracted the following NER entity mentions:
+House	ORGANIZATION
+Senate	ORGANIZATION
+
+Sentence #2 (14 tokens):
+House
+hearing was in the Barton Subcommittee (Energy & Air Quality).
+
+Tokens:
+[Text=House CharacterOffsetBegin=71 CharacterOffsetEnd=76 PartOfSpeech=NNP Lemma=House NamedEntityTag=O]
+[Text=hearing CharacterOffsetBegin=77 CharacterOffsetEnd=84 PartOfSpeech=NN Lemma=hearing NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Barton CharacterOffsetBegin=96 CharacterOffsetEnd=102 PartOfSpeech=NNP Lemma=Barton NamedEntityTag=ORGANIZATION]
+[Text=Subcommittee CharacterOffsetBegin=103 CharacterOffsetEnd=115 PartOfSpeech=NNP Lemma=Subcommittee NamedEntityTag=ORGANIZATION]
+[Text=-LRB- CharacterOffsetBegin=116 CharacterOffsetEnd=117 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=ORGANIZATION]
+[Text=Energy CharacterOffsetBegin=117 CharacterOffsetEnd=123 PartOfSpeech=NNP Lemma=Energy NamedEntityTag=ORGANIZATION]
+[Text=& CharacterOffsetBegin=124 CharacterOffsetEnd=125 PartOfSpeech=CC Lemma=& NamedEntityTag=ORGANIZATION]
+[Text=Air CharacterOffsetBegin=126 CharacterOffsetEnd=129 PartOfSpeech=NNP Lemma=Air NamedEntityTag=ORGANIZATION]
+[Text=Quality CharacterOffsetBegin=130 CharacterOffsetEnd=137 PartOfSpeech=NNP Lemma=Quality NamedEntityTag=ORGANIZATION]
+[Text=-RRB- CharacterOffsetBegin=137 CharacterOffsetEnd=138 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=138 CharacterOffsetEnd=139 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP House) (NN hearing))
+    (VP (VBD was)
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NNP Barton) (NNP Subcommittee))
+          (PRN (-LRB- -LRB-)
+            (NP
+              (NP (NNP Energy))
+              (CC &)
+              (NP (NNP Air) (NNP Quality)))
+            (-RRB- -RRB-)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Subcommittee-7)
+compound(hearing-2, House-1)
+nsubj(Subcommittee-7, hearing-2)
+cop(Subcommittee-7, was-3)
+case(Subcommittee-7, in-4)
+det(Subcommittee-7, the-5)
+compound(Subcommittee-7, Barton-6)
+punct(Energy-9, -LRB--8)
+dep(Subcommittee-7, Energy-9)
+cc(Energy-9, &-10)
+compound(Quality-12, Air-11)
+dep(Subcommittee-7, Quality-12)
+conj:&(Energy-9, Quality-12)
+punct(Energy-9, -RRB--13)
+punct(Subcommittee-7, .-14)
+
+Extracted the following NER entity mentions:
+Barton Subcommittee -LRB-Energy & Air Quality	ORGANIZATION
+
+Sentence #3 (20 tokens):
+Senate
+hearing was on last week's FERC order on a "soft price cap" and related
+issues.
+
+Tokens:
+[Text=Senate CharacterOffsetBegin=141 CharacterOffsetEnd=147 PartOfSpeech=NNP Lemma=Senate NamedEntityTag=ORGANIZATION]
+[Text=hearing CharacterOffsetBegin=148 CharacterOffsetEnd=155 PartOfSpeech=NN Lemma=hearing NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=156 CharacterOffsetEnd=159 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=160 CharacterOffsetEnd=162 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=last CharacterOffsetBegin=163 CharacterOffsetEnd=167 PartOfSpeech=JJ Lemma=last NamedEntityTag=O]
+[Text=week CharacterOffsetBegin=168 CharacterOffsetEnd=172 PartOfSpeech=NN Lemma=week NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=172 CharacterOffsetEnd=174 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=FERC CharacterOffsetBegin=175 CharacterOffsetEnd=179 PartOfSpeech=NNP Lemma=FERC NamedEntityTag=ORGANIZATION]
+[Text=order CharacterOffsetBegin=180 CharacterOffsetEnd=185 PartOfSpeech=NN Lemma=order NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=186 CharacterOffsetEnd=188 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=189 CharacterOffsetEnd=190 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=191 CharacterOffsetEnd=192 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=soft CharacterOffsetBegin=192 CharacterOffsetEnd=196 PartOfSpeech=JJ Lemma=soft NamedEntityTag=O]
+[Text=price CharacterOffsetBegin=197 CharacterOffsetEnd=202 PartOfSpeech=NN Lemma=price NamedEntityTag=O]
+[Text=cap CharacterOffsetBegin=203 CharacterOffsetEnd=206 PartOfSpeech=NN Lemma=cap NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=206 CharacterOffsetEnd=207 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=208 CharacterOffsetEnd=211 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=related CharacterOffsetBegin=212 CharacterOffsetEnd=219 PartOfSpeech=JJ Lemma=related NamedEntityTag=O]
+[Text=issues CharacterOffsetBegin=220 CharacterOffsetEnd=226 PartOfSpeech=NNS Lemma=issue NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=226 CharacterOffsetEnd=227 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Senate) (NN hearing))
+    (VP (VBD was)
+      (PP (IN on)
+        (NP
+          (NP (JJ last) (NN week) (POS 's))
+          (NNP FERC) (NN order)))
+      (PP (IN on)
+        (NP
+          (NP (DT a) (`` ``) (JJ soft) (NN price) (NN cap) ('' ''))
+          (CC and)
+          (NP (JJ related) (NNS issues)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, order-9)
+compound(hearing-2, Senate-1)
+nsubj(order-9, hearing-2)
+cop(order-9, was-3)
+case(order-9, on-4)
+amod(week-6, last-5)
+nmod:poss(order-9, week-6)
+case(week-6, 's-7)
+compound(order-9, FERC-8)
+case(cap-15, on-10)
+det(cap-15, a-11)
+punct(cap-15, ``-12)
+amod(cap-15, soft-13)
+compound(cap-15, price-14)
+nmod:on(order-9, cap-15)
+punct(cap-15, ''-16)
+cc(cap-15, and-17)
+amod(issues-19, related-18)
+nmod:on(order-9, issues-19)
+conj:and(cap-15, issues-19)
+punct(order-9, .-20)
+
+Extracted the following NER entity mentions:
+Senate	ORGANIZATION
+FERC	ORGANIZATION
+
+Sentence #4 (27 tokens):
+The House witnesses were dominated by California officials: Cal
+Energy Commission, Cal Air Resources Board, Chairman of Gov Davis Generation
+Implementation Task Force.
+
+Tokens:
+[Text=The CharacterOffsetBegin=229 CharacterOffsetEnd=232 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=House CharacterOffsetBegin=233 CharacterOffsetEnd=238 PartOfSpeech=NNP Lemma=House NamedEntityTag=ORGANIZATION]
+[Text=witnesses CharacterOffsetBegin=239 CharacterOffsetEnd=248 PartOfSpeech=NNS Lemma=witness NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=249 CharacterOffsetEnd=253 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=dominated CharacterOffsetBegin=254 CharacterOffsetEnd=263 PartOfSpeech=VBN Lemma=dominate NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=264 CharacterOffsetEnd=266 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=California CharacterOffsetBegin=267 CharacterOffsetEnd=277 PartOfSpeech=NNP Lemma=California NamedEntityTag=STATE_OR_PROVINCE]
+[Text=officials CharacterOffsetBegin=278 CharacterOffsetEnd=287 PartOfSpeech=NNS Lemma=official NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=287 CharacterOffsetEnd=288 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Cal CharacterOffsetBegin=289 CharacterOffsetEnd=292 PartOfSpeech=NNP Lemma=Cal NamedEntityTag=ORGANIZATION]
+[Text=Energy CharacterOffsetBegin=293 CharacterOffsetEnd=299 PartOfSpeech=NNP Lemma=Energy NamedEntityTag=ORGANIZATION]
+[Text=Commission CharacterOffsetBegin=300 CharacterOffsetEnd=310 PartOfSpeech=NNP Lemma=Commission NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=310 CharacterOffsetEnd=311 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Cal CharacterOffsetBegin=312 CharacterOffsetEnd=315 PartOfSpeech=NNP Lemma=Cal NamedEntityTag=ORGANIZATION]
+[Text=Air CharacterOffsetBegin=316 CharacterOffsetEnd=319 PartOfSpeech=NNP Lemma=Air NamedEntityTag=ORGANIZATION]
+[Text=Resources CharacterOffsetBegin=320 CharacterOffsetEnd=329 PartOfSpeech=NNP Lemma=Resources NamedEntityTag=ORGANIZATION]
+[Text=Board CharacterOffsetBegin=330 CharacterOffsetEnd=335 PartOfSpeech=NNP Lemma=Board NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=335 CharacterOffsetEnd=336 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Chairman CharacterOffsetBegin=337 CharacterOffsetEnd=345 PartOfSpeech=NNP Lemma=Chairman NamedEntityTag=TITLE]
+[Text=of CharacterOffsetBegin=346 CharacterOffsetEnd=348 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Gov CharacterOffsetBegin=349 CharacterOffsetEnd=352 PartOfSpeech=NNP Lemma=Gov NamedEntityTag=O]
+[Text=Davis CharacterOffsetBegin=353 CharacterOffsetEnd=358 PartOfSpeech=NNP Lemma=Davis NamedEntityTag=O]
+[Text=Generation CharacterOffsetBegin=359 CharacterOffsetEnd=369 PartOfSpeech=NNP Lemma=Generation NamedEntityTag=O]
+[Text=Implementation CharacterOffsetBegin=370 CharacterOffsetEnd=384 PartOfSpeech=NNP Lemma=Implementation NamedEntityTag=O]
+[Text=Task CharacterOffsetBegin=385 CharacterOffsetEnd=389 PartOfSpeech=NNP Lemma=Task NamedEntityTag=O]
+[Text=Force CharacterOffsetBegin=390 CharacterOffsetEnd=395 PartOfSpeech=NNP Lemma=Force NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=395 CharacterOffsetEnd=396 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NNP House) (NNS witnesses))
+    (VP (VBD were)
+      (VP (VBN dominated)
+        (PP (IN by)
+          (NP
+            (NP (NNP California) (NNS officials))
+            (: :)
+            (NP
+              (NP (NNP Cal) (NNP Energy) (NNP Commission))
+              (, ,)
+              (NP (NNP Cal) (NNP Air) (NNP Resources) (NNP Board))
+              (, ,)
+              (NP
+                (NP (NNP Chairman))
+                (PP (IN of)
+                  (NP (NNP Gov) (NNP Davis) (NNP Generation) (NNP Implementation) (NNP Task) (NNP Force)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, dominated-5)
+det(witnesses-3, The-1)
+compound(witnesses-3, House-2)
+nsubjpass(dominated-5, witnesses-3)
+auxpass(dominated-5, were-4)
+case(officials-8, by-6)
+compound(officials-8, California-7)
+nmod:agent(dominated-5, officials-8)
+punct(officials-8, :-9)
+compound(Commission-12, Cal-10)
+compound(Commission-12, Energy-11)
+dep(officials-8, Commission-12)
+punct(Commission-12, ,-13)
+compound(Board-17, Cal-14)
+compound(Board-17, Air-15)
+compound(Board-17, Resources-16)
+appos(Commission-12, Board-17)
+punct(Commission-12, ,-18)
+appos(Commission-12, Chairman-19)
+case(Force-26, of-20)
+compound(Force-26, Gov-21)
+compound(Force-26, Davis-22)
+compound(Force-26, Generation-23)
+compound(Force-26, Implementation-24)
+compound(Force-26, Task-25)
+nmod:of(Chairman-19, Force-26)
+punct(dominated-5, .-27)
+
+Extracted the following NER entity mentions:
+House	ORGANIZATION
+California	STATE_OR_PROVINCE
+Cal Energy Commission	ORGANIZATION
+Cal Air Resources Board	ORGANIZATION
+Chairman	TITLE
+
+Sentence #5 (16 tokens):
+In addition, there were witnesses from the
+Western Area Power Admin and Bonneville PA.
+
+Tokens:
+[Text=In CharacterOffsetBegin=398 CharacterOffsetEnd=400 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=addition CharacterOffsetBegin=401 CharacterOffsetEnd=409 PartOfSpeech=NN Lemma=addition NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=409 CharacterOffsetEnd=410 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=411 CharacterOffsetEnd=416 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=417 CharacterOffsetEnd=421 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=witnesses CharacterOffsetBegin=422 CharacterOffsetEnd=431 PartOfSpeech=NNS Lemma=witness NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=432 CharacterOffsetEnd=436 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=437 CharacterOffsetEnd=440 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Western CharacterOffsetBegin=441 CharacterOffsetEnd=448 PartOfSpeech=JJ Lemma=western NamedEntityTag=O]
+[Text=Area CharacterOffsetBegin=449 CharacterOffsetEnd=453 PartOfSpeech=NNP Lemma=Area NamedEntityTag=O]
+[Text=Power CharacterOffsetBegin=454 CharacterOffsetEnd=459 PartOfSpeech=NNP Lemma=Power NamedEntityTag=O]
+[Text=Admin CharacterOffsetBegin=460 CharacterOffsetEnd=465 PartOfSpeech=NNP Lemma=Admin NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=466 CharacterOffsetEnd=469 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Bonneville CharacterOffsetBegin=470 CharacterOffsetEnd=480 PartOfSpeech=NNP Lemma=Bonneville NamedEntityTag=CITY]
+[Text=PA. CharacterOffsetBegin=481 CharacterOffsetEnd=483 PartOfSpeech=NNP Lemma=PA. NamedEntityTag=STATE_OR_PROVINCE]
+[Text=. CharacterOffsetBegin=483 CharacterOffsetEnd=484 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NN addition)))
+    (, ,)
+    (NP (EX there))
+    (VP (VBD were)
+      (NP
+        (NP (NNS witnesses))
+        (PP (IN from)
+          (NP (DT the) (JJ Western) (NNP Area) (NNP Power) (NNP Admin)
+            (CC and)
+            (NNP Bonneville) (NNP PA.)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, were-5)
+case(addition-2, In-1)
+nmod:in(were-5, addition-2)
+punct(were-5, ,-3)
+expl(were-5, there-4)
+nsubj(were-5, witnesses-6)
+case(Admin-12, from-7)
+det(Admin-12, the-8)
+amod(Admin-12, Western-9)
+compound(Admin-12, Area-10)
+compound(Admin-12, Power-11)
+nmod:from(witnesses-6, Admin-12)
+cc(Admin-12, and-13)
+compound(PA.-15, Bonneville-14)
+nmod:from(witnesses-6, PA.-15)
+conj:and(Admin-12, PA.-15)
+punct(were-5, .-16)
+
+Extracted the following NER entity mentions:
+Bonneville	CITY
+PA.	STATE_OR_PROVINCE
+
+Sentence #6 (9 tokens):
+The Senate witnesses were the
+three FERC commissioners.
+
+Tokens:
+[Text=The CharacterOffsetBegin=486 CharacterOffsetEnd=489 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Senate CharacterOffsetBegin=490 CharacterOffsetEnd=496 PartOfSpeech=NNP Lemma=Senate NamedEntityTag=ORGANIZATION]
+[Text=witnesses CharacterOffsetBegin=497 CharacterOffsetEnd=506 PartOfSpeech=NNS Lemma=witness NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=507 CharacterOffsetEnd=511 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=512 CharacterOffsetEnd=515 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=three CharacterOffsetBegin=516 CharacterOffsetEnd=521 PartOfSpeech=CD Lemma=three NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0]
+[Text=FERC CharacterOffsetBegin=522 CharacterOffsetEnd=526 PartOfSpeech=NNP Lemma=FERC NamedEntityTag=ORGANIZATION]
+[Text=commissioners CharacterOffsetBegin=527 CharacterOffsetEnd=540 PartOfSpeech=NNS Lemma=commissioner NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=540 CharacterOffsetEnd=541 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NNP Senate) (NNS witnesses))
+    (VP (VBD were)
+      (NP (DT the) (CD three) (NNP FERC) (NNS commissioners)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, commissioners-8)
+det(witnesses-3, The-1)
+compound(witnesses-3, Senate-2)
+nsubj(commissioners-8, witnesses-3)
+cop(commissioners-8, were-4)
+det(commissioners-8, the-5)
+nummod(commissioners-8, three-6)
+compound(commissioners-8, FERC-7)
+punct(commissioners-8, .-9)
+
+Extracted the following NER entity mentions:
+Senate	ORGANIZATION
+three	NUMBER
+FERC	ORGANIZATION
+
+Sentence #7 (69 tokens):
+HIghlights
+Chairman Barton said it is still his intention to try to mark up the Barton
+bill, H.R. 1647 next week (many on and off the Subcommittee doubt this will
+happen; we are gathering political intelligence on those prospects and will
+report back with more information and conclusions once that is done);
+Chairman Barton also said he may go to California next week.
+
+Tokens:
+[Text=HIghlights CharacterOffsetBegin=542 CharacterOffsetEnd=552 PartOfSpeech=VBZ Lemma=highlight NamedEntityTag=O]
+[Text=Chairman CharacterOffsetBegin=553 CharacterOffsetEnd=561 PartOfSpeech=NNP Lemma=Chairman NamedEntityTag=TITLE]
+[Text=Barton CharacterOffsetBegin=562 CharacterOffsetEnd=568 PartOfSpeech=NNP Lemma=Barton NamedEntityTag=PERSON]
+[Text=said CharacterOffsetBegin=569 CharacterOffsetEnd=573 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=574 CharacterOffsetEnd=576 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=577 CharacterOffsetEnd=579 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=580 CharacterOffsetEnd=585 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=586 CharacterOffsetEnd=589 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=intention CharacterOffsetBegin=590 CharacterOffsetEnd=599 PartOfSpeech=NN Lemma=intention NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=600 CharacterOffsetEnd=602 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=try CharacterOffsetBegin=603 CharacterOffsetEnd=606 PartOfSpeech=VB Lemma=try NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=607 CharacterOffsetEnd=609 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=mark CharacterOffsetBegin=610 CharacterOffsetEnd=614 PartOfSpeech=VB Lemma=mark NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=615 CharacterOffsetEnd=617 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=618 CharacterOffsetEnd=621 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Barton CharacterOffsetBegin=622 CharacterOffsetEnd=628 PartOfSpeech=NNP Lemma=Barton NamedEntityTag=PERSON]
+[Text=bill CharacterOffsetBegin=629 CharacterOffsetEnd=633 PartOfSpeech=NN Lemma=bill NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=633 CharacterOffsetEnd=634 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=H.R. CharacterOffsetBegin=635 CharacterOffsetEnd=639 PartOfSpeech=NNP Lemma=H.R. NamedEntityTag=O]
+[Text=1647 CharacterOffsetBegin=640 CharacterOffsetEnd=644 PartOfSpeech=CD Lemma=1647 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1647.0]
+[Text=next CharacterOffsetBegin=645 CharacterOffsetEnd=649 PartOfSpeech=JJ Lemma=next NamedEntityTag=O]
+[Text=week CharacterOffsetBegin=650 CharacterOffsetEnd=654 PartOfSpeech=NN Lemma=week NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=655 CharacterOffsetEnd=656 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=many CharacterOffsetBegin=656 CharacterOffsetEnd=660 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=661 CharacterOffsetEnd=663 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=664 CharacterOffsetEnd=667 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=668 CharacterOffsetEnd=671 PartOfSpeech=IN Lemma=off NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=672 CharacterOffsetEnd=675 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Subcommittee CharacterOffsetBegin=676 CharacterOffsetEnd=688 PartOfSpeech=NNP Lemma=Subcommittee NamedEntityTag=O]
+[Text=doubt CharacterOffsetBegin=689 CharacterOffsetEnd=694 PartOfSpeech=NN Lemma=doubt NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=695 CharacterOffsetEnd=699 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=700 CharacterOffsetEnd=704 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=happen CharacterOffsetBegin=705 CharacterOffsetEnd=711 PartOfSpeech=VB Lemma=happen NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=711 CharacterOffsetEnd=712 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=713 CharacterOffsetEnd=715 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=716 CharacterOffsetEnd=719 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=gathering CharacterOffsetBegin=720 CharacterOffsetEnd=729 PartOfSpeech=VBG Lemma=gather NamedEntityTag=O]
+[Text=political CharacterOffsetBegin=730 CharacterOffsetEnd=739 PartOfSpeech=JJ Lemma=political NamedEntityTag=O]
+[Text=intelligence CharacterOffsetBegin=740 CharacterOffsetEnd=752 PartOfSpeech=NN Lemma=intelligence NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=753 CharacterOffsetEnd=755 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=756 CharacterOffsetEnd=761 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=prospects CharacterOffsetBegin=762 CharacterOffsetEnd=771 PartOfSpeech=NNS Lemma=prospects NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=772 CharacterOffsetEnd=775 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=776 CharacterOffsetEnd=780 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=report CharacterOffsetBegin=781 CharacterOffsetEnd=787 PartOfSpeech=VB Lemma=report NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=788 CharacterOffsetEnd=792 PartOfSpeech=RP Lemma=back NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=793 CharacterOffsetEnd=797 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=798 CharacterOffsetEnd=802 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=information CharacterOffsetBegin=803 CharacterOffsetEnd=814 PartOfSpeech=NN Lemma=information NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=815 CharacterOffsetEnd=818 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=conclusions CharacterOffsetBegin=819 CharacterOffsetEnd=830 PartOfSpeech=NNS Lemma=conclusion NamedEntityTag=O]
+[Text=once CharacterOffsetBegin=831 CharacterOffsetEnd=835 PartOfSpeech=RB Lemma=once NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=836 CharacterOffsetEnd=840 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=841 CharacterOffsetEnd=843 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=done CharacterOffsetBegin=844 CharacterOffsetEnd=848 PartOfSpeech=VBN Lemma=do NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=848 CharacterOffsetEnd=849 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=849 CharacterOffsetEnd=850 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=Chairman CharacterOffsetBegin=851 CharacterOffsetEnd=859 PartOfSpeech=NNP Lemma=Chairman NamedEntityTag=TITLE]
+[Text=Barton CharacterOffsetBegin=860 CharacterOffsetEnd=866 PartOfSpeech=NNP Lemma=Barton NamedEntityTag=PERSON]
+[Text=also CharacterOffsetBegin=867 CharacterOffsetEnd=871 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=872 CharacterOffsetEnd=876 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=877 CharacterOffsetEnd=879 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=may CharacterOffsetBegin=880 CharacterOffsetEnd=883 PartOfSpeech=MD Lemma=may NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=884 CharacterOffsetEnd=886 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=887 CharacterOffsetEnd=889 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=California CharacterOffsetBegin=890 CharacterOffsetEnd=900 PartOfSpeech=NNP Lemma=California NamedEntityTag=STATE_OR_PROVINCE]
+[Text=next CharacterOffsetBegin=901 CharacterOffsetEnd=905 PartOfSpeech=JJ Lemma=next NamedEntityTag=O]
+[Text=week CharacterOffsetBegin=906 CharacterOffsetEnd=910 PartOfSpeech=NN Lemma=week NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=910 CharacterOffsetEnd=911 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (VBZ HIghlights)
+        (SBAR
+          (S
+            (NP (NNP Chairman) (NNP Barton))
+            (VP (VBD said)
+              (SBAR
+                (S
+                  (NP (PRP it))
+                  (VP (VBZ is)
+                    (ADVP (RB still))
+                    (NP
+                      (NP (PRP$ his) (NN intention)
+                        (S
+                          (VP (TO to)
+                            (VP (VB try)
+                              (S
+                                (VP (TO to)
+                                  (VP (VB mark)
+                                    (PRT (RP up))
+                                    (NP (DT the) (NNP Barton) (NN bill)))))))))
+                      (, ,)
+                      (NP
+                        (NP
+                          (NP (NNP H.R.) (CD 1647))
+                          (NP-TMP (JJ next) (NN week)))
+                        (PRN (-LRB- -LRB-)
+                          (SBAR
+                            (UCP
+                              (ADJP (JJ many)
+                                (PP (IN on)))
+                              (CC and)
+                              (PP (IN off)
+                                (NP (DT the) (NNP Subcommittee) (NN doubt))))
+                            (S
+                              (S
+                                (NP (DT this))
+                                (VP (MD will)
+                                  (VP (VB happen))))
+                              (: ;)
+                              (S
+                                (NP (PRP we))
+                                (VP
+                                  (VP (VBP are)
+                                    (VP (VBG gathering)
+                                      (NP (JJ political) (NN intelligence))
+                                      (PP (IN on)
+                                        (NP (DT those) (NNS prospects)))))
+                                  (CC and)
+                                  (VP (MD will)
+                                    (VP (VB report)
+                                      (PRT (RP back))
+                                      (PP (IN with)
+                                        (NP
+                                          (NP (JJR more) (NN information))
+                                          (CC and)
+                                          (NP (NNS conclusions))))
+                                      (SBAR (RB once)
+                                        (S
+                                          (NP (DT that))
+                                          (VP (VBZ is)
+                                            (VP (VBN done)))))))))))
+                          (-RRB- -RRB-))))))))))))
+    (: ;)
+    (S
+      (NP (NNP Chairman) (NNP Barton))
+      (ADVP (RB also))
+      (VP (VBD said)
+        (SBAR
+          (S
+            (NP (PRP he))
+            (VP (MD may)
+              (VP (VB go)
+                (PP (TO to)
+                  (NP (NNP California)))
+                (NP-TMP (JJ next) (NN week))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, HIghlights-1)
+compound(Barton-3, Chairman-2)
+nsubj(said-4, Barton-3)
+ccomp(HIghlights-1, said-4)
+nsubj(intention-9, it-5)
+cop(intention-9, is-6)
+advmod(intention-9, still-7)
+nmod:poss(intention-9, his-8)
+ccomp(said-4, intention-9)
+mark(try-11, to-10)
+acl:to(intention-9, try-11)
+mark(mark-13, to-12)
+xcomp(try-11, mark-13)
+compound:prt(mark-13, up-14)
+det(bill-17, the-15)
+compound(bill-17, Barton-16)
+dobj(mark-13, bill-17)
+punct(intention-9, ,-18)
+appos(intention-9, H.R.-19)
+nummod(H.R.-19, 1647-20)
+amod(week-22, next-21)
+nmod:tmod(H.R.-19, week-22)
+punct(happen-33, -LRB--23)
+dep(happen-33, many-24)
+nmod(many-24, on-25)
+cc(many-24, and-26)
+case(doubt-30, off-27)
+det(doubt-30, the-28)
+compound(doubt-30, Subcommittee-29)
+conj:and(many-24, doubt-30)
+dep(happen-33, doubt-30)
+nsubj(happen-33, this-31)
+aux(happen-33, will-32)
+dep(H.R.-19, happen-33)
+punct(happen-33, ;-34)
+nsubj(gathering-37, we-35)
+nsubj(report-45, we-35)
+aux(gathering-37, are-36)
+parataxis(happen-33, gathering-37)
+amod(intelligence-39, political-38)
+dobj(gathering-37, intelligence-39)
+case(prospects-42, on-40)
+det(prospects-42, those-41)
+nmod:on(gathering-37, prospects-42)
+cc(gathering-37, and-43)
+aux(report-45, will-44)
+parataxis(happen-33, report-45)
+conj:and(gathering-37, report-45)
+compound:prt(report-45, back-46)
+case(information-49, with-47)
+amod(information-49, more-48)
+nmod:with(report-45, information-49)
+cc(information-49, and-50)
+nmod:with(report-45, conclusions-51)
+conj:and(information-49, conclusions-51)
+advmod(done-55, once-52)
+nsubjpass(done-55, that-53)
+auxpass(done-55, is-54)
+ccomp(report-45, done-55)
+punct(happen-33, -RRB--56)
+punct(HIghlights-1, ;-57)
+compound(Barton-59, Chairman-58)
+nsubj(said-61, Barton-59)
+advmod(said-61, also-60)
+parataxis(HIghlights-1, said-61)
+nsubj(go-64, he-62)
+aux(go-64, may-63)
+ccomp(said-61, go-64)
+case(California-66, to-65)
+nmod:to(go-64, California-66)
+amod(week-68, next-67)
+nmod:tmod(go-64, week-68)
+punct(HIghlights-1, .-69)
+
+Extracted the following NER entity mentions:
+Chairman	TITLE
+Barton	PERSON
+Barton	PERSON
+1647	NUMBER
+Chairman	TITLE
+Barton	PERSON
+California	STATE_OR_PROVINCE
+his	PERSON
+he	PERSON
+
+Sentence #8 (98 tokens):
+There was considerable emphasis at both hearings about the alleged role that
+higher natural gas prices into California play in the electric power rate
+increases; several witnesses focused on difference in alleged transportation
+costs for similar differences between California and non-CA states; FERC at
+the Senate hearing said that today the commission announced a staff technical
+conference for later this month on all aspects of the natural gas market as
+it relates to California; a House member from Southern Illinois coal country
+attacked California for using only natural gas in its new power plants.
+
+Tokens:
+[Text=There CharacterOffsetBegin=912 CharacterOffsetEnd=917 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=918 CharacterOffsetEnd=921 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=considerable CharacterOffsetBegin=922 CharacterOffsetEnd=934 PartOfSpeech=JJ Lemma=considerable NamedEntityTag=O]
+[Text=emphasis CharacterOffsetBegin=935 CharacterOffsetEnd=943 PartOfSpeech=NN Lemma=emphasis NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=944 CharacterOffsetEnd=946 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=both CharacterOffsetBegin=947 CharacterOffsetEnd=951 PartOfSpeech=DT Lemma=both NamedEntityTag=O]
+[Text=hearings CharacterOffsetBegin=952 CharacterOffsetEnd=960 PartOfSpeech=NNS Lemma=hearing NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=961 CharacterOffsetEnd=966 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=967 CharacterOffsetEnd=970 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=alleged CharacterOffsetBegin=971 CharacterOffsetEnd=978 PartOfSpeech=JJ Lemma=alleged NamedEntityTag=O]
+[Text=role CharacterOffsetBegin=979 CharacterOffsetEnd=983 PartOfSpeech=NN Lemma=role NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=984 CharacterOffsetEnd=988 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=higher CharacterOffsetBegin=989 CharacterOffsetEnd=995 PartOfSpeech=JJR Lemma=higher NamedEntityTag=O]
+[Text=natural CharacterOffsetBegin=996 CharacterOffsetEnd=1003 PartOfSpeech=JJ Lemma=natural NamedEntityTag=O]
+[Text=gas CharacterOffsetBegin=1004 CharacterOffsetEnd=1007 PartOfSpeech=NN Lemma=gas NamedEntityTag=O]
+[Text=prices CharacterOffsetBegin=1008 CharacterOffsetEnd=1014 PartOfSpeech=NNS Lemma=price NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=1015 CharacterOffsetEnd=1019 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=California CharacterOffsetBegin=1020 CharacterOffsetEnd=1030 PartOfSpeech=NNP Lemma=California NamedEntityTag=STATE_OR_PROVINCE]
+[Text=play CharacterOffsetBegin=1031 CharacterOffsetEnd=1035 PartOfSpeech=NN Lemma=play NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=1036 CharacterOffsetEnd=1038 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1039 CharacterOffsetEnd=1042 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=electric CharacterOffsetBegin=1043 CharacterOffsetEnd=1051 PartOfSpeech=JJ Lemma=electric NamedEntityTag=O]
+[Text=power CharacterOffsetBegin=1052 CharacterOffsetEnd=1057 PartOfSpeech=NN Lemma=power NamedEntityTag=O]
+[Text=rate CharacterOffsetBegin=1058 CharacterOffsetEnd=1062 PartOfSpeech=NN Lemma=rate NamedEntityTag=O]
+[Text=increases CharacterOffsetBegin=1063 CharacterOffsetEnd=1072 PartOfSpeech=NNS Lemma=increase NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=1072 CharacterOffsetEnd=1073 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=several CharacterOffsetBegin=1074 CharacterOffsetEnd=1081 PartOfSpeech=JJ Lemma=several NamedEntityTag=O]
+[Text=witnesses CharacterOffsetBegin=1082 CharacterOffsetEnd=1091 PartOfSpeech=NNS Lemma=witness NamedEntityTag=O]
+[Text=focused CharacterOffsetBegin=1092 CharacterOffsetEnd=1099 PartOfSpeech=VBD Lemma=focus NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=1100 CharacterOffsetEnd=1102 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=difference CharacterOffsetBegin=1103 CharacterOffsetEnd=1113 PartOfSpeech=NN Lemma=difference NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=1114 CharacterOffsetEnd=1116 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=alleged CharacterOffsetBegin=1117 CharacterOffsetEnd=1124 PartOfSpeech=JJ Lemma=alleged NamedEntityTag=O]
+[Text=transportation CharacterOffsetBegin=1125 CharacterOffsetEnd=1139 PartOfSpeech=NN Lemma=transportation NamedEntityTag=O]
+[Text=costs CharacterOffsetBegin=1140 CharacterOffsetEnd=1145 PartOfSpeech=NNS Lemma=cost NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=1146 CharacterOffsetEnd=1149 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=similar CharacterOffsetBegin=1150 CharacterOffsetEnd=1157 PartOfSpeech=JJ Lemma=similar NamedEntityTag=O]
+[Text=differences CharacterOffsetBegin=1158 CharacterOffsetEnd=1169 PartOfSpeech=NNS Lemma=difference NamedEntityTag=O]
+[Text=between CharacterOffsetBegin=1170 CharacterOffsetEnd=1177 PartOfSpeech=IN Lemma=between NamedEntityTag=O]
+[Text=California CharacterOffsetBegin=1178 CharacterOffsetEnd=1188 PartOfSpeech=NNP Lemma=California NamedEntityTag=STATE_OR_PROVINCE]
+[Text=and CharacterOffsetBegin=1189 CharacterOffsetEnd=1192 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=non-CA CharacterOffsetBegin=1193 CharacterOffsetEnd=1199 PartOfSpeech=JJ Lemma=non-ca NamedEntityTag=O]
+[Text=states CharacterOffsetBegin=1200 CharacterOffsetEnd=1206 PartOfSpeech=NNS Lemma=state NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=1206 CharacterOffsetEnd=1207 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=FERC CharacterOffsetBegin=1208 CharacterOffsetEnd=1212 PartOfSpeech=NNP Lemma=FERC NamedEntityTag=ORGANIZATION]
+[Text=at CharacterOffsetBegin=1213 CharacterOffsetEnd=1215 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1216 CharacterOffsetEnd=1219 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Senate CharacterOffsetBegin=1220 CharacterOffsetEnd=1226 PartOfSpeech=NNP Lemma=Senate NamedEntityTag=ORGANIZATION]
+[Text=hearing CharacterOffsetBegin=1227 CharacterOffsetEnd=1234 PartOfSpeech=NN Lemma=hearing NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=1235 CharacterOffsetEnd=1239 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=1240 CharacterOffsetEnd=1244 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=today CharacterOffsetBegin=1245 CharacterOffsetEnd=1250 PartOfSpeech=NN Lemma=today NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1251 CharacterOffsetEnd=1254 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=commission CharacterOffsetBegin=1255 CharacterOffsetEnd=1265 PartOfSpeech=NN Lemma=commission NamedEntityTag=O]
+[Text=announced CharacterOffsetBegin=1266 CharacterOffsetEnd=1275 PartOfSpeech=VBD Lemma=announce NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=1276 CharacterOffsetEnd=1277 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=staff CharacterOffsetBegin=1278 CharacterOffsetEnd=1283 PartOfSpeech=NN Lemma=staff NamedEntityTag=O]
+[Text=technical CharacterOffsetBegin=1284 CharacterOffsetEnd=1293 PartOfSpeech=JJ Lemma=technical NamedEntityTag=O]
+[Text=conference CharacterOffsetBegin=1294 CharacterOffsetEnd=1304 PartOfSpeech=NN Lemma=conference NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=1305 CharacterOffsetEnd=1308 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=later CharacterOffsetBegin=1309 CharacterOffsetEnd=1314 PartOfSpeech=RB Lemma=later NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=1315 CharacterOffsetEnd=1319 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=month CharacterOffsetBegin=1320 CharacterOffsetEnd=1325 PartOfSpeech=NN Lemma=month NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=1326 CharacterOffsetEnd=1328 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=1329 CharacterOffsetEnd=1332 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=aspects CharacterOffsetBegin=1333 CharacterOffsetEnd=1340 PartOfSpeech=NNS Lemma=aspect NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=1341 CharacterOffsetEnd=1343 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1344 CharacterOffsetEnd=1347 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=natural CharacterOffsetBegin=1348 CharacterOffsetEnd=1355 PartOfSpeech=JJ Lemma=natural NamedEntityTag=O]
+[Text=gas CharacterOffsetBegin=1356 CharacterOffsetEnd=1359 PartOfSpeech=NN Lemma=gas NamedEntityTag=O]
+[Text=market CharacterOffsetBegin=1360 CharacterOffsetEnd=1366 PartOfSpeech=NN Lemma=market NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=1367 CharacterOffsetEnd=1369 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=1370 CharacterOffsetEnd=1372 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=relates CharacterOffsetBegin=1373 CharacterOffsetEnd=1380 PartOfSpeech=VBZ Lemma=relate NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1381 CharacterOffsetEnd=1383 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=California CharacterOffsetBegin=1384 CharacterOffsetEnd=1394 PartOfSpeech=NNP Lemma=California NamedEntityTag=STATE_OR_PROVINCE]
+[Text=; CharacterOffsetBegin=1394 CharacterOffsetEnd=1395 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=1396 CharacterOffsetEnd=1397 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=House CharacterOffsetBegin=1398 CharacterOffsetEnd=1403 PartOfSpeech=NNP Lemma=House NamedEntityTag=ORGANIZATION]
+[Text=member CharacterOffsetBegin=1404 CharacterOffsetEnd=1410 PartOfSpeech=NN Lemma=member NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=1411 CharacterOffsetEnd=1415 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Southern CharacterOffsetBegin=1416 CharacterOffsetEnd=1424 PartOfSpeech=NNP Lemma=Southern NamedEntityTag=LOCATION]
+[Text=Illinois CharacterOffsetBegin=1425 CharacterOffsetEnd=1433 PartOfSpeech=NNP Lemma=Illinois NamedEntityTag=STATE_OR_PROVINCE]
+[Text=coal CharacterOffsetBegin=1434 CharacterOffsetEnd=1438 PartOfSpeech=NN Lemma=coal NamedEntityTag=O]
+[Text=country CharacterOffsetBegin=1439 CharacterOffsetEnd=1446 PartOfSpeech=NN Lemma=country NamedEntityTag=O]
+[Text=attacked CharacterOffsetBegin=1447 CharacterOffsetEnd=1455 PartOfSpeech=VBN Lemma=attack NamedEntityTag=O]
+[Text=California CharacterOffsetBegin=1456 CharacterOffsetEnd=1466 PartOfSpeech=NNP Lemma=California NamedEntityTag=STATE_OR_PROVINCE]
+[Text=for CharacterOffsetBegin=1467 CharacterOffsetEnd=1470 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=using CharacterOffsetBegin=1471 CharacterOffsetEnd=1476 PartOfSpeech=VBG Lemma=use NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=1477 CharacterOffsetEnd=1481 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=natural CharacterOffsetBegin=1482 CharacterOffsetEnd=1489 PartOfSpeech=JJ Lemma=natural NamedEntityTag=O]
+[Text=gas CharacterOffsetBegin=1490 CharacterOffsetEnd=1493 PartOfSpeech=NN Lemma=gas NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=1494 CharacterOffsetEnd=1496 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=its CharacterOffsetBegin=1497 CharacterOffsetEnd=1500 PartOfSpeech=PRP$ Lemma=its NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=1501 CharacterOffsetEnd=1504 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=power CharacterOffsetBegin=1505 CharacterOffsetEnd=1510 PartOfSpeech=NN Lemma=power NamedEntityTag=O]
+[Text=plants CharacterOffsetBegin=1511 CharacterOffsetEnd=1517 PartOfSpeech=NNS Lemma=plant NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1517 CharacterOffsetEnd=1518 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (EX There))
+      (VP (VBD was)
+        (NP
+          (NP (JJ considerable) (NN emphasis))
+          (PP (IN at)
+            (NP
+              (NP (DT both) (NNS hearings))
+              (PP (IN about)
+                (NP (DT the) (JJ alleged) (NN role)))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (NP
+                    (NP (JJR higher) (JJ natural) (NN gas) (NNS prices))
+                    (PP (IN into)
+                      (NP (NNP California) (NN play))))
+                  (PP (IN in)
+                    (NP (DT the) (JJ electric) (NN power) (NN rate) (NNS increases))))))))))
+    (: ;)
+    (S
+      (NP (JJ several) (NNS witnesses))
+      (VP (VBD focused)
+        (PP (IN on)
+          (NP
+            (NP (NN difference))
+            (PP (IN in)
+              (NP (JJ alleged) (NN transportation) (NNS costs)))))
+        (PP (IN for)
+          (NP
+            (NP (JJ similar) (NNS differences))
+            (PP (IN between)
+              (NP
+                (NP (NNP California))
+                (CC and)
+                (NP (JJ non-CA) (NNS states))))))))
+    (: ;)
+    (S
+      (NP
+        (NP (NNP FERC))
+        (PP (IN at)
+          (NP (DT the) (NNP Senate) (NN hearing))))
+      (VP (VBD said)
+        (SBAR (IN that)
+          (S
+            (NP-TMP (NN today))
+            (NP (DT the) (NN commission))
+            (VP (VBD announced)
+              (NP
+                (NP (DT a) (NN staff) (JJ technical) (NN conference))
+                (PP (IN for)
+                  (NP
+                    (NP (RB later) (DT this) (NN month))
+                    (PP (IN on)
+                      (NP
+                        (NP (DT all) (NNS aspects))
+                        (PP (IN of)
+                          (NP (DT the) (JJ natural) (NN gas) (NN market))))))))
+              (SBAR (IN as)
+                (S
+                  (NP (PRP it))
+                  (VP (VBZ relates)
+                    (PP (TO to)
+                      (NP (NNP California)))))))))))
+    (: ;)
+    (S
+      (NP
+        (NP (DT a) (NNP House) (NN member))
+        (PP (IN from)
+          (NP (NNP Southern) (NNP Illinois) (NN coal) (NN country))))
+      (VP (VBN attacked)
+        (NP
+          (NP (NNP California))
+          (PP (IN for)
+            (S
+              (VP (VBG using)
+                (NP (RB only) (JJ natural) (NN gas))
+                (PP (IN in)
+                  (NP (PRP$ its) (JJ new) (NN power) (NNS plants)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, was-2)
+expl(was-2, There-1)
+amod(emphasis-4, considerable-3)
+nsubj(was-2, emphasis-4)
+case(hearings-7, at-5)
+det(hearings-7, both-6)
+nmod:at(emphasis-4, hearings-7)
+dep(prices-16, hearings-7)
+case(role-11, about-8)
+det(role-11, the-9)
+amod(role-11, alleged-10)
+nmod:about(hearings-7, role-11)
+ref(hearings-7, that-12)
+amod(prices-16, higher-13)
+amod(prices-16, natural-14)
+compound(prices-16, gas-15)
+acl:relcl(hearings-7, prices-16)
+case(play-19, into-17)
+compound(play-19, California-18)
+nmod:into(prices-16, play-19)
+case(increases-25, in-20)
+det(increases-25, the-21)
+amod(increases-25, electric-22)
+compound(increases-25, power-23)
+compound(increases-25, rate-24)
+dep(prices-16, increases-25)
+punct(was-2, ;-26)
+amod(witnesses-28, several-27)
+nsubj(focused-29, witnesses-28)
+parataxis(was-2, focused-29)
+case(difference-31, on-30)
+nmod:on(focused-29, difference-31)
+case(costs-35, in-32)
+amod(costs-35, alleged-33)
+compound(costs-35, transportation-34)
+nmod:in(difference-31, costs-35)
+case(differences-38, for-36)
+amod(differences-38, similar-37)
+nmod:for(focused-29, differences-38)
+case(California-40, between-39)
+nmod:between(differences-38, California-40)
+cc(California-40, and-41)
+amod(states-43, non-CA-42)
+nmod:between(differences-38, states-43)
+conj:and(California-40, states-43)
+punct(was-2, ;-44)
+nsubj(said-50, FERC-45)
+case(hearing-49, at-46)
+det(hearing-49, the-47)
+compound(hearing-49, Senate-48)
+nmod:at(FERC-45, hearing-49)
+parataxis(was-2, said-50)
+mark(announced-55, that-51)
+nmod:tmod(announced-55, today-52)
+det(commission-54, the-53)
+nsubj(announced-55, commission-54)
+ccomp(said-50, announced-55)
+det(conference-59, a-56)
+compound(conference-59, staff-57)
+amod(conference-59, technical-58)
+dobj(announced-55, conference-59)
+case(month-63, for-60)
+advmod(month-63, later-61)
+det(month-63, this-62)
+nmod:for(conference-59, month-63)
+case(aspects-66, on-64)
+det(aspects-66, all-65)
+nmod:on(month-63, aspects-66)
+case(market-71, of-67)
+det(market-71, the-68)
+amod(market-71, natural-69)
+compound(market-71, gas-70)
+nmod:of(aspects-66, market-71)
+mark(relates-74, as-72)
+nsubj(relates-74, it-73)
+advcl:as(announced-55, relates-74)
+case(California-76, to-75)
+nmod:to(relates-74, California-76)
+punct(was-2, ;-77)
+det(member-80, a-78)
+compound(member-80, House-79)
+nsubj(attacked-86, member-80)
+case(country-85, from-81)
+compound(country-85, Southern-82)
+compound(country-85, Illinois-83)
+compound(country-85, coal-84)
+nmod:from(member-80, country-85)
+parataxis(was-2, attacked-86)
+dobj(attacked-86, California-87)
+mark(using-89, for-88)
+acl:for(California-87, using-89)
+advmod(gas-92, only-90)
+amod(gas-92, natural-91)
+dobj(using-89, gas-92)
+case(plants-97, in-93)
+nmod:poss(plants-97, its-94)
+amod(plants-97, new-95)
+compound(plants-97, power-96)
+nmod:in(using-89, plants-97)
+punct(was-2, .-98)
+
+Extracted the following NER entity mentions:
+California	STATE_OR_PROVINCE
+California	STATE_OR_PROVINCE
+FERC	ORGANIZATION
+Senate	ORGANIZATION
+California	STATE_OR_PROVINCE
+House	ORGANIZATION
+Southern	LOCATION
+Illinois	STATE_OR_PROVINCE
+California	STATE_OR_PROVINCE
+
+Sentence #9 (119 tokens):
+The House witnesses, primarily BPA but also the California witnesses,
+attacked the negawatt provision in sec. 102 of the Barton bill; the criticism
+was that BPA would be forced to purchase power on the open market at a high
+price since it is short, sell it to the DSIs under contract; let the DSI sell
+it at market rates and capture the difference; BPA witness said that thus
+sec. 102 would make it difficult if not impossible to implement their
+strategy to avoid as much as a 200 percent rate increase on 10/1/01; BPA
+testimony will make it tough for Members of Congress from that service region
+to support sec. 102.
+
+Tokens:
+[Text=The CharacterOffsetBegin=1519 CharacterOffsetEnd=1522 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=House CharacterOffsetBegin=1523 CharacterOffsetEnd=1528 PartOfSpeech=NNP Lemma=House NamedEntityTag=ORGANIZATION]
+[Text=witnesses CharacterOffsetBegin=1529 CharacterOffsetEnd=1538 PartOfSpeech=NNS Lemma=witness NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1538 CharacterOffsetEnd=1539 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=primarily CharacterOffsetBegin=1540 CharacterOffsetEnd=1549 PartOfSpeech=RB Lemma=primarily NamedEntityTag=O]
+[Text=BPA CharacterOffsetBegin=1550 CharacterOffsetEnd=1553 PartOfSpeech=NNP Lemma=BPA NamedEntityTag=ORGANIZATION]
+[Text=but CharacterOffsetBegin=1554 CharacterOffsetEnd=1557 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=1558 CharacterOffsetEnd=1562 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1563 CharacterOffsetEnd=1566 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=California CharacterOffsetBegin=1567 CharacterOffsetEnd=1577 PartOfSpeech=NNP Lemma=California NamedEntityTag=STATE_OR_PROVINCE]
+[Text=witnesses CharacterOffsetBegin=1578 CharacterOffsetEnd=1587 PartOfSpeech=NNS Lemma=witness NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1587 CharacterOffsetEnd=1588 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=attacked CharacterOffsetBegin=1589 CharacterOffsetEnd=1597 PartOfSpeech=VBN Lemma=attack NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1598 CharacterOffsetEnd=1601 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=negawatt CharacterOffsetBegin=1602 CharacterOffsetEnd=1610 PartOfSpeech=NN Lemma=negawatt NamedEntityTag=O]
+[Text=provision CharacterOffsetBegin=1611 CharacterOffsetEnd=1620 PartOfSpeech=NN Lemma=provision NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=1621 CharacterOffsetEnd=1623 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=sec. CharacterOffsetBegin=1624 CharacterOffsetEnd=1628 PartOfSpeech=NN Lemma=sec. NamedEntityTag=O]
+[Text=102 CharacterOffsetBegin=1629 CharacterOffsetEnd=1632 PartOfSpeech=CD Lemma=102 NamedEntityTag=NUMBER NormalizedNamedEntityTag=102.0]
+[Text=of CharacterOffsetBegin=1633 CharacterOffsetEnd=1635 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1636 CharacterOffsetEnd=1639 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Barton CharacterOffsetBegin=1640 CharacterOffsetEnd=1646 PartOfSpeech=NNP Lemma=Barton NamedEntityTag=PERSON]
+[Text=bill CharacterOffsetBegin=1647 CharacterOffsetEnd=1651 PartOfSpeech=NN Lemma=bill NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=1651 CharacterOffsetEnd=1652 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1653 CharacterOffsetEnd=1656 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=criticism CharacterOffsetBegin=1657 CharacterOffsetEnd=1666 PartOfSpeech=NN Lemma=criticism NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=1667 CharacterOffsetEnd=1670 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=1671 CharacterOffsetEnd=1675 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=BPA CharacterOffsetBegin=1676 CharacterOffsetEnd=1679 PartOfSpeech=NNP Lemma=BPA NamedEntityTag=ORGANIZATION]
+[Text=would CharacterOffsetBegin=1680 CharacterOffsetEnd=1685 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=1686 CharacterOffsetEnd=1688 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=forced CharacterOffsetBegin=1689 CharacterOffsetEnd=1695 PartOfSpeech=VBN Lemma=force NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1696 CharacterOffsetEnd=1698 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=purchase CharacterOffsetBegin=1699 CharacterOffsetEnd=1707 PartOfSpeech=VB Lemma=purchase NamedEntityTag=O]
+[Text=power CharacterOffsetBegin=1708 CharacterOffsetEnd=1713 PartOfSpeech=NN Lemma=power NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=1714 CharacterOffsetEnd=1716 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1717 CharacterOffsetEnd=1720 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=open CharacterOffsetBegin=1721 CharacterOffsetEnd=1725 PartOfSpeech=JJ Lemma=open NamedEntityTag=O]
+[Text=market CharacterOffsetBegin=1726 CharacterOffsetEnd=1732 PartOfSpeech=NN Lemma=market NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=1733 CharacterOffsetEnd=1735 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=1736 CharacterOffsetEnd=1737 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=high CharacterOffsetBegin=1738 CharacterOffsetEnd=1742 PartOfSpeech=JJ Lemma=high NamedEntityTag=O]
+[Text=price CharacterOffsetBegin=1743 CharacterOffsetEnd=1748 PartOfSpeech=NN Lemma=price NamedEntityTag=O]
+[Text=since CharacterOffsetBegin=1749 CharacterOffsetEnd=1754 PartOfSpeech=IN Lemma=since NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=1755 CharacterOffsetEnd=1757 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=1758 CharacterOffsetEnd=1760 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=short CharacterOffsetBegin=1761 CharacterOffsetEnd=1766 PartOfSpeech=JJ Lemma=short NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1766 CharacterOffsetEnd=1767 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=sell CharacterOffsetBegin=1768 CharacterOffsetEnd=1772 PartOfSpeech=VB Lemma=sell NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=1773 CharacterOffsetEnd=1775 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1776 CharacterOffsetEnd=1778 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1779 CharacterOffsetEnd=1782 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=DSIs CharacterOffsetBegin=1783 CharacterOffsetEnd=1787 PartOfSpeech=NNS Lemma=dsis NamedEntityTag=O]
+[Text=under CharacterOffsetBegin=1788 CharacterOffsetEnd=1793 PartOfSpeech=IN Lemma=under NamedEntityTag=O]
+[Text=contract CharacterOffsetBegin=1794 CharacterOffsetEnd=1802 PartOfSpeech=NN Lemma=contract NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=1802 CharacterOffsetEnd=1803 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=let CharacterOffsetBegin=1804 CharacterOffsetEnd=1807 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1808 CharacterOffsetEnd=1811 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=DSI CharacterOffsetBegin=1812 CharacterOffsetEnd=1815 PartOfSpeech=NNP Lemma=DSI NamedEntityTag=ORGANIZATION]
+[Text=sell CharacterOffsetBegin=1816 CharacterOffsetEnd=1820 PartOfSpeech=VB Lemma=sell NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=1821 CharacterOffsetEnd=1823 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=1824 CharacterOffsetEnd=1826 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=market CharacterOffsetBegin=1827 CharacterOffsetEnd=1833 PartOfSpeech=NN Lemma=market NamedEntityTag=O]
+[Text=rates CharacterOffsetBegin=1834 CharacterOffsetEnd=1839 PartOfSpeech=NNS Lemma=rate NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1840 CharacterOffsetEnd=1843 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=capture CharacterOffsetBegin=1844 CharacterOffsetEnd=1851 PartOfSpeech=VB Lemma=capture NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1852 CharacterOffsetEnd=1855 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=difference CharacterOffsetBegin=1856 CharacterOffsetEnd=1866 PartOfSpeech=NN Lemma=difference NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=1866 CharacterOffsetEnd=1867 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=BPA CharacterOffsetBegin=1868 CharacterOffsetEnd=1871 PartOfSpeech=NNP Lemma=BPA NamedEntityTag=ORGANIZATION]
+[Text=witness CharacterOffsetBegin=1872 CharacterOffsetEnd=1879 PartOfSpeech=NN Lemma=witness NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=1880 CharacterOffsetEnd=1884 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=1885 CharacterOffsetEnd=1889 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=thus CharacterOffsetBegin=1890 CharacterOffsetEnd=1894 PartOfSpeech=RB Lemma=thus NamedEntityTag=O]
+[Text=sec. CharacterOffsetBegin=1895 CharacterOffsetEnd=1899 PartOfSpeech=VBP Lemma=sec. NamedEntityTag=O]
+[Text=102 CharacterOffsetBegin=1900 CharacterOffsetEnd=1903 PartOfSpeech=CD Lemma=102 NamedEntityTag=NUMBER NormalizedNamedEntityTag=102.0]
+[Text=would CharacterOffsetBegin=1904 CharacterOffsetEnd=1909 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=1910 CharacterOffsetEnd=1914 PartOfSpeech=VB Lemma=make NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=1915 CharacterOffsetEnd=1917 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=difficult CharacterOffsetBegin=1918 CharacterOffsetEnd=1927 PartOfSpeech=JJ Lemma=difficult NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=1928 CharacterOffsetEnd=1930 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=1931 CharacterOffsetEnd=1934 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=impossible CharacterOffsetBegin=1935 CharacterOffsetEnd=1945 PartOfSpeech=JJ Lemma=impossible NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1946 CharacterOffsetEnd=1948 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=implement CharacterOffsetBegin=1949 CharacterOffsetEnd=1958 PartOfSpeech=VB Lemma=implement NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=1959 CharacterOffsetEnd=1964 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=strategy CharacterOffsetBegin=1965 CharacterOffsetEnd=1973 PartOfSpeech=NN Lemma=strategy NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1974 CharacterOffsetEnd=1976 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=avoid CharacterOffsetBegin=1977 CharacterOffsetEnd=1982 PartOfSpeech=VB Lemma=avoid NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=1983 CharacterOffsetEnd=1985 PartOfSpeech=RB Lemma=as NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=1986 CharacterOffsetEnd=1990 PartOfSpeech=JJ Lemma=much NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=1991 CharacterOffsetEnd=1993 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=1994 CharacterOffsetEnd=1995 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=200 CharacterOffsetBegin=1996 CharacterOffsetEnd=1999 PartOfSpeech=CD Lemma=200 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%200.0]
+[Text=percent CharacterOffsetBegin=2000 CharacterOffsetEnd=2007 PartOfSpeech=NN Lemma=percent NamedEntityTag=PERCENT NormalizedNamedEntityTag=%200.0]
+[Text=rate CharacterOffsetBegin=2008 CharacterOffsetEnd=2012 PartOfSpeech=NN Lemma=rate NamedEntityTag=O]
+[Text=increase CharacterOffsetBegin=2013 CharacterOffsetEnd=2021 PartOfSpeech=NN Lemma=increase NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=2022 CharacterOffsetEnd=2024 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=10/1/01 CharacterOffsetBegin=2025 CharacterOffsetEnd=2032 PartOfSpeech=CD Lemma=10/1/01 NamedEntityTag=NUMBER]
+[Text=; CharacterOffsetBegin=2032 CharacterOffsetEnd=2033 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=BPA CharacterOffsetBegin=2034 CharacterOffsetEnd=2037 PartOfSpeech=NNP Lemma=BPA NamedEntityTag=ORGANIZATION]
+[Text=testimony CharacterOffsetBegin=2038 CharacterOffsetEnd=2047 PartOfSpeech=NN Lemma=testimony NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=2048 CharacterOffsetEnd=2052 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=2053 CharacterOffsetEnd=2057 PartOfSpeech=VB Lemma=make NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=2058 CharacterOffsetEnd=2060 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=tough CharacterOffsetBegin=2061 CharacterOffsetEnd=2066 PartOfSpeech=JJ Lemma=tough NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=2067 CharacterOffsetEnd=2070 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Members CharacterOffsetBegin=2071 CharacterOffsetEnd=2078 PartOfSpeech=NNS Lemma=member NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=2079 CharacterOffsetEnd=2081 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Congress CharacterOffsetBegin=2082 CharacterOffsetEnd=2090 PartOfSpeech=NNP Lemma=Congress NamedEntityTag=ORGANIZATION]
+[Text=from CharacterOffsetBegin=2091 CharacterOffsetEnd=2095 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=2096 CharacterOffsetEnd=2100 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=service CharacterOffsetBegin=2101 CharacterOffsetEnd=2108 PartOfSpeech=NN Lemma=service NamedEntityTag=O]
+[Text=region CharacterOffsetBegin=2109 CharacterOffsetEnd=2115 PartOfSpeech=NN Lemma=region NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=2116 CharacterOffsetEnd=2118 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=support CharacterOffsetBegin=2119 CharacterOffsetEnd=2126 PartOfSpeech=VB Lemma=support NamedEntityTag=O]
+[Text=sec. CharacterOffsetBegin=2127 CharacterOffsetEnd=2131 PartOfSpeech=NN Lemma=sec. NamedEntityTag=O]
+[Text=102 CharacterOffsetBegin=2132 CharacterOffsetEnd=2135 PartOfSpeech=CD Lemma=102 NamedEntityTag=NUMBER NormalizedNamedEntityTag=102.0]
+[Text=. CharacterOffsetBegin=2135 CharacterOffsetEnd=2136 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT The) (NNP House) (NNS witnesses))
+        (, ,)
+        (ADVP (RB primarily))
+        (NP
+          (NP (NNP BPA))
+          (CONJP (CC but)
+            (RB also))
+          (NP (DT the) (NNP California) (NNS witnesses)))
+        (, ,))
+      (VP (VBN attacked)
+        (NP (DT the) (NN negawatt) (NN provision))
+        (PP (IN in)
+          (NP
+            (NP (NN sec.) (CD 102))
+            (PP (IN of)
+              (NP (DT the) (NNP Barton) (NN bill)))))))
+    (: ;)
+    (S
+      (NP (DT the) (NN criticism))
+      (VP (VBD was)
+        (SBAR (IN that)
+          (S
+            (NP (NNP BPA))
+            (VP (MD would)
+              (VP (VB be)
+                (VP (VBN forced)
+                  (S
+                    (VP (TO to)
+                      (VP
+                        (VP (VB purchase)
+                          (NP (NN power))
+                          (PP (IN on)
+                            (NP
+                              (NP (DT the) (JJ open) (NN market))
+                              (PP (IN at)
+                                (NP (DT a) (JJ high) (NN price)))))
+                          (SBAR (IN since)
+                            (S
+                              (NP (PRP it))
+                              (VP (VBZ is)
+                                (ADJP (JJ short))))))
+                        (, ,)
+                        (VP
+                          (VP (VB sell)
+                            (NP (PRP it))
+                            (PP (TO to)
+                              (NP (DT the) (NNS DSIs)))
+                            (PP (IN under)
+                              (NP (NN contract))))
+                          (: ;)
+                          (VP (VB let)
+                            (S
+                              (NP (DT the) (NNP DSI))
+                              (VP (VB sell)
+                                (NP (PRP it))
+                                (PP (IN at)
+                                  (NP (NN market) (NNS rates)))))))
+                        (CC and)
+                        (VP (VB capture)
+                          (NP (DT the) (NN difference)))))))))))))
+    (: ;)
+    (S
+      (NP (NNP BPA) (NN witness))
+      (VP (VBD said)
+        (SBAR (IN that)
+          (S
+            (ADVP (RB thus))
+            (VP (VBP sec.)
+              (SBAR
+                (S
+                  (NP (CD 102))
+                  (VP (MD would)
+                    (VP (VB make)
+                      (S
+                        (NP (PRP it))
+                        (ADJP (JJ difficult))
+                        (SBAR (IN if)
+                          (FRAG
+                            (ADJP (RB not) (JJ impossible)
+                              (S
+                                (VP (TO to)
+                                  (VP (VB implement)
+                                    (NP (PRP$ their) (NN strategy)
+                                      (S
+                                        (VP (TO to)
+                                          (VP (VB avoid)
+                                            (NP
+                                              (NP
+                                                (QP (RB as) (JJ much) (IN as) (DT a) (CD 200))
+                                                (NN percent))
+                                              (ADJP (NN rate) (NN increase)))
+                                            (PP (IN on)
+                                              (NP (CD 10/1/01)))))))))))))))))))))))
+    (: ;)
+    (S
+      (NP (NNP BPA) (NN testimony))
+      (VP (MD will)
+        (VP (VB make)
+          (S
+            (NP (PRP it))
+            (ADJP (JJ tough)
+              (PP (IN for)
+                (NP
+                  (NP (NNS Members))
+                  (PP (IN of)
+                    (NP
+                      (NP (NNP Congress))
+                      (PP (IN from)
+                        (NP (DT that) (NN service) (NN region))))))))
+            (S
+              (VP (TO to)
+                (VP (VB support)
+                  (NP (NN sec.) (CD 102)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, attacked-13)
+det(witnesses-3, The-1)
+compound(witnesses-3, House-2)
+nsubj(attacked-13, witnesses-3)
+punct(witnesses-3, ,-4)
+advmod(BPA-6, primarily-5)
+appos(witnesses-3, BPA-6)
+cc(BPA-6, but-7)
+advmod(witnesses-11, also-8)
+det(witnesses-11, the-9)
+compound(witnesses-11, California-10)
+appos(witnesses-3, witnesses-11)
+conj:and(BPA-6, witnesses-11)
+punct(witnesses-3, ,-12)
+det(provision-16, the-14)
+compound(provision-16, negawatt-15)
+dobj(attacked-13, provision-16)
+case(sec.-18, in-17)
+nmod:in(attacked-13, sec.-18)
+nummod(sec.-18, 102-19)
+case(bill-23, of-20)
+det(bill-23, the-21)
+compound(bill-23, Barton-22)
+nmod:of(sec.-18, bill-23)
+punct(attacked-13, ;-24)
+det(criticism-26, the-25)
+nsubj(was-27, criticism-26)
+parataxis(attacked-13, was-27)
+mark(forced-32, that-28)
+nsubjpass(forced-32, BPA-29)
+nsubj:xsubj(purchase-34, BPA-29)
+nsubj:xsubj(sell-49, BPA-29)
+nsubj:xsubj(capture-66, BPA-29)
+aux(forced-32, would-30)
+auxpass(forced-32, be-31)
+ccomp(was-27, forced-32)
+mark(purchase-34, to-33)
+xcomp(forced-32, purchase-34)
+dobj(purchase-34, power-35)
+case(market-39, on-36)
+det(market-39, the-37)
+amod(market-39, open-38)
+nmod:on(purchase-34, market-39)
+case(price-43, at-40)
+det(price-43, a-41)
+amod(price-43, high-42)
+nmod:at(market-39, price-43)
+mark(short-47, since-44)
+nsubj(short-47, it-45)
+cop(short-47, is-46)
+advcl:since(purchase-34, short-47)
+punct(purchase-34, ,-48)
+xcomp(forced-32, sell-49)
+conj:and(purchase-34, sell-49)
+dobj(sell-49, it-50)
+case(DSIs-53, to-51)
+det(DSIs-53, the-52)
+nmod:to(sell-49, DSIs-53)
+case(contract-55, under-54)
+nmod:under(sell-49, contract-55)
+punct(sell-49, ;-56)
+dep(sell-49, let-57)
+det(DSI-59, the-58)
+nsubj(sell-60, DSI-59)
+ccomp(let-57, sell-60)
+dobj(sell-60, it-61)
+case(rates-64, at-62)
+compound(rates-64, market-63)
+nmod:at(sell-60, rates-64)
+cc(purchase-34, and-65)
+xcomp(forced-32, capture-66)
+conj:and(purchase-34, capture-66)
+det(difference-68, the-67)
+dobj(capture-66, difference-68)
+punct(attacked-13, ;-69)
+compound(witness-71, BPA-70)
+nsubj(said-72, witness-71)
+parataxis(attacked-13, said-72)
+mark(sec.-75, that-73)
+advmod(sec.-75, thus-74)
+ccomp(said-72, sec.-75)
+nsubj(make-78, 102-76)
+aux(make-78, would-77)
+ccomp(sec.-75, make-78)
+nsubj(impossible-83, it-79)
+nsubj:xsubj(implement-85, it-79)
+dep(impossible-83, difficult-80)
+mark(impossible-83, if-81)
+neg(impossible-83, not-82)
+xcomp(make-78, impossible-83)
+mark(implement-85, to-84)
+xcomp(impossible-83, implement-85)
+nmod:poss(strategy-87, their-86)
+dobj(implement-85, strategy-87)
+mark(avoid-89, to-88)
+acl:to(strategy-87, avoid-89)
+advmod(200-94, as-90)
+advmod(200-94, much-91)
+advmod(200-94, as-92)
+advmod(200-94, a-93)
+nummod(percent-95, 200-94)
+dobj(avoid-89, percent-95)
+dep(increase-97, rate-96)
+amod(percent-95, increase-97)
+case(10/1/01-99, on-98)
+nmod:on(avoid-89, 10/1/01-99)
+punct(attacked-13, ;-100)
+compound(testimony-102, BPA-101)
+nsubj(make-104, testimony-102)
+aux(make-104, will-103)
+parataxis(attacked-13, make-104)
+nsubj(support-116, it-105)
+dep(support-116, tough-106)
+case(Members-108, for-107)
+nmod:for(tough-106, Members-108)
+case(Congress-110, of-109)
+nmod:of(Members-108, Congress-110)
+case(region-114, from-111)
+det(region-114, that-112)
+compound(region-114, service-113)
+nmod:from(Congress-110, region-114)
+mark(support-116, to-115)
+xcomp(make-104, support-116)
+dobj(support-116, sec.-117)
+nummod(sec.-117, 102-118)
+punct(attacked-13, .-119)
+
+Extracted the following NER entity mentions:
+House	ORGANIZATION
+BPA	ORGANIZATION
+California	STATE_OR_PROVINCE
+102	NUMBER
+Barton	PERSON
+BPA	ORGANIZATION
+DSI	ORGANIZATION
+BPA	ORGANIZATION
+102	NUMBER
+200 percent	PERCENT
+10/1/01	NUMBER
+BPA	ORGANIZATION
+Congress	ORGANIZATION
+102	NUMBER
+
+Sentence #10 (112 tokens):
+Both hearings also touched on how difficult it would be to actually devise a
+price cap; at the House hearing, none of those advocating a price cap among
+the witnesses could answer excellent questions about exactly how this could
+be done; the witnesses just said "cost plus a reasonable profit" and said
+leave the details to FERC; at afternoon Senate hearing, Chairman Hebert had
+the staff bring in 15 boxes from one FP&L case to show how a price cap would
+take too long to bring any relief to California this summer; he said last
+week's soft price cap is much better.
+
+Tokens:
+[Text=Both CharacterOffsetBegin=2137 CharacterOffsetEnd=2141 PartOfSpeech=DT Lemma=both NamedEntityTag=O]
+[Text=hearings CharacterOffsetBegin=2142 CharacterOffsetEnd=2150 PartOfSpeech=NNS Lemma=hearing NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=2151 CharacterOffsetEnd=2155 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=touched CharacterOffsetBegin=2156 CharacterOffsetEnd=2163 PartOfSpeech=VBD Lemma=touch NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=2164 CharacterOffsetEnd=2166 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=2167 CharacterOffsetEnd=2170 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=difficult CharacterOffsetBegin=2171 CharacterOffsetEnd=2180 PartOfSpeech=JJ Lemma=difficult NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=2181 CharacterOffsetEnd=2183 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=2184 CharacterOffsetEnd=2189 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=2190 CharacterOffsetEnd=2192 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=2193 CharacterOffsetEnd=2195 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=actually CharacterOffsetBegin=2196 CharacterOffsetEnd=2204 PartOfSpeech=RB Lemma=actually NamedEntityTag=O]
+[Text=devise CharacterOffsetBegin=2205 CharacterOffsetEnd=2211 PartOfSpeech=VB Lemma=devise NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=2212 CharacterOffsetEnd=2213 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=price CharacterOffsetBegin=2214 CharacterOffsetEnd=2219 PartOfSpeech=NN Lemma=price NamedEntityTag=O]
+[Text=cap CharacterOffsetBegin=2220 CharacterOffsetEnd=2223 PartOfSpeech=NN Lemma=cap NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=2223 CharacterOffsetEnd=2224 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=2225 CharacterOffsetEnd=2227 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=2228 CharacterOffsetEnd=2231 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=House CharacterOffsetBegin=2232 CharacterOffsetEnd=2237 PartOfSpeech=NNP Lemma=House NamedEntityTag=ORGANIZATION]
+[Text=hearing CharacterOffsetBegin=2238 CharacterOffsetEnd=2245 PartOfSpeech=NN Lemma=hearing NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=2245 CharacterOffsetEnd=2246 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=none CharacterOffsetBegin=2247 CharacterOffsetEnd=2251 PartOfSpeech=NN Lemma=none NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=2252 CharacterOffsetEnd=2254 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=2255 CharacterOffsetEnd=2260 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=advocating CharacterOffsetBegin=2261 CharacterOffsetEnd=2271 PartOfSpeech=VBG Lemma=advocate NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=2272 CharacterOffsetEnd=2273 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=price CharacterOffsetBegin=2274 CharacterOffsetEnd=2279 PartOfSpeech=NN Lemma=price NamedEntityTag=O]
+[Text=cap CharacterOffsetBegin=2280 CharacterOffsetEnd=2283 PartOfSpeech=NN Lemma=cap NamedEntityTag=O]
+[Text=among CharacterOffsetBegin=2284 CharacterOffsetEnd=2289 PartOfSpeech=IN Lemma=among NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=2290 CharacterOffsetEnd=2293 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=witnesses CharacterOffsetBegin=2294 CharacterOffsetEnd=2303 PartOfSpeech=NNS Lemma=witness NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=2304 CharacterOffsetEnd=2309 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=answer CharacterOffsetBegin=2310 CharacterOffsetEnd=2316 PartOfSpeech=VB Lemma=answer NamedEntityTag=O]
+[Text=excellent CharacterOffsetBegin=2317 CharacterOffsetEnd=2326 PartOfSpeech=JJ Lemma=excellent NamedEntityTag=O]
+[Text=questions CharacterOffsetBegin=2327 CharacterOffsetEnd=2336 PartOfSpeech=NNS Lemma=question NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=2337 CharacterOffsetEnd=2342 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=exactly CharacterOffsetBegin=2343 CharacterOffsetEnd=2350 PartOfSpeech=RB Lemma=exactly NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=2351 CharacterOffsetEnd=2354 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=2355 CharacterOffsetEnd=2359 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=2360 CharacterOffsetEnd=2365 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=2366 CharacterOffsetEnd=2368 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=done CharacterOffsetBegin=2369 CharacterOffsetEnd=2373 PartOfSpeech=VBN Lemma=do NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=2373 CharacterOffsetEnd=2374 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=2375 CharacterOffsetEnd=2378 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=witnesses CharacterOffsetBegin=2379 CharacterOffsetEnd=2388 PartOfSpeech=NNS Lemma=witness NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=2389 CharacterOffsetEnd=2393 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=2394 CharacterOffsetEnd=2398 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=2399 CharacterOffsetEnd=2400 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=cost CharacterOffsetBegin=2400 CharacterOffsetEnd=2404 PartOfSpeech=NN Lemma=cost NamedEntityTag=O]
+[Text=plus CharacterOffsetBegin=2405 CharacterOffsetEnd=2409 PartOfSpeech=CC Lemma=plus NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=2410 CharacterOffsetEnd=2411 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=reasonable CharacterOffsetBegin=2412 CharacterOffsetEnd=2422 PartOfSpeech=JJ Lemma=reasonable NamedEntityTag=O]
+[Text=profit CharacterOffsetBegin=2423 CharacterOffsetEnd=2429 PartOfSpeech=NN Lemma=profit NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=2429 CharacterOffsetEnd=2430 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=2431 CharacterOffsetEnd=2434 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=2435 CharacterOffsetEnd=2439 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=leave CharacterOffsetBegin=2440 CharacterOffsetEnd=2445 PartOfSpeech=VB Lemma=leave NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=2446 CharacterOffsetEnd=2449 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=details CharacterOffsetBegin=2450 CharacterOffsetEnd=2457 PartOfSpeech=NNS Lemma=detail NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=2458 CharacterOffsetEnd=2460 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=FERC CharacterOffsetBegin=2461 CharacterOffsetEnd=2465 PartOfSpeech=NNP Lemma=FERC NamedEntityTag=ORGANIZATION]
+[Text=; CharacterOffsetBegin=2465 CharacterOffsetEnd=2466 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=2467 CharacterOffsetEnd=2469 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=afternoon CharacterOffsetBegin=2470 CharacterOffsetEnd=2479 PartOfSpeech=NN Lemma=afternoon NamedEntityTag=TIME NormalizedNamedEntityTag=A]
+[Text=Senate CharacterOffsetBegin=2480 CharacterOffsetEnd=2486 PartOfSpeech=NNP Lemma=Senate NamedEntityTag=ORGANIZATION]
+[Text=hearing CharacterOffsetBegin=2487 CharacterOffsetEnd=2494 PartOfSpeech=NN Lemma=hearing NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=2494 CharacterOffsetEnd=2495 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Chairman CharacterOffsetBegin=2496 CharacterOffsetEnd=2504 PartOfSpeech=NNP Lemma=Chairman NamedEntityTag=TITLE]
+[Text=Hebert CharacterOffsetBegin=2505 CharacterOffsetEnd=2511 PartOfSpeech=NNP Lemma=Hebert NamedEntityTag=PERSON]
+[Text=had CharacterOffsetBegin=2512 CharacterOffsetEnd=2515 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=2516 CharacterOffsetEnd=2519 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=staff CharacterOffsetBegin=2520 CharacterOffsetEnd=2525 PartOfSpeech=NN Lemma=staff NamedEntityTag=O]
+[Text=bring CharacterOffsetBegin=2526 CharacterOffsetEnd=2531 PartOfSpeech=VB Lemma=bring NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=2532 CharacterOffsetEnd=2534 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=15 CharacterOffsetBegin=2535 CharacterOffsetEnd=2537 PartOfSpeech=CD Lemma=15 NamedEntityTag=NUMBER NormalizedNamedEntityTag=15.0]
+[Text=boxes CharacterOffsetBegin=2538 CharacterOffsetEnd=2543 PartOfSpeech=NNS Lemma=box NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=2544 CharacterOffsetEnd=2548 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=2549 CharacterOffsetEnd=2552 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=FP&L CharacterOffsetBegin=2553 CharacterOffsetEnd=2557 PartOfSpeech=NNP Lemma=FP&L NamedEntityTag=ORGANIZATION]
+[Text=case CharacterOffsetBegin=2558 CharacterOffsetEnd=2562 PartOfSpeech=NN Lemma=case NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=2563 CharacterOffsetEnd=2565 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=show CharacterOffsetBegin=2566 CharacterOffsetEnd=2570 PartOfSpeech=VB Lemma=show NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=2571 CharacterOffsetEnd=2574 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=2575 CharacterOffsetEnd=2576 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=price CharacterOffsetBegin=2577 CharacterOffsetEnd=2582 PartOfSpeech=NN Lemma=price NamedEntityTag=O]
+[Text=cap CharacterOffsetBegin=2583 CharacterOffsetEnd=2586 PartOfSpeech=NN Lemma=cap NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=2587 CharacterOffsetEnd=2592 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=take CharacterOffsetBegin=2593 CharacterOffsetEnd=2597 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text=too CharacterOffsetBegin=2598 CharacterOffsetEnd=2601 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+[Text=long CharacterOffsetBegin=2602 CharacterOffsetEnd=2606 PartOfSpeech=JJ Lemma=long NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=2607 CharacterOffsetEnd=2609 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=bring CharacterOffsetBegin=2610 CharacterOffsetEnd=2615 PartOfSpeech=VB Lemma=bring NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=2616 CharacterOffsetEnd=2619 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=relief CharacterOffsetBegin=2620 CharacterOffsetEnd=2626 PartOfSpeech=NN Lemma=relief NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=2627 CharacterOffsetEnd=2629 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=California CharacterOffsetBegin=2630 CharacterOffsetEnd=2640 PartOfSpeech=NNP Lemma=California NamedEntityTag=STATE_OR_PROVINCE]
+[Text=this CharacterOffsetBegin=2641 CharacterOffsetEnd=2645 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=summer CharacterOffsetBegin=2646 CharacterOffsetEnd=2652 PartOfSpeech=NN Lemma=summer NamedEntityTag=DATE NormalizedNamedEntityTag=summer ]
+[Text=; CharacterOffsetBegin=2652 CharacterOffsetEnd=2653 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=2654 CharacterOffsetEnd=2656 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=2657 CharacterOffsetEnd=2661 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=last CharacterOffsetBegin=2662 CharacterOffsetEnd=2666 PartOfSpeech=JJ Lemma=last NamedEntityTag=DATE NormalizedNamedEntityTag=last week ]
+[Text=week CharacterOffsetBegin=2667 CharacterOffsetEnd=2671 PartOfSpeech=NN Lemma=week NamedEntityTag=DATE NormalizedNamedEntityTag=last week ]
+[Text='s CharacterOffsetBegin=2671 CharacterOffsetEnd=2673 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=soft CharacterOffsetBegin=2674 CharacterOffsetEnd=2678 PartOfSpeech=JJ Lemma=soft NamedEntityTag=O]
+[Text=price CharacterOffsetBegin=2679 CharacterOffsetEnd=2684 PartOfSpeech=NN Lemma=price NamedEntityTag=O]
+[Text=cap CharacterOffsetBegin=2685 CharacterOffsetEnd=2688 PartOfSpeech=NN Lemma=cap NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=2689 CharacterOffsetEnd=2691 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=2692 CharacterOffsetEnd=2696 PartOfSpeech=RB Lemma=much NamedEntityTag=O]
+[Text=better CharacterOffsetBegin=2697 CharacterOffsetEnd=2703 PartOfSpeech=JJR Lemma=better NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=2703 CharacterOffsetEnd=2704 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (DT Both) (NNS hearings))
+      (ADVP (RB also))
+      (VP (VBD touched)
+        (PP (IN on)
+          (SBAR
+            (WHADJP (WRB how) (JJ difficult))
+            (S
+              (NP (PRP it))
+              (VP (MD would)
+                (VP (VB be)
+                  (S
+                    (VP (TO to)
+                      (VP
+                        (ADVP (RB actually))
+                        (VB devise)
+                        (NP (DT a) (NN price) (NN cap))))))))))))
+    (: ;)
+    (S
+      (PP (IN at)
+        (NP (DT the) (NNP House) (NN hearing)))
+      (, ,)
+      (NP
+        (NP (NN none))
+        (PP (IN of)
+          (NP
+            (NP (DT those))
+            (VP (VBG advocating)
+              (NP (DT a) (NN price) (NN cap))
+              (PP (IN among)
+                (NP (DT the) (NNS witnesses)))))))
+      (VP (MD could)
+        (VP (VB answer)
+          (NP (JJ excellent) (NNS questions))
+          (PP (IN about)
+            (SBAR
+              (WHADVP (RB exactly) (WRB how))
+              (S
+                (NP (DT this))
+                (VP (MD could)
+                  (VP (VB be)
+                    (VP (VBN done))))))))))
+    (: ;)
+    (S
+      (NP (DT the) (NNS witnesses))
+      (ADVP (RB just))
+      (VP
+        (VP (VBD said) (`` ``)
+          (NP
+            (NP (NN cost))
+            (PP (CC plus)
+              (NP (DT a) (JJ reasonable) (NN profit))))
+          ('' ''))
+        (CC and)
+        (VP (VBD said)
+          (VP (VB leave)
+            (NP (DT the) (NNS details))
+            (PP (TO to)
+              (NP (NNP FERC)))))))
+    (: ;)
+    (S
+      (PP (IN at)
+        (NP
+          (NP (NN afternoon))
+          (NP (NNP Senate) (NN hearing))))
+      (, ,)
+      (NP (NNP Chairman) (NNP Hebert))
+      (VP (VBD had)
+        (S
+          (NP (DT the) (NN staff))
+          (VP (VB bring)
+            (PP (IN in)
+              (NP
+                (NP (CD 15) (NNS boxes))
+                (PP (IN from)
+                  (NP (CD one) (NNP FP&L) (NN case)))))
+            (S
+              (VP (TO to)
+                (VP (VB show)
+                  (SBAR
+                    (WHADVP (WRB how))
+                    (S
+                      (NP (DT a) (NN price) (NN cap))
+                      (VP (MD would)
+                        (VP (VB take)
+                          (ADJP (RB too) (JJ long)
+                            (S
+                              (VP (TO to)
+                                (VP (VB bring)
+                                  (NP (DT any) (NN relief))
+                                  (PP (TO to)
+                                    (NP (NNP California)))
+                                  (NP-TMP (DT this) (NN summer)))))))))))))))))
+    (: ;)
+    (S
+      (NP (PRP he))
+      (VP (VBD said)
+        (SBAR
+          (S
+            (NP
+              (NP (JJ last) (NN week) (POS 's))
+              (JJ soft) (NN price) (NN cap))
+            (VP (VBZ is)
+              (ADJP (RB much) (JJR better)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, touched-4)
+det(hearings-2, Both-1)
+nsubj(touched-4, hearings-2)
+advmod(touched-4, also-3)
+mark(be-10, on-5)
+advmod(difficult-7, how-6)
+dep(be-10, difficult-7)
+nsubj(be-10, it-8)
+nsubj:xsubj(devise-13, it-8)
+aux(be-10, would-9)
+advcl:on(touched-4, be-10)
+mark(devise-13, to-11)
+advmod(devise-13, actually-12)
+xcomp(be-10, devise-13)
+det(cap-16, a-14)
+compound(cap-16, price-15)
+dobj(devise-13, cap-16)
+punct(touched-4, ;-17)
+case(hearing-21, at-18)
+det(hearing-21, the-19)
+compound(hearing-21, House-20)
+nmod:at(answer-34, hearing-21)
+punct(answer-34, ,-22)
+nsubj(answer-34, none-23)
+case(those-25, of-24)
+nmod:of(none-23, those-25)
+acl(those-25, advocating-26)
+det(cap-29, a-27)
+compound(cap-29, price-28)
+dobj(advocating-26, cap-29)
+case(witnesses-32, among-30)
+det(witnesses-32, the-31)
+nmod:among(advocating-26, witnesses-32)
+aux(answer-34, could-33)
+parataxis(touched-4, answer-34)
+amod(questions-36, excellent-35)
+dobj(answer-34, questions-36)
+mark(done-43, about-37)
+advmod(how-39, exactly-38)
+advmod(done-43, how-39)
+nsubjpass(done-43, this-40)
+aux(done-43, could-41)
+auxpass(done-43, be-42)
+advcl:about(answer-34, done-43)
+punct(touched-4, ;-44)
+det(witnesses-46, the-45)
+nsubj(said-48, witnesses-46)
+nsubj(said-57, witnesses-46)
+advmod(said-48, just-47)
+parataxis(touched-4, said-48)
+punct(said-48, ``-49)
+dobj(said-48, cost-50)
+case(profit-54, plus-51)
+det(profit-54, a-52)
+amod(profit-54, reasonable-53)
+nmod:plus(cost-50, profit-54)
+punct(said-48, ''-55)
+cc(said-48, and-56)
+parataxis(touched-4, said-57)
+conj:and(said-48, said-57)
+xcomp(said-57, leave-58)
+det(details-60, the-59)
+dobj(leave-58, details-60)
+case(FERC-62, to-61)
+nmod:to(leave-58, FERC-62)
+punct(touched-4, ;-63)
+case(afternoon-65, at-64)
+nmod:at(had-71, afternoon-65)
+compound(hearing-67, Senate-66)
+dep(afternoon-65, hearing-67)
+punct(had-71, ,-68)
+compound(Hebert-70, Chairman-69)
+nsubj(had-71, Hebert-70)
+parataxis(touched-4, had-71)
+det(staff-73, the-72)
+nsubj(bring-74, staff-73)
+nsubj:xsubj(show-83, staff-73)
+ccomp(had-71, bring-74)
+case(boxes-77, in-75)
+nummod(boxes-77, 15-76)
+nmod:in(bring-74, boxes-77)
+case(case-81, from-78)
+nummod(case-81, one-79)
+compound(case-81, FP&L-80)
+nmod:from(boxes-77, case-81)
+mark(show-83, to-82)
+xcomp(bring-74, show-83)
+advmod(take-89, how-84)
+det(cap-87, a-85)
+compound(cap-87, price-86)
+nsubj(take-89, cap-87)
+aux(take-89, would-88)
+ccomp(show-83, take-89)
+advmod(long-91, too-90)
+xcomp(take-89, long-91)
+mark(bring-93, to-92)
+xcomp(long-91, bring-93)
+det(relief-95, any-94)
+dobj(bring-93, relief-95)
+case(California-97, to-96)
+nmod:to(bring-93, California-97)
+det(summer-99, this-98)
+nmod:tmod(bring-93, summer-99)
+punct(touched-4, ;-100)
+nsubj(said-102, he-101)
+parataxis(touched-4, said-102)
+amod(week-104, last-103)
+nmod:poss(cap-108, week-104)
+case(week-104, 's-105)
+amod(cap-108, soft-106)
+compound(cap-108, price-107)
+nsubj(better-111, cap-108)
+cop(better-111, is-109)
+advmod(better-111, much-110)
+ccomp(said-102, better-111)
+punct(touched-4, .-112)
+
+Extracted the following NER entity mentions:
+House	ORGANIZATION
+FERC	ORGANIZATION
+afternoon	TIME
+Senate	ORGANIZATION
+Chairman	TITLE
+Hebert	PERSON
+15	NUMBER
+one	NUMBER
+FP&L	ORGANIZATION
+California	STATE_OR_PROVINCE
+summer	DATE
+last week	DATE
+he	PERSON
+
+Sentence #11 (47 tokens):
+Also on the price cap, Rep. Walden (R-OR)  got the Cal Energy Comm chair to
+admit that if the price caps had been in place earlier, California would NOT
+have taken the conservation and new generation steps that it has taken
+recently.
+
+Tokens:
+[Text=Also CharacterOffsetBegin=2705 CharacterOffsetEnd=2709 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=2710 CharacterOffsetEnd=2712 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=2713 CharacterOffsetEnd=2716 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=price CharacterOffsetBegin=2717 CharacterOffsetEnd=2722 PartOfSpeech=NN Lemma=price NamedEntityTag=O]
+[Text=cap CharacterOffsetBegin=2723 CharacterOffsetEnd=2726 PartOfSpeech=NN Lemma=cap NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=2726 CharacterOffsetEnd=2727 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Rep. CharacterOffsetBegin=2728 CharacterOffsetEnd=2732 PartOfSpeech=NNP Lemma=Rep. NamedEntityTag=TITLE]
+[Text=Walden CharacterOffsetBegin=2733 CharacterOffsetEnd=2739 PartOfSpeech=NNP Lemma=Walden NamedEntityTag=PERSON]
+[Text=-LRB- CharacterOffsetBegin=2740 CharacterOffsetEnd=2741 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=R-OR CharacterOffsetBegin=2741 CharacterOffsetEnd=2745 PartOfSpeech=NN Lemma=r-or NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=2745 CharacterOffsetEnd=2746 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=got CharacterOffsetBegin=2748 CharacterOffsetEnd=2751 PartOfSpeech=VBD Lemma=get NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=2752 CharacterOffsetEnd=2755 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Cal CharacterOffsetBegin=2756 CharacterOffsetEnd=2759 PartOfSpeech=NNP Lemma=Cal NamedEntityTag=ORGANIZATION]
+[Text=Energy CharacterOffsetBegin=2760 CharacterOffsetEnd=2766 PartOfSpeech=NNP Lemma=Energy NamedEntityTag=ORGANIZATION]
+[Text=Comm CharacterOffsetBegin=2767 CharacterOffsetEnd=2771 PartOfSpeech=NNP Lemma=Comm NamedEntityTag=ORGANIZATION]
+[Text=chair CharacterOffsetBegin=2772 CharacterOffsetEnd=2777 PartOfSpeech=NN Lemma=chair NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=2778 CharacterOffsetEnd=2780 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=admit CharacterOffsetBegin=2781 CharacterOffsetEnd=2786 PartOfSpeech=VB Lemma=admit NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=2787 CharacterOffsetEnd=2791 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=2792 CharacterOffsetEnd=2794 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=2795 CharacterOffsetEnd=2798 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=price CharacterOffsetBegin=2799 CharacterOffsetEnd=2804 PartOfSpeech=NN Lemma=price NamedEntityTag=O]
+[Text=caps CharacterOffsetBegin=2805 CharacterOffsetEnd=2809 PartOfSpeech=NNS Lemma=cap NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=2810 CharacterOffsetEnd=2813 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=2814 CharacterOffsetEnd=2818 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=2819 CharacterOffsetEnd=2821 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=place CharacterOffsetBegin=2822 CharacterOffsetEnd=2827 PartOfSpeech=NN Lemma=place NamedEntityTag=O]
+[Text=earlier CharacterOffsetBegin=2828 CharacterOffsetEnd=2835 PartOfSpeech=RB Lemma=earlier NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=2835 CharacterOffsetEnd=2836 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=California CharacterOffsetBegin=2837 CharacterOffsetEnd=2847 PartOfSpeech=NNP Lemma=California NamedEntityTag=STATE_OR_PROVINCE]
+[Text=would CharacterOffsetBegin=2848 CharacterOffsetEnd=2853 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=NOT CharacterOffsetBegin=2854 CharacterOffsetEnd=2857 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=2858 CharacterOffsetEnd=2862 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=taken CharacterOffsetBegin=2863 CharacterOffsetEnd=2868 PartOfSpeech=VBN Lemma=take NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=2869 CharacterOffsetEnd=2872 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=conservation CharacterOffsetBegin=2873 CharacterOffsetEnd=2885 PartOfSpeech=NN Lemma=conservation NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=2886 CharacterOffsetEnd=2889 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=2890 CharacterOffsetEnd=2893 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=generation CharacterOffsetBegin=2894 CharacterOffsetEnd=2904 PartOfSpeech=NN Lemma=generation NamedEntityTag=O]
+[Text=steps CharacterOffsetBegin=2905 CharacterOffsetEnd=2910 PartOfSpeech=NNS Lemma=step NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=2911 CharacterOffsetEnd=2915 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=2916 CharacterOffsetEnd=2918 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=2919 CharacterOffsetEnd=2922 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=taken CharacterOffsetBegin=2923 CharacterOffsetEnd=2928 PartOfSpeech=VBN Lemma=take NamedEntityTag=O]
+[Text=recently CharacterOffsetBegin=2929 CharacterOffsetEnd=2937 PartOfSpeech=RB Lemma=recently NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=2937 CharacterOffsetEnd=2938 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP
+      (ADVP (RB Also))
+      (IN on)
+      (NP (DT the) (NN price) (NN cap)))
+    (, ,)
+    (NP
+      (NP (NNP Rep.) (NNP Walden))
+      (PRN (-LRB- -LRB-)
+        (NP (NN R-OR))
+        (-RRB- -RRB-)))
+    (VP (VBD got)
+      (S
+        (NP (DT the) (NNP Cal) (NNP Energy) (NNP Comm) (NN chair))
+        (VP (TO to)
+          (VP (VB admit)
+            (SBAR (IN that)
+              (S
+                (SBAR (IN if)
+                  (S
+                    (NP (DT the) (NN price) (NNS caps))
+                    (VP (VBD had)
+                      (VP (VBN been)
+                        (PP (IN in)
+                          (NP (NN place)))
+                        (ADVP (RB earlier))))))
+                (, ,)
+                (NP (NNP California))
+                (VP (MD would)
+                  (ADVP (RB NOT))
+                  (VP (VB have)
+                    (VP (VBN taken)
+                      (NP (DT the) (NN conservation)
+                        (CC and)
+                        (JJ new) (NN generation) (NNS steps))
+                      (SBAR (IN that)
+                        (S
+                          (NP (PRP it))
+                          (VP (VBZ has)
+                            (VP (VBN taken)
+                              (ADVP (RB recently)))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, got-12)
+advmod(cap-5, Also-1)
+case(cap-5, on-2)
+det(cap-5, the-3)
+compound(cap-5, price-4)
+nmod:on(got-12, cap-5)
+punct(got-12, ,-6)
+compound(Walden-8, Rep.-7)
+nsubj(got-12, Walden-8)
+punct(R-OR-10, -LRB--9)
+appos(Walden-8, R-OR-10)
+punct(R-OR-10, -RRB--11)
+det(chair-17, the-13)
+compound(chair-17, Cal-14)
+compound(chair-17, Energy-15)
+compound(chair-17, Comm-16)
+dobj(got-12, chair-17)
+nsubj:xsubj(admit-19, chair-17)
+mark(admit-19, to-18)
+xcomp(got-12, admit-19)
+mark(taken-35, that-20)
+mark(place-28, if-21)
+det(caps-24, the-22)
+compound(caps-24, price-23)
+nsubj(place-28, caps-24)
+aux(place-28, had-25)
+cop(place-28, been-26)
+case(place-28, in-27)
+advcl:in(taken-35, place-28)
+advmod(place-28, earlier-29)
+punct(taken-35, ,-30)
+nsubj(taken-35, California-31)
+aux(taken-35, would-32)
+neg(taken-35, NOT-33)
+aux(taken-35, have-34)
+ccomp(admit-19, taken-35)
+det(conservation-37, the-36)
+dobj(taken-35, conservation-37)
+cc(conservation-37, and-38)
+amod(steps-41, new-39)
+compound(steps-41, generation-40)
+dobj(taken-35, steps-41)
+conj:and(conservation-37, steps-41)
+mark(taken-45, that-42)
+nsubj(taken-45, it-43)
+aux(taken-45, has-44)
+ccomp(taken-35, taken-45)
+advmod(taken-45, recently-46)
+punct(got-12, .-47)
+
+Extracted the following NER entity mentions:
+Rep.	TITLE
+Walden	PERSON
+Cal Energy Comm	ORGANIZATION
+California	STATE_OR_PROVINCE
+
+Sentence #12 (91 tokens):
+The interplay among the FERC commissioners was much more contentious than it
+was a House hearing on Tuesday, although it could have been worse; when
+Senate Chairman Murkowski (R-AK) said that "help is on the way" in the form
+of the nominees for the two vacancies, Sen. Dorgan (D-ND) made a comment that
+suggested that the confirmation process will not be smooth; the same concern
+came from the interplay among the Senators, which was also somewhat
+contentious at times.
+
+Tokens:
+[Text=The CharacterOffsetBegin=2939 CharacterOffsetEnd=2942 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=interplay CharacterOffsetBegin=2943 CharacterOffsetEnd=2952 PartOfSpeech=NN Lemma=interplay NamedEntityTag=O]
+[Text=among CharacterOffsetBegin=2953 CharacterOffsetEnd=2958 PartOfSpeech=IN Lemma=among NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=2959 CharacterOffsetEnd=2962 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=FERC CharacterOffsetBegin=2963 CharacterOffsetEnd=2967 PartOfSpeech=NNP Lemma=FERC NamedEntityTag=ORGANIZATION]
+[Text=commissioners CharacterOffsetBegin=2968 CharacterOffsetEnd=2981 PartOfSpeech=NNS Lemma=commissioner NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=2982 CharacterOffsetEnd=2985 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=2986 CharacterOffsetEnd=2990 PartOfSpeech=RB Lemma=much NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=2991 CharacterOffsetEnd=2995 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=contentious CharacterOffsetBegin=2996 CharacterOffsetEnd=3007 PartOfSpeech=JJ Lemma=contentious NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=3008 CharacterOffsetEnd=3012 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=3013 CharacterOffsetEnd=3015 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=3016 CharacterOffsetEnd=3019 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=3020 CharacterOffsetEnd=3021 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=House CharacterOffsetBegin=3022 CharacterOffsetEnd=3027 PartOfSpeech=NNP Lemma=House NamedEntityTag=ORGANIZATION]
+[Text=hearing CharacterOffsetBegin=3028 CharacterOffsetEnd=3035 PartOfSpeech=NN Lemma=hearing NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=3036 CharacterOffsetEnd=3038 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Tuesday CharacterOffsetBegin=3039 CharacterOffsetEnd=3046 PartOfSpeech=NNP Lemma=Tuesday NamedEntityTag=DATE NormalizedNamedEntityTag=tuesday]
+[Text=, CharacterOffsetBegin=3046 CharacterOffsetEnd=3047 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=although CharacterOffsetBegin=3048 CharacterOffsetEnd=3056 PartOfSpeech=IN Lemma=although NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=3057 CharacterOffsetEnd=3059 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=3060 CharacterOffsetEnd=3065 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=3066 CharacterOffsetEnd=3070 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=3071 CharacterOffsetEnd=3075 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=worse CharacterOffsetBegin=3076 CharacterOffsetEnd=3081 PartOfSpeech=JJR Lemma=worse NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=3081 CharacterOffsetEnd=3082 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=3083 CharacterOffsetEnd=3087 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=Senate CharacterOffsetBegin=3088 CharacterOffsetEnd=3094 PartOfSpeech=NNP Lemma=Senate NamedEntityTag=ORGANIZATION]
+[Text=Chairman CharacterOffsetBegin=3095 CharacterOffsetEnd=3103 PartOfSpeech=NNP Lemma=Chairman NamedEntityTag=TITLE]
+[Text=Murkowski CharacterOffsetBegin=3104 CharacterOffsetEnd=3113 PartOfSpeech=NNP Lemma=Murkowski NamedEntityTag=PERSON]
+[Text=-LRB- CharacterOffsetBegin=3114 CharacterOffsetEnd=3115 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=R-AK CharacterOffsetBegin=3115 CharacterOffsetEnd=3119 PartOfSpeech=NNP Lemma=R-AK NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=3119 CharacterOffsetEnd=3120 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=3121 CharacterOffsetEnd=3125 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=3126 CharacterOffsetEnd=3130 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=3131 CharacterOffsetEnd=3132 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=help CharacterOffsetBegin=3132 CharacterOffsetEnd=3136 PartOfSpeech=NN Lemma=help NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=3137 CharacterOffsetEnd=3139 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=3140 CharacterOffsetEnd=3142 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=3143 CharacterOffsetEnd=3146 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=way CharacterOffsetBegin=3147 CharacterOffsetEnd=3150 PartOfSpeech=NN Lemma=way NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=3150 CharacterOffsetEnd=3151 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=3152 CharacterOffsetEnd=3154 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=3155 CharacterOffsetEnd=3158 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=form CharacterOffsetBegin=3159 CharacterOffsetEnd=3163 PartOfSpeech=NN Lemma=form NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=3164 CharacterOffsetEnd=3166 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=3167 CharacterOffsetEnd=3170 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=nominees CharacterOffsetBegin=3171 CharacterOffsetEnd=3179 PartOfSpeech=NNS Lemma=nominee NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=3180 CharacterOffsetEnd=3183 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=3184 CharacterOffsetEnd=3187 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=3188 CharacterOffsetEnd=3191 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=vacancies CharacterOffsetBegin=3192 CharacterOffsetEnd=3201 PartOfSpeech=NNS Lemma=vacancy NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=3201 CharacterOffsetEnd=3202 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Sen. CharacterOffsetBegin=3203 CharacterOffsetEnd=3207 PartOfSpeech=NNP Lemma=Sen. NamedEntityTag=O]
+[Text=Dorgan CharacterOffsetBegin=3208 CharacterOffsetEnd=3214 PartOfSpeech=NNP Lemma=Dorgan NamedEntityTag=PERSON]
+[Text=-LRB- CharacterOffsetBegin=3215 CharacterOffsetEnd=3216 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=D-ND CharacterOffsetBegin=3216 CharacterOffsetEnd=3220 PartOfSpeech=NNP Lemma=D-ND NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=3220 CharacterOffsetEnd=3221 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=made CharacterOffsetBegin=3222 CharacterOffsetEnd=3226 PartOfSpeech=VBD Lemma=make NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=3227 CharacterOffsetEnd=3228 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=comment CharacterOffsetBegin=3229 CharacterOffsetEnd=3236 PartOfSpeech=NN Lemma=comment NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=3237 CharacterOffsetEnd=3241 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=suggested CharacterOffsetBegin=3242 CharacterOffsetEnd=3251 PartOfSpeech=VBD Lemma=suggest NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=3252 CharacterOffsetEnd=3256 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=3257 CharacterOffsetEnd=3260 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=confirmation CharacterOffsetBegin=3261 CharacterOffsetEnd=3273 PartOfSpeech=NN Lemma=confirmation NamedEntityTag=O]
+[Text=process CharacterOffsetBegin=3274 CharacterOffsetEnd=3281 PartOfSpeech=NN Lemma=process NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=3282 CharacterOffsetEnd=3286 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=3287 CharacterOffsetEnd=3290 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=3291 CharacterOffsetEnd=3293 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=smooth CharacterOffsetBegin=3294 CharacterOffsetEnd=3300 PartOfSpeech=JJ Lemma=smooth NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=3300 CharacterOffsetEnd=3301 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=3302 CharacterOffsetEnd=3305 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=same CharacterOffsetBegin=3306 CharacterOffsetEnd=3310 PartOfSpeech=JJ Lemma=same NamedEntityTag=O]
+[Text=concern CharacterOffsetBegin=3311 CharacterOffsetEnd=3318 PartOfSpeech=NN Lemma=concern NamedEntityTag=O]
+[Text=came CharacterOffsetBegin=3319 CharacterOffsetEnd=3323 PartOfSpeech=VBD Lemma=come NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=3324 CharacterOffsetEnd=3328 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=3329 CharacterOffsetEnd=3332 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=interplay CharacterOffsetBegin=3333 CharacterOffsetEnd=3342 PartOfSpeech=NN Lemma=interplay NamedEntityTag=O]
+[Text=among CharacterOffsetBegin=3343 CharacterOffsetEnd=3348 PartOfSpeech=IN Lemma=among NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=3349 CharacterOffsetEnd=3352 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Senators CharacterOffsetBegin=3353 CharacterOffsetEnd=3361 PartOfSpeech=NNPS Lemma=Senators NamedEntityTag=MISC]
+[Text=, CharacterOffsetBegin=3361 CharacterOffsetEnd=3362 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=3363 CharacterOffsetEnd=3368 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=3369 CharacterOffsetEnd=3372 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=3373 CharacterOffsetEnd=3377 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=somewhat CharacterOffsetBegin=3378 CharacterOffsetEnd=3386 PartOfSpeech=RB Lemma=somewhat NamedEntityTag=O]
+[Text=contentious CharacterOffsetBegin=3387 CharacterOffsetEnd=3398 PartOfSpeech=JJ Lemma=contentious NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=3399 CharacterOffsetEnd=3401 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=times CharacterOffsetBegin=3402 CharacterOffsetEnd=3407 PartOfSpeech=NNS Lemma=time NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=3407 CharacterOffsetEnd=3408 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT The) (NN interplay))
+        (PP (IN among)
+          (NP (DT the) (NNP FERC) (NNS commissioners))))
+      (VP (VBD was)
+        (ADJP
+          (ADJP (RB much) (RBR more) (JJ contentious))
+          (SBAR (IN than)
+            (S
+              (NP (PRP it))
+              (VP (VBD was)
+                (NP
+                  (NP (DT a) (NNP House) (NN hearing))
+                  (PP (IN on)
+                    (NP (NNP Tuesday))))
+                (, ,)
+                (SBAR (IN although)
+                  (S
+                    (NP (PRP it))
+                    (VP (MD could)
+                      (VP (VB have)
+                        (VP (VBN been)
+                          (ADJP (JJR worse)))))))))))))
+    (: ;)
+    (S
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP
+            (NP (NNP Senate) (NNP Chairman) (NNP Murkowski))
+            (PRN (-LRB- -LRB-)
+              (NP (NNP R-AK))
+              (-RRB- -RRB-)))
+          (VP (VBD said)
+            (SBAR (IN that) (`` ``)
+              (S
+                (NP (NN help))
+                (VP (VBZ is)
+                  (PP (IN on)
+                    (NP
+                      (NP (DT the) (NN way))
+                      ('' '')
+                      (PP (IN in)
+                        (NP
+                          (NP (DT the) (NN form))
+                          (PP (IN of)
+                            (NP
+                              (NP (DT the) (NNS nominees))
+                              (PP (IN for)
+                                (NP (DT the) (CD two) (NNS vacancies)))))))))))))))
+      (, ,)
+      (NP
+        (NP (NNP Sen.) (NNP Dorgan))
+        (PRN (-LRB- -LRB-)
+          (NP (NNP D-ND))
+          (-RRB- -RRB-)))
+      (VP (VBD made)
+        (NP
+          (NP (DT a) (NN comment))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBD suggested)
+                (SBAR (IN that)
+                  (S
+                    (NP (DT the) (NN confirmation) (NN process))
+                    (VP (MD will) (RB not)
+                      (VP (VB be)
+                        (ADJP (JJ smooth))))))))))))
+    (: ;)
+    (S
+      (NP (DT the) (JJ same) (NN concern))
+      (VP (VBD came)
+        (PP (IN from)
+          (NP (DT the) (NN interplay)))
+        (PP (IN among)
+          (NP
+            (NP (DT the) (NNPS Senators))
+            (, ,)
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (VBD was)
+                  (ADVP (RB also))
+                  (ADJP (RB somewhat) (JJ contentious)
+                    (PP (IN at)
+                      (NP (NNS times)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, contentious-10)
+det(interplay-2, The-1)
+nsubj(contentious-10, interplay-2)
+case(commissioners-6, among-3)
+det(commissioners-6, the-4)
+compound(commissioners-6, FERC-5)
+nmod:among(interplay-2, commissioners-6)
+cop(contentious-10, was-7)
+advmod(contentious-10, much-8)
+advmod(contentious-10, more-9)
+mark(hearing-16, than-11)
+nsubj(hearing-16, it-12)
+cop(hearing-16, was-13)
+det(hearing-16, a-14)
+compound(hearing-16, House-15)
+ccomp(contentious-10, hearing-16)
+case(Tuesday-18, on-17)
+nmod:on(hearing-16, Tuesday-18)
+punct(hearing-16, ,-19)
+mark(worse-25, although-20)
+nsubj(worse-25, it-21)
+aux(worse-25, could-22)
+aux(worse-25, have-23)
+cop(worse-25, been-24)
+advcl:although(hearing-16, worse-25)
+punct(contentious-10, ;-26)
+advmod(said-34, when-27)
+compound(Murkowski-30, Senate-28)
+compound(Murkowski-30, Chairman-29)
+nsubj(said-34, Murkowski-30)
+punct(R-AK-32, -LRB--31)
+appos(Murkowski-30, R-AK-32)
+punct(R-AK-32, -RRB--33)
+advcl(made-59, said-34)
+mark(way-41, that-35)
+punct(way-41, ``-36)
+nsubj(way-41, help-37)
+cop(way-41, is-38)
+case(way-41, on-39)
+det(way-41, the-40)
+ccomp(said-34, way-41)
+punct(way-41, ''-42)
+case(form-45, in-43)
+det(form-45, the-44)
+nmod:in(way-41, form-45)
+case(nominees-48, of-46)
+det(nominees-48, the-47)
+nmod:of(form-45, nominees-48)
+case(vacancies-52, for-49)
+det(vacancies-52, the-50)
+nummod(vacancies-52, two-51)
+nmod:for(nominees-48, vacancies-52)
+punct(made-59, ,-53)
+compound(Dorgan-55, Sen.-54)
+nsubj(made-59, Dorgan-55)
+punct(D-ND-57, -LRB--56)
+appos(Dorgan-55, D-ND-57)
+punct(D-ND-57, -RRB--58)
+parataxis(contentious-10, made-59)
+det(comment-61, a-60)
+dobj(made-59, comment-61)
+nsubj(suggested-63, comment-61)
+ref(comment-61, that-62)
+acl:relcl(comment-61, suggested-63)
+mark(smooth-71, that-64)
+det(process-67, the-65)
+compound(process-67, confirmation-66)
+nsubj(smooth-71, process-67)
+aux(smooth-71, will-68)
+neg(smooth-71, not-69)
+cop(smooth-71, be-70)
+ccomp(suggested-63, smooth-71)
+punct(contentious-10, ;-72)
+det(concern-75, the-73)
+amod(concern-75, same-74)
+nsubj(came-76, concern-75)
+parataxis(contentious-10, came-76)
+case(interplay-79, from-77)
+det(interplay-79, the-78)
+nmod:from(came-76, interplay-79)
+case(Senators-82, among-80)
+det(Senators-82, the-81)
+nmod:among(came-76, Senators-82)
+nsubj(contentious-88, Senators-82)
+punct(Senators-82, ,-83)
+ref(Senators-82, which-84)
+cop(contentious-88, was-85)
+advmod(contentious-88, also-86)
+advmod(contentious-88, somewhat-87)
+acl:relcl(Senators-82, contentious-88)
+case(times-90, at-89)
+nmod:at(contentious-88, times-90)
+punct(contentious-10, .-91)
+
+Extracted the following NER entity mentions:
+FERC	ORGANIZATION
+House	ORGANIZATION
+Tuesday	DATE
+Senate	ORGANIZATION
+Chairman	TITLE
+Murkowski	PERSON
+two	NUMBER
+Dorgan	PERSON
+Senators	MISC
+
+Sentence #13 (13 tokens):
+Please advise if you have any questions or would like further details.
+
+Tokens:
+[Text=Please CharacterOffsetBegin=3409 CharacterOffsetEnd=3415 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=advise CharacterOffsetBegin=3416 CharacterOffsetEnd=3422 PartOfSpeech=VB Lemma=advise NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=3423 CharacterOffsetEnd=3425 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=3426 CharacterOffsetEnd=3429 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=3430 CharacterOffsetEnd=3434 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=3435 CharacterOffsetEnd=3438 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=questions CharacterOffsetBegin=3439 CharacterOffsetEnd=3448 PartOfSpeech=NNS Lemma=question NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=3449 CharacterOffsetEnd=3451 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=3452 CharacterOffsetEnd=3457 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=3458 CharacterOffsetEnd=3462 PartOfSpeech=VB Lemma=like NamedEntityTag=O]
+[Text=further CharacterOffsetBegin=3463 CharacterOffsetEnd=3470 PartOfSpeech=JJ Lemma=further NamedEntityTag=O]
+[Text=details CharacterOffsetBegin=3471 CharacterOffsetEnd=3478 PartOfSpeech=NNS Lemma=detail NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=3478 CharacterOffsetEnd=3479 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Please)
+      (VP (VB advise)
+        (SBAR (IN if)
+          (S
+            (NP (PRP you))
+            (VP
+              (VP (VBP have)
+                (NP (DT any) (NNS questions)))
+              (CC or)
+              (VP (MD would)
+                (VP (VB like)
+                  (NP (JJ further) (NNS details)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Please-1)
+xcomp(Please-1, advise-2)
+mark(have-5, if-3)
+nsubj(have-5, you-4)
+nsubj(like-10, you-4)
+advcl:if(advise-2, have-5)
+det(questions-7, any-6)
+dobj(have-5, questions-7)
+cc(have-5, or-8)
+aux(like-10, would-9)
+advcl:if(advise-2, like-10)
+conj:or(have-5, like-10)
+amod(details-12, further-11)
+dobj(like-10, details-12)
+punct(Please-1, .-13)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(4,2,[2,3]) -> (1,5,[5,6]), that is: "House" -> "House"
+	(8,79,[79,80]) -> (1,5,[5,6]), that is: "House" -> "House"
+	(9,2,[2,3]) -> (1,5,[5,6]), that is: "House" -> "House"
+	(10,8,[8,9]) -> (1,5,[5,6]), that is: "it" -> "House"
+	(10,20,[20,21]) -> (1,5,[5,6]), that is: "House" -> "House"
+	(12,15,[15,16]) -> (1,5,[5,6]), that is: "House" -> "House"
+
+Coreference set:
+	(3,1,[1,2]) -> (1,7,[7,8]), that is: "Senate" -> "Senate"
+	(6,2,[2,3]) -> (1,7,[7,8]), that is: "Senate" -> "Senate"
+	(8,48,[48,49]) -> (1,7,[7,8]), that is: "Senate" -> "Senate"
+	(10,66,[66,67]) -> (1,7,[7,8]), that is: "Senate" -> "Senate"
+	(12,28,[28,29]) -> (1,7,[7,8]), that is: "Senate" -> "Senate"
+
+Coreference set:
+	(2,2,[1,3]) -> (10,21,[19,22]), that is: "House hearing" -> "the House hearing"
+
+Coreference set:
+	(6,7,[7,8]) -> (3,8,[8,9]), that is: "FERC" -> "FERC"
+	(10,62,[62,63]) -> (3,8,[8,9]), that is: "FERC" -> "FERC"
+	(12,5,[5,6]) -> (3,8,[8,9]), that is: "FERC" -> "FERC"
+
+Coreference set:
+	(3,2,[1,3]) -> (8,49,[47,50]), that is: "Senate hearing" -> "the Senate hearing"
+	(10,67,[66,68]) -> (8,49,[47,50]), that is: "Senate hearing" -> "the Senate hearing"
+
+Coreference set:
+	(3,6,[5,8]) -> (10,104,[103,106]), that is: "last week 's" -> "last week 's"
+
+Coreference set:
+	(7,66,[66,67]) -> (4,7,[7,8]), that is: "California" -> "California"
+	(8,18,[18,19]) -> (4,7,[7,8]), that is: "California" -> "California"
+	(8,40,[40,41]) -> (4,7,[7,8]), that is: "California" -> "California"
+	(8,76,[76,77]) -> (4,7,[7,8]), that is: "California" -> "California"
+	(9,10,[10,11]) -> (4,7,[7,8]), that is: "California" -> "California"
+	(10,97,[97,98]) -> (4,7,[7,8]), that is: "California" -> "California"
+	(11,31,[31,32]) -> (4,7,[7,8]), that is: "California" -> "California"
+	(11,43,[43,44]) -> (4,7,[7,8]), that is: "it" -> "California"
+
+Coreference set:
+	(8,54,[53,55]) -> (4,12,[10,13]), that is: "the commission" -> "Cal Energy Commission"
+	(8,73,[73,74]) -> (4,12,[10,13]), that is: "it" -> "Cal Energy Commission"
+	(11,16,[14,17]) -> (4,12,[10,13]), that is: "Cal Energy Comm" -> "Cal Energy Commission"
+
+Coreference set:
+	(9,3,[1,12]) -> (4,3,[1,4]), that is: "The House witnesses , primarily BPA but also the California witnesses" -> "The House witnesses"
+	(9,3,[1,4]) -> (4,3,[1,4]), that is: "The House witnesses" -> "The House witnesses"
+	(9,11,[9,12]) -> (4,3,[1,4]), that is: "the California witnesses" -> "The House witnesses"
+	(9,86,[86,87]) -> (4,3,[1,4]), that is: "their" -> "The House witnesses"
+	(10,32,[31,33]) -> (4,3,[1,4]), that is: "the witnesses" -> "The House witnesses"
+	(10,46,[45,47]) -> (4,3,[1,4]), that is: "the witnesses" -> "The House witnesses"
+
+Coreference set:
+	(6,3,[1,4]) -> (6,8,[5,9]), that is: "The Senate witnesses" -> "the three FERC commissioners"
+	(12,6,[4,7]) -> (6,8,[5,9]), that is: "the FERC commissioners" -> "the three FERC commissioners"
+
+Coreference set:
+	(7,8,[8,9]) -> (7,3,[2,4]), that is: "his" -> "Chairman Barton"
+	(7,16,[16,17]) -> (7,3,[2,4]), that is: "Barton" -> "Chairman Barton"
+	(7,59,[58,60]) -> (7,3,[2,4]), that is: "Chairman Barton" -> "Chairman Barton"
+	(7,62,[62,63]) -> (7,3,[2,4]), that is: "he" -> "Chairman Barton"
+	(9,22,[22,23]) -> (7,3,[2,4]), that is: "Barton" -> "Chairman Barton"
+
+Coreference set:
+	(7,5,[5,6]) -> (7,19,[19,57]), that is: "it" -> "H.R. 1647 next week -LRB- many on and off the Subcommittee doubt this will happen ; we are gathering political intelligence on those prospects and will report back with more information and conclusions once that is done -RRB-"
+	(7,9,[8,57]) -> (7,19,[19,57]), that is: "his intention to try to mark up the Barton bill , H.R. 1647 next week -LRB- many on and off the Subcommittee doubt this will happen ; we are gathering political intelligence on those prospects and will report back with more information and conclusions once that is done -RRB-" -> "H.R. 1647 next week -LRB- many on and off the Subcommittee doubt this will happen ; we are gathering political intelligence on those prospects and will report back with more information and conclusions once that is done -RRB-"
+	(7,9,[8,18]) -> (7,19,[19,57]), that is: "his intention to try to mark up the Barton bill" -> "H.R. 1647 next week -LRB- many on and off the Subcommittee doubt this will happen ; we are gathering political intelligence on those prospects and will report back with more information and conclusions once that is done -RRB-"
+
+Coreference set:
+	(9,23,[21,24]) -> (7,17,[15,18]), that is: "the Barton bill" -> "the Barton bill"
+
+Coreference set:
+	(7,53,[53,54]) -> (7,22,[21,23]), that is: "that" -> "next week"
+	(7,68,[67,69]) -> (7,22,[21,23]), that is: "next week" -> "next week"
+
+Coreference set:
+	(10,40,[40,41]) -> (7,31,[31,32]), that is: "this" -> "this"
+
+Coreference set:
+	(8,31,[31,36]) -> (9,68,[67,69]), that is: "difference in alleged transportation costs" -> "the difference"
+
+Coreference set:
+	(8,94,[94,95]) -> (8,92,[90,93]), that is: "its" -> "only natural gas"
+
+Coreference set:
+	(9,29,[29,30]) -> (9,6,[6,7]), that is: "BPA" -> "BPA"
+	(9,70,[70,71]) -> (9,6,[6,7]), that is: "BPA" -> "BPA"
+	(9,101,[101,102]) -> (9,6,[6,7]), that is: "BPA" -> "BPA"
+
+Coreference set:
+	(9,76,[76,77]) -> (9,19,[19,20]), that is: "102" -> "102"
+	(9,79,[79,80]) -> (9,19,[19,20]), that is: "it" -> "102"
+	(9,118,[118,119]) -> (9,19,[19,20]), that is: "102" -> "102"
+
+Coreference set:
+	(9,117,[117,119]) -> (9,18,[18,24]), that is: "sec. 102" -> "sec. 102 of the Barton bill"
+
+Coreference set:
+	(9,45,[45,46]) -> (9,39,[37,44]), that is: "it" -> "the open market at a high price"
+	(9,50,[50,51]) -> (9,39,[37,44]), that is: "it" -> "the open market at a high price"
+
+Coreference set:
+	(9,61,[61,62]) -> (9,59,[58,60]), that is: "it" -> "the DSI"
+
+Coreference set:
+	(9,105,[105,106]) -> (9,102,[101,103]), that is: "it" -> "BPA testimony"
+
+Coreference set:
+	(10,29,[27,30]) -> (10,16,[14,17]), that is: "a price cap" -> "a price cap"
+	(10,87,[85,88]) -> (10,16,[14,17]), that is: "a price cap" -> "a price cap"
+	(11,5,[3,6]) -> (10,16,[14,17]), that is: "the price cap" -> "a price cap"
+
+Coreference set:
+	(10,101,[101,102]) -> (10,25,[25,33]), that is: "he" -> "those advocating a price cap among the witnesses"
+
+Coreference set:
+	(12,2,[1,7]) -> (12,16,[14,19]), that is: "The interplay among the FERC commissioners" -> "a House hearing on Tuesday"
+	(12,12,[12,13]) -> (12,16,[14,19]), that is: "it" -> "a House hearing on Tuesday"
+	(12,21,[21,22]) -> (12,16,[14,19]), that is: "it" -> "a House hearing on Tuesday"
+	(12,79,[78,80]) -> (12,16,[14,19]), that is: "the interplay" -> "a House hearing on Tuesday"

@@ -1,0 +1,121 @@
+Document: ID=764556.in (4 sentences, 22 tokens)
+
+Sentence #1 (11 tokens):
+FYI--Nancy's report on the El Paso Tech.
+
+Tokens:
+[Text=FYI CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=FYI NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=Nancy CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=Nancy NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=report CharacterOffsetBegin=13 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=report NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=El CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=NNP Lemma=El NamedEntityTag=CITY]
+[Text=Paso CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Paso NamedEntityTag=CITY]
+[Text=Tech CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=NNP Lemma=Tech NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP FYI))
+    (: --)
+    (NP
+      (NP
+        (NP (NNP Nancy) (POS 's))
+        (NN report))
+      (PP (IN on)
+        (NP (DT the) (NNP El) (NNP Paso) (NNP Tech))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, FYI-1)
+punct(FYI-1, ---2)
+nmod:poss(report-5, Nancy-3)
+case(Nancy-3, 's-4)
+dep(FYI-1, report-5)
+case(Tech-10, on-6)
+det(Tech-10, the-7)
+compound(Tech-10, El-8)
+compound(Tech-10, Paso-9)
+nmod:on(report-5, Tech-10)
+punct(FYI-1, .-11)
+
+Extracted the following NER entity mentions:
+Nancy	PERSON
+El Paso	CITY
+Tech	LOCATION
+
+Sentence #2 (2 tokens):
+Conf.
+
+Tokens:
+[Text=Conf CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=NNP Lemma=Conf NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Conf))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Conf-1)
+punct(Conf-1, .-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (8 tokens):
+in regard to their capacity allocation proceeding.
+
+Tokens:
+[Text=in CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=regard CharacterOffsetBegin=50 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=regard NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=60 CharacterOffsetEnd=65 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=capacity CharacterOffsetBegin=66 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=capacity NamedEntityTag=O]
+[Text=allocation CharacterOffsetBegin=75 CharacterOffsetEnd=85 PartOfSpeech=NN Lemma=allocation NamedEntityTag=O]
+[Text=proceeding CharacterOffsetBegin=86 CharacterOffsetEnd=96 PartOfSpeech=NN Lemma=proceeding NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=96 CharacterOffsetEnd=97 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (PP (IN in)
+      (NP
+        (NP (NN regard))
+        (PP (TO to)
+          (NP (PRP$ their) (NN capacity) (NN allocation) (NN proceeding)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, regard-2)
+case(regard-2, in-1)
+case(proceeding-7, to-3)
+nmod:poss(proceeding-7, their-4)
+compound(proceeding-7, capacity-5)
+compound(proceeding-7, allocation-6)
+nmod:to(regard-2, proceeding-7)
+punct(regard-2, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (1 tokens):
+gh
+
+Tokens:
+[Text=gh CharacterOffsetBegin=99 CharacterOffsetEnd=101 PartOfSpeech=NN Lemma=gh NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NN gh)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, gh-1)
+
+Extracted the following NER entity mentions:

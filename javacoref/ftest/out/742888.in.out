@@ -1,0 +1,798 @@
+Document: ID=742888.in (10 sentences, 195 tokens)
+
+Sentence #1 (26 tokens):
+SBX 1 (Soto/Scott) The bill passed out of the Assembly Revenue and Taxation
+Committee, as amended, on a party line vote.
+
+Tokens:
+[Text=SBX CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NN Lemma=sbx NamedEntityTag=O]
+[Text=1 CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=CD Lemma=1 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=-LRB- CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Soto/Scott CharacterOffsetBegin=7 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=soto/scott NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=bill CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=bill NamedEntityTag=O]
+[Text=passed CharacterOffsetBegin=28 CharacterOffsetEnd=34 PartOfSpeech=VBN Lemma=pass NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=IN Lemma=out NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Assembly CharacterOffsetBegin=46 CharacterOffsetEnd=54 PartOfSpeech=NNP Lemma=Assembly NamedEntityTag=ORGANIZATION]
+[Text=Revenue CharacterOffsetBegin=55 CharacterOffsetEnd=62 PartOfSpeech=NN Lemma=revenue NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=CC Lemma=and NamedEntityTag=ORGANIZATION]
+[Text=Taxation CharacterOffsetBegin=67 CharacterOffsetEnd=75 PartOfSpeech=NNP Lemma=Taxation NamedEntityTag=ORGANIZATION]
+[Text=Committee CharacterOffsetBegin=76 CharacterOffsetEnd=85 PartOfSpeech=NNP Lemma=Committee NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=87 CharacterOffsetEnd=89 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=amended CharacterOffsetBegin=90 CharacterOffsetEnd=97 PartOfSpeech=VBN Lemma=amend NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=97 CharacterOffsetEnd=98 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=99 CharacterOffsetEnd=101 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=102 CharacterOffsetEnd=103 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=party CharacterOffsetBegin=104 CharacterOffsetEnd=109 PartOfSpeech=NN Lemma=party NamedEntityTag=O]
+[Text=line CharacterOffsetBegin=110 CharacterOffsetEnd=114 PartOfSpeech=NN Lemma=line NamedEntityTag=O]
+[Text=vote CharacterOffsetBegin=115 CharacterOffsetEnd=119 PartOfSpeech=NN Lemma=vote NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=119 CharacterOffsetEnd=120 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP
+      (NP (NN SBX) (CD 1))
+      (PRN (-LRB- -LRB-)
+        (NP (NN Soto/Scott))
+        (-RRB- -RRB-)))
+    (NP
+      (NP (DT The) (NN bill))
+      (VP (VBN passed)
+        (PRT (IN out))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNP Assembly) (NN Revenue))
+            (CC and)
+            (NP (NNP Taxation) (NNP Committee))))
+        (, ,)
+        (PP (IN as)
+          (NP
+            (NP (VBN amended))
+            (, ,)
+            (PP (IN on)
+              (NP (DT a) (NN party) (NN line) (NN vote)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, SBX-1)
+nummod(SBX-1, 1-2)
+punct(Soto/Scott-4, -LRB--3)
+appos(SBX-1, Soto/Scott-4)
+punct(Soto/Scott-4, -RRB--5)
+det(bill-7, The-6)
+dep(SBX-1, bill-7)
+acl(bill-7, passed-8)
+compound:prt(passed-8, out-9)
+case(Revenue-13, of-10)
+det(Revenue-13, the-11)
+compound(Revenue-13, Assembly-12)
+nmod:of(passed-8, Revenue-13)
+cc(Revenue-13, and-14)
+compound(Committee-16, Taxation-15)
+nmod:of(passed-8, Committee-16)
+conj:and(Revenue-13, Committee-16)
+punct(passed-8, ,-17)
+case(amended-19, as-18)
+nmod:as(passed-8, amended-19)
+punct(amended-19, ,-20)
+case(vote-25, on-21)
+det(vote-25, a-22)
+compound(vote-25, party-23)
+compound(vote-25, line-24)
+nmod:on(amended-19, vote-25)
+punct(SBX-1, .-26)
+
+Extracted the following NER entity mentions:
+1	NUMBER
+Assembly Revenue and Taxation Committee	ORGANIZATION
+
+Sentence #2 (7 tokens):
+The bill now goes to
+Appropriations.
+
+Tokens:
+[Text=The CharacterOffsetBegin=122 CharacterOffsetEnd=125 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=bill CharacterOffsetBegin=126 CharacterOffsetEnd=130 PartOfSpeech=NN Lemma=bill NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=131 CharacterOffsetEnd=134 PartOfSpeech=RB Lemma=now NamedEntityTag=O]
+[Text=goes CharacterOffsetBegin=135 CharacterOffsetEnd=139 PartOfSpeech=VBZ Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=140 CharacterOffsetEnd=142 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Appropriations CharacterOffsetBegin=143 CharacterOffsetEnd=157 PartOfSpeech=NNS Lemma=appropriation NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=157 CharacterOffsetEnd=158 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN bill))
+    (ADVP (RB now))
+    (VP (VBZ goes)
+      (PP (TO to)
+        (NP (NNS Appropriations))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, goes-4)
+det(bill-2, The-1)
+nsubj(goes-4, bill-2)
+advmod(goes-4, now-3)
+case(Appropriations-6, to-5)
+nmod:to(goes-4, Appropriations-6)
+punct(goes-4, .-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (6 tokens):
+Amendments should be available tomorrow.
+
+Tokens:
+[Text=Amendments CharacterOffsetBegin=160 CharacterOffsetEnd=170 PartOfSpeech=NNS Lemma=amendment NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=171 CharacterOffsetEnd=177 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=178 CharacterOffsetEnd=180 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=available CharacterOffsetBegin=181 CharacterOffsetEnd=190 PartOfSpeech=JJ Lemma=available NamedEntityTag=O]
+[Text=tomorrow CharacterOffsetBegin=191 CharacterOffsetEnd=199 PartOfSpeech=NN Lemma=tomorrow NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=199 CharacterOffsetEnd=200 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNS Amendments))
+    (VP (MD should)
+      (VP (VB be)
+        (ADJP (JJ available))
+        (NP-TMP (NN tomorrow))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, available-4)
+nsubj(available-4, Amendments-1)
+aux(available-4, should-2)
+cop(available-4, be-3)
+nmod:tmod(available-4, tomorrow-5)
+punct(available-4, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (37 tokens):
+SBX 78 (Polanco) - The Governor's office called a meeting earlier today of
+the business community to discuss a strategy for moving SBX 78 out of
+Appropriations and off of the Assembly floor.
+
+Tokens:
+[Text=SBX CharacterOffsetBegin=202 CharacterOffsetEnd=205 PartOfSpeech=NN Lemma=sbx NamedEntityTag=O]
+[Text=78 CharacterOffsetBegin=206 CharacterOffsetEnd=208 PartOfSpeech=CD Lemma=78 NamedEntityTag=NUMBER NormalizedNamedEntityTag=78.0]
+[Text=-LRB- CharacterOffsetBegin=209 CharacterOffsetEnd=210 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Polanco CharacterOffsetBegin=210 CharacterOffsetEnd=217 PartOfSpeech=NN Lemma=polanco NamedEntityTag=ORGANIZATION]
+[Text=-RRB- CharacterOffsetBegin=217 CharacterOffsetEnd=218 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=219 CharacterOffsetEnd=220 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=221 CharacterOffsetEnd=224 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Governor CharacterOffsetBegin=225 CharacterOffsetEnd=233 PartOfSpeech=NN Lemma=governor NamedEntityTag=TITLE]
+[Text='s CharacterOffsetBegin=233 CharacterOffsetEnd=235 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=office CharacterOffsetBegin=236 CharacterOffsetEnd=242 PartOfSpeech=NN Lemma=office NamedEntityTag=O]
+[Text=called CharacterOffsetBegin=243 CharacterOffsetEnd=249 PartOfSpeech=VBD Lemma=call NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=250 CharacterOffsetEnd=251 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=meeting CharacterOffsetBegin=252 CharacterOffsetEnd=259 PartOfSpeech=NN Lemma=meeting NamedEntityTag=O]
+[Text=earlier CharacterOffsetBegin=260 CharacterOffsetEnd=267 PartOfSpeech=RBR Lemma=earlier NamedEntityTag=DATE NormalizedNamedEntityTag=earlier today ]
+[Text=today CharacterOffsetBegin=268 CharacterOffsetEnd=273 PartOfSpeech=NN Lemma=today NamedEntityTag=DATE NormalizedNamedEntityTag=earlier today ]
+[Text=of CharacterOffsetBegin=274 CharacterOffsetEnd=276 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=277 CharacterOffsetEnd=280 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=business CharacterOffsetBegin=281 CharacterOffsetEnd=289 PartOfSpeech=NN Lemma=business NamedEntityTag=O]
+[Text=community CharacterOffsetBegin=290 CharacterOffsetEnd=299 PartOfSpeech=NN Lemma=community NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=300 CharacterOffsetEnd=302 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=discuss CharacterOffsetBegin=303 CharacterOffsetEnd=310 PartOfSpeech=VB Lemma=discuss NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=311 CharacterOffsetEnd=312 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=strategy CharacterOffsetBegin=313 CharacterOffsetEnd=321 PartOfSpeech=NN Lemma=strategy NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=322 CharacterOffsetEnd=325 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=moving CharacterOffsetBegin=326 CharacterOffsetEnd=332 PartOfSpeech=VBG Lemma=move NamedEntityTag=O]
+[Text=SBX CharacterOffsetBegin=333 CharacterOffsetEnd=336 PartOfSpeech=NN Lemma=sbx NamedEntityTag=O]
+[Text=78 CharacterOffsetBegin=337 CharacterOffsetEnd=339 PartOfSpeech=CD Lemma=78 NamedEntityTag=NUMBER NormalizedNamedEntityTag=78.0]
+[Text=out CharacterOffsetBegin=340 CharacterOffsetEnd=343 PartOfSpeech=IN Lemma=out NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=344 CharacterOffsetEnd=346 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Appropriations CharacterOffsetBegin=347 CharacterOffsetEnd=361 PartOfSpeech=NNS Lemma=appropriation NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=362 CharacterOffsetEnd=365 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=366 CharacterOffsetEnd=369 PartOfSpeech=IN Lemma=off NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=370 CharacterOffsetEnd=372 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=373 CharacterOffsetEnd=376 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Assembly CharacterOffsetBegin=377 CharacterOffsetEnd=385 PartOfSpeech=NN Lemma=assembly NamedEntityTag=ORGANIZATION]
+[Text=floor CharacterOffsetBegin=386 CharacterOffsetEnd=391 PartOfSpeech=NN Lemma=floor NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=391 CharacterOffsetEnd=392 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NN SBX) (CD 78))
+    (PRN (-LRB- -LRB-)
+      (NP (NN Polanco))
+      (-RRB- -RRB-))
+    (: -)
+    (NP
+      (NP
+        (NP (DT The) (NN Governor) (POS 's))
+        (NN office))
+      (SBAR
+        (S
+          (VP (VBD called)
+            (ADVP
+              (NP (DT a) (NN meeting))
+              (RBR earlier))
+            (NP-TMP (NN today))
+            (PP (IN of)
+              (NP (DT the) (NN business) (NN community)))
+            (S
+              (VP (TO to)
+                (VP (VB discuss)
+                  (NP
+                    (NP
+                      (NP (DT a) (NN strategy))
+                      (PP (IN for)
+                        (S
+                          (VP (VBG moving)
+                            (NP
+                              (NP (NN SBX))
+                              (PP
+                                (ADVP
+                                  (NP (CD 78))
+                                  (IN out))
+                                (IN of)
+                                (NP (NNS Appropriations))))))))
+                    (CC and)
+                    (ADVP (IN off)
+                      (PP (IN of)
+                        (NP (DT the) (NN Assembly) (NN floor))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, SBX-1)
+nummod(SBX-1, 78-2)
+punct(Polanco-4, -LRB--3)
+appos(SBX-1, Polanco-4)
+punct(Polanco-4, -RRB--5)
+punct(SBX-1, --6)
+det(Governor-8, The-7)
+nmod:poss(office-10, Governor-8)
+case(Governor-8, 's-9)
+dep(SBX-1, office-10)
+acl:relcl(office-10, called-11)
+det(meeting-13, a-12)
+nmod:npmod(earlier-14, meeting-13)
+advmod(called-11, earlier-14)
+nmod:tmod(called-11, today-15)
+case(community-19, of-16)
+det(community-19, the-17)
+compound(community-19, business-18)
+nmod:of(called-11, community-19)
+mark(discuss-21, to-20)
+xcomp(called-11, discuss-21)
+det(strategy-23, a-22)
+dobj(discuss-21, strategy-23)
+mark(moving-25, for-24)
+acl:for(strategy-23, moving-25)
+dobj(moving-25, SBX-26)
+advmod(Appropriations-30, 78-27)
+case(78-27, out-28)
+case(Appropriations-30, of-29)
+nmod:of(SBX-26, Appropriations-30)
+cc(strategy-23, and-31)
+advmod(strategy-23, off-32)
+case(floor-36, of-33)
+det(floor-36, the-34)
+compound(floor-36, Assembly-35)
+nmod:of(off-32, floor-36)
+punct(SBX-1, .-37)
+
+Extracted the following NER entity mentions:
+78	NUMBER
+Polanco	ORGANIZATION
+Governor	TITLE
+earlier today	DATE
+78	NUMBER
+Assembly	ORGANIZATION
+
+Sentence #5 (14 tokens):
+The Governor asked that the
+business community try to get support from Republicans.
+
+Tokens:
+[Text=The CharacterOffsetBegin=394 CharacterOffsetEnd=397 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Governor CharacterOffsetBegin=398 CharacterOffsetEnd=406 PartOfSpeech=NN Lemma=governor NamedEntityTag=TITLE]
+[Text=asked CharacterOffsetBegin=407 CharacterOffsetEnd=412 PartOfSpeech=VBD Lemma=ask NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=413 CharacterOffsetEnd=417 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=418 CharacterOffsetEnd=421 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=business CharacterOffsetBegin=422 CharacterOffsetEnd=430 PartOfSpeech=NN Lemma=business NamedEntityTag=O]
+[Text=community CharacterOffsetBegin=431 CharacterOffsetEnd=440 PartOfSpeech=NN Lemma=community NamedEntityTag=O]
+[Text=try CharacterOffsetBegin=441 CharacterOffsetEnd=444 PartOfSpeech=VBP Lemma=try NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=445 CharacterOffsetEnd=447 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=448 CharacterOffsetEnd=451 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=support CharacterOffsetBegin=452 CharacterOffsetEnd=459 PartOfSpeech=NN Lemma=support NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=460 CharacterOffsetEnd=464 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Republicans CharacterOffsetBegin=465 CharacterOffsetEnd=476 PartOfSpeech=NNPS Lemma=Republicans NamedEntityTag=MISC]
+[Text=. CharacterOffsetBegin=476 CharacterOffsetEnd=477 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN Governor))
+    (VP (VBD asked)
+      (SBAR (IN that)
+        (S
+          (NP (DT the) (NN business) (NN community))
+          (VP (VBP try)
+            (S
+              (VP (TO to)
+                (VP (VB get)
+                  (NP (NN support))
+                  (PP (IN from)
+                    (NP (NNPS Republicans))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, asked-3)
+det(Governor-2, The-1)
+nsubj(asked-3, Governor-2)
+mark(try-8, that-4)
+det(community-7, the-5)
+compound(community-7, business-6)
+nsubj(try-8, community-7)
+nsubj:xsubj(get-10, community-7)
+ccomp(asked-3, try-8)
+mark(get-10, to-9)
+xcomp(try-8, get-10)
+dobj(get-10, support-11)
+case(Republicans-13, from-12)
+nmod:from(get-10, Republicans-13)
+punct(asked-3, .-14)
+
+Extracted the following NER entity mentions:
+Governor	TITLE
+Republicans	MISC
+
+Sentence #6 (27 tokens):
+Assemblyman
+Leonard, who was the lone Republican to vote for the bill yesterday, is
+meeting with Republicans now to try and get their support.
+
+Tokens:
+[Text=Assemblyman CharacterOffsetBegin=479 CharacterOffsetEnd=490 PartOfSpeech=NNP Lemma=Assemblyman NamedEntityTag=PERSON]
+[Text=Leonard CharacterOffsetBegin=491 CharacterOffsetEnd=498 PartOfSpeech=NNP Lemma=Leonard NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=498 CharacterOffsetEnd=499 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=500 CharacterOffsetEnd=503 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=504 CharacterOffsetEnd=507 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=508 CharacterOffsetEnd=511 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=lone CharacterOffsetBegin=512 CharacterOffsetEnd=516 PartOfSpeech=JJ Lemma=lone NamedEntityTag=O]
+[Text=Republican CharacterOffsetBegin=517 CharacterOffsetEnd=527 PartOfSpeech=JJ Lemma=republican NamedEntityTag=IDEOLOGY]
+[Text=to CharacterOffsetBegin=528 CharacterOffsetEnd=530 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=vote CharacterOffsetBegin=531 CharacterOffsetEnd=535 PartOfSpeech=VB Lemma=vote NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=536 CharacterOffsetEnd=539 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=540 CharacterOffsetEnd=543 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=bill CharacterOffsetBegin=544 CharacterOffsetEnd=548 PartOfSpeech=NN Lemma=bill NamedEntityTag=O]
+[Text=yesterday CharacterOffsetBegin=549 CharacterOffsetEnd=558 PartOfSpeech=NN Lemma=yesterday NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=558 CharacterOffsetEnd=559 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=560 CharacterOffsetEnd=562 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=meeting CharacterOffsetBegin=563 CharacterOffsetEnd=570 PartOfSpeech=VBG Lemma=meet NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=571 CharacterOffsetEnd=575 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Republicans CharacterOffsetBegin=576 CharacterOffsetEnd=587 PartOfSpeech=NNPS Lemma=Republicans NamedEntityTag=MISC]
+[Text=now CharacterOffsetBegin=588 CharacterOffsetEnd=591 PartOfSpeech=RB Lemma=now NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=592 CharacterOffsetEnd=594 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=try CharacterOffsetBegin=595 CharacterOffsetEnd=598 PartOfSpeech=VB Lemma=try NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=599 CharacterOffsetEnd=602 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=603 CharacterOffsetEnd=606 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=607 CharacterOffsetEnd=612 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=support CharacterOffsetBegin=613 CharacterOffsetEnd=620 PartOfSpeech=NN Lemma=support NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=620 CharacterOffsetEnd=621 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Assemblyman) (NNP Leonard))
+      (, ,)
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBD was)
+            (NP (DT the) (JJ lone)
+              (ADJP (JJ Republican)
+                (S
+                  (VP (TO to)
+                    (VP (VB vote)
+                      (PP (IN for)
+                        (NP (DT the) (NN bill)))))))
+              (NN yesterday)))))
+      (, ,))
+    (VP (VBZ is)
+      (VP (VBG meeting)
+        (PP (IN with)
+          (NP (NNPS Republicans)))
+        (ADVP (RB now))
+        (S
+          (VP (TO to)
+            (VP (VB try)
+              (CC and)
+              (VB get)
+              (NP (PRP$ their) (NN support)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, meeting-17)
+compound(Leonard-2, Assemblyman-1)
+nsubj(yesterday-14, Leonard-2)
+nsubj(meeting-17, Leonard-2)
+nsubj:xsubj(try-22, Leonard-2)
+nsubj:xsubj(get-24, Leonard-2)
+punct(Leonard-2, ,-3)
+ref(Leonard-2, who-4)
+cop(yesterday-14, was-5)
+det(yesterday-14, the-6)
+amod(yesterday-14, lone-7)
+amod(yesterday-14, Republican-8)
+mark(vote-10, to-9)
+xcomp(Republican-8, vote-10)
+case(bill-13, for-11)
+det(bill-13, the-12)
+nmod:for(vote-10, bill-13)
+acl:relcl(Leonard-2, yesterday-14)
+punct(Leonard-2, ,-15)
+aux(meeting-17, is-16)
+case(Republicans-19, with-18)
+nmod:with(meeting-17, Republicans-19)
+advmod(meeting-17, now-20)
+mark(try-22, to-21)
+xcomp(meeting-17, try-22)
+cc(try-22, and-23)
+xcomp(meeting-17, get-24)
+conj:and(try-22, get-24)
+nmod:poss(support-26, their-25)
+dobj(try-22, support-26)
+punct(meeting-17, .-27)
+
+Extracted the following NER entity mentions:
+Assemblyman Leonard	PERSON
+Republican	IDEOLOGY
+Republicans	MISC
+
+Sentence #7 (45 tokens):
+It is widely
+held that his rationale for voting for the bill was because he was concerned
+that if the bill did not get out in its current form, liberal Democrats
+would have amended the bill to look more like the original bill.
+
+Tokens:
+[Text=It CharacterOffsetBegin=623 CharacterOffsetEnd=625 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=626 CharacterOffsetEnd=628 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=widely CharacterOffsetBegin=629 CharacterOffsetEnd=635 PartOfSpeech=RB Lemma=widely NamedEntityTag=O]
+[Text=held CharacterOffsetBegin=636 CharacterOffsetEnd=640 PartOfSpeech=VBN Lemma=hold NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=641 CharacterOffsetEnd=645 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=646 CharacterOffsetEnd=649 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=rationale CharacterOffsetBegin=650 CharacterOffsetEnd=659 PartOfSpeech=NN Lemma=rationale NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=660 CharacterOffsetEnd=663 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=voting CharacterOffsetBegin=664 CharacterOffsetEnd=670 PartOfSpeech=VBG Lemma=vote NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=671 CharacterOffsetEnd=674 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=675 CharacterOffsetEnd=678 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=bill CharacterOffsetBegin=679 CharacterOffsetEnd=683 PartOfSpeech=NN Lemma=bill NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=684 CharacterOffsetEnd=687 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=because CharacterOffsetBegin=688 CharacterOffsetEnd=695 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=696 CharacterOffsetEnd=698 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=699 CharacterOffsetEnd=702 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=concerned CharacterOffsetBegin=703 CharacterOffsetEnd=712 PartOfSpeech=VBN Lemma=concern NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=713 CharacterOffsetEnd=717 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=718 CharacterOffsetEnd=720 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=721 CharacterOffsetEnd=724 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=bill CharacterOffsetBegin=725 CharacterOffsetEnd=729 PartOfSpeech=NN Lemma=bill NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=730 CharacterOffsetEnd=733 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=734 CharacterOffsetEnd=737 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=738 CharacterOffsetEnd=741 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=742 CharacterOffsetEnd=745 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=746 CharacterOffsetEnd=748 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=its CharacterOffsetBegin=749 CharacterOffsetEnd=752 PartOfSpeech=PRP$ Lemma=its NamedEntityTag=O]
+[Text=current CharacterOffsetBegin=753 CharacterOffsetEnd=760 PartOfSpeech=JJ Lemma=current NamedEntityTag=O]
+[Text=form CharacterOffsetBegin=761 CharacterOffsetEnd=765 PartOfSpeech=NN Lemma=form NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=765 CharacterOffsetEnd=766 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=liberal CharacterOffsetBegin=767 CharacterOffsetEnd=774 PartOfSpeech=JJ Lemma=liberal NamedEntityTag=IDEOLOGY]
+[Text=Democrats CharacterOffsetBegin=775 CharacterOffsetEnd=784 PartOfSpeech=NNPS Lemma=Democrats NamedEntityTag=IDEOLOGY]
+[Text=would CharacterOffsetBegin=785 CharacterOffsetEnd=790 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=791 CharacterOffsetEnd=795 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=amended CharacterOffsetBegin=796 CharacterOffsetEnd=803 PartOfSpeech=VBN Lemma=amend NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=804 CharacterOffsetEnd=807 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=bill CharacterOffsetBegin=808 CharacterOffsetEnd=812 PartOfSpeech=NN Lemma=bill NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=813 CharacterOffsetEnd=815 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=look CharacterOffsetBegin=816 CharacterOffsetEnd=820 PartOfSpeech=VB Lemma=look NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=821 CharacterOffsetEnd=825 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=826 CharacterOffsetEnd=830 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=831 CharacterOffsetEnd=834 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=original CharacterOffsetBegin=835 CharacterOffsetEnd=843 PartOfSpeech=JJ Lemma=original NamedEntityTag=O]
+[Text=bill CharacterOffsetBegin=844 CharacterOffsetEnd=848 PartOfSpeech=NN Lemma=bill NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=848 CharacterOffsetEnd=849 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (ADJP
+        (ADJP (RB widely) (VBN held))
+        (SBAR (IN that)
+          (S
+            (NP
+              (NP (PRP$ his) (NN rationale))
+              (PP (IN for)
+                (S
+                  (VP (VBG voting)
+                    (PP (IN for)
+                      (NP (DT the) (NN bill)))))))
+            (VP (VBD was)
+              (SBAR (IN because)
+                (S
+                  (NP (PRP he))
+                  (VP (VBD was)
+                    (VP (VBN concerned)
+                      (SBAR (IN that)
+                        (S
+                          (SBAR (IN if)
+                            (S
+                              (NP (DT the) (NN bill))
+                              (VP (VBD did) (RB not)
+                                (VP (VB get)
+                                  (PRT (RP out))
+                                  (PP (IN in)
+                                    (NP (PRP$ its) (JJ current) (NN form)))))))
+                          (, ,)
+                          (NP (JJ liberal) (NNPS Democrats))
+                          (VP (MD would)
+                            (VP (VB have)
+                              (VP (VBN amended)
+                                (NP (DT the) (NN bill)
+                                  (S
+                                    (VP (TO to)
+                                      (VP (VB look)
+                                        (NP (JJR more))
+                                        (PP (IN like)
+                                          (NP (DT the) (JJ original) (NN bill)))))))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, held-4)
+nsubj(held-4, It-1)
+cop(held-4, is-2)
+advmod(held-4, widely-3)
+mark(was-13, that-5)
+nmod:poss(rationale-7, his-6)
+nsubj(was-13, rationale-7)
+mark(voting-9, for-8)
+acl:for(rationale-7, voting-9)
+case(bill-12, for-10)
+det(bill-12, the-11)
+nmod:for(voting-9, bill-12)
+ccomp(held-4, was-13)
+mark(concerned-17, because-14)
+nsubjpass(concerned-17, he-15)
+auxpass(concerned-17, was-16)
+advcl:because(was-13, concerned-17)
+mark(amended-35, that-18)
+mark(get-24, if-19)
+det(bill-21, the-20)
+nsubj(get-24, bill-21)
+aux(get-24, did-22)
+neg(get-24, not-23)
+advcl:if(amended-35, get-24)
+compound:prt(get-24, out-25)
+case(form-29, in-26)
+nmod:poss(form-29, its-27)
+amod(form-29, current-28)
+nmod:in(get-24, form-29)
+punct(amended-35, ,-30)
+amod(Democrats-32, liberal-31)
+nsubj(amended-35, Democrats-32)
+aux(amended-35, would-33)
+aux(amended-35, have-34)
+ccomp(concerned-17, amended-35)
+det(bill-37, the-36)
+dobj(amended-35, bill-37)
+mark(look-39, to-38)
+acl:to(bill-37, look-39)
+dobj(look-39, more-40)
+case(bill-44, like-41)
+det(bill-44, the-42)
+amod(bill-44, original-43)
+nmod:like(look-39, bill-44)
+punct(held-4, .-45)
+
+Extracted the following NER entity mentions:
+liberal Democrats	IDEOLOGY
+his	PERSON
+he	PERSON
+
+Sentence #8 (11 tokens):
+This is
+likely the reason why they need Republicans now.
+
+Tokens:
+[Text=This CharacterOffsetBegin=850 CharacterOffsetEnd=854 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=855 CharacterOffsetEnd=857 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=likely CharacterOffsetBegin=858 CharacterOffsetEnd=864 PartOfSpeech=JJ Lemma=likely NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=865 CharacterOffsetEnd=868 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=reason CharacterOffsetBegin=869 CharacterOffsetEnd=875 PartOfSpeech=NN Lemma=reason NamedEntityTag=O]
+[Text=why CharacterOffsetBegin=876 CharacterOffsetEnd=879 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=880 CharacterOffsetEnd=884 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=885 CharacterOffsetEnd=889 PartOfSpeech=VBP Lemma=need NamedEntityTag=O]
+[Text=Republicans CharacterOffsetBegin=890 CharacterOffsetEnd=901 PartOfSpeech=NNPS Lemma=Republicans NamedEntityTag=MISC]
+[Text=now CharacterOffsetBegin=902 CharacterOffsetEnd=905 PartOfSpeech=RB Lemma=now NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=905 CharacterOffsetEnd=906 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (ADJP (JJ likely)
+        (NP (DT the) (NN reason)))
+      (SBAR
+        (WHADVP (WRB why))
+        (S
+          (NP (PRP they))
+          (VP (VBP need)
+            (NP (NNPS Republicans))
+            (ADVP (RB now))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, likely-3)
+nsubj(likely-3, This-1)
+cop(likely-3, is-2)
+det(reason-5, the-4)
+dep(likely-3, reason-5)
+advmod(need-8, why-6)
+nsubj(need-8, they-7)
+advcl(likely-3, need-8)
+dobj(need-8, Republicans-9)
+advmod(need-8, now-10)
+punct(likely-3, .-11)
+
+Extracted the following NER entity mentions:
+Republicans	MISC
+
+Sentence #9 (16 tokens):
+Assembly session begins at
+8:30 a.m. tomorrow and Appropriations will be held off the floor.
+
+Tokens:
+[Text=Assembly CharacterOffsetBegin=908 CharacterOffsetEnd=916 PartOfSpeech=NN Lemma=assembly NamedEntityTag=O]
+[Text=session CharacterOffsetBegin=917 CharacterOffsetEnd=924 PartOfSpeech=NN Lemma=session NamedEntityTag=O]
+[Text=begins CharacterOffsetBegin=925 CharacterOffsetEnd=931 PartOfSpeech=VBZ Lemma=begin NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=932 CharacterOffsetEnd=934 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=8:30 CharacterOffsetBegin=935 CharacterOffsetEnd=939 PartOfSpeech=CD Lemma=8:30 NamedEntityTag=TIME NormalizedNamedEntityTag=8:30am]
+[Text=a.m. CharacterOffsetBegin=940 CharacterOffsetEnd=944 PartOfSpeech=RB Lemma=a.m. NamedEntityTag=TIME NormalizedNamedEntityTag=8:30am]
+[Text=tomorrow CharacterOffsetBegin=945 CharacterOffsetEnd=953 PartOfSpeech=NN Lemma=tomorrow NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=954 CharacterOffsetEnd=957 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Appropriations CharacterOffsetBegin=958 CharacterOffsetEnd=972 PartOfSpeech=NNS Lemma=appropriation NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=973 CharacterOffsetEnd=977 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=978 CharacterOffsetEnd=980 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=held CharacterOffsetBegin=981 CharacterOffsetEnd=985 PartOfSpeech=VBN Lemma=hold NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=986 CharacterOffsetEnd=989 PartOfSpeech=RP Lemma=off NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=990 CharacterOffsetEnd=993 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=floor CharacterOffsetBegin=994 CharacterOffsetEnd=999 PartOfSpeech=NN Lemma=floor NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=999 CharacterOffsetEnd=1000 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NN Assembly) (NN session))
+      (VP (VBZ begins)
+        (PP (IN at)
+          (NP (CD 8:30) (RB a.m.)))
+        (NP-TMP (NN tomorrow))))
+    (CC and)
+    (S
+      (NP (NNS Appropriations))
+      (VP (MD will)
+        (VP (VB be)
+          (VP (VBN held)
+            (PRT (RP off))
+            (NP (DT the) (NN floor))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, begins-3)
+compound(session-2, Assembly-1)
+nsubj(begins-3, session-2)
+case(8:30-5, at-4)
+nmod:at(begins-3, 8:30-5)
+advmod(8:30-5, a.m.-6)
+nmod:tmod(begins-3, tomorrow-7)
+cc(begins-3, and-8)
+nsubjpass(held-12, Appropriations-9)
+aux(held-12, will-10)
+auxpass(held-12, be-11)
+conj:and(begins-3, held-12)
+compound:prt(held-12, off-13)
+det(floor-15, the-14)
+dobj(held-12, floor-15)
+punct(begins-3, .-16)
+
+Extracted the following NER entity mentions:
+8:30 a.m.	TIME
+
+Sentence #10 (6 tokens):
+Language
+is still not available.
+
+Tokens:
+[Text=Language CharacterOffsetBegin=1002 CharacterOffsetEnd=1010 PartOfSpeech=NN Lemma=language NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=1011 CharacterOffsetEnd=1013 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=1014 CharacterOffsetEnd=1019 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=1020 CharacterOffsetEnd=1023 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=available CharacterOffsetBegin=1024 CharacterOffsetEnd=1033 PartOfSpeech=JJ Lemma=available NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1033 CharacterOffsetEnd=1034 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN Language))
+    (VP (VBZ is)
+      (ADVP (RB still))
+      (RB not)
+      (ADJP (JJ available)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, available-5)
+nsubj(available-5, Language-1)
+cop(available-5, is-2)
+advmod(available-5, still-3)
+neg(available-5, not-4)
+punct(available-5, .-6)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(1,13,[12,17]) -> (1,13,[11,14]), that is: "Assembly Revenue and Taxation Committee" -> "the Assembly Revenue"
+
+Coreference set:
+	(2,2,[1,3]) -> (1,7,[6,26]), that is: "The bill" -> "The bill passed out of the Assembly Revenue and Taxation Committee , as amended , on a party line vote"
+	(6,13,[12,14]) -> (1,7,[6,26]), that is: "the bill" -> "The bill passed out of the Assembly Revenue and Taxation Committee , as amended , on a party line vote"
+	(7,12,[11,13]) -> (1,7,[6,26]), that is: "the bill" -> "The bill passed out of the Assembly Revenue and Taxation Committee , as amended , on a party line vote"
+	(7,21,[20,22]) -> (1,7,[6,26]), that is: "the bill" -> "The bill passed out of the Assembly Revenue and Taxation Committee , as amended , on a party line vote"
+	(7,27,[27,28]) -> (1,7,[6,26]), that is: "its" -> "The bill passed out of the Assembly Revenue and Taxation Committee , as amended , on a party line vote"
+
+Coreference set:
+	(4,30,[30,31]) -> (2,6,[6,7]), that is: "Appropriations" -> "Appropriations"
+	(9,9,[9,10]) -> (2,6,[6,7]), that is: "Appropriations" -> "Appropriations"
+
+Coreference set:
+	(9,7,[7,8]) -> (3,5,[5,6]), that is: "tomorrow" -> "tomorrow"
+
+Coreference set:
+	(4,27,[27,28]) -> (4,2,[2,3]), that is: "78" -> "78"
+
+Coreference set:
+	(5,2,[1,3]) -> (4,8,[7,10]), that is: "The Governor" -> "The Governor 's"
+
+Coreference set:
+	(5,7,[5,8]) -> (4,19,[17,20]), that is: "the business community" -> "the business community"
+
+Coreference set:
+	(9,15,[14,16]) -> (4,36,[34,37]), that is: "the floor" -> "the Assembly floor"
+
+Coreference set:
+	(6,19,[19,20]) -> (5,13,[13,14]), that is: "Republicans" -> "Republicans"
+	(8,9,[9,10]) -> (5,13,[13,14]), that is: "Republicans" -> "Republicans"
+
+Coreference set:
+	(7,6,[6,7]) -> (6,2,[1,3]), that is: "his" -> "Assemblyman Leonard"
+	(7,15,[15,16]) -> (6,2,[1,3]), that is: "he" -> "Assemblyman Leonard"
+
+Coreference set:
+	(8,7,[7,8]) -> (8,1,[1,2]), that is: "they" -> "This"

@@ -1,0 +1,134 @@
+Document: ID=1133186.in (3 sentences, 29 tokens)
+
+Sentence #1 (7 tokens):
+Who keeps the books for Bridgeline?
+
+Tokens:
+[Text=Who CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=keeps CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=VBZ Lemma=keep NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=books CharacterOffsetBegin=14 CharacterOffsetEnd=19 PartOfSpeech=NNS Lemma=book NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Bridgeline CharacterOffsetBegin=24 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Bridgeline NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBZ keeps)
+        (NP (DT the) (NNS books))
+        (PP (IN for)
+          (NP (NNP Bridgeline)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, keeps-2)
+nsubj(keeps-2, Who-1)
+det(books-4, the-3)
+dobj(keeps-2, books-4)
+case(Bridgeline-6, for-5)
+nmod:for(keeps-2, Bridgeline-6)
+punct(keeps-2, ?-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (17 tokens):
+In other words, how can we find out if they have paid their $1,000,000?
+
+Tokens:
+[Text=In CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=40 CharacterOffsetEnd=45 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=words CharacterOffsetBegin=46 CharacterOffsetEnd=51 PartOfSpeech=NNS Lemma=word NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=find CharacterOffsetBegin=64 CharacterOffsetEnd=68 PartOfSpeech=VB Lemma=find NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=73 CharacterOffsetEnd=75 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=76 CharacterOffsetEnd=80 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=81 CharacterOffsetEnd=85 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=paid CharacterOffsetBegin=86 CharacterOffsetEnd=90 PartOfSpeech=VBN Lemma=pay NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=91 CharacterOffsetEnd=96 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=97 CharacterOffsetEnd=98 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$1000000.0]
+[Text=1,000,000 CharacterOffsetBegin=98 CharacterOffsetEnd=107 PartOfSpeech=CD Lemma=1,000,000 NamedEntityTag=MONEY NormalizedNamedEntityTag=$1000000.0]
+[Text=? CharacterOffsetBegin=107 CharacterOffsetEnd=108 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (PP (IN In)
+      (NP (JJ other) (NNS words)))
+    (, ,)
+    (WHADVP (WRB how))
+    (SQ (MD can)
+      (NP (PRP we))
+      (VP (VB find)
+        (PRT (RP out))
+        (SBAR (IN if)
+          (S
+            (NP (PRP they))
+            (VP (VBP have)
+              (VP (VBN paid)
+                (NP (PRP$ their))
+                (NP ($ $) (CD 1,000,000))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, find-8)
+case(words-3, In-1)
+amod(words-3, other-2)
+nmod:in(find-8, words-3)
+punct(find-8, ,-4)
+advmod(find-8, how-5)
+aux(find-8, can-6)
+nsubj(find-8, we-7)
+compound:prt(find-8, out-9)
+mark(paid-13, if-10)
+nsubj(paid-13, they-11)
+aux(paid-13, have-12)
+advcl:if(find-8, paid-13)
+dep(paid-13, their-14)
+dep(1,000,000-16, $-15)
+dobj(paid-13, 1,000,000-16)
+punct(find-8, ?-17)
+
+Extracted the following NER entity mentions:
+$1,000,000	MONEY
+
+Sentence #3 (5 tokens):
+Please let me know.
+
+Tokens:
+[Text=Please CharacterOffsetBegin=110 CharacterOffsetEnd=116 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=let CharacterOffsetBegin=117 CharacterOffsetEnd=120 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=121 CharacterOffsetEnd=123 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=124 CharacterOffsetEnd=128 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=128 CharacterOffsetEnd=129 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Please)
+      (VP (VB let)
+        (S
+          (NP (PRP me))
+          (VP (VB know)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Please-1)
+xcomp(Please-1, let-2)
+nsubj(know-4, me-3)
+ccomp(let-2, know-4)
+punct(Please-1, .-5)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(2,14,[14,15]) -> (2,11,[11,12]), that is: "their" -> "they"

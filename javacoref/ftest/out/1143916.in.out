@@ -1,0 +1,533 @@
+Document: ID=1143916.in (8 sentences, 131 tokens)
+
+Sentence #1 (13 tokens):
+ENA is the agent on Eastern New Mexico's oba contract 25190.
+
+Tokens:
+[Text=ENA CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NN Lemma=ena NamedEntityTag=ORGANIZATION]
+[Text=is CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=agent CharacterOffsetBegin=11 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=agent NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Eastern CharacterOffsetBegin=20 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=Eastern NamedEntityTag=LOCATION]
+[Text=New CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=NNP Lemma=New NamedEntityTag=STATE_OR_PROVINCE]
+[Text=Mexico CharacterOffsetBegin=32 CharacterOffsetEnd=38 PartOfSpeech=NNP Lemma=Mexico NamedEntityTag=STATE_OR_PROVINCE]
+[Text='s CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=oba CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=NN Lemma=oba NamedEntityTag=O]
+[Text=contract CharacterOffsetBegin=45 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=contract NamedEntityTag=O]
+[Text=25190 CharacterOffsetBegin=54 CharacterOffsetEnd=59 PartOfSpeech=CD Lemma=25190 NamedEntityTag=NUMBER NormalizedNamedEntityTag=25190.0]
+[Text=. CharacterOffsetBegin=59 CharacterOffsetEnd=60 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN ENA))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN agent))
+        (PP (IN on)
+          (NP
+            (NP
+              (NP (NNP Eastern) (NNP New) (NNP Mexico) (POS 's))
+              (NN oba) (NN contract))
+            (NP (CD 25190))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, agent-4)
+nsubj(agent-4, ENA-1)
+cop(agent-4, is-2)
+det(agent-4, the-3)
+case(contract-11, on-5)
+compound(Mexico-8, Eastern-6)
+compound(Mexico-8, New-7)
+nmod:poss(contract-11, Mexico-8)
+case(Mexico-8, 's-9)
+compound(contract-11, oba-10)
+nmod:on(agent-4, contract-11)
+dep(contract-11, 25190-12)
+punct(agent-4, .-13)
+
+Extracted the following NER entity mentions:
+ENA	ORGANIZATION
+Eastern	LOCATION
+New Mexico	STATE_OR_PROVINCE
+25190	NUMBER
+
+Sentence #2 (11 tokens):
+The balance as of 11/30/01 is $47,610.18 due TW.
+
+Tokens:
+[Text=The CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=balance CharacterOffsetBegin=66 CharacterOffsetEnd=73 PartOfSpeech=NN Lemma=balance NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=74 CharacterOffsetEnd=76 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=77 CharacterOffsetEnd=79 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=11/30/01 CharacterOffsetBegin=80 CharacterOffsetEnd=88 PartOfSpeech=CD Lemma=11/30/01 NamedEntityTag=NUMBER]
+[Text=is CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=92 CharacterOffsetEnd=93 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$47610.18]
+[Text=47,610.18 CharacterOffsetBegin=93 CharacterOffsetEnd=102 PartOfSpeech=CD Lemma=47,610.18 NamedEntityTag=MONEY NormalizedNamedEntityTag=$47610.18]
+[Text=due CharacterOffsetBegin=103 CharacterOffsetEnd=106 PartOfSpeech=JJ Lemma=due NamedEntityTag=O]
+[Text=TW CharacterOffsetBegin=107 CharacterOffsetEnd=109 PartOfSpeech=NNP Lemma=TW NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=109 CharacterOffsetEnd=110 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN balance))
+      (PP (IN as)
+        (NP
+          (QP (IN of) (CD 11/30/01)))))
+    (VP (VBZ is)
+      (NP
+        (NP ($ $) (CD 47,610.18))
+        (PP (JJ due)
+          (NP (NNP TW)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 47,610.18-8)
+det(balance-2, The-1)
+nsubj(47,610.18-8, balance-2)
+case(11/30/01-5, as-3)
+advmod(11/30/01-5, of-4)
+nmod:as(balance-2, 11/30/01-5)
+cop(47,610.18-8, is-6)
+dep(47,610.18-8, $-7)
+case(TW-10, due-9)
+nmod:due(47,610.18-8, TW-10)
+punct(47,610.18-8, .-11)
+
+Extracted the following NER entity mentions:
+11/30/01	NUMBER
+$47,610.18	MONEY
+
+Sentence #3 (11 tokens):
+The contract does not have an associated nomination in December.
+
+Tokens:
+[Text=The CharacterOffsetBegin=112 CharacterOffsetEnd=115 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=contract CharacterOffsetBegin=116 CharacterOffsetEnd=124 PartOfSpeech=NN Lemma=contract NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=125 CharacterOffsetEnd=129 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=130 CharacterOffsetEnd=133 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=134 CharacterOffsetEnd=138 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=139 CharacterOffsetEnd=141 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=associated CharacterOffsetBegin=142 CharacterOffsetEnd=152 PartOfSpeech=VBN Lemma=associate NamedEntityTag=O]
+[Text=nomination CharacterOffsetBegin=153 CharacterOffsetEnd=163 PartOfSpeech=NN Lemma=nomination NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=164 CharacterOffsetEnd=166 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=December CharacterOffsetBegin=167 CharacterOffsetEnd=175 PartOfSpeech=NNP Lemma=December NamedEntityTag=DATE NormalizedNamedEntityTag=****12]
+[Text=. CharacterOffsetBegin=175 CharacterOffsetEnd=176 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN contract))
+    (VP (VBZ does) (RB not)
+      (VP (VB have)
+        (NP
+          (NP (DT an) (VBN associated) (NN nomination))
+          (PP (IN in)
+            (NP (NNP December))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-5)
+det(contract-2, The-1)
+nsubj(have-5, contract-2)
+aux(have-5, does-3)
+neg(have-5, not-4)
+det(nomination-8, an-6)
+amod(nomination-8, associated-7)
+dobj(have-5, nomination-8)
+case(December-10, in-9)
+nmod:in(nomination-8, December-10)
+punct(have-5, .-11)
+
+Extracted the following NER entity mentions:
+December	DATE
+
+Sentence #4 (17 tokens):
+We are delivering approximately 500 mmbtus/day to
+POI 13199 - the Eastern New Mexico Roosevelt point.
+
+Tokens:
+[Text=We CharacterOffsetBegin=178 CharacterOffsetEnd=180 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=181 CharacterOffsetEnd=184 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=delivering CharacterOffsetBegin=185 CharacterOffsetEnd=195 PartOfSpeech=VBG Lemma=deliver NamedEntityTag=O]
+[Text=approximately CharacterOffsetBegin=196 CharacterOffsetEnd=209 PartOfSpeech=RB Lemma=approximately NamedEntityTag=O]
+[Text=500 CharacterOffsetBegin=210 CharacterOffsetEnd=213 PartOfSpeech=CD Lemma=500 NamedEntityTag=NUMBER NormalizedNamedEntityTag=~500.0]
+[Text=mmbtus/day CharacterOffsetBegin=214 CharacterOffsetEnd=224 PartOfSpeech=NN Lemma=mmbtus/day NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=225 CharacterOffsetEnd=227 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=POI CharacterOffsetBegin=228 CharacterOffsetEnd=231 PartOfSpeech=NN Lemma=poi NamedEntityTag=O]
+[Text=13199 CharacterOffsetBegin=232 CharacterOffsetEnd=237 PartOfSpeech=CD Lemma=13199 NamedEntityTag=NUMBER NormalizedNamedEntityTag=13199.0]
+[Text=- CharacterOffsetBegin=238 CharacterOffsetEnd=239 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=240 CharacterOffsetEnd=243 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Eastern CharacterOffsetBegin=244 CharacterOffsetEnd=251 PartOfSpeech=NNP Lemma=Eastern NamedEntityTag=ORGANIZATION]
+[Text=New CharacterOffsetBegin=252 CharacterOffsetEnd=255 PartOfSpeech=NNP Lemma=New NamedEntityTag=ORGANIZATION]
+[Text=Mexico CharacterOffsetBegin=256 CharacterOffsetEnd=262 PartOfSpeech=NNP Lemma=Mexico NamedEntityTag=ORGANIZATION]
+[Text=Roosevelt CharacterOffsetBegin=263 CharacterOffsetEnd=272 PartOfSpeech=NNP Lemma=Roosevelt NamedEntityTag=ORGANIZATION]
+[Text=point CharacterOffsetBegin=273 CharacterOffsetEnd=278 PartOfSpeech=NN Lemma=point NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=278 CharacterOffsetEnd=279 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP are)
+      (VP (VBG delivering)
+        (NP
+          (NP
+            (NP
+              (QP (RB approximately) (CD 500))
+              (NN mmbtus/day))
+            (PP (TO to)
+              (NP (NN POI) (CD 13199))))
+          (: -)
+          (NP (DT the) (NNP Eastern) (NNP New) (NNP Mexico) (NNP Roosevelt) (NN point)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, delivering-3)
+nsubj(delivering-3, We-1)
+aux(delivering-3, are-2)
+advmod(500-5, approximately-4)
+nummod(mmbtus/day-6, 500-5)
+dobj(delivering-3, mmbtus/day-6)
+case(POI-8, to-7)
+nmod:to(mmbtus/day-6, POI-8)
+nummod(POI-8, 13199-9)
+punct(mmbtus/day-6, --10)
+det(point-16, the-11)
+compound(point-16, Eastern-12)
+compound(point-16, New-13)
+compound(point-16, Mexico-14)
+compound(point-16, Roosevelt-15)
+dep(mmbtus/day-6, point-16)
+punct(delivering-3, .-17)
+
+Extracted the following NER entity mentions:
+500	NUMBER
+13199	NUMBER
+Eastern New Mexico Roosevelt	ORGANIZATION
+
+Sentence #5 (29 tokens):
+Amy - please make contact(if you haven't yet) with Eastern New Mexico to see if they are going to be purchasing gas during December.
+
+Tokens:
+[Text=Amy CharacterOffsetBegin=281 CharacterOffsetEnd=284 PartOfSpeech=NNP Lemma=Amy NamedEntityTag=PERSON]
+[Text=- CharacterOffsetBegin=285 CharacterOffsetEnd=286 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=please CharacterOffsetBegin=287 CharacterOffsetEnd=293 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=294 CharacterOffsetEnd=298 PartOfSpeech=VB Lemma=make NamedEntityTag=O]
+[Text=contact CharacterOffsetBegin=299 CharacterOffsetEnd=306 PartOfSpeech=NN Lemma=contact NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=306 CharacterOffsetEnd=307 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=307 CharacterOffsetEnd=309 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=310 CharacterOffsetEnd=313 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=314 CharacterOffsetEnd=318 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=318 CharacterOffsetEnd=321 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=yet CharacterOffsetBegin=322 CharacterOffsetEnd=325 PartOfSpeech=RB Lemma=yet NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=325 CharacterOffsetEnd=326 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=327 CharacterOffsetEnd=331 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Eastern CharacterOffsetBegin=332 CharacterOffsetEnd=339 PartOfSpeech=NNP Lemma=Eastern NamedEntityTag=LOCATION]
+[Text=New CharacterOffsetBegin=340 CharacterOffsetEnd=343 PartOfSpeech=NNP Lemma=New NamedEntityTag=STATE_OR_PROVINCE]
+[Text=Mexico CharacterOffsetBegin=344 CharacterOffsetEnd=350 PartOfSpeech=NNP Lemma=Mexico NamedEntityTag=STATE_OR_PROVINCE]
+[Text=to CharacterOffsetBegin=351 CharacterOffsetEnd=353 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=354 CharacterOffsetEnd=357 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=358 CharacterOffsetEnd=360 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=361 CharacterOffsetEnd=365 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=366 CharacterOffsetEnd=369 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=going CharacterOffsetBegin=370 CharacterOffsetEnd=375 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=376 CharacterOffsetEnd=378 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=379 CharacterOffsetEnd=381 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=purchasing CharacterOffsetBegin=382 CharacterOffsetEnd=392 PartOfSpeech=VBG Lemma=purchase NamedEntityTag=O]
+[Text=gas CharacterOffsetBegin=393 CharacterOffsetEnd=396 PartOfSpeech=NN Lemma=gas NamedEntityTag=O]
+[Text=during CharacterOffsetBegin=397 CharacterOffsetEnd=403 PartOfSpeech=IN Lemma=during NamedEntityTag=O]
+[Text=December CharacterOffsetBegin=404 CharacterOffsetEnd=412 PartOfSpeech=NNP Lemma=December NamedEntityTag=DATE NormalizedNamedEntityTag=****12]
+[Text=. CharacterOffsetBegin=412 CharacterOffsetEnd=413 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (X
+    (NP (NNP Amy))
+    (: -)
+    (FRAG
+      (VP (VB please)
+        (VP (VB make)
+          (NP (NN contact))
+          (PRN (-LRB- -LRB-)
+            (SBAR (IN if)
+              (S
+                (NP (PRP you))
+                (VP (VBP have) (RB n't)
+                  (ADVP (RB yet)))))
+            (-RRB- -RRB-))
+          (PP (IN with)
+            (NP
+              (NP (NNP Eastern) (NNP New) (NNP Mexico))
+              (SBAR
+                (S
+                  (VP (TO to)
+                    (VP (VB see)
+                      (SBAR (IN if)
+                        (S
+                          (NP (PRP they))
+                          (VP (VBP are)
+                            (VP (VBG going)
+                              (S
+                                (VP (TO to)
+                                  (VP (VB be)
+                                    (VP (VBG purchasing)
+                                      (NP (NN gas))
+                                      (PP (IN during)
+                                        (NP (NNP December))))))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Amy-1)
+punct(Amy-1, --2)
+dep(Amy-1, please-3)
+xcomp(please-3, make-4)
+dobj(make-4, contact-5)
+punct(have-9, -LRB--6)
+mark(have-9, if-7)
+nsubj(have-9, you-8)
+parataxis(make-4, have-9)
+neg(have-9, n't-10)
+advmod(have-9, yet-11)
+punct(have-9, -RRB--12)
+case(Mexico-16, with-13)
+compound(Mexico-16, Eastern-14)
+compound(Mexico-16, New-15)
+nmod:with(make-4, Mexico-16)
+mark(see-18, to-17)
+acl:to(Mexico-16, see-18)
+mark(going-22, if-19)
+nsubj(going-22, they-20)
+nsubj:xsubj(purchasing-25, they-20)
+aux(going-22, are-21)
+advcl:if(see-18, going-22)
+mark(purchasing-25, to-23)
+aux(purchasing-25, be-24)
+xcomp(going-22, purchasing-25)
+dobj(purchasing-25, gas-26)
+case(December-28, during-27)
+nmod:during(purchasing-25, December-28)
+punct(Amy-1, .-29)
+
+Extracted the following NER entity mentions:
+Amy	PERSON
+Eastern	LOCATION
+New Mexico	STATE_OR_PROVINCE
+December	DATE
+
+Sentence #6 (15 tokens):
+Also, make them aware that they are ultimately responsible for their oba balance.
+
+Tokens:
+[Text=Also CharacterOffsetBegin=415 CharacterOffsetEnd=419 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=419 CharacterOffsetEnd=420 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=421 CharacterOffsetEnd=425 PartOfSpeech=VBP Lemma=make NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=426 CharacterOffsetEnd=430 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=aware CharacterOffsetBegin=431 CharacterOffsetEnd=436 PartOfSpeech=JJ Lemma=aware NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=437 CharacterOffsetEnd=441 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=442 CharacterOffsetEnd=446 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=447 CharacterOffsetEnd=450 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=ultimately CharacterOffsetBegin=451 CharacterOffsetEnd=461 PartOfSpeech=RB Lemma=ultimately NamedEntityTag=O]
+[Text=responsible CharacterOffsetBegin=462 CharacterOffsetEnd=473 PartOfSpeech=JJ Lemma=responsible NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=474 CharacterOffsetEnd=477 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=478 CharacterOffsetEnd=483 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=oba CharacterOffsetBegin=484 CharacterOffsetEnd=487 PartOfSpeech=NN Lemma=oba NamedEntityTag=O]
+[Text=balance CharacterOffsetBegin=488 CharacterOffsetEnd=495 PartOfSpeech=NN Lemma=balance NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=495 CharacterOffsetEnd=496 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Also))
+    (, ,)
+    (VP (VBP make)
+      (S
+        (NP (PRP them))
+        (ADJP (JJ aware)))
+      (SBAR (IN that)
+        (S
+          (NP (PRP they))
+          (VP (VBP are)
+            (ADJP (RB ultimately) (JJ responsible)
+              (PP (IN for)
+                (NP (PRP$ their) (NN oba) (NN balance))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, make-3)
+advmod(make-3, Also-1)
+punct(make-3, ,-2)
+nsubj(aware-5, them-4)
+xcomp(make-3, aware-5)
+mark(responsible-10, that-6)
+nsubj(responsible-10, they-7)
+cop(responsible-10, are-8)
+advmod(responsible-10, ultimately-9)
+ccomp(make-3, responsible-10)
+case(balance-14, for-11)
+nmod:poss(balance-14, their-12)
+compound(balance-14, oba-13)
+nmod:for(responsible-10, balance-14)
+punct(make-3, .-15)
+
+Extracted the following NER entity mentions:
+
+Sentence #7 (13 tokens):
+ENA is still identified as the agent on this contract but .......?
+
+Tokens:
+[Text=ENA CharacterOffsetBegin=498 CharacterOffsetEnd=501 PartOfSpeech=NN Lemma=ena NamedEntityTag=ORGANIZATION]
+[Text=is CharacterOffsetBegin=502 CharacterOffsetEnd=504 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=505 CharacterOffsetEnd=510 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=identified CharacterOffsetBegin=511 CharacterOffsetEnd=521 PartOfSpeech=VBN Lemma=identify NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=522 CharacterOffsetEnd=524 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=525 CharacterOffsetEnd=528 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=agent CharacterOffsetBegin=529 CharacterOffsetEnd=534 PartOfSpeech=NN Lemma=agent NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=535 CharacterOffsetEnd=537 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=538 CharacterOffsetEnd=542 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=contract CharacterOffsetBegin=543 CharacterOffsetEnd=551 PartOfSpeech=NN Lemma=contract NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=552 CharacterOffsetEnd=555 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=556 CharacterOffsetEnd=563 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=563 CharacterOffsetEnd=564 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN ENA))
+    (VP (VBZ is)
+      (ADVP (RB still))
+      (VP (VBN identified)
+        (PP (IN as)
+          (NP
+            (NP (DT the) (NN agent))
+            (PP (IN on)
+              (NP
+                (NP (DT this) (NN contract))
+                (ADVP (CC but))))))))
+    (: ...) (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, identified-4)
+nsubjpass(identified-4, ENA-1)
+auxpass(identified-4, is-2)
+advmod(identified-4, still-3)
+case(agent-7, as-5)
+det(agent-7, the-6)
+nmod:as(identified-4, agent-7)
+case(contract-10, on-8)
+det(contract-10, this-9)
+nmod:on(agent-7, contract-10)
+advmod(contract-10, but-11)
+punct(identified-4, ...-12)
+punct(identified-4, ?-13)
+
+Extracted the following NER entity mentions:
+ENA	ORGANIZATION
+
+Sentence #8 (22 tokens):
+In order to prevent this imbalance from growing, Eastern New Mexico needs to have someone schedule gas to their point.
+
+Tokens:
+[Text=In CharacterOffsetBegin=566 CharacterOffsetEnd=568 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=order CharacterOffsetBegin=569 CharacterOffsetEnd=574 PartOfSpeech=NN Lemma=order NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=575 CharacterOffsetEnd=577 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=prevent CharacterOffsetBegin=578 CharacterOffsetEnd=585 PartOfSpeech=VB Lemma=prevent NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=586 CharacterOffsetEnd=590 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=imbalance CharacterOffsetBegin=591 CharacterOffsetEnd=600 PartOfSpeech=NN Lemma=imbalance NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=601 CharacterOffsetEnd=605 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=growing CharacterOffsetBegin=606 CharacterOffsetEnd=613 PartOfSpeech=VBG Lemma=grow NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=613 CharacterOffsetEnd=614 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Eastern CharacterOffsetBegin=615 CharacterOffsetEnd=622 PartOfSpeech=NNP Lemma=Eastern NamedEntityTag=LOCATION]
+[Text=New CharacterOffsetBegin=623 CharacterOffsetEnd=626 PartOfSpeech=NNP Lemma=New NamedEntityTag=STATE_OR_PROVINCE]
+[Text=Mexico CharacterOffsetBegin=627 CharacterOffsetEnd=633 PartOfSpeech=NNP Lemma=Mexico NamedEntityTag=STATE_OR_PROVINCE]
+[Text=needs CharacterOffsetBegin=634 CharacterOffsetEnd=639 PartOfSpeech=VBZ Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=640 CharacterOffsetEnd=642 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=643 CharacterOffsetEnd=647 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=someone CharacterOffsetBegin=648 CharacterOffsetEnd=655 PartOfSpeech=NN Lemma=someone NamedEntityTag=O]
+[Text=schedule CharacterOffsetBegin=656 CharacterOffsetEnd=664 PartOfSpeech=NN Lemma=schedule NamedEntityTag=O]
+[Text=gas CharacterOffsetBegin=665 CharacterOffsetEnd=668 PartOfSpeech=NN Lemma=gas NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=669 CharacterOffsetEnd=671 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=672 CharacterOffsetEnd=677 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=point CharacterOffsetBegin=678 CharacterOffsetEnd=683 PartOfSpeech=NN Lemma=point NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=683 CharacterOffsetEnd=684 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN In) (NN order)
+      (S
+        (VP (TO to)
+          (VP (VB prevent)
+            (NP (DT this) (NN imbalance))
+            (PP (IN from)
+              (NP (VBG growing)))))))
+    (, ,)
+    (NP (NNP Eastern) (NNP New) (NNP Mexico))
+    (VP (VBZ needs)
+      (S
+        (VP (TO to)
+          (VP (VB have)
+            (NP
+              (NP (NN someone) (NN schedule) (NN gas))
+              (PP (TO to)
+                (NP (PRP$ their) (NN point))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, needs-13)
+mark(prevent-4, In-1)
+mwe(In-1, order-2)
+mark(prevent-4, to-3)
+advcl:in_order(needs-13, prevent-4)
+det(imbalance-6, this-5)
+dobj(prevent-4, imbalance-6)
+case(growing-8, from-7)
+nmod:from(prevent-4, growing-8)
+punct(needs-13, ,-9)
+compound(Mexico-12, Eastern-10)
+compound(Mexico-12, New-11)
+nsubj(needs-13, Mexico-12)
+nsubj:xsubj(have-15, Mexico-12)
+mark(have-15, to-14)
+xcomp(needs-13, have-15)
+compound(gas-18, someone-16)
+compound(gas-18, schedule-17)
+dobj(have-15, gas-18)
+case(point-21, to-19)
+nmod:poss(point-21, their-20)
+nmod:to(gas-18, point-21)
+punct(needs-13, .-22)
+
+Extracted the following NER entity mentions:
+Eastern	LOCATION
+New Mexico	STATE_OR_PROVINCE
+
+Coreference set:
+	(8,12,[10,13]) -> (1,8,[6,10]), that is: "Eastern New Mexico" -> "Eastern New Mexico 's"
+
+Coreference set:
+	(3,2,[1,3]) -> (1,11,[6,13]), that is: "The contract" -> "Eastern New Mexico 's oba contract 25190"
+	(7,10,[9,11]) -> (1,11,[6,13]), that is: "this contract" -> "Eastern New Mexico 's oba contract 25190"
+
+Coreference set:
+	(5,28,[28,29]) -> (3,10,[10,11]), that is: "December" -> "December"
+
+Coreference set:
+	(6,4,[4,5]) -> (5,20,[20,21]), that is: "them" -> "they"
+	(6,7,[7,8]) -> (5,20,[20,21]), that is: "they" -> "they"
+	(6,12,[12,13]) -> (5,20,[20,21]), that is: "their" -> "they"
+
+Coreference set:
+	(8,20,[20,21]) -> (8,8,[8,9]), that is: "their" -> "growing"

@@ -1,0 +1,449 @@
+Document: ID=68965.in (6 sentences, 106 tokens)
+
+Sentence #1 (25 tokens):
+Hey Tom,
+Rita Wynne just called and let me know that we need to make a payment to TXU on behalf of Tenaska.
+
+Tokens:
+[Text=Hey CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=UH Lemma=hey NamedEntityTag=O]
+[Text=Tom CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Tom NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Rita CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Rita NamedEntityTag=PERSON]
+[Text=Wynne CharacterOffsetBegin=14 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=Wynne NamedEntityTag=PERSON]
+[Text=just CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=called CharacterOffsetBegin=25 CharacterOffsetEnd=31 PartOfSpeech=VBD Lemma=call NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=let CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=48 CharacterOffsetEnd=52 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=53 CharacterOffsetEnd=55 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=VBP Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=64 CharacterOffsetEnd=68 PartOfSpeech=VB Lemma=make NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=payment CharacterOffsetBegin=71 CharacterOffsetEnd=78 PartOfSpeech=NN Lemma=payment NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=79 CharacterOffsetEnd=81 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=TXU CharacterOffsetBegin=82 CharacterOffsetEnd=85 PartOfSpeech=NNP Lemma=TXU NamedEntityTag=ORGANIZATION]
+[Text=on CharacterOffsetBegin=86 CharacterOffsetEnd=88 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=behalf CharacterOffsetBegin=89 CharacterOffsetEnd=95 PartOfSpeech=NN Lemma=behalf NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=96 CharacterOffsetEnd=98 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Tenaska CharacterOffsetBegin=99 CharacterOffsetEnd=106 PartOfSpeech=NNP Lemma=Tenaska NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=106 CharacterOffsetEnd=107 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (INTJ (UH Hey))
+      (NP (NNP Tom) (, ,) (NNP Rita) (NNP Wynne) (RB just))
+      (VP (VBD called)))
+    (CC and)
+    (S
+      (VP (VB let)
+        (S
+          (NP (PRP me))
+          (VP (VB know)
+            (SBAR (IN that)
+              (S
+                (NP (PRP we))
+                (VP (VBP need)
+                  (S
+                    (VP (TO to)
+                      (VP (VB make)
+                        (NP (DT a) (NN payment))
+                        (PP (TO to)
+                          (NP (NNP TXU)))
+                        (PP (IN on)
+                          (NP
+                            (NP (NN behalf))
+                            (PP (IN of)
+                              (NP (NNP Tenaska)))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, called-7)
+discourse(called-7, Hey-1)
+compound(Wynne-5, Tom-2)
+punct(Wynne-5, ,-3)
+appos(Wynne-5, Rita-4)
+nsubj(called-7, Wynne-5)
+nsubj(let-9, Wynne-5)
+advmod(Wynne-5, just-6)
+cc(called-7, and-8)
+conj:and(called-7, let-9)
+nsubj(know-11, me-10)
+ccomp(let-9, know-11)
+mark(need-14, that-12)
+nsubj(need-14, we-13)
+nsubj:xsubj(make-16, we-13)
+ccomp(know-11, need-14)
+mark(make-16, to-15)
+xcomp(need-14, make-16)
+det(payment-18, a-17)
+dobj(make-16, payment-18)
+case(TXU-20, to-19)
+nmod:to(make-16, TXU-20)
+case(Tenaska-24, on-21)
+mwe(on-21, behalf-22)
+mwe(on-21, of-23)
+nmod:on_behalf_of(make-16, Tenaska-24)
+punct(called-7, .-25)
+
+Extracted the following NER entity mentions:
+Tom	PERSON
+Rita Wynne	PERSON
+TXU	ORGANIZATION
+Tenaska	ORGANIZATION
+
+Sentence #2 (41 tokens):
+Since TXU has terminated agreements with us, the Cash Management Committee will not make payments to TXU unless they understand the deal that is in place with Tenaska and we show that Tenaska has already paid us their part.
+
+Tokens:
+[Text=Since CharacterOffsetBegin=109 CharacterOffsetEnd=114 PartOfSpeech=IN Lemma=since NamedEntityTag=O]
+[Text=TXU CharacterOffsetBegin=115 CharacterOffsetEnd=118 PartOfSpeech=NNP Lemma=TXU NamedEntityTag=ORGANIZATION]
+[Text=has CharacterOffsetBegin=119 CharacterOffsetEnd=122 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=terminated CharacterOffsetBegin=123 CharacterOffsetEnd=133 PartOfSpeech=VBN Lemma=terminate NamedEntityTag=O]
+[Text=agreements CharacterOffsetBegin=134 CharacterOffsetEnd=144 PartOfSpeech=NNS Lemma=agreement NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=145 CharacterOffsetEnd=149 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=150 CharacterOffsetEnd=152 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=152 CharacterOffsetEnd=153 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=154 CharacterOffsetEnd=157 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Cash CharacterOffsetBegin=158 CharacterOffsetEnd=162 PartOfSpeech=NNP Lemma=Cash NamedEntityTag=ORGANIZATION]
+[Text=Management CharacterOffsetBegin=163 CharacterOffsetEnd=173 PartOfSpeech=NNP Lemma=Management NamedEntityTag=ORGANIZATION]
+[Text=Committee CharacterOffsetBegin=174 CharacterOffsetEnd=183 PartOfSpeech=NNP Lemma=Committee NamedEntityTag=ORGANIZATION]
+[Text=will CharacterOffsetBegin=184 CharacterOffsetEnd=188 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=189 CharacterOffsetEnd=192 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=193 CharacterOffsetEnd=197 PartOfSpeech=VB Lemma=make NamedEntityTag=O]
+[Text=payments CharacterOffsetBegin=198 CharacterOffsetEnd=206 PartOfSpeech=NNS Lemma=payment NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=207 CharacterOffsetEnd=209 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=TXU CharacterOffsetBegin=210 CharacterOffsetEnd=213 PartOfSpeech=NNP Lemma=TXU NamedEntityTag=ORGANIZATION]
+[Text=unless CharacterOffsetBegin=214 CharacterOffsetEnd=220 PartOfSpeech=IN Lemma=unless NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=221 CharacterOffsetEnd=225 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=understand CharacterOffsetBegin=226 CharacterOffsetEnd=236 PartOfSpeech=VBP Lemma=understand NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=237 CharacterOffsetEnd=240 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=deal CharacterOffsetBegin=241 CharacterOffsetEnd=245 PartOfSpeech=NN Lemma=deal NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=246 CharacterOffsetEnd=250 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=251 CharacterOffsetEnd=253 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=254 CharacterOffsetEnd=256 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=place CharacterOffsetBegin=257 CharacterOffsetEnd=262 PartOfSpeech=NN Lemma=place NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=263 CharacterOffsetEnd=267 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Tenaska CharacterOffsetBegin=268 CharacterOffsetEnd=275 PartOfSpeech=NNP Lemma=Tenaska NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=276 CharacterOffsetEnd=279 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=280 CharacterOffsetEnd=282 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=show CharacterOffsetBegin=283 CharacterOffsetEnd=287 PartOfSpeech=VBP Lemma=show NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=288 CharacterOffsetEnd=292 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=Tenaska CharacterOffsetBegin=293 CharacterOffsetEnd=300 PartOfSpeech=NNP Lemma=Tenaska NamedEntityTag=ORGANIZATION]
+[Text=has CharacterOffsetBegin=301 CharacterOffsetEnd=304 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=already CharacterOffsetBegin=305 CharacterOffsetEnd=312 PartOfSpeech=RB Lemma=already NamedEntityTag=O]
+[Text=paid CharacterOffsetBegin=313 CharacterOffsetEnd=317 PartOfSpeech=VBN Lemma=pay NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=318 CharacterOffsetEnd=320 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=321 CharacterOffsetEnd=326 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=part CharacterOffsetBegin=327 CharacterOffsetEnd=331 PartOfSpeech=NN Lemma=part NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=331 CharacterOffsetEnd=332 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN Since)
+      (S
+        (NP (NNP TXU))
+        (VP (VBZ has)
+          (VP (VBN terminated)
+            (NP (NNS agreements))
+            (PP (IN with)
+              (NP (PRP us)))))))
+    (, ,)
+    (NP (DT the) (NNP Cash) (NNP Management) (NNP Committee))
+    (VP (MD will) (RB not)
+      (VP (VB make)
+        (NP (NNS payments))
+        (PP (TO to)
+          (NP (NNP TXU)))
+        (SBAR (IN unless)
+          (S
+            (S
+              (NP (PRP they))
+              (VP (VBP understand)
+                (NP
+                  (NP (DT the) (NN deal))
+                  (SBAR
+                    (WHNP (WDT that))
+                    (S
+                      (VP (VBZ is)
+                        (PP (IN in)
+                          (NP
+                            (NP (NN place))
+                            (PP (IN with)
+                              (NP (NNP Tenaska)))))))))))
+            (CC and)
+            (S
+              (NP (PRP we))
+              (VP (VBP show)
+                (SBAR (IN that)
+                  (S
+                    (NP (NNP Tenaska))
+                    (VP (VBZ has)
+                      (ADVP (RB already))
+                      (VP (VBN paid)
+                        (NP (PRP us))
+                        (NP (PRP$ their) (NN part))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, make-15)
+mark(terminated-4, Since-1)
+nsubj(terminated-4, TXU-2)
+aux(terminated-4, has-3)
+advcl:since(make-15, terminated-4)
+dobj(terminated-4, agreements-5)
+case(us-7, with-6)
+nmod:with(terminated-4, us-7)
+punct(make-15, ,-8)
+det(Committee-12, the-9)
+compound(Committee-12, Cash-10)
+compound(Committee-12, Management-11)
+nsubj(make-15, Committee-12)
+aux(make-15, will-13)
+neg(make-15, not-14)
+dobj(make-15, payments-16)
+case(TXU-18, to-17)
+nmod:to(make-15, TXU-18)
+mark(understand-21, unless-19)
+nsubj(understand-21, they-20)
+advcl:unless(make-15, understand-21)
+det(deal-23, the-22)
+dobj(understand-21, deal-23)
+nsubj(place-27, deal-23)
+ref(deal-23, that-24)
+cop(place-27, is-25)
+case(place-27, in-26)
+acl:relcl(deal-23, place-27)
+case(Tenaska-29, with-28)
+nmod:with(place-27, Tenaska-29)
+cc(understand-21, and-30)
+nsubj(show-32, we-31)
+advcl:unless(make-15, show-32)
+conj:and(understand-21, show-32)
+mark(paid-37, that-33)
+nsubj(paid-37, Tenaska-34)
+aux(paid-37, has-35)
+advmod(paid-37, already-36)
+ccomp(show-32, paid-37)
+iobj(paid-37, us-38)
+nmod:poss(part-40, their-39)
+dobj(paid-37, part-40)
+punct(make-15, .-41)
+
+Extracted the following NER entity mentions:
+TXU	ORGANIZATION
+Cash Management Committee	ORGANIZATION
+TXU	ORGANIZATION
+Tenaska	ORGANIZATION
+Tenaska	ORGANIZATION
+
+Sentence #3 (24 tokens):
+Could you please help Chip Schneider, of Enron Underwriting, and myself get up to speed on this as quickly as possible.
+
+Tokens:
+[Text=Could CharacterOffsetBegin=334 CharacterOffsetEnd=339 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=340 CharacterOffsetEnd=343 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=please CharacterOffsetBegin=344 CharacterOffsetEnd=350 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=help CharacterOffsetBegin=351 CharacterOffsetEnd=355 PartOfSpeech=NN Lemma=help NamedEntityTag=O]
+[Text=Chip CharacterOffsetBegin=356 CharacterOffsetEnd=360 PartOfSpeech=NNP Lemma=Chip NamedEntityTag=PERSON]
+[Text=Schneider CharacterOffsetBegin=361 CharacterOffsetEnd=370 PartOfSpeech=NNP Lemma=Schneider NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=370 CharacterOffsetEnd=371 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=372 CharacterOffsetEnd=374 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=375 CharacterOffsetEnd=380 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=Underwriting CharacterOffsetBegin=381 CharacterOffsetEnd=393 PartOfSpeech=NN Lemma=underwriting NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=393 CharacterOffsetEnd=394 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=395 CharacterOffsetEnd=398 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=myself CharacterOffsetBegin=399 CharacterOffsetEnd=405 PartOfSpeech=PRP Lemma=myself NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=406 CharacterOffsetEnd=409 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=410 CharacterOffsetEnd=412 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=413 CharacterOffsetEnd=415 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=speed CharacterOffsetBegin=416 CharacterOffsetEnd=421 PartOfSpeech=VB Lemma=speed NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=422 CharacterOffsetEnd=424 PartOfSpeech=RP Lemma=on NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=425 CharacterOffsetEnd=429 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=430 CharacterOffsetEnd=432 PartOfSpeech=RB Lemma=as NamedEntityTag=O]
+[Text=quickly CharacterOffsetBegin=433 CharacterOffsetEnd=440 PartOfSpeech=RB Lemma=quickly NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=441 CharacterOffsetEnd=443 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=possible CharacterOffsetBegin=444 CharacterOffsetEnd=452 PartOfSpeech=JJ Lemma=possible NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=452 CharacterOffsetEnd=453 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ
+    (SQ (MD Could)
+      (NP (PRP you))
+      (VP (VB please)
+        (NP
+          (NP (NN help) (NNP Chip) (NNP Schneider))
+          (, ,)
+          (PP (IN of)
+            (NP (NNP Enron) (NN Underwriting))))))
+    (, ,)
+    (CC and)
+    (SQ
+      (NP (PRP myself))
+      (VP (VB get)
+        (PRT (RP up))
+        (S
+          (VP (TO to)
+            (VP (VB speed)
+              (PRT (RP on))
+              (NP (DT this))
+              (SBAR
+                (ADVP (RB as) (RB quickly))
+                (IN as)
+                (FRAG
+                  (ADJP (JJ possible)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, please-3)
+aux(please-3, Could-1)
+nsubj(please-3, you-2)
+compound(Schneider-6, help-4)
+compound(Schneider-6, Chip-5)
+dobj(please-3, Schneider-6)
+punct(Schneider-6, ,-7)
+case(Underwriting-10, of-8)
+compound(Underwriting-10, Enron-9)
+nmod:of(Schneider-6, Underwriting-10)
+punct(please-3, ,-11)
+cc(please-3, and-12)
+nsubj(get-14, myself-13)
+nsubj:xsubj(speed-17, myself-13)
+conj:and(please-3, get-14)
+compound:prt(get-14, up-15)
+mark(speed-17, to-16)
+xcomp(get-14, speed-17)
+compound:prt(speed-17, on-18)
+dobj(speed-17, this-19)
+advmod(quickly-21, as-20)
+advmod(possible-23, quickly-21)
+mark(possible-23, as-22)
+advcl:as(speed-17, possible-23)
+punct(please-3, .-24)
+
+Extracted the following NER entity mentions:
+Chip Schneider	PERSON
+Enron Underwriting	ORGANIZATION
+
+Sentence #4 (9 tokens):
+TXU is threatening to take action on Tenaska.
+
+Tokens:
+[Text=TXU CharacterOffsetBegin=455 CharacterOffsetEnd=458 PartOfSpeech=NNP Lemma=TXU NamedEntityTag=ORGANIZATION]
+[Text=is CharacterOffsetBegin=459 CharacterOffsetEnd=461 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=threatening CharacterOffsetBegin=462 CharacterOffsetEnd=473 PartOfSpeech=VBG Lemma=threaten NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=474 CharacterOffsetEnd=476 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=take CharacterOffsetBegin=477 CharacterOffsetEnd=481 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text=action CharacterOffsetBegin=482 CharacterOffsetEnd=488 PartOfSpeech=NN Lemma=action NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=489 CharacterOffsetEnd=491 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Tenaska CharacterOffsetBegin=492 CharacterOffsetEnd=499 PartOfSpeech=NNP Lemma=Tenaska NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=499 CharacterOffsetEnd=500 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP TXU))
+    (VP (VBZ is)
+      (VP (VBG threatening)
+        (S
+          (VP (TO to)
+            (VP (VB take)
+              (NP (NN action))
+              (PP (IN on)
+                (NP (NNP Tenaska))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, threatening-3)
+nsubj(threatening-3, TXU-1)
+nsubj:xsubj(take-5, TXU-1)
+aux(threatening-3, is-2)
+mark(take-5, to-4)
+xcomp(threatening-3, take-5)
+dobj(take-5, action-6)
+case(Tenaska-8, on-7)
+nmod:on(take-5, Tenaska-8)
+punct(threatening-3, .-9)
+
+Extracted the following NER entity mentions:
+TXU	ORGANIZATION
+Tenaska	LOCATION
+
+Sentence #5 (5 tokens):
+Thanks for your help.
+
+Tokens:
+[Text=Thanks CharacterOffsetBegin=502 CharacterOffsetEnd=508 PartOfSpeech=NNS Lemma=thanks NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=509 CharacterOffsetEnd=512 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=513 CharacterOffsetEnd=517 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=help CharacterOffsetBegin=518 CharacterOffsetEnd=522 PartOfSpeech=NN Lemma=help NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=522 CharacterOffsetEnd=523 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNS Thanks))
+    (PP (IN for)
+      (NP (PRP$ your) (NN help)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Thanks-1)
+case(help-4, for-2)
+nmod:poss(help-4, your-3)
+nmod:for(Thanks-1, help-4)
+punct(Thanks-1, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #6 (2 tokens):
+Regards,
+
+Tokens:
+[Text=Regards CharacterOffsetBegin=524 CharacterOffsetEnd=531 PartOfSpeech=NNS Lemma=regards NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=531 CharacterOffsetEnd=532 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (PP (NNS Regards))
+    (, ,)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Regards-1)
+punct(Regards-1, ,-2)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(2,2,[2,3]) -> (1,20,[20,21]), that is: "TXU" -> "TXU"
+	(2,18,[18,19]) -> (1,20,[20,21]), that is: "TXU" -> "TXU"
+	(4,1,[1,2]) -> (1,20,[20,21]), that is: "TXU" -> "TXU"
+
+Coreference set:
+	(2,29,[29,30]) -> (1,24,[24,25]), that is: "Tenaska" -> "Tenaska"
+	(2,34,[34,35]) -> (1,24,[24,25]), that is: "Tenaska" -> "Tenaska"
+	(4,8,[8,9]) -> (1,24,[24,25]), that is: "Tenaska" -> "Tenaska"
+
+Coreference set:
+	(3,13,[13,14]) -> (1,10,[10,11]), that is: "myself" -> "me"
+
+Coreference set:
+	(2,7,[7,8]) -> (1,13,[13,14]), that is: "us" -> "we"
+	(2,31,[31,32]) -> (1,13,[13,14]), that is: "we" -> "we"
+	(2,38,[38,39]) -> (1,13,[13,14]), that is: "us" -> "we"
+
+Coreference set:
+	(2,39,[39,40]) -> (2,20,[20,21]), that is: "their" -> "they"

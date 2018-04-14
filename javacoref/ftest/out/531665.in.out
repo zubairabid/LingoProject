@@ -1,0 +1,79 @@
+Document: ID=531665.in (1 sentences, 20 tokens)
+
+Sentence #1 (20 tokens):
+Here is information on the ability of CA generators to run in excess of their orginal offset NOx quantities.
+
+Tokens:
+[Text=Here CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=information CharacterOffsetBegin=8 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=information NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=ability CharacterOffsetBegin=27 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=ability NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=CA CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=NNP Lemma=CA NamedEntityTag=STATE_OR_PROVINCE]
+[Text=generators CharacterOffsetBegin=41 CharacterOffsetEnd=51 PartOfSpeech=NNS Lemma=generator NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=52 CharacterOffsetEnd=54 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=run CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=VB Lemma=run NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=excess CharacterOffsetBegin=62 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=excess NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=72 CharacterOffsetEnd=77 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=orginal CharacterOffsetBegin=78 CharacterOffsetEnd=85 PartOfSpeech=JJ Lemma=orginal NamedEntityTag=O]
+[Text=offset CharacterOffsetBegin=86 CharacterOffsetEnd=92 PartOfSpeech=VBN Lemma=offset NamedEntityTag=O]
+[Text=NOx CharacterOffsetBegin=93 CharacterOffsetEnd=96 PartOfSpeech=NN Lemma=nox NamedEntityTag=O]
+[Text=quantities CharacterOffsetBegin=97 CharacterOffsetEnd=107 PartOfSpeech=NNS Lemma=quantity NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=107 CharacterOffsetEnd=108 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (RB Here))
+    (VP (VBZ is)
+      (NP
+        (NP (NN information))
+        (PP (IN on)
+          (NP
+            (NP (DT the) (NN ability))
+            (PP (IN of)
+              (NP (NNP CA) (NNS generators)
+                (S
+                  (VP (TO to)
+                    (VP (VB run)
+                      (PP (IN in)
+                        (NP
+                          (NP (NN excess))
+                          (PP (IN of)
+                            (NP (PRP$ their) (JJ orginal)))
+                          (VP (VBN offset)
+                            (NP (NN NOx) (NNS quantities))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, information-3)
+nsubj(information-3, Here-1)
+cop(information-3, is-2)
+case(ability-6, on-4)
+det(ability-6, the-5)
+nmod:on(information-3, ability-6)
+case(generators-9, of-7)
+compound(generators-9, CA-8)
+nmod:of(ability-6, generators-9)
+mark(run-11, to-10)
+acl:to(generators-9, run-11)
+case(excess-13, in-12)
+nmod:in(run-11, excess-13)
+case(orginal-16, of-14)
+nmod:poss(orginal-16, their-15)
+nmod:of(excess-13, orginal-16)
+acl(excess-13, offset-17)
+compound(quantities-19, NOx-18)
+dobj(offset-17, quantities-19)
+punct(information-3, .-20)
+
+Extracted the following NER entity mentions:
+CA	STATE_OR_PROVINCE
+
+Coreference set:
+	(1,3,[3,20]) -> (1,1,[1,2]), that is: "information on the ability of CA generators to run in excess of their orginal offset NOx quantities" -> "Here"

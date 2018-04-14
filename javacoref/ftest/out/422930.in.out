@@ -1,0 +1,223 @@
+Document: ID=422930.in (4 sentences, 54 tokens)
+
+Sentence #1 (20 tokens):
+Below are examples of notices received from ENA's Legal Department when
+ISDA's or related documents are signed.
+
+Tokens:
+[Text=Below CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Below NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=examples CharacterOffsetBegin=10 CharacterOffsetEnd=18 PartOfSpeech=NNS Lemma=example NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=notices CharacterOffsetBegin=22 CharacterOffsetEnd=29 PartOfSpeech=NNS Lemma=notice NamedEntityTag=O]
+[Text=received CharacterOffsetBegin=30 CharacterOffsetEnd=38 PartOfSpeech=VBN Lemma=receive NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=ENA CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=ENA NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Legal CharacterOffsetBegin=50 CharacterOffsetEnd=55 PartOfSpeech=NNP Lemma=Legal NamedEntityTag=ORGANIZATION]
+[Text=Department CharacterOffsetBegin=56 CharacterOffsetEnd=66 PartOfSpeech=NNP Lemma=Department NamedEntityTag=ORGANIZATION]
+[Text=when CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=ISDA CharacterOffsetBegin=72 CharacterOffsetEnd=76 PartOfSpeech=NNP Lemma=ISDA NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=76 CharacterOffsetEnd=78 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=79 CharacterOffsetEnd=81 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=related CharacterOffsetBegin=82 CharacterOffsetEnd=89 PartOfSpeech=JJ Lemma=related NamedEntityTag=O]
+[Text=documents CharacterOffsetBegin=90 CharacterOffsetEnd=99 PartOfSpeech=NNS Lemma=document NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=100 CharacterOffsetEnd=103 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=signed CharacterOffsetBegin=104 CharacterOffsetEnd=110 PartOfSpeech=VBN Lemma=sign NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=110 CharacterOffsetEnd=111 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Below))
+    (VP (VBP are)
+      (NP
+        (NP (NNS examples))
+        (PP (IN of)
+          (NP
+            (NP (NNS notices))
+            (VP (VBN received)
+              (PP (IN from)
+                (NP
+                  (NP (NNP ENA) (POS 's))
+                  (NNP Legal) (NNP Department)))
+              (SBAR
+                (WHADVP (WRB when))
+                (S
+                  (NP
+                    (NP (NNP ISDA) (POS 's))
+                    (CC or)
+                    (NP (JJ related) (NNS documents)))
+                  (VP (VBP are)
+                    (VP (VBN signed))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, examples-3)
+nsubj(examples-3, Below-1)
+cop(examples-3, are-2)
+case(notices-5, of-4)
+nmod:of(examples-3, notices-5)
+acl(notices-5, received-6)
+case(Department-11, from-7)
+nmod:poss(Department-11, ENA-8)
+case(ENA-8, 's-9)
+compound(Department-11, Legal-10)
+nmod:from(received-6, Department-11)
+advmod(signed-19, when-12)
+nsubjpass(signed-19, ISDA-13)
+case(ISDA-13, 's-14)
+cc(ISDA-13, or-15)
+amod(documents-17, related-16)
+conj:or(ISDA-13, documents-17)
+nsubjpass(signed-19, documents-17)
+auxpass(signed-19, are-18)
+advcl(received-6, signed-19)
+punct(examples-3, .-20)
+
+Extracted the following NER entity mentions:
+ENA	ORGANIZATION
+Legal Department	ORGANIZATION
+ISDA	ORGANIZATION
+
+Sentence #2 (6 tokens):
+These notices are very effective.
+
+Tokens:
+[Text=These CharacterOffsetBegin=112 CharacterOffsetEnd=117 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=notices CharacterOffsetBegin=118 CharacterOffsetEnd=125 PartOfSpeech=NNS Lemma=notice NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=126 CharacterOffsetEnd=129 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=130 CharacterOffsetEnd=134 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=effective CharacterOffsetBegin=135 CharacterOffsetEnd=144 PartOfSpeech=JJ Lemma=effective NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=144 CharacterOffsetEnd=145 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT These) (NNS notices))
+    (VP (VBP are)
+      (ADJP (RB very) (JJ effective)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, effective-5)
+det(notices-2, These-1)
+nsubj(effective-5, notices-2)
+cop(effective-5, are-3)
+advmod(effective-5, very-4)
+punct(effective-5, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (21 tokens):
+I recommend that the Australia financial Global Contracts group work with
+their legal team to adopt a similar notification method.
+
+Tokens:
+[Text=I CharacterOffsetBegin=147 CharacterOffsetEnd=148 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=recommend CharacterOffsetBegin=149 CharacterOffsetEnd=158 PartOfSpeech=VBP Lemma=recommend NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=159 CharacterOffsetEnd=163 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=164 CharacterOffsetEnd=167 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Australia CharacterOffsetBegin=168 CharacterOffsetEnd=177 PartOfSpeech=NNP Lemma=Australia NamedEntityTag=COUNTRY]
+[Text=financial CharacterOffsetBegin=178 CharacterOffsetEnd=187 PartOfSpeech=JJ Lemma=financial NamedEntityTag=O]
+[Text=Global CharacterOffsetBegin=188 CharacterOffsetEnd=194 PartOfSpeech=JJ Lemma=global NamedEntityTag=O]
+[Text=Contracts CharacterOffsetBegin=195 CharacterOffsetEnd=204 PartOfSpeech=NNS Lemma=contract NamedEntityTag=O]
+[Text=group CharacterOffsetBegin=205 CharacterOffsetEnd=210 PartOfSpeech=NN Lemma=group NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=211 CharacterOffsetEnd=215 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=216 CharacterOffsetEnd=220 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=221 CharacterOffsetEnd=226 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=legal CharacterOffsetBegin=227 CharacterOffsetEnd=232 PartOfSpeech=JJ Lemma=legal NamedEntityTag=O]
+[Text=team CharacterOffsetBegin=233 CharacterOffsetEnd=237 PartOfSpeech=NN Lemma=team NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=238 CharacterOffsetEnd=240 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=adopt CharacterOffsetBegin=241 CharacterOffsetEnd=246 PartOfSpeech=VB Lemma=adopt NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=247 CharacterOffsetEnd=248 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=similar CharacterOffsetBegin=249 CharacterOffsetEnd=256 PartOfSpeech=JJ Lemma=similar NamedEntityTag=O]
+[Text=notification CharacterOffsetBegin=257 CharacterOffsetEnd=269 PartOfSpeech=NN Lemma=notification NamedEntityTag=O]
+[Text=method CharacterOffsetBegin=270 CharacterOffsetEnd=276 PartOfSpeech=NN Lemma=method NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=276 CharacterOffsetEnd=277 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP recommend)
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (DT the) (NNP Australia) (JJ financial) (JJ Global) (NNS Contracts) (NN group) (NN work))
+            (PP (IN with)
+              (NP (PRP$ their) (JJ legal) (NN team))))
+          (VP (TO to)
+            (VP (VB adopt)
+              (NP (DT a) (JJ similar) (NN notification) (NN method)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, recommend-2)
+nsubj(recommend-2, I-1)
+mark(adopt-16, that-3)
+det(work-10, the-4)
+compound(work-10, Australia-5)
+amod(work-10, financial-6)
+amod(work-10, Global-7)
+compound(work-10, Contracts-8)
+compound(work-10, group-9)
+nsubj(adopt-16, work-10)
+case(team-14, with-11)
+nmod:poss(team-14, their-12)
+amod(team-14, legal-13)
+nmod:with(work-10, team-14)
+mark(adopt-16, to-15)
+ccomp(recommend-2, adopt-16)
+det(method-20, a-17)
+amod(method-20, similar-18)
+compound(method-20, notification-19)
+dobj(adopt-16, method-20)
+punct(recommend-2, .-21)
+
+Extracted the following NER entity mentions:
+Australia	COUNTRY
+
+Sentence #4 (7 tokens):
+Please let me know your thoughts.
+
+Tokens:
+[Text=Please CharacterOffsetBegin=278 CharacterOffsetEnd=284 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=let CharacterOffsetBegin=285 CharacterOffsetEnd=288 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=289 CharacterOffsetEnd=291 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=292 CharacterOffsetEnd=296 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=297 CharacterOffsetEnd=301 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=thoughts CharacterOffsetBegin=302 CharacterOffsetEnd=310 PartOfSpeech=NNS Lemma=thought NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=310 CharacterOffsetEnd=311 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Please)
+      (VP (VB let)
+        (S
+          (NP (PRP me))
+          (VP (VB know)
+            (NP (PRP$ your) (NNS thoughts))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Please-1)
+xcomp(Please-1, let-2)
+nsubj(know-4, me-3)
+ccomp(let-2, know-4)
+nmod:poss(thoughts-6, your-5)
+dobj(know-4, thoughts-6)
+punct(Please-1, .-7)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(1,5,[5,20]) -> (2,2,[1,3]), that is: "notices received from ENA 's Legal Department when ISDA 's or related documents are signed" -> "These notices"
+
+Coreference set:
+	(4,3,[3,4]) -> (3,1,[1,2]), that is: "me" -> "I"

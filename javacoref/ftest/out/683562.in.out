@@ -1,0 +1,115 @@
+Document: ID=683562.in (3 sentences, 22 tokens)
+
+Sentence #1 (2 tokens):
+FYI.
+
+Tokens:
+[Text=FYI CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=FYI NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP FYI))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, FYI-1)
+punct(FYI-1, .-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (17 tokens):
+Indicates where CMTA is on key bills working their way through California's wacked out Legislature.
+
+Tokens:
+[Text=Indicates CharacterOffsetBegin=6 CharacterOffsetEnd=15 PartOfSpeech=NNS Lemma=indicate NamedEntityTag=O]
+[Text=where CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=CMTA CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=NNP Lemma=CMTA NamedEntityTag=ORGANIZATION]
+[Text=is CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=key CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=JJ Lemma=key NamedEntityTag=O]
+[Text=bills CharacterOffsetBegin=37 CharacterOffsetEnd=42 PartOfSpeech=NNS Lemma=bill NamedEntityTag=O]
+[Text=working CharacterOffsetBegin=43 CharacterOffsetEnd=50 PartOfSpeech=VBG Lemma=work NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=way CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=way NamedEntityTag=O]
+[Text=through CharacterOffsetBegin=61 CharacterOffsetEnd=68 PartOfSpeech=IN Lemma=through NamedEntityTag=O]
+[Text=California CharacterOffsetBegin=69 CharacterOffsetEnd=79 PartOfSpeech=NNP Lemma=California NamedEntityTag=STATE_OR_PROVINCE]
+[Text='s CharacterOffsetBegin=79 CharacterOffsetEnd=81 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=wacked CharacterOffsetBegin=82 CharacterOffsetEnd=88 PartOfSpeech=VBN Lemma=wack NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=89 CharacterOffsetEnd=92 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=Legislature CharacterOffsetBegin=93 CharacterOffsetEnd=104 PartOfSpeech=NNP Lemma=Legislature NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=104 CharacterOffsetEnd=105 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNS Indicates))
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (NNP CMTA))
+          (VP (VBZ is)
+            (PP (IN on)
+              (NP
+                (NP (JJ key) (NNS bills))
+                (VP (VBG working)
+                  (NP (PRP$ their) (NN way))
+                  (PP (IN through)
+                    (NP (NNP California) (POS 's))))))))))
+    (VP (VBN wacked)
+      (PRT (RP out))
+      (NP (NNP Legislature)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, wacked-14)
+nsubj(wacked-14, Indicates-1)
+advmod(bills-7, where-2)
+nsubj(bills-7, CMTA-3)
+cop(bills-7, is-4)
+case(bills-7, on-5)
+amod(bills-7, key-6)
+acl:relcl(Indicates-1, bills-7)
+acl(bills-7, working-8)
+nmod:poss(way-10, their-9)
+dobj(working-8, way-10)
+case(California-12, through-11)
+nmod:through(working-8, California-12)
+case(California-12, 's-13)
+compound:prt(wacked-14, out-15)
+dobj(wacked-14, Legislature-16)
+punct(wacked-14, .-17)
+
+Extracted the following NER entity mentions:
+CMTA	ORGANIZATION
+California	STATE_OR_PROVINCE
+Legislature	ORGANIZATION
+
+Sentence #3 (3 tokens):
+Best,
+Jeff
+
+Tokens:
+[Text=Best CharacterOffsetBegin=107 CharacterOffsetEnd=111 PartOfSpeech=NN Lemma=best NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=111 CharacterOffsetEnd=112 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Jeff CharacterOffsetBegin=113 CharacterOffsetEnd=117 PartOfSpeech=NNP Lemma=Jeff NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NN Best))
+    (, ,)
+    (NP (NNP Jeff))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Best-1)
+punct(Best-1, ,-2)
+appos(Best-1, Jeff-3)
+
+Extracted the following NER entity mentions:
+Jeff	PERSON

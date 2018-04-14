@@ -1,0 +1,120 @@
+Document: ID=1241852.in (2 sentences, 28 tokens)
+
+Sentence #1 (12 tokens):
+FYI
+Well it looks like they have change their mind again.
+
+Tokens:
+[Text=FYI CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=FYI NamedEntityTag=O]
+[Text=Well CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Well NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=looks CharacterOffsetBegin=12 CharacterOffsetEnd=17 PartOfSpeech=VBZ Lemma=look NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=change CharacterOffsetBegin=33 CharacterOffsetEnd=39 PartOfSpeech=VB Lemma=change NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=40 CharacterOffsetEnd=45 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=mind CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=mind NamedEntityTag=O]
+[Text=again CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=RB Lemma=again NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP FYI) (NNP Well) (PRP it))
+    (VP (VBZ looks)
+      (SBAR (IN like)
+        (S
+          (NP (PRP they))
+          (VP (VBP have)
+            (S
+              (VP (VB change)
+                (NP (PRP$ their) (NN mind))
+                (ADVP (RB again))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, looks-4)
+compound(Well-2, FYI-1)
+nsubj(looks-4, Well-2)
+dep(Well-2, it-3)
+mark(have-7, like-5)
+nsubj(have-7, they-6)
+advcl:like(looks-4, have-7)
+ccomp(have-7, change-8)
+nmod:poss(mind-10, their-9)
+dobj(change-8, mind-10)
+advmod(change-8, again-11)
+punct(looks-4, .-12)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (16 tokens):
+As of now we don't know when they will be shuting their plant down.
+
+Tokens:
+[Text=As CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=64 CharacterOffsetEnd=67 PartOfSpeech=RB Lemma=now NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=68 CharacterOffsetEnd=70 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=71 CharacterOffsetEnd=73 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=82 CharacterOffsetEnd=86 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=87 CharacterOffsetEnd=91 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=92 CharacterOffsetEnd=96 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=97 CharacterOffsetEnd=99 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=shuting CharacterOffsetBegin=100 CharacterOffsetEnd=107 PartOfSpeech=VBG Lemma=shute NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=108 CharacterOffsetEnd=113 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=plant CharacterOffsetBegin=114 CharacterOffsetEnd=119 PartOfSpeech=NN Lemma=plant NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=120 CharacterOffsetEnd=124 PartOfSpeech=RB Lemma=down NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=124 CharacterOffsetEnd=125 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN As)
+      (PP (IN of)
+        (NP (RB now))))
+    (NP (PRP we))
+    (VP (VBP do) (RB n't)
+      (VP (VB know)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (PRP they))
+            (VP (MD will)
+              (VP (VB be)
+                (VP (VBG shuting)
+                  (NP (PRP$ their) (NN plant))
+                  (ADVP (RB down)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, know-7)
+case(now-3, As-1)
+mwe(As-1, of-2)
+nmod:as_of(know-7, now-3)
+nsubj(know-7, we-4)
+aux(know-7, do-5)
+neg(know-7, n't-6)
+advmod(shuting-12, when-8)
+nsubj(shuting-12, they-9)
+aux(shuting-12, will-10)
+aux(shuting-12, be-11)
+ccomp(know-7, shuting-12)
+nmod:poss(plant-14, their-13)
+dobj(shuting-12, plant-14)
+advmod(shuting-12, down-15)
+punct(know-7, .-16)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(1,9,[9,10]) -> (1,6,[6,7]), that is: "their" -> "they"
+
+Coreference set:
+	(2,9,[9,10]) -> (2,3,[3,4]), that is: "they" -> "now"
+	(2,13,[13,14]) -> (2,3,[3,4]), that is: "their" -> "now"

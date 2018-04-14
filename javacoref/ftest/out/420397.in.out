@@ -1,0 +1,318 @@
+Document: ID=420397.in (4 sentences, 78 tokens)
+
+Sentence #1 (10 tokens):
+I will need to leave the office at 1:00.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=VB Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=leave CharacterOffsetBegin=15 CharacterOffsetEnd=20 PartOfSpeech=VB Lemma=leave NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=office CharacterOffsetBegin=25 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=office NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=1:00 CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=CD Lemma=1:00 NamedEntityTag=TIME NormalizedNamedEntityTag=1:00]
+[Text=. CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD will)
+      (VP (VB need)
+        (S
+          (VP (TO to)
+            (VP (VB leave)
+              (NP (DT the) (NN office))
+              (PP (IN at)
+                (NP (CD 1:00))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, need-3)
+nsubj(need-3, I-1)
+nsubj:xsubj(leave-5, I-1)
+aux(need-3, will-2)
+mark(leave-5, to-4)
+xcomp(need-3, leave-5)
+det(office-7, the-6)
+dobj(leave-5, office-7)
+case(1:00-9, at-8)
+nmod:at(leave-5, 1:00-9)
+punct(need-3, .-10)
+
+Extracted the following NER entity mentions:
+1:00	TIME
+
+Sentence #2 (11 tokens):
+Today the kid's school is have
+their fall festival.
+
+Tokens:
+[Text=Today CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=today NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=kid CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=kid NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=school CharacterOffsetBegin=58 CharacterOffsetEnd=64 PartOfSpeech=NN Lemma=school NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=65 CharacterOffsetEnd=67 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=73 CharacterOffsetEnd=78 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=fall CharacterOffsetBegin=79 CharacterOffsetEnd=83 PartOfSpeech=NN Lemma=fall NamedEntityTag=CAUSE_OF_DEATH]
+[Text=festival CharacterOffsetBegin=84 CharacterOffsetEnd=92 PartOfSpeech=NN Lemma=festival NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=92 CharacterOffsetEnd=93 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP-TMP (NN Today))
+    (NP
+      (NP (DT the) (NN kid) (POS 's))
+      (NN school))
+    (VP (VBZ is)
+      (VP (VBP have)
+        (NP (PRP$ their) (NN fall) (NN festival))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-7)
+nmod:tmod(have-7, Today-1)
+det(kid-3, the-2)
+nmod:poss(school-5, kid-3)
+case(kid-3, 's-4)
+nsubj(have-7, school-5)
+aux(have-7, is-6)
+nmod:poss(festival-10, their-8)
+compound(festival-10, fall-9)
+dobj(have-7, festival-10)
+punct(have-7, .-11)
+
+Extracted the following NER entity mentions:
+fall	CAUSE_OF_DEATH
+
+Sentence #3 (38 tokens):
+Because of the low number of parent volunteers, the
+school just called to inform me that  all kids will be dismissed at 1:00 and
+must be picked up or supervised by a parent at the festival.
+
+Tokens:
+[Text=Because CharacterOffsetBegin=95 CharacterOffsetEnd=102 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=103 CharacterOffsetEnd=105 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=106 CharacterOffsetEnd=109 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=low CharacterOffsetBegin=110 CharacterOffsetEnd=113 PartOfSpeech=JJ Lemma=low NamedEntityTag=O]
+[Text=number CharacterOffsetBegin=114 CharacterOffsetEnd=120 PartOfSpeech=NN Lemma=number NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=121 CharacterOffsetEnd=123 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=parent CharacterOffsetBegin=124 CharacterOffsetEnd=130 PartOfSpeech=NN Lemma=parent NamedEntityTag=O]
+[Text=volunteers CharacterOffsetBegin=131 CharacterOffsetEnd=141 PartOfSpeech=NNS Lemma=volunteer NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=141 CharacterOffsetEnd=142 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=143 CharacterOffsetEnd=146 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=school CharacterOffsetBegin=147 CharacterOffsetEnd=153 PartOfSpeech=NN Lemma=school NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=154 CharacterOffsetEnd=158 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=called CharacterOffsetBegin=159 CharacterOffsetEnd=165 PartOfSpeech=VBN Lemma=call NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=166 CharacterOffsetEnd=168 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=inform CharacterOffsetBegin=169 CharacterOffsetEnd=175 PartOfSpeech=VB Lemma=inform NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=176 CharacterOffsetEnd=178 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=179 CharacterOffsetEnd=183 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=185 CharacterOffsetEnd=188 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=kids CharacterOffsetBegin=189 CharacterOffsetEnd=193 PartOfSpeech=NNS Lemma=kid NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=194 CharacterOffsetEnd=198 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=199 CharacterOffsetEnd=201 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=dismissed CharacterOffsetBegin=202 CharacterOffsetEnd=211 PartOfSpeech=VBN Lemma=dismiss NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=212 CharacterOffsetEnd=214 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=1:00 CharacterOffsetBegin=215 CharacterOffsetEnd=219 PartOfSpeech=CD Lemma=1:00 NamedEntityTag=TIME NormalizedNamedEntityTag=1:00]
+[Text=and CharacterOffsetBegin=220 CharacterOffsetEnd=223 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=must CharacterOffsetBegin=224 CharacterOffsetEnd=228 PartOfSpeech=MD Lemma=must NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=229 CharacterOffsetEnd=231 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=picked CharacterOffsetBegin=232 CharacterOffsetEnd=238 PartOfSpeech=VBN Lemma=pick NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=239 CharacterOffsetEnd=241 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=242 CharacterOffsetEnd=244 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=supervised CharacterOffsetBegin=245 CharacterOffsetEnd=255 PartOfSpeech=VBN Lemma=supervise NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=256 CharacterOffsetEnd=258 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=259 CharacterOffsetEnd=260 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=parent CharacterOffsetBegin=261 CharacterOffsetEnd=267 PartOfSpeech=NN Lemma=parent NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=268 CharacterOffsetEnd=270 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=271 CharacterOffsetEnd=274 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=festival CharacterOffsetBegin=275 CharacterOffsetEnd=283 PartOfSpeech=NN Lemma=festival NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=283 CharacterOffsetEnd=284 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN Because)
+      (PP (IN of)
+        (NP
+          (NP (DT the) (JJ low) (NN number))
+          (PP (IN of)
+            (NP (NN parent) (NNS volunteers))))))
+    (, ,)
+    (NP (DT the) (NN school))
+    (ADVP (RB just))
+    (VP
+      (VP (VBN called)
+        (S
+          (VP (TO to)
+            (VP (VB inform)
+              (NP (PRP me))
+              (SBAR (IN that)
+                (S
+                  (NP (DT all) (NNS kids))
+                  (VP
+                    (VP (MD will)
+                      (VP (VB be)
+                        (VP (VBN dismissed)
+                          (PP (IN at)
+                            (NP (CD 1:00))))))
+                    (CC and)
+                    (VP (MD must)
+                      (VP (VB be)
+                        (VP (VBN picked)
+                          (PRT (RP up))))))))))))
+      (CC or)
+      (VP (VBN supervised)
+        (PP (IN by)
+          (NP
+            (NP (DT a) (NN parent))
+            (PP (IN at)
+              (NP (DT the) (NN festival)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, called-13)
+case(number-5, Because-1)
+case(number-5, of-2)
+det(number-5, the-3)
+amod(number-5, low-4)
+nmod:because(called-13, number-5)
+case(volunteers-8, of-6)
+compound(volunteers-8, parent-7)
+nmod:of(number-5, volunteers-8)
+punct(called-13, ,-9)
+det(school-11, the-10)
+nsubj(called-13, school-11)
+nsubj:xsubj(inform-15, school-11)
+nsubj(supervised-31, school-11)
+advmod(called-13, just-12)
+mark(inform-15, to-14)
+xcomp(called-13, inform-15)
+dobj(inform-15, me-16)
+mark(dismissed-22, that-17)
+det(kids-19, all-18)
+nsubjpass(dismissed-22, kids-19)
+nsubjpass(picked-28, kids-19)
+aux(dismissed-22, will-20)
+auxpass(dismissed-22, be-21)
+ccomp(inform-15, dismissed-22)
+case(1:00-24, at-23)
+nmod:at(dismissed-22, 1:00-24)
+cc(dismissed-22, and-25)
+aux(picked-28, must-26)
+auxpass(picked-28, be-27)
+ccomp(inform-15, picked-28)
+conj:and(dismissed-22, picked-28)
+compound:prt(picked-28, up-29)
+cc(called-13, or-30)
+conj:or(called-13, supervised-31)
+case(parent-34, by-32)
+det(parent-34, a-33)
+nmod:by(supervised-31, parent-34)
+case(festival-37, at-35)
+det(festival-37, the-36)
+nmod:at(parent-34, festival-37)
+punct(called-13, .-38)
+
+Extracted the following NER entity mentions:
+1:00	TIME
+
+Sentence #4 (19 tokens):
+I spoke with
+the school principal and she will hold the boys in the gymnasium until I
+arrive.
+
+Tokens:
+[Text=I CharacterOffsetBegin=286 CharacterOffsetEnd=287 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=spoke CharacterOffsetBegin=288 CharacterOffsetEnd=293 PartOfSpeech=VBD Lemma=speak NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=294 CharacterOffsetEnd=298 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=299 CharacterOffsetEnd=302 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=school CharacterOffsetBegin=303 CharacterOffsetEnd=309 PartOfSpeech=NN Lemma=school NamedEntityTag=O]
+[Text=principal CharacterOffsetBegin=310 CharacterOffsetEnd=319 PartOfSpeech=NN Lemma=principal NamedEntityTag=TITLE]
+[Text=and CharacterOffsetBegin=320 CharacterOffsetEnd=323 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=324 CharacterOffsetEnd=327 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=328 CharacterOffsetEnd=332 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=hold CharacterOffsetBegin=333 CharacterOffsetEnd=337 PartOfSpeech=VB Lemma=hold NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=338 CharacterOffsetEnd=341 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=boys CharacterOffsetBegin=342 CharacterOffsetEnd=346 PartOfSpeech=NNS Lemma=boy NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=347 CharacterOffsetEnd=349 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=350 CharacterOffsetEnd=353 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=gymnasium CharacterOffsetBegin=354 CharacterOffsetEnd=363 PartOfSpeech=NN Lemma=gymnasium NamedEntityTag=O]
+[Text=until CharacterOffsetBegin=364 CharacterOffsetEnd=369 PartOfSpeech=IN Lemma=until NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=370 CharacterOffsetEnd=371 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=arrive CharacterOffsetBegin=372 CharacterOffsetEnd=378 PartOfSpeech=VBP Lemma=arrive NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=378 CharacterOffsetEnd=379 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBD spoke)
+        (PP (IN with)
+          (NP (DT the) (NN school) (NN principal)))))
+    (CC and)
+    (S
+      (NP (PRP she))
+      (VP (MD will)
+        (VP (VB hold)
+          (NP (DT the) (NNS boys))
+          (PP (IN in)
+            (NP (DT the) (NN gymnasium)))
+          (SBAR (IN until)
+            (S
+              (NP (PRP I))
+              (VP (VBP arrive)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, spoke-2)
+nsubj(spoke-2, I-1)
+case(principal-6, with-3)
+det(principal-6, the-4)
+compound(principal-6, school-5)
+nmod:with(spoke-2, principal-6)
+cc(spoke-2, and-7)
+nsubj(hold-10, she-8)
+aux(hold-10, will-9)
+conj:and(spoke-2, hold-10)
+det(boys-12, the-11)
+dobj(hold-10, boys-12)
+case(gymnasium-15, in-13)
+det(gymnasium-15, the-14)
+nmod:in(hold-10, gymnasium-15)
+mark(arrive-18, until-16)
+nsubj(arrive-18, I-17)
+advcl:until(hold-10, arrive-18)
+punct(spoke-2, .-19)
+
+Extracted the following NER entity mentions:
+principal	TITLE
+she	PERSON
+
+Coreference set:
+	(3,16,[16,17]) -> (1,1,[1,2]), that is: "me" -> "I"
+	(4,1,[1,2]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(4,17,[17,18]) -> (1,1,[1,2]), that is: "I" -> "I"
+
+Coreference set:
+	(3,24,[24,25]) -> (1,9,[9,10]), that is: "1:00" -> "1:00"
+
+Coreference set:
+	(3,11,[10,12]) -> (2,5,[2,6]), that is: "the school" -> "the kid 's school"
+
+Coreference set:
+	(3,37,[36,38]) -> (2,10,[8,11]), that is: "the festival" -> "their fall festival"
+
+Coreference set:
+	(4,8,[8,9]) -> (4,6,[4,7]), that is: "she" -> "the school principal"

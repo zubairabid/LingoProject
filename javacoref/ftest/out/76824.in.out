@@ -1,0 +1,167 @@
+Document: ID=76824.in (4 sentences, 36 tokens)
+
+Sentence #1 (16 tokens):
+Go to www.bowsite.com and play their Field Judging Game for scoring deer in the field.
+
+Tokens:
+[Text=Go CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=www.bowsite.com CharacterOffsetBegin=6 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=www.bowsite.com NamedEntityTag=URL]
+[Text=and CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=play CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=VB Lemma=play NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=Field CharacterOffsetBegin=37 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=field NamedEntityTag=O]
+[Text=Judging CharacterOffsetBegin=43 CharacterOffsetEnd=50 PartOfSpeech=VBG Lemma=judge NamedEntityTag=O]
+[Text=Game CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=game NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=scoring CharacterOffsetBegin=60 CharacterOffsetEnd=67 PartOfSpeech=VBG Lemma=score NamedEntityTag=O]
+[Text=deer CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=NNS Lemma=deer NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=73 CharacterOffsetEnd=75 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=field CharacterOffsetBegin=80 CharacterOffsetEnd=85 PartOfSpeech=NN Lemma=field NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP
+      (VP (VB Go)
+        (PP (TO to)
+          (NP (NNP www.bowsite.com))))
+      (CC and)
+      (VP (VB play)
+        (NP (PRP$ their) (NN Field))
+        (S
+          (VP (VBG Judging)
+            (NP (NN Game))
+            (PP (IN for)
+              (NP
+                (NP (VBG scoring) (NNS deer))
+                (PP (IN in)
+                  (NP (DT the) (NN field)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Go-1)
+case(www.bowsite.com-3, to-2)
+nmod:to(Go-1, www.bowsite.com-3)
+cc(Go-1, and-4)
+conj:and(Go-1, play-5)
+nmod:poss(Field-7, their-6)
+dobj(play-5, Field-7)
+xcomp(play-5, Judging-8)
+dobj(Judging-8, Game-9)
+case(deer-12, for-10)
+amod(deer-12, scoring-11)
+nmod:for(Judging-8, deer-12)
+case(field-15, in-13)
+det(field-15, the-14)
+nmod:in(deer-12, field-15)
+punct(Go-1, .-16)
+
+Extracted the following NER entity mentions:
+www.bowsite.com	URL
+
+Sentence #2 (5 tokens):
+This sure beats working.
+
+Tokens:
+[Text=This CharacterOffsetBegin=88 CharacterOffsetEnd=92 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=sure CharacterOffsetBegin=93 CharacterOffsetEnd=97 PartOfSpeech=JJ Lemma=sure NamedEntityTag=O]
+[Text=beats CharacterOffsetBegin=98 CharacterOffsetEnd=103 PartOfSpeech=NNS Lemma=beat NamedEntityTag=O]
+[Text=working CharacterOffsetBegin=104 CharacterOffsetEnd=111 PartOfSpeech=VBG Lemma=work NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=111 CharacterOffsetEnd=112 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (DT This) (JJ sure) (NNS beats))
+    (VP (VBG working))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, beats-3)
+det(beats-3, This-1)
+amod(beats-3, sure-2)
+acl(beats-3, working-4)
+punct(beats-3, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (10 tokens):
+Chris McComb, P.E.
+McComb Construction Co., Inc.
+
+Tokens:
+[Text=Chris CharacterOffsetBegin=114 CharacterOffsetEnd=119 PartOfSpeech=NNP Lemma=Chris NamedEntityTag=PERSON]
+[Text=McComb CharacterOffsetBegin=120 CharacterOffsetEnd=126 PartOfSpeech=NNP Lemma=McComb NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=126 CharacterOffsetEnd=127 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=P.E. CharacterOffsetBegin=128 CharacterOffsetEnd=132 PartOfSpeech=NNP Lemma=P.E. NamedEntityTag=ORGANIZATION]
+[Text=McComb CharacterOffsetBegin=133 CharacterOffsetEnd=139 PartOfSpeech=NNP Lemma=McComb NamedEntityTag=ORGANIZATION]
+[Text=Construction CharacterOffsetBegin=140 CharacterOffsetEnd=152 PartOfSpeech=NNP Lemma=Construction NamedEntityTag=ORGANIZATION]
+[Text=Co. CharacterOffsetBegin=153 CharacterOffsetEnd=156 PartOfSpeech=NNP Lemma=Co. NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=156 CharacterOffsetEnd=157 PartOfSpeech=, Lemma=, NamedEntityTag=ORGANIZATION]
+[Text=Inc. CharacterOffsetBegin=158 CharacterOffsetEnd=161 PartOfSpeech=NNP Lemma=Inc. NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=161 CharacterOffsetEnd=162 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Chris) (NNP McComb))
+    (, ,)
+    (NP
+      (NP (NNP P.E.) (NNP McComb) (NNP Construction) (NNP Co.))
+      (, ,)
+      (NP (NNP Inc.)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, McComb-2)
+compound(McComb-2, Chris-1)
+punct(McComb-2, ,-3)
+compound(Co.-7, P.E.-4)
+compound(Co.-7, McComb-5)
+compound(Co.-7, Construction-6)
+appos(McComb-2, Co.-7)
+punct(Co.-7, ,-8)
+appos(Co.-7, Inc.-9)
+punct(McComb-2, .-10)
+
+Extracted the following NER entity mentions:
+Chris McComb	PERSON
+P.E. McComb Construction Co., Inc.	ORGANIZATION
+
+Sentence #4 (5 tokens):
+V.P., Business Development
+512-385-5555
+
+Tokens:
+[Text=V.P. CharacterOffsetBegin=163 CharacterOffsetEnd=167 PartOfSpeech=NNP Lemma=V.P. NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=167 CharacterOffsetEnd=168 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Business CharacterOffsetBegin=169 CharacterOffsetEnd=177 PartOfSpeech=NNP Lemma=Business NamedEntityTag=O]
+[Text=Development CharacterOffsetBegin=178 CharacterOffsetEnd=189 PartOfSpeech=NNP Lemma=Development NamedEntityTag=O]
+[Text=512-385-5555 CharacterOffsetBegin=190 CharacterOffsetEnd=202 PartOfSpeech=CD Lemma=512-385-5555 NamedEntityTag=NUMBER]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP V.P.))
+    (, ,)
+    (NP (NNP Business) (NNP Development) (CD 512-385-5555))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, V.P.-1)
+punct(V.P.-1, ,-2)
+compound(Development-4, Business-3)
+appos(V.P.-1, Development-4)
+nummod(Development-4, 512-385-5555-5)
+
+Extracted the following NER entity mentions:
+512-385-5555	NUMBER
+
+Coreference set:
+	(1,15,[14,16]) -> (1,7,[6,8]), that is: "the field" -> "their Field"

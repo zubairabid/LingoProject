@@ -1,0 +1,760 @@
+Document: ID=76850.in (9 sentences, 186 tokens)
+
+Sentence #1 (13 tokens):
+Entex is several days overdue on their Nov01 invoice payment to Enron.
+
+Tokens:
+[Text=Entex CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Entex NamedEntityTag=MISC]
+[Text=is CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=several CharacterOffsetBegin=9 CharacterOffsetEnd=16 PartOfSpeech=JJ Lemma=several NamedEntityTag=O]
+[Text=days CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=NNS Lemma=day NamedEntityTag=O]
+[Text=overdue CharacterOffsetBegin=22 CharacterOffsetEnd=29 PartOfSpeech=JJ Lemma=overdue NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=33 CharacterOffsetEnd=38 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=Nov01 CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=NN Lemma=nov01 NamedEntityTag=O]
+[Text=invoice CharacterOffsetBegin=45 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=invoice NamedEntityTag=O]
+[Text=payment CharacterOffsetBegin=53 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=payment NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=64 CharacterOffsetEnd=69 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Entex))
+    (VP (VBZ is)
+      (NP
+        (NP (JJ several) (NNS days))
+        (ADJP (JJ overdue)
+          (PP (IN on)
+            (NP (PRP$ their) (NN Nov01) (NN invoice) (NN payment)))
+          (PP (TO to)
+            (NP (NNP Enron))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, days-4)
+nsubj(days-4, Entex-1)
+cop(days-4, is-2)
+amod(days-4, several-3)
+amod(days-4, overdue-5)
+case(payment-10, on-6)
+nmod:poss(payment-10, their-7)
+compound(payment-10, Nov01-8)
+compound(payment-10, invoice-9)
+nmod:on(overdue-5, payment-10)
+case(Enron-12, to-11)
+nmod:to(overdue-5, Enron-12)
+punct(days-4, .-13)
+
+Extracted the following NER entity mentions:
+Entex	MISC
+Enron	ORGANIZATION
+
+Sentence #2 (17 tokens):
+I confirmed that the payment has not been received as of COB yesterday (1/23/02).
+
+Tokens:
+[Text=I CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=confirmed CharacterOffsetBegin=74 CharacterOffsetEnd=83 PartOfSpeech=VBD Lemma=confirm NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=84 CharacterOffsetEnd=88 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=89 CharacterOffsetEnd=92 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=payment CharacterOffsetBegin=93 CharacterOffsetEnd=100 PartOfSpeech=NN Lemma=payment NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=101 CharacterOffsetEnd=104 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=105 CharacterOffsetEnd=108 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=109 CharacterOffsetEnd=113 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=received CharacterOffsetBegin=114 CharacterOffsetEnd=122 PartOfSpeech=VBN Lemma=receive NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=123 CharacterOffsetEnd=125 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=126 CharacterOffsetEnd=128 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=COB CharacterOffsetBegin=129 CharacterOffsetEnd=132 PartOfSpeech=NNP Lemma=COB NamedEntityTag=O]
+[Text=yesterday CharacterOffsetBegin=133 CharacterOffsetEnd=142 PartOfSpeech=NN Lemma=yesterday NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=143 CharacterOffsetEnd=144 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=1/23/02 CharacterOffsetBegin=144 CharacterOffsetEnd=151 PartOfSpeech=CD Lemma=1/23/02 NamedEntityTag=NUMBER]
+[Text=-RRB- CharacterOffsetBegin=151 CharacterOffsetEnd=152 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=152 CharacterOffsetEnd=153 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD confirmed)
+      (SBAR (IN that)
+        (S
+          (NP (DT the) (NN payment))
+          (VP (VBZ has) (RB not)
+            (VP (VBN been)
+              (VP (VBN received)
+                (PP (IN as)
+                  (PP (IN of)
+                    (NP
+                      (NP (NNP COB) (NN yesterday))
+                      (PRN (-LRB- -LRB-)
+                        (NP (CD 1/23/02))
+                        (-RRB- -RRB-)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, confirmed-2)
+nsubj(confirmed-2, I-1)
+mark(received-9, that-3)
+det(payment-5, the-4)
+nsubjpass(received-9, payment-5)
+aux(received-9, has-6)
+neg(received-9, not-7)
+auxpass(received-9, been-8)
+ccomp(confirmed-2, received-9)
+case(yesterday-13, as-10)
+mwe(as-10, of-11)
+compound(yesterday-13, COB-12)
+nmod:as_of(received-9, yesterday-13)
+punct(1/23/02-15, -LRB--14)
+appos(yesterday-13, 1/23/02-15)
+punct(1/23/02-15, -RRB--16)
+punct(confirmed-2, .-17)
+
+Extracted the following NER entity mentions:
+1/23/02	NUMBER
+
+Sentence #3 (15 tokens):
+I spoke with the commercial contact, Royal Edmondson (713-207-3384) this morning.
+
+Tokens:
+[Text=I CharacterOffsetBegin=155 CharacterOffsetEnd=156 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=spoke CharacterOffsetBegin=157 CharacterOffsetEnd=162 PartOfSpeech=VBD Lemma=speak NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=163 CharacterOffsetEnd=167 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=168 CharacterOffsetEnd=171 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=commercial CharacterOffsetBegin=172 CharacterOffsetEnd=182 PartOfSpeech=JJ Lemma=commercial NamedEntityTag=O]
+[Text=contact CharacterOffsetBegin=183 CharacterOffsetEnd=190 PartOfSpeech=NN Lemma=contact NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=190 CharacterOffsetEnd=191 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Royal CharacterOffsetBegin=192 CharacterOffsetEnd=197 PartOfSpeech=NNP Lemma=Royal NamedEntityTag=PERSON]
+[Text=Edmondson CharacterOffsetBegin=198 CharacterOffsetEnd=207 PartOfSpeech=NNP Lemma=Edmondson NamedEntityTag=PERSON]
+[Text=-LRB- CharacterOffsetBegin=208 CharacterOffsetEnd=209 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=713-207-3384 CharacterOffsetBegin=209 CharacterOffsetEnd=221 PartOfSpeech=CD Lemma=713-207-3384 NamedEntityTag=NUMBER]
+[Text=-RRB- CharacterOffsetBegin=221 CharacterOffsetEnd=222 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=223 CharacterOffsetEnd=227 PartOfSpeech=DT Lemma=this NamedEntityTag=TIME NormalizedNamedEntityTag=M]
+[Text=morning CharacterOffsetBegin=228 CharacterOffsetEnd=235 PartOfSpeech=NN Lemma=morning NamedEntityTag=TIME NormalizedNamedEntityTag=M]
+[Text=. CharacterOffsetBegin=235 CharacterOffsetEnd=236 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD spoke)
+      (PP (IN with)
+        (NP
+          (NP (DT the) (JJ commercial) (NN contact))
+          (, ,)
+          (NP
+            (NP (NNP Royal) (NNP Edmondson))
+            (PRN (-LRB- -LRB-)
+              (NP (CD 713-207-3384))
+              (-RRB- -RRB-)))))
+      (NP-TMP (DT this) (NN morning)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, spoke-2)
+nsubj(spoke-2, I-1)
+case(contact-6, with-3)
+det(contact-6, the-4)
+amod(contact-6, commercial-5)
+nmod:with(spoke-2, contact-6)
+punct(contact-6, ,-7)
+compound(Edmondson-9, Royal-8)
+appos(contact-6, Edmondson-9)
+punct(713-207-3384-11, -LRB--10)
+appos(Edmondson-9, 713-207-3384-11)
+punct(713-207-3384-11, -RRB--12)
+det(morning-14, this-13)
+nmod:tmod(spoke-2, morning-14)
+punct(spoke-2, .-15)
+
+Extracted the following NER entity mentions:
+Royal Edmondson	PERSON
+713-207-3384	NUMBER
+this morning	TIME
+
+Sentence #4 (33 tokens):
+He was aware that they have not paid and eluded to the fact that Enron has not paid Tennessee's Nov01 transportation and storage invoice, which we are agent for Entex.
+
+Tokens:
+[Text=He CharacterOffsetBegin=238 CharacterOffsetEnd=240 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=241 CharacterOffsetEnd=244 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=aware CharacterOffsetBegin=245 CharacterOffsetEnd=250 PartOfSpeech=JJ Lemma=aware NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=251 CharacterOffsetEnd=255 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=256 CharacterOffsetEnd=260 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=261 CharacterOffsetEnd=265 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=266 CharacterOffsetEnd=269 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=paid CharacterOffsetBegin=270 CharacterOffsetEnd=274 PartOfSpeech=VBN Lemma=pay NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=275 CharacterOffsetEnd=278 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=eluded CharacterOffsetBegin=279 CharacterOffsetEnd=285 PartOfSpeech=VBN Lemma=elude NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=286 CharacterOffsetEnd=288 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=289 CharacterOffsetEnd=292 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=fact CharacterOffsetBegin=293 CharacterOffsetEnd=297 PartOfSpeech=NN Lemma=fact NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=298 CharacterOffsetEnd=302 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=303 CharacterOffsetEnd=308 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=has CharacterOffsetBegin=309 CharacterOffsetEnd=312 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=313 CharacterOffsetEnd=316 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=paid CharacterOffsetBegin=317 CharacterOffsetEnd=321 PartOfSpeech=VBN Lemma=pay NamedEntityTag=O]
+[Text=Tennessee CharacterOffsetBegin=322 CharacterOffsetEnd=331 PartOfSpeech=NNP Lemma=Tennessee NamedEntityTag=STATE_OR_PROVINCE]
+[Text='s CharacterOffsetBegin=331 CharacterOffsetEnd=333 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Nov01 CharacterOffsetBegin=334 CharacterOffsetEnd=339 PartOfSpeech=NN Lemma=nov01 NamedEntityTag=O]
+[Text=transportation CharacterOffsetBegin=340 CharacterOffsetEnd=354 PartOfSpeech=NN Lemma=transportation NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=355 CharacterOffsetEnd=358 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=storage CharacterOffsetBegin=359 CharacterOffsetEnd=366 PartOfSpeech=NN Lemma=storage NamedEntityTag=O]
+[Text=invoice CharacterOffsetBegin=367 CharacterOffsetEnd=374 PartOfSpeech=NN Lemma=invoice NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=374 CharacterOffsetEnd=375 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=376 CharacterOffsetEnd=381 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=382 CharacterOffsetEnd=384 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=385 CharacterOffsetEnd=388 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=agent CharacterOffsetBegin=389 CharacterOffsetEnd=394 PartOfSpeech=NN Lemma=agent NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=395 CharacterOffsetEnd=398 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Entex CharacterOffsetBegin=399 CharacterOffsetEnd=404 PartOfSpeech=NNP Lemma=Entex NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=404 CharacterOffsetEnd=405 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (ADJP (JJ aware)
+        (SBAR (IN that)
+          (S
+            (NP (PRP they))
+            (VP (VBP have) (RB not)
+              (VP (VBN paid)
+                (CC and)
+                (VBN eluded)
+                (PP (TO to)
+                  (NP (DT the) (NN fact))))))))
+      (SBAR (IN that)
+        (S
+          (NP (NNP Enron))
+          (VP (VBZ has) (RB not)
+            (VP (VBN paid)
+              (NP
+                (NP
+                  (NP (NNP Tennessee) (POS 's))
+                  (NN Nov01) (NN transportation)
+                  (CC and)
+                  (NN storage) (NN invoice))
+                (, ,)
+                (SBAR
+                  (WHNP (WDT which))
+                  (S
+                    (NP (PRP we))
+                    (VP (VBP are)
+                      (NP
+                        (NP (NN agent))
+                        (PP (IN for)
+                          (NP (NNP Entex)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, aware-3)
+nsubj(aware-3, He-1)
+cop(aware-3, was-2)
+mark(paid-8, that-4)
+nsubj(paid-8, they-5)
+nsubj(eluded-10, they-5)
+aux(paid-8, have-6)
+neg(paid-8, not-7)
+ccomp(aware-3, paid-8)
+cc(paid-8, and-9)
+ccomp(aware-3, eluded-10)
+conj:and(paid-8, eluded-10)
+case(fact-13, to-11)
+det(fact-13, the-12)
+nmod:to(paid-8, fact-13)
+mark(paid-18, that-14)
+nsubj(paid-18, Enron-15)
+aux(paid-18, has-16)
+neg(paid-18, not-17)
+ccomp(aware-3, paid-18)
+nmod:poss(transportation-22, Tennessee-19)
+case(Tennessee-19, 's-20)
+compound(transportation-22, Nov01-21)
+dobj(paid-18, transportation-22)
+dobj(agent-30, transportation-22)
+cc(transportation-22, and-23)
+compound(invoice-25, storage-24)
+dobj(paid-18, invoice-25)
+conj:and(transportation-22, invoice-25)
+dobj(agent-30, invoice-25)
+punct(transportation-22, ,-26)
+ref(transportation-22, which-27)
+nsubj(agent-30, we-28)
+cop(agent-30, are-29)
+acl:relcl(transportation-22, agent-30)
+case(Entex-32, for-31)
+nmod:for(agent-30, Entex-32)
+punct(aware-3, .-33)
+
+Extracted the following NER entity mentions:
+Enron	ORGANIZATION
+Tennessee	STATE_OR_PROVINCE
+He	PERSON
+
+Sentence #5 (31 tokens):
+I also spoke with Ken Armstrong (713-207-3365) who proposed that Entex would pay Enron the commodity portion of the invoice and pay the transportation charges directly to Tennessee.
+
+Tokens:
+[Text=I CharacterOffsetBegin=407 CharacterOffsetEnd=408 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=409 CharacterOffsetEnd=413 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=spoke CharacterOffsetBegin=414 CharacterOffsetEnd=419 PartOfSpeech=VBD Lemma=speak NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=420 CharacterOffsetEnd=424 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Ken CharacterOffsetBegin=425 CharacterOffsetEnd=428 PartOfSpeech=NNP Lemma=Ken NamedEntityTag=PERSON]
+[Text=Armstrong CharacterOffsetBegin=429 CharacterOffsetEnd=438 PartOfSpeech=NNP Lemma=Armstrong NamedEntityTag=PERSON]
+[Text=-LRB- CharacterOffsetBegin=439 CharacterOffsetEnd=440 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=713-207-3365 CharacterOffsetBegin=440 CharacterOffsetEnd=452 PartOfSpeech=CD Lemma=713-207-3365 NamedEntityTag=NUMBER]
+[Text=-RRB- CharacterOffsetBegin=452 CharacterOffsetEnd=453 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=454 CharacterOffsetEnd=457 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=proposed CharacterOffsetBegin=458 CharacterOffsetEnd=466 PartOfSpeech=VBD Lemma=propose NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=467 CharacterOffsetEnd=471 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=Entex CharacterOffsetBegin=472 CharacterOffsetEnd=477 PartOfSpeech=NNP Lemma=Entex NamedEntityTag=ORGANIZATION]
+[Text=would CharacterOffsetBegin=478 CharacterOffsetEnd=483 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=pay CharacterOffsetBegin=484 CharacterOffsetEnd=487 PartOfSpeech=VB Lemma=pay NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=488 CharacterOffsetEnd=493 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=the CharacterOffsetBegin=494 CharacterOffsetEnd=497 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=commodity CharacterOffsetBegin=498 CharacterOffsetEnd=507 PartOfSpeech=NN Lemma=commodity NamedEntityTag=O]
+[Text=portion CharacterOffsetBegin=508 CharacterOffsetEnd=515 PartOfSpeech=NN Lemma=portion NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=516 CharacterOffsetEnd=518 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=519 CharacterOffsetEnd=522 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=invoice CharacterOffsetBegin=523 CharacterOffsetEnd=530 PartOfSpeech=NN Lemma=invoice NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=531 CharacterOffsetEnd=534 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=pay CharacterOffsetBegin=535 CharacterOffsetEnd=538 PartOfSpeech=VB Lemma=pay NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=539 CharacterOffsetEnd=542 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=transportation CharacterOffsetBegin=543 CharacterOffsetEnd=557 PartOfSpeech=NN Lemma=transportation NamedEntityTag=O]
+[Text=charges CharacterOffsetBegin=558 CharacterOffsetEnd=565 PartOfSpeech=NNS Lemma=charge NamedEntityTag=O]
+[Text=directly CharacterOffsetBegin=566 CharacterOffsetEnd=574 PartOfSpeech=RB Lemma=directly NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=575 CharacterOffsetEnd=577 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Tennessee CharacterOffsetBegin=578 CharacterOffsetEnd=587 PartOfSpeech=NNP Lemma=Tennessee NamedEntityTag=STATE_OR_PROVINCE]
+[Text=. CharacterOffsetBegin=587 CharacterOffsetEnd=588 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB also))
+    (VP (VBD spoke)
+      (PP (IN with)
+        (NP
+          (NP (NNP Ken) (NNP Armstrong))
+          (PRN (-LRB- -LRB-)
+            (NP (CD 713-207-3365))
+            (-RRB- -RRB-))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBD proposed)
+                (SBAR (IN that)
+                  (S
+                    (NP (NNP Entex))
+                    (VP (MD would)
+                      (VP
+                        (VP (VB pay)
+                          (NP (NNP Enron))
+                          (NP
+                            (NP (DT the) (NN commodity) (NN portion))
+                            (PP (IN of)
+                              (NP (DT the) (NN invoice)))))
+                        (CC and)
+                        (VP (VB pay)
+                          (NP (DT the) (NN transportation) (NNS charges))
+                          (ADVP (RB directly))
+                          (PP (TO to)
+                            (NP (NNP Tennessee))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, spoke-3)
+nsubj(spoke-3, I-1)
+advmod(spoke-3, also-2)
+case(Armstrong-6, with-4)
+compound(Armstrong-6, Ken-5)
+nmod:with(spoke-3, Armstrong-6)
+nsubj(proposed-11, Armstrong-6)
+punct(713-207-3365-8, -LRB--7)
+appos(Armstrong-6, 713-207-3365-8)
+punct(713-207-3365-8, -RRB--9)
+ref(Armstrong-6, who-10)
+acl:relcl(Armstrong-6, proposed-11)
+mark(pay-15, that-12)
+nsubj(pay-15, Entex-13)
+nsubj(pay-24, Entex-13)
+aux(pay-15, would-14)
+ccomp(proposed-11, pay-15)
+iobj(pay-15, Enron-16)
+det(portion-19, the-17)
+compound(portion-19, commodity-18)
+dobj(pay-15, portion-19)
+case(invoice-22, of-20)
+det(invoice-22, the-21)
+nmod:of(portion-19, invoice-22)
+cc(pay-15, and-23)
+ccomp(proposed-11, pay-24)
+conj:and(pay-15, pay-24)
+det(charges-27, the-25)
+compound(charges-27, transportation-26)
+dobj(pay-24, charges-27)
+advmod(pay-24, directly-28)
+case(Tennessee-30, to-29)
+nmod:to(pay-24, Tennessee-30)
+punct(spoke-3, .-31)
+
+Extracted the following NER entity mentions:
+Ken Armstrong	PERSON
+713-207-3365	NUMBER
+Entex	ORGANIZATION
+Enron	ORGANIZATION
+Tennessee	STATE_OR_PROVINCE
+
+Sentence #6 (24 tokens):
+I asked him to let me clear that with our attorney so that we didn't do anything to void the agency status.
+
+Tokens:
+[Text=I CharacterOffsetBegin=590 CharacterOffsetEnd=591 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=asked CharacterOffsetBegin=592 CharacterOffsetEnd=597 PartOfSpeech=VBD Lemma=ask NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=598 CharacterOffsetEnd=601 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=602 CharacterOffsetEnd=604 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=let CharacterOffsetBegin=605 CharacterOffsetEnd=608 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=609 CharacterOffsetEnd=611 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=clear CharacterOffsetBegin=612 CharacterOffsetEnd=617 PartOfSpeech=JJ Lemma=clear NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=618 CharacterOffsetEnd=622 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=623 CharacterOffsetEnd=627 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=628 CharacterOffsetEnd=631 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=attorney CharacterOffsetBegin=632 CharacterOffsetEnd=640 PartOfSpeech=NN Lemma=attorney NamedEntityTag=TITLE]
+[Text=so CharacterOffsetBegin=641 CharacterOffsetEnd=643 PartOfSpeech=IN Lemma=so NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=644 CharacterOffsetEnd=648 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=649 CharacterOffsetEnd=651 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=652 CharacterOffsetEnd=655 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=655 CharacterOffsetEnd=658 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=659 CharacterOffsetEnd=661 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=anything CharacterOffsetBegin=662 CharacterOffsetEnd=670 PartOfSpeech=NN Lemma=anything NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=671 CharacterOffsetEnd=673 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=void CharacterOffsetBegin=674 CharacterOffsetEnd=678 PartOfSpeech=VB Lemma=void NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=679 CharacterOffsetEnd=682 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=agency CharacterOffsetBegin=683 CharacterOffsetEnd=689 PartOfSpeech=NN Lemma=agency NamedEntityTag=O]
+[Text=status CharacterOffsetBegin=690 CharacterOffsetEnd=696 PartOfSpeech=NN Lemma=status NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=696 CharacterOffsetEnd=697 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD asked)
+      (S
+        (NP (PRP him))
+        (VP (TO to)
+          (VP (VB let)
+            (S
+              (NP (PRP me))
+              (ADJP
+                (ADJP (JJ clear) (IN that))
+                (PP (IN with)
+                  (NP (PRP$ our) (NN attorney)))))
+            (SBAR (IN so) (IN that)
+              (S
+                (NP (PRP we))
+                (VP (VBD did) (RB n't)
+                  (VP (VB do)
+                    (NP (NN anything))
+                    (S
+                      (VP (TO to)
+                        (VP (VB void)
+                          (NP (DT the) (NN agency) (NN status)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, asked-2)
+nsubj(asked-2, I-1)
+dobj(asked-2, him-3)
+nsubj:xsubj(let-5, him-3)
+mark(let-5, to-4)
+xcomp(asked-2, let-5)
+nsubj(clear-7, me-6)
+xcomp(let-5, clear-7)
+dep(clear-7, that-8)
+case(attorney-11, with-9)
+nmod:poss(attorney-11, our-10)
+nmod:with(clear-7, attorney-11)
+mark(do-17, so-12)
+mwe(so-12, that-13)
+nsubj(do-17, we-14)
+aux(do-17, did-15)
+neg(do-17, n't-16)
+advcl:so_that(let-5, do-17)
+dobj(do-17, anything-18)
+mark(void-20, to-19)
+advcl:to(do-17, void-20)
+det(status-23, the-21)
+compound(status-23, agency-22)
+dobj(void-20, status-23)
+punct(asked-2, .-24)
+
+Extracted the following NER entity mentions:
+attorney	TITLE
+him	PERSON
+
+Sentence #7 (23 tokens):
+Ken also said he would consider paying us our full invoice amount if he was convinced that their transportation invoice was paid.
+
+Tokens:
+[Text=Ken CharacterOffsetBegin=699 CharacterOffsetEnd=702 PartOfSpeech=NNP Lemma=Ken NamedEntityTag=PERSON]
+[Text=also CharacterOffsetBegin=703 CharacterOffsetEnd=707 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=708 CharacterOffsetEnd=712 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=713 CharacterOffsetEnd=715 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=716 CharacterOffsetEnd=721 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=consider CharacterOffsetBegin=722 CharacterOffsetEnd=730 PartOfSpeech=VB Lemma=consider NamedEntityTag=O]
+[Text=paying CharacterOffsetBegin=731 CharacterOffsetEnd=737 PartOfSpeech=VBG Lemma=pay NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=738 CharacterOffsetEnd=740 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=741 CharacterOffsetEnd=744 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=full CharacterOffsetBegin=745 CharacterOffsetEnd=749 PartOfSpeech=JJ Lemma=full NamedEntityTag=O]
+[Text=invoice CharacterOffsetBegin=750 CharacterOffsetEnd=757 PartOfSpeech=NN Lemma=invoice NamedEntityTag=O]
+[Text=amount CharacterOffsetBegin=758 CharacterOffsetEnd=764 PartOfSpeech=NN Lemma=amount NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=765 CharacterOffsetEnd=767 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=768 CharacterOffsetEnd=770 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=771 CharacterOffsetEnd=774 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=convinced CharacterOffsetBegin=775 CharacterOffsetEnd=784 PartOfSpeech=VBN Lemma=convince NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=785 CharacterOffsetEnd=789 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=790 CharacterOffsetEnd=795 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=transportation CharacterOffsetBegin=796 CharacterOffsetEnd=810 PartOfSpeech=NN Lemma=transportation NamedEntityTag=O]
+[Text=invoice CharacterOffsetBegin=811 CharacterOffsetEnd=818 PartOfSpeech=NN Lemma=invoice NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=819 CharacterOffsetEnd=822 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=paid CharacterOffsetBegin=823 CharacterOffsetEnd=827 PartOfSpeech=VBN Lemma=pay NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=827 CharacterOffsetEnd=828 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Ken))
+    (ADVP (RB also))
+    (VP (VBD said)
+      (SBAR
+        (S
+          (NP (PRP he))
+          (VP (MD would)
+            (VP (VB consider)
+              (S
+                (VP (VBG paying)
+                  (NP (PRP us))
+                  (NP (PRP$ our) (JJ full) (NN invoice) (NN amount))))
+              (SBAR (IN if)
+                (S
+                  (NP (PRP he))
+                  (VP (VBD was)
+                    (VP (VBN convinced)
+                      (SBAR (IN that)
+                        (S
+                          (NP (PRP$ their) (NN transportation) (NN invoice))
+                          (VP (VBD was)
+                            (VP (VBN paid))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, said-3)
+nsubj(said-3, Ken-1)
+advmod(said-3, also-2)
+nsubj(consider-6, he-4)
+aux(consider-6, would-5)
+ccomp(said-3, consider-6)
+xcomp(consider-6, paying-7)
+iobj(paying-7, us-8)
+nmod:poss(amount-12, our-9)
+amod(amount-12, full-10)
+compound(amount-12, invoice-11)
+dobj(paying-7, amount-12)
+mark(convinced-16, if-13)
+nsubjpass(convinced-16, he-14)
+auxpass(convinced-16, was-15)
+advcl:if(consider-6, convinced-16)
+mark(paid-22, that-17)
+nmod:poss(invoice-20, their-18)
+compound(invoice-20, transportation-19)
+nsubjpass(paid-22, invoice-20)
+auxpass(paid-22, was-21)
+ccomp(convinced-16, paid-22)
+punct(said-3, .-23)
+
+Extracted the following NER entity mentions:
+Ken	PERSON
+he	PERSON
+he	PERSON
+
+Sentence #8 (15 tokens):
+Gerald, please call me ASAP so we can resolve this and receive payment.
+
+Tokens:
+[Text=Gerald CharacterOffsetBegin=830 CharacterOffsetEnd=836 PartOfSpeech=NNP Lemma=Gerald NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=836 CharacterOffsetEnd=837 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=please CharacterOffsetBegin=838 CharacterOffsetEnd=844 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=call CharacterOffsetBegin=845 CharacterOffsetEnd=849 PartOfSpeech=VB Lemma=call NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=850 CharacterOffsetEnd=852 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=ASAP CharacterOffsetBegin=853 CharacterOffsetEnd=857 PartOfSpeech=NNP Lemma=ASAP NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=858 CharacterOffsetEnd=860 PartOfSpeech=IN Lemma=so NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=861 CharacterOffsetEnd=863 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=864 CharacterOffsetEnd=867 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=resolve CharacterOffsetBegin=868 CharacterOffsetEnd=875 PartOfSpeech=VB Lemma=resolve NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=876 CharacterOffsetEnd=880 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=881 CharacterOffsetEnd=884 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=receive CharacterOffsetBegin=885 CharacterOffsetEnd=892 PartOfSpeech=VBP Lemma=receive NamedEntityTag=O]
+[Text=payment CharacterOffsetBegin=893 CharacterOffsetEnd=900 PartOfSpeech=NN Lemma=payment NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=900 CharacterOffsetEnd=901 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Gerald))
+    (VP
+      (VP
+        (PRN (, ,)
+          (INTJ (VB please)))
+        (VB call)
+        (NP (PRP me))
+        (NP
+          (NP (NNP ASAP))
+          (SBAR (IN so)
+            (S
+              (NP (PRP we))
+              (VP (MD can)
+                (VP (VB resolve)
+                  (NP (DT this))))))))
+      (CC and)
+      (VP (VBP receive)
+        (NP (NN payment))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, call-4)
+nsubj(call-4, Gerald-1)
+nsubj(receive-13, Gerald-1)
+punct(please-3, ,-2)
+discourse(call-4, please-3)
+iobj(call-4, me-5)
+dobj(call-4, ASAP-6)
+mark(resolve-10, so-7)
+nsubj(resolve-10, we-8)
+aux(resolve-10, can-9)
+dep(ASAP-6, resolve-10)
+dobj(resolve-10, this-11)
+cc(call-4, and-12)
+conj:and(call-4, receive-13)
+dobj(receive-13, payment-14)
+punct(call-4, .-15)
+
+Extracted the following NER entity mentions:
+Gerald	PERSON
+
+Sentence #9 (15 tokens):
+Louis R. DiCarlo
+ENA Gas Structuring
+Phone: 713-345-4666  Cell:713-444-9138
+Email: louis.dicarlo@enron.com
+
+Tokens:
+[Text=Louis CharacterOffsetBegin=903 CharacterOffsetEnd=908 PartOfSpeech=NNP Lemma=Louis NamedEntityTag=PERSON]
+[Text=R. CharacterOffsetBegin=909 CharacterOffsetEnd=911 PartOfSpeech=NNP Lemma=R. NamedEntityTag=PERSON]
+[Text=DiCarlo CharacterOffsetBegin=912 CharacterOffsetEnd=919 PartOfSpeech=NNP Lemma=DiCarlo NamedEntityTag=PERSON]
+[Text=ENA CharacterOffsetBegin=920 CharacterOffsetEnd=923 PartOfSpeech=NNP Lemma=ENA NamedEntityTag=O]
+[Text=Gas CharacterOffsetBegin=924 CharacterOffsetEnd=927 PartOfSpeech=NNP Lemma=Gas NamedEntityTag=O]
+[Text=Structuring CharacterOffsetBegin=928 CharacterOffsetEnd=939 PartOfSpeech=NNP Lemma=Structuring NamedEntityTag=O]
+[Text=Phone CharacterOffsetBegin=940 CharacterOffsetEnd=945 PartOfSpeech=NNP Lemma=Phone NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=945 CharacterOffsetEnd=946 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=713-345-4666 CharacterOffsetBegin=947 CharacterOffsetEnd=959 PartOfSpeech=CD Lemma=713-345-4666 NamedEntityTag=NUMBER]
+[Text=Cell CharacterOffsetBegin=961 CharacterOffsetEnd=965 PartOfSpeech=NN Lemma=cell NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=965 CharacterOffsetEnd=966 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=713-444-9138 CharacterOffsetBegin=966 CharacterOffsetEnd=978 PartOfSpeech=CD Lemma=713-444-9138 NamedEntityTag=NUMBER]
+[Text=Email CharacterOffsetBegin=979 CharacterOffsetEnd=984 PartOfSpeech=VB Lemma=email NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=984 CharacterOffsetEnd=985 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=louis.dicarlo@enron.com CharacterOffsetBegin=986 CharacterOffsetEnd=1009 PartOfSpeech=NNP Lemma=louis.dicarlo@enron.com NamedEntityTag=EMAIL]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Louis) (NNP R.) (NNP DiCarlo) (NNP ENA) (NNP Gas) (NNP Structuring) (NNP Phone))
+    (: :)
+    (NP
+      (NP
+        (NP (CD 713-345-4666) (NN Cell))
+        (: :)
+        (S
+          (NP (CD 713-444-9138))
+          (VP (VB Email))))
+      (PRN (: :)
+        (NP (NNP louis.dicarlo@enron.com))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Phone-7)
+compound(Phone-7, Louis-1)
+compound(Phone-7, R.-2)
+compound(Phone-7, DiCarlo-3)
+compound(Phone-7, ENA-4)
+compound(Phone-7, Gas-5)
+compound(Phone-7, Structuring-6)
+punct(Phone-7, :-8)
+nummod(Cell-10, 713-345-4666-9)
+dep(Phone-7, Cell-10)
+punct(Cell-10, :-11)
+nsubj(Email-13, 713-444-9138-12)
+dep(Cell-10, Email-13)
+punct(louis.dicarlo@enron.com-15, :-14)
+dep(Cell-10, louis.dicarlo@enron.com-15)
+
+Extracted the following NER entity mentions:
+Louis R. DiCarlo	PERSON
+713-345-4666	NUMBER
+713-444-9138	NUMBER
+louis.dicarlo@enron.com	EMAIL
+
+Coreference set:
+	(1,1,[1,2]) -> (5,13,[13,14]), that is: "Entex" -> "Entex"
+	(4,32,[32,33]) -> (5,13,[13,14]), that is: "Entex" -> "Entex"
+
+Coreference set:
+	(4,15,[15,16]) -> (1,12,[12,13]), that is: "Enron" -> "Enron"
+	(5,16,[16,17]) -> (1,12,[12,13]), that is: "Enron" -> "Enron"
+
+Coreference set:
+	(2,5,[4,6]) -> (1,10,[7,11]), that is: "the payment" -> "their Nov01 invoice payment"
+
+Coreference set:
+	(4,5,[5,6]) -> (1,7,[7,8]), that is: "they" -> "their"
+	(7,18,[18,19]) -> (1,7,[7,8]), that is: "their" -> "their"
+
+Coreference set:
+	(3,1,[1,2]) -> (2,1,[1,2]), that is: "I" -> "I"
+	(5,1,[1,2]) -> (2,1,[1,2]), that is: "I" -> "I"
+	(6,1,[1,2]) -> (2,1,[1,2]), that is: "I" -> "I"
+	(6,6,[6,7]) -> (2,1,[1,2]), that is: "me" -> "I"
+	(8,5,[5,6]) -> (2,1,[1,2]), that is: "me" -> "I"
+
+Coreference set:
+	(5,30,[30,31]) -> (4,19,[19,21]), that is: "Tennessee" -> "Tennessee 's"
+
+Coreference set:
+	(4,25,[19,33]) -> (7,20,[18,21]), that is: "Tennessee 's Nov01 transportation and storage invoice , which we are agent for Entex" -> "their transportation invoice"
+
+Coreference set:
+	(4,25,[19,26]) -> (5,22,[21,23]), that is: "Tennessee 's Nov01 transportation and storage invoice" -> "the invoice"
+
+Coreference set:
+	(6,10,[10,11]) -> (4,28,[28,29]), that is: "our" -> "we"
+	(6,14,[14,15]) -> (4,28,[28,29]), that is: "we" -> "we"
+	(7,8,[8,9]) -> (4,28,[28,29]), that is: "us" -> "we"
+	(7,9,[9,10]) -> (4,28,[28,29]), that is: "our" -> "we"
+	(8,8,[8,9]) -> (4,28,[28,29]), that is: "we" -> "we"
+
+Coreference set:
+	(6,3,[3,4]) -> (5,6,[5,31]), that is: "him" -> "Ken Armstrong -LRB- 713-207-3365 -RRB- who proposed that Entex would pay Enron the commodity portion of the invoice and pay the transportation charges directly to Tennessee"
+	(7,1,[1,2]) -> (5,6,[5,31]), that is: "Ken" -> "Ken Armstrong -LRB- 713-207-3365 -RRB- who proposed that Entex would pay Enron the commodity portion of the invoice and pay the transportation charges directly to Tennessee"
+	(7,4,[4,5]) -> (5,6,[5,31]), that is: "he" -> "Ken Armstrong -LRB- 713-207-3365 -RRB- who proposed that Entex would pay Enron the commodity portion of the invoice and pay the transportation charges directly to Tennessee"
+	(7,14,[14,15]) -> (5,6,[5,31]), that is: "he" -> "Ken Armstrong -LRB- 713-207-3365 -RRB- who proposed that Entex would pay Enron the commodity portion of the invoice and pay the transportation charges directly to Tennessee"

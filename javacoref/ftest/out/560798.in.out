@@ -1,0 +1,89 @@
+Document: ID=560798.in (2 sentences, 17 tokens)
+
+Sentence #1 (14 tokens):
+Merchant Assets have recalculated their VaR, and I have enclosed it above.
+
+Tokens:
+[Text=Merchant CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Merchant NamedEntityTag=TITLE]
+[Text=Assets CharacterOffsetBegin=9 CharacterOffsetEnd=15 PartOfSpeech=NNPS Lemma=Assets NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=recalculated CharacterOffsetBegin=21 CharacterOffsetEnd=33 PartOfSpeech=VBN Lemma=recalculate NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=34 CharacterOffsetEnd=39 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=VaR CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=var NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=enclosed CharacterOffsetBegin=56 CharacterOffsetEnd=64 PartOfSpeech=VBN Lemma=enclose NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=65 CharacterOffsetEnd=67 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=above CharacterOffsetBegin=68 CharacterOffsetEnd=73 PartOfSpeech=IN Lemma=above NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NNP Merchant) (NNPS Assets))
+      (VP (VBP have)
+        (VP (VBN recalculated)
+          (NP (PRP$ their) (NN VaR)))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (VBP have)
+        (VP (VBN enclosed)
+          (NP (PRP it))
+          (PP (IN above)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, recalculated-4)
+compound(Assets-2, Merchant-1)
+nsubj(recalculated-4, Assets-2)
+aux(recalculated-4, have-3)
+nmod:poss(VaR-6, their-5)
+dobj(recalculated-4, VaR-6)
+punct(recalculated-4, ,-7)
+cc(recalculated-4, and-8)
+nsubj(enclosed-11, I-9)
+aux(enclosed-11, have-10)
+conj:and(recalculated-4, enclosed-11)
+dobj(enclosed-11, it-12)
+nmod(enclosed-11, above-13)
+punct(recalculated-4, .-14)
+
+Extracted the following NER entity mentions:
+Merchant	TITLE
+
+Sentence #2 (3 tokens):
+Regards,
+
+
+
+Eugenio
+
+Tokens:
+[Text=Regards CharacterOffsetBegin=76 CharacterOffsetEnd=83 PartOfSpeech=NNS Lemma=regards NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=83 CharacterOffsetEnd=84 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Eugenio CharacterOffsetBegin=88 CharacterOffsetEnd=95 PartOfSpeech=NNP Lemma=Eugenio NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNS Regards))
+    (, ,)
+    (NP (NNP Eugenio))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Regards-1)
+punct(Regards-1, ,-2)
+appos(Regards-1, Eugenio-3)
+
+Extracted the following NER entity mentions:
+Eugenio	PERSON
+
+Coreference set:
+	(1,12,[12,13]) -> (1,6,[5,7]), that is: "it" -> "their VaR"

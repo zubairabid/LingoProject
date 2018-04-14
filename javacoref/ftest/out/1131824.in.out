@@ -1,0 +1,321 @@
+Document: ID=1131824.in (6 sentences, 76 tokens)
+
+Sentence #1 (10 tokens):
+I received the margin letter this morning via Fax.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=received CharacterOffsetBegin=2 CharacterOffsetEnd=10 PartOfSpeech=VBD Lemma=receive NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=margin CharacterOffsetBegin=15 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=margin NamedEntityTag=O]
+[Text=letter CharacterOffsetBegin=22 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=letter NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=DT Lemma=this NamedEntityTag=TIME NormalizedNamedEntityTag=M]
+[Text=morning CharacterOffsetBegin=34 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=morning NamedEntityTag=TIME NormalizedNamedEntityTag=M]
+[Text=via CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=IN Lemma=via NamedEntityTag=O]
+[Text=Fax CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=NNP Lemma=Fax NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD received)
+      (NP (DT the) (NN margin) (NN letter))
+      (NP-TMP (DT this) (NN morning))
+      (PP (IN via)
+        (NP (NNP Fax))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, received-2)
+nsubj(received-2, I-1)
+det(letter-5, the-3)
+compound(letter-5, margin-4)
+dobj(received-2, letter-5)
+det(morning-7, this-6)
+nmod:tmod(received-2, morning-7)
+case(Fax-9, via-8)
+nmod:via(received-2, Fax-9)
+punct(received-2, .-10)
+
+Extracted the following NER entity mentions:
+this morning	TIME
+
+Sentence #2 (18 tokens):
+However, it is backdated to Nov 19th for my phone call with Richard Ott at NIMO.
+
+Tokens:
+[Text=However CharacterOffsetBegin=52 CharacterOffsetEnd=59 PartOfSpeech=RB Lemma=however NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=59 CharacterOffsetEnd=60 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=backdated CharacterOffsetBegin=67 CharacterOffsetEnd=76 PartOfSpeech=VBN Lemma=backdate NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=77 CharacterOffsetEnd=79 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Nov CharacterOffsetBegin=80 CharacterOffsetEnd=83 PartOfSpeech=NNP Lemma=Nov NamedEntityTag=DATE NormalizedNamedEntityTag=****1119]
+[Text=19th CharacterOffsetBegin=84 CharacterOffsetEnd=88 PartOfSpeech=JJ Lemma=19th NamedEntityTag=DATE NormalizedNamedEntityTag=****1119]
+[Text=for CharacterOffsetBegin=89 CharacterOffsetEnd=92 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=93 CharacterOffsetEnd=95 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=phone CharacterOffsetBegin=96 CharacterOffsetEnd=101 PartOfSpeech=NN Lemma=phone NamedEntityTag=O]
+[Text=call CharacterOffsetBegin=102 CharacterOffsetEnd=106 PartOfSpeech=NN Lemma=call NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=107 CharacterOffsetEnd=111 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Richard CharacterOffsetBegin=112 CharacterOffsetEnd=119 PartOfSpeech=NNP Lemma=Richard NamedEntityTag=PERSON]
+[Text=Ott CharacterOffsetBegin=120 CharacterOffsetEnd=123 PartOfSpeech=NNP Lemma=Ott NamedEntityTag=PERSON]
+[Text=at CharacterOffsetBegin=124 CharacterOffsetEnd=126 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=NIMO CharacterOffsetBegin=127 CharacterOffsetEnd=131 PartOfSpeech=NNP Lemma=NIMO NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=131 CharacterOffsetEnd=132 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB However))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ is)
+      (VP (VBN backdated)
+        (PP (TO to)
+          (NP (NNP Nov) (JJ 19th)))
+        (PP (IN for)
+          (NP (PRP$ my) (NN phone) (NN call)))
+        (PP (IN with)
+          (NP
+            (NP (NNP Richard) (NNP Ott))
+            (PP (IN at)
+              (NP (NNP NIMO)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, backdated-5)
+advmod(backdated-5, However-1)
+punct(backdated-5, ,-2)
+nsubjpass(backdated-5, it-3)
+auxpass(backdated-5, is-4)
+case(Nov-7, to-6)
+nmod:to(backdated-5, Nov-7)
+amod(Nov-7, 19th-8)
+case(call-12, for-9)
+nmod:poss(call-12, my-10)
+compound(call-12, phone-11)
+nmod:for(backdated-5, call-12)
+case(Ott-15, with-13)
+compound(Ott-15, Richard-14)
+nmod:with(backdated-5, Ott-15)
+case(NIMO-17, at-16)
+nmod:at(Ott-15, NIMO-17)
+punct(backdated-5, .-18)
+
+Extracted the following NER entity mentions:
+Nov 19th	DATE
+Richard Ott	PERSON
+NIMO	ORGANIZATION
+
+Sentence #3 (18 tokens):
+We have 5 days to deliver (some flexibility to view it as 5 business days).
+
+Tokens:
+[Text=We CharacterOffsetBegin=134 CharacterOffsetEnd=136 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=137 CharacterOffsetEnd=141 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=5 CharacterOffsetBegin=142 CharacterOffsetEnd=143 PartOfSpeech=CD Lemma=5 NamedEntityTag=DURATION]
+[Text=days CharacterOffsetBegin=144 CharacterOffsetEnd=148 PartOfSpeech=NNS Lemma=day NamedEntityTag=DURATION]
+[Text=to CharacterOffsetBegin=149 CharacterOffsetEnd=151 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=deliver CharacterOffsetBegin=152 CharacterOffsetEnd=159 PartOfSpeech=VB Lemma=deliver NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=160 CharacterOffsetEnd=161 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=161 CharacterOffsetEnd=165 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=flexibility CharacterOffsetBegin=166 CharacterOffsetEnd=177 PartOfSpeech=NN Lemma=flexibility NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=178 CharacterOffsetEnd=180 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=view CharacterOffsetBegin=181 CharacterOffsetEnd=185 PartOfSpeech=VB Lemma=view NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=186 CharacterOffsetEnd=188 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=189 CharacterOffsetEnd=191 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=5 CharacterOffsetBegin=192 CharacterOffsetEnd=193 PartOfSpeech=CD Lemma=5 NamedEntityTag=NUMBER NormalizedNamedEntityTag=5.0]
+[Text=business CharacterOffsetBegin=194 CharacterOffsetEnd=202 PartOfSpeech=NN Lemma=business NamedEntityTag=O]
+[Text=days CharacterOffsetBegin=203 CharacterOffsetEnd=207 PartOfSpeech=NNS Lemma=day NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=207 CharacterOffsetEnd=208 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=208 CharacterOffsetEnd=209 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP have)
+      (NP
+        (NP
+          (NP (CD 5) (NNS days))
+          (SBAR
+            (S
+              (VP (TO to)
+                (VP (VB deliver))))))
+        (PRN (-LRB- -LRB-)
+          (NP (DT some) (NN flexibility)
+            (S
+              (VP (TO to)
+                (VP (VB view)
+                  (NP (PRP it))
+                  (PP (IN as)
+                    (NP (CD 5) (NN business) (NNS days)))))))
+          (-RRB- -RRB-))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-2)
+nsubj(have-2, We-1)
+nummod(days-4, 5-3)
+dobj(have-2, days-4)
+mark(deliver-6, to-5)
+acl:to(days-4, deliver-6)
+punct(flexibility-9, -LRB--7)
+det(flexibility-9, some-8)
+appos(days-4, flexibility-9)
+mark(view-11, to-10)
+acl:to(flexibility-9, view-11)
+dobj(view-11, it-12)
+case(days-16, as-13)
+nummod(days-16, 5-14)
+compound(days-16, business-15)
+nmod:as(view-11, days-16)
+punct(flexibility-9, -RRB--17)
+punct(have-2, .-18)
+
+Extracted the following NER entity mentions:
+5 days	DURATION
+5	NUMBER
+
+Sentence #4 (8 tokens):
+The margin call is for $4,283,512.
+
+Tokens:
+[Text=The CharacterOffsetBegin=211 CharacterOffsetEnd=214 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=margin CharacterOffsetBegin=215 CharacterOffsetEnd=221 PartOfSpeech=NN Lemma=margin NamedEntityTag=O]
+[Text=call CharacterOffsetBegin=222 CharacterOffsetEnd=226 PartOfSpeech=NN Lemma=call NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=227 CharacterOffsetEnd=229 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=230 CharacterOffsetEnd=233 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=234 CharacterOffsetEnd=235 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$4283512.0]
+[Text=4,283,512 CharacterOffsetBegin=235 CharacterOffsetEnd=244 PartOfSpeech=CD Lemma=4,283,512 NamedEntityTag=MONEY NormalizedNamedEntityTag=$4283512.0]
+[Text=. CharacterOffsetBegin=244 CharacterOffsetEnd=245 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN margin) (NN call))
+    (VP (VBZ is)
+      (PP (IN for)
+        (NP ($ $) (CD 4,283,512))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 4,283,512-7)
+det(call-3, The-1)
+compound(call-3, margin-2)
+nsubj(4,283,512-7, call-3)
+cop(4,283,512-7, is-4)
+case(4,283,512-7, for-5)
+dep(4,283,512-7, $-6)
+punct(4,283,512-7, .-8)
+
+Extracted the following NER entity mentions:
+$4,283,512	MONEY
+
+Sentence #5 (21 tokens):
+It is to cover NIMO for settlement and imbalance risk for EES participation in their "Supplier Select" program.
+
+Tokens:
+[Text=It CharacterOffsetBegin=247 CharacterOffsetEnd=249 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=250 CharacterOffsetEnd=252 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=253 CharacterOffsetEnd=255 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=cover CharacterOffsetBegin=256 CharacterOffsetEnd=261 PartOfSpeech=VB Lemma=cover NamedEntityTag=O]
+[Text=NIMO CharacterOffsetBegin=262 CharacterOffsetEnd=266 PartOfSpeech=NNP Lemma=NIMO NamedEntityTag=ORGANIZATION]
+[Text=for CharacterOffsetBegin=267 CharacterOffsetEnd=270 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=settlement CharacterOffsetBegin=271 CharacterOffsetEnd=281 PartOfSpeech=NN Lemma=settlement NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=282 CharacterOffsetEnd=285 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=imbalance CharacterOffsetBegin=286 CharacterOffsetEnd=295 PartOfSpeech=NN Lemma=imbalance NamedEntityTag=O]
+[Text=risk CharacterOffsetBegin=296 CharacterOffsetEnd=300 PartOfSpeech=NN Lemma=risk NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=301 CharacterOffsetEnd=304 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=EES CharacterOffsetBegin=305 CharacterOffsetEnd=308 PartOfSpeech=NN Lemma=ees NamedEntityTag=O]
+[Text=participation CharacterOffsetBegin=309 CharacterOffsetEnd=322 PartOfSpeech=NN Lemma=participation NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=323 CharacterOffsetEnd=325 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=326 CharacterOffsetEnd=331 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=332 CharacterOffsetEnd=333 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Supplier CharacterOffsetBegin=333 CharacterOffsetEnd=341 PartOfSpeech=NNP Lemma=Supplier NamedEntityTag=O]
+[Text=Select CharacterOffsetBegin=342 CharacterOffsetEnd=348 PartOfSpeech=NNP Lemma=Select NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=348 CharacterOffsetEnd=349 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=program CharacterOffsetBegin=350 CharacterOffsetEnd=357 PartOfSpeech=NN Lemma=program NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=357 CharacterOffsetEnd=358 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (S
+        (VP (TO to)
+          (VP (VB cover)
+            (NP
+              (NP (NNP NIMO))
+              (PP (IN for)
+                (NP (NN settlement)
+                  (CC and)
+                  (NN imbalance) (NN risk))))
+            (PP (IN for)
+              (NP
+                (NP (NN EES) (NN participation))
+                (PP (IN in)
+                  (NP (PRP$ their) (`` ``) (NNP Supplier) (NNP Select) ('' '') (NN program)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-2)
+nsubj(is-2, It-1)
+nsubj:xsubj(cover-4, It-1)
+mark(cover-4, to-3)
+xcomp(is-2, cover-4)
+dobj(cover-4, NIMO-5)
+case(risk-10, for-6)
+compound(risk-10, settlement-7)
+cc(settlement-7, and-8)
+conj:and(settlement-7, imbalance-9)
+compound(risk-10, imbalance-9)
+nmod:for(NIMO-5, risk-10)
+case(participation-13, for-11)
+compound(participation-13, EES-12)
+nmod:for(cover-4, participation-13)
+case(program-20, in-14)
+nmod:poss(program-20, their-15)
+punct(program-20, ``-16)
+compound(program-20, Supplier-17)
+compound(program-20, Select-18)
+punct(program-20, ''-19)
+nmod:in(participation-13, program-20)
+punct(is-2, .-21)
+
+Extracted the following NER entity mentions:
+NIMO	ORGANIZATION
+
+Sentence #6 (1 tokens):
+Molly
+
+Tokens:
+[Text=Molly CharacterOffsetBegin=360 CharacterOffsetEnd=365 PartOfSpeech=NNP Lemma=Molly NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Molly)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Molly-1)
+
+Extracted the following NER entity mentions:
+Molly	PERSON
+
+Coreference set:
+	(2,10,[10,11]) -> (1,1,[1,2]), that is: "my" -> "I"
+
+Coreference set:
+	(2,3,[3,4]) -> (1,5,[3,6]), that is: "it" -> "the margin letter"
+	(3,12,[12,13]) -> (1,5,[3,6]), that is: "it" -> "the margin letter"
+
+Coreference set:
+	(5,1,[1,2]) -> (4,3,[1,4]), that is: "It" -> "The margin call"

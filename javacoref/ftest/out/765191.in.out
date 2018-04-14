@@ -1,0 +1,957 @@
+Document: ID=765191.in (11 sentences, 239 tokens)
+
+Sentence #1 (7 tokens):
+a poodle is a poodle indeed!
+
+Tokens:
+[Text=a CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=poodle CharacterOffsetBegin=2 CharacterOffsetEnd=8 PartOfSpeech=NN Lemma=poodle NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=poodle CharacterOffsetBegin=14 CharacterOffsetEnd=20 PartOfSpeech=NN Lemma=poodle NamedEntityTag=O]
+[Text=indeed CharacterOffsetBegin=21 CharacterOffsetEnd=27 PartOfSpeech=RB Lemma=indeed NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT a) (NN poodle))
+    (VP (VBZ is)
+      (NP (DT a) (NN poodle))
+      (ADVP (RB indeed)))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, poodle-5)
+det(poodle-2, a-1)
+nsubj(poodle-5, poodle-2)
+cop(poodle-5, is-3)
+det(poodle-5, a-4)
+advmod(poodle-5, indeed-6)
+punct(poodle-5, !-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (22 tokens):
+the displays of patriotism are just peoples'
+way of showing support, pride, and love of one's country.
+
+Tokens:
+[Text=the CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=displays CharacterOffsetBegin=34 CharacterOffsetEnd=42 PartOfSpeech=NNS Lemma=display NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=patriotism CharacterOffsetBegin=46 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=patriotism NamedEntityTag=IDEOLOGY]
+[Text=are CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=peoples CharacterOffsetBegin=66 CharacterOffsetEnd=73 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=way CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=NN Lemma=way NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=79 CharacterOffsetEnd=81 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=showing CharacterOffsetBegin=82 CharacterOffsetEnd=89 PartOfSpeech=VBG Lemma=show NamedEntityTag=O]
+[Text=support CharacterOffsetBegin=90 CharacterOffsetEnd=97 PartOfSpeech=NN Lemma=support NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=97 CharacterOffsetEnd=98 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=pride CharacterOffsetBegin=99 CharacterOffsetEnd=104 PartOfSpeech=NN Lemma=pride NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=104 CharacterOffsetEnd=105 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=106 CharacterOffsetEnd=109 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=love CharacterOffsetBegin=110 CharacterOffsetEnd=114 PartOfSpeech=NN Lemma=love NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=115 CharacterOffsetEnd=117 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=118 CharacterOffsetEnd=121 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text='s CharacterOffsetBegin=121 CharacterOffsetEnd=123 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=country CharacterOffsetBegin=124 CharacterOffsetEnd=131 PartOfSpeech=NN Lemma=country NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=131 CharacterOffsetEnd=132 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT the) (NNS displays))
+      (PP (IN of)
+        (NP (NN patriotism))))
+    (VP (VBP are)
+      (ADVP (RB just))
+      (NP
+        (NP
+          (NP (NNS peoples) (POS '))
+          (NN way))
+        (PP (IN of)
+          (S
+            (VP (VBG showing)
+              (NP
+                (NP (NN support) (, ,) (NN pride) (, ,)
+                  (CC and)
+                  (NN love))
+                (PP (IN of)
+                  (NP
+                    (NP (CD one) (POS 's))
+                    (NN country)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, way-9)
+det(displays-2, the-1)
+nsubj(way-9, displays-2)
+case(patriotism-4, of-3)
+nmod:of(displays-2, patriotism-4)
+cop(way-9, are-5)
+advmod(way-9, just-6)
+nmod:poss(way-9, peoples-7)
+case(peoples-7, '-8)
+mark(showing-11, of-10)
+acl:of(way-9, showing-11)
+dobj(showing-11, support-12)
+punct(support-12, ,-13)
+dobj(showing-11, pride-14)
+conj:and(support-12, pride-14)
+punct(support-12, ,-15)
+cc(support-12, and-16)
+dobj(showing-11, love-17)
+conj:and(support-12, love-17)
+case(country-21, of-18)
+nmod:poss(country-21, one-19)
+case(one-19, 's-20)
+nmod:of(support-12, country-21)
+punct(way-9, .-22)
+
+Extracted the following NER entity mentions:
+patriotism	IDEOLOGY
+one	NUMBER
+
+Sentence #3 (26 tokens):
+hell, my 72 yrs
+old papa wanted to do the candle thing...then line up 50 terrorist and
+shooting them in the heads!
+
+Tokens:
+[Text=hell CharacterOffsetBegin=134 CharacterOffsetEnd=138 PartOfSpeech=NN Lemma=hell NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=138 CharacterOffsetEnd=139 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=140 CharacterOffsetEnd=142 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=72 CharacterOffsetBegin=143 CharacterOffsetEnd=145 PartOfSpeech=CD Lemma=72 NamedEntityTag=NUMBER NormalizedNamedEntityTag=72.0]
+[Text=yrs CharacterOffsetBegin=146 CharacterOffsetEnd=149 PartOfSpeech=NNS Lemma=yr NamedEntityTag=O]
+[Text=old CharacterOffsetBegin=150 CharacterOffsetEnd=153 PartOfSpeech=JJ Lemma=old NamedEntityTag=O]
+[Text=papa CharacterOffsetBegin=154 CharacterOffsetEnd=158 PartOfSpeech=NN Lemma=papa NamedEntityTag=O]
+[Text=wanted CharacterOffsetBegin=159 CharacterOffsetEnd=165 PartOfSpeech=VBD Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=166 CharacterOffsetEnd=168 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=169 CharacterOffsetEnd=171 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=172 CharacterOffsetEnd=175 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=candle CharacterOffsetBegin=176 CharacterOffsetEnd=182 PartOfSpeech=NN Lemma=candle NamedEntityTag=O]
+[Text=thing CharacterOffsetBegin=183 CharacterOffsetEnd=188 PartOfSpeech=NN Lemma=thing NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=188 CharacterOffsetEnd=191 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=191 CharacterOffsetEnd=195 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=line CharacterOffsetBegin=196 CharacterOffsetEnd=200 PartOfSpeech=NN Lemma=line NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=201 CharacterOffsetEnd=203 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=50 CharacterOffsetBegin=204 CharacterOffsetEnd=206 PartOfSpeech=CD Lemma=50 NamedEntityTag=NUMBER NormalizedNamedEntityTag=50.0]
+[Text=terrorist CharacterOffsetBegin=207 CharacterOffsetEnd=216 PartOfSpeech=JJ Lemma=terrorist NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=217 CharacterOffsetEnd=220 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=shooting CharacterOffsetBegin=221 CharacterOffsetEnd=229 PartOfSpeech=VBG Lemma=shoot NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=230 CharacterOffsetEnd=234 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=235 CharacterOffsetEnd=237 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=238 CharacterOffsetEnd=241 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=heads CharacterOffsetBegin=242 CharacterOffsetEnd=247 PartOfSpeech=NNS Lemma=head NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=247 CharacterOffsetEnd=248 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NN hell))
+      (, ,)
+      (NP (PRP$ my)
+        (ADJP
+          (NP (CD 72) (NNS yrs))
+          (JJ old))
+        (NN papa)))
+    (VP
+      (VP (VBD wanted)
+        (S
+          (VP (TO to)
+            (VP (VB do)
+              (NP (DT the) (NN candle) (NN thing))))))
+      (: ...) (RB then)
+      (VP (NN line)
+        (PRT (RP up))
+        (NP
+          (NP (CD 50))
+          (UCP
+            (NP (JJ terrorist))
+            (CC and)
+            (VP (VBG shooting)
+              (NP (PRP them))
+              (PP (IN in)
+                (NP (DT the) (NNS heads))))))))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, wanted-8)
+nsubj(wanted-8, hell-1)
+nsubj:xsubj(do-10, hell-1)
+punct(hell-1, ,-2)
+nmod:poss(papa-7, my-3)
+nummod(yrs-5, 72-4)
+nmod:npmod(old-6, yrs-5)
+amod(papa-7, old-6)
+appos(hell-1, papa-7)
+mark(do-10, to-9)
+xcomp(wanted-8, do-10)
+det(thing-13, the-11)
+compound(thing-13, candle-12)
+dobj(do-10, thing-13)
+punct(wanted-8, ...-14)
+advmod(wanted-8, then-15)
+dep(wanted-8, line-16)
+compound:prt(line-16, up-17)
+dobj(line-16, 50-18)
+dep(50-18, terrorist-19)
+cc(terrorist-19, and-20)
+acl(terrorist-19, shooting-21)
+dobj(shooting-21, them-22)
+case(heads-25, in-23)
+det(heads-25, the-24)
+nmod:in(shooting-21, heads-25)
+punct(wanted-8, !-26)
+
+Extracted the following NER entity mentions:
+72	NUMBER
+50	NUMBER
+
+Sentence #4 (14 tokens):
+he said he would love to be able to help fight
+the afghans!
+
+Tokens:
+[Text=he CharacterOffsetBegin=250 CharacterOffsetEnd=252 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=253 CharacterOffsetEnd=257 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=258 CharacterOffsetEnd=260 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=261 CharacterOffsetEnd=266 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=love CharacterOffsetBegin=267 CharacterOffsetEnd=271 PartOfSpeech=VB Lemma=love NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=272 CharacterOffsetEnd=274 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=275 CharacterOffsetEnd=277 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=able CharacterOffsetBegin=278 CharacterOffsetEnd=282 PartOfSpeech=JJ Lemma=able NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=283 CharacterOffsetEnd=285 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=help CharacterOffsetBegin=286 CharacterOffsetEnd=290 PartOfSpeech=VB Lemma=help NamedEntityTag=O]
+[Text=fight CharacterOffsetBegin=291 CharacterOffsetEnd=296 PartOfSpeech=VB Lemma=fight NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=297 CharacterOffsetEnd=300 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=afghans CharacterOffsetBegin=301 CharacterOffsetEnd=308 PartOfSpeech=NNS Lemma=afghan NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=308 CharacterOffsetEnd=309 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP he))
+    (VP (VBD said)
+      (SBAR
+        (S
+          (NP (PRP he))
+          (VP (MD would)
+            (VP (VB love)
+              (S
+                (VP (TO to)
+                  (VP (VB be)
+                    (ADJP (JJ able)
+                      (S
+                        (VP (TO to)
+                          (VP (VB help)
+                            (VP (VB fight)
+                              (NP (DT the) (NNS afghans)))))))))))))))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, said-2)
+nsubj(said-2, he-1)
+nsubj(love-5, he-3)
+nsubj:xsubj(able-8, he-3)
+aux(love-5, would-4)
+ccomp(said-2, love-5)
+mark(able-8, to-6)
+cop(able-8, be-7)
+xcomp(love-5, able-8)
+mark(help-10, to-9)
+xcomp(able-8, help-10)
+xcomp(help-10, fight-11)
+det(afghans-13, the-12)
+dobj(fight-11, afghans-13)
+punct(said-2, !-14)
+
+Extracted the following NER entity mentions:
+he	PERSON
+he	PERSON
+
+Sentence #5 (26 tokens):
+just bc you wanna show or display symbols of patriotism,
+doesn't mean that's the ONLY thing you're willing to do.
+
+Tokens:
+[Text=just CharacterOffsetBegin=311 CharacterOffsetEnd=315 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=bc CharacterOffsetBegin=316 CharacterOffsetEnd=318 PartOfSpeech=NN Lemma=bc NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=319 CharacterOffsetEnd=322 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=wan CharacterOffsetBegin=323 CharacterOffsetEnd=326 PartOfSpeech=VBP Lemma=wan NamedEntityTag=O]
+[Text=na CharacterOffsetBegin=326 CharacterOffsetEnd=328 PartOfSpeech=TO Lemma=na NamedEntityTag=O]
+[Text=show CharacterOffsetBegin=329 CharacterOffsetEnd=333 PartOfSpeech=VB Lemma=show NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=334 CharacterOffsetEnd=336 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=display CharacterOffsetBegin=337 CharacterOffsetEnd=344 PartOfSpeech=VB Lemma=display NamedEntityTag=O]
+[Text=symbols CharacterOffsetBegin=345 CharacterOffsetEnd=352 PartOfSpeech=NNS Lemma=symbol NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=353 CharacterOffsetEnd=355 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=patriotism CharacterOffsetBegin=356 CharacterOffsetEnd=366 PartOfSpeech=NN Lemma=patriotism NamedEntityTag=IDEOLOGY]
+[Text=, CharacterOffsetBegin=366 CharacterOffsetEnd=367 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=368 CharacterOffsetEnd=372 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=372 CharacterOffsetEnd=375 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=mean CharacterOffsetBegin=376 CharacterOffsetEnd=380 PartOfSpeech=VB Lemma=mean NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=381 CharacterOffsetEnd=385 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=385 CharacterOffsetEnd=387 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=388 CharacterOffsetEnd=391 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=ONLY CharacterOffsetBegin=392 CharacterOffsetEnd=396 PartOfSpeech=NN Lemma=only NamedEntityTag=O]
+[Text=thing CharacterOffsetBegin=397 CharacterOffsetEnd=402 PartOfSpeech=NN Lemma=thing NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=403 CharacterOffsetEnd=406 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text='re CharacterOffsetBegin=406 CharacterOffsetEnd=409 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=willing CharacterOffsetBegin=410 CharacterOffsetEnd=417 PartOfSpeech=JJ Lemma=willing NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=418 CharacterOffsetEnd=420 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=421 CharacterOffsetEnd=423 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=423 CharacterOffsetEnd=424 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (RB just) (NN bc))
+    (PRN
+      (S
+        (NP (PRP you))
+        (VP (VBP wan)
+          (S
+            (VP (TO na)
+              (VP (VB show)
+                (CC or)
+                (VB display)
+                (NP
+                  (NP (NNS symbols))
+                  (PP (IN of)
+                    (NP (NN patriotism)))))))))
+      (, ,))
+    (VP (VBZ does) (RB n't)
+      (VP (VB mean)
+        (SBAR
+          (S
+            (NP (DT that))
+            (VP (VBZ 's)
+              (NP
+                (NP (DT the) (NN ONLY) (NN thing))
+                (SBAR
+                  (S
+                    (NP (PRP you))
+                    (VP (VBP 're)
+                      (ADJP (JJ willing)
+                        (S
+                          (VP (TO to)
+                            (VP (VB do))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, mean-15)
+advmod(bc-2, just-1)
+nsubj(mean-15, bc-2)
+nsubj(wan-4, you-3)
+nsubj:xsubj(show-6, you-3)
+nsubj:xsubj(display-8, you-3)
+parataxis(mean-15, wan-4)
+mark(show-6, na-5)
+xcomp(wan-4, show-6)
+cc(show-6, or-7)
+xcomp(wan-4, display-8)
+conj:or(show-6, display-8)
+dobj(show-6, symbols-9)
+case(patriotism-11, of-10)
+nmod:of(symbols-9, patriotism-11)
+punct(wan-4, ,-12)
+aux(mean-15, does-13)
+neg(mean-15, n't-14)
+nsubj(thing-20, that-16)
+cop(thing-20, 's-17)
+det(thing-20, the-18)
+compound(thing-20, ONLY-19)
+ccomp(mean-15, thing-20)
+nsubj(willing-23, you-21)
+nsubj:xsubj(do-25, you-21)
+cop(willing-23, 're-22)
+acl:relcl(thing-20, willing-23)
+mark(do-25, to-24)
+xcomp(willing-23, do-25)
+punct(mean-15, .-26)
+
+Extracted the following NER entity mentions:
+patriotism	IDEOLOGY
+
+Sentence #6 (21 tokens):
+not just anyone is
+gonna be allowed to help search for missing victims...only certain ones are
+allowed.
+
+Tokens:
+[Text=not CharacterOffsetBegin=426 CharacterOffsetEnd=429 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=430 CharacterOffsetEnd=434 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=anyone CharacterOffsetBegin=435 CharacterOffsetEnd=441 PartOfSpeech=NN Lemma=anyone NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=442 CharacterOffsetEnd=444 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=gon CharacterOffsetBegin=445 CharacterOffsetEnd=448 PartOfSpeech=VBG Lemma=gon NamedEntityTag=O]
+[Text=na CharacterOffsetBegin=448 CharacterOffsetEnd=450 PartOfSpeech=TO Lemma=na NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=451 CharacterOffsetEnd=453 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=allowed CharacterOffsetBegin=454 CharacterOffsetEnd=461 PartOfSpeech=VBN Lemma=allow NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=462 CharacterOffsetEnd=464 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=help CharacterOffsetBegin=465 CharacterOffsetEnd=469 PartOfSpeech=VB Lemma=help NamedEntityTag=O]
+[Text=search CharacterOffsetBegin=470 CharacterOffsetEnd=476 PartOfSpeech=VB Lemma=search NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=477 CharacterOffsetEnd=480 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=missing CharacterOffsetBegin=481 CharacterOffsetEnd=488 PartOfSpeech=VBG Lemma=miss NamedEntityTag=O]
+[Text=victims CharacterOffsetBegin=489 CharacterOffsetEnd=496 PartOfSpeech=NNS Lemma=victim NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=496 CharacterOffsetEnd=499 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=499 CharacterOffsetEnd=503 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=certain CharacterOffsetBegin=504 CharacterOffsetEnd=511 PartOfSpeech=JJ Lemma=certain NamedEntityTag=O]
+[Text=ones CharacterOffsetBegin=512 CharacterOffsetEnd=516 PartOfSpeech=NNS Lemma=one NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=517 CharacterOffsetEnd=520 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=allowed CharacterOffsetBegin=521 CharacterOffsetEnd=528 PartOfSpeech=VBN Lemma=allow NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=528 CharacterOffsetEnd=529 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S (RB not)
+      (NP (RB just) (NN anyone))
+      (VP (VBZ is)
+        (VP (VBG gon)
+          (S
+            (VP (TO na)
+              (VP (VB be)
+                (VP (VBN allowed)
+                  (S
+                    (VP (TO to)
+                      (VP (VB help)
+                        (VP (VB search)
+                          (PP (IN for)
+                            (NP (VBG missing) (NNS victims))))))))))))))
+    (: ...)
+    (S
+      (NP (RB only) (JJ certain) (NNS ones))
+      (VP (VBP are)
+        (VP (VBN allowed))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, gon-5)
+neg(gon-5, not-1)
+advmod(anyone-3, just-2)
+nsubj(gon-5, anyone-3)
+nsubjpass:xsubj(allowed-8, anyone-3)
+aux(gon-5, is-4)
+mark(allowed-8, na-6)
+auxpass(allowed-8, be-7)
+xcomp(gon-5, allowed-8)
+mark(help-10, to-9)
+xcomp(allowed-8, help-10)
+xcomp(help-10, search-11)
+case(victims-14, for-12)
+amod(victims-14, missing-13)
+nmod:for(search-11, victims-14)
+punct(gon-5, ...-15)
+advmod(ones-18, only-16)
+amod(ones-18, certain-17)
+nsubjpass(allowed-20, ones-18)
+auxpass(allowed-20, are-19)
+parataxis(gon-5, allowed-20)
+punct(gon-5, .-21)
+
+Extracted the following NER entity mentions:
+
+Sentence #7 (33 tokens):
+others can only show their support by donating $$$ for the families
+of survivors and rescue workers (mark cuban gave a million bucks), donating
+supplies & blood.
+
+Tokens:
+[Text=others CharacterOffsetBegin=531 CharacterOffsetEnd=537 PartOfSpeech=NNS Lemma=other NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=538 CharacterOffsetEnd=541 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=542 CharacterOffsetEnd=546 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=show CharacterOffsetBegin=547 CharacterOffsetEnd=551 PartOfSpeech=VB Lemma=show NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=552 CharacterOffsetEnd=557 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=support CharacterOffsetBegin=558 CharacterOffsetEnd=565 PartOfSpeech=NN Lemma=support NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=566 CharacterOffsetEnd=568 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=donating CharacterOffsetBegin=569 CharacterOffsetEnd=577 PartOfSpeech=VBG Lemma=donate NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=578 CharacterOffsetEnd=579 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$]
+[Text=$ CharacterOffsetBegin=579 CharacterOffsetEnd=580 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$]
+[Text=$ CharacterOffsetBegin=580 CharacterOffsetEnd=581 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$]
+[Text=for CharacterOffsetBegin=582 CharacterOffsetEnd=585 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=586 CharacterOffsetEnd=589 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=families CharacterOffsetBegin=590 CharacterOffsetEnd=598 PartOfSpeech=NNS Lemma=family NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=599 CharacterOffsetEnd=601 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=survivors CharacterOffsetBegin=602 CharacterOffsetEnd=611 PartOfSpeech=NNS Lemma=survivor NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=612 CharacterOffsetEnd=615 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=rescue CharacterOffsetBegin=616 CharacterOffsetEnd=622 PartOfSpeech=NN Lemma=rescue NamedEntityTag=O]
+[Text=workers CharacterOffsetBegin=623 CharacterOffsetEnd=630 PartOfSpeech=NNS Lemma=worker NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=631 CharacterOffsetEnd=632 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=mark CharacterOffsetBegin=632 CharacterOffsetEnd=636 PartOfSpeech=NN Lemma=mark NamedEntityTag=O]
+[Text=cuban CharacterOffsetBegin=637 CharacterOffsetEnd=642 PartOfSpeech=JJ Lemma=cuban NamedEntityTag=NATIONALITY]
+[Text=gave CharacterOffsetBegin=643 CharacterOffsetEnd=647 PartOfSpeech=VBD Lemma=give NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=648 CharacterOffsetEnd=649 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=million CharacterOffsetBegin=650 CharacterOffsetEnd=657 PartOfSpeech=CD Lemma=million NamedEntityTag=NUMBER NormalizedNamedEntityTag=1000000.0]
+[Text=bucks CharacterOffsetBegin=658 CharacterOffsetEnd=663 PartOfSpeech=NNS Lemma=buck NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=663 CharacterOffsetEnd=664 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=664 CharacterOffsetEnd=665 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=donating CharacterOffsetBegin=666 CharacterOffsetEnd=674 PartOfSpeech=VBG Lemma=donate NamedEntityTag=O]
+[Text=supplies CharacterOffsetBegin=675 CharacterOffsetEnd=683 PartOfSpeech=NNS Lemma=supplies NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=684 CharacterOffsetEnd=685 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=blood CharacterOffsetBegin=686 CharacterOffsetEnd=691 PartOfSpeech=NN Lemma=blood NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=691 CharacterOffsetEnd=692 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNS others))
+    (VP (MD can)
+      (ADVP (RB only))
+      (VP (VB show)
+        (NP (PRP$ their) (NN support))
+        (PP (IN by)
+          (S
+            (VP
+              (VP (VBG donating)
+                (NP
+                  (NP ($ $)
+                    (QP ($ $) ($ $)))
+                  (PP (IN for)
+                    (NP
+                      (NP (DT the) (NNS families))
+                      (PP (IN of)
+                        (NP (NNS survivors)
+                          (CC and)
+                          (NN rescue) (NNS workers)))))
+                  (PRN (-LRB- -LRB-)
+                    (S
+                      (NP (NN mark) (JJ cuban))
+                      (VP (VBD gave)
+                        (NP
+                          (QP (DT a) (CD million))
+                          (NNS bucks))))
+                    (-RRB- -RRB-))))
+              (, ,)
+              (VP (VBG donating)
+                (NP
+                  (NP (NNS supplies))
+                  (CC &)
+                  (NP (NN blood)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, show-4)
+nsubj(show-4, others-1)
+aux(show-4, can-2)
+advmod(show-4, only-3)
+nmod:poss(support-6, their-5)
+dobj(show-4, support-6)
+mark(donating-8, by-7)
+advcl:by(show-4, donating-8)
+dep($-10, $-9)
+dobj(donating-8, $-10)
+nummod($-10, $-11)
+case(families-14, for-12)
+det(families-14, the-13)
+nmod:for($-10, families-14)
+case(survivors-16, of-15)
+nmod:of(families-14, survivors-16)
+cc(survivors-16, and-17)
+compound(workers-19, rescue-18)
+nmod:of(families-14, workers-19)
+conj:and(survivors-16, workers-19)
+punct(gave-23, -LRB--20)
+nsubj(gave-23, mark-21)
+amod(mark-21, cuban-22)
+dep($-10, gave-23)
+advmod(million-25, a-24)
+nummod(bucks-26, million-25)
+dobj(gave-23, bucks-26)
+punct(gave-23, -RRB--27)
+punct(donating-8, ,-28)
+dep(donating-8, donating-29)
+dobj(donating-29, supplies-30)
+cc(supplies-30, &-31)
+dobj(donating-29, blood-32)
+conj:&(supplies-30, blood-32)
+punct(show-4, .-33)
+
+Extracted the following NER entity mentions:
+$$$	MONEY
+cuban	NATIONALITY
+million	NUMBER
+
+Sentence #8 (22 tokens):
+people here were waiting up to 8 hrs just to donate
+blood....sheit, that means something in my book.
+
+Tokens:
+[Text=people CharacterOffsetBegin=694 CharacterOffsetEnd=700 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=here CharacterOffsetBegin=701 CharacterOffsetEnd=705 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=706 CharacterOffsetEnd=710 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=waiting CharacterOffsetBegin=711 CharacterOffsetEnd=718 PartOfSpeech=VBG Lemma=wait NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=719 CharacterOffsetEnd=721 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=722 CharacterOffsetEnd=724 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=8 CharacterOffsetBegin=725 CharacterOffsetEnd=726 PartOfSpeech=CD Lemma=8 NamedEntityTag=NUMBER NormalizedNamedEntityTag=<=8.0]
+[Text=hrs CharacterOffsetBegin=727 CharacterOffsetEnd=730 PartOfSpeech=NNS Lemma=hr NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=731 CharacterOffsetEnd=735 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=736 CharacterOffsetEnd=738 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=donate CharacterOffsetBegin=739 CharacterOffsetEnd=745 PartOfSpeech=VB Lemma=donate NamedEntityTag=O]
+[Text=blood CharacterOffsetBegin=746 CharacterOffsetEnd=751 PartOfSpeech=NN Lemma=blood NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=751 CharacterOffsetEnd=755 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=sheit CharacterOffsetBegin=755 CharacterOffsetEnd=760 PartOfSpeech=NN Lemma=sheit NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=760 CharacterOffsetEnd=761 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=762 CharacterOffsetEnd=766 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=means CharacterOffsetBegin=767 CharacterOffsetEnd=772 PartOfSpeech=VBZ Lemma=mean NamedEntityTag=O]
+[Text=something CharacterOffsetBegin=773 CharacterOffsetEnd=782 PartOfSpeech=NN Lemma=something NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=783 CharacterOffsetEnd=785 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=786 CharacterOffsetEnd=788 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=book CharacterOffsetBegin=789 CharacterOffsetEnd=793 PartOfSpeech=NN Lemma=book NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=793 CharacterOffsetEnd=794 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNS people))
+    (ADVP (RB here))
+    (VP (VBD were)
+      (VP (VBG waiting)
+        (PRT (RP up))
+        (PP (TO to)
+          (NP (CD 8) (NNS hrs)))
+        (S
+          (ADVP (RB just))
+          (VP (TO to)
+            (VP (VB donate)
+              (NP
+                (NP (NN blood))
+                (: ...)
+                (NP
+                  (NP (NN sheit))
+                  (, ,)
+                  (SBAR
+                    (WHNP (WDT that))
+                    (S
+                      (VP (VBZ means)
+                        (NP
+                          (NP (NN something))
+                          (PP (IN in)
+                            (NP (PRP$ my) (NN book))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, waiting-4)
+nsubj(waiting-4, people-1)
+nsubj:xsubj(donate-11, people-1)
+advmod(waiting-4, here-2)
+aux(waiting-4, were-3)
+compound:prt(waiting-4, up-5)
+case(hrs-8, to-6)
+nummod(hrs-8, 8-7)
+nmod:to(waiting-4, hrs-8)
+advmod(donate-11, just-9)
+mark(donate-11, to-10)
+xcomp(waiting-4, donate-11)
+dobj(donate-11, blood-12)
+punct(blood-12, ...-13)
+dep(blood-12, sheit-14)
+nsubj(means-17, sheit-14)
+punct(sheit-14, ,-15)
+ref(sheit-14, that-16)
+acl:relcl(sheit-14, means-17)
+dobj(means-17, something-18)
+case(book-21, in-19)
+nmod:poss(book-21, my-20)
+nmod:in(something-18, book-21)
+punct(waiting-4, .-22)
+
+Extracted the following NER entity mentions:
+8	NUMBER
+
+Sentence #9 (28 tokens):
+sure, we're fat and happy
+about an extended time of peace and prosperity....but i think the fat cat can
+still swing the bat.
+
+Tokens:
+[Text=sure CharacterOffsetBegin=796 CharacterOffsetEnd=800 PartOfSpeech=RB Lemma=sure NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=800 CharacterOffsetEnd=801 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=802 CharacterOffsetEnd=804 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text='re CharacterOffsetBegin=804 CharacterOffsetEnd=807 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=fat CharacterOffsetBegin=808 CharacterOffsetEnd=811 PartOfSpeech=JJ Lemma=fat NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=812 CharacterOffsetEnd=815 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=happy CharacterOffsetBegin=816 CharacterOffsetEnd=821 PartOfSpeech=JJ Lemma=happy NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=822 CharacterOffsetEnd=827 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=828 CharacterOffsetEnd=830 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=extended CharacterOffsetBegin=831 CharacterOffsetEnd=839 PartOfSpeech=JJ Lemma=extended NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=840 CharacterOffsetEnd=844 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=845 CharacterOffsetEnd=847 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=peace CharacterOffsetBegin=848 CharacterOffsetEnd=853 PartOfSpeech=NN Lemma=peace NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=854 CharacterOffsetEnd=857 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=prosperity CharacterOffsetBegin=858 CharacterOffsetEnd=868 PartOfSpeech=NN Lemma=prosperity NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=868 CharacterOffsetEnd=872 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=872 CharacterOffsetEnd=875 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=i CharacterOffsetBegin=876 CharacterOffsetEnd=877 PartOfSpeech=FW Lemma=i NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=878 CharacterOffsetEnd=883 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=884 CharacterOffsetEnd=887 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=fat CharacterOffsetBegin=888 CharacterOffsetEnd=891 PartOfSpeech=JJ Lemma=fat NamedEntityTag=O]
+[Text=cat CharacterOffsetBegin=892 CharacterOffsetEnd=895 PartOfSpeech=NN Lemma=cat NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=896 CharacterOffsetEnd=899 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=900 CharacterOffsetEnd=905 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=swing CharacterOffsetBegin=906 CharacterOffsetEnd=911 PartOfSpeech=VB Lemma=swing NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=912 CharacterOffsetEnd=915 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=bat CharacterOffsetBegin=916 CharacterOffsetEnd=919 PartOfSpeech=NN Lemma=bat NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=919 CharacterOffsetEnd=920 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (ADVP (RB sure))
+      (, ,)
+      (NP (PRP we))
+      (VP (VBP 're)
+        (ADJP (JJ fat)
+          (CC and)
+          (JJ happy))
+        (PP (IN about)
+          (NP
+            (NP (DT an) (JJ extended) (NN time))
+            (PP (IN of)
+              (NP (NN peace)
+                (CC and)
+                (NN prosperity)))))))
+    (: ...)
+    (CC but)
+    (S
+      (NP (FW i))
+      (VP (VBP think)
+        (SBAR
+          (S
+            (NP (DT the) (JJ fat) (NN cat))
+            (VP (MD can)
+              (ADVP (RB still))
+              (VP (VB swing)
+                (NP (DT the) (NN bat))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, fat-5)
+advmod(fat-5, sure-1)
+punct(fat-5, ,-2)
+nsubj(fat-5, we-3)
+nsubj(happy-7, we-3)
+cop(fat-5, 're-4)
+cc(fat-5, and-6)
+conj:and(fat-5, happy-7)
+case(time-11, about-8)
+det(time-11, an-9)
+amod(time-11, extended-10)
+nmod:about(fat-5, time-11)
+case(peace-13, of-12)
+nmod:of(time-11, peace-13)
+cc(peace-13, and-14)
+nmod:of(time-11, prosperity-15)
+conj:and(peace-13, prosperity-15)
+punct(fat-5, ...-16)
+cc(fat-5, but-17)
+nsubj(think-19, i-18)
+conj:but(fat-5, think-19)
+det(cat-22, the-20)
+amod(cat-22, fat-21)
+nsubj(swing-25, cat-22)
+aux(swing-25, can-23)
+advmod(swing-25, still-24)
+ccomp(think-19, swing-25)
+det(bat-27, the-26)
+dobj(swing-25, bat-27)
+punct(fat-5, .-28)
+
+Extracted the following NER entity mentions:
+
+Sentence #10 (24 tokens):
+just give it some time my european canine...give the
+texan a chance to lead and the people a chance to follow.
+
+Tokens:
+[Text=just CharacterOffsetBegin=922 CharacterOffsetEnd=926 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=give CharacterOffsetBegin=927 CharacterOffsetEnd=931 PartOfSpeech=VB Lemma=give NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=932 CharacterOffsetEnd=934 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=935 CharacterOffsetEnd=939 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=940 CharacterOffsetEnd=944 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=945 CharacterOffsetEnd=947 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=european CharacterOffsetBegin=948 CharacterOffsetEnd=956 PartOfSpeech=JJ Lemma=european NamedEntityTag=NATIONALITY]
+[Text=canine CharacterOffsetBegin=957 CharacterOffsetEnd=963 PartOfSpeech=NN Lemma=canine NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=963 CharacterOffsetEnd=966 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=give CharacterOffsetBegin=966 CharacterOffsetEnd=970 PartOfSpeech=VB Lemma=give NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=971 CharacterOffsetEnd=974 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=texan CharacterOffsetBegin=975 CharacterOffsetEnd=980 PartOfSpeech=NN Lemma=texan NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=981 CharacterOffsetEnd=982 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=chance CharacterOffsetBegin=983 CharacterOffsetEnd=989 PartOfSpeech=NN Lemma=chance NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=990 CharacterOffsetEnd=992 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=lead CharacterOffsetBegin=993 CharacterOffsetEnd=997 PartOfSpeech=VB Lemma=lead NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=998 CharacterOffsetEnd=1001 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1002 CharacterOffsetEnd=1005 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=1006 CharacterOffsetEnd=1012 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=1013 CharacterOffsetEnd=1014 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=chance CharacterOffsetBegin=1015 CharacterOffsetEnd=1021 PartOfSpeech=NN Lemma=chance NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1022 CharacterOffsetEnd=1024 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=follow CharacterOffsetBegin=1025 CharacterOffsetEnd=1031 PartOfSpeech=VB Lemma=follow NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1031 CharacterOffsetEnd=1032 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB just))
+    (VP (VB give)
+      (NP (PRP it))
+      (NP
+        (NP
+          (NP (DT some) (NN time))
+          (NP (PRP$ my) (JJ european) (NN canine)))
+        (: ...)
+        (S
+          (S
+            (VP (VB give)
+              (NP (DT the) (NN texan))
+              (NP (DT a) (NN chance)
+                (S
+                  (VP (TO to)
+                    (VP (VB lead)))))))
+          (CC and)
+          (S
+            (NP
+              (NP (DT the) (NNS people))
+              (NP (DT a) (NN chance)))
+            (VP (TO to)
+              (VP (VB follow)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, give-2)
+advmod(give-2, just-1)
+iobj(give-2, it-3)
+det(time-5, some-4)
+dobj(give-2, time-5)
+nmod:poss(canine-8, my-6)
+amod(canine-8, european-7)
+dep(time-5, canine-8)
+punct(time-5, ...-9)
+dep(time-5, give-10)
+det(texan-12, the-11)
+iobj(give-10, texan-12)
+det(chance-14, a-13)
+dobj(give-10, chance-14)
+mark(lead-16, to-15)
+acl:to(chance-14, lead-16)
+cc(give-10, and-17)
+det(people-19, the-18)
+nsubj(follow-23, people-19)
+det(chance-21, a-20)
+dep(people-19, chance-21)
+mark(follow-23, to-22)
+dep(time-5, follow-23)
+conj:and(give-10, follow-23)
+punct(give-2, .-24)
+
+Extracted the following NER entity mentions:
+european	NATIONALITY
+
+Sentence #11 (16 tokens):
+after all, that
+dude leading us be from the RIGHT side of POLITIX
+FREAK NASTY
+
+Tokens:
+[Text=after CharacterOffsetBegin=1034 CharacterOffsetEnd=1039 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=1040 CharacterOffsetEnd=1043 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1043 CharacterOffsetEnd=1044 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=1045 CharacterOffsetEnd=1049 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=dude CharacterOffsetBegin=1050 CharacterOffsetEnd=1054 PartOfSpeech=NN Lemma=dude NamedEntityTag=O]
+[Text=leading CharacterOffsetBegin=1055 CharacterOffsetEnd=1062 PartOfSpeech=VBG Lemma=lead NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=1063 CharacterOffsetEnd=1065 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=1066 CharacterOffsetEnd=1068 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=1069 CharacterOffsetEnd=1073 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1074 CharacterOffsetEnd=1077 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=RIGHT CharacterOffsetBegin=1078 CharacterOffsetEnd=1083 PartOfSpeech=NNP Lemma=RIGHT NamedEntityTag=O]
+[Text=side CharacterOffsetBegin=1084 CharacterOffsetEnd=1088 PartOfSpeech=NN Lemma=side NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=1089 CharacterOffsetEnd=1091 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=POLITIX CharacterOffsetBegin=1092 CharacterOffsetEnd=1099 PartOfSpeech=NNP Lemma=POLITIX NamedEntityTag=O]
+[Text=FREAK CharacterOffsetBegin=1100 CharacterOffsetEnd=1105 PartOfSpeech=NNP Lemma=FREAK NamedEntityTag=O]
+[Text=NASTY CharacterOffsetBegin=1106 CharacterOffsetEnd=1111 PartOfSpeech=NNP Lemma=NASTY NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (PP (IN after)
+    (NP
+      (NP (DT all))
+      (, ,)
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (NN dude))
+            (VP (VBG leading)
+              (NP (PRP us))))
+          (VP (VB be)
+            (PP (IN from)
+              (NP
+                (NP (DT the) (NNP RIGHT) (NN side))
+                (PP (IN of)
+                  (NP (NNP POLITIX) (NNP FREAK) (NNP NASTY)))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, all-2)
+case(all-2, after-1)
+punct(all-2, ,-3)
+mark(side-12, that-4)
+nsubj(side-12, dude-5)
+acl(dude-5, leading-6)
+dobj(leading-6, us-7)
+cop(side-12, be-8)
+case(side-12, from-9)
+det(side-12, the-10)
+compound(side-12, RIGHT-11)
+dep(all-2, side-12)
+case(NASTY-16, of-13)
+compound(NASTY-16, POLITIX-14)
+compound(NASTY-16, FREAK-15)
+nmod:of(side-12, NASTY-16)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(1,5,[4,6]) -> (1,2,[1,3]), that is: "a poodle" -> "a poodle"
+
+Coreference set:
+	(2,12,[12,22]) -> (7,6,[5,7]), that is: "support , pride , and love of one 's country" -> "their support"
+
+Coreference set:
+	(4,1,[1,2]) -> (3,7,[3,8]), that is: "he" -> "my 72 yrs old papa"
+	(4,3,[3,4]) -> (3,7,[3,8]), that is: "he" -> "my 72 yrs old papa"
+
+Coreference set:
+	(8,20,[20,21]) -> (3,3,[3,4]), that is: "my" -> "my"
+	(9,18,[18,19]) -> (3,3,[3,4]), that is: "i" -> "my"
+	(10,6,[6,7]) -> (3,3,[3,4]), that is: "my" -> "my"
+
+Coreference set:
+	(3,22,[22,23]) -> (3,19,[19,20]), that is: "them" -> "terrorist"
+
+Coreference set:
+	(5,2,[1,3]) -> (5,20,[18,26]), that is: "just bc" -> "the ONLY thing you 're willing to do"
+	(5,16,[16,17]) -> (5,20,[18,26]), that is: "that" -> "the ONLY thing you 're willing to do"
+
+Coreference set:
+	(7,5,[5,6]) -> (7,1,[1,2]), that is: "their" -> "others"
+
+Coreference set:
+	(11,7,[7,8]) -> (9,3,[3,4]), that is: "us" -> "we"
+
+Coreference set:
+	(10,3,[3,4]) -> (9,11,[9,16]), that is: "it" -> "an extended time of peace and prosperity"

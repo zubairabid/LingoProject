@@ -1,0 +1,195 @@
+Document: ID=125464.in (4 sentences, 44 tokens)
+
+Sentence #1 (5 tokens):
+Thanks for the update.
+
+Tokens:
+[Text=Thanks CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNS Lemma=thanks NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=update CharacterOffsetBegin=15 CharacterOffsetEnd=21 PartOfSpeech=VBP Lemma=update NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNS Thanks))
+      (PP (IN for)
+        (NP (DT the))))
+    (VP (VBP update))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, update-4)
+nsubj(update-4, Thanks-1)
+case(the-3, for-2)
+nmod:for(Thanks-1, the-3)
+punct(update-4, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (19 tokens):
+The cancelllation notice is important because Enron
+Fuels International then has to cancel their supply agreement with Nicor.
+
+Tokens:
+[Text=The CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=cancelllation CharacterOffsetBegin=27 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=cancelllation NamedEntityTag=O]
+[Text=notice CharacterOffsetBegin=41 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=notice NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=important CharacterOffsetBegin=51 CharacterOffsetEnd=60 PartOfSpeech=JJ Lemma=important NamedEntityTag=O]
+[Text=because CharacterOffsetBegin=61 CharacterOffsetEnd=68 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=69 CharacterOffsetEnd=74 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=Fuels CharacterOffsetBegin=75 CharacterOffsetEnd=80 PartOfSpeech=NNP Lemma=Fuels NamedEntityTag=ORGANIZATION]
+[Text=International CharacterOffsetBegin=81 CharacterOffsetEnd=94 PartOfSpeech=NNP Lemma=International NamedEntityTag=ORGANIZATION]
+[Text=then CharacterOffsetBegin=95 CharacterOffsetEnd=99 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=100 CharacterOffsetEnd=103 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=104 CharacterOffsetEnd=106 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=cancel CharacterOffsetBegin=107 CharacterOffsetEnd=113 PartOfSpeech=VB Lemma=cancel NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=114 CharacterOffsetEnd=119 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=supply CharacterOffsetBegin=120 CharacterOffsetEnd=126 PartOfSpeech=NN Lemma=supply NamedEntityTag=O]
+[Text=agreement CharacterOffsetBegin=127 CharacterOffsetEnd=136 PartOfSpeech=NN Lemma=agreement NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=137 CharacterOffsetEnd=141 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Nicor CharacterOffsetBegin=142 CharacterOffsetEnd=147 PartOfSpeech=NNP Lemma=Nicor NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=147 CharacterOffsetEnd=148 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN cancelllation) (NN notice))
+    (VP (VBZ is)
+      (ADJP (JJ important))
+      (SBAR (IN because)
+        (S
+          (NP (NNP Enron) (NNP Fuels) (NNP International))
+          (ADVP (RB then))
+          (VP (VBZ has)
+            (S
+              (VP (TO to)
+                (VP (VB cancel)
+                  (NP (PRP$ their) (NN supply) (NN agreement))
+                  (PP (IN with)
+                    (NP (NNP Nicor))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, important-5)
+det(notice-3, The-1)
+compound(notice-3, cancelllation-2)
+nsubj(important-5, notice-3)
+cop(important-5, is-4)
+mark(has-11, because-6)
+compound(International-9, Enron-7)
+compound(International-9, Fuels-8)
+nsubj(has-11, International-9)
+nsubj:xsubj(cancel-13, International-9)
+advmod(has-11, then-10)
+advcl:because(important-5, has-11)
+mark(cancel-13, to-12)
+xcomp(has-11, cancel-13)
+nmod:poss(agreement-16, their-14)
+compound(agreement-16, supply-15)
+dobj(cancel-13, agreement-16)
+case(Nicor-18, with-17)
+nmod:with(cancel-13, Nicor-18)
+punct(important-5, .-19)
+
+Extracted the following NER entity mentions:
+Enron Fuels International	ORGANIZATION
+Nicor	ORGANIZATION
+
+Sentence #3 (11 tokens):
+HMPC stills owes EFI $68,695.76 for fuel related invoices.
+
+Tokens:
+[Text=HMPC CharacterOffsetBegin=149 CharacterOffsetEnd=153 PartOfSpeech=NN Lemma=hmpc NamedEntityTag=ORGANIZATION]
+[Text=stills CharacterOffsetBegin=154 CharacterOffsetEnd=160 PartOfSpeech=NNS Lemma=still NamedEntityTag=O]
+[Text=owes CharacterOffsetBegin=161 CharacterOffsetEnd=165 PartOfSpeech=VBZ Lemma=owe NamedEntityTag=O]
+[Text=EFI CharacterOffsetBegin=166 CharacterOffsetEnd=169 PartOfSpeech=NNP Lemma=EFI NamedEntityTag=ORGANIZATION]
+[Text=$ CharacterOffsetBegin=170 CharacterOffsetEnd=171 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$68695.76]
+[Text=68,695.76 CharacterOffsetBegin=171 CharacterOffsetEnd=180 PartOfSpeech=CD Lemma=68,695.76 NamedEntityTag=MONEY NormalizedNamedEntityTag=$68695.76]
+[Text=for CharacterOffsetBegin=181 CharacterOffsetEnd=184 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=fuel CharacterOffsetBegin=185 CharacterOffsetEnd=189 PartOfSpeech=NN Lemma=fuel NamedEntityTag=O]
+[Text=related CharacterOffsetBegin=190 CharacterOffsetEnd=197 PartOfSpeech=JJ Lemma=related NamedEntityTag=O]
+[Text=invoices CharacterOffsetBegin=198 CharacterOffsetEnd=206 PartOfSpeech=NNS Lemma=invoice NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=206 CharacterOffsetEnd=207 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN HMPC) (NNS stills))
+    (VP (VBZ owes)
+      (NP (NNP EFI))
+      (NP
+        (NP ($ $) (CD 68,695.76))
+        (PP (IN for)
+          (NP (NN fuel) (JJ related) (NNS invoices)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, owes-3)
+compound(stills-2, HMPC-1)
+nsubj(owes-3, stills-2)
+iobj(owes-3, EFI-4)
+dep(68,695.76-6, $-5)
+dobj(owes-3, 68,695.76-6)
+case(invoices-10, for-7)
+compound(invoices-10, fuel-8)
+amod(invoices-10, related-9)
+nmod:for(68,695.76-6, invoices-10)
+punct(owes-3, .-11)
+
+Extracted the following NER entity mentions:
+HMPC	ORGANIZATION
+EFI	ORGANIZATION
+$68,695.76	MONEY
+
+Sentence #4 (9 tokens):
+Whom should we
+direct the final billing to?
+
+Tokens:
+[Text=Whom CharacterOffsetBegin=208 CharacterOffsetEnd=212 PartOfSpeech=WP Lemma=whom NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=213 CharacterOffsetEnd=219 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=220 CharacterOffsetEnd=222 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=direct CharacterOffsetBegin=223 CharacterOffsetEnd=229 PartOfSpeech=VB Lemma=direct NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=230 CharacterOffsetEnd=233 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=final CharacterOffsetBegin=234 CharacterOffsetEnd=239 PartOfSpeech=JJ Lemma=final NamedEntityTag=O]
+[Text=billing CharacterOffsetBegin=240 CharacterOffsetEnd=247 PartOfSpeech=NN Lemma=billing NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=248 CharacterOffsetEnd=250 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=250 CharacterOffsetEnd=251 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP (WP Whom))
+    (SQ (MD should)
+      (NP (PRP we))
+      (VP (VB direct)
+        (NP (DT the) (JJ final) (NN billing))
+        (PP (TO to))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, direct-4)
+dep(direct-4, Whom-1)
+aux(direct-4, should-2)
+nsubj(direct-4, we-3)
+det(billing-7, the-5)
+amod(billing-7, final-6)
+dobj(direct-4, billing-7)
+nmod(direct-4, to-8)
+punct(direct-4, ?-9)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(2,14,[14,15]) -> (1,3,[3,4]), that is: "their" -> "the"
+
+Coreference set:
+	(3,4,[4,5]) -> (2,9,[7,10]), that is: "EFI" -> "Enron Fuels International"

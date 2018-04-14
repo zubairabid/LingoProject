@@ -1,0 +1,869 @@
+Document: ID=1267709.in (11 sentences, 225 tokens)
+
+Sentence #1 (2 tokens):
+Hello.
+
+Tokens:
+[Text=Hello CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=UH Lemma=hello NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (INTJ (UH Hello) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Hello-1)
+punct(Hello-1, .-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (18 tokens):
+This notice is being sent to all trained fire wardens I have listed at Enron Center North.
+
+Tokens:
+[Text=This CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=notice CharacterOffsetBegin=13 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=notice NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=23 CharacterOffsetEnd=28 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=sent CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=VBN Lemma=send NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=trained CharacterOffsetBegin=41 CharacterOffsetEnd=48 PartOfSpeech=JJ Lemma=trained NamedEntityTag=O]
+[Text=fire CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=fire NamedEntityTag=CAUSE_OF_DEATH]
+[Text=wardens CharacterOffsetBegin=54 CharacterOffsetEnd=61 PartOfSpeech=NNS Lemma=warden NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=64 CharacterOffsetEnd=68 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=listed CharacterOffsetBegin=69 CharacterOffsetEnd=75 PartOfSpeech=VBN Lemma=list NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=76 CharacterOffsetEnd=78 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=79 CharacterOffsetEnd=84 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=Center CharacterOffsetBegin=85 CharacterOffsetEnd=91 PartOfSpeech=NNP Lemma=Center NamedEntityTag=ORGANIZATION]
+[Text=North CharacterOffsetBegin=92 CharacterOffsetEnd=97 PartOfSpeech=NNP Lemma=North NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=97 CharacterOffsetEnd=98 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This) (NN notice))
+    (VP (VBZ is)
+      (VP (VBG being)
+        (VP (VBN sent)
+          (S
+            (VP (TO to)
+              (VP
+                (ADVP (DT all))
+                (JJ trained)
+                (NP (NN fire) (NNS wardens))
+                (SBAR
+                  (S
+                    (NP (PRP I))
+                    (VP (VBP have)
+                      (VP (VBN listed)
+                        (PP (IN at)
+                          (NP (NNP Enron) (NNP Center) (NNP North)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, sent-5)
+det(notice-2, This-1)
+nsubjpass(sent-5, notice-2)
+nsubj:xsubj(trained-8, notice-2)
+aux(sent-5, is-3)
+auxpass(sent-5, being-4)
+mark(trained-8, to-6)
+advmod(trained-8, all-7)
+xcomp(sent-5, trained-8)
+compound(wardens-10, fire-9)
+dobj(trained-8, wardens-10)
+nsubj(listed-13, I-11)
+aux(listed-13, have-12)
+dep(trained-8, listed-13)
+case(North-17, at-14)
+compound(North-17, Enron-15)
+compound(North-17, Center-16)
+nmod:at(listed-13, North-17)
+punct(sent-5, .-18)
+
+Extracted the following NER entity mentions:
+fire	CAUSE_OF_DEATH
+Enron Center North	ORGANIZATION
+
+Sentence #3 (30 tokens):
+As you may know, each year the Houston Fire Department reviews every high rise building to make sure they are in compliance with the Houston city fire code.
+
+Tokens:
+[Text=As CharacterOffsetBegin=100 CharacterOffsetEnd=102 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=103 CharacterOffsetEnd=106 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=may CharacterOffsetBegin=107 CharacterOffsetEnd=110 PartOfSpeech=MD Lemma=may NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=111 CharacterOffsetEnd=115 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=115 CharacterOffsetEnd=116 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=each CharacterOffsetBegin=117 CharacterOffsetEnd=121 PartOfSpeech=DT Lemma=each NamedEntityTag=O]
+[Text=year CharacterOffsetBegin=122 CharacterOffsetEnd=126 PartOfSpeech=NN Lemma=year NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=127 CharacterOffsetEnd=130 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Houston CharacterOffsetBegin=131 CharacterOffsetEnd=138 PartOfSpeech=NNP Lemma=Houston NamedEntityTag=ORGANIZATION]
+[Text=Fire CharacterOffsetBegin=139 CharacterOffsetEnd=143 PartOfSpeech=NNP Lemma=Fire NamedEntityTag=ORGANIZATION]
+[Text=Department CharacterOffsetBegin=144 CharacterOffsetEnd=154 PartOfSpeech=NNP Lemma=Department NamedEntityTag=ORGANIZATION]
+[Text=reviews CharacterOffsetBegin=155 CharacterOffsetEnd=162 PartOfSpeech=VBZ Lemma=review NamedEntityTag=O]
+[Text=every CharacterOffsetBegin=163 CharacterOffsetEnd=168 PartOfSpeech=DT Lemma=every NamedEntityTag=O]
+[Text=high CharacterOffsetBegin=169 CharacterOffsetEnd=173 PartOfSpeech=JJ Lemma=high NamedEntityTag=O]
+[Text=rise CharacterOffsetBegin=174 CharacterOffsetEnd=178 PartOfSpeech=NN Lemma=rise NamedEntityTag=O]
+[Text=building CharacterOffsetBegin=179 CharacterOffsetEnd=187 PartOfSpeech=NN Lemma=building NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=188 CharacterOffsetEnd=190 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=191 CharacterOffsetEnd=195 PartOfSpeech=VB Lemma=make NamedEntityTag=O]
+[Text=sure CharacterOffsetBegin=196 CharacterOffsetEnd=200 PartOfSpeech=JJ Lemma=sure NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=201 CharacterOffsetEnd=205 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=206 CharacterOffsetEnd=209 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=210 CharacterOffsetEnd=212 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=compliance CharacterOffsetBegin=213 CharacterOffsetEnd=223 PartOfSpeech=NN Lemma=compliance NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=224 CharacterOffsetEnd=228 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=229 CharacterOffsetEnd=232 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Houston CharacterOffsetBegin=233 CharacterOffsetEnd=240 PartOfSpeech=NNP Lemma=Houston NamedEntityTag=CITY]
+[Text=city CharacterOffsetBegin=241 CharacterOffsetEnd=245 PartOfSpeech=NN Lemma=city NamedEntityTag=O]
+[Text=fire CharacterOffsetBegin=246 CharacterOffsetEnd=250 PartOfSpeech=NN Lemma=fire NamedEntityTag=CAUSE_OF_DEATH]
+[Text=code CharacterOffsetBegin=251 CharacterOffsetEnd=255 PartOfSpeech=NN Lemma=code NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=255 CharacterOffsetEnd=256 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (PRP you))
+        (VP (MD may)
+          (VP (VB know)))))
+    (, ,)
+    (NP-TMP (DT each) (NN year))
+    (NP (DT the) (NNP Houston) (NNP Fire) (NNP Department))
+    (VP (VBZ reviews)
+      (NP (DT every) (JJ high) (NN rise) (NN building))
+      (S
+        (VP (TO to)
+          (VP (VB make)
+            (ADJP (JJ sure)
+              (SBAR
+                (S
+                  (NP (PRP they))
+                  (VP (VBP are)
+                    (PP (IN in)
+                      (NP
+                        (NP (NN compliance))
+                        (PP (IN with)
+                          (NP (DT the) (NNP Houston) (NN city) (NN fire) (NN code)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, reviews-12)
+mark(know-4, As-1)
+nsubj(know-4, you-2)
+aux(know-4, may-3)
+advcl:as(reviews-12, know-4)
+punct(reviews-12, ,-5)
+det(year-7, each-6)
+nmod:tmod(reviews-12, year-7)
+det(Department-11, the-8)
+compound(Department-11, Houston-9)
+compound(Department-11, Fire-10)
+nsubj(reviews-12, Department-11)
+det(building-16, every-13)
+amod(building-16, high-14)
+compound(building-16, rise-15)
+dobj(reviews-12, building-16)
+mark(make-18, to-17)
+advcl:to(reviews-12, make-18)
+xcomp(make-18, sure-19)
+nsubj(compliance-23, they-20)
+cop(compliance-23, are-21)
+case(compliance-23, in-22)
+ccomp(sure-19, compliance-23)
+case(code-29, with-24)
+det(code-29, the-25)
+compound(code-29, Houston-26)
+compound(code-29, city-27)
+compound(code-29, fire-28)
+nmod:with(compliance-23, code-29)
+punct(reviews-12, .-30)
+
+Extracted the following NER entity mentions:
+Houston Fire Department	ORGANIZATION
+Houston	CITY
+fire	CAUSE_OF_DEATH
+
+Sentence #4 (47 tokens):
+As part of that process, it is required by law that Enron maintain accurate records of all trained fire wardens as well as keep an ongoing list of any persons with a mobility impairment who may require special assistance during a fire drill or evacuation.
+
+Tokens:
+[Text=As CharacterOffsetBegin=258 CharacterOffsetEnd=260 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=part CharacterOffsetBegin=261 CharacterOffsetEnd=265 PartOfSpeech=NN Lemma=part NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=266 CharacterOffsetEnd=268 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=269 CharacterOffsetEnd=273 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=process CharacterOffsetBegin=274 CharacterOffsetEnd=281 PartOfSpeech=NN Lemma=process NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=281 CharacterOffsetEnd=282 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=283 CharacterOffsetEnd=285 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=286 CharacterOffsetEnd=288 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=required CharacterOffsetBegin=289 CharacterOffsetEnd=297 PartOfSpeech=VBN Lemma=require NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=298 CharacterOffsetEnd=300 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=law CharacterOffsetBegin=301 CharacterOffsetEnd=304 PartOfSpeech=NN Lemma=law NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=305 CharacterOffsetEnd=309 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=310 CharacterOffsetEnd=315 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=maintain CharacterOffsetBegin=316 CharacterOffsetEnd=324 PartOfSpeech=VBP Lemma=maintain NamedEntityTag=O]
+[Text=accurate CharacterOffsetBegin=325 CharacterOffsetEnd=333 PartOfSpeech=JJ Lemma=accurate NamedEntityTag=O]
+[Text=records CharacterOffsetBegin=334 CharacterOffsetEnd=341 PartOfSpeech=NNS Lemma=record NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=342 CharacterOffsetEnd=344 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=345 CharacterOffsetEnd=348 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=trained CharacterOffsetBegin=349 CharacterOffsetEnd=356 PartOfSpeech=JJ Lemma=trained NamedEntityTag=O]
+[Text=fire CharacterOffsetBegin=357 CharacterOffsetEnd=361 PartOfSpeech=NN Lemma=fire NamedEntityTag=CAUSE_OF_DEATH]
+[Text=wardens CharacterOffsetBegin=362 CharacterOffsetEnd=369 PartOfSpeech=NNS Lemma=warden NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=370 CharacterOffsetEnd=372 PartOfSpeech=RB Lemma=as NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=373 CharacterOffsetEnd=377 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=378 CharacterOffsetEnd=380 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=keep CharacterOffsetBegin=381 CharacterOffsetEnd=385 PartOfSpeech=VB Lemma=keep NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=386 CharacterOffsetEnd=388 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=ongoing CharacterOffsetBegin=389 CharacterOffsetEnd=396 PartOfSpeech=JJ Lemma=ongoing NamedEntityTag=O]
+[Text=list CharacterOffsetBegin=397 CharacterOffsetEnd=401 PartOfSpeech=NN Lemma=list NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=402 CharacterOffsetEnd=404 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=405 CharacterOffsetEnd=408 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=persons CharacterOffsetBegin=409 CharacterOffsetEnd=416 PartOfSpeech=NNS Lemma=person NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=417 CharacterOffsetEnd=421 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=422 CharacterOffsetEnd=423 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=mobility CharacterOffsetBegin=424 CharacterOffsetEnd=432 PartOfSpeech=NN Lemma=mobility NamedEntityTag=O]
+[Text=impairment CharacterOffsetBegin=433 CharacterOffsetEnd=443 PartOfSpeech=NN Lemma=impairment NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=444 CharacterOffsetEnd=447 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=may CharacterOffsetBegin=448 CharacterOffsetEnd=451 PartOfSpeech=MD Lemma=may NamedEntityTag=O]
+[Text=require CharacterOffsetBegin=452 CharacterOffsetEnd=459 PartOfSpeech=VB Lemma=require NamedEntityTag=O]
+[Text=special CharacterOffsetBegin=460 CharacterOffsetEnd=467 PartOfSpeech=JJ Lemma=special NamedEntityTag=O]
+[Text=assistance CharacterOffsetBegin=468 CharacterOffsetEnd=478 PartOfSpeech=NN Lemma=assistance NamedEntityTag=O]
+[Text=during CharacterOffsetBegin=479 CharacterOffsetEnd=485 PartOfSpeech=IN Lemma=during NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=486 CharacterOffsetEnd=487 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=fire CharacterOffsetBegin=488 CharacterOffsetEnd=492 PartOfSpeech=NN Lemma=fire NamedEntityTag=CAUSE_OF_DEATH]
+[Text=drill CharacterOffsetBegin=493 CharacterOffsetEnd=498 PartOfSpeech=NN Lemma=drill NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=499 CharacterOffsetEnd=501 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=evacuation CharacterOffsetBegin=502 CharacterOffsetEnd=512 PartOfSpeech=NN Lemma=evacuation NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=512 CharacterOffsetEnd=513 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN As)
+      (NP
+        (NP (NN part))
+        (PP (IN of)
+          (NP (DT that) (NN process)))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ is)
+      (VP (VBN required)
+        (PP (IN by)
+          (NP (NN law)))
+        (SBAR (IN that)
+          (S
+            (NP (NNP Enron))
+            (VP
+              (VP (VBP maintain)
+                (NP
+                  (NP
+                    (ADJP (JJ accurate))
+                    (NNS records))
+                  (PP (IN of)
+                    (NP
+                      (ADJP (DT all) (JJ trained))
+                      (NN fire) (NNS wardens)))))
+              (CONJP (RB as) (RB well) (IN as))
+              (VP (VB keep)
+                (NP
+                  (NP (DT an) (JJ ongoing) (NN list))
+                  (PP (IN of)
+                    (NP (DT any) (NNS persons))))
+                (PP (IN with)
+                  (NP
+                    (NP (DT a) (NN mobility) (NN impairment))
+                    (SBAR
+                      (WHNP (WP who))
+                      (S
+                        (VP (MD may)
+                          (VP (VB require)
+                            (NP (JJ special) (NN assistance))
+                            (PP (IN during)
+                              (NP
+                                (NP (DT a) (NN fire) (NN drill))
+                                (CC or)
+                                (NP (NN evacuation))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, required-9)
+case(part-2, As-1)
+nmod:as(required-9, part-2)
+case(process-5, of-3)
+det(process-5, that-4)
+nmod:of(part-2, process-5)
+punct(required-9, ,-6)
+nsubjpass(required-9, it-7)
+auxpass(required-9, is-8)
+case(law-11, by-10)
+nmod:agent(required-9, law-11)
+mark(maintain-14, that-12)
+nsubj(maintain-14, Enron-13)
+nsubj(keep-25, Enron-13)
+ccomp(required-9, maintain-14)
+amod(records-16, accurate-15)
+dobj(maintain-14, records-16)
+case(wardens-21, of-17)
+det(trained-19, all-18)
+amod(wardens-21, trained-19)
+compound(wardens-21, fire-20)
+nmod:of(records-16, wardens-21)
+cc(maintain-14, as-22)
+mwe(as-22, well-23)
+mwe(as-22, as-24)
+ccomp(required-9, keep-25)
+conj:and(maintain-14, keep-25)
+det(list-28, an-26)
+amod(list-28, ongoing-27)
+dobj(keep-25, list-28)
+case(persons-31, of-29)
+det(persons-31, any-30)
+nmod:of(list-28, persons-31)
+case(impairment-35, with-32)
+det(impairment-35, a-33)
+compound(impairment-35, mobility-34)
+nmod:with(keep-25, impairment-35)
+nsubj(require-38, impairment-35)
+ref(impairment-35, who-36)
+aux(require-38, may-37)
+acl:relcl(impairment-35, require-38)
+amod(assistance-40, special-39)
+dobj(require-38, assistance-40)
+case(drill-44, during-41)
+det(drill-44, a-42)
+compound(drill-44, fire-43)
+nmod:during(require-38, drill-44)
+cc(drill-44, or-45)
+nmod:during(require-38, evacuation-46)
+conj:or(drill-44, evacuation-46)
+punct(required-9, .-47)
+
+Extracted the following NER entity mentions:
+Enron	ORGANIZATION
+fire	CAUSE_OF_DEATH
+fire	CAUSE_OF_DEATH
+
+Sentence #5 (13 tokens):
+A fire drill will occur at Enron on or before December 1st.
+
+Tokens:
+[Text=A CharacterOffsetBegin=515 CharacterOffsetEnd=516 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=fire CharacterOffsetBegin=517 CharacterOffsetEnd=521 PartOfSpeech=NN Lemma=fire NamedEntityTag=CAUSE_OF_DEATH]
+[Text=drill CharacterOffsetBegin=522 CharacterOffsetEnd=527 PartOfSpeech=NN Lemma=drill NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=528 CharacterOffsetEnd=532 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=occur CharacterOffsetBegin=533 CharacterOffsetEnd=538 PartOfSpeech=VB Lemma=occur NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=539 CharacterOffsetEnd=541 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=542 CharacterOffsetEnd=547 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=on CharacterOffsetBegin=548 CharacterOffsetEnd=550 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=551 CharacterOffsetEnd=553 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=before CharacterOffsetBegin=554 CharacterOffsetEnd=560 PartOfSpeech=IN Lemma=before NamedEntityTag=O]
+[Text=December CharacterOffsetBegin=561 CharacterOffsetEnd=569 PartOfSpeech=NNP Lemma=December NamedEntityTag=DATE NormalizedNamedEntityTag=****1201]
+[Text=1st CharacterOffsetBegin=570 CharacterOffsetEnd=573 PartOfSpeech=CD Lemma=1st NamedEntityTag=DATE NormalizedNamedEntityTag=****1201]
+[Text=. CharacterOffsetBegin=573 CharacterOffsetEnd=574 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT A) (NN fire) (NN drill))
+    (VP (MD will)
+      (VP (VB occur)
+        (PP (IN at)
+          (NP (NNP Enron)))
+        (PP (IN on)
+          (CC or)
+          (IN before)
+          (NP (NNP December) (CD 1st)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, occur-5)
+det(drill-3, A-1)
+compound(drill-3, fire-2)
+nsubj(occur-5, drill-3)
+nsubj(occur-5', drill-3)
+aux(occur-5, will-4)
+conj:or(occur-5, occur-5')
+case(Enron-7, at-6)
+nmod:at(occur-5, Enron-7)
+case(December-11, on-8)
+cc(on-8, or-9)
+conj:or(on-8, before-10)
+nmod:on(occur-5, December-11)
+nmod:before(occur-5', December-11)
+nummod(December-11, 1st-12)
+punct(occur-5, .-13)
+
+Extracted the following NER entity mentions:
+fire	CAUSE_OF_DEATH
+Enron	ORGANIZATION
+December 1st	DATE
+
+Sentence #6 (49 tokens):
+Therefore, as trained fire wardens on your respective floors, if you know of anyone who may require special assistance during an actual fire drill or building evacuation, please forward there names to me so that I may obtain their contact information to maintain on file.
+
+Tokens:
+[Text=Therefore CharacterOffsetBegin=576 CharacterOffsetEnd=585 PartOfSpeech=RB Lemma=therefore NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=585 CharacterOffsetEnd=586 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=587 CharacterOffsetEnd=589 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=trained CharacterOffsetBegin=590 CharacterOffsetEnd=597 PartOfSpeech=JJ Lemma=trained NamedEntityTag=O]
+[Text=fire CharacterOffsetBegin=598 CharacterOffsetEnd=602 PartOfSpeech=NN Lemma=fire NamedEntityTag=CAUSE_OF_DEATH]
+[Text=wardens CharacterOffsetBegin=603 CharacterOffsetEnd=610 PartOfSpeech=NNS Lemma=warden NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=611 CharacterOffsetEnd=613 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=614 CharacterOffsetEnd=618 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=respective CharacterOffsetBegin=619 CharacterOffsetEnd=629 PartOfSpeech=JJ Lemma=respective NamedEntityTag=O]
+[Text=floors CharacterOffsetBegin=630 CharacterOffsetEnd=636 PartOfSpeech=NNS Lemma=floor NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=636 CharacterOffsetEnd=637 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=638 CharacterOffsetEnd=640 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=641 CharacterOffsetEnd=644 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=645 CharacterOffsetEnd=649 PartOfSpeech=VBP Lemma=know NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=650 CharacterOffsetEnd=652 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=anyone CharacterOffsetBegin=653 CharacterOffsetEnd=659 PartOfSpeech=NN Lemma=anyone NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=660 CharacterOffsetEnd=663 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=may CharacterOffsetBegin=664 CharacterOffsetEnd=667 PartOfSpeech=MD Lemma=may NamedEntityTag=O]
+[Text=require CharacterOffsetBegin=668 CharacterOffsetEnd=675 PartOfSpeech=VB Lemma=require NamedEntityTag=O]
+[Text=special CharacterOffsetBegin=676 CharacterOffsetEnd=683 PartOfSpeech=JJ Lemma=special NamedEntityTag=O]
+[Text=assistance CharacterOffsetBegin=684 CharacterOffsetEnd=694 PartOfSpeech=NN Lemma=assistance NamedEntityTag=O]
+[Text=during CharacterOffsetBegin=695 CharacterOffsetEnd=701 PartOfSpeech=IN Lemma=during NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=702 CharacterOffsetEnd=704 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=actual CharacterOffsetBegin=705 CharacterOffsetEnd=711 PartOfSpeech=JJ Lemma=actual NamedEntityTag=O]
+[Text=fire CharacterOffsetBegin=712 CharacterOffsetEnd=716 PartOfSpeech=NN Lemma=fire NamedEntityTag=CAUSE_OF_DEATH]
+[Text=drill CharacterOffsetBegin=717 CharacterOffsetEnd=722 PartOfSpeech=NN Lemma=drill NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=723 CharacterOffsetEnd=725 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=building CharacterOffsetBegin=726 CharacterOffsetEnd=734 PartOfSpeech=NN Lemma=building NamedEntityTag=O]
+[Text=evacuation CharacterOffsetBegin=735 CharacterOffsetEnd=745 PartOfSpeech=NN Lemma=evacuation NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=745 CharacterOffsetEnd=746 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=please CharacterOffsetBegin=747 CharacterOffsetEnd=753 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=forward CharacterOffsetBegin=754 CharacterOffsetEnd=761 PartOfSpeech=RB Lemma=forward NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=762 CharacterOffsetEnd=767 PartOfSpeech=RB Lemma=there NamedEntityTag=O]
+[Text=names CharacterOffsetBegin=768 CharacterOffsetEnd=773 PartOfSpeech=NNS Lemma=name NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=774 CharacterOffsetEnd=776 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=777 CharacterOffsetEnd=779 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=780 CharacterOffsetEnd=782 PartOfSpeech=IN Lemma=so NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=783 CharacterOffsetEnd=787 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=788 CharacterOffsetEnd=789 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=may CharacterOffsetBegin=790 CharacterOffsetEnd=793 PartOfSpeech=MD Lemma=may NamedEntityTag=O]
+[Text=obtain CharacterOffsetBegin=794 CharacterOffsetEnd=800 PartOfSpeech=VB Lemma=obtain NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=801 CharacterOffsetEnd=806 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=contact CharacterOffsetBegin=807 CharacterOffsetEnd=814 PartOfSpeech=NN Lemma=contact NamedEntityTag=O]
+[Text=information CharacterOffsetBegin=815 CharacterOffsetEnd=826 PartOfSpeech=NN Lemma=information NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=827 CharacterOffsetEnd=829 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=maintain CharacterOffsetBegin=830 CharacterOffsetEnd=838 PartOfSpeech=VB Lemma=maintain NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=839 CharacterOffsetEnd=841 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=file CharacterOffsetBegin=842 CharacterOffsetEnd=846 PartOfSpeech=NN Lemma=file NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=846 CharacterOffsetEnd=847 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Therefore))
+    (, ,)
+    (NP
+      (NP
+        (ADJP (IN as) (JJ trained))
+        (NN fire) (NNS wardens))
+      (PP (IN on)
+        (NP (PRP$ your) (JJ respective) (NNS floors)))
+      (, ,)
+      (SBAR (IN if)
+        (S
+          (NP (PRP you))
+          (VP (VBP know)
+            (PP (IN of)
+              (NP
+                (NP (NN anyone))
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (VP (MD may)
+                      (VP (VB require)
+                        (NP (JJ special) (NN assistance))
+                        (PP (IN during)
+                          (NP (DT an) (JJ actual) (NN fire) (NN drill)
+                            (CC or)
+                            (NN building) (NN evacuation))))))))))))
+      (, ,))
+    (VP (VB please)
+      (ADVP (RB forward)
+        (NP (RB there) (NNS names))
+        (PP (TO to)
+          (NP (PRP me))))
+      (SBAR (IN so) (IN that)
+        (S
+          (NP (PRP I))
+          (VP (MD may)
+            (VP (VB obtain)
+              (NP (PRP$ their) (NN contact) (NN information))
+              (S
+                (VP (TO to)
+                  (VP (VB maintain)
+                    (PP (IN on)
+                      (NP (NN file)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, please-31)
+advmod(please-31, Therefore-1)
+punct(please-31, ,-2)
+dep(trained-4, as-3)
+amod(wardens-6, trained-4)
+compound(wardens-6, fire-5)
+nsubj(require-19, wardens-6)
+nsubj(please-31, wardens-6)
+case(floors-10, on-7)
+nmod:poss(floors-10, your-8)
+amod(floors-10, respective-9)
+nmod:on(wardens-6, floors-10)
+punct(wardens-6, ,-11)
+mark(know-14, if-12)
+nsubj(know-14, you-13)
+acl:relcl(wardens-6, know-14)
+case(anyone-16, of-15)
+nmod:of(know-14, anyone-16)
+nsubj(require-19, anyone-16)
+ref(wardens-6, who-17)
+ref(anyone-16, who-17)
+aux(require-19, may-18)
+acl:relcl(anyone-16, require-19)
+amod(assistance-21, special-20)
+dobj(require-19, assistance-21)
+case(drill-26, during-22)
+det(drill-26, an-23)
+amod(drill-26, actual-24)
+compound(drill-26, fire-25)
+nmod:during(require-19, drill-26)
+cc(drill-26, or-27)
+compound(evacuation-29, building-28)
+nmod:during(require-19, evacuation-29)
+conj:or(drill-26, evacuation-29)
+punct(wardens-6, ,-30)
+advmod(please-31, forward-32)
+advmod(names-34, there-33)
+nmod:npmod(forward-32, names-34)
+case(me-36, to-35)
+nmod:to(forward-32, me-36)
+mark(obtain-41, so-37)
+mwe(so-37, that-38)
+nsubj(obtain-41, I-39)
+aux(obtain-41, may-40)
+advcl:so_that(please-31, obtain-41)
+nmod:poss(information-44, their-42)
+compound(information-44, contact-43)
+dobj(obtain-41, information-44)
+mark(maintain-46, to-45)
+advcl:to(obtain-41, maintain-46)
+case(file-48, on-47)
+nmod:on(maintain-46, file-48)
+punct(please-31, .-49)
+
+Extracted the following NER entity mentions:
+fire	CAUSE_OF_DEATH
+fire	CAUSE_OF_DEATH
+
+Sentence #7 (31 tokens):
+The Houston Fire Department is subject to fine Enron between $250 and $2000 for every daily violation that occurs if these records are not kept up to date.
+
+Tokens:
+[Text=The CharacterOffsetBegin=849 CharacterOffsetEnd=852 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Houston CharacterOffsetBegin=853 CharacterOffsetEnd=860 PartOfSpeech=NNP Lemma=Houston NamedEntityTag=ORGANIZATION]
+[Text=Fire CharacterOffsetBegin=861 CharacterOffsetEnd=865 PartOfSpeech=NNP Lemma=Fire NamedEntityTag=ORGANIZATION]
+[Text=Department CharacterOffsetBegin=866 CharacterOffsetEnd=876 PartOfSpeech=NNP Lemma=Department NamedEntityTag=ORGANIZATION]
+[Text=is CharacterOffsetBegin=877 CharacterOffsetEnd=879 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=subject CharacterOffsetBegin=880 CharacterOffsetEnd=887 PartOfSpeech=JJ Lemma=subject NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=888 CharacterOffsetEnd=890 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=fine CharacterOffsetBegin=891 CharacterOffsetEnd=895 PartOfSpeech=JJ Lemma=fine NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=896 CharacterOffsetEnd=901 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=between CharacterOffsetBegin=902 CharacterOffsetEnd=909 PartOfSpeech=IN Lemma=between NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=910 CharacterOffsetEnd=911 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$250.0]
+[Text=250 CharacterOffsetBegin=911 CharacterOffsetEnd=914 PartOfSpeech=CD Lemma=250 NamedEntityTag=MONEY NormalizedNamedEntityTag=$250.0]
+[Text=and CharacterOffsetBegin=915 CharacterOffsetEnd=918 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=919 CharacterOffsetEnd=920 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$2000.0]
+[Text=2000 CharacterOffsetBegin=920 CharacterOffsetEnd=924 PartOfSpeech=CD Lemma=2000 NamedEntityTag=MONEY NormalizedNamedEntityTag=$2000.0]
+[Text=for CharacterOffsetBegin=925 CharacterOffsetEnd=928 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=every CharacterOffsetBegin=929 CharacterOffsetEnd=934 PartOfSpeech=DT Lemma=every NamedEntityTag=O]
+[Text=daily CharacterOffsetBegin=935 CharacterOffsetEnd=940 PartOfSpeech=JJ Lemma=daily NamedEntityTag=O]
+[Text=violation CharacterOffsetBegin=941 CharacterOffsetEnd=950 PartOfSpeech=NN Lemma=violation NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=951 CharacterOffsetEnd=955 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=occurs CharacterOffsetBegin=956 CharacterOffsetEnd=962 PartOfSpeech=VBZ Lemma=occur NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=963 CharacterOffsetEnd=965 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=966 CharacterOffsetEnd=971 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=records CharacterOffsetBegin=972 CharacterOffsetEnd=979 PartOfSpeech=NNS Lemma=record NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=980 CharacterOffsetEnd=983 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=984 CharacterOffsetEnd=987 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=kept CharacterOffsetBegin=988 CharacterOffsetEnd=992 PartOfSpeech=VBN Lemma=keep NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=993 CharacterOffsetEnd=995 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=996 CharacterOffsetEnd=998 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=date CharacterOffsetBegin=999 CharacterOffsetEnd=1003 PartOfSpeech=NN Lemma=date NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1003 CharacterOffsetEnd=1004 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NNP Houston) (NNP Fire) (NNP Department))
+    (VP (VBZ is)
+      (ADJP (JJ subject)
+        (PP (TO to)
+          (NP
+            (NP (JJ fine) (NNP Enron))
+            (PP (IN between)
+              (NP
+                (NP ($ $) (CD 250))
+                (CC and)
+                (NP ($ $) (CD 2000)))))))
+      (PP (IN for)
+        (NP
+          (NP (DT every) (JJ daily) (NN violation))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBZ occurs)
+                (SBAR (IN if)
+                  (S
+                    (NP (DT these) (NNS records))
+                    (VP (VBP are) (RB not)
+                      (VP (VBN kept)
+                        (PRT (RP up))
+                        (PP (TO to)
+                          (NP (NN date)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, subject-6)
+det(Department-4, The-1)
+compound(Department-4, Houston-2)
+compound(Department-4, Fire-3)
+nsubj(subject-6, Department-4)
+cop(subject-6, is-5)
+case(Enron-9, to-7)
+amod(Enron-9, fine-8)
+nmod:to(subject-6, Enron-9)
+case(250-12, between-10)
+dep(250-12, $-11)
+nmod:between(Enron-9, 250-12)
+cc(250-12, and-13)
+dep(2000-15, $-14)
+nmod:between(Enron-9, 2000-15)
+conj:and(250-12, 2000-15)
+case(violation-19, for-16)
+det(violation-19, every-17)
+amod(violation-19, daily-18)
+nmod:for(subject-6, violation-19)
+nsubj(occurs-21, violation-19)
+ref(violation-19, that-20)
+acl:relcl(violation-19, occurs-21)
+mark(kept-27, if-22)
+det(records-24, these-23)
+nsubjpass(kept-27, records-24)
+auxpass(kept-27, are-25)
+neg(kept-27, not-26)
+advcl:if(occurs-21, kept-27)
+compound:prt(kept-27, up-28)
+case(date-30, to-29)
+nmod:to(kept-27, date-30)
+punct(subject-6, .-31)
+
+Extracted the following NER entity mentions:
+Houston Fire Department	ORGANIZATION
+Enron	ORGANIZATION
+$250	MONEY
+$2000	MONEY
+
+Sentence #8 (18 tokens):
+Note, this information is strictly for use to have on file for the Houston Fire Department.
+
+Tokens:
+[Text=Note CharacterOffsetBegin=1006 CharacterOffsetEnd=1010 PartOfSpeech=VB Lemma=note NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1010 CharacterOffsetEnd=1011 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=1012 CharacterOffsetEnd=1016 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=information CharacterOffsetBegin=1017 CharacterOffsetEnd=1028 PartOfSpeech=NN Lemma=information NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=1029 CharacterOffsetEnd=1031 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=strictly CharacterOffsetBegin=1032 CharacterOffsetEnd=1040 PartOfSpeech=RB Lemma=strictly NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=1041 CharacterOffsetEnd=1044 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=use CharacterOffsetBegin=1045 CharacterOffsetEnd=1048 PartOfSpeech=NN Lemma=use NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1049 CharacterOffsetEnd=1051 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=1052 CharacterOffsetEnd=1056 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=1057 CharacterOffsetEnd=1059 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=file CharacterOffsetBegin=1060 CharacterOffsetEnd=1064 PartOfSpeech=NN Lemma=file NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=1065 CharacterOffsetEnd=1068 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1069 CharacterOffsetEnd=1072 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Houston CharacterOffsetBegin=1073 CharacterOffsetEnd=1080 PartOfSpeech=NNP Lemma=Houston NamedEntityTag=ORGANIZATION]
+[Text=Fire CharacterOffsetBegin=1081 CharacterOffsetEnd=1085 PartOfSpeech=NNP Lemma=Fire NamedEntityTag=ORGANIZATION]
+[Text=Department CharacterOffsetBegin=1086 CharacterOffsetEnd=1096 PartOfSpeech=NNP Lemma=Department NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=1096 CharacterOffsetEnd=1097 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (VB Note)))
+    (, ,)
+    (NP (DT this) (NN information))
+    (VP (VBZ is)
+      (ADVP (RB strictly))
+      (PP (IN for)
+        (NP (NN use)))
+      (S
+        (VP (TO to)
+          (VP (VB have)
+            (PP (IN on)
+              (NP
+                (NP (NN file))
+                (PP (IN for)
+                  (NP (DT the) (NNP Houston) (NNP Fire) (NNP Department)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, use-8)
+ccomp(use-8, Note-1)
+punct(use-8, ,-2)
+det(information-4, this-3)
+nsubj(use-8, information-4)
+nsubj:xsubj(have-10, information-4)
+cop(use-8, is-5)
+advmod(use-8, strictly-6)
+case(use-8, for-7)
+mark(have-10, to-9)
+xcomp(use-8, have-10)
+case(file-12, on-11)
+nmod:on(have-10, file-12)
+case(Department-17, for-13)
+det(Department-17, the-14)
+compound(Department-17, Houston-15)
+compound(Department-17, Fire-16)
+nmod:for(file-12, Department-17)
+punct(use-8, .-18)
+
+Extracted the following NER entity mentions:
+Houston Fire Department	ORGANIZATION
+
+Sentence #9 (6 tokens):
+It will be kept confidential.
+
+Tokens:
+[Text=It CharacterOffsetBegin=1099 CharacterOffsetEnd=1101 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=1102 CharacterOffsetEnd=1106 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=1107 CharacterOffsetEnd=1109 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=kept CharacterOffsetBegin=1110 CharacterOffsetEnd=1114 PartOfSpeech=VBN Lemma=keep NamedEntityTag=O]
+[Text=confidential CharacterOffsetBegin=1115 CharacterOffsetEnd=1127 PartOfSpeech=JJ Lemma=confidential NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1127 CharacterOffsetEnd=1128 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (MD will)
+      (VP (VB be)
+        (VP (VBN kept)
+          (S
+            (ADJP (JJ confidential))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, kept-4)
+nsubjpass(kept-4, It-1)
+aux(kept-4, will-2)
+auxpass(kept-4, be-3)
+xcomp(kept-4, confidential-5)
+punct(kept-4, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #10 (8 tokens):
+Thank you in advance for your assistance.
+
+Tokens:
+[Text=Thank CharacterOffsetBegin=1130 CharacterOffsetEnd=1135 PartOfSpeech=VB Lemma=thank NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=1136 CharacterOffsetEnd=1139 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=1140 CharacterOffsetEnd=1142 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=advance CharacterOffsetBegin=1143 CharacterOffsetEnd=1150 PartOfSpeech=NN Lemma=advance NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=1151 CharacterOffsetEnd=1154 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=1155 CharacterOffsetEnd=1159 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=assistance CharacterOffsetBegin=1160 CharacterOffsetEnd=1170 PartOfSpeech=NN Lemma=assistance NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1170 CharacterOffsetEnd=1171 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Thank)
+      (NP (PRP you))
+      (PP (IN in)
+        (NP
+          (NP (NN advance))
+          (PP (IN for)
+            (NP (PRP$ your) (NN assistance))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Thank-1)
+dobj(Thank-1, you-2)
+case(advance-4, in-3)
+nmod:in(Thank-1, advance-4)
+case(assistance-7, for-5)
+nmod:poss(assistance-7, your-6)
+nmod:for(advance-4, assistance-7)
+punct(Thank-1, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #11 (3 tokens):
+Monica Rodriguez
+ph-713-853-5393
+
+Tokens:
+[Text=Monica CharacterOffsetBegin=1176 CharacterOffsetEnd=1182 PartOfSpeech=NNP Lemma=Monica NamedEntityTag=PERSON]
+[Text=Rodriguez CharacterOffsetBegin=1183 CharacterOffsetEnd=1192 PartOfSpeech=NNP Lemma=Rodriguez NamedEntityTag=PERSON]
+[Text=ph-713-853-5393 CharacterOffsetBegin=1193 CharacterOffsetEnd=1208 PartOfSpeech=NN Lemma=ph-713-853-5393 NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Monica) (NNP Rodriguez))
+    (NP (NN ph-713-853-5393))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Rodriguez-2)
+compound(Rodriguez-2, Monica-1)
+dep(Rodriguez-2, ph-713-853-5393-3)
+
+Extracted the following NER entity mentions:
+Monica Rodriguez	PERSON
+
+Coreference set:
+	(4,13,[13,14]) -> (2,17,[15,18]), that is: "Enron" -> "Enron Center North"
+	(5,7,[7,8]) -> (2,17,[15,18]), that is: "Enron" -> "Enron Center North"
+
+Coreference set:
+	(3,20,[20,21]) -> (2,10,[9,11]), that is: "they" -> "fire wardens"
+
+Coreference set:
+	(6,36,[36,37]) -> (2,11,[11,12]), that is: "me" -> "I"
+	(6,39,[39,40]) -> (2,11,[11,12]), that is: "I" -> "I"
+
+Coreference set:
+	(7,4,[1,5]) -> (3,11,[8,12]), that is: "The Houston Fire Department" -> "the Houston Fire Department"
+	(8,17,[14,18]) -> (3,11,[8,12]), that is: "the Houston Fire Department" -> "the Houston Fire Department"
+
+Coreference set:
+	(7,24,[23,25]) -> (4,16,[15,22]), that is: "these records" -> "accurate records of all trained fire wardens"
+
+Coreference set:
+	(5,3,[1,4]) -> (4,44,[42,45]), that is: "A fire drill" -> "a fire drill"
+
+Coreference set:
+	(6,42,[42,43]) -> (6,4,[3,30]), that is: "their" -> "as trained fire wardens on your respective floors , if you know of anyone who may require special assistance during an actual fire drill or building evacuation"
+
+Coreference set:
+	(8,4,[3,5]) -> (6,44,[42,45]), that is: "this information" -> "their contact information"

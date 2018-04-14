@@ -1,0 +1,375 @@
+Document: ID=75970.in (8 sentences, 80 tokens)
+
+Sentence #1 (17 tokens):
+OK money is en route to emerick as we speak...John and I's checks.
+
+Tokens:
+[Text=OK CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=JJ Lemma=ok NamedEntityTag=STATE_OR_PROVINCE]
+[Text=money CharacterOffsetBegin=3 CharacterOffsetEnd=8 PartOfSpeech=NN Lemma=money NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=en CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=IN Lemma=en NamedEntityTag=O]
+[Text=route CharacterOffsetBegin=15 CharacterOffsetEnd=20 PartOfSpeech=NN Lemma=route NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=emerick CharacterOffsetBegin=24 CharacterOffsetEnd=31 PartOfSpeech=VB Lemma=emerick NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=speak CharacterOffsetBegin=38 CharacterOffsetEnd=43 PartOfSpeech=VBP Lemma=speak NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=John CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=NNP Lemma=John NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=checks CharacterOffsetBegin=59 CharacterOffsetEnd=65 PartOfSpeech=NNS Lemma=check NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (JJ OK) (NN money))
+      (VP (VBZ is)
+        (ADVP (IN en) (NN route))
+        (S
+          (VP (TO to)
+            (VP (VB emerick)
+              (SBAR (IN as)
+                (S
+                  (NP (PRP we))
+                  (VP (VBP speak)))))))))
+    (: ...)
+    (S
+      (NP (NNP John)
+        (CC and)
+        (PRP I))
+      (VP (VBZ 's)
+        (NP (NNS checks))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-3)
+amod(money-2, OK-1)
+nsubj(is-3, money-2)
+nsubj:xsubj(emerick-7, money-2)
+case(route-5, en-4)
+advmod(is-3, route-5)
+mark(emerick-7, to-6)
+xcomp(is-3, emerick-7)
+mark(speak-10, as-8)
+nsubj(speak-10, we-9)
+advcl:as(emerick-7, speak-10)
+punct(is-3, ...-11)
+nsubj(checks-16, John-12)
+cc(John-12, and-13)
+conj:and(John-12, I-14)
+nsubj(checks-16, I-14)
+cop(checks-16, 's-15)
+parataxis(is-3, checks-16)
+punct(is-3, .-17)
+
+Extracted the following NER entity mentions:
+OK	STATE_OR_PROVINCE
+John	PERSON
+
+Sentence #2 (7 tokens):
+Hudge was the first to pay.
+
+Tokens:
+[Text=Hudge CharacterOffsetBegin=68 CharacterOffsetEnd=73 PartOfSpeech=NNP Lemma=Hudge NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=82 CharacterOffsetEnd=87 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=to CharacterOffsetBegin=88 CharacterOffsetEnd=90 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=pay CharacterOffsetBegin=91 CharacterOffsetEnd=94 PartOfSpeech=VB Lemma=pay NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=94 CharacterOffsetEnd=95 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Hudge))
+    (VP (VBD was)
+      (NP (DT the) (JJ first)
+        (S
+          (VP (TO to)
+            (VP (VB pay))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, first-4)
+nsubj(first-4, Hudge-1)
+cop(first-4, was-2)
+det(first-4, the-3)
+mark(pay-6, to-5)
+dep(first-4, pay-6)
+punct(first-4, .-7)
+
+Extracted the following NER entity mentions:
+Hudge	PERSON
+first	ORDINAL
+
+Sentence #3 (6 tokens):
+Chet's check arrived today.
+
+Tokens:
+[Text=Chet CharacterOffsetBegin=96 CharacterOffsetEnd=100 PartOfSpeech=NNP Lemma=Chet NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=100 CharacterOffsetEnd=102 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=check CharacterOffsetBegin=103 CharacterOffsetEnd=108 PartOfSpeech=NN Lemma=check NamedEntityTag=O]
+[Text=arrived CharacterOffsetBegin=109 CharacterOffsetEnd=116 PartOfSpeech=VBD Lemma=arrive NamedEntityTag=O]
+[Text=today CharacterOffsetBegin=117 CharacterOffsetEnd=122 PartOfSpeech=NN Lemma=today NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=122 CharacterOffsetEnd=123 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Chet) (POS 's))
+      (NN check))
+    (VP (VBD arrived)
+      (NP-TMP (NN today)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, arrived-4)
+nmod:poss(check-3, Chet-1)
+case(Chet-1, 's-2)
+nsubj(arrived-4, check-3)
+nmod:tmod(arrived-4, today-5)
+punct(arrived-4, .-6)
+
+Extracted the following NER entity mentions:
+Chet	PERSON
+
+Sentence #4 (22 tokens):
+The race is on between JOE, BRIAN and CHAD as to who will be the last to
+send their check.
+
+Tokens:
+[Text=The CharacterOffsetBegin=125 CharacterOffsetEnd=128 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=race CharacterOffsetBegin=129 CharacterOffsetEnd=133 PartOfSpeech=NN Lemma=race NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=134 CharacterOffsetEnd=136 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=137 CharacterOffsetEnd=139 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=between CharacterOffsetBegin=140 CharacterOffsetEnd=147 PartOfSpeech=IN Lemma=between NamedEntityTag=O]
+[Text=JOE CharacterOffsetBegin=148 CharacterOffsetEnd=151 PartOfSpeech=NNP Lemma=JOE NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=151 CharacterOffsetEnd=152 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=BRIAN CharacterOffsetBegin=153 CharacterOffsetEnd=158 PartOfSpeech=NNP Lemma=BRIAN NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=159 CharacterOffsetEnd=162 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=CHAD CharacterOffsetBegin=163 CharacterOffsetEnd=167 PartOfSpeech=NNP Lemma=CHAD NamedEntityTag=COUNTRY]
+[Text=as CharacterOffsetBegin=168 CharacterOffsetEnd=170 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=171 CharacterOffsetEnd=173 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=174 CharacterOffsetEnd=177 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=178 CharacterOffsetEnd=182 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=183 CharacterOffsetEnd=185 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=186 CharacterOffsetEnd=189 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=last CharacterOffsetBegin=190 CharacterOffsetEnd=194 PartOfSpeech=JJ Lemma=last NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=195 CharacterOffsetEnd=197 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=send CharacterOffsetBegin=198 CharacterOffsetEnd=202 PartOfSpeech=VB Lemma=send NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=203 CharacterOffsetEnd=208 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=check CharacterOffsetBegin=209 CharacterOffsetEnd=214 PartOfSpeech=NN Lemma=check NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=214 CharacterOffsetEnd=215 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN race))
+    (VP (VBZ is)
+      (PP (IN on)
+        (PP (IN between)
+          (NP (NNP JOE) (, ,) (NNP BRIAN)
+            (CC and)
+            (NNP CHAD))))
+      (PP (IN as)
+        (PP (TO to)
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (MD will)
+                (VP (VB be)
+                  (NP (DT the) (JJ last)
+                    (S
+                      (VP (TO to)
+                        (VP (VB send)
+                          (NP (PRP$ their) (NN check)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, JOE-6)
+det(race-2, The-1)
+nsubj(JOE-6, race-2)
+cop(JOE-6, is-3)
+case(JOE-6, on-4)
+case(JOE-6, between-5)
+punct(JOE-6, ,-7)
+conj:and(JOE-6, BRIAN-8)
+cc(JOE-6, and-9)
+conj:and(JOE-6, CHAD-10)
+case(last-17, as-11)
+mark(last-17, to-12)
+nsubj(last-17, who-13)
+aux(last-17, will-14)
+cop(last-17, be-15)
+det(last-17, the-16)
+dep(JOE-6, last-17)
+mark(send-19, to-18)
+dep(last-17, send-19)
+nmod:poss(check-21, their-20)
+dobj(send-19, check-21)
+punct(JOE-6, .-22)
+
+Extracted the following NER entity mentions:
+BRIAN	PERSON
+CHAD	COUNTRY
+
+Sentence #5 (14 tokens):
+$150 payable to ME mailed to 815 walker suite 1447 h/t 77002.
+
+Tokens:
+[Text=$ CharacterOffsetBegin=217 CharacterOffsetEnd=218 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$150.0]
+[Text=150 CharacterOffsetBegin=218 CharacterOffsetEnd=221 PartOfSpeech=CD Lemma=150 NamedEntityTag=MONEY NormalizedNamedEntityTag=$150.0]
+[Text=payable CharacterOffsetBegin=222 CharacterOffsetEnd=229 PartOfSpeech=JJ Lemma=payable NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=230 CharacterOffsetEnd=232 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=ME CharacterOffsetBegin=233 CharacterOffsetEnd=235 PartOfSpeech=NNP Lemma=ME NamedEntityTag=STATE_OR_PROVINCE]
+[Text=mailed CharacterOffsetBegin=236 CharacterOffsetEnd=242 PartOfSpeech=VBD Lemma=mail NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=243 CharacterOffsetEnd=245 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=815 CharacterOffsetBegin=246 CharacterOffsetEnd=249 PartOfSpeech=CD Lemma=815 NamedEntityTag=NUMBER NormalizedNamedEntityTag=815.0]
+[Text=walker CharacterOffsetBegin=250 CharacterOffsetEnd=256 PartOfSpeech=NN Lemma=walker NamedEntityTag=O]
+[Text=suite CharacterOffsetBegin=257 CharacterOffsetEnd=262 PartOfSpeech=NN Lemma=suite NamedEntityTag=O]
+[Text=1447 CharacterOffsetBegin=263 CharacterOffsetEnd=267 PartOfSpeech=CD Lemma=1447 NamedEntityTag=DATE NormalizedNamedEntityTag=1447]
+[Text=h/t CharacterOffsetBegin=268 CharacterOffsetEnd=271 PartOfSpeech=NN Lemma=h/t NamedEntityTag=O]
+[Text=77002 CharacterOffsetBegin=272 CharacterOffsetEnd=277 PartOfSpeech=CD Lemma=77002 NamedEntityTag=NUMBER NormalizedNamedEntityTag=77002.0]
+[Text=. CharacterOffsetBegin=277 CharacterOffsetEnd=278 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP ($ $) (CD 150))
+      (ADJP (JJ payable)
+        (PP (TO to)
+          (NP (NNP ME)))))
+    (VP (VBD mailed)
+      (PP (TO to)
+        (NP (CD 815) (NN walker) (NN suite)))
+      (NP-TMP
+        (NP (CD 1447) (NN h/t))
+        (NP (CD 77002))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, mailed-6)
+dep(150-2, $-1)
+nsubj(mailed-6, 150-2)
+amod(150-2, payable-3)
+case(ME-5, to-4)
+nmod:to(payable-3, ME-5)
+case(suite-10, to-7)
+nummod(suite-10, 815-8)
+compound(suite-10, walker-9)
+nmod:to(mailed-6, suite-10)
+nummod(h/t-12, 1447-11)
+nmod:tmod(mailed-6, h/t-12)
+dep(h/t-12, 77002-13)
+punct(mailed-6, .-14)
+
+Extracted the following NER entity mentions:
+$150	MONEY
+ME	STATE_OR_PROVINCE
+815	NUMBER
+1447	DATE
+77002	NUMBER
+
+Sentence #6 (9 tokens):
+I don't have
+time to hound you.
+
+Tokens:
+[Text=I CharacterOffsetBegin=279 CharacterOffsetEnd=280 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=281 CharacterOffsetEnd=283 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=283 CharacterOffsetEnd=286 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=287 CharacterOffsetEnd=291 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=292 CharacterOffsetEnd=296 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=297 CharacterOffsetEnd=299 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=hound CharacterOffsetBegin=300 CharacterOffsetEnd=305 PartOfSpeech=VB Lemma=hound NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=306 CharacterOffsetEnd=309 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=309 CharacterOffsetEnd=310 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP do) (RB n't)
+      (VP (VB have)
+        (NP (NN time))
+        (S
+          (VP (TO to)
+            (VP (VB hound)
+              (NP (PRP you)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-4)
+nsubj(have-4, I-1)
+aux(have-4, do-2)
+neg(have-4, n't-3)
+dobj(have-4, time-5)
+mark(hound-7, to-6)
+advcl:to(have-4, hound-7)
+dobj(hound-7, you-8)
+punct(have-4, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #7 (4 tokens):
+mail your money.
+
+Tokens:
+[Text=mail CharacterOffsetBegin=311 CharacterOffsetEnd=315 PartOfSpeech=NN Lemma=mail NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=316 CharacterOffsetEnd=320 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=money CharacterOffsetBegin=321 CharacterOffsetEnd=326 PartOfSpeech=NN Lemma=money NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=326 CharacterOffsetEnd=327 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NN mail))
+    (NP (PRP$ your) (NN money))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, mail-1)
+nmod:poss(money-3, your-2)
+dep(mail-1, money-3)
+punct(mail-1, .-4)
+
+Extracted the following NER entity mentions:
+
+Sentence #8 (1 tokens):
+e.
+
+Tokens:
+[Text=e. CharacterOffsetBegin=328 CharacterOffsetEnd=330 PartOfSpeech=IN Lemma=e. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (PP (IN e.)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, e.-1)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(5,5,[5,6]) -> (1,14,[14,15]), that is: "ME" -> "I"
+	(6,1,[1,2]) -> (1,14,[14,15]), that is: "I" -> "I"
+
+Coreference set:
+	(4,21,[20,22]) -> (3,3,[1,4]), that is: "their check" -> "Chet 's check"
+
+Coreference set:
+	(4,20,[20,21]) -> (4,6,[6,11]), that is: "their" -> "JOE , BRIAN and CHAD"

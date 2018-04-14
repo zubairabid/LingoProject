@@ -1,0 +1,130 @@
+Document: ID=1248998.in (2 sentences, 32 tokens)
+
+Sentence #1 (15 tokens):
+Attached is the scope and Level A cost estimate for the above mentioned project.
+
+Tokens:
+[Text=Attached CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=VBN Lemma=attach NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=scope CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=scope NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Level CharacterOffsetBegin=26 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=level NamedEntityTag=O]
+[Text=A CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=cost CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=cost NamedEntityTag=O]
+[Text=estimate CharacterOffsetBegin=39 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=estimate NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=above CharacterOffsetBegin=56 CharacterOffsetEnd=61 PartOfSpeech=JJ Lemma=above NamedEntityTag=O]
+[Text=mentioned CharacterOffsetBegin=62 CharacterOffsetEnd=71 PartOfSpeech=VBN Lemma=mention NamedEntityTag=O]
+[Text=project CharacterOffsetBegin=72 CharacterOffsetEnd=79 PartOfSpeech=NN Lemma=project NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SINV
+    (VP (VBN Attached))
+    (VP (VBZ is)
+      (NP (DT the) (NN scope)
+        (CC and)
+        (NN Level)))
+    (NP
+      (NP (DT A) (NN cost) (NN estimate))
+      (PP (IN for)
+        (NP
+          (NP (DT the) (JJ above))
+          (VP (VBN mentioned)
+            (NP (NN project))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Attached-1)
+cop(scope-4, is-2)
+det(scope-4, the-3)
+auxpass(Attached-1, scope-4)
+cc(scope-4, and-5)
+auxpass(Attached-1, Level-6)
+conj:and(scope-4, Level-6)
+det(estimate-9, A-7)
+compound(estimate-9, cost-8)
+nsubjpass(Attached-1, estimate-9)
+case(above-12, for-10)
+det(above-12, the-11)
+nmod:for(estimate-9, above-12)
+acl(above-12, mentioned-13)
+dobj(mentioned-13, project-14)
+punct(Attached-1, .-15)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (17 tokens):
+This is the same package given to Engineering for them to prepare their Level B.
+
+Ron M.
+
+Tokens:
+[Text=This CharacterOffsetBegin=82 CharacterOffsetEnd=86 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=87 CharacterOffsetEnd=89 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=90 CharacterOffsetEnd=93 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=same CharacterOffsetBegin=94 CharacterOffsetEnd=98 PartOfSpeech=JJ Lemma=same NamedEntityTag=O]
+[Text=package CharacterOffsetBegin=99 CharacterOffsetEnd=106 PartOfSpeech=NN Lemma=package NamedEntityTag=O]
+[Text=given CharacterOffsetBegin=107 CharacterOffsetEnd=112 PartOfSpeech=VBN Lemma=give NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=113 CharacterOffsetEnd=115 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Engineering CharacterOffsetBegin=116 CharacterOffsetEnd=127 PartOfSpeech=NNP Lemma=Engineering NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=128 CharacterOffsetEnd=131 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=132 CharacterOffsetEnd=136 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=137 CharacterOffsetEnd=139 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=prepare CharacterOffsetBegin=140 CharacterOffsetEnd=147 PartOfSpeech=VB Lemma=prepare NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=148 CharacterOffsetEnd=153 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=Level CharacterOffsetBegin=154 CharacterOffsetEnd=159 PartOfSpeech=NNP Lemma=Level NamedEntityTag=O]
+[Text=B. CharacterOffsetBegin=160 CharacterOffsetEnd=162 PartOfSpeech=NNP Lemma=B. NamedEntityTag=PERSON]
+[Text=Ron CharacterOffsetBegin=164 CharacterOffsetEnd=167 PartOfSpeech=NNP Lemma=Ron NamedEntityTag=PERSON]
+[Text=M. CharacterOffsetBegin=168 CharacterOffsetEnd=170 PartOfSpeech=NNP Lemma=M. NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (SINV
+    (FRAG
+      (NP (DT This)))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJ same) (NN package))
+        (PP (VBN given)
+          (PP (TO to)
+            (NP
+              (NP (NNP Engineering))
+              (PP (IN for)
+                (NP (PRP them)))
+              (S
+                (VP (TO to)
+                  (VP (VB prepare)
+                    (NP (PRP$ their) (NNP Level) (NNP B.))))))))))
+    (NP (NNP Ron) (NNP M.))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, package-5)
+dep(package-5, This-1)
+cop(package-5, is-2)
+det(package-5, the-3)
+amod(package-5, same-4)
+case(Engineering-8, given-6)
+case(Engineering-8, to-7)
+acl:given(package-5, Engineering-8)
+case(them-10, for-9)
+nmod:for(Engineering-8, them-10)
+mark(prepare-12, to-11)
+acl:to(Engineering-8, prepare-12)
+nmod:poss(B.-15, their-13)
+compound(B.-15, Level-14)
+dobj(prepare-12, B.-15)
+compound(M.-17, Ron-16)
+nsubj(package-5, M.-17)
+
+Extracted the following NER entity mentions:
+B. Ron M.	PERSON
+
+Coreference set:
+	(2,10,[10,11]) -> (2,1,[1,2]), that is: "them" -> "This"
+	(2,13,[13,14]) -> (2,1,[1,2]), that is: "their" -> "This"

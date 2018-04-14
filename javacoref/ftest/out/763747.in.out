@@ -1,0 +1,490 @@
+Document: ID=763747.in (10 sentences, 107 tokens)
+
+Sentence #1 (11 tokens):
+Note:  CERA's monthly briefing document on Natural Gas.
+
+Tokens:
+[Text=Note CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=VB Lemma=note NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=CERA CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=CERA NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=monthly CharacterOffsetBegin=14 CharacterOffsetEnd=21 PartOfSpeech=JJ Lemma=monthly NamedEntityTag=O]
+[Text=briefing CharacterOffsetBegin=22 CharacterOffsetEnd=30 PartOfSpeech=NN Lemma=briefing NamedEntityTag=O]
+[Text=document CharacterOffsetBegin=31 CharacterOffsetEnd=39 PartOfSpeech=NN Lemma=document NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Natural CharacterOffsetBegin=43 CharacterOffsetEnd=50 PartOfSpeech=NNP Lemma=Natural NamedEntityTag=ORGANIZATION]
+[Text=Gas CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=NNP Lemma=Gas NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP
+      (VP (VB Note))
+      (: :)
+      (VP
+        (NP
+          (NP (NNP CERA) (POS 's))
+          (JJ monthly) (NN briefing) (NN document))
+        (PP (IN on)
+          (NP (NNP Natural) (NNP Gas)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Note-1)
+punct(Note-1, :-2)
+nmod:poss(document-7, CERA-3)
+case(CERA-3, 's-4)
+amod(document-7, monthly-5)
+compound(document-7, briefing-6)
+dep(Note-1, document-7)
+case(Gas-10, on-8)
+compound(Gas-10, Natural-9)
+nmod:on(document-7, Gas-10)
+punct(Note-1, .-11)
+
+Extracted the following NER entity mentions:
+CERA	ORGANIZATION
+Natural Gas	ORGANIZATION
+
+Sentence #2 (18 tokens):
+LB
+If you are not registered with CERA, follow the instructions below to register:
+1.
+
+Tokens:
+[Text=LB CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=NN Lemma=lb NamedEntityTag=O]
+[Text=If CharacterOffsetBegin=60 CharacterOffsetEnd=62 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=71 CharacterOffsetEnd=74 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=registered CharacterOffsetBegin=75 CharacterOffsetEnd=85 PartOfSpeech=VBN Lemma=register NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=86 CharacterOffsetEnd=90 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=CERA CharacterOffsetBegin=91 CharacterOffsetEnd=95 PartOfSpeech=NNP Lemma=CERA NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=95 CharacterOffsetEnd=96 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=follow CharacterOffsetBegin=97 CharacterOffsetEnd=103 PartOfSpeech=VBP Lemma=follow NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=104 CharacterOffsetEnd=107 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=instructions CharacterOffsetBegin=108 CharacterOffsetEnd=120 PartOfSpeech=NNS Lemma=instruction NamedEntityTag=O]
+[Text=below CharacterOffsetBegin=121 CharacterOffsetEnd=126 PartOfSpeech=IN Lemma=below NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=127 CharacterOffsetEnd=129 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=register CharacterOffsetBegin=130 CharacterOffsetEnd=138 PartOfSpeech=VB Lemma=register NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=138 CharacterOffsetEnd=139 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=1 CharacterOffsetBegin=140 CharacterOffsetEnd=141 PartOfSpeech=CD Lemma=1 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=. CharacterOffsetBegin=141 CharacterOffsetEnd=142 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NN LB))
+      (SBAR (IN If)
+        (S
+          (NP (PRP you))
+          (VP (VBP are) (RB not)
+            (VP (VBN registered)
+              (PP (IN with)
+                (NP (NNP CERA))))))))
+    (, ,)
+    (VP (VBP follow)
+      (NP (DT the) (NNS instructions))
+      (PP (IN below))
+      (S
+        (VP (TO to)
+          (VP (VB register) (: :)
+            (NP (CD 1))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, follow-10)
+nsubj(follow-10, LB-1)
+mark(registered-6, If-2)
+nsubjpass(registered-6, you-3)
+auxpass(registered-6, are-4)
+neg(registered-6, not-5)
+dep(LB-1, registered-6)
+case(CERA-8, with-7)
+nmod:with(registered-6, CERA-8)
+punct(follow-10, ,-9)
+det(instructions-12, the-11)
+dobj(follow-10, instructions-12)
+nmod(follow-10, below-13)
+mark(register-15, to-14)
+advcl:to(follow-10, register-15)
+punct(register-15, :-16)
+dobj(register-15, 1-17)
+punct(follow-10, .-18)
+
+Extracted the following NER entity mentions:
+CERA	ORGANIZATION
+1	NUMBER
+
+Sentence #3 (5 tokens):
+Go to www.eprofile.cera.com
+2.
+
+Tokens:
+[Text=Go CharacterOffsetBegin=144 CharacterOffsetEnd=146 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=147 CharacterOffsetEnd=149 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=www.eprofile.cera.com CharacterOffsetBegin=150 CharacterOffsetEnd=171 PartOfSpeech=NNP Lemma=www.eprofile.cera.com NamedEntityTag=URL]
+[Text=2 CharacterOffsetBegin=172 CharacterOffsetEnd=173 PartOfSpeech=CD Lemma=2 NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=. CharacterOffsetBegin=173 CharacterOffsetEnd=174 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Go)
+      (PP (TO to)
+        (NP (NNP www.eprofile.cera.com) (CD 2))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Go-1)
+case(www.eprofile.cera.com-3, to-2)
+nmod:to(Go-1, www.eprofile.cera.com-3)
+nummod(www.eprofile.cera.com-3, 2-4)
+punct(Go-1, .-5)
+
+Extracted the following NER entity mentions:
+www.eprofile.cera.com	URL
+2	NUMBER
+
+Sentence #4 (12 tokens):
+Look for buttom called Open New Account; click on it.
+
+Tokens:
+[Text=Look CharacterOffsetBegin=175 CharacterOffsetEnd=179 PartOfSpeech=VB Lemma=look NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=180 CharacterOffsetEnd=183 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=buttom CharacterOffsetBegin=184 CharacterOffsetEnd=190 PartOfSpeech=NN Lemma=buttom NamedEntityTag=O]
+[Text=called CharacterOffsetBegin=191 CharacterOffsetEnd=197 PartOfSpeech=VBN Lemma=call NamedEntityTag=O]
+[Text=Open CharacterOffsetBegin=198 CharacterOffsetEnd=202 PartOfSpeech=NNP Lemma=Open NamedEntityTag=MISC]
+[Text=New CharacterOffsetBegin=203 CharacterOffsetEnd=206 PartOfSpeech=NNP Lemma=New NamedEntityTag=MISC]
+[Text=Account CharacterOffsetBegin=207 CharacterOffsetEnd=214 PartOfSpeech=NNP Lemma=Account NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=214 CharacterOffsetEnd=215 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=click CharacterOffsetBegin=216 CharacterOffsetEnd=221 PartOfSpeech=VB Lemma=click NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=222 CharacterOffsetEnd=224 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=225 CharacterOffsetEnd=227 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=227 CharacterOffsetEnd=228 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Look)
+      (PP (IN for)
+        (NP
+          (NP (NN buttom))
+          (VP (VBN called)
+            (NP
+              (NP (NNP Open) (NNP New) (NNP Account))
+              (: ;)
+              (VP (VB click)
+                (PP (IN on)
+                  (NP (PRP it)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Look-1)
+case(buttom-3, for-2)
+nmod:for(Look-1, buttom-3)
+acl(buttom-3, called-4)
+compound(Account-7, Open-5)
+compound(Account-7, New-6)
+dobj(called-4, Account-7)
+punct(Account-7, ;-8)
+dep(Account-7, click-9)
+case(it-11, on-10)
+nmod:on(click-9, it-11)
+punct(Look-1, .-12)
+
+Extracted the following NER entity mentions:
+Open New	MISC
+
+Sentence #5 (2 tokens):
+3.
+
+Tokens:
+[Text=3 CharacterOffsetBegin=229 CharacterOffsetEnd=230 PartOfSpeech=LS Lemma=3 NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=230 CharacterOffsetEnd=231 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (LS 3))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 3-1)
+punct(3-1, .-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #6 (6 tokens):
+ID		enron
+Password	ravencall
+4.
+
+Tokens:
+[Text=ID CharacterOffsetBegin=232 CharacterOffsetEnd=234 PartOfSpeech=NNP Lemma=ID NamedEntityTag=STATE_OR_PROVINCE]
+[Text=enron CharacterOffsetBegin=236 CharacterOffsetEnd=241 PartOfSpeech=NNP Lemma=enron NamedEntityTag=O]
+[Text=Password CharacterOffsetBegin=242 CharacterOffsetEnd=250 PartOfSpeech=NNP Lemma=Password NamedEntityTag=O]
+[Text=ravencall CharacterOffsetBegin=251 CharacterOffsetEnd=260 PartOfSpeech=NN Lemma=ravencall NamedEntityTag=O]
+[Text=4 CharacterOffsetBegin=261 CharacterOffsetEnd=262 PartOfSpeech=CD Lemma=4 NamedEntityTag=NUMBER NormalizedNamedEntityTag=4.0]
+[Text=. CharacterOffsetBegin=262 CharacterOffsetEnd=263 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP ID) (NNP enron) (NNP Password))
+    (NP (NN ravencall) (CD 4))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Password-3)
+compound(Password-3, ID-1)
+compound(Password-3, enron-2)
+dep(Password-3, ravencall-4)
+nummod(ravencall-4, 4-5)
+punct(Password-3, .-6)
+
+Extracted the following NER entity mentions:
+ID	STATE_OR_PROVINCE
+4	NUMBER
+
+Sentence #7 (13 tokens):
+It will then prompt you to change your password, etc.
+5.
+
+Tokens:
+[Text=It CharacterOffsetBegin=264 CharacterOffsetEnd=266 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=267 CharacterOffsetEnd=271 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=272 CharacterOffsetEnd=276 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=prompt CharacterOffsetBegin=277 CharacterOffsetEnd=283 PartOfSpeech=VB Lemma=prompt NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=284 CharacterOffsetEnd=287 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=288 CharacterOffsetEnd=290 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=change CharacterOffsetBegin=291 CharacterOffsetEnd=297 PartOfSpeech=VB Lemma=change NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=298 CharacterOffsetEnd=302 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=password CharacterOffsetBegin=303 CharacterOffsetEnd=311 PartOfSpeech=NN Lemma=password NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=311 CharacterOffsetEnd=312 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=etc. CharacterOffsetBegin=313 CharacterOffsetEnd=317 PartOfSpeech=FW Lemma=etc. NamedEntityTag=O]
+[Text=5 CharacterOffsetBegin=318 CharacterOffsetEnd=319 PartOfSpeech=CD Lemma=5 NamedEntityTag=NUMBER NormalizedNamedEntityTag=5.0]
+[Text=. CharacterOffsetBegin=319 CharacterOffsetEnd=320 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (MD will) (RB then)
+      (VP (VB prompt)
+        (S
+          (NP (PRP you))
+          (VP (TO to)
+            (VP (VB change)
+              (NP
+                (NP (PRP$ your) (NN password))
+                (, ,)
+                (NP
+                  (NP (FW etc.))
+                  (NP (CD 5)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, prompt-4)
+nsubj(prompt-4, It-1)
+aux(prompt-4, will-2)
+advmod(prompt-4, then-3)
+dobj(prompt-4, you-5)
+nsubj:xsubj(change-7, you-5)
+mark(change-7, to-6)
+xcomp(prompt-4, change-7)
+nmod:poss(password-9, your-8)
+dobj(change-7, password-9)
+punct(password-9, ,-10)
+appos(password-9, etc.-11)
+dep(etc.-11, 5-12)
+punct(prompt-4, .-13)
+
+Extracted the following NER entity mentions:
+5	NUMBER
+
+Sentence #8 (12 tokens):
+After you have registered you use this site: 	www.cera.com
+6.
+
+Tokens:
+[Text=After CharacterOffsetBegin=323 CharacterOffsetEnd=328 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=329 CharacterOffsetEnd=332 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=333 CharacterOffsetEnd=337 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=registered CharacterOffsetBegin=338 CharacterOffsetEnd=348 PartOfSpeech=VBN Lemma=register NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=349 CharacterOffsetEnd=352 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=use CharacterOffsetBegin=353 CharacterOffsetEnd=356 PartOfSpeech=VBP Lemma=use NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=357 CharacterOffsetEnd=361 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=site CharacterOffsetBegin=362 CharacterOffsetEnd=366 PartOfSpeech=NN Lemma=site NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=366 CharacterOffsetEnd=367 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=www.cera.com CharacterOffsetBegin=369 CharacterOffsetEnd=381 PartOfSpeech=NNP Lemma=www.cera.com NamedEntityTag=URL]
+[Text=6 CharacterOffsetBegin=382 CharacterOffsetEnd=383 PartOfSpeech=CD Lemma=6 NamedEntityTag=NUMBER NormalizedNamedEntityTag=6.0]
+[Text=. CharacterOffsetBegin=383 CharacterOffsetEnd=384 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN After)
+      (S
+        (NP (PRP you))
+        (VP (VBP have)
+          (VP (VBN registered)))))
+    (NP (PRP you))
+    (VP (VBP use)
+      (NP
+        (NP (DT this) (NN site))
+        (: :)
+        (NP (NNP www.cera.com) (CD 6))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, use-6)
+mark(registered-4, After-1)
+nsubj(registered-4, you-2)
+aux(registered-4, have-3)
+advcl:after(use-6, registered-4)
+nsubj(use-6, you-5)
+det(site-8, this-7)
+dobj(use-6, site-8)
+punct(site-8, :-9)
+dep(site-8, www.cera.com-10)
+nummod(www.cera.com-10, 6-11)
+punct(use-6, .-12)
+
+Extracted the following NER entity mentions:
+www.cera.com	URL
+6	NUMBER
+
+Sentence #9 (12 tokens):
+You can get into their general site and into Client Services.
+
+Tokens:
+[Text=You CharacterOffsetBegin=387 CharacterOffsetEnd=390 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=391 CharacterOffsetEnd=394 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=395 CharacterOffsetEnd=398 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=399 CharacterOffsetEnd=403 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=404 CharacterOffsetEnd=409 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=general CharacterOffsetBegin=410 CharacterOffsetEnd=417 PartOfSpeech=JJ Lemma=general NamedEntityTag=TITLE]
+[Text=site CharacterOffsetBegin=418 CharacterOffsetEnd=422 PartOfSpeech=NN Lemma=site NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=423 CharacterOffsetEnd=426 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=427 CharacterOffsetEnd=431 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=Client CharacterOffsetBegin=432 CharacterOffsetEnd=438 PartOfSpeech=NNP Lemma=Client NamedEntityTag=O]
+[Text=Services CharacterOffsetBegin=439 CharacterOffsetEnd=447 PartOfSpeech=NNPS Lemma=Services NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=447 CharacterOffsetEnd=448 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (MD can)
+      (VP (VB get)
+        (PP
+          (PP (IN into)
+            (NP (PRP$ their) (JJ general) (NN site)))
+          (CC and)
+          (PP (IN into)
+            (NP (NNP Client) (NNPS Services))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, get-3)
+nsubj(get-3, You-1)
+nsubj(get-3', You-1)
+aux(get-3, can-2)
+conj:and(get-3, get-3')
+case(site-7, into-4)
+nmod:poss(site-7, their-5)
+amod(site-7, general-6)
+nmod:into(get-3, site-7)
+cc(get-3, and-8)
+case(Services-11, into-9)
+compound(Services-11, Client-10)
+nmod:into(get-3', Services-11)
+punct(get-3, .-12)
+
+Extracted the following NER entity mentions:
+general	TITLE
+
+Sentence #10 (16 tokens):
+We have paid for all
+of the retainer services and some of the  specific studies.
+
+Tokens:
+[Text=We CharacterOffsetBegin=450 CharacterOffsetEnd=452 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=453 CharacterOffsetEnd=457 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=paid CharacterOffsetBegin=458 CharacterOffsetEnd=462 PartOfSpeech=VBN Lemma=pay NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=463 CharacterOffsetEnd=466 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=467 CharacterOffsetEnd=470 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=471 CharacterOffsetEnd=473 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=474 CharacterOffsetEnd=477 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=retainer CharacterOffsetBegin=478 CharacterOffsetEnd=486 PartOfSpeech=NN Lemma=retainer NamedEntityTag=O]
+[Text=services CharacterOffsetBegin=487 CharacterOffsetEnd=495 PartOfSpeech=NNS Lemma=service NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=496 CharacterOffsetEnd=499 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=500 CharacterOffsetEnd=504 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=505 CharacterOffsetEnd=507 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=508 CharacterOffsetEnd=511 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=specific CharacterOffsetBegin=513 CharacterOffsetEnd=521 PartOfSpeech=JJ Lemma=specific NamedEntityTag=O]
+[Text=studies CharacterOffsetBegin=522 CharacterOffsetEnd=529 PartOfSpeech=NNS Lemma=study NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=529 CharacterOffsetEnd=530 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP have)
+      (VP (VBN paid)
+        (PP (IN for)
+          (NP
+            (NP
+              (NP (DT all))
+              (PP (IN of)
+                (NP (DT the) (NN retainer) (NNS services))))
+            (CC and)
+            (NP
+              (NP (DT some))
+              (PP (IN of)
+                (NP (DT the) (JJ specific) (NNS studies))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, paid-3)
+nsubj(paid-3, We-1)
+aux(paid-3, have-2)
+case(all-5, for-4)
+det:qmod(services-9, all-5)
+mwe(all-5, of-6)
+det(services-9, the-7)
+compound(services-9, retainer-8)
+nmod(paid-3, services-9)
+cc(all-5, and-10)
+det:qmod(studies-15, some-11)
+mwe(some-11, of-12)
+det(studies-15, the-13)
+amod(studies-15, specific-14)
+conj:and(all-5, studies-15)
+det:qmod(services-9, studies-15)
+punct(paid-3, .-16)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(2,8,[8,9]) -> (1,3,[3,5]), that is: "CERA" -> "CERA 's"
+
+Coreference set:
+	(4,11,[11,12]) -> (4,6,[5,7]), that is: "it" -> "Open New"
+
+Coreference set:
+	(7,1,[1,2]) -> (6,3,[1,7]), that is: "It" -> "ID enron Password ravencall 4 ."
+	(7,9,[8,10]) -> (6,3,[1,7]), that is: "your password" -> "ID enron Password ravencall 4 ."

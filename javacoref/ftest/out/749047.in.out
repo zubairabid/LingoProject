@@ -1,0 +1,502 @@
+Document: ID=749047.in (8 sentences, 121 tokens)
+
+Sentence #1 (26 tokens):
+All,
+
+Adrainne Engler is currently dropping resumes of Internal Analysts & Associates who responded  to the e:mail advertising the EGM Trading Track.
+
+Tokens:
+[Text=All CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Adrainne CharacterOffsetBegin=6 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=Adrainne NamedEntityTag=PERSON]
+[Text=Engler CharacterOffsetBegin=15 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=Engler NamedEntityTag=PERSON]
+[Text=is CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=currently CharacterOffsetBegin=25 CharacterOffsetEnd=34 PartOfSpeech=RB Lemma=currently NamedEntityTag=O]
+[Text=dropping CharacterOffsetBegin=35 CharacterOffsetEnd=43 PartOfSpeech=VBG Lemma=drop NamedEntityTag=O]
+[Text=resumes CharacterOffsetBegin=44 CharacterOffsetEnd=51 PartOfSpeech=NNS Lemma=resume NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=52 CharacterOffsetEnd=54 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Internal CharacterOffsetBegin=55 CharacterOffsetEnd=63 PartOfSpeech=JJ Lemma=internal NamedEntityTag=ORGANIZATION]
+[Text=Analysts CharacterOffsetBegin=64 CharacterOffsetEnd=72 PartOfSpeech=NNS Lemma=analyst NamedEntityTag=ORGANIZATION]
+[Text=& CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=CC Lemma=& NamedEntityTag=ORGANIZATION]
+[Text=Associates CharacterOffsetBegin=75 CharacterOffsetEnd=85 PartOfSpeech=NNPS Lemma=Associates NamedEntityTag=ORGANIZATION]
+[Text=who CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=responded CharacterOffsetBegin=90 CharacterOffsetEnd=99 PartOfSpeech=VBD Lemma=respond NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=101 CharacterOffsetEnd=103 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=104 CharacterOffsetEnd=107 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=e CharacterOffsetBegin=108 CharacterOffsetEnd=109 PartOfSpeech=SYM Lemma=e NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=109 CharacterOffsetEnd=110 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=mail CharacterOffsetBegin=110 CharacterOffsetEnd=114 PartOfSpeech=NN Lemma=mail NamedEntityTag=O]
+[Text=advertising CharacterOffsetBegin=115 CharacterOffsetEnd=126 PartOfSpeech=NN Lemma=advertising NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=127 CharacterOffsetEnd=130 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=EGM CharacterOffsetBegin=131 CharacterOffsetEnd=134 PartOfSpeech=NNP Lemma=EGM NamedEntityTag=O]
+[Text=Trading CharacterOffsetBegin=135 CharacterOffsetEnd=142 PartOfSpeech=NNP Lemma=Trading NamedEntityTag=O]
+[Text=Track CharacterOffsetBegin=143 CharacterOffsetEnd=148 PartOfSpeech=NNP Lemma=Track NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=148 CharacterOffsetEnd=149 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP-TMP (DT All))
+    (, ,)
+    (NP (NNP Adrainne) (NNP Engler))
+    (VP (VBZ is)
+      (ADVP (RB currently))
+      (VP (VBG dropping)
+        (NP
+          (NP
+            (NP (NNS resumes))
+            (PP (IN of)
+              (NP (JJ Internal) (NNS Analysts))))
+          (CC &)
+          (NP
+            (NP
+              (NP (NNPS Associates))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBD responded)
+                    (PP (TO to)
+                      (NP
+                        (NP (DT the))
+                        (X (SYM e))))))))
+            (: :)
+            (NP
+              (NP (NN mail) (NN advertising))
+              (NP (DT the) (NNP EGM) (NNP Trading) (NNP Track)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, dropping-7)
+nmod:tmod(dropping-7, All-1)
+punct(dropping-7, ,-2)
+compound(Engler-4, Adrainne-3)
+nsubj(dropping-7, Engler-4)
+aux(dropping-7, is-5)
+advmod(dropping-7, currently-6)
+dobj(dropping-7, resumes-8)
+case(Analysts-11, of-9)
+amod(Analysts-11, Internal-10)
+nmod:of(resumes-8, Analysts-11)
+cc(resumes-8, &-12)
+dobj(dropping-7, Associates-13)
+conj:&(resumes-8, Associates-13)
+nsubj(responded-15, Associates-13)
+ref(Associates-13, who-14)
+acl:relcl(Associates-13, responded-15)
+case(the-17, to-16)
+nmod:to(responded-15, the-17)
+dep(the-17, e-18)
+punct(Associates-13, :-19)
+compound(advertising-21, mail-20)
+dep(Associates-13, advertising-21)
+det(Track-25, the-22)
+compound(Track-25, EGM-23)
+compound(Track-25, Trading-24)
+dep(advertising-21, Track-25)
+punct(dropping-7, .-26)
+
+Extracted the following NER entity mentions:
+Adrainne Engler	PERSON
+Internal Analysts & Associates	ORGANIZATION
+
+Sentence #2 (11 tokens):
+(some of these A&A are currently within EGM).
+
+Tokens:
+[Text=-LRB- CharacterOffsetBegin=152 CharacterOffsetEnd=153 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=153 CharacterOffsetEnd=157 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=158 CharacterOffsetEnd=160 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=161 CharacterOffsetEnd=166 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=A&A CharacterOffsetBegin=167 CharacterOffsetEnd=170 PartOfSpeech=NNP Lemma=A&A NamedEntityTag=ORGANIZATION]
+[Text=are CharacterOffsetBegin=171 CharacterOffsetEnd=174 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=currently CharacterOffsetBegin=175 CharacterOffsetEnd=184 PartOfSpeech=RB Lemma=currently NamedEntityTag=O]
+[Text=within CharacterOffsetBegin=185 CharacterOffsetEnd=191 PartOfSpeech=IN Lemma=within NamedEntityTag=O]
+[Text=EGM CharacterOffsetBegin=192 CharacterOffsetEnd=195 PartOfSpeech=NN Lemma=egm NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=195 CharacterOffsetEnd=196 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=196 CharacterOffsetEnd=197 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (-LRB- -LRB-)
+    (NP
+      (NP (DT some))
+      (PP (IN of)
+        (NP (DT these) (NNP A&A))))
+    (VP (VBP are)
+      (ADVP (RB currently))
+      (PP (IN within)
+        (NP (NN EGM))))
+    (-RRB- -RRB-) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, EGM-9)
+punct(EGM-9, -LRB--1)
+det:qmod(A&A-5, some-2)
+mwe(some-2, of-3)
+det(A&A-5, these-4)
+nsubj(EGM-9, A&A-5)
+cop(EGM-9, are-6)
+advmod(EGM-9, currently-7)
+case(EGM-9, within-8)
+punct(EGM-9, -RRB--10)
+punct(EGM-9, .-11)
+
+Extracted the following NER entity mentions:
+A&A	ORGANIZATION
+
+Sentence #3 (17 tokens):
+You will notice that some of the names who responded have an asterisk beside their names.
+
+Tokens:
+[Text=You CharacterOffsetBegin=199 CharacterOffsetEnd=202 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=203 CharacterOffsetEnd=207 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=notice CharacterOffsetBegin=208 CharacterOffsetEnd=214 PartOfSpeech=VB Lemma=notice NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=215 CharacterOffsetEnd=219 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=220 CharacterOffsetEnd=224 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=225 CharacterOffsetEnd=227 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=228 CharacterOffsetEnd=231 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=names CharacterOffsetBegin=232 CharacterOffsetEnd=237 PartOfSpeech=NNS Lemma=name NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=238 CharacterOffsetEnd=241 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=responded CharacterOffsetBegin=242 CharacterOffsetEnd=251 PartOfSpeech=VBD Lemma=respond NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=252 CharacterOffsetEnd=256 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=257 CharacterOffsetEnd=259 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=asterisk CharacterOffsetBegin=260 CharacterOffsetEnd=268 PartOfSpeech=NN Lemma=asterisk NamedEntityTag=O]
+[Text=beside CharacterOffsetBegin=269 CharacterOffsetEnd=275 PartOfSpeech=IN Lemma=beside NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=276 CharacterOffsetEnd=281 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=names CharacterOffsetBegin=282 CharacterOffsetEnd=287 PartOfSpeech=NNS Lemma=name NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=287 CharacterOffsetEnd=288 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (MD will)
+      (VP (VB notice)
+        (SBAR (IN that)
+          (S
+            (NP
+              (NP (DT some))
+              (PP (IN of)
+                (NP
+                  (NP (DT the) (NNS names))
+                  (SBAR
+                    (WHNP (WP who))
+                    (S
+                      (VP (VBD responded)))))))
+            (VP (VBP have)
+              (NP (DT an) (NN asterisk))
+              (PP (IN beside)
+                (NP (PRP$ their) (NNS names))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, notice-3)
+nsubj(notice-3, You-1)
+aux(notice-3, will-2)
+mark(have-11, that-4)
+det:qmod(names-8, some-5)
+mwe(some-5, of-6)
+det(names-8, the-7)
+nsubj(responded-10, names-8)
+nsubj(have-11, names-8)
+ref(names-8, who-9)
+acl:relcl(names-8, responded-10)
+ccomp(notice-3, have-11)
+det(asterisk-13, an-12)
+dobj(have-11, asterisk-13)
+case(names-16, beside-14)
+nmod:poss(names-16, their-15)
+nmod:beside(have-11, names-16)
+punct(notice-3, .-17)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (13 tokens):
+Pls note that this asterisk indicates a prc ratings below a 3.
+
+Tokens:
+[Text=Pls CharacterOffsetBegin=291 CharacterOffsetEnd=294 PartOfSpeech=NNS Lemma=pl NamedEntityTag=O]
+[Text=note CharacterOffsetBegin=295 CharacterOffsetEnd=299 PartOfSpeech=VBP Lemma=note NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=300 CharacterOffsetEnd=304 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=305 CharacterOffsetEnd=309 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=asterisk CharacterOffsetBegin=310 CharacterOffsetEnd=318 PartOfSpeech=NN Lemma=asterisk NamedEntityTag=O]
+[Text=indicates CharacterOffsetBegin=319 CharacterOffsetEnd=328 PartOfSpeech=VBZ Lemma=indicate NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=329 CharacterOffsetEnd=330 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=prc CharacterOffsetBegin=331 CharacterOffsetEnd=334 PartOfSpeech=NN Lemma=prc NamedEntityTag=COUNTRY]
+[Text=ratings CharacterOffsetBegin=335 CharacterOffsetEnd=342 PartOfSpeech=NNS Lemma=rating NamedEntityTag=O]
+[Text=below CharacterOffsetBegin=343 CharacterOffsetEnd=348 PartOfSpeech=IN Lemma=below NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=349 CharacterOffsetEnd=350 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=3 CharacterOffsetBegin=351 CharacterOffsetEnd=352 PartOfSpeech=CD Lemma=3 NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0]
+[Text=. CharacterOffsetBegin=352 CharacterOffsetEnd=353 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNS Pls))
+    (VP (VBP note)
+      (SBAR (IN that)
+        (S
+          (NP (DT this) (NN asterisk))
+          (VP (VBZ indicates)
+            (NP (DT a) (NN prc) (NNS ratings))
+            (PP (IN below)
+              (NP (DT a) (CD 3)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, note-2)
+nsubj(note-2, Pls-1)
+mark(indicates-6, that-3)
+det(asterisk-5, this-4)
+nsubj(indicates-6, asterisk-5)
+ccomp(note-2, indicates-6)
+det(ratings-9, a-7)
+compound(ratings-9, prc-8)
+dobj(indicates-6, ratings-9)
+case(3-12, below-10)
+det(3-12, a-11)
+nmod:below(indicates-6, 3-12)
+punct(note-2, .-13)
+
+Extracted the following NER entity mentions:
+prc	COUNTRY
+3	NUMBER
+
+Sentence #5 (24 tokens):
+Therefore we will more than likely not focus on these resumes (unless the EGM Management Team decides to approve an interview).
+
+Tokens:
+[Text=Therefore CharacterOffsetBegin=356 CharacterOffsetEnd=365 PartOfSpeech=RB Lemma=therefore NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=366 CharacterOffsetEnd=368 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=369 CharacterOffsetEnd=373 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=374 CharacterOffsetEnd=378 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=379 CharacterOffsetEnd=383 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=likely CharacterOffsetBegin=384 CharacterOffsetEnd=390 PartOfSpeech=JJ Lemma=likely NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=391 CharacterOffsetEnd=394 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=focus CharacterOffsetBegin=395 CharacterOffsetEnd=400 PartOfSpeech=VB Lemma=focus NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=401 CharacterOffsetEnd=403 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=404 CharacterOffsetEnd=409 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=resumes CharacterOffsetBegin=410 CharacterOffsetEnd=417 PartOfSpeech=NNS Lemma=resume NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=418 CharacterOffsetEnd=419 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=unless CharacterOffsetBegin=419 CharacterOffsetEnd=425 PartOfSpeech=IN Lemma=unless NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=426 CharacterOffsetEnd=429 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=EGM CharacterOffsetBegin=430 CharacterOffsetEnd=433 PartOfSpeech=NNP Lemma=EGM NamedEntityTag=ORGANIZATION]
+[Text=Management CharacterOffsetBegin=434 CharacterOffsetEnd=444 PartOfSpeech=NNP Lemma=Management NamedEntityTag=ORGANIZATION]
+[Text=Team CharacterOffsetBegin=445 CharacterOffsetEnd=449 PartOfSpeech=NNP Lemma=Team NamedEntityTag=ORGANIZATION]
+[Text=decides CharacterOffsetBegin=450 CharacterOffsetEnd=457 PartOfSpeech=VBZ Lemma=decide NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=458 CharacterOffsetEnd=460 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=approve CharacterOffsetBegin=461 CharacterOffsetEnd=468 PartOfSpeech=VB Lemma=approve NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=469 CharacterOffsetEnd=471 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=interview CharacterOffsetBegin=472 CharacterOffsetEnd=481 PartOfSpeech=NN Lemma=interview NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=481 CharacterOffsetEnd=482 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=482 CharacterOffsetEnd=483 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Therefore))
+    (NP (PRP we))
+    (VP (MD will)
+      (ADVP (RBR more)
+        (PP (IN than)
+          (ADJP (JJ likely))))
+      (RB not)
+      (VP (VB focus)
+        (PP (IN on)
+          (NP
+            (NP (DT these) (NNS resumes))
+            (PRN (-LRB- -LRB-)
+              (SBAR (IN unless)
+                (S
+                  (NP (DT the) (NNP EGM) (NNP Management) (NNP Team))
+                  (VP (VBZ decides)
+                    (S
+                      (VP (TO to)
+                        (VP (VB approve)
+                          (NP (DT an) (NN interview))))))))
+              (-RRB- -RRB-))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, focus-8)
+advmod(focus-8, Therefore-1)
+nsubj(focus-8, we-2)
+aux(focus-8, will-3)
+advmod(focus-8, more-4)
+case(likely-6, than-5)
+advcl:than(more-4, likely-6)
+neg(focus-8, not-7)
+case(resumes-11, on-9)
+det(resumes-11, these-10)
+nmod:on(focus-8, resumes-11)
+punct(decides-18, -LRB--12)
+mark(decides-18, unless-13)
+det(Team-17, the-14)
+compound(Team-17, EGM-15)
+compound(Team-17, Management-16)
+nsubj(decides-18, Team-17)
+nsubj:xsubj(approve-20, Team-17)
+dep(resumes-11, decides-18)
+mark(approve-20, to-19)
+xcomp(decides-18, approve-20)
+det(interview-22, an-21)
+dobj(approve-20, interview-22)
+punct(decides-18, -RRB--23)
+punct(focus-8, .-24)
+
+Extracted the following NER entity mentions:
+EGM Management Team	ORGANIZATION
+
+Sentence #6 (24 tokens):
+John  N - I will follow up with you to discuss the selection of candidates to be interviewed and finalise the interview dates.
+
+Tokens:
+[Text=John CharacterOffsetBegin=485 CharacterOffsetEnd=489 PartOfSpeech=NNP Lemma=John NamedEntityTag=PERSON]
+[Text=N CharacterOffsetBegin=491 CharacterOffsetEnd=492 PartOfSpeech=NNP Lemma=N NamedEntityTag=PERSON]
+[Text=- CharacterOffsetBegin=493 CharacterOffsetEnd=494 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=495 CharacterOffsetEnd=496 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=497 CharacterOffsetEnd=501 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=follow CharacterOffsetBegin=502 CharacterOffsetEnd=508 PartOfSpeech=VB Lemma=follow NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=509 CharacterOffsetEnd=511 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=512 CharacterOffsetEnd=516 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=517 CharacterOffsetEnd=520 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=521 CharacterOffsetEnd=523 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=discuss CharacterOffsetBegin=524 CharacterOffsetEnd=531 PartOfSpeech=VB Lemma=discuss NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=532 CharacterOffsetEnd=535 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=selection CharacterOffsetBegin=536 CharacterOffsetEnd=545 PartOfSpeech=NN Lemma=selection NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=546 CharacterOffsetEnd=548 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=candidates CharacterOffsetBegin=549 CharacterOffsetEnd=559 PartOfSpeech=NNS Lemma=candidate NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=560 CharacterOffsetEnd=562 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=563 CharacterOffsetEnd=565 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=interviewed CharacterOffsetBegin=566 CharacterOffsetEnd=577 PartOfSpeech=VBN Lemma=interview NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=578 CharacterOffsetEnd=581 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=finalise CharacterOffsetBegin=582 CharacterOffsetEnd=590 PartOfSpeech=VB Lemma=finalise NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=591 CharacterOffsetEnd=594 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=interview CharacterOffsetBegin=595 CharacterOffsetEnd=604 PartOfSpeech=NN Lemma=interview NamedEntityTag=O]
+[Text=dates CharacterOffsetBegin=605 CharacterOffsetEnd=610 PartOfSpeech=NNS Lemma=date NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=610 CharacterOffsetEnd=611 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP John) (NNP N))
+    (: -)
+    (S
+      (NP (PRP I))
+      (VP (MD will)
+        (VP (VB follow)
+          (PRT (RP up))
+          (PP (IN with)
+            (NP (PRP you)))
+          (S
+            (VP (TO to)
+              (VP (VB discuss)
+                (NP
+                  (NP (DT the) (NN selection))
+                  (PP (IN of)
+                    (NP (NNS candidates))))
+                (S
+                  (VP (TO to)
+                    (VP
+                      (VP (VB be)
+                        (VP (VBN interviewed)))
+                      (CC and)
+                      (VP (VB finalise)
+                        (NP (DT the) (NN interview) (NNS dates))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, N-2)
+compound(N-2, John-1)
+punct(N-2, --3)
+nsubj(follow-6, I-4)
+nsubj:xsubj(discuss-11, I-4)
+aux(follow-6, will-5)
+parataxis(N-2, follow-6)
+compound:prt(follow-6, up-7)
+case(you-9, with-8)
+nmod:with(follow-6, you-9)
+mark(discuss-11, to-10)
+xcomp(follow-6, discuss-11)
+det(selection-13, the-12)
+dobj(discuss-11, selection-13)
+case(candidates-15, of-14)
+nmod:of(selection-13, candidates-15)
+mark(interviewed-18, to-16)
+auxpass(interviewed-18, be-17)
+advcl:to(discuss-11, interviewed-18)
+cc(interviewed-18, and-19)
+advcl:to(discuss-11, finalise-20)
+conj:and(interviewed-18, finalise-20)
+det(dates-23, the-21)
+compound(dates-23, interview-22)
+dobj(finalise-20, dates-23)
+punct(N-2, .-24)
+
+Extracted the following NER entity mentions:
+John N	PERSON
+
+Sentence #7 (5 tokens):
+Kind regards,
+
+Karen.
+
+Tokens:
+[Text=Kind CharacterOffsetBegin=613 CharacterOffsetEnd=617 PartOfSpeech=NNP Lemma=Kind NamedEntityTag=O]
+[Text=regards CharacterOffsetBegin=618 CharacterOffsetEnd=625 PartOfSpeech=VBZ Lemma=regard NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=625 CharacterOffsetEnd=626 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Karen CharacterOffsetBegin=628 CharacterOffsetEnd=633 PartOfSpeech=NNP Lemma=Karen NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=633 CharacterOffsetEnd=634 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NNP Kind))
+      (VP (VBZ regards)))
+    (, ,)
+    (FRAG
+      (NP (NNP Karen)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, regards-2)
+nsubj(regards-2, Kind-1)
+punct(regards-2, ,-3)
+parataxis(regards-2, Karen-4)
+punct(regards-2, .-5)
+
+Extracted the following NER entity mentions:
+Karen	PERSON
+
+Sentence #8 (1 tokens):
+x54667
+
+Tokens:
+[Text=x54667 CharacterOffsetBegin=635 CharacterOffsetEnd=641 PartOfSpeech=NN Lemma=x54667 NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NN x54667)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, x54667-1)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(3,15,[15,16]) -> (3,5,[5,11]), that is: "their" -> "some of the names who responded"
+
+Coreference set:
+	(3,16,[15,17]) -> (3,8,[7,11]), that is: "their names" -> "the names who responded"
+
+Coreference set:
+	(4,5,[4,6]) -> (3,13,[12,14]), that is: "this asterisk" -> "an asterisk"

@@ -1,0 +1,422 @@
+Document: ID=685314.in (5 sentences, 100 tokens)
+
+Sentence #1 (4 tokens):
+Barrie was awesome!!
+
+Tokens:
+[Text=Barrie CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Barrie NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=awesome CharacterOffsetBegin=11 CharacterOffsetEnd=18 PartOfSpeech=JJ Lemma=awesome NamedEntityTag=O]
+[Text=!! CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=NN Lemma=!! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Barrie))
+    (VP (VBD was)
+      (NP (JJ awesome) (NN !!)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, !!-4)
+nsubj(!!-4, Barrie-1)
+cop(!!-4, was-2)
+amod(!!-4, awesome-3)
+
+Extracted the following NER entity mentions:
+Barrie	PERSON
+
+Sentence #2 (5 tokens):
+12 points on Arizona!!
+
+Tokens:
+[Text=12 CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=CD Lemma=12 NamedEntityTag=NUMBER NormalizedNamedEntityTag=12.0]
+[Text=points CharacterOffsetBegin=25 CharacterOffsetEnd=31 PartOfSpeech=NNS Lemma=point NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Arizona CharacterOffsetBegin=35 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=Arizona NamedEntityTag=STATE_OR_PROVINCE]
+[Text=!! CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=NN Lemma=!! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (CD 12) (NNS points))
+    (PP (IN on)
+      (NP (NNP Arizona) (NN !!)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, points-2)
+nummod(points-2, 12-1)
+case(!!-5, on-3)
+compound(!!-5, Arizona-4)
+nmod:on(points-2, !!-5)
+
+Extracted the following NER entity mentions:
+12	NUMBER
+Arizona	STATE_OR_PROVINCE
+
+Sentence #3 (18 tokens):
+The Bears, CLEVELAND, Seattle,
+Tampa Bay - that is some kind of crystal ball!
+
+Tokens:
+[Text=The CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Bears CharacterOffsetBegin=49 CharacterOffsetEnd=54 PartOfSpeech=NNPS Lemma=Bears NamedEntityTag=MISC]
+[Text=, CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=CLEVELAND CharacterOffsetBegin=56 CharacterOffsetEnd=65 PartOfSpeech=NNP Lemma=CLEVELAND NamedEntityTag=CITY]
+[Text=, CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Seattle CharacterOffsetBegin=67 CharacterOffsetEnd=74 PartOfSpeech=NNP Lemma=Seattle NamedEntityTag=CITY]
+[Text=, CharacterOffsetBegin=74 CharacterOffsetEnd=75 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Tampa CharacterOffsetBegin=76 CharacterOffsetEnd=81 PartOfSpeech=NNP Lemma=Tampa NamedEntityTag=CITY]
+[Text=Bay CharacterOffsetBegin=82 CharacterOffsetEnd=85 PartOfSpeech=NNP Lemma=Bay NamedEntityTag=CITY]
+[Text=- CharacterOffsetBegin=86 CharacterOffsetEnd=87 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=88 CharacterOffsetEnd=92 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=93 CharacterOffsetEnd=95 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=96 CharacterOffsetEnd=100 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=kind CharacterOffsetBegin=101 CharacterOffsetEnd=105 PartOfSpeech=NN Lemma=kind NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=106 CharacterOffsetEnd=108 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=crystal CharacterOffsetBegin=109 CharacterOffsetEnd=116 PartOfSpeech=NN Lemma=crystal NamedEntityTag=O]
+[Text=ball CharacterOffsetBegin=117 CharacterOffsetEnd=121 PartOfSpeech=NN Lemma=ball NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=121 CharacterOffsetEnd=122 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP
+      (NP (DT The) (NNPS Bears))
+      (, ,)
+      (NP (NNP CLEVELAND) (, ,) (NNP Seattle) (, ,) (NNP Tampa) (NNP Bay)))
+    (: -)
+    (SBAR
+      (WHNP (WDT that))
+      (S
+        (VP (VBZ is)
+          (NP
+            (NP (DT some) (NN kind))
+            (PP (IN of)
+              (NP (NN crystal) (NN ball)))))))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Bears-2)
+det(Bears-2, The-1)
+nsubj(kind-14, Bears-2)
+punct(Bears-2, ,-3)
+compound(Bay-9, CLEVELAND-4)
+punct(Bay-9, ,-5)
+appos(Bay-9, Seattle-6)
+punct(Bay-9, ,-7)
+appos(Bay-9, Tampa-8)
+appos(Bears-2, Bay-9)
+punct(Bears-2, --10)
+ref(Bears-2, that-11)
+cop(kind-14, is-12)
+det(kind-14, some-13)
+acl:relcl(Bears-2, kind-14)
+case(ball-17, of-15)
+compound(ball-17, crystal-16)
+nmod:of(kind-14, ball-17)
+punct(Bears-2, !-18)
+
+Extracted the following NER entity mentions:
+Bears	MISC
+CLEVELAND	CITY
+Seattle	CITY
+Tampa Bay	CITY
+
+Sentence #4 (10 tokens):
+And she went from seventh to first place overall.
+
+Tokens:
+[Text=And CharacterOffsetBegin=123 CharacterOffsetEnd=126 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=127 CharacterOffsetEnd=130 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=went CharacterOffsetBegin=131 CharacterOffsetEnd=135 PartOfSpeech=VBD Lemma=go NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=136 CharacterOffsetEnd=140 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=seventh CharacterOffsetBegin=141 CharacterOffsetEnd=148 PartOfSpeech=JJ Lemma=seventh NamedEntityTag=ORDINAL NormalizedNamedEntityTag=7.0-1.0]
+[Text=to CharacterOffsetBegin=149 CharacterOffsetEnd=151 PartOfSpeech=TO Lemma=to NamedEntityTag=ORDINAL NormalizedNamedEntityTag=7.0-1.0]
+[Text=first CharacterOffsetBegin=152 CharacterOffsetEnd=157 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=7.0-1.0]
+[Text=place CharacterOffsetBegin=158 CharacterOffsetEnd=163 PartOfSpeech=NN Lemma=place NamedEntityTag=O]
+[Text=overall CharacterOffsetBegin=164 CharacterOffsetEnd=171 PartOfSpeech=RB Lemma=overall NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=171 CharacterOffsetEnd=172 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC And)
+    (NP (PRP she))
+    (VP (VBD went)
+      (PP (IN from)
+        (ADJP (JJ seventh)))
+      (PP (TO to)
+        (NP (JJ first) (NN place)))
+      (ADVP (RB overall)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, went-3)
+cc(went-3, And-1)
+nsubj(went-3, she-2)
+case(seventh-5, from-4)
+advcl:from(went-3, seventh-5)
+case(place-8, to-6)
+amod(place-8, first-7)
+nmod:to(went-3, place-8)
+advmod(went-3, overall-9)
+punct(went-3, .-10)
+
+Extracted the following NER entity mentions:
+seventh to first	ORDINAL
+she	PERSON
+
+Sentence #5 (63 tokens):
+Winners for the week are:
+
+1st place - Barrie
+2nd place - Narvco
+3rd place - Cindy
+4th place - Cameron & Scott
+
+
+Four people sat down with their Philadelphia pick:  Cameron & Scott, Hank,
+Mickey, and Mike & Lisa - leaves 12 standing
+
+
+
+The pick sheet for the games originally planned as Week 6 is attached.
+
+Tokens:
+[Text=Winners CharacterOffsetBegin=174 CharacterOffsetEnd=181 PartOfSpeech=NNS Lemma=winner NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=182 CharacterOffsetEnd=185 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=186 CharacterOffsetEnd=189 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=week CharacterOffsetBegin=190 CharacterOffsetEnd=194 PartOfSpeech=NN Lemma=week NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=195 CharacterOffsetEnd=198 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=198 CharacterOffsetEnd=199 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=1st CharacterOffsetBegin=201 CharacterOffsetEnd=204 PartOfSpeech=CD Lemma=1st NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=place CharacterOffsetBegin=205 CharacterOffsetEnd=210 PartOfSpeech=NN Lemma=place NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=211 CharacterOffsetEnd=212 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=Barrie CharacterOffsetBegin=213 CharacterOffsetEnd=219 PartOfSpeech=NNP Lemma=Barrie NamedEntityTag=PERSON]
+[Text=2nd CharacterOffsetBegin=220 CharacterOffsetEnd=223 PartOfSpeech=JJ Lemma=2nd NamedEntityTag=ORDINAL NormalizedNamedEntityTag=2.0]
+[Text=place CharacterOffsetBegin=224 CharacterOffsetEnd=229 PartOfSpeech=NN Lemma=place NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=230 CharacterOffsetEnd=231 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=Narvco CharacterOffsetBegin=232 CharacterOffsetEnd=238 PartOfSpeech=NNP Lemma=Narvco NamedEntityTag=PERSON]
+[Text=3rd CharacterOffsetBegin=239 CharacterOffsetEnd=242 PartOfSpeech=CD Lemma=3rd NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0]
+[Text=place CharacterOffsetBegin=243 CharacterOffsetEnd=248 PartOfSpeech=NN Lemma=place NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=249 CharacterOffsetEnd=250 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=Cindy CharacterOffsetBegin=251 CharacterOffsetEnd=256 PartOfSpeech=NNP Lemma=Cindy NamedEntityTag=PERSON]
+[Text=4th CharacterOffsetBegin=257 CharacterOffsetEnd=260 PartOfSpeech=JJ Lemma=4th NamedEntityTag=ORDINAL NormalizedNamedEntityTag=4.0]
+[Text=place CharacterOffsetBegin=261 CharacterOffsetEnd=266 PartOfSpeech=NN Lemma=place NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=267 CharacterOffsetEnd=268 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=Cameron CharacterOffsetBegin=269 CharacterOffsetEnd=276 PartOfSpeech=NNP Lemma=Cameron NamedEntityTag=PERSON]
+[Text=& CharacterOffsetBegin=277 CharacterOffsetEnd=278 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=Scott CharacterOffsetBegin=279 CharacterOffsetEnd=284 PartOfSpeech=NNP Lemma=Scott NamedEntityTag=O]
+[Text=Four CharacterOffsetBegin=287 CharacterOffsetEnd=291 PartOfSpeech=CD Lemma=four NamedEntityTag=NUMBER NormalizedNamedEntityTag=4.0]
+[Text=people CharacterOffsetBegin=292 CharacterOffsetEnd=298 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=sat CharacterOffsetBegin=299 CharacterOffsetEnd=302 PartOfSpeech=VBD Lemma=sit NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=303 CharacterOffsetEnd=307 PartOfSpeech=RP Lemma=down NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=308 CharacterOffsetEnd=312 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=313 CharacterOffsetEnd=318 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=Philadelphia CharacterOffsetBegin=319 CharacterOffsetEnd=331 PartOfSpeech=NNP Lemma=Philadelphia NamedEntityTag=CITY]
+[Text=pick CharacterOffsetBegin=332 CharacterOffsetEnd=336 PartOfSpeech=NN Lemma=pick NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=336 CharacterOffsetEnd=337 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Cameron CharacterOffsetBegin=339 CharacterOffsetEnd=346 PartOfSpeech=NNP Lemma=Cameron NamedEntityTag=ORGANIZATION]
+[Text=& CharacterOffsetBegin=347 CharacterOffsetEnd=348 PartOfSpeech=CC Lemma=& NamedEntityTag=ORGANIZATION]
+[Text=Scott CharacterOffsetBegin=349 CharacterOffsetEnd=354 PartOfSpeech=NNP Lemma=Scott NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=354 CharacterOffsetEnd=355 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Hank CharacterOffsetBegin=356 CharacterOffsetEnd=360 PartOfSpeech=NNP Lemma=Hank NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=360 CharacterOffsetEnd=361 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Mickey CharacterOffsetBegin=362 CharacterOffsetEnd=368 PartOfSpeech=NNP Lemma=Mickey NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=368 CharacterOffsetEnd=369 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=370 CharacterOffsetEnd=373 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Mike CharacterOffsetBegin=374 CharacterOffsetEnd=378 PartOfSpeech=NNP Lemma=Mike NamedEntityTag=PERSON]
+[Text=& CharacterOffsetBegin=379 CharacterOffsetEnd=380 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=Lisa CharacterOffsetBegin=381 CharacterOffsetEnd=385 PartOfSpeech=NNP Lemma=Lisa NamedEntityTag=PERSON]
+[Text=- CharacterOffsetBegin=386 CharacterOffsetEnd=387 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=leaves CharacterOffsetBegin=388 CharacterOffsetEnd=394 PartOfSpeech=VBZ Lemma=leave NamedEntityTag=O]
+[Text=12 CharacterOffsetBegin=395 CharacterOffsetEnd=397 PartOfSpeech=CD Lemma=12 NamedEntityTag=NUMBER NormalizedNamedEntityTag=12.0]
+[Text=standing CharacterOffsetBegin=398 CharacterOffsetEnd=406 PartOfSpeech=NN Lemma=standing NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=410 CharacterOffsetEnd=413 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=pick CharacterOffsetBegin=414 CharacterOffsetEnd=418 PartOfSpeech=NN Lemma=pick NamedEntityTag=O]
+[Text=sheet CharacterOffsetBegin=419 CharacterOffsetEnd=424 PartOfSpeech=NN Lemma=sheet NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=425 CharacterOffsetEnd=428 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=429 CharacterOffsetEnd=432 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=games CharacterOffsetBegin=433 CharacterOffsetEnd=438 PartOfSpeech=NNS Lemma=game NamedEntityTag=O]
+[Text=originally CharacterOffsetBegin=439 CharacterOffsetEnd=449 PartOfSpeech=RB Lemma=originally NamedEntityTag=O]
+[Text=planned CharacterOffsetBegin=450 CharacterOffsetEnd=457 PartOfSpeech=VBN Lemma=plan NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=458 CharacterOffsetEnd=460 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=Week CharacterOffsetBegin=461 CharacterOffsetEnd=465 PartOfSpeech=NN Lemma=week NamedEntityTag=O]
+[Text=6 CharacterOffsetBegin=466 CharacterOffsetEnd=467 PartOfSpeech=CD Lemma=6 NamedEntityTag=NUMBER NormalizedNamedEntityTag=6.0]
+[Text=is CharacterOffsetBegin=468 CharacterOffsetEnd=470 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=attached CharacterOffsetBegin=471 CharacterOffsetEnd=479 PartOfSpeech=VBN Lemma=attach NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=479 CharacterOffsetEnd=480 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNS Winners))
+        (PP (IN for)
+          (NP (DT the) (NN week))))
+      (VP (VBP are) (: :)
+        (NP
+          (NP
+            (NP
+              (NP (CD 1st))
+              (NP (NN place)))
+            (: -)
+            (NP
+              (NP (NNP Barrie))
+              (NP (JJ 2nd) (NN place)))
+            (: -)
+            (NP
+              (NP (NNP Narvco))
+              (NP (CD 3rd) (NN place)))
+            (: -)
+            (NP
+              (NP (NNP Cindy))
+              (NP (JJ 4th) (NN place)))
+            (: -)
+            (NP
+              (NP (NNP Cameron)
+                (CC &)
+                (NNP Scott))
+              (NP (CD Four) (NNS people))))
+          (VP (VBD sat)
+            (PRT (RP down))
+            (PP (IN with)
+              (NP (PRP$ their) (NNP Philadelphia) (NN pick)))))))
+    (: :)
+    (S
+      (NP
+        (NP (NNP Cameron)
+          (CC &)
+          (NNP Scott))
+        (, ,)
+        (NP (NNP Hank))
+        (, ,)
+        (NP (NNP Mickey))
+        (, ,)
+        (CC and)
+        (NP (NNP Mike)
+          (CC &)
+          (NNP Lisa))
+        (: -))
+      (VP (VBZ leaves)
+        (NP
+          (NP (CD 12) (NN standing))
+          (SBAR
+            (S
+              (NP
+                (NP (DT The) (NN pick) (NN sheet))
+                (PP (IN for)
+                  (NP
+                    (NP (DT the) (NNS games))
+                    (VP
+                      (ADVP (RB originally))
+                      (VBN planned)
+                      (PP (IN as)
+                        (NP (NN Week) (CD 6)))))))
+              (VP (VBZ is)
+                (VP (VBN attached))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 1st-7)
+nsubj(1st-7, Winners-1)
+case(week-4, for-2)
+det(week-4, the-3)
+nmod:for(Winners-1, week-4)
+cop(1st-7, are-5)
+punct(1st-7, :-6)
+dep(1st-7, place-8)
+punct(1st-7, --9)
+dep(1st-7, Barrie-10)
+amod(place-12, 2nd-11)
+dep(Barrie-10, place-12)
+punct(1st-7, --13)
+dep(1st-7, Narvco-14)
+nummod(place-16, 3rd-15)
+dep(Narvco-14, place-16)
+punct(1st-7, --17)
+dep(1st-7, Cindy-18)
+amod(place-20, 4th-19)
+dep(Cindy-18, place-20)
+punct(1st-7, --21)
+dep(1st-7, Cameron-22)
+cc(Cameron-22, &-23)
+dep(1st-7, Scott-24)
+conj:&(Cameron-22, Scott-24)
+nummod(people-26, Four-25)
+dep(Cameron-22, people-26)
+acl(1st-7, sat-27)
+compound:prt(sat-27, down-28)
+case(pick-32, with-29)
+nmod:poss(pick-32, their-30)
+compound(pick-32, Philadelphia-31)
+nmod:with(sat-27, pick-32)
+punct(1st-7, :-33)
+nsubj(leaves-47, Cameron-34)
+cc(Cameron-34, &-35)
+conj:&(Cameron-34, Scott-36)
+nsubj(leaves-47, Scott-36)
+punct(Cameron-34, ,-37)
+conj:&(Cameron-34, Hank-38)
+nsubj(leaves-47, Hank-38)
+punct(Cameron-34, ,-39)
+conj:&(Cameron-34, Mickey-40)
+nsubj(leaves-47, Mickey-40)
+punct(Cameron-34, ,-41)
+cc(Cameron-34, and-42)
+conj:and(Cameron-34, Mike-43)
+nsubj(leaves-47, Mike-43)
+cc(Mike-43, &-44)
+conj:and(Cameron-34, Lisa-45)
+conj:&(Mike-43, Lisa-45)
+punct(Cameron-34, --46)
+parataxis(1st-7, leaves-47)
+nummod(standing-49, 12-48)
+dobj(leaves-47, standing-49)
+det(sheet-52, The-50)
+compound(sheet-52, pick-51)
+nsubjpass(attached-62, sheet-52)
+case(games-55, for-53)
+det(games-55, the-54)
+nmod:for(sheet-52, games-55)
+advmod(planned-57, originally-56)
+acl(games-55, planned-57)
+case(Week-59, as-58)
+nmod:as(planned-57, Week-59)
+nummod(Week-59, 6-60)
+auxpass(attached-62, is-61)
+acl:relcl(standing-49, attached-62)
+punct(1st-7, .-63)
+
+Extracted the following NER entity mentions:
+1st	NUMBER
+Barrie	PERSON
+2nd	ORDINAL
+Narvco	PERSON
+3rd	NUMBER
+Cindy	PERSON
+4th	ORDINAL
+Cameron	PERSON
+Four	NUMBER
+Philadelphia	CITY
+Cameron & Scott	ORGANIZATION
+Hank	PERSON
+Mickey	PERSON
+Mike	PERSON
+Lisa	PERSON
+12	NUMBER
+6	NUMBER
+
+Coreference set:
+	(5,48,[48,49]) -> (2,1,[1,2]), that is: "12" -> "12"
+
+Coreference set:
+	(5,30,[30,31]) -> (5,1,[1,5]), that is: "their" -> "Winners for the week"
+
+Coreference set:
+	(5,34,[34,37]) -> (5,22,[22,27]), that is: "Cameron & Scott" -> "Cameron & Scott Four people"
