@@ -1,0 +1,363 @@
+Document: ID=3014.in (4 sentences, 93 tokens)
+
+Sentence #1 (28 tokens):
+The attached details a two tiered sale to AGC, of which the second component needs an immediate Confirmation and executable EEI Master for AGC's signature.
+
+Tokens:
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=attached CharacterOffsetBegin=4 CharacterOffsetEnd=12 PartOfSpeech=VBN Lemma=attach NamedEntityTag=O]
+[Text=details CharacterOffsetBegin=13 CharacterOffsetEnd=20 PartOfSpeech=NNS Lemma=detail NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=tiered CharacterOffsetBegin=27 CharacterOffsetEnd=33 PartOfSpeech=JJ Lemma=tiered NamedEntityTag=O]
+[Text=sale CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=sale NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=AGC CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=NNP Lemma=AGC NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=50 CharacterOffsetEnd=55 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=second CharacterOffsetBegin=60 CharacterOffsetEnd=66 PartOfSpeech=JJ Lemma=second NamedEntityTag=ORDINAL NormalizedNamedEntityTag=2.0]
+[Text=component CharacterOffsetBegin=67 CharacterOffsetEnd=76 PartOfSpeech=NN Lemma=component NamedEntityTag=O]
+[Text=needs CharacterOffsetBegin=77 CharacterOffsetEnd=82 PartOfSpeech=VBZ Lemma=need NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=83 CharacterOffsetEnd=85 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=immediate CharacterOffsetBegin=86 CharacterOffsetEnd=95 PartOfSpeech=JJ Lemma=immediate NamedEntityTag=O]
+[Text=Confirmation CharacterOffsetBegin=96 CharacterOffsetEnd=108 PartOfSpeech=NN Lemma=confirmation NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=109 CharacterOffsetEnd=112 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=executable CharacterOffsetBegin=113 CharacterOffsetEnd=123 PartOfSpeech=JJ Lemma=executable NamedEntityTag=O]
+[Text=EEI CharacterOffsetBegin=124 CharacterOffsetEnd=127 PartOfSpeech=NNP Lemma=EEI NamedEntityTag=ORGANIZATION]
+[Text=Master CharacterOffsetBegin=128 CharacterOffsetEnd=134 PartOfSpeech=NNP Lemma=Master NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=135 CharacterOffsetEnd=138 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=AGC CharacterOffsetBegin=139 CharacterOffsetEnd=142 PartOfSpeech=NNP Lemma=AGC NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=142 CharacterOffsetEnd=144 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=signature CharacterOffsetBegin=145 CharacterOffsetEnd=154 PartOfSpeech=NN Lemma=signature NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=154 CharacterOffsetEnd=155 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The))
+    (VP (VBN attached)
+      (S
+        (NP (NNS details))
+        (NP (DT a) (CD two) (JJ tiered) (NN sale)))
+      (PP (TO to)
+        (NP
+          (NP (NNP AGC))
+          (, ,)
+          (SBAR
+            (WHPP (IN of)
+              (WHNP (WDT which)))
+            (S
+              (NP (DT the) (JJ second) (NN component))
+              (VP (VBZ needs)
+                (NP
+                  (NP (DT an) (JJ immediate) (NN Confirmation))
+                  (CC and)
+                  (NP
+                    (NP (JJ executable) (NNP EEI) (NNP Master))
+                    (PP (IN for)
+                      (NP
+                        (NP (NNP AGC) (POS 's))
+                        (NN signature)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, attached-2)
+nsubj(attached-2, The-1)
+nsubj(sale-7, details-3)
+det(sale-7, a-4)
+nummod(sale-7, two-5)
+amod(sale-7, tiered-6)
+xcomp(attached-2, sale-7)
+case(AGC-9, to-8)
+nmod:to(attached-2, AGC-9)
+nmod:of(needs-16, AGC-9)
+punct(AGC-9, ,-10)
+case(which-12, of-11)
+ref(AGC-9, which-12)
+det(component-15, the-13)
+amod(component-15, second-14)
+nsubj(needs-16, component-15)
+acl:relcl(AGC-9, needs-16)
+det(Confirmation-19, an-17)
+amod(Confirmation-19, immediate-18)
+dobj(needs-16, Confirmation-19)
+cc(Confirmation-19, and-20)
+amod(Master-23, executable-21)
+compound(Master-23, EEI-22)
+dobj(needs-16, Master-23)
+conj:and(Confirmation-19, Master-23)
+case(signature-27, for-24)
+nmod:poss(signature-27, AGC-25)
+case(AGC-25, 's-26)
+nmod:for(Master-23, signature-27)
+punct(attached-2, .-28)
+
+Extracted the following NER entity mentions:
+two	NUMBER
+AGC	ORGANIZATION
+second	ORDINAL
+EEI	ORGANIZATION
+AGC	ORGANIZATION
+
+Sentence #2 (29 tokens):
+AGC is expecting the EEI today, their consultant has already reviewed a "blank" EEI and with no credit provisions this should not be a problem.
+
+Tokens:
+[Text=AGC CharacterOffsetBegin=157 CharacterOffsetEnd=160 PartOfSpeech=NN Lemma=agc NamedEntityTag=ORGANIZATION]
+[Text=is CharacterOffsetBegin=161 CharacterOffsetEnd=163 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=expecting CharacterOffsetBegin=164 CharacterOffsetEnd=173 PartOfSpeech=VBG Lemma=expect NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=174 CharacterOffsetEnd=177 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=EEI CharacterOffsetBegin=178 CharacterOffsetEnd=181 PartOfSpeech=NNP Lemma=EEI NamedEntityTag=ORGANIZATION]
+[Text=today CharacterOffsetBegin=182 CharacterOffsetEnd=187 PartOfSpeech=NN Lemma=today NamedEntityTag=DATE NormalizedNamedEntityTag=today ]
+[Text=, CharacterOffsetBegin=187 CharacterOffsetEnd=188 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=189 CharacterOffsetEnd=194 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=consultant CharacterOffsetBegin=195 CharacterOffsetEnd=205 PartOfSpeech=NN Lemma=consultant NamedEntityTag=TITLE]
+[Text=has CharacterOffsetBegin=206 CharacterOffsetEnd=209 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=already CharacterOffsetBegin=210 CharacterOffsetEnd=217 PartOfSpeech=RB Lemma=already NamedEntityTag=O]
+[Text=reviewed CharacterOffsetBegin=218 CharacterOffsetEnd=226 PartOfSpeech=VBN Lemma=review NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=227 CharacterOffsetEnd=228 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=229 CharacterOffsetEnd=230 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=blank CharacterOffsetBegin=230 CharacterOffsetEnd=235 PartOfSpeech=JJ Lemma=blank NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=235 CharacterOffsetEnd=236 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=EEI CharacterOffsetBegin=237 CharacterOffsetEnd=240 PartOfSpeech=NNP Lemma=EEI NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=241 CharacterOffsetEnd=244 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=245 CharacterOffsetEnd=249 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=250 CharacterOffsetEnd=252 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=credit CharacterOffsetBegin=253 CharacterOffsetEnd=259 PartOfSpeech=NN Lemma=credit NamedEntityTag=O]
+[Text=provisions CharacterOffsetBegin=260 CharacterOffsetEnd=270 PartOfSpeech=NNS Lemma=provision NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=271 CharacterOffsetEnd=275 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=276 CharacterOffsetEnd=282 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=283 CharacterOffsetEnd=286 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=287 CharacterOffsetEnd=289 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=290 CharacterOffsetEnd=291 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=problem CharacterOffsetBegin=292 CharacterOffsetEnd=299 PartOfSpeech=NN Lemma=problem NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=299 CharacterOffsetEnd=300 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NN AGC))
+      (VP (VBZ is)
+        (VP (VBG expecting)
+          (NP (DT the) (NNP EEI) (NN today)))))
+    (, ,)
+    (S
+      (NP (PRP$ their) (NN consultant))
+      (VP (VBZ has)
+        (ADVP (RB already))
+        (VP (VBN reviewed)
+          (NP (DT a)
+            (NP (`` ``) (JJ blank) ('' '') (NNP EEI))))))
+    (CC and)
+    (S
+      (PP (IN with)
+        (NP (DT no) (NN credit) (NNS provisions)))
+      (NP (DT this))
+      (VP (MD should) (RB not)
+        (VP (VB be)
+          (NP (DT a) (NN problem)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, expecting-3)
+nsubj(expecting-3, AGC-1)
+aux(expecting-3, is-2)
+det(today-6, the-4)
+compound(today-6, EEI-5)
+nmod:tmod(expecting-3, today-6)
+punct(expecting-3, ,-7)
+nmod:poss(consultant-9, their-8)
+nsubj(reviewed-12, consultant-9)
+aux(reviewed-12, has-10)
+advmod(reviewed-12, already-11)
+conj:and(expecting-3, reviewed-12)
+det(EEI-17, a-13)
+punct(EEI-17, ``-14)
+amod(EEI-17, blank-15)
+punct(EEI-17, ''-16)
+dobj(reviewed-12, EEI-17)
+cc(expecting-3, and-18)
+case(provisions-22, with-19)
+neg(provisions-22, no-20)
+compound(provisions-22, credit-21)
+nmod:with(problem-28, provisions-22)
+nsubj(problem-28, this-23)
+aux(problem-28, should-24)
+neg(problem-28, not-25)
+cop(problem-28, be-26)
+det(problem-28, a-27)
+conj:and(expecting-3, problem-28)
+punct(expecting-3, .-29)
+
+Extracted the following NER entity mentions:
+AGC	ORGANIZATION
+EEI	ORGANIZATION
+today	DATE
+consultant	TITLE
+EEI	ORGANIZATION
+
+Sentence #3 (10 tokens):
+If anyone has any questions please contact me ASAP.
+
+Tokens:
+[Text=If CharacterOffsetBegin=303 CharacterOffsetEnd=305 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=anyone CharacterOffsetBegin=306 CharacterOffsetEnd=312 PartOfSpeech=NN Lemma=anyone NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=313 CharacterOffsetEnd=316 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=317 CharacterOffsetEnd=320 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=questions CharacterOffsetBegin=321 CharacterOffsetEnd=330 PartOfSpeech=NNS Lemma=question NamedEntityTag=O]
+[Text=please CharacterOffsetBegin=331 CharacterOffsetEnd=337 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=contact CharacterOffsetBegin=338 CharacterOffsetEnd=345 PartOfSpeech=VB Lemma=contact NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=346 CharacterOffsetEnd=348 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=ASAP CharacterOffsetBegin=349 CharacterOffsetEnd=353 PartOfSpeech=NN Lemma=asap NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=353 CharacterOffsetEnd=354 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NN anyone))
+        (VP (VBZ has)
+          (NP (DT any) (NNS questions)))))
+    (VP (VB please)
+      (VP (VB contact)
+        (S
+          (NP (PRP me))
+          (NP (NN ASAP)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, please-6)
+mark(has-3, If-1)
+nsubj(has-3, anyone-2)
+csubj(please-6, has-3)
+det(questions-5, any-4)
+dobj(has-3, questions-5)
+xcomp(please-6, contact-7)
+nsubj(ASAP-9, me-8)
+xcomp(contact-7, ASAP-9)
+punct(please-6, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (26 tokens):
+The following is my contact:
+
+Mr. Dick Johnson
+Ash Grove Cement
+100 Hwy 518
+Clancy, MT 59634
+(406) 442-8855
+FAX; (406) 442-9262
+E-mail: johnsond@hdmaster.com
+
+Tokens:
+[Text=The CharacterOffsetBegin=356 CharacterOffsetEnd=359 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=following CharacterOffsetBegin=360 CharacterOffsetEnd=369 PartOfSpeech=NN Lemma=following NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=370 CharacterOffsetEnd=372 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=373 CharacterOffsetEnd=375 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=contact CharacterOffsetBegin=376 CharacterOffsetEnd=383 PartOfSpeech=NN Lemma=contact NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=383 CharacterOffsetEnd=384 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Mr. CharacterOffsetBegin=386 CharacterOffsetEnd=389 PartOfSpeech=NNP Lemma=Mr. NamedEntityTag=O]
+[Text=Dick CharacterOffsetBegin=390 CharacterOffsetEnd=394 PartOfSpeech=NNP Lemma=Dick NamedEntityTag=PERSON]
+[Text=Johnson CharacterOffsetBegin=395 CharacterOffsetEnd=402 PartOfSpeech=NNP Lemma=Johnson NamedEntityTag=PERSON]
+[Text=Ash CharacterOffsetBegin=403 CharacterOffsetEnd=406 PartOfSpeech=NNP Lemma=Ash NamedEntityTag=O]
+[Text=Grove CharacterOffsetBegin=407 CharacterOffsetEnd=412 PartOfSpeech=NNP Lemma=Grove NamedEntityTag=O]
+[Text=Cement CharacterOffsetBegin=413 CharacterOffsetEnd=419 PartOfSpeech=NN Lemma=cement NamedEntityTag=O]
+[Text=100 CharacterOffsetBegin=420 CharacterOffsetEnd=423 PartOfSpeech=CD Lemma=100 NamedEntityTag=NUMBER NormalizedNamedEntityTag=100.0]
+[Text=Hwy CharacterOffsetBegin=424 CharacterOffsetEnd=427 PartOfSpeech=NN Lemma=hwy NamedEntityTag=O]
+[Text=518 CharacterOffsetBegin=428 CharacterOffsetEnd=431 PartOfSpeech=CD Lemma=518 NamedEntityTag=NUMBER NormalizedNamedEntityTag=518.0]
+[Text=Clancy CharacterOffsetBegin=432 CharacterOffsetEnd=438 PartOfSpeech=NNP Lemma=Clancy NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=438 CharacterOffsetEnd=439 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=MT CharacterOffsetBegin=440 CharacterOffsetEnd=442 PartOfSpeech=NNP Lemma=MT NamedEntityTag=STATE_OR_PROVINCE]
+[Text=59634 CharacterOffsetBegin=443 CharacterOffsetEnd=448 PartOfSpeech=CD Lemma=59634 NamedEntityTag=NUMBER NormalizedNamedEntityTag=59634.0]
+[Text=-LRB-406-RRB- 442-8855 CharacterOffsetBegin=449 CharacterOffsetEnd=463 PartOfSpeech=NN Lemma=-lrb-406-rrb- 442-8855 NamedEntityTag=O]
+[Text=FAX CharacterOffsetBegin=464 CharacterOffsetEnd=467 PartOfSpeech=NNP Lemma=FAX NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=467 CharacterOffsetEnd=468 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=-LRB-406-RRB- 442-9262 CharacterOffsetBegin=469 CharacterOffsetEnd=483 PartOfSpeech=NN Lemma=-lrb-406-rrb- 442-9262 NamedEntityTag=O]
+[Text=E-mail CharacterOffsetBegin=484 CharacterOffsetEnd=490 PartOfSpeech=NN Lemma=e-mail NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=490 CharacterOffsetEnd=491 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=johnsond@hdmaster.com CharacterOffsetBegin=492 CharacterOffsetEnd=513 PartOfSpeech=NN Lemma=johnsond@hdmaster.com NamedEntityTag=EMAIL]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP-TMP
+      (NP (DT The) (NN following))
+      (VP (VBZ is)
+        (NP (PRP$ my) (NN contact))))
+    (: :)
+    (NP
+      (NP
+        (NP
+          (NP (NNP Mr.) (NNP Dick) (NNP Johnson) (NNP Ash) (NNP Grove) (NN Cement) (CD 100) (NN Hwy))
+          (NP
+            (QP (CD 518))
+            (NNP Clancy) (, ,) (NNP MT) (CD 59634) (NN -LRB-406-RRB- 442-8855)))
+        (NP (NNP FAX)))
+      (: ;)
+      (NP
+        (NP (NN -LRB-406-RRB- 442-9262) (NN E-mail))
+        (: :)
+        (NP (NN johnsond@hdmaster.com))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, following-2)
+det(following-2, The-1)
+cop(contact-5, is-3)
+nmod:poss(contact-5, my-4)
+dep(following-2, contact-5)
+punct(following-2, :-6)
+compound(Hwy-14, Mr.-7)
+compound(Hwy-14, Dick-8)
+compound(Hwy-14, Johnson-9)
+compound(Hwy-14, Ash-10)
+compound(Hwy-14, Grove-11)
+compound(Hwy-14, Cement-12)
+nummod(Hwy-14, 100-13)
+dep(following-2, Hwy-14)
+nummod(-LRB-406-RRB- 442-8855-20, 518-15)
+compound(-LRB-406-RRB- 442-8855-20, Clancy-16)
+punct(-LRB-406-RRB- 442-8855-20, ,-17)
+appos(-LRB-406-RRB- 442-8855-20, MT-18)
+nummod(-LRB-406-RRB- 442-8855-20, 59634-19)
+dep(Hwy-14, -LRB-406-RRB- 442-8855-20)
+appos(Hwy-14, FAX-21)
+punct(Hwy-14, ;-22)
+compound(E-mail-24, -LRB-406-RRB- 442-9262-23)
+dep(Hwy-14, E-mail-24)
+punct(E-mail-24, :-25)
+dep(E-mail-24, johnsond@hdmaster.com-26)
+
+Extracted the following NER entity mentions:
+Dick Johnson	PERSON
+100	NUMBER
+518	NUMBER
+Clancy	PERSON
+MT	STATE_OR_PROVINCE
+59634	NUMBER
+johnsond@hdmaster.com	EMAIL
+
+Coreference set:
+	(1,25,[25,27]) -> (1,9,[9,10]), that is: "AGC 's" -> "AGC"
+
+Coreference set:
+	(1,22,[22,23]) -> (2,17,[14,18]), that is: "EEI" -> "`` blank '' EEI"
+	(2,5,[5,6]) -> (2,17,[14,18]), that is: "EEI" -> "`` blank '' EEI"
+	(2,17,[17,18]) -> (2,17,[14,18]), that is: "EEI" -> "`` blank '' EEI"
+
+Coreference set:
+	(2,8,[8,9]) -> (1,1,[1,2]), that is: "their" -> "The"
+
+Coreference set:
+	(2,23,[23,24]) -> (2,28,[27,29]), that is: "this" -> "a problem"
+
+Coreference set:
+	(4,4,[4,5]) -> (3,8,[8,9]), that is: "my" -> "me"

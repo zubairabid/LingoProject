@@ -1,0 +1,602 @@
+Document: ID=31108.in (9 sentences, 142 tokens)
+
+Sentence #1 (13 tokens):
+ENSE, MDEA and East Power was $5425 for last month.
+
+Tokens:
+[Text=ENSE CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=ENSE NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=MDEA CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=MDEA NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=East CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=East NamedEntityTag=ORGANIZATION]
+[Text=Power CharacterOffsetBegin=20 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=Power NamedEntityTag=ORGANIZATION]
+[Text=was CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$5425.0]
+[Text=5425 CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=CD Lemma=5425 NamedEntityTag=MONEY NormalizedNamedEntityTag=$5425.0]
+[Text=for CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=last CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=JJ Lemma=last NamedEntityTag=O]
+[Text=month CharacterOffsetBegin=45 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=month NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP ENSE))
+      (, ,)
+      (NP (NNP MDEA))
+      (CC and)
+      (NP (NNP East) (NNP Power)))
+    (VP (VBD was)
+      (NP
+        (NP ($ $) (CD 5425))
+        (PP (IN for)
+          (NP (JJ last) (NN month)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 5425-9)
+nsubj(5425-9, ENSE-1)
+punct(ENSE-1, ,-2)
+conj:and(ENSE-1, MDEA-3)
+nsubj(5425-9, MDEA-3)
+cc(ENSE-1, and-4)
+compound(Power-6, East-5)
+conj:and(ENSE-1, Power-6)
+nsubj(5425-9, Power-6)
+cop(5425-9, was-7)
+dep(5425-9, $-8)
+case(month-12, for-10)
+amod(month-12, last-11)
+nmod:for(5425-9, month-12)
+punct(5425-9, .-13)
+
+Extracted the following NER entity mentions:
+MDEA	ORGANIZATION
+East Power	ORGANIZATION
+$5425	MONEY
+
+Sentence #2 (17 tokens):
+I'm trying to reduce the number of users and services that we don't require.
+
+Tokens:
+[Text=I CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=trying CharacterOffsetBegin=57 CharacterOffsetEnd=63 PartOfSpeech=VBG Lemma=try NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=reduce CharacterOffsetBegin=67 CharacterOffsetEnd=73 PartOfSpeech=VB Lemma=reduce NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=number CharacterOffsetBegin=78 CharacterOffsetEnd=84 PartOfSpeech=NN Lemma=number NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=85 CharacterOffsetEnd=87 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=users CharacterOffsetBegin=88 CharacterOffsetEnd=93 PartOfSpeech=NNS Lemma=user NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=94 CharacterOffsetEnd=97 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=services CharacterOffsetBegin=98 CharacterOffsetEnd=106 PartOfSpeech=NNS Lemma=service NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=107 CharacterOffsetEnd=111 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=112 CharacterOffsetEnd=114 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=115 CharacterOffsetEnd=117 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=117 CharacterOffsetEnd=120 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=require CharacterOffsetBegin=121 CharacterOffsetEnd=128 PartOfSpeech=VB Lemma=require NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=128 CharacterOffsetEnd=129 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (VP (VBG trying)
+        (S
+          (VP (TO to)
+            (VP (VB reduce)
+              (NP
+                (NP (DT the) (NN number))
+                (PP (IN of)
+                  (NP (NNS users)
+                    (CC and)
+                    (NNS services))))
+              (SBAR (IN that)
+                (S
+                  (NP (PRP we))
+                  (VP (VBP do) (RB n't)
+                    (VP (VB require))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, trying-3)
+nsubj(trying-3, I-1)
+nsubj:xsubj(reduce-5, I-1)
+aux(trying-3, 'm-2)
+mark(reduce-5, to-4)
+xcomp(trying-3, reduce-5)
+det(number-7, the-6)
+dobj(reduce-5, number-7)
+case(users-9, of-8)
+nmod:of(number-7, users-9)
+cc(users-9, and-10)
+nmod:of(number-7, services-11)
+conj:and(users-9, services-11)
+mark(require-16, that-12)
+nsubj(require-16, we-13)
+aux(require-16, do-14)
+neg(require-16, n't-15)
+ccomp(reduce-5, require-16)
+punct(trying-3, .-17)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (13 tokens):
+In the end the cost should be significantly less than this number.
+
+Tokens:
+[Text=In CharacterOffsetBegin=131 CharacterOffsetEnd=133 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=134 CharacterOffsetEnd=137 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=end CharacterOffsetBegin=138 CharacterOffsetEnd=141 PartOfSpeech=NN Lemma=end NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=142 CharacterOffsetEnd=145 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=cost CharacterOffsetBegin=146 CharacterOffsetEnd=150 PartOfSpeech=NN Lemma=cost NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=151 CharacterOffsetEnd=157 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=158 CharacterOffsetEnd=160 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=significantly CharacterOffsetBegin=161 CharacterOffsetEnd=174 PartOfSpeech=RB Lemma=significantly NamedEntityTag=O]
+[Text=less CharacterOffsetBegin=175 CharacterOffsetEnd=179 PartOfSpeech=JJR Lemma=less NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=180 CharacterOffsetEnd=184 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=185 CharacterOffsetEnd=189 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=number CharacterOffsetBegin=190 CharacterOffsetEnd=196 PartOfSpeech=NN Lemma=number NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=196 CharacterOffsetEnd=197 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT the) (NN end)))
+    (NP (DT the) (NN cost))
+    (VP (MD should)
+      (VP (VB be)
+        (ADJP
+          (ADJP (RB significantly) (JJR less))
+          (PP (IN than)
+            (NP (DT this) (NN number))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, less-9)
+case(end-3, In-1)
+det(end-3, the-2)
+nmod:in(less-9, end-3)
+det(cost-5, the-4)
+nsubj(less-9, cost-5)
+aux(less-9, should-6)
+cop(less-9, be-7)
+advmod(less-9, significantly-8)
+case(number-12, than-10)
+det(number-12, this-11)
+nmod:than(less-9, number-12)
+punct(less-9, .-13)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (9 tokens):
+The west has their own arrangements with OATI.
+
+Tokens:
+[Text=The CharacterOffsetBegin=198 CharacterOffsetEnd=201 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=west CharacterOffsetBegin=202 CharacterOffsetEnd=206 PartOfSpeech=NN Lemma=west NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=207 CharacterOffsetEnd=210 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=211 CharacterOffsetEnd=216 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=217 CharacterOffsetEnd=220 PartOfSpeech=JJ Lemma=own NamedEntityTag=O]
+[Text=arrangements CharacterOffsetBegin=221 CharacterOffsetEnd=233 PartOfSpeech=NNS Lemma=arrangement NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=234 CharacterOffsetEnd=238 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=OATI CharacterOffsetBegin=239 CharacterOffsetEnd=243 PartOfSpeech=NN Lemma=oati NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=243 CharacterOffsetEnd=244 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN west))
+    (VP (VBZ has)
+      (NP (PRP$ their) (JJ own) (NNS arrangements))
+      (PP (IN with)
+        (NP (NN OATI))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, has-3)
+det(west-2, The-1)
+nsubj(has-3, west-2)
+nmod:poss(arrangements-6, their-4)
+amod(arrangements-6, own-5)
+dobj(has-3, arrangements-6)
+case(OATI-8, with-7)
+nmod:with(has-3, OATI-8)
+punct(has-3, .-9)
+
+Extracted the following NER entity mentions:
+OATI	ORGANIZATION
+
+Sentence #5 (27 tokens):
+You will not require anything for the change over to etag 1.7 in march as OATI will take care of this as part of their services.
+
+Tokens:
+[Text=You CharacterOffsetBegin=245 CharacterOffsetEnd=248 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=249 CharacterOffsetEnd=253 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=254 CharacterOffsetEnd=257 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=require CharacterOffsetBegin=258 CharacterOffsetEnd=265 PartOfSpeech=VB Lemma=require NamedEntityTag=O]
+[Text=anything CharacterOffsetBegin=266 CharacterOffsetEnd=274 PartOfSpeech=NN Lemma=anything NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=275 CharacterOffsetEnd=278 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=279 CharacterOffsetEnd=282 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=change CharacterOffsetBegin=283 CharacterOffsetEnd=289 PartOfSpeech=NN Lemma=change NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=290 CharacterOffsetEnd=294 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=295 CharacterOffsetEnd=297 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=etag CharacterOffsetBegin=298 CharacterOffsetEnd=302 PartOfSpeech=VB Lemma=etag NamedEntityTag=O]
+[Text=1.7 CharacterOffsetBegin=303 CharacterOffsetEnd=306 PartOfSpeech=CD Lemma=1.7 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.7]
+[Text=in CharacterOffsetBegin=307 CharacterOffsetEnd=309 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=march CharacterOffsetBegin=310 CharacterOffsetEnd=315 PartOfSpeech=NN Lemma=march NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=316 CharacterOffsetEnd=318 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=OATI CharacterOffsetBegin=319 CharacterOffsetEnd=323 PartOfSpeech=NNP Lemma=OATI NamedEntityTag=ORGANIZATION]
+[Text=will CharacterOffsetBegin=324 CharacterOffsetEnd=328 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=take CharacterOffsetBegin=329 CharacterOffsetEnd=333 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text=care CharacterOffsetBegin=334 CharacterOffsetEnd=338 PartOfSpeech=NN Lemma=care NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=339 CharacterOffsetEnd=341 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=342 CharacterOffsetEnd=346 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=347 CharacterOffsetEnd=349 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=part CharacterOffsetBegin=350 CharacterOffsetEnd=354 PartOfSpeech=NN Lemma=part NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=355 CharacterOffsetEnd=357 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=358 CharacterOffsetEnd=363 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=services CharacterOffsetBegin=364 CharacterOffsetEnd=372 PartOfSpeech=NNS Lemma=service NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=372 CharacterOffsetEnd=373 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (MD will) (RB not)
+      (VP (VB require)
+        (NP
+          (NP (NN anything))
+          (PP (IN for)
+            (NP (DT the) (NN change) (IN over))))
+        (S
+          (VP (TO to)
+            (VP (VB etag)
+              (NP (CD 1.7))
+              (PP (IN in)
+                (NP (NN march)))
+              (SBAR (IN as)
+                (S
+                  (NP (NNP OATI))
+                  (VP (MD will)
+                    (VP (VB take)
+                      (NP
+                        (NP (NN care))
+                        (PP (IN of)
+                          (NP
+                            (NP (DT this))
+                            (PP (IN as)
+                              (NP
+                                (NP (NN part))
+                                (PP (IN of)
+                                  (NP (PRP$ their) (NNS services)))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, require-4)
+nsubj(require-4, You-1)
+aux(require-4, will-2)
+neg(require-4, not-3)
+dobj(require-4, anything-5)
+nsubj:xsubj(etag-11, anything-5)
+case(change-8, for-6)
+det(change-8, the-7)
+nmod:for(anything-5, change-8)
+amod(change-8, over-9)
+mark(etag-11, to-10)
+xcomp(require-4, etag-11)
+dobj(etag-11, 1.7-12)
+case(march-14, in-13)
+nmod:in(etag-11, march-14)
+mark(take-18, as-15)
+nsubj(take-18, OATI-16)
+aux(take-18, will-17)
+advcl:as(etag-11, take-18)
+dobj(take-18, care-19)
+case(this-21, of-20)
+nmod:of(care-19, this-21)
+case(part-23, as-22)
+nmod:as(this-21, part-23)
+case(services-26, of-24)
+nmod:poss(services-26, their-25)
+nmod:of(part-23, services-26)
+punct(require-4, .-27)
+
+Extracted the following NER entity mentions:
+1.7	NUMBER
+OATI	ORGANIZATION
+
+Sentence #6 (40 tokens):
+Kevin Burns from OATI will be in Houston on Feb 13th from 1-3 to discuss UBS services required and I would recommend that you have some one sit down and review the services that you will need going foreward.
+
+Tokens:
+[Text=Kevin CharacterOffsetBegin=374 CharacterOffsetEnd=379 PartOfSpeech=NNP Lemma=Kevin NamedEntityTag=PERSON]
+[Text=Burns CharacterOffsetBegin=380 CharacterOffsetEnd=385 PartOfSpeech=NNP Lemma=Burns NamedEntityTag=PERSON]
+[Text=from CharacterOffsetBegin=386 CharacterOffsetEnd=390 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=OATI CharacterOffsetBegin=391 CharacterOffsetEnd=395 PartOfSpeech=NNP Lemma=OATI NamedEntityTag=ORGANIZATION]
+[Text=will CharacterOffsetBegin=396 CharacterOffsetEnd=400 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=401 CharacterOffsetEnd=403 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=404 CharacterOffsetEnd=406 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Houston CharacterOffsetBegin=407 CharacterOffsetEnd=414 PartOfSpeech=NNP Lemma=Houston NamedEntityTag=CITY]
+[Text=on CharacterOffsetBegin=415 CharacterOffsetEnd=417 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Feb CharacterOffsetBegin=418 CharacterOffsetEnd=421 PartOfSpeech=NNP Lemma=Feb NamedEntityTag=DATE NormalizedNamedEntityTag=****0213/******03]
+[Text=13th CharacterOffsetBegin=422 CharacterOffsetEnd=426 PartOfSpeech=NNP Lemma=13th NamedEntityTag=DATE NormalizedNamedEntityTag=****0213/******03]
+[Text=from CharacterOffsetBegin=427 CharacterOffsetEnd=431 PartOfSpeech=IN Lemma=from NamedEntityTag=DATE NormalizedNamedEntityTag=****0213/******03]
+[Text=1-3 CharacterOffsetBegin=432 CharacterOffsetEnd=435 PartOfSpeech=CD Lemma=1-3 NamedEntityTag=DATE NormalizedNamedEntityTag=****0213/******03]
+[Text=to CharacterOffsetBegin=436 CharacterOffsetEnd=438 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=discuss CharacterOffsetBegin=439 CharacterOffsetEnd=446 PartOfSpeech=VB Lemma=discuss NamedEntityTag=O]
+[Text=UBS CharacterOffsetBegin=447 CharacterOffsetEnd=450 PartOfSpeech=NNP Lemma=UBS NamedEntityTag=ORGANIZATION]
+[Text=services CharacterOffsetBegin=451 CharacterOffsetEnd=459 PartOfSpeech=NNS Lemma=service NamedEntityTag=O]
+[Text=required CharacterOffsetBegin=460 CharacterOffsetEnd=468 PartOfSpeech=VBN Lemma=require NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=469 CharacterOffsetEnd=472 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=473 CharacterOffsetEnd=474 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=475 CharacterOffsetEnd=480 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=recommend CharacterOffsetBegin=481 CharacterOffsetEnd=490 PartOfSpeech=VB Lemma=recommend NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=491 CharacterOffsetEnd=495 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=496 CharacterOffsetEnd=499 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=500 CharacterOffsetEnd=504 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=505 CharacterOffsetEnd=509 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=510 CharacterOffsetEnd=513 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=sit CharacterOffsetBegin=514 CharacterOffsetEnd=517 PartOfSpeech=VBP Lemma=sit NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=518 CharacterOffsetEnd=522 PartOfSpeech=RB Lemma=down NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=523 CharacterOffsetEnd=526 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=review CharacterOffsetBegin=527 CharacterOffsetEnd=533 PartOfSpeech=VB Lemma=review NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=534 CharacterOffsetEnd=537 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=services CharacterOffsetBegin=538 CharacterOffsetEnd=546 PartOfSpeech=NNS Lemma=service NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=547 CharacterOffsetEnd=551 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=552 CharacterOffsetEnd=555 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=556 CharacterOffsetEnd=560 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=561 CharacterOffsetEnd=565 PartOfSpeech=VB Lemma=need NamedEntityTag=O]
+[Text=going CharacterOffsetBegin=566 CharacterOffsetEnd=571 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=foreward CharacterOffsetBegin=572 CharacterOffsetEnd=580 PartOfSpeech=NN Lemma=foreward NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=580 CharacterOffsetEnd=581 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNP Kevin) (NNP Burns))
+        (PP (IN from)
+          (NP (NNP OATI))))
+      (VP (MD will)
+        (VP (VB be)
+          (PP (IN in)
+            (NP
+              (NP (NNP Houston))
+              (PP (IN on)
+                (NP
+                  (NP (NNP Feb) (NNP 13th))
+                  (PP (IN from)
+                    (NP (CD 1-3)))))))
+          (S
+            (VP (TO to)
+              (VP (VB discuss)
+                (S
+                  (NP (NNP UBS) (NNS services))
+                  (VP (VBN required)))))))))
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (MD would)
+        (VP
+          (VP (VB recommend)
+            (SBAR (IN that)
+              (S
+                (NP (PRP you))
+                (VP (VBP have)
+                  (NP
+                    (NP (DT some) (CD one))
+                    (SBAR
+                      (S
+                        (VP (VBP sit)
+                          (ADVP (RB down))))))))))
+          (CC and)
+          (VP (VB review)
+            (NP (DT the) (NNS services))
+            (SBAR (IN that)
+              (S
+                (NP (PRP you))
+                (VP (MD will)
+                  (VP (VB need)
+                    (S
+                      (VP (VBG going)
+                        (NP (NN foreward))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Houston-8)
+compound(Burns-2, Kevin-1)
+nsubj(Houston-8, Burns-2)
+nsubj:xsubj(discuss-15, Burns-2)
+case(OATI-4, from-3)
+nmod:from(Burns-2, OATI-4)
+aux(Houston-8, will-5)
+cop(Houston-8, be-6)
+case(Houston-8, in-7)
+case(13th-11, on-9)
+compound(13th-11, Feb-10)
+nmod:on(Houston-8, 13th-11)
+case(1-3-13, from-12)
+nmod:from(13th-11, 1-3-13)
+mark(discuss-15, to-14)
+xcomp(Houston-8, discuss-15)
+compound(services-17, UBS-16)
+nsubj(required-18, services-17)
+dep(discuss-15, required-18)
+cc(Houston-8, and-19)
+nsubj(recommend-22, I-20)
+nsubj(review-31, I-20)
+aux(recommend-22, would-21)
+conj:and(Houston-8, recommend-22)
+mark(have-25, that-23)
+nsubj(have-25, you-24)
+ccomp(recommend-22, have-25)
+det(one-27, some-26)
+dobj(have-25, one-27)
+acl:relcl(one-27, sit-28)
+advmod(sit-28, down-29)
+cc(recommend-22, and-30)
+conj:and(Houston-8, review-31)
+conj:and(recommend-22, review-31)
+det(services-33, the-32)
+dobj(review-31, services-33)
+mark(need-37, that-34)
+nsubj(need-37, you-35)
+aux(need-37, will-36)
+ccomp(review-31, need-37)
+xcomp(need-37, going-38)
+dobj(going-38, foreward-39)
+punct(Houston-8, .-40)
+
+Extracted the following NER entity mentions:
+Kevin Burns	PERSON
+OATI	ORGANIZATION
+Houston	CITY
+Feb 13th from 1-3	DATE
+UBS	ORGANIZATION
+one	NUMBER
+
+Sentence #7 (4 tokens):
+Hope this helps.
+
+Tokens:
+[Text=Hope CharacterOffsetBegin=582 CharacterOffsetEnd=586 PartOfSpeech=NNP Lemma=Hope NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=587 CharacterOffsetEnd=591 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=helps CharacterOffsetBegin=592 CharacterOffsetEnd=597 PartOfSpeech=VBZ Lemma=help NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=597 CharacterOffsetEnd=598 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Hope))
+      (NP (DT this)))
+    (VP (VBZ helps))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, helps-3)
+nsubj(helps-3, Hope-1)
+dep(Hope-1, this-2)
+punct(helps-3, .-4)
+
+Extracted the following NER entity mentions:
+
+Sentence #8 (17 tokens):
+For passwords you can contact Don for MDEA & EPMIEA and Eric has the Genco ones.
+
+Tokens:
+[Text=For CharacterOffsetBegin=599 CharacterOffsetEnd=602 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=passwords CharacterOffsetBegin=603 CharacterOffsetEnd=612 PartOfSpeech=NNS Lemma=password NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=613 CharacterOffsetEnd=616 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=617 CharacterOffsetEnd=620 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=contact CharacterOffsetBegin=621 CharacterOffsetEnd=628 PartOfSpeech=VB Lemma=contact NamedEntityTag=O]
+[Text=Don CharacterOffsetBegin=629 CharacterOffsetEnd=632 PartOfSpeech=NNP Lemma=Don NamedEntityTag=PERSON]
+[Text=for CharacterOffsetBegin=633 CharacterOffsetEnd=636 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=MDEA CharacterOffsetBegin=637 CharacterOffsetEnd=641 PartOfSpeech=NNP Lemma=MDEA NamedEntityTag=ORGANIZATION]
+[Text=& CharacterOffsetBegin=642 CharacterOffsetEnd=643 PartOfSpeech=CC Lemma=& NamedEntityTag=ORGANIZATION]
+[Text=EPMIEA CharacterOffsetBegin=644 CharacterOffsetEnd=650 PartOfSpeech=NNP Lemma=EPMIEA NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=651 CharacterOffsetEnd=654 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Eric CharacterOffsetBegin=655 CharacterOffsetEnd=659 PartOfSpeech=NNP Lemma=Eric NamedEntityTag=PERSON]
+[Text=has CharacterOffsetBegin=660 CharacterOffsetEnd=663 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=664 CharacterOffsetEnd=667 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Genco CharacterOffsetBegin=668 CharacterOffsetEnd=673 PartOfSpeech=NNP Lemma=Genco NamedEntityTag=PERSON]
+[Text=ones CharacterOffsetBegin=674 CharacterOffsetEnd=678 PartOfSpeech=NNS Lemma=one NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=678 CharacterOffsetEnd=679 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (PP (IN For)
+        (NP (NNS passwords)))
+      (NP (PRP you))
+      (VP (MD can)
+        (VP (VB contact)
+          (NP
+            (NP (NNP Don))
+            (PP (IN for)
+              (NP (NNP MDEA)
+                (CC &)
+                (NNP EPMIEA)))))))
+    (CC and)
+    (S
+      (NP (NNP Eric))
+      (VP (VBZ has)
+        (NP (DT the) (NNP Genco) (NNS ones))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, contact-5)
+case(passwords-2, For-1)
+nmod:for(contact-5, passwords-2)
+nsubj(contact-5, you-3)
+aux(contact-5, can-4)
+dobj(contact-5, Don-6)
+case(MDEA-8, for-7)
+nmod:for(Don-6, MDEA-8)
+cc(MDEA-8, &-9)
+nmod:for(Don-6, EPMIEA-10)
+conj:&(MDEA-8, EPMIEA-10)
+cc(contact-5, and-11)
+nsubj(has-13, Eric-12)
+conj:and(contact-5, has-13)
+det(ones-16, the-14)
+compound(ones-16, Genco-15)
+dobj(has-13, ones-16)
+punct(contact-5, .-17)
+
+Extracted the following NER entity mentions:
+Don	PERSON
+MDEA & EPMIEA	ORGANIZATION
+Eric	PERSON
+Genco	PERSON
+
+Sentence #9 (2 tokens):
+Thanks.
+
+Tokens:
+[Text=Thanks CharacterOffsetBegin=680 CharacterOffsetEnd=686 PartOfSpeech=NNS Lemma=thanks NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=686 CharacterOffsetEnd=687 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NNS Thanks) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Thanks-1)
+punct(Thanks-1, .-2)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(4,4,[4,5]) -> (1,1,[1,7]), that is: "their" -> "ENSE , MDEA and East Power"
+	(5,25,[25,26]) -> (1,1,[1,7]), that is: "their" -> "ENSE , MDEA and East Power"
+
+Coreference set:
+	(6,20,[20,21]) -> (2,1,[1,2]), that is: "I" -> "I"
+
+Coreference set:
+	(3,12,[11,13]) -> (2,7,[6,12]), that is: "this number" -> "the number of users and services"
+
+Coreference set:
+	(6,4,[4,5]) -> (5,16,[16,17]), that is: "OATI" -> "OATI"
+
+Coreference set:
+	(7,2,[2,3]) -> (5,21,[21,27]), that is: "this" -> "this as part of their services"
+
+Coreference set:
+	(6,33,[32,34]) -> (6,17,[16,18]), that is: "the services" -> "UBS services"

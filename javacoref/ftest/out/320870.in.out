@@ -1,0 +1,595 @@
+Document: ID=320870.in (7 sentences, 149 tokens)
+
+Sentence #1 (16 tokens):
+Waiting on response from your people about :
+Meeting with adjuster about going after SWPC.
+
+Tokens:
+[Text=Waiting CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=VBG Lemma=wait NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=response CharacterOffsetBegin=11 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=response NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=30 CharacterOffsetEnd=36 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=37 CharacterOffsetEnd=42 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Meeting CharacterOffsetBegin=45 CharacterOffsetEnd=52 PartOfSpeech=VBG Lemma=meet NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=adjuster CharacterOffsetBegin=58 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=adjuster NamedEntityTag=TITLE]
+[Text=about CharacterOffsetBegin=67 CharacterOffsetEnd=72 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=going CharacterOffsetBegin=73 CharacterOffsetEnd=78 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=79 CharacterOffsetEnd=84 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=SWPC CharacterOffsetBegin=85 CharacterOffsetEnd=89 PartOfSpeech=NNP Lemma=SWPC NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=89 CharacterOffsetEnd=90 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBG Waiting)
+      (PP (IN on)
+        (NP
+          (NP (NN response))
+          (PP (IN from)
+            (NP (PRP$ your) (NNS people)))))
+      (PP (IN about))
+      (: :)
+      (S
+        (VP (VBG Meeting)
+          (PP (IN with)
+            (NP (NN adjuster)))
+          (PP (IN about)
+            (S
+              (VP (VBG going)
+                (PP (IN after)
+                  (NP (NNP SWPC)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Waiting-1)
+case(response-3, on-2)
+nmod:on(Waiting-1, response-3)
+case(people-6, from-4)
+nmod:poss(people-6, your-5)
+nmod:from(response-3, people-6)
+case(response-3, about-7)
+punct(Waiting-1, :-8)
+parataxis(Waiting-1, Meeting-9)
+case(adjuster-11, with-10)
+nmod:with(Meeting-9, adjuster-11)
+mark(going-13, about-12)
+advcl:about(Meeting-9, going-13)
+case(SWPC-15, after-14)
+nmod:after(going-13, SWPC-15)
+punct(Waiting-1, .-16)
+
+Extracted the following NER entity mentions:
+adjuster	TITLE
+SWPC	ORGANIZATION
+
+Sentence #2 (12 tokens):
+Hiring engineering expert to hopefully refute underwriter's surveyor's
+opinion.
+
+Tokens:
+[Text=Hiring CharacterOffsetBegin=91 CharacterOffsetEnd=97 PartOfSpeech=VBG Lemma=hire NamedEntityTag=O]
+[Text=engineering CharacterOffsetBegin=98 CharacterOffsetEnd=109 PartOfSpeech=NN Lemma=engineering NamedEntityTag=O]
+[Text=expert CharacterOffsetBegin=110 CharacterOffsetEnd=116 PartOfSpeech=NN Lemma=expert NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=117 CharacterOffsetEnd=119 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=hopefully CharacterOffsetBegin=120 CharacterOffsetEnd=129 PartOfSpeech=RB Lemma=hopefully NamedEntityTag=O]
+[Text=refute CharacterOffsetBegin=130 CharacterOffsetEnd=136 PartOfSpeech=VB Lemma=refute NamedEntityTag=O]
+[Text=underwriter CharacterOffsetBegin=137 CharacterOffsetEnd=148 PartOfSpeech=NN Lemma=underwriter NamedEntityTag=TITLE]
+[Text='s CharacterOffsetBegin=148 CharacterOffsetEnd=150 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=surveyor CharacterOffsetBegin=151 CharacterOffsetEnd=159 PartOfSpeech=NN Lemma=surveyor NamedEntityTag=TITLE]
+[Text='s CharacterOffsetBegin=159 CharacterOffsetEnd=161 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=opinion CharacterOffsetBegin=162 CharacterOffsetEnd=169 PartOfSpeech=NN Lemma=opinion NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=169 CharacterOffsetEnd=170 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBG Hiring)
+      (NP (NN engineering) (NN expert))
+      (S
+        (VP (TO to)
+          (VP
+            (ADVP (RB hopefully))
+            (VB refute)
+            (NP
+              (NP
+                (NP (NN underwriter) (POS 's))
+                (NN surveyor) (POS 's))
+              (NN opinion))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Hiring-1)
+compound(expert-3, engineering-2)
+dobj(Hiring-1, expert-3)
+mark(refute-6, to-4)
+advmod(refute-6, hopefully-5)
+advcl:to(Hiring-1, refute-6)
+nmod:poss(surveyor-9, underwriter-7)
+case(underwriter-7, 's-8)
+nmod:poss(opinion-11, surveyor-9)
+case(surveyor-9, 's-10)
+dobj(refute-6, opinion-11)
+punct(Hiring-1, .-12)
+
+Extracted the following NER entity mentions:
+underwriter	TITLE
+surveyor	TITLE
+
+Sentence #3 (23 tokens):
+Have written letter to ship owner to extend time for filing suit (this
+protects the subrogation interests of the underwriter).
+
+Tokens:
+[Text=Have CharacterOffsetBegin=172 CharacterOffsetEnd=176 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=written CharacterOffsetBegin=177 CharacterOffsetEnd=184 PartOfSpeech=JJ Lemma=written NamedEntityTag=O]
+[Text=letter CharacterOffsetBegin=185 CharacterOffsetEnd=191 PartOfSpeech=NN Lemma=letter NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=192 CharacterOffsetEnd=194 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=ship CharacterOffsetBegin=195 CharacterOffsetEnd=199 PartOfSpeech=VB Lemma=ship NamedEntityTag=O]
+[Text=owner CharacterOffsetBegin=200 CharacterOffsetEnd=205 PartOfSpeech=NN Lemma=owner NamedEntityTag=TITLE]
+[Text=to CharacterOffsetBegin=206 CharacterOffsetEnd=208 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=extend CharacterOffsetBegin=209 CharacterOffsetEnd=215 PartOfSpeech=VB Lemma=extend NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=216 CharacterOffsetEnd=220 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=221 CharacterOffsetEnd=224 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=filing CharacterOffsetBegin=225 CharacterOffsetEnd=231 PartOfSpeech=NN Lemma=filing NamedEntityTag=O]
+[Text=suit CharacterOffsetBegin=232 CharacterOffsetEnd=236 PartOfSpeech=NN Lemma=suit NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=237 CharacterOffsetEnd=238 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=238 CharacterOffsetEnd=242 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=protects CharacterOffsetBegin=243 CharacterOffsetEnd=251 PartOfSpeech=VBZ Lemma=protect NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=252 CharacterOffsetEnd=255 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=subrogation CharacterOffsetBegin=256 CharacterOffsetEnd=267 PartOfSpeech=NN Lemma=subrogation NamedEntityTag=O]
+[Text=interests CharacterOffsetBegin=268 CharacterOffsetEnd=277 PartOfSpeech=NNS Lemma=interest NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=278 CharacterOffsetEnd=280 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=281 CharacterOffsetEnd=284 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=underwriter CharacterOffsetBegin=285 CharacterOffsetEnd=296 PartOfSpeech=NN Lemma=underwriter NamedEntityTag=TITLE]
+[Text=-RRB- CharacterOffsetBegin=296 CharacterOffsetEnd=297 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=297 CharacterOffsetEnd=298 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBP Have)
+      (NP (JJ written) (NN letter)
+        (S
+          (VP (TO to)
+            (VP (VB ship)
+              (NP (NN owner))
+              (S
+                (VP (TO to)
+                  (VP (VB extend)
+                    (NP (NN time))
+                    (PP (IN for)
+                      (NP (NN filing) (NN suit)))
+                    (PRN (-LRB- -LRB-)
+                      (S
+                        (NP (DT this))
+                        (VP (VBZ protects)
+                          (NP
+                            (NP (DT the) (NN subrogation) (NNS interests))
+                            (PP (IN of)
+                              (NP (DT the) (NN underwriter))))))
+                      (-RRB- -RRB-))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Have-1)
+amod(letter-3, written-2)
+dobj(Have-1, letter-3)
+mark(ship-5, to-4)
+acl:to(letter-3, ship-5)
+dobj(ship-5, owner-6)
+mark(extend-8, to-7)
+advcl:to(ship-5, extend-8)
+dobj(extend-8, time-9)
+case(suit-12, for-10)
+compound(suit-12, filing-11)
+nmod:for(extend-8, suit-12)
+punct(protects-15, -LRB--13)
+nsubj(protects-15, this-14)
+parataxis(extend-8, protects-15)
+det(interests-18, the-16)
+compound(interests-18, subrogation-17)
+dobj(protects-15, interests-18)
+case(underwriter-21, of-19)
+det(underwriter-21, the-20)
+nmod:of(interests-18, underwriter-21)
+punct(protects-15, -RRB--22)
+punct(Have-1, .-23)
+
+Extracted the following NER entity mentions:
+owner	TITLE
+underwriter	TITLE
+
+Sentence #4 (19 tokens):
+Seeking clarification as to policy requirement of filing "suit" against
+underwriter within one year of occurrence.
+
+Tokens:
+[Text=Seeking CharacterOffsetBegin=300 CharacterOffsetEnd=307 PartOfSpeech=VBG Lemma=seek NamedEntityTag=O]
+[Text=clarification CharacterOffsetBegin=308 CharacterOffsetEnd=321 PartOfSpeech=NN Lemma=clarification NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=322 CharacterOffsetEnd=324 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=325 CharacterOffsetEnd=327 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=policy CharacterOffsetBegin=328 CharacterOffsetEnd=334 PartOfSpeech=NN Lemma=policy NamedEntityTag=O]
+[Text=requirement CharacterOffsetBegin=335 CharacterOffsetEnd=346 PartOfSpeech=NN Lemma=requirement NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=347 CharacterOffsetEnd=349 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=filing CharacterOffsetBegin=350 CharacterOffsetEnd=356 PartOfSpeech=NN Lemma=filing NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=357 CharacterOffsetEnd=358 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=suit CharacterOffsetBegin=358 CharacterOffsetEnd=362 PartOfSpeech=NN Lemma=suit NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=362 CharacterOffsetEnd=363 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=against CharacterOffsetBegin=364 CharacterOffsetEnd=371 PartOfSpeech=IN Lemma=against NamedEntityTag=O]
+[Text=underwriter CharacterOffsetBegin=372 CharacterOffsetEnd=383 PartOfSpeech=NN Lemma=underwriter NamedEntityTag=TITLE]
+[Text=within CharacterOffsetBegin=384 CharacterOffsetEnd=390 PartOfSpeech=IN Lemma=within NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=391 CharacterOffsetEnd=394 PartOfSpeech=CD Lemma=one NamedEntityTag=DURATION]
+[Text=year CharacterOffsetBegin=395 CharacterOffsetEnd=399 PartOfSpeech=NN Lemma=year NamedEntityTag=DURATION]
+[Text=of CharacterOffsetBegin=400 CharacterOffsetEnd=402 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=occurrence CharacterOffsetBegin=403 CharacterOffsetEnd=413 PartOfSpeech=NN Lemma=occurrence NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=413 CharacterOffsetEnd=414 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBG Seeking)
+      (NP (NN clarification))
+      (PP (IN as)
+        (PP (TO to)
+          (NP
+            (NP (NN policy) (NN requirement))
+            (PP (IN of)
+              (NP
+                (NP (NN filing) (`` ``) (NN suit) ('' ''))
+                (PP (IN against)
+                  (NP (NN underwriter))))))))
+      (PP (IN within)
+        (NP
+          (NP (CD one) (NN year))
+          (PP (IN of)
+            (NP (NN occurrence))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Seeking-1)
+dobj(Seeking-1, clarification-2)
+case(requirement-6, as-3)
+mwe(as-3, to-4)
+compound(requirement-6, policy-5)
+nmod:as_to(Seeking-1, requirement-6)
+case(suit-10, of-7)
+compound(suit-10, filing-8)
+punct(suit-10, ``-9)
+nmod:of(requirement-6, suit-10)
+punct(suit-10, ''-11)
+case(underwriter-13, against-12)
+nmod:against(suit-10, underwriter-13)
+case(year-16, within-14)
+nummod(year-16, one-15)
+nmod:within(Seeking-1, year-16)
+case(occurrence-18, of-17)
+nmod:of(year-16, occurrence-18)
+punct(Seeking-1, .-19)
+
+Extracted the following NER entity mentions:
+underwriter	TITLE
+one year	DURATION
+
+Sentence #5 (25 tokens):
+Broker feels that this is not
+necessary as the claim was filed and is currently pending, but will get
+written clarification from underwriter/adjuster.
+
+Tokens:
+[Text=Broker CharacterOffsetBegin=416 CharacterOffsetEnd=422 PartOfSpeech=NNP Lemma=Broker NamedEntityTag=TITLE]
+[Text=feels CharacterOffsetBegin=423 CharacterOffsetEnd=428 PartOfSpeech=VBZ Lemma=feel NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=429 CharacterOffsetEnd=433 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=434 CharacterOffsetEnd=438 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=439 CharacterOffsetEnd=441 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=442 CharacterOffsetEnd=445 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=necessary CharacterOffsetBegin=446 CharacterOffsetEnd=455 PartOfSpeech=JJ Lemma=necessary NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=456 CharacterOffsetEnd=458 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=459 CharacterOffsetEnd=462 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=claim CharacterOffsetBegin=463 CharacterOffsetEnd=468 PartOfSpeech=NN Lemma=claim NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=469 CharacterOffsetEnd=472 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=filed CharacterOffsetBegin=473 CharacterOffsetEnd=478 PartOfSpeech=VBN Lemma=file NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=479 CharacterOffsetEnd=482 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=483 CharacterOffsetEnd=485 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=currently CharacterOffsetBegin=486 CharacterOffsetEnd=495 PartOfSpeech=RB Lemma=currently NamedEntityTag=O]
+[Text=pending CharacterOffsetBegin=496 CharacterOffsetEnd=503 PartOfSpeech=VBG Lemma=pend NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=503 CharacterOffsetEnd=504 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=505 CharacterOffsetEnd=508 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=509 CharacterOffsetEnd=513 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=514 CharacterOffsetEnd=517 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=written CharacterOffsetBegin=518 CharacterOffsetEnd=525 PartOfSpeech=VBN Lemma=write NamedEntityTag=O]
+[Text=clarification CharacterOffsetBegin=526 CharacterOffsetEnd=539 PartOfSpeech=NN Lemma=clarification NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=540 CharacterOffsetEnd=544 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=underwriter/adjuster CharacterOffsetBegin=545 CharacterOffsetEnd=565 PartOfSpeech=NN Lemma=underwriter/adjuster NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=565 CharacterOffsetEnd=566 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Broker))
+    (VP
+      (VP (VBZ feels)
+        (SBAR (IN that)
+          (S
+            (NP (DT this))
+            (VP (VBZ is) (RB not)
+              (ADJP (JJ necessary))
+              (SBAR (IN as)
+                (S
+                  (NP (DT the) (NN claim))
+                  (VP
+                    (VP (VBD was)
+                      (VP (VBN filed)))
+                    (CC and)
+                    (VP (VBZ is)
+                      (ADVP (RB currently))
+                      (ADJP (VBG pending))))))))))
+      (, ,)
+      (CC but)
+      (VP (MD will)
+        (VP (VB get)
+          (NP
+            (NP (VBN written) (NN clarification))
+            (PP (IN from)
+              (NP (NN underwriter/adjuster)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, feels-2)
+nsubj(feels-2, Broker-1)
+nsubj(get-20, Broker-1)
+mark(necessary-7, that-3)
+nsubj(necessary-7, this-4)
+cop(necessary-7, is-5)
+neg(necessary-7, not-6)
+ccomp(feels-2, necessary-7)
+mark(filed-12, as-8)
+det(claim-10, the-9)
+nsubjpass(filed-12, claim-10)
+nsubjpass(pending-16, claim-10)
+auxpass(filed-12, was-11)
+advcl:as(necessary-7, filed-12)
+cc(filed-12, and-13)
+cop(pending-16, is-14)
+advmod(pending-16, currently-15)
+advcl:as(necessary-7, pending-16)
+conj:and(filed-12, pending-16)
+punct(feels-2, ,-17)
+cc(feels-2, but-18)
+aux(get-20, will-19)
+conj:but(feels-2, get-20)
+amod(clarification-22, written-21)
+dobj(get-20, clarification-22)
+case(underwriter/adjuster-24, from-23)
+nmod:from(clarification-22, underwriter/adjuster-24)
+punct(feels-2, .-25)
+
+Extracted the following NER entity mentions:
+Broker	TITLE
+
+Sentence #6 (20 tokens):
+Carlos Sole to contact New Orleans attorney who represents SWPC underwriter
+about joining in their suit against ship owner.
+
+Tokens:
+[Text=Carlos CharacterOffsetBegin=568 CharacterOffsetEnd=574 PartOfSpeech=NNP Lemma=Carlos NamedEntityTag=PERSON]
+[Text=Sole CharacterOffsetBegin=575 CharacterOffsetEnd=579 PartOfSpeech=NNP Lemma=Sole NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=580 CharacterOffsetEnd=582 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=contact CharacterOffsetBegin=583 CharacterOffsetEnd=590 PartOfSpeech=VB Lemma=contact NamedEntityTag=O]
+[Text=New CharacterOffsetBegin=591 CharacterOffsetEnd=594 PartOfSpeech=NNP Lemma=New NamedEntityTag=CITY]
+[Text=Orleans CharacterOffsetBegin=595 CharacterOffsetEnd=602 PartOfSpeech=NNP Lemma=Orleans NamedEntityTag=CITY]
+[Text=attorney CharacterOffsetBegin=603 CharacterOffsetEnd=611 PartOfSpeech=NN Lemma=attorney NamedEntityTag=TITLE]
+[Text=who CharacterOffsetBegin=612 CharacterOffsetEnd=615 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=represents CharacterOffsetBegin=616 CharacterOffsetEnd=626 PartOfSpeech=VBZ Lemma=represent NamedEntityTag=O]
+[Text=SWPC CharacterOffsetBegin=627 CharacterOffsetEnd=631 PartOfSpeech=NN Lemma=swpc NamedEntityTag=ORGANIZATION]
+[Text=underwriter CharacterOffsetBegin=632 CharacterOffsetEnd=643 PartOfSpeech=NN Lemma=underwriter NamedEntityTag=TITLE]
+[Text=about CharacterOffsetBegin=644 CharacterOffsetEnd=649 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=joining CharacterOffsetBegin=650 CharacterOffsetEnd=657 PartOfSpeech=VBG Lemma=join NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=658 CharacterOffsetEnd=660 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=661 CharacterOffsetEnd=666 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=suit CharacterOffsetBegin=667 CharacterOffsetEnd=671 PartOfSpeech=NN Lemma=suit NamedEntityTag=O]
+[Text=against CharacterOffsetBegin=672 CharacterOffsetEnd=679 PartOfSpeech=IN Lemma=against NamedEntityTag=O]
+[Text=ship CharacterOffsetBegin=680 CharacterOffsetEnd=684 PartOfSpeech=NN Lemma=ship NamedEntityTag=O]
+[Text=owner CharacterOffsetBegin=685 CharacterOffsetEnd=690 PartOfSpeech=NN Lemma=owner NamedEntityTag=TITLE]
+[Text=. CharacterOffsetBegin=690 CharacterOffsetEnd=691 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Carlos) (NNP Sole))
+    (VP (TO to)
+      (VP (VB contact)
+        (NP
+          (NP (NNP New) (NNP Orleans) (NN attorney))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBZ represents)
+                (NP (NN SWPC) (NN underwriter))
+                (PP (IN about)
+                  (S
+                    (VP (VBG joining)
+                      (PP (IN in)
+                        (NP
+                          (NP (PRP$ their) (NN suit))
+                          (PP (IN against)
+                            (NP (NN ship) (NN owner))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, contact-4)
+compound(Sole-2, Carlos-1)
+nsubj(contact-4, Sole-2)
+mark(contact-4, to-3)
+compound(attorney-7, New-5)
+compound(attorney-7, Orleans-6)
+dobj(contact-4, attorney-7)
+nsubj(represents-9, attorney-7)
+ref(attorney-7, who-8)
+acl:relcl(attorney-7, represents-9)
+compound(underwriter-11, SWPC-10)
+dobj(represents-9, underwriter-11)
+mark(joining-13, about-12)
+advcl:about(represents-9, joining-13)
+case(suit-16, in-14)
+nmod:poss(suit-16, their-15)
+nmod:in(joining-13, suit-16)
+case(owner-19, against-17)
+compound(owner-19, ship-18)
+nmod:against(suit-16, owner-19)
+punct(contact-4, .-20)
+
+Extracted the following NER entity mentions:
+Carlos	PERSON
+New Orleans	CITY
+attorney	TITLE
+SWPC	ORGANIZATION
+underwriter	TITLE
+owner	TITLE
+
+Sentence #7 (34 tokens):
+If any one above has anything else to add, or corrections to what I have
+listed above, please add at this time so we are all on the same wave length.
+
+Tokens:
+[Text=If CharacterOffsetBegin=693 CharacterOffsetEnd=695 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=696 CharacterOffsetEnd=699 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=700 CharacterOffsetEnd=703 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=above CharacterOffsetBegin=704 CharacterOffsetEnd=709 PartOfSpeech=IN Lemma=above NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=710 CharacterOffsetEnd=713 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=anything CharacterOffsetBegin=714 CharacterOffsetEnd=722 PartOfSpeech=NN Lemma=anything NamedEntityTag=O]
+[Text=else CharacterOffsetBegin=723 CharacterOffsetEnd=727 PartOfSpeech=RB Lemma=else NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=728 CharacterOffsetEnd=730 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=add CharacterOffsetBegin=731 CharacterOffsetEnd=734 PartOfSpeech=VB Lemma=add NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=734 CharacterOffsetEnd=735 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=736 CharacterOffsetEnd=738 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=corrections CharacterOffsetBegin=739 CharacterOffsetEnd=750 PartOfSpeech=NNS Lemma=correction NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=751 CharacterOffsetEnd=753 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=754 CharacterOffsetEnd=758 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=759 CharacterOffsetEnd=760 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=761 CharacterOffsetEnd=765 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=listed CharacterOffsetBegin=766 CharacterOffsetEnd=772 PartOfSpeech=VBN Lemma=list NamedEntityTag=O]
+[Text=above CharacterOffsetBegin=773 CharacterOffsetEnd=778 PartOfSpeech=RB Lemma=above NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=778 CharacterOffsetEnd=779 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=please CharacterOffsetBegin=780 CharacterOffsetEnd=786 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=add CharacterOffsetBegin=787 CharacterOffsetEnd=790 PartOfSpeech=VB Lemma=add NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=791 CharacterOffsetEnd=793 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=794 CharacterOffsetEnd=798 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=799 CharacterOffsetEnd=803 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=804 CharacterOffsetEnd=806 PartOfSpeech=IN Lemma=so NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=807 CharacterOffsetEnd=809 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=810 CharacterOffsetEnd=813 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=814 CharacterOffsetEnd=817 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=818 CharacterOffsetEnd=820 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=821 CharacterOffsetEnd=824 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=same CharacterOffsetBegin=825 CharacterOffsetEnd=829 PartOfSpeech=JJ Lemma=same NamedEntityTag=O]
+[Text=wave CharacterOffsetBegin=830 CharacterOffsetEnd=834 PartOfSpeech=NN Lemma=wave NamedEntityTag=O]
+[Text=length CharacterOffsetBegin=835 CharacterOffsetEnd=841 PartOfSpeech=NN Lemma=length NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=841 CharacterOffsetEnd=842 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP
+          (NP (DT any))
+          (ADVP
+            (NP (CD one))
+            (IN above)))
+        (VP (VBZ has)
+          (NP
+            (NP
+              (NP (NN anything))
+              (RB else)
+              (SBAR
+                (S
+                  (VP (TO to)
+                    (VP (VB add))))))
+            (, ,)
+            (CC or)
+            (NP
+              (NP (NNS corrections))
+              (SBAR
+                (WHPP (TO to)
+                  (WHNP (WP what)))
+                (S
+                  (NP (PRP I))
+                  (VP (VBP have)
+                    (VP (VBN listed)
+                      (ADVP (RB above))
+                      (PRN (, ,)
+                        (INTJ (VB please))))))))))))
+    (VP (VB add)
+      (PP (IN at)
+        (NP (DT this) (NN time)))
+      (SBAR (IN so)
+        (S
+          (NP (PRP we))
+          (VP (VBP are)
+            (NP
+              (NP (DT all))
+              (PP (IN on)
+                (NP (DT the) (JJ same) (NN wave) (NN length))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, add-21)
+mark(has-5, If-1)
+nsubj(has-5, any-2)
+advmod(any-2, one-3)
+case(one-3, above-4)
+csubj(add-21, has-5)
+dobj(has-5, anything-6)
+advmod(anything-6, else-7)
+mark(add-9, to-8)
+acl:to(anything-6, add-9)
+punct(anything-6, ,-10)
+cc(anything-6, or-11)
+dobj(has-5, corrections-12)
+conj:or(anything-6, corrections-12)
+nmod:to(listed-17, corrections-12)
+case(what-14, to-13)
+ref(corrections-12, what-14)
+nsubj(listed-17, I-15)
+aux(listed-17, have-16)
+acl:relcl(corrections-12, listed-17)
+advmod(listed-17, above-18)
+punct(please-20, ,-19)
+discourse(listed-17, please-20)
+case(time-24, at-22)
+det(time-24, this-23)
+nmod:at(add-21, time-24)
+mark(all-28, so-25)
+nsubj(all-28, we-26)
+cop(all-28, are-27)
+advcl:so(add-21, all-28)
+case(length-33, on-29)
+det(length-33, the-30)
+amod(length-33, same-31)
+compound(length-33, wave-32)
+nmod:on(all-28, length-33)
+punct(add-21, .-34)
+
+Extracted the following NER entity mentions:
+one	NUMBER
+
+Coreference set:
+	(2,7,[7,9]) -> (3,21,[20,22]), that is: "underwriter 's" -> "the underwriter"
+
+Coreference set:
+	(3,9,[9,10]) -> (7,24,[23,25]), that is: "time" -> "this time"
+
+Coreference set:
+	(5,4,[4,5]) -> (3,14,[14,15]), that is: "this" -> "this"
+	(6,15,[15,16]) -> (3,14,[14,15]), that is: "their" -> "this"

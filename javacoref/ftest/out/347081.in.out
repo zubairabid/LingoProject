@@ -1,0 +1,120 @@
+Document: ID=347081.in (2 sentences, 27 tokens)
+
+Sentence #1 (23 tokens):
+This is why California public policy is so screwed up; they spend their time
+reading and sharing stuff like the attached.
+
+Tokens:
+[Text=This CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=why CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=California CharacterOffsetBegin=12 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=California NamedEntityTag=STATE_OR_PROVINCE]
+[Text=public CharacterOffsetBegin=23 CharacterOffsetEnd=29 PartOfSpeech=JJ Lemma=public NamedEntityTag=O]
+[Text=policy CharacterOffsetBegin=30 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=policy NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=screwed CharacterOffsetBegin=43 CharacterOffsetEnd=50 PartOfSpeech=VBN Lemma=screw NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=51 CharacterOffsetEnd=53 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=55 CharacterOffsetEnd=59 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=spend CharacterOffsetBegin=60 CharacterOffsetEnd=65 PartOfSpeech=VBP Lemma=spend NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=66 CharacterOffsetEnd=71 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=72 CharacterOffsetEnd=76 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=reading CharacterOffsetBegin=77 CharacterOffsetEnd=84 PartOfSpeech=VBG Lemma=read NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=sharing CharacterOffsetBegin=89 CharacterOffsetEnd=96 PartOfSpeech=VBG Lemma=share NamedEntityTag=O]
+[Text=stuff CharacterOffsetBegin=97 CharacterOffsetEnd=102 PartOfSpeech=NN Lemma=stuff NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=103 CharacterOffsetEnd=107 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=108 CharacterOffsetEnd=111 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=attached CharacterOffsetBegin=112 CharacterOffsetEnd=120 PartOfSpeech=VBN Lemma=attach NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=120 CharacterOffsetEnd=121 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (DT This))
+      (VP (VBZ is)
+        (SBAR
+          (WHADVP (WRB why))
+          (S
+            (NP (NNP California) (JJ public) (NN policy))
+            (VP (VBZ is)
+              (ADVP (RB so))
+              (VP (VBN screwed)
+                (PRT (RP up))))))))
+    (: ;)
+    (S
+      (NP (PRP they))
+      (VP (VBP spend)
+        (NP (PRP$ their) (NN time))
+        (S
+          (VP (VBG reading)
+            (CC and)
+            (VBG sharing)
+            (NP
+              (NP (NN stuff))
+              (PP (IN like)
+                (NP
+                  (NP (DT the))
+                  (VP (VBN attached)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-2)
+nsubj(is-2, This-1)
+advmod(screwed-9, why-3)
+compound(policy-6, California-4)
+amod(policy-6, public-5)
+nsubjpass(screwed-9, policy-6)
+auxpass(screwed-9, is-7)
+advmod(screwed-9, so-8)
+advcl(is-2, screwed-9)
+compound:prt(screwed-9, up-10)
+punct(is-2, ;-11)
+nsubj(spend-13, they-12)
+parataxis(is-2, spend-13)
+nmod:poss(time-15, their-14)
+dobj(spend-13, time-15)
+xcomp(spend-13, reading-16)
+cc(reading-16, and-17)
+xcomp(spend-13, sharing-18)
+conj:and(reading-16, sharing-18)
+dobj(reading-16, stuff-19)
+case(the-21, like-20)
+nmod:like(stuff-19, the-21)
+acl(the-21, attached-22)
+punct(is-2, .-23)
+
+Extracted the following NER entity mentions:
+California	STATE_OR_PROVINCE
+
+Sentence #2 (4 tokens):
+Enjoy, anyway!
+
+Tokens:
+[Text=Enjoy CharacterOffsetBegin=123 CharacterOffsetEnd=128 PartOfSpeech=VB Lemma=enjoy NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=128 CharacterOffsetEnd=129 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=anyway CharacterOffsetBegin=130 CharacterOffsetEnd=136 PartOfSpeech=RB Lemma=anyway NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=136 CharacterOffsetEnd=137 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ
+    (VP (VB Enjoy) (, ,)
+      (ADVP (RB anyway)))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Enjoy-1)
+punct(Enjoy-1, ,-2)
+advmod(Enjoy-1, anyway-3)
+punct(Enjoy-1, !-4)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(1,12,[12,13]) -> (1,1,[1,2]), that is: "they" -> "This"
+	(1,14,[14,15]) -> (1,1,[1,2]), that is: "their" -> "This"

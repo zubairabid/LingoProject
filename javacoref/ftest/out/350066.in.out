@@ -1,0 +1,717 @@
+Document: ID=350066.in (12 sentences, 167 tokens)
+
+Sentence #1 (7 tokens):
+Cynthia, et al --
+
+FYI.
+
+Tokens:
+[Text=Cynthia CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Cynthia NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=et CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=FW Lemma=et NamedEntityTag=O]
+[Text=al CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=FW Lemma=al NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=FYI CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=FYI NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP
+      (NP (NNP Cynthia))
+      (, ,)
+      (NP (FW et) (FW al)))
+    (: --)
+    (NP (NNP FYI))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Cynthia-1)
+punct(Cynthia-1, ,-2)
+compound(al-4, et-3)
+appos(Cynthia-1, al-4)
+punct(Cynthia-1, ---5)
+dep(Cynthia-1, FYI-6)
+punct(Cynthia-1, .-7)
+
+Extracted the following NER entity mentions:
+Cynthia	PERSON
+
+Sentence #2 (19 tokens):
+I was on a panel with Phil Moeller today in Las Vegas (he was the
+moderator).
+
+Tokens:
+[Text=I CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=panel CharacterOffsetBegin=36 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=panel NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Phil CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=NNP Lemma=Phil NamedEntityTag=PERSON]
+[Text=Moeller CharacterOffsetBegin=52 CharacterOffsetEnd=59 PartOfSpeech=NNP Lemma=Moeller NamedEntityTag=PERSON]
+[Text=today CharacterOffsetBegin=60 CharacterOffsetEnd=65 PartOfSpeech=NN Lemma=today NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=66 CharacterOffsetEnd=68 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Las CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=NNP Lemma=Las NamedEntityTag=CITY]
+[Text=Vegas CharacterOffsetBegin=73 CharacterOffsetEnd=78 PartOfSpeech=NNP Lemma=Vegas NamedEntityTag=CITY]
+[Text=-LRB- CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=80 CharacterOffsetEnd=82 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=83 CharacterOffsetEnd=86 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=87 CharacterOffsetEnd=90 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=moderator CharacterOffsetBegin=91 CharacterOffsetEnd=100 PartOfSpeech=NN Lemma=moderator NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=100 CharacterOffsetEnd=101 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=101 CharacterOffsetEnd=102 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD was)
+      (PP (IN on)
+        (NP
+          (NP (DT a) (NN panel))
+          (PP (IN with)
+            (NP (NNP Phil) (NNP Moeller)))))
+      (NP-TMP (NN today))
+      (PP (IN in)
+        (NP
+          (NP (NNP Las) (NNP Vegas))
+          (PRN (-LRB- -LRB-)
+            (S
+              (NP (PRP he))
+              (VP (VBD was)
+                (NP (DT the) (NN moderator))))
+            (-RRB- -RRB-)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, panel-5)
+nsubj(panel-5, I-1)
+cop(panel-5, was-2)
+case(panel-5, on-3)
+det(panel-5, a-4)
+case(Moeller-8, with-6)
+compound(Moeller-8, Phil-7)
+nmod:with(panel-5, Moeller-8)
+nmod:tmod(panel-5, today-9)
+case(Vegas-12, in-10)
+compound(Vegas-12, Las-11)
+nmod:in(panel-5, Vegas-12)
+punct(moderator-17, -LRB--13)
+nsubj(moderator-17, he-14)
+cop(moderator-17, was-15)
+det(moderator-17, the-16)
+dep(Vegas-12, moderator-17)
+punct(moderator-17, -RRB--18)
+punct(panel-5, .-19)
+
+Extracted the following NER entity mentions:
+Phil Moeller	PERSON
+Las Vegas	CITY
+he	PERSON
+
+Sentence #3 (4 tokens):
+Very nice guy.
+
+Tokens:
+[Text=Very CharacterOffsetBegin=104 CharacterOffsetEnd=108 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=nice CharacterOffsetBegin=109 CharacterOffsetEnd=113 PartOfSpeech=JJ Lemma=nice NamedEntityTag=O]
+[Text=guy CharacterOffsetBegin=114 CharacterOffsetEnd=117 PartOfSpeech=NN Lemma=guy NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=117 CharacterOffsetEnd=118 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (ADVP (RB Very))
+    (NP (JJ nice) (NN guy))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, guy-3)
+dep(guy-3, Very-1)
+amod(guy-3, nice-2)
+punct(guy-3, .-4)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (5 tokens):
+No real issues developed.
+
+Tokens:
+[Text=No CharacterOffsetBegin=120 CharacterOffsetEnd=122 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=real CharacterOffsetBegin=123 CharacterOffsetEnd=127 PartOfSpeech=JJ Lemma=real NamedEntityTag=O]
+[Text=issues CharacterOffsetBegin=128 CharacterOffsetEnd=134 PartOfSpeech=NNS Lemma=issue NamedEntityTag=O]
+[Text=developed CharacterOffsetBegin=135 CharacterOffsetEnd=144 PartOfSpeech=VBD Lemma=develop NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=144 CharacterOffsetEnd=145 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT No) (JJ real) (NNS issues))
+    (VP (VBD developed))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, developed-4)
+neg(issues-3, No-1)
+amod(issues-3, real-2)
+nsubj(developed-4, issues-3)
+punct(developed-4, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (23 tokens):
+I used (very
+liberally) Steve Kean's testimony in San Diego to talk about California and
+some material on RTOs.
+
+Tokens:
+[Text=I CharacterOffsetBegin=147 CharacterOffsetEnd=148 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=used CharacterOffsetBegin=149 CharacterOffsetEnd=153 PartOfSpeech=VBD Lemma=use NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=154 CharacterOffsetEnd=155 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=155 CharacterOffsetEnd=159 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=liberally CharacterOffsetBegin=160 CharacterOffsetEnd=169 PartOfSpeech=RB Lemma=liberally NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=169 CharacterOffsetEnd=170 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=Steve CharacterOffsetBegin=171 CharacterOffsetEnd=176 PartOfSpeech=NNP Lemma=Steve NamedEntityTag=PERSON]
+[Text=Kean CharacterOffsetBegin=177 CharacterOffsetEnd=181 PartOfSpeech=NNP Lemma=Kean NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=181 CharacterOffsetEnd=183 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=testimony CharacterOffsetBegin=184 CharacterOffsetEnd=193 PartOfSpeech=NN Lemma=testimony NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=194 CharacterOffsetEnd=196 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=San CharacterOffsetBegin=197 CharacterOffsetEnd=200 PartOfSpeech=NNP Lemma=San NamedEntityTag=CITY]
+[Text=Diego CharacterOffsetBegin=201 CharacterOffsetEnd=206 PartOfSpeech=NNP Lemma=Diego NamedEntityTag=CITY]
+[Text=to CharacterOffsetBegin=207 CharacterOffsetEnd=209 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=talk CharacterOffsetBegin=210 CharacterOffsetEnd=214 PartOfSpeech=VB Lemma=talk NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=215 CharacterOffsetEnd=220 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=California CharacterOffsetBegin=221 CharacterOffsetEnd=231 PartOfSpeech=NNP Lemma=California NamedEntityTag=STATE_OR_PROVINCE]
+[Text=and CharacterOffsetBegin=232 CharacterOffsetEnd=235 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=236 CharacterOffsetEnd=240 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=material CharacterOffsetBegin=241 CharacterOffsetEnd=249 PartOfSpeech=NN Lemma=material NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=250 CharacterOffsetEnd=252 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=RTOs CharacterOffsetBegin=253 CharacterOffsetEnd=257 PartOfSpeech=NNS Lemma=rto NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=257 CharacterOffsetEnd=258 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD used)
+      (PRN (-LRB- -LRB-)
+        (ADJP (RB very) (RB liberally))
+        (-RRB- -RRB-))
+      (NP
+        (NP
+          (NP (NNP Steve) (NNP Kean) (POS 's))
+          (NN testimony))
+        (PP (IN in)
+          (NP (NNP San) (NNP Diego)))
+        (S
+          (VP (TO to)
+            (VP (VB talk)
+              (PP (IN about)
+                (NP
+                  (NP (NNP California))
+                  (CC and)
+                  (NP (DT some) (NN material))))
+              (PP (IN on)
+                (NP (NNS RTOs))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, used-2)
+nsubj(used-2, I-1)
+punct(liberally-5, -LRB--3)
+advmod(liberally-5, very-4)
+dep(used-2, liberally-5)
+punct(liberally-5, -RRB--6)
+compound(Kean-8, Steve-7)
+nmod:poss(testimony-10, Kean-8)
+case(Kean-8, 's-9)
+dobj(used-2, testimony-10)
+case(Diego-13, in-11)
+compound(Diego-13, San-12)
+nmod:in(testimony-10, Diego-13)
+mark(talk-15, to-14)
+acl:to(testimony-10, talk-15)
+case(California-17, about-16)
+nmod:about(talk-15, California-17)
+cc(California-17, and-18)
+det(material-20, some-19)
+nmod:about(talk-15, material-20)
+conj:and(California-17, material-20)
+case(RTOs-22, on-21)
+nmod:on(talk-15, RTOs-22)
+punct(used-2, .-23)
+
+Extracted the following NER entity mentions:
+Steve Kean	PERSON
+San Diego	CITY
+California	STATE_OR_PROVINCE
+
+Sentence #6 (6 tokens):
+My speech is attached below.
+
+Tokens:
+[Text=My CharacterOffsetBegin=260 CharacterOffsetEnd=262 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=speech CharacterOffsetBegin=263 CharacterOffsetEnd=269 PartOfSpeech=NN Lemma=speech NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=270 CharacterOffsetEnd=272 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=attached CharacterOffsetBegin=273 CharacterOffsetEnd=281 PartOfSpeech=VBN Lemma=attach NamedEntityTag=O]
+[Text=below CharacterOffsetBegin=282 CharacterOffsetEnd=287 PartOfSpeech=IN Lemma=below NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=287 CharacterOffsetEnd=288 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP$ My) (NN speech))
+    (VP (VBZ is)
+      (VP (VBN attached)
+        (PP (IN below))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, attached-4)
+nmod:poss(speech-2, My-1)
+nsubjpass(attached-4, speech-2)
+auxpass(attached-4, is-3)
+nmod(attached-4, below-5)
+punct(attached-4, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #7 (20 tokens):
+Phil indicated that he thought that there was agreement on the Public Power
+Tax issues and on NAERO language.
+
+Tokens:
+[Text=Phil CharacterOffsetBegin=290 CharacterOffsetEnd=294 PartOfSpeech=NNP Lemma=Phil NamedEntityTag=PERSON]
+[Text=indicated CharacterOffsetBegin=295 CharacterOffsetEnd=304 PartOfSpeech=VBD Lemma=indicate NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=305 CharacterOffsetEnd=309 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=310 CharacterOffsetEnd=312 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=thought CharacterOffsetBegin=313 CharacterOffsetEnd=320 PartOfSpeech=VBD Lemma=think NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=321 CharacterOffsetEnd=325 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=326 CharacterOffsetEnd=331 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=332 CharacterOffsetEnd=335 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=agreement CharacterOffsetBegin=336 CharacterOffsetEnd=345 PartOfSpeech=NN Lemma=agreement NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=346 CharacterOffsetEnd=348 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=349 CharacterOffsetEnd=352 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Public CharacterOffsetBegin=353 CharacterOffsetEnd=359 PartOfSpeech=NNP Lemma=Public NamedEntityTag=ORGANIZATION]
+[Text=Power CharacterOffsetBegin=360 CharacterOffsetEnd=365 PartOfSpeech=NNP Lemma=Power NamedEntityTag=ORGANIZATION]
+[Text=Tax CharacterOffsetBegin=366 CharacterOffsetEnd=369 PartOfSpeech=NNP Lemma=Tax NamedEntityTag=ORGANIZATION]
+[Text=issues CharacterOffsetBegin=370 CharacterOffsetEnd=376 PartOfSpeech=NNS Lemma=issue NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=377 CharacterOffsetEnd=380 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=381 CharacterOffsetEnd=383 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=NAERO CharacterOffsetBegin=384 CharacterOffsetEnd=389 PartOfSpeech=NNP Lemma=NAERO NamedEntityTag=O]
+[Text=language CharacterOffsetBegin=390 CharacterOffsetEnd=398 PartOfSpeech=NN Lemma=language NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=398 CharacterOffsetEnd=399 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Phil))
+    (VP (VBD indicated)
+      (SBAR (IN that)
+        (S
+          (NP (PRP he))
+          (VP (VBD thought)
+            (SBAR (IN that)
+              (S
+                (NP (EX there))
+                (VP (VBD was)
+                  (NP
+                    (NP (NN agreement))
+                    (PP
+                      (PP (IN on)
+                        (NP (DT the) (NNP Public) (NNP Power) (NNP Tax) (NNS issues)))
+                      (CC and)
+                      (PP (IN on)
+                        (NP (NNP NAERO) (NN language))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, indicated-2)
+nsubj(indicated-2, Phil-1)
+mark(thought-5, that-3)
+nsubj(thought-5, he-4)
+ccomp(indicated-2, thought-5)
+mark(was-8, that-6)
+expl(was-8, there-7)
+ccomp(thought-5, was-8)
+nsubj(was-8, agreement-9)
+nsubj(was-8, agreement-9')
+conj:and(agreement-9, agreement-9')
+case(issues-15, on-10)
+det(issues-15, the-11)
+compound(issues-15, Public-12)
+compound(issues-15, Power-13)
+compound(issues-15, Tax-14)
+nmod:on(agreement-9, issues-15)
+cc(agreement-9, and-16)
+case(language-19, on-17)
+compound(language-19, NAERO-18)
+nmod:on(agreement-9', language-19)
+punct(indicated-2, .-20)
+
+Extracted the following NER entity mentions:
+Phil	PERSON
+Public Power Tax	ORGANIZATION
+he	PERSON
+
+Sentence #8 (14 tokens):
+He highlighted that comprehensive language
+could be difficult if not impossible next year.
+
+Tokens:
+[Text=He CharacterOffsetBegin=401 CharacterOffsetEnd=403 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=highlighted CharacterOffsetBegin=404 CharacterOffsetEnd=415 PartOfSpeech=VBD Lemma=highlight NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=416 CharacterOffsetEnd=420 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=comprehensive CharacterOffsetBegin=421 CharacterOffsetEnd=434 PartOfSpeech=JJ Lemma=comprehensive NamedEntityTag=O]
+[Text=language CharacterOffsetBegin=435 CharacterOffsetEnd=443 PartOfSpeech=NN Lemma=language NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=444 CharacterOffsetEnd=449 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=450 CharacterOffsetEnd=452 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=difficult CharacterOffsetBegin=453 CharacterOffsetEnd=462 PartOfSpeech=JJ Lemma=difficult NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=463 CharacterOffsetEnd=465 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=466 CharacterOffsetEnd=469 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=impossible CharacterOffsetBegin=470 CharacterOffsetEnd=480 PartOfSpeech=JJ Lemma=impossible NamedEntityTag=O]
+[Text=next CharacterOffsetBegin=481 CharacterOffsetEnd=485 PartOfSpeech=JJ Lemma=next NamedEntityTag=O]
+[Text=year CharacterOffsetBegin=486 CharacterOffsetEnd=490 PartOfSpeech=NN Lemma=year NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=490 CharacterOffsetEnd=491 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD highlighted)
+      (SBAR (IN that)
+        (S
+          (NP (JJ comprehensive) (NN language))
+          (VP (MD could)
+            (VP (VB be)
+              (ADJP (JJ difficult)
+                (SBAR (IN if)
+                  (FRAG (RB not)
+                    (ADJP (JJ impossible)))))
+              (NP-TMP (JJ next) (NN year)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, highlighted-2)
+nsubj(highlighted-2, He-1)
+mark(difficult-8, that-3)
+amod(language-5, comprehensive-4)
+nsubj(difficult-8, language-5)
+aux(difficult-8, could-6)
+cop(difficult-8, be-7)
+ccomp(highlighted-2, difficult-8)
+mark(not-10, if-9)
+dep(difficult-8, not-10)
+dep(not-10, impossible-11)
+amod(year-13, next-12)
+nmod:tmod(difficult-8, year-13)
+punct(highlighted-2, .-14)
+
+Extracted the following NER entity mentions:
+He	PERSON
+
+Sentence #9 (19 tokens):
+(Joe - can you please send
+me a copy of the NAERO bill and any summaries).
+
+Tokens:
+[Text=-LRB- CharacterOffsetBegin=493 CharacterOffsetEnd=494 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Joe CharacterOffsetBegin=494 CharacterOffsetEnd=497 PartOfSpeech=NNP Lemma=Joe NamedEntityTag=PERSON]
+[Text=- CharacterOffsetBegin=498 CharacterOffsetEnd=499 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=500 CharacterOffsetEnd=503 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=504 CharacterOffsetEnd=507 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=please CharacterOffsetBegin=508 CharacterOffsetEnd=514 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=send CharacterOffsetBegin=515 CharacterOffsetEnd=519 PartOfSpeech=VB Lemma=send NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=520 CharacterOffsetEnd=522 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=523 CharacterOffsetEnd=524 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=copy CharacterOffsetBegin=525 CharacterOffsetEnd=529 PartOfSpeech=NN Lemma=copy NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=530 CharacterOffsetEnd=532 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=533 CharacterOffsetEnd=536 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=NAERO CharacterOffsetBegin=537 CharacterOffsetEnd=542 PartOfSpeech=NNP Lemma=NAERO NamedEntityTag=O]
+[Text=bill CharacterOffsetBegin=543 CharacterOffsetEnd=547 PartOfSpeech=NN Lemma=bill NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=548 CharacterOffsetEnd=551 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=552 CharacterOffsetEnd=555 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=summaries CharacterOffsetBegin=556 CharacterOffsetEnd=565 PartOfSpeech=NNS Lemma=summary NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=565 CharacterOffsetEnd=566 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=566 CharacterOffsetEnd=567 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (-LRB- -LRB-)
+    (NP (NNP Joe))
+    (VP (: -)
+      (SQ (MD can)
+        (NP (PRP you))
+        (VP (VB please)
+          (VP (VB send)
+            (NP (PRP me))
+            (NP
+              (NP (DT a) (NN copy))
+              (PP (IN of)
+                (NP
+                  (NP (DT the) (NNP NAERO) (NN bill))
+                  (CC and)
+                  (NP (DT any) (NNS summaries)))))))))
+    (-RRB- -RRB-) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, please-6)
+punct(please-6, -LRB--1)
+nsubj(please-6, Joe-2)
+punct(please-6, --3)
+aux(please-6, can-4)
+nsubj(please-6, you-5)
+xcomp(please-6, send-7)
+iobj(send-7, me-8)
+det(copy-10, a-9)
+dobj(send-7, copy-10)
+case(bill-14, of-11)
+det(bill-14, the-12)
+compound(bill-14, NAERO-13)
+nmod:of(copy-10, bill-14)
+cc(bill-14, and-15)
+det(summaries-17, any-16)
+nmod:of(copy-10, summaries-17)
+conj:and(bill-14, summaries-17)
+punct(please-6, -RRB--18)
+punct(please-6, .-19)
+
+Extracted the following NER entity mentions:
+Joe	PERSON
+
+Sentence #10 (34 tokens):
+While Phil seemed to have a great sense of what is happening in California
+and the electricity markets, he indicated that many of his staff collegues
+were not so up to speed.
+
+Tokens:
+[Text=While CharacterOffsetBegin=569 CharacterOffsetEnd=574 PartOfSpeech=IN Lemma=while NamedEntityTag=O]
+[Text=Phil CharacterOffsetBegin=575 CharacterOffsetEnd=579 PartOfSpeech=NNP Lemma=Phil NamedEntityTag=PERSON]
+[Text=seemed CharacterOffsetBegin=580 CharacterOffsetEnd=586 PartOfSpeech=VBD Lemma=seem NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=587 CharacterOffsetEnd=589 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=590 CharacterOffsetEnd=594 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=595 CharacterOffsetEnd=596 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=597 CharacterOffsetEnd=602 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=sense CharacterOffsetBegin=603 CharacterOffsetEnd=608 PartOfSpeech=NN Lemma=sense NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=609 CharacterOffsetEnd=611 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=612 CharacterOffsetEnd=616 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=617 CharacterOffsetEnd=619 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=happening CharacterOffsetBegin=620 CharacterOffsetEnd=629 PartOfSpeech=VBG Lemma=happen NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=630 CharacterOffsetEnd=632 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=California CharacterOffsetBegin=633 CharacterOffsetEnd=643 PartOfSpeech=NNP Lemma=California NamedEntityTag=STATE_OR_PROVINCE]
+[Text=and CharacterOffsetBegin=644 CharacterOffsetEnd=647 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=648 CharacterOffsetEnd=651 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=electricity CharacterOffsetBegin=652 CharacterOffsetEnd=663 PartOfSpeech=NN Lemma=electricity NamedEntityTag=O]
+[Text=markets CharacterOffsetBegin=664 CharacterOffsetEnd=671 PartOfSpeech=NNS Lemma=market NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=671 CharacterOffsetEnd=672 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=673 CharacterOffsetEnd=675 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=indicated CharacterOffsetBegin=676 CharacterOffsetEnd=685 PartOfSpeech=VBD Lemma=indicate NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=686 CharacterOffsetEnd=690 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=many CharacterOffsetBegin=691 CharacterOffsetEnd=695 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=696 CharacterOffsetEnd=698 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=699 CharacterOffsetEnd=702 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=staff CharacterOffsetBegin=703 CharacterOffsetEnd=708 PartOfSpeech=NN Lemma=staff NamedEntityTag=O]
+[Text=collegues CharacterOffsetBegin=709 CharacterOffsetEnd=718 PartOfSpeech=NNS Lemma=collegue NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=719 CharacterOffsetEnd=723 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=724 CharacterOffsetEnd=727 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=728 CharacterOffsetEnd=730 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=731 CharacterOffsetEnd=733 PartOfSpeech=IN Lemma=up NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=734 CharacterOffsetEnd=736 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=speed CharacterOffsetBegin=737 CharacterOffsetEnd=742 PartOfSpeech=VB Lemma=speed NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=742 CharacterOffsetEnd=743 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN While)
+      (S
+        (NP (NNP Phil))
+        (VP (VBD seemed)
+          (S
+            (VP (TO to)
+              (VP (VB have)
+                (NP
+                  (NP (DT a) (JJ great) (NN sense))
+                  (PP (IN of)
+                    (SBAR
+                      (WHNP (WP what))
+                      (S
+                        (VP (VBZ is)
+                          (VP (VBG happening)
+                            (PP (IN in)
+                              (NP
+                                (NP (NNP California))
+                                (CC and)
+                                (NP (DT the) (NN electricity) (NNS markets))))))))))))))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD indicated)
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (JJ many))
+            (PP (IN of)
+              (NP (PRP$ his) (NN staff) (NNS collegues))))
+          (VP (VBD were)
+            (ADVP (RB not) (RB so))
+            (ADJP (IN up)
+              (S
+                (VP (TO to)
+                  (VP (VB speed)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, indicated-21)
+mark(seemed-3, While-1)
+nsubj(seemed-3, Phil-2)
+nsubj:xsubj(have-5, Phil-2)
+advcl:while(indicated-21, seemed-3)
+mark(have-5, to-4)
+xcomp(seemed-3, have-5)
+det(sense-8, a-6)
+amod(sense-8, great-7)
+dobj(have-5, sense-8)
+mark(happening-12, of-9)
+nsubj(happening-12, what-10)
+aux(happening-12, is-11)
+acl:of(sense-8, happening-12)
+case(California-14, in-13)
+nmod:in(happening-12, California-14)
+cc(California-14, and-15)
+det(markets-18, the-16)
+compound(markets-18, electricity-17)
+nmod:in(happening-12, markets-18)
+conj:and(California-14, markets-18)
+punct(indicated-21, ,-19)
+nsubj(indicated-21, he-20)
+mark(up-31, that-22)
+det:qmod(collegues-27, many-23)
+nsubj:xsubj(speed-33, many-23)
+mwe(many-23, of-24)
+nmod:poss(collegues-27, his-25)
+compound(collegues-27, staff-26)
+nsubj(up-31, collegues-27)
+nsubj:xsubj(speed-33, collegues-27)
+cop(up-31, were-28)
+dep(so-30, not-29)
+advmod(up-31, so-30)
+ccomp(indicated-21, up-31)
+mark(speed-33, to-32)
+xcomp(up-31, speed-33)
+punct(indicated-21, .-34)
+
+Extracted the following NER entity mentions:
+Phil	PERSON
+California	STATE_OR_PROVINCE
+he	PERSON
+his	PERSON
+
+Sentence #11 (15 tokens):
+Any way that we can help them out before their
+minds are made up?
+
+Tokens:
+[Text=Any CharacterOffsetBegin=745 CharacterOffsetEnd=748 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=way CharacterOffsetBegin=749 CharacterOffsetEnd=752 PartOfSpeech=NN Lemma=way NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=753 CharacterOffsetEnd=757 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=758 CharacterOffsetEnd=760 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=761 CharacterOffsetEnd=764 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=help CharacterOffsetBegin=765 CharacterOffsetEnd=769 PartOfSpeech=VB Lemma=help NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=770 CharacterOffsetEnd=774 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=775 CharacterOffsetEnd=778 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=before CharacterOffsetBegin=779 CharacterOffsetEnd=785 PartOfSpeech=IN Lemma=before NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=786 CharacterOffsetEnd=791 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=minds CharacterOffsetBegin=792 CharacterOffsetEnd=797 PartOfSpeech=NNS Lemma=mind NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=798 CharacterOffsetEnd=801 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=made CharacterOffsetBegin=802 CharacterOffsetEnd=806 PartOfSpeech=VBN Lemma=make NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=807 CharacterOffsetEnd=809 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=809 CharacterOffsetEnd=810 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT Any) (NN way))
+      (SBAR (IN that)
+        (S
+          (NP (PRP we))
+          (VP (MD can)
+            (VP (VB help)
+              (NP (PRP them))
+              (PRT (RP out))
+              (PP (IN before)
+                (NP (PRP$ their) (NNS minds))))))))
+    (VP (VBP are)
+      (VP (VBN made)
+        (PRT (RP up))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, made-13)
+det(way-2, Any-1)
+nsubjpass(made-13, way-2)
+mark(help-6, that-3)
+nsubj(help-6, we-4)
+aux(help-6, can-5)
+dep(way-2, help-6)
+dobj(help-6, them-7)
+compound:prt(help-6, out-8)
+case(minds-11, before-9)
+nmod:poss(minds-11, their-10)
+nmod:before(help-6, minds-11)
+auxpass(made-13, are-12)
+compound:prt(made-13, up-14)
+punct(made-13, ?-15)
+
+Extracted the following NER entity mentions:
+
+Sentence #12 (1 tokens):
+Jim
+
+Tokens:
+[Text=Jim CharacterOffsetBegin=812 CharacterOffsetEnd=815 PartOfSpeech=NNP Lemma=Jim NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Jim)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Jim-1)
+
+Extracted the following NER entity mentions:
+Jim	PERSON
+
+Coreference set:
+	(2,14,[14,15]) -> (2,8,[7,9]), that is: "he" -> "Phil Moeller"
+	(2,17,[16,18]) -> (2,8,[7,9]), that is: "the moderator" -> "Phil Moeller"
+	(7,1,[1,2]) -> (2,8,[7,9]), that is: "Phil" -> "Phil Moeller"
+	(7,4,[4,5]) -> (2,8,[7,9]), that is: "he" -> "Phil Moeller"
+	(8,1,[1,2]) -> (2,8,[7,9]), that is: "He" -> "Phil Moeller"
+	(10,2,[2,3]) -> (2,8,[7,9]), that is: "Phil" -> "Phil Moeller"
+	(10,20,[20,21]) -> (2,8,[7,9]), that is: "he" -> "Phil Moeller"
+	(10,25,[25,26]) -> (2,8,[7,9]), that is: "his" -> "Phil Moeller"
+
+Coreference set:
+	(5,1,[1,2]) -> (2,1,[1,2]), that is: "I" -> "I"
+	(6,1,[1,2]) -> (2,1,[1,2]), that is: "My" -> "I"
+	(9,8,[8,9]) -> (2,1,[1,2]), that is: "me" -> "I"
+
+Coreference set:
+	(10,14,[14,15]) -> (5,17,[17,18]), that is: "California" -> "California"
+
+Coreference set:
+	(11,7,[7,8]) -> (10,23,[23,28]), that is: "them" -> "many of his staff collegues"
+	(11,10,[10,11]) -> (10,23,[23,28]), that is: "their" -> "many of his staff collegues"

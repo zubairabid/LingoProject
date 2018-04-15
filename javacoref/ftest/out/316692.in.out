@@ -1,0 +1,429 @@
+Document: ID=316692.in (8 sentences, 100 tokens)
+
+Sentence #1 (4 tokens):
+Sean,
+1.
+
+Tokens:
+[Text=Sean CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Sean NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=1 CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=CD Lemma=1 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=. CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Sean))
+    (, ,)
+    (NP (CD 1))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Sean-1)
+punct(Sean-1, ,-2)
+amod(Sean-1, 1-3)
+punct(Sean-1, .-4)
+
+Extracted the following NER entity mentions:
+Sean	PERSON
+1	NUMBER
+
+Sentence #2 (19 tokens):
+On the signature lines for each document, please provide the role that
+each party is signing as.
+
+Tokens:
+[Text=On CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=signature CharacterOffsetBegin=17 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=signature NamedEntityTag=O]
+[Text=lines CharacterOffsetBegin=27 CharacterOffsetEnd=32 PartOfSpeech=NNS Lemma=line NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=each CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=DT Lemma=each NamedEntityTag=O]
+[Text=document CharacterOffsetBegin=42 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=document NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=please CharacterOffsetBegin=52 CharacterOffsetEnd=58 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=provide CharacterOffsetBegin=59 CharacterOffsetEnd=66 PartOfSpeech=VB Lemma=provide NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=role CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=NN Lemma=role NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=76 CharacterOffsetEnd=80 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=each CharacterOffsetBegin=81 CharacterOffsetEnd=85 PartOfSpeech=DT Lemma=each NamedEntityTag=O]
+[Text=party CharacterOffsetBegin=86 CharacterOffsetEnd=91 PartOfSpeech=NN Lemma=party NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=92 CharacterOffsetEnd=94 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=signing CharacterOffsetBegin=95 CharacterOffsetEnd=102 PartOfSpeech=VBG Lemma=sign NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=103 CharacterOffsetEnd=105 PartOfSpeech=RB Lemma=as NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=105 CharacterOffsetEnd=106 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN On)
+      (NP
+        (NP (DT the) (NN signature) (NNS lines))
+        (PP (IN for)
+          (NP (DT each) (NN document)))))
+    (, ,)
+    (VP (VB please)
+      (VP (VB provide)
+        (NP (DT the) (NN role))
+        (SBAR (IN that)
+          (S
+            (NP (DT each) (NN party))
+            (VP (VBZ is)
+              (S
+                (VP (VBG signing)
+                  (X
+                    (ADVP (RB as) (. .))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, please-9)
+case(lines-4, On-1)
+det(lines-4, the-2)
+compound(lines-4, signature-3)
+nmod:on(please-9, lines-4)
+case(document-7, for-5)
+det(document-7, each-6)
+nmod:for(lines-4, document-7)
+punct(please-9, ,-8)
+xcomp(please-9, provide-10)
+det(role-12, the-11)
+dobj(provide-10, role-12)
+mark(is-16, that-13)
+det(party-15, each-14)
+nsubj(is-16, party-15)
+ccomp(provide-10, is-16)
+xcomp(is-16, signing-17)
+dep(signing-17, as-18)
+punct(as-18, .-19)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (13 tokens):
+Also, Wilmington Trust is signing as Manager for
+E-Next Generation LLC.
+
+Tokens:
+[Text=Also CharacterOffsetBegin=108 CharacterOffsetEnd=112 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=112 CharacterOffsetEnd=113 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Wilmington CharacterOffsetBegin=114 CharacterOffsetEnd=124 PartOfSpeech=NNP Lemma=Wilmington NamedEntityTag=CITY]
+[Text=Trust CharacterOffsetBegin=125 CharacterOffsetEnd=130 PartOfSpeech=NNP Lemma=Trust NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=131 CharacterOffsetEnd=133 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=signing CharacterOffsetBegin=134 CharacterOffsetEnd=141 PartOfSpeech=VBG Lemma=sign NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=142 CharacterOffsetEnd=144 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=Manager CharacterOffsetBegin=145 CharacterOffsetEnd=152 PartOfSpeech=NNP Lemma=Manager NamedEntityTag=TITLE]
+[Text=for CharacterOffsetBegin=153 CharacterOffsetEnd=156 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=E-Next CharacterOffsetBegin=157 CharacterOffsetEnd=163 PartOfSpeech=NNP Lemma=E-Next NamedEntityTag=ORGANIZATION]
+[Text=Generation CharacterOffsetBegin=164 CharacterOffsetEnd=174 PartOfSpeech=NNP Lemma=Generation NamedEntityTag=ORGANIZATION]
+[Text=LLC CharacterOffsetBegin=175 CharacterOffsetEnd=178 PartOfSpeech=NNP Lemma=LLC NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=178 CharacterOffsetEnd=179 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Also))
+    (, ,)
+    (NP (NNP Wilmington) (NNP Trust))
+    (VP (VBZ is)
+      (VP (VBG signing)
+        (PP (IN as)
+          (NP
+            (NP (NNP Manager))
+            (PP (IN for)
+              (NP (NNP E-Next) (NNP Generation) (NNP LLC)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, signing-6)
+advmod(signing-6, Also-1)
+punct(signing-6, ,-2)
+compound(Trust-4, Wilmington-3)
+nsubj(signing-6, Trust-4)
+aux(signing-6, is-5)
+case(Manager-8, as-7)
+nmod:as(signing-6, Manager-8)
+case(LLC-12, for-9)
+compound(LLC-12, E-Next-10)
+compound(LLC-12, Generation-11)
+nmod:for(Manager-8, LLC-12)
+punct(signing-6, .-13)
+
+Extracted the following NER entity mentions:
+Wilmington	CITY
+Manager	TITLE
+E-Next Generation LLC	ORGANIZATION
+
+Sentence #4 (2 tokens):
+2.
+
+Tokens:
+[Text=2 CharacterOffsetBegin=180 CharacterOffsetEnd=181 PartOfSpeech=LS Lemma=2 NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=181 CharacterOffsetEnd=182 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (LS 2))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 2-1)
+punct(2-1, .-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (16 tokens):
+Please obtain from Catherine Clark the extension and transfer documents
+on the Blue Dog turbines.
+
+Tokens:
+[Text=Please CharacterOffsetBegin=184 CharacterOffsetEnd=190 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=obtain CharacterOffsetBegin=191 CharacterOffsetEnd=197 PartOfSpeech=VB Lemma=obtain NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=198 CharacterOffsetEnd=202 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Catherine CharacterOffsetBegin=203 CharacterOffsetEnd=212 PartOfSpeech=NNP Lemma=Catherine NamedEntityTag=PERSON]
+[Text=Clark CharacterOffsetBegin=213 CharacterOffsetEnd=218 PartOfSpeech=NNP Lemma=Clark NamedEntityTag=PERSON]
+[Text=the CharacterOffsetBegin=219 CharacterOffsetEnd=222 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=extension CharacterOffsetBegin=223 CharacterOffsetEnd=232 PartOfSpeech=NN Lemma=extension NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=233 CharacterOffsetEnd=236 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=transfer CharacterOffsetBegin=237 CharacterOffsetEnd=245 PartOfSpeech=NN Lemma=transfer NamedEntityTag=O]
+[Text=documents CharacterOffsetBegin=246 CharacterOffsetEnd=255 PartOfSpeech=NNS Lemma=document NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=256 CharacterOffsetEnd=258 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=259 CharacterOffsetEnd=262 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Blue CharacterOffsetBegin=263 CharacterOffsetEnd=267 PartOfSpeech=NNP Lemma=Blue NamedEntityTag=MISC]
+[Text=Dog CharacterOffsetBegin=268 CharacterOffsetEnd=271 PartOfSpeech=NNP Lemma=Dog NamedEntityTag=MISC]
+[Text=turbines CharacterOffsetBegin=272 CharacterOffsetEnd=280 PartOfSpeech=NNS Lemma=turbine NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=280 CharacterOffsetEnd=281 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Please)
+      (VP (VB obtain)
+        (PP (IN from)
+          (NP (NNP Catherine) (NNP Clark)))
+        (NP
+          (NP (DT the) (NN extension)
+            (CC and)
+            (NN transfer) (NNS documents))
+          (PP (IN on)
+            (NP (DT the) (NNP Blue) (NNP Dog) (NNS turbines))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Please-1)
+xcomp(Please-1, obtain-2)
+case(Clark-5, from-3)
+compound(Clark-5, Catherine-4)
+nmod:from(obtain-2, Clark-5)
+det(documents-10, the-6)
+compound(documents-10, extension-7)
+cc(extension-7, and-8)
+conj:and(extension-7, transfer-9)
+compound(documents-10, transfer-9)
+dobj(obtain-2, documents-10)
+case(turbines-15, on-11)
+det(turbines-15, the-12)
+compound(turbines-15, Blue-13)
+compound(turbines-15, Dog-14)
+nmod:on(documents-10, turbines-15)
+punct(Please-1, .-16)
+
+Extracted the following NER entity mentions:
+Catherine Clark	PERSON
+Blue Dog	MISC
+
+Sentence #6 (20 tokens):
+In mid-November, the transaction with LJM was
+extended and EECC assigned their option and agency role to ENA.
+
+Tokens:
+[Text=In CharacterOffsetBegin=283 CharacterOffsetEnd=285 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=mid-November CharacterOffsetBegin=286 CharacterOffsetEnd=298 PartOfSpeech=NNP Lemma=mid-November NamedEntityTag=DATE NormalizedNamedEntityTag=****11]
+[Text=, CharacterOffsetBegin=298 CharacterOffsetEnd=299 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=300 CharacterOffsetEnd=303 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=transaction CharacterOffsetBegin=304 CharacterOffsetEnd=315 PartOfSpeech=NN Lemma=transaction NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=316 CharacterOffsetEnd=320 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=LJM CharacterOffsetBegin=321 CharacterOffsetEnd=324 PartOfSpeech=NN Lemma=ljm NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=325 CharacterOffsetEnd=328 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=extended CharacterOffsetBegin=329 CharacterOffsetEnd=337 PartOfSpeech=VBN Lemma=extend NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=338 CharacterOffsetEnd=341 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=EECC CharacterOffsetBegin=342 CharacterOffsetEnd=346 PartOfSpeech=NN Lemma=eecc NamedEntityTag=ORGANIZATION]
+[Text=assigned CharacterOffsetBegin=347 CharacterOffsetEnd=355 PartOfSpeech=VBN Lemma=assign NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=356 CharacterOffsetEnd=361 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=option CharacterOffsetBegin=362 CharacterOffsetEnd=368 PartOfSpeech=NN Lemma=option NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=369 CharacterOffsetEnd=372 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=agency CharacterOffsetBegin=373 CharacterOffsetEnd=379 PartOfSpeech=NN Lemma=agency NamedEntityTag=O]
+[Text=role CharacterOffsetBegin=380 CharacterOffsetEnd=384 PartOfSpeech=NN Lemma=role NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=385 CharacterOffsetEnd=387 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=ENA CharacterOffsetBegin=388 CharacterOffsetEnd=391 PartOfSpeech=NNP Lemma=ENA NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=391 CharacterOffsetEnd=392 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NNP mid-November)))
+    (, ,)
+    (S
+      (NP
+        (NP (DT the) (NN transaction))
+        (PP (IN with)
+          (NP (NN LJM))))
+      (VP (VBD was)
+        (VP (VBN extended))))
+    (CC and)
+    (S
+      (NP (NN EECC))
+      (VP (VBN assigned)
+        (NP (PRP$ their) (NN option)
+          (CC and)
+          (NN agency) (NN role))
+        (PP (TO to)
+          (NP (NNP ENA)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, extended-9)
+case(mid-November-2, In-1)
+nmod:in(extended-9, mid-November-2)
+punct(extended-9, ,-3)
+det(transaction-5, the-4)
+nsubjpass(extended-9, transaction-5)
+case(LJM-7, with-6)
+nmod:with(transaction-5, LJM-7)
+auxpass(extended-9, was-8)
+cc(extended-9, and-10)
+nsubj(assigned-12, EECC-11)
+conj:and(extended-9, assigned-12)
+nmod:poss(option-14, their-13)
+dobj(assigned-12, option-14)
+cc(option-14, and-15)
+compound(role-17, agency-16)
+dobj(assigned-12, role-17)
+conj:and(option-14, role-17)
+case(ENA-19, to-18)
+nmod:to(assigned-12, ENA-19)
+punct(extended-9, .-20)
+
+Extracted the following NER entity mentions:
+mid-November	DATE
+EECC	ORGANIZATION
+ENA	ORGANIZATION
+
+Sentence #7 (2 tokens):
+3.
+
+Tokens:
+[Text=3 CharacterOffsetBegin=393 CharacterOffsetEnd=394 PartOfSpeech=LS Lemma=3 NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=394 CharacterOffsetEnd=395 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (LS 3))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 3-1)
+punct(3-1, .-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #8 (24 tokens):
+I'll let the lawyers make their comments and direct you as to
+distribution of these documents to both WestLB/counsel and TurboPark parties.
+
+Tokens:
+[Text=I CharacterOffsetBegin=397 CharacterOffsetEnd=398 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='ll CharacterOffsetBegin=398 CharacterOffsetEnd=401 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=let CharacterOffsetBegin=402 CharacterOffsetEnd=405 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=406 CharacterOffsetEnd=409 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=lawyers CharacterOffsetBegin=410 CharacterOffsetEnd=417 PartOfSpeech=NNS Lemma=lawyer NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=418 CharacterOffsetEnd=422 PartOfSpeech=VBP Lemma=make NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=423 CharacterOffsetEnd=428 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=comments CharacterOffsetBegin=429 CharacterOffsetEnd=437 PartOfSpeech=NNS Lemma=comment NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=438 CharacterOffsetEnd=441 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=direct CharacterOffsetBegin=442 CharacterOffsetEnd=448 PartOfSpeech=VB Lemma=direct NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=449 CharacterOffsetEnd=452 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=453 CharacterOffsetEnd=455 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=456 CharacterOffsetEnd=458 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=distribution CharacterOffsetBegin=459 CharacterOffsetEnd=471 PartOfSpeech=NN Lemma=distribution NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=472 CharacterOffsetEnd=474 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=475 CharacterOffsetEnd=480 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=documents CharacterOffsetBegin=481 CharacterOffsetEnd=490 PartOfSpeech=NNS Lemma=document NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=491 CharacterOffsetEnd=493 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=both CharacterOffsetBegin=494 CharacterOffsetEnd=498 PartOfSpeech=DT Lemma=both NamedEntityTag=O]
+[Text=WestLB/counsel CharacterOffsetBegin=499 CharacterOffsetEnd=513 PartOfSpeech=NNP Lemma=WestLB/counsel NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=514 CharacterOffsetEnd=517 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=TurboPark CharacterOffsetBegin=518 CharacterOffsetEnd=527 PartOfSpeech=NNP Lemma=TurboPark NamedEntityTag=O]
+[Text=parties CharacterOffsetBegin=528 CharacterOffsetEnd=535 PartOfSpeech=NNS Lemma=party NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=535 CharacterOffsetEnd=536 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD 'll)
+      (VP
+        (VP (VB let)
+          (SBAR
+            (S
+              (NP (DT the) (NNS lawyers))
+              (VP (VBP make)
+                (NP (PRP$ their) (NNS comments))))))
+        (CC and)
+        (VP (VB direct)
+          (NP (PRP you))
+          (PP (IN as)
+            (PP (TO to)
+              (NP
+                (NP (NN distribution))
+                (PP (IN of)
+                  (NP (DT these) (NNS documents))))))
+          (PP (TO to)
+            (NP (DT both) (NNP WestLB/counsel)
+              (CC and)
+              (NNP TurboPark) (NNS parties))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, let-3)
+nsubj(let-3, I-1)
+nsubj(direct-10, I-1)
+aux(let-3, 'll-2)
+det(lawyers-5, the-4)
+nsubj(make-6, lawyers-5)
+ccomp(let-3, make-6)
+nmod:poss(comments-8, their-7)
+dobj(make-6, comments-8)
+cc(let-3, and-9)
+conj:and(let-3, direct-10)
+dobj(direct-10, you-11)
+case(distribution-14, as-12)
+mwe(as-12, to-13)
+nmod:as_to(direct-10, distribution-14)
+case(documents-17, of-15)
+det(documents-17, these-16)
+nmod:of(distribution-14, documents-17)
+case(parties-23, to-18)
+cc:preconj(parties-23, both-19)
+compound(parties-23, WestLB/counsel-20)
+cc(WestLB/counsel-20, and-21)
+conj:and(WestLB/counsel-20, TurboPark-22)
+compound(parties-23, TurboPark-22)
+nmod:to(direct-10, parties-23)
+punct(let-3, .-24)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(5,10,[6,16]) -> (8,17,[16,18]), that is: "the extension and transfer documents on the Blue Dog turbines" -> "these documents"
+
+Coreference set:
+	(8,7,[7,8]) -> (8,5,[4,6]), that is: "their" -> "the lawyers"

@@ -1,0 +1,1252 @@
+Document: ID=349771.in (15 sentences, 317 tokens)
+
+Sentence #1 (4 tokens):
+Just to clarify.
+
+Tokens:
+[Text=Just CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=clarify CharacterOffsetBegin=8 CharacterOffsetEnd=15 PartOfSpeech=VB Lemma=clarify NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (RB Just)
+    (VP (TO to)
+      (VP (VB clarify)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, clarify-3)
+advmod(clarify-3, Just-1)
+mark(clarify-3, to-2)
+punct(clarify-3, .-4)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (21 tokens):
+The product that is traded in New York is a financial swap that settles
+against the Day Ahead clearing price.
+
+Tokens:
+[Text=The CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=product CharacterOffsetBegin=22 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=product NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=traded CharacterOffsetBegin=38 CharacterOffsetEnd=44 PartOfSpeech=VBN Lemma=trade NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=New CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=NNP Lemma=New NamedEntityTag=STATE_OR_PROVINCE]
+[Text=York CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=NNP Lemma=York NamedEntityTag=STATE_OR_PROVINCE]
+[Text=is CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=financial CharacterOffsetBegin=62 CharacterOffsetEnd=71 PartOfSpeech=JJ Lemma=financial NamedEntityTag=O]
+[Text=swap CharacterOffsetBegin=72 CharacterOffsetEnd=76 PartOfSpeech=NN Lemma=swap NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=settles CharacterOffsetBegin=82 CharacterOffsetEnd=89 PartOfSpeech=VBZ Lemma=settle NamedEntityTag=O]
+[Text=against CharacterOffsetBegin=90 CharacterOffsetEnd=97 PartOfSpeech=IN Lemma=against NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=98 CharacterOffsetEnd=101 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Day CharacterOffsetBegin=102 CharacterOffsetEnd=105 PartOfSpeech=NN Lemma=day NamedEntityTag=O]
+[Text=Ahead CharacterOffsetBegin=106 CharacterOffsetEnd=111 PartOfSpeech=NN Lemma=ahead NamedEntityTag=O]
+[Text=clearing CharacterOffsetBegin=112 CharacterOffsetEnd=120 PartOfSpeech=NN Lemma=clearing NamedEntityTag=O]
+[Text=price CharacterOffsetBegin=121 CharacterOffsetEnd=126 PartOfSpeech=NN Lemma=price NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=126 CharacterOffsetEnd=127 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN product))
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (VP (VBZ is)
+            (VP (VBN traded)
+              (PP (IN in)
+                (NP (NNP New) (NNP York))))))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ financial) (NN swap))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ settles)
+              (PP (IN against)
+                (NP (DT the) (NN Day) (NN Ahead) (NN clearing) (NN price))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, swap-12)
+det(product-2, The-1)
+nsubjpass(traded-5, product-2)
+nsubj(swap-12, product-2)
+ref(product-2, that-3)
+auxpass(traded-5, is-4)
+acl:relcl(product-2, traded-5)
+case(York-8, in-6)
+compound(York-8, New-7)
+nmod:in(traded-5, York-8)
+cop(swap-12, is-9)
+det(swap-12, a-10)
+amod(swap-12, financial-11)
+nsubj(settles-14, swap-12)
+ref(swap-12, that-13)
+acl:relcl(swap-12, settles-14)
+case(price-20, against-15)
+det(price-20, the-16)
+compound(price-20, Day-17)
+compound(price-20, Ahead-18)
+compound(price-20, clearing-19)
+nmod:against(settles-14, price-20)
+punct(swap-12, .-21)
+
+Extracted the following NER entity mentions:
+New York	STATE_OR_PROVINCE
+
+Sentence #3 (28 tokens):
+It is changes to HQ's physical
+deliveries (0 to 1500 MW) into NY that can swing the clearing price by at
+least $20.
+
+Tokens:
+[Text=It CharacterOffsetBegin=129 CharacterOffsetEnd=131 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=132 CharacterOffsetEnd=134 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=changes CharacterOffsetBegin=135 CharacterOffsetEnd=142 PartOfSpeech=NNS Lemma=change NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=143 CharacterOffsetEnd=145 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=HQ CharacterOffsetBegin=146 CharacterOffsetEnd=148 PartOfSpeech=NNP Lemma=HQ NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=148 CharacterOffsetEnd=150 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=physical CharacterOffsetBegin=151 CharacterOffsetEnd=159 PartOfSpeech=JJ Lemma=physical NamedEntityTag=O]
+[Text=deliveries CharacterOffsetBegin=160 CharacterOffsetEnd=170 PartOfSpeech=NN Lemma=deliveries NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=171 CharacterOffsetEnd=172 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=0 CharacterOffsetBegin=172 CharacterOffsetEnd=173 PartOfSpeech=CD Lemma=0 NamedEntityTag=NUMBER NormalizedNamedEntityTag=0.0]
+[Text=to CharacterOffsetBegin=174 CharacterOffsetEnd=176 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=1500 CharacterOffsetBegin=177 CharacterOffsetEnd=181 PartOfSpeech=CD Lemma=1500 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1500.0]
+[Text=MW CharacterOffsetBegin=182 CharacterOffsetEnd=184 PartOfSpeech=NNP Lemma=MW NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=184 CharacterOffsetEnd=185 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=186 CharacterOffsetEnd=190 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=NY CharacterOffsetBegin=191 CharacterOffsetEnd=193 PartOfSpeech=NNP Lemma=NY NamedEntityTag=STATE_OR_PROVINCE]
+[Text=that CharacterOffsetBegin=194 CharacterOffsetEnd=198 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=199 CharacterOffsetEnd=202 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=swing CharacterOffsetBegin=203 CharacterOffsetEnd=208 PartOfSpeech=VB Lemma=swing NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=209 CharacterOffsetEnd=212 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=clearing CharacterOffsetBegin=213 CharacterOffsetEnd=221 PartOfSpeech=NN Lemma=clearing NamedEntityTag=O]
+[Text=price CharacterOffsetBegin=222 CharacterOffsetEnd=227 PartOfSpeech=NN Lemma=price NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=228 CharacterOffsetEnd=230 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=231 CharacterOffsetEnd=233 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=least CharacterOffsetBegin=234 CharacterOffsetEnd=239 PartOfSpeech=JJS Lemma=least NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=240 CharacterOffsetEnd=241 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=>=$20.0]
+[Text=20 CharacterOffsetBegin=241 CharacterOffsetEnd=243 PartOfSpeech=CD Lemma=20 NamedEntityTag=MONEY NormalizedNamedEntityTag=>=$20.0]
+[Text=. CharacterOffsetBegin=243 CharacterOffsetEnd=244 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (NP (NNS changes))
+      (PP (TO to)
+        (NP
+          (NP
+            (NP (NNP HQ) (POS 's))
+            (JJ physical) (NN deliveries))
+          (PRN (-LRB- -LRB-)
+            (NP
+              (NP (CD 0) (TO to) (CD 1500))
+              (NP (NNP MW)))
+            (-RRB- -RRB-))))
+      (PP (IN into)
+        (NP
+          (NP (NNP NY))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (MD can)
+                (VP (VB swing)
+                  (NP (DT the) (NN clearing) (NN price))
+                  (PP (IN by)
+                    (NP
+                      (QP (IN at) (JJS least) ($ $) (CD 20)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, changes-3)
+nsubj(changes-3, It-1)
+cop(changes-3, is-2)
+case(deliveries-8, to-4)
+nmod:poss(deliveries-8, HQ-5)
+case(HQ-5, 's-6)
+amod(deliveries-8, physical-7)
+nmod:to(changes-3, deliveries-8)
+punct(1500-12, -LRB--9)
+nummod(1500-12, 0-10)
+dep(1500-12, to-11)
+dep(deliveries-8, 1500-12)
+appos(1500-12, MW-13)
+punct(1500-12, -RRB--14)
+case(NY-16, into-15)
+nmod:into(changes-3, NY-16)
+nsubj(swing-19, NY-16)
+ref(NY-16, that-17)
+aux(swing-19, can-18)
+acl:relcl(NY-16, swing-19)
+det(price-22, the-20)
+compound(price-22, clearing-21)
+dobj(swing-19, price-22)
+case($-26, by-23)
+case(least-25, at-24)
+nmod:npmod($-26, least-25)
+nmod:by(swing-19, $-26)
+nummod($-26, 20-27)
+punct(changes-3, .-28)
+
+Extracted the following NER entity mentions:
+0	NUMBER
+1500	NUMBER
+NY	STATE_OR_PROVINCE
+$20	MONEY
+
+Sentence #4 (30 tokens):
+This is not just due to the price that HQ sells their energy for,
+but is mostly due to the impact on congestion in NY of HQ deliveries.
+
+Tokens:
+[Text=This CharacterOffsetBegin=246 CharacterOffsetEnd=250 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=251 CharacterOffsetEnd=253 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=254 CharacterOffsetEnd=257 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=258 CharacterOffsetEnd=262 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=due CharacterOffsetBegin=263 CharacterOffsetEnd=266 PartOfSpeech=JJ Lemma=due NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=267 CharacterOffsetEnd=269 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=270 CharacterOffsetEnd=273 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=price CharacterOffsetBegin=274 CharacterOffsetEnd=279 PartOfSpeech=NN Lemma=price NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=280 CharacterOffsetEnd=284 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=HQ CharacterOffsetBegin=285 CharacterOffsetEnd=287 PartOfSpeech=NNP Lemma=HQ NamedEntityTag=O]
+[Text=sells CharacterOffsetBegin=288 CharacterOffsetEnd=293 PartOfSpeech=VBZ Lemma=sell NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=294 CharacterOffsetEnd=299 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=energy CharacterOffsetBegin=300 CharacterOffsetEnd=306 PartOfSpeech=NN Lemma=energy NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=307 CharacterOffsetEnd=310 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=310 CharacterOffsetEnd=311 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=312 CharacterOffsetEnd=315 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=316 CharacterOffsetEnd=318 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=mostly CharacterOffsetBegin=319 CharacterOffsetEnd=325 PartOfSpeech=RB Lemma=mostly NamedEntityTag=O]
+[Text=due CharacterOffsetBegin=326 CharacterOffsetEnd=329 PartOfSpeech=JJ Lemma=due NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=330 CharacterOffsetEnd=332 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=333 CharacterOffsetEnd=336 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=impact CharacterOffsetBegin=337 CharacterOffsetEnd=343 PartOfSpeech=NN Lemma=impact NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=344 CharacterOffsetEnd=346 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=congestion CharacterOffsetBegin=347 CharacterOffsetEnd=357 PartOfSpeech=NN Lemma=congestion NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=358 CharacterOffsetEnd=360 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=NY CharacterOffsetBegin=361 CharacterOffsetEnd=363 PartOfSpeech=NNP Lemma=NY NamedEntityTag=STATE_OR_PROVINCE]
+[Text=of CharacterOffsetBegin=364 CharacterOffsetEnd=366 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=HQ CharacterOffsetBegin=367 CharacterOffsetEnd=369 PartOfSpeech=NNP Lemma=HQ NamedEntityTag=O]
+[Text=deliveries CharacterOffsetBegin=370 CharacterOffsetEnd=380 PartOfSpeech=NNS Lemma=delivery NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=380 CharacterOffsetEnd=381 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is) (RB not)
+      (ADJP (RB just) (JJ due)
+        (PP (TO to)
+          (NP
+            (NP (DT the) (NN price))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (NP (NNP HQ))
+                (VP
+                  (VP (VBZ sells)
+                    (NP (PRP$ their) (NN energy))
+                    (PP (IN for)))
+                  (, ,)
+                  (CC but)
+                  (VP (VBZ is)
+                    (ADJP (RB mostly) (JJ due)
+                      (PP (TO to)
+                        (NP
+                          (NP (DT the) (NN impact))
+                          (PP (IN on)
+                            (NP (NN congestion))))))
+                    (PP (IN in)
+                      (NP
+                        (NP (NNP NY))
+                        (PP (IN of)
+                          (NP (NNP HQ) (NNS deliveries)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, due-5)
+nsubj(due-5, This-1)
+cop(due-5, is-2)
+neg(due-5, not-3)
+advmod(due-5, just-4)
+case(price-8, to-6)
+det(price-8, the-7)
+nmod:to(due-5, price-8)
+nmod:for(sells-11, price-8)
+ref(price-8, that-9)
+nsubj(sells-11, HQ-10)
+nsubj(due-19, HQ-10)
+acl:relcl(price-8, sells-11)
+nmod:poss(energy-13, their-12)
+dobj(sells-11, energy-13)
+case(that-9, for-14)
+punct(sells-11, ,-15)
+cc(sells-11, but-16)
+cop(due-19, is-17)
+advmod(due-19, mostly-18)
+acl:relcl(price-8, due-19)
+conj:but(sells-11, due-19)
+case(impact-22, to-20)
+det(impact-22, the-21)
+nmod:to(due-19, impact-22)
+case(congestion-24, on-23)
+nmod:on(impact-22, congestion-24)
+case(NY-26, in-25)
+nmod:in(due-19, NY-26)
+case(deliveries-29, of-27)
+compound(deliveries-29, HQ-28)
+nmod:of(NY-26, deliveries-29)
+punct(due-5, .-30)
+
+Extracted the following NER entity mentions:
+NY	STATE_OR_PROVINCE
+
+Sentence #5 (28 tokens):
+When
+HQ is not delivering high volumes, NY is generally uncongested and the price
+for the entire state is set by gas generation in the East.
+
+Tokens:
+[Text=When CharacterOffsetBegin=383 CharacterOffsetEnd=387 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=HQ CharacterOffsetBegin=388 CharacterOffsetEnd=390 PartOfSpeech=NN Lemma=hq NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=391 CharacterOffsetEnd=393 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=394 CharacterOffsetEnd=397 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=delivering CharacterOffsetBegin=398 CharacterOffsetEnd=408 PartOfSpeech=VBG Lemma=deliver NamedEntityTag=O]
+[Text=high CharacterOffsetBegin=409 CharacterOffsetEnd=413 PartOfSpeech=JJ Lemma=high NamedEntityTag=O]
+[Text=volumes CharacterOffsetBegin=414 CharacterOffsetEnd=421 PartOfSpeech=NNS Lemma=volume NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=421 CharacterOffsetEnd=422 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=NY CharacterOffsetBegin=423 CharacterOffsetEnd=425 PartOfSpeech=NNP Lemma=NY NamedEntityTag=STATE_OR_PROVINCE]
+[Text=is CharacterOffsetBegin=426 CharacterOffsetEnd=428 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=generally CharacterOffsetBegin=429 CharacterOffsetEnd=438 PartOfSpeech=RB Lemma=generally NamedEntityTag=O]
+[Text=uncongested CharacterOffsetBegin=439 CharacterOffsetEnd=450 PartOfSpeech=JJ Lemma=uncongested NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=451 CharacterOffsetEnd=454 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=455 CharacterOffsetEnd=458 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=price CharacterOffsetBegin=459 CharacterOffsetEnd=464 PartOfSpeech=NN Lemma=price NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=465 CharacterOffsetEnd=468 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=469 CharacterOffsetEnd=472 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=entire CharacterOffsetBegin=473 CharacterOffsetEnd=479 PartOfSpeech=JJ Lemma=entire NamedEntityTag=O]
+[Text=state CharacterOffsetBegin=480 CharacterOffsetEnd=485 PartOfSpeech=NN Lemma=state NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=486 CharacterOffsetEnd=488 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=set CharacterOffsetBegin=489 CharacterOffsetEnd=492 PartOfSpeech=VBN Lemma=set NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=493 CharacterOffsetEnd=495 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=gas CharacterOffsetBegin=496 CharacterOffsetEnd=499 PartOfSpeech=NN Lemma=gas NamedEntityTag=O]
+[Text=generation CharacterOffsetBegin=500 CharacterOffsetEnd=510 PartOfSpeech=NN Lemma=generation NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=511 CharacterOffsetEnd=513 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=514 CharacterOffsetEnd=517 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=East CharacterOffsetBegin=518 CharacterOffsetEnd=522 PartOfSpeech=NNP Lemma=East NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=522 CharacterOffsetEnd=523 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (SBAR
+        (WHADVP (WRB When))
+        (S
+          (NP (NN HQ))
+          (VP (VBZ is) (RB not)
+            (VP (VBG delivering)
+              (NP (JJ high) (NNS volumes))))))
+      (, ,)
+      (NP (NNP NY))
+      (VP (VBZ is)
+        (ADJP (RB generally) (JJ uncongested))))
+    (CC and)
+    (S
+      (NP
+        (NP (DT the) (NN price))
+        (PP (IN for)
+          (NP (DT the) (JJ entire) (NN state))))
+      (VP (VBZ is)
+        (VP (VBN set)
+          (PP (IN by)
+            (NP
+              (NP (NN gas) (NN generation))
+              (PP (IN in)
+                (NP (DT the) (NNP East))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, uncongested-12)
+advmod(delivering-5, When-1)
+nsubj(delivering-5, HQ-2)
+aux(delivering-5, is-3)
+neg(delivering-5, not-4)
+advcl(uncongested-12, delivering-5)
+amod(volumes-7, high-6)
+dobj(delivering-5, volumes-7)
+punct(uncongested-12, ,-8)
+nsubj(uncongested-12, NY-9)
+cop(uncongested-12, is-10)
+advmod(uncongested-12, generally-11)
+cc(uncongested-12, and-13)
+det(price-15, the-14)
+nsubjpass(set-21, price-15)
+case(state-19, for-16)
+det(state-19, the-17)
+amod(state-19, entire-18)
+nmod:for(price-15, state-19)
+auxpass(set-21, is-20)
+conj:and(uncongested-12, set-21)
+case(generation-24, by-22)
+compound(generation-24, gas-23)
+nmod:agent(set-21, generation-24)
+case(East-27, in-25)
+det(East-27, the-26)
+nmod:in(generation-24, East-27)
+punct(uncongested-12, .-28)
+
+Extracted the following NER entity mentions:
+NY	STATE_OR_PROVINCE
+
+Sentence #6 (31 tokens):
+When HQ delivers
+high volumes, the system becomes congested and the west price is set by much
+lower cost resources and the east price is set by gas generation.
+
+Tokens:
+[Text=When CharacterOffsetBegin=525 CharacterOffsetEnd=529 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=HQ CharacterOffsetBegin=530 CharacterOffsetEnd=532 PartOfSpeech=NN Lemma=hq NamedEntityTag=O]
+[Text=delivers CharacterOffsetBegin=533 CharacterOffsetEnd=541 PartOfSpeech=VBZ Lemma=deliver NamedEntityTag=O]
+[Text=high CharacterOffsetBegin=542 CharacterOffsetEnd=546 PartOfSpeech=JJ Lemma=high NamedEntityTag=O]
+[Text=volumes CharacterOffsetBegin=547 CharacterOffsetEnd=554 PartOfSpeech=NNS Lemma=volume NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=554 CharacterOffsetEnd=555 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=556 CharacterOffsetEnd=559 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=system CharacterOffsetBegin=560 CharacterOffsetEnd=566 PartOfSpeech=NN Lemma=system NamedEntityTag=O]
+[Text=becomes CharacterOffsetBegin=567 CharacterOffsetEnd=574 PartOfSpeech=VBZ Lemma=become NamedEntityTag=O]
+[Text=congested CharacterOffsetBegin=575 CharacterOffsetEnd=584 PartOfSpeech=JJ Lemma=congested NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=585 CharacterOffsetEnd=588 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=589 CharacterOffsetEnd=592 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=west CharacterOffsetBegin=593 CharacterOffsetEnd=597 PartOfSpeech=JJ Lemma=west NamedEntityTag=O]
+[Text=price CharacterOffsetBegin=598 CharacterOffsetEnd=603 PartOfSpeech=NN Lemma=price NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=604 CharacterOffsetEnd=606 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=set CharacterOffsetBegin=607 CharacterOffsetEnd=610 PartOfSpeech=VBN Lemma=set NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=611 CharacterOffsetEnd=613 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=614 CharacterOffsetEnd=618 PartOfSpeech=RB Lemma=much NamedEntityTag=O]
+[Text=lower CharacterOffsetBegin=619 CharacterOffsetEnd=624 PartOfSpeech=JJR Lemma=lower NamedEntityTag=O]
+[Text=cost CharacterOffsetBegin=625 CharacterOffsetEnd=629 PartOfSpeech=NN Lemma=cost NamedEntityTag=O]
+[Text=resources CharacterOffsetBegin=630 CharacterOffsetEnd=639 PartOfSpeech=NNS Lemma=resource NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=640 CharacterOffsetEnd=643 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=644 CharacterOffsetEnd=647 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=east CharacterOffsetBegin=648 CharacterOffsetEnd=652 PartOfSpeech=JJ Lemma=east NamedEntityTag=O]
+[Text=price CharacterOffsetBegin=653 CharacterOffsetEnd=658 PartOfSpeech=NN Lemma=price NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=659 CharacterOffsetEnd=661 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=set CharacterOffsetBegin=662 CharacterOffsetEnd=665 PartOfSpeech=VBN Lemma=set NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=666 CharacterOffsetEnd=668 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=gas CharacterOffsetBegin=669 CharacterOffsetEnd=672 PartOfSpeech=NN Lemma=gas NamedEntityTag=O]
+[Text=generation CharacterOffsetBegin=673 CharacterOffsetEnd=683 PartOfSpeech=NN Lemma=generation NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=683 CharacterOffsetEnd=684 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (SBAR
+        (WHADVP (WRB When))
+        (S
+          (NP (NN HQ))
+          (VP (VBZ delivers)
+            (NP (JJ high) (NNS volumes)))))
+      (, ,)
+      (NP (DT the) (NN system))
+      (VP (VBZ becomes)
+        (ADJP (JJ congested))))
+    (CC and)
+    (S
+      (S
+        (NP (DT the) (JJ west) (NN price))
+        (VP (VBZ is)
+          (VP (VBN set)
+            (PP (IN by)
+              (NP
+                (ADJP (RB much) (JJR lower))
+                (NN cost) (NNS resources))))))
+      (CC and)
+      (S
+        (NP (DT the) (JJ east) (NN price))
+        (VP (VBZ is)
+          (VP (VBN set)
+            (PP (IN by)
+              (NP (NN gas) (NN generation)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, becomes-9)
+advmod(delivers-3, When-1)
+nsubj(delivers-3, HQ-2)
+advcl(becomes-9, delivers-3)
+amod(volumes-5, high-4)
+dobj(delivers-3, volumes-5)
+punct(becomes-9, ,-6)
+det(system-8, the-7)
+nsubj(becomes-9, system-8)
+xcomp(becomes-9, congested-10)
+cc(becomes-9, and-11)
+det(price-14, the-12)
+amod(price-14, west-13)
+nsubjpass(set-16, price-14)
+auxpass(set-16, is-15)
+conj:and(becomes-9, set-16)
+case(resources-21, by-17)
+advmod(lower-19, much-18)
+amod(resources-21, lower-19)
+compound(resources-21, cost-20)
+nmod:agent(set-16, resources-21)
+cc(set-16, and-22)
+det(price-25, the-23)
+amod(price-25, east-24)
+nsubjpass(set-27, price-25)
+auxpass(set-27, is-26)
+conj:and(becomes-9, set-27)
+conj:and(set-16, set-27)
+case(generation-30, by-28)
+compound(generation-30, gas-29)
+nmod:agent(set-27, generation-30)
+punct(becomes-9, .-31)
+
+Extracted the following NER entity mentions:
+
+Sentence #7 (18 tokens):
+The impact
+on the NY West price (Zone A) is at least $15 dollars.
+
+Tokens:
+[Text=The CharacterOffsetBegin=686 CharacterOffsetEnd=689 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=impact CharacterOffsetBegin=690 CharacterOffsetEnd=696 PartOfSpeech=NN Lemma=impact NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=697 CharacterOffsetEnd=699 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=700 CharacterOffsetEnd=703 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=NY CharacterOffsetBegin=704 CharacterOffsetEnd=706 PartOfSpeech=NNP Lemma=NY NamedEntityTag=STATE_OR_PROVINCE]
+[Text=West CharacterOffsetBegin=707 CharacterOffsetEnd=711 PartOfSpeech=NNP Lemma=West NamedEntityTag=MISC]
+[Text=price CharacterOffsetBegin=712 CharacterOffsetEnd=717 PartOfSpeech=NN Lemma=price NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=718 CharacterOffsetEnd=719 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Zone CharacterOffsetBegin=719 CharacterOffsetEnd=723 PartOfSpeech=NNP Lemma=Zone NamedEntityTag=O]
+[Text=A CharacterOffsetBegin=724 CharacterOffsetEnd=725 PartOfSpeech=NNP Lemma=A NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=725 CharacterOffsetEnd=726 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=727 CharacterOffsetEnd=729 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=730 CharacterOffsetEnd=732 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=least CharacterOffsetBegin=733 CharacterOffsetEnd=738 PartOfSpeech=JJS Lemma=least NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=739 CharacterOffsetEnd=740 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=>=$15.0]
+[Text=15 CharacterOffsetBegin=740 CharacterOffsetEnd=742 PartOfSpeech=CD Lemma=15 NamedEntityTag=MONEY NormalizedNamedEntityTag=>=$15.0]
+[Text=dollars CharacterOffsetBegin=743 CharacterOffsetEnd=750 PartOfSpeech=NNS Lemma=dollar NamedEntityTag=MONEY NormalizedNamedEntityTag=>=$15.0]
+[Text=. CharacterOffsetBegin=750 CharacterOffsetEnd=751 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (DT The) (NN impact))
+        (PP (IN on)
+          (NP (DT the) (NNP NY) (NNP West) (NN price))))
+      (PRN (-LRB- -LRB-)
+        (NP (NNP Zone) (NNP A))
+        (-RRB- -RRB-)))
+    (VP (VBZ is)
+      (NP
+        (QP (IN at) (JJS least) ($ $) (CD 15))
+        (NNS dollars)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, dollars-17)
+det(impact-2, The-1)
+nsubj(dollars-17, impact-2)
+case(price-7, on-3)
+det(price-7, the-4)
+compound(price-7, NY-5)
+compound(price-7, West-6)
+nmod:on(impact-2, price-7)
+punct(A-10, -LRB--8)
+compound(A-10, Zone-9)
+appos(impact-2, A-10)
+punct(A-10, -RRB--11)
+cop(dollars-17, is-12)
+case(least-14, at-13)
+nmod:npmod($-15, least-14)
+nummod(dollars-17, $-15)
+nummod($-15, 15-16)
+punct(dollars-17, .-18)
+
+Extracted the following NER entity mentions:
+NY	STATE_OR_PROVINCE
+West	MISC
+$15 dollars	MONEY
+
+Sentence #8 (28 tokens):
+Since the majority of
+the OTC trades are settled against this price, it gives HQ tremendous ability
+to trade financially and then influence the settlement price.
+
+Tokens:
+[Text=Since CharacterOffsetBegin=753 CharacterOffsetEnd=758 PartOfSpeech=IN Lemma=since NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=759 CharacterOffsetEnd=762 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=majority CharacterOffsetBegin=763 CharacterOffsetEnd=771 PartOfSpeech=NN Lemma=majority NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=772 CharacterOffsetEnd=774 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=775 CharacterOffsetEnd=778 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=OTC CharacterOffsetBegin=779 CharacterOffsetEnd=782 PartOfSpeech=NNP Lemma=OTC NamedEntityTag=O]
+[Text=trades CharacterOffsetBegin=783 CharacterOffsetEnd=789 PartOfSpeech=NNS Lemma=trade NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=790 CharacterOffsetEnd=793 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=settled CharacterOffsetBegin=794 CharacterOffsetEnd=801 PartOfSpeech=VBN Lemma=settle NamedEntityTag=O]
+[Text=against CharacterOffsetBegin=802 CharacterOffsetEnd=809 PartOfSpeech=IN Lemma=against NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=810 CharacterOffsetEnd=814 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=price CharacterOffsetBegin=815 CharacterOffsetEnd=820 PartOfSpeech=NN Lemma=price NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=820 CharacterOffsetEnd=821 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=822 CharacterOffsetEnd=824 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=gives CharacterOffsetBegin=825 CharacterOffsetEnd=830 PartOfSpeech=VBZ Lemma=give NamedEntityTag=O]
+[Text=HQ CharacterOffsetBegin=831 CharacterOffsetEnd=833 PartOfSpeech=NN Lemma=hq NamedEntityTag=O]
+[Text=tremendous CharacterOffsetBegin=834 CharacterOffsetEnd=844 PartOfSpeech=JJ Lemma=tremendous NamedEntityTag=O]
+[Text=ability CharacterOffsetBegin=845 CharacterOffsetEnd=852 PartOfSpeech=NN Lemma=ability NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=853 CharacterOffsetEnd=855 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=trade CharacterOffsetBegin=856 CharacterOffsetEnd=861 PartOfSpeech=VB Lemma=trade NamedEntityTag=O]
+[Text=financially CharacterOffsetBegin=862 CharacterOffsetEnd=873 PartOfSpeech=RB Lemma=financially NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=874 CharacterOffsetEnd=877 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=878 CharacterOffsetEnd=882 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=influence CharacterOffsetBegin=883 CharacterOffsetEnd=892 PartOfSpeech=VB Lemma=influence NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=893 CharacterOffsetEnd=896 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=settlement CharacterOffsetBegin=897 CharacterOffsetEnd=907 PartOfSpeech=NN Lemma=settlement NamedEntityTag=O]
+[Text=price CharacterOffsetBegin=908 CharacterOffsetEnd=913 PartOfSpeech=NN Lemma=price NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=913 CharacterOffsetEnd=914 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN Since)
+      (S
+        (NP
+          (NP (DT the) (NN majority))
+          (PP (IN of)
+            (NP (DT the) (NNP OTC) (NNS trades))))
+        (VP (VBP are)
+          (VP (VBN settled)
+            (PP (IN against)
+              (NP (DT this) (NN price)))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ gives)
+      (NP (NN HQ))
+      (NP (JJ tremendous) (NN ability)
+        (S
+          (VP (TO to)
+            (VP
+              (VP (VB trade)
+                (ADVP (RB financially)))
+              (CC and)
+              (VP
+                (ADVP (RB then))
+                (VB influence)
+                (NP (DT the) (NN settlement) (NN price))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, gives-15)
+mark(settled-9, Since-1)
+det(majority-3, the-2)
+nsubjpass(settled-9, majority-3)
+case(trades-7, of-4)
+det(trades-7, the-5)
+compound(trades-7, OTC-6)
+nmod:of(majority-3, trades-7)
+auxpass(settled-9, are-8)
+advcl:since(gives-15, settled-9)
+case(price-12, against-10)
+det(price-12, this-11)
+nmod:against(settled-9, price-12)
+punct(gives-15, ,-13)
+nsubj(gives-15, it-14)
+iobj(gives-15, HQ-16)
+amod(ability-18, tremendous-17)
+dobj(gives-15, ability-18)
+mark(trade-20, to-19)
+acl:to(ability-18, trade-20)
+advmod(trade-20, financially-21)
+cc(trade-20, and-22)
+advmod(influence-24, then-23)
+acl:to(ability-18, influence-24)
+conj:and(trade-20, influence-24)
+det(price-27, the-25)
+compound(price-27, settlement-26)
+dobj(influence-24, price-27)
+punct(gives-15, .-28)
+
+Extracted the following NER entity mentions:
+
+Sentence #9 (31 tokens):
+Large
+generators in New York west could also do this but it would be quite costly
+for them to withhold 1000 MW of generation and this would be easily noticed.
+
+Tokens:
+[Text=Large CharacterOffsetBegin=916 CharacterOffsetEnd=921 PartOfSpeech=JJ Lemma=large NamedEntityTag=O]
+[Text=generators CharacterOffsetBegin=922 CharacterOffsetEnd=932 PartOfSpeech=NNS Lemma=generator NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=933 CharacterOffsetEnd=935 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=New CharacterOffsetBegin=936 CharacterOffsetEnd=939 PartOfSpeech=NNP Lemma=New NamedEntityTag=STATE_OR_PROVINCE]
+[Text=York CharacterOffsetBegin=940 CharacterOffsetEnd=944 PartOfSpeech=NNP Lemma=York NamedEntityTag=STATE_OR_PROVINCE]
+[Text=west CharacterOffsetBegin=945 CharacterOffsetEnd=949 PartOfSpeech=NN Lemma=west NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=950 CharacterOffsetEnd=955 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=956 CharacterOffsetEnd=960 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=961 CharacterOffsetEnd=963 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=964 CharacterOffsetEnd=968 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=969 CharacterOffsetEnd=972 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=973 CharacterOffsetEnd=975 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=976 CharacterOffsetEnd=981 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=982 CharacterOffsetEnd=984 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=quite CharacterOffsetBegin=985 CharacterOffsetEnd=990 PartOfSpeech=RB Lemma=quite NamedEntityTag=O]
+[Text=costly CharacterOffsetBegin=991 CharacterOffsetEnd=997 PartOfSpeech=JJ Lemma=costly NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=998 CharacterOffsetEnd=1001 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=1002 CharacterOffsetEnd=1006 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1007 CharacterOffsetEnd=1009 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=withhold CharacterOffsetBegin=1010 CharacterOffsetEnd=1018 PartOfSpeech=VB Lemma=withhold NamedEntityTag=O]
+[Text=1000 CharacterOffsetBegin=1019 CharacterOffsetEnd=1023 PartOfSpeech=CD Lemma=1000 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1000.0]
+[Text=MW CharacterOffsetBegin=1024 CharacterOffsetEnd=1026 PartOfSpeech=NNP Lemma=MW NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=1027 CharacterOffsetEnd=1029 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=generation CharacterOffsetBegin=1030 CharacterOffsetEnd=1040 PartOfSpeech=NN Lemma=generation NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1041 CharacterOffsetEnd=1044 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=1045 CharacterOffsetEnd=1049 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=1050 CharacterOffsetEnd=1055 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=1056 CharacterOffsetEnd=1058 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=easily CharacterOffsetBegin=1059 CharacterOffsetEnd=1065 PartOfSpeech=RB Lemma=easily NamedEntityTag=O]
+[Text=noticed CharacterOffsetBegin=1066 CharacterOffsetEnd=1073 PartOfSpeech=VBN Lemma=notice NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1073 CharacterOffsetEnd=1074 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (JJ Large) (NNS generators))
+        (PP (IN in)
+          (NP (NNP New) (NNP York) (NN west))))
+      (VP (MD could)
+        (ADVP (RB also))
+        (VP (VB do)
+          (NP (DT this)))))
+    (CC but)
+    (S
+      (NP (PRP it))
+      (VP (MD would)
+        (VP (VB be)
+          (ADJP (RB quite) (JJ costly))
+          (SBAR (IN for)
+            (S
+              (NP (PRP them))
+              (VP (TO to)
+                (VP (VB withhold)
+                  (NP
+                    (NP (CD 1000) (NNP MW))
+                    (PP (IN of)
+                      (NP (NN generation)))))))))))
+    (CC and)
+    (S
+      (NP (DT this))
+      (VP (MD would)
+        (VP (VB be)
+          (VP
+            (ADVP (RB easily))
+            (VBN noticed)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, do-9)
+amod(generators-2, Large-1)
+nsubj(do-9, generators-2)
+case(west-6, in-3)
+compound(west-6, New-4)
+compound(west-6, York-5)
+nmod:in(generators-2, west-6)
+aux(do-9, could-7)
+advmod(do-9, also-8)
+dobj(do-9, this-10)
+cc(do-9, but-11)
+nsubj(costly-16, it-12)
+aux(costly-16, would-13)
+cop(costly-16, be-14)
+advmod(costly-16, quite-15)
+conj:but(do-9, costly-16)
+mark(withhold-20, for-17)
+nsubj(withhold-20, them-18)
+mark(withhold-20, to-19)
+advcl:for(costly-16, withhold-20)
+nummod(MW-22, 1000-21)
+dobj(withhold-20, MW-22)
+case(generation-24, of-23)
+nmod:of(MW-22, generation-24)
+cc(do-9, and-25)
+nsubjpass(noticed-30, this-26)
+aux(noticed-30, would-27)
+auxpass(noticed-30, be-28)
+advmod(noticed-30, easily-29)
+conj:and(do-9, noticed-30)
+punct(do-9, .-31)
+
+Extracted the following NER entity mentions:
+New York	STATE_OR_PROVINCE
+1000	NUMBER
+
+Sentence #10 (17 tokens):
+HQ however, has hydro generation and can easily store their water for
+delivery another day.
+
+Tokens:
+[Text=HQ CharacterOffsetBegin=1075 CharacterOffsetEnd=1077 PartOfSpeech=NN Lemma=hq NamedEntityTag=O]
+[Text=however CharacterOffsetBegin=1078 CharacterOffsetEnd=1085 PartOfSpeech=RB Lemma=however NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1085 CharacterOffsetEnd=1086 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=1087 CharacterOffsetEnd=1090 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=hydro CharacterOffsetBegin=1091 CharacterOffsetEnd=1096 PartOfSpeech=NN Lemma=hydro NamedEntityTag=O]
+[Text=generation CharacterOffsetBegin=1097 CharacterOffsetEnd=1107 PartOfSpeech=NN Lemma=generation NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1108 CharacterOffsetEnd=1111 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=1112 CharacterOffsetEnd=1115 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=easily CharacterOffsetBegin=1116 CharacterOffsetEnd=1122 PartOfSpeech=RB Lemma=easily NamedEntityTag=O]
+[Text=store CharacterOffsetBegin=1123 CharacterOffsetEnd=1128 PartOfSpeech=VB Lemma=store NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=1129 CharacterOffsetEnd=1134 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=water CharacterOffsetBegin=1135 CharacterOffsetEnd=1140 PartOfSpeech=NN Lemma=water NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=1141 CharacterOffsetEnd=1144 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=delivery CharacterOffsetBegin=1145 CharacterOffsetEnd=1153 PartOfSpeech=NN Lemma=delivery NamedEntityTag=O]
+[Text=another CharacterOffsetBegin=1154 CharacterOffsetEnd=1161 PartOfSpeech=DT Lemma=another NamedEntityTag=O]
+[Text=day CharacterOffsetBegin=1162 CharacterOffsetEnd=1165 PartOfSpeech=NN Lemma=day NamedEntityTag=TIME NormalizedNamedEntityTag=D]
+[Text=. CharacterOffsetBegin=1165 CharacterOffsetEnd=1166 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NN HQ))
+      (ADVP (RB however)))
+    (, ,)
+    (VP
+      (VP (VBZ has)
+        (NP (NN hydro) (NN generation)))
+      (CC and)
+      (VP (MD can)
+        (ADVP (RB easily))
+        (VP (VB store)
+          (NP (PRP$ their) (NN water))
+          (PP (IN for)
+            (NP
+              (NP (NN delivery))
+              (NP (DT another) (NN day)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, has-4)
+nsubj(has-4, HQ-1)
+nsubj(store-10, HQ-1)
+advmod(HQ-1, however-2)
+punct(has-4, ,-3)
+compound(generation-6, hydro-5)
+dobj(has-4, generation-6)
+cc(has-4, and-7)
+aux(store-10, can-8)
+advmod(store-10, easily-9)
+conj:and(has-4, store-10)
+nmod:poss(water-12, their-11)
+dobj(store-10, water-12)
+case(delivery-14, for-13)
+nmod:for(store-10, delivery-14)
+det(day-16, another-15)
+dep(delivery-14, day-16)
+punct(has-4, .-17)
+
+Extracted the following NER entity mentions:
+day	TIME
+
+Sentence #11 (18 tokens):
+HQ trades directly in the New York OTC market as HQ Energy Services (US)
+Inc..
+
+Tokens:
+[Text=HQ CharacterOffsetBegin=1168 CharacterOffsetEnd=1170 PartOfSpeech=NN Lemma=hq NamedEntityTag=O]
+[Text=trades CharacterOffsetBegin=1171 CharacterOffsetEnd=1177 PartOfSpeech=NNS Lemma=trade NamedEntityTag=O]
+[Text=directly CharacterOffsetBegin=1178 CharacterOffsetEnd=1186 PartOfSpeech=RB Lemma=directly NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=1187 CharacterOffsetEnd=1189 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1190 CharacterOffsetEnd=1193 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=New CharacterOffsetBegin=1194 CharacterOffsetEnd=1197 PartOfSpeech=NNP Lemma=New NamedEntityTag=STATE_OR_PROVINCE]
+[Text=York CharacterOffsetBegin=1198 CharacterOffsetEnd=1202 PartOfSpeech=NNP Lemma=York NamedEntityTag=STATE_OR_PROVINCE]
+[Text=OTC CharacterOffsetBegin=1203 CharacterOffsetEnd=1206 PartOfSpeech=NNP Lemma=OTC NamedEntityTag=O]
+[Text=market CharacterOffsetBegin=1207 CharacterOffsetEnd=1213 PartOfSpeech=NN Lemma=market NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=1214 CharacterOffsetEnd=1216 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=HQ CharacterOffsetBegin=1217 CharacterOffsetEnd=1219 PartOfSpeech=NNP Lemma=HQ NamedEntityTag=ORGANIZATION]
+[Text=Energy CharacterOffsetBegin=1220 CharacterOffsetEnd=1226 PartOfSpeech=NNP Lemma=Energy NamedEntityTag=ORGANIZATION]
+[Text=Services CharacterOffsetBegin=1227 CharacterOffsetEnd=1235 PartOfSpeech=NNP Lemma=Services NamedEntityTag=ORGANIZATION]
+[Text=-LRB- CharacterOffsetBegin=1236 CharacterOffsetEnd=1237 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=US CharacterOffsetBegin=1237 CharacterOffsetEnd=1239 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=-RRB- CharacterOffsetBegin=1239 CharacterOffsetEnd=1240 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=Inc. CharacterOffsetBegin=1241 CharacterOffsetEnd=1245 PartOfSpeech=NNP Lemma=Inc. NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=1245 CharacterOffsetEnd=1246 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NN HQ) (NNS trades))
+    (PP
+      (ADVP (RB directly))
+      (IN in)
+      (NP (DT the) (NNP New) (NNP York) (NNP OTC) (NN market)))
+    (PP (IN as)
+      (NP (NNP HQ) (NNP Energy) (NNP Services)
+        (PRN (-LRB- -LRB-)
+          (NP (NNP US))
+          (-RRB- -RRB-))
+        (NNP Inc.)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, trades-2)
+compound(trades-2, HQ-1)
+advmod(market-9, directly-3)
+case(market-9, in-4)
+det(market-9, the-5)
+compound(market-9, New-6)
+compound(market-9, York-7)
+compound(market-9, OTC-8)
+nmod:in(trades-2, market-9)
+case(Inc.-17, as-10)
+compound(Inc.-17, HQ-11)
+compound(Inc.-17, Energy-12)
+compound(Inc.-17, Services-13)
+punct(US-15, -LRB--14)
+appos(Inc.-17, US-15)
+punct(US-15, -RRB--16)
+nmod:as(trades-2, Inc.-17)
+punct(trades-2, .-18)
+
+Extracted the following NER entity mentions:
+New York	STATE_OR_PROVINCE
+HQ Energy Services	ORGANIZATION
+US	COUNTRY
+Inc.	ORGANIZATION
+
+Sentence #12 (27 tokens):
+The general market realizes the impact that HQ can have on the
+clearing price and will often pull out of the market when HQ is trading.
+
+Tokens:
+[Text=The CharacterOffsetBegin=1248 CharacterOffsetEnd=1251 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=general CharacterOffsetBegin=1252 CharacterOffsetEnd=1259 PartOfSpeech=JJ Lemma=general NamedEntityTag=TITLE]
+[Text=market CharacterOffsetBegin=1260 CharacterOffsetEnd=1266 PartOfSpeech=NN Lemma=market NamedEntityTag=O]
+[Text=realizes CharacterOffsetBegin=1267 CharacterOffsetEnd=1275 PartOfSpeech=VBZ Lemma=realize NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1276 CharacterOffsetEnd=1279 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=impact CharacterOffsetBegin=1280 CharacterOffsetEnd=1286 PartOfSpeech=NN Lemma=impact NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=1287 CharacterOffsetEnd=1291 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=HQ CharacterOffsetBegin=1292 CharacterOffsetEnd=1294 PartOfSpeech=NNP Lemma=HQ NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=1295 CharacterOffsetEnd=1298 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=1299 CharacterOffsetEnd=1303 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=1304 CharacterOffsetEnd=1306 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1307 CharacterOffsetEnd=1310 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=clearing CharacterOffsetBegin=1311 CharacterOffsetEnd=1319 PartOfSpeech=NN Lemma=clearing NamedEntityTag=O]
+[Text=price CharacterOffsetBegin=1320 CharacterOffsetEnd=1325 PartOfSpeech=NN Lemma=price NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1326 CharacterOffsetEnd=1329 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=1330 CharacterOffsetEnd=1334 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=often CharacterOffsetBegin=1335 CharacterOffsetEnd=1340 PartOfSpeech=RB Lemma=often NamedEntityTag=O]
+[Text=pull CharacterOffsetBegin=1341 CharacterOffsetEnd=1345 PartOfSpeech=VB Lemma=pull NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=1346 CharacterOffsetEnd=1349 PartOfSpeech=RB Lemma=out NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=1350 CharacterOffsetEnd=1352 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1353 CharacterOffsetEnd=1356 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=market CharacterOffsetBegin=1357 CharacterOffsetEnd=1363 PartOfSpeech=NN Lemma=market NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=1364 CharacterOffsetEnd=1368 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=HQ CharacterOffsetBegin=1369 CharacterOffsetEnd=1371 PartOfSpeech=NN Lemma=hq NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=1372 CharacterOffsetEnd=1374 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=trading CharacterOffsetBegin=1375 CharacterOffsetEnd=1382 PartOfSpeech=NN Lemma=trading NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1382 CharacterOffsetEnd=1383 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (JJ general) (NN market))
+    (VP
+      (VP (VBZ realizes)
+        (NP
+          (NP (DT the) (NN impact))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (NP (NNP HQ))
+              (VP (MD can)
+                (VP (VB have)
+                  (PP (IN on)
+                    (NP (DT the) (NN clearing) (NN price)))))))))
+      (CC and)
+      (VP (MD will)
+        (ADVP (RB often))
+        (VP (VB pull)
+          (PRT (RB out))
+          (PP (IN of)
+            (NP (DT the) (NN market)))
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (NP (NN HQ))
+              (VP (VBZ is)
+                (NP (NN trading))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, realizes-4)
+det(market-3, The-1)
+amod(market-3, general-2)
+nsubj(realizes-4, market-3)
+nsubj(pull-18, market-3)
+det(impact-6, the-5)
+dobj(realizes-4, impact-6)
+dobj(have-10, impact-6)
+ref(impact-6, that-7)
+nsubj(have-10, HQ-8)
+aux(have-10, can-9)
+acl:relcl(impact-6, have-10)
+case(price-14, on-11)
+det(price-14, the-12)
+compound(price-14, clearing-13)
+nmod:on(have-10, price-14)
+cc(realizes-4, and-15)
+aux(pull-18, will-16)
+advmod(pull-18, often-17)
+conj:and(realizes-4, pull-18)
+compound:prt(pull-18, out-19)
+case(market-22, of-20)
+det(market-22, the-21)
+nmod:of(pull-18, market-22)
+advmod(trading-26, when-23)
+nsubj(trading-26, HQ-24)
+cop(trading-26, is-25)
+advcl(pull-18, trading-26)
+punct(realizes-4, .-27)
+
+Extracted the following NER entity mentions:
+general	TITLE
+
+Sentence #13 (28 tokens):
+I
+have heard from a couple of sources that HQ is using Select to trade for them
+to avoid this problem but I cannot confirm this.
+
+Tokens:
+[Text=I CharacterOffsetBegin=1385 CharacterOffsetEnd=1386 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=1387 CharacterOffsetEnd=1391 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=1392 CharacterOffsetEnd=1397 PartOfSpeech=VBN Lemma=hear NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=1398 CharacterOffsetEnd=1402 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=1403 CharacterOffsetEnd=1404 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=couple CharacterOffsetBegin=1405 CharacterOffsetEnd=1411 PartOfSpeech=NN Lemma=couple NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=1412 CharacterOffsetEnd=1414 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=sources CharacterOffsetBegin=1415 CharacterOffsetEnd=1422 PartOfSpeech=NNS Lemma=source NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=1423 CharacterOffsetEnd=1427 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=HQ CharacterOffsetBegin=1428 CharacterOffsetEnd=1430 PartOfSpeech=NNP Lemma=HQ NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=1431 CharacterOffsetEnd=1433 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=using CharacterOffsetBegin=1434 CharacterOffsetEnd=1439 PartOfSpeech=VBG Lemma=use NamedEntityTag=O]
+[Text=Select CharacterOffsetBegin=1440 CharacterOffsetEnd=1446 PartOfSpeech=NNP Lemma=Select NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1447 CharacterOffsetEnd=1449 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=trade CharacterOffsetBegin=1450 CharacterOffsetEnd=1455 PartOfSpeech=VB Lemma=trade NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=1456 CharacterOffsetEnd=1459 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=1460 CharacterOffsetEnd=1464 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1465 CharacterOffsetEnd=1467 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=avoid CharacterOffsetBegin=1468 CharacterOffsetEnd=1473 PartOfSpeech=VB Lemma=avoid NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=1474 CharacterOffsetEnd=1478 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=problem CharacterOffsetBegin=1479 CharacterOffsetEnd=1486 PartOfSpeech=NN Lemma=problem NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=1487 CharacterOffsetEnd=1490 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=1491 CharacterOffsetEnd=1492 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=1493 CharacterOffsetEnd=1496 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=1496 CharacterOffsetEnd=1499 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=confirm CharacterOffsetBegin=1500 CharacterOffsetEnd=1507 PartOfSpeech=VB Lemma=confirm NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=1508 CharacterOffsetEnd=1512 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1512 CharacterOffsetEnd=1513 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP have)
+        (VP (VBN heard)
+          (PP (IN from)
+            (NP
+              (NP (DT a) (NN couple))
+              (PP (IN of)
+                (NP
+                  (NP (NNS sources))
+                  (SBAR
+                    (WHNP (WDT that))
+                    (S
+                      (NP (NNP HQ))
+                      (VP (VBZ is)
+                        (VP (VBG using)
+                          (S
+                            (NP (NNP Select))
+                            (VP (TO to)
+                              (VP (VB trade)
+                                (SBAR (IN for)
+                                  (S
+                                    (NP (PRP them))
+                                    (VP (TO to)
+                                      (VP (VB avoid)
+                                        (NP (DT this) (NN problem))))))))))))))))))))
+    (CC but)
+    (S
+      (NP (PRP I))
+      (VP (MD can) (RB not)
+        (VP (VB confirm)
+          (NP (DT this)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, heard-3)
+nsubj(heard-3, I-1)
+aux(heard-3, have-2)
+case(couple-6, from-4)
+det:qmod(sources-8, a-5)
+mwe(a-5, couple-6)
+mwe(a-5, of-7)
+nmod(heard-3, sources-8)
+dobj(trade-15, sources-8)
+ref(sources-8, that-9)
+nsubj(using-12, HQ-10)
+aux(using-12, is-11)
+acl:relcl(sources-8, using-12)
+dobj(using-12, Select-13)
+nsubj:xsubj(trade-15, Select-13)
+mark(trade-15, to-14)
+xcomp(using-12, trade-15)
+mark(avoid-19, for-16)
+nsubj(avoid-19, them-17)
+mark(avoid-19, to-18)
+advcl:for(trade-15, avoid-19)
+det(problem-21, this-20)
+dobj(avoid-19, problem-21)
+cc(heard-3, but-22)
+nsubj(confirm-26, I-23)
+aux(confirm-26, can-24)
+neg(confirm-26, not-25)
+conj:but(heard-3, confirm-26)
+dobj(confirm-26, this-27)
+punct(heard-3, .-28)
+
+Extracted the following NER entity mentions:
+
+Sentence #14 (6 tokens):
+Hope this helps clarify things.
+
+Tokens:
+[Text=Hope CharacterOffsetBegin=1515 CharacterOffsetEnd=1519 PartOfSpeech=NNP Lemma=Hope NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=1520 CharacterOffsetEnd=1524 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=helps CharacterOffsetBegin=1525 CharacterOffsetEnd=1530 PartOfSpeech=VBZ Lemma=help NamedEntityTag=O]
+[Text=clarify CharacterOffsetBegin=1531 CharacterOffsetEnd=1538 PartOfSpeech=VB Lemma=clarify NamedEntityTag=O]
+[Text=things CharacterOffsetBegin=1539 CharacterOffsetEnd=1545 PartOfSpeech=NNS Lemma=thing NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1545 CharacterOffsetEnd=1546 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Hope))
+      (NP (DT this)))
+    (VP (VBZ helps)
+      (VP (VB clarify)
+        (NP (NNS things))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, helps-3)
+nsubj(helps-3, Hope-1)
+dep(Hope-1, this-2)
+xcomp(helps-3, clarify-4)
+dobj(clarify-4, things-5)
+punct(helps-3, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #15 (2 tokens):
+Tom.
+
+Tokens:
+[Text=Tom CharacterOffsetBegin=1548 CharacterOffsetEnd=1551 PartOfSpeech=NNP Lemma=Tom NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=1551 CharacterOffsetEnd=1552 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Tom))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Tom-1)
+punct(Tom-1, .-2)
+
+Extracted the following NER entity mentions:
+Tom	PERSON
+
+Coreference set:
+	(3,16,[16,28]) -> (2,8,[7,9]), that is: "NY that can swing the clearing price by at least $ 20" -> "New York"
+	(5,9,[9,10]) -> (2,8,[7,9]), that is: "NY" -> "New York"
+	(7,6,[5,7]) -> (2,8,[7,9]), that is: "NY West" -> "New York"
+	(9,6,[4,7]) -> (2,8,[7,9]), that is: "New York west" -> "New York"
+	(9,5,[4,6]) -> (2,8,[7,9]), that is: "New York" -> "New York"
+	(11,7,[6,8]) -> (2,8,[7,9]), that is: "New York" -> "New York"
+
+Coreference set:
+	(2,2,[1,9]) -> (2,12,[10,21]), that is: "The product that is traded in New York" -> "a financial swap that settles against the Day Ahead clearing price"
+
+Coreference set:
+	(3,22,[20,23]) -> (2,20,[16,21]), that is: "the clearing price" -> "the Day Ahead clearing price"
+	(12,14,[12,15]) -> (2,20,[16,21]), that is: "the clearing price" -> "the Day Ahead clearing price"
+
+Coreference set:
+	(4,29,[28,30]) -> (3,8,[5,15]), that is: "HQ deliveries" -> "HQ 's physical deliveries -LRB- 0 to 1500 MW -RRB-"
+
+Coreference set:
+	(4,10,[10,11]) -> (3,5,[5,7]), that is: "HQ" -> "HQ 's"
+	(10,1,[1,3]) -> (3,5,[5,7]), that is: "HQ however" -> "HQ 's"
+	(12,8,[8,9]) -> (3,5,[5,7]), that is: "HQ" -> "HQ 's"
+	(13,10,[10,11]) -> (3,5,[5,7]), that is: "HQ" -> "HQ 's"
+
+Coreference set:
+	(4,12,[12,13]) -> (4,1,[1,2]), that is: "their" -> "This"
+
+Coreference set:
+	(6,5,[4,6]) -> (5,7,[6,8]), that is: "high volumes" -> "high volumes"
+
+Coreference set:
+	(8,12,[11,13]) -> (5,15,[14,20]), that is: "this price" -> "the price for the entire state"
+	(8,14,[14,15]) -> (5,15,[14,20]), that is: "it" -> "the price for the entire state"
+
+Coreference set:
+	(6,30,[29,31]) -> (5,24,[23,28]), that is: "gas generation" -> "gas generation in the East"
+
+Coreference set:
+	(9,18,[18,19]) -> (9,10,[10,11]), that is: "them" -> "this"
+	(9,26,[26,27]) -> (9,10,[10,11]), that is: "this" -> "this"
+	(10,11,[11,12]) -> (9,10,[10,11]), that is: "their" -> "this"
+
+Coreference set:
+	(13,1,[1,2]) -> (11,15,[15,16]), that is: "I" -> "US"
+	(13,23,[23,24]) -> (11,15,[15,16]), that is: "I" -> "US"
+
+Coreference set:
+	(13,17,[17,18]) -> (11,16,[11,18]), that is: "them" -> "HQ Energy Services -LRB- US -RRB- Inc."
+
+Coreference set:
+	(12,22,[21,23]) -> (12,3,[1,4]), that is: "the market" -> "The general market"
+
+Coreference set:
+	(14,2,[2,3]) -> (13,27,[27,28]), that is: "this" -> "this"

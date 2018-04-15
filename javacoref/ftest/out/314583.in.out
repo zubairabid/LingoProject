@@ -1,0 +1,143 @@
+Document: ID=314583.in (3 sentences, 30 tokens)
+
+Sentence #1 (11 tokens):
+Sheila:
+
+I asked for this from Steve last week.
+
+Tokens:
+[Text=Sheila CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Sheila NamedEntityTag=PERSON]
+[Text=: CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=asked CharacterOffsetBegin=11 CharacterOffsetEnd=16 PartOfSpeech=VBD Lemma=ask NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Steve CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Steve NamedEntityTag=PERSON]
+[Text=last CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=JJ Lemma=last NamedEntityTag=DATE NormalizedNamedEntityTag=last week ]
+[Text=week CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=week NamedEntityTag=DATE NormalizedNamedEntityTag=last week ]
+[Text=. CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Sheila))
+    (: :)
+    (S
+      (NP (PRP I))
+      (VP (VBD asked)
+        (PP (IN for)
+          (NP
+            (NP (DT this))
+            (PP (IN from)
+              (NP (NNP Steve)))))
+        (NP-TMP (JJ last) (NN week))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Sheila-1)
+punct(Sheila-1, :-2)
+nsubj(asked-4, I-3)
+parataxis(Sheila-1, asked-4)
+case(this-6, for-5)
+nmod:for(asked-4, this-6)
+case(Steve-8, from-7)
+nmod:from(this-6, Steve-8)
+amod(week-10, last-9)
+nmod:tmod(asked-4, week-10)
+punct(Sheila-1, .-11)
+
+Extracted the following NER entity mentions:
+Sheila	PERSON
+Steve	PERSON
+last week	DATE
+
+Sentence #2 (18 tokens):
+Please take a look at what is in
+their standard T&C package as we discussed last week.
+
+Tokens:
+[Text=Please CharacterOffsetBegin=49 CharacterOffsetEnd=55 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=take CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=look CharacterOffsetBegin=63 CharacterOffsetEnd=67 PartOfSpeech=NN Lemma=look NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=68 CharacterOffsetEnd=70 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=76 CharacterOffsetEnd=78 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=79 CharacterOffsetEnd=81 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=82 CharacterOffsetEnd=87 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=standard CharacterOffsetBegin=88 CharacterOffsetEnd=96 PartOfSpeech=JJ Lemma=standard NamedEntityTag=O]
+[Text=T&C CharacterOffsetBegin=97 CharacterOffsetEnd=100 PartOfSpeech=NN Lemma=t&c NamedEntityTag=O]
+[Text=package CharacterOffsetBegin=101 CharacterOffsetEnd=108 PartOfSpeech=NN Lemma=package NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=109 CharacterOffsetEnd=111 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=112 CharacterOffsetEnd=114 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=discussed CharacterOffsetBegin=115 CharacterOffsetEnd=124 PartOfSpeech=VBD Lemma=discuss NamedEntityTag=O]
+[Text=last CharacterOffsetBegin=125 CharacterOffsetEnd=129 PartOfSpeech=JJ Lemma=last NamedEntityTag=O]
+[Text=week CharacterOffsetBegin=130 CharacterOffsetEnd=134 PartOfSpeech=NN Lemma=week NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=134 CharacterOffsetEnd=135 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (INTJ (VB Please))
+      (VP (VB take)))
+    (NP
+      (NP (DT a) (NN look))
+      (WHPP (IN at)
+        (WHNP (WP what))))
+    (VP (VBZ is)
+      (PP (IN in)
+        (NP (PRP$ their) (JJ standard) (NN T&C) (NN package)))
+      (SBAR (IN as)
+        (S
+          (NP (PRP we))
+          (VP (VBD discussed)
+            (NP-TMP (JJ last) (NN week))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, package-12)
+discourse(take-2, Please-1)
+dep(package-12, take-2)
+det(look-4, a-3)
+nsubj(package-12, look-4)
+case(what-6, at-5)
+nmod:at(look-4, what-6)
+cop(package-12, is-7)
+case(package-12, in-8)
+nmod:poss(package-12, their-9)
+amod(package-12, standard-10)
+compound(package-12, T&C-11)
+mark(discussed-15, as-13)
+nsubj(discussed-15, we-14)
+advcl:as(package-12, discussed-15)
+amod(week-17, last-16)
+nmod:tmod(discussed-15, week-17)
+punct(package-12, .-18)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (1 tokens):
+BB
+
+Tokens:
+[Text=BB CharacterOffsetBegin=137 CharacterOffsetEnd=139 PartOfSpeech=NN Lemma=bb NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NN BB)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, BB-1)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(2,9,[9,10]) -> (1,6,[6,9]), that is: "their" -> "this from Steve"
+
+Coreference set:
+	(2,17,[16,18]) -> (1,10,[9,11]), that is: "last week" -> "last week"

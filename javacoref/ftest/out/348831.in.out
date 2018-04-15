@@ -1,0 +1,156 @@
+Document: ID=348831.in (3 sentences, 35 tokens)
+
+Sentence #1 (27 tokens):
+FYI, the Aug. 14 issue of Fortune is their retirement special, and Enron is
+one of "10 stocks to last the decade."
+
+Tokens:
+[Text=FYI CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=FYI NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Aug. CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Aug. NamedEntityTag=DATE NormalizedNamedEntityTag=****0814]
+[Text=14 CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=CD Lemma=14 NamedEntityTag=DATE NormalizedNamedEntityTag=****0814]
+[Text=issue CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=issue NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Fortune CharacterOffsetBegin=26 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=fortune NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=37 CharacterOffsetEnd=42 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=retirement CharacterOffsetBegin=43 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=retirement NamedEntityTag=O]
+[Text=special CharacterOffsetBegin=54 CharacterOffsetEnd=61 PartOfSpeech=JJ Lemma=special NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=67 CharacterOffsetEnd=72 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=is CharacterOffsetBegin=73 CharacterOffsetEnd=75 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=of CharacterOffsetBegin=80 CharacterOffsetEnd=82 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=83 CharacterOffsetEnd=84 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=10 CharacterOffsetBegin=84 CharacterOffsetEnd=86 PartOfSpeech=CD Lemma=10 NamedEntityTag=NUMBER NormalizedNamedEntityTag=10.0]
+[Text=stocks CharacterOffsetBegin=87 CharacterOffsetEnd=93 PartOfSpeech=NNS Lemma=stock NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=94 CharacterOffsetEnd=96 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=last CharacterOffsetBegin=97 CharacterOffsetEnd=101 PartOfSpeech=VB Lemma=last NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=102 CharacterOffsetEnd=105 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=decade CharacterOffsetBegin=106 CharacterOffsetEnd=112 PartOfSpeech=NN Lemma=decade NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=112 CharacterOffsetEnd=113 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNP FYI))
+        (, ,)
+        (NP
+          (NP (DT the) (NNP Aug.) (CD 14) (NN issue))
+          (PP (IN of)
+            (NP (NN Fortune)))))
+      (VP (VBZ is)
+        (NP
+          (NP (PRP$ their) (NN retirement))
+          (JJ special))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (NNP Enron))
+      (VP (VBZ is)
+        (NP
+          (NP (CD one))
+          (PP (IN of) (`` ``)
+            (NP (CD 10) (NNS stocks)))
+          (S
+            (VP (TO to)
+              (VP (VB last)
+                (NP (DT the) (NN decade))))))))
+    (. .) ('' '')))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, retirement-11)
+nsubj(retirement-11, FYI-1)
+punct(FYI-1, ,-2)
+det(issue-6, the-3)
+compound(issue-6, Aug.-4)
+nummod(issue-6, 14-5)
+appos(FYI-1, issue-6)
+case(Fortune-8, of-7)
+nmod:of(issue-6, Fortune-8)
+cop(retirement-11, is-9)
+nmod:poss(retirement-11, their-10)
+amod(retirement-11, special-12)
+punct(retirement-11, ,-13)
+cc(retirement-11, and-14)
+nsubj(one-17, Enron-15)
+cop(one-17, is-16)
+conj:and(retirement-11, one-17)
+case(stocks-21, of-18)
+punct(stocks-21, ``-19)
+nummod(stocks-21, 10-20)
+nmod:of(one-17, stocks-21)
+mark(last-23, to-22)
+acl:to(one-17, last-23)
+det(decade-25, the-24)
+dobj(last-23, decade-25)
+punct(retirement-11, .-26)
+punct(retirement-11, ''-27)
+
+Extracted the following NER entity mentions:
+Aug. 14	DATE
+Enron	ORGANIZATION
+one	NUMBER
+10	NUMBER
+
+Sentence #2 (3 tokens):
+Awesome article.
+
+Tokens:
+[Text=Awesome CharacterOffsetBegin=116 CharacterOffsetEnd=123 PartOfSpeech=JJ Lemma=awesome NamedEntityTag=O]
+[Text=article CharacterOffsetBegin=124 CharacterOffsetEnd=131 PartOfSpeech=NN Lemma=article NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=131 CharacterOffsetEnd=132 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (JJ Awesome) (NN article) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, article-2)
+amod(article-2, Awesome-1)
+punct(article-2, .-3)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (5 tokens):
+Check it out:
+http://www.fortune.com/fortune/2000/08/14/pre.html
+
+Tokens:
+[Text=Check CharacterOffsetBegin=134 CharacterOffsetEnd=139 PartOfSpeech=VB Lemma=check NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=140 CharacterOffsetEnd=142 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=143 CharacterOffsetEnd=146 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=146 CharacterOffsetEnd=147 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=http://www.fortune.com/fortune/2000/08/14/pre.html CharacterOffsetBegin=148 CharacterOffsetEnd=198 PartOfSpeech=NN Lemma=http://www.fortune.com/fortune/2000/08/14/pre.html NamedEntityTag=URL]
+
+Constituency parse: 
+(ROOT
+  (VP (VB Check)
+    (NP (PRP it))
+    (ADVP (RP out))
+    (: :)
+    (FRAG
+      (NP (NN http://www.fortune.com/fortune/2000/08/14/pre.html)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Check-1)
+dobj(Check-1, it-2)
+advmod(Check-1, out-3)
+punct(Check-1, :-4)
+dep(Check-1, http://www.fortune.com/fortune/2000/08/14/pre.html-5)
+
+Extracted the following NER entity mentions:
+http://www.fortune.com/fortune/2000/08/14/pre.html	URL
+
+Coreference set:
+	(1,6,[3,9]) -> (1,1,[1,2]), that is: "the Aug. 14 issue of Fortune" -> "FYI"
+	(1,11,[10,13]) -> (1,1,[1,2]), that is: "their retirement special" -> "FYI"
+	(3,2,[2,3]) -> (1,1,[1,2]), that is: "it" -> "FYI"

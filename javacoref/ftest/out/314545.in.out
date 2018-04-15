@@ -1,0 +1,395 @@
+Document: ID=314545.in (5 sentences, 99 tokens)
+
+Sentence #1 (27 tokens):
+Attached is a quick pass at a template for the Midwest Energy Hub Cash
+Management Policy based on conversations with both Peoples Energy and Enron
+personnel.
+
+Tokens:
+[Text=Attached CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=VBN Lemma=attach NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=quick CharacterOffsetBegin=14 CharacterOffsetEnd=19 PartOfSpeech=JJ Lemma=quick NamedEntityTag=O]
+[Text=pass CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=pass NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=template CharacterOffsetBegin=30 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=template NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Midwest CharacterOffsetBegin=47 CharacterOffsetEnd=54 PartOfSpeech=NNP Lemma=Midwest NamedEntityTag=ORGANIZATION]
+[Text=Energy CharacterOffsetBegin=55 CharacterOffsetEnd=61 PartOfSpeech=NNP Lemma=Energy NamedEntityTag=ORGANIZATION]
+[Text=Hub CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=NNP Lemma=Hub NamedEntityTag=ORGANIZATION]
+[Text=Cash CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=NNP Lemma=Cash NamedEntityTag=ORGANIZATION]
+[Text=Management CharacterOffsetBegin=71 CharacterOffsetEnd=81 PartOfSpeech=NNP Lemma=Management NamedEntityTag=ORGANIZATION]
+[Text=Policy CharacterOffsetBegin=82 CharacterOffsetEnd=88 PartOfSpeech=NNP Lemma=Policy NamedEntityTag=ORGANIZATION]
+[Text=based CharacterOffsetBegin=89 CharacterOffsetEnd=94 PartOfSpeech=VBN Lemma=base NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=95 CharacterOffsetEnd=97 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=conversations CharacterOffsetBegin=98 CharacterOffsetEnd=111 PartOfSpeech=NNS Lemma=conversation NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=112 CharacterOffsetEnd=116 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=both CharacterOffsetBegin=117 CharacterOffsetEnd=121 PartOfSpeech=DT Lemma=both NamedEntityTag=O]
+[Text=Peoples CharacterOffsetBegin=122 CharacterOffsetEnd=129 PartOfSpeech=NNPS Lemma=Peoples NamedEntityTag=ORGANIZATION]
+[Text=Energy CharacterOffsetBegin=130 CharacterOffsetEnd=136 PartOfSpeech=NNP Lemma=Energy NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=137 CharacterOffsetEnd=140 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=141 CharacterOffsetEnd=146 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=personnel CharacterOffsetBegin=147 CharacterOffsetEnd=156 PartOfSpeech=NNS Lemma=personnel NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=156 CharacterOffsetEnd=157 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SINV
+    (VP (VBN Attached))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ quick) (NN pass))
+        (PP (IN at)
+          (NP
+            (NP (DT a) (NN template))
+            (PP (IN for)
+              (NP (DT the) (NNP Midwest) (NNP Energy) (NNP Hub) (NNP Cash)))))))
+    (NP
+      (NP (NNP Management) (NNP Policy))
+      (PP (VBN based)
+        (PP (IN on)
+          (NP
+            (NP (NNS conversations))
+            (PP (IN with)
+              (NP
+                (NP (DT both) (NNPS Peoples) (NNP Energy))
+                (CC and)
+                (NP (NNP Enron) (NNS personnel))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Attached-1)
+cop(pass-5, is-2)
+det(pass-5, a-3)
+amod(pass-5, quick-4)
+auxpass(Attached-1, pass-5)
+case(template-8, at-6)
+det(template-8, a-7)
+nmod:at(pass-5, template-8)
+case(Cash-14, for-9)
+det(Cash-14, the-10)
+compound(Cash-14, Midwest-11)
+compound(Cash-14, Energy-12)
+compound(Cash-14, Hub-13)
+nmod:for(template-8, Cash-14)
+compound(Policy-16, Management-15)
+nsubjpass(Attached-1, Policy-16)
+case(conversations-19, based-17)
+mwe(based-17, on-18)
+nmod:based_on(Policy-16, conversations-19)
+case(Energy-23, with-20)
+det(Energy-23, both-21)
+compound(Energy-23, Peoples-22)
+nmod:with(conversations-19, Energy-23)
+cc(Energy-23, and-24)
+compound(personnel-26, Enron-25)
+nmod:with(conversations-19, personnel-26)
+conj:and(Energy-23, personnel-26)
+punct(Attached-1, .-27)
+
+Extracted the following NER entity mentions:
+Midwest Energy Hub Cash Management Policy	ORGANIZATION
+Peoples Energy	ORGANIZATION
+Enron	ORGANIZATION
+
+Sentence #2 (23 tokens):
+I have tried to get down on paper all the issues and have
+included several bracketed items and comments that need clarification.
+
+Tokens:
+[Text=I CharacterOffsetBegin=159 CharacterOffsetEnd=160 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=161 CharacterOffsetEnd=165 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=tried CharacterOffsetBegin=166 CharacterOffsetEnd=171 PartOfSpeech=VBN Lemma=try NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=172 CharacterOffsetEnd=174 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=175 CharacterOffsetEnd=178 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=179 CharacterOffsetEnd=183 PartOfSpeech=RP Lemma=down NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=184 CharacterOffsetEnd=186 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=paper CharacterOffsetBegin=187 CharacterOffsetEnd=192 PartOfSpeech=NN Lemma=paper NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=193 CharacterOffsetEnd=196 PartOfSpeech=PDT Lemma=all NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=197 CharacterOffsetEnd=200 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=issues CharacterOffsetBegin=201 CharacterOffsetEnd=207 PartOfSpeech=NNS Lemma=issue NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=208 CharacterOffsetEnd=211 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=212 CharacterOffsetEnd=216 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=included CharacterOffsetBegin=217 CharacterOffsetEnd=225 PartOfSpeech=VBN Lemma=include NamedEntityTag=O]
+[Text=several CharacterOffsetBegin=226 CharacterOffsetEnd=233 PartOfSpeech=JJ Lemma=several NamedEntityTag=O]
+[Text=bracketed CharacterOffsetBegin=234 CharacterOffsetEnd=243 PartOfSpeech=VBN Lemma=bracket NamedEntityTag=O]
+[Text=items CharacterOffsetBegin=244 CharacterOffsetEnd=249 PartOfSpeech=NNS Lemma=item NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=250 CharacterOffsetEnd=253 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=comments CharacterOffsetBegin=254 CharacterOffsetEnd=262 PartOfSpeech=NNS Lemma=comment NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=263 CharacterOffsetEnd=267 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=268 CharacterOffsetEnd=272 PartOfSpeech=VBP Lemma=need NamedEntityTag=O]
+[Text=clarification CharacterOffsetBegin=273 CharacterOffsetEnd=286 PartOfSpeech=NN Lemma=clarification NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=286 CharacterOffsetEnd=287 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP
+      (VP (VBP have)
+        (VP (VBN tried)
+          (S
+            (VP (TO to)
+              (VP (VB get)
+                (PRT (RP down))
+                (PP (IN on)
+                  (NP
+                    (NP (NN paper))
+                    (NP (PDT all) (DT the) (NNS issues)))))))))
+      (CC and)
+      (VP (VBP have)
+        (VP (VBN included)
+          (NP
+            (NP (JJ several))
+            (VP (VBN bracketed)
+              (NP
+                (NP (NNS items)
+                  (CC and)
+                  (NNS comments))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBP need)
+                      (NP (NN clarification)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, tried-3)
+nsubj(tried-3, I-1)
+nsubj:xsubj(get-5, I-1)
+nsubj(included-14, I-1)
+aux(tried-3, have-2)
+mark(get-5, to-4)
+xcomp(tried-3, get-5)
+compound:prt(get-5, down-6)
+case(paper-8, on-7)
+nmod:on(get-5, paper-8)
+det:predet(issues-11, all-9)
+det(issues-11, the-10)
+dep(paper-8, issues-11)
+cc(tried-3, and-12)
+aux(included-14, have-13)
+conj:and(tried-3, included-14)
+dobj(included-14, several-15)
+acl(several-15, bracketed-16)
+dobj(bracketed-16, items-17)
+nsubj(need-21, items-17)
+cc(items-17, and-18)
+dobj(bracketed-16, comments-19)
+conj:and(items-17, comments-19)
+nsubj(need-21, comments-19)
+ref(items-17, that-20)
+acl:relcl(items-17, need-21)
+dobj(need-21, clarification-22)
+punct(tried-3, .-23)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (13 tokens):
+However, I have undoubtedly missed some things and welcome any input.
+
+Tokens:
+[Text=However CharacterOffsetBegin=288 CharacterOffsetEnd=295 PartOfSpeech=RB Lemma=however NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=295 CharacterOffsetEnd=296 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=297 CharacterOffsetEnd=298 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=299 CharacterOffsetEnd=303 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=undoubtedly CharacterOffsetBegin=304 CharacterOffsetEnd=315 PartOfSpeech=RB Lemma=undoubtedly NamedEntityTag=O]
+[Text=missed CharacterOffsetBegin=316 CharacterOffsetEnd=322 PartOfSpeech=VBN Lemma=miss NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=323 CharacterOffsetEnd=327 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=things CharacterOffsetBegin=328 CharacterOffsetEnd=334 PartOfSpeech=NNS Lemma=thing NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=335 CharacterOffsetEnd=338 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=welcome CharacterOffsetBegin=339 CharacterOffsetEnd=346 PartOfSpeech=VB Lemma=welcome NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=347 CharacterOffsetEnd=350 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=input CharacterOffsetBegin=351 CharacterOffsetEnd=356 PartOfSpeech=NN Lemma=input NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=356 CharacterOffsetEnd=357 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB However))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP have)
+      (ADVP (RB undoubtedly))
+      (VP
+        (VP (VBN missed)
+          (NP (DT some) (NNS things)))
+        (CC and)
+        (VP (VB welcome)
+          (NP (DT any) (NN input)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, missed-6)
+advmod(missed-6, However-1)
+punct(missed-6, ,-2)
+nsubj(missed-6, I-3)
+nsubj(welcome-10, I-3)
+aux(missed-6, have-4)
+advmod(missed-6, undoubtedly-5)
+det(things-8, some-7)
+dobj(missed-6, things-8)
+cc(missed-6, and-9)
+conj:and(missed-6, welcome-10)
+det(input-12, any-11)
+dobj(welcome-10, input-12)
+punct(missed-6, .-13)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (30 tokens):
+If
+everyone could provide me with their comments by Thursday July 6th, I will
+incorporate them and work with Kay to translate this into an executable legal
+document.
+
+Tokens:
+[Text=If CharacterOffsetBegin=358 CharacterOffsetEnd=360 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=everyone CharacterOffsetBegin=361 CharacterOffsetEnd=369 PartOfSpeech=NN Lemma=everyone NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=370 CharacterOffsetEnd=375 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=provide CharacterOffsetBegin=376 CharacterOffsetEnd=383 PartOfSpeech=VB Lemma=provide NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=384 CharacterOffsetEnd=386 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=387 CharacterOffsetEnd=391 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=392 CharacterOffsetEnd=397 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=comments CharacterOffsetBegin=398 CharacterOffsetEnd=406 PartOfSpeech=NNS Lemma=comment NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=407 CharacterOffsetEnd=409 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Thursday CharacterOffsetBegin=410 CharacterOffsetEnd=418 PartOfSpeech=NNP Lemma=Thursday NamedEntityTag=DATE NormalizedNamedEntityTag=****0706]
+[Text=July CharacterOffsetBegin=419 CharacterOffsetEnd=423 PartOfSpeech=NNP Lemma=July NamedEntityTag=DATE NormalizedNamedEntityTag=****0706]
+[Text=6th CharacterOffsetBegin=424 CharacterOffsetEnd=427 PartOfSpeech=JJ Lemma=6th NamedEntityTag=DATE NormalizedNamedEntityTag=****0706]
+[Text=, CharacterOffsetBegin=427 CharacterOffsetEnd=428 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=429 CharacterOffsetEnd=430 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=431 CharacterOffsetEnd=435 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=incorporate CharacterOffsetBegin=436 CharacterOffsetEnd=447 PartOfSpeech=VB Lemma=incorporate NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=448 CharacterOffsetEnd=452 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=453 CharacterOffsetEnd=456 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=457 CharacterOffsetEnd=461 PartOfSpeech=VB Lemma=work NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=462 CharacterOffsetEnd=466 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Kay CharacterOffsetBegin=467 CharacterOffsetEnd=470 PartOfSpeech=NNP Lemma=Kay NamedEntityTag=PERSON]
+[Text=to CharacterOffsetBegin=471 CharacterOffsetEnd=473 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=translate CharacterOffsetBegin=474 CharacterOffsetEnd=483 PartOfSpeech=VB Lemma=translate NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=484 CharacterOffsetEnd=488 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=489 CharacterOffsetEnd=493 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=494 CharacterOffsetEnd=496 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=executable CharacterOffsetBegin=497 CharacterOffsetEnd=507 PartOfSpeech=JJ Lemma=executable NamedEntityTag=O]
+[Text=legal CharacterOffsetBegin=508 CharacterOffsetEnd=513 PartOfSpeech=JJ Lemma=legal NamedEntityTag=O]
+[Text=document CharacterOffsetBegin=514 CharacterOffsetEnd=522 PartOfSpeech=NN Lemma=document NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=522 CharacterOffsetEnd=523 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NN everyone))
+        (VP (MD could)
+          (VP (VB provide)
+            (NP (PRP me))
+            (PP (IN with)
+              (NP (PRP$ their) (NNS comments)))
+            (PP (IN by)
+              (NP
+                (NP (NNP Thursday) (NNP July))
+                (ADJP (JJ 6th))))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (MD will)
+      (VP
+        (VP (VB incorporate)
+          (NP (PRP them)))
+        (CC and)
+        (VP (VB work)
+          (PP (IN with)
+            (NP (NNP Kay)))
+          (S
+            (VP (TO to)
+              (VP (VB translate)
+                (NP (DT this))
+                (PP (IN into)
+                  (NP (DT an) (JJ executable) (JJ legal) (NN document)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, incorporate-16)
+mark(provide-4, If-1)
+nsubj(provide-4, everyone-2)
+aux(provide-4, could-3)
+advcl:if(incorporate-16, provide-4)
+dobj(provide-4, me-5)
+case(comments-8, with-6)
+nmod:poss(comments-8, their-7)
+nmod:with(provide-4, comments-8)
+case(July-11, by-9)
+compound(July-11, Thursday-10)
+nmod:by(provide-4, July-11)
+amod(July-11, 6th-12)
+punct(incorporate-16, ,-13)
+nsubj(incorporate-16, I-14)
+nsubj(work-19, I-14)
+nsubj:xsubj(translate-23, I-14)
+aux(incorporate-16, will-15)
+dobj(incorporate-16, them-17)
+cc(incorporate-16, and-18)
+conj:and(incorporate-16, work-19)
+case(Kay-21, with-20)
+nmod:with(work-19, Kay-21)
+mark(translate-23, to-22)
+xcomp(work-19, translate-23)
+dobj(translate-23, this-24)
+case(document-29, into-25)
+det(document-29, an-26)
+amod(document-29, executable-27)
+amod(document-29, legal-28)
+nmod:into(translate-23, document-29)
+punct(incorporate-16, .-30)
+
+Extracted the following NER entity mentions:
+Thursday July 6th	DATE
+Kay	PERSON
+
+Sentence #5 (6 tokens):
+Thanks for everyone's assistance,
+
+Tokens:
+[Text=Thanks CharacterOffsetBegin=524 CharacterOffsetEnd=530 PartOfSpeech=NNS Lemma=thanks NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=531 CharacterOffsetEnd=534 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=everyone CharacterOffsetBegin=535 CharacterOffsetEnd=543 PartOfSpeech=NN Lemma=everyone NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=543 CharacterOffsetEnd=545 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=assistance CharacterOffsetBegin=546 CharacterOffsetEnd=556 PartOfSpeech=NN Lemma=assistance NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=556 CharacterOffsetEnd=557 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (PP
+      (NP (NNS Thanks))
+      (PP (IN for)
+        (NP
+          (NP (NN everyone) (POS 's))
+          (NN assistance))))
+    (, ,)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Thanks-1)
+case(assistance-5, for-2)
+nmod:poss(assistance-5, everyone-3)
+case(everyone-3, 's-4)
+nmod:for(Thanks-1, assistance-5)
+punct(Thanks-1, ,-6)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(3,3,[3,4]) -> (2,1,[1,2]), that is: "I" -> "I"
+	(4,5,[5,6]) -> (2,1,[1,2]), that is: "me" -> "I"
+	(4,14,[14,15]) -> (2,1,[1,2]), that is: "I" -> "I"
+
+Coreference set:
+	(4,7,[7,8]) -> (2,15,[15,23]), that is: "their" -> "several bracketed items and comments that need clarification"
+	(4,17,[17,18]) -> (2,15,[15,23]), that is: "them" -> "several bracketed items and comments that need clarification"

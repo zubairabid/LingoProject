@@ -1,0 +1,845 @@
+Document: ID=319745.in (8 sentences, 227 tokens)
+
+Sentence #1 (12 tokens):
+This e-mail is confidential and may well also be legally privileged.
+
+Tokens:
+[Text=This CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=e-mail CharacterOffsetBegin=5 CharacterOffsetEnd=11 PartOfSpeech=NN Lemma=e-mail NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=confidential CharacterOffsetBegin=15 CharacterOffsetEnd=27 PartOfSpeech=JJ Lemma=confidential NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=may CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=MD Lemma=may NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=46 CharacterOffsetEnd=48 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=legally CharacterOffsetBegin=49 CharacterOffsetEnd=56 PartOfSpeech=RB Lemma=legally NamedEntityTag=O]
+[Text=privileged CharacterOffsetBegin=57 CharacterOffsetEnd=67 PartOfSpeech=JJ Lemma=privileged NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This) (NN e-mail))
+    (VP
+      (VP (VBZ is)
+        (ADJP (JJ confidential)))
+      (CC and)
+      (VP (MD may) (RB well)
+        (ADVP (RB also))
+        (VP (VB be)
+          (ADJP (RB legally) (JJ privileged)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, confidential-4)
+det(e-mail-2, This-1)
+nsubj(confidential-4, e-mail-2)
+nsubj(privileged-11, e-mail-2)
+cop(confidential-4, is-3)
+cc(confidential-4, and-5)
+aux(privileged-11, may-6)
+advmod(privileged-11, well-7)
+advmod(privileged-11, also-8)
+cop(privileged-11, be-9)
+advmod(privileged-11, legally-10)
+conj:and(confidential-4, privileged-11)
+punct(confidential-4, .-12)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (16 tokens):
+If you
+have received it in error, you are on notice of its status.
+
+Tokens:
+[Text=If CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=76 CharacterOffsetEnd=80 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=received CharacterOffsetBegin=81 CharacterOffsetEnd=89 PartOfSpeech=VBN Lemma=receive NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=90 CharacterOffsetEnd=92 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=93 CharacterOffsetEnd=95 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=error CharacterOffsetBegin=96 CharacterOffsetEnd=101 PartOfSpeech=NN Lemma=error NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=101 CharacterOffsetEnd=102 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=103 CharacterOffsetEnd=106 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=107 CharacterOffsetEnd=110 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=111 CharacterOffsetEnd=113 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=notice CharacterOffsetBegin=114 CharacterOffsetEnd=120 PartOfSpeech=NN Lemma=notice NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=121 CharacterOffsetEnd=123 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=its CharacterOffsetBegin=124 CharacterOffsetEnd=127 PartOfSpeech=PRP$ Lemma=its NamedEntityTag=O]
+[Text=status CharacterOffsetBegin=128 CharacterOffsetEnd=134 PartOfSpeech=NN Lemma=status NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=134 CharacterOffsetEnd=135 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP have)
+          (VP (VBN received)
+            (NP (PRP it))
+            (PP (IN in)
+              (NP (NN error)))))))
+    (, ,)
+    (NP (PRP you))
+    (VP (VBP are)
+      (PP (IN on)
+        (NP
+          (NP (NN notice))
+          (PP (IN of)
+            (NP (PRP$ its) (NN status))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, notice-12)
+mark(received-4, If-1)
+nsubj(received-4, you-2)
+aux(received-4, have-3)
+advcl:if(notice-12, received-4)
+dobj(received-4, it-5)
+case(error-7, in-6)
+nmod:in(received-4, error-7)
+punct(notice-12, ,-8)
+nsubj(notice-12, you-9)
+cop(notice-12, are-10)
+case(notice-12, on-11)
+case(status-15, of-13)
+nmod:poss(status-15, its-14)
+nmod:of(notice-12, status-15)
+punct(notice-12, .-16)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (16 tokens):
+Please notify us
+immediately by reply e-mail and then delete this message from your system.
+
+Tokens:
+[Text=Please CharacterOffsetBegin=137 CharacterOffsetEnd=143 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=notify CharacterOffsetBegin=144 CharacterOffsetEnd=150 PartOfSpeech=VB Lemma=notify NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=151 CharacterOffsetEnd=153 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=immediately CharacterOffsetBegin=154 CharacterOffsetEnd=165 PartOfSpeech=RB Lemma=immediately NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=166 CharacterOffsetEnd=168 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=reply CharacterOffsetBegin=169 CharacterOffsetEnd=174 PartOfSpeech=NN Lemma=reply NamedEntityTag=O]
+[Text=e-mail CharacterOffsetBegin=175 CharacterOffsetEnd=181 PartOfSpeech=NN Lemma=e-mail NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=182 CharacterOffsetEnd=185 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=186 CharacterOffsetEnd=190 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=delete CharacterOffsetBegin=191 CharacterOffsetEnd=197 PartOfSpeech=VB Lemma=delete NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=198 CharacterOffsetEnd=202 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=message CharacterOffsetBegin=203 CharacterOffsetEnd=210 PartOfSpeech=NN Lemma=message NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=211 CharacterOffsetEnd=215 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=216 CharacterOffsetEnd=220 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=system CharacterOffsetBegin=221 CharacterOffsetEnd=227 PartOfSpeech=NN Lemma=system NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=227 CharacterOffsetEnd=228 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Please)
+      (VP
+        (VP (VB notify)
+          (NP (PRP us))
+          (ADVP (RB immediately))
+          (PP (IN by)
+            (NP (NN reply) (NN e-mail))))
+        (CC and)
+        (ADVP (RB then))
+        (VP (VB delete)
+          (NP (DT this) (NN message))
+          (PP (IN from)
+            (NP (PRP$ your) (NN system))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Please-1)
+dep(Please-1, notify-2)
+dobj(notify-2, us-3)
+advmod(notify-2, immediately-4)
+case(e-mail-7, by-5)
+compound(e-mail-7, reply-6)
+nmod:by(notify-2, e-mail-7)
+cc(notify-2, and-8)
+advmod(delete-10, then-9)
+dep(Please-1, delete-10)
+conj:and(notify-2, delete-10)
+det(message-12, this-11)
+dobj(delete-10, message-12)
+case(system-15, from-13)
+nmod:poss(system-15, your-14)
+nmod:from(delete-10, system-15)
+punct(Please-1, .-16)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (31 tokens):
+Please do not copy it or use it for any purposes, or disclose its contents to
+any other person:  to do so could be a breach of confidence.
+
+Tokens:
+[Text=Please CharacterOffsetBegin=229 CharacterOffsetEnd=235 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=236 CharacterOffsetEnd=238 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=239 CharacterOffsetEnd=242 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=copy CharacterOffsetBegin=243 CharacterOffsetEnd=247 PartOfSpeech=VB Lemma=copy NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=248 CharacterOffsetEnd=250 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=251 CharacterOffsetEnd=253 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=use CharacterOffsetBegin=254 CharacterOffsetEnd=257 PartOfSpeech=VB Lemma=use NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=258 CharacterOffsetEnd=260 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=261 CharacterOffsetEnd=264 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=265 CharacterOffsetEnd=268 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=purposes CharacterOffsetBegin=269 CharacterOffsetEnd=277 PartOfSpeech=NNS Lemma=purpose NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=277 CharacterOffsetEnd=278 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=279 CharacterOffsetEnd=281 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=disclose CharacterOffsetBegin=282 CharacterOffsetEnd=290 PartOfSpeech=VB Lemma=disclose NamedEntityTag=O]
+[Text=its CharacterOffsetBegin=291 CharacterOffsetEnd=294 PartOfSpeech=PRP$ Lemma=its NamedEntityTag=O]
+[Text=contents CharacterOffsetBegin=295 CharacterOffsetEnd=303 PartOfSpeech=NNS Lemma=contents NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=304 CharacterOffsetEnd=306 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=307 CharacterOffsetEnd=310 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=311 CharacterOffsetEnd=316 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=person CharacterOffsetBegin=317 CharacterOffsetEnd=323 PartOfSpeech=NN Lemma=person NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=323 CharacterOffsetEnd=324 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=326 CharacterOffsetEnd=328 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=329 CharacterOffsetEnd=331 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=332 CharacterOffsetEnd=334 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=335 CharacterOffsetEnd=340 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=341 CharacterOffsetEnd=343 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=344 CharacterOffsetEnd=345 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=breach CharacterOffsetBegin=346 CharacterOffsetEnd=352 PartOfSpeech=NN Lemma=breach NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=353 CharacterOffsetEnd=355 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=confidence CharacterOffsetBegin=356 CharacterOffsetEnd=366 PartOfSpeech=NN Lemma=confidence NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=366 CharacterOffsetEnd=367 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (INTJ (VB Please))
+      (VP (VB do) (RB not)
+        (VP
+          (VP (VB copy)
+            (NP (PRP it)))
+          (CC or)
+          (VP (VB use)
+            (NP (PRP it))
+            (PP (IN for)
+              (NP (DT any) (NNS purposes))))
+          (, ,)
+          (CC or)
+          (VP (VB disclose)
+            (NP (PRP$ its) (NNS contents))
+            (PP (TO to)
+              (NP (DT any) (JJ other) (NN person)))))))
+    (: :)
+    (S
+      (S
+        (VP (TO to)
+          (VP (VB do)
+            (ADVP (RB so)))))
+      (VP (MD could)
+        (VP (VB be)
+          (NP
+            (NP (DT a) (NN breach))
+            (PP (IN of)
+              (NP (NN confidence)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, copy-4)
+discourse(copy-4, Please-1)
+aux(copy-4, do-2)
+neg(copy-4, not-3)
+dobj(copy-4, it-5)
+cc(copy-4, or-6)
+conj:or(copy-4, use-7)
+dobj(use-7, it-8)
+case(purposes-11, for-9)
+det(purposes-11, any-10)
+nmod:for(use-7, purposes-11)
+punct(copy-4, ,-12)
+cc(copy-4, or-13)
+conj:or(copy-4, disclose-14)
+nmod:poss(contents-16, its-15)
+dobj(disclose-14, contents-16)
+case(person-20, to-17)
+det(person-20, any-18)
+amod(person-20, other-19)
+nmod:to(disclose-14, person-20)
+punct(copy-4, :-21)
+mark(do-23, to-22)
+csubj(breach-28, do-23)
+advmod(do-23, so-24)
+aux(breach-28, could-25)
+cop(breach-28, be-26)
+det(breach-28, a-27)
+parataxis(copy-4, breach-28)
+case(confidence-30, of-29)
+nmod:of(breach-28, confidence-30)
+punct(copy-4, .-31)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (6 tokens):
+Thank you for
+your co-operation.
+
+Tokens:
+[Text=Thank CharacterOffsetBegin=369 CharacterOffsetEnd=374 PartOfSpeech=VB Lemma=thank NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=375 CharacterOffsetEnd=378 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=379 CharacterOffsetEnd=382 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=383 CharacterOffsetEnd=387 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=co-operation CharacterOffsetBegin=388 CharacterOffsetEnd=400 PartOfSpeech=NN Lemma=co-operation NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=400 CharacterOffsetEnd=401 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Thank)
+      (NP (PRP you))
+      (PP (IN for)
+        (NP (PRP$ your) (NN co-operation))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Thank-1)
+dobj(Thank-1, you-2)
+case(co-operation-5, for-3)
+nmod:poss(co-operation-5, your-4)
+nmod:for(Thank-1, co-operation-5)
+punct(Thank-1, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #6 (21 tokens):
+Please contact our
+IT Helpdesk on +44 (0) 20 7936 4000 Ext.2000 or email ITHelp@freshfields.com
+if you need assistance.
+
+Tokens:
+[Text=Please CharacterOffsetBegin=403 CharacterOffsetEnd=409 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=contact CharacterOffsetBegin=410 CharacterOffsetEnd=417 PartOfSpeech=VB Lemma=contact NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=418 CharacterOffsetEnd=421 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=IT CharacterOffsetBegin=422 CharacterOffsetEnd=424 PartOfSpeech=PRP Lemma=it NamedEntityTag=ORGANIZATION]
+[Text=Helpdesk CharacterOffsetBegin=425 CharacterOffsetEnd=433 PartOfSpeech=NN Lemma=helpdesk NamedEntityTag=ORGANIZATION]
+[Text=on CharacterOffsetBegin=434 CharacterOffsetEnd=436 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=+44 CharacterOffsetBegin=437 CharacterOffsetEnd=440 PartOfSpeech=CD Lemma=+44 NamedEntityTag=NUMBER]
+[Text=-LRB- CharacterOffsetBegin=441 CharacterOffsetEnd=442 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=0 CharacterOffsetBegin=442 CharacterOffsetEnd=443 PartOfSpeech=CD Lemma=0 NamedEntityTag=NUMBER NormalizedNamedEntityTag=0.0]
+[Text=-RRB- CharacterOffsetBegin=443 CharacterOffsetEnd=444 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=20 7936 4000 CharacterOffsetBegin=445 CharacterOffsetEnd=457 PartOfSpeech=CD Lemma=20 7936 4000 NamedEntityTag=NUMBER]
+[Text=Ext. CharacterOffsetBegin=458 CharacterOffsetEnd=462 PartOfSpeech=NNP Lemma=Ext. NamedEntityTag=O]
+[Text=2000 CharacterOffsetBegin=462 CharacterOffsetEnd=466 PartOfSpeech=CD Lemma=2000 NamedEntityTag=DATE NormalizedNamedEntityTag=2000]
+[Text=or CharacterOffsetBegin=467 CharacterOffsetEnd=469 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=email CharacterOffsetBegin=470 CharacterOffsetEnd=475 PartOfSpeech=VB Lemma=email NamedEntityTag=O]
+[Text=ITHelp@freshfields.com CharacterOffsetBegin=476 CharacterOffsetEnd=498 PartOfSpeech=NNP Lemma=ITHelp@freshfields.com NamedEntityTag=EMAIL]
+[Text=if CharacterOffsetBegin=499 CharacterOffsetEnd=501 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=502 CharacterOffsetEnd=505 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=506 CharacterOffsetEnd=510 PartOfSpeech=VBP Lemma=need NamedEntityTag=O]
+[Text=assistance CharacterOffsetBegin=511 CharacterOffsetEnd=521 PartOfSpeech=NN Lemma=assistance NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=521 CharacterOffsetEnd=522 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Please)
+      (VP
+        (VP (VB contact)
+          (NP (PRP$ our)
+            (ADJP
+              (NP (PRP IT)))
+            (NN Helpdesk))
+          (PP (IN on)
+            (NP
+              (NP
+                (NP (CD +44))
+                (PRN (-LRB- -LRB-)
+                  (NP (CD 0))
+                  (-RRB- -RRB-)))
+              (NP (CD 20 7936 4000) (NNP Ext.) (CD 2000)))))
+        (CC or)
+        (VP (VB email)
+          (NP (NNP ITHelp@freshfields.com))
+          (SBAR (IN if)
+            (S
+              (NP (PRP you))
+              (VP (VBP need)
+                (NP (NN assistance))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Please-1)
+dep(Please-1, contact-2)
+nmod:poss(Helpdesk-5, our-3)
+amod(Helpdesk-5, IT-4)
+dobj(contact-2, Helpdesk-5)
+case(+44-7, on-6)
+nmod:on(contact-2, +44-7)
+punct(0-9, -LRB--8)
+appos(+44-7, 0-9)
+punct(0-9, -RRB--10)
+nummod(Ext.-12, 20 7936 4000-11)
+dep(+44-7, Ext.-12)
+nummod(Ext.-12, 2000-13)
+cc(contact-2, or-14)
+dep(Please-1, email-15)
+conj:or(contact-2, email-15)
+dobj(email-15, ITHelp@freshfields.com-16)
+mark(need-19, if-17)
+nsubj(need-19, you-18)
+advcl:if(email-15, need-19)
+dobj(need-19, assistance-20)
+punct(Please-1, .-21)
+
+Extracted the following NER entity mentions:
+IT Helpdesk	ORGANIZATION
++44	NUMBER
+0	NUMBER
+20 7936 4000	NUMBER
+2000	DATE
+ITHelp@freshfields.com	EMAIL
+
+Sentence #7 (94 tokens):
+Carolyn
+We attach the following:
+(a) a clean and blacklined copy of the ENA Consent, reflecting changes to
+the credit documentation;
+(b) a mark-up of the "no objection to forms" letter to be executed by ENA;
+(c) a draft letter from the purchasers under the Note Purchase Agreement
+setting out the actions to be taken by ENA post funding and agreeing not to
+issue entitlement orders in respect of their security interest in the Escrow
+Account if these actions are completed.
+
+Tokens:
+[Text=Carolyn CharacterOffsetBegin=523 CharacterOffsetEnd=530 PartOfSpeech=NNP Lemma=Carolyn NamedEntityTag=PERSON]
+[Text=We CharacterOffsetBegin=531 CharacterOffsetEnd=533 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=attach CharacterOffsetBegin=534 CharacterOffsetEnd=540 PartOfSpeech=VBP Lemma=attach NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=541 CharacterOffsetEnd=544 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=following CharacterOffsetBegin=545 CharacterOffsetEnd=554 PartOfSpeech=NN Lemma=following NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=554 CharacterOffsetEnd=555 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=556 CharacterOffsetEnd=557 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=557 CharacterOffsetEnd=558 PartOfSpeech=LS Lemma=a NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=558 CharacterOffsetEnd=559 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=560 CharacterOffsetEnd=561 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=clean CharacterOffsetBegin=562 CharacterOffsetEnd=567 PartOfSpeech=JJ Lemma=clean NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=568 CharacterOffsetEnd=571 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=blacklined CharacterOffsetBegin=572 CharacterOffsetEnd=582 PartOfSpeech=JJ Lemma=blacklined NamedEntityTag=O]
+[Text=copy CharacterOffsetBegin=583 CharacterOffsetEnd=587 PartOfSpeech=NN Lemma=copy NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=588 CharacterOffsetEnd=590 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=591 CharacterOffsetEnd=594 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=ENA CharacterOffsetBegin=595 CharacterOffsetEnd=598 PartOfSpeech=NNP Lemma=ENA NamedEntityTag=ORGANIZATION]
+[Text=Consent CharacterOffsetBegin=599 CharacterOffsetEnd=606 PartOfSpeech=NNP Lemma=Consent NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=606 CharacterOffsetEnd=607 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=reflecting CharacterOffsetBegin=608 CharacterOffsetEnd=618 PartOfSpeech=VBG Lemma=reflect NamedEntityTag=O]
+[Text=changes CharacterOffsetBegin=619 CharacterOffsetEnd=626 PartOfSpeech=NNS Lemma=change NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=627 CharacterOffsetEnd=629 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=630 CharacterOffsetEnd=633 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=credit CharacterOffsetBegin=634 CharacterOffsetEnd=640 PartOfSpeech=NN Lemma=credit NamedEntityTag=O]
+[Text=documentation CharacterOffsetBegin=641 CharacterOffsetEnd=654 PartOfSpeech=NN Lemma=documentation NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=654 CharacterOffsetEnd=655 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=656 CharacterOffsetEnd=657 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=b CharacterOffsetBegin=657 CharacterOffsetEnd=658 PartOfSpeech=LS Lemma=b NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=658 CharacterOffsetEnd=659 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=660 CharacterOffsetEnd=661 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=mark-up CharacterOffsetBegin=662 CharacterOffsetEnd=669 PartOfSpeech=NN Lemma=mark-up NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=670 CharacterOffsetEnd=672 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=673 CharacterOffsetEnd=676 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=677 CharacterOffsetEnd=678 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=678 CharacterOffsetEnd=680 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=objection CharacterOffsetBegin=681 CharacterOffsetEnd=690 PartOfSpeech=NN Lemma=objection NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=691 CharacterOffsetEnd=693 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=forms CharacterOffsetBegin=694 CharacterOffsetEnd=699 PartOfSpeech=NNS Lemma=form NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=699 CharacterOffsetEnd=700 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=letter CharacterOffsetBegin=701 CharacterOffsetEnd=707 PartOfSpeech=NN Lemma=letter NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=708 CharacterOffsetEnd=710 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=711 CharacterOffsetEnd=713 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=executed CharacterOffsetBegin=714 CharacterOffsetEnd=722 PartOfSpeech=VBN Lemma=execute NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=723 CharacterOffsetEnd=725 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=ENA CharacterOffsetBegin=726 CharacterOffsetEnd=729 PartOfSpeech=NN Lemma=ena NamedEntityTag=ORGANIZATION]
+[Text=; CharacterOffsetBegin=729 CharacterOffsetEnd=730 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=731 CharacterOffsetEnd=732 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=c CharacterOffsetBegin=732 CharacterOffsetEnd=733 PartOfSpeech=LS Lemma=c NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=733 CharacterOffsetEnd=734 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=735 CharacterOffsetEnd=736 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=draft CharacterOffsetBegin=737 CharacterOffsetEnd=742 PartOfSpeech=NN Lemma=draft NamedEntityTag=O]
+[Text=letter CharacterOffsetBegin=743 CharacterOffsetEnd=749 PartOfSpeech=NN Lemma=letter NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=750 CharacterOffsetEnd=754 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=755 CharacterOffsetEnd=758 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=purchasers CharacterOffsetBegin=759 CharacterOffsetEnd=769 PartOfSpeech=NNS Lemma=purchaser NamedEntityTag=O]
+[Text=under CharacterOffsetBegin=770 CharacterOffsetEnd=775 PartOfSpeech=IN Lemma=under NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=776 CharacterOffsetEnd=779 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Note CharacterOffsetBegin=780 CharacterOffsetEnd=784 PartOfSpeech=NN Lemma=note NamedEntityTag=MISC]
+[Text=Purchase CharacterOffsetBegin=785 CharacterOffsetEnd=793 PartOfSpeech=NNP Lemma=Purchase NamedEntityTag=MISC]
+[Text=Agreement CharacterOffsetBegin=794 CharacterOffsetEnd=803 PartOfSpeech=NNP Lemma=Agreement NamedEntityTag=MISC]
+[Text=setting CharacterOffsetBegin=804 CharacterOffsetEnd=811 PartOfSpeech=VBG Lemma=set NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=812 CharacterOffsetEnd=815 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=816 CharacterOffsetEnd=819 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=actions CharacterOffsetBegin=820 CharacterOffsetEnd=827 PartOfSpeech=NNS Lemma=action NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=828 CharacterOffsetEnd=830 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=831 CharacterOffsetEnd=833 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=taken CharacterOffsetBegin=834 CharacterOffsetEnd=839 PartOfSpeech=VBN Lemma=take NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=840 CharacterOffsetEnd=842 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=ENA CharacterOffsetBegin=843 CharacterOffsetEnd=846 PartOfSpeech=NNP Lemma=ENA NamedEntityTag=O]
+[Text=post CharacterOffsetBegin=847 CharacterOffsetEnd=851 PartOfSpeech=NN Lemma=post NamedEntityTag=O]
+[Text=funding CharacterOffsetBegin=852 CharacterOffsetEnd=859 PartOfSpeech=NN Lemma=funding NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=860 CharacterOffsetEnd=863 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=agreeing CharacterOffsetBegin=864 CharacterOffsetEnd=872 PartOfSpeech=VBG Lemma=agree NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=873 CharacterOffsetEnd=876 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=877 CharacterOffsetEnd=879 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=issue CharacterOffsetBegin=880 CharacterOffsetEnd=885 PartOfSpeech=VB Lemma=issue NamedEntityTag=O]
+[Text=entitlement CharacterOffsetBegin=886 CharacterOffsetEnd=897 PartOfSpeech=NN Lemma=entitlement NamedEntityTag=O]
+[Text=orders CharacterOffsetBegin=898 CharacterOffsetEnd=904 PartOfSpeech=NNS Lemma=order NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=905 CharacterOffsetEnd=907 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=respect CharacterOffsetBegin=908 CharacterOffsetEnd=915 PartOfSpeech=NN Lemma=respect NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=916 CharacterOffsetEnd=918 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=919 CharacterOffsetEnd=924 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=security CharacterOffsetBegin=925 CharacterOffsetEnd=933 PartOfSpeech=NN Lemma=security NamedEntityTag=O]
+[Text=interest CharacterOffsetBegin=934 CharacterOffsetEnd=942 PartOfSpeech=NN Lemma=interest NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=943 CharacterOffsetEnd=945 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=946 CharacterOffsetEnd=949 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Escrow CharacterOffsetBegin=950 CharacterOffsetEnd=956 PartOfSpeech=NNP Lemma=Escrow NamedEntityTag=O]
+[Text=Account CharacterOffsetBegin=957 CharacterOffsetEnd=964 PartOfSpeech=NNP Lemma=Account NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=965 CharacterOffsetEnd=967 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=968 CharacterOffsetEnd=973 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=actions CharacterOffsetBegin=974 CharacterOffsetEnd=981 PartOfSpeech=NNS Lemma=action NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=982 CharacterOffsetEnd=985 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=completed CharacterOffsetBegin=986 CharacterOffsetEnd=995 PartOfSpeech=VBN Lemma=complete NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=995 CharacterOffsetEnd=996 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP
+      (NP (NNP Carolyn))
+      (SBAR
+        (S
+          (NP (PRP We))
+          (VP (VBP attach)
+            (NP
+              (NP (DT the) (NN following))
+              (: :)
+              (NP
+                (NP
+                  (LST (-LRB- -LRB-) (LS a) (-RRB- -RRB-))
+                  (NP (DT a) (JJ clean)
+                    (CC and)
+                    (JJ blacklined) (NN copy))
+                  (PP (IN of)
+                    (NP
+                      (NP (DT the) (NNP ENA) (NNP Consent))
+                      (, ,)
+                      (VP (VBG reflecting)
+                        (NP (NNS changes))
+                        (PP (TO to)
+                          (NP (DT the) (NN credit) (NN documentation)))))))
+                (: ;)
+                (NP
+                  (LST (-LRB- -LRB-) (LS b) (-RRB- -RRB-))
+                  (NP (DT a) (NN mark-up))
+                  (PP (IN of)
+                    (NP
+                      (NP (DT the)
+                        (NP (`` ``)
+                          (NP (DT no) (NN objection))
+                          (PP (TO to)
+                            (NP (NNS forms)))
+                          ('' ''))
+                        (NN letter))
+                      (SBAR
+                        (S
+                          (VP (TO to)
+                            (VP (VB be)
+                              (VP (VBN executed)
+                                (PP (IN by)
+                                  (NP (NN ENA)))))))))))
+                (: ;)
+                (NP
+                  (LST (-LRB- -LRB-) (LS c) (-RRB- -RRB-))
+                  (NP (DT a) (NN draft) (NN letter))
+                  (PP (IN from)
+                    (NP
+                      (NP (DT the) (NNS purchasers))
+                      (PP (IN under)
+                        (NP (DT the) (NN Note))))))))))))
+    (NP
+      (NP (NNP Purchase) (NNP Agreement))
+      (VP
+        (VP (VBG setting)
+          (PRT (RP out))
+          (NP (DT the) (NNS actions))
+          (S
+            (VP (TO to)
+              (VP (VB be)
+                (VP (VBN taken)
+                  (PP (IN by)
+                    (NP (NNP ENA) (NN post) (NN funding))))))))
+        (CC and)
+        (VP (VBG agreeing)
+          (S (RB not)
+            (VP (TO to)
+              (VP (VB issue)
+                (NP (NN entitlement) (NNS orders))
+                (PP (IN in)
+                  (NP
+                    (NP (NN respect))
+                    (PP (IN of)
+                      (NP
+                        (NP (PRP$ their) (NN security) (NN interest))
+                        (PP (IN in)
+                          (NP (DT the) (NNP Escrow) (NNP Account)))))))
+                (SBAR (IN if)
+                  (S
+                    (NP (DT these) (NNS actions))
+                    (VP (VBP are)
+                      (VP (VBN completed)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Carolyn-1)
+nsubj(attach-3, We-2)
+acl:relcl(Carolyn-1, attach-3)
+det(following-5, the-4)
+dobj(attach-3, following-5)
+punct(following-5, :-6)
+punct(a-8, -LRB--7)
+dep(copy-14, a-8)
+punct(a-8, -RRB--9)
+det(copy-14, a-10)
+amod(copy-14, clean-11)
+cc(clean-11, and-12)
+conj:and(clean-11, blacklined-13)
+amod(copy-14, blacklined-13)
+dep(following-5, copy-14)
+case(Consent-18, of-15)
+det(Consent-18, the-16)
+compound(Consent-18, ENA-17)
+nmod:of(copy-14, Consent-18)
+punct(Consent-18, ,-19)
+acl(Consent-18, reflecting-20)
+dobj(reflecting-20, changes-21)
+case(documentation-25, to-22)
+det(documentation-25, the-23)
+compound(documentation-25, credit-24)
+nmod:to(reflecting-20, documentation-25)
+punct(copy-14, ;-26)
+punct(b-28, -LRB--27)
+dep(mark-up-31, b-28)
+punct(b-28, -RRB--29)
+det(mark-up-31, a-30)
+dep(copy-14, mark-up-31)
+case(letter-40, of-32)
+det(letter-40, the-33)
+punct(objection-36, ``-34)
+neg(objection-36, no-35)
+compound(letter-40, objection-36)
+case(forms-38, to-37)
+nmod:to(objection-36, forms-38)
+punct(objection-36, ''-39)
+nmod:of(mark-up-31, letter-40)
+mark(executed-43, to-41)
+auxpass(executed-43, be-42)
+acl:to(letter-40, executed-43)
+case(ENA-45, by-44)
+nmod:agent(executed-43, ENA-45)
+punct(copy-14, ;-46)
+punct(c-48, -LRB--47)
+dep(letter-52, c-48)
+punct(c-48, -RRB--49)
+det(letter-52, a-50)
+compound(letter-52, draft-51)
+dep(copy-14, letter-52)
+case(purchasers-55, from-53)
+det(purchasers-55, the-54)
+nmod:from(letter-52, purchasers-55)
+case(Note-58, under-56)
+det(Note-58, the-57)
+nmod:under(purchasers-55, Note-58)
+compound(Agreement-60, Purchase-59)
+dep(Carolyn-1, Agreement-60)
+dep(Agreement-60, setting-61)
+compound:prt(setting-61, out-62)
+det(actions-64, the-63)
+dobj(setting-61, actions-64)
+mark(taken-67, to-65)
+auxpass(taken-67, be-66)
+advcl:to(setting-61, taken-67)
+case(funding-71, by-68)
+compound(funding-71, ENA-69)
+compound(funding-71, post-70)
+nmod:agent(taken-67, funding-71)
+cc(setting-61, and-72)
+dep(Agreement-60, agreeing-73)
+conj:and(setting-61, agreeing-73)
+neg(issue-76, not-74)
+mark(issue-76, to-75)
+xcomp(agreeing-73, issue-76)
+compound(orders-78, entitlement-77)
+dobj(issue-76, orders-78)
+case(respect-80, in-79)
+nmod:in(issue-76, respect-80)
+case(interest-84, of-81)
+nmod:poss(interest-84, their-82)
+compound(interest-84, security-83)
+nmod:of(respect-80, interest-84)
+case(Account-88, in-85)
+det(Account-88, the-86)
+compound(Account-88, Escrow-87)
+nmod:in(interest-84, Account-88)
+mark(completed-93, if-89)
+det(actions-91, these-90)
+nsubjpass(completed-93, actions-91)
+auxpass(completed-93, are-92)
+advcl:if(issue-76, completed-93)
+punct(Carolyn-1, .-94)
+
+Extracted the following NER entity mentions:
+Carolyn	PERSON
+ENA	ORGANIZATION
+ENA	ORGANIZATION
+Note Purchase Agreement	MISC
+
+Sentence #8 (31 tokens):
+We would be grateful if you could confirm whether Citibank had any comments
+on the Escrow Agreement, and whether the account will be set up for
+Wednesday's funding.
+
+Tokens:
+[Text=We CharacterOffsetBegin=997 CharacterOffsetEnd=999 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=1000 CharacterOffsetEnd=1005 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=1006 CharacterOffsetEnd=1008 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=grateful CharacterOffsetBegin=1009 CharacterOffsetEnd=1017 PartOfSpeech=JJ Lemma=grateful NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=1018 CharacterOffsetEnd=1020 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=1021 CharacterOffsetEnd=1024 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=1025 CharacterOffsetEnd=1030 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=confirm CharacterOffsetBegin=1031 CharacterOffsetEnd=1038 PartOfSpeech=VB Lemma=confirm NamedEntityTag=O]
+[Text=whether CharacterOffsetBegin=1039 CharacterOffsetEnd=1046 PartOfSpeech=IN Lemma=whether NamedEntityTag=O]
+[Text=Citibank CharacterOffsetBegin=1047 CharacterOffsetEnd=1055 PartOfSpeech=NNP Lemma=Citibank NamedEntityTag=ORGANIZATION]
+[Text=had CharacterOffsetBegin=1056 CharacterOffsetEnd=1059 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=1060 CharacterOffsetEnd=1063 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=comments CharacterOffsetBegin=1064 CharacterOffsetEnd=1072 PartOfSpeech=NNS Lemma=comment NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=1073 CharacterOffsetEnd=1075 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1076 CharacterOffsetEnd=1079 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Escrow CharacterOffsetBegin=1080 CharacterOffsetEnd=1086 PartOfSpeech=NNP Lemma=Escrow NamedEntityTag=MISC]
+[Text=Agreement CharacterOffsetBegin=1087 CharacterOffsetEnd=1096 PartOfSpeech=NNP Lemma=Agreement NamedEntityTag=MISC]
+[Text=, CharacterOffsetBegin=1096 CharacterOffsetEnd=1097 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1098 CharacterOffsetEnd=1101 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=whether CharacterOffsetBegin=1102 CharacterOffsetEnd=1109 PartOfSpeech=IN Lemma=whether NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1110 CharacterOffsetEnd=1113 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=account CharacterOffsetBegin=1114 CharacterOffsetEnd=1121 PartOfSpeech=NN Lemma=account NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=1122 CharacterOffsetEnd=1126 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=1127 CharacterOffsetEnd=1129 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=set CharacterOffsetBegin=1130 CharacterOffsetEnd=1133 PartOfSpeech=VBN Lemma=set NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=1134 CharacterOffsetEnd=1136 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=1137 CharacterOffsetEnd=1140 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Wednesday CharacterOffsetBegin=1141 CharacterOffsetEnd=1150 PartOfSpeech=NNP Lemma=Wednesday NamedEntityTag=DATE NormalizedNamedEntityTag=wednesday]
+[Text='s CharacterOffsetBegin=1150 CharacterOffsetEnd=1152 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=funding CharacterOffsetBegin=1153 CharacterOffsetEnd=1160 PartOfSpeech=NN Lemma=funding NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1160 CharacterOffsetEnd=1161 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (MD would)
+      (VP (VB be)
+        (ADJP (JJ grateful))
+        (SBAR (IN if)
+          (S
+            (NP (PRP you))
+            (VP (MD could)
+              (VP (VB confirm)
+                (SBAR
+                  (SBAR (IN whether)
+                    (S
+                      (NP (NNP Citibank))
+                      (VP (VBD had)
+                        (NP
+                          (NP (DT any) (NNS comments))
+                          (PP (IN on)
+                            (NP (DT the) (NNP Escrow) (NNP Agreement)))))))
+                  (, ,)
+                  (CC and)
+                  (SBAR (IN whether)
+                    (S
+                      (NP (DT the) (NN account))
+                      (VP (MD will)
+                        (VP (VB be)
+                          (VP (VBN set)
+                            (PRT (RP up))
+                            (PP (IN for)
+                              (NP
+                                (NP (NNP Wednesday) (POS 's))
+                                (NN funding)))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, grateful-4)
+nsubj(grateful-4, We-1)
+aux(grateful-4, would-2)
+cop(grateful-4, be-3)
+mark(confirm-8, if-5)
+nsubj(confirm-8, you-6)
+aux(confirm-8, could-7)
+advcl:if(grateful-4, confirm-8)
+mark(had-11, whether-9)
+nsubj(had-11, Citibank-10)
+ccomp(confirm-8, had-11)
+det(comments-13, any-12)
+dobj(had-11, comments-13)
+case(Agreement-17, on-14)
+det(Agreement-17, the-15)
+compound(Agreement-17, Escrow-16)
+nmod:on(comments-13, Agreement-17)
+punct(had-11, ,-18)
+cc(had-11, and-19)
+mark(set-25, whether-20)
+det(account-22, the-21)
+nsubjpass(set-25, account-22)
+aux(set-25, will-23)
+auxpass(set-25, be-24)
+ccomp(confirm-8, set-25)
+conj:and(had-11, set-25)
+compound:prt(set-25, up-26)
+case(funding-30, for-27)
+nmod:poss(funding-30, Wednesday-28)
+case(Wednesday-28, 's-29)
+nmod:for(set-25, funding-30)
+punct(grateful-4, .-31)
+
+Extracted the following NER entity mentions:
+Citibank	ORGANIZATION
+Escrow Agreement	MISC
+Wednesday	DATE
+
+Coreference set:
+	(2,5,[5,6]) -> (1,2,[1,3]), that is: "it" -> "This e-mail"
+	(2,14,[14,15]) -> (1,2,[1,3]), that is: "its" -> "This e-mail"
+
+Coreference set:
+	(6,3,[3,4]) -> (3,3,[3,4]), that is: "our" -> "us"
+	(7,2,[2,3]) -> (3,3,[3,4]), that is: "We" -> "us"
+	(8,1,[1,2]) -> (3,3,[3,4]), that is: "We" -> "us"
+
+Coreference set:
+	(4,5,[5,6]) -> (3,7,[6,8]), that is: "it" -> "reply e-mail"
+	(4,8,[8,9]) -> (3,7,[6,8]), that is: "it" -> "reply e-mail"
+	(4,15,[15,16]) -> (3,7,[6,8]), that is: "its" -> "reply e-mail"
+
+Coreference set:
+	(7,58,[58,61]) -> (7,58,[57,59]), that is: "Note Purchase Agreement" -> "the Note"
+
+Coreference set:
+	(7,60,[59,94]) -> (8,17,[15,18]), that is: "Purchase Agreement setting out the actions to be taken by ENA post funding and agreeing not to issue entitlement orders in respect of their security interest in the Escrow Account if these actions are completed" -> "the Escrow Agreement"
+	(8,17,[16,18]) -> (8,17,[15,18]), that is: "Escrow Agreement" -> "the Escrow Agreement"
+
+Coreference set:
+	(7,91,[90,92]) -> (7,64,[63,65]), that is: "these actions" -> "the actions"
+
+Coreference set:
+	(8,22,[21,23]) -> (7,88,[86,89]), that is: "the account" -> "the Escrow Account"

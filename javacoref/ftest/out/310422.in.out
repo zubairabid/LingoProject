@@ -1,0 +1,362 @@
+Document: ID=310422.in (5 sentences, 91 tokens)
+
+Sentence #1 (10 tokens):
+John,
+Following are the placements that are confirmed.
+
+Tokens:
+[Text=John CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=John NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Following CharacterOffsetBegin=6 CharacterOffsetEnd=15 PartOfSpeech=VBG Lemma=follow NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=placements CharacterOffsetBegin=24 CharacterOffsetEnd=34 PartOfSpeech=NNS Lemma=placement NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=confirmed CharacterOffsetBegin=44 CharacterOffsetEnd=53 PartOfSpeech=VBN Lemma=confirm NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP John))
+    (, ,)
+    (S
+      (VP (VBG Following)))
+    (VP (VBP are)
+      (NP
+        (NP (DT the) (NNS placements))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBP are)
+              (VP (VBN confirmed)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, placements-6)
+nsubj(placements-6, John-1)
+punct(placements-6, ,-2)
+advcl(placements-6, Following-3)
+cop(placements-6, are-4)
+det(placements-6, the-5)
+nsubjpass(confirmed-9, placements-6)
+ref(placements-6, that-7)
+auxpass(confirmed-9, are-8)
+acl:relcl(placements-6, confirmed-9)
+punct(placements-6, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (15 tokens):
+Those on your list that are
+not confirmed were placed previously in other units.
+
+Tokens:
+[Text=Those CharacterOffsetBegin=56 CharacterOffsetEnd=61 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=62 CharacterOffsetEnd=64 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=list CharacterOffsetBegin=70 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=list NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=75 CharacterOffsetEnd=79 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=80 CharacterOffsetEnd=83 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=84 CharacterOffsetEnd=87 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=confirmed CharacterOffsetBegin=88 CharacterOffsetEnd=97 PartOfSpeech=VBN Lemma=confirm NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=98 CharacterOffsetEnd=102 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=placed CharacterOffsetBegin=103 CharacterOffsetEnd=109 PartOfSpeech=VBN Lemma=place NamedEntityTag=O]
+[Text=previously CharacterOffsetBegin=110 CharacterOffsetEnd=120 PartOfSpeech=RB Lemma=previously NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=121 CharacterOffsetEnd=123 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=124 CharacterOffsetEnd=129 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=units CharacterOffsetBegin=130 CharacterOffsetEnd=135 PartOfSpeech=NNS Lemma=unit NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=135 CharacterOffsetEnd=136 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT Those))
+      (PP (IN on)
+        (NP
+          (NP (PRP$ your) (NN list))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBP are) (RB not)
+                (VP (VBN confirmed))))))))
+    (VP (VBD were)
+      (VP (VBN placed)
+        (ADVP (RB previously))
+        (PP (IN in)
+          (NP (JJ other) (NNS units)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, placed-10)
+nsubjpass(placed-10, Those-1)
+case(list-4, on-2)
+nmod:poss(list-4, your-3)
+nmod:on(Those-1, list-4)
+nsubjpass(confirmed-8, list-4)
+ref(list-4, that-5)
+auxpass(confirmed-8, are-6)
+neg(confirmed-8, not-7)
+acl:relcl(list-4, confirmed-8)
+auxpass(placed-10, were-9)
+advmod(placed-10, previously-11)
+case(units-14, in-12)
+amod(units-14, other-13)
+nmod:in(placed-10, units-14)
+punct(placed-10, .-15)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (22 tokens):
+It is my understanding
+that these individuals will see other areas for their development, i.e.
+origination, structuring and/or transactions.
+
+Tokens:
+[Text=It CharacterOffsetBegin=138 CharacterOffsetEnd=140 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=141 CharacterOffsetEnd=143 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=144 CharacterOffsetEnd=146 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=understanding CharacterOffsetBegin=147 CharacterOffsetEnd=160 PartOfSpeech=NN Lemma=understanding NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=161 CharacterOffsetEnd=165 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=166 CharacterOffsetEnd=171 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=individuals CharacterOffsetBegin=172 CharacterOffsetEnd=183 PartOfSpeech=NNS Lemma=individual NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=184 CharacterOffsetEnd=188 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=189 CharacterOffsetEnd=192 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=193 CharacterOffsetEnd=198 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=areas CharacterOffsetBegin=199 CharacterOffsetEnd=204 PartOfSpeech=NNS Lemma=area NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=205 CharacterOffsetEnd=208 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=209 CharacterOffsetEnd=214 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=development CharacterOffsetBegin=215 CharacterOffsetEnd=226 PartOfSpeech=NN Lemma=development NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=226 CharacterOffsetEnd=227 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=i.e. CharacterOffsetBegin=228 CharacterOffsetEnd=232 PartOfSpeech=FW Lemma=i.e. NamedEntityTag=O]
+[Text=origination CharacterOffsetBegin=233 CharacterOffsetEnd=244 PartOfSpeech=NN Lemma=origination NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=244 CharacterOffsetEnd=245 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=structuring CharacterOffsetBegin=246 CharacterOffsetEnd=257 PartOfSpeech=VBG Lemma=structure NamedEntityTag=O]
+[Text=and/or CharacterOffsetBegin=258 CharacterOffsetEnd=264 PartOfSpeech=CC Lemma=and/or NamedEntityTag=O]
+[Text=transactions CharacterOffsetBegin=265 CharacterOffsetEnd=277 PartOfSpeech=NNS Lemma=transaction NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=277 CharacterOffsetEnd=278 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (NP (PRP$ my) (NN understanding))
+      (SBAR (IN that)
+        (S
+          (NP (DT these) (NNS individuals))
+          (VP (MD will)
+            (VP (VB see)
+              (NP (JJ other) (NNS areas))
+              (PP (IN for)
+                (S
+                  (NP
+                    (NP (PRP$ their) (NN development))
+                    (, ,)
+                    (NP
+                      (NP (FW i.e.))
+                      (NP (NN origination)))
+                    (, ,))
+                  (VP (VBG structuring)
+                    (S
+                      (NP (CC and/or))
+                      (NP (NNS transactions)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, understanding-4)
+nsubj(understanding-4, It-1)
+cop(understanding-4, is-2)
+nmod:poss(understanding-4, my-3)
+mark(see-9, that-5)
+det(individuals-7, these-6)
+nsubj(see-9, individuals-7)
+aux(see-9, will-8)
+ccomp(understanding-4, see-9)
+amod(areas-11, other-10)
+dobj(see-9, areas-11)
+mark(structuring-19, for-12)
+nmod:poss(development-14, their-13)
+nsubj(structuring-19, development-14)
+punct(development-14, ,-15)
+appos(development-14, i.e.-16)
+dep(i.e.-16, origination-17)
+punct(development-14, ,-18)
+advcl:for(see-9, structuring-19)
+nsubj(transactions-21, and/or-20)
+xcomp(structuring-19, transactions-21)
+punct(understanding-4, .-22)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (12 tokens):
+If you have any questions
+please feel free to call x39523.
+
+Tokens:
+[Text=If CharacterOffsetBegin=280 CharacterOffsetEnd=282 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=283 CharacterOffsetEnd=286 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=287 CharacterOffsetEnd=291 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=292 CharacterOffsetEnd=295 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=questions CharacterOffsetBegin=296 CharacterOffsetEnd=305 PartOfSpeech=NNS Lemma=question NamedEntityTag=O]
+[Text=please CharacterOffsetBegin=306 CharacterOffsetEnd=312 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=feel CharacterOffsetBegin=313 CharacterOffsetEnd=317 PartOfSpeech=VB Lemma=feel NamedEntityTag=O]
+[Text=free CharacterOffsetBegin=318 CharacterOffsetEnd=322 PartOfSpeech=JJ Lemma=free NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=323 CharacterOffsetEnd=325 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=call CharacterOffsetBegin=326 CharacterOffsetEnd=330 PartOfSpeech=VB Lemma=call NamedEntityTag=O]
+[Text=x39523 CharacterOffsetBegin=331 CharacterOffsetEnd=337 PartOfSpeech=NN Lemma=x39523 NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=337 CharacterOffsetEnd=338 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP have)
+          (S
+            (NP (DT any) (NNS questions))
+            (VP (VB please))))))
+    (VP (VB feel)
+      (ADJP (JJ free)
+        (S
+          (VP (TO to)
+            (VP (VB call)
+              (NP (NN x39523)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, feel-7)
+mark(have-3, If-1)
+nsubj(have-3, you-2)
+csubj(feel-7, have-3)
+det(questions-5, any-4)
+nsubj(please-6, questions-5)
+ccomp(have-3, please-6)
+xcomp(feel-7, free-8)
+mark(call-10, to-9)
+xcomp(free-8, call-10)
+dobj(call-10, x39523-11)
+punct(feel-7, .-12)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (32 tokens):
+Gas
+Associates
+Dustin Collins
+Vikas Dwivedi
+Li Sun
+Analysts
+Nate Blackburn
+Sachin Gandhi
+Miguel Nasser
+Power
+Associates
+Doug Seaworth
+Eduardo Gil
+Pearce Hammond
+David Maskel
+Michael Kelly
+Analysts
+Possey Martinez
+Gary Justice
+
+Tokens:
+[Text=Gas CharacterOffsetBegin=339 CharacterOffsetEnd=342 PartOfSpeech=NNP Lemma=Gas NamedEntityTag=O]
+[Text=Associates CharacterOffsetBegin=343 CharacterOffsetEnd=353 PartOfSpeech=NNPS Lemma=Associates NamedEntityTag=O]
+[Text=Dustin CharacterOffsetBegin=354 CharacterOffsetEnd=360 PartOfSpeech=NNP Lemma=Dustin NamedEntityTag=PERSON]
+[Text=Collins CharacterOffsetBegin=361 CharacterOffsetEnd=368 PartOfSpeech=NNP Lemma=Collins NamedEntityTag=PERSON]
+[Text=Vikas CharacterOffsetBegin=369 CharacterOffsetEnd=374 PartOfSpeech=NNP Lemma=Vikas NamedEntityTag=PERSON]
+[Text=Dwivedi CharacterOffsetBegin=375 CharacterOffsetEnd=382 PartOfSpeech=NNP Lemma=Dwivedi NamedEntityTag=PERSON]
+[Text=Li CharacterOffsetBegin=383 CharacterOffsetEnd=385 PartOfSpeech=NNP Lemma=Li NamedEntityTag=PERSON]
+[Text=Sun CharacterOffsetBegin=386 CharacterOffsetEnd=389 PartOfSpeech=NNP Lemma=Sun NamedEntityTag=ORGANIZATION]
+[Text=Analysts CharacterOffsetBegin=390 CharacterOffsetEnd=398 PartOfSpeech=NNS Lemma=analyst NamedEntityTag=ORGANIZATION]
+[Text=Nate CharacterOffsetBegin=399 CharacterOffsetEnd=403 PartOfSpeech=NNP Lemma=Nate NamedEntityTag=ORGANIZATION]
+[Text=Blackburn CharacterOffsetBegin=404 CharacterOffsetEnd=413 PartOfSpeech=NNP Lemma=Blackburn NamedEntityTag=ORGANIZATION]
+[Text=Sachin CharacterOffsetBegin=414 CharacterOffsetEnd=420 PartOfSpeech=NNP Lemma=Sachin NamedEntityTag=ORGANIZATION]
+[Text=Gandhi CharacterOffsetBegin=421 CharacterOffsetEnd=427 PartOfSpeech=NNP Lemma=Gandhi NamedEntityTag=ORGANIZATION]
+[Text=Miguel CharacterOffsetBegin=428 CharacterOffsetEnd=434 PartOfSpeech=NNP Lemma=Miguel NamedEntityTag=ORGANIZATION]
+[Text=Nasser CharacterOffsetBegin=435 CharacterOffsetEnd=441 PartOfSpeech=NNP Lemma=Nasser NamedEntityTag=ORGANIZATION]
+[Text=Power CharacterOffsetBegin=442 CharacterOffsetEnd=447 PartOfSpeech=NNP Lemma=Power NamedEntityTag=ORGANIZATION]
+[Text=Associates CharacterOffsetBegin=448 CharacterOffsetEnd=458 PartOfSpeech=NNPS Lemma=Associates NamedEntityTag=ORGANIZATION]
+[Text=Doug CharacterOffsetBegin=459 CharacterOffsetEnd=463 PartOfSpeech=NNP Lemma=Doug NamedEntityTag=ORGANIZATION]
+[Text=Seaworth CharacterOffsetBegin=464 CharacterOffsetEnd=472 PartOfSpeech=NNP Lemma=Seaworth NamedEntityTag=ORGANIZATION]
+[Text=Eduardo CharacterOffsetBegin=473 CharacterOffsetEnd=480 PartOfSpeech=NNP Lemma=Eduardo NamedEntityTag=ORGANIZATION]
+[Text=Gil CharacterOffsetBegin=481 CharacterOffsetEnd=484 PartOfSpeech=NNP Lemma=Gil NamedEntityTag=ORGANIZATION]
+[Text=Pearce CharacterOffsetBegin=485 CharacterOffsetEnd=491 PartOfSpeech=NNP Lemma=Pearce NamedEntityTag=ORGANIZATION]
+[Text=Hammond CharacterOffsetBegin=492 CharacterOffsetEnd=499 PartOfSpeech=NNP Lemma=Hammond NamedEntityTag=ORGANIZATION]
+[Text=David CharacterOffsetBegin=500 CharacterOffsetEnd=505 PartOfSpeech=NNP Lemma=David NamedEntityTag=ORGANIZATION]
+[Text=Maskel CharacterOffsetBegin=506 CharacterOffsetEnd=512 PartOfSpeech=NNP Lemma=Maskel NamedEntityTag=ORGANIZATION]
+[Text=Michael CharacterOffsetBegin=513 CharacterOffsetEnd=520 PartOfSpeech=NNP Lemma=Michael NamedEntityTag=ORGANIZATION]
+[Text=Kelly CharacterOffsetBegin=521 CharacterOffsetEnd=526 PartOfSpeech=NNP Lemma=Kelly NamedEntityTag=ORGANIZATION]
+[Text=Analysts CharacterOffsetBegin=527 CharacterOffsetEnd=535 PartOfSpeech=NNS Lemma=analyst NamedEntityTag=ORGANIZATION]
+[Text=Possey CharacterOffsetBegin=536 CharacterOffsetEnd=542 PartOfSpeech=NNP Lemma=Possey NamedEntityTag=PERSON]
+[Text=Martinez CharacterOffsetBegin=543 CharacterOffsetEnd=551 PartOfSpeech=NNP Lemma=Martinez NamedEntityTag=PERSON]
+[Text=Gary CharacterOffsetBegin=552 CharacterOffsetEnd=556 PartOfSpeech=NNP Lemma=Gary NamedEntityTag=PERSON]
+[Text=Justice CharacterOffsetBegin=557 CharacterOffsetEnd=564 PartOfSpeech=NNP Lemma=Justice NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Gas) (NNPS Associates) (NNP Dustin) (NNP Collins) (NNP Vikas) (NNP Dwivedi) (NNP Li))
+    (NP
+      (NP (NNP Sun) (NNS Analysts) (NNP Nate) (NNP Blackburn) (NNP Sachin) (NNP Gandhi) (NNP Miguel) (NNP Nasser) (NNP Power) (NNPS Associates) (NNP Doug))
+      (NP (NNP Seaworth) (NNP Eduardo) (NNP Gil) (NNP Pearce) (NNP Hammond) (NNP David) (NNP Maskel) (NNP Michael) (NNP Kelly) (NNS Analysts)))
+    (NP (NNP Possey) (NNP Martinez) (NNP Gary) (NNP Justice))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Li-7)
+compound(Li-7, Gas-1)
+compound(Li-7, Associates-2)
+compound(Li-7, Dustin-3)
+compound(Li-7, Collins-4)
+compound(Li-7, Vikas-5)
+compound(Li-7, Dwivedi-6)
+compound(Doug-18, Sun-8)
+compound(Doug-18, Analysts-9)
+compound(Doug-18, Nate-10)
+compound(Doug-18, Blackburn-11)
+compound(Doug-18, Sachin-12)
+compound(Doug-18, Gandhi-13)
+compound(Doug-18, Miguel-14)
+compound(Doug-18, Nasser-15)
+compound(Doug-18, Power-16)
+compound(Doug-18, Associates-17)
+dep(Li-7, Doug-18)
+compound(Analysts-28, Seaworth-19)
+compound(Analysts-28, Eduardo-20)
+compound(Analysts-28, Gil-21)
+compound(Analysts-28, Pearce-22)
+compound(Analysts-28, Hammond-23)
+compound(Analysts-28, David-24)
+compound(Analysts-28, Maskel-25)
+compound(Analysts-28, Michael-26)
+compound(Analysts-28, Kelly-27)
+dep(Doug-18, Analysts-28)
+compound(Justice-32, Possey-29)
+compound(Justice-32, Martinez-30)
+compound(Justice-32, Gary-31)
+dep(Li-7, Justice-32)
+
+Extracted the following NER entity mentions:
+Dustin Collins Vikas Dwivedi Li	PERSON
+Sun Analysts Nate Blackburn Sachin Gandhi Miguel Nasser Power Associates Doug Seaworth Eduardo Gil Pearce Hammond David Maskel Michael Kelly Analysts	ORGANIZATION
+Possey Martinez Gary Justice	PERSON
+
+Coreference set:
+	(2,1,[1,9]) -> (3,4,[3,5]), that is: "Those on your list that are not confirmed" -> "my understanding"
+	(3,1,[1,2]) -> (3,4,[3,5]), that is: "It" -> "my understanding"
+
+Coreference set:
+	(3,13,[13,14]) -> (3,7,[6,8]), that is: "their" -> "these individuals"
+
+Coreference set:
+	(3,16,[16,18]) -> (3,14,[13,15]), that is: "i.e. origination" -> "their development"

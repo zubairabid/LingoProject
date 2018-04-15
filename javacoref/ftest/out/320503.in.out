@@ -1,0 +1,126 @@
+Document: ID=320503.in (3 sentences, 27 tokens)
+
+Sentence #1 (12 tokens):
+Looks like 200 Friday,  May 18th for a status/download meeting.
+
+Tokens:
+[Text=Looks CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=VBZ Lemma=look NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=200 CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=CD Lemma=200 NamedEntityTag=NUMBER NormalizedNamedEntityTag=200.0]
+[Text=Friday CharacterOffsetBegin=15 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=Friday NamedEntityTag=DATE NormalizedNamedEntityTag=****0518]
+[Text=, CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=, Lemma=, NamedEntityTag=DATE NormalizedNamedEntityTag=****0518]
+[Text=May CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=May NamedEntityTag=DATE NormalizedNamedEntityTag=****0518]
+[Text=18th CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=JJ Lemma=18th NamedEntityTag=DATE NormalizedNamedEntityTag=****0518]
+[Text=for CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=status/download CharacterOffsetBegin=39 CharacterOffsetEnd=54 PartOfSpeech=JJ Lemma=status/download NamedEntityTag=O]
+[Text=meeting CharacterOffsetBegin=55 CharacterOffsetEnd=62 PartOfSpeech=NN Lemma=meeting NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBZ Looks)
+      (PP (IN like)
+        (NP
+          (NP (CD 200) (NNP Friday) (, ,) (NNP May))
+          (JJ 18th) (IN for)
+          (NP (DT a) (JJ status/download) (NN meeting)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Looks-1)
+case(May-6, like-2)
+nummod(May-6, 200-3)
+compound(May-6, Friday-4)
+punct(May-6, ,-5)
+nmod:like(Looks-1, May-6)
+amod(May-6, 18th-7)
+amod(May-6, for-8)
+det(meeting-11, a-9)
+amod(meeting-11, status/download-10)
+dep(May-6, meeting-11)
+punct(Looks-1, .-12)
+
+Extracted the following NER entity mentions:
+200	NUMBER
+Friday, May 18th	DATE
+
+Sentence #2 (13 tokens):
+Suz, please find a room and notify folks and their assistants.
+
+Tokens:
+[Text=Suz CharacterOffsetBegin=64 CharacterOffsetEnd=67 PartOfSpeech=NNP Lemma=Suz NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=please CharacterOffsetBegin=69 CharacterOffsetEnd=75 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=find CharacterOffsetBegin=76 CharacterOffsetEnd=80 PartOfSpeech=VB Lemma=find NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=room CharacterOffsetBegin=83 CharacterOffsetEnd=87 PartOfSpeech=NN Lemma=room NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=88 CharacterOffsetEnd=91 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=notify CharacterOffsetBegin=92 CharacterOffsetEnd=98 PartOfSpeech=VB Lemma=notify NamedEntityTag=O]
+[Text=folks CharacterOffsetBegin=99 CharacterOffsetEnd=104 PartOfSpeech=NNS Lemma=folk NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=105 CharacterOffsetEnd=108 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=109 CharacterOffsetEnd=114 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=assistants CharacterOffsetBegin=115 CharacterOffsetEnd=125 PartOfSpeech=NNS Lemma=assistant NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=125 CharacterOffsetEnd=126 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Suz))
+    (, ,)
+    (VP (VB please)
+      (VP
+        (VP (VB find)
+          (NP (DT a) (NN room)))
+        (CC and)
+        (VP (VB notify)
+          (NP
+            (NP (NNS folks))
+            (CC and)
+            (NP (PRP$ their) (NNS assistants))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, please-3)
+nsubj(please-3, Suz-1)
+punct(please-3, ,-2)
+dep(please-3, find-4)
+det(room-6, a-5)
+dobj(find-4, room-6)
+cc(find-4, and-7)
+dep(please-3, notify-8)
+conj:and(find-4, notify-8)
+dobj(notify-8, folks-9)
+cc(folks-9, and-10)
+nmod:poss(assistants-12, their-11)
+dobj(notify-8, assistants-12)
+conj:and(folks-9, assistants-12)
+punct(please-3, .-13)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (2 tokens):
+Thanks,
+
+Tokens:
+[Text=Thanks CharacterOffsetBegin=127 CharacterOffsetEnd=133 PartOfSpeech=NNS Lemma=thanks NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=133 CharacterOffsetEnd=134 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (PP (NNS Thanks))
+    (, ,)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Thanks-1)
+punct(Thanks-1, ,-2)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(2,11,[11,12]) -> (2,9,[9,10]), that is: "their" -> "folks"
