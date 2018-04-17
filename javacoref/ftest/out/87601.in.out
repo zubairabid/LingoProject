@@ -1,0 +1,200 @@
+Document: ID=87601.in (3 sentences, 48 tokens)
+
+Sentence #1 (18 tokens):
+TCPL has replied to the NEB they and the signatories wish to proceed with their application unamended.
+
+Tokens:
+[Text=TCPL CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=TCPL NamedEntityTag=ORGANIZATION]
+[Text=has CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=replied CharacterOffsetBegin=9 CharacterOffsetEnd=16 PartOfSpeech=VBN Lemma=reply NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=NEB CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=NEB NamedEntityTag=ORGANIZATION]
+[Text=they CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=signatories CharacterOffsetBegin=41 CharacterOffsetEnd=52 PartOfSpeech=NNS Lemma=signatory NamedEntityTag=O]
+[Text=wish CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=VBP Lemma=wish NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=proceed CharacterOffsetBegin=61 CharacterOffsetEnd=68 PartOfSpeech=VB Lemma=proceed NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=69 CharacterOffsetEnd=73 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=74 CharacterOffsetEnd=79 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=application CharacterOffsetBegin=80 CharacterOffsetEnd=91 PartOfSpeech=NN Lemma=application NamedEntityTag=O]
+[Text=unamended CharacterOffsetBegin=92 CharacterOffsetEnd=101 PartOfSpeech=JJ Lemma=unamended NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=101 CharacterOffsetEnd=102 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NNP TCPL))
+      (VP (VBZ has)
+        (VP (VBN replied)
+          (PP (TO to)
+            (NP (DT the) (NNP NEB)))
+          (NP (PRP they)))))
+    (CC and)
+    (S
+      (NP (DT the) (NNS signatories))
+      (VP (VBP wish)
+        (S
+          (VP (TO to)
+            (VP (VB proceed)
+              (PP (IN with)
+                (NP (PRP$ their) (NN application)))
+              (ADJP (JJ unamended)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, replied-3)
+nsubj(replied-3, TCPL-1)
+aux(replied-3, has-2)
+case(NEB-6, to-4)
+det(NEB-6, the-5)
+nmod:to(replied-3, NEB-6)
+dobj(replied-3, they-7)
+cc(replied-3, and-8)
+det(signatories-10, the-9)
+nsubj(wish-11, signatories-10)
+nsubj:xsubj(proceed-13, signatories-10)
+conj:and(replied-3, wish-11)
+mark(proceed-13, to-12)
+xcomp(wish-11, proceed-13)
+case(application-16, with-14)
+nmod:poss(application-16, their-15)
+nmod:with(proceed-13, application-16)
+xcomp(proceed-13, unamended-17)
+punct(replied-3, .-18)
+
+Extracted the following NER entity mentions:
+TCPL	ORGANIZATION
+NEB	ORGANIZATION
+
+Sentence #2 (9 tokens):
+Now for the board to establish a process.
+
+Tokens:
+[Text=Now CharacterOffsetBegin=104 CharacterOffsetEnd=107 PartOfSpeech=RB Lemma=now NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=108 CharacterOffsetEnd=111 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=112 CharacterOffsetEnd=115 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=board CharacterOffsetBegin=116 CharacterOffsetEnd=121 PartOfSpeech=NN Lemma=board NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=122 CharacterOffsetEnd=124 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=establish CharacterOffsetBegin=125 CharacterOffsetEnd=134 PartOfSpeech=VB Lemma=establish NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=135 CharacterOffsetEnd=136 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=process CharacterOffsetBegin=137 CharacterOffsetEnd=144 PartOfSpeech=NN Lemma=process NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=144 CharacterOffsetEnd=145 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (ADVP (RB Now))
+    (SBAR (IN for)
+      (S
+        (NP (DT the) (NN board))
+        (VP (TO to)
+          (VP (VB establish)
+            (NP (DT a) (NN process))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Now-1)
+mark(establish-6, for-2)
+det(board-4, the-3)
+nsubj(establish-6, board-4)
+mark(establish-6, to-5)
+dep(Now-1, establish-6)
+det(process-8, a-7)
+dobj(establish-6, process-8)
+punct(Now-1, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (21 tokens):
+The earliest this could be in place would be August 1 but realistically it could be much later than that.
+
+Tokens:
+[Text=The CharacterOffsetBegin=147 CharacterOffsetEnd=150 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=earliest CharacterOffsetBegin=151 CharacterOffsetEnd=159 PartOfSpeech=JJS Lemma=earliest NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=160 CharacterOffsetEnd=164 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=165 CharacterOffsetEnd=170 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=171 CharacterOffsetEnd=173 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=174 CharacterOffsetEnd=176 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=place CharacterOffsetBegin=177 CharacterOffsetEnd=182 PartOfSpeech=NN Lemma=place NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=183 CharacterOffsetEnd=188 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=189 CharacterOffsetEnd=191 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=August CharacterOffsetBegin=192 CharacterOffsetEnd=198 PartOfSpeech=NNP Lemma=August NamedEntityTag=DATE NormalizedNamedEntityTag=****0801]
+[Text=1 CharacterOffsetBegin=199 CharacterOffsetEnd=200 PartOfSpeech=CD Lemma=1 NamedEntityTag=DATE NormalizedNamedEntityTag=****0801]
+[Text=but CharacterOffsetBegin=201 CharacterOffsetEnd=204 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=realistically CharacterOffsetBegin=205 CharacterOffsetEnd=218 PartOfSpeech=RB Lemma=realistically NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=219 CharacterOffsetEnd=221 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=222 CharacterOffsetEnd=227 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=228 CharacterOffsetEnd=230 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=231 CharacterOffsetEnd=235 PartOfSpeech=RB Lemma=much NamedEntityTag=O]
+[Text=later CharacterOffsetBegin=236 CharacterOffsetEnd=241 PartOfSpeech=RB Lemma=later NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=242 CharacterOffsetEnd=246 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=247 CharacterOffsetEnd=251 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=251 CharacterOffsetEnd=252 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT The) (JJS earliest))
+        (SBAR
+          (S
+            (NP (DT this))
+            (VP (MD could)
+              (VP (VB be)
+                (PP (IN in)
+                  (NP (NN place))))))))
+      (VP (MD would)
+        (VP (VB be)
+          (NP (NNP August) (CD 1)))))
+    (CC but)
+    (ADVP (RB realistically))
+    (S
+      (NP (PRP it))
+      (VP (MD could)
+        (VP (VB be)
+          (ADVP (RB much) (RB later))
+          (PP (IN than)
+            (NP (DT that))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, August-10)
+det(earliest-2, The-1)
+nsubj(August-10, earliest-2)
+nsubj(place-7, this-3)
+aux(place-7, could-4)
+cop(place-7, be-5)
+case(place-7, in-6)
+acl:relcl(earliest-2, place-7)
+aux(August-10, would-8)
+cop(August-10, be-9)
+nummod(August-10, 1-11)
+cc(August-10, but-12)
+advmod(that-20, realistically-13)
+nsubj(that-20, it-14)
+aux(that-20, could-15)
+cop(that-20, be-16)
+advmod(later-18, much-17)
+advmod(that-20, later-18)
+case(that-20, than-19)
+conj:but(August-10, that-20)
+punct(August-10, .-21)
+
+Extracted the following NER entity mentions:
+August 1	DATE
+
+Coreference set:
+	(1,15,[15,16]) -> (1,10,[9,11]), that is: "their" -> "the signatories"
+
+Coreference set:
+	(3,2,[1,8]) -> (3,10,[10,12]), that is: "The earliest this could be in place" -> "August 1"
+	(3,14,[14,15]) -> (3,10,[10,12]), that is: "it" -> "August 1"
+	(3,20,[20,21]) -> (3,10,[10,12]), that is: "that" -> "August 1"

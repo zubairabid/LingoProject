@@ -1,0 +1,324 @@
+Document: ID=809698.in (7 sentences, 69 tokens)
+
+Sentence #1 (2 tokens):
+FYI!
+
+Tokens:
+[Text=FYI CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=FYI NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP FYI))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, FYI-1)
+punct(FYI-1, !-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (16 tokens):
+Pacific Atlantic Resources is going to be adding a new meter to their
+existing contract.
+
+Tokens:
+[Text=Pacific CharacterOffsetBegin=6 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Pacific NamedEntityTag=ORGANIZATION]
+[Text=Atlantic CharacterOffsetBegin=14 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=Atlantic NamedEntityTag=ORGANIZATION]
+[Text=Resources CharacterOffsetBegin=23 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Resources NamedEntityTag=ORGANIZATION]
+[Text=is CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=going CharacterOffsetBegin=36 CharacterOffsetEnd=41 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=adding CharacterOffsetBegin=48 CharacterOffsetEnd=54 PartOfSpeech=VBG Lemma=add NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=meter CharacterOffsetBegin=61 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=meter NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=70 CharacterOffsetEnd=75 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=existing CharacterOffsetBegin=76 CharacterOffsetEnd=84 PartOfSpeech=VBG Lemma=exist NamedEntityTag=O]
+[Text=contract CharacterOffsetBegin=85 CharacterOffsetEnd=93 PartOfSpeech=NN Lemma=contract NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=93 CharacterOffsetEnd=94 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Pacific) (NNP Atlantic) (NNP Resources))
+    (VP (VBZ is)
+      (VP (VBG going)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (VP (VBG adding)
+                (NP (DT a) (JJ new) (NN meter))
+                (PP (TO to)
+                  (NP (PRP$ their) (VBG existing) (NN contract)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, going-5)
+compound(Resources-3, Pacific-1)
+compound(Resources-3, Atlantic-2)
+nsubj(going-5, Resources-3)
+nsubj:xsubj(adding-8, Resources-3)
+aux(going-5, is-4)
+mark(adding-8, to-6)
+aux(adding-8, be-7)
+xcomp(going-5, adding-8)
+det(meter-11, a-9)
+amod(meter-11, new-10)
+dobj(adding-8, meter-11)
+case(contract-15, to-12)
+nmod:poss(contract-15, their-13)
+amod(contract-15, existing-14)
+nmod:to(adding-8, contract-15)
+punct(going-5, .-16)
+
+Extracted the following NER entity mentions:
+Pacific Atlantic Resources	ORGANIZATION
+
+Sentence #3 (14 tokens):
+The meter is on CNG (Hastings) and the number is
+3571701.
+
+Tokens:
+[Text=The CharacterOffsetBegin=96 CharacterOffsetEnd=99 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=meter CharacterOffsetBegin=100 CharacterOffsetEnd=105 PartOfSpeech=NN Lemma=meter NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=106 CharacterOffsetEnd=108 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=109 CharacterOffsetEnd=111 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=CNG CharacterOffsetBegin=112 CharacterOffsetEnd=115 PartOfSpeech=NNP Lemma=CNG NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=116 CharacterOffsetEnd=117 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Hastings CharacterOffsetBegin=117 CharacterOffsetEnd=125 PartOfSpeech=NNP Lemma=Hastings NamedEntityTag=PERSON]
+[Text=-RRB- CharacterOffsetBegin=125 CharacterOffsetEnd=126 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=127 CharacterOffsetEnd=130 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=131 CharacterOffsetEnd=134 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=number CharacterOffsetBegin=135 CharacterOffsetEnd=141 PartOfSpeech=NN Lemma=number NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=142 CharacterOffsetEnd=144 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=3571701 CharacterOffsetBegin=145 CharacterOffsetEnd=152 PartOfSpeech=CD Lemma=3571701 NamedEntityTag=NUMBER NormalizedNamedEntityTag=3571701.0]
+[Text=. CharacterOffsetBegin=152 CharacterOffsetEnd=153 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN meter))
+      (VP (VBZ is)
+        (PP (IN on)
+          (NP
+            (NP (NNP CNG))
+            (PRN (-LRB- -LRB-)
+              (NP (NNP Hastings))
+              (-RRB- -RRB-))))))
+    (CC and)
+    (S
+      (NP (DT the) (NN number))
+      (VP (VBZ is)
+        (NP (CD 3571701))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, CNG-5)
+det(meter-2, The-1)
+nsubj(CNG-5, meter-2)
+cop(CNG-5, is-3)
+case(CNG-5, on-4)
+punct(Hastings-7, -LRB--6)
+appos(CNG-5, Hastings-7)
+punct(Hastings-7, -RRB--8)
+cc(CNG-5, and-9)
+det(number-11, the-10)
+nsubj(3571701-13, number-11)
+cop(3571701-13, is-12)
+conj:and(CNG-5, 3571701-13)
+punct(CNG-5, .-14)
+
+Extracted the following NER entity mentions:
+Hastings	PERSON
+3571701	NUMBER
+
+Sentence #4 (8 tokens):
+The meter is estimated at 10 dth/day.
+
+Tokens:
+[Text=The CharacterOffsetBegin=155 CharacterOffsetEnd=158 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=meter CharacterOffsetBegin=159 CharacterOffsetEnd=164 PartOfSpeech=NN Lemma=meter NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=165 CharacterOffsetEnd=167 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=estimated CharacterOffsetBegin=168 CharacterOffsetEnd=177 PartOfSpeech=VBN Lemma=estimate NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=178 CharacterOffsetEnd=180 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=10 CharacterOffsetBegin=181 CharacterOffsetEnd=183 PartOfSpeech=CD Lemma=10 NamedEntityTag=NUMBER NormalizedNamedEntityTag=10.0]
+[Text=dth/day CharacterOffsetBegin=184 CharacterOffsetEnd=191 PartOfSpeech=NN Lemma=dth/day NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=191 CharacterOffsetEnd=192 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN meter))
+    (VP (VBZ is)
+      (VP (VBN estimated)
+        (PP (IN at)
+          (NP (CD 10) (NN dth/day)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, estimated-4)
+det(meter-2, The-1)
+nsubjpass(estimated-4, meter-2)
+auxpass(estimated-4, is-3)
+case(dth/day-7, at-5)
+nummod(dth/day-7, 10-6)
+nmod:at(estimated-4, dth/day-7)
+punct(estimated-4, .-8)
+
+Extracted the following NER entity mentions:
+10	NUMBER
+
+Sentence #5 (16 tokens):
+The well name is Morris #1
+and is located in Ritchie County, WV.
+
+Tokens:
+[Text=The CharacterOffsetBegin=194 CharacterOffsetEnd=197 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=198 CharacterOffsetEnd=202 PartOfSpeech=NN Lemma=well NamedEntityTag=O]
+[Text=name CharacterOffsetBegin=203 CharacterOffsetEnd=207 PartOfSpeech=NN Lemma=name NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=208 CharacterOffsetEnd=210 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=Morris CharacterOffsetBegin=211 CharacterOffsetEnd=217 PartOfSpeech=NNP Lemma=Morris NamedEntityTag=PERSON]
+[Text=# CharacterOffsetBegin=218 CharacterOffsetEnd=219 PartOfSpeech=# Lemma=# NamedEntityTag=MONEY NormalizedNamedEntityTag=£1.0]
+[Text=1 CharacterOffsetBegin=219 CharacterOffsetEnd=220 PartOfSpeech=CD Lemma=1 NamedEntityTag=MONEY NormalizedNamedEntityTag=£1.0]
+[Text=and CharacterOffsetBegin=221 CharacterOffsetEnd=224 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=225 CharacterOffsetEnd=227 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=located CharacterOffsetBegin=228 CharacterOffsetEnd=235 PartOfSpeech=JJ Lemma=located NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=236 CharacterOffsetEnd=238 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Ritchie CharacterOffsetBegin=239 CharacterOffsetEnd=246 PartOfSpeech=NNP Lemma=Ritchie NamedEntityTag=CITY]
+[Text=County CharacterOffsetBegin=247 CharacterOffsetEnd=253 PartOfSpeech=NNP Lemma=County NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=253 CharacterOffsetEnd=254 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=WV CharacterOffsetBegin=255 CharacterOffsetEnd=257 PartOfSpeech=NNP Lemma=WV NamedEntityTag=STATE_OR_PROVINCE]
+[Text=. CharacterOffsetBegin=257 CharacterOffsetEnd=258 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN well) (NN name))
+    (VP
+      (VP (VBZ is)
+        (NP
+          (NP (NNP Morris))
+          (ADJP (# #) (CD 1))))
+      (CC and)
+      (VP (VBZ is)
+        (ADJP (JJ located)
+          (PP (IN in)
+            (NP
+              (NP (NNP Ritchie) (NNP County))
+              (, ,)
+              (NP (NNP WV)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Morris-5)
+det(name-3, The-1)
+compound(name-3, well-2)
+nsubj(Morris-5, name-3)
+nsubj(located-10, name-3)
+cop(Morris-5, is-4)
+compound(1-7, #-6)
+amod(Morris-5, 1-7)
+cc(Morris-5, and-8)
+cop(located-10, is-9)
+conj:and(Morris-5, located-10)
+case(County-13, in-11)
+compound(County-13, Ritchie-12)
+nmod:in(located-10, County-13)
+punct(County-13, ,-14)
+appos(County-13, WV-15)
+punct(Morris-5, .-16)
+
+Extracted the following NER entity mentions:
+Morris	PERSON
+#1	MONEY
+Ritchie	CITY
+County	LOCATION
+WV	STATE_OR_PROVINCE
+
+Sentence #6 (10 tokens):
+Please let me know if anyone has any
+questions.
+
+Tokens:
+[Text=Please CharacterOffsetBegin=260 CharacterOffsetEnd=266 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=let CharacterOffsetBegin=267 CharacterOffsetEnd=270 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=271 CharacterOffsetEnd=273 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=274 CharacterOffsetEnd=278 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=279 CharacterOffsetEnd=281 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=anyone CharacterOffsetBegin=282 CharacterOffsetEnd=288 PartOfSpeech=NN Lemma=anyone NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=289 CharacterOffsetEnd=292 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=293 CharacterOffsetEnd=296 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=questions CharacterOffsetBegin=297 CharacterOffsetEnd=306 PartOfSpeech=NNS Lemma=question NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=306 CharacterOffsetEnd=307 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (INTJ (VB Please))
+      (VP (VB let)
+        (S
+          (NP (PRP me))
+          (VP (VB know)
+            (PP (IN if)
+              (NP (NN anyone)))))))
+    (VP (VBZ has)
+      (NP (DT any) (NNS questions)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, has-7)
+discourse(let-2, Please-1)
+csubj(has-7, let-2)
+nsubj(know-4, me-3)
+ccomp(let-2, know-4)
+case(anyone-6, if-5)
+nmod:if(know-4, anyone-6)
+det(questions-9, any-8)
+dobj(has-7, questions-9)
+punct(has-7, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #7 (3 tokens):
+Thanks,
+Heidi
+
+Tokens:
+[Text=Thanks CharacterOffsetBegin=309 CharacterOffsetEnd=315 PartOfSpeech=NNS Lemma=thanks NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=315 CharacterOffsetEnd=316 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Heidi CharacterOffsetBegin=317 CharacterOffsetEnd=322 PartOfSpeech=NNP Lemma=Heidi NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNS Thanks))
+    (, ,)
+    (NP (NNP Heidi))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Thanks-1)
+punct(Thanks-1, ,-2)
+appos(Thanks-1, Heidi-3)
+
+Extracted the following NER entity mentions:
+Heidi	PERSON
+
+Coreference set:
+	(3,2,[1,3]) -> (2,11,[9,12]), that is: "The meter" -> "a new meter"
+	(4,2,[1,3]) -> (2,11,[9,12]), that is: "The meter" -> "a new meter"
+
+Coreference set:
+	(3,11,[10,12]) -> (3,13,[13,14]), that is: "the number" -> "3571701"

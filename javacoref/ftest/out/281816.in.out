@@ -1,0 +1,438 @@
+Document: ID=281816.in (7 sentences, 105 tokens)
+
+Sentence #1 (16 tokens):
+With all due respect "Judge" that is not the issue in this case.
+
+Tokens:
+[Text=With CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=due CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=JJ Lemma=due NamedEntityTag=O]
+[Text=respect CharacterOffsetBegin=13 CharacterOffsetEnd=20 PartOfSpeech=NN Lemma=respect NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Judge CharacterOffsetBegin=22 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=Judge NamedEntityTag=TITLE]
+[Text='' CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=issue CharacterOffsetBegin=45 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=issue NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=51 CharacterOffsetEnd=53 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=case CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=case NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=63 CharacterOffsetEnd=64 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN With)
+      (NP (DT all) (JJ due) (NN respect) (`` ``) (NNP Judge) ('' '')))
+    (NP (WDT that))
+    (VP (VBZ is) (RB not)
+      (NP
+        (NP (DT the) (NN issue))
+        (PP (IN in)
+          (NP (DT this) (NN case)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, issue-12)
+case(Judge-6, With-1)
+det(Judge-6, all-2)
+amod(Judge-6, due-3)
+compound(Judge-6, respect-4)
+punct(Judge-6, ``-5)
+nmod:with(issue-12, Judge-6)
+punct(Judge-6, ''-7)
+nsubj(issue-12, that-8)
+cop(issue-12, is-9)
+neg(issue-12, not-10)
+det(issue-12, the-11)
+case(case-15, in-13)
+det(case-15, this-14)
+nmod:in(issue-12, case-15)
+punct(issue-12, .-16)
+
+Extracted the following NER entity mentions:
+Judge	TITLE
+
+Sentence #2 (12 tokens):
+Calling
+911 because some chick tries to use a fake ID???
+
+Tokens:
+[Text=Calling CharacterOffsetBegin=66 CharacterOffsetEnd=73 PartOfSpeech=VBG Lemma=call NamedEntityTag=O]
+[Text=911 CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=CD Lemma=911 NamedEntityTag=NUMBER NormalizedNamedEntityTag=911.0]
+[Text=because CharacterOffsetBegin=78 CharacterOffsetEnd=85 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=86 CharacterOffsetEnd=90 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=chick CharacterOffsetBegin=91 CharacterOffsetEnd=96 PartOfSpeech=NN Lemma=chick NamedEntityTag=O]
+[Text=tries CharacterOffsetBegin=97 CharacterOffsetEnd=102 PartOfSpeech=VBZ Lemma=try NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=103 CharacterOffsetEnd=105 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=use CharacterOffsetBegin=106 CharacterOffsetEnd=109 PartOfSpeech=VB Lemma=use NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=110 CharacterOffsetEnd=111 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=fake CharacterOffsetBegin=112 CharacterOffsetEnd=116 PartOfSpeech=JJ Lemma=fake NamedEntityTag=O]
+[Text=ID CharacterOffsetBegin=117 CharacterOffsetEnd=119 PartOfSpeech=NNP Lemma=ID NamedEntityTag=STATE_OR_PROVINCE]
+[Text=??? CharacterOffsetBegin=119 CharacterOffsetEnd=122 PartOfSpeech=CD Lemma=??? NamedEntityTag=NUMBER]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBG Calling)
+      (NP (CD 911))
+      (SBAR (IN because)
+        (S
+          (NP (DT some) (NN chick))
+          (VP (VBZ tries)
+            (S
+              (VP (TO to)
+                (VP (VB use)
+                  (NP (DT a)
+                    (ADJP (JJ fake))
+                    (NNP ID) (CD ???)))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Calling-1)
+dobj(Calling-1, 911-2)
+mark(tries-6, because-3)
+det(chick-5, some-4)
+nsubj(tries-6, chick-5)
+nsubj:xsubj(use-8, chick-5)
+advcl:because(Calling-1, tries-6)
+mark(use-8, to-7)
+xcomp(tries-6, use-8)
+det(ID-11, a-9)
+amod(ID-11, fake-10)
+dobj(use-8, ID-11)
+nummod(ID-11, ???-12)
+
+Extracted the following NER entity mentions:
+911	NUMBER
+ID	STATE_OR_PROVINCE
+???	NUMBER
+
+Sentence #3 (15 tokens):
+Does Chuy's call 911 every
+time a minor tries to buy a drink?
+
+Tokens:
+[Text=Does CharacterOffsetBegin=124 CharacterOffsetEnd=128 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=Chuy CharacterOffsetBegin=129 CharacterOffsetEnd=133 PartOfSpeech=NNP Lemma=Chuy NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=133 CharacterOffsetEnd=135 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=call CharacterOffsetBegin=136 CharacterOffsetEnd=140 PartOfSpeech=NN Lemma=call NamedEntityTag=O]
+[Text=911 CharacterOffsetBegin=141 CharacterOffsetEnd=144 PartOfSpeech=CD Lemma=911 NamedEntityTag=NUMBER NormalizedNamedEntityTag=911.0]
+[Text=every CharacterOffsetBegin=145 CharacterOffsetEnd=150 PartOfSpeech=DT Lemma=every NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=151 CharacterOffsetEnd=155 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=156 CharacterOffsetEnd=157 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=minor CharacterOffsetBegin=158 CharacterOffsetEnd=163 PartOfSpeech=JJ Lemma=minor NamedEntityTag=O]
+[Text=tries CharacterOffsetBegin=164 CharacterOffsetEnd=169 PartOfSpeech=VBZ Lemma=try NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=170 CharacterOffsetEnd=172 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=buy CharacterOffsetBegin=173 CharacterOffsetEnd=176 PartOfSpeech=VB Lemma=buy NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=177 CharacterOffsetEnd=178 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=drink CharacterOffsetBegin=179 CharacterOffsetEnd=184 PartOfSpeech=NN Lemma=drink NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=184 CharacterOffsetEnd=185 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (VBZ Does)
+        (NP
+          (NP (NNP Chuy) (POS 's))
+          (NN call) (CD 911))))
+    (NP
+      (NP (DT every) (NN time))
+      (ADJP (DT a) (JJ minor)))
+    (VP (VBZ tries)
+      (S
+        (VP (TO to)
+          (VP (VB buy)
+            (NP (DT a) (NN drink))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, tries-10)
+dep(tries-10, Does-1)
+nmod:poss(call-4, Chuy-2)
+case(Chuy-2, 's-3)
+dobj(Does-1, call-4)
+nummod(call-4, 911-5)
+det(time-7, every-6)
+nsubj(tries-10, time-7)
+nsubj:xsubj(buy-12, time-7)
+det(minor-9, a-8)
+amod(time-7, minor-9)
+mark(buy-12, to-11)
+xcomp(tries-10, buy-12)
+det(drink-14, a-13)
+dobj(buy-12, drink-14)
+punct(tries-10, ?-15)
+
+Extracted the following NER entity mentions:
+Chuy	PERSON
+911	NUMBER
+
+Sentence #4 (4 tokens):
+Of course not.
+
+Tokens:
+[Text=Of CharacterOffsetBegin=187 CharacterOffsetEnd=189 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=course CharacterOffsetBegin=190 CharacterOffsetEnd=196 PartOfSpeech=NN Lemma=course NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=197 CharacterOffsetEnd=200 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=200 CharacterOffsetEnd=201 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (PP (IN Of)
+      (NP (NN course) (RB not)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, course-2)
+case(course-2, Of-1)
+neg(course-2, not-3)
+punct(course-2, .-4)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (39 tokens):
+By the way, I live in Austin and have eaten at Chuy's many times and can
+testify first hand to the fact that I have seen many people drinking their
+who were obviously not yet 21.
+
+Tokens:
+[Text=By CharacterOffsetBegin=202 CharacterOffsetEnd=204 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=205 CharacterOffsetEnd=208 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=way CharacterOffsetBegin=209 CharacterOffsetEnd=212 PartOfSpeech=NN Lemma=way NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=212 CharacterOffsetEnd=213 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=214 CharacterOffsetEnd=215 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=live CharacterOffsetBegin=216 CharacterOffsetEnd=220 PartOfSpeech=VBP Lemma=live NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=221 CharacterOffsetEnd=223 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Austin CharacterOffsetBegin=224 CharacterOffsetEnd=230 PartOfSpeech=NNP Lemma=Austin NamedEntityTag=CITY]
+[Text=and CharacterOffsetBegin=231 CharacterOffsetEnd=234 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=235 CharacterOffsetEnd=239 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=eaten CharacterOffsetBegin=240 CharacterOffsetEnd=245 PartOfSpeech=VBN Lemma=eat NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=246 CharacterOffsetEnd=248 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Chuy CharacterOffsetBegin=249 CharacterOffsetEnd=253 PartOfSpeech=NNP Lemma=Chuy NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=253 CharacterOffsetEnd=255 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=many CharacterOffsetBegin=256 CharacterOffsetEnd=260 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=times CharacterOffsetBegin=261 CharacterOffsetEnd=266 PartOfSpeech=NNS Lemma=time NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=267 CharacterOffsetEnd=270 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=271 CharacterOffsetEnd=274 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=testify CharacterOffsetBegin=275 CharacterOffsetEnd=282 PartOfSpeech=VB Lemma=testify NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=283 CharacterOffsetEnd=288 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=hand CharacterOffsetBegin=289 CharacterOffsetEnd=293 PartOfSpeech=NN Lemma=hand NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=294 CharacterOffsetEnd=296 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=297 CharacterOffsetEnd=300 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=fact CharacterOffsetBegin=301 CharacterOffsetEnd=305 PartOfSpeech=NN Lemma=fact NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=306 CharacterOffsetEnd=310 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=311 CharacterOffsetEnd=312 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=313 CharacterOffsetEnd=317 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=seen CharacterOffsetBegin=318 CharacterOffsetEnd=322 PartOfSpeech=VBN Lemma=see NamedEntityTag=O]
+[Text=many CharacterOffsetBegin=323 CharacterOffsetEnd=327 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=328 CharacterOffsetEnd=334 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=drinking CharacterOffsetBegin=335 CharacterOffsetEnd=343 PartOfSpeech=VBG Lemma=drink NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=344 CharacterOffsetEnd=349 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=350 CharacterOffsetEnd=353 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=354 CharacterOffsetEnd=358 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=obviously CharacterOffsetBegin=359 CharacterOffsetEnd=368 PartOfSpeech=RB Lemma=obviously NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=369 CharacterOffsetEnd=372 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=yet CharacterOffsetBegin=373 CharacterOffsetEnd=376 PartOfSpeech=RB Lemma=yet NamedEntityTag=O]
+[Text=21 CharacterOffsetBegin=377 CharacterOffsetEnd=379 PartOfSpeech=CD Lemma=21 NamedEntityTag=NUMBER NormalizedNamedEntityTag=21.0]
+[Text=. CharacterOffsetBegin=379 CharacterOffsetEnd=380 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN By)
+      (NP (DT the) (NN way)))
+    (, ,)
+    (NP (PRP I))
+    (VP
+      (VP (VBP live)
+        (PP (IN in)
+          (NP (NNP Austin))))
+      (CC and)
+      (VP
+        (VP (VBP have)
+          (VP (VBN eaten)
+            (PP (IN at)
+              (NP
+                (NP (NNP Chuy) (POS 's))
+                (JJ many) (NNS times)))))
+        (CC and)
+        (VP (MD can)
+          (VP (VB testify)
+            (NP (JJ first) (NN hand))
+            (PP (TO to)
+              (NP (DT the) (NN fact)))
+            (SBAR (IN that)
+              (S
+                (NP (PRP I))
+                (VP (VBP have)
+                  (VP (VBN seen)
+                    (NP
+                      (NP (JJ many) (NNS people))
+                      (VP (VBG drinking)
+                        (NP (PRP$ their)))
+                      (SBAR
+                        (WHNP (WP who))
+                        (S
+                          (VP (VBD were)
+                            (ADVP (RB obviously) (RB not))
+                            (ADVP (RB yet))))))))))))
+        (NP (CD 21))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, live-6)
+case(way-3, By-1)
+det(way-3, the-2)
+nmod:by(live-6, way-3)
+punct(live-6, ,-4)
+nsubj(live-6, I-5)
+nsubj(eaten-11, I-5)
+case(Austin-8, in-7)
+nmod:in(live-6, Austin-8)
+cc(live-6, and-9)
+aux(eaten-11, have-10)
+conj:and(live-6, eaten-11)
+case(times-16, at-12)
+nmod:poss(times-16, Chuy-13)
+case(Chuy-13, 's-14)
+amod(times-16, many-15)
+nmod:at(eaten-11, times-16)
+cc(eaten-11, and-17)
+aux(testify-19, can-18)
+conj:and(live-6, testify-19)
+conj:and(eaten-11, testify-19)
+amod(hand-21, first-20)
+dobj(testify-19, hand-21)
+case(fact-24, to-22)
+det(fact-24, the-23)
+nmod:to(testify-19, fact-24)
+mark(seen-28, that-25)
+nsubj(seen-28, I-26)
+aux(seen-28, have-27)
+ccomp(testify-19, seen-28)
+amod(people-30, many-29)
+dobj(seen-28, people-30)
+nsubj(were-34, people-30)
+acl(people-30, drinking-31)
+dobj(drinking-31, their-32)
+ref(people-30, who-33)
+acl:relcl(people-30, were-34)
+advmod(not-36, obviously-35)
+neg(were-34, not-36)
+advmod(were-34, yet-37)
+dobj(eaten-11, 21-38)
+punct(live-6, .-39)
+
+Extracted the following NER entity mentions:
+Austin	CITY
+Chuy	ORGANIZATION
+first	ORDINAL
+21	NUMBER
+
+Sentence #6 (12 tokens):
+The manager of Chuy's took a stand on the
+issue?
+
+Tokens:
+[Text=The CharacterOffsetBegin=382 CharacterOffsetEnd=385 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=manager CharacterOffsetBegin=386 CharacterOffsetEnd=393 PartOfSpeech=NN Lemma=manager NamedEntityTag=TITLE]
+[Text=of CharacterOffsetBegin=394 CharacterOffsetEnd=396 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Chuy CharacterOffsetBegin=397 CharacterOffsetEnd=401 PartOfSpeech=NNP Lemma=Chuy NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=401 CharacterOffsetEnd=403 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=took CharacterOffsetBegin=404 CharacterOffsetEnd=408 PartOfSpeech=VBD Lemma=take NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=409 CharacterOffsetEnd=410 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=stand CharacterOffsetBegin=411 CharacterOffsetEnd=416 PartOfSpeech=NN Lemma=stand NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=417 CharacterOffsetEnd=419 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=420 CharacterOffsetEnd=423 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=issue CharacterOffsetBegin=424 CharacterOffsetEnd=429 PartOfSpeech=NN Lemma=issue NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=429 CharacterOffsetEnd=430 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN manager))
+      (PP (IN of)
+        (NP (NNP Chuy) (POS 's))))
+    (VP (VBD took)
+      (NP (DT a) (NN stand))
+      (PP (IN on)
+        (NP (DT the) (NN issue))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, took-6)
+det(manager-2, The-1)
+nsubj(took-6, manager-2)
+case(Chuy-4, of-3)
+nmod:of(manager-2, Chuy-4)
+case(Chuy-4, 's-5)
+det(stand-8, a-7)
+dobj(took-6, stand-8)
+case(issue-11, on-9)
+det(issue-11, the-10)
+nmod:on(took-6, issue-11)
+punct(took-6, ?-12)
+
+Extracted the following NER entity mentions:
+manager	TITLE
+Chuy	PERSON
+
+Sentence #7 (7 tokens):
+Jesus, give me a break!!
+
+Tokens:
+[Text=Jesus CharacterOffsetBegin=432 CharacterOffsetEnd=437 PartOfSpeech=NNP Lemma=Jesus NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=437 CharacterOffsetEnd=438 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=give CharacterOffsetBegin=439 CharacterOffsetEnd=443 PartOfSpeech=VB Lemma=give NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=444 CharacterOffsetEnd=446 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=447 CharacterOffsetEnd=448 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=break CharacterOffsetBegin=449 CharacterOffsetEnd=454 PartOfSpeech=NN Lemma=break NamedEntityTag=O]
+[Text=!! CharacterOffsetBegin=454 CharacterOffsetEnd=456 PartOfSpeech=NN Lemma=!! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (S
+      (NP (NNP Jesus) (, ,))
+      (VP (VB give)
+        (NP (PRP me))
+        (NP (DT a) (NN break) (NN !!))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, give-3)
+nsubj(give-3, Jesus-1)
+punct(Jesus-1, ,-2)
+iobj(give-3, me-4)
+det(!!-7, a-5)
+compound(!!-7, break-6)
+dobj(give-3, !!-7)
+
+Extracted the following NER entity mentions:
+Jesus	PERSON
+
+Coreference set:
+	(1,8,[8,9]) -> (1,12,[11,16]), that is: "that" -> "the issue in this case"
+	(6,11,[10,12]) -> (1,12,[11,16]), that is: "the issue" -> "the issue in this case"
+
+Coreference set:
+	(3,5,[5,6]) -> (2,2,[2,3]), that is: "911" -> "911"
+
+Coreference set:
+	(5,13,[13,15]) -> (3,2,[2,4]), that is: "Chuy 's" -> "Chuy 's"
+	(6,4,[4,6]) -> (3,2,[2,4]), that is: "Chuy 's" -> "Chuy 's"
+
+Coreference set:
+	(5,26,[26,27]) -> (5,5,[5,6]), that is: "I" -> "I"
+	(7,4,[4,5]) -> (5,5,[5,6]), that is: "me" -> "I"

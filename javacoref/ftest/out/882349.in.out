@@ -1,0 +1,824 @@
+Document: ID=882349.in (9 sentences, 208 tokens)
+
+Sentence #1 (3 tokens):
+Hi Team!
+
+Tokens:
+[Text=Hi CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=NNP Lemma=Hi NamedEntityTag=O]
+[Text=Team CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Team NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Hi) (NNP Team) (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Team-2)
+compound(Team-2, Hi-1)
+punct(Team-2, !-3)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (14 tokens):
+You are all invited to sit in on the Enron Travel Park training.
+
+Tokens:
+[Text=You CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=invited CharacterOffsetBegin=22 CharacterOffsetEnd=29 PartOfSpeech=VBN Lemma=invite NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=sit CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=VB Lemma=sit NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=Travel CharacterOffsetBegin=53 CharacterOffsetEnd=59 PartOfSpeech=NNP Lemma=Travel NamedEntityTag=ORGANIZATION]
+[Text=Park CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=NNP Lemma=Park NamedEntityTag=ORGANIZATION]
+[Text=training CharacterOffsetBegin=65 CharacterOffsetEnd=73 PartOfSpeech=NN Lemma=training NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP are)
+      (ADVP (DT all))
+      (VP (VBN invited)
+        (S
+          (VP (TO to)
+            (VP (VB sit)
+              (PP (IN in)
+                (PP (IN on)
+                  (NP (DT the) (NNP Enron) (NNP Travel) (NNP Park) (NN training)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, invited-4)
+nsubjpass(invited-4, You-1)
+nsubj:xsubj(sit-6, You-1)
+auxpass(invited-4, are-2)
+advmod(invited-4, all-3)
+mark(sit-6, to-5)
+xcomp(invited-4, sit-6)
+case(training-13, in-7)
+case(training-13, on-8)
+det(training-13, the-9)
+compound(training-13, Enron-10)
+compound(training-13, Travel-11)
+compound(training-13, Park-12)
+nmod:in(sit-6, training-13)
+punct(invited-4, .-14)
+
+Extracted the following NER entity mentions:
+Enron Travel Park	ORGANIZATION
+
+Sentence #3 (68 tokens):
+Details are below:
+
+DATE:		Tuesday, October 16th
+TIME:		11am to approximately 1:30pm
+TOPIC:		How to use Enron's travel system on-line and via phone
+HOSTS:	Tracy Ramsey (Enron) and Zou Cherry (Travel Agency in the Park)
+
+
+If you plan to attend, please respond back to this note ASAP for a few reasons:
+
+1.
+
+Tokens:
+[Text=Details CharacterOffsetBegin=76 CharacterOffsetEnd=83 PartOfSpeech=NNS Lemma=detail NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=84 CharacterOffsetEnd=87 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=below CharacterOffsetBegin=88 CharacterOffsetEnd=93 PartOfSpeech=IN Lemma=below NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=93 CharacterOffsetEnd=94 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=DATE CharacterOffsetBegin=96 CharacterOffsetEnd=100 PartOfSpeech=NN Lemma=date NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=100 CharacterOffsetEnd=101 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Tuesday CharacterOffsetBegin=103 CharacterOffsetEnd=110 PartOfSpeech=NNP Lemma=Tuesday NamedEntityTag=DATE NormalizedNamedEntityTag=****1016]
+[Text=, CharacterOffsetBegin=110 CharacterOffsetEnd=111 PartOfSpeech=, Lemma=, NamedEntityTag=DATE NormalizedNamedEntityTag=****1016]
+[Text=October CharacterOffsetBegin=112 CharacterOffsetEnd=119 PartOfSpeech=NNP Lemma=October NamedEntityTag=DATE NormalizedNamedEntityTag=****1016]
+[Text=16th CharacterOffsetBegin=120 CharacterOffsetEnd=124 PartOfSpeech=JJ Lemma=16th NamedEntityTag=DATE NormalizedNamedEntityTag=****1016]
+[Text=TIME CharacterOffsetBegin=125 CharacterOffsetEnd=129 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=129 CharacterOffsetEnd=130 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=11 CharacterOffsetBegin=132 CharacterOffsetEnd=134 PartOfSpeech=CD Lemma=11 NamedEntityTag=NUMBER NormalizedNamedEntityTag=11.0]
+[Text=am CharacterOffsetBegin=134 CharacterOffsetEnd=136 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=137 CharacterOffsetEnd=139 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=approximately CharacterOffsetBegin=140 CharacterOffsetEnd=153 PartOfSpeech=RB Lemma=approximately NamedEntityTag=O]
+[Text=1:30 CharacterOffsetBegin=154 CharacterOffsetEnd=158 PartOfSpeech=CD Lemma=1:30 NamedEntityTag=TIME NormalizedNamedEntityTag=1:30pm]
+[Text=pm CharacterOffsetBegin=158 CharacterOffsetEnd=160 PartOfSpeech=NN Lemma=pm NamedEntityTag=TIME NormalizedNamedEntityTag=1:30pm]
+[Text=TOPIC CharacterOffsetBegin=161 CharacterOffsetEnd=166 PartOfSpeech=NN Lemma=topic NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=166 CharacterOffsetEnd=167 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=How CharacterOffsetBegin=169 CharacterOffsetEnd=172 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=173 CharacterOffsetEnd=175 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=use CharacterOffsetBegin=176 CharacterOffsetEnd=179 PartOfSpeech=VB Lemma=use NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=180 CharacterOffsetEnd=185 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=185 CharacterOffsetEnd=187 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=travel CharacterOffsetBegin=188 CharacterOffsetEnd=194 PartOfSpeech=NN Lemma=travel NamedEntityTag=O]
+[Text=system CharacterOffsetBegin=195 CharacterOffsetEnd=201 PartOfSpeech=NN Lemma=system NamedEntityTag=O]
+[Text=on-line CharacterOffsetBegin=202 CharacterOffsetEnd=209 PartOfSpeech=JJ Lemma=on-line NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=210 CharacterOffsetEnd=213 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=via CharacterOffsetBegin=214 CharacterOffsetEnd=217 PartOfSpeech=IN Lemma=via NamedEntityTag=O]
+[Text=phone CharacterOffsetBegin=218 CharacterOffsetEnd=223 PartOfSpeech=NN Lemma=phone NamedEntityTag=O]
+[Text=HOSTS CharacterOffsetBegin=224 CharacterOffsetEnd=229 PartOfSpeech=NNS Lemma=host NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=229 CharacterOffsetEnd=230 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Tracy CharacterOffsetBegin=231 CharacterOffsetEnd=236 PartOfSpeech=NNP Lemma=Tracy NamedEntityTag=PERSON]
+[Text=Ramsey CharacterOffsetBegin=237 CharacterOffsetEnd=243 PartOfSpeech=NNP Lemma=Ramsey NamedEntityTag=PERSON]
+[Text=-LRB- CharacterOffsetBegin=244 CharacterOffsetEnd=245 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=245 CharacterOffsetEnd=250 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=-RRB- CharacterOffsetBegin=250 CharacterOffsetEnd=251 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=252 CharacterOffsetEnd=255 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Zou CharacterOffsetBegin=256 CharacterOffsetEnd=259 PartOfSpeech=NNP Lemma=Zou NamedEntityTag=PERSON]
+[Text=Cherry CharacterOffsetBegin=260 CharacterOffsetEnd=266 PartOfSpeech=NNP Lemma=Cherry NamedEntityTag=PERSON]
+[Text=-LRB- CharacterOffsetBegin=267 CharacterOffsetEnd=268 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Travel CharacterOffsetBegin=268 CharacterOffsetEnd=274 PartOfSpeech=NNP Lemma=Travel NamedEntityTag=ORGANIZATION]
+[Text=Agency CharacterOffsetBegin=275 CharacterOffsetEnd=281 PartOfSpeech=NNP Lemma=Agency NamedEntityTag=ORGANIZATION]
+[Text=in CharacterOffsetBegin=282 CharacterOffsetEnd=284 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=285 CharacterOffsetEnd=288 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Park CharacterOffsetBegin=289 CharacterOffsetEnd=293 PartOfSpeech=NNP Lemma=Park NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=293 CharacterOffsetEnd=294 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=If CharacterOffsetBegin=297 CharacterOffsetEnd=299 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=300 CharacterOffsetEnd=303 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=plan CharacterOffsetBegin=304 CharacterOffsetEnd=308 PartOfSpeech=VBP Lemma=plan NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=309 CharacterOffsetEnd=311 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=attend CharacterOffsetBegin=312 CharacterOffsetEnd=318 PartOfSpeech=VB Lemma=attend NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=318 CharacterOffsetEnd=319 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=please CharacterOffsetBegin=320 CharacterOffsetEnd=326 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=respond CharacterOffsetBegin=327 CharacterOffsetEnd=334 PartOfSpeech=VB Lemma=respond NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=335 CharacterOffsetEnd=339 PartOfSpeech=RB Lemma=back NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=340 CharacterOffsetEnd=342 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=343 CharacterOffsetEnd=347 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=note CharacterOffsetBegin=348 CharacterOffsetEnd=352 PartOfSpeech=NN Lemma=note NamedEntityTag=O]
+[Text=ASAP CharacterOffsetBegin=353 CharacterOffsetEnd=357 PartOfSpeech=NN Lemma=asap NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=358 CharacterOffsetEnd=361 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=362 CharacterOffsetEnd=363 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=few CharacterOffsetBegin=364 CharacterOffsetEnd=367 PartOfSpeech=JJ Lemma=few NamedEntityTag=O]
+[Text=reasons CharacterOffsetBegin=368 CharacterOffsetEnd=375 PartOfSpeech=NNS Lemma=reason NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=375 CharacterOffsetEnd=376 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=1 CharacterOffsetBegin=378 CharacterOffsetEnd=379 PartOfSpeech=CD Lemma=1 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=. CharacterOffsetBegin=379 CharacterOffsetEnd=380 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SINV
+    (S
+      (NP (NNS Details))
+      (VP (VBP are)
+        (PP (IN below)
+          (NP (: :)
+            (NP
+              (NP (NN DATE))
+              (: :)
+              (NP
+                (NP (NNP Tuesday))
+                (, ,)
+                (NP (NNP October) (JJ 16th) (NN TIME))))
+            (: :)
+            (NP
+              (NP (CD 11))
+              (SBAR
+                (S
+                  (VP (VBP am)
+                    (PP (TO to)
+                      (NP
+                        (QP (RB approximately) (CD 1:30))
+                        (NN pm) (NN TOPIC)))
+                    (: :)
+                    (UCP
+                      (SBAR
+                        (WHADVP (WRB How))
+                        (S
+                          (VP (TO to)
+                            (VP (VB use)
+                              (NP
+                                (NP (NNP Enron) (POS 's))
+                                (NN travel) (NN system))
+                              (ADVP (JJ on-line))))))
+                      (CC and)
+                      (PP (IN via)
+                        (NP (NN phone) (NNS HOSTS))))))))
+            (: :)
+            (NP
+              (NP
+                (NP (NNP Tracy) (NNP Ramsey))
+                (PRN (-LRB- -LRB-)
+                  (NP (NNP Enron))
+                  (-RRB- -RRB-)))
+              (CC and)
+              (NP
+                (NP (NNP Zou) (NNP Cherry))
+                (PRN (-LRB- -LRB-)
+                  (NP
+                    (NP (NNP Travel) (NNP Agency))
+                    (PP (IN in)
+                      (NP (DT the) (NNP Park))))
+                  (-RRB- -RRB-)))))))
+      (SBAR (IN If)
+        (S
+          (NP (PRP you))
+          (VP
+            (VP (VBP plan)
+              (S
+                (VP (TO to)
+                  (VP (VB attend)))))
+            (PRN (, ,)
+              (INTJ (VB please)))
+            (VP (VB respond)
+              (ADVP (RB back))
+              (PP (TO to)
+                (NP
+                  (NP (DT this) (NN note) (NN ASAP))
+                  (PP (IN for)
+                    (NP (DT a) (JJ few) (NNS reasons))))))))))
+    (: :)
+    (NP (CD 1))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, DATE-5)
+nsubj(DATE-5, Details-1)
+cop(DATE-5, are-2)
+case(DATE-5, below-3)
+punct(DATE-5, :-4)
+punct(DATE-5, :-6)
+dep(DATE-5, Tuesday-7)
+punct(Tuesday-7, ,-8)
+compound(TIME-11, October-9)
+amod(TIME-11, 16th-10)
+appos(Tuesday-7, TIME-11)
+punct(DATE-5, :-12)
+dep(DATE-5, 11-13)
+cop(use-23, am-14)
+case(TOPIC-19, to-15)
+advmod(1:30-17, approximately-16)
+nummod(TOPIC-19, 1:30-17)
+compound(TOPIC-19, pm-18)
+nmod:to(use-23, TOPIC-19)
+punct(use-23, :-20)
+advmod(use-23, How-21)
+mark(use-23, to-22)
+acl:relcl(11-13, use-23)
+nmod:poss(system-27, Enron-24)
+case(Enron-24, 's-25)
+compound(system-27, travel-26)
+dobj(use-23, system-27)
+advmod(use-23, on-line-28)
+cc(use-23, and-29)
+case(HOSTS-32, via-30)
+compound(HOSTS-32, phone-31)
+acl:relcl(11-13, HOSTS-32)
+conj:and(use-23, HOSTS-32)
+punct(DATE-5, :-33)
+compound(Ramsey-35, Tracy-34)
+dep(DATE-5, Ramsey-35)
+punct(Enron-37, -LRB--36)
+appos(Ramsey-35, Enron-37)
+punct(Enron-37, -RRB--38)
+cc(Ramsey-35, and-39)
+compound(Cherry-41, Zou-40)
+dep(DATE-5, Cherry-41)
+conj:and(Ramsey-35, Cherry-41)
+punct(Agency-44, -LRB--42)
+compound(Agency-44, Travel-43)
+dep(Cherry-41, Agency-44)
+case(Park-47, in-45)
+det(Park-47, the-46)
+nmod:in(Agency-44, Park-47)
+punct(Agency-44, -RRB--48)
+mark(plan-51, If-49)
+nsubj(plan-51, you-50)
+nsubj:xsubj(attend-53, you-50)
+dep(DATE-5, plan-51)
+mark(attend-53, to-52)
+xcomp(plan-51, attend-53)
+punct(please-55, ,-54)
+discourse(plan-51, please-55)
+dep(plan-51, respond-56)
+advmod(respond-56, back-57)
+case(ASAP-61, to-58)
+det(ASAP-61, this-59)
+compound(ASAP-61, note-60)
+nmod:to(respond-56, ASAP-61)
+case(reasons-65, for-62)
+det(reasons-65, a-63)
+amod(reasons-65, few-64)
+nmod:for(ASAP-61, reasons-65)
+punct(DATE-5, :-66)
+dep(DATE-5, 1-67)
+punct(DATE-5, .-68)
+
+Extracted the following NER entity mentions:
+Tuesday, October 16th	DATE
+11	NUMBER
+1:30pm	TIME
+Enron	ORGANIZATION
+Tracy Ramsey	PERSON
+Enron	ORGANIZATION
+Zou Cherry	PERSON
+Travel Agency	ORGANIZATION
+1	NUMBER
+
+Sentence #4 (17 tokens):
+We will be bringing in lunch and I need to know how many to order
+
+2.
+
+Tokens:
+[Text=We CharacterOffsetBegin=382 CharacterOffsetEnd=384 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=385 CharacterOffsetEnd=389 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=390 CharacterOffsetEnd=392 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=bringing CharacterOffsetBegin=393 CharacterOffsetEnd=401 PartOfSpeech=VBG Lemma=bring NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=402 CharacterOffsetEnd=404 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=lunch CharacterOffsetBegin=405 CharacterOffsetEnd=410 PartOfSpeech=NN Lemma=lunch NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=411 CharacterOffsetEnd=414 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=415 CharacterOffsetEnd=416 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=417 CharacterOffsetEnd=421 PartOfSpeech=VBP Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=422 CharacterOffsetEnd=424 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=425 CharacterOffsetEnd=429 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=430 CharacterOffsetEnd=433 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=many CharacterOffsetBegin=434 CharacterOffsetEnd=438 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=439 CharacterOffsetEnd=441 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=order CharacterOffsetBegin=442 CharacterOffsetEnd=447 PartOfSpeech=NN Lemma=order NamedEntityTag=O]
+[Text=2 CharacterOffsetBegin=449 CharacterOffsetEnd=450 PartOfSpeech=CD Lemma=2 NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=. CharacterOffsetBegin=450 CharacterOffsetEnd=451 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP We))
+      (VP (MD will)
+        (VP (VB be)
+          (VP (VBG bringing)
+            (PP (IN in)
+              (NP (NN lunch)))))))
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (VBP need)
+        (S
+          (VP (TO to)
+            (VP (VB know)
+              (FRAG
+                (WHADJP (WRB how) (JJ many))))))
+        (PP (TO to)
+          (NP (NN order) (CD 2)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, bringing-4)
+nsubj(bringing-4, We-1)
+aux(bringing-4, will-2)
+aux(bringing-4, be-3)
+case(lunch-6, in-5)
+nmod:in(bringing-4, lunch-6)
+cc(bringing-4, and-7)
+nsubj(need-9, I-8)
+nsubj:xsubj(know-11, I-8)
+conj:and(bringing-4, need-9)
+mark(know-11, to-10)
+xcomp(need-9, know-11)
+advmod(many-13, how-12)
+dep(know-11, many-13)
+case(order-15, to-14)
+nmod:to(need-9, order-15)
+nummod(order-15, 2-16)
+punct(bringing-4, .-17)
+
+Extracted the following NER entity mentions:
+2	NUMBER
+
+Sentence #5 (16 tokens):
+I will need to get you set up in their system prior to Tuesday
+
+3.
+
+Tokens:
+[Text=I CharacterOffsetBegin=453 CharacterOffsetEnd=454 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=455 CharacterOffsetEnd=459 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=460 CharacterOffsetEnd=464 PartOfSpeech=VB Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=465 CharacterOffsetEnd=467 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=468 CharacterOffsetEnd=471 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=472 CharacterOffsetEnd=475 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=set CharacterOffsetBegin=476 CharacterOffsetEnd=479 PartOfSpeech=VB Lemma=set NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=480 CharacterOffsetEnd=482 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=483 CharacterOffsetEnd=485 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=486 CharacterOffsetEnd=491 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=system CharacterOffsetBegin=492 CharacterOffsetEnd=498 PartOfSpeech=NN Lemma=system NamedEntityTag=O]
+[Text=prior CharacterOffsetBegin=499 CharacterOffsetEnd=504 PartOfSpeech=JJ Lemma=prior NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=505 CharacterOffsetEnd=507 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Tuesday CharacterOffsetBegin=508 CharacterOffsetEnd=515 PartOfSpeech=NNP Lemma=Tuesday NamedEntityTag=DATE NormalizedNamedEntityTag=******03]
+[Text=3 CharacterOffsetBegin=517 CharacterOffsetEnd=518 PartOfSpeech=CD Lemma=3 NamedEntityTag=DATE NormalizedNamedEntityTag=******03]
+[Text=. CharacterOffsetBegin=518 CharacterOffsetEnd=519 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD will)
+      (VP (VB need)
+        (S
+          (VP (TO to)
+            (VP (VB get)
+              (S
+                (NP (PRP you))
+                (VP (VB set)
+                  (PRT (RP up))
+                  (PP (IN in)
+                    (NP
+                      (NP (PRP$ their) (NN system))
+                      (ADVP (JJ prior)
+                        (PP (TO to)
+                          (NP (NNP Tuesday) (CD 3)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, need-3)
+nsubj(need-3, I-1)
+nsubj:xsubj(get-5, I-1)
+aux(need-3, will-2)
+mark(get-5, to-4)
+xcomp(need-3, get-5)
+nsubj(set-7, you-6)
+ccomp(get-5, set-7)
+compound:prt(set-7, up-8)
+case(system-11, in-9)
+nmod:poss(system-11, their-10)
+nmod:in(set-7, system-11)
+advmod(system-11, prior-12)
+case(Tuesday-14, to-13)
+nmod:to(prior-12, Tuesday-14)
+nummod(Tuesday-14, 3-15)
+punct(need-3, .-16)
+
+Extracted the following NER entity mentions:
+Tuesday 3	DATE
+
+Sentence #6 (38 tokens):
+I will need to ensure we are set with laptops and other training materials
+
+To give you an idea about the kind of savings you can get by using this Enron feature, here's an example.
+
+Tokens:
+[Text=I CharacterOffsetBegin=521 CharacterOffsetEnd=522 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=523 CharacterOffsetEnd=527 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=528 CharacterOffsetEnd=532 PartOfSpeech=VB Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=533 CharacterOffsetEnd=535 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=ensure CharacterOffsetBegin=536 CharacterOffsetEnd=542 PartOfSpeech=VB Lemma=ensure NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=543 CharacterOffsetEnd=545 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=546 CharacterOffsetEnd=549 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=set CharacterOffsetBegin=550 CharacterOffsetEnd=553 PartOfSpeech=VBN Lemma=set NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=554 CharacterOffsetEnd=558 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=laptops CharacterOffsetBegin=559 CharacterOffsetEnd=566 PartOfSpeech=NNS Lemma=laptop NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=567 CharacterOffsetEnd=570 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=571 CharacterOffsetEnd=576 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=training CharacterOffsetBegin=577 CharacterOffsetEnd=585 PartOfSpeech=NN Lemma=training NamedEntityTag=O]
+[Text=materials CharacterOffsetBegin=586 CharacterOffsetEnd=595 PartOfSpeech=NNS Lemma=material NamedEntityTag=O]
+[Text=To CharacterOffsetBegin=597 CharacterOffsetEnd=599 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=give CharacterOffsetBegin=600 CharacterOffsetEnd=604 PartOfSpeech=VB Lemma=give NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=605 CharacterOffsetEnd=608 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=609 CharacterOffsetEnd=611 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=idea CharacterOffsetBegin=612 CharacterOffsetEnd=616 PartOfSpeech=NN Lemma=idea NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=617 CharacterOffsetEnd=622 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=623 CharacterOffsetEnd=626 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=kind CharacterOffsetBegin=627 CharacterOffsetEnd=631 PartOfSpeech=NN Lemma=kind NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=632 CharacterOffsetEnd=634 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=savings CharacterOffsetBegin=635 CharacterOffsetEnd=642 PartOfSpeech=NNS Lemma=savings NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=643 CharacterOffsetEnd=646 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=647 CharacterOffsetEnd=650 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=651 CharacterOffsetEnd=654 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=655 CharacterOffsetEnd=657 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=using CharacterOffsetBegin=658 CharacterOffsetEnd=663 PartOfSpeech=VBG Lemma=use NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=664 CharacterOffsetEnd=668 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=669 CharacterOffsetEnd=674 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=feature CharacterOffsetBegin=675 CharacterOffsetEnd=682 PartOfSpeech=NN Lemma=feature NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=682 CharacterOffsetEnd=683 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=here CharacterOffsetBegin=684 CharacterOffsetEnd=688 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=688 CharacterOffsetEnd=690 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=691 CharacterOffsetEnd=693 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=example CharacterOffsetBegin=694 CharacterOffsetEnd=701 PartOfSpeech=NN Lemma=example NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=701 CharacterOffsetEnd=702 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (MD will)
+        (VP (VB need)
+          (S
+            (VP (TO to)
+              (VP (VB ensure)
+                (SBAR
+                  (S
+                    (NP (PRP we))
+                    (VP (VBP are)
+                      (VP (VBN set)
+                        (PP (IN with)
+                          (NP
+                            (NP (NNS laptops))
+                            (CC and)
+                            (NP (JJ other) (NN training) (NNS materials))))
+                        (S
+                          (VP (TO To)
+                            (VP (VB give)
+                              (NP (PRP you))
+                              (NP
+                                (NP (DT an) (NN idea))
+                                (PP (IN about)
+                                  (NP
+                                    (NP (DT the) (NN kind))
+                                    (PP (IN of)
+                                      (NP
+                                        (NP (NNS savings))
+                                        (SBAR
+                                          (S
+                                            (NP (PRP you))
+                                            (VP (MD can)
+                                              (VP (VB get)
+                                                (PP (IN by)
+                                                  (S
+                                                    (VP (VBG using)
+                                                      (NP (DT this) (NNP Enron) (NN feature)))))))))))))))))))))))))))
+    (, ,)
+    (NP (RB here))
+    (VP (VBZ 's)
+      (NP (DT an) (NN example)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, example-37)
+nsubj(need-3, I-1)
+nsubj:xsubj(ensure-5, I-1)
+aux(need-3, will-2)
+ccomp(example-37, need-3)
+mark(ensure-5, to-4)
+xcomp(need-3, ensure-5)
+nsubjpass(set-8, we-6)
+nsubj:xsubj(give-16, we-6)
+auxpass(set-8, are-7)
+ccomp(ensure-5, set-8)
+case(laptops-10, with-9)
+nmod:with(set-8, laptops-10)
+cc(laptops-10, and-11)
+amod(materials-14, other-12)
+compound(materials-14, training-13)
+nmod:with(set-8, materials-14)
+conj:and(laptops-10, materials-14)
+mark(give-16, To-15)
+xcomp(set-8, give-16)
+iobj(give-16, you-17)
+det(idea-19, an-18)
+dobj(give-16, idea-19)
+case(kind-22, about-20)
+det(kind-22, the-21)
+nmod:about(idea-19, kind-22)
+case(savings-24, of-23)
+nmod:of(kind-22, savings-24)
+nsubj(get-27, you-25)
+aux(get-27, can-26)
+acl:relcl(savings-24, get-27)
+mark(using-29, by-28)
+advcl:by(get-27, using-29)
+det(feature-32, this-30)
+compound(feature-32, Enron-31)
+dobj(using-29, feature-32)
+punct(example-37, ,-33)
+nsubj(example-37, here-34)
+cop(example-37, 's-35)
+det(example-37, an-36)
+punct(example-37, .-38)
+
+Extracted the following NER entity mentions:
+Enron	ORGANIZATION
+
+Sentence #7 (29 tokens):
+I booked a roundtrip flight from Denver>St. Louis which came up as $161, but with the Enron discount, I am paying $119.
+
+Tokens:
+[Text=I CharacterOffsetBegin=704 CharacterOffsetEnd=705 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=booked CharacterOffsetBegin=706 CharacterOffsetEnd=712 PartOfSpeech=VBD Lemma=book NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=713 CharacterOffsetEnd=714 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=roundtrip CharacterOffsetBegin=715 CharacterOffsetEnd=724 PartOfSpeech=NN Lemma=roundtrip NamedEntityTag=O]
+[Text=flight CharacterOffsetBegin=725 CharacterOffsetEnd=731 PartOfSpeech=NN Lemma=flight NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=732 CharacterOffsetEnd=736 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Denver CharacterOffsetBegin=737 CharacterOffsetEnd=743 PartOfSpeech=NNP Lemma=Denver NamedEntityTag=CITY]
+[Text=> CharacterOffsetBegin=743 CharacterOffsetEnd=744 PartOfSpeech=JJR Lemma=> NamedEntityTag=O]
+[Text=St. CharacterOffsetBegin=744 CharacterOffsetEnd=747 PartOfSpeech=NNP Lemma=St. NamedEntityTag=LOCATION]
+[Text=Louis CharacterOffsetBegin=748 CharacterOffsetEnd=753 PartOfSpeech=NNP Lemma=Louis NamedEntityTag=LOCATION]
+[Text=which CharacterOffsetBegin=754 CharacterOffsetEnd=759 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=came CharacterOffsetBegin=760 CharacterOffsetEnd=764 PartOfSpeech=VBD Lemma=come NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=765 CharacterOffsetEnd=767 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=768 CharacterOffsetEnd=770 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=771 CharacterOffsetEnd=772 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$161.0]
+[Text=161 CharacterOffsetBegin=772 CharacterOffsetEnd=775 PartOfSpeech=CD Lemma=161 NamedEntityTag=MONEY NormalizedNamedEntityTag=$161.0]
+[Text=, CharacterOffsetBegin=775 CharacterOffsetEnd=776 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=777 CharacterOffsetEnd=780 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=781 CharacterOffsetEnd=785 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=786 CharacterOffsetEnd=789 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=790 CharacterOffsetEnd=795 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=discount CharacterOffsetBegin=796 CharacterOffsetEnd=804 PartOfSpeech=NN Lemma=discount NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=804 CharacterOffsetEnd=805 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=806 CharacterOffsetEnd=807 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=808 CharacterOffsetEnd=810 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=paying CharacterOffsetBegin=811 CharacterOffsetEnd=817 PartOfSpeech=VBG Lemma=pay NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=818 CharacterOffsetEnd=819 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$119.0]
+[Text=119 CharacterOffsetBegin=819 CharacterOffsetEnd=822 PartOfSpeech=CD Lemma=119 NamedEntityTag=MONEY NormalizedNamedEntityTag=$119.0]
+[Text=. CharacterOffsetBegin=822 CharacterOffsetEnd=823 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBD booked)
+        (ADJP
+          (NP
+            (NP (DT a) (NN roundtrip) (NN flight))
+            (PP (IN from)
+              (NP (NNP Denver))))
+          (JJR >))
+        (NP-TMP
+          (NP (NNP St.) (NNP Louis))
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (VBD came)
+                (PRT (RP up))
+                (PP (IN as)
+                  (NP ($ $) (CD 161)))))))))
+    (, ,)
+    (CC but)
+    (S
+      (PP (IN with)
+        (NP (DT the) (NNP Enron) (NN discount)))
+      (, ,)
+      (NP (PRP I))
+      (VP (VBP am)
+        (VP (VBG paying)
+          (NP
+            (QP ($ $) (CD 119))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, booked-2)
+nsubj(booked-2, I-1)
+det(flight-5, a-3)
+compound(flight-5, roundtrip-4)
+nmod:npmod(>-8, flight-5)
+case(Denver-7, from-6)
+nmod:from(flight-5, Denver-7)
+xcomp(booked-2, >-8)
+compound(Louis-10, St.-9)
+nmod:tmod(booked-2, Louis-10)
+nsubj(came-12, Louis-10)
+ref(Louis-10, which-11)
+acl:relcl(Louis-10, came-12)
+compound:prt(came-12, up-13)
+case(161-16, as-14)
+dep(161-16, $-15)
+nmod:as(came-12, 161-16)
+punct(booked-2, ,-17)
+cc(booked-2, but-18)
+case(discount-22, with-19)
+det(discount-22, the-20)
+compound(discount-22, Enron-21)
+nmod:with(paying-26, discount-22)
+punct(paying-26, ,-23)
+nsubj(paying-26, I-24)
+aux(paying-26, am-25)
+conj:but(booked-2, paying-26)
+dobj(paying-26, $-27)
+nummod($-27, 119-28)
+punct(booked-2, .-29)
+
+Extracted the following NER entity mentions:
+Denver	CITY
+St. Louis	LOCATION
+$161	MONEY
+Enron	ORGANIZATION
+$119	MONEY
+
+Sentence #8 (19 tokens):
+As a comparison, on the United website, the same exact trip came in at $302.
+
+Tokens:
+[Text=As CharacterOffsetBegin=825 CharacterOffsetEnd=827 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=828 CharacterOffsetEnd=829 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=comparison CharacterOffsetBegin=830 CharacterOffsetEnd=840 PartOfSpeech=NN Lemma=comparison NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=840 CharacterOffsetEnd=841 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=842 CharacterOffsetEnd=844 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=845 CharacterOffsetEnd=848 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=United CharacterOffsetBegin=849 CharacterOffsetEnd=855 PartOfSpeech=NNP Lemma=United NamedEntityTag=ORGANIZATION]
+[Text=website CharacterOffsetBegin=856 CharacterOffsetEnd=863 PartOfSpeech=NN Lemma=website NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=863 CharacterOffsetEnd=864 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=865 CharacterOffsetEnd=868 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=same CharacterOffsetBegin=869 CharacterOffsetEnd=873 PartOfSpeech=JJ Lemma=same NamedEntityTag=O]
+[Text=exact CharacterOffsetBegin=874 CharacterOffsetEnd=879 PartOfSpeech=JJ Lemma=exact NamedEntityTag=O]
+[Text=trip CharacterOffsetBegin=880 CharacterOffsetEnd=884 PartOfSpeech=NN Lemma=trip NamedEntityTag=O]
+[Text=came CharacterOffsetBegin=885 CharacterOffsetEnd=889 PartOfSpeech=VBD Lemma=come NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=890 CharacterOffsetEnd=892 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=893 CharacterOffsetEnd=895 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=896 CharacterOffsetEnd=897 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$302.0]
+[Text=302 CharacterOffsetBegin=897 CharacterOffsetEnd=900 PartOfSpeech=CD Lemma=302 NamedEntityTag=MONEY NormalizedNamedEntityTag=$302.0]
+[Text=. CharacterOffsetBegin=900 CharacterOffsetEnd=901 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN As)
+      (NP (DT a) (NN comparison)))
+    (, ,)
+    (PP (IN on)
+      (NP (DT the) (NNP United) (NN website)))
+    (, ,)
+    (NP (DT the) (JJ same) (JJ exact) (NN trip))
+    (VP (VBD came)
+      (PP (IN in)
+        (NP
+          (QP (IN at) ($ $) (CD 302)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, came-14)
+case(comparison-3, As-1)
+det(comparison-3, a-2)
+nmod:as(came-14, comparison-3)
+punct(came-14, ,-4)
+case(website-8, on-5)
+det(website-8, the-6)
+compound(website-8, United-7)
+nmod:on(came-14, website-8)
+punct(came-14, ,-9)
+det(trip-13, the-10)
+amod(trip-13, same-11)
+amod(trip-13, exact-12)
+nsubj(came-14, trip-13)
+case($-17, in-15)
+advmod($-17, at-16)
+nmod:in(came-14, $-17)
+nummod($-17, 302-18)
+punct(came-14, .-19)
+
+Extracted the following NER entity mentions:
+United	ORGANIZATION
+$302	MONEY
+
+Sentence #9 (4 tokens):
+Thank you,
+Kristen
+
+Tokens:
+[Text=Thank CharacterOffsetBegin=903 CharacterOffsetEnd=908 PartOfSpeech=VB Lemma=thank NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=909 CharacterOffsetEnd=912 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=912 CharacterOffsetEnd=913 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Kristen CharacterOffsetBegin=914 CharacterOffsetEnd=921 PartOfSpeech=NNP Lemma=Kristen NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Thank)
+      (NP (PRP you))
+      (, ,)
+      (NP (NNP Kristen)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Thank-1)
+dobj(Thank-1, you-2)
+punct(Thank-1, ,-3)
+dobj(Thank-1, Kristen-4)
+
+Extracted the following NER entity mentions:
+Kristen	PERSON
+
+Coreference set:
+	(3,24,[24,26]) -> (2,12,[10,13]), that is: "Enron 's" -> "Enron Travel Park"
+	(3,37,[37,38]) -> (2,12,[10,13]), that is: "Enron" -> "Enron Travel Park"
+	(3,47,[46,48]) -> (2,12,[10,13]), that is: "the Park" -> "Enron Travel Park"
+	(6,31,[31,32]) -> (2,12,[10,13]), that is: "Enron" -> "Enron Travel Park"
+	(7,21,[21,22]) -> (2,12,[10,13]), that is: "Enron" -> "Enron Travel Park"
+
+Coreference set:
+	(3,11,[9,12]) -> (3,7,[7,8]), that is: "October 16th TIME" -> "Tuesday"
+
+Coreference set:
+	(5,10,[10,11]) -> (3,35,[34,49]), that is: "their" -> "Tracy Ramsey -LRB- Enron -RRB- and Zou Cherry -LRB- Travel Agency in the Park -RRB-"
+
+Coreference set:
+	(6,6,[6,7]) -> (4,1,[1,2]), that is: "we" -> "We"
+
+Coreference set:
+	(5,1,[1,2]) -> (4,8,[8,9]), that is: "I" -> "I"
+	(6,1,[1,2]) -> (4,8,[8,9]), that is: "I" -> "I"
+	(7,1,[1,2]) -> (4,8,[8,9]), that is: "I" -> "I"
+	(7,24,[24,25]) -> (4,8,[8,9]), that is: "I" -> "I"
+
+Coreference set:
+	(6,34,[34,35]) -> (6,37,[36,38]), that is: "here" -> "an example"

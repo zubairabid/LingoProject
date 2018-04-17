@@ -1,0 +1,569 @@
+Document: ID=229478.in (6 sentences, 147 tokens)
+
+Sentence #1 (14 tokens):
+Tax:
+The Enron entity executing the FX transaction as principal is ENA.
+
+Tokens:
+[Text=Tax CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NN Lemma=tax NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=9 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=entity CharacterOffsetBegin=15 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=entity NamedEntityTag=O]
+[Text=executing CharacterOffsetBegin=22 CharacterOffsetEnd=31 PartOfSpeech=VBG Lemma=execute NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=FX CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=NNP Lemma=FX NamedEntityTag=O]
+[Text=transaction CharacterOffsetBegin=39 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=transaction NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=51 CharacterOffsetEnd=53 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=principal CharacterOffsetBegin=54 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=principal NamedEntityTag=TITLE]
+[Text=is CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=ENA CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=NNP Lemma=ENA NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NN Tax))
+    (: :)
+    (NP
+      (NP (DT The) (NNP Enron) (NN entity))
+      (VP (VBG executing)
+        (NP (DT the) (NNP FX) (NN transaction))
+        (SBAR (IN as)
+          (S
+            (NP (NN principal))
+            (VP (VBZ is)
+              (NP (NNP ENA)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Tax-1)
+punct(Tax-1, :-2)
+det(entity-5, The-3)
+compound(entity-5, Enron-4)
+dep(Tax-1, entity-5)
+acl(entity-5, executing-6)
+det(transaction-9, the-7)
+compound(transaction-9, FX-8)
+dobj(executing-6, transaction-9)
+mark(ENA-13, as-10)
+nsubj(ENA-13, principal-11)
+cop(ENA-13, is-12)
+advcl:as(executing-6, ENA-13)
+punct(Tax-1, .-14)
+
+Extracted the following NER entity mentions:
+Enron	ORGANIZATION
+principal	TITLE
+ENA	ORGANIZATION
+
+Sentence #2 (30 tokens):
+However, note that for tax/legal the FX desk in London is run by Enron Europe
+Finance & Trading Limited ("EEFT") as agent for ENA.
+
+Tokens:
+[Text=However CharacterOffsetBegin=72 CharacterOffsetEnd=79 PartOfSpeech=RB Lemma=however NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=note CharacterOffsetBegin=81 CharacterOffsetEnd=85 PartOfSpeech=NN Lemma=note NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=86 CharacterOffsetEnd=90 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=91 CharacterOffsetEnd=94 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=tax/legal CharacterOffsetBegin=95 CharacterOffsetEnd=104 PartOfSpeech=NN Lemma=tax/legal NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=105 CharacterOffsetEnd=108 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=FX CharacterOffsetBegin=109 CharacterOffsetEnd=111 PartOfSpeech=NNP Lemma=FX NamedEntityTag=O]
+[Text=desk CharacterOffsetBegin=112 CharacterOffsetEnd=116 PartOfSpeech=NN Lemma=desk NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=117 CharacterOffsetEnd=119 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=London CharacterOffsetBegin=120 CharacterOffsetEnd=126 PartOfSpeech=NNP Lemma=London NamedEntityTag=CITY]
+[Text=is CharacterOffsetBegin=127 CharacterOffsetEnd=129 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=run CharacterOffsetBegin=130 CharacterOffsetEnd=133 PartOfSpeech=VBN Lemma=run NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=134 CharacterOffsetEnd=136 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=137 CharacterOffsetEnd=142 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=Europe CharacterOffsetBegin=143 CharacterOffsetEnd=149 PartOfSpeech=NNP Lemma=Europe NamedEntityTag=ORGANIZATION]
+[Text=Finance CharacterOffsetBegin=150 CharacterOffsetEnd=157 PartOfSpeech=NNP Lemma=Finance NamedEntityTag=ORGANIZATION]
+[Text=& CharacterOffsetBegin=158 CharacterOffsetEnd=159 PartOfSpeech=CC Lemma=& NamedEntityTag=ORGANIZATION]
+[Text=Trading CharacterOffsetBegin=160 CharacterOffsetEnd=167 PartOfSpeech=NNP Lemma=Trading NamedEntityTag=ORGANIZATION]
+[Text=Limited CharacterOffsetBegin=168 CharacterOffsetEnd=175 PartOfSpeech=NNP Lemma=Limited NamedEntityTag=ORGANIZATION]
+[Text=-LRB- CharacterOffsetBegin=176 CharacterOffsetEnd=177 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=177 CharacterOffsetEnd=178 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=EEFT CharacterOffsetBegin=178 CharacterOffsetEnd=182 PartOfSpeech=NN Lemma=eeft NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=182 CharacterOffsetEnd=183 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=183 CharacterOffsetEnd=184 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=185 CharacterOffsetEnd=187 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=agent CharacterOffsetBegin=188 CharacterOffsetEnd=193 PartOfSpeech=NN Lemma=agent NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=194 CharacterOffsetEnd=197 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=ENA CharacterOffsetBegin=198 CharacterOffsetEnd=201 PartOfSpeech=NNP Lemma=ENA NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=201 CharacterOffsetEnd=202 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB However))
+    (, ,)
+    (NP
+      (NP (NN note))
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (PP (IN for)
+            (NP (NN tax/legal)))
+          (NP
+            (NP (DT the) (NNP FX) (NN desk))
+            (PP (IN in)
+              (NP (NNP London))))
+          (VP (VBZ is)))))
+    (VP (VBN run)
+      (PP (IN by)
+        (NP
+          (NP (NNP Enron) (NNP Europe) (NNP Finance)
+            (CC &)
+            (NNP Trading) (NNP Limited))
+          (PRN (-LRB- -LRB-) (`` ``)
+            (NP (NN EEFT))
+            ('' '') (-RRB- -RRB-))))
+      (PP (IN as)
+        (NP (NN agent)))
+      (PP (IN for)
+        (NP (NNP ENA))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, run-13)
+advmod(run-13, However-1)
+punct(run-13, ,-2)
+dobj(is-12, note-3)
+nsubj(run-13, note-3)
+ref(note-3, that-4)
+case(tax/legal-6, for-5)
+nmod:for(is-12, tax/legal-6)
+det(desk-9, the-7)
+compound(desk-9, FX-8)
+nsubj(is-12, desk-9)
+case(London-11, in-10)
+nmod:in(desk-9, London-11)
+acl:relcl(note-3, is-12)
+case(Finance-17, by-14)
+compound(Finance-17, Enron-15)
+compound(Finance-17, Europe-16)
+nmod:by(run-13, Finance-17)
+cc(Finance-17, &-18)
+compound(Limited-20, Trading-19)
+nmod:by(run-13, Limited-20)
+conj:&(Finance-17, Limited-20)
+punct(EEFT-23, -LRB--21)
+punct(EEFT-23, ``-22)
+appos(Finance-17, EEFT-23)
+punct(EEFT-23, ''-24)
+punct(EEFT-23, -RRB--25)
+case(agent-27, as-26)
+nmod:as(run-13, agent-27)
+case(ENA-29, for-28)
+nmod:for(run-13, ENA-29)
+punct(run-13, .-30)
+
+Extracted the following NER entity mentions:
+London	CITY
+Enron Europe Finance & Trading Limited	ORGANIZATION
+ENA	ORGANIZATION
+
+Sentence #3 (15 tokens):
+Our position is that ENA
+does not have a place of business in London.
+
+Tokens:
+[Text=Our CharacterOffsetBegin=203 CharacterOffsetEnd=206 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=position CharacterOffsetBegin=207 CharacterOffsetEnd=215 PartOfSpeech=NN Lemma=position NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=216 CharacterOffsetEnd=218 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=219 CharacterOffsetEnd=223 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=ENA CharacterOffsetBegin=224 CharacterOffsetEnd=227 PartOfSpeech=NN Lemma=ena NamedEntityTag=ORGANIZATION]
+[Text=does CharacterOffsetBegin=228 CharacterOffsetEnd=232 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=233 CharacterOffsetEnd=236 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=237 CharacterOffsetEnd=241 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=242 CharacterOffsetEnd=243 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=place CharacterOffsetBegin=244 CharacterOffsetEnd=249 PartOfSpeech=NN Lemma=place NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=250 CharacterOffsetEnd=252 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=business CharacterOffsetBegin=253 CharacterOffsetEnd=261 PartOfSpeech=NN Lemma=business NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=262 CharacterOffsetEnd=264 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=London CharacterOffsetBegin=265 CharacterOffsetEnd=271 PartOfSpeech=NNP Lemma=London NamedEntityTag=CITY]
+[Text=. CharacterOffsetBegin=271 CharacterOffsetEnd=272 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP$ Our) (NN position))
+    (VP (VBZ is)
+      (SBAR (IN that)
+        (S
+          (NP (NN ENA))
+          (VP (VBZ does) (RB not)
+            (VP (VB have)
+              (NP
+                (NP (DT a) (NN place))
+                (PP (IN of)
+                  (NP
+                    (NP (NN business))
+                    (PP (IN in)
+                      (NP (NNP London)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-3)
+nmod:poss(position-2, Our-1)
+nsubj(is-3, position-2)
+mark(have-8, that-4)
+nsubj(have-8, ENA-5)
+aux(have-8, does-6)
+neg(have-8, not-7)
+ccomp(is-3, have-8)
+det(place-10, a-9)
+dobj(have-8, place-10)
+case(business-12, of-11)
+nmod:of(place-10, business-12)
+case(London-14, in-13)
+nmod:in(business-12, London-14)
+punct(is-3, .-15)
+
+Extracted the following NER entity mentions:
+ENA	ORGANIZATION
+London	CITY
+
+Sentence #4 (19 tokens):
+Therefore all the transactions
+managed by the London FX desk are arranged by EEFT as agent for ENA.
+
+Tokens:
+[Text=Therefore CharacterOffsetBegin=273 CharacterOffsetEnd=282 PartOfSpeech=RB Lemma=therefore NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=283 CharacterOffsetEnd=286 PartOfSpeech=PDT Lemma=all NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=287 CharacterOffsetEnd=290 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=transactions CharacterOffsetBegin=291 CharacterOffsetEnd=303 PartOfSpeech=NNS Lemma=transaction NamedEntityTag=O]
+[Text=managed CharacterOffsetBegin=304 CharacterOffsetEnd=311 PartOfSpeech=VBN Lemma=manage NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=312 CharacterOffsetEnd=314 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=315 CharacterOffsetEnd=318 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=London CharacterOffsetBegin=319 CharacterOffsetEnd=325 PartOfSpeech=NNP Lemma=London NamedEntityTag=CITY]
+[Text=FX CharacterOffsetBegin=326 CharacterOffsetEnd=328 PartOfSpeech=NN Lemma=fx NamedEntityTag=O]
+[Text=desk CharacterOffsetBegin=329 CharacterOffsetEnd=333 PartOfSpeech=NN Lemma=desk NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=334 CharacterOffsetEnd=337 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=arranged CharacterOffsetBegin=338 CharacterOffsetEnd=346 PartOfSpeech=VBN Lemma=arrange NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=347 CharacterOffsetEnd=349 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=EEFT CharacterOffsetBegin=350 CharacterOffsetEnd=354 PartOfSpeech=NN Lemma=eeft NamedEntityTag=ORGANIZATION]
+[Text=as CharacterOffsetBegin=355 CharacterOffsetEnd=357 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=agent CharacterOffsetBegin=358 CharacterOffsetEnd=363 PartOfSpeech=NN Lemma=agent NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=364 CharacterOffsetEnd=367 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=ENA CharacterOffsetBegin=368 CharacterOffsetEnd=371 PartOfSpeech=NNP Lemma=ENA NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=371 CharacterOffsetEnd=372 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Therefore))
+    (NP
+      (NP (PDT all) (DT the) (NNS transactions))
+      (VP (VBN managed)
+        (PP (IN by)
+          (NP (DT the) (NNP London) (NN FX) (NN desk)))))
+    (VP (VBP are)
+      (VP (VBN arranged)
+        (PP (IN by)
+          (NP (NN EEFT)))
+        (PP (IN as)
+          (NP
+            (NP (NN agent))
+            (PP (IN for)
+              (NP (NNP ENA)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, arranged-12)
+advmod(arranged-12, Therefore-1)
+det:predet(transactions-4, all-2)
+det(transactions-4, the-3)
+nsubjpass(arranged-12, transactions-4)
+acl(transactions-4, managed-5)
+case(desk-10, by-6)
+det(desk-10, the-7)
+compound(desk-10, London-8)
+compound(desk-10, FX-9)
+nmod:by(managed-5, desk-10)
+auxpass(arranged-12, are-11)
+case(EEFT-14, by-13)
+nmod:agent(arranged-12, EEFT-14)
+case(agent-16, as-15)
+nmod:as(arranged-12, agent-16)
+case(ENA-18, for-17)
+nmod:for(agent-16, ENA-18)
+punct(arranged-12, .-19)
+
+Extracted the following NER entity mentions:
+London	CITY
+EEFT	ORGANIZATION
+ENA	ORGANIZATION
+
+Sentence #5 (38 tokens):
+Because of this there is a need to identify which FX desk arranged the
+transaction and a possible solution to this is to have separate logins and
+logoffs for each FX desk during their hours of responsibility.
+
+Tokens:
+[Text=Because CharacterOffsetBegin=373 CharacterOffsetEnd=380 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=381 CharacterOffsetEnd=383 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=384 CharacterOffsetEnd=388 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=389 CharacterOffsetEnd=394 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=395 CharacterOffsetEnd=397 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=398 CharacterOffsetEnd=399 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=400 CharacterOffsetEnd=404 PartOfSpeech=NN Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=405 CharacterOffsetEnd=407 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=identify CharacterOffsetBegin=408 CharacterOffsetEnd=416 PartOfSpeech=VB Lemma=identify NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=417 CharacterOffsetEnd=422 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=FX CharacterOffsetBegin=423 CharacterOffsetEnd=425 PartOfSpeech=NNP Lemma=FX NamedEntityTag=O]
+[Text=desk CharacterOffsetBegin=426 CharacterOffsetEnd=430 PartOfSpeech=NN Lemma=desk NamedEntityTag=O]
+[Text=arranged CharacterOffsetBegin=431 CharacterOffsetEnd=439 PartOfSpeech=VBD Lemma=arrange NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=440 CharacterOffsetEnd=443 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=transaction CharacterOffsetBegin=444 CharacterOffsetEnd=455 PartOfSpeech=NN Lemma=transaction NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=456 CharacterOffsetEnd=459 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=460 CharacterOffsetEnd=461 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=possible CharacterOffsetBegin=462 CharacterOffsetEnd=470 PartOfSpeech=JJ Lemma=possible NamedEntityTag=O]
+[Text=solution CharacterOffsetBegin=471 CharacterOffsetEnd=479 PartOfSpeech=NN Lemma=solution NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=480 CharacterOffsetEnd=482 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=483 CharacterOffsetEnd=487 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=488 CharacterOffsetEnd=490 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=491 CharacterOffsetEnd=493 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=494 CharacterOffsetEnd=498 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=separate CharacterOffsetBegin=499 CharacterOffsetEnd=507 PartOfSpeech=JJ Lemma=separate NamedEntityTag=O]
+[Text=logins CharacterOffsetBegin=508 CharacterOffsetEnd=514 PartOfSpeech=NNS Lemma=login NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=515 CharacterOffsetEnd=518 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=logoffs CharacterOffsetBegin=519 CharacterOffsetEnd=526 PartOfSpeech=NNS Lemma=logoff NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=527 CharacterOffsetEnd=530 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=each CharacterOffsetBegin=531 CharacterOffsetEnd=535 PartOfSpeech=DT Lemma=each NamedEntityTag=O]
+[Text=FX CharacterOffsetBegin=536 CharacterOffsetEnd=538 PartOfSpeech=NN Lemma=fx NamedEntityTag=O]
+[Text=desk CharacterOffsetBegin=539 CharacterOffsetEnd=543 PartOfSpeech=NN Lemma=desk NamedEntityTag=O]
+[Text=during CharacterOffsetBegin=544 CharacterOffsetEnd=550 PartOfSpeech=IN Lemma=during NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=551 CharacterOffsetEnd=556 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=hours CharacterOffsetBegin=557 CharacterOffsetEnd=562 PartOfSpeech=NNS Lemma=hour NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=563 CharacterOffsetEnd=565 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=responsibility CharacterOffsetBegin=566 CharacterOffsetEnd=580 PartOfSpeech=NN Lemma=responsibility NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=580 CharacterOffsetEnd=581 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN Because)
+      (S
+        (PP (IN of)
+          (NP (DT this)))
+        (NP (EX there))
+        (VP (VBZ is)
+          (NP (DT a) (NN need)
+            (S
+              (VP (TO to)
+                (VP (VB identify)
+                  (SBAR
+                    (WHNP (WDT which))
+                    (S
+                      (NP (NNP FX) (NN desk))
+                      (VP (VBD arranged)
+                        (NP
+                          (NP (DT the) (NN transaction))
+                          (CC and)
+                          (NP (DT a) (JJ possible) (NN solution)))
+                        (PP (TO to)
+                          (NP (DT this)))))))))))))
+    (VP (VBZ is)
+      (S
+        (VP (TO to)
+          (VP (VB have)
+            (NP
+              (NP (JJ separate) (NNS logins)
+                (CC and)
+                (NNS logoffs))
+              (PP (IN for)
+                (NP (DT each) (NN FX) (NN desk))))
+            (PP (IN during)
+              (NP
+                (NP (PRP$ their) (NNS hours))
+                (PP (IN of)
+                  (NP (NN responsibility)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-22)
+mark(is-5, Because-1)
+case(this-3, of-2)
+nmod:of(is-5, this-3)
+expl(is-5, there-4)
+csubj(is-22, is-5)
+det(need-7, a-6)
+nsubj(is-5, need-7)
+mark(identify-9, to-8)
+acl:to(need-7, identify-9)
+dobj(arranged-13, which-10)
+compound(desk-12, FX-11)
+nsubj(arranged-13, desk-12)
+ccomp(identify-9, arranged-13)
+det(transaction-15, the-14)
+dobj(arranged-13, transaction-15)
+cc(transaction-15, and-16)
+det(solution-19, a-17)
+amod(solution-19, possible-18)
+dobj(arranged-13, solution-19)
+conj:and(transaction-15, solution-19)
+case(this-21, to-20)
+nmod:to(arranged-13, this-21)
+mark(have-24, to-23)
+xcomp(is-22, have-24)
+amod(logins-26, separate-25)
+dobj(have-24, logins-26)
+cc(logins-26, and-27)
+dobj(have-24, logoffs-28)
+conj:and(logins-26, logoffs-28)
+case(desk-32, for-29)
+det(desk-32, each-30)
+compound(desk-32, FX-31)
+nmod:for(logins-26, desk-32)
+case(hours-35, during-33)
+nmod:poss(hours-35, their-34)
+nmod:during(have-24, hours-35)
+case(responsibility-37, of-36)
+nmod:of(hours-35, responsibility-37)
+punct(is-22, .-38)
+
+Extracted the following NER entity mentions:
+
+Sentence #6 (31 tokens):
+This would
+enable transaction reports to be run which identify those transactions which
+took place during the period for which each FX desk was responsible for
+managing the FX positions.
+
+Tokens:
+[Text=This CharacterOffsetBegin=582 CharacterOffsetEnd=586 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=587 CharacterOffsetEnd=592 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=enable CharacterOffsetBegin=593 CharacterOffsetEnd=599 PartOfSpeech=VB Lemma=enable NamedEntityTag=O]
+[Text=transaction CharacterOffsetBegin=600 CharacterOffsetEnd=611 PartOfSpeech=NN Lemma=transaction NamedEntityTag=O]
+[Text=reports CharacterOffsetBegin=612 CharacterOffsetEnd=619 PartOfSpeech=NNS Lemma=report NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=620 CharacterOffsetEnd=622 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=623 CharacterOffsetEnd=625 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=run CharacterOffsetBegin=626 CharacterOffsetEnd=629 PartOfSpeech=VBN Lemma=run NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=630 CharacterOffsetEnd=635 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=identify CharacterOffsetBegin=636 CharacterOffsetEnd=644 PartOfSpeech=VBP Lemma=identify NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=645 CharacterOffsetEnd=650 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=transactions CharacterOffsetBegin=651 CharacterOffsetEnd=663 PartOfSpeech=NNS Lemma=transaction NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=664 CharacterOffsetEnd=669 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=took CharacterOffsetBegin=670 CharacterOffsetEnd=674 PartOfSpeech=VBD Lemma=take NamedEntityTag=O]
+[Text=place CharacterOffsetBegin=675 CharacterOffsetEnd=680 PartOfSpeech=NN Lemma=place NamedEntityTag=O]
+[Text=during CharacterOffsetBegin=681 CharacterOffsetEnd=687 PartOfSpeech=IN Lemma=during NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=688 CharacterOffsetEnd=691 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=period CharacterOffsetBegin=692 CharacterOffsetEnd=698 PartOfSpeech=NN Lemma=period NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=699 CharacterOffsetEnd=702 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=703 CharacterOffsetEnd=708 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=each CharacterOffsetBegin=709 CharacterOffsetEnd=713 PartOfSpeech=DT Lemma=each NamedEntityTag=O]
+[Text=FX CharacterOffsetBegin=714 CharacterOffsetEnd=716 PartOfSpeech=NN Lemma=fx NamedEntityTag=O]
+[Text=desk CharacterOffsetBegin=717 CharacterOffsetEnd=721 PartOfSpeech=NN Lemma=desk NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=722 CharacterOffsetEnd=725 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=responsible CharacterOffsetBegin=726 CharacterOffsetEnd=737 PartOfSpeech=JJ Lemma=responsible NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=738 CharacterOffsetEnd=741 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=managing CharacterOffsetBegin=742 CharacterOffsetEnd=750 PartOfSpeech=VBG Lemma=manage NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=751 CharacterOffsetEnd=754 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=FX CharacterOffsetBegin=755 CharacterOffsetEnd=757 PartOfSpeech=NN Lemma=fx NamedEntityTag=O]
+[Text=positions CharacterOffsetBegin=758 CharacterOffsetEnd=767 PartOfSpeech=NNS Lemma=position NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=767 CharacterOffsetEnd=768 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (MD would)
+      (VP (VB enable)
+        (NP (NN transaction) (NNS reports))
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (VP (VBN run)
+                (SBAR
+                  (WHNP (WDT which))
+                  (S
+                    (VP (VBP identify)
+                      (NP
+                        (NP (DT those) (NNS transactions))
+                        (SBAR
+                          (WHNP (WDT which))
+                          (S
+                            (VP (VBD took)
+                              (NP (NN place))
+                              (PP (IN during)
+                                (NP
+                                  (NP (DT the) (NN period))
+                                  (SBAR
+                                    (WHPP (IN for)
+                                      (WHNP (WDT which)))
+                                    (S
+                                      (NP (DT each) (NN FX) (NN desk))
+                                      (VP (VBD was)
+                                        (ADJP (JJ responsible)
+                                          (PP (IN for)
+                                            (S
+                                              (VP (VBG managing)
+                                                (NP (DT the) (NN FX) (NNS positions))))))))))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, enable-3)
+nsubj(enable-3, This-1)
+aux(enable-3, would-2)
+compound(reports-5, transaction-4)
+dobj(enable-3, reports-5)
+mark(run-8, to-6)
+auxpass(run-8, be-7)
+advcl:to(enable-3, run-8)
+nsubj(identify-10, which-9)
+ccomp(run-8, identify-10)
+det(transactions-12, those-11)
+dobj(identify-10, transactions-12)
+nsubj(took-14, transactions-12)
+ref(transactions-12, which-13)
+acl:relcl(transactions-12, took-14)
+dobj(took-14, place-15)
+case(period-18, during-16)
+det(period-18, the-17)
+nmod:during(took-14, period-18)
+nmod:for(responsible-25, period-18)
+case(which-20, for-19)
+ref(period-18, which-20)
+det(desk-23, each-21)
+compound(desk-23, FX-22)
+nsubj(responsible-25, desk-23)
+cop(responsible-25, was-24)
+acl:relcl(period-18, responsible-25)
+mark(managing-27, for-26)
+advcl:for(responsible-25, managing-27)
+det(positions-30, the-28)
+compound(positions-30, FX-29)
+dobj(managing-27, positions-30)
+punct(enable-3, .-31)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(2,29,[29,30]) -> (1,13,[13,14]), that is: "ENA" -> "ENA"
+	(4,18,[18,19]) -> (1,13,[13,14]), that is: "ENA" -> "ENA"
+
+Coreference set:
+	(5,15,[14,16]) -> (1,9,[7,10]), that is: "the transaction" -> "the FX transaction"
+
+Coreference set:
+	(3,14,[14,15]) -> (2,11,[11,12]), that is: "London" -> "London"
+	(4,8,[8,9]) -> (2,11,[11,12]), that is: "London" -> "London"
+
+Coreference set:
+	(2,9,[7,12]) -> (4,10,[7,11]), that is: "the FX desk in London" -> "the London FX desk"
+	(5,12,[11,13]) -> (4,10,[7,11]), that is: "FX desk" -> "the London FX desk"
+
+Coreference set:
+	(5,21,[21,22]) -> (5,3,[3,4]), that is: "this" -> "this"
+	(6,1,[1,2]) -> (5,3,[3,4]), that is: "This" -> "this"
+
+Coreference set:
+	(5,34,[34,35]) -> (5,26,[25,33]), that is: "their" -> "separate logins and logoffs for each FX desk"

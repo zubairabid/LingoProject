@@ -1,0 +1,138 @@
+Document: ID=859729.in (3 sentences, 28 tokens)
+
+Sentence #1 (15 tokens):
+Brian, Hector, and Lenny have dropped out (what a shocker).
+
+Tokens:
+[Text=Brian CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Brian NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Hector CharacterOffsetBegin=7 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Hector NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Lenny CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=NNP Lemma=Lenny NamedEntityTag=PERSON]
+[Text=have CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=dropped CharacterOffsetBegin=30 CharacterOffsetEnd=37 PartOfSpeech=VBN Lemma=drop NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=shocker CharacterOffsetBegin=50 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=shocker NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Brian) (, ,) (NNP Hector) (, ,)
+      (CC and)
+      (NNP Lenny))
+    (VP (VBP have)
+      (VP (VBN dropped)
+        (ADVP (RP out))
+        (PRN (-LRB- -LRB-)
+          (FRAG
+            (X (WP what))
+            (NP (DT a) (NN shocker)))
+          (-RRB- -RRB-))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, dropped-8)
+nsubj(dropped-8, Brian-1)
+punct(Brian-1, ,-2)
+conj:and(Brian-1, Hector-3)
+nsubj(dropped-8, Hector-3)
+punct(Brian-1, ,-4)
+cc(Brian-1, and-5)
+conj:and(Brian-1, Lenny-6)
+nsubj(dropped-8, Lenny-6)
+aux(dropped-8, have-7)
+advmod(dropped-8, out-9)
+punct(shocker-13, -LRB--10)
+dep(shocker-13, what-11)
+det(shocker-13, a-12)
+dep(dropped-8, shocker-13)
+punct(shocker-13, -RRB--14)
+punct(dropped-8, .-15)
+
+Extracted the following NER entity mentions:
+Brian	PERSON
+Hector	PERSON
+Lenny	PERSON
+
+Sentence #2 (10 tokens):
+Steve Venturatos
+has graciously offered to take their place.
+
+Tokens:
+[Text=Steve CharacterOffsetBegin=61 CharacterOffsetEnd=66 PartOfSpeech=NNP Lemma=Steve NamedEntityTag=PERSON]
+[Text=Venturatos CharacterOffsetBegin=67 CharacterOffsetEnd=77 PartOfSpeech=NNP Lemma=Venturatos NamedEntityTag=PERSON]
+[Text=has CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=graciously CharacterOffsetBegin=82 CharacterOffsetEnd=92 PartOfSpeech=RB Lemma=graciously NamedEntityTag=O]
+[Text=offered CharacterOffsetBegin=93 CharacterOffsetEnd=100 PartOfSpeech=VBN Lemma=offer NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=101 CharacterOffsetEnd=103 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=take CharacterOffsetBegin=104 CharacterOffsetEnd=108 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=109 CharacterOffsetEnd=114 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=place CharacterOffsetBegin=115 CharacterOffsetEnd=120 PartOfSpeech=NN Lemma=place NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=120 CharacterOffsetEnd=121 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Steve) (NNP Venturatos))
+    (VP (VBZ has)
+      (ADVP (RB graciously))
+      (VP (VBN offered)
+        (S
+          (VP (TO to)
+            (VP (VB take)
+              (NP (PRP$ their) (NN place)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, offered-5)
+compound(Venturatos-2, Steve-1)
+nsubj(offered-5, Venturatos-2)
+nsubj:xsubj(take-7, Venturatos-2)
+aux(offered-5, has-3)
+advmod(offered-5, graciously-4)
+mark(take-7, to-6)
+xcomp(offered-5, take-7)
+nmod:poss(place-9, their-8)
+dobj(take-7, place-9)
+punct(offered-5, .-10)
+
+Extracted the following NER entity mentions:
+Steve Venturatos	PERSON
+
+Sentence #3 (3 tokens):
+Thanks Steve.
+
+Tokens:
+[Text=Thanks CharacterOffsetBegin=123 CharacterOffsetEnd=129 PartOfSpeech=NNS Lemma=thanks NamedEntityTag=O]
+[Text=Steve CharacterOffsetBegin=130 CharacterOffsetEnd=135 PartOfSpeech=NNP Lemma=Steve NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=135 CharacterOffsetEnd=136 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNS Thanks))
+    (NP (NNP Steve))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Thanks-1)
+appos(Thanks-1, Steve-2)
+punct(Thanks-1, .-3)
+
+Extracted the following NER entity mentions:
+Steve	PERSON
+
+Coreference set:
+	(2,8,[8,9]) -> (1,1,[1,7]), that is: "their" -> "Brian , Hector , and Lenny"
+
+Coreference set:
+	(3,2,[2,3]) -> (2,2,[1,3]), that is: "Steve" -> "Steve Venturatos"

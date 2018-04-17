@@ -1,0 +1,136 @@
+Document: ID=888313.in (2 sentences, 34 tokens)
+
+Sentence #1 (23 tokens):
+We are scheduled to meet with PG&E to discuss their plan of reorganization for gas on Jan. 8th at 10 AM CST.
+
+Tokens:
+[Text=We CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=scheduled CharacterOffsetBegin=7 CharacterOffsetEnd=16 PartOfSpeech=VBN Lemma=schedule NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=meet CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=VB Lemma=meet NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=PG&E CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=PG&E NamedEntityTag=ORGANIZATION]
+[Text=to CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=discuss CharacterOffsetBegin=38 CharacterOffsetEnd=45 PartOfSpeech=VB Lemma=discuss NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=46 CharacterOffsetEnd=51 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=plan CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=plan NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=reorganization CharacterOffsetBegin=60 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=reorganization NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=gas CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=NN Lemma=gas NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=83 CharacterOffsetEnd=85 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Jan. CharacterOffsetBegin=86 CharacterOffsetEnd=90 PartOfSpeech=NNP Lemma=Jan. NamedEntityTag=DATE NormalizedNamedEntityTag=****0108]
+[Text=8th CharacterOffsetBegin=91 CharacterOffsetEnd=94 PartOfSpeech=JJ Lemma=8th NamedEntityTag=DATE NormalizedNamedEntityTag=****0108]
+[Text=at CharacterOffsetBegin=95 CharacterOffsetEnd=97 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=10 CharacterOffsetBegin=98 CharacterOffsetEnd=100 PartOfSpeech=CD Lemma=10 NamedEntityTag=NUMBER NormalizedNamedEntityTag=10.0]
+[Text=AM CharacterOffsetBegin=101 CharacterOffsetEnd=103 PartOfSpeech=NNP Lemma=AM NamedEntityTag=O]
+[Text=CST CharacterOffsetBegin=104 CharacterOffsetEnd=107 PartOfSpeech=NNP Lemma=CST NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=107 CharacterOffsetEnd=108 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP are)
+      (VP (VBN scheduled)
+        (S
+          (VP (TO to)
+            (VP (VB meet)
+              (PP (IN with)
+                (NP (NNP PG&E)))
+              (S
+                (VP (TO to)
+                  (VP (VB discuss)
+                    (NP
+                      (NP (PRP$ their) (NN plan))
+                      (PP (IN of)
+                        (NP (NN reorganization))))
+                    (PP (IN for)
+                      (NP (NN gas)))
+                    (PP (IN on)
+                      (NP
+                        (NP (NNP Jan.))
+                        (JJ 8th) (IN at)
+                        (NP (CD 10) (NNP AM) (NNP CST))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, scheduled-3)
+nsubjpass(scheduled-3, We-1)
+nsubj:xsubj(meet-5, We-1)
+auxpass(scheduled-3, are-2)
+mark(meet-5, to-4)
+xcomp(scheduled-3, meet-5)
+case(PG&E-7, with-6)
+nmod:with(meet-5, PG&E-7)
+mark(discuss-9, to-8)
+xcomp(meet-5, discuss-9)
+nmod:poss(plan-11, their-10)
+dobj(discuss-9, plan-11)
+case(reorganization-13, of-12)
+nmod:of(plan-11, reorganization-13)
+case(gas-15, for-14)
+nmod:for(discuss-9, gas-15)
+case(Jan.-17, on-16)
+nmod:on(discuss-9, Jan.-17)
+amod(Jan.-17, 8th-18)
+amod(Jan.-17, at-19)
+nummod(CST-22, 10-20)
+compound(CST-22, AM-21)
+dep(Jan.-17, CST-22)
+punct(scheduled-3, .-23)
+
+Extracted the following NER entity mentions:
+PG&E	ORGANIZATION
+Jan. 8th	DATE
+10	NUMBER
+
+Sentence #2 (11 tokens):
+If you have any questions, please let me know.
+
+Tokens:
+[Text=If CharacterOffsetBegin=110 CharacterOffsetEnd=112 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=113 CharacterOffsetEnd=116 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=117 CharacterOffsetEnd=121 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=122 CharacterOffsetEnd=125 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=questions CharacterOffsetBegin=126 CharacterOffsetEnd=135 PartOfSpeech=NNS Lemma=question NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=135 CharacterOffsetEnd=136 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=please CharacterOffsetBegin=137 CharacterOffsetEnd=143 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=let CharacterOffsetBegin=144 CharacterOffsetEnd=147 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=148 CharacterOffsetEnd=150 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=151 CharacterOffsetEnd=155 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=155 CharacterOffsetEnd=156 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP have)
+          (NP (DT any) (NNS questions)))))
+    (, ,)
+    (VP (VB please)
+      (VP (VB let)
+        (S
+          (NP (PRP me))
+          (VP (VB know)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, please-7)
+mark(have-3, If-1)
+nsubj(have-3, you-2)
+advcl:if(please-7, have-3)
+det(questions-5, any-4)
+dobj(have-3, questions-5)
+punct(please-7, ,-6)
+xcomp(please-7, let-8)
+nsubj(know-10, me-9)
+ccomp(let-8, know-10)
+punct(please-7, .-11)
+
+Extracted the following NER entity mentions:

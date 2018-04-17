@@ -1,0 +1,348 @@
+Document: ID=874471.in (6 sentences, 82 tokens)
+
+Sentence #1 (23 tokens):
+Individuals who have attained the level Vice President (or above) are authorized by the company bylaws to sign any contracts.
+
+Tokens:
+[Text=Individuals CharacterOffsetBegin=0 CharacterOffsetEnd=11 PartOfSpeech=NNS Lemma=individual NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=attained CharacterOffsetBegin=21 CharacterOffsetEnd=29 PartOfSpeech=VBN Lemma=attain NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=level CharacterOffsetBegin=34 CharacterOffsetEnd=39 PartOfSpeech=NN Lemma=level NamedEntityTag=O]
+[Text=Vice CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=NNP Lemma=Vice NamedEntityTag=TITLE]
+[Text=President CharacterOffsetBegin=45 CharacterOffsetEnd=54 PartOfSpeech=NNP Lemma=President NamedEntityTag=TITLE]
+[Text=-LRB- CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=above CharacterOffsetBegin=59 CharacterOffsetEnd=64 PartOfSpeech=IN Lemma=above NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=64 CharacterOffsetEnd=65 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=authorized CharacterOffsetBegin=70 CharacterOffsetEnd=80 PartOfSpeech=VBN Lemma=authorize NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=81 CharacterOffsetEnd=83 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=84 CharacterOffsetEnd=87 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=company CharacterOffsetBegin=88 CharacterOffsetEnd=95 PartOfSpeech=NN Lemma=company NamedEntityTag=O]
+[Text=bylaws CharacterOffsetBegin=96 CharacterOffsetEnd=102 PartOfSpeech=NNS Lemma=bylaw NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=103 CharacterOffsetEnd=105 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=sign CharacterOffsetBegin=106 CharacterOffsetEnd=110 PartOfSpeech=VB Lemma=sign NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=111 CharacterOffsetEnd=114 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=contracts CharacterOffsetBegin=115 CharacterOffsetEnd=124 PartOfSpeech=NNS Lemma=contract NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=124 CharacterOffsetEnd=125 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNS Individuals))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBP have)
+            (VP (VBN attained)
+              (S
+                (NP (DT the) (NN level))
+                (NP
+                  (NP (NNP Vice) (NNP President))
+                  (PRN (-LRB- -LRB-)
+                    (NP
+                      (QP (CC or)
+                        (IN above)))
+                    (-RRB- -RRB-)))))))))
+    (VP (VBP are)
+      (VP (VBN authorized)
+        (PP (IN by)
+          (NP (DT the) (NN company) (NNS bylaws)))
+        (S
+          (VP (TO to)
+            (VP (VB sign)
+              (NP (DT any) (NNS contracts)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, authorized-14)
+nsubj(attained-4, Individuals-1)
+nsubjpass(authorized-14, Individuals-1)
+nsubj:xsubj(sign-20, Individuals-1)
+ref(Individuals-1, who-2)
+aux(attained-4, have-3)
+acl:relcl(Individuals-1, attained-4)
+det(level-6, the-5)
+nsubj(President-8, level-6)
+compound(President-8, Vice-7)
+xcomp(attained-4, President-8)
+punct(above-11, -LRB--9)
+cc(above-11, or-10)
+dep(President-8, above-11)
+punct(above-11, -RRB--12)
+auxpass(authorized-14, are-13)
+case(bylaws-18, by-15)
+det(bylaws-18, the-16)
+compound(bylaws-18, company-17)
+nmod:agent(authorized-14, bylaws-18)
+mark(sign-20, to-19)
+xcomp(authorized-14, sign-20)
+det(contracts-22, any-21)
+dobj(sign-20, contracts-22)
+punct(authorized-14, .-23)
+
+Extracted the following NER entity mentions:
+Vice President	TITLE
+
+Sentence #2 (15 tokens):
+Thus Greg Hermans, Ray Bowen and Bob Crane would not need special authorization.
+
+Tokens:
+[Text=Thus CharacterOffsetBegin=127 CharacterOffsetEnd=131 PartOfSpeech=RB Lemma=thus NamedEntityTag=O]
+[Text=Greg CharacterOffsetBegin=132 CharacterOffsetEnd=136 PartOfSpeech=NNP Lemma=Greg NamedEntityTag=PERSON]
+[Text=Hermans CharacterOffsetBegin=137 CharacterOffsetEnd=144 PartOfSpeech=NNP Lemma=Hermans NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=144 CharacterOffsetEnd=145 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Ray CharacterOffsetBegin=146 CharacterOffsetEnd=149 PartOfSpeech=NNP Lemma=Ray NamedEntityTag=PERSON]
+[Text=Bowen CharacterOffsetBegin=150 CharacterOffsetEnd=155 PartOfSpeech=NNP Lemma=Bowen NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=156 CharacterOffsetEnd=159 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Bob CharacterOffsetBegin=160 CharacterOffsetEnd=163 PartOfSpeech=NNP Lemma=Bob NamedEntityTag=PERSON]
+[Text=Crane CharacterOffsetBegin=164 CharacterOffsetEnd=169 PartOfSpeech=NNP Lemma=Crane NamedEntityTag=PERSON]
+[Text=would CharacterOffsetBegin=170 CharacterOffsetEnd=175 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=176 CharacterOffsetEnd=179 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=180 CharacterOffsetEnd=184 PartOfSpeech=VB Lemma=need NamedEntityTag=O]
+[Text=special CharacterOffsetBegin=185 CharacterOffsetEnd=192 PartOfSpeech=JJ Lemma=special NamedEntityTag=O]
+[Text=authorization CharacterOffsetBegin=193 CharacterOffsetEnd=206 PartOfSpeech=NN Lemma=authorization NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=206 CharacterOffsetEnd=207 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Thus))
+    (NP
+      (NP (NNP Greg) (NNP Hermans))
+      (, ,)
+      (NP (NNP Ray) (NNP Bowen))
+      (CC and)
+      (NP (NNP Bob) (NNP Crane)))
+    (VP (MD would) (RB not)
+      (VP (VB need)
+        (NP (JJ special) (NN authorization))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, need-12)
+advmod(need-12, Thus-1)
+compound(Hermans-3, Greg-2)
+nsubj(need-12, Hermans-3)
+punct(Hermans-3, ,-4)
+compound(Bowen-6, Ray-5)
+conj:and(Hermans-3, Bowen-6)
+nsubj(need-12, Bowen-6)
+cc(Hermans-3, and-7)
+compound(Crane-9, Bob-8)
+conj:and(Hermans-3, Crane-9)
+nsubj(need-12, Crane-9)
+aux(need-12, would-10)
+neg(need-12, not-11)
+amod(authorization-14, special-13)
+dobj(need-12, authorization-14)
+punct(need-12, .-15)
+
+Extracted the following NER entity mentions:
+Greg Hermans	PERSON
+Ray Bowen	PERSON
+Bob Crane	PERSON
+
+Sentence #3 (23 tokens):
+Brenda Herod and Lisa McClendon were authorized but have left the group so you might see some old confirms with their signatures.
+
+Tokens:
+[Text=Brenda CharacterOffsetBegin=209 CharacterOffsetEnd=215 PartOfSpeech=NNP Lemma=Brenda NamedEntityTag=PERSON]
+[Text=Herod CharacterOffsetBegin=216 CharacterOffsetEnd=221 PartOfSpeech=NNP Lemma=Herod NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=222 CharacterOffsetEnd=225 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Lisa CharacterOffsetBegin=226 CharacterOffsetEnd=230 PartOfSpeech=NNP Lemma=Lisa NamedEntityTag=PERSON]
+[Text=McClendon CharacterOffsetBegin=231 CharacterOffsetEnd=240 PartOfSpeech=NNP Lemma=McClendon NamedEntityTag=PERSON]
+[Text=were CharacterOffsetBegin=241 CharacterOffsetEnd=245 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=authorized CharacterOffsetBegin=246 CharacterOffsetEnd=256 PartOfSpeech=VBN Lemma=authorize NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=257 CharacterOffsetEnd=260 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=261 CharacterOffsetEnd=265 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=left CharacterOffsetBegin=266 CharacterOffsetEnd=270 PartOfSpeech=VBN Lemma=leave NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=271 CharacterOffsetEnd=274 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=group CharacterOffsetBegin=275 CharacterOffsetEnd=280 PartOfSpeech=NN Lemma=group NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=281 CharacterOffsetEnd=283 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=284 CharacterOffsetEnd=287 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=might CharacterOffsetBegin=288 CharacterOffsetEnd=293 PartOfSpeech=MD Lemma=might NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=294 CharacterOffsetEnd=297 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=298 CharacterOffsetEnd=302 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=old CharacterOffsetBegin=303 CharacterOffsetEnd=306 PartOfSpeech=JJ Lemma=old NamedEntityTag=O]
+[Text=confirms CharacterOffsetBegin=307 CharacterOffsetEnd=315 PartOfSpeech=VBZ Lemma=confirm NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=316 CharacterOffsetEnd=320 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=321 CharacterOffsetEnd=326 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=signatures CharacterOffsetBegin=327 CharacterOffsetEnd=337 PartOfSpeech=NNS Lemma=signature NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=337 CharacterOffsetEnd=338 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Brenda) (NNP Herod)
+      (CC and)
+      (NNP Lisa) (NNP McClendon))
+    (VP
+      (VP (VBD were)
+        (VP (VBN authorized)))
+      (CC but)
+      (VP (VBP have)
+        (VP (VBN left)
+          (NP (DT the) (NN group))
+          (SBAR (RB so)
+            (S
+              (NP (PRP you))
+              (VP (MD might)
+                (VP (VB see)
+                  (S
+                    (NP (DT some))
+                    (ADJP (JJ old))
+                    (S
+                      (VP (VBZ confirms)
+                        (PP (IN with)
+                          (NP (PRP$ their) (NNS signatures)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, authorized-7)
+compound(Herod-2, Brenda-1)
+nsubjpass(authorized-7, Herod-2)
+nsubjpass(left-10, Herod-2)
+cc(Herod-2, and-3)
+compound(McClendon-5, Lisa-4)
+conj:and(Herod-2, McClendon-5)
+nsubjpass(authorized-7, McClendon-5)
+auxpass(authorized-7, were-6)
+cc(authorized-7, but-8)
+aux(left-10, have-9)
+conj:but(authorized-7, left-10)
+det(group-12, the-11)
+dobj(left-10, group-12)
+advmod(see-16, so-13)
+nsubj(see-16, you-14)
+aux(see-16, might-15)
+dep(left-10, see-16)
+nsubj(confirms-19, some-17)
+dep(confirms-19, old-18)
+xcomp(see-16, confirms-19)
+case(signatures-22, with-20)
+nmod:poss(signatures-22, their-21)
+nmod:with(confirms-19, signatures-22)
+punct(authorized-7, .-23)
+
+Extracted the following NER entity mentions:
+Brenda Herod	PERSON
+Lisa McClendon	PERSON
+
+Sentence #4 (9 tokens):
+I don't know anything about Debbie Nicholls.
+
+Tokens:
+[Text=I CharacterOffsetBegin=340 CharacterOffsetEnd=341 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=342 CharacterOffsetEnd=344 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=344 CharacterOffsetEnd=347 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=348 CharacterOffsetEnd=352 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=anything CharacterOffsetBegin=353 CharacterOffsetEnd=361 PartOfSpeech=NN Lemma=anything NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=362 CharacterOffsetEnd=367 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=Debbie CharacterOffsetBegin=368 CharacterOffsetEnd=374 PartOfSpeech=NNP Lemma=Debbie NamedEntityTag=PERSON]
+[Text=Nicholls CharacterOffsetBegin=375 CharacterOffsetEnd=383 PartOfSpeech=NNP Lemma=Nicholls NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=383 CharacterOffsetEnd=384 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP do) (RB n't)
+      (VP (VB know)
+        (NP (NN anything))
+        (PP (IN about)
+          (NP (NNP Debbie) (NNP Nicholls)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, know-4)
+nsubj(know-4, I-1)
+aux(know-4, do-2)
+neg(know-4, n't-3)
+dobj(know-4, anything-5)
+case(Nicholls-8, about-6)
+compound(Nicholls-8, Debbie-7)
+nmod:about(know-4, Nicholls-8)
+punct(know-4, .-9)
+
+Extracted the following NER entity mentions:
+Debbie Nicholls	PERSON
+
+Sentence #5 (11 tokens):
+Marie, do you have any info on Debbie Nicholls?
+
+Tokens:
+[Text=Marie CharacterOffsetBegin=386 CharacterOffsetEnd=391 PartOfSpeech=NNP Lemma=Marie NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=391 CharacterOffsetEnd=392 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=393 CharacterOffsetEnd=395 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=396 CharacterOffsetEnd=399 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=400 CharacterOffsetEnd=404 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=405 CharacterOffsetEnd=408 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=info CharacterOffsetBegin=409 CharacterOffsetEnd=413 PartOfSpeech=NN Lemma=info NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=414 CharacterOffsetEnd=416 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Debbie CharacterOffsetBegin=417 CharacterOffsetEnd=423 PartOfSpeech=NNP Lemma=Debbie NamedEntityTag=PERSON]
+[Text=Nicholls CharacterOffsetBegin=424 CharacterOffsetEnd=432 PartOfSpeech=NNP Lemma=Nicholls NamedEntityTag=PERSON]
+[Text=? CharacterOffsetBegin=432 CharacterOffsetEnd=433 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Marie) (, ,))
+    (VP (VBP do)
+      (S
+        (NP (PRP you))
+        (VP (VB have)
+          (NP
+            (NP (DT any) (NN info))
+            (PP (IN on)
+              (NP (NNP Debbie) (NNP Nicholls)))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, do-3)
+nsubj(do-3, Marie-1)
+punct(Marie-1, ,-2)
+nsubj(have-5, you-4)
+ccomp(do-3, have-5)
+det(info-7, any-6)
+dobj(have-5, info-7)
+case(Nicholls-10, on-8)
+compound(Nicholls-10, Debbie-9)
+nmod:on(info-7, Nicholls-10)
+punct(do-3, ?-11)
+
+Extracted the following NER entity mentions:
+Marie	PERSON
+Debbie Nicholls	PERSON
+
+Sentence #6 (1 tokens):
+Deb
+
+Tokens:
+[Text=Deb CharacterOffsetBegin=435 CharacterOffsetEnd=438 PartOfSpeech=NNP Lemma=Deb NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Deb)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Deb-1)
+
+Extracted the following NER entity mentions:
+Deb	PERSON
+
+Coreference set:
+	(3,21,[21,22]) -> (3,17,[17,18]), that is: "their" -> "some"
+
+Coreference set:
+	(5,10,[9,11]) -> (4,8,[7,9]), that is: "Debbie Nicholls" -> "Debbie Nicholls"
+	(6,1,[1,2]) -> (4,8,[7,9]), that is: "Deb" -> "Debbie Nicholls"

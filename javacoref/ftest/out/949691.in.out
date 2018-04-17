@@ -1,0 +1,180 @@
+Document: ID=949691.in (3 sentences, 42 tokens)
+
+Sentence #1 (13 tokens):
+We need to set a further round of inteviews for Tony Hamilton.
+
+Tokens:
+[Text=We CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=VBP Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=set CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=VB Lemma=set NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=further CharacterOffsetBegin=17 CharacterOffsetEnd=24 PartOfSpeech=JJ Lemma=further NamedEntityTag=O]
+[Text=round CharacterOffsetBegin=25 CharacterOffsetEnd=30 PartOfSpeech=NN Lemma=round NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=inteviews CharacterOffsetBegin=34 CharacterOffsetEnd=43 PartOfSpeech=NNS Lemma=inteview NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Tony CharacterOffsetBegin=48 CharacterOffsetEnd=52 PartOfSpeech=NNP Lemma=Tony NamedEntityTag=PERSON]
+[Text=Hamilton CharacterOffsetBegin=53 CharacterOffsetEnd=61 PartOfSpeech=NNP Lemma=Hamilton NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP need)
+      (S
+        (VP (TO to)
+          (VP (VB set)
+            (NP
+              (NP (DT a) (JJ further) (NN round))
+              (PP (IN of)
+                (NP
+                  (NP (NNS inteviews))
+                  (PP (IN for)
+                    (NP (NNP Tony) (NNP Hamilton))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, need-2)
+nsubj(need-2, We-1)
+nsubj:xsubj(set-4, We-1)
+mark(set-4, to-3)
+xcomp(need-2, set-4)
+det(round-7, a-5)
+amod(round-7, further-6)
+dobj(set-4, round-7)
+case(inteviews-9, of-8)
+nmod:of(round-7, inteviews-9)
+case(Hamilton-12, for-10)
+compound(Hamilton-12, Tony-11)
+nmod:for(inteviews-9, Hamilton-12)
+punct(need-2, .-13)
+
+Extracted the following NER entity mentions:
+Tony Hamilton	PERSON
+
+Sentence #2 (14 tokens):
+Can everyone
+let Gloria Solis know their availability over the next 2 weeks.
+
+Tokens:
+[Text=Can CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=everyone CharacterOffsetBegin=67 CharacterOffsetEnd=75 PartOfSpeech=NN Lemma=everyone NamedEntityTag=O]
+[Text=let CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=Gloria CharacterOffsetBegin=80 CharacterOffsetEnd=86 PartOfSpeech=NNP Lemma=Gloria NamedEntityTag=PERSON]
+[Text=Solis CharacterOffsetBegin=87 CharacterOffsetEnd=92 PartOfSpeech=NNP Lemma=Solis NamedEntityTag=PERSON]
+[Text=know CharacterOffsetBegin=93 CharacterOffsetEnd=97 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=98 CharacterOffsetEnd=103 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=availability CharacterOffsetBegin=104 CharacterOffsetEnd=116 PartOfSpeech=NN Lemma=availability NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=117 CharacterOffsetEnd=121 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=122 CharacterOffsetEnd=125 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=next CharacterOffsetBegin=126 CharacterOffsetEnd=130 PartOfSpeech=JJ Lemma=next NamedEntityTag=O]
+[Text=2 CharacterOffsetBegin=131 CharacterOffsetEnd=132 PartOfSpeech=CD Lemma=2 NamedEntityTag=DURATION]
+[Text=weeks CharacterOffsetBegin=133 CharacterOffsetEnd=138 PartOfSpeech=NNS Lemma=week NamedEntityTag=DURATION]
+[Text=. CharacterOffsetBegin=138 CharacterOffsetEnd=139 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (MD Can)
+    (NP (NN everyone))
+    (VP (VB let)
+      (S
+        (NP (NNP Gloria) (NNP Solis))
+        (VP (VB know)
+          (NP (PRP$ their) (NN availability))
+          (PP (IN over)
+            (NP (DT the) (JJ next) (CD 2) (NNS weeks))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, let-3)
+aux(let-3, Can-1)
+nsubj(let-3, everyone-2)
+compound(Solis-5, Gloria-4)
+nsubj(know-6, Solis-5)
+ccomp(let-3, know-6)
+nmod:poss(availability-8, their-7)
+dobj(know-6, availability-8)
+case(weeks-13, over-9)
+det(weeks-13, the-10)
+amod(weeks-13, next-11)
+nummod(weeks-13, 2-12)
+nmod:over(know-6, weeks-13)
+punct(let-3, .-14)
+
+Extracted the following NER entity mentions:
+Gloria Solis	PERSON
+2 weeks	DURATION
+
+Sentence #3 (15 tokens):
+Below are
+the results from our initial interviews and the candidate's resume
+Thanks
+Jen
+
+Tokens:
+[Text=Below CharacterOffsetBegin=141 CharacterOffsetEnd=146 PartOfSpeech=NNP Lemma=Below NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=147 CharacterOffsetEnd=150 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=151 CharacterOffsetEnd=154 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=results CharacterOffsetBegin=155 CharacterOffsetEnd=162 PartOfSpeech=NNS Lemma=result NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=163 CharacterOffsetEnd=167 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=168 CharacterOffsetEnd=171 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=initial CharacterOffsetBegin=172 CharacterOffsetEnd=179 PartOfSpeech=JJ Lemma=initial NamedEntityTag=O]
+[Text=interviews CharacterOffsetBegin=180 CharacterOffsetEnd=190 PartOfSpeech=NNS Lemma=interview NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=191 CharacterOffsetEnd=194 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=195 CharacterOffsetEnd=198 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=candidate CharacterOffsetBegin=199 CharacterOffsetEnd=208 PartOfSpeech=NN Lemma=candidate NamedEntityTag=TITLE]
+[Text='s CharacterOffsetBegin=208 CharacterOffsetEnd=210 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=resume CharacterOffsetBegin=211 CharacterOffsetEnd=217 PartOfSpeech=VB Lemma=resume NamedEntityTag=O]
+[Text=Thanks CharacterOffsetBegin=218 CharacterOffsetEnd=224 PartOfSpeech=NNS Lemma=thanks NamedEntityTag=O]
+[Text=Jen CharacterOffsetBegin=225 CharacterOffsetEnd=228 PartOfSpeech=NN Lemma=jen NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Below))
+    (VP (VBP are)
+      (NP
+        (NP (DT the) (NNS results))
+        (PP (IN from)
+          (NP
+            (NP
+              (NP (PRP$ our) (JJ initial) (NNS interviews))
+              (CC and)
+              (NP (DT the) (NN candidate) (POS 's)))
+            (SBAR
+              (S
+                (VP (VB resume)
+                  (NP (NNS Thanks) (NN Jen)))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, results-4)
+nsubj(results-4, Below-1)
+cop(results-4, are-2)
+det(results-4, the-3)
+conj:and(results-4, results-4')
+case(interviews-8, from-5)
+nmod:poss(interviews-8, our-6)
+amod(interviews-8, initial-7)
+nmod:from(results-4, interviews-8)
+cc(results-4, and-9)
+det(candidate-11, the-10)
+nmod:'s(results-4', candidate-11)
+case(candidate-11, 's-12)
+acl:relcl(interviews-8, resume-13)
+compound(Jen-15, Thanks-14)
+dobj(resume-13, Jen-15)
+
+Extracted the following NER entity mentions:
+candidate	TITLE
+Jen	PERSON
+
+Coreference set:
+	(3,6,[6,7]) -> (1,1,[1,2]), that is: "our" -> "We"
+
+Coreference set:
+	(2,7,[7,8]) -> (1,9,[9,13]), that is: "their" -> "inteviews for Tony Hamilton"

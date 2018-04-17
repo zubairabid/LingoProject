@@ -1,0 +1,798 @@
+Document: ID=214126.in (10 sentences, 204 tokens)
+
+Sentence #1 (14 tokens):
+Each issue of IntelliBytes is a concise summary of a broadband industry
+topic.
+
+Tokens:
+[Text=Each CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=each NamedEntityTag=O]
+[Text=issue CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=issue NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=IntelliBytes CharacterOffsetBegin=14 CharacterOffsetEnd=26 PartOfSpeech=NNPS Lemma=IntelliBytes NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=concise CharacterOffsetBegin=32 CharacterOffsetEnd=39 PartOfSpeech=JJ Lemma=concise NamedEntityTag=O]
+[Text=summary CharacterOffsetBegin=40 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=summary NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=broadband CharacterOffsetBegin=53 CharacterOffsetEnd=62 PartOfSpeech=NN Lemma=broadband NamedEntityTag=O]
+[Text=industry CharacterOffsetBegin=63 CharacterOffsetEnd=71 PartOfSpeech=NN Lemma=industry NamedEntityTag=O]
+[Text=topic CharacterOffsetBegin=72 CharacterOffsetEnd=77 PartOfSpeech=NN Lemma=topic NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=77 CharacterOffsetEnd=78 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT Each) (NN issue))
+      (PP (IN of)
+        (NP (NNPS IntelliBytes))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ concise) (NN summary))
+        (PP (IN of)
+          (NP (DT a) (NN broadband) (NN industry) (NN topic)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, summary-8)
+det(issue-2, Each-1)
+nsubj(summary-8, issue-2)
+case(IntelliBytes-4, of-3)
+nmod:of(issue-2, IntelliBytes-4)
+cop(summary-8, is-5)
+det(summary-8, a-6)
+amod(summary-8, concise-7)
+case(topic-13, of-9)
+det(topic-13, a-10)
+compound(topic-13, broadband-11)
+compound(topic-13, industry-12)
+nmod:of(summary-8, topic-13)
+punct(summary-8, .-14)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (16 tokens):
+April's issue is titled "Broadband 2001 according to JP Morgan and
+McKinsey".
+
+Tokens:
+[Text=April CharacterOffsetBegin=80 CharacterOffsetEnd=85 PartOfSpeech=NNP Lemma=April NamedEntityTag=DATE NormalizedNamedEntityTag=****04]
+[Text='s CharacterOffsetBegin=85 CharacterOffsetEnd=87 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=issue CharacterOffsetBegin=88 CharacterOffsetEnd=93 PartOfSpeech=NN Lemma=issue NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=94 CharacterOffsetEnd=96 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=titled CharacterOffsetBegin=97 CharacterOffsetEnd=103 PartOfSpeech=VBN Lemma=title NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=104 CharacterOffsetEnd=105 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Broadband CharacterOffsetBegin=105 CharacterOffsetEnd=114 PartOfSpeech=NNP Lemma=Broadband NamedEntityTag=O]
+[Text=2001 CharacterOffsetBegin=115 CharacterOffsetEnd=119 PartOfSpeech=CD Lemma=2001 NamedEntityTag=DATE NormalizedNamedEntityTag=2001]
+[Text=according CharacterOffsetBegin=120 CharacterOffsetEnd=129 PartOfSpeech=VBG Lemma=accord NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=130 CharacterOffsetEnd=132 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=JP CharacterOffsetBegin=133 CharacterOffsetEnd=135 PartOfSpeech=NNP Lemma=JP NamedEntityTag=ORGANIZATION]
+[Text=Morgan CharacterOffsetBegin=136 CharacterOffsetEnd=142 PartOfSpeech=NNP Lemma=Morgan NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=143 CharacterOffsetEnd=146 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=McKinsey CharacterOffsetBegin=147 CharacterOffsetEnd=155 PartOfSpeech=NNP Lemma=McKinsey NamedEntityTag=ORGANIZATION]
+[Text='' CharacterOffsetBegin=155 CharacterOffsetEnd=156 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=156 CharacterOffsetEnd=157 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP April) (POS 's))
+      (NN issue))
+    (VP (VBZ is)
+      (VP (VBN titled) (`` ``)
+        (S
+          (NP (NNP Broadband) (CD 2001))
+          (PP (VBG according)
+            (PP (TO to)
+              (NP (NNP JP) (NNP Morgan)
+                (CC and)
+                (NNP McKinsey)))))
+        ('' '')))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, titled-5)
+nmod:poss(issue-3, April-1)
+case(April-1, 's-2)
+nsubjpass(titled-5, issue-3)
+auxpass(titled-5, is-4)
+punct(titled-5, ``-6)
+xcomp(titled-5, Broadband-7)
+nummod(Broadband-7, 2001-8)
+case(Morgan-12, according-9)
+mwe(according-9, to-10)
+compound(Morgan-12, JP-11)
+dep(Broadband-7, Morgan-12)
+cc(Morgan-12, and-13)
+dep(Broadband-7, McKinsey-14)
+conj:and(Morgan-12, McKinsey-14)
+punct(titled-5, ''-15)
+punct(titled-5, .-16)
+
+Extracted the following NER entity mentions:
+April	DATE
+2001	DATE
+JP Morgan	ORGANIZATION
+McKinsey	ORGANIZATION
+
+Sentence #3 (36 tokens):
+It contains information on operating and capital expenditures
+involved in deploying xDSL and cable modems, the changing mix of Internet
+traffic, and projection of U.S. CDN revenues to the consumer and business
+market.
+
+Tokens:
+[Text=It CharacterOffsetBegin=159 CharacterOffsetEnd=161 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=contains CharacterOffsetBegin=162 CharacterOffsetEnd=170 PartOfSpeech=VBZ Lemma=contain NamedEntityTag=O]
+[Text=information CharacterOffsetBegin=171 CharacterOffsetEnd=182 PartOfSpeech=NN Lemma=information NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=183 CharacterOffsetEnd=185 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=operating CharacterOffsetBegin=186 CharacterOffsetEnd=195 PartOfSpeech=NN Lemma=operating NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=196 CharacterOffsetEnd=199 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=capital CharacterOffsetBegin=200 CharacterOffsetEnd=207 PartOfSpeech=NN Lemma=capital NamedEntityTag=O]
+[Text=expenditures CharacterOffsetBegin=208 CharacterOffsetEnd=220 PartOfSpeech=NNS Lemma=expenditure NamedEntityTag=O]
+[Text=involved CharacterOffsetBegin=221 CharacterOffsetEnd=229 PartOfSpeech=VBN Lemma=involve NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=230 CharacterOffsetEnd=232 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=deploying CharacterOffsetBegin=233 CharacterOffsetEnd=242 PartOfSpeech=VBG Lemma=deploy NamedEntityTag=O]
+[Text=xDSL CharacterOffsetBegin=243 CharacterOffsetEnd=247 PartOfSpeech=NN Lemma=xdsl NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=248 CharacterOffsetEnd=251 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=cable CharacterOffsetBegin=252 CharacterOffsetEnd=257 PartOfSpeech=NN Lemma=cable NamedEntityTag=O]
+[Text=modems CharacterOffsetBegin=258 CharacterOffsetEnd=264 PartOfSpeech=NNS Lemma=modem NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=264 CharacterOffsetEnd=265 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=266 CharacterOffsetEnd=269 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=changing CharacterOffsetBegin=270 CharacterOffsetEnd=278 PartOfSpeech=VBG Lemma=change NamedEntityTag=O]
+[Text=mix CharacterOffsetBegin=279 CharacterOffsetEnd=282 PartOfSpeech=NN Lemma=mix NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=283 CharacterOffsetEnd=285 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Internet CharacterOffsetBegin=286 CharacterOffsetEnd=294 PartOfSpeech=NN Lemma=internet NamedEntityTag=MISC]
+[Text=traffic CharacterOffsetBegin=295 CharacterOffsetEnd=302 PartOfSpeech=NN Lemma=traffic NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=302 CharacterOffsetEnd=303 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=304 CharacterOffsetEnd=307 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=projection CharacterOffsetBegin=308 CharacterOffsetEnd=318 PartOfSpeech=NN Lemma=projection NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=319 CharacterOffsetEnd=321 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=U.S. CharacterOffsetBegin=322 CharacterOffsetEnd=326 PartOfSpeech=NNP Lemma=U.S. NamedEntityTag=COUNTRY]
+[Text=CDN CharacterOffsetBegin=327 CharacterOffsetEnd=330 PartOfSpeech=NNP Lemma=CDN NamedEntityTag=O]
+[Text=revenues CharacterOffsetBegin=331 CharacterOffsetEnd=339 PartOfSpeech=NNS Lemma=revenue NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=340 CharacterOffsetEnd=342 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=343 CharacterOffsetEnd=346 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=consumer CharacterOffsetBegin=347 CharacterOffsetEnd=355 PartOfSpeech=NN Lemma=consumer NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=356 CharacterOffsetEnd=359 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=business CharacterOffsetBegin=360 CharacterOffsetEnd=368 PartOfSpeech=NN Lemma=business NamedEntityTag=O]
+[Text=market CharacterOffsetBegin=369 CharacterOffsetEnd=375 PartOfSpeech=NN Lemma=market NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=375 CharacterOffsetEnd=376 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ contains)
+      (NP
+        (NP
+          (NP (NN information))
+          (PP (IN on)
+            (NP
+              (NP (NN operating)
+                (CC and)
+                (NN capital) (NNS expenditures))
+              (VP (VBN involved)
+                (PP (IN in)
+                  (S
+                    (VP (VBG deploying)
+                      (NP (NN xDSL)
+                        (CC and)
+                        (NN cable) (NNS modems)))))))))
+        (, ,)
+        (NP
+          (NP (DT the) (VBG changing) (NN mix))
+          (PP (IN of)
+            (NP (NN Internet) (NN traffic))))
+        (, ,)
+        (CC and)
+        (NP
+          (NP (NN projection))
+          (PP (IN of)
+            (NP
+              (NP (NNP U.S.) (NNP CDN) (NNS revenues))
+              (PP (TO to)
+                (NP (DT the) (NN consumer)
+                  (CC and)
+                  (NN business) (NN market))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, contains-2)
+nsubj(contains-2, It-1)
+dobj(contains-2, information-3)
+case(expenditures-8, on-4)
+compound(expenditures-8, operating-5)
+cc(operating-5, and-6)
+conj:and(operating-5, capital-7)
+compound(expenditures-8, capital-7)
+nmod:on(information-3, expenditures-8)
+acl(expenditures-8, involved-9)
+mark(deploying-11, in-10)
+advcl:in(involved-9, deploying-11)
+compound(modems-15, xDSL-12)
+cc(xDSL-12, and-13)
+conj:and(xDSL-12, cable-14)
+compound(modems-15, cable-14)
+dobj(deploying-11, modems-15)
+punct(information-3, ,-16)
+det(mix-19, the-17)
+amod(mix-19, changing-18)
+dobj(contains-2, mix-19)
+conj:and(information-3, mix-19)
+case(traffic-22, of-20)
+compound(traffic-22, Internet-21)
+nmod:of(mix-19, traffic-22)
+punct(information-3, ,-23)
+cc(information-3, and-24)
+dobj(contains-2, projection-25)
+conj:and(information-3, projection-25)
+case(revenues-29, of-26)
+compound(revenues-29, U.S.-27)
+compound(revenues-29, CDN-28)
+nmod:of(projection-25, revenues-29)
+case(market-35, to-30)
+det(market-35, the-31)
+compound(market-35, consumer-32)
+cc(consumer-32, and-33)
+conj:and(consumer-32, business-34)
+compound(market-35, business-34)
+nmod:to(revenues-29, market-35)
+punct(contains-2, .-36)
+
+Extracted the following NER entity mentions:
+Internet	MISC
+U.S.	COUNTRY
+
+Sentence #4 (24 tokens):
+For those on the EBS LAN, you may view historic issues of IntelliBytes by
+choosing "Browse the Spotlight" from wEBSource.
+
+Tokens:
+[Text=For CharacterOffsetBegin=380 CharacterOffsetEnd=383 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=384 CharacterOffsetEnd=389 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=390 CharacterOffsetEnd=392 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=393 CharacterOffsetEnd=396 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=EBS CharacterOffsetBegin=397 CharacterOffsetEnd=400 PartOfSpeech=NN Lemma=ebs NamedEntityTag=O]
+[Text=LAN CharacterOffsetBegin=401 CharacterOffsetEnd=404 PartOfSpeech=NN Lemma=lan NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=404 CharacterOffsetEnd=405 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=406 CharacterOffsetEnd=409 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=may CharacterOffsetBegin=410 CharacterOffsetEnd=413 PartOfSpeech=MD Lemma=may NamedEntityTag=O]
+[Text=view CharacterOffsetBegin=414 CharacterOffsetEnd=418 PartOfSpeech=VB Lemma=view NamedEntityTag=O]
+[Text=historic CharacterOffsetBegin=419 CharacterOffsetEnd=427 PartOfSpeech=JJ Lemma=historic NamedEntityTag=O]
+[Text=issues CharacterOffsetBegin=428 CharacterOffsetEnd=434 PartOfSpeech=NNS Lemma=issue NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=435 CharacterOffsetEnd=437 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=IntelliBytes CharacterOffsetBegin=438 CharacterOffsetEnd=450 PartOfSpeech=NNS Lemma=intellibyte NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=451 CharacterOffsetEnd=453 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=choosing CharacterOffsetBegin=454 CharacterOffsetEnd=462 PartOfSpeech=VBG Lemma=choose NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=463 CharacterOffsetEnd=464 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Browse CharacterOffsetBegin=464 CharacterOffsetEnd=470 PartOfSpeech=VB Lemma=browse NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=471 CharacterOffsetEnd=474 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Spotlight CharacterOffsetBegin=475 CharacterOffsetEnd=484 PartOfSpeech=NN Lemma=spotlight NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=484 CharacterOffsetEnd=485 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=486 CharacterOffsetEnd=490 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=wEBSource CharacterOffsetBegin=491 CharacterOffsetEnd=500 PartOfSpeech=NN Lemma=websource NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=500 CharacterOffsetEnd=501 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN For)
+      (NP
+        (NP (DT those))
+        (PP (IN on)
+          (NP (DT the) (NN EBS) (NN LAN)))))
+    (, ,)
+    (NP (PRP you))
+    (VP (MD may)
+      (VP (VB view)
+        (NP
+          (NP (JJ historic) (NNS issues))
+          (PP (IN of)
+            (NP (NNS IntelliBytes))))
+        (PP (IN by)
+          (S
+            (VP (VBG choosing)
+              (VP (`` ``) (VB Browse)
+                (NP (DT the) (NN Spotlight))
+                ('' '')
+                (PP (IN from)
+                  (NP (NN wEBSource)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, view-10)
+case(those-2, For-1)
+nmod:for(view-10, those-2)
+case(LAN-6, on-3)
+det(LAN-6, the-4)
+compound(LAN-6, EBS-5)
+nmod:on(those-2, LAN-6)
+punct(view-10, ,-7)
+nsubj(view-10, you-8)
+aux(view-10, may-9)
+amod(issues-12, historic-11)
+dobj(view-10, issues-12)
+case(IntelliBytes-14, of-13)
+nmod:of(issues-12, IntelliBytes-14)
+mark(choosing-16, by-15)
+advcl:by(view-10, choosing-16)
+punct(Browse-18, ``-17)
+xcomp(choosing-16, Browse-18)
+det(Spotlight-20, the-19)
+dobj(Browse-18, Spotlight-20)
+punct(Browse-18, ''-21)
+case(wEBSource-23, from-22)
+nmod:from(Browse-18, wEBSource-23)
+punct(view-10, .-24)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (28 tokens):
+The Spotlight symbol will
+appear, from the circle titled "Business Development" choose "Market Research
+& Intelligence", then choose "IntelliBytes".
+
+Tokens:
+[Text=The CharacterOffsetBegin=502 CharacterOffsetEnd=505 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Spotlight CharacterOffsetBegin=506 CharacterOffsetEnd=515 PartOfSpeech=NN Lemma=spotlight NamedEntityTag=O]
+[Text=symbol CharacterOffsetBegin=516 CharacterOffsetEnd=522 PartOfSpeech=NN Lemma=symbol NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=523 CharacterOffsetEnd=527 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=appear CharacterOffsetBegin=528 CharacterOffsetEnd=534 PartOfSpeech=VB Lemma=appear NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=534 CharacterOffsetEnd=535 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=536 CharacterOffsetEnd=540 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=541 CharacterOffsetEnd=544 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=circle CharacterOffsetBegin=545 CharacterOffsetEnd=551 PartOfSpeech=NN Lemma=circle NamedEntityTag=O]
+[Text=titled CharacterOffsetBegin=552 CharacterOffsetEnd=558 PartOfSpeech=VBN Lemma=title NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=559 CharacterOffsetEnd=560 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Business CharacterOffsetBegin=560 CharacterOffsetEnd=568 PartOfSpeech=NNP Lemma=Business NamedEntityTag=O]
+[Text=Development CharacterOffsetBegin=569 CharacterOffsetEnd=580 PartOfSpeech=NNP Lemma=Development NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=580 CharacterOffsetEnd=581 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=choose CharacterOffsetBegin=582 CharacterOffsetEnd=588 PartOfSpeech=VB Lemma=choose NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=589 CharacterOffsetEnd=590 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Market CharacterOffsetBegin=590 CharacterOffsetEnd=596 PartOfSpeech=NNP Lemma=Market NamedEntityTag=ORGANIZATION]
+[Text=Research CharacterOffsetBegin=597 CharacterOffsetEnd=605 PartOfSpeech=NNP Lemma=Research NamedEntityTag=ORGANIZATION]
+[Text=& CharacterOffsetBegin=606 CharacterOffsetEnd=607 PartOfSpeech=CC Lemma=& NamedEntityTag=ORGANIZATION]
+[Text=Intelligence CharacterOffsetBegin=608 CharacterOffsetEnd=620 PartOfSpeech=NNP Lemma=Intelligence NamedEntityTag=ORGANIZATION]
+[Text='' CharacterOffsetBegin=620 CharacterOffsetEnd=621 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=621 CharacterOffsetEnd=622 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=623 CharacterOffsetEnd=627 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=choose CharacterOffsetBegin=628 CharacterOffsetEnd=634 PartOfSpeech=VB Lemma=choose NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=635 CharacterOffsetEnd=636 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=IntelliBytes CharacterOffsetBegin=636 CharacterOffsetEnd=648 PartOfSpeech=NNP Lemma=IntelliBytes NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=648 CharacterOffsetEnd=649 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=649 CharacterOffsetEnd=650 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN Spotlight) (NN symbol))
+    (VP (MD will)
+      (VP (VB appear) (, ,)
+        (PP (IN from)
+          (NP
+            (NP (DT the) (NN circle))
+            (VP (VBN titled)
+              (S
+                (NP (`` ``) (NNP Business) (NNP Development) ('' ''))
+                (VP
+                  (VP (VB choose) (`` ``)
+                    (NP (NNP Market) (NNP Research)
+                      (CC &)
+                      (NNP Intelligence))
+                    ('' ''))
+                  (, ,) (RB then)
+                  (VP (VB choose)
+                    (S (`` ``)
+                      (NP (NNP IntelliBytes))
+                      ('' ''))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, appear-5)
+det(symbol-3, The-1)
+compound(symbol-3, Spotlight-2)
+nsubj(appear-5, symbol-3)
+aux(appear-5, will-4)
+punct(appear-5, ,-6)
+case(circle-9, from-7)
+det(circle-9, the-8)
+nmod:from(appear-5, circle-9)
+acl(circle-9, titled-10)
+punct(Development-13, ``-11)
+compound(Development-13, Business-12)
+nsubj(choose-15, Development-13)
+punct(Development-13, ''-14)
+ccomp(titled-10, choose-15)
+punct(choose-15, ``-16)
+compound(Research-18, Market-17)
+dobj(choose-15, Research-18)
+cc(Research-18, &-19)
+dobj(choose-15, Intelligence-20)
+conj:&(Research-18, Intelligence-20)
+punct(choose-15, ''-21)
+punct(choose-15, ,-22)
+advmod(choose-24, then-23)
+dep(choose-15, choose-24)
+punct(IntelliBytes-26, ``-25)
+xcomp(choose-24, IntelliBytes-26)
+punct(IntelliBytes-26, ''-27)
+punct(appear-5, .-28)
+
+Extracted the following NER entity mentions:
+Market Research & Intelligence	ORGANIZATION
+
+Sentence #6 (9 tokens):
+A listing of the available
+issues will appear.
+
+Tokens:
+[Text=A CharacterOffsetBegin=653 CharacterOffsetEnd=654 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=listing CharacterOffsetBegin=655 CharacterOffsetEnd=662 PartOfSpeech=NN Lemma=listing NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=663 CharacterOffsetEnd=665 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=666 CharacterOffsetEnd=669 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=available CharacterOffsetBegin=670 CharacterOffsetEnd=679 PartOfSpeech=JJ Lemma=available NamedEntityTag=O]
+[Text=issues CharacterOffsetBegin=680 CharacterOffsetEnd=686 PartOfSpeech=NNS Lemma=issue NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=687 CharacterOffsetEnd=691 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=appear CharacterOffsetBegin=692 CharacterOffsetEnd=698 PartOfSpeech=VB Lemma=appear NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=698 CharacterOffsetEnd=699 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN listing))
+      (PP (IN of)
+        (NP (DT the) (JJ available) (NNS issues))))
+    (VP (MD will)
+      (VP (VB appear)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, appear-8)
+det(listing-2, A-1)
+nsubj(appear-8, listing-2)
+case(issues-6, of-3)
+det(issues-6, the-4)
+amod(issues-6, available-5)
+nmod:of(listing-2, issues-6)
+aux(appear-8, will-7)
+punct(appear-8, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #7 (30 tokens):
+To view February's issue on Interactive TV and/or
+March's issue on Cable vs DBS in their proper format, select "Fetch" under
+the Functions  tab.
+
+Tokens:
+[Text=To CharacterOffsetBegin=702 CharacterOffsetEnd=704 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=view CharacterOffsetBegin=705 CharacterOffsetEnd=709 PartOfSpeech=VB Lemma=view NamedEntityTag=O]
+[Text=February CharacterOffsetBegin=710 CharacterOffsetEnd=718 PartOfSpeech=NNP Lemma=February NamedEntityTag=DATE NormalizedNamedEntityTag=****02]
+[Text='s CharacterOffsetBegin=718 CharacterOffsetEnd=720 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=issue CharacterOffsetBegin=721 CharacterOffsetEnd=726 PartOfSpeech=NN Lemma=issue NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=727 CharacterOffsetEnd=729 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Interactive CharacterOffsetBegin=730 CharacterOffsetEnd=741 PartOfSpeech=JJ Lemma=interactive NamedEntityTag=O]
+[Text=TV CharacterOffsetBegin=742 CharacterOffsetEnd=744 PartOfSpeech=NN Lemma=tv NamedEntityTag=O]
+[Text=and/or CharacterOffsetBegin=745 CharacterOffsetEnd=751 PartOfSpeech=CC Lemma=and/or NamedEntityTag=O]
+[Text=March CharacterOffsetBegin=752 CharacterOffsetEnd=757 PartOfSpeech=NNP Lemma=March NamedEntityTag=DATE NormalizedNamedEntityTag=****03]
+[Text='s CharacterOffsetBegin=757 CharacterOffsetEnd=759 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=issue CharacterOffsetBegin=760 CharacterOffsetEnd=765 PartOfSpeech=NN Lemma=issue NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=766 CharacterOffsetEnd=768 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Cable CharacterOffsetBegin=769 CharacterOffsetEnd=774 PartOfSpeech=NNP Lemma=Cable NamedEntityTag=O]
+[Text=vs CharacterOffsetBegin=775 CharacterOffsetEnd=777 PartOfSpeech=CC Lemma=vs NamedEntityTag=O]
+[Text=DBS CharacterOffsetBegin=778 CharacterOffsetEnd=781 PartOfSpeech=NNP Lemma=DBS NamedEntityTag=ORGANIZATION]
+[Text=in CharacterOffsetBegin=782 CharacterOffsetEnd=784 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=785 CharacterOffsetEnd=790 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=proper CharacterOffsetBegin=791 CharacterOffsetEnd=797 PartOfSpeech=JJ Lemma=proper NamedEntityTag=O]
+[Text=format CharacterOffsetBegin=798 CharacterOffsetEnd=804 PartOfSpeech=NN Lemma=format NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=804 CharacterOffsetEnd=805 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=select CharacterOffsetBegin=806 CharacterOffsetEnd=812 PartOfSpeech=JJ Lemma=select NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=813 CharacterOffsetEnd=814 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Fetch CharacterOffsetBegin=814 CharacterOffsetEnd=819 PartOfSpeech=VB Lemma=fetch NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=819 CharacterOffsetEnd=820 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=under CharacterOffsetBegin=821 CharacterOffsetEnd=826 PartOfSpeech=IN Lemma=under NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=827 CharacterOffsetEnd=830 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Functions CharacterOffsetBegin=831 CharacterOffsetEnd=840 PartOfSpeech=NNS Lemma=function NamedEntityTag=O]
+[Text=tab CharacterOffsetBegin=842 CharacterOffsetEnd=845 PartOfSpeech=NN Lemma=tab NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=845 CharacterOffsetEnd=846 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (TO To)
+      (VP (VB view)
+        (NP
+          (NP
+            (NP
+              (NP (NNP February) (POS 's))
+              (NN issue))
+            (PP (IN on)
+              (NP (JJ Interactive) (NN TV))))
+          (CC and/or)
+          (NP
+            (NP
+              (NP (NNP March) (POS 's))
+              (NN issue))
+            (PP (IN on)
+              (NP
+                (NP (NNP Cable)
+                  (CC vs)
+                  (NNP DBS))
+                (PP (IN in)
+                  (NP
+                    (NP (PRP$ their) (JJ proper) (NN format))
+                    (, ,)
+                    (NP (JJ select))))))))
+        (`` ``) (VB Fetch) ('' '')
+        (PP (IN under)
+          (NP (DT the) (NNS Functions) (NN tab)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, view-2)
+mark(view-2, To-1)
+nmod:poss(issue-5, February-3)
+case(February-3, 's-4)
+dobj(view-2, issue-5)
+case(TV-8, on-6)
+amod(TV-8, Interactive-7)
+nmod:on(issue-5, TV-8)
+cc(issue-5, and/or-9)
+nmod:poss(issue-12, March-10)
+case(March-10, 's-11)
+dobj(view-2, issue-12)
+conj:and/or(issue-5, issue-12)
+case(Cable-14, on-13)
+nmod:on(issue-12, Cable-14)
+cc(Cable-14, vs-15)
+nmod:on(issue-12, DBS-16)
+conj:vs(Cable-14, DBS-16)
+case(format-20, in-17)
+nmod:poss(format-20, their-18)
+amod(format-20, proper-19)
+nmod:in(Cable-14, format-20)
+punct(format-20, ,-21)
+appos(format-20, select-22)
+punct(view-2, ``-23)
+dep(view-2, Fetch-24)
+punct(view-2, ''-25)
+case(tab-29, under-26)
+det(tab-29, the-27)
+compound(tab-29, Functions-28)
+nmod:under(view-2, tab-29)
+punct(view-2, .-30)
+
+Extracted the following NER entity mentions:
+February	DATE
+March	DATE
+DBS	ORGANIZATION
+
+Sentence #8 (17 tokens):
+Historic issues of IntelliBytes will soon be available via the Market
+Intelligence community page of wEBSource.
+
+Tokens:
+[Text=Historic CharacterOffsetBegin=848 CharacterOffsetEnd=856 PartOfSpeech=JJ Lemma=historic NamedEntityTag=O]
+[Text=issues CharacterOffsetBegin=857 CharacterOffsetEnd=863 PartOfSpeech=NNS Lemma=issue NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=864 CharacterOffsetEnd=866 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=IntelliBytes CharacterOffsetBegin=867 CharacterOffsetEnd=879 PartOfSpeech=NNP Lemma=IntelliBytes NamedEntityTag=ORGANIZATION]
+[Text=will CharacterOffsetBegin=880 CharacterOffsetEnd=884 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=soon CharacterOffsetBegin=885 CharacterOffsetEnd=889 PartOfSpeech=RB Lemma=soon NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=890 CharacterOffsetEnd=892 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=available CharacterOffsetBegin=893 CharacterOffsetEnd=902 PartOfSpeech=JJ Lemma=available NamedEntityTag=O]
+[Text=via CharacterOffsetBegin=903 CharacterOffsetEnd=906 PartOfSpeech=IN Lemma=via NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=907 CharacterOffsetEnd=910 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Market CharacterOffsetBegin=911 CharacterOffsetEnd=917 PartOfSpeech=NN Lemma=market NamedEntityTag=O]
+[Text=Intelligence CharacterOffsetBegin=918 CharacterOffsetEnd=930 PartOfSpeech=NNP Lemma=Intelligence NamedEntityTag=O]
+[Text=community CharacterOffsetBegin=931 CharacterOffsetEnd=940 PartOfSpeech=NN Lemma=community NamedEntityTag=O]
+[Text=page CharacterOffsetBegin=941 CharacterOffsetEnd=945 PartOfSpeech=NN Lemma=page NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=946 CharacterOffsetEnd=948 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=wEBSource CharacterOffsetBegin=949 CharacterOffsetEnd=958 PartOfSpeech=NN Lemma=websource NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=958 CharacterOffsetEnd=959 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (JJ Historic) (NNS issues))
+      (PP (IN of)
+        (NP (NNP IntelliBytes))))
+    (VP (MD will)
+      (ADVP (RB soon))
+      (VP (VB be)
+        (ADJP (JJ available)
+          (PP (IN via)
+            (NP (DT the) (NN Market))))
+        (NP-TMP
+          (NP (NNP Intelligence) (NN community) (NN page))
+          (PP (IN of)
+            (NP (NN wEBSource))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, available-8)
+amod(issues-2, Historic-1)
+nsubj(available-8, issues-2)
+case(IntelliBytes-4, of-3)
+nmod:of(issues-2, IntelliBytes-4)
+aux(available-8, will-5)
+advmod(available-8, soon-6)
+cop(available-8, be-7)
+case(Market-11, via-9)
+det(Market-11, the-10)
+nmod:via(available-8, Market-11)
+compound(page-14, Intelligence-12)
+compound(page-14, community-13)
+nmod:tmod(available-8, page-14)
+case(wEBSource-16, of-15)
+nmod:of(page-14, wEBSource-16)
+punct(available-8, .-17)
+
+Extracted the following NER entity mentions:
+IntelliBytes	ORGANIZATION
+
+Sentence #9 (18 tokens):
+For those on the Corp LAN, I have attached the February and March issues of
+IntelliBytes.
+
+Tokens:
+[Text=For CharacterOffsetBegin=961 CharacterOffsetEnd=964 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=965 CharacterOffsetEnd=970 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=971 CharacterOffsetEnd=973 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=974 CharacterOffsetEnd=977 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Corp CharacterOffsetBegin=978 CharacterOffsetEnd=982 PartOfSpeech=NNP Lemma=Corp NamedEntityTag=O]
+[Text=LAN CharacterOffsetBegin=983 CharacterOffsetEnd=986 PartOfSpeech=NNP Lemma=LAN NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=986 CharacterOffsetEnd=987 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=988 CharacterOffsetEnd=989 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=990 CharacterOffsetEnd=994 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=attached CharacterOffsetBegin=995 CharacterOffsetEnd=1003 PartOfSpeech=VBN Lemma=attach NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1004 CharacterOffsetEnd=1007 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=February CharacterOffsetBegin=1008 CharacterOffsetEnd=1016 PartOfSpeech=NNP Lemma=February NamedEntityTag=DATE NormalizedNamedEntityTag=****02]
+[Text=and CharacterOffsetBegin=1017 CharacterOffsetEnd=1020 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=March CharacterOffsetBegin=1021 CharacterOffsetEnd=1026 PartOfSpeech=NNP Lemma=March NamedEntityTag=DATE NormalizedNamedEntityTag=****03]
+[Text=issues CharacterOffsetBegin=1027 CharacterOffsetEnd=1033 PartOfSpeech=NNS Lemma=issue NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=1034 CharacterOffsetEnd=1036 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=IntelliBytes CharacterOffsetBegin=1037 CharacterOffsetEnd=1049 PartOfSpeech=NNPS Lemma=IntelliBytes NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=1049 CharacterOffsetEnd=1050 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN For)
+      (NP
+        (NP (DT those))
+        (PP (IN on)
+          (NP (DT the) (NNP Corp) (NNP LAN)))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP have)
+      (VP (VBN attached)
+        (NP
+          (NP (DT the) (NNP February)
+            (CC and)
+            (NNP March) (NNS issues))
+          (PP (IN of)
+            (NP (NNPS IntelliBytes))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, attached-10)
+case(those-2, For-1)
+nmod:for(attached-10, those-2)
+case(LAN-6, on-3)
+det(LAN-6, the-4)
+compound(LAN-6, Corp-5)
+nmod:on(those-2, LAN-6)
+punct(attached-10, ,-7)
+nsubj(attached-10, I-8)
+aux(attached-10, have-9)
+det(issues-15, the-11)
+compound(issues-15, February-12)
+cc(February-12, and-13)
+conj:and(February-12, March-14)
+compound(issues-15, March-14)
+dobj(attached-10, issues-15)
+case(IntelliBytes-17, of-16)
+nmod:of(issues-15, IntelliBytes-17)
+punct(attached-10, .-18)
+
+Extracted the following NER entity mentions:
+February	DATE
+March	DATE
+IntelliBytes	ORGANIZATION
+
+Sentence #10 (12 tokens):
+Rita Hartfield
+Phone:  713-853-5854
+Cell:  713-304-5428
+Fax:  713-646-8861
+rita_hartfield@enron.net
+
+Tokens:
+[Text=Rita CharacterOffsetBegin=1054 CharacterOffsetEnd=1058 PartOfSpeech=NNP Lemma=Rita NamedEntityTag=PERSON]
+[Text=Hartfield CharacterOffsetBegin=1059 CharacterOffsetEnd=1068 PartOfSpeech=NNP Lemma=Hartfield NamedEntityTag=PERSON]
+[Text=Phone CharacterOffsetBegin=1069 CharacterOffsetEnd=1074 PartOfSpeech=NNP Lemma=Phone NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=1074 CharacterOffsetEnd=1075 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=713-853-5854 CharacterOffsetBegin=1077 CharacterOffsetEnd=1089 PartOfSpeech=CD Lemma=713-853-5854 NamedEntityTag=NUMBER]
+[Text=Cell CharacterOffsetBegin=1090 CharacterOffsetEnd=1094 PartOfSpeech=NN Lemma=cell NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=1094 CharacterOffsetEnd=1095 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=713-304-5428 CharacterOffsetBegin=1097 CharacterOffsetEnd=1109 PartOfSpeech=CD Lemma=713-304-5428 NamedEntityTag=NUMBER]
+[Text=Fax CharacterOffsetBegin=1110 CharacterOffsetEnd=1113 PartOfSpeech=NN Lemma=fax NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=1113 CharacterOffsetEnd=1114 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=713-646-8861 CharacterOffsetBegin=1116 CharacterOffsetEnd=1128 PartOfSpeech=CD Lemma=713-646-8861 NamedEntityTag=NUMBER]
+[Text=rita_hartfield@enron.net CharacterOffsetBegin=1129 CharacterOffsetEnd=1153 PartOfSpeech=NN Lemma=rita_hartfield@enron.net NamedEntityTag=EMAIL]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Rita) (NNP Hartfield) (NNP Phone))
+    (: :)
+    (NP
+      (NP (CD 713-853-5854) (NN Cell))
+      (: :)
+      (NP
+        (NP (CD 713-304-5428) (NN Fax))
+        (: :)
+        (NP (CD 713-646-8861) (NN rita_hartfield@enron.net))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Phone-3)
+compound(Phone-3, Rita-1)
+compound(Phone-3, Hartfield-2)
+punct(Phone-3, :-4)
+nummod(Cell-6, 713-853-5854-5)
+dep(Phone-3, Cell-6)
+punct(Cell-6, :-7)
+nummod(Fax-9, 713-304-5428-8)
+dep(Cell-6, Fax-9)
+punct(Fax-9, :-10)
+nummod(rita_hartfield@enron.net-12, 713-646-8861-11)
+dep(Fax-9, rita_hartfield@enron.net-12)
+
+Extracted the following NER entity mentions:
+Rita Hartfield	PERSON
+713-853-5854	NUMBER
+713-304-5428	NUMBER
+713-646-8861	NUMBER
+rita_hartfield@enron.net	EMAIL
+
+Coreference set:
+	(1,2,[1,5]) -> (1,8,[6,14]), that is: "Each issue of IntelliBytes" -> "a concise summary of a broadband industry topic"
+
+Coreference set:
+	(1,4,[4,5]) -> (8,4,[4,5]), that is: "IntelliBytes" -> "IntelliBytes"
+	(4,14,[14,15]) -> (8,4,[4,5]), that is: "IntelliBytes" -> "IntelliBytes"
+	(5,26,[26,27]) -> (8,4,[4,5]), that is: "IntelliBytes" -> "IntelliBytes"
+	(9,17,[17,18]) -> (8,4,[4,5]), that is: "IntelliBytes" -> "IntelliBytes"
+
+Coreference set:
+	(3,1,[1,2]) -> (2,3,[1,4]), that is: "It" -> "April 's issue"
+
+Coreference set:
+	(3,35,[31,36]) -> (8,11,[10,12]), that is: "the consumer and business market" -> "the Market"
+
+Coreference set:
+	(7,18,[18,19]) -> (4,2,[2,7]), that is: "their" -> "those on the EBS LAN"
+
+Coreference set:
+	(8,2,[1,5]) -> (4,12,[11,15]), that is: "Historic issues of IntelliBytes" -> "historic issues of IntelliBytes"
+
+Coreference set:
+	(9,12,[12,13]) -> (7,3,[3,5]), that is: "February" -> "February 's"
+
+Coreference set:
+	(9,14,[14,15]) -> (7,10,[10,12]), that is: "March" -> "March 's"

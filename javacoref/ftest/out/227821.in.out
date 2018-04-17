@@ -1,0 +1,117 @@
+Document: ID=227821.in (2 sentences, 25 tokens)
+
+Sentence #1 (21 tokens):
+Thanks v much - had a call from their trader and she said she was pushing
+hard on her side.
+
+Tokens:
+[Text=Thanks CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNS Lemma=thanks NamedEntityTag=O]
+[Text=v CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=LS Lemma=v NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=RB Lemma=much NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=call CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=call NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=32 CharacterOffsetEnd=37 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=trader CharacterOffsetBegin=38 CharacterOffsetEnd=44 PartOfSpeech=NN Lemma=trader NamedEntityTag=TITLE]
+[Text=and CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=pushing CharacterOffsetBegin=66 CharacterOffsetEnd=73 PartOfSpeech=VBG Lemma=push NamedEntityTag=O]
+[Text=hard CharacterOffsetBegin=74 CharacterOffsetEnd=78 PartOfSpeech=JJ Lemma=hard NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=79 CharacterOffsetEnd=81 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=82 CharacterOffsetEnd=85 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=side CharacterOffsetBegin=86 CharacterOffsetEnd=90 PartOfSpeech=NN Lemma=side NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=90 CharacterOffsetEnd=91 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNS Thanks))
+        (PP (LS v)
+          (NP (RB much))))
+      (: -)
+      (VP (VBD had)
+        (NP
+          (NP (DT a) (NN call))
+          (PP (IN from)
+            (NP (PRP$ their) (NN trader))))))
+    (CC and)
+    (S
+      (NP (PRP she))
+      (VP (VBD said)
+        (SBAR
+          (S
+            (NP (PRP she))
+            (VP (VBD was)
+              (VP (VBG pushing)
+                (ADJP (JJ hard)
+                  (PP (IN on)
+                    (NP (PRP$ her) (NN side))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, had-5)
+nsubj(had-5, Thanks-1)
+dep(much-3, v-2)
+nmod(Thanks-1, much-3)
+punct(had-5, --4)
+det(call-7, a-6)
+dobj(had-5, call-7)
+case(trader-10, from-8)
+nmod:poss(trader-10, their-9)
+nmod:from(call-7, trader-10)
+cc(had-5, and-11)
+nsubj(said-13, she-12)
+conj:and(had-5, said-13)
+nsubj(pushing-16, she-14)
+aux(pushing-16, was-15)
+ccomp(said-13, pushing-16)
+xcomp(pushing-16, hard-17)
+case(side-20, on-18)
+nmod:poss(side-20, her-19)
+nmod:on(hard-17, side-20)
+punct(had-5, .-21)
+
+Extracted the following NER entity mentions:
+trader	TITLE
+she	PERSON
+she	PERSON
+her	PERSON
+
+Sentence #2 (4 tokens):
+Edmund Cooper
+19/07/2000 16:15
+
+Tokens:
+[Text=Edmund CharacterOffsetBegin=92 CharacterOffsetEnd=98 PartOfSpeech=NNP Lemma=Edmund NamedEntityTag=PERSON]
+[Text=Cooper CharacterOffsetBegin=99 CharacterOffsetEnd=105 PartOfSpeech=NNP Lemma=Cooper NamedEntityTag=PERSON]
+[Text=19/07/2000 CharacterOffsetBegin=106 CharacterOffsetEnd=116 PartOfSpeech=CD Lemma=19/07/2000 NamedEntityTag=DATE NormalizedNamedEntityTag=2000]
+[Text=16:15 CharacterOffsetBegin=117 CharacterOffsetEnd=122 PartOfSpeech=CD Lemma=16:15 NamedEntityTag=DATE NormalizedNamedEntityTag=2000]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Edmund) (NNP Cooper))
+    (NP (CD 19/07/2000) (CD 16:15))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Cooper-2)
+compound(Cooper-2, Edmund-1)
+nummod(16:15-4, 19/07/2000-3)
+dep(Cooper-2, 16:15-4)
+
+Extracted the following NER entity mentions:
+Edmund Cooper	PERSON
+19/07/2000 16:15	DATE
+
+Coreference set:
+	(1,14,[14,15]) -> (1,12,[12,13]), that is: "she" -> "she"
+	(1,19,[19,20]) -> (1,12,[12,13]), that is: "her" -> "she"

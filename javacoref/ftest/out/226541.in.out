@@ -1,0 +1,377 @@
+Document: ID=226541.in (6 sentences, 93 tokens)
+
+Sentence #1 (20 tokens):
+American Central Energy, LLC's guaranty's have been revoked by their
+guarantor, American Central Gas Companies.
+
+Tokens:
+[Text=American CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=JJ Lemma=american NamedEntityTag=ORGANIZATION]
+[Text=Central CharacterOffsetBegin=9 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=Central NamedEntityTag=ORGANIZATION]
+[Text=Energy CharacterOffsetBegin=17 CharacterOffsetEnd=23 PartOfSpeech=NNP Lemma=Energy NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=LLC CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=NNP Lemma=LLC NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=guaranty CharacterOffsetBegin=31 CharacterOffsetEnd=39 PartOfSpeech=NN Lemma=guaranty NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=revoked CharacterOffsetBegin=52 CharacterOffsetEnd=59 PartOfSpeech=VBN Lemma=revoke NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=60 CharacterOffsetEnd=62 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=63 CharacterOffsetEnd=68 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=guarantor CharacterOffsetBegin=69 CharacterOffsetEnd=78 PartOfSpeech=NN Lemma=guarantor NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=American CharacterOffsetBegin=80 CharacterOffsetEnd=88 PartOfSpeech=JJ Lemma=american NamedEntityTag=ORGANIZATION]
+[Text=Central CharacterOffsetBegin=89 CharacterOffsetEnd=96 PartOfSpeech=NNP Lemma=Central NamedEntityTag=ORGANIZATION]
+[Text=Gas CharacterOffsetBegin=97 CharacterOffsetEnd=100 PartOfSpeech=NNP Lemma=Gas NamedEntityTag=ORGANIZATION]
+[Text=Companies CharacterOffsetBegin=101 CharacterOffsetEnd=110 PartOfSpeech=NNS Lemma=company NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=110 CharacterOffsetEnd=111 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (JJ American) (NNP Central) (NNP Energy))
+      (, ,)
+      (NP
+        (NP (NNP LLC) (POS 's))
+        (NN guaranty) (POS 's)))
+    (VP (VBP have)
+      (VP (VBN been)
+        (VP (VBN revoked)
+          (PP (IN by)
+            (NP
+              (NP (PRP$ their) (NN guarantor))
+              (, ,)
+              (NP (JJ American) (NNP Central) (NNP Gas) (NNS Companies)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, revoked-11)
+amod(Energy-3, American-1)
+compound(Energy-3, Central-2)
+nsubjpass(revoked-11, Energy-3)
+punct(Energy-3, ,-4)
+nmod:poss(guaranty-7, LLC-5)
+case(LLC-5, 's-6)
+appos(Energy-3, guaranty-7)
+case(guaranty-7, 's-8)
+aux(revoked-11, have-9)
+auxpass(revoked-11, been-10)
+case(guarantor-14, by-12)
+nmod:poss(guarantor-14, their-13)
+nmod:agent(revoked-11, guarantor-14)
+punct(guarantor-14, ,-15)
+amod(Companies-19, American-16)
+compound(Companies-19, Central-17)
+compound(Companies-19, Gas-18)
+appos(guarantor-14, Companies-19)
+punct(revoked-11, .-20)
+
+Extracted the following NER entity mentions:
+American Central Energy	ORGANIZATION
+LLC	ORGANIZATION
+American Central Gas Companies	ORGANIZATION
+
+Sentence #2 (20 tokens):
+The guaranty's include a $1MM
+guaranty supporting financial trading and a $2MM guaranty supporting physical
+trading.
+
+Tokens:
+[Text=The CharacterOffsetBegin=113 CharacterOffsetEnd=116 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=guaranty CharacterOffsetBegin=117 CharacterOffsetEnd=125 PartOfSpeech=NN Lemma=guaranty NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=125 CharacterOffsetEnd=127 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=include CharacterOffsetBegin=128 CharacterOffsetEnd=135 PartOfSpeech=VBP Lemma=include NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=136 CharacterOffsetEnd=137 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=138 CharacterOffsetEnd=139 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$1.0]
+[Text=1MM CharacterOffsetBegin=139 CharacterOffsetEnd=142 PartOfSpeech=CD Lemma=1mm NamedEntityTag=MONEY NormalizedNamedEntityTag=$1.0]
+[Text=guaranty CharacterOffsetBegin=143 CharacterOffsetEnd=151 PartOfSpeech=NN Lemma=guaranty NamedEntityTag=O]
+[Text=supporting CharacterOffsetBegin=152 CharacterOffsetEnd=162 PartOfSpeech=VBG Lemma=support NamedEntityTag=O]
+[Text=financial CharacterOffsetBegin=163 CharacterOffsetEnd=172 PartOfSpeech=JJ Lemma=financial NamedEntityTag=O]
+[Text=trading CharacterOffsetBegin=173 CharacterOffsetEnd=180 PartOfSpeech=NN Lemma=trading NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=181 CharacterOffsetEnd=184 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=185 CharacterOffsetEnd=186 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=187 CharacterOffsetEnd=188 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$2.0]
+[Text=2MM CharacterOffsetBegin=188 CharacterOffsetEnd=191 PartOfSpeech=CD Lemma=2mm NamedEntityTag=MONEY NormalizedNamedEntityTag=$2.0]
+[Text=guaranty CharacterOffsetBegin=192 CharacterOffsetEnd=200 PartOfSpeech=NN Lemma=guaranty NamedEntityTag=O]
+[Text=supporting CharacterOffsetBegin=201 CharacterOffsetEnd=211 PartOfSpeech=VBG Lemma=support NamedEntityTag=O]
+[Text=physical CharacterOffsetBegin=212 CharacterOffsetEnd=220 PartOfSpeech=JJ Lemma=physical NamedEntityTag=O]
+[Text=trading CharacterOffsetBegin=221 CharacterOffsetEnd=228 PartOfSpeech=NN Lemma=trading NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=228 CharacterOffsetEnd=229 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN guaranty) (POS 's))
+    (VP (VBP include)
+      (NP (DT a)
+        (ADJP
+          (QP ($ $) (CD 1MM)))
+        (NN guaranty)
+        (S
+          (VP (VBG supporting)
+            (S
+              (NP
+                (NP (JJ financial) (NN trading))
+                (CC and)
+                (NP (DT a)
+                  (ADJP
+                    (QP ($ $) (CD 2MM)))
+                  (NN guaranty)))
+              (VP (VBG supporting)
+                (NP (JJ physical) (NN trading))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, include-4)
+det(guaranty-2, The-1)
+nsubj(include-4, guaranty-2)
+case(guaranty-2, 's-3)
+det(guaranty-8, a-5)
+amod(guaranty-8, $-6)
+nummod($-6, 1MM-7)
+dobj(include-4, guaranty-8)
+dep(guaranty-8, supporting-9)
+amod(trading-11, financial-10)
+nsubj(supporting-17, trading-11)
+cc(trading-11, and-12)
+det(guaranty-16, a-13)
+amod(guaranty-16, $-14)
+nummod($-14, 2MM-15)
+conj:and(trading-11, guaranty-16)
+nsubj(supporting-17, guaranty-16)
+advcl(supporting-9, supporting-17)
+amod(trading-19, physical-18)
+dobj(supporting-17, trading-19)
+punct(include-4, .-20)
+
+Extracted the following NER entity mentions:
+$1MM	MONEY
+$2MM	MONEY
+
+Sentence #3 (8 tokens):
+NO TRADES should be approved going forward.
+
+Tokens:
+[Text=NO CharacterOffsetBegin=230 CharacterOffsetEnd=232 PartOfSpeech=NN Lemma=no NamedEntityTag=O]
+[Text=TRADES CharacterOffsetBegin=233 CharacterOffsetEnd=239 PartOfSpeech=NNS Lemma=trade NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=240 CharacterOffsetEnd=246 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=247 CharacterOffsetEnd=249 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=approved CharacterOffsetBegin=250 CharacterOffsetEnd=258 PartOfSpeech=VBN Lemma=approve NamedEntityTag=O]
+[Text=going CharacterOffsetBegin=259 CharacterOffsetEnd=264 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=forward CharacterOffsetBegin=265 CharacterOffsetEnd=272 PartOfSpeech=RB Lemma=forward NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=272 CharacterOffsetEnd=273 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN NO) (NNS TRADES))
+    (VP (MD should)
+      (VP (VB be)
+        (VP (VBN approved)
+          (S
+            (VP (VBG going)
+              (ADVP (RB forward)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, approved-5)
+compound(TRADES-2, NO-1)
+nsubjpass(approved-5, TRADES-2)
+aux(approved-5, should-3)
+auxpass(approved-5, be-4)
+xcomp(approved-5, going-6)
+advmod(going-6, forward-7)
+punct(approved-5, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (12 tokens):
+The counterpary has been placed on Credit Watch for No Trades.
+
+Tokens:
+[Text=The CharacterOffsetBegin=274 CharacterOffsetEnd=277 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=counterpary CharacterOffsetBegin=278 CharacterOffsetEnd=289 PartOfSpeech=NN Lemma=counterpary NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=290 CharacterOffsetEnd=293 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=294 CharacterOffsetEnd=298 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=placed CharacterOffsetBegin=299 CharacterOffsetEnd=305 PartOfSpeech=VBN Lemma=place NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=306 CharacterOffsetEnd=308 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Credit CharacterOffsetBegin=309 CharacterOffsetEnd=315 PartOfSpeech=NNP Lemma=Credit NamedEntityTag=O]
+[Text=Watch CharacterOffsetBegin=316 CharacterOffsetEnd=321 PartOfSpeech=NNP Lemma=Watch NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=322 CharacterOffsetEnd=325 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=No CharacterOffsetBegin=326 CharacterOffsetEnd=328 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=Trades CharacterOffsetBegin=329 CharacterOffsetEnd=335 PartOfSpeech=NNS Lemma=trade NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=335 CharacterOffsetEnd=336 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN counterpary))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (VP (VBN placed)
+          (PP (IN on)
+            (NP
+              (NP (NNP Credit) (NNP Watch))
+              (PP (IN for)
+                (NP (DT No) (NNS Trades))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, placed-5)
+det(counterpary-2, The-1)
+nsubjpass(placed-5, counterpary-2)
+aux(placed-5, has-3)
+auxpass(placed-5, been-4)
+case(Watch-8, on-6)
+compound(Watch-8, Credit-7)
+nmod:on(placed-5, Watch-8)
+case(Trades-11, for-9)
+neg(Trades-11, No-10)
+nmod:for(Watch-8, Trades-11)
+punct(placed-5, .-12)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (16 tokens):
+The appropriate traders have been notified although most of their
+transactions are executed through EOL.
+
+Tokens:
+[Text=The CharacterOffsetBegin=337 CharacterOffsetEnd=340 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=appropriate CharacterOffsetBegin=341 CharacterOffsetEnd=352 PartOfSpeech=JJ Lemma=appropriate NamedEntityTag=O]
+[Text=traders CharacterOffsetBegin=353 CharacterOffsetEnd=360 PartOfSpeech=NNS Lemma=trader NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=361 CharacterOffsetEnd=365 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=366 CharacterOffsetEnd=370 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=notified CharacterOffsetBegin=371 CharacterOffsetEnd=379 PartOfSpeech=VBN Lemma=notify NamedEntityTag=O]
+[Text=although CharacterOffsetBegin=380 CharacterOffsetEnd=388 PartOfSpeech=IN Lemma=although NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=389 CharacterOffsetEnd=393 PartOfSpeech=JJS Lemma=most NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=394 CharacterOffsetEnd=396 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=397 CharacterOffsetEnd=402 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=transactions CharacterOffsetBegin=403 CharacterOffsetEnd=415 PartOfSpeech=NNS Lemma=transaction NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=416 CharacterOffsetEnd=419 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=executed CharacterOffsetBegin=420 CharacterOffsetEnd=428 PartOfSpeech=VBN Lemma=execute NamedEntityTag=O]
+[Text=through CharacterOffsetBegin=429 CharacterOffsetEnd=436 PartOfSpeech=IN Lemma=through NamedEntityTag=O]
+[Text=EOL CharacterOffsetBegin=437 CharacterOffsetEnd=440 PartOfSpeech=NN Lemma=eol NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=440 CharacterOffsetEnd=441 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (JJ appropriate) (NNS traders))
+    (VP (VBP have)
+      (VP (VBN been)
+        (VP (VBN notified)
+          (SBAR (IN although)
+            (S
+              (NP
+                (NP (JJS most))
+                (PP (IN of)
+                  (NP (PRP$ their) (NNS transactions))))
+              (VP (VBP are)
+                (VP (VBN executed)
+                  (PP (IN through)
+                    (NP (NN EOL))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, notified-6)
+det(traders-3, The-1)
+amod(traders-3, appropriate-2)
+nsubjpass(notified-6, traders-3)
+aux(notified-6, have-4)
+auxpass(notified-6, been-5)
+mark(executed-13, although-7)
+nsubjpass(executed-13, most-8)
+case(transactions-11, of-9)
+nmod:poss(transactions-11, their-10)
+nmod:of(most-8, transactions-11)
+auxpass(executed-13, are-12)
+advcl:although(notified-6, executed-13)
+case(EOL-15, through-14)
+nmod:through(executed-13, EOL-15)
+punct(notified-6, .-16)
+
+Extracted the following NER entity mentions:
+
+Sentence #6 (17 tokens):
+Thier profile on EOL will be amended
+to NO TRADES until more information is made available.
+
+Tokens:
+[Text=Thier CharacterOffsetBegin=443 CharacterOffsetEnd=448 PartOfSpeech=NNP Lemma=Thier NamedEntityTag=O]
+[Text=profile CharacterOffsetBegin=449 CharacterOffsetEnd=456 PartOfSpeech=NN Lemma=profile NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=457 CharacterOffsetEnd=459 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=EOL CharacterOffsetBegin=460 CharacterOffsetEnd=463 PartOfSpeech=NN Lemma=eol NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=464 CharacterOffsetEnd=468 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=469 CharacterOffsetEnd=471 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=amended CharacterOffsetBegin=472 CharacterOffsetEnd=479 PartOfSpeech=VBN Lemma=amend NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=480 CharacterOffsetEnd=482 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=NO CharacterOffsetBegin=483 CharacterOffsetEnd=485 PartOfSpeech=NN Lemma=no NamedEntityTag=O]
+[Text=TRADES CharacterOffsetBegin=486 CharacterOffsetEnd=492 PartOfSpeech=NNS Lemma=trade NamedEntityTag=O]
+[Text=until CharacterOffsetBegin=493 CharacterOffsetEnd=498 PartOfSpeech=IN Lemma=until NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=499 CharacterOffsetEnd=503 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=information CharacterOffsetBegin=504 CharacterOffsetEnd=515 PartOfSpeech=NN Lemma=information NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=516 CharacterOffsetEnd=518 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=made CharacterOffsetBegin=519 CharacterOffsetEnd=523 PartOfSpeech=VBN Lemma=make NamedEntityTag=O]
+[Text=available CharacterOffsetBegin=524 CharacterOffsetEnd=533 PartOfSpeech=JJ Lemma=available NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=533 CharacterOffsetEnd=534 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Thier) (NN profile))
+      (PP (IN on)
+        (NP (NN EOL))))
+    (VP (MD will)
+      (VP (VB be)
+        (ADJP (VBN amended)
+          (PP (TO to)
+            (NP (NN NO) (NNS TRADES))))
+        (SBAR (IN until)
+          (S
+            (NP (JJR more) (NN information))
+            (VP (VBZ is)
+              (VP (VBN made)
+                (S
+                  (ADJP (JJ available)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, amended-7)
+compound(profile-2, Thier-1)
+nsubjpass(amended-7, profile-2)
+case(EOL-4, on-3)
+nmod:on(profile-2, EOL-4)
+aux(amended-7, will-5)
+auxpass(amended-7, be-6)
+case(TRADES-10, to-8)
+compound(TRADES-10, NO-9)
+nmod:to(amended-7, TRADES-10)
+mark(made-15, until-11)
+amod(information-13, more-12)
+nsubjpass(made-15, information-13)
+auxpass(made-15, is-14)
+advcl:until(amended-7, made-15)
+xcomp(made-15, available-16)
+punct(amended-7, .-17)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(1,7,[5,9]) -> (1,3,[1,4]), that is: "LLC 's guaranty 's" -> "American Central Energy"
+	(2,2,[1,4]) -> (1,3,[1,4]), that is: "The guaranty 's" -> "American Central Energy"
+
+Coreference set:
+	(4,11,[10,12]) -> (3,2,[1,3]), that is: "No Trades" -> "NO TRADES"
+	(6,10,[9,11]) -> (3,2,[1,3]), that is: "NO TRADES" -> "NO TRADES"
+
+Coreference set:
+	(5,10,[10,11]) -> (5,3,[1,4]), that is: "their" -> "The appropriate traders"

@@ -1,0 +1,541 @@
+Document: ID=203715.in (6 sentences, 136 tokens)
+
+Sentence #1 (26 tokens):
+Good news:  I've just received word that the FERC has issued an order denying
+SoCal's request for rehearing of the Gallup order.
+
+Tokens:
+[Text=Good CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=news CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=news NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='ve CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=received CharacterOffsetBegin=22 CharacterOffsetEnd=30 PartOfSpeech=VBN Lemma=receive NamedEntityTag=O]
+[Text=word CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=word NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=FERC CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=NNP Lemma=FERC NamedEntityTag=ORGANIZATION]
+[Text=has CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=issued CharacterOffsetBegin=54 CharacterOffsetEnd=60 PartOfSpeech=VBN Lemma=issue NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=order CharacterOffsetBegin=64 CharacterOffsetEnd=69 PartOfSpeech=NN Lemma=order NamedEntityTag=O]
+[Text=denying CharacterOffsetBegin=70 CharacterOffsetEnd=77 PartOfSpeech=VBG Lemma=deny NamedEntityTag=O]
+[Text=SoCal CharacterOffsetBegin=78 CharacterOffsetEnd=83 PartOfSpeech=NNP Lemma=SoCal NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=83 CharacterOffsetEnd=85 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=request CharacterOffsetBegin=86 CharacterOffsetEnd=93 PartOfSpeech=NN Lemma=request NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=94 CharacterOffsetEnd=97 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=rehearing CharacterOffsetBegin=98 CharacterOffsetEnd=107 PartOfSpeech=NN Lemma=rehearing NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=108 CharacterOffsetEnd=110 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=111 CharacterOffsetEnd=114 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Gallup CharacterOffsetBegin=115 CharacterOffsetEnd=121 PartOfSpeech=NNP Lemma=Gallup NamedEntityTag=ORGANIZATION]
+[Text=order CharacterOffsetBegin=122 CharacterOffsetEnd=127 PartOfSpeech=NN Lemma=order NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=127 CharacterOffsetEnd=128 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (JJ Good) (NN news))
+    (: :)
+    (S
+      (NP (PRP I))
+      (VP (VBP 've)
+        (ADVP (RB just))
+        (VP (VBN received)
+          (NP (NN word))
+          (SBAR (IN that)
+            (S
+              (NP (DT the) (NNP FERC))
+              (VP (VBZ has)
+                (VP (VBN issued)
+                  (NP
+                    (NP (DT an) (NN order))
+                    (VP (VBG denying)
+                      (NP
+                        (NP
+                          (NP (NNP SoCal) (POS 's))
+                          (NN request))
+                        (PP (IN for)
+                          (NP
+                            (NP (NN rehearing))
+                            (PP (IN of)
+                              (NP (DT the) (NNP Gallup) (NN order)))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, news-2)
+amod(news-2, Good-1)
+punct(news-2, :-3)
+nsubj(received-7, I-4)
+aux(received-7, 've-5)
+advmod(received-7, just-6)
+dep(news-2, received-7)
+dobj(received-7, word-8)
+mark(issued-13, that-9)
+det(FERC-11, the-10)
+nsubj(issued-13, FERC-11)
+aux(issued-13, has-12)
+ccomp(received-7, issued-13)
+det(order-15, an-14)
+dobj(issued-13, order-15)
+acl(order-15, denying-16)
+nmod:poss(request-19, SoCal-17)
+case(SoCal-17, 's-18)
+dobj(denying-16, request-19)
+case(rehearing-21, for-20)
+nmod:for(request-19, rehearing-21)
+case(order-25, of-22)
+det(order-25, the-23)
+compound(order-25, Gallup-24)
+nmod:of(rehearing-21, order-25)
+punct(news-2, .-26)
+
+Extracted the following NER entity mentions:
+FERC	ORGANIZATION
+Gallup	ORGANIZATION
+
+Sentence #2 (57 tokens):
+FERC also ordered that
+TW's request for rehearing (which asked the Commission not to require TW to
+disclose discounted rates) is now moot because we filed a discount report at
+the time required by Section 284.7(b)(6) of the Commission's rules (as we
+always do).
+
+Tokens:
+[Text=FERC CharacterOffsetBegin=130 CharacterOffsetEnd=134 PartOfSpeech=NNP Lemma=FERC NamedEntityTag=ORGANIZATION]
+[Text=also CharacterOffsetBegin=135 CharacterOffsetEnd=139 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=ordered CharacterOffsetBegin=140 CharacterOffsetEnd=147 PartOfSpeech=VBD Lemma=order NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=148 CharacterOffsetEnd=152 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=TW CharacterOffsetBegin=153 CharacterOffsetEnd=155 PartOfSpeech=NNP Lemma=TW NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=155 CharacterOffsetEnd=157 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=request CharacterOffsetBegin=158 CharacterOffsetEnd=165 PartOfSpeech=NN Lemma=request NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=166 CharacterOffsetEnd=169 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=rehearing CharacterOffsetBegin=170 CharacterOffsetEnd=179 PartOfSpeech=NN Lemma=rehearing NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=180 CharacterOffsetEnd=181 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=181 CharacterOffsetEnd=186 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=asked CharacterOffsetBegin=187 CharacterOffsetEnd=192 PartOfSpeech=VBD Lemma=ask NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=193 CharacterOffsetEnd=196 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Commission CharacterOffsetBegin=197 CharacterOffsetEnd=207 PartOfSpeech=NNP Lemma=Commission NamedEntityTag=ORGANIZATION]
+[Text=not CharacterOffsetBegin=208 CharacterOffsetEnd=211 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=212 CharacterOffsetEnd=214 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=require CharacterOffsetBegin=215 CharacterOffsetEnd=222 PartOfSpeech=VB Lemma=require NamedEntityTag=O]
+[Text=TW CharacterOffsetBegin=223 CharacterOffsetEnd=225 PartOfSpeech=NNP Lemma=TW NamedEntityTag=ORGANIZATION]
+[Text=to CharacterOffsetBegin=226 CharacterOffsetEnd=228 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=disclose CharacterOffsetBegin=229 CharacterOffsetEnd=237 PartOfSpeech=VB Lemma=disclose NamedEntityTag=O]
+[Text=discounted CharacterOffsetBegin=238 CharacterOffsetEnd=248 PartOfSpeech=JJ Lemma=discounted NamedEntityTag=O]
+[Text=rates CharacterOffsetBegin=249 CharacterOffsetEnd=254 PartOfSpeech=NNS Lemma=rate NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=254 CharacterOffsetEnd=255 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=256 CharacterOffsetEnd=258 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=259 CharacterOffsetEnd=262 PartOfSpeech=RB Lemma=now NamedEntityTag=O]
+[Text=moot CharacterOffsetBegin=263 CharacterOffsetEnd=267 PartOfSpeech=JJ Lemma=moot NamedEntityTag=O]
+[Text=because CharacterOffsetBegin=268 CharacterOffsetEnd=275 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=276 CharacterOffsetEnd=278 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=filed CharacterOffsetBegin=279 CharacterOffsetEnd=284 PartOfSpeech=VBD Lemma=file NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=285 CharacterOffsetEnd=286 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=discount CharacterOffsetBegin=287 CharacterOffsetEnd=295 PartOfSpeech=NN Lemma=discount NamedEntityTag=O]
+[Text=report CharacterOffsetBegin=296 CharacterOffsetEnd=302 PartOfSpeech=NN Lemma=report NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=303 CharacterOffsetEnd=305 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=306 CharacterOffsetEnd=309 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=310 CharacterOffsetEnd=314 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=required CharacterOffsetBegin=315 CharacterOffsetEnd=323 PartOfSpeech=VBN Lemma=require NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=324 CharacterOffsetEnd=326 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Section CharacterOffsetBegin=327 CharacterOffsetEnd=334 PartOfSpeech=NN Lemma=section NamedEntityTag=O]
+[Text=284.7 CharacterOffsetBegin=335 CharacterOffsetEnd=340 PartOfSpeech=CD Lemma=284.7 NamedEntityTag=NUMBER NormalizedNamedEntityTag=284.7]
+[Text=-LRB- CharacterOffsetBegin=340 CharacterOffsetEnd=341 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=b CharacterOffsetBegin=341 CharacterOffsetEnd=342 PartOfSpeech=NN Lemma=b NamedEntityTag=NUMBER NormalizedNamedEntityTag=0.0]
+[Text=-RRB- CharacterOffsetBegin=342 CharacterOffsetEnd=343 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=343 CharacterOffsetEnd=344 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=6 CharacterOffsetBegin=344 CharacterOffsetEnd=345 PartOfSpeech=CD Lemma=6 NamedEntityTag=NUMBER NormalizedNamedEntityTag=6.0]
+[Text=-RRB- CharacterOffsetBegin=345 CharacterOffsetEnd=346 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=347 CharacterOffsetEnd=349 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=350 CharacterOffsetEnd=353 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Commission CharacterOffsetBegin=354 CharacterOffsetEnd=364 PartOfSpeech=NNP Lemma=Commission NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=364 CharacterOffsetEnd=366 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=rules CharacterOffsetBegin=367 CharacterOffsetEnd=372 PartOfSpeech=NNS Lemma=rule NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=373 CharacterOffsetEnd=374 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=374 CharacterOffsetEnd=376 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=377 CharacterOffsetEnd=379 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=always CharacterOffsetBegin=380 CharacterOffsetEnd=386 PartOfSpeech=RB Lemma=always NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=387 CharacterOffsetEnd=389 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=389 CharacterOffsetEnd=390 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=390 CharacterOffsetEnd=391 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP FERC))
+    (ADVP (RB also))
+    (VP (VBD ordered)
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP
+              (NP
+                (NP (NNP TW) (POS 's))
+                (NN request))
+              (PP (IN for)
+                (NP (NN rehearing))))
+            (PRN (-LRB- -LRB-)
+              (SBAR
+                (WHNP (WDT which))
+                (S
+                  (VP (VBD asked)
+                    (NP (DT the) (NNP Commission))
+                    (S (RB not)
+                      (VP (TO to)
+                        (VP (VB require)
+                          (S
+                            (NP (NNP TW))
+                            (VP (TO to)
+                              (VP (VB disclose)
+                                (NP (JJ discounted) (NNS rates)))))))))))
+              (-RRB- -RRB-)))
+          (VP (VBZ is)
+            (ADVP (RB now))
+            (ADJP (JJ moot))
+            (SBAR (IN because)
+              (S
+                (NP (PRP we))
+                (VP (VBD filed)
+                  (NP
+                    (NP
+                      (NP (DT a) (NN discount) (NN report))
+                      (PP (IN at)
+                        (NP (DT the) (NN time))))
+                    (VP (VBN required)
+                      (PP (IN by)
+                        (NP
+                          (NP
+                            (NP (NN Section) (CD 284.7))
+                            (PRN (-LRB- -LRB-)
+                              (NP (NN b))
+                              (-RRB- -RRB-)))
+                          (PRN (-LRB- -LRB-)
+                            (NP (CD 6))
+                            (-RRB- -RRB-))
+                          (PP (IN of)
+                            (NP
+                              (NP (DT the) (NNP Commission) (POS 's))
+                              (NNS rules))))))
+                    (PRN (-LRB- -LRB-)
+                      (SBAR (IN as)
+                        (S
+                          (NP (PRP we))
+                          (ADVP (RB always))
+                          (VP (VBP do))))
+                      (-RRB- -RRB-))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ordered-3)
+nsubj(ordered-3, FERC-1)
+advmod(ordered-3, also-2)
+mark(moot-26, that-4)
+nmod:poss(request-7, TW-5)
+case(TW-5, 's-6)
+nsubj(moot-26, request-7)
+case(rehearing-9, for-8)
+nmod:for(request-7, rehearing-9)
+punct(asked-12, -LRB--10)
+nsubj(asked-12, which-11)
+dep(request-7, asked-12)
+det(Commission-14, the-13)
+dobj(asked-12, Commission-14)
+nsubj:xsubj(require-17, Commission-14)
+neg(require-17, not-15)
+mark(require-17, to-16)
+xcomp(asked-12, require-17)
+dobj(require-17, TW-18)
+nsubj:xsubj(disclose-20, TW-18)
+mark(disclose-20, to-19)
+xcomp(require-17, disclose-20)
+amod(rates-22, discounted-21)
+dobj(disclose-20, rates-22)
+punct(asked-12, -RRB--23)
+cop(moot-26, is-24)
+advmod(moot-26, now-25)
+ccomp(ordered-3, moot-26)
+mark(filed-29, because-27)
+nsubj(filed-29, we-28)
+advcl:because(moot-26, filed-29)
+det(report-32, a-30)
+compound(report-32, discount-31)
+dobj(filed-29, report-32)
+case(time-35, at-33)
+det(time-35, the-34)
+nmod:at(report-32, time-35)
+acl(report-32, required-36)
+case(Section-38, by-37)
+nmod:by(required-36, Section-38)
+nummod(Section-38, 284.7-39)
+punct(b-41, -LRB--40)
+appos(Section-38, b-41)
+punct(b-41, -RRB--42)
+punct(6-44, -LRB--43)
+appos(Section-38, 6-44)
+punct(6-44, -RRB--45)
+case(rules-50, of-46)
+det(Commission-48, the-47)
+nmod:poss(rules-50, Commission-48)
+case(Commission-48, 's-49)
+nmod:of(Section-38, rules-50)
+punct(do-55, -LRB--51)
+mark(do-55, as-52)
+nsubj(do-55, we-53)
+advmod(do-55, always-54)
+parataxis(required-36, do-55)
+punct(do-55, -RRB--56)
+punct(ordered-3, .-57)
+
+Extracted the following NER entity mentions:
+FERC	ORGANIZATION
+TW	ORGANIZATION
+Commission	ORGANIZATION
+TW	ORGANIZATION
+284.7	NUMBER
+b	NUMBER
+6	NUMBER
+Commission	ORGANIZATION
+
+Sentence #3 (17 tokens):
+If SoCal is still feeling vindictive, they can file an appeal in the D.C.
+Circuit.
+
+Tokens:
+[Text=If CharacterOffsetBegin=393 CharacterOffsetEnd=395 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=SoCal CharacterOffsetBegin=396 CharacterOffsetEnd=401 PartOfSpeech=NNP Lemma=SoCal NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=402 CharacterOffsetEnd=404 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=405 CharacterOffsetEnd=410 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=feeling CharacterOffsetBegin=411 CharacterOffsetEnd=418 PartOfSpeech=VBG Lemma=feel NamedEntityTag=O]
+[Text=vindictive CharacterOffsetBegin=419 CharacterOffsetEnd=429 PartOfSpeech=JJ Lemma=vindictive NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=429 CharacterOffsetEnd=430 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=431 CharacterOffsetEnd=435 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=436 CharacterOffsetEnd=439 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=file CharacterOffsetBegin=440 CharacterOffsetEnd=444 PartOfSpeech=VB Lemma=file NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=445 CharacterOffsetEnd=447 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=appeal CharacterOffsetBegin=448 CharacterOffsetEnd=454 PartOfSpeech=NN Lemma=appeal NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=455 CharacterOffsetEnd=457 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=458 CharacterOffsetEnd=461 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=D.C. CharacterOffsetBegin=462 CharacterOffsetEnd=466 PartOfSpeech=NNP Lemma=D.C. NamedEntityTag=ORGANIZATION]
+[Text=Circuit CharacterOffsetBegin=467 CharacterOffsetEnd=474 PartOfSpeech=NNP Lemma=Circuit NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=474 CharacterOffsetEnd=475 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NNP SoCal))
+        (VP (VBZ is)
+          (ADVP (RB still))
+          (VP (VBG feeling)
+            (ADJP (JJ vindictive))))))
+    (, ,)
+    (NP (PRP they))
+    (VP (MD can)
+      (VP (VB file)
+        (NP
+          (NP (DT an) (NN appeal))
+          (PP (IN in)
+            (NP (DT the) (NNP D.C.) (NNP Circuit))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, file-10)
+mark(feeling-5, If-1)
+nsubj(feeling-5, SoCal-2)
+aux(feeling-5, is-3)
+advmod(feeling-5, still-4)
+advcl:if(file-10, feeling-5)
+xcomp(feeling-5, vindictive-6)
+punct(file-10, ,-7)
+nsubj(file-10, they-8)
+aux(file-10, can-9)
+det(appeal-12, an-11)
+dobj(file-10, appeal-12)
+case(Circuit-16, in-13)
+det(Circuit-16, the-14)
+compound(Circuit-16, D.C.-15)
+nmod:in(appeal-12, Circuit-16)
+punct(file-10, .-17)
+
+Extracted the following NER entity mentions:
+D.C. Circuit	ORGANIZATION
+
+Sentence #4 (8 tokens):
+I believe their window is 60 days.
+
+Tokens:
+[Text=I CharacterOffsetBegin=477 CharacterOffsetEnd=478 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=believe CharacterOffsetBegin=479 CharacterOffsetEnd=486 PartOfSpeech=VBP Lemma=believe NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=487 CharacterOffsetEnd=492 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=window CharacterOffsetBegin=493 CharacterOffsetEnd=499 PartOfSpeech=NN Lemma=window NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=500 CharacterOffsetEnd=502 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=60 CharacterOffsetBegin=503 CharacterOffsetEnd=505 PartOfSpeech=CD Lemma=60 NamedEntityTag=DURATION]
+[Text=days CharacterOffsetBegin=506 CharacterOffsetEnd=510 PartOfSpeech=NNS Lemma=day NamedEntityTag=DURATION]
+[Text=. CharacterOffsetBegin=510 CharacterOffsetEnd=511 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP believe)
+      (SBAR
+        (S
+          (NP (PRP$ their) (NN window))
+          (VP (VBZ is)
+            (NP (CD 60) (NNS days))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, believe-2)
+nsubj(believe-2, I-1)
+nmod:poss(window-4, their-3)
+nsubj(days-7, window-4)
+cop(days-7, is-5)
+nummod(days-7, 60-6)
+ccomp(believe-2, days-7)
+punct(believe-2, .-8)
+
+Extracted the following NER entity mentions:
+60 days	DURATION
+
+Sentence #5 (18 tokens):
+In any event, the pendency of
+an appeal would not affect the validity of our certificate.
+
+Tokens:
+[Text=In CharacterOffsetBegin=513 CharacterOffsetEnd=515 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=516 CharacterOffsetEnd=519 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=event CharacterOffsetBegin=520 CharacterOffsetEnd=525 PartOfSpeech=NN Lemma=event NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=525 CharacterOffsetEnd=526 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=527 CharacterOffsetEnd=530 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=pendency CharacterOffsetBegin=531 CharacterOffsetEnd=539 PartOfSpeech=NN Lemma=pendency NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=540 CharacterOffsetEnd=542 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=543 CharacterOffsetEnd=545 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=appeal CharacterOffsetBegin=546 CharacterOffsetEnd=552 PartOfSpeech=NN Lemma=appeal NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=553 CharacterOffsetEnd=558 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=559 CharacterOffsetEnd=562 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=affect CharacterOffsetBegin=563 CharacterOffsetEnd=569 PartOfSpeech=VB Lemma=affect NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=570 CharacterOffsetEnd=573 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=validity CharacterOffsetBegin=574 CharacterOffsetEnd=582 PartOfSpeech=NN Lemma=validity NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=583 CharacterOffsetEnd=585 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=586 CharacterOffsetEnd=589 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=certificate CharacterOffsetBegin=590 CharacterOffsetEnd=601 PartOfSpeech=NN Lemma=certificate NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=601 CharacterOffsetEnd=602 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT any) (NN event)))
+    (, ,)
+    (NP
+      (NP (DT the) (NN pendency))
+      (PP (IN of)
+        (NP (DT an) (NN appeal))))
+    (VP (MD would) (RB not)
+      (VP (VB affect)
+        (NP
+          (NP (DT the) (NN validity))
+          (PP (IN of)
+            (NP (PRP$ our) (NN certificate))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, affect-12)
+case(event-3, In-1)
+det(event-3, any-2)
+nmod:in(affect-12, event-3)
+punct(affect-12, ,-4)
+det(pendency-6, the-5)
+nsubj(affect-12, pendency-6)
+case(appeal-9, of-7)
+det(appeal-9, an-8)
+nmod:of(pendency-6, appeal-9)
+aux(affect-12, would-10)
+neg(affect-12, not-11)
+det(validity-14, the-13)
+dobj(affect-12, validity-14)
+case(certificate-17, of-15)
+nmod:poss(certificate-17, our-16)
+nmod:of(validity-14, certificate-17)
+punct(affect-12, .-18)
+
+Extracted the following NER entity mentions:
+
+Sentence #6 (10 tokens):
+If you have any questions, let me know.
+
+Tokens:
+[Text=If CharacterOffsetBegin=604 CharacterOffsetEnd=606 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=607 CharacterOffsetEnd=610 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=611 CharacterOffsetEnd=615 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=616 CharacterOffsetEnd=619 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=questions CharacterOffsetBegin=620 CharacterOffsetEnd=629 PartOfSpeech=NNS Lemma=question NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=629 CharacterOffsetEnd=630 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=let CharacterOffsetBegin=631 CharacterOffsetEnd=634 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=635 CharacterOffsetEnd=637 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=638 CharacterOffsetEnd=642 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=642 CharacterOffsetEnd=643 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP have)
+          (NP (DT any) (NNS questions)))))
+    (, ,)
+    (VP (VB let)
+      (S
+        (NP (PRP me))
+        (VP (VB know))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, let-7)
+mark(have-3, If-1)
+nsubj(have-3, you-2)
+advcl:if(let-7, have-3)
+det(questions-5, any-4)
+dobj(have-3, questions-5)
+punct(let-7, ,-6)
+nsubj(know-9, me-8)
+ccomp(let-7, know-9)
+punct(let-7, .-10)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(4,1,[1,2]) -> (1,4,[4,5]), that is: "I" -> "I"
+	(6,8,[8,9]) -> (1,4,[4,5]), that is: "me" -> "I"
+
+Coreference set:
+	(2,1,[1,2]) -> (1,11,[10,12]), that is: "FERC" -> "the FERC"
+
+Coreference set:
+	(3,2,[2,3]) -> (1,17,[17,19]), that is: "SoCal" -> "SoCal 's"
+
+Coreference set:
+	(2,18,[18,19]) -> (2,5,[5,7]), that is: "TW" -> "TW 's"
+
+Coreference set:
+	(2,48,[47,50]) -> (2,14,[13,15]), that is: "the Commission 's" -> "the Commission"
+
+Coreference set:
+	(2,53,[53,54]) -> (2,28,[28,29]), that is: "we" -> "we"
+	(5,16,[16,17]) -> (2,28,[28,29]), that is: "our" -> "we"
+
+Coreference set:
+	(4,3,[3,4]) -> (3,8,[8,9]), that is: "their" -> "they"
+
+Coreference set:
+	(4,4,[3,5]) -> (4,7,[6,8]), that is: "their window" -> "60 days"

@@ -1,0 +1,533 @@
+Document: ID=20545.in (7 sentences, 135 tokens)
+
+Sentence #1 (10 tokens):
+President Clinton vetoed the Foreign Operations Appropriations bill
+yesterday.
+
+Tokens:
+[Text=President CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=President NamedEntityTag=TITLE]
+[Text=Clinton CharacterOffsetBegin=10 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=Clinton NamedEntityTag=PERSON]
+[Text=vetoed CharacterOffsetBegin=18 CharacterOffsetEnd=24 PartOfSpeech=VBD Lemma=veto NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Foreign CharacterOffsetBegin=29 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Foreign NamedEntityTag=ORGANIZATION]
+[Text=Operations CharacterOffsetBegin=37 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=Operations NamedEntityTag=ORGANIZATION]
+[Text=Appropriations CharacterOffsetBegin=48 CharacterOffsetEnd=62 PartOfSpeech=NNP Lemma=Appropriations NamedEntityTag=ORGANIZATION]
+[Text=bill CharacterOffsetBegin=63 CharacterOffsetEnd=67 PartOfSpeech=NN Lemma=bill NamedEntityTag=O]
+[Text=yesterday CharacterOffsetBegin=68 CharacterOffsetEnd=77 PartOfSpeech=NN Lemma=yesterday NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=77 CharacterOffsetEnd=78 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP President) (NNP Clinton))
+    (VP (VBD vetoed)
+      (NP (DT the) (NNP Foreign) (NNP Operations) (NNP Appropriations) (NN bill))
+      (NP-TMP (NN yesterday)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, vetoed-3)
+compound(Clinton-2, President-1)
+nsubj(vetoed-3, Clinton-2)
+det(bill-8, the-4)
+compound(bill-8, Foreign-5)
+compound(bill-8, Operations-6)
+compound(bill-8, Appropriations-7)
+dobj(vetoed-3, bill-8)
+nmod:tmod(vetoed-3, yesterday-9)
+punct(vetoed-3, .-10)
+
+Extracted the following NER entity mentions:
+President	TITLE
+Clinton	PERSON
+Foreign Operations Appropriations	ORGANIZATION
+
+Sentence #2 (21 tokens):
+His press secretary announced that other vetoes were possible
+until the President and Congress reached agreement on the budget impasse.
+
+Tokens:
+[Text=His CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=press CharacterOffsetBegin=83 CharacterOffsetEnd=88 PartOfSpeech=NN Lemma=press NamedEntityTag=TITLE]
+[Text=secretary CharacterOffsetBegin=89 CharacterOffsetEnd=98 PartOfSpeech=NN Lemma=secretary NamedEntityTag=TITLE]
+[Text=announced CharacterOffsetBegin=99 CharacterOffsetEnd=108 PartOfSpeech=VBD Lemma=announce NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=109 CharacterOffsetEnd=113 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=114 CharacterOffsetEnd=119 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=vetoes CharacterOffsetBegin=120 CharacterOffsetEnd=126 PartOfSpeech=NNS Lemma=veto NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=127 CharacterOffsetEnd=131 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=possible CharacterOffsetBegin=132 CharacterOffsetEnd=140 PartOfSpeech=JJ Lemma=possible NamedEntityTag=O]
+[Text=until CharacterOffsetBegin=141 CharacterOffsetEnd=146 PartOfSpeech=IN Lemma=until NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=147 CharacterOffsetEnd=150 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=President CharacterOffsetBegin=151 CharacterOffsetEnd=160 PartOfSpeech=NNP Lemma=President NamedEntityTag=TITLE]
+[Text=and CharacterOffsetBegin=161 CharacterOffsetEnd=164 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Congress CharacterOffsetBegin=165 CharacterOffsetEnd=173 PartOfSpeech=NNP Lemma=Congress NamedEntityTag=ORGANIZATION]
+[Text=reached CharacterOffsetBegin=174 CharacterOffsetEnd=181 PartOfSpeech=VBD Lemma=reach NamedEntityTag=O]
+[Text=agreement CharacterOffsetBegin=182 CharacterOffsetEnd=191 PartOfSpeech=NN Lemma=agreement NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=192 CharacterOffsetEnd=194 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=195 CharacterOffsetEnd=198 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=budget CharacterOffsetBegin=199 CharacterOffsetEnd=205 PartOfSpeech=NN Lemma=budget NamedEntityTag=O]
+[Text=impasse CharacterOffsetBegin=206 CharacterOffsetEnd=213 PartOfSpeech=NN Lemma=impasse NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=213 CharacterOffsetEnd=214 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP$ His) (NN press) (NN secretary))
+    (VP (VBD announced)
+      (SBAR (IN that)
+        (S
+          (NP (JJ other) (NNS vetoes))
+          (VP (VBD were)
+            (ADJP (JJ possible))
+            (SBAR (IN until)
+              (S
+                (NP (DT the) (NNP President)
+                  (CC and)
+                  (NNP Congress))
+                (VP (VBD reached)
+                  (NP (NN agreement))
+                  (PP (IN on)
+                    (NP (DT the) (NN budget) (NN impasse))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, announced-4)
+nmod:poss(secretary-3, His-1)
+compound(secretary-3, press-2)
+nsubj(announced-4, secretary-3)
+mark(possible-9, that-5)
+amod(vetoes-7, other-6)
+nsubj(possible-9, vetoes-7)
+cop(possible-9, were-8)
+ccomp(announced-4, possible-9)
+mark(reached-15, until-10)
+det(President-12, the-11)
+nsubj(reached-15, President-12)
+cc(President-12, and-13)
+conj:and(President-12, Congress-14)
+nsubj(reached-15, Congress-14)
+advcl:until(possible-9, reached-15)
+dobj(reached-15, agreement-16)
+case(impasse-20, on-17)
+det(impasse-20, the-18)
+compound(impasse-20, budget-19)
+nmod:on(reached-15, impasse-20)
+punct(announced-4, .-21)
+
+Extracted the following NER entity mentions:
+press secretary	TITLE
+President	TITLE
+Congress	ORGANIZATION
+His	PERSON
+
+Sentence #3 (35 tokens):
+The
+Defense Appropriation conference report which contains authority to
+permanently extend the exemption relating to OPIC and ExIm financing for
+projects in India is in the cue and could be affected by this action.
+
+Tokens:
+[Text=The CharacterOffsetBegin=215 CharacterOffsetEnd=218 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Defense CharacterOffsetBegin=219 CharacterOffsetEnd=226 PartOfSpeech=NNP Lemma=Defense NamedEntityTag=O]
+[Text=Appropriation CharacterOffsetBegin=227 CharacterOffsetEnd=240 PartOfSpeech=NN Lemma=appropriation NamedEntityTag=O]
+[Text=conference CharacterOffsetBegin=241 CharacterOffsetEnd=251 PartOfSpeech=NN Lemma=conference NamedEntityTag=O]
+[Text=report CharacterOffsetBegin=252 CharacterOffsetEnd=258 PartOfSpeech=NN Lemma=report NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=259 CharacterOffsetEnd=264 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=contains CharacterOffsetBegin=265 CharacterOffsetEnd=273 PartOfSpeech=VBZ Lemma=contain NamedEntityTag=O]
+[Text=authority CharacterOffsetBegin=274 CharacterOffsetEnd=283 PartOfSpeech=NN Lemma=authority NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=284 CharacterOffsetEnd=286 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=permanently CharacterOffsetBegin=287 CharacterOffsetEnd=298 PartOfSpeech=RB Lemma=permanently NamedEntityTag=O]
+[Text=extend CharacterOffsetBegin=299 CharacterOffsetEnd=305 PartOfSpeech=VB Lemma=extend NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=306 CharacterOffsetEnd=309 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=exemption CharacterOffsetBegin=310 CharacterOffsetEnd=319 PartOfSpeech=NN Lemma=exemption NamedEntityTag=O]
+[Text=relating CharacterOffsetBegin=320 CharacterOffsetEnd=328 PartOfSpeech=VBG Lemma=relate NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=329 CharacterOffsetEnd=331 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=OPIC CharacterOffsetBegin=332 CharacterOffsetEnd=336 PartOfSpeech=NNP Lemma=OPIC NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=337 CharacterOffsetEnd=340 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=ExIm CharacterOffsetBegin=341 CharacterOffsetEnd=345 PartOfSpeech=NNP Lemma=ExIm NamedEntityTag=O]
+[Text=financing CharacterOffsetBegin=346 CharacterOffsetEnd=355 PartOfSpeech=NN Lemma=financing NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=356 CharacterOffsetEnd=359 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=projects CharacterOffsetBegin=360 CharacterOffsetEnd=368 PartOfSpeech=NNS Lemma=project NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=369 CharacterOffsetEnd=371 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=India CharacterOffsetBegin=372 CharacterOffsetEnd=377 PartOfSpeech=NNP Lemma=India NamedEntityTag=COUNTRY]
+[Text=is CharacterOffsetBegin=378 CharacterOffsetEnd=380 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=381 CharacterOffsetEnd=383 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=384 CharacterOffsetEnd=387 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=cue CharacterOffsetBegin=388 CharacterOffsetEnd=391 PartOfSpeech=NN Lemma=cue NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=392 CharacterOffsetEnd=395 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=396 CharacterOffsetEnd=401 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=402 CharacterOffsetEnd=404 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=affected CharacterOffsetBegin=405 CharacterOffsetEnd=413 PartOfSpeech=VBN Lemma=affect NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=414 CharacterOffsetEnd=416 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=417 CharacterOffsetEnd=421 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=action CharacterOffsetBegin=422 CharacterOffsetEnd=428 PartOfSpeech=NN Lemma=action NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=428 CharacterOffsetEnd=429 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP Defense) (NN Appropriation) (NN conference) (NN report))
+      (SBAR
+        (WHNP (WDT which))
+        (S
+          (VP (VBZ contains)
+            (NP (NN authority))
+            (S
+              (VP (TO to)
+                (VP
+                  (ADVP (RB permanently))
+                  (VB extend)
+                  (NP (DT the) (NN exemption)
+                    (S
+                      (VP (VBG relating)
+                        (PP (TO to)
+                          (NP (NNP OPIC)
+                            (CC and)
+                            (NNP ExIm)))
+                        (NP
+                          (NP (NN financing))
+                          (PP (IN for)
+                            (NP
+                              (NP (NNS projects))
+                              (PP (IN in)
+                                (NP (NNP India))))))))))))))))
+    (VP
+      (VP (VBZ is)
+        (PP (IN in)
+          (NP (DT the) (NN cue))))
+      (CC and)
+      (VP (MD could)
+        (VP (VB be)
+          (VP (VBN affected)
+            (PP (IN by)
+              (NP (DT this) (NN action)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, cue-27)
+det(report-5, The-1)
+compound(report-5, Defense-2)
+compound(report-5, Appropriation-3)
+compound(report-5, conference-4)
+nsubj(contains-7, report-5)
+nsubj(cue-27, report-5)
+nsubjpass(affected-31, report-5)
+ref(report-5, which-6)
+acl:relcl(report-5, contains-7)
+dobj(contains-7, authority-8)
+mark(extend-11, to-9)
+advmod(extend-11, permanently-10)
+advcl:to(contains-7, extend-11)
+det(exemption-13, the-12)
+dobj(extend-11, exemption-13)
+dep(exemption-13, relating-14)
+case(OPIC-16, to-15)
+nmod:to(relating-14, OPIC-16)
+cc(OPIC-16, and-17)
+nmod:to(relating-14, ExIm-18)
+conj:and(OPIC-16, ExIm-18)
+dobj(relating-14, financing-19)
+case(projects-21, for-20)
+nmod:for(financing-19, projects-21)
+case(India-23, in-22)
+nmod:in(projects-21, India-23)
+cop(cue-27, is-24)
+case(cue-27, in-25)
+det(cue-27, the-26)
+cc(cue-27, and-28)
+aux(affected-31, could-29)
+auxpass(affected-31, be-30)
+conj:and(cue-27, affected-31)
+case(action-34, by-32)
+det(action-34, this-33)
+nmod:agent(affected-31, action-34)
+punct(cue-27, .-35)
+
+Extracted the following NER entity mentions:
+OPIC	ORGANIZATION
+India	COUNTRY
+
+Sentence #4 (14 tokens):
+Congressional authority for government operations expires this week as does
+the one-year exemption.
+
+Tokens:
+[Text=Congressional CharacterOffsetBegin=430 CharacterOffsetEnd=443 PartOfSpeech=JJ Lemma=congressional NamedEntityTag=O]
+[Text=authority CharacterOffsetBegin=444 CharacterOffsetEnd=453 PartOfSpeech=NN Lemma=authority NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=454 CharacterOffsetEnd=457 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=government CharacterOffsetBegin=458 CharacterOffsetEnd=468 PartOfSpeech=NN Lemma=government NamedEntityTag=O]
+[Text=operations CharacterOffsetBegin=469 CharacterOffsetEnd=479 PartOfSpeech=NNS Lemma=operation NamedEntityTag=O]
+[Text=expires CharacterOffsetBegin=480 CharacterOffsetEnd=487 PartOfSpeech=VBZ Lemma=expire NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=488 CharacterOffsetEnd=492 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=week CharacterOffsetBegin=493 CharacterOffsetEnd=497 PartOfSpeech=NN Lemma=week NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=498 CharacterOffsetEnd=500 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=501 CharacterOffsetEnd=505 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=506 CharacterOffsetEnd=509 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=one-year CharacterOffsetBegin=510 CharacterOffsetEnd=518 PartOfSpeech=JJ Lemma=one-year NamedEntityTag=O]
+[Text=exemption CharacterOffsetBegin=519 CharacterOffsetEnd=528 PartOfSpeech=NN Lemma=exemption NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=528 CharacterOffsetEnd=529 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (JJ Congressional) (NN authority))
+      (PP (IN for)
+        (NP (NN government) (NNS operations))))
+    (VP (VBZ expires)
+      (NP (DT this) (NN week))
+      (SBAR (IN as)
+        (S
+          (VP (VBZ does)
+            (NP (DT the) (JJ one-year) (NN exemption))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, expires-6)
+amod(authority-2, Congressional-1)
+nsubj(expires-6, authority-2)
+case(operations-5, for-3)
+compound(operations-5, government-4)
+nmod:for(authority-2, operations-5)
+det(week-8, this-7)
+nmod:tmod(expires-6, week-8)
+mark(does-10, as-9)
+advcl:as(expires-6, does-10)
+det(exemption-13, the-11)
+amod(exemption-13, one-year-12)
+dobj(does-10, exemption-13)
+punct(expires-6, .-14)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (10 tokens):
+Congress must act by Thursday to extend both items.
+
+Tokens:
+[Text=Congress CharacterOffsetBegin=530 CharacterOffsetEnd=538 PartOfSpeech=NNP Lemma=Congress NamedEntityTag=ORGANIZATION]
+[Text=must CharacterOffsetBegin=539 CharacterOffsetEnd=543 PartOfSpeech=MD Lemma=must NamedEntityTag=O]
+[Text=act CharacterOffsetBegin=544 CharacterOffsetEnd=547 PartOfSpeech=VB Lemma=act NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=548 CharacterOffsetEnd=550 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Thursday CharacterOffsetBegin=551 CharacterOffsetEnd=559 PartOfSpeech=NNP Lemma=Thursday NamedEntityTag=DATE NormalizedNamedEntityTag=thursday]
+[Text=to CharacterOffsetBegin=560 CharacterOffsetEnd=562 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=extend CharacterOffsetBegin=563 CharacterOffsetEnd=569 PartOfSpeech=VB Lemma=extend NamedEntityTag=O]
+[Text=both CharacterOffsetBegin=570 CharacterOffsetEnd=574 PartOfSpeech=CC Lemma=both NamedEntityTag=O]
+[Text=items CharacterOffsetBegin=575 CharacterOffsetEnd=580 PartOfSpeech=NNS Lemma=item NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=580 CharacterOffsetEnd=581 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Congress))
+    (VP (MD must)
+      (VP (VB act)
+        (PP (IN by)
+          (NP (NNP Thursday)))
+        (S
+          (VP (TO to)
+            (VP (VB extend)
+              (PP (CC both)
+                (NP (NNS items))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, act-3)
+nsubj(act-3, Congress-1)
+nsubj:xsubj(extend-7, Congress-1)
+aux(act-3, must-2)
+case(Thursday-5, by-4)
+nmod:by(act-3, Thursday-5)
+mark(extend-7, to-6)
+xcomp(act-3, extend-7)
+case(items-9, both-8)
+nmod:both(extend-7, items-9)
+punct(act-3, .-10)
+
+Extracted the following NER entity mentions:
+Congress	ORGANIZATION
+Thursday	DATE
+
+Sentence #6 (24 tokens):
+Congress is expected to adopt a "continuing resolution" through October 29
+while the two branches of government work out their differences.
+
+Tokens:
+[Text=Congress CharacterOffsetBegin=582 CharacterOffsetEnd=590 PartOfSpeech=NNP Lemma=Congress NamedEntityTag=ORGANIZATION]
+[Text=is CharacterOffsetBegin=591 CharacterOffsetEnd=593 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=expected CharacterOffsetBegin=594 CharacterOffsetEnd=602 PartOfSpeech=VBN Lemma=expect NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=603 CharacterOffsetEnd=605 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=adopt CharacterOffsetBegin=606 CharacterOffsetEnd=611 PartOfSpeech=VB Lemma=adopt NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=612 CharacterOffsetEnd=613 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=614 CharacterOffsetEnd=615 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=continuing CharacterOffsetBegin=615 CharacterOffsetEnd=625 PartOfSpeech=VBG Lemma=continue NamedEntityTag=O]
+[Text=resolution CharacterOffsetBegin=626 CharacterOffsetEnd=636 PartOfSpeech=NN Lemma=resolution NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=636 CharacterOffsetEnd=637 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=through CharacterOffsetBegin=638 CharacterOffsetEnd=645 PartOfSpeech=IN Lemma=through NamedEntityTag=O]
+[Text=October CharacterOffsetBegin=646 CharacterOffsetEnd=653 PartOfSpeech=NNP Lemma=October NamedEntityTag=DATE NormalizedNamedEntityTag=****1029]
+[Text=29 CharacterOffsetBegin=654 CharacterOffsetEnd=656 PartOfSpeech=CD Lemma=29 NamedEntityTag=DATE NormalizedNamedEntityTag=****1029]
+[Text=while CharacterOffsetBegin=657 CharacterOffsetEnd=662 PartOfSpeech=IN Lemma=while NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=663 CharacterOffsetEnd=666 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=667 CharacterOffsetEnd=670 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=branches CharacterOffsetBegin=671 CharacterOffsetEnd=679 PartOfSpeech=NNS Lemma=branch NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=680 CharacterOffsetEnd=682 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=government CharacterOffsetBegin=683 CharacterOffsetEnd=693 PartOfSpeech=NN Lemma=government NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=694 CharacterOffsetEnd=698 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=699 CharacterOffsetEnd=702 PartOfSpeech=IN Lemma=out NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=703 CharacterOffsetEnd=708 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=differences CharacterOffsetBegin=709 CharacterOffsetEnd=720 PartOfSpeech=NNS Lemma=difference NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=720 CharacterOffsetEnd=721 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Congress))
+    (VP (VBZ is)
+      (VP (VBN expected)
+        (S
+          (VP (TO to)
+            (VP (VB adopt)
+              (NP
+                (NP (DT a) (`` ``) (VBG continuing) (NN resolution) ('' ''))
+                (PP (IN through)
+                  (NP (NNP October) (CD 29))))
+              (PP (IN while)
+                (NP
+                  (NP (DT the) (CD two) (NNS branches))
+                  (PP (IN of)
+                    (NP (NN government) (NN work)))))
+              (PP (IN out)
+                (NP (PRP$ their) (NNS differences))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, expected-3)
+nsubjpass(expected-3, Congress-1)
+nsubj:xsubj(adopt-5, Congress-1)
+auxpass(expected-3, is-2)
+mark(adopt-5, to-4)
+xcomp(expected-3, adopt-5)
+det(resolution-9, a-6)
+punct(resolution-9, ``-7)
+amod(resolution-9, continuing-8)
+dobj(adopt-5, resolution-9)
+punct(resolution-9, ''-10)
+case(October-12, through-11)
+nmod:through(resolution-9, October-12)
+nummod(October-12, 29-13)
+case(branches-17, while-14)
+det(branches-17, the-15)
+nummod(branches-17, two-16)
+nmod:while(adopt-5, branches-17)
+case(work-20, of-18)
+compound(work-20, government-19)
+nmod:of(branches-17, work-20)
+case(differences-23, out-21)
+nmod:poss(differences-23, their-22)
+nmod:out(adopt-5, differences-23)
+punct(expected-3, .-24)
+
+Extracted the following NER entity mentions:
+Congress	ORGANIZATION
+October 29	DATE
+two	NUMBER
+
+Sentence #7 (21 tokens):
+The President and Congressional leaders are to meet today to discuss and
+possibly establish a procedure for negotating the disagreement.
+
+Tokens:
+[Text=The CharacterOffsetBegin=722 CharacterOffsetEnd=725 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=President CharacterOffsetBegin=726 CharacterOffsetEnd=735 PartOfSpeech=NNP Lemma=President NamedEntityTag=TITLE]
+[Text=and CharacterOffsetBegin=736 CharacterOffsetEnd=739 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Congressional CharacterOffsetBegin=740 CharacterOffsetEnd=753 PartOfSpeech=NNP Lemma=Congressional NamedEntityTag=ORGANIZATION]
+[Text=leaders CharacterOffsetBegin=754 CharacterOffsetEnd=761 PartOfSpeech=NNS Lemma=leader NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=762 CharacterOffsetEnd=765 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=766 CharacterOffsetEnd=768 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=meet CharacterOffsetBegin=769 CharacterOffsetEnd=773 PartOfSpeech=VB Lemma=meet NamedEntityTag=O]
+[Text=today CharacterOffsetBegin=774 CharacterOffsetEnd=779 PartOfSpeech=NN Lemma=today NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=780 CharacterOffsetEnd=782 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=discuss CharacterOffsetBegin=783 CharacterOffsetEnd=790 PartOfSpeech=VB Lemma=discuss NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=791 CharacterOffsetEnd=794 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=possibly CharacterOffsetBegin=795 CharacterOffsetEnd=803 PartOfSpeech=RB Lemma=possibly NamedEntityTag=O]
+[Text=establish CharacterOffsetBegin=804 CharacterOffsetEnd=813 PartOfSpeech=VB Lemma=establish NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=814 CharacterOffsetEnd=815 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=procedure CharacterOffsetBegin=816 CharacterOffsetEnd=825 PartOfSpeech=NN Lemma=procedure NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=826 CharacterOffsetEnd=829 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=negotating CharacterOffsetBegin=830 CharacterOffsetEnd=840 PartOfSpeech=VBG Lemma=negotate NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=841 CharacterOffsetEnd=844 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=disagreement CharacterOffsetBegin=845 CharacterOffsetEnd=857 PartOfSpeech=NN Lemma=disagreement NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=857 CharacterOffsetEnd=858 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NNP President)
+      (CC and)
+      (NNP Congressional) (NNS leaders))
+    (VP (VBP are)
+      (S
+        (VP (TO to)
+          (VP (VB meet)
+            (NP-TMP (NN today))
+            (S
+              (VP (TO to)
+                (VP
+                  (VP (VB discuss))
+                  (CC and)
+                  (ADVP (RB possibly))
+                  (VP (VB establish)
+                    (NP (DT a) (NN procedure))
+                    (PP (IN for)
+                      (S
+                        (VP (VBG negotating)
+                          (NP (DT the) (NN disagreement)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, are-6)
+det(leaders-5, The-1)
+compound(leaders-5, President-2)
+cc(President-2, and-3)
+conj:and(President-2, Congressional-4)
+compound(leaders-5, Congressional-4)
+nsubj(are-6, leaders-5)
+nsubj:xsubj(meet-8, leaders-5)
+mark(meet-8, to-7)
+xcomp(are-6, meet-8)
+nmod:tmod(meet-8, today-9)
+mark(discuss-11, to-10)
+xcomp(meet-8, discuss-11)
+cc(discuss-11, and-12)
+advmod(establish-14, possibly-13)
+xcomp(meet-8, establish-14)
+conj:and(discuss-11, establish-14)
+det(procedure-16, a-15)
+dobj(establish-14, procedure-16)
+mark(negotating-18, for-17)
+advcl:for(establish-14, negotating-18)
+det(disagreement-20, the-19)
+dobj(negotating-18, disagreement-20)
+punct(are-6, .-21)
+
+Extracted the following NER entity mentions:
+President	TITLE
+Congressional	ORGANIZATION
+
+Coreference set:
+	(2,1,[1,2]) -> (1,2,[1,3]), that is: "His" -> "President Clinton"
+
+Coreference set:
+	(5,1,[1,2]) -> (2,14,[14,15]), that is: "Congress" -> "Congress"
+	(6,1,[1,2]) -> (2,14,[14,15]), that is: "Congress" -> "Congress"
+	(7,4,[4,5]) -> (2,14,[14,15]), that is: "Congressional" -> "Congress"
+
+Coreference set:
+	(7,2,[2,3]) -> (2,12,[12,13]), that is: "President" -> "President"

@@ -1,0 +1,275 @@
+Document: ID=809401.in (6 sentences, 62 tokens)
+
+Sentence #1 (2 tokens):
+FYI.
+
+Tokens:
+[Text=FYI CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=FYI NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP FYI))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, FYI-1)
+punct(FYI-1, .-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (12 tokens):
+Commonwealth Energy is adding a new meter to their existing contract.
+
+Tokens:
+[Text=Commonwealth CharacterOffsetBegin=6 CharacterOffsetEnd=18 PartOfSpeech=NNP Lemma=Commonwealth NamedEntityTag=ORGANIZATION]
+[Text=Energy CharacterOffsetBegin=19 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=Energy NamedEntityTag=ORGANIZATION]
+[Text=is CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=adding CharacterOffsetBegin=29 CharacterOffsetEnd=35 PartOfSpeech=VBG Lemma=add NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=meter CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=meter NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=existing CharacterOffsetBegin=57 CharacterOffsetEnd=65 PartOfSpeech=VBG Lemma=exist NamedEntityTag=O]
+[Text=contract CharacterOffsetBegin=66 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=contract NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=74 CharacterOffsetEnd=75 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Commonwealth) (NNP Energy))
+    (VP (VBZ is)
+      (VP (VBG adding)
+        (NP (DT a) (JJ new) (NN meter))
+        (PP (TO to)
+          (NP (PRP$ their) (VBG existing) (NN contract)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, adding-4)
+compound(Energy-2, Commonwealth-1)
+nsubj(adding-4, Energy-2)
+aux(adding-4, is-3)
+det(meter-7, a-5)
+amod(meter-7, new-6)
+dobj(adding-4, meter-7)
+case(contract-11, to-8)
+nmod:poss(contract-11, their-9)
+amod(contract-11, existing-10)
+nmod:to(adding-4, contract-11)
+punct(adding-4, .-12)
+
+Extracted the following NER entity mentions:
+Commonwealth Energy	ORGANIZATION
+
+Sentence #3 (10 tokens):
+The meter number is not know at this time.
+
+Tokens:
+[Text=The CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=meter CharacterOffsetBegin=80 CharacterOffsetEnd=85 PartOfSpeech=NN Lemma=meter NamedEntityTag=O]
+[Text=number CharacterOffsetBegin=86 CharacterOffsetEnd=92 PartOfSpeech=NN Lemma=number NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=93 CharacterOffsetEnd=95 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=96 CharacterOffsetEnd=99 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=100 CharacterOffsetEnd=104 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=105 CharacterOffsetEnd=107 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=108 CharacterOffsetEnd=112 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=113 CharacterOffsetEnd=117 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=117 CharacterOffsetEnd=118 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN meter) (NN number))
+    (VP (VBZ is) (RB not)
+      (VP (VB know)
+        (PP (IN at)
+          (NP (DT this) (NN time)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, know-6)
+det(number-3, The-1)
+compound(number-3, meter-2)
+nsubj(know-6, number-3)
+aux(know-6, is-4)
+neg(know-6, not-5)
+case(time-9, at-7)
+det(time-9, this-8)
+nmod:at(know-6, time-9)
+punct(know-6, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (15 tokens):
+The well name is Goodwin and is
+located in Barbour County, West Virginia.
+
+Tokens:
+[Text=The CharacterOffsetBegin=120 CharacterOffsetEnd=123 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=124 CharacterOffsetEnd=128 PartOfSpeech=NN Lemma=well NamedEntityTag=O]
+[Text=name CharacterOffsetBegin=129 CharacterOffsetEnd=133 PartOfSpeech=NN Lemma=name NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=134 CharacterOffsetEnd=136 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=Goodwin CharacterOffsetBegin=137 CharacterOffsetEnd=144 PartOfSpeech=NNP Lemma=Goodwin NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=145 CharacterOffsetEnd=148 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=149 CharacterOffsetEnd=151 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=located CharacterOffsetBegin=152 CharacterOffsetEnd=159 PartOfSpeech=JJ Lemma=located NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=160 CharacterOffsetEnd=162 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Barbour CharacterOffsetBegin=163 CharacterOffsetEnd=170 PartOfSpeech=NNP Lemma=Barbour NamedEntityTag=LOCATION]
+[Text=County CharacterOffsetBegin=171 CharacterOffsetEnd=177 PartOfSpeech=NNP Lemma=County NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=177 CharacterOffsetEnd=178 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=West CharacterOffsetBegin=179 CharacterOffsetEnd=183 PartOfSpeech=NNP Lemma=West NamedEntityTag=STATE_OR_PROVINCE]
+[Text=Virginia CharacterOffsetBegin=184 CharacterOffsetEnd=192 PartOfSpeech=NNP Lemma=Virginia NamedEntityTag=STATE_OR_PROVINCE]
+[Text=. CharacterOffsetBegin=192 CharacterOffsetEnd=193 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN well) (NN name))
+    (VP
+      (VP (VBZ is)
+        (NP (NNP Goodwin)))
+      (CC and)
+      (VP (VBZ is)
+        (ADJP (JJ located)
+          (PP (IN in)
+            (NP
+              (NP (NNP Barbour) (NNP County))
+              (, ,)
+              (NP (NNP West) (NNP Virginia)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Goodwin-5)
+det(name-3, The-1)
+compound(name-3, well-2)
+nsubj(Goodwin-5, name-3)
+nsubj(located-8, name-3)
+cop(Goodwin-5, is-4)
+cc(Goodwin-5, and-6)
+cop(located-8, is-7)
+conj:and(Goodwin-5, located-8)
+case(County-11, in-9)
+compound(County-11, Barbour-10)
+nmod:in(located-8, County-11)
+punct(County-11, ,-12)
+compound(Virginia-14, West-13)
+appos(County-11, Virginia-14)
+punct(Goodwin-5, .-15)
+
+Extracted the following NER entity mentions:
+Goodwin	PERSON
+Barbour County	LOCATION
+West Virginia	STATE_OR_PROVINCE
+
+Sentence #5 (20 tokens):
+This meter will be behind the
+Bridgeport Agg point and is expected to do about 15 dths a day.
+
+Tokens:
+[Text=This CharacterOffsetBegin=195 CharacterOffsetEnd=199 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=meter CharacterOffsetBegin=200 CharacterOffsetEnd=205 PartOfSpeech=NN Lemma=meter NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=206 CharacterOffsetEnd=210 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=211 CharacterOffsetEnd=213 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=behind CharacterOffsetBegin=214 CharacterOffsetEnd=220 PartOfSpeech=IN Lemma=behind NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=221 CharacterOffsetEnd=224 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Bridgeport CharacterOffsetBegin=225 CharacterOffsetEnd=235 PartOfSpeech=NNP Lemma=Bridgeport NamedEntityTag=ORGANIZATION]
+[Text=Agg CharacterOffsetBegin=236 CharacterOffsetEnd=239 PartOfSpeech=NN Lemma=agg NamedEntityTag=ORGANIZATION]
+[Text=point CharacterOffsetBegin=240 CharacterOffsetEnd=245 PartOfSpeech=NN Lemma=point NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=246 CharacterOffsetEnd=249 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=250 CharacterOffsetEnd=252 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=expected CharacterOffsetBegin=253 CharacterOffsetEnd=261 PartOfSpeech=VBN Lemma=expect NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=262 CharacterOffsetEnd=264 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=265 CharacterOffsetEnd=267 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=268 CharacterOffsetEnd=273 PartOfSpeech=RB Lemma=about NamedEntityTag=O]
+[Text=15 CharacterOffsetBegin=274 CharacterOffsetEnd=276 PartOfSpeech=CD Lemma=15 NamedEntityTag=NUMBER NormalizedNamedEntityTag=~15.0]
+[Text=dths CharacterOffsetBegin=277 CharacterOffsetEnd=281 PartOfSpeech=NNS Lemma=dth NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=282 CharacterOffsetEnd=283 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=day CharacterOffsetBegin=284 CharacterOffsetEnd=287 PartOfSpeech=NN Lemma=day NamedEntityTag=TIME NormalizedNamedEntityTag=D]
+[Text=. CharacterOffsetBegin=287 CharacterOffsetEnd=288 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This) (NN meter))
+    (VP
+      (VP (MD will)
+        (VP (VB be)
+          (PP (IN behind)
+            (NP (DT the) (NNP Bridgeport) (NN Agg) (NN point)))))
+      (CC and)
+      (VP (VBZ is)
+        (VP (VBN expected)
+          (S
+            (VP (TO to)
+              (VP (VB do)
+                (NP
+                  (NP
+                    (QP (RB about) (CD 15))
+                    (NNS dths))
+                  (NP (DT a) (NN day)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, point-9)
+det(meter-2, This-1)
+nsubj(point-9, meter-2)
+nsubjpass(expected-12, meter-2)
+nsubj:xsubj(do-14, meter-2)
+aux(point-9, will-3)
+cop(point-9, be-4)
+case(point-9, behind-5)
+det(point-9, the-6)
+compound(point-9, Bridgeport-7)
+compound(point-9, Agg-8)
+cc(point-9, and-10)
+auxpass(expected-12, is-11)
+conj:and(point-9, expected-12)
+mark(do-14, to-13)
+xcomp(expected-12, do-14)
+advmod(15-16, about-15)
+nummod(dths-17, 15-16)
+dobj(do-14, dths-17)
+det(day-19, a-18)
+dep(dths-17, day-19)
+punct(point-9, .-20)
+
+Extracted the following NER entity mentions:
+Bridgeport Agg	ORGANIZATION
+15	NUMBER
+day	TIME
+
+Sentence #6 (3 tokens):
+Thanks,
+Heidi
+
+Tokens:
+[Text=Thanks CharacterOffsetBegin=290 CharacterOffsetEnd=296 PartOfSpeech=NNS Lemma=thanks NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=296 CharacterOffsetEnd=297 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Heidi CharacterOffsetBegin=298 CharacterOffsetEnd=303 PartOfSpeech=NNP Lemma=Heidi NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNS Thanks))
+    (, ,)
+    (NP (NNP Heidi))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Thanks-1)
+punct(Thanks-1, ,-2)
+appos(Thanks-1, Heidi-3)
+
+Extracted the following NER entity mentions:
+Heidi	PERSON
+
+Coreference set:
+	(5,2,[1,3]) -> (2,7,[5,8]), that is: "This meter" -> "a new meter"

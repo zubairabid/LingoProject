@@ -1,0 +1,878 @@
+Document: ID=281832.in (13 sentences, 205 tokens)
+
+Sentence #1 (27 tokens):
+Hello Everyone,
+Just a friendly reminder that the Family dinner is
+planned for the 12th at the Grotto restaurant in their
+private room at 5:30.
+
+Tokens:
+[Text=Hello CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=UH Lemma=hello NamedEntityTag=O]
+[Text=Everyone CharacterOffsetBegin=6 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=everyone NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Just CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=friendly CharacterOffsetBegin=23 CharacterOffsetEnd=31 PartOfSpeech=JJ Lemma=friendly NamedEntityTag=O]
+[Text=reminder CharacterOffsetBegin=32 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=reminder NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Family CharacterOffsetBegin=50 CharacterOffsetEnd=56 PartOfSpeech=NNP Lemma=Family NamedEntityTag=O]
+[Text=dinner CharacterOffsetBegin=57 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=dinner NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=planned CharacterOffsetBegin=67 CharacterOffsetEnd=74 PartOfSpeech=VBN Lemma=plan NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=12th CharacterOffsetBegin=83 CharacterOffsetEnd=87 PartOfSpeech=JJ Lemma=12th NamedEntityTag=ORDINAL NormalizedNamedEntityTag=12.0]
+[Text=at CharacterOffsetBegin=88 CharacterOffsetEnd=90 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=91 CharacterOffsetEnd=94 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Grotto CharacterOffsetBegin=95 CharacterOffsetEnd=101 PartOfSpeech=NNP Lemma=Grotto NamedEntityTag=LOCATION]
+[Text=restaurant CharacterOffsetBegin=102 CharacterOffsetEnd=112 PartOfSpeech=NN Lemma=restaurant NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=113 CharacterOffsetEnd=115 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=116 CharacterOffsetEnd=121 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=private CharacterOffsetBegin=122 CharacterOffsetEnd=129 PartOfSpeech=JJ Lemma=private NamedEntityTag=O]
+[Text=room CharacterOffsetBegin=130 CharacterOffsetEnd=134 PartOfSpeech=NN Lemma=room NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=135 CharacterOffsetEnd=137 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=5:30 CharacterOffsetBegin=138 CharacterOffsetEnd=142 PartOfSpeech=CD Lemma=5:30 NamedEntityTag=TIME NormalizedNamedEntityTag=5:30]
+[Text=. CharacterOffsetBegin=142 CharacterOffsetEnd=143 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP
+        (NP (UH Hello))
+        (NP
+          (NP (NN Everyone))
+          (, ,) (RB Just)
+          (NP (DT a) (JJ friendly) (NN reminder)))
+        (PP (IN that)
+          (NP (DT the) (NNP Family)))))
+    (NP (NN dinner))
+    (VP (VBZ is)
+      (VP (VBN planned)
+        (PP (IN for)
+          (NP
+            (NP (DT the) (JJ 12th))
+            (PP (IN at)
+              (NP (DT the) (NNP Grotto) (NN restaurant)))))
+        (PP (IN in)
+          (NP
+            (NP (PRP$ their) (JJ private) (NN room))
+            (PP (IN at)
+              (NP (CD 5:30)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, planned-13)
+dep(planned-13, Hello-1)
+dobj(Hello-1, Everyone-2)
+punct(Everyone-2, ,-3)
+advmod(Everyone-2, Just-4)
+det(reminder-7, a-5)
+amod(reminder-7, friendly-6)
+dep(Everyone-2, reminder-7)
+case(Family-10, that-8)
+det(Family-10, the-9)
+nmod:that(Hello-1, Family-10)
+nsubjpass(planned-13, dinner-11)
+auxpass(planned-13, is-12)
+case(12th-16, for-14)
+det(12th-16, the-15)
+nmod:for(planned-13, 12th-16)
+case(restaurant-20, at-17)
+det(restaurant-20, the-18)
+compound(restaurant-20, Grotto-19)
+nmod:at(12th-16, restaurant-20)
+case(room-24, in-21)
+nmod:poss(room-24, their-22)
+amod(room-24, private-23)
+nmod:in(planned-13, room-24)
+case(5:30-26, at-25)
+nmod:at(room-24, 5:30-26)
+punct(planned-13, .-27)
+
+Extracted the following NER entity mentions:
+12th	ORDINAL
+Grotto	LOCATION
+5:30	TIME
+
+Sentence #2 (6 tokens):
+Good food and good fun!
+
+Tokens:
+[Text=Good CharacterOffsetBegin=145 CharacterOffsetEnd=149 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=food CharacterOffsetBegin=150 CharacterOffsetEnd=154 PartOfSpeech=NN Lemma=food NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=155 CharacterOffsetEnd=158 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=159 CharacterOffsetEnd=163 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=fun CharacterOffsetBegin=164 CharacterOffsetEnd=167 PartOfSpeech=NN Lemma=fun NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=167 CharacterOffsetEnd=168 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP
+      (NP (JJ Good) (NN food))
+      (CC and)
+      (NP (JJ good) (NN fun)))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, food-2)
+amod(food-2, Good-1)
+cc(food-2, and-3)
+amod(fun-5, good-4)
+conj:and(food-2, fun-5)
+punct(food-2, !-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (5 tokens):
+Please RSVP by Friday.
+
+Tokens:
+[Text=Please CharacterOffsetBegin=169 CharacterOffsetEnd=175 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=RSVP CharacterOffsetBegin=176 CharacterOffsetEnd=180 PartOfSpeech=NN Lemma=rsvp NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=181 CharacterOffsetEnd=183 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Friday CharacterOffsetBegin=184 CharacterOffsetEnd=190 PartOfSpeech=NNP Lemma=Friday NamedEntityTag=DATE NormalizedNamedEntityTag=friday]
+[Text=. CharacterOffsetBegin=190 CharacterOffsetEnd=191 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Please)
+      (NP (NN RSVP))
+      (PP (IN by)
+        (NP (NNP Friday))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Please-1)
+dobj(Please-1, RSVP-2)
+case(Friday-4, by-3)
+nmod:by(Please-1, Friday-4)
+punct(Please-1, .-5)
+
+Extracted the following NER entity mentions:
+Friday	DATE
+
+Sentence #4 (24 tokens):
+David and Courtney I know that
+you are not coming but I wanted to include you in the
+reminder incase your plans changed.
+
+Tokens:
+[Text=David CharacterOffsetBegin=193 CharacterOffsetEnd=198 PartOfSpeech=NNP Lemma=David NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=199 CharacterOffsetEnd=202 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Courtney CharacterOffsetBegin=203 CharacterOffsetEnd=211 PartOfSpeech=NNP Lemma=Courtney NamedEntityTag=PERSON]
+[Text=I CharacterOffsetBegin=212 CharacterOffsetEnd=213 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=214 CharacterOffsetEnd=218 PartOfSpeech=VBP Lemma=know NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=219 CharacterOffsetEnd=223 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=224 CharacterOffsetEnd=227 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=228 CharacterOffsetEnd=231 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=232 CharacterOffsetEnd=235 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=coming CharacterOffsetBegin=236 CharacterOffsetEnd=242 PartOfSpeech=VBG Lemma=come NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=243 CharacterOffsetEnd=246 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=247 CharacterOffsetEnd=248 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=wanted CharacterOffsetBegin=249 CharacterOffsetEnd=255 PartOfSpeech=VBD Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=256 CharacterOffsetEnd=258 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=include CharacterOffsetBegin=259 CharacterOffsetEnd=266 PartOfSpeech=VB Lemma=include NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=267 CharacterOffsetEnd=270 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=271 CharacterOffsetEnd=273 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=274 CharacterOffsetEnd=277 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=reminder CharacterOffsetBegin=278 CharacterOffsetEnd=286 PartOfSpeech=NN Lemma=reminder NamedEntityTag=O]
+[Text=incase CharacterOffsetBegin=287 CharacterOffsetEnd=293 PartOfSpeech=VB Lemma=incase NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=294 CharacterOffsetEnd=298 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=plans CharacterOffsetBegin=299 CharacterOffsetEnd=304 PartOfSpeech=NNS Lemma=plan NamedEntityTag=O]
+[Text=changed CharacterOffsetBegin=305 CharacterOffsetEnd=312 PartOfSpeech=VBD Lemma=change NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=312 CharacterOffsetEnd=313 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP David)
+        (CC and)
+        (NNP Courtney))
+      (SBAR
+        (S
+          (NP (PRP I))
+          (VP (VBP know)
+            (SBAR (IN that)
+              (S
+                (NP (PRP you))
+                (VP (VBP are) (RB not)
+                  (VP (VBG coming)
+                    (SBAR (CC but)
+                      (S
+                        (NP (PRP I))
+                        (VP (VBD wanted)
+                          (S
+                            (VP (TO to)
+                              (VP (VB include)
+                                (NP (PRP you))
+                                (PP (IN in)
+                                  (NP (DT the) (NN reminder)
+                                    (S
+                                      (VP (VB incase)
+                                        (NP (PRP$ your) (NNS plans))))))))))))))))))))
+    (VP (VBD changed))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, changed-23)
+mark(coming-10, David-1)
+nsubj(changed-23, David-1)
+cc(David-1, and-2)
+conj:and(David-1, Courtney-3)
+mark(coming-10, Courtney-3)
+nsubj(changed-23, Courtney-3)
+nsubj(know-5, I-4)
+acl:relcl(David-1, know-5)
+ref(David-1, that-6)
+nsubj(coming-10, you-7)
+aux(coming-10, are-8)
+neg(coming-10, not-9)
+ccomp(know-5, coming-10)
+cc(wanted-13, but-11)
+nsubj(wanted-13, I-12)
+nsubj:xsubj(include-15, I-12)
+ccomp(coming-10, wanted-13)
+mark(include-15, to-14)
+xcomp(wanted-13, include-15)
+dobj(include-15, you-16)
+case(reminder-19, in-17)
+det(reminder-19, the-18)
+nmod:in(include-15, reminder-19)
+dep(reminder-19, incase-20)
+nmod:poss(plans-22, your-21)
+dobj(incase-20, plans-22)
+punct(changed-23, .-24)
+
+Extracted the following NER entity mentions:
+David	PERSON
+Courtney	PERSON
+
+Sentence #5 (6 tokens):
+For those recieving osmars food.
+
+Tokens:
+[Text=For CharacterOffsetBegin=314 CharacterOffsetEnd=317 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=318 CharacterOffsetEnd=323 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=recieving CharacterOffsetBegin=324 CharacterOffsetEnd=333 PartOfSpeech=VBG Lemma=recieve NamedEntityTag=O]
+[Text=osmars CharacterOffsetBegin=334 CharacterOffsetEnd=340 PartOfSpeech=NNS Lemma=osmar NamedEntityTag=O]
+[Text=food CharacterOffsetBegin=341 CharacterOffsetEnd=345 PartOfSpeech=NN Lemma=food NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=345 CharacterOffsetEnd=346 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (PP (IN For)
+      (NP
+        (NP (DT those))
+        (VP (VBG recieving)
+          (NP (NNS osmars) (NN food)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, those-2)
+case(those-2, For-1)
+acl(those-2, recieving-3)
+compound(food-5, osmars-4)
+dobj(recieving-3, food-5)
+punct(those-2, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #6 (26 tokens):
+To make thing run
+smoothly in his department it is very important that
+you return the circle menu by the friday before the
+menu starts.
+
+Tokens:
+[Text=To CharacterOffsetBegin=348 CharacterOffsetEnd=350 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=351 CharacterOffsetEnd=355 PartOfSpeech=VB Lemma=make NamedEntityTag=O]
+[Text=thing CharacterOffsetBegin=356 CharacterOffsetEnd=361 PartOfSpeech=NN Lemma=thing NamedEntityTag=O]
+[Text=run CharacterOffsetBegin=362 CharacterOffsetEnd=365 PartOfSpeech=VBP Lemma=run NamedEntityTag=O]
+[Text=smoothly CharacterOffsetBegin=366 CharacterOffsetEnd=374 PartOfSpeech=RB Lemma=smoothly NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=375 CharacterOffsetEnd=377 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=378 CharacterOffsetEnd=381 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=department CharacterOffsetBegin=382 CharacterOffsetEnd=392 PartOfSpeech=NN Lemma=department NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=393 CharacterOffsetEnd=395 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=396 CharacterOffsetEnd=398 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=399 CharacterOffsetEnd=403 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=important CharacterOffsetBegin=404 CharacterOffsetEnd=413 PartOfSpeech=JJ Lemma=important NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=414 CharacterOffsetEnd=418 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=419 CharacterOffsetEnd=422 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=return CharacterOffsetBegin=423 CharacterOffsetEnd=429 PartOfSpeech=VBP Lemma=return NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=430 CharacterOffsetEnd=433 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=circle CharacterOffsetBegin=434 CharacterOffsetEnd=440 PartOfSpeech=NN Lemma=circle NamedEntityTag=O]
+[Text=menu CharacterOffsetBegin=441 CharacterOffsetEnd=445 PartOfSpeech=NN Lemma=menu NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=446 CharacterOffsetEnd=448 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=449 CharacterOffsetEnd=452 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=friday CharacterOffsetBegin=453 CharacterOffsetEnd=459 PartOfSpeech=NNP Lemma=friday NamedEntityTag=DATE NormalizedNamedEntityTag=friday]
+[Text=before CharacterOffsetBegin=460 CharacterOffsetEnd=466 PartOfSpeech=IN Lemma=before NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=467 CharacterOffsetEnd=470 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=menu CharacterOffsetBegin=471 CharacterOffsetEnd=475 PartOfSpeech=NN Lemma=menu NamedEntityTag=O]
+[Text=starts CharacterOffsetBegin=476 CharacterOffsetEnd=482 PartOfSpeech=VBZ Lemma=start NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=482 CharacterOffsetEnd=483 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (S
+        (VP (TO To)
+          (VP (VB make)
+            (NP (NN thing)))))
+      (VP (VBP run)
+        (ADVP (RB smoothly))
+        (PP (IN in)
+          (NP (PRP$ his) (NN department)))))
+    (NP (PRP it))
+    (VP (VBZ is)
+      (ADJP (RB very) (JJ important))
+      (SBAR (IN that)
+        (S
+          (NP (PRP you))
+          (VP (VBP return)
+            (NP (DT the) (NN circle) (NN menu))
+            (PP (IN by)
+              (NP (DT the) (NNP friday)))
+            (SBAR (IN before)
+              (S
+                (NP (DT the) (NN menu))
+                (VP (VBZ starts))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, important-12)
+mark(make-2, To-1)
+csubj(run-4, make-2)
+dobj(make-2, thing-3)
+dep(important-12, run-4)
+advmod(run-4, smoothly-5)
+case(department-8, in-6)
+nmod:poss(department-8, his-7)
+nmod:in(run-4, department-8)
+nsubj(important-12, it-9)
+cop(important-12, is-10)
+advmod(important-12, very-11)
+mark(return-15, that-13)
+nsubj(return-15, you-14)
+ccomp(important-12, return-15)
+det(menu-18, the-16)
+compound(menu-18, circle-17)
+dobj(return-15, menu-18)
+case(friday-21, by-19)
+det(friday-21, the-20)
+nmod:by(return-15, friday-21)
+mark(starts-25, before-22)
+det(menu-24, the-23)
+nsubj(starts-25, menu-24)
+advcl:before(return-15, starts-25)
+punct(important-12, .-26)
+
+Extracted the following NER entity mentions:
+friday	DATE
+his	PERSON
+
+Sentence #7 (16 tokens):
+Osmars mondays have been very rushed
+while he waits to find out who is eating.
+
+Tokens:
+[Text=Osmars CharacterOffsetBegin=485 CharacterOffsetEnd=491 PartOfSpeech=NNP Lemma=Osmars NamedEntityTag=O]
+[Text=mondays CharacterOffsetBegin=492 CharacterOffsetEnd=499 PartOfSpeech=NNS Lemma=monday NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=500 CharacterOffsetEnd=504 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=505 CharacterOffsetEnd=509 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=510 CharacterOffsetEnd=514 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=rushed CharacterOffsetBegin=515 CharacterOffsetEnd=521 PartOfSpeech=VBN Lemma=rush NamedEntityTag=O]
+[Text=while CharacterOffsetBegin=522 CharacterOffsetEnd=527 PartOfSpeech=IN Lemma=while NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=528 CharacterOffsetEnd=530 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=waits CharacterOffsetBegin=531 CharacterOffsetEnd=536 PartOfSpeech=VBZ Lemma=wait NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=537 CharacterOffsetEnd=539 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=find CharacterOffsetBegin=540 CharacterOffsetEnd=544 PartOfSpeech=VB Lemma=find NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=545 CharacterOffsetEnd=548 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=549 CharacterOffsetEnd=552 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=553 CharacterOffsetEnd=555 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=eating CharacterOffsetBegin=556 CharacterOffsetEnd=562 PartOfSpeech=VBG Lemma=eat NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=562 CharacterOffsetEnd=563 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Osmars) (NNS mondays))
+    (VP (VBP have)
+      (VP (VBN been)
+        (ADJP (RB very) (VBN rushed))
+        (SBAR (IN while)
+          (S
+            (NP (PRP he))
+            (VP (VBZ waits)
+              (S
+                (VP (TO to)
+                  (VP (VB find)
+                    (PRT (RP out))
+                    (SBAR
+                      (WHNP (WP who))
+                      (S
+                        (VP (VBZ is)
+                          (VP (VBG eating)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, rushed-6)
+compound(mondays-2, Osmars-1)
+nsubjpass(rushed-6, mondays-2)
+aux(rushed-6, have-3)
+auxpass(rushed-6, been-4)
+advmod(rushed-6, very-5)
+mark(waits-9, while-7)
+nsubj(waits-9, he-8)
+nsubj:xsubj(find-11, he-8)
+advcl:while(rushed-6, waits-9)
+mark(find-11, to-10)
+xcomp(waits-9, find-11)
+compound:prt(find-11, out-12)
+nsubj(eating-15, who-13)
+aux(eating-15, is-14)
+ccomp(find-11, eating-15)
+punct(rushed-6, .-16)
+
+Extracted the following NER entity mentions:
+he	PERSON
+
+Sentence #8 (27 tokens):
+If you know
+you are going to be out of town then please email me
+or indicate this on the menu and return it to Osmar.
+
+Tokens:
+[Text=If CharacterOffsetBegin=565 CharacterOffsetEnd=567 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=568 CharacterOffsetEnd=571 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=572 CharacterOffsetEnd=576 PartOfSpeech=VBP Lemma=know NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=577 CharacterOffsetEnd=580 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=581 CharacterOffsetEnd=584 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=going CharacterOffsetBegin=585 CharacterOffsetEnd=590 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=591 CharacterOffsetEnd=593 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=594 CharacterOffsetEnd=596 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=597 CharacterOffsetEnd=600 PartOfSpeech=IN Lemma=out NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=601 CharacterOffsetEnd=603 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=town CharacterOffsetBegin=604 CharacterOffsetEnd=608 PartOfSpeech=NN Lemma=town NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=609 CharacterOffsetEnd=613 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=please CharacterOffsetBegin=614 CharacterOffsetEnd=620 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=email CharacterOffsetBegin=621 CharacterOffsetEnd=626 PartOfSpeech=VB Lemma=email NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=627 CharacterOffsetEnd=629 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=630 CharacterOffsetEnd=632 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=indicate CharacterOffsetBegin=633 CharacterOffsetEnd=641 PartOfSpeech=VBP Lemma=indicate NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=642 CharacterOffsetEnd=646 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=647 CharacterOffsetEnd=649 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=650 CharacterOffsetEnd=653 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=menu CharacterOffsetBegin=654 CharacterOffsetEnd=658 PartOfSpeech=NN Lemma=menu NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=659 CharacterOffsetEnd=662 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=return CharacterOffsetBegin=663 CharacterOffsetEnd=669 PartOfSpeech=VB Lemma=return NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=670 CharacterOffsetEnd=672 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=673 CharacterOffsetEnd=675 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Osmar CharacterOffsetBegin=676 CharacterOffsetEnd=681 PartOfSpeech=NNP Lemma=Osmar NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=681 CharacterOffsetEnd=682 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP know)
+          (SBAR
+            (S
+              (NP (PRP you))
+              (VP (VBP are)
+                (VP (VBG going)
+                  (S
+                    (VP (TO to)
+                      (VP (VB be)
+                        (ADJP (IN out)
+                          (PP (IN of)
+                            (NP (NN town))))
+                        (ADVP (RB then))))))))))))
+    (VP
+      (VP (VB please)
+        (S
+          (VP
+            (VP (VB email)
+              (NP (PRP me)))
+            (CC or)
+            (VP (VBP indicate)
+              (NP
+                (NP (DT this))
+                (PP (IN on)
+                  (NP (DT the) (NN menu))))))))
+      (CC and)
+      (VP (VB return)
+        (NP (PRP it))
+        (PP (TO to)
+          (NP (NNP Osmar)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, please-13)
+mark(know-3, If-1)
+nsubj(know-3, you-2)
+csubj(please-13, know-3)
+csubj(return-23, know-3)
+nsubj(going-6, you-4)
+nsubj:xsubj(town-11, you-4)
+aux(going-6, are-5)
+ccomp(know-3, going-6)
+mark(town-11, to-7)
+cop(town-11, be-8)
+case(town-11, out-9)
+mwe(out-9, of-10)
+xcomp(going-6, town-11)
+advmod(town-11, then-12)
+ccomp(please-13, email-14)
+dobj(email-14, me-15)
+cc(email-14, or-16)
+ccomp(please-13, indicate-17)
+conj:or(email-14, indicate-17)
+dobj(indicate-17, this-18)
+case(menu-21, on-19)
+det(menu-21, the-20)
+nmod:on(this-18, menu-21)
+cc(please-13, and-22)
+conj:and(please-13, return-23)
+dobj(return-23, it-24)
+case(Osmar-26, to-25)
+nmod:to(return-23, Osmar-26)
+punct(please-13, .-27)
+
+Extracted the following NER entity mentions:
+Osmar	PERSON
+
+Sentence #9 (18 tokens):
+I have completed the holiday house schedule for 2002
+and Sally is madly typing as we speak.
+
+Tokens:
+[Text=I CharacterOffsetBegin=683 CharacterOffsetEnd=684 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=685 CharacterOffsetEnd=689 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=completed CharacterOffsetBegin=690 CharacterOffsetEnd=699 PartOfSpeech=VBN Lemma=complete NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=700 CharacterOffsetEnd=703 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=holiday CharacterOffsetBegin=704 CharacterOffsetEnd=711 PartOfSpeech=NN Lemma=holiday NamedEntityTag=O]
+[Text=house CharacterOffsetBegin=712 CharacterOffsetEnd=717 PartOfSpeech=NN Lemma=house NamedEntityTag=O]
+[Text=schedule CharacterOffsetBegin=718 CharacterOffsetEnd=726 PartOfSpeech=NN Lemma=schedule NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=727 CharacterOffsetEnd=730 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=2002 CharacterOffsetBegin=731 CharacterOffsetEnd=735 PartOfSpeech=CD Lemma=2002 NamedEntityTag=DATE NormalizedNamedEntityTag=2002]
+[Text=and CharacterOffsetBegin=736 CharacterOffsetEnd=739 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Sally CharacterOffsetBegin=740 CharacterOffsetEnd=745 PartOfSpeech=NNP Lemma=Sally NamedEntityTag=PERSON]
+[Text=is CharacterOffsetBegin=746 CharacterOffsetEnd=748 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=madly CharacterOffsetBegin=749 CharacterOffsetEnd=754 PartOfSpeech=RB Lemma=madly NamedEntityTag=O]
+[Text=typing CharacterOffsetBegin=755 CharacterOffsetEnd=761 PartOfSpeech=NN Lemma=typing NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=762 CharacterOffsetEnd=764 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=765 CharacterOffsetEnd=767 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=speak CharacterOffsetBegin=768 CharacterOffsetEnd=773 PartOfSpeech=VBP Lemma=speak NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=773 CharacterOffsetEnd=774 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP have)
+        (VP (VBN completed)
+          (NP
+            (NP (DT the) (NN holiday) (NN house) (NN schedule))
+            (PP (IN for)
+              (NP (CD 2002)))))))
+    (CC and)
+    (S
+      (NP (NNP Sally))
+      (VP (VBZ is)
+        (ADJP (RB madly) (NN typing))
+        (SBAR (IN as)
+          (S
+            (NP (PRP we))
+            (VP (VBP speak))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, completed-3)
+nsubj(completed-3, I-1)
+aux(completed-3, have-2)
+det(schedule-7, the-4)
+compound(schedule-7, holiday-5)
+compound(schedule-7, house-6)
+dobj(completed-3, schedule-7)
+case(2002-9, for-8)
+nmod:for(schedule-7, 2002-9)
+cc(completed-3, and-10)
+nsubj(typing-14, Sally-11)
+cop(typing-14, is-12)
+advmod(typing-14, madly-13)
+conj:and(completed-3, typing-14)
+mark(speak-17, as-15)
+nsubj(speak-17, we-16)
+advcl:as(typing-14, speak-17)
+punct(completed-3, .-18)
+
+Extracted the following NER entity mentions:
+2002	DATE
+Sally	PERSON
+
+Sentence #10 (10 tokens):
+I would expect
+to see it early next week.
+
+Tokens:
+[Text=I CharacterOffsetBegin=776 CharacterOffsetEnd=777 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=778 CharacterOffsetEnd=783 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=expect CharacterOffsetBegin=784 CharacterOffsetEnd=790 PartOfSpeech=VB Lemma=expect NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=791 CharacterOffsetEnd=793 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=794 CharacterOffsetEnd=797 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=798 CharacterOffsetEnd=800 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=early CharacterOffsetBegin=801 CharacterOffsetEnd=806 PartOfSpeech=JJ Lemma=early NamedEntityTag=O]
+[Text=next CharacterOffsetBegin=807 CharacterOffsetEnd=811 PartOfSpeech=JJ Lemma=next NamedEntityTag=O]
+[Text=week CharacterOffsetBegin=812 CharacterOffsetEnd=816 PartOfSpeech=NN Lemma=week NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=816 CharacterOffsetEnd=817 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD would)
+      (VP (VB expect)
+        (S
+          (VP (TO to)
+            (VP (VB see)
+              (NP (PRP it))
+              (NP-TMP (JJ early) (JJ next) (NN week)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, expect-3)
+nsubj(expect-3, I-1)
+nsubj:xsubj(see-5, I-1)
+aux(expect-3, would-2)
+mark(see-5, to-4)
+xcomp(expect-3, see-5)
+dobj(see-5, it-6)
+amod(week-9, early-7)
+amod(week-9, next-8)
+nmod:tmod(see-5, week-9)
+punct(expect-3, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #11 (19 tokens):
+Please note that I will be in Aspen all next week, and
+in Canada until the 21st.
+
+Tokens:
+[Text=Please CharacterOffsetBegin=818 CharacterOffsetEnd=824 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=note CharacterOffsetBegin=825 CharacterOffsetEnd=829 PartOfSpeech=VB Lemma=note NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=830 CharacterOffsetEnd=834 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=835 CharacterOffsetEnd=836 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=837 CharacterOffsetEnd=841 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=842 CharacterOffsetEnd=844 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=845 CharacterOffsetEnd=847 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Aspen CharacterOffsetBegin=848 CharacterOffsetEnd=853 PartOfSpeech=NNP Lemma=Aspen NamedEntityTag=LOCATION]
+[Text=all CharacterOffsetBegin=854 CharacterOffsetEnd=857 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=next CharacterOffsetBegin=858 CharacterOffsetEnd=862 PartOfSpeech=JJ Lemma=next NamedEntityTag=O]
+[Text=week CharacterOffsetBegin=863 CharacterOffsetEnd=867 PartOfSpeech=NN Lemma=week NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=867 CharacterOffsetEnd=868 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=869 CharacterOffsetEnd=872 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=873 CharacterOffsetEnd=875 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Canada CharacterOffsetBegin=876 CharacterOffsetEnd=882 PartOfSpeech=NNP Lemma=Canada NamedEntityTag=COUNTRY]
+[Text=until CharacterOffsetBegin=883 CharacterOffsetEnd=888 PartOfSpeech=IN Lemma=until NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=889 CharacterOffsetEnd=892 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=21st CharacterOffsetBegin=893 CharacterOffsetEnd=897 PartOfSpeech=CD Lemma=21st NamedEntityTag=NUMBER NormalizedNamedEntityTag=21.0]
+[Text=. CharacterOffsetBegin=897 CharacterOffsetEnd=898 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Please)
+      (VP (VB note)
+        (SBAR (IN that)
+          (S
+            (NP (PRP I))
+            (VP (MD will)
+              (VP (VB be)
+                (PP
+                  (PP (IN in)
+                    (NP (NNP Aspen))
+                    (NP-TMP (DT all) (JJ next) (NN week)))
+                  (, ,)
+                  (CC and)
+                  (PP (IN in)
+                    (NP (NNP Canada))))
+                (PP (IN until)
+                  (NP (DT the) (CD 21st)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Please-1)
+xcomp(Please-1, note-2)
+mark(Aspen-8, that-3)
+nsubj(Aspen-8, I-4)
+aux(Aspen-8, will-5)
+cop(Aspen-8, be-6)
+case(Aspen-8, in-7)
+ccomp(note-2, Aspen-8)
+det(week-11, all-9)
+amod(week-11, next-10)
+nmod:tmod(Aspen-8, week-11)
+punct(Aspen-8, ,-12)
+cc(Aspen-8, and-13)
+case(Canada-15, in-14)
+ccomp(note-2, Canada-15)
+conj:and(Aspen-8, Canada-15)
+case(21st-18, until-16)
+det(21st-18, the-17)
+nmod:until(Aspen-8, 21st-18)
+punct(Please-1, .-19)
+
+Extracted the following NER entity mentions:
+Aspen	LOCATION
+Canada	COUNTRY
+21st	NUMBER
+
+Sentence #12 (17 tokens):
+If you need to reach me do
+not hesitate to call my mobile or email me.
+
+Tokens:
+[Text=If CharacterOffsetBegin=900 CharacterOffsetEnd=902 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=903 CharacterOffsetEnd=906 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=907 CharacterOffsetEnd=911 PartOfSpeech=VBP Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=912 CharacterOffsetEnd=914 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=reach CharacterOffsetBegin=915 CharacterOffsetEnd=920 PartOfSpeech=VB Lemma=reach NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=921 CharacterOffsetEnd=923 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=924 CharacterOffsetEnd=926 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=927 CharacterOffsetEnd=930 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=hesitate CharacterOffsetBegin=931 CharacterOffsetEnd=939 PartOfSpeech=VB Lemma=hesitate NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=940 CharacterOffsetEnd=942 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=call CharacterOffsetBegin=943 CharacterOffsetEnd=947 PartOfSpeech=VB Lemma=call NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=948 CharacterOffsetEnd=950 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=mobile CharacterOffsetBegin=951 CharacterOffsetEnd=957 PartOfSpeech=JJ Lemma=mobile NamedEntityTag=TITLE]
+[Text=or CharacterOffsetBegin=958 CharacterOffsetEnd=960 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=email CharacterOffsetBegin=961 CharacterOffsetEnd=966 PartOfSpeech=VB Lemma=email NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=967 CharacterOffsetEnd=969 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=969 CharacterOffsetEnd=970 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP need)
+          (S
+            (VP (TO to)
+              (VP (VB reach)
+                (NP (PRP me))))))))
+    (VP (VB do) (RB not)
+      (VP (VB hesitate)
+        (S
+          (VP (TO to)
+            (VP
+              (VP (VB call)
+                (NP (PRP$ my) (JJ mobile)))
+              (CC or)
+              (VP (VB email)
+                (NP (PRP me))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, hesitate-9)
+mark(need-3, If-1)
+nsubj(need-3, you-2)
+nsubj:xsubj(reach-5, you-2)
+csubj(hesitate-9, need-3)
+mark(reach-5, to-4)
+xcomp(need-3, reach-5)
+dobj(reach-5, me-6)
+aux(hesitate-9, do-7)
+neg(hesitate-9, not-8)
+mark(call-11, to-10)
+xcomp(hesitate-9, call-11)
+nmod:poss(mobile-13, my-12)
+dobj(call-11, mobile-13)
+cc(call-11, or-14)
+xcomp(hesitate-9, email-15)
+conj:or(call-11, email-15)
+dobj(email-15, me-16)
+punct(hesitate-9, .-17)
+
+Extracted the following NER entity mentions:
+mobile	TITLE
+
+Sentence #13 (4 tokens):
+Take Care, Barb
+
+Tokens:
+[Text=Take CharacterOffsetBegin=971 CharacterOffsetEnd=975 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text=Care CharacterOffsetBegin=976 CharacterOffsetEnd=980 PartOfSpeech=NNP Lemma=Care NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=980 CharacterOffsetEnd=981 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Barb CharacterOffsetBegin=982 CharacterOffsetEnd=986 PartOfSpeech=NNP Lemma=Barb NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Take)
+      (NP (NNP Care))
+      (, ,)
+      (NP (NNP Barb)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Take-1)
+dobj(Take-1, Care-2)
+punct(Take-1, ,-3)
+dobj(Take-1, Barb-4)
+
+Extracted the following NER entity mentions:
+Barb	PERSON
+
+Coreference set:
+	(1,22,[22,23]) -> (1,1,[1,2]), that is: "their" -> "Hello"
+
+Coreference set:
+	(3,4,[4,5]) -> (6,21,[20,22]), that is: "Friday" -> "the friday"
+
+Coreference set:
+	(4,12,[12,13]) -> (4,4,[4,5]), that is: "I" -> "I"
+	(8,15,[15,16]) -> (4,4,[4,5]), that is: "me" -> "I"
+	(9,1,[1,2]) -> (4,4,[4,5]), that is: "I" -> "I"
+	(10,1,[1,2]) -> (4,4,[4,5]), that is: "I" -> "I"
+	(11,4,[4,5]) -> (4,4,[4,5]), that is: "I" -> "I"
+	(12,6,[6,7]) -> (4,4,[4,5]), that is: "me" -> "I"
+	(12,12,[12,13]) -> (4,4,[4,5]), that is: "my" -> "I"
+	(12,16,[16,17]) -> (4,4,[4,5]), that is: "me" -> "I"
+
+Coreference set:
+	(6,7,[7,8]) -> (5,2,[2,6]), that is: "his" -> "those recieving osmars food"
+	(7,8,[8,9]) -> (5,2,[2,6]), that is: "he" -> "those recieving osmars food"
+
+Coreference set:
+	(6,24,[23,25]) -> (6,18,[16,19]), that is: "the menu" -> "the circle menu"
+	(8,21,[20,22]) -> (6,18,[16,19]), that is: "the menu" -> "the circle menu"
+
+Coreference set:
+	(8,24,[24,25]) -> (8,18,[18,22]), that is: "it" -> "this on the menu"
+
+Coreference set:
+	(10,6,[6,7]) -> (9,7,[4,10]), that is: "it" -> "the holiday house schedule for 2002"

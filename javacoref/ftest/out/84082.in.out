@@ -1,0 +1,375 @@
+Document: ID=84082.in (3 sentences, 129 tokens)
+
+Sentence #1 (11 tokens):
+Zou,
+I am requesting a log-in for clicktrip.com please.
+
+Tokens:
+[Text=Zou CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=Zou NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=requesting CharacterOffsetBegin=10 CharacterOffsetEnd=20 PartOfSpeech=VBG Lemma=request NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=log-in CharacterOffsetBegin=23 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=log-in NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=clicktrip.com CharacterOffsetBegin=34 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=clicktrip.com NamedEntityTag=URL]
+[Text=please CharacterOffsetBegin=48 CharacterOffsetEnd=54 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Zou))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP am)
+      (VP (VBG requesting)
+        (S
+          (NP
+            (NP (DT a) (NN log-in))
+            (PP (IN for)
+              (NP (NNP clicktrip.com))))
+          (VP (VB please)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, requesting-5)
+nsubj(requesting-5, Zou-1)
+punct(requesting-5, ,-2)
+nsubj(requesting-5, I-3)
+aux(requesting-5, am-4)
+det(log-in-7, a-6)
+nsubj(please-10, log-in-7)
+case(clicktrip.com-9, for-8)
+nmod:for(log-in-7, clicktrip.com-9)
+ccomp(requesting-5, please-10)
+punct(requesting-5, .-11)
+
+Extracted the following NER entity mentions:
+Zou	PERSON
+clicktrip.com	URL
+
+Sentence #2 (17 tokens):
+I arrange travel for the following employees, and will need access to their
+travel profile.
+
+Tokens:
+[Text=I CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=arrange CharacterOffsetBegin=58 CharacterOffsetEnd=65 PartOfSpeech=VBP Lemma=arrange NamedEntityTag=O]
+[Text=travel CharacterOffsetBegin=66 CharacterOffsetEnd=72 PartOfSpeech=NN Lemma=travel NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=following CharacterOffsetBegin=81 CharacterOffsetEnd=90 PartOfSpeech=VBG Lemma=follow NamedEntityTag=O]
+[Text=employees CharacterOffsetBegin=91 CharacterOffsetEnd=100 PartOfSpeech=NNS Lemma=employee NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=100 CharacterOffsetEnd=101 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=102 CharacterOffsetEnd=105 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=106 CharacterOffsetEnd=110 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=111 CharacterOffsetEnd=115 PartOfSpeech=VB Lemma=need NamedEntityTag=O]
+[Text=access CharacterOffsetBegin=116 CharacterOffsetEnd=122 PartOfSpeech=NN Lemma=access NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=123 CharacterOffsetEnd=125 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=126 CharacterOffsetEnd=131 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=travel CharacterOffsetBegin=132 CharacterOffsetEnd=138 PartOfSpeech=NN Lemma=travel NamedEntityTag=O]
+[Text=profile CharacterOffsetBegin=139 CharacterOffsetEnd=146 PartOfSpeech=NN Lemma=profile NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=146 CharacterOffsetEnd=147 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP
+      (VP (VBP arrange)
+        (NP (NN travel))
+        (PP (IN for)
+          (NP (DT the) (VBG following) (NNS employees))))
+      (, ,)
+      (CC and)
+      (VP (MD will)
+        (VP (VB need)
+          (NP (NN access))
+          (PP (TO to)
+            (NP (PRP$ their) (NN travel) (NN profile))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, arrange-2)
+nsubj(arrange-2, I-1)
+nsubj(need-11, I-1)
+dobj(arrange-2, travel-3)
+case(employees-7, for-4)
+det(employees-7, the-5)
+amod(employees-7, following-6)
+nmod:for(arrange-2, employees-7)
+punct(arrange-2, ,-8)
+cc(arrange-2, and-9)
+aux(need-11, will-10)
+conj:and(arrange-2, need-11)
+dobj(need-11, access-12)
+case(profile-16, to-13)
+nmod:poss(profile-16, their-14)
+compound(profile-16, travel-15)
+nmod:to(need-11, profile-16)
+punct(arrange-2, .-17)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (101 tokens):
+Thank you,
+Jill Chatterton
+
+Power Trading		Risk Management		IT Group
+Kysa Alport 		Fran Change			Lei Chen
+Tom Alonso		Samantha Law			Dan Maxwell
+Bob Badeer		Heather Dunton			David Poston
+Mike Driscoll		John Postlethwaite		Richard Schweiger
+Mark Fischer						Michael Tully
+Scott Freeman		Tracy Ngo
+Chris Mallory		Susan Rance			Real Time
+Jeremy Morris						Todd Bland
+Matt Motley		Pre-Schduling			Craig Dean
+Phil Platter		Diane Cutsworth			Mark Guzman
+Jeff Richter		Lisa Gang			Leaf Harasin
+Holden Salisbury	Donald Robinson		Eric Linder
+Diana Scholtes		Stacy Runswick			Steven Merris
+Mike Swerzbin		Cara Semperger			Bert Meyers
+Susie Wilson			David Porter
+Ryan Slinger
+Geir Solberg
+Kate Symes
+Bill Williams III
+
+Tokens:
+[Text=Thank CharacterOffsetBegin=149 CharacterOffsetEnd=154 PartOfSpeech=VB Lemma=thank NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=155 CharacterOffsetEnd=158 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=158 CharacterOffsetEnd=159 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Jill CharacterOffsetBegin=160 CharacterOffsetEnd=164 PartOfSpeech=NNP Lemma=Jill NamedEntityTag=PERSON]
+[Text=Chatterton CharacterOffsetBegin=165 CharacterOffsetEnd=175 PartOfSpeech=NNP Lemma=Chatterton NamedEntityTag=PERSON]
+[Text=Power CharacterOffsetBegin=177 CharacterOffsetEnd=182 PartOfSpeech=NNP Lemma=Power NamedEntityTag=ORGANIZATION]
+[Text=Trading CharacterOffsetBegin=183 CharacterOffsetEnd=190 PartOfSpeech=NNP Lemma=Trading NamedEntityTag=ORGANIZATION]
+[Text=Risk CharacterOffsetBegin=192 CharacterOffsetEnd=196 PartOfSpeech=NNP Lemma=Risk NamedEntityTag=ORGANIZATION]
+[Text=Management CharacterOffsetBegin=197 CharacterOffsetEnd=207 PartOfSpeech=NNP Lemma=Management NamedEntityTag=ORGANIZATION]
+[Text=IT CharacterOffsetBegin=209 CharacterOffsetEnd=211 PartOfSpeech=NNP Lemma=IT NamedEntityTag=ORGANIZATION]
+[Text=Group CharacterOffsetBegin=212 CharacterOffsetEnd=217 PartOfSpeech=NNP Lemma=Group NamedEntityTag=ORGANIZATION]
+[Text=Kysa CharacterOffsetBegin=218 CharacterOffsetEnd=222 PartOfSpeech=NNP Lemma=Kysa NamedEntityTag=ORGANIZATION]
+[Text=Alport CharacterOffsetBegin=223 CharacterOffsetEnd=229 PartOfSpeech=NNP Lemma=Alport NamedEntityTag=ORGANIZATION]
+[Text=Fran CharacterOffsetBegin=232 CharacterOffsetEnd=236 PartOfSpeech=NNP Lemma=Fran NamedEntityTag=ORGANIZATION]
+[Text=Change CharacterOffsetBegin=237 CharacterOffsetEnd=243 PartOfSpeech=NNP Lemma=Change NamedEntityTag=ORGANIZATION]
+[Text=Lei CharacterOffsetBegin=246 CharacterOffsetEnd=249 PartOfSpeech=NNP Lemma=Lei NamedEntityTag=PERSON]
+[Text=Chen CharacterOffsetBegin=250 CharacterOffsetEnd=254 PartOfSpeech=NNP Lemma=Chen NamedEntityTag=PERSON]
+[Text=Tom CharacterOffsetBegin=255 CharacterOffsetEnd=258 PartOfSpeech=NNP Lemma=Tom NamedEntityTag=PERSON]
+[Text=Alonso CharacterOffsetBegin=259 CharacterOffsetEnd=265 PartOfSpeech=NNP Lemma=Alonso NamedEntityTag=PERSON]
+[Text=Samantha CharacterOffsetBegin=267 CharacterOffsetEnd=275 PartOfSpeech=NNP Lemma=Samantha NamedEntityTag=PERSON]
+[Text=Law CharacterOffsetBegin=276 CharacterOffsetEnd=279 PartOfSpeech=NNP Lemma=Law NamedEntityTag=PERSON]
+[Text=Dan CharacterOffsetBegin=282 CharacterOffsetEnd=285 PartOfSpeech=NNP Lemma=Dan NamedEntityTag=PERSON]
+[Text=Maxwell CharacterOffsetBegin=286 CharacterOffsetEnd=293 PartOfSpeech=NNP Lemma=Maxwell NamedEntityTag=PERSON]
+[Text=Bob CharacterOffsetBegin=294 CharacterOffsetEnd=297 PartOfSpeech=NNP Lemma=Bob NamedEntityTag=PERSON]
+[Text=Badeer CharacterOffsetBegin=298 CharacterOffsetEnd=304 PartOfSpeech=NNP Lemma=Badeer NamedEntityTag=PERSON]
+[Text=Heather CharacterOffsetBegin=306 CharacterOffsetEnd=313 PartOfSpeech=NNP Lemma=Heather NamedEntityTag=PERSON]
+[Text=Dunton CharacterOffsetBegin=314 CharacterOffsetEnd=320 PartOfSpeech=NNP Lemma=Dunton NamedEntityTag=PERSON]
+[Text=David CharacterOffsetBegin=323 CharacterOffsetEnd=328 PartOfSpeech=NNP Lemma=David NamedEntityTag=PERSON]
+[Text=Poston CharacterOffsetBegin=329 CharacterOffsetEnd=335 PartOfSpeech=NNP Lemma=Poston NamedEntityTag=PERSON]
+[Text=Mike CharacterOffsetBegin=336 CharacterOffsetEnd=340 PartOfSpeech=NNP Lemma=Mike NamedEntityTag=PERSON]
+[Text=Driscoll CharacterOffsetBegin=341 CharacterOffsetEnd=349 PartOfSpeech=NNP Lemma=Driscoll NamedEntityTag=PERSON]
+[Text=John CharacterOffsetBegin=351 CharacterOffsetEnd=355 PartOfSpeech=NNP Lemma=John NamedEntityTag=PERSON]
+[Text=Postlethwaite CharacterOffsetBegin=356 CharacterOffsetEnd=369 PartOfSpeech=NNP Lemma=Postlethwaite NamedEntityTag=PERSON]
+[Text=Richard CharacterOffsetBegin=371 CharacterOffsetEnd=378 PartOfSpeech=NNP Lemma=Richard NamedEntityTag=PERSON]
+[Text=Schweiger CharacterOffsetBegin=379 CharacterOffsetEnd=388 PartOfSpeech=NNP Lemma=Schweiger NamedEntityTag=PERSON]
+[Text=Mark CharacterOffsetBegin=389 CharacterOffsetEnd=393 PartOfSpeech=NNP Lemma=Mark NamedEntityTag=PERSON]
+[Text=Fischer CharacterOffsetBegin=394 CharacterOffsetEnd=401 PartOfSpeech=NNP Lemma=Fischer NamedEntityTag=PERSON]
+[Text=Michael CharacterOffsetBegin=407 CharacterOffsetEnd=414 PartOfSpeech=NNP Lemma=Michael NamedEntityTag=PERSON]
+[Text=Tully CharacterOffsetBegin=415 CharacterOffsetEnd=420 PartOfSpeech=NNP Lemma=Tully NamedEntityTag=PERSON]
+[Text=Scott CharacterOffsetBegin=421 CharacterOffsetEnd=426 PartOfSpeech=NNP Lemma=Scott NamedEntityTag=PERSON]
+[Text=Freeman CharacterOffsetBegin=427 CharacterOffsetEnd=434 PartOfSpeech=NNP Lemma=Freeman NamedEntityTag=PERSON]
+[Text=Tracy CharacterOffsetBegin=436 CharacterOffsetEnd=441 PartOfSpeech=NNP Lemma=Tracy NamedEntityTag=PERSON]
+[Text=Ngo CharacterOffsetBegin=442 CharacterOffsetEnd=445 PartOfSpeech=NNP Lemma=Ngo NamedEntityTag=PERSON]
+[Text=Chris CharacterOffsetBegin=446 CharacterOffsetEnd=451 PartOfSpeech=NNP Lemma=Chris NamedEntityTag=PERSON]
+[Text=Mallory CharacterOffsetBegin=452 CharacterOffsetEnd=459 PartOfSpeech=NNP Lemma=Mallory NamedEntityTag=PERSON]
+[Text=Susan CharacterOffsetBegin=461 CharacterOffsetEnd=466 PartOfSpeech=NNP Lemma=Susan NamedEntityTag=PERSON]
+[Text=Rance CharacterOffsetBegin=467 CharacterOffsetEnd=472 PartOfSpeech=NNP Lemma=Rance NamedEntityTag=PERSON]
+[Text=Real CharacterOffsetBegin=475 CharacterOffsetEnd=479 PartOfSpeech=NNP Lemma=Real NamedEntityTag=PERSON]
+[Text=Time CharacterOffsetBegin=480 CharacterOffsetEnd=484 PartOfSpeech=NNP Lemma=Time NamedEntityTag=PERSON]
+[Text=Jeremy CharacterOffsetBegin=485 CharacterOffsetEnd=491 PartOfSpeech=NNP Lemma=Jeremy NamedEntityTag=PERSON]
+[Text=Morris CharacterOffsetBegin=492 CharacterOffsetEnd=498 PartOfSpeech=NNP Lemma=Morris NamedEntityTag=PERSON]
+[Text=Todd CharacterOffsetBegin=504 CharacterOffsetEnd=508 PartOfSpeech=NNP Lemma=Todd NamedEntityTag=PERSON]
+[Text=Bland CharacterOffsetBegin=509 CharacterOffsetEnd=514 PartOfSpeech=NNP Lemma=Bland NamedEntityTag=PERSON]
+[Text=Matt CharacterOffsetBegin=515 CharacterOffsetEnd=519 PartOfSpeech=NNP Lemma=Matt NamedEntityTag=PERSON]
+[Text=Motley CharacterOffsetBegin=520 CharacterOffsetEnd=526 PartOfSpeech=NNP Lemma=Motley NamedEntityTag=PERSON]
+[Text=Pre-Schduling CharacterOffsetBegin=528 CharacterOffsetEnd=541 PartOfSpeech=NNP Lemma=Pre-Schduling NamedEntityTag=PERSON]
+[Text=Craig CharacterOffsetBegin=544 CharacterOffsetEnd=549 PartOfSpeech=NNP Lemma=Craig NamedEntityTag=PERSON]
+[Text=Dean CharacterOffsetBegin=550 CharacterOffsetEnd=554 PartOfSpeech=NNP Lemma=Dean NamedEntityTag=PERSON]
+[Text=Phil CharacterOffsetBegin=555 CharacterOffsetEnd=559 PartOfSpeech=NNP Lemma=Phil NamedEntityTag=PERSON]
+[Text=Platter CharacterOffsetBegin=560 CharacterOffsetEnd=567 PartOfSpeech=NNP Lemma=Platter NamedEntityTag=PERSON]
+[Text=Diane CharacterOffsetBegin=569 CharacterOffsetEnd=574 PartOfSpeech=NNP Lemma=Diane NamedEntityTag=PERSON]
+[Text=Cutsworth CharacterOffsetBegin=575 CharacterOffsetEnd=584 PartOfSpeech=NNP Lemma=Cutsworth NamedEntityTag=PERSON]
+[Text=Mark CharacterOffsetBegin=587 CharacterOffsetEnd=591 PartOfSpeech=NNP Lemma=Mark NamedEntityTag=PERSON]
+[Text=Guzman CharacterOffsetBegin=592 CharacterOffsetEnd=598 PartOfSpeech=NNP Lemma=Guzman NamedEntityTag=PERSON]
+[Text=Jeff CharacterOffsetBegin=599 CharacterOffsetEnd=603 PartOfSpeech=NNP Lemma=Jeff NamedEntityTag=PERSON]
+[Text=Richter CharacterOffsetBegin=604 CharacterOffsetEnd=611 PartOfSpeech=NNP Lemma=Richter NamedEntityTag=PERSON]
+[Text=Lisa CharacterOffsetBegin=613 CharacterOffsetEnd=617 PartOfSpeech=NNP Lemma=Lisa NamedEntityTag=PERSON]
+[Text=Gang CharacterOffsetBegin=618 CharacterOffsetEnd=622 PartOfSpeech=NN Lemma=gang NamedEntityTag=PERSON]
+[Text=Leaf CharacterOffsetBegin=625 CharacterOffsetEnd=629 PartOfSpeech=NNP Lemma=Leaf NamedEntityTag=PERSON]
+[Text=Harasin CharacterOffsetBegin=630 CharacterOffsetEnd=637 PartOfSpeech=NNP Lemma=Harasin NamedEntityTag=PERSON]
+[Text=Holden CharacterOffsetBegin=638 CharacterOffsetEnd=644 PartOfSpeech=NNP Lemma=Holden NamedEntityTag=PERSON]
+[Text=Salisbury CharacterOffsetBegin=645 CharacterOffsetEnd=654 PartOfSpeech=NNP Lemma=Salisbury NamedEntityTag=PERSON]
+[Text=Donald CharacterOffsetBegin=655 CharacterOffsetEnd=661 PartOfSpeech=NNP Lemma=Donald NamedEntityTag=PERSON]
+[Text=Robinson CharacterOffsetBegin=662 CharacterOffsetEnd=670 PartOfSpeech=NNP Lemma=Robinson NamedEntityTag=PERSON]
+[Text=Eric CharacterOffsetBegin=672 CharacterOffsetEnd=676 PartOfSpeech=NNP Lemma=Eric NamedEntityTag=PERSON]
+[Text=Linder CharacterOffsetBegin=677 CharacterOffsetEnd=683 PartOfSpeech=NNP Lemma=Linder NamedEntityTag=PERSON]
+[Text=Diana CharacterOffsetBegin=684 CharacterOffsetEnd=689 PartOfSpeech=NNP Lemma=Diana NamedEntityTag=PERSON]
+[Text=Scholtes CharacterOffsetBegin=690 CharacterOffsetEnd=698 PartOfSpeech=NNP Lemma=Scholtes NamedEntityTag=PERSON]
+[Text=Stacy CharacterOffsetBegin=700 CharacterOffsetEnd=705 PartOfSpeech=NNP Lemma=Stacy NamedEntityTag=PERSON]
+[Text=Runswick CharacterOffsetBegin=706 CharacterOffsetEnd=714 PartOfSpeech=NNP Lemma=Runswick NamedEntityTag=PERSON]
+[Text=Steven CharacterOffsetBegin=717 CharacterOffsetEnd=723 PartOfSpeech=NNP Lemma=Steven NamedEntityTag=PERSON]
+[Text=Merris CharacterOffsetBegin=724 CharacterOffsetEnd=730 PartOfSpeech=NNP Lemma=Merris NamedEntityTag=PERSON]
+[Text=Mike CharacterOffsetBegin=731 CharacterOffsetEnd=735 PartOfSpeech=NNP Lemma=Mike NamedEntityTag=PERSON]
+[Text=Swerzbin CharacterOffsetBegin=736 CharacterOffsetEnd=744 PartOfSpeech=NNP Lemma=Swerzbin NamedEntityTag=PERSON]
+[Text=Cara CharacterOffsetBegin=746 CharacterOffsetEnd=750 PartOfSpeech=NNP Lemma=Cara NamedEntityTag=PERSON]
+[Text=Semperger CharacterOffsetBegin=751 CharacterOffsetEnd=760 PartOfSpeech=NNP Lemma=Semperger NamedEntityTag=PERSON]
+[Text=Bert CharacterOffsetBegin=763 CharacterOffsetEnd=767 PartOfSpeech=NNP Lemma=Bert NamedEntityTag=PERSON]
+[Text=Meyers CharacterOffsetBegin=768 CharacterOffsetEnd=774 PartOfSpeech=NNP Lemma=Meyers NamedEntityTag=PERSON]
+[Text=Susie CharacterOffsetBegin=775 CharacterOffsetEnd=780 PartOfSpeech=NNP Lemma=Susie NamedEntityTag=PERSON]
+[Text=Wilson CharacterOffsetBegin=781 CharacterOffsetEnd=787 PartOfSpeech=NNP Lemma=Wilson NamedEntityTag=PERSON]
+[Text=David CharacterOffsetBegin=790 CharacterOffsetEnd=795 PartOfSpeech=NNP Lemma=David NamedEntityTag=PERSON]
+[Text=Porter CharacterOffsetBegin=796 CharacterOffsetEnd=802 PartOfSpeech=NNP Lemma=Porter NamedEntityTag=PERSON]
+[Text=Ryan CharacterOffsetBegin=803 CharacterOffsetEnd=807 PartOfSpeech=NNP Lemma=Ryan NamedEntityTag=PERSON]
+[Text=Slinger CharacterOffsetBegin=808 CharacterOffsetEnd=815 PartOfSpeech=NNP Lemma=Slinger NamedEntityTag=PERSON]
+[Text=Geir CharacterOffsetBegin=816 CharacterOffsetEnd=820 PartOfSpeech=NNP Lemma=Geir NamedEntityTag=PERSON]
+[Text=Solberg CharacterOffsetBegin=821 CharacterOffsetEnd=828 PartOfSpeech=NNP Lemma=Solberg NamedEntityTag=PERSON]
+[Text=Kate CharacterOffsetBegin=829 CharacterOffsetEnd=833 PartOfSpeech=NNP Lemma=Kate NamedEntityTag=PERSON]
+[Text=Symes CharacterOffsetBegin=834 CharacterOffsetEnd=839 PartOfSpeech=NNP Lemma=Symes NamedEntityTag=PERSON]
+[Text=Bill CharacterOffsetBegin=840 CharacterOffsetEnd=844 PartOfSpeech=NNP Lemma=Bill NamedEntityTag=PERSON]
+[Text=Williams CharacterOffsetBegin=845 CharacterOffsetEnd=853 PartOfSpeech=NNP Lemma=Williams NamedEntityTag=PERSON]
+[Text=III CharacterOffsetBegin=854 CharacterOffsetEnd=857 PartOfSpeech=NNP Lemma=III NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (SINV
+    (VP (VB Thank)
+      (NP
+        (NP (PRP you))
+        (, ,)
+        (NP (NNP Jill) (NNP Chatterton) (NNP Power) (NNP Trading) (NNP Risk) (NNP Management) (NNP IT) (NNP Group) (NNP Kysa) (NNP Alport) (NNP Fran) (NNP Change) (NNP Lei) (NNP Chen) (NNP Tom) (NNP Alonso) (NNP Samantha) (NNP Law) (NNP Dan) (NNP Maxwell) (NNP Bob) (NNP Badeer) (NNP Heather) (NNP Dunton) (NNP David) (NNP Poston) (NNP Mike) (NNP Driscoll) (NNP John) (NNP Postlethwaite) (NNP Richard) (NNP Schweiger) (NNP Mark) (NNP Fischer) (NNP Michael) (NNP Tully) (NNP Scott) (NNP Freeman) (NNP Tracy) (NNP Ngo) (NNP Chris) (NNP Mallory) (NNP Susan) (NNP Rance) (NNP Real) (NNP Time) (NNP Jeremy) (NNP Morris) (NNP Todd) (NNP Bland) (NNP Matt) (NNP Motley) (NNP Pre-Schduling) (NNP Craig) (NNP Dean) (NNP Phil) (NNP Platter) (NNP Diane) (NNP Cutsworth)
+          (NX (NNP Mark)))))
+    (NP (NNP Guzman) (NNP Jeff) (NNP Richter) (NNP Lisa) (NN Gang) (NNP Leaf) (NNP Harasin) (NNP Holden) (NNP Salisbury) (NNP Donald) (NNP Robinson) (NNP Eric) (NNP Linder) (NNP Diana) (NNP Scholtes) (NNP Stacy) (NNP Runswick) (NNP Steven) (NNP Merris) (NNP Mike) (NNP Swerzbin) (NNP Cara) (NNP Semperger) (NNP Bert) (NNP Meyers) (NNP Susie) (NNP Wilson) (NNP David) (NNP Porter) (NNP Ryan) (NNP Slinger) (NNP Geir) (NNP Solberg) (NNP Kate) (NNP Symes) (NNP Bill) (NNP Williams) (NNP III))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Thank-1)
+dobj(Thank-1, you-2)
+punct(you-2, ,-3)
+compound(Mark-63, Jill-4)
+compound(Mark-63, Chatterton-5)
+compound(Mark-63, Power-6)
+compound(Mark-63, Trading-7)
+compound(Mark-63, Risk-8)
+compound(Mark-63, Management-9)
+compound(Mark-63, IT-10)
+compound(Mark-63, Group-11)
+compound(Mark-63, Kysa-12)
+compound(Mark-63, Alport-13)
+compound(Mark-63, Fran-14)
+compound(Mark-63, Change-15)
+compound(Mark-63, Lei-16)
+compound(Mark-63, Chen-17)
+compound(Mark-63, Tom-18)
+compound(Mark-63, Alonso-19)
+compound(Mark-63, Samantha-20)
+compound(Mark-63, Law-21)
+compound(Mark-63, Dan-22)
+compound(Mark-63, Maxwell-23)
+compound(Mark-63, Bob-24)
+compound(Mark-63, Badeer-25)
+compound(Mark-63, Heather-26)
+compound(Mark-63, Dunton-27)
+compound(Mark-63, David-28)
+compound(Mark-63, Poston-29)
+compound(Mark-63, Mike-30)
+compound(Mark-63, Driscoll-31)
+compound(Mark-63, John-32)
+compound(Mark-63, Postlethwaite-33)
+compound(Mark-63, Richard-34)
+compound(Mark-63, Schweiger-35)
+compound(Mark-63, Mark-36)
+compound(Mark-63, Fischer-37)
+compound(Mark-63, Michael-38)
+compound(Mark-63, Tully-39)
+compound(Mark-63, Scott-40)
+compound(Mark-63, Freeman-41)
+compound(Mark-63, Tracy-42)
+compound(Mark-63, Ngo-43)
+compound(Mark-63, Chris-44)
+compound(Mark-63, Mallory-45)
+compound(Mark-63, Susan-46)
+compound(Mark-63, Rance-47)
+compound(Mark-63, Real-48)
+compound(Mark-63, Time-49)
+compound(Mark-63, Jeremy-50)
+compound(Mark-63, Morris-51)
+compound(Mark-63, Todd-52)
+compound(Mark-63, Bland-53)
+compound(Mark-63, Matt-54)
+compound(Mark-63, Motley-55)
+compound(Mark-63, Pre-Schduling-56)
+compound(Mark-63, Craig-57)
+compound(Mark-63, Dean-58)
+compound(Mark-63, Phil-59)
+compound(Mark-63, Platter-60)
+compound(Mark-63, Diane-61)
+dep(Mark-63, Cutsworth-62)
+appos(you-2, Mark-63)
+compound(III-101, Guzman-64)
+compound(III-101, Jeff-65)
+compound(III-101, Richter-66)
+compound(III-101, Lisa-67)
+compound(III-101, Gang-68)
+compound(III-101, Leaf-69)
+compound(III-101, Harasin-70)
+compound(III-101, Holden-71)
+compound(III-101, Salisbury-72)
+compound(III-101, Donald-73)
+compound(III-101, Robinson-74)
+compound(III-101, Eric-75)
+compound(III-101, Linder-76)
+compound(III-101, Diana-77)
+compound(III-101, Scholtes-78)
+compound(III-101, Stacy-79)
+compound(III-101, Runswick-80)
+compound(III-101, Steven-81)
+compound(III-101, Merris-82)
+compound(III-101, Mike-83)
+compound(III-101, Swerzbin-84)
+compound(III-101, Cara-85)
+compound(III-101, Semperger-86)
+compound(III-101, Bert-87)
+compound(III-101, Meyers-88)
+compound(III-101, Susie-89)
+compound(III-101, Wilson-90)
+compound(III-101, David-91)
+compound(III-101, Porter-92)
+compound(III-101, Ryan-93)
+compound(III-101, Slinger-94)
+compound(III-101, Geir-95)
+compound(III-101, Solberg-96)
+compound(III-101, Kate-97)
+compound(III-101, Symes-98)
+compound(III-101, Bill-99)
+compound(III-101, Williams-100)
+nsubj(Thank-1, III-101)
+
+Extracted the following NER entity mentions:
+Jill Chatterton	PERSON
+Power Trading Risk Management IT Group Kysa Alport Fran Change	ORGANIZATION
+Lei Chen Tom Alonso Samantha Law Dan Maxwell Bob Badeer Heather Dunton David Poston Mike Driscoll John Postlethwaite Richard Schweiger Mark Fischer Michael Tully Scott Freeman Tracy Ngo Chris Mallory Susan Rance Real Time Jeremy Morris Todd Bland Matt Motley Pre-Schduling Craig Dean Phil Platter Diane Cutsworth Mark Guzman Jeff Richter Lisa Gang Leaf Harasin Holden Salisbury Donald Robinson Eric Linder Diana Scholtes Stacy Runswick Steven Merris Mike Swerzbin Cara Semperger Bert Meyers Susie Wilson David Porter Ryan Slinger Geir Solberg Kate Symes Bill Williams III	PERSON
+
+Coreference set:
+	(2,1,[1,2]) -> (1,3,[3,4]), that is: "I" -> "I"
+	(3,2,[2,64]) -> (1,3,[3,4]), that is: "you , Jill Chatterton Power Trading Risk Management IT Group Kysa Alport Fran Change Lei Chen Tom Alonso Samantha Law Dan Maxwell Bob Badeer Heather Dunton David Poston Mike Driscoll John Postlethwaite Richard Schweiger Mark Fischer Michael Tully Scott Freeman Tracy Ngo Chris Mallory Susan Rance Real Time Jeremy Morris Todd Bland Matt Motley Pre-Schduling Craig Dean Phil Platter Diane Cutsworth Mark" -> "I"
+
+Coreference set:
+	(2,14,[14,15]) -> (2,7,[5,8]), that is: "their" -> "the following employees"
+
+Coreference set:
+	(3,2,[2,3]) -> (3,63,[4,64]), that is: "you" -> "Jill Chatterton Power Trading Risk Management IT Group Kysa Alport Fran Change Lei Chen Tom Alonso Samantha Law Dan Maxwell Bob Badeer Heather Dunton David Poston Mike Driscoll John Postlethwaite Richard Schweiger Mark Fischer Michael Tully Scott Freeman Tracy Ngo Chris Mallory Susan Rance Real Time Jeremy Morris Todd Bland Matt Motley Pre-Schduling Craig Dean Phil Platter Diane Cutsworth Mark"
+	(3,63,[16,102]) -> (3,63,[4,64]), that is: "Lei Chen Tom Alonso Samantha Law Dan Maxwell Bob Badeer Heather Dunton David Poston Mike Driscoll John Postlethwaite Richard Schweiger Mark Fischer Michael Tully Scott Freeman Tracy Ngo Chris Mallory Susan Rance Real Time Jeremy Morris Todd Bland Matt Motley Pre-Schduling Craig Dean Phil Platter Diane Cutsworth Mark Guzman Jeff Richter Lisa Gang Leaf Harasin Holden Salisbury Donald Robinson Eric Linder Diana Scholtes Stacy Runswick Steven Merris Mike Swerzbin Cara Semperger Bert Meyers Susie Wilson David Porter Ryan Slinger Geir Solberg Kate Symes Bill Williams III" -> "Jill Chatterton Power Trading Risk Management IT Group Kysa Alport Fran Change Lei Chen Tom Alonso Samantha Law Dan Maxwell Bob Badeer Heather Dunton David Poston Mike Driscoll John Postlethwaite Richard Schweiger Mark Fischer Michael Tully Scott Freeman Tracy Ngo Chris Mallory Susan Rance Real Time Jeremy Morris Todd Bland Matt Motley Pre-Schduling Craig Dean Phil Platter Diane Cutsworth Mark"

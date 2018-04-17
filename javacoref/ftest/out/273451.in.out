@@ -1,0 +1,289 @@
+Document: ID=273451.in (6 sentences, 66 tokens)
+
+Sentence #1 (16 tokens):
+Tom/Sally,
+The Financial Settlements team performed one last test on the InvoiceLogic module today.
+
+Tokens:
+[Text=Tom/Sally CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=Tom/Sally NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=The NamedEntityTag=O]
+[Text=Financial CharacterOffsetBegin=15 CharacterOffsetEnd=24 PartOfSpeech=NNP Lemma=Financial NamedEntityTag=O]
+[Text=Settlements CharacterOffsetBegin=25 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Settlements NamedEntityTag=O]
+[Text=team CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=team NamedEntityTag=O]
+[Text=performed CharacterOffsetBegin=42 CharacterOffsetEnd=51 PartOfSpeech=VBD Lemma=perform NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=last CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=JJ Lemma=last NamedEntityTag=O]
+[Text=test CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=NN Lemma=test NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=66 CharacterOffsetEnd=68 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=InvoiceLogic CharacterOffsetBegin=73 CharacterOffsetEnd=85 PartOfSpeech=JJ Lemma=invoicelogic NamedEntityTag=MISC]
+[Text=module CharacterOffsetBegin=86 CharacterOffsetEnd=92 PartOfSpeech=NN Lemma=module NamedEntityTag=O]
+[Text=today CharacterOffsetBegin=93 CharacterOffsetEnd=98 PartOfSpeech=NN Lemma=today NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=98 CharacterOffsetEnd=99 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Tom/Sally))
+      (, ,)
+      (NP
+        (NP (NNP The) (NNP Financial) (NNP Settlements))
+        (NP (NN team))))
+    (VP (VBD performed)
+      (NP (CD one) (JJ last) (NN test))
+      (PP (IN on)
+        (NP (DT the) (JJ InvoiceLogic) (NN module)))
+      (NP-TMP (NN today)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, performed-7)
+nsubj(performed-7, Tom/Sally-1)
+punct(Tom/Sally-1, ,-2)
+compound(Settlements-5, The-3)
+compound(Settlements-5, Financial-4)
+appos(Tom/Sally-1, Settlements-5)
+dep(Settlements-5, team-6)
+nummod(test-10, one-8)
+amod(test-10, last-9)
+dobj(performed-7, test-10)
+case(module-14, on-11)
+det(module-14, the-12)
+amod(module-14, InvoiceLogic-13)
+nmod:on(performed-7, module-14)
+nmod:tmod(performed-7, today-15)
+punct(performed-7, .-16)
+
+Extracted the following NER entity mentions:
+one	NUMBER
+InvoiceLogic	MISC
+
+Sentence #2 (11 tokens):
+They feel very comfortable with the functionality of the module.
+
+Tokens:
+[Text=They CharacterOffsetBegin=101 CharacterOffsetEnd=105 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=feel CharacterOffsetBegin=106 CharacterOffsetEnd=110 PartOfSpeech=VBP Lemma=feel NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=111 CharacterOffsetEnd=115 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=comfortable CharacterOffsetBegin=116 CharacterOffsetEnd=127 PartOfSpeech=JJ Lemma=comfortable NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=128 CharacterOffsetEnd=132 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=133 CharacterOffsetEnd=136 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=functionality CharacterOffsetBegin=137 CharacterOffsetEnd=150 PartOfSpeech=NN Lemma=functionality NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=151 CharacterOffsetEnd=153 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=154 CharacterOffsetEnd=157 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=module CharacterOffsetBegin=158 CharacterOffsetEnd=164 PartOfSpeech=NN Lemma=module NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=164 CharacterOffsetEnd=165 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP feel)
+      (ADJP (RB very) (JJ comfortable))
+      (PP (IN with)
+        (NP
+          (NP (DT the) (NN functionality))
+          (PP (IN of)
+            (NP (DT the) (NN module))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, feel-2)
+nsubj(feel-2, They-1)
+advmod(comfortable-4, very-3)
+xcomp(feel-2, comfortable-4)
+case(functionality-7, with-5)
+det(functionality-7, the-6)
+nmod:with(feel-2, functionality-7)
+case(module-10, of-8)
+det(module-10, the-9)
+nmod:of(functionality-7, module-10)
+punct(feel-2, .-11)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (9 tokens):
+All of their major issues have been resolved.
+
+Tokens:
+[Text=All CharacterOffsetBegin=167 CharacterOffsetEnd=170 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=171 CharacterOffsetEnd=173 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=174 CharacterOffsetEnd=179 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=major CharacterOffsetBegin=180 CharacterOffsetEnd=185 PartOfSpeech=JJ Lemma=major NamedEntityTag=O]
+[Text=issues CharacterOffsetBegin=186 CharacterOffsetEnd=192 PartOfSpeech=NNS Lemma=issue NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=193 CharacterOffsetEnd=197 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=198 CharacterOffsetEnd=202 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=resolved CharacterOffsetBegin=203 CharacterOffsetEnd=211 PartOfSpeech=VBN Lemma=resolve NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=211 CharacterOffsetEnd=212 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT All))
+      (PP (IN of)
+        (NP (PRP$ their) (JJ major) (NNS issues))))
+    (VP (VBP have)
+      (VP (VBN been)
+        (VP (VBN resolved))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, resolved-8)
+nsubjpass(resolved-8, All-1)
+case(issues-5, of-2)
+nmod:poss(issues-5, their-3)
+amod(issues-5, major-4)
+nmod:of(All-1, issues-5)
+aux(resolved-8, have-6)
+auxpass(resolved-8, been-7)
+punct(resolved-8, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (10 tokens):
+I have confirmed this with Mechelle Stevens as well.
+
+Tokens:
+[Text=I CharacterOffsetBegin=214 CharacterOffsetEnd=215 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=216 CharacterOffsetEnd=220 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=confirmed CharacterOffsetBegin=221 CharacterOffsetEnd=230 PartOfSpeech=VBN Lemma=confirm NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=231 CharacterOffsetEnd=235 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=236 CharacterOffsetEnd=240 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Mechelle CharacterOffsetBegin=241 CharacterOffsetEnd=249 PartOfSpeech=NNP Lemma=Mechelle NamedEntityTag=PERSON]
+[Text=Stevens CharacterOffsetBegin=250 CharacterOffsetEnd=257 PartOfSpeech=NNP Lemma=Stevens NamedEntityTag=PERSON]
+[Text=as CharacterOffsetBegin=258 CharacterOffsetEnd=260 PartOfSpeech=RB Lemma=as NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=261 CharacterOffsetEnd=265 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=265 CharacterOffsetEnd=266 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP have)
+      (VP (VBN confirmed)
+        (NP
+          (NP (DT this))
+          (PP (IN with)
+            (NP (NNP Mechelle) (NNP Stevens))))
+        (ADVP (RB as) (RB well))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, confirmed-3)
+nsubj(confirmed-3, I-1)
+aux(confirmed-3, have-2)
+dobj(confirmed-3, this-4)
+case(Stevens-7, with-5)
+compound(Stevens-7, Mechelle-6)
+nmod:with(this-4, Stevens-7)
+advmod(confirmed-3, as-8)
+mwe(as-8, well-9)
+punct(confirmed-3, .-10)
+
+Extracted the following NER entity mentions:
+Mechelle Stevens	PERSON
+
+Sentence #5 (18 tokens):
+Therefore, I am comfortable giving my approval that InvoiceLogic is ready for release for Beta Testing.
+
+Tokens:
+[Text=Therefore CharacterOffsetBegin=268 CharacterOffsetEnd=277 PartOfSpeech=RB Lemma=therefore NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=277 CharacterOffsetEnd=278 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=279 CharacterOffsetEnd=280 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=281 CharacterOffsetEnd=283 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=comfortable CharacterOffsetBegin=284 CharacterOffsetEnd=295 PartOfSpeech=JJ Lemma=comfortable NamedEntityTag=O]
+[Text=giving CharacterOffsetBegin=296 CharacterOffsetEnd=302 PartOfSpeech=VBG Lemma=give NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=303 CharacterOffsetEnd=305 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=approval CharacterOffsetBegin=306 CharacterOffsetEnd=314 PartOfSpeech=NN Lemma=approval NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=315 CharacterOffsetEnd=319 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=InvoiceLogic CharacterOffsetBegin=320 CharacterOffsetEnd=332 PartOfSpeech=NNP Lemma=InvoiceLogic NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=333 CharacterOffsetEnd=335 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=ready CharacterOffsetBegin=336 CharacterOffsetEnd=341 PartOfSpeech=JJ Lemma=ready NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=342 CharacterOffsetEnd=345 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=release CharacterOffsetBegin=346 CharacterOffsetEnd=353 PartOfSpeech=NN Lemma=release NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=354 CharacterOffsetEnd=357 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Beta CharacterOffsetBegin=358 CharacterOffsetEnd=362 PartOfSpeech=NN Lemma=beta NamedEntityTag=O]
+[Text=Testing CharacterOffsetBegin=363 CharacterOffsetEnd=370 PartOfSpeech=VBG Lemma=test NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=370 CharacterOffsetEnd=371 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Therefore))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP am)
+      (ADJP (JJ comfortable)
+        (S
+          (VP (VBG giving)
+            (NP (PRP$ my) (NN approval)))))
+      (SBAR (IN that)
+        (S
+          (NP (NNP InvoiceLogic))
+          (VP (VBZ is)
+            (ADJP (JJ ready)
+              (PP (IN for)
+                (NP
+                  (NP (NN release))
+                  (PP (IN for)
+                    (NP (NN Beta) (VBG Testing))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, comfortable-5)
+advmod(comfortable-5, Therefore-1)
+punct(comfortable-5, ,-2)
+nsubj(comfortable-5, I-3)
+cop(comfortable-5, am-4)
+dep(comfortable-5, giving-6)
+nmod:poss(approval-8, my-7)
+dobj(giving-6, approval-8)
+mark(ready-12, that-9)
+nsubj(ready-12, InvoiceLogic-10)
+cop(ready-12, is-11)
+ccomp(comfortable-5, ready-12)
+case(release-14, for-13)
+nmod:for(ready-12, release-14)
+case(Beta-16, for-15)
+nmod:for(release-14, Beta-16)
+amod(Beta-16, Testing-17)
+punct(comfortable-5, .-18)
+
+Extracted the following NER entity mentions:
+
+Sentence #6 (2 tokens):
+Kim Theriot
+
+Tokens:
+[Text=Kim CharacterOffsetBegin=373 CharacterOffsetEnd=376 PartOfSpeech=NNP Lemma=Kim NamedEntityTag=PERSON]
+[Text=Theriot CharacterOffsetBegin=377 CharacterOffsetEnd=384 PartOfSpeech=NNP Lemma=Theriot NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Kim) (NNP Theriot)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Theriot-2)
+compound(Theriot-2, Kim-1)
+
+Extracted the following NER entity mentions:
+Kim Theriot	PERSON
+
+Coreference set:
+	(5,10,[10,11]) -> (1,13,[13,14]), that is: "InvoiceLogic" -> "InvoiceLogic"
+
+Coreference set:
+	(2,10,[9,11]) -> (1,14,[12,15]), that is: "the module" -> "the InvoiceLogic module"
+
+Coreference set:
+	(5,3,[3,4]) -> (4,1,[1,2]), that is: "I" -> "I"
+	(5,7,[7,8]) -> (4,1,[1,2]), that is: "my" -> "I"

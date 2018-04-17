@@ -1,0 +1,102 @@
+Document: ID=289873.in (2 sentences, 24 tokens)
+
+Sentence #1 (23 tokens):
+I would think we need the dates from the trigger, otherwise those killed deals will remain in their Cash Position amounts.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=2 CharacterOffsetEnd=7 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=8 CharacterOffsetEnd=13 PartOfSpeech=VB Lemma=think NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=VBP Lemma=need NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=dates CharacterOffsetBegin=26 CharacterOffsetEnd=31 PartOfSpeech=NNS Lemma=date NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=trigger CharacterOffsetBegin=41 CharacterOffsetEnd=48 PartOfSpeech=NN Lemma=trigger NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=otherwise CharacterOffsetBegin=50 CharacterOffsetEnd=59 PartOfSpeech=RB Lemma=otherwise NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=60 CharacterOffsetEnd=65 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=killed CharacterOffsetBegin=66 CharacterOffsetEnd=72 PartOfSpeech=VBN Lemma=kill NamedEntityTag=O]
+[Text=deals CharacterOffsetBegin=73 CharacterOffsetEnd=78 PartOfSpeech=NNS Lemma=deal NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=79 CharacterOffsetEnd=83 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=remain CharacterOffsetBegin=84 CharacterOffsetEnd=90 PartOfSpeech=VB Lemma=remain NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=91 CharacterOffsetEnd=93 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=94 CharacterOffsetEnd=99 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=Cash CharacterOffsetBegin=100 CharacterOffsetEnd=104 PartOfSpeech=NN Lemma=cash NamedEntityTag=O]
+[Text=Position CharacterOffsetBegin=105 CharacterOffsetEnd=113 PartOfSpeech=NN Lemma=position NamedEntityTag=O]
+[Text=amounts CharacterOffsetBegin=114 CharacterOffsetEnd=121 PartOfSpeech=NNS Lemma=amount NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=121 CharacterOffsetEnd=122 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD would)
+      (VP (VB think)
+        (S
+          (S
+            (NP (PRP we))
+            (VP (VBP need)
+              (NP (DT the) (NNS dates))
+              (PP (IN from)
+                (NP (DT the) (NN trigger)))))
+          (, ,)
+          (ADVP (RB otherwise))
+          (S
+            (NP (DT those))
+            (VP (VBN killed)))
+          (S
+            (NP (NNS deals))
+            (VP (MD will)
+              (VP (VB remain)
+                (PP (IN in)
+                  (NP (PRP$ their) (NN Cash) (NN Position) (NNS amounts)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, think-3)
+nsubj(think-3, I-1)
+aux(think-3, would-2)
+nsubj(need-5, we-4)
+xcomp(think-3, need-5)
+det(dates-7, the-6)
+dobj(need-5, dates-7)
+case(trigger-10, from-8)
+det(trigger-10, the-9)
+nmod:from(need-5, trigger-10)
+punct(need-5, ,-11)
+advmod(killed-14, otherwise-12)
+nsubj(killed-14, those-13)
+parataxis(need-5, killed-14)
+nsubj(remain-17, deals-15)
+aux(remain-17, will-16)
+parataxis(need-5, remain-17)
+case(amounts-22, in-18)
+nmod:poss(amounts-22, their-19)
+compound(amounts-22, Cash-20)
+compound(amounts-22, Position-21)
+nmod:in(remain-17, amounts-22)
+punct(think-3, .-23)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (1 tokens):
+d.n.
+
+Tokens:
+[Text=d.n. CharacterOffsetBegin=123 CharacterOffsetEnd=127 PartOfSpeech=IN Lemma=d.n. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (PP (IN d.n.)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, d.n.-1)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(1,19,[19,20]) -> (1,13,[13,14]), that is: "their" -> "those"

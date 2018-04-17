@@ -1,0 +1,736 @@
+Document: ID=204012.in (10 sentences, 189 tokens)
+
+Sentence #1 (28 tokens):
+Devon Energy and Santa Fe Snyder completed their $2.5 billion merger
+yesterday as shareholders of both companies approved the deal, which was
+announced in May.
+
+Tokens:
+[Text=Devon CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Devon NamedEntityTag=ORGANIZATION]
+[Text=Energy CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Energy NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=CC Lemma=and NamedEntityTag=ORGANIZATION]
+[Text=Santa CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=Santa NamedEntityTag=ORGANIZATION]
+[Text=Fe CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=Fe NamedEntityTag=ORGANIZATION]
+[Text=Snyder CharacterOffsetBegin=26 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Snyder NamedEntityTag=ORGANIZATION]
+[Text=completed CharacterOffsetBegin=33 CharacterOffsetEnd=42 PartOfSpeech=VBD Lemma=complete NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=43 CharacterOffsetEnd=48 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$2.5E9]
+[Text=2.5 CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=CD Lemma=2.5 NamedEntityTag=MONEY NormalizedNamedEntityTag=$2.5E9]
+[Text=billion CharacterOffsetBegin=54 CharacterOffsetEnd=61 PartOfSpeech=CD Lemma=billion NamedEntityTag=MONEY NormalizedNamedEntityTag=$2.5E9]
+[Text=merger CharacterOffsetBegin=62 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=merger NamedEntityTag=O]
+[Text=yesterday CharacterOffsetBegin=69 CharacterOffsetEnd=78 PartOfSpeech=NN Lemma=yesterday NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=79 CharacterOffsetEnd=81 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=shareholders CharacterOffsetBegin=82 CharacterOffsetEnd=94 PartOfSpeech=NNS Lemma=shareholder NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=95 CharacterOffsetEnd=97 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=both CharacterOffsetBegin=98 CharacterOffsetEnd=102 PartOfSpeech=DT Lemma=both NamedEntityTag=O]
+[Text=companies CharacterOffsetBegin=103 CharacterOffsetEnd=112 PartOfSpeech=NNS Lemma=company NamedEntityTag=O]
+[Text=approved CharacterOffsetBegin=113 CharacterOffsetEnd=121 PartOfSpeech=VBD Lemma=approve NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=122 CharacterOffsetEnd=125 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=deal CharacterOffsetBegin=126 CharacterOffsetEnd=130 PartOfSpeech=NN Lemma=deal NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=130 CharacterOffsetEnd=131 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=132 CharacterOffsetEnd=137 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=138 CharacterOffsetEnd=141 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=announced CharacterOffsetBegin=142 CharacterOffsetEnd=151 PartOfSpeech=VBN Lemma=announce NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=152 CharacterOffsetEnd=154 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=May CharacterOffsetBegin=155 CharacterOffsetEnd=158 PartOfSpeech=NNP Lemma=May NamedEntityTag=DATE NormalizedNamedEntityTag=****05]
+[Text=. CharacterOffsetBegin=158 CharacterOffsetEnd=159 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Devon) (NNP Energy))
+      (CC and)
+      (NP (NNP Santa) (NNP Fe) (NNP Snyder)))
+    (VP (VBD completed)
+      (NP (PRP$ their)
+        (ADJP
+          (QP ($ $) (CD 2.5) (CD billion)))
+        (NN merger))
+      (NP-TMP (NN yesterday))
+      (SBAR (IN as)
+        (S
+          (NP
+            (NP (NNS shareholders))
+            (PP (IN of)
+              (NP (DT both) (NNS companies))))
+          (VP (VBD approved)
+            (NP
+              (NP (DT the) (NN deal))
+              (, ,)
+              (SBAR
+                (WHNP (WDT which))
+                (S
+                  (VP (VBD was)
+                    (VP (VBN announced)
+                      (PP (IN in)
+                        (NP (NNP May))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, completed-7)
+compound(Energy-2, Devon-1)
+nsubj(completed-7, Energy-2)
+cc(Energy-2, and-3)
+compound(Snyder-6, Santa-4)
+compound(Snyder-6, Fe-5)
+conj:and(Energy-2, Snyder-6)
+nsubj(completed-7, Snyder-6)
+nmod:poss(merger-12, their-8)
+amod(merger-12, $-9)
+compound(billion-11, 2.5-10)
+nummod($-9, billion-11)
+dobj(completed-7, merger-12)
+nmod:tmod(completed-7, yesterday-13)
+mark(approved-19, as-14)
+nsubj(approved-19, shareholders-15)
+case(companies-18, of-16)
+det(companies-18, both-17)
+nmod:of(shareholders-15, companies-18)
+advcl:as(completed-7, approved-19)
+det(deal-21, the-20)
+dobj(approved-19, deal-21)
+nsubjpass(announced-25, deal-21)
+punct(deal-21, ,-22)
+ref(deal-21, which-23)
+auxpass(announced-25, was-24)
+acl:relcl(deal-21, announced-25)
+case(May-27, in-26)
+nmod:in(announced-25, May-27)
+punct(completed-7, .-28)
+
+Extracted the following NER entity mentions:
+Devon Energy and Santa Fe Snyder	ORGANIZATION
+$2.5 billion	MONEY
+May	DATE
+
+Sentence #2 (21 tokens):
+The agreement called for each Santa Fe Snyder common share
+to be converted into 0.22 shares of Devon common stock.
+
+Tokens:
+[Text=The CharacterOffsetBegin=160 CharacterOffsetEnd=163 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=agreement CharacterOffsetBegin=164 CharacterOffsetEnd=173 PartOfSpeech=NN Lemma=agreement NamedEntityTag=O]
+[Text=called CharacterOffsetBegin=174 CharacterOffsetEnd=180 PartOfSpeech=VBN Lemma=call NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=181 CharacterOffsetEnd=184 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=each CharacterOffsetBegin=185 CharacterOffsetEnd=189 PartOfSpeech=DT Lemma=each NamedEntityTag=O]
+[Text=Santa CharacterOffsetBegin=190 CharacterOffsetEnd=195 PartOfSpeech=NNP Lemma=Santa NamedEntityTag=ORGANIZATION]
+[Text=Fe CharacterOffsetBegin=196 CharacterOffsetEnd=198 PartOfSpeech=NNP Lemma=Fe NamedEntityTag=ORGANIZATION]
+[Text=Snyder CharacterOffsetBegin=199 CharacterOffsetEnd=205 PartOfSpeech=NNP Lemma=Snyder NamedEntityTag=ORGANIZATION]
+[Text=common CharacterOffsetBegin=206 CharacterOffsetEnd=212 PartOfSpeech=JJ Lemma=common NamedEntityTag=O]
+[Text=share CharacterOffsetBegin=213 CharacterOffsetEnd=218 PartOfSpeech=NN Lemma=share NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=219 CharacterOffsetEnd=221 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=222 CharacterOffsetEnd=224 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=converted CharacterOffsetBegin=225 CharacterOffsetEnd=234 PartOfSpeech=VBN Lemma=convert NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=235 CharacterOffsetEnd=239 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=0.22 CharacterOffsetBegin=240 CharacterOffsetEnd=244 PartOfSpeech=CD Lemma=0.22 NamedEntityTag=NUMBER NormalizedNamedEntityTag=0.22]
+[Text=shares CharacterOffsetBegin=245 CharacterOffsetEnd=251 PartOfSpeech=NNS Lemma=share NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=252 CharacterOffsetEnd=254 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Devon CharacterOffsetBegin=255 CharacterOffsetEnd=260 PartOfSpeech=NNP Lemma=Devon NamedEntityTag=CITY]
+[Text=common CharacterOffsetBegin=261 CharacterOffsetEnd=267 PartOfSpeech=JJ Lemma=common NamedEntityTag=O]
+[Text=stock CharacterOffsetBegin=268 CharacterOffsetEnd=273 PartOfSpeech=NN Lemma=stock NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=273 CharacterOffsetEnd=274 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN agreement))
+    (VP (VBN called)
+      (PP (IN for)
+        (NP (DT each) (NNP Santa) (NNP Fe) (NNP Snyder) (JJ common) (NN share)))
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (VP (VBN converted)
+              (PP (IN into)
+                (NP
+                  (NP (CD 0.22) (NNS shares))
+                  (PP (IN of)
+                    (NP (NNP Devon) (JJ common) (NN stock))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, called-3)
+det(agreement-2, The-1)
+nsubj(called-3, agreement-2)
+nsubjpass:xsubj(converted-13, agreement-2)
+case(share-10, for-4)
+det(share-10, each-5)
+compound(share-10, Santa-6)
+compound(share-10, Fe-7)
+compound(share-10, Snyder-8)
+amod(share-10, common-9)
+nmod:for(called-3, share-10)
+mark(converted-13, to-11)
+auxpass(converted-13, be-12)
+xcomp(called-3, converted-13)
+case(shares-16, into-14)
+nummod(shares-16, 0.22-15)
+nmod:into(converted-13, shares-16)
+case(stock-20, of-17)
+compound(stock-20, Devon-18)
+amod(stock-20, common-19)
+nmod:of(shares-16, stock-20)
+punct(called-3, .-21)
+
+Extracted the following NER entity mentions:
+Santa Fe Snyder	ORGANIZATION
+0.22	NUMBER
+Devon	CITY
+
+Sentence #3 (20 tokens):
+Conversion requires
+issuance of 40.6 million additional Devon common shares, resulting in total
+shares outstanding of 127.7 million.
+
+Tokens:
+[Text=Conversion CharacterOffsetBegin=275 CharacterOffsetEnd=285 PartOfSpeech=NN Lemma=conversion NamedEntityTag=O]
+[Text=requires CharacterOffsetBegin=286 CharacterOffsetEnd=294 PartOfSpeech=VBZ Lemma=require NamedEntityTag=O]
+[Text=issuance CharacterOffsetBegin=295 CharacterOffsetEnd=303 PartOfSpeech=NN Lemma=issuance NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=304 CharacterOffsetEnd=306 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=40.6 CharacterOffsetBegin=307 CharacterOffsetEnd=311 PartOfSpeech=CD Lemma=40.6 NamedEntityTag=NUMBER NormalizedNamedEntityTag=4.06E7]
+[Text=million CharacterOffsetBegin=312 CharacterOffsetEnd=319 PartOfSpeech=CD Lemma=million NamedEntityTag=NUMBER NormalizedNamedEntityTag=4.06E7]
+[Text=additional CharacterOffsetBegin=320 CharacterOffsetEnd=330 PartOfSpeech=JJ Lemma=additional NamedEntityTag=O]
+[Text=Devon CharacterOffsetBegin=331 CharacterOffsetEnd=336 PartOfSpeech=NNP Lemma=Devon NamedEntityTag=CITY]
+[Text=common CharacterOffsetBegin=337 CharacterOffsetEnd=343 PartOfSpeech=JJ Lemma=common NamedEntityTag=O]
+[Text=shares CharacterOffsetBegin=344 CharacterOffsetEnd=350 PartOfSpeech=NNS Lemma=share NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=350 CharacterOffsetEnd=351 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=resulting CharacterOffsetBegin=352 CharacterOffsetEnd=361 PartOfSpeech=VBG Lemma=result NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=362 CharacterOffsetEnd=364 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=total CharacterOffsetBegin=365 CharacterOffsetEnd=370 PartOfSpeech=JJ Lemma=total NamedEntityTag=O]
+[Text=shares CharacterOffsetBegin=371 CharacterOffsetEnd=377 PartOfSpeech=NNS Lemma=share NamedEntityTag=O]
+[Text=outstanding CharacterOffsetBegin=378 CharacterOffsetEnd=389 PartOfSpeech=JJ Lemma=outstanding NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=390 CharacterOffsetEnd=392 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=127.7 CharacterOffsetBegin=393 CharacterOffsetEnd=398 PartOfSpeech=CD Lemma=127.7 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.277E8]
+[Text=million CharacterOffsetBegin=399 CharacterOffsetEnd=406 PartOfSpeech=CD Lemma=million NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.277E8]
+[Text=. CharacterOffsetBegin=406 CharacterOffsetEnd=407 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN Conversion))
+    (VP (VBZ requires)
+      (NP
+        (NP (NN issuance))
+        (PP (IN of)
+          (NP
+            (NP
+              (QP (CD 40.6) (CD million))
+              (JJ additional) (NNP Devon) (JJ common) (NNS shares))
+            (, ,)
+            (VP (VBG resulting)
+              (PP (IN in)
+                (NP
+                  (NP (JJ total) (NNS shares))
+                  (ADJP (JJ outstanding))
+                  (PP (IN of)
+                    (NP
+                      (QP (CD 127.7) (CD million)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, requires-2)
+nsubj(requires-2, Conversion-1)
+dobj(requires-2, issuance-3)
+case(shares-10, of-4)
+compound(million-6, 40.6-5)
+nummod(shares-10, million-6)
+amod(shares-10, additional-7)
+compound(shares-10, Devon-8)
+amod(shares-10, common-9)
+nmod:of(issuance-3, shares-10)
+punct(shares-10, ,-11)
+acl(shares-10, resulting-12)
+case(shares-15, in-13)
+amod(shares-15, total-14)
+nmod:in(resulting-12, shares-15)
+amod(shares-15, outstanding-16)
+case(million-19, of-17)
+compound(million-19, 127.7-18)
+nmod:of(shares-15, million-19)
+punct(requires-2, .-20)
+
+Extracted the following NER entity mentions:
+40.6 million	NUMBER
+Devon	CITY
+127.7 million	NUMBER
+
+Sentence #4 (14 tokens):
+Former Santa Fe Snyder shareholders now
+own 32% of the combined company.
+
+Tokens:
+[Text=Former CharacterOffsetBegin=408 CharacterOffsetEnd=414 PartOfSpeech=JJ Lemma=former NamedEntityTag=O]
+[Text=Santa CharacterOffsetBegin=415 CharacterOffsetEnd=420 PartOfSpeech=NNP Lemma=Santa NamedEntityTag=ORGANIZATION]
+[Text=Fe CharacterOffsetBegin=421 CharacterOffsetEnd=423 PartOfSpeech=NNP Lemma=Fe NamedEntityTag=ORGANIZATION]
+[Text=Snyder CharacterOffsetBegin=424 CharacterOffsetEnd=430 PartOfSpeech=NNP Lemma=Snyder NamedEntityTag=ORGANIZATION]
+[Text=shareholders CharacterOffsetBegin=431 CharacterOffsetEnd=443 PartOfSpeech=NNS Lemma=shareholder NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=444 CharacterOffsetEnd=447 PartOfSpeech=RB Lemma=now NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=448 CharacterOffsetEnd=451 PartOfSpeech=VBP Lemma=own NamedEntityTag=O]
+[Text=32 CharacterOffsetBegin=452 CharacterOffsetEnd=454 PartOfSpeech=CD Lemma=32 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%32.0]
+[Text=% CharacterOffsetBegin=454 CharacterOffsetEnd=455 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%32.0]
+[Text=of CharacterOffsetBegin=456 CharacterOffsetEnd=458 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=459 CharacterOffsetEnd=462 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=combined CharacterOffsetBegin=463 CharacterOffsetEnd=471 PartOfSpeech=JJ Lemma=combined NamedEntityTag=O]
+[Text=company CharacterOffsetBegin=472 CharacterOffsetEnd=479 PartOfSpeech=NN Lemma=company NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=479 CharacterOffsetEnd=480 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (JJ Former) (NNP Santa) (NNP Fe) (NNP Snyder) (NNS shareholders))
+    (ADVP (RB now))
+    (VP (VBP own)
+      (NP
+        (NP (CD 32) (NN %))
+        (PP (IN of)
+          (NP (DT the) (JJ combined) (NN company)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, own-7)
+amod(shareholders-5, Former-1)
+compound(shareholders-5, Santa-2)
+compound(shareholders-5, Fe-3)
+compound(shareholders-5, Snyder-4)
+nsubj(own-7, shareholders-5)
+advmod(own-7, now-6)
+nummod(%-9, 32-8)
+dobj(own-7, %-9)
+case(company-13, of-10)
+det(company-13, the-11)
+amod(company-13, combined-12)
+nmod:of(%-9, company-13)
+punct(own-7, .-14)
+
+Extracted the following NER entity mentions:
+Santa Fe Snyder	ORGANIZATION
+32%	PERCENT
+
+Sentence #5 (11 tokens):
+Historical Devon shareholders own 68% of the
+combined company.
+
+Tokens:
+[Text=Historical CharacterOffsetBegin=481 CharacterOffsetEnd=491 PartOfSpeech=JJ Lemma=historical NamedEntityTag=ORGANIZATION]
+[Text=Devon CharacterOffsetBegin=492 CharacterOffsetEnd=497 PartOfSpeech=NNP Lemma=Devon NamedEntityTag=ORGANIZATION]
+[Text=shareholders CharacterOffsetBegin=498 CharacterOffsetEnd=510 PartOfSpeech=NNS Lemma=shareholder NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=511 CharacterOffsetEnd=514 PartOfSpeech=JJ Lemma=own NamedEntityTag=O]
+[Text=68 CharacterOffsetBegin=515 CharacterOffsetEnd=517 PartOfSpeech=CD Lemma=68 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%68.0]
+[Text=% CharacterOffsetBegin=517 CharacterOffsetEnd=518 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%68.0]
+[Text=of CharacterOffsetBegin=519 CharacterOffsetEnd=521 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=522 CharacterOffsetEnd=525 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=combined CharacterOffsetBegin=526 CharacterOffsetEnd=534 PartOfSpeech=JJ Lemma=combined NamedEntityTag=O]
+[Text=company CharacterOffsetBegin=535 CharacterOffsetEnd=542 PartOfSpeech=NN Lemma=company NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=542 CharacterOffsetEnd=543 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (JJ Historical) (NNP Devon) (NNS shareholders))
+    (NP (JJ own)
+      (NP
+        (NP (CD 68) (NN %))
+        (PP (IN of)
+          (NP (DT the) (JJ combined) (NN company)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, shareholders-3)
+amod(shareholders-3, Historical-1)
+compound(shareholders-3, Devon-2)
+amod(%-6, own-4)
+nummod(%-6, 68-5)
+dep(shareholders-3, %-6)
+case(company-10, of-7)
+det(company-10, the-8)
+amod(company-10, combined-9)
+nmod:of(%-6, company-10)
+punct(shareholders-3, .-11)
+
+Extracted the following NER entity mentions:
+Historical Devon	ORGANIZATION
+68%	PERCENT
+
+Sentence #6 (12 tokens):
+The transaction will be accounted for as a pooling of
+interests.
+
+Tokens:
+[Text=The CharacterOffsetBegin=544 CharacterOffsetEnd=547 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=transaction CharacterOffsetBegin=548 CharacterOffsetEnd=559 PartOfSpeech=NN Lemma=transaction NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=560 CharacterOffsetEnd=564 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=565 CharacterOffsetEnd=567 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=accounted CharacterOffsetBegin=568 CharacterOffsetEnd=577 PartOfSpeech=VBN Lemma=account NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=578 CharacterOffsetEnd=581 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=582 CharacterOffsetEnd=584 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=585 CharacterOffsetEnd=586 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=pooling CharacterOffsetBegin=587 CharacterOffsetEnd=594 PartOfSpeech=VBG Lemma=pool NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=595 CharacterOffsetEnd=597 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=interests CharacterOffsetBegin=598 CharacterOffsetEnd=607 PartOfSpeech=NNS Lemma=interest NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=607 CharacterOffsetEnd=608 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN transaction))
+    (VP (MD will)
+      (VP (VB be)
+        (VP (VBN accounted)
+          (PP (IN for) (IN as)
+            (NP
+              (NP (DT a) (VBG pooling))
+              (PP (IN of)
+                (NP (NNS interests))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, accounted-5)
+det(transaction-2, The-1)
+nsubjpass(accounted-5, transaction-2)
+aux(accounted-5, will-3)
+auxpass(accounted-5, be-4)
+case(a-8, for-6)
+case(a-8, as-7)
+nmod:as(accounted-5, a-8)
+amod(a-8, pooling-9)
+case(interests-11, of-10)
+nmod:of(a-8, interests-11)
+punct(accounted-5, .-12)
+
+Extracted the following NER entity mentions:
+
+Sentence #7 (30 tokens):
+With merger completion, Devon now ranks among the top five
+U.S.-based independent oil and gas producers in terms of market
+capitalization, total proved reserves and annual production.
+
+Tokens:
+[Text=With CharacterOffsetBegin=609 CharacterOffsetEnd=613 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=merger CharacterOffsetBegin=614 CharacterOffsetEnd=620 PartOfSpeech=NN Lemma=merger NamedEntityTag=O]
+[Text=completion CharacterOffsetBegin=621 CharacterOffsetEnd=631 PartOfSpeech=NN Lemma=completion NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=631 CharacterOffsetEnd=632 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Devon CharacterOffsetBegin=633 CharacterOffsetEnd=638 PartOfSpeech=NNP Lemma=Devon NamedEntityTag=PERSON]
+[Text=now CharacterOffsetBegin=639 CharacterOffsetEnd=642 PartOfSpeech=RB Lemma=now NamedEntityTag=O]
+[Text=ranks CharacterOffsetBegin=643 CharacterOffsetEnd=648 PartOfSpeech=VBZ Lemma=rank NamedEntityTag=O]
+[Text=among CharacterOffsetBegin=649 CharacterOffsetEnd=654 PartOfSpeech=IN Lemma=among NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=655 CharacterOffsetEnd=658 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=top CharacterOffsetBegin=659 CharacterOffsetEnd=662 PartOfSpeech=JJ Lemma=top NamedEntityTag=O]
+[Text=five CharacterOffsetBegin=663 CharacterOffsetEnd=667 PartOfSpeech=CD Lemma=five NamedEntityTag=NUMBER NormalizedNamedEntityTag=5.0]
+[Text=U.S.-based CharacterOffsetBegin=668 CharacterOffsetEnd=678 PartOfSpeech=JJ Lemma=u.s.-based NamedEntityTag=MISC]
+[Text=independent CharacterOffsetBegin=679 CharacterOffsetEnd=690 PartOfSpeech=JJ Lemma=independent NamedEntityTag=RELIGION]
+[Text=oil CharacterOffsetBegin=691 CharacterOffsetEnd=694 PartOfSpeech=NN Lemma=oil NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=695 CharacterOffsetEnd=698 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=gas CharacterOffsetBegin=699 CharacterOffsetEnd=702 PartOfSpeech=NN Lemma=gas NamedEntityTag=O]
+[Text=producers CharacterOffsetBegin=703 CharacterOffsetEnd=712 PartOfSpeech=NNS Lemma=producer NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=713 CharacterOffsetEnd=715 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=terms CharacterOffsetBegin=716 CharacterOffsetEnd=721 PartOfSpeech=NNS Lemma=term NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=722 CharacterOffsetEnd=724 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=market CharacterOffsetBegin=725 CharacterOffsetEnd=731 PartOfSpeech=NN Lemma=market NamedEntityTag=O]
+[Text=capitalization CharacterOffsetBegin=732 CharacterOffsetEnd=746 PartOfSpeech=NN Lemma=capitalization NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=746 CharacterOffsetEnd=747 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=total CharacterOffsetBegin=748 CharacterOffsetEnd=753 PartOfSpeech=JJ Lemma=total NamedEntityTag=O]
+[Text=proved CharacterOffsetBegin=754 CharacterOffsetEnd=760 PartOfSpeech=JJ Lemma=proved NamedEntityTag=O]
+[Text=reserves CharacterOffsetBegin=761 CharacterOffsetEnd=769 PartOfSpeech=NNS Lemma=reserve NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=770 CharacterOffsetEnd=773 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=annual CharacterOffsetBegin=774 CharacterOffsetEnd=780 PartOfSpeech=JJ Lemma=annual NamedEntityTag=O]
+[Text=production CharacterOffsetBegin=781 CharacterOffsetEnd=791 PartOfSpeech=NN Lemma=production NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=791 CharacterOffsetEnd=792 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN With)
+      (NP (NN merger) (NN completion)))
+    (, ,)
+    (NP (NNP Devon))
+    (ADVP (RB now))
+    (VP (VBZ ranks)
+      (PP (IN among)
+        (NP
+          (NP (DT the) (JJ top) (CD five) (JJ U.S.-based) (JJ independent) (NN oil))
+          (CC and)
+          (NP (NN gas) (NNS producers))))
+      (PP (IN in)
+        (NP
+          (NP (NNS terms))
+          (PP (IN of)
+            (NP
+              (NP (NN market) (NN capitalization))
+              (, ,)
+              (NP (JJ total) (JJ proved) (NNS reserves))
+              (CC and)
+              (NP (JJ annual) (NN production)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ranks-7)
+case(completion-3, With-1)
+compound(completion-3, merger-2)
+nmod:with(ranks-7, completion-3)
+punct(ranks-7, ,-4)
+nsubj(ranks-7, Devon-5)
+advmod(ranks-7, now-6)
+case(oil-14, among-8)
+det(oil-14, the-9)
+amod(oil-14, top-10)
+nummod(oil-14, five-11)
+amod(oil-14, U.S.-based-12)
+amod(oil-14, independent-13)
+nmod:among(ranks-7, oil-14)
+cc(oil-14, and-15)
+compound(producers-17, gas-16)
+nmod:among(ranks-7, producers-17)
+conj:and(oil-14, producers-17)
+case(terms-19, in-18)
+nmod:in(ranks-7, terms-19)
+case(capitalization-22, of-20)
+compound(capitalization-22, market-21)
+nmod:of(terms-19, capitalization-22)
+punct(capitalization-22, ,-23)
+amod(reserves-26, total-24)
+amod(reserves-26, proved-25)
+nmod:of(terms-19, reserves-26)
+conj:and(capitalization-22, reserves-26)
+cc(capitalization-22, and-27)
+amod(production-29, annual-28)
+nmod:of(terms-19, production-29)
+conj:and(capitalization-22, production-29)
+punct(ranks-7, .-30)
+
+Extracted the following NER entity mentions:
+Devon	PERSON
+five	NUMBER
+U.S.-based	MISC
+independent	RELIGION
+
+Sentence #8 (18 tokens):
+The company has
+an enterprise value of $9 billion and proved reserves of 1.1 billion boe.
+
+Tokens:
+[Text=The CharacterOffsetBegin=793 CharacterOffsetEnd=796 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=company CharacterOffsetBegin=797 CharacterOffsetEnd=804 PartOfSpeech=NN Lemma=company NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=805 CharacterOffsetEnd=808 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=809 CharacterOffsetEnd=811 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=enterprise CharacterOffsetBegin=812 CharacterOffsetEnd=822 PartOfSpeech=NN Lemma=enterprise NamedEntityTag=O]
+[Text=value CharacterOffsetBegin=823 CharacterOffsetEnd=828 PartOfSpeech=NN Lemma=value NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=829 CharacterOffsetEnd=831 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=832 CharacterOffsetEnd=833 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$9.0E9]
+[Text=9 CharacterOffsetBegin=833 CharacterOffsetEnd=834 PartOfSpeech=CD Lemma=9 NamedEntityTag=MONEY NormalizedNamedEntityTag=$9.0E9]
+[Text=billion CharacterOffsetBegin=835 CharacterOffsetEnd=842 PartOfSpeech=CD Lemma=billion NamedEntityTag=MONEY NormalizedNamedEntityTag=$9.0E9]
+[Text=and CharacterOffsetBegin=843 CharacterOffsetEnd=846 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=proved CharacterOffsetBegin=847 CharacterOffsetEnd=853 PartOfSpeech=VBD Lemma=prove NamedEntityTag=O]
+[Text=reserves CharacterOffsetBegin=854 CharacterOffsetEnd=862 PartOfSpeech=NNS Lemma=reserve NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=863 CharacterOffsetEnd=865 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=1.1 CharacterOffsetBegin=866 CharacterOffsetEnd=869 PartOfSpeech=CD Lemma=1.1 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.1E9]
+[Text=billion CharacterOffsetBegin=870 CharacterOffsetEnd=877 PartOfSpeech=CD Lemma=billion NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.1E9]
+[Text=boe CharacterOffsetBegin=878 CharacterOffsetEnd=881 PartOfSpeech=NN Lemma=boe NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=881 CharacterOffsetEnd=882 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN company))
+    (VP
+      (VP (VBZ has)
+        (NP
+          (NP (DT an) (NN enterprise) (NN value))
+          (PP (IN of)
+            (NP
+              (QP ($ $) (CD 9) (CD billion))))))
+      (CC and)
+      (VP (VBD proved)
+        (NP
+          (NP (NNS reserves))
+          (PP (IN of)
+            (NP
+              (QP (CD 1.1) (CD billion))
+              (NN boe))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, has-3)
+det(company-2, The-1)
+nsubj(has-3, company-2)
+nsubj(proved-12, company-2)
+det(value-6, an-4)
+compound(value-6, enterprise-5)
+dobj(has-3, value-6)
+case($-8, of-7)
+nmod:of(value-6, $-8)
+compound(billion-10, 9-9)
+nummod($-8, billion-10)
+cc(has-3, and-11)
+conj:and(has-3, proved-12)
+dobj(proved-12, reserves-13)
+case(boe-17, of-14)
+compound(billion-16, 1.1-15)
+nummod(boe-17, billion-16)
+nmod:of(reserves-13, boe-17)
+punct(has-3, .-18)
+
+Extracted the following NER entity mentions:
+$9 billion	MONEY
+1.1 billion	NUMBER
+
+Sentence #9 (20 tokens):
+The
+company expects to realize $30 million to $35 million in annual cost savings
+from the merger.
+
+Tokens:
+[Text=The CharacterOffsetBegin=883 CharacterOffsetEnd=886 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=company CharacterOffsetBegin=887 CharacterOffsetEnd=894 PartOfSpeech=NN Lemma=company NamedEntityTag=O]
+[Text=expects CharacterOffsetBegin=895 CharacterOffsetEnd=902 PartOfSpeech=VBZ Lemma=expect NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=903 CharacterOffsetEnd=905 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=realize CharacterOffsetBegin=906 CharacterOffsetEnd=913 PartOfSpeech=VB Lemma=realize NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=914 CharacterOffsetEnd=915 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$3.0E7]
+[Text=30 CharacterOffsetBegin=915 CharacterOffsetEnd=917 PartOfSpeech=CD Lemma=30 NamedEntityTag=MONEY NormalizedNamedEntityTag=$3.0E7]
+[Text=million CharacterOffsetBegin=918 CharacterOffsetEnd=925 PartOfSpeech=CD Lemma=million NamedEntityTag=MONEY NormalizedNamedEntityTag=$3.0E7]
+[Text=to CharacterOffsetBegin=926 CharacterOffsetEnd=928 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=929 CharacterOffsetEnd=930 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$3.5E7]
+[Text=35 CharacterOffsetBegin=930 CharacterOffsetEnd=932 PartOfSpeech=CD Lemma=35 NamedEntityTag=MONEY NormalizedNamedEntityTag=$3.5E7]
+[Text=million CharacterOffsetBegin=933 CharacterOffsetEnd=940 PartOfSpeech=CD Lemma=million NamedEntityTag=MONEY NormalizedNamedEntityTag=$3.5E7]
+[Text=in CharacterOffsetBegin=941 CharacterOffsetEnd=943 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=annual CharacterOffsetBegin=944 CharacterOffsetEnd=950 PartOfSpeech=JJ Lemma=annual NamedEntityTag=O]
+[Text=cost CharacterOffsetBegin=951 CharacterOffsetEnd=955 PartOfSpeech=NN Lemma=cost NamedEntityTag=O]
+[Text=savings CharacterOffsetBegin=956 CharacterOffsetEnd=963 PartOfSpeech=NNS Lemma=savings NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=964 CharacterOffsetEnd=968 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=969 CharacterOffsetEnd=972 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=merger CharacterOffsetBegin=973 CharacterOffsetEnd=979 PartOfSpeech=NN Lemma=merger NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=979 CharacterOffsetEnd=980 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN company))
+    (VP (VBZ expects)
+      (S
+        (VP (TO to)
+          (VP (VB realize)
+            (NP
+              (NP
+                (QP ($ $) (CD 30) (CD million) (TO to) ($ $) (CD 35) (CD million)))
+              (PP (IN in)
+                (NP (JJ annual) (NN cost) (NNS savings))))
+            (PP (IN from)
+              (NP (DT the) (NN merger)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, expects-3)
+det(company-2, The-1)
+nsubj(expects-3, company-2)
+nsubj:xsubj(realize-5, company-2)
+mark(realize-5, to-4)
+xcomp(expects-3, realize-5)
+dep($-10, $-6)
+compound($-10, 30-7)
+compound($-10, million-8)
+dep($-10, to-9)
+dobj(realize-5, $-10)
+compound(million-12, 35-11)
+nummod($-10, million-12)
+case(savings-16, in-13)
+amod(savings-16, annual-14)
+compound(savings-16, cost-15)
+nmod:in($-10, savings-16)
+case(merger-19, from-17)
+det(merger-19, the-18)
+nmod:from(realize-5, merger-19)
+punct(expects-3, .-20)
+
+Extracted the following NER entity mentions:
+$30 million	MONEY
+$35 million	MONEY
+
+Sentence #10 (15 tokens):
+Devon was added to the S&P 500 Index after the close of
+business yesterday.
+
+Tokens:
+[Text=Devon CharacterOffsetBegin=981 CharacterOffsetEnd=986 PartOfSpeech=NNP Lemma=Devon NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=987 CharacterOffsetEnd=990 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=added CharacterOffsetBegin=991 CharacterOffsetEnd=996 PartOfSpeech=VBN Lemma=add NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=997 CharacterOffsetEnd=999 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1000 CharacterOffsetEnd=1003 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=S&P CharacterOffsetBegin=1004 CharacterOffsetEnd=1007 PartOfSpeech=NNP Lemma=S&P NamedEntityTag=ORGANIZATION]
+[Text=500 CharacterOffsetBegin=1008 CharacterOffsetEnd=1011 PartOfSpeech=CD Lemma=500 NamedEntityTag=NUMBER NormalizedNamedEntityTag=500.0]
+[Text=Index CharacterOffsetBegin=1012 CharacterOffsetEnd=1017 PartOfSpeech=NNP Lemma=Index NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=1018 CharacterOffsetEnd=1023 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1024 CharacterOffsetEnd=1027 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=close CharacterOffsetBegin=1028 CharacterOffsetEnd=1033 PartOfSpeech=NN Lemma=close NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=1034 CharacterOffsetEnd=1036 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=business CharacterOffsetBegin=1037 CharacterOffsetEnd=1045 PartOfSpeech=NN Lemma=business NamedEntityTag=O]
+[Text=yesterday CharacterOffsetBegin=1046 CharacterOffsetEnd=1055 PartOfSpeech=NN Lemma=yesterday NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1055 CharacterOffsetEnd=1056 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Devon))
+    (VP (VBD was)
+      (VP (VBN added)
+        (PP (TO to)
+          (NP
+            (NP (DT the) (NNP S&P) (CD 500) (NNP Index))
+            (PP (IN after)
+              (NP
+                (NP (DT the) (NN close))
+                (PP (IN of)
+                  (NP (NN business)))))))
+        (NP-TMP (NN yesterday))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, added-3)
+nsubjpass(added-3, Devon-1)
+auxpass(added-3, was-2)
+case(Index-8, to-4)
+det(Index-8, the-5)
+compound(Index-8, S&P-6)
+nummod(Index-8, 500-7)
+nmod:to(added-3, Index-8)
+case(close-11, after-9)
+det(close-11, the-10)
+nmod:after(Index-8, close-11)
+case(business-13, of-12)
+nmod:of(close-11, business-13)
+nmod:tmod(added-3, yesterday-14)
+punct(added-3, .-15)
+
+Extracted the following NER entity mentions:
+Devon	PERSON
+S&P	ORGANIZATION
+500	NUMBER
+
+Coreference set:
+	(1,2,[1,7]) -> (2,8,[6,9]), that is: "Devon Energy and Santa Fe Snyder" -> "Santa Fe Snyder"
+	(4,4,[2,5]) -> (2,8,[6,9]), that is: "Santa Fe Snyder" -> "Santa Fe Snyder"
+
+Coreference set:
+	(9,19,[18,20]) -> (1,12,[8,13]), that is: "the merger" -> "their $ 2.5 billion merger"
+
+Coreference set:
+	(10,14,[14,15]) -> (1,13,[13,14]), that is: "yesterday" -> "yesterday"
+
+Coreference set:
+	(3,8,[8,9]) -> (2,18,[18,19]), that is: "Devon" -> "Devon"
+	(7,5,[5,6]) -> (2,18,[18,19]), that is: "Devon" -> "Devon"
+	(10,1,[1,2]) -> (2,18,[18,19]), that is: "Devon" -> "Devon"
+
+Coreference set:
+	(5,10,[8,11]) -> (4,13,[11,14]), that is: "the combined company" -> "the combined company"
+	(8,2,[1,3]) -> (4,13,[11,14]), that is: "The company" -> "the combined company"
+	(9,2,[1,3]) -> (4,13,[11,14]), that is: "The company" -> "the combined company"

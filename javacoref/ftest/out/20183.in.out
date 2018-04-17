@@ -1,0 +1,124 @@
+Document: ID=20183.in (4 sentences, 23 tokens)
+
+Sentence #1 (11 tokens):
+Has everyone saved all their necessary files to the netco.
+
+Tokens:
+[Text=Has CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=everyone CharacterOffsetBegin=4 CharacterOffsetEnd=12 PartOfSpeech=NN Lemma=everyone NamedEntityTag=O]
+[Text=saved CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=VBN Lemma=save NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=23 CharacterOffsetEnd=28 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=necessary CharacterOffsetBegin=29 CharacterOffsetEnd=38 PartOfSpeech=JJ Lemma=necessary NamedEntityTag=O]
+[Text=files CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=NNS Lemma=file NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=netco CharacterOffsetBegin=52 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=netco NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (VBZ Has)
+    (NP (NN everyone))
+    (VP (VBN saved)
+      (NP (DT all))
+      (NP (PRP$ their) (JJ necessary) (NNS files))
+      (PP (TO to)
+        (NP (DT the) (NN netco))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, saved-3)
+aux(saved-3, Has-1)
+nsubj(saved-3, everyone-2)
+iobj(saved-3, all-4)
+nmod:poss(files-7, their-5)
+amod(files-7, necessary-6)
+dobj(saved-3, files-7)
+case(netco-10, to-8)
+det(netco-10, the-9)
+nmod:to(saved-3, netco-10)
+punct(saved-3, .-11)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (2 tokens):
+directory?
+
+Tokens:
+[Text=directory CharacterOffsetBegin=59 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=directory NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN directory))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, directory-1)
+punct(directory-1, ?-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (8 tokens):
+I will be starting this list today.
+
+Tokens:
+[Text=I CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=78 CharacterOffsetEnd=80 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=starting CharacterOffsetBegin=81 CharacterOffsetEnd=89 PartOfSpeech=VBG Lemma=start NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=90 CharacterOffsetEnd=94 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=list CharacterOffsetBegin=95 CharacterOffsetEnd=99 PartOfSpeech=NN Lemma=list NamedEntityTag=O]
+[Text=today CharacterOffsetBegin=100 CharacterOffsetEnd=105 PartOfSpeech=NN Lemma=today NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=105 CharacterOffsetEnd=106 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD will)
+      (VP (VB be)
+        (VP (VBG starting)
+          (NP (DT this) (NN list))
+          (NP-TMP (NN today)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, starting-4)
+nsubj(starting-4, I-1)
+aux(starting-4, will-2)
+aux(starting-4, be-3)
+det(list-6, this-5)
+dobj(starting-4, list-6)
+nmod:tmod(starting-4, today-7)
+punct(starting-4, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (2 tokens):
+Thanks
+
+Kam
+
+Tokens:
+[Text=Thanks CharacterOffsetBegin=108 CharacterOffsetEnd=114 PartOfSpeech=NNS Lemma=thanks NamedEntityTag=O]
+[Text=Kam CharacterOffsetBegin=116 CharacterOffsetEnd=119 PartOfSpeech=VBP Lemma=kam NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNS Thanks))
+    (VP (VBP Kam))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Kam-2)
+nsubj(Kam-2, Thanks-1)
+
+Extracted the following NER entity mentions:
+Kam	PERSON

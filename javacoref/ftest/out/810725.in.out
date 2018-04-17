@@ -1,0 +1,360 @@
+Document: ID=810725.in (5 sentences, 87 tokens)
+
+Sentence #1 (14 tokens):
+For January 2000 for a couple of weekends SJersey tried to do intradays.
+
+Tokens:
+[Text=For CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=January CharacterOffsetBegin=4 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=January NamedEntityTag=DATE NormalizedNamedEntityTag=200001]
+[Text=2000 CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=CD Lemma=2000 NamedEntityTag=DATE NormalizedNamedEntityTag=200001]
+[Text=for CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=couple CharacterOffsetBegin=23 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=couple NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=weekends CharacterOffsetBegin=33 CharacterOffsetEnd=41 PartOfSpeech=NNS Lemma=weekend NamedEntityTag=O]
+[Text=SJersey CharacterOffsetBegin=42 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=sjersey NamedEntityTag=O]
+[Text=tried CharacterOffsetBegin=50 CharacterOffsetEnd=55 PartOfSpeech=VBD Lemma=try NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=intradays CharacterOffsetBegin=62 CharacterOffsetEnd=71 PartOfSpeech=NNS Lemma=intraday NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN For)
+      (NP
+        (NP (NNP January) (CD 2000))
+        (PP (IN for)
+          (NP
+            (NP (DT a) (NN couple))
+            (PP (IN of)
+              (NP (NNS weekends)))))))
+    (NP (NN SJersey))
+    (VP (VBD tried)
+      (S
+        (VP (TO to)
+          (VP (VB do)
+            (NP (NNS intradays))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, tried-10)
+case(January-2, For-1)
+nmod:for(tried-10, January-2)
+nummod(January-2, 2000-3)
+case(couple-6, for-4)
+det:qmod(weekends-8, a-5)
+mwe(a-5, couple-6)
+mwe(a-5, of-7)
+nmod(January-2, weekends-8)
+nsubj(tried-10, SJersey-9)
+nsubj:xsubj(do-12, SJersey-9)
+mark(do-12, to-11)
+xcomp(tried-10, do-12)
+dobj(do-12, intradays-13)
+punct(tried-10, .-14)
+
+Extracted the following NER entity mentions:
+January 2000	DATE
+
+Sentence #2 (16 tokens):
+Due
+to the interconnect and other supply we were not able to change their
+nominations.
+
+Tokens:
+[Text=Due CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=JJ Lemma=due NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=78 CharacterOffsetEnd=80 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=interconnect CharacterOffsetBegin=85 CharacterOffsetEnd=97 PartOfSpeech=VB Lemma=interconnect NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=98 CharacterOffsetEnd=101 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=102 CharacterOffsetEnd=107 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=supply CharacterOffsetBegin=108 CharacterOffsetEnd=114 PartOfSpeech=NN Lemma=supply NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=115 CharacterOffsetEnd=117 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=118 CharacterOffsetEnd=122 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=123 CharacterOffsetEnd=126 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=able CharacterOffsetBegin=127 CharacterOffsetEnd=131 PartOfSpeech=JJ Lemma=able NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=132 CharacterOffsetEnd=134 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=change CharacterOffsetBegin=135 CharacterOffsetEnd=141 PartOfSpeech=VB Lemma=change NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=142 CharacterOffsetEnd=147 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=nominations CharacterOffsetBegin=148 CharacterOffsetEnd=159 PartOfSpeech=NNS Lemma=nomination NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=159 CharacterOffsetEnd=160 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (JJ Due) (TO to)
+      (NP
+        (NP
+          (NP (DT the))
+          (SBAR
+            (S
+              (VP (VB interconnect)))))
+        (CC and)
+        (NP (JJ other) (NN supply))))
+    (NP (PRP we))
+    (VP (VBD were) (RB not)
+      (ADJP (JJ able)
+        (S
+          (VP (TO to)
+            (VP (VB change)
+              (NP (PRP$ their) (NNS nominations)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, able-11)
+case(the-3, Due-1)
+mwe(Due-1, to-2)
+nmod:due_to(able-11, the-3)
+acl:relcl(the-3, interconnect-4)
+cc(the-3, and-5)
+amod(supply-7, other-6)
+conj:and(the-3, supply-7)
+nmod:due_to(able-11, supply-7)
+nsubj(able-11, we-8)
+nsubj:xsubj(change-13, we-8)
+cop(able-11, were-9)
+neg(able-11, not-10)
+mark(change-13, to-12)
+xcomp(able-11, change-13)
+nmod:poss(nominations-15, their-14)
+dobj(change-13, nominations-15)
+punct(able-11, .-16)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (18 tokens):
+South Jersey have always been told that changing nomination on
+the weekend would be on best available.
+
+Tokens:
+[Text=South CharacterOffsetBegin=162 CharacterOffsetEnd=167 PartOfSpeech=NNP Lemma=South NamedEntityTag=LOCATION]
+[Text=Jersey CharacterOffsetBegin=168 CharacterOffsetEnd=174 PartOfSpeech=NNP Lemma=Jersey NamedEntityTag=LOCATION]
+[Text=have CharacterOffsetBegin=175 CharacterOffsetEnd=179 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=always CharacterOffsetBegin=180 CharacterOffsetEnd=186 PartOfSpeech=RB Lemma=always NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=187 CharacterOffsetEnd=191 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=told CharacterOffsetBegin=192 CharacterOffsetEnd=196 PartOfSpeech=VBN Lemma=tell NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=197 CharacterOffsetEnd=201 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=changing CharacterOffsetBegin=202 CharacterOffsetEnd=210 PartOfSpeech=VBG Lemma=change NamedEntityTag=O]
+[Text=nomination CharacterOffsetBegin=211 CharacterOffsetEnd=221 PartOfSpeech=NN Lemma=nomination NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=222 CharacterOffsetEnd=224 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=225 CharacterOffsetEnd=228 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=weekend CharacterOffsetBegin=229 CharacterOffsetEnd=236 PartOfSpeech=NN Lemma=weekend NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=237 CharacterOffsetEnd=242 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=243 CharacterOffsetEnd=245 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=246 CharacterOffsetEnd=248 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=best CharacterOffsetBegin=249 CharacterOffsetEnd=253 PartOfSpeech=JJS Lemma=best NamedEntityTag=O]
+[Text=available CharacterOffsetBegin=254 CharacterOffsetEnd=263 PartOfSpeech=JJ Lemma=available NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=263 CharacterOffsetEnd=264 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP South) (NNP Jersey))
+    (VP (VBP have)
+      (ADVP (RB always))
+      (VP (VBN been)
+        (VP (VBN told)
+          (SBAR (IN that)
+            (S
+              (NP
+                (NP (VBG changing) (NN nomination))
+                (PP (IN on)
+                  (NP (DT the) (NN weekend))))
+              (VP (MD would)
+                (VP (VB be)
+                  (ADJP
+                    (ADVP (IN on) (JJS best))
+                    (JJ available)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, told-6)
+compound(Jersey-2, South-1)
+nsubjpass(told-6, Jersey-2)
+aux(told-6, have-3)
+advmod(told-6, always-4)
+auxpass(told-6, been-5)
+mark(available-17, that-7)
+amod(nomination-9, changing-8)
+nsubj(available-17, nomination-9)
+case(weekend-12, on-10)
+det(weekend-12, the-11)
+nmod:on(nomination-9, weekend-12)
+aux(available-17, would-13)
+cop(available-17, be-14)
+case(best-16, on-15)
+advmod(available-17, best-16)
+ccomp(told-6, available-17)
+punct(told-6, .-18)
+
+Extracted the following NER entity mentions:
+South Jersey	LOCATION
+
+Sentence #4 (31 tokens):
+Julie Punches from Sjersey due to
+her changes on the weekend is over at some of her CDC markets is asking to
+allocate the excess gas to CES agg pools.
+
+Tokens:
+[Text=Julie CharacterOffsetBegin=266 CharacterOffsetEnd=271 PartOfSpeech=NNP Lemma=Julie NamedEntityTag=PERSON]
+[Text=Punches CharacterOffsetBegin=272 CharacterOffsetEnd=279 PartOfSpeech=NNP Lemma=Punches NamedEntityTag=PERSON]
+[Text=from CharacterOffsetBegin=280 CharacterOffsetEnd=284 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Sjersey CharacterOffsetBegin=285 CharacterOffsetEnd=292 PartOfSpeech=NNP Lemma=Sjersey NamedEntityTag=LOCATION]
+[Text=due CharacterOffsetBegin=293 CharacterOffsetEnd=296 PartOfSpeech=JJ Lemma=due NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=297 CharacterOffsetEnd=299 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=300 CharacterOffsetEnd=303 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=changes CharacterOffsetBegin=304 CharacterOffsetEnd=311 PartOfSpeech=NNS Lemma=change NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=312 CharacterOffsetEnd=314 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=315 CharacterOffsetEnd=318 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=weekend CharacterOffsetBegin=319 CharacterOffsetEnd=326 PartOfSpeech=NN Lemma=weekend NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=327 CharacterOffsetEnd=329 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=330 CharacterOffsetEnd=334 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=335 CharacterOffsetEnd=337 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=338 CharacterOffsetEnd=342 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=343 CharacterOffsetEnd=345 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=346 CharacterOffsetEnd=349 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=CDC CharacterOffsetBegin=350 CharacterOffsetEnd=353 PartOfSpeech=NNP Lemma=CDC NamedEntityTag=ORGANIZATION]
+[Text=markets CharacterOffsetBegin=354 CharacterOffsetEnd=361 PartOfSpeech=NNS Lemma=market NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=362 CharacterOffsetEnd=364 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=asking CharacterOffsetBegin=365 CharacterOffsetEnd=371 PartOfSpeech=VBG Lemma=ask NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=372 CharacterOffsetEnd=374 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=allocate CharacterOffsetBegin=375 CharacterOffsetEnd=383 PartOfSpeech=VB Lemma=allocate NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=384 CharacterOffsetEnd=387 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=excess CharacterOffsetBegin=388 CharacterOffsetEnd=394 PartOfSpeech=JJ Lemma=excess NamedEntityTag=O]
+[Text=gas CharacterOffsetBegin=395 CharacterOffsetEnd=398 PartOfSpeech=NN Lemma=gas NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=399 CharacterOffsetEnd=401 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=CES CharacterOffsetBegin=402 CharacterOffsetEnd=405 PartOfSpeech=NNP Lemma=CES NamedEntityTag=O]
+[Text=agg CharacterOffsetBegin=406 CharacterOffsetEnd=409 PartOfSpeech=NN Lemma=agg NamedEntityTag=O]
+[Text=pools CharacterOffsetBegin=410 CharacterOffsetEnd=415 PartOfSpeech=NNS Lemma=pool NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=415 CharacterOffsetEnd=416 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Julie) (NNP Punches))
+      (PP (IN from)
+        (NP
+          (NP (NNP Sjersey))
+          (ADJP (JJ due)
+            (PP (TO to)
+              (NP (PRP$ her) (NNS changes))))
+          (PP (IN on)
+            (NP (DT the) (NN weekend)))
+          (SBAR
+            (S
+              (VP (VBZ is)
+                (ADJP (IN over)
+                  (PP (IN at)
+                    (NP
+                      (NP (DT some))
+                      (PP (IN of)
+                        (NP (PRP$ her) (NNP CDC) (NNS markets))))))))))))
+    (VP (VBZ is)
+      (VP (VBG asking)
+        (S
+          (VP (TO to)
+            (VP (VB allocate)
+              (NP (DT the) (JJ excess) (NN gas))
+              (PP (TO to)
+                (NP (NNP CES) (NN agg) (NNS pools))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, asking-21)
+compound(Punches-2, Julie-1)
+nsubj(asking-21, Punches-2)
+nsubj:xsubj(allocate-23, Punches-2)
+case(Sjersey-4, from-3)
+nmod:from(Punches-2, Sjersey-4)
+amod(Sjersey-4, due-5)
+case(changes-8, to-6)
+nmod:poss(changes-8, her-7)
+nmod:to(due-5, changes-8)
+case(weekend-11, on-9)
+det(weekend-11, the-10)
+nmod:on(Sjersey-4, weekend-11)
+cop(over-13, is-12)
+acl:relcl(Sjersey-4, over-13)
+case(some-15, at-14)
+nmod:at(over-13, some-15)
+case(markets-19, of-16)
+nmod:poss(markets-19, her-17)
+compound(markets-19, CDC-18)
+nmod:of(some-15, markets-19)
+aux(asking-21, is-20)
+mark(allocate-23, to-22)
+xcomp(asking-21, allocate-23)
+det(gas-26, the-24)
+amod(gas-26, excess-25)
+dobj(allocate-23, gas-26)
+case(pools-30, to-27)
+compound(pools-30, CES-28)
+compound(pools-30, agg-29)
+nmod:to(allocate-23, pools-30)
+punct(asking-21, .-31)
+
+Extracted the following NER entity mentions:
+Julie Punches	PERSON
+Sjersey	LOCATION
+CDC	ORGANIZATION
+her	PERSON
+her	PERSON
+
+Sentence #5 (8 tokens):
+Would this be something Enron would do???
+
+Tokens:
+[Text=Would CharacterOffsetBegin=417 CharacterOffsetEnd=422 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=423 CharacterOffsetEnd=427 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=428 CharacterOffsetEnd=430 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=something CharacterOffsetBegin=431 CharacterOffsetEnd=440 PartOfSpeech=NN Lemma=something NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=441 CharacterOffsetEnd=446 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=would CharacterOffsetBegin=447 CharacterOffsetEnd=452 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=453 CharacterOffsetEnd=455 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=??? CharacterOffsetBegin=455 CharacterOffsetEnd=458 PartOfSpeech=CD Lemma=??? NamedEntityTag=NUMBER]
+
+Constituency parse: 
+(ROOT
+  (SINV (MD Would)
+    (NP (DT this))
+    (VP (VB be)
+      (NP
+        (NP (NN something))
+        (SBAR
+          (S
+            (NP (NNP Enron))
+            (VP (MD would)
+              (VP (VB do)
+                (NP (CD ???))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, something-4)
+aux(something-4, Would-1)
+nsubj(something-4, this-2)
+cop(something-4, be-3)
+nsubj(do-7, Enron-5)
+aux(do-7, would-6)
+acl:relcl(something-4, do-7)
+dobj(do-7, ???-8)
+
+Extracted the following NER entity mentions:
+Enron	ORGANIZATION
+???	NUMBER
+
+Coreference set:
+	(4,7,[7,8]) -> (1,6,[5,9]), that is: "her" -> "a couple of weekends"
+	(4,17,[17,18]) -> (1,6,[5,9]), that is: "her" -> "a couple of weekends"
+
+Coreference set:
+	(2,14,[14,15]) -> (2,3,[3,5]), that is: "their" -> "the interconnect"
+
+Coreference set:
+	(4,11,[10,12]) -> (3,12,[11,13]), that is: "the weekend" -> "the weekend"

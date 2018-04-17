@@ -1,0 +1,430 @@
+Document: ID=809263.in (7 sentences, 97 tokens)
+
+Sentence #1 (10 tokens):
+Phillips Production has/had two seperate PNG deals:
+1.
+
+Tokens:
+[Text=Phillips CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Phillips NamedEntityTag=ORGANIZATION]
+[Text=Production CharacterOffsetBegin=9 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=Production NamedEntityTag=ORGANIZATION]
+[Text=has/had CharacterOffsetBegin=20 CharacterOffsetEnd=27 PartOfSpeech=VBD Lemma=has/had NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=seperate CharacterOffsetBegin=32 CharacterOffsetEnd=40 PartOfSpeech=JJ Lemma=seperate NamedEntityTag=O]
+[Text=PNG CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=NN Lemma=png NamedEntityTag=O]
+[Text=deals CharacterOffsetBegin=45 CharacterOffsetEnd=50 PartOfSpeech=NNS Lemma=deal NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=1 CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=CD Lemma=1 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=. CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Phillips) (NNP Production))
+    (VP (VBD has/had)
+      (NP
+        (NP (CD two) (JJ seperate) (NN PNG) (NNS deals))
+        (: :)
+        (NP (CD 1))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, has/had-3)
+compound(Production-2, Phillips-1)
+nsubj(has/had-3, Production-2)
+nummod(deals-7, two-4)
+amod(deals-7, seperate-5)
+compound(deals-7, PNG-6)
+dobj(has/had-3, deals-7)
+punct(deals-7, :-8)
+dep(deals-7, 1-9)
+punct(has/had-3, .-10)
+
+Extracted the following NER entity mentions:
+Phillips Production	ORGANIZATION
+two	NUMBER
+1	NUMBER
+
+Sentence #2 (13 tokens):
+500 MCFD; $2.82/MCF; 1/1/00 - 6/30/00
+2.
+
+Tokens:
+[Text=500 CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=CD Lemma=500 NamedEntityTag=NUMBER NormalizedNamedEntityTag=500.0]
+[Text=MCFD CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=NN Lemma=mcfd NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=64 CharacterOffsetEnd=65 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$2.82]
+[Text=2.82 CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=CD Lemma=2.82 NamedEntityTag=MONEY NormalizedNamedEntityTag=$2.82]
+[Text=/ CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=: Lemma=/ NamedEntityTag=O]
+[Text=MCF CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=NN Lemma=mcf NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=1/1/00 CharacterOffsetBegin=77 CharacterOffsetEnd=83 PartOfSpeech=CD Lemma=1/1/00 NamedEntityTag=NUMBER]
+[Text=- CharacterOffsetBegin=84 CharacterOffsetEnd=85 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=6/30/00 CharacterOffsetBegin=86 CharacterOffsetEnd=93 PartOfSpeech=CD Lemma=6/30/00 NamedEntityTag=NUMBER]
+[Text=2 CharacterOffsetBegin=94 CharacterOffsetEnd=95 PartOfSpeech=CD Lemma=2 NamedEntityTag=NUMBER]
+[Text=. CharacterOffsetBegin=95 CharacterOffsetEnd=96 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP
+      (NP (CD 500) (NN MCFD))
+      (: ;)
+      (NP ($ $) (CD 2.82)))
+    (: /)
+    (NP
+      (NP (NN MCF))
+      (: ;)
+      (NP
+        (NP (CD 1/1/00))
+        (: -)
+        (NP
+          (QP (CD 6/30/00) (CD 2)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, MCFD-2)
+nummod(MCFD-2, 500-1)
+punct(MCFD-2, ;-3)
+dep(2.82-5, $-4)
+dep(MCFD-2, 2.82-5)
+punct(MCFD-2, /-6)
+dep(MCFD-2, MCF-7)
+punct(MCF-7, ;-8)
+dep(MCF-7, 1/1/00-9)
+punct(1/1/00-9, --10)
+compound(2-12, 6/30/00-11)
+dep(1/1/00-9, 2-12)
+punct(MCFD-2, .-13)
+
+Extracted the following NER entity mentions:
+500	NUMBER
+$2.82	MONEY
+1/1/00	NUMBER
+6/30/00 2	NUMBER
+
+Sentence #3 (31 tokens):
+300 MCFD;  $2.95/MCF;  1/1/00 - 11/30/00
+To my knowledge, PNG does not send out production information to either the
+producer or the pool operator.
+
+Tokens:
+[Text=300 CharacterOffsetBegin=98 CharacterOffsetEnd=101 PartOfSpeech=CD Lemma=300 NamedEntityTag=NUMBER NormalizedNamedEntityTag=300.0]
+[Text=MCFD CharacterOffsetBegin=102 CharacterOffsetEnd=106 PartOfSpeech=NN Lemma=mcfd NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=106 CharacterOffsetEnd=107 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=109 CharacterOffsetEnd=110 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$2.95]
+[Text=2.95 CharacterOffsetBegin=110 CharacterOffsetEnd=114 PartOfSpeech=CD Lemma=2.95 NamedEntityTag=MONEY NormalizedNamedEntityTag=$2.95]
+[Text=/ CharacterOffsetBegin=114 CharacterOffsetEnd=115 PartOfSpeech=: Lemma=/ NamedEntityTag=O]
+[Text=MCF CharacterOffsetBegin=115 CharacterOffsetEnd=118 PartOfSpeech=NN Lemma=mcf NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=118 CharacterOffsetEnd=119 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=1/1/00 CharacterOffsetBegin=121 CharacterOffsetEnd=127 PartOfSpeech=CD Lemma=1/1/00 NamedEntityTag=NUMBER]
+[Text=- CharacterOffsetBegin=128 CharacterOffsetEnd=129 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=11/30/00 CharacterOffsetBegin=130 CharacterOffsetEnd=138 PartOfSpeech=CD Lemma=11/30/00 NamedEntityTag=DATE NormalizedNamedEntityTag=20001130]
+[Text=To CharacterOffsetBegin=139 CharacterOffsetEnd=141 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=142 CharacterOffsetEnd=144 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=knowledge CharacterOffsetBegin=145 CharacterOffsetEnd=154 PartOfSpeech=NN Lemma=knowledge NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=154 CharacterOffsetEnd=155 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=PNG CharacterOffsetBegin=156 CharacterOffsetEnd=159 PartOfSpeech=NN Lemma=png NamedEntityTag=ORGANIZATION]
+[Text=does CharacterOffsetBegin=160 CharacterOffsetEnd=164 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=165 CharacterOffsetEnd=168 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=send CharacterOffsetBegin=169 CharacterOffsetEnd=173 PartOfSpeech=VB Lemma=send NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=174 CharacterOffsetEnd=177 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=production CharacterOffsetBegin=178 CharacterOffsetEnd=188 PartOfSpeech=NN Lemma=production NamedEntityTag=O]
+[Text=information CharacterOffsetBegin=189 CharacterOffsetEnd=200 PartOfSpeech=NN Lemma=information NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=201 CharacterOffsetEnd=203 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=either CharacterOffsetBegin=204 CharacterOffsetEnd=210 PartOfSpeech=CC Lemma=either NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=211 CharacterOffsetEnd=214 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=producer CharacterOffsetBegin=215 CharacterOffsetEnd=223 PartOfSpeech=NN Lemma=producer NamedEntityTag=TITLE]
+[Text=or CharacterOffsetBegin=224 CharacterOffsetEnd=226 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=227 CharacterOffsetEnd=230 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=pool CharacterOffsetBegin=231 CharacterOffsetEnd=235 PartOfSpeech=NN Lemma=pool NamedEntityTag=O]
+[Text=operator CharacterOffsetBegin=236 CharacterOffsetEnd=244 PartOfSpeech=NN Lemma=operator NamedEntityTag=TITLE]
+[Text=. CharacterOffsetBegin=244 CharacterOffsetEnd=245 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (CD 300) (NN MCFD))
+    (: ;)
+    (NP
+      (NP ($ $) (CD 2.95))
+      (PRN (: /)
+        (NP
+          (NP (NN MCF))
+          (: ;)
+          (NP (CD 1/1/00)))
+        (: -))
+      (SBAR
+        (S
+          (NP
+            (NP (CD 11/30/00))
+            (PP (TO To)
+              (NP
+                (NP (PRP$ my) (NN knowledge))
+                (, ,)
+                (NP (NN PNG)))))
+          (VP (VBZ does) (RB not)
+            (VP (VB send)
+              (PRT (RP out))
+              (NP (NN production) (NN information))
+              (PP (TO to)
+                (NP (CC either)
+                  (NP (DT the) (NN producer))
+                  (CC or)
+                  (NP (DT the) (NN pool) (NN operator)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, MCFD-2)
+nummod(MCFD-2, 300-1)
+punct(MCFD-2, ;-3)
+dep(2.95-5, $-4)
+dep(MCFD-2, 2.95-5)
+punct(MCF-7, /-6)
+dep(2.95-5, MCF-7)
+punct(MCF-7, ;-8)
+dep(MCF-7, 1/1/00-9)
+punct(MCF-7, --10)
+nsubj(send-19, 11/30/00-11)
+case(knowledge-14, To-12)
+nmod:poss(knowledge-14, my-13)
+nmod:to(11/30/00-11, knowledge-14)
+punct(knowledge-14, ,-15)
+appos(knowledge-14, PNG-16)
+aux(send-19, does-17)
+neg(send-19, not-18)
+acl:relcl(2.95-5, send-19)
+compound:prt(send-19, out-20)
+compound(information-22, production-21)
+dobj(send-19, information-22)
+case(producer-26, to-23)
+cc:preconj(producer-26, either-24)
+det(producer-26, the-25)
+nmod:to(send-19, producer-26)
+cc(producer-26, or-27)
+det(operator-30, the-28)
+compound(operator-30, pool-29)
+nmod:to(send-19, operator-30)
+conj:or(producer-26, operator-30)
+punct(MCFD-2, .-31)
+
+Extracted the following NER entity mentions:
+300	NUMBER
+$2.95	MONEY
+1/1/00	NUMBER
+11/30/00	DATE
+PNG	ORGANIZATION
+producer	TITLE
+operator	TITLE
+
+Sentence #4 (8 tokens):
+This information should be available on
+E-Script.
+
+Tokens:
+[Text=This CharacterOffsetBegin=247 CharacterOffsetEnd=251 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=information CharacterOffsetBegin=252 CharacterOffsetEnd=263 PartOfSpeech=NN Lemma=information NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=264 CharacterOffsetEnd=270 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=271 CharacterOffsetEnd=273 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=available CharacterOffsetBegin=274 CharacterOffsetEnd=283 PartOfSpeech=JJ Lemma=available NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=284 CharacterOffsetEnd=286 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=E-Script CharacterOffsetBegin=287 CharacterOffsetEnd=295 PartOfSpeech=NN Lemma=e-script NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=295 CharacterOffsetEnd=296 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This) (NN information))
+    (VP (MD should)
+      (VP (VB be)
+        (ADJP (JJ available)
+          (PP (IN on)
+            (NP (NN E-Script))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, available-5)
+det(information-2, This-1)
+nsubj(available-5, information-2)
+aux(available-5, should-3)
+cop(available-5, be-4)
+case(E-Script-7, on-6)
+nmod:on(available-5, E-Script-7)
+punct(available-5, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (22 tokens):
+Phillips gets their production volumes (which they use to create our
+invoice) from the company integrating the meter charts.
+
+Tokens:
+[Text=Phillips CharacterOffsetBegin=297 CharacterOffsetEnd=305 PartOfSpeech=NNP Lemma=Phillips NamedEntityTag=ORGANIZATION]
+[Text=gets CharacterOffsetBegin=306 CharacterOffsetEnd=310 PartOfSpeech=VBZ Lemma=get NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=311 CharacterOffsetEnd=316 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=production CharacterOffsetBegin=317 CharacterOffsetEnd=327 PartOfSpeech=NN Lemma=production NamedEntityTag=O]
+[Text=volumes CharacterOffsetBegin=328 CharacterOffsetEnd=335 PartOfSpeech=NNS Lemma=volume NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=336 CharacterOffsetEnd=337 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=337 CharacterOffsetEnd=342 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=343 CharacterOffsetEnd=347 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=use CharacterOffsetBegin=348 CharacterOffsetEnd=351 PartOfSpeech=VBP Lemma=use NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=352 CharacterOffsetEnd=354 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=create CharacterOffsetBegin=355 CharacterOffsetEnd=361 PartOfSpeech=VB Lemma=create NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=362 CharacterOffsetEnd=365 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=invoice CharacterOffsetBegin=366 CharacterOffsetEnd=373 PartOfSpeech=NN Lemma=invoice NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=373 CharacterOffsetEnd=374 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=375 CharacterOffsetEnd=379 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=380 CharacterOffsetEnd=383 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=company CharacterOffsetBegin=384 CharacterOffsetEnd=391 PartOfSpeech=NN Lemma=company NamedEntityTag=O]
+[Text=integrating CharacterOffsetBegin=392 CharacterOffsetEnd=403 PartOfSpeech=VBG Lemma=integrate NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=404 CharacterOffsetEnd=407 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=meter CharacterOffsetBegin=408 CharacterOffsetEnd=413 PartOfSpeech=NN Lemma=meter NamedEntityTag=O]
+[Text=charts CharacterOffsetBegin=414 CharacterOffsetEnd=420 PartOfSpeech=NNS Lemma=chart NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=420 CharacterOffsetEnd=421 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Phillips))
+    (VP (VBZ gets)
+      (NP
+        (NP (PRP$ their) (NN production) (NNS volumes))
+        (PRN (-LRB- -LRB-)
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (NP (PRP they))
+              (VP (VBP use)
+                (S
+                  (VP (TO to)
+                    (VP (VB create)
+                      (NP (PRP$ our) (NN invoice))))))))
+          (-RRB- -RRB-))
+        (PP (IN from)
+          (NP
+            (NP (DT the) (NN company))
+            (VP (VBG integrating)
+              (NP (DT the) (NN meter) (NNS charts)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, gets-2)
+nsubj(gets-2, Phillips-1)
+nmod:poss(volumes-5, their-3)
+compound(volumes-5, production-4)
+dobj(gets-2, volumes-5)
+punct(use-9, -LRB--6)
+dobj(use-9, which-7)
+nsubj:xsubj(create-11, which-7)
+nsubj(use-9, they-8)
+dep(volumes-5, use-9)
+mark(create-11, to-10)
+xcomp(use-9, create-11)
+nmod:poss(invoice-13, our-12)
+dobj(create-11, invoice-13)
+punct(use-9, -RRB--14)
+case(company-17, from-15)
+det(company-17, the-16)
+nmod:from(volumes-5, company-17)
+acl(company-17, integrating-18)
+det(charts-21, the-19)
+compound(charts-21, meter-20)
+dobj(integrating-18, charts-21)
+punct(gets-2, .-22)
+
+Extracted the following NER entity mentions:
+Phillips	ORGANIZATION
+
+Sentence #6 (12 tokens):
+I beleive that this
+is the same information provide to PNG.
+
+Tokens:
+[Text=I CharacterOffsetBegin=423 CharacterOffsetEnd=424 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=beleive CharacterOffsetBegin=425 CharacterOffsetEnd=432 PartOfSpeech=VBP Lemma=beleive NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=433 CharacterOffsetEnd=437 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=438 CharacterOffsetEnd=442 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=443 CharacterOffsetEnd=445 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=446 CharacterOffsetEnd=449 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=same CharacterOffsetBegin=450 CharacterOffsetEnd=454 PartOfSpeech=JJ Lemma=same NamedEntityTag=O]
+[Text=information CharacterOffsetBegin=455 CharacterOffsetEnd=466 PartOfSpeech=NN Lemma=information NamedEntityTag=O]
+[Text=provide CharacterOffsetBegin=467 CharacterOffsetEnd=474 PartOfSpeech=VBP Lemma=provide NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=475 CharacterOffsetEnd=477 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=PNG CharacterOffsetBegin=478 CharacterOffsetEnd=481 PartOfSpeech=NNP Lemma=PNG NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=481 CharacterOffsetEnd=482 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP beleive)
+      (SBAR (IN that)
+        (S
+          (NP (DT this))
+          (VP (VBZ is)
+            (NP
+              (NP (DT the) (JJ same) (NN information))
+              (SBAR
+                (S
+                  (VP (VBP provide)
+                    (PP (TO to)
+                      (NP (NNP PNG)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, beleive-2)
+nsubj(beleive-2, I-1)
+mark(information-8, that-3)
+nsubj(information-8, this-4)
+cop(information-8, is-5)
+det(information-8, the-6)
+amod(information-8, same-7)
+ccomp(beleive-2, information-8)
+acl:relcl(information-8, provide-9)
+case(PNG-11, to-10)
+nmod:to(provide-9, PNG-11)
+punct(beleive-2, .-12)
+
+Extracted the following NER entity mentions:
+PNG	ORGANIZATION
+
+Sentence #7 (1 tokens):
+John
+
+Tokens:
+[Text=John CharacterOffsetBegin=483 CharacterOffsetEnd=487 PartOfSpeech=NNP Lemma=John NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP John)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, John-1)
+
+Extracted the following NER entity mentions:
+John	PERSON
+
+Coreference set:
+	(3,7,[7,10]) -> (2,7,[7,13]), that is: "MCF ; 1/1/00" -> "MCF ; 1/1/00 - 6/30/00 2"
+
+Coreference set:
+	(3,9,[9,10]) -> (2,9,[9,13]), that is: "1/1/00" -> "1/1/00 - 6/30/00 2"
+
+Coreference set:
+	(6,1,[1,2]) -> (3,13,[13,14]), that is: "I" -> "my"
+
+Coreference set:
+	(4,2,[1,3]) -> (3,22,[21,23]), that is: "This information" -> "production information"
+
+Coreference set:
+	(5,3,[3,4]) -> (3,26,[24,31]), that is: "their" -> "either the producer or the pool operator"
+	(5,8,[8,9]) -> (3,26,[24,31]), that is: "they" -> "either the producer or the pool operator"
+
+Coreference set:
+	(6,4,[4,5]) -> (6,8,[6,12]), that is: "this" -> "the same information provide to PNG"

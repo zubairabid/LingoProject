@@ -1,0 +1,1195 @@
+Document: ID=200613.in (20 sentences, 281 tokens)
+
+Sentence #1 (10 tokens):
+HMPC (China)--plant has been sold.
+
+Tokens:
+[Text=HMPC CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NN Lemma=hmpc NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=China CharacterOffsetBegin=6 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=China NamedEntityTag=COUNTRY]
+[Text=-RRB- CharacterOffsetBegin=11 CharacterOffsetEnd=12 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=plant CharacterOffsetBegin=14 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=plant NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=sold CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=VBN Lemma=sell NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NN HMPC))
+    (PRN (-LRB- -LRB-)
+      (NP (NNP China))
+      (-RRB- -RRB-))
+    (: --)
+    (NP
+      (NP (NN plant))
+      (SBAR
+        (S
+          (VP (VBZ has)
+            (VP (VBN been)
+              (VP (VBN sold)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, HMPC-1)
+punct(China-3, -LRB--2)
+appos(HMPC-1, China-3)
+punct(China-3, -RRB--4)
+punct(HMPC-1, ---5)
+dep(HMPC-1, plant-6)
+aux(sold-9, has-7)
+auxpass(sold-9, been-8)
+acl:relcl(plant-6, sold-9)
+punct(HMPC-1, .-10)
+
+Extracted the following NER entity mentions:
+China	COUNTRY
+
+Sentence #2 (15 tokens):
+When funds are transferred we should
+receive approximately $78,000 in past due interest.
+
+Tokens:
+[Text=When CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=funds CharacterOffsetBegin=40 CharacterOffsetEnd=45 PartOfSpeech=NNS Lemma=fund NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=transferred CharacterOffsetBegin=50 CharacterOffsetEnd=61 PartOfSpeech=VBN Lemma=transfer NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=62 CharacterOffsetEnd=64 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=65 CharacterOffsetEnd=71 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=receive CharacterOffsetBegin=72 CharacterOffsetEnd=79 PartOfSpeech=VB Lemma=receive NamedEntityTag=O]
+[Text=approximately CharacterOffsetBegin=80 CharacterOffsetEnd=93 PartOfSpeech=RB Lemma=approximately NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=94 CharacterOffsetEnd=95 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=~$78000.0]
+[Text=78,000 CharacterOffsetBegin=95 CharacterOffsetEnd=101 PartOfSpeech=CD Lemma=78,000 NamedEntityTag=MONEY NormalizedNamedEntityTag=~$78000.0]
+[Text=in CharacterOffsetBegin=102 CharacterOffsetEnd=104 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=past CharacterOffsetBegin=105 CharacterOffsetEnd=109 PartOfSpeech=NN Lemma=past NamedEntityTag=O]
+[Text=due CharacterOffsetBegin=110 CharacterOffsetEnd=113 PartOfSpeech=JJ Lemma=due NamedEntityTag=O]
+[Text=interest CharacterOffsetBegin=114 CharacterOffsetEnd=122 PartOfSpeech=NN Lemma=interest NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=122 CharacterOffsetEnd=123 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (NNS funds))
+        (VP (VBP are)
+          (VP (VBN transferred)))))
+    (NP (PRP we))
+    (VP (MD should)
+      (VP (VB receive)
+        (NP
+          (NP
+            (QP (RB approximately) ($ $) (CD 78,000)))
+          (PP (IN in)
+            (NP
+              (ADJP (NN past) (JJ due))
+              (NN interest))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, receive-7)
+advmod(transferred-4, When-1)
+nsubjpass(transferred-4, funds-2)
+auxpass(transferred-4, are-3)
+advcl(receive-7, transferred-4)
+nsubj(receive-7, we-5)
+aux(receive-7, should-6)
+advmod($-9, approximately-8)
+dobj(receive-7, $-9)
+nummod($-9, 78,000-10)
+case(interest-14, in-11)
+nmod:npmod(due-13, past-12)
+amod(interest-14, due-13)
+nmod:in($-9, interest-14)
+punct(receive-7, .-15)
+
+Extracted the following NER entity mentions:
+$78,000	MONEY
+
+Sentence #3 (20 tokens):
+DPC (India)--still missing the January fuel management fee due to dispute
+between DPC and MSEB.
+
+Tokens:
+[Text=DPC CharacterOffsetBegin=125 CharacterOffsetEnd=128 PartOfSpeech=NNP Lemma=DPC NamedEntityTag=ORGANIZATION]
+[Text=-LRB- CharacterOffsetBegin=129 CharacterOffsetEnd=130 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=India CharacterOffsetBegin=130 CharacterOffsetEnd=135 PartOfSpeech=NNP Lemma=India NamedEntityTag=COUNTRY]
+[Text=-RRB- CharacterOffsetBegin=135 CharacterOffsetEnd=136 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=136 CharacterOffsetEnd=138 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=138 CharacterOffsetEnd=143 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=missing CharacterOffsetBegin=144 CharacterOffsetEnd=151 PartOfSpeech=VBG Lemma=miss NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=152 CharacterOffsetEnd=155 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=January CharacterOffsetBegin=156 CharacterOffsetEnd=163 PartOfSpeech=NNP Lemma=January NamedEntityTag=DATE NormalizedNamedEntityTag=****01]
+[Text=fuel CharacterOffsetBegin=164 CharacterOffsetEnd=168 PartOfSpeech=NN Lemma=fuel NamedEntityTag=O]
+[Text=management CharacterOffsetBegin=169 CharacterOffsetEnd=179 PartOfSpeech=NN Lemma=management NamedEntityTag=O]
+[Text=fee CharacterOffsetBegin=180 CharacterOffsetEnd=183 PartOfSpeech=NN Lemma=fee NamedEntityTag=O]
+[Text=due CharacterOffsetBegin=184 CharacterOffsetEnd=187 PartOfSpeech=JJ Lemma=due NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=188 CharacterOffsetEnd=190 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=dispute CharacterOffsetBegin=191 CharacterOffsetEnd=198 PartOfSpeech=NN Lemma=dispute NamedEntityTag=O]
+[Text=between CharacterOffsetBegin=199 CharacterOffsetEnd=206 PartOfSpeech=IN Lemma=between NamedEntityTag=O]
+[Text=DPC CharacterOffsetBegin=207 CharacterOffsetEnd=210 PartOfSpeech=NNP Lemma=DPC NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=211 CharacterOffsetEnd=214 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=MSEB CharacterOffsetBegin=215 CharacterOffsetEnd=219 PartOfSpeech=NNP Lemma=MSEB NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=219 CharacterOffsetEnd=220 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP
+      (NP (NNP DPC))
+      (PRN (-LRB- -LRB-)
+        (NP (NNP India))
+        (-RRB- -RRB-)))
+    (: --)
+    (S
+      (VP
+        (ADVP (RB still))
+        (VBG missing)
+        (S
+          (NP (DT the) (NNP January) (NN fuel) (NN management) (NN fee))
+          (ADJP (JJ due)
+            (PP (TO to)
+              (NP
+                (NP (NN dispute))
+                (PP (IN between)
+                  (NP (NNP DPC)
+                    (CC and)
+                    (NNP MSEB)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, DPC-1)
+punct(India-3, -LRB--2)
+appos(DPC-1, India-3)
+punct(India-3, -RRB--4)
+punct(DPC-1, ---5)
+advmod(missing-7, still-6)
+parataxis(DPC-1, missing-7)
+det(fee-12, the-8)
+compound(fee-12, January-9)
+compound(fee-12, fuel-10)
+compound(fee-12, management-11)
+nsubj(due-13, fee-12)
+xcomp(missing-7, due-13)
+case(dispute-15, to-14)
+nmod:to(due-13, dispute-15)
+case(DPC-17, between-16)
+nmod:between(dispute-15, DPC-17)
+cc(DPC-17, and-18)
+nmod:between(dispute-15, MSEB-19)
+conj:and(DPC-17, MSEB-19)
+punct(DPC-1, .-20)
+
+Extracted the following NER entity mentions:
+DPC	ORGANIZATION
+India	COUNTRY
+January	DATE
+DPC	ORGANIZATION
+MSEB	ORGANIZATION
+
+Sentence #4 (6 tokens):
+Expect the April payment soon.
+
+Tokens:
+[Text=Expect CharacterOffsetBegin=221 CharacterOffsetEnd=227 PartOfSpeech=VB Lemma=expect NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=228 CharacterOffsetEnd=231 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=April CharacterOffsetBegin=232 CharacterOffsetEnd=237 PartOfSpeech=NNP Lemma=April NamedEntityTag=DATE NormalizedNamedEntityTag=****04]
+[Text=payment CharacterOffsetBegin=238 CharacterOffsetEnd=245 PartOfSpeech=NN Lemma=payment NamedEntityTag=O]
+[Text=soon CharacterOffsetBegin=246 CharacterOffsetEnd=250 PartOfSpeech=RB Lemma=soon NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=250 CharacterOffsetEnd=251 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Expect)
+      (NP (DT the) (NNP April) (NN payment))
+      (ADVP (RB soon)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Expect-1)
+det(payment-4, the-2)
+compound(payment-4, April-3)
+dobj(Expect-1, payment-4)
+advmod(Expect-1, soon-5)
+punct(Expect-1, .-6)
+
+Extracted the following NER entity mentions:
+April	DATE
+
+Sentence #5 (11 tokens):
+Assisting DPC with
+buying domestic gasoil and naphtha from IOC.
+
+Tokens:
+[Text=Assisting CharacterOffsetBegin=252 CharacterOffsetEnd=261 PartOfSpeech=VBG Lemma=assist NamedEntityTag=O]
+[Text=DPC CharacterOffsetBegin=262 CharacterOffsetEnd=265 PartOfSpeech=NNP Lemma=DPC NamedEntityTag=ORGANIZATION]
+[Text=with CharacterOffsetBegin=266 CharacterOffsetEnd=270 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=buying CharacterOffsetBegin=271 CharacterOffsetEnd=277 PartOfSpeech=VBG Lemma=buy NamedEntityTag=O]
+[Text=domestic CharacterOffsetBegin=278 CharacterOffsetEnd=286 PartOfSpeech=JJ Lemma=domestic NamedEntityTag=O]
+[Text=gasoil CharacterOffsetBegin=287 CharacterOffsetEnd=293 PartOfSpeech=NN Lemma=gasoil NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=294 CharacterOffsetEnd=297 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=naphtha CharacterOffsetBegin=298 CharacterOffsetEnd=305 PartOfSpeech=NN Lemma=naphtha NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=306 CharacterOffsetEnd=310 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=IOC CharacterOffsetBegin=311 CharacterOffsetEnd=314 PartOfSpeech=NNP Lemma=IOC NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=314 CharacterOffsetEnd=315 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBG Assisting)
+      (NP (NNP DPC))
+      (PP (IN with)
+        (S
+          (VP (VBG buying)
+            (NP (JJ domestic) (NN gasoil)
+              (CC and)
+              (NN naphtha))
+            (PP (IN from)
+              (NP (NNP IOC)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Assisting-1)
+dobj(Assisting-1, DPC-2)
+mark(buying-4, with-3)
+advcl:with(Assisting-1, buying-4)
+amod(gasoil-6, domestic-5)
+dobj(buying-4, gasoil-6)
+cc(gasoil-6, and-7)
+dobj(buying-4, naphtha-8)
+conj:and(gasoil-6, naphtha-8)
+case(IOC-10, from-9)
+nmod:from(buying-4, IOC-10)
+punct(Assisting-1, .-11)
+
+Extracted the following NER entity mentions:
+DPC	ORGANIZATION
+IOC	ORGANIZATION
+
+Sentence #6 (11 tokens):
+No formal contract in place due
+to the ongoing problems.
+
+Tokens:
+[Text=No CharacterOffsetBegin=316 CharacterOffsetEnd=318 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=formal CharacterOffsetBegin=319 CharacterOffsetEnd=325 PartOfSpeech=JJ Lemma=formal NamedEntityTag=O]
+[Text=contract CharacterOffsetBegin=326 CharacterOffsetEnd=334 PartOfSpeech=NN Lemma=contract NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=335 CharacterOffsetEnd=337 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=place CharacterOffsetBegin=338 CharacterOffsetEnd=343 PartOfSpeech=NN Lemma=place NamedEntityTag=O]
+[Text=due CharacterOffsetBegin=344 CharacterOffsetEnd=347 PartOfSpeech=JJ Lemma=due NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=348 CharacterOffsetEnd=350 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=351 CharacterOffsetEnd=354 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=ongoing CharacterOffsetBegin=355 CharacterOffsetEnd=362 PartOfSpeech=JJ Lemma=ongoing NamedEntityTag=O]
+[Text=problems CharacterOffsetBegin=363 CharacterOffsetEnd=371 PartOfSpeech=NNS Lemma=problem NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=371 CharacterOffsetEnd=372 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP
+      (NP (DT No) (JJ formal) (NN contract))
+      (PP (IN in)
+        (NP (NN place))))
+    (ADJP (JJ due)
+      (PP (TO to)
+        (NP (DT the) (JJ ongoing) (NNS problems))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, contract-3)
+neg(contract-3, No-1)
+amod(contract-3, formal-2)
+case(place-5, in-4)
+nmod:in(contract-3, place-5)
+amod(contract-3, due-6)
+case(problems-10, to-7)
+det(problems-10, the-8)
+amod(problems-10, ongoing-9)
+nmod:to(due-6, problems-10)
+punct(contract-3, .-11)
+
+Extracted the following NER entity mentions:
+
+Sentence #7 (19 tokens):
+Talk of testing the second power block (740 MW) on
+gasoil and then switching to naphtha.
+
+Tokens:
+[Text=Talk CharacterOffsetBegin=373 CharacterOffsetEnd=377 PartOfSpeech=NN Lemma=talk NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=378 CharacterOffsetEnd=380 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=testing CharacterOffsetBegin=381 CharacterOffsetEnd=388 PartOfSpeech=VBG Lemma=test NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=389 CharacterOffsetEnd=392 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=second CharacterOffsetBegin=393 CharacterOffsetEnd=399 PartOfSpeech=JJ Lemma=second NamedEntityTag=ORDINAL NormalizedNamedEntityTag=2.0]
+[Text=power CharacterOffsetBegin=400 CharacterOffsetEnd=405 PartOfSpeech=NN Lemma=power NamedEntityTag=O]
+[Text=block CharacterOffsetBegin=406 CharacterOffsetEnd=411 PartOfSpeech=NN Lemma=block NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=412 CharacterOffsetEnd=413 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=740 CharacterOffsetBegin=413 CharacterOffsetEnd=416 PartOfSpeech=CD Lemma=740 NamedEntityTag=NUMBER NormalizedNamedEntityTag=740.0]
+[Text=MW CharacterOffsetBegin=417 CharacterOffsetEnd=419 PartOfSpeech=NN Lemma=mw NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=419 CharacterOffsetEnd=420 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=421 CharacterOffsetEnd=423 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=gasoil CharacterOffsetBegin=424 CharacterOffsetEnd=430 PartOfSpeech=NN Lemma=gasoil NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=431 CharacterOffsetEnd=434 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=435 CharacterOffsetEnd=439 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=switching CharacterOffsetBegin=440 CharacterOffsetEnd=449 PartOfSpeech=VBG Lemma=switch NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=450 CharacterOffsetEnd=452 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=naphtha CharacterOffsetBegin=453 CharacterOffsetEnd=460 PartOfSpeech=NN Lemma=naphtha NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=460 CharacterOffsetEnd=461 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NN Talk))
+    (PP (IN of)
+      (S
+        (VP
+          (VP (VBG testing)
+            (NP
+              (NP
+                (NP (DT the) (JJ second) (NN power) (NN block))
+                (PRN (-LRB- -LRB-)
+                  (NP (CD 740) (NN MW))
+                  (-RRB- -RRB-)))
+              (PP (IN on)
+                (NP (NN gasoil)))))
+          (CC and)
+          (VP
+            (ADVP (RB then))
+            (VBG switching)
+            (PP (TO to)
+              (NP (NN naphtha)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Talk-1)
+mark(testing-3, of-2)
+acl:of(Talk-1, testing-3)
+det(block-7, the-4)
+amod(block-7, second-5)
+compound(block-7, power-6)
+dobj(testing-3, block-7)
+punct(MW-10, -LRB--8)
+nummod(MW-10, 740-9)
+appos(block-7, MW-10)
+punct(MW-10, -RRB--11)
+case(gasoil-13, on-12)
+nmod:on(block-7, gasoil-13)
+cc(testing-3, and-14)
+advmod(switching-16, then-15)
+acl:of(Talk-1, switching-16)
+conj:and(testing-3, switching-16)
+case(naphtha-18, to-17)
+nmod:to(switching-16, naphtha-18)
+punct(Talk-1, .-19)
+
+Extracted the following NER entity mentions:
+second	ORDINAL
+740	NUMBER
+
+Sentence #8 (9 tokens):
+Any use of LNG looks to be dead.
+
+Tokens:
+[Text=Any CharacterOffsetBegin=462 CharacterOffsetEnd=465 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=use CharacterOffsetBegin=466 CharacterOffsetEnd=469 PartOfSpeech=NN Lemma=use NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=470 CharacterOffsetEnd=472 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=LNG CharacterOffsetBegin=473 CharacterOffsetEnd=476 PartOfSpeech=NN Lemma=lng NamedEntityTag=O]
+[Text=looks CharacterOffsetBegin=477 CharacterOffsetEnd=482 PartOfSpeech=VBZ Lemma=look NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=483 CharacterOffsetEnd=485 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=486 CharacterOffsetEnd=488 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=dead CharacterOffsetBegin=489 CharacterOffsetEnd=493 PartOfSpeech=JJ Lemma=dead NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=493 CharacterOffsetEnd=494 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT Any) (NN use))
+      (PP (IN of)
+        (NP (NN LNG))))
+    (VP (VBZ looks)
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (ADJP (JJ dead))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, looks-5)
+det(use-2, Any-1)
+nsubj(looks-5, use-2)
+nsubj:xsubj(dead-8, use-2)
+case(LNG-4, of-3)
+nmod:of(use-2, LNG-4)
+mark(dead-8, to-6)
+cop(dead-8, be-7)
+xcomp(looks-5, dead-8)
+punct(looks-5, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #9 (16 tokens):
+Continue to offer DPC/MSEB risk management services to help stabilize energy
+component of the PPA.
+
+Tokens:
+[Text=Continue CharacterOffsetBegin=495 CharacterOffsetEnd=503 PartOfSpeech=VB Lemma=continue NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=504 CharacterOffsetEnd=506 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=offer CharacterOffsetBegin=507 CharacterOffsetEnd=512 PartOfSpeech=VB Lemma=offer NamedEntityTag=O]
+[Text=DPC/MSEB CharacterOffsetBegin=513 CharacterOffsetEnd=521 PartOfSpeech=NN Lemma=dpc/mseb NamedEntityTag=O]
+[Text=risk CharacterOffsetBegin=522 CharacterOffsetEnd=526 PartOfSpeech=NN Lemma=risk NamedEntityTag=O]
+[Text=management CharacterOffsetBegin=527 CharacterOffsetEnd=537 PartOfSpeech=NN Lemma=management NamedEntityTag=O]
+[Text=services CharacterOffsetBegin=538 CharacterOffsetEnd=546 PartOfSpeech=NNS Lemma=service NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=547 CharacterOffsetEnd=549 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=help CharacterOffsetBegin=550 CharacterOffsetEnd=554 PartOfSpeech=VB Lemma=help NamedEntityTag=O]
+[Text=stabilize CharacterOffsetBegin=555 CharacterOffsetEnd=564 PartOfSpeech=VB Lemma=stabilize NamedEntityTag=O]
+[Text=energy CharacterOffsetBegin=565 CharacterOffsetEnd=571 PartOfSpeech=NN Lemma=energy NamedEntityTag=O]
+[Text=component CharacterOffsetBegin=572 CharacterOffsetEnd=581 PartOfSpeech=NN Lemma=component NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=582 CharacterOffsetEnd=584 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=585 CharacterOffsetEnd=588 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=PPA CharacterOffsetBegin=589 CharacterOffsetEnd=592 PartOfSpeech=NNP Lemma=PPA NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=592 CharacterOffsetEnd=593 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Continue)
+      (S
+        (VP (TO to)
+          (VP (VB offer)
+            (S
+              (NP (NN DPC/MSEB) (NN risk) (NN management) (NNS services))
+              (VP (TO to)
+                (VP (VB help)
+                  (VP (VB stabilize)
+                    (NP
+                      (NP (NN energy) (NN component))
+                      (PP (IN of)
+                        (NP (DT the) (NNP PPA))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Continue-1)
+mark(offer-3, to-2)
+xcomp(Continue-1, offer-3)
+compound(services-7, DPC/MSEB-4)
+compound(services-7, risk-5)
+compound(services-7, management-6)
+dobj(offer-3, services-7)
+nsubj:xsubj(help-9, services-7)
+mark(help-9, to-8)
+xcomp(offer-3, help-9)
+xcomp(help-9, stabilize-10)
+compound(component-12, energy-11)
+dobj(stabilize-10, component-12)
+case(PPA-15, of-13)
+det(PPA-15, the-14)
+nmod:of(component-12, PPA-15)
+punct(Continue-1, .-16)
+
+Extracted the following NER entity mentions:
+PPA	ORGANIZATION
+
+Sentence #10 (20 tokens):
+If Enron shuts down the plant then we will have MTM
+issues on the balance of the FMA fees.
+
+Tokens:
+[Text=If CharacterOffsetBegin=595 CharacterOffsetEnd=597 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=598 CharacterOffsetEnd=603 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=shuts CharacterOffsetBegin=604 CharacterOffsetEnd=609 PartOfSpeech=VBZ Lemma=shut NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=610 CharacterOffsetEnd=614 PartOfSpeech=RP Lemma=down NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=615 CharacterOffsetEnd=618 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=plant CharacterOffsetBegin=619 CharacterOffsetEnd=624 PartOfSpeech=NN Lemma=plant NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=625 CharacterOffsetEnd=629 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=630 CharacterOffsetEnd=632 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=633 CharacterOffsetEnd=637 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=638 CharacterOffsetEnd=642 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=MTM CharacterOffsetBegin=643 CharacterOffsetEnd=646 PartOfSpeech=NNP Lemma=MTM NamedEntityTag=ORGANIZATION]
+[Text=issues CharacterOffsetBegin=647 CharacterOffsetEnd=653 PartOfSpeech=NNS Lemma=issue NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=654 CharacterOffsetEnd=656 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=657 CharacterOffsetEnd=660 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=balance CharacterOffsetBegin=661 CharacterOffsetEnd=668 PartOfSpeech=NN Lemma=balance NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=669 CharacterOffsetEnd=671 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=672 CharacterOffsetEnd=675 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=FMA CharacterOffsetBegin=676 CharacterOffsetEnd=679 PartOfSpeech=NNP Lemma=FMA NamedEntityTag=ORGANIZATION]
+[Text=fees CharacterOffsetBegin=680 CharacterOffsetEnd=684 PartOfSpeech=NNS Lemma=fee NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=684 CharacterOffsetEnd=685 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NNP Enron))
+        (VP (VBZ shuts)
+          (PRT (RP down))
+          (NP (DT the) (NN plant))
+          (NP-TMP (RB then)))))
+    (NP (PRP we))
+    (VP (MD will)
+      (VP (VB have)
+        (NP (NNP MTM) (NNS issues))
+        (PP (IN on)
+          (NP
+            (NP (DT the) (NN balance))
+            (PP (IN of)
+              (NP (DT the) (NNP FMA) (NNS fees)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-10)
+mark(shuts-3, If-1)
+nsubj(shuts-3, Enron-2)
+advcl:if(have-10, shuts-3)
+compound:prt(shuts-3, down-4)
+det(plant-6, the-5)
+dobj(shuts-3, plant-6)
+nmod:tmod(shuts-3, then-7)
+nsubj(have-10, we-8)
+aux(have-10, will-9)
+compound(issues-12, MTM-11)
+dobj(have-10, issues-12)
+case(balance-15, on-13)
+det(balance-15, the-14)
+nmod:on(have-10, balance-15)
+case(fees-19, of-16)
+det(fees-19, the-17)
+compound(fees-19, FMA-18)
+nmod:of(balance-15, fees-19)
+punct(have-10, .-20)
+
+Extracted the following NER entity mentions:
+Enron	ORGANIZATION
+MTM	ORGANIZATION
+FMA	ORGANIZATION
+
+Sentence #11 (4 tokens):
+SECLP (Dom.
+
+Tokens:
+[Text=SECLP CharacterOffsetBegin=687 CharacterOffsetEnd=692 PartOfSpeech=NN Lemma=seclp NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=693 CharacterOffsetEnd=694 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Dom CharacterOffsetBegin=694 CharacterOffsetEnd=697 PartOfSpeech=NNP Lemma=Dom NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=697 CharacterOffsetEnd=698 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NN SECLP))
+    (-LRB- -LRB-)
+    (NP (NNP Dom))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, SECLP-1)
+punct(SECLP-1, -LRB--2)
+dep(SECLP-1, Dom-3)
+punct(SECLP-1, .-4)
+
+Extracted the following NER entity mentions:
+
+Sentence #12 (15 tokens):
+Rep.)--still month to month on distillate and heavy fuel oil
+deliveries.
+
+Tokens:
+[Text=Rep. CharacterOffsetBegin=699 CharacterOffsetEnd=703 PartOfSpeech=NNP Lemma=Rep. NamedEntityTag=TITLE]
+[Text=-RRB- CharacterOffsetBegin=703 CharacterOffsetEnd=704 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=704 CharacterOffsetEnd=706 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=706 CharacterOffsetEnd=711 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=month CharacterOffsetBegin=712 CharacterOffsetEnd=717 PartOfSpeech=NN Lemma=month NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=718 CharacterOffsetEnd=720 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=month CharacterOffsetBegin=721 CharacterOffsetEnd=726 PartOfSpeech=NN Lemma=month NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=727 CharacterOffsetEnd=729 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=distillate CharacterOffsetBegin=730 CharacterOffsetEnd=740 PartOfSpeech=NN Lemma=distillate NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=741 CharacterOffsetEnd=744 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=heavy CharacterOffsetBegin=745 CharacterOffsetEnd=750 PartOfSpeech=JJ Lemma=heavy NamedEntityTag=O]
+[Text=fuel CharacterOffsetBegin=751 CharacterOffsetEnd=755 PartOfSpeech=NN Lemma=fuel NamedEntityTag=O]
+[Text=oil CharacterOffsetBegin=756 CharacterOffsetEnd=759 PartOfSpeech=NN Lemma=oil NamedEntityTag=O]
+[Text=deliveries CharacterOffsetBegin=760 CharacterOffsetEnd=770 PartOfSpeech=NNS Lemma=delivery NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=770 CharacterOffsetEnd=771 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Rep.) (-RRB- -RRB-))
+    (PRN (: --)
+      (FRAG
+        (ADVP (RB still))
+        (ADVP (NN month) (TO to) (NN month))))
+    (PP (IN on)
+      (NP (NN distillate)
+        (CC and)
+        (JJ heavy) (NN fuel) (NN oil) (NNS deliveries)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Rep.-1)
+punct(Rep.-1, -RRB--2)
+punct(still-4, ---3)
+dep(Rep.-1, still-4)
+dep(month-7, month-5)
+dep(month-7, to-6)
+dep(still-4, month-7)
+case(deliveries-14, on-8)
+compound(deliveries-14, distillate-9)
+cc(distillate-9, and-10)
+conj:and(distillate-9, heavy-11)
+compound(deliveries-14, heavy-11)
+compound(deliveries-14, fuel-12)
+compound(deliveries-14, oil-13)
+nmod:on(Rep.-1, deliveries-14)
+punct(Rep.-1, .-15)
+
+Extracted the following NER entity mentions:
+Rep.	TITLE
+
+Sentence #13 (13 tokens):
+Volume down for the year, but margin per barrel remains wide.
+
+Tokens:
+[Text=Volume CharacterOffsetBegin=772 CharacterOffsetEnd=778 PartOfSpeech=NN Lemma=volume NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=779 CharacterOffsetEnd=783 PartOfSpeech=IN Lemma=down NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=784 CharacterOffsetEnd=787 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=788 CharacterOffsetEnd=791 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=year CharacterOffsetBegin=792 CharacterOffsetEnd=796 PartOfSpeech=NN Lemma=year NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=796 CharacterOffsetEnd=797 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=798 CharacterOffsetEnd=801 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=margin CharacterOffsetBegin=802 CharacterOffsetEnd=808 PartOfSpeech=NN Lemma=margin NamedEntityTag=O]
+[Text=per CharacterOffsetBegin=809 CharacterOffsetEnd=812 PartOfSpeech=IN Lemma=per NamedEntityTag=O]
+[Text=barrel CharacterOffsetBegin=813 CharacterOffsetEnd=819 PartOfSpeech=NN Lemma=barrel NamedEntityTag=O]
+[Text=remains CharacterOffsetBegin=820 CharacterOffsetEnd=827 PartOfSpeech=VBZ Lemma=remain NamedEntityTag=O]
+[Text=wide CharacterOffsetBegin=828 CharacterOffsetEnd=832 PartOfSpeech=JJ Lemma=wide NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=832 CharacterOffsetEnd=833 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NN Volume))
+      (UCP
+        (ADVP (IN down)
+          (PP (IN for)
+            (NP (DT the) (NN year))))
+        (, ,)
+        (CC but)
+        (NP
+          (NP (NN margin))
+          (PP (IN per)
+            (NP (NN barrel))))))
+    (VP (VBZ remains)
+      (ADJP (JJ wide)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, remains-11)
+nsubj(remains-11, Volume-1)
+advmod(Volume-1, down-2)
+case(year-5, for-3)
+det(year-5, the-4)
+nmod:for(down-2, year-5)
+punct(down-2, ,-6)
+cc(down-2, but-7)
+advmod(Volume-1, margin-8)
+conj:but(down-2, margin-8)
+case(barrel-10, per-9)
+nmod:per(margin-8, barrel-10)
+xcomp(remains-11, wide-12)
+punct(remains-11, .-13)
+
+Extracted the following NER entity mentions:
+
+Sentence #14 (9 tokens):
+Still have large outstanding balance regarding fuel payments.
+
+Tokens:
+[Text=Still CharacterOffsetBegin=834 CharacterOffsetEnd=839 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=840 CharacterOffsetEnd=844 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=large CharacterOffsetBegin=845 CharacterOffsetEnd=850 PartOfSpeech=JJ Lemma=large NamedEntityTag=O]
+[Text=outstanding CharacterOffsetBegin=851 CharacterOffsetEnd=862 PartOfSpeech=JJ Lemma=outstanding NamedEntityTag=O]
+[Text=balance CharacterOffsetBegin=863 CharacterOffsetEnd=870 PartOfSpeech=NN Lemma=balance NamedEntityTag=O]
+[Text=regarding CharacterOffsetBegin=871 CharacterOffsetEnd=880 PartOfSpeech=VBG Lemma=regard NamedEntityTag=O]
+[Text=fuel CharacterOffsetBegin=881 CharacterOffsetEnd=885 PartOfSpeech=NN Lemma=fuel NamedEntityTag=O]
+[Text=payments CharacterOffsetBegin=886 CharacterOffsetEnd=894 PartOfSpeech=NNS Lemma=payment NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=894 CharacterOffsetEnd=895 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (RB Still))
+    (VP (VB have)
+      (NP
+        (NP (JJ large) (JJ outstanding) (NN balance))
+        (PP (VBG regarding)
+          (NP (NN fuel) (NNS payments)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-2)
+discourse(have-2, Still-1)
+amod(balance-5, large-3)
+amod(balance-5, outstanding-4)
+dobj(have-2, balance-5)
+case(payments-8, regarding-6)
+compound(payments-8, fuel-7)
+nmod:regarding(balance-5, payments-8)
+punct(have-2, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #15 (21 tokens):
+BLM (Panama)--plant having trouble getting paid and in turn has a large
+outstanding balance with us.
+
+Tokens:
+[Text=BLM CharacterOffsetBegin=897 CharacterOffsetEnd=900 PartOfSpeech=NNP Lemma=BLM NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=901 CharacterOffsetEnd=902 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Panama CharacterOffsetBegin=902 CharacterOffsetEnd=908 PartOfSpeech=NNP Lemma=Panama NamedEntityTag=COUNTRY]
+[Text=-RRB- CharacterOffsetBegin=908 CharacterOffsetEnd=909 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=909 CharacterOffsetEnd=911 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=plant CharacterOffsetBegin=911 CharacterOffsetEnd=916 PartOfSpeech=NN Lemma=plant NamedEntityTag=O]
+[Text=having CharacterOffsetBegin=917 CharacterOffsetEnd=923 PartOfSpeech=VBG Lemma=have NamedEntityTag=O]
+[Text=trouble CharacterOffsetBegin=924 CharacterOffsetEnd=931 PartOfSpeech=NN Lemma=trouble NamedEntityTag=O]
+[Text=getting CharacterOffsetBegin=932 CharacterOffsetEnd=939 PartOfSpeech=VBG Lemma=get NamedEntityTag=O]
+[Text=paid CharacterOffsetBegin=940 CharacterOffsetEnd=944 PartOfSpeech=VBN Lemma=pay NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=945 CharacterOffsetEnd=948 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=949 CharacterOffsetEnd=951 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=turn CharacterOffsetBegin=952 CharacterOffsetEnd=956 PartOfSpeech=NN Lemma=turn NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=957 CharacterOffsetEnd=960 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=961 CharacterOffsetEnd=962 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=large CharacterOffsetBegin=963 CharacterOffsetEnd=968 PartOfSpeech=JJ Lemma=large NamedEntityTag=O]
+[Text=outstanding CharacterOffsetBegin=969 CharacterOffsetEnd=980 PartOfSpeech=JJ Lemma=outstanding NamedEntityTag=O]
+[Text=balance CharacterOffsetBegin=981 CharacterOffsetEnd=988 PartOfSpeech=NN Lemma=balance NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=989 CharacterOffsetEnd=993 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=994 CharacterOffsetEnd=996 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=996 CharacterOffsetEnd=997 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP BLM))
+    (PRN (-LRB- -LRB-)
+      (NP (NNP Panama))
+      (-RRB- -RRB-))
+    (: --)
+    (NP
+      (NP (NN plant))
+      (VP (VBG having)
+        (NP (NN trouble))
+        (S
+          (VP (VBG getting)
+            (SBAR
+              (S
+                (S
+                  (VP (VBN paid)))
+                (CC and)
+                (S
+                  (PP (IN in)
+                    (NP (NN turn)))
+                  (VP (VBZ has)
+                    (NP
+                      (NP (DT a)
+                        (ADJP (JJ large) (JJ outstanding))
+                        (NN balance))
+                      (PP (IN with)
+                        (NP (PRP us))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, BLM-1)
+punct(Panama-3, -LRB--2)
+appos(BLM-1, Panama-3)
+punct(Panama-3, -RRB--4)
+punct(BLM-1, ---5)
+dep(BLM-1, plant-6)
+acl(plant-6, having-7)
+dobj(having-7, trouble-8)
+advcl(having-7, getting-9)
+dep(getting-9, paid-10)
+cc(paid-10, and-11)
+case(turn-13, in-12)
+nmod:in(has-14, turn-13)
+dep(getting-9, has-14)
+conj:and(paid-10, has-14)
+det(balance-18, a-15)
+amod(outstanding-17, large-16)
+amod(balance-18, outstanding-17)
+dobj(has-14, balance-18)
+case(us-20, with-19)
+nmod:with(balance-18, us-20)
+punct(BLM-1, .-21)
+
+Extracted the following NER entity mentions:
+Panama	COUNTRY
+
+Sentence #16 (16 tokens):
+New GM in place and hopefully he can work
+through some of their ongoing problems.
+
+Tokens:
+[Text=New CharacterOffsetBegin=998 CharacterOffsetEnd=1001 PartOfSpeech=NNP Lemma=New NamedEntityTag=O]
+[Text=GM CharacterOffsetBegin=1002 CharacterOffsetEnd=1004 PartOfSpeech=NNP Lemma=GM NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=1005 CharacterOffsetEnd=1007 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=place CharacterOffsetBegin=1008 CharacterOffsetEnd=1013 PartOfSpeech=NN Lemma=place NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1014 CharacterOffsetEnd=1017 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=hopefully CharacterOffsetBegin=1018 CharacterOffsetEnd=1027 PartOfSpeech=RB Lemma=hopefully NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=1028 CharacterOffsetEnd=1030 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=1031 CharacterOffsetEnd=1034 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=1035 CharacterOffsetEnd=1039 PartOfSpeech=VB Lemma=work NamedEntityTag=O]
+[Text=through CharacterOffsetBegin=1040 CharacterOffsetEnd=1047 PartOfSpeech=IN Lemma=through NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=1048 CharacterOffsetEnd=1052 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=1053 CharacterOffsetEnd=1055 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=1056 CharacterOffsetEnd=1061 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=ongoing CharacterOffsetBegin=1062 CharacterOffsetEnd=1069 PartOfSpeech=JJ Lemma=ongoing NamedEntityTag=O]
+[Text=problems CharacterOffsetBegin=1070 CharacterOffsetEnd=1078 PartOfSpeech=NNS Lemma=problem NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1078 CharacterOffsetEnd=1079 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP New) (NNP GM))
+      (PP (IN in)
+        (NP
+          (NP (NN place))
+          (CC and)
+          (ADVP (RB hopefully))
+          (NP (PRP he)))))
+    (VP (MD can)
+      (VP (VB work)
+        (PP (IN through)
+          (NP
+            (NP (DT some))
+            (PP (IN of)
+              (NP (PRP$ their) (JJ ongoing) (NNS problems)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, work-9)
+compound(GM-2, New-1)
+nsubj(work-9, GM-2)
+case(place-4, in-3)
+nmod:in(GM-2, place-4)
+cc(place-4, and-5)
+advmod(he-7, hopefully-6)
+nmod:in(GM-2, he-7)
+conj:and(place-4, he-7)
+aux(work-9, can-8)
+case(some-11, through-10)
+nmod:through(work-9, some-11)
+case(problems-15, of-12)
+nmod:poss(problems-15, their-13)
+amod(problems-15, ongoing-14)
+nmod:of(some-11, problems-15)
+punct(work-9, .-16)
+
+Extracted the following NER entity mentions:
+he	PERSON
+
+Sentence #17 (13 tokens):
+Empresa (Nicaragua)--back to back with Glencore working well.
+
+Tokens:
+[Text=Empresa CharacterOffsetBegin=1081 CharacterOffsetEnd=1088 PartOfSpeech=NNP Lemma=Empresa NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=1089 CharacterOffsetEnd=1090 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Nicaragua CharacterOffsetBegin=1090 CharacterOffsetEnd=1099 PartOfSpeech=NNP Lemma=Nicaragua NamedEntityTag=COUNTRY]
+[Text=-RRB- CharacterOffsetBegin=1099 CharacterOffsetEnd=1100 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=1100 CharacterOffsetEnd=1102 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=1102 CharacterOffsetEnd=1106 PartOfSpeech=RB Lemma=back NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1107 CharacterOffsetEnd=1109 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=1110 CharacterOffsetEnd=1114 PartOfSpeech=RB Lemma=back NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=1115 CharacterOffsetEnd=1119 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Glencore CharacterOffsetBegin=1120 CharacterOffsetEnd=1128 PartOfSpeech=NN Lemma=glencore NamedEntityTag=ORGANIZATION]
+[Text=working CharacterOffsetBegin=1129 CharacterOffsetEnd=1136 PartOfSpeech=VBG Lemma=work NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=1137 CharacterOffsetEnd=1141 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1141 CharacterOffsetEnd=1142 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Empresa))
+    (PRN (-LRB- -LRB-)
+      (NP (NNP Nicaragua))
+      (-RRB- -RRB-))
+    (: --)
+    (NP
+      (NP
+        (ADJP (RB back)
+          (PP (TO to)
+            (ADVP (RB back)))))
+      (PP (IN with)
+        (NP (NN Glencore)))
+      (VP (VBG working)
+        (ADVP (RB well))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Empresa-1)
+punct(Nicaragua-3, -LRB--2)
+appos(Empresa-1, Nicaragua-3)
+punct(Nicaragua-3, -RRB--4)
+punct(Empresa-1, ---5)
+dep(Empresa-1, back-6)
+case(back-8, to-7)
+advcl:to(back-6, back-8)
+case(Glencore-10, with-9)
+nmod:with(back-6, Glencore-10)
+acl(back-6, working-11)
+advmod(working-11, well-12)
+punct(Empresa-1, .-13)
+
+Extracted the following NER entity mentions:
+Nicaragua	COUNTRY
+Glencore	ORGANIZATION
+
+Sentence #18 (19 tokens):
+PQP LLC (Guatemala)--minor spec and timing issues with Glencore, but overall
+doing fine.
+
+Tokens:
+[Text=PQP CharacterOffsetBegin=1144 CharacterOffsetEnd=1147 PartOfSpeech=NN Lemma=pqp NamedEntityTag=O]
+[Text=LLC CharacterOffsetBegin=1148 CharacterOffsetEnd=1151 PartOfSpeech=NN Lemma=llc NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=1152 CharacterOffsetEnd=1153 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Guatemala CharacterOffsetBegin=1153 CharacterOffsetEnd=1162 PartOfSpeech=NN Lemma=guatemala NamedEntityTag=COUNTRY]
+[Text=-RRB- CharacterOffsetBegin=1162 CharacterOffsetEnd=1163 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=1163 CharacterOffsetEnd=1165 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=minor CharacterOffsetBegin=1165 CharacterOffsetEnd=1170 PartOfSpeech=JJ Lemma=minor NamedEntityTag=O]
+[Text=spec CharacterOffsetBegin=1171 CharacterOffsetEnd=1175 PartOfSpeech=NN Lemma=spec NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1176 CharacterOffsetEnd=1179 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=timing CharacterOffsetBegin=1180 CharacterOffsetEnd=1186 PartOfSpeech=NN Lemma=timing NamedEntityTag=O]
+[Text=issues CharacterOffsetBegin=1187 CharacterOffsetEnd=1193 PartOfSpeech=NNS Lemma=issue NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=1194 CharacterOffsetEnd=1198 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Glencore CharacterOffsetBegin=1199 CharacterOffsetEnd=1207 PartOfSpeech=NNP Lemma=Glencore NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=1207 CharacterOffsetEnd=1208 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=1209 CharacterOffsetEnd=1212 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=overall CharacterOffsetBegin=1213 CharacterOffsetEnd=1220 PartOfSpeech=JJ Lemma=overall NamedEntityTag=O]
+[Text=doing CharacterOffsetBegin=1221 CharacterOffsetEnd=1226 PartOfSpeech=VBG Lemma=do NamedEntityTag=O]
+[Text=fine CharacterOffsetBegin=1227 CharacterOffsetEnd=1231 PartOfSpeech=NN Lemma=fine NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1231 CharacterOffsetEnd=1232 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NN PQP) (NN LLC))
+    (PRN (-LRB- -LRB-)
+      (NP (NN Guatemala))
+      (-RRB- -RRB-))
+    (: --)
+    (NP
+      (NP
+        (NP (JJ minor) (NN spec)
+          (CC and)
+          (NN timing) (NNS issues))
+        (PP (IN with)
+          (NP (NNP Glencore))))
+      (PRN (, ,)
+        (CC but)
+        (ADJP (JJ overall)
+          (S
+            (VP (VBG doing)
+              (NP (NN fine)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, LLC-2)
+compound(LLC-2, PQP-1)
+punct(Guatemala-4, -LRB--3)
+appos(LLC-2, Guatemala-4)
+punct(Guatemala-4, -RRB--5)
+punct(LLC-2, ---6)
+amod(spec-8, minor-7)
+dep(LLC-2, spec-8)
+cc(spec-8, and-9)
+compound(issues-11, timing-10)
+dep(LLC-2, issues-11)
+conj:and(spec-8, issues-11)
+case(Glencore-13, with-12)
+nmod:with(spec-8, Glencore-13)
+punct(overall-16, ,-14)
+cc(overall-16, but-15)
+dep(spec-8, overall-16)
+dep(overall-16, doing-17)
+dobj(doing-17, fine-18)
+punct(LLC-2, .-19)
+
+Extracted the following NER entity mentions:
+Guatemala	COUNTRY
+Glencore	ORGANIZATION
+
+Sentence #19 (21 tokens):
+Working with Mariella Mahan to shift fuel operations on SECLP, Empresa, PQP
+and BLM to her asset group.
+
+Tokens:
+[Text=Working CharacterOffsetBegin=1234 CharacterOffsetEnd=1241 PartOfSpeech=VBG Lemma=work NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=1242 CharacterOffsetEnd=1246 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Mariella CharacterOffsetBegin=1247 CharacterOffsetEnd=1255 PartOfSpeech=NNP Lemma=Mariella NamedEntityTag=PERSON]
+[Text=Mahan CharacterOffsetBegin=1256 CharacterOffsetEnd=1261 PartOfSpeech=NNP Lemma=Mahan NamedEntityTag=PERSON]
+[Text=to CharacterOffsetBegin=1262 CharacterOffsetEnd=1264 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=shift CharacterOffsetBegin=1265 CharacterOffsetEnd=1270 PartOfSpeech=VB Lemma=shift NamedEntityTag=O]
+[Text=fuel CharacterOffsetBegin=1271 CharacterOffsetEnd=1275 PartOfSpeech=NN Lemma=fuel NamedEntityTag=O]
+[Text=operations CharacterOffsetBegin=1276 CharacterOffsetEnd=1286 PartOfSpeech=NNS Lemma=operation NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=1287 CharacterOffsetEnd=1289 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=SECLP CharacterOffsetBegin=1290 CharacterOffsetEnd=1295 PartOfSpeech=NN Lemma=seclp NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1295 CharacterOffsetEnd=1296 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Empresa CharacterOffsetBegin=1297 CharacterOffsetEnd=1304 PartOfSpeech=NNP Lemma=Empresa NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=1304 CharacterOffsetEnd=1305 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=PQP CharacterOffsetBegin=1306 CharacterOffsetEnd=1309 PartOfSpeech=NNP Lemma=PQP NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1310 CharacterOffsetEnd=1313 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=BLM CharacterOffsetBegin=1314 CharacterOffsetEnd=1317 PartOfSpeech=NNP Lemma=BLM NamedEntityTag=ORGANIZATION]
+[Text=to CharacterOffsetBegin=1318 CharacterOffsetEnd=1320 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=1321 CharacterOffsetEnd=1324 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=asset CharacterOffsetBegin=1325 CharacterOffsetEnd=1330 PartOfSpeech=NN Lemma=asset NamedEntityTag=O]
+[Text=group CharacterOffsetBegin=1331 CharacterOffsetEnd=1336 PartOfSpeech=NN Lemma=group NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1336 CharacterOffsetEnd=1337 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBG Working)
+      (PP (IN with)
+        (NP (NNP Mariella) (NNP Mahan)))
+      (S
+        (VP (TO to)
+          (VP (VB shift)
+            (NP (NN fuel) (NNS operations))
+            (PP (IN on)
+              (NP
+                (NP (NN SECLP))
+                (, ,)
+                (NP (NNP Empresa) (, ,) (NNP PQP)
+                  (CC and)
+                  (NNP BLM))))
+            (PP (TO to)
+              (NP (PRP$ her) (NN asset) (NN group)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Working-1)
+case(Mahan-4, with-2)
+compound(Mahan-4, Mariella-3)
+nmod:with(Working-1, Mahan-4)
+mark(shift-6, to-5)
+xcomp(Working-1, shift-6)
+compound(operations-8, fuel-7)
+dobj(shift-6, operations-8)
+case(SECLP-10, on-9)
+nmod:on(shift-6, SECLP-10)
+punct(SECLP-10, ,-11)
+appos(SECLP-10, Empresa-12)
+punct(Empresa-12, ,-13)
+appos(SECLP-10, PQP-14)
+conj:and(Empresa-12, PQP-14)
+cc(Empresa-12, and-15)
+appos(SECLP-10, BLM-16)
+conj:and(Empresa-12, BLM-16)
+case(group-20, to-17)
+nmod:poss(group-20, her-18)
+compound(group-20, asset-19)
+nmod:to(shift-6, group-20)
+punct(Working-1, .-21)
+
+Extracted the following NER entity mentions:
+Mariella Mahan	PERSON
+Empresa	LOCATION
+BLM	ORGANIZATION
+her	PERSON
+
+Sentence #20 (13 tokens):
+Continue to send out monthly accounts receivable spreadsheet to Enron Corp.
+credit.
+
+Tokens:
+[Text=Continue CharacterOffsetBegin=1339 CharacterOffsetEnd=1347 PartOfSpeech=VB Lemma=continue NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1348 CharacterOffsetEnd=1350 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=send CharacterOffsetBegin=1351 CharacterOffsetEnd=1355 PartOfSpeech=VB Lemma=send NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=1356 CharacterOffsetEnd=1359 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=monthly CharacterOffsetBegin=1360 CharacterOffsetEnd=1367 PartOfSpeech=JJ Lemma=monthly NamedEntityTag=O]
+[Text=accounts CharacterOffsetBegin=1368 CharacterOffsetEnd=1376 PartOfSpeech=NNS Lemma=account NamedEntityTag=O]
+[Text=receivable CharacterOffsetBegin=1377 CharacterOffsetEnd=1387 PartOfSpeech=JJ Lemma=receivable NamedEntityTag=O]
+[Text=spreadsheet CharacterOffsetBegin=1388 CharacterOffsetEnd=1399 PartOfSpeech=NN Lemma=spreadsheet NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1400 CharacterOffsetEnd=1402 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=1403 CharacterOffsetEnd=1408 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=Corp. CharacterOffsetBegin=1409 CharacterOffsetEnd=1414 PartOfSpeech=NNP Lemma=Corp. NamedEntityTag=ORGANIZATION]
+[Text=credit CharacterOffsetBegin=1415 CharacterOffsetEnd=1421 PartOfSpeech=NN Lemma=credit NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1421 CharacterOffsetEnd=1422 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Continue)
+      (S
+        (VP (TO to)
+          (VP (VB send)
+            (PRT (RP out))
+            (NP
+              (ADJP
+                (NP (JJ monthly) (NNS accounts))
+                (JJ receivable))
+              (NN spreadsheet))
+            (PP (TO to)
+              (NP (NNP Enron) (NNP Corp.) (NN credit)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Continue-1)
+mark(send-3, to-2)
+xcomp(Continue-1, send-3)
+compound:prt(send-3, out-4)
+amod(accounts-6, monthly-5)
+nmod:npmod(receivable-7, accounts-6)
+amod(spreadsheet-8, receivable-7)
+dobj(send-3, spreadsheet-8)
+case(credit-12, to-9)
+compound(credit-12, Enron-10)
+compound(credit-12, Corp.-11)
+nmod:to(send-3, credit-12)
+punct(Continue-1, .-13)
+
+Extracted the following NER entity mentions:
+Enron Corp.	ORGANIZATION
+
+Coreference set:
+	(1,6,[6,10]) -> (10,6,[5,7]), that is: "plant has been sold" -> "the plant"
+
+Coreference set:
+	(5,2,[2,3]) -> (3,17,[17,18]), that is: "DPC" -> "DPC"
+
+Coreference set:
+	(16,15,[13,16]) -> (6,10,[8,11]), that is: "their ongoing problems" -> "the ongoing problems"
+
+Coreference set:
+	(20,10,[10,12]) -> (10,2,[2,3]), that is: "Enron Corp." -> "Enron"
+
+Coreference set:
+	(15,1,[1,22]) -> (19,16,[16,17]), that is: "BLM -LRB- Panama -RRB- -- plant having trouble getting paid and in turn has a large outstanding balance with us ." -> "BLM"
+
+Coreference set:
+	(17,1,[1,14]) -> (19,12,[12,13]), that is: "Empresa -LRB- Nicaragua -RRB- -- back to back with Glencore working well ." -> "Empresa"
+
+Coreference set:
+	(19,18,[18,19]) -> (19,14,[14,15]), that is: "her" -> "PQP"

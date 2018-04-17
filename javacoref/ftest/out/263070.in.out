@@ -1,0 +1,115 @@
+Document: ID=263070.in (2 sentences, 31 tokens)
+
+Sentence #1 (7 tokens):
+I prefer the descriptor commercial support.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=prefer CharacterOffsetBegin=2 CharacterOffsetEnd=8 PartOfSpeech=VBP Lemma=prefer NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=descriptor CharacterOffsetBegin=13 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=descriptor NamedEntityTag=O]
+[Text=commercial CharacterOffsetBegin=24 CharacterOffsetEnd=34 PartOfSpeech=JJ Lemma=commercial NamedEntityTag=O]
+[Text=support CharacterOffsetBegin=35 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=support NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP prefer)
+      (NP (DT the) (NN descriptor) (JJ commercial) (NN support)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, prefer-2)
+nsubj(prefer-2, I-1)
+det(support-6, the-3)
+compound(support-6, descriptor-4)
+amod(support-6, commercial-5)
+dobj(prefer-2, support-6)
+punct(prefer-2, .-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (24 tokens):
+The performance of our staff is judged in terms of their contributions to the company's top commercial goals -- thus commercial support.
+
+Tokens:
+[Text=The CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=performance CharacterOffsetBegin=49 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=performance NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=64 CharacterOffsetEnd=67 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=staff CharacterOffsetBegin=68 CharacterOffsetEnd=73 PartOfSpeech=NN Lemma=staff NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=74 CharacterOffsetEnd=76 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=judged CharacterOffsetBegin=77 CharacterOffsetEnd=83 PartOfSpeech=VBN Lemma=judge NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=84 CharacterOffsetEnd=86 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=terms CharacterOffsetBegin=87 CharacterOffsetEnd=92 PartOfSpeech=NNS Lemma=term NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=93 CharacterOffsetEnd=95 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=96 CharacterOffsetEnd=101 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=contributions CharacterOffsetBegin=102 CharacterOffsetEnd=115 PartOfSpeech=NNS Lemma=contribution NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=116 CharacterOffsetEnd=118 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=119 CharacterOffsetEnd=122 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=company CharacterOffsetBegin=123 CharacterOffsetEnd=130 PartOfSpeech=NN Lemma=company NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=130 CharacterOffsetEnd=132 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=top CharacterOffsetBegin=133 CharacterOffsetEnd=136 PartOfSpeech=JJ Lemma=top NamedEntityTag=O]
+[Text=commercial CharacterOffsetBegin=137 CharacterOffsetEnd=147 PartOfSpeech=JJ Lemma=commercial NamedEntityTag=O]
+[Text=goals CharacterOffsetBegin=148 CharacterOffsetEnd=153 PartOfSpeech=NNS Lemma=goal NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=154 CharacterOffsetEnd=156 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=thus CharacterOffsetBegin=157 CharacterOffsetEnd=161 PartOfSpeech=RB Lemma=thus NamedEntityTag=O]
+[Text=commercial CharacterOffsetBegin=162 CharacterOffsetEnd=172 PartOfSpeech=JJ Lemma=commercial NamedEntityTag=O]
+[Text=support CharacterOffsetBegin=173 CharacterOffsetEnd=180 PartOfSpeech=NN Lemma=support NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=180 CharacterOffsetEnd=181 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN performance))
+      (PP (IN of)
+        (NP (PRP$ our) (NN staff))))
+    (VP (VBZ is)
+      (VP (VBN judged)
+        (PP (IN in)
+          (NP
+            (NP (NNS terms))
+            (PP (IN of)
+              (NP (PRP$ their) (NNS contributions)))))
+        (PP (TO to)
+          (NP
+            (NP
+              (NP (DT the) (NN company) (POS 's))
+              (JJ top) (JJ commercial) (NNS goals))
+            (PRN (: --)
+              (ADVP (RB thus))
+              (NP (JJ commercial) (NN support)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, judged-7)
+det(performance-2, The-1)
+nsubjpass(judged-7, performance-2)
+case(staff-5, of-3)
+nmod:poss(staff-5, our-4)
+nmod:of(performance-2, staff-5)
+auxpass(judged-7, is-6)
+case(terms-9, in-8)
+nmod:in(judged-7, terms-9)
+case(contributions-12, of-10)
+nmod:poss(contributions-12, their-11)
+nmod:of(terms-9, contributions-12)
+case(goals-19, to-13)
+det(company-15, the-14)
+nmod:poss(goals-19, company-15)
+case(company-15, 's-16)
+amod(goals-19, top-17)
+amod(goals-19, commercial-18)
+nmod:to(judged-7, goals-19)
+punct(support-23, ---20)
+dep(support-23, thus-21)
+amod(support-23, commercial-22)
+dep(goals-19, support-23)
+punct(judged-7, .-24)
+
+Extracted the following NER entity mentions:

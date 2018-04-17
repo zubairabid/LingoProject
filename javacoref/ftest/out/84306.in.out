@@ -1,0 +1,211 @@
+Document: ID=84306.in (4 sentences, 47 tokens)
+
+Sentence #1 (18 tokens):
+Please note that Peco and Commonwealth Edison have assigned their generation assets to Exelon Generation Company LLC.
+
+Tokens:
+[Text=Please CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=note CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=NN Lemma=note NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=Peco CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=Peco NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Commonwealth CharacterOffsetBegin=26 CharacterOffsetEnd=38 PartOfSpeech=NNP Lemma=Commonwealth NamedEntityTag=ORGANIZATION]
+[Text=Edison CharacterOffsetBegin=39 CharacterOffsetEnd=45 PartOfSpeech=NNP Lemma=Edison NamedEntityTag=ORGANIZATION]
+[Text=have CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=assigned CharacterOffsetBegin=51 CharacterOffsetEnd=59 PartOfSpeech=VBN Lemma=assign NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=60 CharacterOffsetEnd=65 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=generation CharacterOffsetBegin=66 CharacterOffsetEnd=76 PartOfSpeech=NN Lemma=generation NamedEntityTag=O]
+[Text=assets CharacterOffsetBegin=77 CharacterOffsetEnd=83 PartOfSpeech=NNS Lemma=asset NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=84 CharacterOffsetEnd=86 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Exelon CharacterOffsetBegin=87 CharacterOffsetEnd=93 PartOfSpeech=NNP Lemma=Exelon NamedEntityTag=ORGANIZATION]
+[Text=Generation CharacterOffsetBegin=94 CharacterOffsetEnd=104 PartOfSpeech=NNP Lemma=Generation NamedEntityTag=ORGANIZATION]
+[Text=Company CharacterOffsetBegin=105 CharacterOffsetEnd=112 PartOfSpeech=NNP Lemma=Company NamedEntityTag=ORGANIZATION]
+[Text=LLC CharacterOffsetBegin=113 CharacterOffsetEnd=116 PartOfSpeech=NNP Lemma=LLC NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=116 CharacterOffsetEnd=117 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Please)
+      (NP (NN note))
+      (SBAR (IN that)
+        (S
+          (NP (NNP Peco)
+            (CC and)
+            (NNP Commonwealth) (NNP Edison))
+          (VP (VBP have)
+            (VP (VBN assigned)
+              (NP (PRP$ their) (NN generation) (NNS assets))
+              (PP (TO to)
+                (NP (NNP Exelon) (NNP Generation) (NNP Company) (NNP LLC))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Please-1)
+dobj(Please-1, note-2)
+mark(assigned-9, that-3)
+compound(Edison-7, Peco-4)
+cc(Peco-4, and-5)
+conj:and(Peco-4, Commonwealth-6)
+compound(Edison-7, Commonwealth-6)
+nsubj(assigned-9, Edison-7)
+aux(assigned-9, have-8)
+ccomp(Please-1, assigned-9)
+nmod:poss(assets-12, their-10)
+compound(assets-12, generation-11)
+dobj(assigned-9, assets-12)
+case(LLC-17, to-13)
+compound(LLC-17, Exelon-14)
+compound(LLC-17, Generation-15)
+compound(LLC-17, Company-16)
+nmod:to(assigned-9, LLC-17)
+punct(Please-1, .-18)
+
+Extracted the following NER entity mentions:
+Peco	ORGANIZATION
+Commonwealth Edison	ORGANIZATION
+Exelon Generation Company LLC	ORGANIZATION
+
+Sentence #2 (9 tokens):
+Peco and Commonwealth will be inactivated in Enpower.
+
+Tokens:
+[Text=Peco CharacterOffsetBegin=119 CharacterOffsetEnd=123 PartOfSpeech=NNP Lemma=Peco NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=124 CharacterOffsetEnd=127 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Commonwealth CharacterOffsetBegin=128 CharacterOffsetEnd=140 PartOfSpeech=NNP Lemma=Commonwealth NamedEntityTag=ORGANIZATION]
+[Text=will CharacterOffsetBegin=141 CharacterOffsetEnd=145 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=146 CharacterOffsetEnd=148 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=inactivated CharacterOffsetBegin=149 CharacterOffsetEnd=160 PartOfSpeech=VBN Lemma=inactivate NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=161 CharacterOffsetEnd=163 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Enpower CharacterOffsetBegin=164 CharacterOffsetEnd=171 PartOfSpeech=NNP Lemma=Enpower NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=171 CharacterOffsetEnd=172 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Peco)
+      (CC and)
+      (NNP Commonwealth))
+    (VP (MD will)
+      (VP (VB be)
+        (VP (VBN inactivated)
+          (PP (IN in)
+            (NP (NNP Enpower))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, inactivated-6)
+nsubjpass(inactivated-6, Peco-1)
+cc(Peco-1, and-2)
+conj:and(Peco-1, Commonwealth-3)
+nsubjpass(inactivated-6, Commonwealth-3)
+aux(inactivated-6, will-4)
+auxpass(inactivated-6, be-5)
+case(Enpower-8, in-7)
+nmod:in(inactivated-6, Enpower-8)
+punct(inactivated-6, .-9)
+
+Extracted the following NER entity mentions:
+Peco	ORGANIZATION
+Commonwealth	ORGANIZATION
+Enpower	LOCATION
+
+Sentence #3 (8 tokens):
+Please put all deals under Exelon Generation.
+
+Tokens:
+[Text=Please CharacterOffsetBegin=174 CharacterOffsetEnd=180 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=put CharacterOffsetBegin=181 CharacterOffsetEnd=184 PartOfSpeech=VB Lemma=put NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=185 CharacterOffsetEnd=188 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=deals CharacterOffsetBegin=189 CharacterOffsetEnd=194 PartOfSpeech=NNS Lemma=deal NamedEntityTag=O]
+[Text=under CharacterOffsetBegin=195 CharacterOffsetEnd=200 PartOfSpeech=IN Lemma=under NamedEntityTag=O]
+[Text=Exelon CharacterOffsetBegin=201 CharacterOffsetEnd=207 PartOfSpeech=NNP Lemma=Exelon NamedEntityTag=ORGANIZATION]
+[Text=Generation CharacterOffsetBegin=208 CharacterOffsetEnd=218 PartOfSpeech=NNP Lemma=Generation NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=218 CharacterOffsetEnd=219 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Please)
+      (VP (VB put)
+        (NP (DT all) (NNS deals))
+        (PP (IN under)
+          (NP (NNP Exelon) (NNP Generation)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Please-1)
+xcomp(Please-1, put-2)
+det(deals-4, all-3)
+dobj(put-2, deals-4)
+case(Generation-7, under-5)
+compound(Generation-7, Exelon-6)
+nmod:under(put-2, Generation-7)
+punct(Please-1, .-8)
+
+Extracted the following NER entity mentions:
+Exelon Generation	ORGANIZATION
+
+Sentence #4 (12 tokens):
+We have also requested that Exelon apply for new EOL passwords.
+
+Tokens:
+[Text=We CharacterOffsetBegin=221 CharacterOffsetEnd=223 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=224 CharacterOffsetEnd=228 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=229 CharacterOffsetEnd=233 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=requested CharacterOffsetBegin=234 CharacterOffsetEnd=243 PartOfSpeech=VBN Lemma=request NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=244 CharacterOffsetEnd=248 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=Exelon CharacterOffsetBegin=249 CharacterOffsetEnd=255 PartOfSpeech=NNP Lemma=Exelon NamedEntityTag=ORGANIZATION]
+[Text=apply CharacterOffsetBegin=256 CharacterOffsetEnd=261 PartOfSpeech=VB Lemma=apply NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=262 CharacterOffsetEnd=265 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=266 CharacterOffsetEnd=269 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=EOL CharacterOffsetBegin=270 CharacterOffsetEnd=273 PartOfSpeech=NN Lemma=eol NamedEntityTag=O]
+[Text=passwords CharacterOffsetBegin=274 CharacterOffsetEnd=283 PartOfSpeech=NNS Lemma=password NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=283 CharacterOffsetEnd=284 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP have)
+      (ADVP (RB also))
+      (VP (VBN requested)
+        (SBAR (IN that)
+          (S
+            (NP (NNP Exelon))
+            (VP (VB apply)
+              (PP (IN for)
+                (NP (JJ new) (NN EOL) (NNS passwords))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, requested-4)
+nsubj(requested-4, We-1)
+aux(requested-4, have-2)
+advmod(requested-4, also-3)
+mark(apply-7, that-5)
+nsubj(apply-7, Exelon-6)
+ccomp(requested-4, apply-7)
+case(passwords-11, for-8)
+amod(passwords-11, new-9)
+compound(passwords-11, EOL-10)
+nmod:for(apply-7, passwords-11)
+punct(requested-4, .-12)
+
+Extracted the following NER entity mentions:
+Exelon	ORGANIZATION
+
+Coreference set:
+	(2,1,[1,2]) -> (1,4,[4,5]), that is: "Peco" -> "Peco"
+
+Coreference set:
+	(3,7,[6,8]) -> (1,17,[14,18]), that is: "Exelon Generation" -> "Exelon Generation Company LLC"
+	(4,6,[6,7]) -> (1,17,[14,18]), that is: "Exelon" -> "Exelon Generation Company LLC"
+
+Coreference set:
+	(1,7,[4,8]) -> (2,3,[3,4]), that is: "Peco and Commonwealth Edison" -> "Commonwealth"
+	(2,1,[1,4]) -> (2,3,[3,4]), that is: "Peco and Commonwealth" -> "Commonwealth"

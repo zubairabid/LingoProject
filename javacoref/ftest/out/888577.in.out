@@ -1,0 +1,99 @@
+Document: ID=888577.in (2 sentences, 22 tokens)
+
+Sentence #1 (9 tokens):
+Jim - Quail Ridge issue has been resolved.
+
+Tokens:
+[Text=Jim CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=Jim NamedEntityTag=PERSON]
+[Text=- CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=Quail CharacterOffsetBegin=6 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=Quail NamedEntityTag=LOCATION]
+[Text=Ridge CharacterOffsetBegin=12 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=Ridge NamedEntityTag=CITY]
+[Text=issue CharacterOffsetBegin=18 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=issue NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=resolved CharacterOffsetBegin=33 CharacterOffsetEnd=41 PartOfSpeech=VBN Lemma=resolve NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Jim))
+    (: -)
+    (S
+      (NP (NNP Quail) (NNP Ridge) (NN issue))
+      (VP (VBZ has)
+        (VP (VBN been)
+          (VP (VBN resolved)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Jim-1)
+punct(Jim-1, --2)
+compound(issue-5, Quail-3)
+compound(issue-5, Ridge-4)
+nsubjpass(resolved-8, issue-5)
+aux(resolved-8, has-6)
+auxpass(resolved-8, been-7)
+parataxis(Jim-1, resolved-8)
+punct(Jim-1, .-9)
+
+Extracted the following NER entity mentions:
+Jim	PERSON
+Quail	LOCATION
+Ridge	CITY
+
+Sentence #2 (13 tokens):
+UC was in error and have
+withdrawn their complaint to the PUC.
+
+Tokens:
+[Text=UC CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=uc NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=51 CharacterOffsetEnd=53 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=error CharacterOffsetBegin=54 CharacterOffsetEnd=59 PartOfSpeech=NN Lemma=error NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=64 CharacterOffsetEnd=68 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=withdrawn CharacterOffsetBegin=69 CharacterOffsetEnd=78 PartOfSpeech=VBN Lemma=withdraw NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=79 CharacterOffsetEnd=84 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=complaint CharacterOffsetBegin=85 CharacterOffsetEnd=94 PartOfSpeech=NN Lemma=complaint NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=95 CharacterOffsetEnd=97 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=98 CharacterOffsetEnd=101 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=PUC CharacterOffsetBegin=102 CharacterOffsetEnd=105 PartOfSpeech=NNP Lemma=PUC NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=105 CharacterOffsetEnd=106 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN UC))
+    (VP
+      (VP (VBD was)
+        (PP (IN in)
+          (NP (NN error))))
+      (CC and)
+      (VP (VBP have)
+        (VP (VBN withdrawn)
+          (NP (PRP$ their) (NN complaint))
+          (PP (TO to)
+            (NP (DT the) (NNP PUC))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, error-4)
+nsubj(error-4, UC-1)
+nsubj(withdrawn-7, UC-1)
+cop(error-4, was-2)
+case(error-4, in-3)
+cc(error-4, and-5)
+aux(withdrawn-7, have-6)
+conj:and(error-4, withdrawn-7)
+nmod:poss(complaint-9, their-8)
+dobj(withdrawn-7, complaint-9)
+case(PUC-12, to-10)
+det(PUC-12, the-11)
+nmod:to(withdrawn-7, PUC-12)
+punct(error-4, .-13)
+
+Extracted the following NER entity mentions:
+PUC	ORGANIZATION

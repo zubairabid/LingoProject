@@ -1,0 +1,161 @@
+Document: ID=834200.in (4 sentences, 34 tokens)
+
+Sentence #1 (11 tokens):
+Well, the jury is still out on communicating rankings.
+
+Tokens:
+[Text=Well CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=jury CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=jury NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=18 CharacterOffsetEnd=23 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=communicating CharacterOffsetBegin=31 CharacterOffsetEnd=44 PartOfSpeech=VBG Lemma=communicate NamedEntityTag=O]
+[Text=rankings CharacterOffsetBegin=45 CharacterOffsetEnd=53 PartOfSpeech=NNS Lemma=ranking NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (RB Well))
+    (, ,)
+    (NP (DT the) (NN jury))
+    (VP (VBZ is)
+      (ADVP (RB still))
+      (ADJP (RP out))
+      (PP (IN on)
+        (NP (VBG communicating) (NNS rankings))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, out-7)
+discourse(out-7, Well-1)
+punct(out-7, ,-2)
+det(jury-4, the-3)
+nsubj(out-7, jury-4)
+cop(out-7, is-5)
+advmod(out-7, still-6)
+case(rankings-10, on-8)
+amod(rankings-10, communicating-9)
+nmod:on(out-7, rankings-10)
+punct(out-7, .-11)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (16 tokens):
+I quess right now the best things to do is not tell anyone their
+ranks.
+
+Tokens:
+[Text=I CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=quess CharacterOffsetBegin=58 CharacterOffsetEnd=63 PartOfSpeech=VBP Lemma=quess NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=64 CharacterOffsetEnd=69 PartOfSpeech=RB Lemma=right NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=70 CharacterOffsetEnd=73 PartOfSpeech=RB Lemma=now NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=best CharacterOffsetBegin=78 CharacterOffsetEnd=82 PartOfSpeech=JJS Lemma=best NamedEntityTag=O]
+[Text=things CharacterOffsetBegin=83 CharacterOffsetEnd=89 PartOfSpeech=NNS Lemma=thing NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=90 CharacterOffsetEnd=92 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=93 CharacterOffsetEnd=95 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=96 CharacterOffsetEnd=98 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=99 CharacterOffsetEnd=102 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=tell CharacterOffsetBegin=103 CharacterOffsetEnd=107 PartOfSpeech=VB Lemma=tell NamedEntityTag=O]
+[Text=anyone CharacterOffsetBegin=108 CharacterOffsetEnd=114 PartOfSpeech=NN Lemma=anyone NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=115 CharacterOffsetEnd=120 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=ranks CharacterOffsetBegin=121 CharacterOffsetEnd=126 PartOfSpeech=NNS Lemma=rank NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=126 CharacterOffsetEnd=127 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP quess)
+      (ADVP (RB right) (RB now))
+      (NP (DT the) (JJS best) (NNS things)
+        (S
+          (VP (TO to)
+            (VP (VB do)
+              (SBAR
+                (S
+                  (VP (VBZ is) (RB not)
+                    (S
+                      (VP (VB tell)
+                        (NP (NN anyone))
+                        (NP (PRP$ their) (NNS ranks))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, quess-2)
+nsubj(quess-2, I-1)
+advmod(now-4, right-3)
+advmod(quess-2, now-4)
+det(things-7, the-5)
+amod(things-7, best-6)
+dobj(quess-2, things-7)
+mark(do-9, to-8)
+acl:to(things-7, do-9)
+ccomp(do-9, is-10)
+neg(is-10, not-11)
+ccomp(is-10, tell-12)
+iobj(tell-12, anyone-13)
+nmod:poss(ranks-15, their-14)
+dobj(tell-12, ranks-15)
+punct(quess-2, .-16)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (6 tokens):
+Let me know you thoughts.
+
+Tokens:
+[Text=Let CharacterOffsetBegin=129 CharacterOffsetEnd=132 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=133 CharacterOffsetEnd=135 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=136 CharacterOffsetEnd=140 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=141 CharacterOffsetEnd=144 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=thoughts CharacterOffsetBegin=145 CharacterOffsetEnd=153 PartOfSpeech=NNS Lemma=thought NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=153 CharacterOffsetEnd=154 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Let)
+      (S
+        (NP (PRP me))
+        (VP (VB know)
+          (S
+            (NP (PRP you))
+            (NP (NNS thoughts))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Let-1)
+nsubj(know-3, me-2)
+ccomp(Let-1, know-3)
+nsubj(thoughts-5, you-4)
+xcomp(know-3, thoughts-5)
+punct(Let-1, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (1 tokens):
+bob
+
+Tokens:
+[Text=bob CharacterOffsetBegin=156 CharacterOffsetEnd=159 PartOfSpeech=NN Lemma=bob NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NN bob)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, bob-1)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(3,2,[2,3]) -> (2,1,[1,2]), that is: "me" -> "I"

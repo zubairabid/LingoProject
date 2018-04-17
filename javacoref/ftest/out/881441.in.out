@@ -1,0 +1,294 @@
+Document: ID=881441.in (5 sentences, 73 tokens)
+
+Sentence #1 (16 tokens):
+Please set up the following people with "trader" status under Transwestern
+Pipeline Company.
+
+Tokens:
+[Text=Please CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=set CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=VB Lemma=set NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=following CharacterOffsetBegin=18 CharacterOffsetEnd=27 PartOfSpeech=VBG Lemma=follow NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=28 CharacterOffsetEnd=34 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=trader CharacterOffsetBegin=41 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=trader NamedEntityTag=TITLE]
+[Text='' CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=status CharacterOffsetBegin=49 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=status NamedEntityTag=O]
+[Text=under CharacterOffsetBegin=56 CharacterOffsetEnd=61 PartOfSpeech=IN Lemma=under NamedEntityTag=O]
+[Text=Transwestern CharacterOffsetBegin=62 CharacterOffsetEnd=74 PartOfSpeech=NNP Lemma=Transwestern NamedEntityTag=ORGANIZATION]
+[Text=Pipeline CharacterOffsetBegin=75 CharacterOffsetEnd=83 PartOfSpeech=NNP Lemma=Pipeline NamedEntityTag=ORGANIZATION]
+[Text=Company CharacterOffsetBegin=84 CharacterOffsetEnd=91 PartOfSpeech=NNP Lemma=Company NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=91 CharacterOffsetEnd=92 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Please)
+      (VP (VB set)
+        (PRT (RP up))
+        (NP
+          (NP (DT the) (VBG following) (NNS people))
+          (PP (IN with)
+            (NP (`` ``) (NN trader) ('' '') (NN status)))
+          (PP (IN under)
+            (NP (NNP Transwestern) (NNP Pipeline) (NNP Company))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Please-1)
+xcomp(Please-1, set-2)
+compound:prt(set-2, up-3)
+det(people-6, the-4)
+amod(people-6, following-5)
+dobj(set-2, people-6)
+case(status-11, with-7)
+punct(status-11, ``-8)
+compound(status-11, trader-9)
+punct(status-11, ''-10)
+nmod:with(people-6, status-11)
+case(Company-15, under-12)
+compound(Company-15, Transwestern-13)
+compound(Company-15, Pipeline-14)
+nmod:under(people-6, Company-15)
+punct(Please-1, .-16)
+
+Extracted the following NER entity mentions:
+trader	TITLE
+Transwestern Pipeline Company	ORGANIZATION
+
+Sentence #2 (12 tokens):
+We will be using Enron On Line to trade pipeline
+capacity.
+
+Tokens:
+[Text=We CharacterOffsetBegin=94 CharacterOffsetEnd=96 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=97 CharacterOffsetEnd=101 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=102 CharacterOffsetEnd=104 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=using CharacterOffsetBegin=105 CharacterOffsetEnd=110 PartOfSpeech=VBG Lemma=use NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=111 CharacterOffsetEnd=116 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=On CharacterOffsetBegin=117 CharacterOffsetEnd=119 PartOfSpeech=NNP Lemma=On NamedEntityTag=O]
+[Text=Line CharacterOffsetBegin=120 CharacterOffsetEnd=124 PartOfSpeech=NNP Lemma=Line NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=125 CharacterOffsetEnd=127 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=trade CharacterOffsetBegin=128 CharacterOffsetEnd=133 PartOfSpeech=VB Lemma=trade NamedEntityTag=O]
+[Text=pipeline CharacterOffsetBegin=134 CharacterOffsetEnd=142 PartOfSpeech=NN Lemma=pipeline NamedEntityTag=O]
+[Text=capacity CharacterOffsetBegin=143 CharacterOffsetEnd=151 PartOfSpeech=NN Lemma=capacity NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=151 CharacterOffsetEnd=152 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (MD will)
+      (VP (VB be)
+        (VP (VBG using)
+          (S
+            (NP (NNP Enron) (NNP On) (NNP Line))
+            (VP (TO to)
+              (VP (VB trade)
+                (NP (NN pipeline) (NN capacity))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, using-4)
+nsubj(using-4, We-1)
+aux(using-4, will-2)
+aux(using-4, be-3)
+compound(Line-7, Enron-5)
+compound(Line-7, On-6)
+dobj(using-4, Line-7)
+nsubj:xsubj(trade-9, Line-7)
+mark(trade-9, to-8)
+xcomp(using-4, trade-9)
+compound(capacity-11, pipeline-10)
+dobj(trade-9, capacity-11)
+punct(using-4, .-12)
+
+Extracted the following NER entity mentions:
+Enron	ORGANIZATION
+
+Sentence #3 (24 tokens):
+Kevin Hyatt (administrator), Michelle Lokay, Lorraine Lindberg,
+Jeff Fawcett, and TK Lohman will all need this access.
+
+Tokens:
+[Text=Kevin CharacterOffsetBegin=154 CharacterOffsetEnd=159 PartOfSpeech=NNP Lemma=Kevin NamedEntityTag=PERSON]
+[Text=Hyatt CharacterOffsetBegin=160 CharacterOffsetEnd=165 PartOfSpeech=NNP Lemma=Hyatt NamedEntityTag=PERSON]
+[Text=-LRB- CharacterOffsetBegin=166 CharacterOffsetEnd=167 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=administrator CharacterOffsetBegin=167 CharacterOffsetEnd=180 PartOfSpeech=NN Lemma=administrator NamedEntityTag=TITLE]
+[Text=-RRB- CharacterOffsetBegin=180 CharacterOffsetEnd=181 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=181 CharacterOffsetEnd=182 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Michelle CharacterOffsetBegin=183 CharacterOffsetEnd=191 PartOfSpeech=NNP Lemma=Michelle NamedEntityTag=PERSON]
+[Text=Lokay CharacterOffsetBegin=192 CharacterOffsetEnd=197 PartOfSpeech=NNP Lemma=Lokay NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=197 CharacterOffsetEnd=198 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Lorraine CharacterOffsetBegin=199 CharacterOffsetEnd=207 PartOfSpeech=NNP Lemma=Lorraine NamedEntityTag=PERSON]
+[Text=Lindberg CharacterOffsetBegin=208 CharacterOffsetEnd=216 PartOfSpeech=NNP Lemma=Lindberg NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=216 CharacterOffsetEnd=217 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Jeff CharacterOffsetBegin=218 CharacterOffsetEnd=222 PartOfSpeech=NNP Lemma=Jeff NamedEntityTag=PERSON]
+[Text=Fawcett CharacterOffsetBegin=223 CharacterOffsetEnd=230 PartOfSpeech=NNP Lemma=Fawcett NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=230 CharacterOffsetEnd=231 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=232 CharacterOffsetEnd=235 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=TK CharacterOffsetBegin=236 CharacterOffsetEnd=238 PartOfSpeech=NN Lemma=tk NamedEntityTag=O]
+[Text=Lohman CharacterOffsetBegin=239 CharacterOffsetEnd=245 PartOfSpeech=NNP Lemma=Lohman NamedEntityTag=PERSON]
+[Text=will CharacterOffsetBegin=246 CharacterOffsetEnd=250 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=251 CharacterOffsetEnd=254 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=255 CharacterOffsetEnd=259 PartOfSpeech=VB Lemma=need NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=260 CharacterOffsetEnd=264 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=access CharacterOffsetBegin=265 CharacterOffsetEnd=271 PartOfSpeech=NN Lemma=access NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=271 CharacterOffsetEnd=272 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNP Kevin) (NNP Hyatt))
+        (PRN (-LRB- -LRB-)
+          (NP (NN administrator))
+          (-RRB- -RRB-)))
+      (, ,)
+      (NP
+        (NP (NNP Michelle) (NNP Lokay))
+        (, ,)
+        (NP (NNP Lorraine) (NNP Lindberg))
+        (, ,)
+        (NP (NNP Jeff) (NNP Fawcett))
+        (, ,)
+        (CC and)
+        (NP (NN TK) (NNP Lohman))))
+    (VP (MD will)
+      (ADVP (DT all))
+      (VP (VB need)
+        (NP (DT this) (NN access))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, need-21)
+compound(Hyatt-2, Kevin-1)
+nsubj(need-21, Hyatt-2)
+punct(administrator-4, -LRB--3)
+appos(Hyatt-2, administrator-4)
+punct(administrator-4, -RRB--5)
+punct(Hyatt-2, ,-6)
+compound(Lokay-8, Michelle-7)
+appos(Hyatt-2, Lokay-8)
+punct(Lokay-8, ,-9)
+compound(Lindberg-11, Lorraine-10)
+appos(Hyatt-2, Lindberg-11)
+conj:and(Lokay-8, Lindberg-11)
+punct(Lokay-8, ,-12)
+compound(Fawcett-14, Jeff-13)
+appos(Hyatt-2, Fawcett-14)
+conj:and(Lokay-8, Fawcett-14)
+punct(Lokay-8, ,-15)
+cc(Lokay-8, and-16)
+compound(Lohman-18, TK-17)
+appos(Hyatt-2, Lohman-18)
+conj:and(Lokay-8, Lohman-18)
+aux(need-21, will-19)
+advmod(need-21, all-20)
+det(access-23, this-22)
+dobj(need-21, access-23)
+punct(need-21, .-24)
+
+Extracted the following NER entity mentions:
+Kevin Hyatt	PERSON
+administrator	TITLE
+Michelle Lokay	PERSON
+Lorraine Lindberg	PERSON
+Jeff Fawcett	PERSON
+Lohman	PERSON
+
+Sentence #4 (19 tokens):
+My network user ID is
+"mlokay" and each trader will respond with their own user ID.
+
+Tokens:
+[Text=My CharacterOffsetBegin=274 CharacterOffsetEnd=276 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=network CharacterOffsetBegin=277 CharacterOffsetEnd=284 PartOfSpeech=NN Lemma=network NamedEntityTag=O]
+[Text=user CharacterOffsetBegin=285 CharacterOffsetEnd=289 PartOfSpeech=NN Lemma=user NamedEntityTag=O]
+[Text=ID CharacterOffsetBegin=290 CharacterOffsetEnd=292 PartOfSpeech=NN Lemma=id NamedEntityTag=STATE_OR_PROVINCE]
+[Text=is CharacterOffsetBegin=293 CharacterOffsetEnd=295 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=296 CharacterOffsetEnd=297 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=mlokay CharacterOffsetBegin=297 CharacterOffsetEnd=303 PartOfSpeech=JJ Lemma=mlokay NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=303 CharacterOffsetEnd=304 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=305 CharacterOffsetEnd=308 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=each CharacterOffsetBegin=309 CharacterOffsetEnd=313 PartOfSpeech=DT Lemma=each NamedEntityTag=O]
+[Text=trader CharacterOffsetBegin=314 CharacterOffsetEnd=320 PartOfSpeech=NN Lemma=trader NamedEntityTag=TITLE]
+[Text=will CharacterOffsetBegin=321 CharacterOffsetEnd=325 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=respond CharacterOffsetBegin=326 CharacterOffsetEnd=333 PartOfSpeech=VB Lemma=respond NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=334 CharacterOffsetEnd=338 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=339 CharacterOffsetEnd=344 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=345 CharacterOffsetEnd=348 PartOfSpeech=JJ Lemma=own NamedEntityTag=O]
+[Text=user CharacterOffsetBegin=349 CharacterOffsetEnd=353 PartOfSpeech=NN Lemma=user NamedEntityTag=O]
+[Text=ID CharacterOffsetBegin=354 CharacterOffsetEnd=356 PartOfSpeech=NN Lemma=id NamedEntityTag=STATE_OR_PROVINCE]
+[Text=. CharacterOffsetBegin=356 CharacterOffsetEnd=357 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP$ My) (NN network) (NN user) (NN ID))
+      (VP (VBZ is) (`` ``)
+        (ADJP (JJ mlokay))
+        ('' '')))
+    (CC and)
+    (S
+      (NP (DT each) (NN trader))
+      (VP (MD will)
+        (VP (VB respond)
+          (PP (IN with)
+            (NP (PRP$ their) (JJ own) (NN user) (NN ID))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, mlokay-7)
+nmod:poss(ID-4, My-1)
+compound(ID-4, network-2)
+compound(ID-4, user-3)
+nsubj(mlokay-7, ID-4)
+cop(mlokay-7, is-5)
+punct(mlokay-7, ``-6)
+punct(mlokay-7, ''-8)
+cc(mlokay-7, and-9)
+det(trader-11, each-10)
+nsubj(respond-13, trader-11)
+aux(respond-13, will-12)
+conj:and(mlokay-7, respond-13)
+case(ID-18, with-14)
+nmod:poss(ID-18, their-15)
+amod(ID-18, own-16)
+compound(ID-18, user-17)
+nmod:with(respond-13, ID-18)
+punct(mlokay-7, .-19)
+
+Extracted the following NER entity mentions:
+ID	STATE_OR_PROVINCE
+trader	TITLE
+ID	STATE_OR_PROVINCE
+
+Sentence #5 (2 tokens):
+Thanks.
+
+Tokens:
+[Text=Thanks CharacterOffsetBegin=359 CharacterOffsetEnd=365 PartOfSpeech=NNS Lemma=thanks NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=365 CharacterOffsetEnd=366 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NNS Thanks) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Thanks-1)
+punct(Thanks-1, .-2)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(4,15,[15,16]) -> (3,2,[1,19]), that is: "their" -> "Kevin Hyatt -LRB- administrator -RRB- , Michelle Lokay , Lorraine Lindberg , Jeff Fawcett , and TK Lohman"

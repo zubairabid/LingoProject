@@ -1,0 +1,949 @@
+Document: ID=809783.in (10 sentences, 254 tokens)
+
+Sentence #1 (6 tokens):
+Subject: New Virus Alert !!!
+
+Tokens:
+[Text=Subject CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Subject NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=New CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=New NamedEntityTag=O]
+[Text=Virus CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=virus NamedEntityTag=O]
+[Text=Alert CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=NNP Lemma=Alert NamedEntityTag=O]
+[Text=!!! CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=CD Lemma=!!! NamedEntityTag=NUMBER]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Subject))
+    (: :)
+    (NP
+      (NP (NNP New) (NN Virus) (NNP Alert))
+      (NP (CD !!!)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Subject-1)
+punct(Subject-1, :-2)
+compound(Alert-5, New-3)
+compound(Alert-5, Virus-4)
+dep(Subject-1, Alert-5)
+dep(Alert-5, !!!-6)
+
+Extracted the following NER entity mentions:
+!!!	NUMBER
+
+Sentence #2 (12 tokens):
+New Virus Taking Offices By Storm
+This virus warning is genuine.
+
+Tokens:
+[Text=New CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=New NamedEntityTag=O]
+[Text=Virus CharacterOffsetBegin=37 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=virus NamedEntityTag=O]
+[Text=Taking CharacterOffsetBegin=43 CharacterOffsetEnd=49 PartOfSpeech=VBG Lemma=take NamedEntityTag=O]
+[Text=Offices CharacterOffsetBegin=50 CharacterOffsetEnd=57 PartOfSpeech=NNS Lemma=office NamedEntityTag=O]
+[Text=By CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Storm CharacterOffsetBegin=61 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=storm NamedEntityTag=CAUSE_OF_DEATH]
+[Text=This CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=virus CharacterOffsetBegin=72 CharacterOffsetEnd=77 PartOfSpeech=NN Lemma=virus NamedEntityTag=O]
+[Text=warning CharacterOffsetBegin=78 CharacterOffsetEnd=85 PartOfSpeech=NN Lemma=warning NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=86 CharacterOffsetEnd=88 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=genuine CharacterOffsetBegin=89 CharacterOffsetEnd=96 PartOfSpeech=JJ Lemma=genuine NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=96 CharacterOffsetEnd=97 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NNP New) (NN Virus))
+      (VP (VBG Taking)
+        (S
+          (NP (NNS Offices))
+          (PP (IN By)
+            (NP (NN Storm))))))
+    (NP (DT This) (NN virus) (NN warning))
+    (VP (VBZ is)
+      (ADJP (JJ genuine)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, genuine-11)
+compound(Virus-2, New-1)
+nsubj(Taking-3, Virus-2)
+dep(genuine-11, Taking-3)
+xcomp(Taking-3, Offices-4)
+case(Storm-6, By-5)
+dep(Offices-4, Storm-6)
+det(warning-9, This-7)
+compound(warning-9, virus-8)
+nsubj(genuine-11, warning-9)
+cop(genuine-11, is-10)
+punct(genuine-11, .-12)
+
+Extracted the following NER entity mentions:
+Storm	CAUSE_OF_DEATH
+
+Sentence #3 (13 tokens):
+There is a new virus going around, called "work."
+
+Tokens:
+[Text=There CharacterOffsetBegin=99 CharacterOffsetEnd=104 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=105 CharacterOffsetEnd=107 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=108 CharacterOffsetEnd=109 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=110 CharacterOffsetEnd=113 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=virus CharacterOffsetBegin=114 CharacterOffsetEnd=119 PartOfSpeech=NN Lemma=virus NamedEntityTag=O]
+[Text=going CharacterOffsetBegin=120 CharacterOffsetEnd=125 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=around CharacterOffsetBegin=126 CharacterOffsetEnd=132 PartOfSpeech=RB Lemma=around NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=132 CharacterOffsetEnd=133 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=called CharacterOffsetBegin=134 CharacterOffsetEnd=140 PartOfSpeech=VBN Lemma=call NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=141 CharacterOffsetEnd=142 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=142 CharacterOffsetEnd=146 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=146 CharacterOffsetEnd=147 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=147 CharacterOffsetEnd=148 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ new) (NN virus))
+        (VP
+          (VP (VBG going)
+            (ADVP (RB around)))
+          (, ,)
+          (VP (VBN called)
+            (S (`` ``)
+              (NP (NN work)))))))
+    (. .) ('' '')))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-2)
+expl(is-2, There-1)
+det(virus-5, a-3)
+amod(virus-5, new-4)
+nsubj(is-2, virus-5)
+dep(virus-5, going-6)
+advmod(going-6, around-7)
+punct(going-6, ,-8)
+dep(going-6, called-9)
+punct(work-11, ``-10)
+xcomp(called-9, work-11)
+punct(is-2, .-12)
+punct(is-2, ''-13)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (31 tokens):
+If you receive any sort
+of "work" at all, whether via email, Internet or simply handed to you by a
+colleague...DO NOT OPEN IT.
+
+Tokens:
+[Text=If CharacterOffsetBegin=151 CharacterOffsetEnd=153 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=154 CharacterOffsetEnd=157 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=receive CharacterOffsetBegin=158 CharacterOffsetEnd=165 PartOfSpeech=VBP Lemma=receive NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=166 CharacterOffsetEnd=169 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=sort CharacterOffsetBegin=170 CharacterOffsetEnd=174 PartOfSpeech=NN Lemma=sort NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=175 CharacterOffsetEnd=177 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=178 CharacterOffsetEnd=179 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=179 CharacterOffsetEnd=183 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=183 CharacterOffsetEnd=184 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=185 CharacterOffsetEnd=187 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=188 CharacterOffsetEnd=191 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=191 CharacterOffsetEnd=192 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=whether CharacterOffsetBegin=193 CharacterOffsetEnd=200 PartOfSpeech=IN Lemma=whether NamedEntityTag=O]
+[Text=via CharacterOffsetBegin=201 CharacterOffsetEnd=204 PartOfSpeech=IN Lemma=via NamedEntityTag=O]
+[Text=email CharacterOffsetBegin=205 CharacterOffsetEnd=210 PartOfSpeech=NN Lemma=email NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=210 CharacterOffsetEnd=211 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Internet CharacterOffsetBegin=212 CharacterOffsetEnd=220 PartOfSpeech=NN Lemma=internet NamedEntityTag=MISC]
+[Text=or CharacterOffsetBegin=221 CharacterOffsetEnd=223 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=simply CharacterOffsetBegin=224 CharacterOffsetEnd=230 PartOfSpeech=RB Lemma=simply NamedEntityTag=O]
+[Text=handed CharacterOffsetBegin=231 CharacterOffsetEnd=237 PartOfSpeech=VBN Lemma=hand NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=238 CharacterOffsetEnd=240 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=241 CharacterOffsetEnd=244 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=245 CharacterOffsetEnd=247 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=248 CharacterOffsetEnd=249 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=colleague CharacterOffsetBegin=250 CharacterOffsetEnd=259 PartOfSpeech=NN Lemma=colleague NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=259 CharacterOffsetEnd=262 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=DO CharacterOffsetBegin=262 CharacterOffsetEnd=264 PartOfSpeech=NNP Lemma=DO NamedEntityTag=O]
+[Text=NOT CharacterOffsetBegin=265 CharacterOffsetEnd=268 PartOfSpeech=NNP Lemma=NOT NamedEntityTag=O]
+[Text=OPEN CharacterOffsetBegin=269 CharacterOffsetEnd=273 PartOfSpeech=NNP Lemma=OPEN NamedEntityTag=MISC]
+[Text=IT CharacterOffsetBegin=274 CharacterOffsetEnd=276 PartOfSpeech=NNP Lemma=IT NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=276 CharacterOffsetEnd=277 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP receive)
+          (NP
+            (NP (DT any) (NN sort))
+            (PP (IN of) (`` ``)
+              (NP (NN work))
+              ('' '')))
+          (ADVP (IN at) (DT all)))))
+    (, ,)
+    (NP
+      (NP (IN whether))
+      (PP (IN via)
+        (NP
+          (NP (NN email))
+          (, ,)
+          (UCP
+            (NP (NN Internet))
+            (CC or)
+            (ADVP (RB simply))))))
+    (VP (VBN handed)
+      (PP (TO to)
+        (NP (PRP you)))
+      (PP (IN by)
+        (NP
+          (NP (DT a) (NN colleague))
+          (: ...)
+          (NP (NNP DO) (NNP NOT) (NNP OPEN) (NNP IT)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, handed-20)
+mark(receive-3, If-1)
+nsubj(receive-3, you-2)
+advcl:if(handed-20, receive-3)
+det(sort-5, any-4)
+dobj(receive-3, sort-5)
+case(work-8, of-6)
+punct(work-8, ``-7)
+nmod:of(sort-5, work-8)
+punct(work-8, ''-9)
+case(all-11, at-10)
+nmod:at(receive-3, all-11)
+punct(handed-20, ,-12)
+nsubj(handed-20, whether-13)
+case(email-15, via-14)
+nmod:via(whether-13, email-15)
+punct(email-15, ,-16)
+appos(email-15, Internet-17)
+cc(Internet-17, or-18)
+advmod(Internet-17, simply-19)
+case(you-22, to-21)
+nmod:to(handed-20, you-22)
+case(colleague-25, by-23)
+det(colleague-25, a-24)
+nmod:by(handed-20, colleague-25)
+punct(colleague-25, ...-26)
+compound(IT-30, DO-27)
+compound(IT-30, NOT-28)
+compound(IT-30, OPEN-29)
+dep(colleague-25, IT-30)
+punct(handed-20, .-31)
+
+Extracted the following NER entity mentions:
+Internet	MISC
+OPEN	MISC
+
+Sentence #5 (43 tokens):
+This has been circulating around our building for months and those who have
+been tempted to open "work" or even look at "work" have found that their
+social life is deleted and their brain ceases to function properly.
+
+Tokens:
+[Text=This CharacterOffsetBegin=279 CharacterOffsetEnd=283 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=284 CharacterOffsetEnd=287 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=288 CharacterOffsetEnd=292 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=circulating CharacterOffsetBegin=293 CharacterOffsetEnd=304 PartOfSpeech=VBG Lemma=circulate NamedEntityTag=O]
+[Text=around CharacterOffsetBegin=305 CharacterOffsetEnd=311 PartOfSpeech=IN Lemma=around NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=312 CharacterOffsetEnd=315 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=building CharacterOffsetBegin=316 CharacterOffsetEnd=324 PartOfSpeech=NN Lemma=building NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=325 CharacterOffsetEnd=328 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=months CharacterOffsetBegin=329 CharacterOffsetEnd=335 PartOfSpeech=NNS Lemma=month NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=336 CharacterOffsetEnd=339 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=340 CharacterOffsetEnd=345 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=346 CharacterOffsetEnd=349 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=350 CharacterOffsetEnd=354 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=355 CharacterOffsetEnd=359 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=tempted CharacterOffsetBegin=360 CharacterOffsetEnd=367 PartOfSpeech=VBN Lemma=tempt NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=368 CharacterOffsetEnd=370 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=open CharacterOffsetBegin=371 CharacterOffsetEnd=375 PartOfSpeech=VB Lemma=open NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=376 CharacterOffsetEnd=377 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=377 CharacterOffsetEnd=381 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=381 CharacterOffsetEnd=382 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=383 CharacterOffsetEnd=385 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=even CharacterOffsetBegin=386 CharacterOffsetEnd=390 PartOfSpeech=RB Lemma=even NamedEntityTag=O]
+[Text=look CharacterOffsetBegin=391 CharacterOffsetEnd=395 PartOfSpeech=VB Lemma=look NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=396 CharacterOffsetEnd=398 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=399 CharacterOffsetEnd=400 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=400 CharacterOffsetEnd=404 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=404 CharacterOffsetEnd=405 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=406 CharacterOffsetEnd=410 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=found CharacterOffsetBegin=411 CharacterOffsetEnd=416 PartOfSpeech=VBN Lemma=find NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=417 CharacterOffsetEnd=421 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=422 CharacterOffsetEnd=427 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=social CharacterOffsetBegin=428 CharacterOffsetEnd=434 PartOfSpeech=JJ Lemma=social NamedEntityTag=O]
+[Text=life CharacterOffsetBegin=435 CharacterOffsetEnd=439 PartOfSpeech=NN Lemma=life NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=440 CharacterOffsetEnd=442 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=deleted CharacterOffsetBegin=443 CharacterOffsetEnd=450 PartOfSpeech=VBN Lemma=delete NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=451 CharacterOffsetEnd=454 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=455 CharacterOffsetEnd=460 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=brain CharacterOffsetBegin=461 CharacterOffsetEnd=466 PartOfSpeech=NN Lemma=brain NamedEntityTag=O]
+[Text=ceases CharacterOffsetBegin=467 CharacterOffsetEnd=473 PartOfSpeech=VBZ Lemma=cease NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=474 CharacterOffsetEnd=476 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=function CharacterOffsetBegin=477 CharacterOffsetEnd=485 PartOfSpeech=VB Lemma=function NamedEntityTag=O]
+[Text=properly CharacterOffsetBegin=486 CharacterOffsetEnd=494 PartOfSpeech=RB Lemma=properly NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=494 CharacterOffsetEnd=495 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (DT This))
+      (VP (VBZ has)
+        (VP (VBN been)
+          (VP (VBG circulating)
+            (PP (IN around)
+              (NP
+                (NP (PRP$ our) (NN building))
+                (PP (IN for)
+                  (NP (NNS months)))))))))
+    (CC and)
+    (S
+      (NP
+        (NP (DT those))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBP have)
+              (VP (VBN been)
+                (VP (VBN tempted)
+                  (S
+                    (VP (TO to)
+                      (VP
+                        (VP (VB open) (`` ``)
+                          (NP (NN work))
+                          ('' ''))
+                        (CC or)
+                        (ADVP (RB even))
+                        (VP (VB look)
+                          (PP (IN at) (`` ``)
+                            (NP (NN work))
+                            ('' ''))))))))))))
+      (VP (VBP have)
+        (VP (VBN found)
+          (SBAR (IN that)
+            (S
+              (S
+                (NP (PRP$ their) (JJ social) (NN life))
+                (VP (VBZ is)
+                  (VP (VBN deleted))))
+              (CC and)
+              (S
+                (NP (PRP$ their) (NN brain))
+                (VP (VBZ ceases)
+                  (S
+                    (VP (TO to)
+                      (VP (VB function)
+                        (ADVP (RB properly))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, circulating-4)
+nsubj(circulating-4, This-1)
+aux(circulating-4, has-2)
+aux(circulating-4, been-3)
+case(building-7, around-5)
+nmod:poss(building-7, our-6)
+nmod:around(circulating-4, building-7)
+case(months-9, for-8)
+nmod:for(building-7, months-9)
+cc(circulating-4, and-10)
+nsubjpass(tempted-15, those-11)
+nsubj:xsubj(open-17, those-11)
+nsubj:xsubj(look-23, those-11)
+nsubj(found-29, those-11)
+ref(those-11, who-12)
+aux(tempted-15, have-13)
+auxpass(tempted-15, been-14)
+acl:relcl(those-11, tempted-15)
+mark(open-17, to-16)
+xcomp(tempted-15, open-17)
+punct(open-17, ``-18)
+dobj(open-17, work-19)
+punct(open-17, ''-20)
+cc(open-17, or-21)
+advmod(look-23, even-22)
+xcomp(tempted-15, look-23)
+conj:or(open-17, look-23)
+case(work-26, at-24)
+punct(work-26, ``-25)
+nmod:at(look-23, work-26)
+punct(work-26, ''-27)
+aux(found-29, have-28)
+conj:and(circulating-4, found-29)
+mark(deleted-35, that-30)
+nmod:poss(life-33, their-31)
+amod(life-33, social-32)
+nsubjpass(deleted-35, life-33)
+auxpass(deleted-35, is-34)
+ccomp(found-29, deleted-35)
+cc(deleted-35, and-36)
+nmod:poss(brain-38, their-37)
+nsubj(ceases-39, brain-38)
+nsubj:xsubj(function-41, brain-38)
+ccomp(found-29, ceases-39)
+conj:and(deleted-35, ceases-39)
+mark(function-41, to-40)
+xcomp(ceases-39, function-41)
+advmod(function-41, properly-42)
+punct(circulating-4, .-43)
+
+Extracted the following NER entity mentions:
+
+Sentence #6 (52 tokens):
+If you
+do encounter "work" via email or are faced with any "work" at all, then to
+purge the virus, send an email to your boss with the words "I've had enough
+of your crap...  I'm off to the bar."
+
+Tokens:
+[Text=If CharacterOffsetBegin=497 CharacterOffsetEnd=499 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=500 CharacterOffsetEnd=503 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=504 CharacterOffsetEnd=506 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=encounter CharacterOffsetBegin=507 CharacterOffsetEnd=516 PartOfSpeech=VB Lemma=encounter NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=517 CharacterOffsetEnd=518 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=518 CharacterOffsetEnd=522 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=522 CharacterOffsetEnd=523 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=via CharacterOffsetBegin=524 CharacterOffsetEnd=527 PartOfSpeech=IN Lemma=via NamedEntityTag=O]
+[Text=email CharacterOffsetBegin=528 CharacterOffsetEnd=533 PartOfSpeech=NN Lemma=email NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=534 CharacterOffsetEnd=536 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=537 CharacterOffsetEnd=540 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=faced CharacterOffsetBegin=541 CharacterOffsetEnd=546 PartOfSpeech=VBN Lemma=face NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=547 CharacterOffsetEnd=551 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=552 CharacterOffsetEnd=555 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=556 CharacterOffsetEnd=557 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=557 CharacterOffsetEnd=561 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=561 CharacterOffsetEnd=562 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=563 CharacterOffsetEnd=565 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=566 CharacterOffsetEnd=569 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=569 CharacterOffsetEnd=570 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=571 CharacterOffsetEnd=575 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=576 CharacterOffsetEnd=578 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=purge CharacterOffsetBegin=579 CharacterOffsetEnd=584 PartOfSpeech=VB Lemma=purge NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=585 CharacterOffsetEnd=588 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=virus CharacterOffsetBegin=589 CharacterOffsetEnd=594 PartOfSpeech=NN Lemma=virus NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=594 CharacterOffsetEnd=595 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=send CharacterOffsetBegin=596 CharacterOffsetEnd=600 PartOfSpeech=VB Lemma=send NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=601 CharacterOffsetEnd=603 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=email CharacterOffsetBegin=604 CharacterOffsetEnd=609 PartOfSpeech=NN Lemma=email NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=610 CharacterOffsetEnd=612 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=613 CharacterOffsetEnd=617 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=boss CharacterOffsetBegin=618 CharacterOffsetEnd=622 PartOfSpeech=NN Lemma=boss NamedEntityTag=TITLE]
+[Text=with CharacterOffsetBegin=623 CharacterOffsetEnd=627 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=628 CharacterOffsetEnd=631 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=words CharacterOffsetBegin=632 CharacterOffsetEnd=637 PartOfSpeech=NNS Lemma=word NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=638 CharacterOffsetEnd=639 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=639 CharacterOffsetEnd=640 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='ve CharacterOffsetBegin=640 CharacterOffsetEnd=643 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=644 CharacterOffsetEnd=647 PartOfSpeech=VBN Lemma=have NamedEntityTag=O]
+[Text=enough CharacterOffsetBegin=648 CharacterOffsetEnd=654 PartOfSpeech=RB Lemma=enough NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=655 CharacterOffsetEnd=657 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=658 CharacterOffsetEnd=662 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=crap CharacterOffsetBegin=663 CharacterOffsetEnd=667 PartOfSpeech=NN Lemma=crap NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=667 CharacterOffsetEnd=670 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=672 CharacterOffsetEnd=673 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=673 CharacterOffsetEnd=675 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=676 CharacterOffsetEnd=679 PartOfSpeech=RP Lemma=off NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=680 CharacterOffsetEnd=682 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=683 CharacterOffsetEnd=686 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=bar CharacterOffsetBegin=687 CharacterOffsetEnd=690 PartOfSpeech=NN Lemma=bar NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=690 CharacterOffsetEnd=691 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=691 CharacterOffsetEnd=692 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP
+          (VP (VBP do)
+            (VP (VB encounter)
+              (NP (`` ``)
+                (NP (NN work))
+                ('' '')
+                (PP (IN via)
+                  (NP (NN email))))))
+          (CC or)
+          (VP (VBP are)
+            (VP (VBN faced)
+              (PP (IN with)
+                (NP
+                  (NP (DT any) (`` ``) (NN work) ('' ''))
+                  (ADVP (IN at) (DT all))))
+              (, ,)
+              (S (RB then)
+                (VP (TO to)
+                  (VP (VB purge)
+                    (NP (DT the) (NN virus))))))))))
+    (, ,)
+    (VP (VB send)
+      (NP (DT an) (NN email))
+      (PP (TO to)
+        (NP
+          (NP (PRP$ your) (NN boss))
+          (PP (IN with)
+            (NP (DT the) (NNS words)))
+          (`` ``)
+          (S
+            (S
+              (NP (PRP I))
+              (VP (VBP 've)
+                (VP (VBN had)
+                  (NP
+                    (NP (RB enough))
+                    (PP (IN of)
+                      (NP (PRP$ your) (NN crap)))))))
+            (: ...)
+            (S
+              (NP (PRP I))
+              (VP (VBP 'm)
+                (PRT (RP off))
+                (PP (TO to)
+                  (NP (DT the) (NN bar)))))))))
+    (. .) ('' '')))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, send-27)
+mark(encounter-4, If-1)
+nsubj(encounter-4, you-2)
+nsubjpass(faced-12, you-2)
+nsubj:xsubj(purge-23, you-2)
+aux(encounter-4, do-3)
+advcl:if(send-27, encounter-4)
+punct(work-6, ``-5)
+dobj(encounter-4, work-6)
+punct(work-6, ''-7)
+case(email-9, via-8)
+nmod:via(work-6, email-9)
+cc(encounter-4, or-10)
+auxpass(faced-12, are-11)
+conj:or(encounter-4, faced-12)
+advcl:if(send-27, faced-12)
+case(work-16, with-13)
+det(work-16, any-14)
+punct(work-16, ``-15)
+nmod:with(faced-12, work-16)
+punct(work-16, ''-17)
+case(all-19, at-18)
+nmod:at(work-16, all-19)
+punct(faced-12, ,-20)
+advmod(purge-23, then-21)
+mark(purge-23, to-22)
+xcomp(faced-12, purge-23)
+det(virus-25, the-24)
+dobj(purge-23, virus-25)
+punct(send-27, ,-26)
+det(email-29, an-28)
+dobj(send-27, email-29)
+case(boss-32, to-30)
+nmod:poss(boss-32, your-31)
+nmod:to(send-27, boss-32)
+case(words-35, with-33)
+det(words-35, the-34)
+nmod:with(boss-32, words-35)
+punct(boss-32, ``-36)
+nsubj(had-39, I-37)
+aux(had-39, 've-38)
+dep(boss-32, had-39)
+dobj(had-39, enough-40)
+case(crap-43, of-41)
+nmod:poss(crap-43, your-42)
+nmod:of(enough-40, crap-43)
+punct(had-39, ...-44)
+nsubj(bar-50, I-45)
+cop(bar-50, 'm-46)
+compound:prt(bar-50, off-47)
+case(bar-50, to-48)
+det(bar-50, the-49)
+parataxis(had-39, bar-50)
+punct(send-27, .-51)
+punct(send-27, ''-52)
+
+Extracted the following NER entity mentions:
+boss	TITLE
+
+Sentence #7 (10 tokens):
+Your brain should automatically
+forget the "work".
+
+Tokens:
+[Text=Your CharacterOffsetBegin=696 CharacterOffsetEnd=700 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=brain CharacterOffsetBegin=701 CharacterOffsetEnd=706 PartOfSpeech=NN Lemma=brain NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=707 CharacterOffsetEnd=713 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=automatically CharacterOffsetBegin=714 CharacterOffsetEnd=727 PartOfSpeech=RB Lemma=automatically NamedEntityTag=O]
+[Text=forget CharacterOffsetBegin=728 CharacterOffsetEnd=734 PartOfSpeech=VB Lemma=forget NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=735 CharacterOffsetEnd=738 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=739 CharacterOffsetEnd=740 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=740 CharacterOffsetEnd=744 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=744 CharacterOffsetEnd=745 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=745 CharacterOffsetEnd=746 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP$ Your) (NN brain))
+    (VP (MD should)
+      (ADVP (RB automatically))
+      (VP (VB forget)
+        (NP (DT the) (`` ``) (NN work) ('' ''))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, forget-5)
+nmod:poss(brain-2, Your-1)
+nsubj(forget-5, brain-2)
+aux(forget-5, should-3)
+advmod(forget-5, automatically-4)
+det(work-8, the-6)
+punct(work-8, ``-7)
+dobj(forget-5, work-8)
+punct(work-8, ''-9)
+punct(forget-5, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #8 (25 tokens):
+If you receive "work" in paper-document form, simply lift the document and
+drag the "work" to your garbage can.
+
+Tokens:
+[Text=If CharacterOffsetBegin=748 CharacterOffsetEnd=750 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=751 CharacterOffsetEnd=754 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=receive CharacterOffsetBegin=755 CharacterOffsetEnd=762 PartOfSpeech=VBP Lemma=receive NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=763 CharacterOffsetEnd=764 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=764 CharacterOffsetEnd=768 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=768 CharacterOffsetEnd=769 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=770 CharacterOffsetEnd=772 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=paper-document CharacterOffsetBegin=773 CharacterOffsetEnd=787 PartOfSpeech=JJ Lemma=paper-document NamedEntityTag=O]
+[Text=form CharacterOffsetBegin=788 CharacterOffsetEnd=792 PartOfSpeech=NN Lemma=form NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=792 CharacterOffsetEnd=793 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=simply CharacterOffsetBegin=794 CharacterOffsetEnd=800 PartOfSpeech=RB Lemma=simply NamedEntityTag=O]
+[Text=lift CharacterOffsetBegin=801 CharacterOffsetEnd=805 PartOfSpeech=VB Lemma=lift NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=806 CharacterOffsetEnd=809 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=document CharacterOffsetBegin=810 CharacterOffsetEnd=818 PartOfSpeech=NN Lemma=document NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=819 CharacterOffsetEnd=822 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=drag CharacterOffsetBegin=823 CharacterOffsetEnd=827 PartOfSpeech=VB Lemma=drag NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=828 CharacterOffsetEnd=831 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=832 CharacterOffsetEnd=833 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=833 CharacterOffsetEnd=837 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=837 CharacterOffsetEnd=838 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=839 CharacterOffsetEnd=841 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=842 CharacterOffsetEnd=846 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=garbage CharacterOffsetBegin=847 CharacterOffsetEnd=854 PartOfSpeech=NN Lemma=garbage NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=855 CharacterOffsetEnd=858 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=858 CharacterOffsetEnd=859 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP receive)
+          (NP (`` ``)
+            (NP (NN work))
+            ('' '')
+            (PP (IN in)
+              (NP (JJ paper-document) (NN form)))))))
+    (, ,)
+    (ADVP (RB simply))
+    (VP
+      (VP (VB lift)
+        (NP (DT the) (NN document)))
+      (CC and)
+      (VP (VB drag)
+        (SBAR
+          (S
+            (NP
+              (NP (DT the) (`` ``) (NN work) ('' ''))
+              (PP (TO to)
+                (NP (PRP$ your) (NN garbage))))
+            (VP (MD can))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, lift-12)
+mark(receive-3, If-1)
+nsubj(receive-3, you-2)
+advcl:if(lift-12, receive-3)
+punct(work-5, ``-4)
+dobj(receive-3, work-5)
+punct(work-5, ''-6)
+case(form-9, in-7)
+amod(form-9, paper-document-8)
+nmod:in(work-5, form-9)
+punct(lift-12, ,-10)
+advmod(lift-12, simply-11)
+det(document-14, the-13)
+dobj(lift-12, document-14)
+cc(lift-12, and-15)
+conj:and(lift-12, drag-16)
+det(work-19, the-17)
+punct(work-19, ``-18)
+nsubj(can-24, work-19)
+punct(work-19, ''-20)
+case(garbage-23, to-21)
+nmod:poss(garbage-23, your-22)
+nmod:to(work-19, garbage-23)
+ccomp(drag-16, can-24)
+punct(lift-12, .-25)
+
+Extracted the following NER entity mentions:
+
+Sentence #9 (27 tokens):
+Put on your hat and coat and skip to
+the nearest bar with two friends and order three bottles of beer  (or rum
+punch).
+
+Tokens:
+[Text=Put CharacterOffsetBegin=861 CharacterOffsetEnd=864 PartOfSpeech=VB Lemma=put NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=865 CharacterOffsetEnd=867 PartOfSpeech=RP Lemma=on NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=868 CharacterOffsetEnd=872 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=hat CharacterOffsetBegin=873 CharacterOffsetEnd=876 PartOfSpeech=NN Lemma=hat NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=877 CharacterOffsetEnd=880 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=coat CharacterOffsetBegin=881 CharacterOffsetEnd=885 PartOfSpeech=NN Lemma=coat NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=886 CharacterOffsetEnd=889 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=skip CharacterOffsetBegin=890 CharacterOffsetEnd=894 PartOfSpeech=VB Lemma=skip NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=895 CharacterOffsetEnd=897 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=898 CharacterOffsetEnd=901 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=nearest CharacterOffsetBegin=902 CharacterOffsetEnd=909 PartOfSpeech=JJS Lemma=nearest NamedEntityTag=O]
+[Text=bar CharacterOffsetBegin=910 CharacterOffsetEnd=913 PartOfSpeech=NN Lemma=bar NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=914 CharacterOffsetEnd=918 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=919 CharacterOffsetEnd=922 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=friends CharacterOffsetBegin=923 CharacterOffsetEnd=930 PartOfSpeech=NNS Lemma=friend NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=931 CharacterOffsetEnd=934 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=order CharacterOffsetBegin=935 CharacterOffsetEnd=940 PartOfSpeech=NN Lemma=order NamedEntityTag=O]
+[Text=three CharacterOffsetBegin=941 CharacterOffsetEnd=946 PartOfSpeech=CD Lemma=three NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0]
+[Text=bottles CharacterOffsetBegin=947 CharacterOffsetEnd=954 PartOfSpeech=NNS Lemma=bottle NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=955 CharacterOffsetEnd=957 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=beer CharacterOffsetBegin=958 CharacterOffsetEnd=962 PartOfSpeech=NN Lemma=beer NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=964 CharacterOffsetEnd=965 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=965 CharacterOffsetEnd=967 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=rum CharacterOffsetBegin=968 CharacterOffsetEnd=971 PartOfSpeech=NN Lemma=rum NamedEntityTag=O]
+[Text=punch CharacterOffsetBegin=972 CharacterOffsetEnd=977 PartOfSpeech=NN Lemma=punch NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=977 CharacterOffsetEnd=978 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=978 CharacterOffsetEnd=979 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP
+      (VP (VB Put)
+        (PRT (RP on))
+        (NP (PRP$ your) (NN hat)
+          (CC and)
+          (NN coat)))
+      (CC and)
+      (VP (VB skip)
+        (PP (TO to)
+          (NP
+            (NP (DT the) (JJS nearest) (NN bar))
+            (PP (IN with)
+              (NP
+                (NP (CD two) (NNS friends))
+                (CC and)
+                (NP (NN order))))))
+        (NP
+          (NP (CD three) (NNS bottles))
+          (PP (IN of)
+            (NP
+              (NP (NN beer))
+              (PRN (-LRB- -LRB-)
+                (CC or)
+                (NP
+                  (NP (NN rum))
+                  (NP (NN punch)))
+                (-RRB- -RRB-)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Put-1)
+compound:prt(Put-1, on-2)
+nmod:poss(hat-4, your-3)
+dobj(Put-1, hat-4)
+cc(hat-4, and-5)
+dobj(Put-1, coat-6)
+conj:and(hat-4, coat-6)
+cc(Put-1, and-7)
+conj:and(Put-1, skip-8)
+case(bar-12, to-9)
+det(bar-12, the-10)
+amod(bar-12, nearest-11)
+nmod:to(skip-8, bar-12)
+case(friends-15, with-13)
+nummod(friends-15, two-14)
+nmod:with(bar-12, friends-15)
+cc(friends-15, and-16)
+nmod:with(bar-12, order-17)
+conj:and(friends-15, order-17)
+nummod(bottles-19, three-18)
+dobj(skip-8, bottles-19)
+case(beer-21, of-20)
+nmod:of(bottles-19, beer-21)
+punct(rum-24, -LRB--22)
+cc(rum-24, or-23)
+dep(beer-21, rum-24)
+dep(rum-24, punch-25)
+punct(rum-24, -RRB--26)
+punct(Put-1, .-27)
+
+Extracted the following NER entity mentions:
+two	NUMBER
+three	NUMBER
+
+Sentence #10 (35 tokens):
+After repeating this action 14 times, you will find  that "work"
+will no longer be of any relevance to you  and that "Scooby Doo" was the
+greatest cartoon ever.
+
+Tokens:
+[Text=After CharacterOffsetBegin=980 CharacterOffsetEnd=985 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=repeating CharacterOffsetBegin=986 CharacterOffsetEnd=995 PartOfSpeech=VBG Lemma=repeat NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=996 CharacterOffsetEnd=1000 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=action CharacterOffsetBegin=1001 CharacterOffsetEnd=1007 PartOfSpeech=NN Lemma=action NamedEntityTag=O]
+[Text=14 CharacterOffsetBegin=1008 CharacterOffsetEnd=1010 PartOfSpeech=CD Lemma=14 NamedEntityTag=NUMBER NormalizedNamedEntityTag=14.0]
+[Text=times CharacterOffsetBegin=1011 CharacterOffsetEnd=1016 PartOfSpeech=NNS Lemma=time NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1016 CharacterOffsetEnd=1017 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=1018 CharacterOffsetEnd=1021 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=1022 CharacterOffsetEnd=1026 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=find CharacterOffsetBegin=1027 CharacterOffsetEnd=1031 PartOfSpeech=VB Lemma=find NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=1033 CharacterOffsetEnd=1037 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=1038 CharacterOffsetEnd=1039 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=1039 CharacterOffsetEnd=1043 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=1043 CharacterOffsetEnd=1044 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=1045 CharacterOffsetEnd=1049 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=1050 CharacterOffsetEnd=1052 PartOfSpeech=RB Lemma=no NamedEntityTag=O]
+[Text=longer CharacterOffsetBegin=1053 CharacterOffsetEnd=1059 PartOfSpeech=RB Lemma=longer NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=1060 CharacterOffsetEnd=1062 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=1063 CharacterOffsetEnd=1065 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=1066 CharacterOffsetEnd=1069 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=relevance CharacterOffsetBegin=1070 CharacterOffsetEnd=1079 PartOfSpeech=NN Lemma=relevance NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1080 CharacterOffsetEnd=1082 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=1083 CharacterOffsetEnd=1086 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1088 CharacterOffsetEnd=1091 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=1092 CharacterOffsetEnd=1096 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=1097 CharacterOffsetEnd=1098 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Scooby CharacterOffsetBegin=1098 CharacterOffsetEnd=1104 PartOfSpeech=NNP Lemma=Scooby NamedEntityTag=O]
+[Text=Doo CharacterOffsetBegin=1105 CharacterOffsetEnd=1108 PartOfSpeech=NNP Lemma=Doo NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=1108 CharacterOffsetEnd=1109 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=1110 CharacterOffsetEnd=1113 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1114 CharacterOffsetEnd=1117 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=greatest CharacterOffsetBegin=1118 CharacterOffsetEnd=1126 PartOfSpeech=JJS Lemma=greatest NamedEntityTag=O]
+[Text=cartoon CharacterOffsetBegin=1127 CharacterOffsetEnd=1134 PartOfSpeech=NN Lemma=cartoon NamedEntityTag=O]
+[Text=ever CharacterOffsetBegin=1135 CharacterOffsetEnd=1139 PartOfSpeech=RB Lemma=ever NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1139 CharacterOffsetEnd=1140 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN After)
+      (S
+        (VP (VBG repeating)
+          (NP (DT this) (NN action))
+          (NP-TMP (CD 14) (NNS times)))))
+    (, ,)
+    (NP (PRP you))
+    (VP (MD will)
+      (VP (VB find)
+        (SBAR
+          (SBAR (IN that)
+            (S
+              (NP (`` ``) (NN work) ('' ''))
+              (VP (MD will)
+                (ADVP (RB no) (RB longer))
+                (VP (VB be)
+                  (PP (IN of)
+                    (NP (DT any) (NN relevance)))
+                  (PP (TO to)
+                    (NP (PRP you)))))))
+          (CC and)
+          (SBAR (IN that)
+            (S (`` ``)
+              (NP (NNP Scooby) (NNP Doo))
+              ('' '')
+              (VP (VBD was)
+                (NP (DT the) (JJS greatest) (NN cartoon))
+                (ADVP (RB ever))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, find-10)
+mark(repeating-2, After-1)
+advcl:after(find-10, repeating-2)
+det(action-4, this-3)
+dobj(repeating-2, action-4)
+nummod(times-6, 14-5)
+nmod:tmod(repeating-2, times-6)
+punct(find-10, ,-7)
+nsubj(find-10, you-8)
+aux(find-10, will-9)
+mark(relevance-21, that-11)
+punct(work-13, ``-12)
+nsubj(relevance-21, work-13)
+punct(work-13, ''-14)
+aux(relevance-21, will-15)
+neg(longer-17, no-16)
+advmod(relevance-21, longer-17)
+cop(relevance-21, be-18)
+case(relevance-21, of-19)
+det(relevance-21, any-20)
+ccomp(find-10, relevance-21)
+case(you-23, to-22)
+nmod:to(relevance-21, you-23)
+cc(relevance-21, and-24)
+mark(cartoon-33, that-25)
+punct(cartoon-33, ``-26)
+compound(Doo-28, Scooby-27)
+nsubj(cartoon-33, Doo-28)
+punct(cartoon-33, ''-29)
+cop(cartoon-33, was-30)
+det(cartoon-33, the-31)
+amod(cartoon-33, greatest-32)
+ccomp(find-10, cartoon-33)
+conj:and(relevance-21, cartoon-33)
+advmod(cartoon-33, ever-34)
+punct(find-10, .-35)
+
+Extracted the following NER entity mentions:
+14	NUMBER
+
+Coreference set:
+	(6,25,[24,26]) -> (3,5,[3,12]), that is: "the virus" -> "a new virus going around , called `` work"
+
+Coreference set:
+	(5,31,[31,32]) -> (5,11,[11,28]), that is: "their" -> "those who have been tempted to open `` work '' or even look at `` work ''"
+	(5,37,[37,38]) -> (5,11,[11,28]), that is: "their" -> "those who have been tempted to open `` work '' or even look at `` work ''"
+
+Coreference set:
+	(7,2,[1,3]) -> (5,38,[37,39]), that is: "Your brain" -> "their brain"
+
+Coreference set:
+	(6,37,[37,38]) -> (6,2,[2,3]), that is: "I" -> "you"
+	(6,45,[45,46]) -> (6,2,[2,3]), that is: "I" -> "you"
+
+Coreference set:
+	(6,6,[5,10]) -> (7,8,[6,10]), that is: "`` work '' via email" -> "the `` work ''"
+
+Coreference set:
+	(10,13,[12,15]) -> (8,5,[4,10]), that is: "`` work ''" -> "`` work '' in paper-document form"
+
+Coreference set:
+	(10,33,[31,34]) -> (10,28,[27,29]), that is: "the greatest cartoon" -> "Scooby Doo"

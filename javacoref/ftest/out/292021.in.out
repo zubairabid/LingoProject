@@ -1,0 +1,112 @@
+Document: ID=292021.in (3 sentences, 22 tokens)
+
+Sentence #1 (10 tokens):
+Ramn Gonzlez signed and returned the spot sale contract.
+
+Tokens:
+[Text=Ramn CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Ramn NamedEntityTag=PERSON]
+[Text=Gonzlez CharacterOffsetBegin=5 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Gonzlez NamedEntityTag=PERSON]
+[Text=signed CharacterOffsetBegin=13 CharacterOffsetEnd=19 PartOfSpeech=VBD Lemma=sign NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=returned CharacterOffsetBegin=24 CharacterOffsetEnd=32 PartOfSpeech=VBD Lemma=return NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=spot CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=spot NamedEntityTag=O]
+[Text=sale CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=sale NamedEntityTag=O]
+[Text=contract CharacterOffsetBegin=47 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=contract NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Ramn) (NNP Gonzlez))
+    (VP
+      (VP (VBD signed))
+      (CC and)
+      (VP (VBD returned)
+        (NP (DT the) (NN spot) (NN sale) (NN contract))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, signed-3)
+compound(Gonzlez-2, Ramn-1)
+nsubj(signed-3, Gonzlez-2)
+nsubj(returned-5, Gonzlez-2)
+cc(signed-3, and-4)
+conj:and(signed-3, returned-5)
+det(contract-9, the-6)
+compound(contract-9, spot-7)
+compound(contract-9, sale-8)
+dobj(returned-5, contract-9)
+punct(signed-3, .-10)
+
+Extracted the following NER entity mentions:
+Ramn Gonzlez	PERSON
+
+Sentence #2 (11 tokens):
+They are making their co-ordination to start to pick up.
+
+Tokens:
+[Text=They CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=making CharacterOffsetBegin=67 CharacterOffsetEnd=73 PartOfSpeech=VBG Lemma=make NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=74 CharacterOffsetEnd=79 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=co-ordination CharacterOffsetBegin=80 CharacterOffsetEnd=93 PartOfSpeech=NN Lemma=co-ordination NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=94 CharacterOffsetEnd=96 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=start CharacterOffsetBegin=97 CharacterOffsetEnd=102 PartOfSpeech=VB Lemma=start NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=103 CharacterOffsetEnd=105 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=pick CharacterOffsetBegin=106 CharacterOffsetEnd=110 PartOfSpeech=VB Lemma=pick NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=111 CharacterOffsetEnd=113 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP are)
+      (VP (VBG making)
+        (NP (PRP$ their) (NN co-ordination)
+          (S
+            (VP (TO to)
+              (VP (VB start)
+                (S
+                  (VP (TO to)
+                    (VP (VB pick)
+                      (PRT (RP up)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, making-3)
+nsubj(making-3, They-1)
+aux(making-3, are-2)
+nmod:poss(co-ordination-5, their-4)
+dobj(making-3, co-ordination-5)
+mark(start-7, to-6)
+acl:to(co-ordination-5, start-7)
+mark(pick-9, to-8)
+xcomp(start-7, pick-9)
+compound:prt(pick-9, up-10)
+punct(making-3, .-11)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (1 tokens):
+Saludos
+
+Tokens:
+[Text=Saludos CharacterOffsetBegin=116 CharacterOffsetEnd=123 PartOfSpeech=NNS Lemma=saludo NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP (NNS Saludos)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Saludos-1)
+
+Extracted the following NER entity mentions:
+Saludos	PERSON
+
+Coreference set:
+	(2,4,[4,5]) -> (2,1,[1,2]), that is: "their" -> "They"

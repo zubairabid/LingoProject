@@ -1,0 +1,219 @@
+Document: ID=204610.in (4 sentences, 52 tokens)
+
+Sentence #1 (23 tokens):
+We'll replay the November pricing call at 10:30 a.m. and 3:00 p.m. on Monday,
+November 27 in Conference Room 697.
+
+Tokens:
+[Text=We CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text='ll CharacterOffsetBegin=2 CharacterOffsetEnd=5 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=replay CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=NN Lemma=replay NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=November CharacterOffsetBegin=17 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=November NamedEntityTag=DATE NormalizedNamedEntityTag=****11]
+[Text=pricing CharacterOffsetBegin=26 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=pricing NamedEntityTag=O]
+[Text=call CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=call NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=10:30 CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=CD Lemma=10:30 NamedEntityTag=TIME NormalizedNamedEntityTag=10:30am]
+[Text=a.m. CharacterOffsetBegin=48 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=a.m. NamedEntityTag=TIME NormalizedNamedEntityTag=10:30am]
+[Text=and CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=3:00 CharacterOffsetBegin=57 CharacterOffsetEnd=61 PartOfSpeech=CD Lemma=3:00 NamedEntityTag=TIME NormalizedNamedEntityTag=3:00pm]
+[Text=p.m. CharacterOffsetBegin=62 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=p.m. NamedEntityTag=TIME NormalizedNamedEntityTag=3:00pm]
+[Text=on CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Monday CharacterOffsetBegin=70 CharacterOffsetEnd=76 PartOfSpeech=NNP Lemma=Monday NamedEntityTag=DATE NormalizedNamedEntityTag=****1127]
+[Text=, CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=, Lemma=, NamedEntityTag=DATE NormalizedNamedEntityTag=****1127]
+[Text=November CharacterOffsetBegin=78 CharacterOffsetEnd=86 PartOfSpeech=NNP Lemma=November NamedEntityTag=DATE NormalizedNamedEntityTag=****1127]
+[Text=27 CharacterOffsetBegin=87 CharacterOffsetEnd=89 PartOfSpeech=CD Lemma=27 NamedEntityTag=DATE NormalizedNamedEntityTag=****1127]
+[Text=in CharacterOffsetBegin=90 CharacterOffsetEnd=92 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Conference CharacterOffsetBegin=93 CharacterOffsetEnd=103 PartOfSpeech=NN Lemma=conference NamedEntityTag=O]
+[Text=Room CharacterOffsetBegin=104 CharacterOffsetEnd=108 PartOfSpeech=NN Lemma=room NamedEntityTag=O]
+[Text=697 CharacterOffsetBegin=109 CharacterOffsetEnd=112 PartOfSpeech=CD Lemma=697 NamedEntityTag=NUMBER NormalizedNamedEntityTag=697.0]
+[Text=. CharacterOffsetBegin=112 CharacterOffsetEnd=113 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (MD 'll)
+      (VP (NN replay)
+        (NP (DT the) (NNP November) (NN pricing) (NN call))
+        (PP (IN at)
+          (NP
+            (NP (CD 10:30) (NN a.m.))
+            (CC and)
+            (NP (CD 3:00) (NN p.m.))))
+        (PP (IN on)
+          (NP
+            (NP (NNP Monday) (, ,) (NNP November) (CD 27))
+            (PP (IN in)
+              (NP (NN Conference) (NN Room) (CD 697)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, replay-3)
+nsubj(replay-3, We-1)
+aux(replay-3, 'll-2)
+det(call-7, the-4)
+compound(call-7, November-5)
+compound(call-7, pricing-6)
+dobj(replay-3, call-7)
+case(a.m.-10, at-8)
+nummod(a.m.-10, 10:30-9)
+nmod:at(replay-3, a.m.-10)
+cc(a.m.-10, and-11)
+nummod(p.m.-13, 3:00-12)
+nmod:at(replay-3, p.m.-13)
+conj:and(a.m.-10, p.m.-13)
+case(November-17, on-14)
+compound(November-17, Monday-15)
+punct(November-17, ,-16)
+nmod:on(replay-3, November-17)
+nummod(November-17, 27-18)
+case(Room-21, in-19)
+compound(Room-21, Conference-20)
+nmod:in(November-17, Room-21)
+nummod(Room-21, 697-22)
+punct(replay-3, .-23)
+
+Extracted the following NER entity mentions:
+November	DATE
+10:30 a.m.	TIME
+3:00 p.m.	TIME
+Monday, November 27	DATE
+697	NUMBER
+
+Sentence #2 (12 tokens):
+Houston folks may want to schedule their own time to listen.
+
+Tokens:
+[Text=Houston CharacterOffsetBegin=114 CharacterOffsetEnd=121 PartOfSpeech=NNP Lemma=Houston NamedEntityTag=CITY]
+[Text=folks CharacterOffsetBegin=122 CharacterOffsetEnd=127 PartOfSpeech=NNS Lemma=folk NamedEntityTag=O]
+[Text=may CharacterOffsetBegin=128 CharacterOffsetEnd=131 PartOfSpeech=MD Lemma=may NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=132 CharacterOffsetEnd=136 PartOfSpeech=VB Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=137 CharacterOffsetEnd=139 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=schedule CharacterOffsetBegin=140 CharacterOffsetEnd=148 PartOfSpeech=VB Lemma=schedule NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=149 CharacterOffsetEnd=154 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=155 CharacterOffsetEnd=158 PartOfSpeech=JJ Lemma=own NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=159 CharacterOffsetEnd=163 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=164 CharacterOffsetEnd=166 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=listen CharacterOffsetBegin=167 CharacterOffsetEnd=173 PartOfSpeech=VB Lemma=listen NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=173 CharacterOffsetEnd=174 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Houston) (NNS folks))
+    (VP (MD may)
+      (VP (VB want)
+        (S
+          (VP (TO to)
+            (VP (VB schedule)
+              (NP (PRP$ their) (JJ own) (NN time))
+              (S
+                (VP (TO to)
+                  (VP (VB listen)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, want-4)
+compound(folks-2, Houston-1)
+nsubj(want-4, folks-2)
+nsubj:xsubj(schedule-6, folks-2)
+aux(want-4, may-3)
+mark(schedule-6, to-5)
+xcomp(want-4, schedule-6)
+nmod:poss(time-9, their-7)
+amod(time-9, own-8)
+dobj(schedule-6, time-9)
+mark(listen-11, to-10)
+advcl:to(schedule-6, listen-11)
+punct(want-4, .-12)
+
+Extracted the following NER entity mentions:
+Houston	CITY
+
+Sentence #3 (16 tokens):
+This call was
+very good for information and will be continued monthly throughout the winter.
+
+Tokens:
+[Text=This CharacterOffsetBegin=176 CharacterOffsetEnd=180 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=call CharacterOffsetBegin=181 CharacterOffsetEnd=185 PartOfSpeech=NN Lemma=call NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=186 CharacterOffsetEnd=189 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=190 CharacterOffsetEnd=194 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=195 CharacterOffsetEnd=199 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=200 CharacterOffsetEnd=203 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=information CharacterOffsetBegin=204 CharacterOffsetEnd=215 PartOfSpeech=NN Lemma=information NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=216 CharacterOffsetEnd=219 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=220 CharacterOffsetEnd=224 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=225 CharacterOffsetEnd=227 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=continued CharacterOffsetBegin=228 CharacterOffsetEnd=237 PartOfSpeech=VBN Lemma=continue NamedEntityTag=O]
+[Text=monthly CharacterOffsetBegin=238 CharacterOffsetEnd=245 PartOfSpeech=JJ Lemma=monthly NamedEntityTag=O]
+[Text=throughout CharacterOffsetBegin=246 CharacterOffsetEnd=256 PartOfSpeech=IN Lemma=throughout NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=257 CharacterOffsetEnd=260 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=winter CharacterOffsetBegin=261 CharacterOffsetEnd=267 PartOfSpeech=NN Lemma=winter NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=267 CharacterOffsetEnd=268 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This) (NN call))
+    (VP
+      (VP (VBD was)
+        (ADJP (RB very) (JJ good))
+        (PP (IN for)
+          (NP (NN information))))
+      (CC and)
+      (VP (MD will)
+        (VP (VB be)
+          (VP (VBN continued)
+            (ADVP (JJ monthly))
+            (PP (IN throughout)
+              (NP (DT the) (NN winter)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, good-5)
+det(call-2, This-1)
+nsubj(good-5, call-2)
+nsubjpass(continued-11, call-2)
+cop(good-5, was-3)
+advmod(good-5, very-4)
+case(information-7, for-6)
+nmod:for(good-5, information-7)
+cc(good-5, and-8)
+aux(continued-11, will-9)
+auxpass(continued-11, be-10)
+conj:and(good-5, continued-11)
+advmod(continued-11, monthly-12)
+case(winter-15, throughout-13)
+det(winter-15, the-14)
+nmod:throughout(continued-11, winter-15)
+punct(good-5, .-16)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (1 tokens):
+Lorna
+
+Tokens:
+[Text=Lorna CharacterOffsetBegin=270 CharacterOffsetEnd=275 PartOfSpeech=NNP Lemma=Lorna NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Lorna)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Lorna-1)
+
+Extracted the following NER entity mentions:
+Lorna	PERSON
+
+Coreference set:
+	(3,2,[1,3]) -> (1,7,[4,8]), that is: "This call" -> "the November pricing call"
+
+Coreference set:
+	(2,7,[7,8]) -> (2,2,[1,3]), that is: "their" -> "Houston folks"

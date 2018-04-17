@@ -1,0 +1,474 @@
+Document: ID=879792.in (7 sentences, 111 tokens)
+
+Sentence #1 (13 tokens):
+i told dehart to get ahold of me at my parents place.
+
+Tokens:
+[Text=i CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=LS Lemma=i NamedEntityTag=O]
+[Text=told CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=VBD Lemma=tell NamedEntityTag=O]
+[Text=dehart CharacterOffsetBegin=7 CharacterOffsetEnd=13 PartOfSpeech=NN Lemma=dehart NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=ahold CharacterOffsetBegin=21 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=ahold NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=parents CharacterOffsetBegin=39 CharacterOffsetEnd=46 PartOfSpeech=NNS Lemma=parent NamedEntityTag=O]
+[Text=place CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=place NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (LS i))
+    (VP (VBD told)
+      (NP (NN dehart))
+      (S
+        (VP (TO to)
+          (VP (VB get)
+            (NP
+              (NP (NN ahold))
+              (PP (IN of)
+                (NP (PRP me))))
+            (PP (IN at)
+              (NP (PRP$ my) (NNS parents) (NN place)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, told-2)
+nsubj(told-2, i-1)
+dobj(told-2, dehart-3)
+nsubj:xsubj(get-5, dehart-3)
+mark(get-5, to-4)
+xcomp(told-2, get-5)
+dobj(get-5, ahold-6)
+case(me-8, of-7)
+nmod:of(ahold-6, me-8)
+case(place-12, at-9)
+nmod:poss(place-12, my-10)
+compound(place-12, parents-11)
+nmod:at(get-5, place-12)
+punct(told-2, .-13)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (15 tokens):
+i think he
+called, but i didn't get the message until sunday.
+
+Tokens:
+[Text=i CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=FW Lemma=i NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=57 CharacterOffsetEnd=62 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=63 CharacterOffsetEnd=65 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=called CharacterOffsetBegin=66 CharacterOffsetEnd=72 PartOfSpeech=VBN Lemma=call NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=i CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=FW Lemma=i NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=80 CharacterOffsetEnd=83 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=83 CharacterOffsetEnd=86 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=87 CharacterOffsetEnd=90 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=91 CharacterOffsetEnd=94 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=message CharacterOffsetBegin=95 CharacterOffsetEnd=102 PartOfSpeech=NN Lemma=message NamedEntityTag=O]
+[Text=until CharacterOffsetBegin=103 CharacterOffsetEnd=108 PartOfSpeech=IN Lemma=until NamedEntityTag=O]
+[Text=sunday CharacterOffsetBegin=109 CharacterOffsetEnd=115 PartOfSpeech=NNP Lemma=sunday NamedEntityTag=DATE NormalizedNamedEntityTag=sunday]
+[Text=. CharacterOffsetBegin=115 CharacterOffsetEnd=116 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (FW i))
+      (VP (VBP think)
+        (S
+          (NP (PRP he))
+          (VP (VBN called)))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (FW i))
+      (VP (VBD did) (RB n't)
+        (VP (VB get)
+          (NP (DT the) (NN message))
+          (PP (IN until)
+            (NP (NNP sunday))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, think-2)
+nsubj(think-2, i-1)
+nsubj(called-4, he-3)
+dep(think-2, called-4)
+punct(think-2, ,-5)
+cc(think-2, but-6)
+nsubj(get-10, i-7)
+aux(get-10, did-8)
+neg(get-10, n't-9)
+conj:but(think-2, get-10)
+det(message-12, the-11)
+dobj(get-10, message-12)
+case(sunday-14, until-13)
+nmod:until(get-10, sunday-14)
+punct(think-2, .-15)
+
+Extracted the following NER entity mentions:
+sunday	DATE
+he	PERSON
+
+Sentence #3 (11 tokens):
+you guys are all
+welcome to stay at my house.
+
+Tokens:
+[Text=you CharacterOffsetBegin=118 CharacterOffsetEnd=121 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=guys CharacterOffsetBegin=122 CharacterOffsetEnd=126 PartOfSpeech=NNS Lemma=guy NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=127 CharacterOffsetEnd=130 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=131 CharacterOffsetEnd=134 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=welcome CharacterOffsetBegin=135 CharacterOffsetEnd=142 PartOfSpeech=JJ Lemma=welcome NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=143 CharacterOffsetEnd=145 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=stay CharacterOffsetBegin=146 CharacterOffsetEnd=150 PartOfSpeech=VB Lemma=stay NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=151 CharacterOffsetEnd=153 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=154 CharacterOffsetEnd=156 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=house CharacterOffsetBegin=157 CharacterOffsetEnd=162 PartOfSpeech=NN Lemma=house NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=162 CharacterOffsetEnd=163 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP you) (NNS guys))
+    (VP (VBP are)
+      (ADVP (DT all))
+      (ADJP (JJ welcome)
+        (S
+          (VP (TO to)
+            (VP (VB stay)
+              (PP (IN at)
+                (NP (PRP$ my) (NN house))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, welcome-5)
+dep(guys-2, you-1)
+nsubj(welcome-5, guys-2)
+nsubj:xsubj(stay-7, guys-2)
+cop(welcome-5, are-3)
+advmod(welcome-5, all-4)
+mark(stay-7, to-6)
+xcomp(welcome-5, stay-7)
+case(house-10, at-8)
+nmod:poss(house-10, my-9)
+nmod:at(stay-7, house-10)
+punct(welcome-5, .-11)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (13 tokens):
+i am sure my parents would love to see you
+guys again.
+
+Tokens:
+[Text=i CharacterOffsetBegin=165 CharacterOffsetEnd=166 PartOfSpeech=LS Lemma=i NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=167 CharacterOffsetEnd=169 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=sure CharacterOffsetBegin=170 CharacterOffsetEnd=174 PartOfSpeech=JJ Lemma=sure NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=175 CharacterOffsetEnd=177 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=parents CharacterOffsetBegin=178 CharacterOffsetEnd=185 PartOfSpeech=NNS Lemma=parent NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=186 CharacterOffsetEnd=191 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=love CharacterOffsetBegin=192 CharacterOffsetEnd=196 PartOfSpeech=VB Lemma=love NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=197 CharacterOffsetEnd=199 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=200 CharacterOffsetEnd=203 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=204 CharacterOffsetEnd=207 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=guys CharacterOffsetBegin=208 CharacterOffsetEnd=212 PartOfSpeech=NNS Lemma=guy NamedEntityTag=O]
+[Text=again CharacterOffsetBegin=213 CharacterOffsetEnd=218 PartOfSpeech=RB Lemma=again NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=218 CharacterOffsetEnd=219 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (LS i))
+    (VP (VBP am)
+      (ADJP (JJ sure)
+        (SBAR
+          (S
+            (NP (PRP$ my) (NNS parents))
+            (VP (MD would)
+              (VP (VB love)
+                (S
+                  (VP (TO to)
+                    (VP (VB see)
+                      (S
+                        (NP (PRP you))
+                        (NP (NNS guys)))
+                      (ADVP (RB again)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, sure-3)
+nsubj(sure-3, i-1)
+cop(sure-3, am-2)
+nmod:poss(parents-5, my-4)
+nsubj(love-7, parents-5)
+nsubj:xsubj(see-9, parents-5)
+aux(love-7, would-6)
+ccomp(sure-3, love-7)
+mark(see-9, to-8)
+xcomp(love-7, see-9)
+nsubj(guys-11, you-10)
+xcomp(see-9, guys-11)
+advmod(see-9, again-12)
+punct(sure-3, .-13)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (30 tokens):
+i am sure my parents will wonder why a bunch of old, fat,
+and bald 30 year olds are staying at their house instead of a hotel.
+
+Tokens:
+[Text=i CharacterOffsetBegin=221 CharacterOffsetEnd=222 PartOfSpeech=LS Lemma=i NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=223 CharacterOffsetEnd=225 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=sure CharacterOffsetBegin=226 CharacterOffsetEnd=230 PartOfSpeech=JJ Lemma=sure NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=231 CharacterOffsetEnd=233 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=parents CharacterOffsetBegin=234 CharacterOffsetEnd=241 PartOfSpeech=NNS Lemma=parent NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=242 CharacterOffsetEnd=246 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=wonder CharacterOffsetBegin=247 CharacterOffsetEnd=253 PartOfSpeech=VB Lemma=wonder NamedEntityTag=O]
+[Text=why CharacterOffsetBegin=254 CharacterOffsetEnd=257 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=258 CharacterOffsetEnd=259 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=bunch CharacterOffsetBegin=260 CharacterOffsetEnd=265 PartOfSpeech=NN Lemma=bunch NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=266 CharacterOffsetEnd=268 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=old CharacterOffsetBegin=269 CharacterOffsetEnd=272 PartOfSpeech=JJ Lemma=old NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=272 CharacterOffsetEnd=273 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=fat CharacterOffsetBegin=274 CharacterOffsetEnd=277 PartOfSpeech=JJ Lemma=fat NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=277 CharacterOffsetEnd=278 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=279 CharacterOffsetEnd=282 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=bald CharacterOffsetBegin=283 CharacterOffsetEnd=287 PartOfSpeech=JJ Lemma=bald NamedEntityTag=O]
+[Text=30 CharacterOffsetBegin=288 CharacterOffsetEnd=290 PartOfSpeech=CD Lemma=30 NamedEntityTag=DURATION]
+[Text=year CharacterOffsetBegin=291 CharacterOffsetEnd=295 PartOfSpeech=NN Lemma=year NamedEntityTag=DURATION]
+[Text=olds CharacterOffsetBegin=296 CharacterOffsetEnd=300 PartOfSpeech=NNS Lemma=old NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=301 CharacterOffsetEnd=304 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=staying CharacterOffsetBegin=305 CharacterOffsetEnd=312 PartOfSpeech=VBG Lemma=stay NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=313 CharacterOffsetEnd=315 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=316 CharacterOffsetEnd=321 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=house CharacterOffsetBegin=322 CharacterOffsetEnd=327 PartOfSpeech=NN Lemma=house NamedEntityTag=O]
+[Text=instead CharacterOffsetBegin=328 CharacterOffsetEnd=335 PartOfSpeech=RB Lemma=instead NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=336 CharacterOffsetEnd=338 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=339 CharacterOffsetEnd=340 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=hotel CharacterOffsetBegin=341 CharacterOffsetEnd=346 PartOfSpeech=NN Lemma=hotel NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=346 CharacterOffsetEnd=347 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (LS i))
+    (VP (VBP am)
+      (ADJP (JJ sure)
+        (SBAR
+          (S
+            (NP (PRP$ my) (NNS parents))
+            (VP (MD will)
+              (VP (VB wonder)
+                (SBAR
+                  (WHADVP (WRB why))
+                  (S
+                    (NP
+                      (NP (DT a) (NN bunch))
+                      (PP (IN of)
+                        (NP
+                          (ADJP
+                            (ADJP (JJ old))
+                            (, ,)
+                            (ADJP (JJ fat))
+                            (, ,)
+                            (CC and)
+                            (ADJP (JJ bald))
+                            (NP (CD 30)))
+                          (NN year) (NNS olds))))
+                    (VP (VBP are)
+                      (VP (VBG staying)
+                        (PP (IN at)
+                          (NP
+                            (NP (PRP$ their) (NN house))
+                            (PP (RB instead) (IN of)
+                              (NP (DT a) (NN hotel)))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, sure-3)
+nsubj(sure-3, i-1)
+cop(sure-3, am-2)
+nmod:poss(parents-5, my-4)
+nsubj(wonder-7, parents-5)
+aux(wonder-7, will-6)
+ccomp(sure-3, wonder-7)
+advmod(staying-22, why-8)
+det:qmod(olds-20, a-9)
+mwe(a-9, bunch-10)
+mwe(a-9, of-11)
+amod(olds-20, old-12)
+punct(old-12, ,-13)
+conj:and(old-12, fat-14)
+amod(olds-20, fat-14)
+punct(old-12, ,-15)
+cc(old-12, and-16)
+conj:and(old-12, bald-17)
+amod(olds-20, bald-17)
+dep(old-12, 30-18)
+compound(olds-20, year-19)
+nsubj(staying-22, olds-20)
+aux(staying-22, are-21)
+ccomp(wonder-7, staying-22)
+case(house-25, at-23)
+nmod:poss(house-25, their-24)
+nmod:at(staying-22, house-25)
+case(hotel-29, instead-26)
+mwe(instead-26, of-27)
+det(hotel-29, a-28)
+nmod:instead_of(house-25, hotel-29)
+punct(sure-3, .-30)
+
+Extracted the following NER entity mentions:
+30 year	DURATION
+
+Sentence #6 (24 tokens):
+as
+for robie, we can give him a blanket and he can sleep out in the side
+cart of his dirt bike.
+
+Tokens:
+[Text=as CharacterOffsetBegin=349 CharacterOffsetEnd=351 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=352 CharacterOffsetEnd=355 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=robie CharacterOffsetBegin=356 CharacterOffsetEnd=361 PartOfSpeech=NN Lemma=robie NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=361 CharacterOffsetEnd=362 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=363 CharacterOffsetEnd=365 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=366 CharacterOffsetEnd=369 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=give CharacterOffsetBegin=370 CharacterOffsetEnd=374 PartOfSpeech=VB Lemma=give NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=375 CharacterOffsetEnd=378 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=379 CharacterOffsetEnd=380 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=blanket CharacterOffsetBegin=381 CharacterOffsetEnd=388 PartOfSpeech=NN Lemma=blanket NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=389 CharacterOffsetEnd=392 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=393 CharacterOffsetEnd=395 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=396 CharacterOffsetEnd=399 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=sleep CharacterOffsetBegin=400 CharacterOffsetEnd=405 PartOfSpeech=VB Lemma=sleep NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=406 CharacterOffsetEnd=409 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=410 CharacterOffsetEnd=412 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=413 CharacterOffsetEnd=416 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=side CharacterOffsetBegin=417 CharacterOffsetEnd=421 PartOfSpeech=NN Lemma=side NamedEntityTag=O]
+[Text=cart CharacterOffsetBegin=422 CharacterOffsetEnd=426 PartOfSpeech=NN Lemma=cart NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=427 CharacterOffsetEnd=429 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=430 CharacterOffsetEnd=433 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=dirt CharacterOffsetBegin=434 CharacterOffsetEnd=438 PartOfSpeech=NN Lemma=dirt NamedEntityTag=O]
+[Text=bike CharacterOffsetBegin=439 CharacterOffsetEnd=443 PartOfSpeech=NN Lemma=bike NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=443 CharacterOffsetEnd=444 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN as)
+      (PP (IN for)
+        (NP (NN robie))))
+    (, ,)
+    (S
+      (NP (PRP we))
+      (VP (MD can)
+        (VP (VB give)
+          (NP (PRP him))
+          (NP (DT a) (NN blanket)))))
+    (CC and)
+    (S
+      (NP (PRP he))
+      (VP (MD can)
+        (VP (VB sleep)
+          (PRT (RP out))
+          (PP (IN in)
+            (NP
+              (NP (DT the) (NN side) (NN cart))
+              (PP (IN of)
+                (NP (PRP$ his) (NN dirt) (NN bike))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, give-7)
+case(robie-3, as-1)
+mwe(as-1, for-2)
+nmod:as_for(give-7, robie-3)
+punct(give-7, ,-4)
+nsubj(give-7, we-5)
+aux(give-7, can-6)
+iobj(give-7, him-8)
+det(blanket-10, a-9)
+dobj(give-7, blanket-10)
+cc(give-7, and-11)
+nsubj(sleep-14, he-12)
+aux(sleep-14, can-13)
+conj:and(give-7, sleep-14)
+compound:prt(sleep-14, out-15)
+case(cart-19, in-16)
+det(cart-19, the-17)
+compound(cart-19, side-18)
+nmod:in(sleep-14, cart-19)
+case(bike-23, of-20)
+nmod:poss(bike-23, his-21)
+compound(bike-23, dirt-22)
+nmod:of(cart-19, bike-23)
+punct(give-7, .-24)
+
+Extracted the following NER entity mentions:
+him	PERSON
+he	PERSON
+his	PERSON
+
+Sentence #7 (5 tokens):
+when is this trip?
+
+Tokens:
+[Text=when CharacterOffsetBegin=446 CharacterOffsetEnd=450 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=451 CharacterOffsetEnd=453 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=454 CharacterOffsetEnd=458 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=trip CharacterOffsetBegin=459 CharacterOffsetEnd=463 PartOfSpeech=NN Lemma=trip NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=463 CharacterOffsetEnd=464 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHADVP (WRB when))
+    (SQ (VBZ is)
+      (NP (DT this) (NN trip)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-2)
+advmod(is-2, when-1)
+det(trip-4, this-3)
+nsubj(is-2, trip-4)
+punct(is-2, ?-5)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(1,8,[8,9]) -> (1,1,[1,2]), that is: "me" -> "i"
+	(1,10,[10,11]) -> (1,1,[1,2]), that is: "my" -> "i"
+	(2,1,[1,2]) -> (1,1,[1,2]), that is: "i" -> "i"
+	(2,7,[7,8]) -> (1,1,[1,2]), that is: "i" -> "i"
+	(3,9,[9,10]) -> (1,1,[1,2]), that is: "my" -> "i"
+	(4,1,[1,2]) -> (1,1,[1,2]), that is: "i" -> "i"
+	(4,4,[4,5]) -> (1,1,[1,2]), that is: "my" -> "i"
+	(5,1,[1,2]) -> (1,1,[1,2]), that is: "i" -> "i"
+	(5,4,[4,5]) -> (1,1,[1,2]), that is: "my" -> "i"
+
+Coreference set:
+	(4,11,[11,12]) -> (3,2,[1,3]), that is: "guys" -> "you guys"
+
+Coreference set:
+	(5,5,[4,6]) -> (4,5,[4,6]), that is: "my parents" -> "my parents"
+	(5,24,[24,25]) -> (4,5,[4,6]), that is: "their" -> "my parents"
+
+Coreference set:
+	(6,8,[8,9]) -> (5,18,[18,19]), that is: "him" -> "30"
+	(6,12,[12,13]) -> (5,18,[18,19]), that is: "he" -> "30"
+	(6,21,[21,22]) -> (5,18,[18,19]), that is: "his" -> "30"

@@ -1,0 +1,95 @@
+Document: ID=897659.in (2 sentences, 20 tokens)
+
+Sentence #1 (9 tokens):
+What are Rami and Hanny doing on Sat?
+
+Tokens:
+[Text=What CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=Rami CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Rami NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Hanny CharacterOffsetBegin=18 CharacterOffsetEnd=23 PartOfSpeech=NNP Lemma=Hanny NamedEntityTag=PERSON]
+[Text=doing CharacterOffsetBegin=24 CharacterOffsetEnd=29 PartOfSpeech=VBG Lemma=do NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Sat CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Sat NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBP are)
+      (NP (NNP Rami)
+        (CC and)
+        (NNP Hanny))
+      (VP (VBG doing)
+        (PP (IN on)
+          (NP (NNP Sat)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, doing-6)
+dobj(doing-6, What-1)
+aux(doing-6, are-2)
+nsubj(doing-6, Rami-3)
+cc(Rami-3, and-4)
+conj:and(Rami-3, Hanny-5)
+nsubj(doing-6, Hanny-5)
+case(Sat-8, on-7)
+nmod:on(doing-6, Sat-8)
+punct(doing-6, ?-9)
+
+Extracted the following NER entity mentions:
+Rami	PERSON
+Hanny	PERSON
+
+Sentence #2 (11 tokens):
+Maybe we could all hook up with
+their buddies too!
+
+Tokens:
+[Text=Maybe CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=RB Lemma=maybe NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=48 CharacterOffsetEnd=53 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=hook CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=NN Lemma=hook NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=63 CharacterOffsetEnd=65 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=71 CharacterOffsetEnd=76 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=buddies CharacterOffsetBegin=77 CharacterOffsetEnd=84 PartOfSpeech=NNS Lemma=buddy NamedEntityTag=O]
+[Text=too CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=88 CharacterOffsetEnd=89 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Maybe))
+    (NP (PRP we))
+    (VP (MD could)
+      (VP
+        (NP (DT all) (NN hook))
+        (ADVP (RP up)
+          (PP (IN with)
+            (NP (PRP$ their) (NNS buddies))
+            (ADVP (RB too))))))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, hook-5)
+advmod(hook-5, Maybe-1)
+nsubj(hook-5, we-2)
+aux(hook-5, could-3)
+det(hook-5, all-4)
+advmod(hook-5, up-6)
+case(buddies-9, with-7)
+nmod:poss(buddies-9, their-8)
+nmod:with(up-6, buddies-9)
+advmod(buddies-9, too-10)
+punct(hook-5, !-11)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(2,8,[8,9]) -> (1,3,[3,6]), that is: "their" -> "Rami and Hanny"

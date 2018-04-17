@@ -1,0 +1,252 @@
+Document: ID=810478.in (5 sentences, 55 tokens)
+
+Sentence #1 (2 tokens):
+FYI.
+
+Tokens:
+[Text=FYI CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=FYI NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP FYI))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, FYI-1)
+punct(FYI-1, .-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (24 tokens):
+I received a letter today from Ed Arnold with Kriscott Inc. stating
+that they will be terminating their CNG gas contract effective 5/1/2000.
+
+Tokens:
+[Text=I CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=received CharacterOffsetBegin=8 CharacterOffsetEnd=16 PartOfSpeech=VBD Lemma=receive NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=letter CharacterOffsetBegin=19 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=letter NamedEntityTag=O]
+[Text=today CharacterOffsetBegin=26 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=today NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Ed CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=NNP Lemma=Ed NamedEntityTag=PERSON]
+[Text=Arnold CharacterOffsetBegin=40 CharacterOffsetEnd=46 PartOfSpeech=NNP Lemma=Arnold NamedEntityTag=PERSON]
+[Text=with CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Kriscott CharacterOffsetBegin=52 CharacterOffsetEnd=60 PartOfSpeech=NNP Lemma=Kriscott NamedEntityTag=ORGANIZATION]
+[Text=Inc. CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=NNP Lemma=Inc. NamedEntityTag=ORGANIZATION]
+[Text=stating CharacterOffsetBegin=66 CharacterOffsetEnd=73 PartOfSpeech=VBG Lemma=state NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=74 CharacterOffsetEnd=78 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=79 CharacterOffsetEnd=83 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=84 CharacterOffsetEnd=88 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=terminating CharacterOffsetBegin=92 CharacterOffsetEnd=103 PartOfSpeech=VBG Lemma=terminate NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=104 CharacterOffsetEnd=109 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=CNG CharacterOffsetBegin=110 CharacterOffsetEnd=113 PartOfSpeech=NNP Lemma=CNG NamedEntityTag=O]
+[Text=gas CharacterOffsetBegin=114 CharacterOffsetEnd=117 PartOfSpeech=NN Lemma=gas NamedEntityTag=O]
+[Text=contract CharacterOffsetBegin=118 CharacterOffsetEnd=126 PartOfSpeech=NN Lemma=contract NamedEntityTag=O]
+[Text=effective CharacterOffsetBegin=127 CharacterOffsetEnd=136 PartOfSpeech=JJ Lemma=effective NamedEntityTag=O]
+[Text=5/1/2000 CharacterOffsetBegin=137 CharacterOffsetEnd=145 PartOfSpeech=CD Lemma=5/1/2000 NamedEntityTag=DATE NormalizedNamedEntityTag=20000501]
+[Text=. CharacterOffsetBegin=145 CharacterOffsetEnd=146 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD received)
+      (NP (DT a) (NN letter))
+      (NP-TMP (NN today))
+      (PP (IN from)
+        (NP
+          (NP (NNP Ed) (NNP Arnold))
+          (PP (IN with)
+            (NP (NNP Kriscott) (NNP Inc.)))))
+      (S
+        (VP (VBG stating)
+          (SBAR (IN that)
+            (S
+              (NP (PRP they))
+              (VP (MD will)
+                (VP (VB be)
+                  (VP (VBG terminating)
+                    (NP
+                      (NP (PRP$ their) (NNP CNG) (NN gas) (NN contract))
+                      (ADJP (JJ effective)
+                        (NP-TMP (CD 5/1/2000))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, received-2)
+nsubj(received-2, I-1)
+det(letter-4, a-3)
+dobj(received-2, letter-4)
+nmod:tmod(received-2, today-5)
+case(Arnold-8, from-6)
+compound(Arnold-8, Ed-7)
+nmod:from(received-2, Arnold-8)
+case(Inc.-11, with-9)
+compound(Inc.-11, Kriscott-10)
+nmod:with(Arnold-8, Inc.-11)
+xcomp(received-2, stating-12)
+mark(terminating-17, that-13)
+nsubj(terminating-17, they-14)
+aux(terminating-17, will-15)
+aux(terminating-17, be-16)
+ccomp(stating-12, terminating-17)
+nmod:poss(contract-21, their-18)
+compound(contract-21, CNG-19)
+compound(contract-21, gas-20)
+dobj(terminating-17, contract-21)
+amod(contract-21, effective-22)
+nmod:tmod(effective-22, 5/1/2000-23)
+punct(received-2, .-24)
+
+Extracted the following NER entity mentions:
+Ed Arnold	PERSON
+Kriscott Inc.	ORGANIZATION
+5/1/2000	DATE
+
+Sentence #3 (14 tokens):
+For
+volume purposes, his four meters produced about 3,000 dths a month.
+
+Tokens:
+[Text=For CharacterOffsetBegin=148 CharacterOffsetEnd=151 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=volume CharacterOffsetBegin=152 CharacterOffsetEnd=158 PartOfSpeech=NN Lemma=volume NamedEntityTag=O]
+[Text=purposes CharacterOffsetBegin=159 CharacterOffsetEnd=167 PartOfSpeech=NNS Lemma=purpose NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=167 CharacterOffsetEnd=168 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=169 CharacterOffsetEnd=172 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=four CharacterOffsetBegin=173 CharacterOffsetEnd=177 PartOfSpeech=CD Lemma=four NamedEntityTag=NUMBER NormalizedNamedEntityTag=4.0]
+[Text=meters CharacterOffsetBegin=178 CharacterOffsetEnd=184 PartOfSpeech=NNS Lemma=meter NamedEntityTag=O]
+[Text=produced CharacterOffsetBegin=185 CharacterOffsetEnd=193 PartOfSpeech=VBD Lemma=produce NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=194 CharacterOffsetEnd=199 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=3,000 CharacterOffsetBegin=200 CharacterOffsetEnd=205 PartOfSpeech=CD Lemma=3,000 NamedEntityTag=NUMBER NormalizedNamedEntityTag=~3000.0]
+[Text=dths CharacterOffsetBegin=206 CharacterOffsetEnd=210 PartOfSpeech=NNS Lemma=dth NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=211 CharacterOffsetEnd=212 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=month CharacterOffsetBegin=213 CharacterOffsetEnd=218 PartOfSpeech=NN Lemma=month NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=218 CharacterOffsetEnd=219 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN For)
+      (NP (NN volume) (NNS purposes)))
+    (, ,)
+    (NP (PRP$ his) (CD four) (NNS meters))
+    (VP (VBD produced)
+      (PP (IN about)
+        (NP (CD 3,000) (NNS dths)))
+      (NP-TMP (DT a) (NN month)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, produced-8)
+case(purposes-3, For-1)
+compound(purposes-3, volume-2)
+nmod:for(produced-8, purposes-3)
+punct(produced-8, ,-4)
+nmod:poss(meters-7, his-5)
+nummod(meters-7, four-6)
+nsubj(produced-8, meters-7)
+case(dths-11, about-9)
+nummod(dths-11, 3,000-10)
+nmod:about(produced-8, dths-11)
+det(month-13, a-12)
+nmod:tmod(produced-8, month-13)
+punct(produced-8, .-14)
+
+Extracted the following NER entity mentions:
+four	NUMBER
+3,000	NUMBER
+his	PERSON
+
+Sentence #4 (12 tokens):
+Let me
+know if anyone wants a copy of the letter.
+
+Tokens:
+[Text=Let CharacterOffsetBegin=221 CharacterOffsetEnd=224 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=225 CharacterOffsetEnd=227 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=228 CharacterOffsetEnd=232 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=233 CharacterOffsetEnd=235 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=anyone CharacterOffsetBegin=236 CharacterOffsetEnd=242 PartOfSpeech=NN Lemma=anyone NamedEntityTag=O]
+[Text=wants CharacterOffsetBegin=243 CharacterOffsetEnd=248 PartOfSpeech=VBZ Lemma=want NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=249 CharacterOffsetEnd=250 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=copy CharacterOffsetBegin=251 CharacterOffsetEnd=255 PartOfSpeech=NN Lemma=copy NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=256 CharacterOffsetEnd=258 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=259 CharacterOffsetEnd=262 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=letter CharacterOffsetBegin=263 CharacterOffsetEnd=269 PartOfSpeech=NN Lemma=letter NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=269 CharacterOffsetEnd=270 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Let)
+      (S
+        (NP (PRP me))
+        (VP (VB know)
+          (SBAR (IN if)
+            (S
+              (NP (NN anyone))
+              (VP (VBZ wants)
+                (NP
+                  (NP (DT a) (NN copy))
+                  (PP (IN of)
+                    (NP (DT the) (NN letter))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Let-1)
+nsubj(know-3, me-2)
+ccomp(Let-1, know-3)
+mark(wants-6, if-4)
+nsubj(wants-6, anyone-5)
+advcl:if(know-3, wants-6)
+det(copy-8, a-7)
+dobj(wants-6, copy-8)
+case(letter-11, of-9)
+det(letter-11, the-10)
+nmod:of(copy-8, letter-11)
+punct(Let-1, .-12)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (3 tokens):
+Thanks,
+HG
+
+Tokens:
+[Text=Thanks CharacterOffsetBegin=272 CharacterOffsetEnd=278 PartOfSpeech=NNS Lemma=thanks NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=278 CharacterOffsetEnd=279 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=HG CharacterOffsetBegin=280 CharacterOffsetEnd=282 PartOfSpeech=NNP Lemma=HG NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNS Thanks))
+    (, ,)
+    (NP (NNP HG))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Thanks-1)
+punct(Thanks-1, ,-2)
+appos(Thanks-1, HG-3)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(4,2,[2,3]) -> (2,1,[1,2]), that is: "me" -> "I"
+
+Coreference set:
+	(4,11,[10,12]) -> (2,4,[3,5]), that is: "the letter" -> "a letter"
+
+Coreference set:
+	(3,5,[5,6]) -> (2,8,[7,12]), that is: "his" -> "Ed Arnold with Kriscott Inc."
+
+Coreference set:
+	(2,18,[18,19]) -> (2,14,[14,15]), that is: "their" -> "they"

@@ -1,0 +1,578 @@
+Document: ID=255316.in (7 sentences, 139 tokens)
+
+Sentence #1 (12 tokens):
+Gentlemen -
+The revised counter was delivered to Zaman earlier today.
+
+Tokens:
+[Text=Gentlemen CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NNS Lemma=gentleman NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=revised CharacterOffsetBegin=16 CharacterOffsetEnd=23 PartOfSpeech=VBN Lemma=revise NamedEntityTag=O]
+[Text=counter CharacterOffsetBegin=24 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=counter NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=delivered CharacterOffsetBegin=36 CharacterOffsetEnd=45 PartOfSpeech=VBN Lemma=deliver NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=46 CharacterOffsetEnd=48 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Zaman CharacterOffsetBegin=49 CharacterOffsetEnd=54 PartOfSpeech=NNP Lemma=Zaman NamedEntityTag=PERSON]
+[Text=earlier CharacterOffsetBegin=55 CharacterOffsetEnd=62 PartOfSpeech=JJR Lemma=earlier NamedEntityTag=O]
+[Text=today CharacterOffsetBegin=63 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=today NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (X
+    (NP (NNS Gentlemen))
+    (: -)
+    (S
+      (NP (DT The) (VBN revised) (NN counter))
+      (VP (VBD was)
+        (VP (VBN delivered)
+          (PP (TO to)
+            (NP
+              (NP (NNP Zaman))
+              (ADVP (JJR earlier))))
+          (NP-TMP (NN today)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, delivered-7)
+dep(delivered-7, Gentlemen-1)
+punct(delivered-7, --2)
+det(counter-5, The-3)
+amod(counter-5, revised-4)
+nsubjpass(delivered-7, counter-5)
+auxpass(delivered-7, was-6)
+case(Zaman-9, to-8)
+nmod:to(delivered-7, Zaman-9)
+advmod(Zaman-9, earlier-10)
+nmod:tmod(delivered-7, today-11)
+punct(delivered-7, .-12)
+
+Extracted the following NER entity mentions:
+Zaman	PERSON
+
+Sentence #2 (12 tokens):
+McGee spoke with
+Zaman and later with both Trujillo and Zaman.
+
+Tokens:
+[Text=McGee CharacterOffsetBegin=71 CharacterOffsetEnd=76 PartOfSpeech=NNP Lemma=McGee NamedEntityTag=PERSON]
+[Text=spoke CharacterOffsetBegin=77 CharacterOffsetEnd=82 PartOfSpeech=VBD Lemma=speak NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=83 CharacterOffsetEnd=87 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Zaman CharacterOffsetBegin=88 CharacterOffsetEnd=93 PartOfSpeech=NNP Lemma=Zaman NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=94 CharacterOffsetEnd=97 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=later CharacterOffsetBegin=98 CharacterOffsetEnd=103 PartOfSpeech=RB Lemma=later NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=104 CharacterOffsetEnd=108 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=both CharacterOffsetBegin=109 CharacterOffsetEnd=113 PartOfSpeech=CC Lemma=both NamedEntityTag=O]
+[Text=Trujillo CharacterOffsetBegin=114 CharacterOffsetEnd=122 PartOfSpeech=NNP Lemma=Trujillo NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=123 CharacterOffsetEnd=126 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Zaman CharacterOffsetBegin=127 CharacterOffsetEnd=132 PartOfSpeech=NNP Lemma=Zaman NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=132 CharacterOffsetEnd=133 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP McGee))
+    (VP (VBD spoke)
+      (PP (IN with)
+        (NP (NNP Zaman)
+          (CC and)
+          (RB later)))
+      (PP (IN with)
+        (NP (CC both)
+          (NP (NNP Trujillo))
+          (CC and)
+          (NP (NNP Zaman)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, spoke-2)
+nsubj(spoke-2, McGee-1)
+case(Zaman-4, with-3)
+nmod:with(spoke-2, Zaman-4)
+cc(Zaman-4, and-5)
+advmod(Zaman-4, later-6)
+case(Trujillo-9, with-7)
+cc:preconj(Trujillo-9, both-8)
+nmod:with(spoke-2, Trujillo-9)
+cc(Trujillo-9, and-10)
+nmod:with(spoke-2, Zaman-11)
+conj:and(Trujillo-9, Zaman-11)
+punct(spoke-2, .-12)
+
+Extracted the following NER entity mentions:
+McGee	PERSON
+Zaman	PERSON
+Trujillo	PERSON
+Zaman	PERSON
+
+Sentence #3 (18 tokens):
+They delivered what they
+stated, and McGee believes, is their final and bottom line proposal.
+
+Tokens:
+[Text=They CharacterOffsetBegin=135 CharacterOffsetEnd=139 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=delivered CharacterOffsetBegin=140 CharacterOffsetEnd=149 PartOfSpeech=VBD Lemma=deliver NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=150 CharacterOffsetEnd=154 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=155 CharacterOffsetEnd=159 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=stated CharacterOffsetBegin=160 CharacterOffsetEnd=166 PartOfSpeech=VBD Lemma=state NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=166 CharacterOffsetEnd=167 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=168 CharacterOffsetEnd=171 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=McGee CharacterOffsetBegin=172 CharacterOffsetEnd=177 PartOfSpeech=NNP Lemma=McGee NamedEntityTag=PERSON]
+[Text=believes CharacterOffsetBegin=178 CharacterOffsetEnd=186 PartOfSpeech=VBZ Lemma=believe NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=186 CharacterOffsetEnd=187 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=188 CharacterOffsetEnd=190 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=191 CharacterOffsetEnd=196 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=final CharacterOffsetBegin=197 CharacterOffsetEnd=202 PartOfSpeech=JJ Lemma=final NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=203 CharacterOffsetEnd=206 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=bottom CharacterOffsetBegin=207 CharacterOffsetEnd=213 PartOfSpeech=JJ Lemma=bottom NamedEntityTag=O]
+[Text=line CharacterOffsetBegin=214 CharacterOffsetEnd=218 PartOfSpeech=NN Lemma=line NamedEntityTag=O]
+[Text=proposal CharacterOffsetBegin=219 CharacterOffsetEnd=227 PartOfSpeech=NN Lemma=proposal NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=227 CharacterOffsetEnd=228 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP They))
+      (VP (VBD delivered)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (PRP they))
+            (VP (VBD stated))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (NNP McGee))
+      (VP
+        (VP (VBZ believes))
+        (, ,)
+        (VP (VBZ is)
+          (NP (PRP$ their) (JJ final)
+            (CC and)
+            (JJ bottom) (NN line) (NN proposal)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, delivered-2)
+nsubj(delivered-2, They-1)
+dobj(stated-5, what-3)
+nsubj(stated-5, they-4)
+ccomp(delivered-2, stated-5)
+punct(delivered-2, ,-6)
+cc(delivered-2, and-7)
+nsubj(believes-9, McGee-8)
+conj:and(delivered-2, believes-9)
+punct(believes-9, ,-10)
+cop(final-13, is-11)
+nmod:poss(final-13, their-12)
+dep(believes-9, final-13)
+cc(final-13, and-14)
+amod(proposal-17, bottom-15)
+compound(proposal-17, line-16)
+dep(believes-9, proposal-17)
+conj:and(final-13, proposal-17)
+punct(delivered-2, .-18)
+
+Extracted the following NER entity mentions:
+McGee	PERSON
+
+Sentence #4 (43 tokens):
+They
+would not consider Standing Rock as part of this negotiation (although they
+would be open to separate negotiation over Standing Rock), they required $15
+million up front and $2.34 million per year with a CPI escalator.
+
+Tokens:
+[Text=They CharacterOffsetBegin=230 CharacterOffsetEnd=234 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=235 CharacterOffsetEnd=240 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=241 CharacterOffsetEnd=244 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=consider CharacterOffsetBegin=245 CharacterOffsetEnd=253 PartOfSpeech=VB Lemma=consider NamedEntityTag=O]
+[Text=Standing CharacterOffsetBegin=254 CharacterOffsetEnd=262 PartOfSpeech=VBG Lemma=stand NamedEntityTag=O]
+[Text=Rock CharacterOffsetBegin=263 CharacterOffsetEnd=267 PartOfSpeech=NNP Lemma=Rock NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=268 CharacterOffsetEnd=270 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=part CharacterOffsetBegin=271 CharacterOffsetEnd=275 PartOfSpeech=NN Lemma=part NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=276 CharacterOffsetEnd=278 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=279 CharacterOffsetEnd=283 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=negotiation CharacterOffsetBegin=284 CharacterOffsetEnd=295 PartOfSpeech=NN Lemma=negotiation NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=296 CharacterOffsetEnd=297 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=although CharacterOffsetBegin=297 CharacterOffsetEnd=305 PartOfSpeech=IN Lemma=although NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=306 CharacterOffsetEnd=310 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=311 CharacterOffsetEnd=316 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=317 CharacterOffsetEnd=319 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=open CharacterOffsetBegin=320 CharacterOffsetEnd=324 PartOfSpeech=JJ Lemma=open NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=325 CharacterOffsetEnd=327 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=separate CharacterOffsetBegin=328 CharacterOffsetEnd=336 PartOfSpeech=JJ Lemma=separate NamedEntityTag=O]
+[Text=negotiation CharacterOffsetBegin=337 CharacterOffsetEnd=348 PartOfSpeech=NN Lemma=negotiation NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=349 CharacterOffsetEnd=353 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=Standing CharacterOffsetBegin=354 CharacterOffsetEnd=362 PartOfSpeech=VBG Lemma=stand NamedEntityTag=O]
+[Text=Rock CharacterOffsetBegin=363 CharacterOffsetEnd=367 PartOfSpeech=NNP Lemma=Rock NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=367 CharacterOffsetEnd=368 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=368 CharacterOffsetEnd=369 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=370 CharacterOffsetEnd=374 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=required CharacterOffsetBegin=375 CharacterOffsetEnd=383 PartOfSpeech=VBD Lemma=require NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=384 CharacterOffsetEnd=385 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$1.5E7]
+[Text=15 CharacterOffsetBegin=385 CharacterOffsetEnd=387 PartOfSpeech=CD Lemma=15 NamedEntityTag=MONEY NormalizedNamedEntityTag=$1.5E7]
+[Text=million CharacterOffsetBegin=388 CharacterOffsetEnd=395 PartOfSpeech=CD Lemma=million NamedEntityTag=MONEY NormalizedNamedEntityTag=$1.5E7]
+[Text=up CharacterOffsetBegin=396 CharacterOffsetEnd=398 PartOfSpeech=IN Lemma=up NamedEntityTag=O]
+[Text=front CharacterOffsetBegin=399 CharacterOffsetEnd=404 PartOfSpeech=NN Lemma=front NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=405 CharacterOffsetEnd=408 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=409 CharacterOffsetEnd=410 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$2340000.0]
+[Text=2.34 CharacterOffsetBegin=410 CharacterOffsetEnd=414 PartOfSpeech=CD Lemma=2.34 NamedEntityTag=MONEY NormalizedNamedEntityTag=$2340000.0]
+[Text=million CharacterOffsetBegin=415 CharacterOffsetEnd=422 PartOfSpeech=CD Lemma=million NamedEntityTag=MONEY NormalizedNamedEntityTag=$2340000.0]
+[Text=per CharacterOffsetBegin=423 CharacterOffsetEnd=426 PartOfSpeech=IN Lemma=per NamedEntityTag=O]
+[Text=year CharacterOffsetBegin=427 CharacterOffsetEnd=431 PartOfSpeech=NN Lemma=year NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=432 CharacterOffsetEnd=436 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=437 CharacterOffsetEnd=438 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=CPI CharacterOffsetBegin=439 CharacterOffsetEnd=442 PartOfSpeech=NNP Lemma=CPI NamedEntityTag=MISC]
+[Text=escalator CharacterOffsetBegin=443 CharacterOffsetEnd=452 PartOfSpeech=NN Lemma=escalator NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=452 CharacterOffsetEnd=453 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP They))
+      (VP (MD would) (RB not)
+        (VP (VB consider)
+          (S
+            (VP (VBG Standing)
+              (NP
+                (NP (NNP Rock))
+                (PP (IN as)
+                  (NP
+                    (NP (NN part))
+                    (PP (IN of)
+                      (NP (DT this) (NN negotiation)))
+                    (PRN (-LRB- -LRB-)
+                      (SBAR (IN although)
+                        (S
+                          (NP (PRP they))
+                          (VP (MD would)
+                            (VP (VB be)
+                              (ADJP (JJ open)
+                                (PP (TO to)
+                                  (NP (JJ separate) (NN negotiation))))
+                              (PP (IN over)
+                                (S
+                                  (VP (VBG Standing)
+                                    (NP (NNP Rock)))))))))
+                      (-RRB- -RRB-))))))))))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBD required)
+      (NP
+        (QP ($ $) (CD 15) (CD million)))
+      (PP (IN up)
+        (NP
+          (NP (NN front))
+          (CC and)
+          (NP
+            (NP
+              (QP ($ $) (CD 2.34) (CD million)))
+            (PP (IN per)
+              (NP (NN year))))))
+      (PP (IN with)
+        (NP (DT a) (NNP CPI) (NN escalator))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, required-27)
+nsubj(consider-4, They-1)
+aux(consider-4, would-2)
+neg(consider-4, not-3)
+ccomp(required-27, consider-4)
+xcomp(consider-4, Standing-5)
+dobj(Standing-5, Rock-6)
+case(part-8, as-7)
+nmod:as(Rock-6, part-8)
+case(negotiation-11, of-9)
+det(negotiation-11, this-10)
+nmod:of(part-8, negotiation-11)
+punct(open-17, -LRB--12)
+mark(open-17, although-13)
+nsubj(open-17, they-14)
+aux(open-17, would-15)
+cop(open-17, be-16)
+dep(part-8, open-17)
+case(negotiation-20, to-18)
+amod(negotiation-20, separate-19)
+nmod:to(open-17, negotiation-20)
+mark(Standing-22, over-21)
+advcl:over(open-17, Standing-22)
+dobj(Standing-22, Rock-23)
+punct(open-17, -RRB--24)
+punct(required-27, ,-25)
+nsubj(required-27, they-26)
+dobj(required-27, $-28)
+compound(million-30, 15-29)
+nummod($-28, million-30)
+case(front-32, up-31)
+nmod:up(required-27, front-32)
+cc(front-32, and-33)
+nmod:up(required-27, $-34)
+conj:and(front-32, $-34)
+compound(million-36, 2.34-35)
+nummod($-34, million-36)
+case(year-38, per-37)
+nmod:per($-34, year-38)
+case(escalator-42, with-39)
+det(escalator-42, a-40)
+compound(escalator-42, CPI-41)
+nmod:with(required-27, escalator-42)
+punct(required-27, .-43)
+
+Extracted the following NER entity mentions:
+$15 million	MONEY
+$2.34 million	MONEY
+CPI	MISC
+
+Sentence #5 (13 tokens):
+This is
+just slightly over $29 million in today's dollars.
+
+Tokens:
+[Text=This CharacterOffsetBegin=455 CharacterOffsetEnd=459 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=460 CharacterOffsetEnd=462 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=463 CharacterOffsetEnd=467 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=slightly CharacterOffsetBegin=468 CharacterOffsetEnd=476 PartOfSpeech=RB Lemma=slightly NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=477 CharacterOffsetEnd=481 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=482 CharacterOffsetEnd=483 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=>$2.9E7]
+[Text=29 CharacterOffsetBegin=483 CharacterOffsetEnd=485 PartOfSpeech=CD Lemma=29 NamedEntityTag=MONEY NormalizedNamedEntityTag=>$2.9E7]
+[Text=million CharacterOffsetBegin=486 CharacterOffsetEnd=493 PartOfSpeech=CD Lemma=million NamedEntityTag=MONEY NormalizedNamedEntityTag=>$2.9E7]
+[Text=in CharacterOffsetBegin=494 CharacterOffsetEnd=496 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=today CharacterOffsetBegin=497 CharacterOffsetEnd=502 PartOfSpeech=NN Lemma=today NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=502 CharacterOffsetEnd=504 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=dollars CharacterOffsetBegin=505 CharacterOffsetEnd=512 PartOfSpeech=NNS Lemma=dollar NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=512 CharacterOffsetEnd=513 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (QP (RB just) (RB slightly) (IN over) ($ $) (CD 29) (CD million)))
+        (PP (IN in)
+          (NP
+            (NP (NN today) (POS 's))
+            (NNS dollars)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, $-6)
+nsubj($-6, This-1)
+cop($-6, is-2)
+advmod($-6, just-3)
+advmod($-6, slightly-4)
+advmod($-6, over-5)
+compound(million-8, 29-7)
+nummod($-6, million-8)
+case(dollars-12, in-9)
+nmod:poss(dollars-12, today-10)
+case(today-10, 's-11)
+nmod:in($-6, dollars-12)
+punct($-6, .-13)
+
+Extracted the following NER entity mentions:
+$29 million	MONEY
+
+Sentence #6 (9 tokens):
+They wish an answer tomorrow to the proposal.
+
+Tokens:
+[Text=They CharacterOffsetBegin=514 CharacterOffsetEnd=518 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=wish CharacterOffsetBegin=519 CharacterOffsetEnd=523 PartOfSpeech=VBP Lemma=wish NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=524 CharacterOffsetEnd=526 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=answer CharacterOffsetBegin=527 CharacterOffsetEnd=533 PartOfSpeech=NN Lemma=answer NamedEntityTag=O]
+[Text=tomorrow CharacterOffsetBegin=534 CharacterOffsetEnd=542 PartOfSpeech=NN Lemma=tomorrow NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=543 CharacterOffsetEnd=545 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=546 CharacterOffsetEnd=549 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=proposal CharacterOffsetBegin=550 CharacterOffsetEnd=558 PartOfSpeech=NN Lemma=proposal NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=558 CharacterOffsetEnd=559 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP wish)
+      (NP (DT an) (NN answer))
+      (NP-TMP (NN tomorrow))
+      (PP (TO to)
+        (NP (DT the) (NN proposal))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, wish-2)
+nsubj(wish-2, They-1)
+det(answer-4, an-3)
+dobj(wish-2, answer-4)
+nmod:tmod(wish-2, tomorrow-5)
+case(proposal-8, to-6)
+det(proposal-8, the-7)
+nmod:to(wish-2, proposal-8)
+punct(wish-2, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #7 (32 tokens):
+McGee did not commit to do so
+but he did request that Zaman and Trujillo confirm from the Task Force this
+Friday whether they had the authority to make this proposal.
+
+Tokens:
+[Text=McGee CharacterOffsetBegin=561 CharacterOffsetEnd=566 PartOfSpeech=NNP Lemma=McGee NamedEntityTag=PERSON]
+[Text=did CharacterOffsetBegin=567 CharacterOffsetEnd=570 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=571 CharacterOffsetEnd=574 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=commit CharacterOffsetBegin=575 CharacterOffsetEnd=581 PartOfSpeech=VB Lemma=commit NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=582 CharacterOffsetEnd=584 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=585 CharacterOffsetEnd=587 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=588 CharacterOffsetEnd=590 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=591 CharacterOffsetEnd=594 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=595 CharacterOffsetEnd=597 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=598 CharacterOffsetEnd=601 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=request CharacterOffsetBegin=602 CharacterOffsetEnd=609 PartOfSpeech=NN Lemma=request NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=610 CharacterOffsetEnd=614 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=Zaman CharacterOffsetBegin=615 CharacterOffsetEnd=620 PartOfSpeech=NNP Lemma=Zaman NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=621 CharacterOffsetEnd=624 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Trujillo CharacterOffsetBegin=625 CharacterOffsetEnd=633 PartOfSpeech=NNP Lemma=Trujillo NamedEntityTag=PERSON]
+[Text=confirm CharacterOffsetBegin=634 CharacterOffsetEnd=641 PartOfSpeech=VBP Lemma=confirm NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=642 CharacterOffsetEnd=646 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=647 CharacterOffsetEnd=650 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Task CharacterOffsetBegin=651 CharacterOffsetEnd=655 PartOfSpeech=NNP Lemma=Task NamedEntityTag=ORGANIZATION]
+[Text=Force CharacterOffsetBegin=656 CharacterOffsetEnd=661 PartOfSpeech=NNP Lemma=Force NamedEntityTag=ORGANIZATION]
+[Text=this CharacterOffsetBegin=662 CharacterOffsetEnd=666 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=Friday CharacterOffsetBegin=667 CharacterOffsetEnd=673 PartOfSpeech=NNP Lemma=Friday NamedEntityTag=DATE NormalizedNamedEntityTag=friday]
+[Text=whether CharacterOffsetBegin=674 CharacterOffsetEnd=681 PartOfSpeech=IN Lemma=whether NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=682 CharacterOffsetEnd=686 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=687 CharacterOffsetEnd=690 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=691 CharacterOffsetEnd=694 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=authority CharacterOffsetBegin=695 CharacterOffsetEnd=704 PartOfSpeech=NN Lemma=authority NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=705 CharacterOffsetEnd=707 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=708 CharacterOffsetEnd=712 PartOfSpeech=VB Lemma=make NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=713 CharacterOffsetEnd=717 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=proposal CharacterOffsetBegin=718 CharacterOffsetEnd=726 PartOfSpeech=NN Lemma=proposal NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=726 CharacterOffsetEnd=727 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NNP McGee))
+      (VP (VBD did) (RB not)
+        (VP (VB commit)
+          (S
+            (VP (TO to)
+              (VP (VB do)
+                (ADVP (RB so))))))))
+    (CC but)
+    (S
+      (NP (PRP he))
+      (VP (VBD did)
+        (NP
+          (NP (NN request))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (NP (NNP Zaman)
+                (CC and)
+                (NNP Trujillo))
+              (VP (VBP confirm)
+                (PP (IN from)
+                  (NP (DT the) (NNP Task) (NNP Force)))))))
+        (NP-TMP (DT this) (NNP Friday))
+        (SBAR (IN whether)
+          (S
+            (NP (PRP they))
+            (VP (VBD had)
+              (NP (DT the) (NN authority)
+                (S
+                  (VP (TO to)
+                    (VP (VB make)
+                      (NP (DT this) (NN proposal)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, commit-4)
+nsubj(commit-4, McGee-1)
+nsubj:xsubj(do-6, McGee-1)
+aux(commit-4, did-2)
+neg(commit-4, not-3)
+mark(do-6, to-5)
+xcomp(commit-4, do-6)
+advmod(do-6, so-7)
+cc(commit-4, but-8)
+nsubj(did-10, he-9)
+conj:but(commit-4, did-10)
+dobj(did-10, request-11)
+dobj(confirm-16, request-11)
+ref(request-11, that-12)
+nsubj(confirm-16, Zaman-13)
+cc(Zaman-13, and-14)
+conj:and(Zaman-13, Trujillo-15)
+nsubj(confirm-16, Trujillo-15)
+acl:relcl(request-11, confirm-16)
+case(Force-20, from-17)
+det(Force-20, the-18)
+compound(Force-20, Task-19)
+nmod:from(confirm-16, Force-20)
+det(Friday-22, this-21)
+nmod:tmod(did-10, Friday-22)
+mark(had-25, whether-23)
+nsubj(had-25, they-24)
+ccomp(did-10, had-25)
+det(authority-27, the-26)
+dobj(had-25, authority-27)
+mark(make-29, to-28)
+acl:to(authority-27, make-29)
+det(proposal-31, this-30)
+dobj(make-29, proposal-31)
+punct(commit-4, .-32)
+
+Extracted the following NER entity mentions:
+McGee	PERSON
+Zaman	PERSON
+Trujillo	PERSON
+Task Force	ORGANIZATION
+Friday	DATE
+he	PERSON
+
+Coreference set:
+	(2,4,[4,7]) -> (1,9,[9,11]), that is: "Zaman and later" -> "Zaman earlier"
+	(2,4,[4,5]) -> (1,9,[9,11]), that is: "Zaman" -> "Zaman earlier"
+	(2,11,[11,12]) -> (1,9,[9,11]), that is: "Zaman" -> "Zaman earlier"
+	(3,1,[1,2]) -> (1,9,[9,11]), that is: "They" -> "Zaman earlier"
+	(3,4,[4,5]) -> (1,9,[9,11]), that is: "they" -> "Zaman earlier"
+	(3,12,[12,13]) -> (1,9,[9,11]), that is: "their" -> "Zaman earlier"
+	(4,1,[1,2]) -> (1,9,[9,11]), that is: "They" -> "Zaman earlier"
+	(4,14,[14,15]) -> (1,9,[9,11]), that is: "they" -> "Zaman earlier"
+	(4,26,[26,27]) -> (1,9,[9,11]), that is: "they" -> "Zaman earlier"
+	(7,13,[13,14]) -> (1,9,[9,11]), that is: "Zaman" -> "Zaman earlier"
+	(7,24,[24,25]) -> (1,9,[9,11]), that is: "they" -> "Zaman earlier"
+
+Coreference set:
+	(3,8,[8,9]) -> (2,1,[1,2]), that is: "McGee" -> "McGee"
+	(7,1,[1,2]) -> (2,1,[1,2]), that is: "McGee" -> "McGee"
+	(7,9,[9,10]) -> (2,1,[1,2]), that is: "he" -> "McGee"
+
+Coreference set:
+	(7,15,[15,16]) -> (2,9,[9,10]), that is: "Trujillo" -> "Trujillo"
+
+Coreference set:
+	(7,13,[13,16]) -> (2,9,[8,12]), that is: "Zaman and Trujillo" -> "both Trujillo and Zaman"
+
+Coreference set:
+	(3,17,[12,18]) -> (6,8,[7,9]), that is: "their final and bottom line proposal" -> "the proposal"
+	(7,31,[30,32]) -> (6,8,[7,9]), that is: "this proposal" -> "the proposal"
+
+Coreference set:
+	(6,1,[1,2]) -> (5,1,[1,2]), that is: "They" -> "This"

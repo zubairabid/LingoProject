@@ -1,0 +1,80 @@
+Document: ID=2919.in (1 sentences, 18 tokens)
+
+Sentence #1 (18 tokens):
+Sean,
+
+Here are my initial answers and I encourage others to provide me with their thoughts.
+
+Tokens:
+[Text=Sean CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Sean NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Here CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=initial CharacterOffsetBegin=19 CharacterOffsetEnd=26 PartOfSpeech=JJ Lemma=initial NamedEntityTag=O]
+[Text=answers CharacterOffsetBegin=27 CharacterOffsetEnd=34 PartOfSpeech=NNS Lemma=answer NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=encourage CharacterOffsetBegin=41 CharacterOffsetEnd=50 PartOfSpeech=VBP Lemma=encourage NamedEntityTag=O]
+[Text=others CharacterOffsetBegin=51 CharacterOffsetEnd=57 PartOfSpeech=NNS Lemma=other NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=provide CharacterOffsetBegin=61 CharacterOffsetEnd=68 PartOfSpeech=VB Lemma=provide NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=72 CharacterOffsetEnd=76 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=77 CharacterOffsetEnd=82 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=thoughts CharacterOffsetBegin=83 CharacterOffsetEnd=91 PartOfSpeech=NNS Lemma=thought NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=91 CharacterOffsetEnd=92 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NNP Sean))
+      (, ,)
+      (ADVP (RB Here))
+      (VP (VBP are)
+        (NP (PRP$ my) (JJ initial) (NNS answers))))
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (VBP encourage)
+        (S
+          (NP (NNS others))
+          (VP (TO to)
+            (VP (VB provide)
+              (NP (PRP me))
+              (PP (IN with)
+                (NP (PRP$ their) (NNS thoughts))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, answers-7)
+nsubj(answers-7, Sean-1)
+punct(answers-7, ,-2)
+advmod(answers-7, Here-3)
+cop(answers-7, are-4)
+nmod:poss(answers-7, my-5)
+amod(answers-7, initial-6)
+cc(answers-7, and-8)
+nsubj(encourage-10, I-9)
+conj:and(answers-7, encourage-10)
+dobj(encourage-10, others-11)
+nsubj:xsubj(provide-13, others-11)
+mark(provide-13, to-12)
+xcomp(encourage-10, provide-13)
+dobj(provide-13, me-14)
+case(thoughts-17, with-15)
+nmod:poss(thoughts-17, their-16)
+nmod:with(provide-13, thoughts-17)
+punct(answers-7, .-18)
+
+Extracted the following NER entity mentions:
+Sean	PERSON
+
+Coreference set:
+	(1,9,[9,10]) -> (1,5,[5,6]), that is: "I" -> "my"
+	(1,14,[14,15]) -> (1,5,[5,6]), that is: "me" -> "my"
+
+Coreference set:
+	(1,16,[16,17]) -> (1,11,[11,12]), that is: "their" -> "others"

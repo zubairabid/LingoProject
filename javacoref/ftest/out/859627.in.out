@@ -1,0 +1,761 @@
+Document: ID=859627.in (11 sentences, 190 tokens)
+
+Sentence #1 (14 tokens):
+Remember:
+
+The free add/drop period will end on Wednesday Aug30 at noon.
+
+Tokens:
+[Text=Remember CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=VB Lemma=remember NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=free CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=JJ Lemma=free NamedEntityTag=O]
+[Text=add/drop CharacterOffsetBegin=20 CharacterOffsetEnd=28 PartOfSpeech=JJ Lemma=add/drop NamedEntityTag=O]
+[Text=period CharacterOffsetBegin=29 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=period NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=end CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=VB Lemma=end NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Wednesday CharacterOffsetBegin=48 CharacterOffsetEnd=57 PartOfSpeech=NNP Lemma=Wednesday NamedEntityTag=DATE NormalizedNamedEntityTag=wednesday]
+[Text=Aug30 CharacterOffsetBegin=58 CharacterOffsetEnd=63 PartOfSpeech=NNP Lemma=Aug30 NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=noon CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=NN Lemma=noon NamedEntityTag=TIME NormalizedNamedEntityTag=12:00pm]
+[Text=. CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (VB Remember)))
+    (: :)
+    (S
+      (NP (DT The) (JJ free) (JJ add/drop) (NN period))
+      (VP (MD will)
+        (VP (VB end)
+          (PP (IN on)
+            (NP
+              (NP (NNP Wednesday) (NNP Aug30))
+              (PP (IN at)
+                (NP (NN noon))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Remember-1)
+punct(Remember-1, :-2)
+det(period-6, The-3)
+amod(period-6, free-4)
+amod(period-6, add/drop-5)
+nsubj(end-8, period-6)
+aux(end-8, will-7)
+parataxis(Remember-1, end-8)
+case(Aug30-11, on-9)
+compound(Aug30-11, Wednesday-10)
+nmod:on(end-8, Aug30-11)
+case(noon-13, at-12)
+nmod:at(Aug30-11, noon-13)
+punct(Remember-1, .-14)
+
+Extracted the following NER entity mentions:
+Wednesday	DATE
+noon	TIME
+
+Sentence #2 (14 tokens):
+After that
+point, we will submit add/drop bids to Pat at pryder@enron.com.
+
+Tokens:
+[Text=After CharacterOffsetBegin=74 CharacterOffsetEnd=79 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=80 CharacterOffsetEnd=84 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=point CharacterOffsetBegin=85 CharacterOffsetEnd=90 PartOfSpeech=NN Lemma=point NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=90 CharacterOffsetEnd=91 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=92 CharacterOffsetEnd=94 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=95 CharacterOffsetEnd=99 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=submit CharacterOffsetBegin=100 CharacterOffsetEnd=106 PartOfSpeech=VB Lemma=submit NamedEntityTag=O]
+[Text=add/drop CharacterOffsetBegin=107 CharacterOffsetEnd=115 PartOfSpeech=JJ Lemma=add/drop NamedEntityTag=O]
+[Text=bids CharacterOffsetBegin=116 CharacterOffsetEnd=120 PartOfSpeech=NNS Lemma=bid NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=121 CharacterOffsetEnd=123 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Pat CharacterOffsetBegin=124 CharacterOffsetEnd=127 PartOfSpeech=NNP Lemma=Pat NamedEntityTag=PERSON]
+[Text=at CharacterOffsetBegin=128 CharacterOffsetEnd=130 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=pryder@enron.com CharacterOffsetBegin=131 CharacterOffsetEnd=147 PartOfSpeech=NNP Lemma=pryder@enron.com NamedEntityTag=EMAIL]
+[Text=. CharacterOffsetBegin=147 CharacterOffsetEnd=148 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN After)
+      (NP (DT that) (NN point)))
+    (, ,)
+    (NP (PRP we))
+    (VP (MD will)
+      (VP (VB submit)
+        (NP (JJ add/drop) (NNS bids))
+        (PP (TO to)
+          (NP (NNP Pat)))
+        (PP (IN at)
+          (NP (NNP pryder@enron.com)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, submit-7)
+case(point-3, After-1)
+det(point-3, that-2)
+nmod:after(submit-7, point-3)
+punct(submit-7, ,-4)
+nsubj(submit-7, we-5)
+aux(submit-7, will-6)
+amod(bids-9, add/drop-8)
+dobj(submit-7, bids-9)
+case(Pat-11, to-10)
+nmod:to(submit-7, Pat-11)
+case(pryder@enron.com-13, at-12)
+nmod:at(submit-7, pryder@enron.com-13)
+punct(submit-7, .-14)
+
+Extracted the following NER entity mentions:
+Pat	PERSON
+pryder@enron.com	EMAIL
+
+Sentence #3 (12 tokens):
+To review:  add/drops will be done through an auction system.
+
+Tokens:
+[Text=To CharacterOffsetBegin=150 CharacterOffsetEnd=152 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=review CharacterOffsetBegin=153 CharacterOffsetEnd=159 PartOfSpeech=VB Lemma=review NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=159 CharacterOffsetEnd=160 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=add/drops CharacterOffsetBegin=162 CharacterOffsetEnd=171 PartOfSpeech=NNS Lemma=add/drops NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=172 CharacterOffsetEnd=176 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=177 CharacterOffsetEnd=179 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=done CharacterOffsetBegin=180 CharacterOffsetEnd=184 PartOfSpeech=VBN Lemma=do NamedEntityTag=O]
+[Text=through CharacterOffsetBegin=185 CharacterOffsetEnd=192 PartOfSpeech=IN Lemma=through NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=193 CharacterOffsetEnd=195 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=auction CharacterOffsetBegin=196 CharacterOffsetEnd=203 PartOfSpeech=NN Lemma=auction NamedEntityTag=O]
+[Text=system CharacterOffsetBegin=204 CharacterOffsetEnd=210 PartOfSpeech=NN Lemma=system NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=210 CharacterOffsetEnd=211 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (TO To)
+        (VP (VB review))))
+    (: :)
+    (S
+      (NP (NNS add/drops))
+      (VP (MD will)
+        (VP (VB be)
+          (VP (VBN done)
+            (PP (IN through)
+              (NP (DT an) (NN auction) (NN system)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, review-2)
+mark(review-2, To-1)
+punct(review-2, :-3)
+nsubjpass(done-7, add/drops-4)
+aux(done-7, will-5)
+auxpass(done-7, be-6)
+parataxis(review-2, done-7)
+case(system-11, through-8)
+det(system-11, an-9)
+compound(system-11, auction-10)
+nmod:through(done-7, system-11)
+punct(review-2, .-12)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (27 tokens):
+If you want to
+pick up a player you need to submit a bid by e-mail to Pat by 5:00 PM on
+Wednesday of every week.
+
+Tokens:
+[Text=If CharacterOffsetBegin=213 CharacterOffsetEnd=215 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=216 CharacterOffsetEnd=219 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=220 CharacterOffsetEnd=224 PartOfSpeech=VBP Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=225 CharacterOffsetEnd=227 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=pick CharacterOffsetBegin=228 CharacterOffsetEnd=232 PartOfSpeech=VB Lemma=pick NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=233 CharacterOffsetEnd=235 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=236 CharacterOffsetEnd=237 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=player CharacterOffsetBegin=238 CharacterOffsetEnd=244 PartOfSpeech=NN Lemma=player NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=245 CharacterOffsetEnd=248 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=249 CharacterOffsetEnd=253 PartOfSpeech=VBP Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=254 CharacterOffsetEnd=256 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=submit CharacterOffsetBegin=257 CharacterOffsetEnd=263 PartOfSpeech=VB Lemma=submit NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=264 CharacterOffsetEnd=265 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=bid CharacterOffsetBegin=266 CharacterOffsetEnd=269 PartOfSpeech=NN Lemma=bid NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=270 CharacterOffsetEnd=272 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=e-mail CharacterOffsetBegin=273 CharacterOffsetEnd=279 PartOfSpeech=NN Lemma=e-mail NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=280 CharacterOffsetEnd=282 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Pat CharacterOffsetBegin=283 CharacterOffsetEnd=286 PartOfSpeech=NNP Lemma=Pat NamedEntityTag=PERSON]
+[Text=by CharacterOffsetBegin=287 CharacterOffsetEnd=289 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=5:00 CharacterOffsetBegin=290 CharacterOffsetEnd=294 PartOfSpeech=CD Lemma=5:00 NamedEntityTag=TIME NormalizedNamedEntityTag=5:00pm]
+[Text=PM CharacterOffsetBegin=295 CharacterOffsetEnd=297 PartOfSpeech=NN Lemma=pm NamedEntityTag=TIME NormalizedNamedEntityTag=5:00pm]
+[Text=on CharacterOffsetBegin=298 CharacterOffsetEnd=300 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Wednesday CharacterOffsetBegin=301 CharacterOffsetEnd=310 PartOfSpeech=NNP Lemma=Wednesday NamedEntityTag=DATE NormalizedNamedEntityTag=wednesday]
+[Text=of CharacterOffsetBegin=311 CharacterOffsetEnd=313 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=every CharacterOffsetBegin=314 CharacterOffsetEnd=319 PartOfSpeech=DT Lemma=every NamedEntityTag=O]
+[Text=week CharacterOffsetBegin=320 CharacterOffsetEnd=324 PartOfSpeech=NN Lemma=week NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=324 CharacterOffsetEnd=325 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP want)
+          (S
+            (VP (TO to)
+              (VP (VB pick)
+                (PRT (RP up))
+                (NP (DT a) (NN player))))))))
+    (NP (PRP you))
+    (VP (VBP need)
+      (S
+        (VP (TO to)
+          (VP (VB submit)
+            (NP (DT a) (NN bid))
+            (PP (IN by)
+              (NP (NN e-mail)))
+            (PP (TO to)
+              (NP (NNP Pat)))
+            (PP (IN by)
+              (NP
+                (NP (CD 5:00) (NN PM))
+                (PP (IN on)
+                  (NP
+                    (NP (NNP Wednesday))
+                    (PP (IN of)
+                      (NP (DT every) (NN week)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, need-10)
+mark(want-3, If-1)
+nsubj(want-3, you-2)
+nsubj:xsubj(pick-5, you-2)
+advcl:if(need-10, want-3)
+mark(pick-5, to-4)
+xcomp(want-3, pick-5)
+compound:prt(pick-5, up-6)
+det(player-8, a-7)
+dobj(pick-5, player-8)
+nsubj(need-10, you-9)
+nsubj:xsubj(submit-12, you-9)
+mark(submit-12, to-11)
+xcomp(need-10, submit-12)
+det(bid-14, a-13)
+dobj(submit-12, bid-14)
+case(e-mail-16, by-15)
+nmod:by(submit-12, e-mail-16)
+case(Pat-18, to-17)
+nmod:to(submit-12, Pat-18)
+case(PM-21, by-19)
+nummod(PM-21, 5:00-20)
+nmod:by(submit-12, PM-21)
+case(Wednesday-23, on-22)
+nmod:on(PM-21, Wednesday-23)
+case(week-26, of-24)
+det(week-26, every-25)
+nmod:of(Wednesday-23, week-26)
+punct(need-10, .-27)
+
+Extracted the following NER entity mentions:
+Pat	PERSON
+5:00 PM	TIME
+Wednesday	DATE
+
+Sentence #5 (18 tokens):
+The person with the highest bid will receive the
+player ($0 bids are acceptable).
+
+Tokens:
+[Text=The CharacterOffsetBegin=327 CharacterOffsetEnd=330 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=person CharacterOffsetBegin=331 CharacterOffsetEnd=337 PartOfSpeech=NN Lemma=person NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=338 CharacterOffsetEnd=342 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=343 CharacterOffsetEnd=346 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=highest CharacterOffsetBegin=347 CharacterOffsetEnd=354 PartOfSpeech=JJS Lemma=highest NamedEntityTag=O]
+[Text=bid CharacterOffsetBegin=355 CharacterOffsetEnd=358 PartOfSpeech=NN Lemma=bid NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=359 CharacterOffsetEnd=363 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=receive CharacterOffsetBegin=364 CharacterOffsetEnd=371 PartOfSpeech=VB Lemma=receive NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=372 CharacterOffsetEnd=375 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=player CharacterOffsetBegin=376 CharacterOffsetEnd=382 PartOfSpeech=NN Lemma=player NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=383 CharacterOffsetEnd=384 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=384 CharacterOffsetEnd=385 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$0.0]
+[Text=0 CharacterOffsetBegin=385 CharacterOffsetEnd=386 PartOfSpeech=CD Lemma=0 NamedEntityTag=MONEY NormalizedNamedEntityTag=$0.0]
+[Text=bids CharacterOffsetBegin=387 CharacterOffsetEnd=391 PartOfSpeech=NNS Lemma=bid NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=392 CharacterOffsetEnd=395 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=acceptable CharacterOffsetBegin=396 CharacterOffsetEnd=406 PartOfSpeech=JJ Lemma=acceptable NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=406 CharacterOffsetEnd=407 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=407 CharacterOffsetEnd=408 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN person))
+      (PP (IN with)
+        (NP (DT the) (JJS highest) (NN bid))))
+    (VP (MD will)
+      (VP (VB receive)
+        (NP
+          (NP (DT the) (NN player))
+          (PRN (-LRB- -LRB-)
+            (NP
+              (NP ($ $) (CD 0))
+              (SBAR
+                (S
+                  (NP (NNS bids))
+                  (VP (VBP are)
+                    (ADJP (JJ acceptable))))))
+            (-RRB- -RRB-)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, receive-8)
+det(person-2, The-1)
+nsubj(receive-8, person-2)
+case(bid-6, with-3)
+det(bid-6, the-4)
+amod(bid-6, highest-5)
+nmod:with(person-2, bid-6)
+aux(receive-8, will-7)
+det(player-10, the-9)
+dobj(receive-8, player-10)
+punct(0-13, -LRB--11)
+dep(0-13, $-12)
+dep(player-10, 0-13)
+nsubj(acceptable-16, bids-14)
+cop(acceptable-16, are-15)
+acl:relcl(0-13, acceptable-16)
+punct(0-13, -RRB--17)
+punct(receive-8, .-18)
+
+Extracted the following NER entity mentions:
+$0	MONEY
+
+Sentence #6 (10 tokens):
+Each team will start with $100 auction dollars.
+
+Tokens:
+[Text=Each CharacterOffsetBegin=410 CharacterOffsetEnd=414 PartOfSpeech=DT Lemma=each NamedEntityTag=O]
+[Text=team CharacterOffsetBegin=415 CharacterOffsetEnd=419 PartOfSpeech=NN Lemma=team NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=420 CharacterOffsetEnd=424 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=start CharacterOffsetBegin=425 CharacterOffsetEnd=430 PartOfSpeech=VB Lemma=start NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=431 CharacterOffsetEnd=435 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=436 CharacterOffsetEnd=437 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$100.0]
+[Text=100 CharacterOffsetBegin=437 CharacterOffsetEnd=440 PartOfSpeech=CD Lemma=100 NamedEntityTag=MONEY NormalizedNamedEntityTag=$100.0]
+[Text=auction CharacterOffsetBegin=441 CharacterOffsetEnd=448 PartOfSpeech=NN Lemma=auction NamedEntityTag=MONEY NormalizedNamedEntityTag=$100.0]
+[Text=dollars CharacterOffsetBegin=449 CharacterOffsetEnd=456 PartOfSpeech=NNS Lemma=dollar NamedEntityTag=MONEY NormalizedNamedEntityTag=$100.0]
+[Text=. CharacterOffsetBegin=456 CharacterOffsetEnd=457 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT Each) (NN team))
+    (VP (MD will)
+      (VP (VB start)
+        (PP (IN with)
+          (NP
+            (ADJP ($ $) (CD 100))
+            (NN auction) (NNS dollars)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, start-4)
+det(team-2, Each-1)
+nsubj(start-4, team-2)
+aux(start-4, will-3)
+case(dollars-9, with-5)
+amod(dollars-9, $-6)
+compound($-6, 100-7)
+compound(dollars-9, auction-8)
+nmod:with(start-4, dollars-9)
+punct(start-4, .-10)
+
+Extracted the following NER entity mentions:
+$100 auction dollars	MONEY
+
+Sentence #7 (55 tokens):
+Each week the team with the
+lowest total points year to date will get $12 added back to their total, the
+team with the highest YTD pt total will get $1 added back and teams in the
+middle will get their according dollar amount based on their rank in YTD pts.
+
+Tokens:
+[Text=Each CharacterOffsetBegin=459 CharacterOffsetEnd=463 PartOfSpeech=DT Lemma=each NamedEntityTag=O]
+[Text=week CharacterOffsetBegin=464 CharacterOffsetEnd=468 PartOfSpeech=NN Lemma=week NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=469 CharacterOffsetEnd=472 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=team CharacterOffsetBegin=473 CharacterOffsetEnd=477 PartOfSpeech=NN Lemma=team NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=478 CharacterOffsetEnd=482 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=483 CharacterOffsetEnd=486 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=lowest CharacterOffsetBegin=487 CharacterOffsetEnd=493 PartOfSpeech=JJS Lemma=lowest NamedEntityTag=O]
+[Text=total CharacterOffsetBegin=494 CharacterOffsetEnd=499 PartOfSpeech=JJ Lemma=total NamedEntityTag=O]
+[Text=points CharacterOffsetBegin=500 CharacterOffsetEnd=506 PartOfSpeech=NNS Lemma=point NamedEntityTag=O]
+[Text=year CharacterOffsetBegin=507 CharacterOffsetEnd=511 PartOfSpeech=NN Lemma=year NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=512 CharacterOffsetEnd=514 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=date CharacterOffsetBegin=515 CharacterOffsetEnd=519 PartOfSpeech=NN Lemma=date NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=520 CharacterOffsetEnd=524 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=525 CharacterOffsetEnd=528 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=529 CharacterOffsetEnd=530 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$12.0]
+[Text=12 CharacterOffsetBegin=530 CharacterOffsetEnd=532 PartOfSpeech=CD Lemma=12 NamedEntityTag=MONEY NormalizedNamedEntityTag=$12.0]
+[Text=added CharacterOffsetBegin=533 CharacterOffsetEnd=538 PartOfSpeech=VBN Lemma=add NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=539 CharacterOffsetEnd=543 PartOfSpeech=RB Lemma=back NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=544 CharacterOffsetEnd=546 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=547 CharacterOffsetEnd=552 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=total CharacterOffsetBegin=553 CharacterOffsetEnd=558 PartOfSpeech=NN Lemma=total NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=558 CharacterOffsetEnd=559 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=560 CharacterOffsetEnd=563 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=team CharacterOffsetBegin=564 CharacterOffsetEnd=568 PartOfSpeech=NN Lemma=team NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=569 CharacterOffsetEnd=573 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=574 CharacterOffsetEnd=577 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=highest CharacterOffsetBegin=578 CharacterOffsetEnd=585 PartOfSpeech=JJS Lemma=highest NamedEntityTag=O]
+[Text=YTD CharacterOffsetBegin=586 CharacterOffsetEnd=589 PartOfSpeech=NNP Lemma=YTD NamedEntityTag=O]
+[Text=pt CharacterOffsetBegin=590 CharacterOffsetEnd=592 PartOfSpeech=NN Lemma=pt NamedEntityTag=O]
+[Text=total CharacterOffsetBegin=593 CharacterOffsetEnd=598 PartOfSpeech=NN Lemma=total NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=599 CharacterOffsetEnd=603 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=604 CharacterOffsetEnd=607 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=608 CharacterOffsetEnd=609 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$1.0]
+[Text=1 CharacterOffsetBegin=609 CharacterOffsetEnd=610 PartOfSpeech=CD Lemma=1 NamedEntityTag=MONEY NormalizedNamedEntityTag=$1.0]
+[Text=added CharacterOffsetBegin=611 CharacterOffsetEnd=616 PartOfSpeech=VBN Lemma=add NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=617 CharacterOffsetEnd=621 PartOfSpeech=RB Lemma=back NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=622 CharacterOffsetEnd=625 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=teams CharacterOffsetBegin=626 CharacterOffsetEnd=631 PartOfSpeech=NNS Lemma=team NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=632 CharacterOffsetEnd=634 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=635 CharacterOffsetEnd=638 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=middle CharacterOffsetBegin=639 CharacterOffsetEnd=645 PartOfSpeech=NN Lemma=middle NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=646 CharacterOffsetEnd=650 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=651 CharacterOffsetEnd=654 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=655 CharacterOffsetEnd=660 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=according CharacterOffsetBegin=661 CharacterOffsetEnd=670 PartOfSpeech=VBG Lemma=accord NamedEntityTag=O]
+[Text=dollar CharacterOffsetBegin=671 CharacterOffsetEnd=677 PartOfSpeech=NN Lemma=dollar NamedEntityTag=O]
+[Text=amount CharacterOffsetBegin=678 CharacterOffsetEnd=684 PartOfSpeech=NN Lemma=amount NamedEntityTag=O]
+[Text=based CharacterOffsetBegin=685 CharacterOffsetEnd=690 PartOfSpeech=VBN Lemma=base NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=691 CharacterOffsetEnd=693 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=694 CharacterOffsetEnd=699 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=rank CharacterOffsetBegin=700 CharacterOffsetEnd=704 PartOfSpeech=NN Lemma=rank NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=705 CharacterOffsetEnd=707 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=YTD CharacterOffsetBegin=708 CharacterOffsetEnd=711 PartOfSpeech=NNP Lemma=YTD NamedEntityTag=O]
+[Text=pts CharacterOffsetBegin=712 CharacterOffsetEnd=715 PartOfSpeech=NNS Lemma=pt NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=715 CharacterOffsetEnd=716 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT Each) (NN week))
+      (SBAR
+        (S
+          (NP
+            (NP (DT the) (NN team))
+            (PP (IN with)
+              (NP (DT the) (JJS lowest) (JJ total) (NNS points) (NN year)))
+            (PP (TO to)
+              (NP (NN date))))
+          (VP (MD will)
+            (VP (VB get)
+              (NP
+                (NP ($ $) (CD 12))
+                (VP (VBN added)
+                  (ADVP (RB back))
+                  (PP (TO to)
+                    (NP (PRP$ their) (NN total))))))))))
+    (, ,)
+    (NP
+      (NP (DT the) (NN team))
+      (PP (IN with)
+        (NP
+          (NP (DT the) (JJS highest))
+          (SBAR
+            (S
+              (NP (NNP YTD) (NN pt) (NN total))
+              (VP (MD will)
+                (VP (VB get)
+                  (NP
+                    (NP
+                      (NP ($ $) (CD 1))
+                      (VP (VBN added)
+                        (ADVP (RB back))))
+                    (CC and)
+                    (NP
+                      (NP (NNS teams))
+                      (PP (IN in)
+                        (NP (DT the) (NN middle))))))))))))
+    (VP (MD will)
+      (VP (VB get)
+        (NP (PRP$ their))
+        (PP (VBG according)
+          (NP
+            (NP (NN dollar) (NN amount))
+            (VP (VBN based)
+              (PP (IN on)
+                (NP
+                  (NP (PRP$ their) (NN rank))
+                  (PP (IN in)
+                    (NP (NNP YTD) (NNS pts))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, get-43)
+det(week-2, Each-1)
+nsubj(get-43, week-2)
+det(team-4, the-3)
+nsubj(get-14, team-4)
+case(year-10, with-5)
+det(year-10, the-6)
+amod(year-10, lowest-7)
+amod(year-10, total-8)
+compound(year-10, points-9)
+nmod:with(team-4, year-10)
+case(date-12, to-11)
+nmod:to(team-4, date-12)
+aux(get-14, will-13)
+acl:relcl(week-2, get-14)
+dep(12-16, $-15)
+dobj(get-14, 12-16)
+acl(12-16, added-17)
+advmod(added-17, back-18)
+case(total-21, to-19)
+nmod:poss(total-21, their-20)
+nmod:to(added-17, total-21)
+punct(get-43, ,-22)
+det(team-24, the-23)
+nsubj(get-43, team-24)
+case(highest-27, with-25)
+det(highest-27, the-26)
+nmod:with(team-24, highest-27)
+compound(total-30, YTD-28)
+compound(total-30, pt-29)
+nsubj(get-32, total-30)
+aux(get-32, will-31)
+acl:relcl(highest-27, get-32)
+dep(1-34, $-33)
+dobj(get-32, 1-34)
+acl(1-34, added-35)
+advmod(added-35, back-36)
+cc(1-34, and-37)
+dobj(get-32, teams-38)
+conj:and(1-34, teams-38)
+case(middle-41, in-39)
+det(middle-41, the-40)
+nmod:in(teams-38, middle-41)
+aux(get-43, will-42)
+dobj(get-43, their-44)
+case(amount-47, according-45)
+compound(amount-47, dollar-46)
+nmod:according(get-43, amount-47)
+acl(amount-47, based-48)
+case(rank-51, on-49)
+nmod:poss(rank-51, their-50)
+nmod:on(based-48, rank-51)
+case(pts-54, in-52)
+compound(pts-54, YTD-53)
+nmod:in(rank-51, pts-54)
+punct(get-43, .-55)
+
+Extracted the following NER entity mentions:
+$12	MONEY
+$1	MONEY
+
+Sentence #8 (11 tokens):
+ALL TRADES WILL BE ASSESSED A $5.00 flat fee.
+
+Tokens:
+[Text=ALL CharacterOffsetBegin=719 CharacterOffsetEnd=722 PartOfSpeech=NN Lemma=all NamedEntityTag=O]
+[Text=TRADES CharacterOffsetBegin=723 CharacterOffsetEnd=729 PartOfSpeech=NNS Lemma=trade NamedEntityTag=O]
+[Text=WILL CharacterOffsetBegin=730 CharacterOffsetEnd=734 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=BE CharacterOffsetBegin=735 CharacterOffsetEnd=737 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=ASSESSED CharacterOffsetBegin=738 CharacterOffsetEnd=746 PartOfSpeech=NNP Lemma=ASSESSED NamedEntityTag=O]
+[Text=A CharacterOffsetBegin=747 CharacterOffsetEnd=748 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=749 CharacterOffsetEnd=750 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$5.0]
+[Text=5.00 CharacterOffsetBegin=750 CharacterOffsetEnd=754 PartOfSpeech=CD Lemma=5.00 NamedEntityTag=MONEY NormalizedNamedEntityTag=$5.0]
+[Text=flat CharacterOffsetBegin=755 CharacterOffsetEnd=759 PartOfSpeech=JJ Lemma=flat NamedEntityTag=O]
+[Text=fee CharacterOffsetBegin=760 CharacterOffsetEnd=763 PartOfSpeech=NN Lemma=fee NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=763 CharacterOffsetEnd=764 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN ALL) (NNS TRADES))
+    (VP (MD WILL)
+      (VP (VB BE)
+        (NP
+          (NP (NNP ASSESSED))
+          (FRAG
+            (NP (DT A)
+              (ADJP
+                (NP ($ $) (CD 5.00))
+                (JJ flat))
+              (NN fee))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ASSESSED-5)
+compound(TRADES-2, ALL-1)
+nsubj(ASSESSED-5, TRADES-2)
+aux(ASSESSED-5, WILL-3)
+cop(ASSESSED-5, BE-4)
+det(fee-10, A-6)
+dep(5.00-8, $-7)
+nmod:npmod(flat-9, 5.00-8)
+amod(fee-10, flat-9)
+dep(ASSESSED-5, fee-10)
+punct(ASSESSED-5, .-11)
+
+Extracted the following NER entity mentions:
+$5.00	MONEY
+
+Sentence #9 (19 tokens):
+Also, let me know how you want to handle dues (a total of $110).
+
+Tokens:
+[Text=Also CharacterOffsetBegin=767 CharacterOffsetEnd=771 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=771 CharacterOffsetEnd=772 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=let CharacterOffsetBegin=773 CharacterOffsetEnd=776 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=777 CharacterOffsetEnd=779 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=780 CharacterOffsetEnd=784 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=785 CharacterOffsetEnd=788 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=789 CharacterOffsetEnd=792 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=793 CharacterOffsetEnd=797 PartOfSpeech=VBP Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=798 CharacterOffsetEnd=800 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=handle CharacterOffsetBegin=801 CharacterOffsetEnd=807 PartOfSpeech=VB Lemma=handle NamedEntityTag=O]
+[Text=dues CharacterOffsetBegin=808 CharacterOffsetEnd=812 PartOfSpeech=NNS Lemma=due NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=813 CharacterOffsetEnd=814 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=814 CharacterOffsetEnd=815 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=total CharacterOffsetBegin=816 CharacterOffsetEnd=821 PartOfSpeech=NN Lemma=total NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=822 CharacterOffsetEnd=824 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=825 CharacterOffsetEnd=826 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$110.0]
+[Text=110 CharacterOffsetBegin=826 CharacterOffsetEnd=829 PartOfSpeech=CD Lemma=110 NamedEntityTag=MONEY NormalizedNamedEntityTag=$110.0]
+[Text=-RRB- CharacterOffsetBegin=829 CharacterOffsetEnd=830 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=830 CharacterOffsetEnd=831 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Also))
+    (, ,)
+    (VP (VB let)
+      (S
+        (NP (PRP me))
+        (VP (VB know)
+          (SBAR
+            (WHADVP (WRB how))
+            (S
+              (NP (PRP you))
+              (VP (VBP want)
+                (S
+                  (VP (TO to)
+                    (VP (VB handle)
+                      (NP
+                        (NP (NNS dues))
+                        (PRN (-LRB- -LRB-)
+                          (NP
+                            (QP (DT a) (NN total) (IN of) ($ $) (CD 110)))
+                          (-RRB- -RRB-))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, let-3)
+advmod(let-3, Also-1)
+punct(let-3, ,-2)
+nsubj(know-5, me-4)
+ccomp(let-3, know-5)
+advmod(want-8, how-6)
+nsubj(want-8, you-7)
+nsubj:xsubj(handle-10, you-7)
+ccomp(know-5, want-8)
+mark(handle-10, to-9)
+xcomp(want-8, handle-10)
+dobj(handle-10, dues-11)
+punct($-16, -LRB--12)
+advmod($-16, a-13)
+dep($-16, total-14)
+advmod($-16, of-15)
+dep(dues-11, $-16)
+nummod($-16, 110-17)
+punct($-16, -RRB--18)
+punct(let-3, .-19)
+
+Extracted the following NER entity mentions:
+$110	MONEY
+
+Sentence #10 (7 tokens):
+Should I
+collect them up front ?
+
+Tokens:
+[Text=Should CharacterOffsetBegin=833 CharacterOffsetEnd=839 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=840 CharacterOffsetEnd=841 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=collect CharacterOffsetBegin=842 CharacterOffsetEnd=849 PartOfSpeech=VB Lemma=collect NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=850 CharacterOffsetEnd=854 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=855 CharacterOffsetEnd=857 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=front CharacterOffsetBegin=858 CharacterOffsetEnd=863 PartOfSpeech=NN Lemma=front NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=864 CharacterOffsetEnd=865 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (MD Should)
+    (NP (PRP I))
+    (VP (VB collect)
+      (NP (PRP them))
+      (PRT (RP up))
+      (ADVP (NN front)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, collect-3)
+aux(collect-3, Should-1)
+nsubj(collect-3, I-2)
+dobj(collect-3, them-4)
+compound:prt(collect-3, up-5)
+advmod(collect-3, front-6)
+punct(collect-3, ?-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #11 (3 tokens):
+-the commish
+
+Tokens:
+[Text=- CharacterOffsetBegin=867 CharacterOffsetEnd=868 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=868 CharacterOffsetEnd=871 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=commish CharacterOffsetBegin=872 CharacterOffsetEnd=879 PartOfSpeech=NN Lemma=commish NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (PRN (: -)
+    (NP
+      (NP (DT the))
+      (NP (NN commish)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, the-2)
+punct(the-2, --1)
+dep(the-2, commish-3)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(4,18,[18,19]) -> (2,11,[11,12]), that is: "Pat" -> "Pat"
+
+Coreference set:
+	(5,14,[14,15]) -> (2,9,[8,10]), that is: "bids" -> "add/drop bids"
+
+Coreference set:
+	(7,44,[44,45]) -> (7,20,[20,21]), that is: "their" -> "their"
+	(7,50,[50,51]) -> (7,20,[20,21]), that is: "their" -> "their"
+	(10,4,[4,5]) -> (7,20,[20,21]), that is: "them" -> "their"
+
+Coreference set:
+	(10,2,[2,3]) -> (9,4,[4,5]), that is: "I" -> "me"

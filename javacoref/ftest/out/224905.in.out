@@ -1,0 +1,652 @@
+Document: ID=224905.in (9 sentences, 160 tokens)
+
+Sentence #1 (15 tokens):
+Pat,
+I have faxed to you the financial statements of  Total Austral S.A..
+
+Tokens:
+[Text=Pat CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=Pat NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=faxed CharacterOffsetBegin=12 CharacterOffsetEnd=17 PartOfSpeech=VBN Lemma=fax NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=financial CharacterOffsetBegin=29 CharacterOffsetEnd=38 PartOfSpeech=JJ Lemma=financial NamedEntityTag=O]
+[Text=statements CharacterOffsetBegin=39 CharacterOffsetEnd=49 PartOfSpeech=NNS Lemma=statement NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Total CharacterOffsetBegin=54 CharacterOffsetEnd=59 PartOfSpeech=JJ Lemma=total NamedEntityTag=ORGANIZATION]
+[Text=Austral CharacterOffsetBegin=60 CharacterOffsetEnd=67 PartOfSpeech=JJ Lemma=austral NamedEntityTag=ORGANIZATION]
+[Text=S.A. CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=NNP Lemma=S.A. NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Pat))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP have)
+      (VP (VBN faxed)
+        (PP (TO to)
+          (NP (PRP you)))
+        (NP
+          (NP (DT the) (JJ financial) (NNS statements))
+          (PP (IN of)
+            (NP (JJ Total) (JJ Austral) (NNP S.A.))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, faxed-5)
+nsubj(faxed-5, Pat-1)
+punct(faxed-5, ,-2)
+nsubj(faxed-5, I-3)
+aux(faxed-5, have-4)
+case(you-7, to-6)
+nmod:to(faxed-5, you-7)
+det(statements-10, the-8)
+amod(statements-10, financial-9)
+dobj(faxed-5, statements-10)
+case(S.A.-14, of-11)
+amod(S.A.-14, Total-12)
+amod(S.A.-14, Austral-13)
+nmod:of(statements-10, S.A.-14)
+punct(faxed-5, .-15)
+
+Extracted the following NER entity mentions:
+Pat	PERSON
+Total Austral S.A.	ORGANIZATION
+
+Sentence #2 (11 tokens):
+We are potentially entering into a MSA with this customer.
+
+Tokens:
+[Text=We CharacterOffsetBegin=74 CharacterOffsetEnd=76 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=potentially CharacterOffsetBegin=81 CharacterOffsetEnd=92 PartOfSpeech=RB Lemma=potentially NamedEntityTag=O]
+[Text=entering CharacterOffsetBegin=93 CharacterOffsetEnd=101 PartOfSpeech=VBG Lemma=enter NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=102 CharacterOffsetEnd=106 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=107 CharacterOffsetEnd=108 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=MSA CharacterOffsetBegin=109 CharacterOffsetEnd=112 PartOfSpeech=NN Lemma=msa NamedEntityTag=ORGANIZATION]
+[Text=with CharacterOffsetBegin=113 CharacterOffsetEnd=117 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=118 CharacterOffsetEnd=122 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=customer CharacterOffsetBegin=123 CharacterOffsetEnd=131 PartOfSpeech=NN Lemma=customer NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=131 CharacterOffsetEnd=132 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP are)
+      (ADVP (RB potentially))
+      (VP (VBG entering)
+        (PP (IN into)
+          (NP
+            (NP (DT a) (NN MSA))
+            (PP (IN with)
+              (NP (DT this) (NN customer)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, entering-4)
+nsubj(entering-4, We-1)
+aux(entering-4, are-2)
+advmod(entering-4, potentially-3)
+case(MSA-7, into-5)
+det(MSA-7, a-6)
+nmod:into(entering-4, MSA-7)
+case(customer-10, with-8)
+det(customer-10, this-9)
+nmod:with(MSA-7, customer-10)
+punct(entering-4, .-11)
+
+Extracted the following NER entity mentions:
+MSA	ORGANIZATION
+
+Sentence #3 (27 tokens):
+The first
+transaction we are thinking about is a financial Swap to hedge their
+Propane-Butane production in Caadon Alfa according to the following details:
+1.
+
+Tokens:
+[Text=The CharacterOffsetBegin=133 CharacterOffsetEnd=136 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=137 CharacterOffsetEnd=142 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=transaction CharacterOffsetBegin=143 CharacterOffsetEnd=154 PartOfSpeech=NN Lemma=transaction NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=155 CharacterOffsetEnd=157 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=158 CharacterOffsetEnd=161 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=thinking CharacterOffsetBegin=162 CharacterOffsetEnd=170 PartOfSpeech=VBG Lemma=think NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=171 CharacterOffsetEnd=176 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=177 CharacterOffsetEnd=179 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=180 CharacterOffsetEnd=181 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=financial CharacterOffsetBegin=182 CharacterOffsetEnd=191 PartOfSpeech=JJ Lemma=financial NamedEntityTag=O]
+[Text=Swap CharacterOffsetBegin=192 CharacterOffsetEnd=196 PartOfSpeech=NN Lemma=swap NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=197 CharacterOffsetEnd=199 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=hedge CharacterOffsetBegin=200 CharacterOffsetEnd=205 PartOfSpeech=VB Lemma=hedge NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=206 CharacterOffsetEnd=211 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=Propane-Butane CharacterOffsetBegin=212 CharacterOffsetEnd=226 PartOfSpeech=NN Lemma=propane-butane NamedEntityTag=O]
+[Text=production CharacterOffsetBegin=227 CharacterOffsetEnd=237 PartOfSpeech=NN Lemma=production NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=238 CharacterOffsetEnd=240 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Caadon CharacterOffsetBegin=241 CharacterOffsetEnd=247 PartOfSpeech=NNP Lemma=Caadon NamedEntityTag=LOCATION]
+[Text=Alfa CharacterOffsetBegin=248 CharacterOffsetEnd=252 PartOfSpeech=NNP Lemma=Alfa NamedEntityTag=LOCATION]
+[Text=according CharacterOffsetBegin=253 CharacterOffsetEnd=262 PartOfSpeech=VBG Lemma=accord NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=263 CharacterOffsetEnd=265 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=266 CharacterOffsetEnd=269 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=following CharacterOffsetBegin=270 CharacterOffsetEnd=279 PartOfSpeech=VBG Lemma=follow NamedEntityTag=O]
+[Text=details CharacterOffsetBegin=280 CharacterOffsetEnd=287 PartOfSpeech=NNS Lemma=detail NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=287 CharacterOffsetEnd=288 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=1 CharacterOffsetBegin=289 CharacterOffsetEnd=290 PartOfSpeech=CD Lemma=1 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=. CharacterOffsetBegin=290 CharacterOffsetEnd=291 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ first) (NN transaction))
+      (SBAR
+        (S
+          (NP (PRP we))
+          (VP (VBP are)
+            (VP (VBG thinking) (IN about))))))
+    (VP (VBZ is)
+      (NP (DT a) (JJ financial) (NN Swap)
+        (S
+          (VP (TO to)
+            (VP (VB hedge)
+              (NP (PRP$ their) (NN Propane-Butane) (NN production))
+              (PP (IN in)
+                (NP (NNP Caadon) (NNP Alfa)))
+              (PP (VBG according)
+                (PP (TO to)
+                  (NP (DT the) (VBG following) (NNS details))))))))
+      (: :)
+      (NP (CD 1)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Swap-11)
+det(transaction-3, The-1)
+amod(transaction-3, first-2)
+nsubj(Swap-11, transaction-3)
+nsubj(thinking-6, we-4)
+aux(thinking-6, are-5)
+acl:relcl(transaction-3, thinking-6)
+dep(thinking-6, about-7)
+cop(Swap-11, is-8)
+det(Swap-11, a-9)
+amod(Swap-11, financial-10)
+mark(hedge-13, to-12)
+acl:to(Swap-11, hedge-13)
+nmod:poss(production-16, their-14)
+compound(production-16, Propane-Butane-15)
+dobj(hedge-13, production-16)
+case(Alfa-19, in-17)
+compound(Alfa-19, Caadon-18)
+nmod:in(hedge-13, Alfa-19)
+case(details-24, according-20)
+mwe(according-20, to-21)
+det(details-24, the-22)
+amod(details-24, following-23)
+nmod:according_to(hedge-13, details-24)
+punct(Swap-11, :-25)
+parataxis(Swap-11, 1-26)
+punct(Swap-11, .-27)
+
+Extracted the following NER entity mentions:
+first	ORDINAL
+Caadon Alfa	LOCATION
+1	NUMBER
+
+Sentence #4 (23 tokens):
+Swap      Prices     Prices
+SWAP (cents/ gallon) - Bid	1 year	6 months
+Propane	35 3/4 	38 3/4
+Butane	40 3/4	43 1/2
+2.
+
+Tokens:
+[Text=Swap CharacterOffsetBegin=292 CharacterOffsetEnd=296 PartOfSpeech=NN Lemma=swap NamedEntityTag=O]
+[Text=Prices CharacterOffsetBegin=302 CharacterOffsetEnd=308 PartOfSpeech=NNS Lemma=price NamedEntityTag=O]
+[Text=Prices CharacterOffsetBegin=313 CharacterOffsetEnd=319 PartOfSpeech=NNS Lemma=price NamedEntityTag=O]
+[Text=SWAP CharacterOffsetBegin=320 CharacterOffsetEnd=324 PartOfSpeech=NN Lemma=swap NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=325 CharacterOffsetEnd=326 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=cents CharacterOffsetBegin=326 CharacterOffsetEnd=331 PartOfSpeech=NNS Lemma=cent NamedEntityTag=O]
+[Text=/ CharacterOffsetBegin=331 CharacterOffsetEnd=332 PartOfSpeech=: Lemma=/ NamedEntityTag=O]
+[Text=gallon CharacterOffsetBegin=333 CharacterOffsetEnd=339 PartOfSpeech=NN Lemma=gallon NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=339 CharacterOffsetEnd=340 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=341 CharacterOffsetEnd=342 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=Bid CharacterOffsetBegin=343 CharacterOffsetEnd=346 PartOfSpeech=NN Lemma=bid NamedEntityTag=O]
+[Text=1 CharacterOffsetBegin=347 CharacterOffsetEnd=348 PartOfSpeech=CD Lemma=1 NamedEntityTag=DURATION]
+[Text=year CharacterOffsetBegin=349 CharacterOffsetEnd=353 PartOfSpeech=NN Lemma=year NamedEntityTag=DURATION]
+[Text=6 CharacterOffsetBegin=354 CharacterOffsetEnd=355 PartOfSpeech=CD Lemma=6 NamedEntityTag=DURATION]
+[Text=months CharacterOffsetBegin=356 CharacterOffsetEnd=362 PartOfSpeech=NNS Lemma=month NamedEntityTag=DURATION]
+[Text=Propane CharacterOffsetBegin=363 CharacterOffsetEnd=370 PartOfSpeech=NN Lemma=propane NamedEntityTag=O]
+[Text=35 3/4 CharacterOffsetBegin=371 CharacterOffsetEnd=377 PartOfSpeech=CD Lemma=35 3/4 NamedEntityTag=NUMBER]
+[Text=38 3/4 CharacterOffsetBegin=379 CharacterOffsetEnd=385 PartOfSpeech=CD Lemma=38 3/4 NamedEntityTag=NUMBER]
+[Text=Butane CharacterOffsetBegin=386 CharacterOffsetEnd=392 PartOfSpeech=NN Lemma=butane NamedEntityTag=O]
+[Text=40 3/4 CharacterOffsetBegin=393 CharacterOffsetEnd=399 PartOfSpeech=CD Lemma=40 3/4 NamedEntityTag=NUMBER]
+[Text=43 1/2 CharacterOffsetBegin=400 CharacterOffsetEnd=406 PartOfSpeech=CD Lemma=43 1/2 NamedEntityTag=NUMBER]
+[Text=2 CharacterOffsetBegin=407 CharacterOffsetEnd=408 PartOfSpeech=CD Lemma=2 NamedEntityTag=NUMBER]
+[Text=. CharacterOffsetBegin=408 CharacterOffsetEnd=409 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (FRAG
+      (NP (NN Swap) (NNS Prices))
+      (NP
+        (NP (NNS Prices))
+        (NP
+          (NP (NN SWAP))
+          (-LRB- -LRB-)
+          (NP (NNS cents))
+          (PRN (: /)
+            (NP (NN gallon)))
+          (-RRB- -RRB-))))
+    (: -)
+    (FRAG
+      (X
+        (NP
+          (NP (NN Bid) (CD 1) (NN year))
+          (NP (CD 6) (NNS months)))
+        (NP (NN Propane) (CD 35 3/4))
+        (NP
+          (NP (CD 38 3/4) (NN Butane))
+          (NP (CD 40 3/4))))
+      (NP (CD 43 1/2) (CD 2)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Prices-2)
+compound(Prices-2, Swap-1)
+dep(Prices-2, Prices-3)
+dep(Prices-3, SWAP-4)
+punct(SWAP-4, -LRB--5)
+dep(SWAP-4, cents-6)
+punct(gallon-8, /-7)
+dep(SWAP-4, gallon-8)
+punct(SWAP-4, -RRB--9)
+punct(Prices-2, --10)
+compound(year-13, Bid-11)
+nummod(year-13, 1-12)
+dep(Butane-19, year-13)
+nummod(months-15, 6-14)
+dep(year-13, months-15)
+dep(Butane-19, Propane-16)
+nummod(Propane-16, 35 3/4-17)
+nummod(Butane-19, 38 3/4-18)
+dep(2-22, Butane-19)
+dep(Butane-19, 40 3/4-20)
+nummod(2-22, 43 1/2-21)
+parataxis(Prices-2, 2-22)
+punct(Prices-2, .-23)
+
+Extracted the following NER entity mentions:
+1 year 6 months	DURATION
+35 3/4 38 3/4	NUMBER
+40 3/4 43 1/2 2	NUMBER
+
+Sentence #5 (40 tokens):
+Put Option
+Put Option (cents/gallon)	1 year - Premium	1 year - Strike	6 months - Premium	6 months - Strike
+Propane 	2.5	32 3/4	2	35 3/4
+Butane	3.0	37 3/4	2 3/8	42
+Propane
+Volume: 45.000 metric tons.
+
+Tokens:
+[Text=Put CharacterOffsetBegin=410 CharacterOffsetEnd=413 PartOfSpeech=JJ Lemma=put NamedEntityTag=O]
+[Text=Option CharacterOffsetBegin=414 CharacterOffsetEnd=420 PartOfSpeech=NN Lemma=option NamedEntityTag=O]
+[Text=Put CharacterOffsetBegin=421 CharacterOffsetEnd=424 PartOfSpeech=VBD Lemma=put NamedEntityTag=O]
+[Text=Option CharacterOffsetBegin=425 CharacterOffsetEnd=431 PartOfSpeech=NN Lemma=option NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=432 CharacterOffsetEnd=433 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=cents/gallon CharacterOffsetBegin=433 CharacterOffsetEnd=445 PartOfSpeech=NN Lemma=cents/gallon NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=445 CharacterOffsetEnd=446 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=1 CharacterOffsetBegin=447 CharacterOffsetEnd=448 PartOfSpeech=CD Lemma=1 NamedEntityTag=DURATION]
+[Text=year CharacterOffsetBegin=449 CharacterOffsetEnd=453 PartOfSpeech=NN Lemma=year NamedEntityTag=DURATION]
+[Text=- CharacterOffsetBegin=454 CharacterOffsetEnd=455 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=Premium CharacterOffsetBegin=456 CharacterOffsetEnd=463 PartOfSpeech=NNP Lemma=Premium NamedEntityTag=O]
+[Text=1 CharacterOffsetBegin=464 CharacterOffsetEnd=465 PartOfSpeech=CD Lemma=1 NamedEntityTag=DURATION]
+[Text=year CharacterOffsetBegin=466 CharacterOffsetEnd=470 PartOfSpeech=NN Lemma=year NamedEntityTag=DURATION]
+[Text=- CharacterOffsetBegin=471 CharacterOffsetEnd=472 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=Strike CharacterOffsetBegin=473 CharacterOffsetEnd=479 PartOfSpeech=NN Lemma=strike NamedEntityTag=O]
+[Text=6 CharacterOffsetBegin=480 CharacterOffsetEnd=481 PartOfSpeech=CD Lemma=6 NamedEntityTag=DURATION]
+[Text=months CharacterOffsetBegin=482 CharacterOffsetEnd=488 PartOfSpeech=NNS Lemma=month NamedEntityTag=DURATION]
+[Text=- CharacterOffsetBegin=489 CharacterOffsetEnd=490 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=Premium CharacterOffsetBegin=491 CharacterOffsetEnd=498 PartOfSpeech=NNP Lemma=Premium NamedEntityTag=O]
+[Text=6 CharacterOffsetBegin=499 CharacterOffsetEnd=500 PartOfSpeech=CD Lemma=6 NamedEntityTag=DURATION]
+[Text=months CharacterOffsetBegin=501 CharacterOffsetEnd=507 PartOfSpeech=NNS Lemma=month NamedEntityTag=DURATION]
+[Text=- CharacterOffsetBegin=508 CharacterOffsetEnd=509 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=Strike CharacterOffsetBegin=510 CharacterOffsetEnd=516 PartOfSpeech=NN Lemma=strike NamedEntityTag=O]
+[Text=Propane CharacterOffsetBegin=517 CharacterOffsetEnd=524 PartOfSpeech=NN Lemma=propane NamedEntityTag=O]
+[Text=2.5 CharacterOffsetBegin=526 CharacterOffsetEnd=529 PartOfSpeech=CD Lemma=2.5 NamedEntityTag=NUMBER]
+[Text=32 3/4 CharacterOffsetBegin=530 CharacterOffsetEnd=536 PartOfSpeech=CD Lemma=32 3/4 NamedEntityTag=NUMBER]
+[Text=2 CharacterOffsetBegin=537 CharacterOffsetEnd=538 PartOfSpeech=CD Lemma=2 NamedEntityTag=NUMBER]
+[Text=35 3/4 CharacterOffsetBegin=539 CharacterOffsetEnd=545 PartOfSpeech=CD Lemma=35 3/4 NamedEntityTag=NUMBER]
+[Text=Butane CharacterOffsetBegin=546 CharacterOffsetEnd=552 PartOfSpeech=NN Lemma=butane NamedEntityTag=O]
+[Text=3.0 CharacterOffsetBegin=553 CharacterOffsetEnd=556 PartOfSpeech=CD Lemma=3.0 NamedEntityTag=NUMBER]
+[Text=37 3/4 CharacterOffsetBegin=557 CharacterOffsetEnd=563 PartOfSpeech=CD Lemma=37 3/4 NamedEntityTag=NUMBER]
+[Text=2 3/8 CharacterOffsetBegin=564 CharacterOffsetEnd=569 PartOfSpeech=CD Lemma=2 3/8 NamedEntityTag=NUMBER]
+[Text=42 CharacterOffsetBegin=570 CharacterOffsetEnd=572 PartOfSpeech=CD Lemma=42 NamedEntityTag=NUMBER]
+[Text=Propane CharacterOffsetBegin=573 CharacterOffsetEnd=580 PartOfSpeech=NNP Lemma=Propane NamedEntityTag=O]
+[Text=Volume CharacterOffsetBegin=581 CharacterOffsetEnd=587 PartOfSpeech=NN Lemma=volume NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=587 CharacterOffsetEnd=588 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=45.000 CharacterOffsetBegin=589 CharacterOffsetEnd=595 PartOfSpeech=CD Lemma=45.000 NamedEntityTag=NUMBER NormalizedNamedEntityTag=45.0]
+[Text=metric CharacterOffsetBegin=596 CharacterOffsetEnd=602 PartOfSpeech=JJ Lemma=metric NamedEntityTag=O]
+[Text=tons CharacterOffsetBegin=603 CharacterOffsetEnd=607 PartOfSpeech=NNS Lemma=ton NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=607 CharacterOffsetEnd=608 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (JJ Put) (NN Option))
+    (VP (VBD Put)
+      (NP
+        (NP
+          (NP
+            (NP
+              (NP (NN Option))
+              (PRN (-LRB- -LRB-)
+                (NP (NN cents/gallon))
+                (-RRB- -RRB-)))
+            (NP-TMP (CD 1) (NN year)))
+          (: -)
+          (NP
+            (NP (NNP Premium))
+            (NP-TMP (CD 1) (NN year)))
+          (: -)
+          (NP
+            (NP (NN Strike))
+            (NP-TMP (CD 6) (NNS months)))
+          (: -)
+          (NP
+            (NP (NNP Premium))
+            (NP-TMP (CD 6) (NNS months)))
+          (: -)
+          (NP
+            (NP
+              (NP (NN Strike) (NN Propane))
+              (NP
+                (QP (CD 2.5) (CD 32 3/4))
+                (QP (CD 2) (CD 35 3/4))))
+            (NP
+              (NP (NN Butane) (CD 3.0))
+              (NP
+                (NP
+                  (QP (CD 37 3/4) (CD 2 3/8)))
+                (NP (CD 42) (NNP Propane) (NN Volume))))))
+        (: :)
+        (NP (CD 45.000) (JJ metric) (NNS tons))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Put-3)
+amod(Option-2, Put-1)
+nsubj(Put-3, Option-2)
+dobj(Put-3, Option-4)
+punct(cents/gallon-6, -LRB--5)
+appos(Option-4, cents/gallon-6)
+punct(cents/gallon-6, -RRB--7)
+nummod(year-9, 1-8)
+nmod:tmod(Option-4, year-9)
+punct(Option-4, --10)
+dep(Option-4, Premium-11)
+nummod(year-13, 1-12)
+nmod:tmod(Premium-11, year-13)
+punct(Option-4, --14)
+dep(Option-4, Strike-15)
+nummod(months-17, 6-16)
+nmod:tmod(Strike-15, months-17)
+punct(Option-4, --18)
+dep(Option-4, Premium-19)
+nummod(months-21, 6-20)
+nmod:tmod(Premium-19, months-21)
+punct(Option-4, --22)
+compound(Propane-24, Strike-23)
+dep(Option-4, Propane-24)
+compound(32 3/4-26, 2.5-25)
+nummod(35 3/4-28, 32 3/4-26)
+compound(35 3/4-28, 2-27)
+dep(Propane-24, 35 3/4-28)
+dep(Propane-24, Butane-29)
+nummod(Butane-29, 3.0-30)
+compound(2 3/8-32, 37 3/4-31)
+dep(Butane-29, 2 3/8-32)
+nummod(Volume-35, 42-33)
+compound(Volume-35, Propane-34)
+dep(2 3/8-32, Volume-35)
+punct(Option-4, :-36)
+nummod(tons-39, 45.000-37)
+amod(tons-39, metric-38)
+dep(Option-4, tons-39)
+punct(Put-3, .-40)
+
+Extracted the following NER entity mentions:
+1 year	DURATION
+1 year	DURATION
+6 months	DURATION
+6 months	DURATION
+2.5 32 3/4 2 35 3/4	NUMBER
+3.0 37 3/4 2 3/8 42	NUMBER
+45.000	NUMBER
+
+Sentence #6 (13 tokens):
+Starting date: Nov 1
+Butane:
+Volume: 19.000 metric tons.
+
+Tokens:
+[Text=Starting CharacterOffsetBegin=609 CharacterOffsetEnd=617 PartOfSpeech=VBG Lemma=start NamedEntityTag=O]
+[Text=date CharacterOffsetBegin=618 CharacterOffsetEnd=622 PartOfSpeech=NN Lemma=date NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=622 CharacterOffsetEnd=623 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Nov CharacterOffsetBegin=624 CharacterOffsetEnd=627 PartOfSpeech=NNP Lemma=Nov NamedEntityTag=DATE NormalizedNamedEntityTag=****1101]
+[Text=1 CharacterOffsetBegin=628 CharacterOffsetEnd=629 PartOfSpeech=CD Lemma=1 NamedEntityTag=DATE NormalizedNamedEntityTag=****1101]
+[Text=Butane CharacterOffsetBegin=630 CharacterOffsetEnd=636 PartOfSpeech=NN Lemma=butane NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=636 CharacterOffsetEnd=637 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Volume CharacterOffsetBegin=638 CharacterOffsetEnd=644 PartOfSpeech=NN Lemma=volume NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=644 CharacterOffsetEnd=645 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=19.000 CharacterOffsetBegin=646 CharacterOffsetEnd=652 PartOfSpeech=CD Lemma=19.000 NamedEntityTag=NUMBER NormalizedNamedEntityTag=19.0]
+[Text=metric CharacterOffsetBegin=653 CharacterOffsetEnd=659 PartOfSpeech=JJ Lemma=metric NamedEntityTag=O]
+[Text=tons CharacterOffsetBegin=660 CharacterOffsetEnd=664 PartOfSpeech=NNS Lemma=ton NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=664 CharacterOffsetEnd=665 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (PP (VBG Starting)
+      (NP
+        (NP (NN date))
+        (: :)
+        (NP (NNP Nov) (CD 1) (NN Butane))
+        (: :)
+        (NP (NN Volume))
+        (: :)
+        (NP (CD 19.000) (JJ metric) (NNS tons))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, date-2)
+case(date-2, Starting-1)
+punct(date-2, :-3)
+compound(Butane-6, Nov-4)
+nummod(Butane-6, 1-5)
+dep(date-2, Butane-6)
+punct(date-2, :-7)
+dep(date-2, Volume-8)
+punct(date-2, :-9)
+nummod(tons-12, 19.000-10)
+amod(tons-12, metric-11)
+dep(date-2, tons-12)
+punct(date-2, .-13)
+
+Extracted the following NER entity mentions:
+Nov 1	DATE
+19.000	NUMBER
+
+Sentence #7 (19 tokens):
+Starting date: Nov 1
+Sara: Would you please start drafting an MSA with Total Austral S.A.?
+
+Tokens:
+[Text=Starting CharacterOffsetBegin=666 CharacterOffsetEnd=674 PartOfSpeech=VBG Lemma=start NamedEntityTag=O]
+[Text=date CharacterOffsetBegin=675 CharacterOffsetEnd=679 PartOfSpeech=NN Lemma=date NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=679 CharacterOffsetEnd=680 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Nov CharacterOffsetBegin=681 CharacterOffsetEnd=684 PartOfSpeech=NNP Lemma=Nov NamedEntityTag=DATE NormalizedNamedEntityTag=****1101]
+[Text=1 CharacterOffsetBegin=685 CharacterOffsetEnd=686 PartOfSpeech=CD Lemma=1 NamedEntityTag=DATE NormalizedNamedEntityTag=****1101]
+[Text=Sara CharacterOffsetBegin=687 CharacterOffsetEnd=691 PartOfSpeech=NNP Lemma=Sara NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=691 CharacterOffsetEnd=692 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Would CharacterOffsetBegin=693 CharacterOffsetEnd=698 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=699 CharacterOffsetEnd=702 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=please CharacterOffsetBegin=703 CharacterOffsetEnd=709 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=start CharacterOffsetBegin=710 CharacterOffsetEnd=715 PartOfSpeech=VB Lemma=start NamedEntityTag=O]
+[Text=drafting CharacterOffsetBegin=716 CharacterOffsetEnd=724 PartOfSpeech=VBG Lemma=draft NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=725 CharacterOffsetEnd=727 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=MSA CharacterOffsetBegin=728 CharacterOffsetEnd=731 PartOfSpeech=NN Lemma=msa NamedEntityTag=ORGANIZATION]
+[Text=with CharacterOffsetBegin=732 CharacterOffsetEnd=736 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Total CharacterOffsetBegin=737 CharacterOffsetEnd=742 PartOfSpeech=JJ Lemma=total NamedEntityTag=ORGANIZATION]
+[Text=Austral CharacterOffsetBegin=743 CharacterOffsetEnd=750 PartOfSpeech=JJ Lemma=austral NamedEntityTag=ORGANIZATION]
+[Text=S.A. CharacterOffsetBegin=751 CharacterOffsetEnd=755 PartOfSpeech=NNP Lemma=S.A. NamedEntityTag=ORGANIZATION]
+[Text=? CharacterOffsetBegin=755 CharacterOffsetEnd=756 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (X
+    (S
+      (VP (VBG Starting)
+        (NP
+          (NP (NN date))
+          (: :)
+          (NP
+            (NP (NNP Nov) (CD 1))
+            (NP (NNP Sara))))))
+    (: :)
+    (NP
+      (SQ (MD Would)
+        (NP (PRP you))
+        (VP (VB please)))
+      (VP (VB start)
+        (S
+          (VP (VBG drafting)
+            (NP (DT an) (NN MSA))
+            (PP (IN with)
+              (NP (JJ Total) (JJ Austral) (NNP S.A.)))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Starting-1)
+dobj(Starting-1, date-2)
+punct(date-2, :-3)
+dep(date-2, Nov-4)
+nummod(Nov-4, 1-5)
+appos(Nov-4, Sara-6)
+punct(Starting-1, :-7)
+aux(please-10, Would-8)
+nsubj(please-10, you-9)
+dep(Starting-1, please-10)
+dep(please-10, start-11)
+xcomp(start-11, drafting-12)
+det(MSA-14, an-13)
+dobj(drafting-12, MSA-14)
+case(S.A.-18, with-15)
+amod(S.A.-18, Total-16)
+amod(S.A.-18, Austral-17)
+nmod:with(drafting-12, S.A.-18)
+punct(Starting-1, ?-19)
+
+Extracted the following NER entity mentions:
+Nov 1	DATE
+MSA	ORGANIZATION
+Total Austral S.A.	ORGANIZATION
+
+Sentence #8 (11 tokens):
+Please
+let me know if you need any aditional information.
+
+Tokens:
+[Text=Please CharacterOffsetBegin=757 CharacterOffsetEnd=763 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=let CharacterOffsetBegin=764 CharacterOffsetEnd=767 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=768 CharacterOffsetEnd=770 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=771 CharacterOffsetEnd=775 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=776 CharacterOffsetEnd=778 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=779 CharacterOffsetEnd=782 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=783 CharacterOffsetEnd=787 PartOfSpeech=VBP Lemma=need NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=788 CharacterOffsetEnd=791 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=aditional CharacterOffsetBegin=792 CharacterOffsetEnd=801 PartOfSpeech=JJ Lemma=aditional NamedEntityTag=O]
+[Text=information CharacterOffsetBegin=802 CharacterOffsetEnd=813 PartOfSpeech=NN Lemma=information NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=813 CharacterOffsetEnd=814 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Please)
+      (VP (VB let)
+        (S
+          (NP (PRP me))
+          (VP (VB know)
+            (SBAR (IN if)
+              (S
+                (NP (PRP you))
+                (VP (VBP need)
+                  (NP (DT any) (JJ aditional) (NN information)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Please-1)
+xcomp(Please-1, let-2)
+nsubj(know-4, me-3)
+ccomp(let-2, know-4)
+mark(need-7, if-5)
+nsubj(need-7, you-6)
+advcl:if(know-4, need-7)
+det(information-10, any-8)
+amod(information-10, aditional-9)
+dobj(need-7, information-10)
+punct(Please-1, .-11)
+
+Extracted the following NER entity mentions:
+
+Sentence #9 (1 tokens):
+Regards
+
+Tokens:
+[Text=Regards CharacterOffsetBegin=815 CharacterOffsetEnd=822 PartOfSpeech=NNS Lemma=regards NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NNS Regards)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Regards-1)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(7,18,[16,19]) -> (1,14,[12,15]), that is: "Total Austral S.A." -> "Total Austral S.A."
+
+Coreference set:
+	(8,3,[3,4]) -> (1,3,[3,4]), that is: "me" -> "I"
+
+Coreference set:
+	(3,4,[4,5]) -> (2,1,[1,2]), that is: "we" -> "We"
+
+Coreference set:
+	(3,3,[1,8]) -> (3,26,[26,27]), that is: "The first transaction we are thinking about" -> "1"
+	(3,11,[9,25]) -> (3,26,[26,27]), that is: "a financial Swap to hedge their Propane-Butane production in Caadon Alfa according to the following details" -> "1"
+
+Coreference set:
+	(5,9,[8,10]) -> (4,13,[11,16]), that is: "1 year" -> "Bid 1 year 6 months"
+	(5,13,[12,14]) -> (4,13,[11,16]), that is: "1 year" -> "Bid 1 year 6 months"
+
+Coreference set:
+	(5,17,[16,18]) -> (4,15,[14,16]), that is: "6 months" -> "6 months"
+	(5,21,[20,22]) -> (4,15,[14,16]), that is: "6 months" -> "6 months"

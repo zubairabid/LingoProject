@@ -1,0 +1,299 @@
+Document: ID=203736.in (4 sentences, 71 tokens)
+
+Sentence #1 (22 tokens):
+Shareholders of Anadarko Petroleum and Union Pacific Resources voted to
+approve a
+$5.4 billion merger of the two companies yesterday.
+
+Tokens:
+[Text=Shareholders CharacterOffsetBegin=0 CharacterOffsetEnd=12 PartOfSpeech=NNS Lemma=shareholder NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Anadarko CharacterOffsetBegin=16 CharacterOffsetEnd=24 PartOfSpeech=NNP Lemma=Anadarko NamedEntityTag=ORGANIZATION]
+[Text=Petroleum CharacterOffsetBegin=25 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Petroleum NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=CC Lemma=and NamedEntityTag=ORGANIZATION]
+[Text=Union CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=NNP Lemma=Union NamedEntityTag=ORGANIZATION]
+[Text=Pacific CharacterOffsetBegin=45 CharacterOffsetEnd=52 PartOfSpeech=NNP Lemma=Pacific NamedEntityTag=ORGANIZATION]
+[Text=Resources CharacterOffsetBegin=53 CharacterOffsetEnd=62 PartOfSpeech=NNPS Lemma=Resources NamedEntityTag=ORGANIZATION]
+[Text=voted CharacterOffsetBegin=63 CharacterOffsetEnd=68 PartOfSpeech=VBD Lemma=vote NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=approve CharacterOffsetBegin=72 CharacterOffsetEnd=79 PartOfSpeech=VB Lemma=approve NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=80 CharacterOffsetEnd=81 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$5.4E9]
+[Text=5.4 CharacterOffsetBegin=83 CharacterOffsetEnd=86 PartOfSpeech=CD Lemma=5.4 NamedEntityTag=MONEY NormalizedNamedEntityTag=$5.4E9]
+[Text=billion CharacterOffsetBegin=87 CharacterOffsetEnd=94 PartOfSpeech=CD Lemma=billion NamedEntityTag=MONEY NormalizedNamedEntityTag=$5.4E9]
+[Text=merger CharacterOffsetBegin=95 CharacterOffsetEnd=101 PartOfSpeech=NN Lemma=merger NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=102 CharacterOffsetEnd=104 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=105 CharacterOffsetEnd=108 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=109 CharacterOffsetEnd=112 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=companies CharacterOffsetBegin=113 CharacterOffsetEnd=122 PartOfSpeech=NNS Lemma=company NamedEntityTag=O]
+[Text=yesterday CharacterOffsetBegin=123 CharacterOffsetEnd=132 PartOfSpeech=NN Lemma=yesterday NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=132 CharacterOffsetEnd=133 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNS Shareholders))
+      (PP (IN of)
+        (NP
+          (NP (NNP Anadarko) (NNP Petroleum))
+          (CC and)
+          (NP (NNP Union) (NNP Pacific) (NNPS Resources)))))
+    (VP (VBD voted)
+      (S
+        (VP (TO to)
+          (VP (VB approve)
+            (NP
+              (NP (DT a)
+                (ADJP
+                  (QP ($ $) (CD 5.4) (CD billion)))
+                (NN merger))
+              (PP (IN of)
+                (NP (DT the) (CD two) (NNS companies))))
+            (NP-TMP (NN yesterday))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, voted-9)
+nsubj(voted-9, Shareholders-1)
+nsubj:xsubj(approve-11, Shareholders-1)
+case(Petroleum-4, of-2)
+compound(Petroleum-4, Anadarko-3)
+nmod:of(Shareholders-1, Petroleum-4)
+cc(Petroleum-4, and-5)
+compound(Resources-8, Union-6)
+compound(Resources-8, Pacific-7)
+nmod:of(Shareholders-1, Resources-8)
+conj:and(Petroleum-4, Resources-8)
+mark(approve-11, to-10)
+xcomp(voted-9, approve-11)
+det(merger-16, a-12)
+amod(merger-16, $-13)
+compound(billion-15, 5.4-14)
+nummod($-13, billion-15)
+dobj(approve-11, merger-16)
+case(companies-20, of-17)
+det(companies-20, the-18)
+nummod(companies-20, two-19)
+nmod:of(merger-16, companies-20)
+nmod:tmod(approve-11, yesterday-21)
+punct(voted-9, .-22)
+
+Extracted the following NER entity mentions:
+Anadarko Petroleum and Union Pacific Resources	ORGANIZATION
+$5.4 billion	MONEY
+two	NUMBER
+
+Sentence #2 (21 tokens):
+The merger calls for UPR
+shareholders
+to receive 0.455 shares of Anadarko common stock for each of their UPR
+shares.
+
+Tokens:
+[Text=The CharacterOffsetBegin=134 CharacterOffsetEnd=137 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=merger CharacterOffsetBegin=138 CharacterOffsetEnd=144 PartOfSpeech=NN Lemma=merger NamedEntityTag=O]
+[Text=calls CharacterOffsetBegin=145 CharacterOffsetEnd=150 PartOfSpeech=VBZ Lemma=call NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=151 CharacterOffsetEnd=154 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=UPR CharacterOffsetBegin=155 CharacterOffsetEnd=158 PartOfSpeech=NNP Lemma=UPR NamedEntityTag=ORGANIZATION]
+[Text=shareholders CharacterOffsetBegin=159 CharacterOffsetEnd=171 PartOfSpeech=NNS Lemma=shareholder NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=172 CharacterOffsetEnd=174 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=receive CharacterOffsetBegin=175 CharacterOffsetEnd=182 PartOfSpeech=VB Lemma=receive NamedEntityTag=O]
+[Text=0.455 CharacterOffsetBegin=183 CharacterOffsetEnd=188 PartOfSpeech=CD Lemma=0.455 NamedEntityTag=NUMBER NormalizedNamedEntityTag=0.455]
+[Text=shares CharacterOffsetBegin=189 CharacterOffsetEnd=195 PartOfSpeech=NNS Lemma=share NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=196 CharacterOffsetEnd=198 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Anadarko CharacterOffsetBegin=199 CharacterOffsetEnd=207 PartOfSpeech=NNP Lemma=Anadarko NamedEntityTag=ORGANIZATION]
+[Text=common CharacterOffsetBegin=208 CharacterOffsetEnd=214 PartOfSpeech=JJ Lemma=common NamedEntityTag=O]
+[Text=stock CharacterOffsetBegin=215 CharacterOffsetEnd=220 PartOfSpeech=NN Lemma=stock NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=221 CharacterOffsetEnd=224 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=each CharacterOffsetBegin=225 CharacterOffsetEnd=229 PartOfSpeech=DT Lemma=each NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=230 CharacterOffsetEnd=232 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=233 CharacterOffsetEnd=238 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=UPR CharacterOffsetBegin=239 CharacterOffsetEnd=242 PartOfSpeech=NNP Lemma=UPR NamedEntityTag=ORGANIZATION]
+[Text=shares CharacterOffsetBegin=243 CharacterOffsetEnd=249 PartOfSpeech=NNS Lemma=share NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=249 CharacterOffsetEnd=250 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN merger))
+    (VP (VBZ calls)
+      (PP (IN for)
+        (NP (NNP UPR) (NNS shareholders)
+          (S
+            (VP (TO to)
+              (VP (VB receive)
+                (NP
+                  (NP (CD 0.455) (NNS shares))
+                  (PP (IN of)
+                    (NP (NNP Anadarko) (JJ common) (NN stock))))
+                (PP (IN for)
+                  (NP
+                    (NP (DT each))
+                    (PP (IN of)
+                      (NP (PRP$ their) (NNP UPR) (NNS shares)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, calls-3)
+det(merger-2, The-1)
+nsubj(calls-3, merger-2)
+case(shareholders-6, for-4)
+compound(shareholders-6, UPR-5)
+nmod:for(calls-3, shareholders-6)
+mark(receive-8, to-7)
+acl:to(shareholders-6, receive-8)
+nummod(shares-10, 0.455-9)
+dobj(receive-8, shares-10)
+case(stock-14, of-11)
+compound(stock-14, Anadarko-12)
+amod(stock-14, common-13)
+nmod:of(shares-10, stock-14)
+case(each-16, for-15)
+nmod:for(receive-8, each-16)
+case(shares-20, of-17)
+nmod:poss(shares-20, their-18)
+compound(shares-20, UPR-19)
+nmod:of(each-16, shares-20)
+punct(calls-3, .-21)
+
+Extracted the following NER entity mentions:
+UPR	ORGANIZATION
+0.455	NUMBER
+Anadarko	ORGANIZATION
+UPR	ORGANIZATION
+
+Sentence #3 (19 tokens):
+Anadarko
+shareholders also voted to increase the size of the company's board to 15
+members from
+nine.
+
+Tokens:
+[Text=Anadarko CharacterOffsetBegin=251 CharacterOffsetEnd=259 PartOfSpeech=NNP Lemma=Anadarko NamedEntityTag=ORGANIZATION]
+[Text=shareholders CharacterOffsetBegin=260 CharacterOffsetEnd=272 PartOfSpeech=NNS Lemma=shareholder NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=273 CharacterOffsetEnd=277 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=voted CharacterOffsetBegin=278 CharacterOffsetEnd=283 PartOfSpeech=VBD Lemma=vote NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=284 CharacterOffsetEnd=286 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=increase CharacterOffsetBegin=287 CharacterOffsetEnd=295 PartOfSpeech=VB Lemma=increase NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=296 CharacterOffsetEnd=299 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=size CharacterOffsetBegin=300 CharacterOffsetEnd=304 PartOfSpeech=NN Lemma=size NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=305 CharacterOffsetEnd=307 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=308 CharacterOffsetEnd=311 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=company CharacterOffsetBegin=312 CharacterOffsetEnd=319 PartOfSpeech=NN Lemma=company NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=319 CharacterOffsetEnd=321 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=board CharacterOffsetBegin=322 CharacterOffsetEnd=327 PartOfSpeech=NN Lemma=board NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=328 CharacterOffsetEnd=330 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=15 CharacterOffsetBegin=331 CharacterOffsetEnd=333 PartOfSpeech=CD Lemma=15 NamedEntityTag=NUMBER NormalizedNamedEntityTag=15.0]
+[Text=members CharacterOffsetBegin=334 CharacterOffsetEnd=341 PartOfSpeech=NNS Lemma=member NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=342 CharacterOffsetEnd=346 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=nine CharacterOffsetBegin=347 CharacterOffsetEnd=351 PartOfSpeech=CD Lemma=nine NamedEntityTag=NUMBER NormalizedNamedEntityTag=9.0]
+[Text=. CharacterOffsetBegin=351 CharacterOffsetEnd=352 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Anadarko) (NNS shareholders))
+    (ADVP (RB also))
+    (VP (VBD voted)
+      (S
+        (VP (TO to)
+          (VP (VB increase)
+            (NP
+              (NP (DT the) (NN size))
+              (PP (IN of)
+                (NP
+                  (NP (DT the) (NN company) (POS 's))
+                  (NN board))))
+            (PP (TO to)
+              (NP
+                (NP (CD 15) (NNS members))
+                (PP (IN from)
+                  (NP (CD nine)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, voted-4)
+compound(shareholders-2, Anadarko-1)
+nsubj(voted-4, shareholders-2)
+nsubj:xsubj(increase-6, shareholders-2)
+advmod(voted-4, also-3)
+mark(increase-6, to-5)
+xcomp(voted-4, increase-6)
+det(size-8, the-7)
+dobj(increase-6, size-8)
+case(board-13, of-9)
+det(company-11, the-10)
+nmod:poss(board-13, company-11)
+case(company-11, 's-12)
+nmod:of(size-8, board-13)
+case(members-16, to-14)
+nummod(members-16, 15-15)
+nmod:to(increase-6, members-16)
+case(nine-18, from-17)
+nmod:from(members-16, nine-18)
+punct(voted-4, .-19)
+
+Extracted the following NER entity mentions:
+Anadarko	ORGANIZATION
+15	NUMBER
+nine	NUMBER
+
+Sentence #4 (9 tokens):
+The combined company will be named Anadarko Petroleum.
+
+Tokens:
+[Text=The CharacterOffsetBegin=353 CharacterOffsetEnd=356 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=combined CharacterOffsetBegin=357 CharacterOffsetEnd=365 PartOfSpeech=JJ Lemma=combined NamedEntityTag=O]
+[Text=company CharacterOffsetBegin=366 CharacterOffsetEnd=373 PartOfSpeech=NN Lemma=company NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=374 CharacterOffsetEnd=378 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=379 CharacterOffsetEnd=381 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=named CharacterOffsetBegin=382 CharacterOffsetEnd=387 PartOfSpeech=VBN Lemma=name NamedEntityTag=O]
+[Text=Anadarko CharacterOffsetBegin=388 CharacterOffsetEnd=396 PartOfSpeech=NNP Lemma=Anadarko NamedEntityTag=ORGANIZATION]
+[Text=Petroleum CharacterOffsetBegin=397 CharacterOffsetEnd=406 PartOfSpeech=NNP Lemma=Petroleum NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=406 CharacterOffsetEnd=407 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (JJ combined) (NN company))
+    (VP (MD will)
+      (VP (VB be)
+        (VP (VBN named)
+          (NP (NNP Anadarko) (NNP Petroleum)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, named-6)
+det(company-3, The-1)
+amod(company-3, combined-2)
+nsubjpass(named-6, company-3)
+aux(named-6, will-4)
+auxpass(named-6, be-5)
+compound(Petroleum-8, Anadarko-7)
+dobj(named-6, Petroleum-8)
+punct(named-6, .-9)
+
+Extracted the following NER entity mentions:
+Anadarko Petroleum	ORGANIZATION
+
+Coreference set:
+	(1,4,[3,9]) -> (4,8,[7,9]), that is: "Anadarko Petroleum and Union Pacific Resources" -> "Anadarko Petroleum"
+	(2,12,[12,13]) -> (4,8,[7,9]), that is: "Anadarko" -> "Anadarko Petroleum"
+	(3,1,[1,2]) -> (4,8,[7,9]), that is: "Anadarko" -> "Anadarko Petroleum"
+
+Coreference set:
+	(2,18,[18,19]) -> (1,1,[1,9]), that is: "their" -> "Shareholders of Anadarko Petroleum and Union Pacific Resources"
+
+Coreference set:
+	(2,2,[1,3]) -> (1,16,[12,21]), that is: "The merger" -> "a $ 5.4 billion merger of the two companies"
+
+Coreference set:
+	(2,19,[19,20]) -> (2,5,[5,6]), that is: "UPR" -> "UPR"
+
+Coreference set:
+	(3,2,[1,3]) -> (2,6,[5,21]), that is: "Anadarko shareholders" -> "UPR shareholders to receive 0.455 shares of Anadarko common stock for each of their UPR shares"

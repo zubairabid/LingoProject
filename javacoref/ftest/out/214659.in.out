@@ -1,0 +1,972 @@
+Document: ID=214659.in (10 sentences, 244 tokens)
+
+Sentence #1 (28 tokens):
+Mike Roan and I met with Ed Martin, president of Wabash and Don Morton, his
+legal counsel to discuss their support for our RTO position.
+
+Tokens:
+[Text=Mike CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Mike NamedEntityTag=PERSON]
+[Text=Roan CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=Roan NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=met CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=VBD Lemma=meet NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Ed CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=Ed NamedEntityTag=PERSON]
+[Text=Martin CharacterOffsetBegin=28 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Martin NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=president CharacterOffsetBegin=36 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=president NamedEntityTag=TITLE]
+[Text=of CharacterOffsetBegin=46 CharacterOffsetEnd=48 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Wabash CharacterOffsetBegin=49 CharacterOffsetEnd=55 PartOfSpeech=NNP Lemma=Wabash NamedEntityTag=CITY]
+[Text=and CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Don CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=NNP Lemma=Don NamedEntityTag=PERSON]
+[Text=Morton CharacterOffsetBegin=64 CharacterOffsetEnd=70 PartOfSpeech=NNP Lemma=Morton NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=legal CharacterOffsetBegin=76 CharacterOffsetEnd=81 PartOfSpeech=JJ Lemma=legal NamedEntityTag=O]
+[Text=counsel CharacterOffsetBegin=82 CharacterOffsetEnd=89 PartOfSpeech=NN Lemma=counsel NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=90 CharacterOffsetEnd=92 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=discuss CharacterOffsetBegin=93 CharacterOffsetEnd=100 PartOfSpeech=VB Lemma=discuss NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=101 CharacterOffsetEnd=106 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=support CharacterOffsetBegin=107 CharacterOffsetEnd=114 PartOfSpeech=NN Lemma=support NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=115 CharacterOffsetEnd=118 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=119 CharacterOffsetEnd=122 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=RTO CharacterOffsetBegin=123 CharacterOffsetEnd=126 PartOfSpeech=NNP Lemma=RTO NamedEntityTag=O]
+[Text=position CharacterOffsetBegin=127 CharacterOffsetEnd=135 PartOfSpeech=NN Lemma=position NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=135 CharacterOffsetEnd=136 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Mike) (NNP Roan))
+      (CC and)
+      (NP (PRP I)))
+    (VP (VBD met)
+      (PP (IN with)
+        (NP
+          (NP (NNP Ed) (NNP Martin))
+          (, ,)
+          (NP
+            (NP (NN president))
+            (PP (IN of)
+              (NP (NNP Wabash))))
+          (CC and)
+          (NP
+            (NP (NNP Don) (NNP Morton))
+            (, ,)
+            (NP (PRP$ his) (JJ legal) (NN counsel)))))
+      (S
+        (VP (TO to)
+          (VP (VB discuss)
+            (NP (PRP$ their) (NN support))
+            (PP (IN for)
+              (NP (PRP$ our) (NNP RTO) (NN position)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, met-5)
+compound(Roan-2, Mike-1)
+nsubj(met-5, Roan-2)
+nsubj:xsubj(discuss-21, Roan-2)
+cc(Roan-2, and-3)
+conj:and(Roan-2, I-4)
+nsubj(met-5, I-4)
+nsubj:xsubj(discuss-21, I-4)
+case(Martin-8, with-6)
+compound(Martin-8, Ed-7)
+nmod:with(met-5, Martin-8)
+punct(Martin-8, ,-9)
+nmod:with(met-5, president-10)
+conj:and(Martin-8, president-10)
+case(Wabash-12, of-11)
+nmod:of(president-10, Wabash-12)
+cc(Martin-8, and-13)
+compound(Morton-15, Don-14)
+nmod:with(met-5, Morton-15)
+conj:and(Martin-8, Morton-15)
+punct(Morton-15, ,-16)
+nmod:poss(counsel-19, his-17)
+amod(counsel-19, legal-18)
+appos(Morton-15, counsel-19)
+mark(discuss-21, to-20)
+xcomp(met-5, discuss-21)
+nmod:poss(support-23, their-22)
+dobj(discuss-21, support-23)
+case(position-27, for-24)
+nmod:poss(position-27, our-25)
+compound(position-27, RTO-26)
+nmod:for(discuss-21, position-27)
+punct(met-5, .-28)
+
+Extracted the following NER entity mentions:
+Mike Roan	PERSON
+Ed Martin	PERSON
+president	TITLE
+Wabash	CITY
+Don Morton	PERSON
+his	PERSON
+
+Sentence #2 (15 tokens):
+(Mike did a
+nice job and I believe they will be supportive).
+
+Tokens:
+[Text=-LRB- CharacterOffsetBegin=138 CharacterOffsetEnd=139 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Mike CharacterOffsetBegin=139 CharacterOffsetEnd=143 PartOfSpeech=NNP Lemma=Mike NamedEntityTag=PERSON]
+[Text=did CharacterOffsetBegin=144 CharacterOffsetEnd=147 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=148 CharacterOffsetEnd=149 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=nice CharacterOffsetBegin=150 CharacterOffsetEnd=154 PartOfSpeech=JJ Lemma=nice NamedEntityTag=O]
+[Text=job CharacterOffsetBegin=155 CharacterOffsetEnd=158 PartOfSpeech=NN Lemma=job NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=159 CharacterOffsetEnd=162 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=163 CharacterOffsetEnd=164 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=believe CharacterOffsetBegin=165 CharacterOffsetEnd=172 PartOfSpeech=VBP Lemma=believe NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=173 CharacterOffsetEnd=177 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=178 CharacterOffsetEnd=182 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=183 CharacterOffsetEnd=185 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=supportive CharacterOffsetBegin=186 CharacterOffsetEnd=196 PartOfSpeech=JJ Lemma=supportive NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=196 CharacterOffsetEnd=197 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=197 CharacterOffsetEnd=198 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (-LRB- -LRB-)
+    (NP (NNP Mike))
+    (VP (VBD did)
+      (SBAR
+        (S
+          (NP
+            (NP (DT a) (JJ nice) (NN job))
+            (CC and)
+            (NP (PRP I)))
+          (VP (VBP believe)
+            (SBAR
+              (S
+                (NP (PRP they))
+                (VP (MD will)
+                  (VP (VB be)
+                    (ADJP (JJ supportive))))))))))
+    (-RRB- -RRB-) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, did-3)
+punct(did-3, -LRB--1)
+nsubj(did-3, Mike-2)
+det(job-6, a-4)
+amod(job-6, nice-5)
+nsubj(believe-9, job-6)
+cc(job-6, and-7)
+conj:and(job-6, I-8)
+nsubj(believe-9, I-8)
+ccomp(did-3, believe-9)
+nsubj(supportive-13, they-10)
+aux(supportive-13, will-11)
+cop(supportive-13, be-12)
+ccomp(believe-9, supportive-13)
+punct(did-3, -RRB--14)
+punct(did-3, .-15)
+
+Extracted the following NER entity mentions:
+Mike	PERSON
+
+Sentence #3 (23 tokens):
+On the business side, Ed Martin would like to talk to someone from Enron to
+partner with them on a deal.
+
+Tokens:
+[Text=On CharacterOffsetBegin=200 CharacterOffsetEnd=202 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=203 CharacterOffsetEnd=206 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=business CharacterOffsetBegin=207 CharacterOffsetEnd=215 PartOfSpeech=NN Lemma=business NamedEntityTag=O]
+[Text=side CharacterOffsetBegin=216 CharacterOffsetEnd=220 PartOfSpeech=NN Lemma=side NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=220 CharacterOffsetEnd=221 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Ed CharacterOffsetBegin=222 CharacterOffsetEnd=224 PartOfSpeech=NNP Lemma=Ed NamedEntityTag=PERSON]
+[Text=Martin CharacterOffsetBegin=225 CharacterOffsetEnd=231 PartOfSpeech=NNP Lemma=Martin NamedEntityTag=PERSON]
+[Text=would CharacterOffsetBegin=232 CharacterOffsetEnd=237 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=238 CharacterOffsetEnd=242 PartOfSpeech=VB Lemma=like NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=243 CharacterOffsetEnd=245 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=talk CharacterOffsetBegin=246 CharacterOffsetEnd=250 PartOfSpeech=VB Lemma=talk NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=251 CharacterOffsetEnd=253 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=someone CharacterOffsetBegin=254 CharacterOffsetEnd=261 PartOfSpeech=NN Lemma=someone NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=262 CharacterOffsetEnd=266 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=267 CharacterOffsetEnd=272 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=to CharacterOffsetBegin=273 CharacterOffsetEnd=275 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=partner CharacterOffsetBegin=276 CharacterOffsetEnd=283 PartOfSpeech=NN Lemma=partner NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=284 CharacterOffsetEnd=288 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=289 CharacterOffsetEnd=293 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=294 CharacterOffsetEnd=296 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=297 CharacterOffsetEnd=298 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=deal CharacterOffsetBegin=299 CharacterOffsetEnd=303 PartOfSpeech=NN Lemma=deal NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=303 CharacterOffsetEnd=304 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN On)
+      (NP (DT the) (NN business) (NN side)))
+    (, ,)
+    (NP (NNP Ed) (NNP Martin))
+    (VP (MD would)
+      (VP (VB like)
+        (S
+          (VP (TO to)
+            (VP (VB talk)
+              (PP (TO to)
+                (NP (NN someone)))
+              (PP (IN from)
+                (NP (NNP Enron)))
+              (PP (TO to)
+                (NP
+                  (NP (NN partner))
+                  (PP (IN with)
+                    (NP (PRP them)))))
+              (PP (IN on)
+                (NP (DT a) (NN deal))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, like-9)
+case(side-4, On-1)
+det(side-4, the-2)
+compound(side-4, business-3)
+nmod:on(like-9, side-4)
+punct(like-9, ,-5)
+compound(Martin-7, Ed-6)
+nsubj(like-9, Martin-7)
+nsubj:xsubj(talk-11, Martin-7)
+aux(like-9, would-8)
+mark(talk-11, to-10)
+xcomp(like-9, talk-11)
+case(someone-13, to-12)
+nmod:to(talk-11, someone-13)
+case(Enron-15, from-14)
+nmod:from(talk-11, Enron-15)
+case(partner-17, to-16)
+nmod:to(talk-11, partner-17)
+case(them-19, with-18)
+nmod:with(partner-17, them-19)
+case(deal-22, on-20)
+det(deal-22, a-21)
+nmod:on(talk-11, deal-22)
+punct(like-9, .-23)
+
+Extracted the following NER entity mentions:
+Ed Martin	PERSON
+Enron	ORGANIZATION
+
+Sentence #4 (47 tokens):
+They have a load management device that can be
+installed in air conditioners (they are meeting with Lenox about this) and
+they need a partner to market it this to utilities as a means of reducing
+peak load and making power available for resale.
+
+Tokens:
+[Text=They CharacterOffsetBegin=306 CharacterOffsetEnd=310 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=311 CharacterOffsetEnd=315 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=316 CharacterOffsetEnd=317 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=load CharacterOffsetBegin=318 CharacterOffsetEnd=322 PartOfSpeech=NN Lemma=load NamedEntityTag=O]
+[Text=management CharacterOffsetBegin=323 CharacterOffsetEnd=333 PartOfSpeech=NN Lemma=management NamedEntityTag=O]
+[Text=device CharacterOffsetBegin=334 CharacterOffsetEnd=340 PartOfSpeech=NN Lemma=device NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=341 CharacterOffsetEnd=345 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=346 CharacterOffsetEnd=349 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=350 CharacterOffsetEnd=352 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=installed CharacterOffsetBegin=353 CharacterOffsetEnd=362 PartOfSpeech=VBN Lemma=install NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=363 CharacterOffsetEnd=365 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=air CharacterOffsetBegin=366 CharacterOffsetEnd=369 PartOfSpeech=NN Lemma=air NamedEntityTag=O]
+[Text=conditioners CharacterOffsetBegin=370 CharacterOffsetEnd=382 PartOfSpeech=NNS Lemma=conditioner NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=383 CharacterOffsetEnd=384 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=384 CharacterOffsetEnd=388 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=389 CharacterOffsetEnd=392 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=meeting CharacterOffsetBegin=393 CharacterOffsetEnd=400 PartOfSpeech=VBG Lemma=meet NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=401 CharacterOffsetEnd=405 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Lenox CharacterOffsetBegin=406 CharacterOffsetEnd=411 PartOfSpeech=NN Lemma=lenox NamedEntityTag=ORGANIZATION]
+[Text=about CharacterOffsetBegin=412 CharacterOffsetEnd=417 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=418 CharacterOffsetEnd=422 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=422 CharacterOffsetEnd=423 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=424 CharacterOffsetEnd=427 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=428 CharacterOffsetEnd=432 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=433 CharacterOffsetEnd=437 PartOfSpeech=VBP Lemma=need NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=438 CharacterOffsetEnd=439 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=partner CharacterOffsetBegin=440 CharacterOffsetEnd=447 PartOfSpeech=NN Lemma=partner NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=448 CharacterOffsetEnd=450 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=market CharacterOffsetBegin=451 CharacterOffsetEnd=457 PartOfSpeech=VB Lemma=market NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=458 CharacterOffsetEnd=460 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=461 CharacterOffsetEnd=465 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=466 CharacterOffsetEnd=468 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=utilities CharacterOffsetBegin=469 CharacterOffsetEnd=478 PartOfSpeech=NNS Lemma=utility NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=479 CharacterOffsetEnd=481 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=482 CharacterOffsetEnd=483 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=means CharacterOffsetBegin=484 CharacterOffsetEnd=489 PartOfSpeech=NN Lemma=means NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=490 CharacterOffsetEnd=492 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=reducing CharacterOffsetBegin=493 CharacterOffsetEnd=501 PartOfSpeech=VBG Lemma=reduce NamedEntityTag=O]
+[Text=peak CharacterOffsetBegin=502 CharacterOffsetEnd=506 PartOfSpeech=JJ Lemma=peak NamedEntityTag=O]
+[Text=load CharacterOffsetBegin=507 CharacterOffsetEnd=511 PartOfSpeech=NN Lemma=load NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=512 CharacterOffsetEnd=515 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=making CharacterOffsetBegin=516 CharacterOffsetEnd=522 PartOfSpeech=VBG Lemma=make NamedEntityTag=O]
+[Text=power CharacterOffsetBegin=523 CharacterOffsetEnd=528 PartOfSpeech=NN Lemma=power NamedEntityTag=O]
+[Text=available CharacterOffsetBegin=529 CharacterOffsetEnd=538 PartOfSpeech=JJ Lemma=available NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=539 CharacterOffsetEnd=542 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=resale CharacterOffsetBegin=543 CharacterOffsetEnd=549 PartOfSpeech=NN Lemma=resale NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=549 CharacterOffsetEnd=550 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP They))
+      (VP (VBP have)
+        (NP
+          (NP (DT a) (NN load) (NN management) (NN device))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (MD can)
+                (VP (VB be)
+                  (VP (VBN installed)
+                    (PP (IN in)
+                      (NP (NN air) (NNS conditioners)))))))))))
+    (PRN (-LRB- -LRB-)
+      (S
+        (NP (PRP they))
+        (VP (VBP are)
+          (VP (VBG meeting)
+            (PP (IN with)
+              (NP
+                (NP (NN Lenox))
+                (PP (IN about)
+                  (NP (DT this))))))))
+      (-RRB- -RRB-))
+    (CC and)
+    (S
+      (NP (PRP they))
+      (VP (VBP need)
+        (S
+          (NP (DT a) (NN partner))
+          (VP (TO to)
+            (VP (VB market)
+              (NP (PRP it) (DT this))
+              (PP (TO to)
+                (NP (NNS utilities)))
+              (PP (IN as)
+                (NP
+                  (NP (DT a) (NN means))
+                  (PP (IN of)
+                    (S
+                      (VP
+                        (VP (VBG reducing)
+                          (NP (JJ peak) (NN load)))
+                        (CC and)
+                        (VP (VBG making)
+                          (NP
+                            (NP (NN power))
+                            (ADJP (JJ available)
+                              (PP (IN for)
+                                (NP (NN resale))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-2)
+nsubj(have-2, They-1)
+det(device-6, a-3)
+compound(device-6, load-4)
+compound(device-6, management-5)
+dobj(have-2, device-6)
+nsubjpass(installed-10, device-6)
+ref(device-6, that-7)
+aux(installed-10, can-8)
+auxpass(installed-10, be-9)
+acl:relcl(device-6, installed-10)
+case(conditioners-13, in-11)
+compound(conditioners-13, air-12)
+nmod:in(installed-10, conditioners-13)
+punct(meeting-17, -LRB--14)
+nsubj(meeting-17, they-15)
+aux(meeting-17, are-16)
+dep(have-2, meeting-17)
+case(Lenox-19, with-18)
+nmod:with(meeting-17, Lenox-19)
+case(this-21, about-20)
+nmod:about(Lenox-19, this-21)
+punct(meeting-17, -RRB--22)
+cc(have-2, and-23)
+nsubj(need-25, they-24)
+conj:and(have-2, need-25)
+det(partner-27, a-26)
+dobj(need-25, partner-27)
+nsubj:xsubj(market-29, partner-27)
+mark(market-29, to-28)
+xcomp(need-25, market-29)
+dobj(market-29, it-30)
+dep(it-30, this-31)
+case(utilities-33, to-32)
+nmod:to(market-29, utilities-33)
+case(means-36, as-34)
+det(means-36, a-35)
+nmod:as(market-29, means-36)
+mark(reducing-38, of-37)
+acl:of(means-36, reducing-38)
+amod(load-40, peak-39)
+dobj(reducing-38, load-40)
+cc(reducing-38, and-41)
+acl:of(means-36, making-42)
+conj:and(reducing-38, making-42)
+dobj(making-42, power-43)
+amod(power-43, available-44)
+case(resale-46, for-45)
+nmod:for(available-44, resale-46)
+punct(have-2, .-47)
+
+Extracted the following NER entity mentions:
+Lenox	ORGANIZATION
+
+Sentence #5 (36 tokens):
+The product is geared
+towards the residential , but could be applicable to small, medium commercial
+customers and in some cases (depending on utility tariffs and what is
+available), larger customers.
+
+Tokens:
+[Text=The CharacterOffsetBegin=552 CharacterOffsetEnd=555 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=product CharacterOffsetBegin=556 CharacterOffsetEnd=563 PartOfSpeech=NN Lemma=product NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=564 CharacterOffsetEnd=566 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=geared CharacterOffsetBegin=567 CharacterOffsetEnd=573 PartOfSpeech=VBN Lemma=gear NamedEntityTag=O]
+[Text=towards CharacterOffsetBegin=574 CharacterOffsetEnd=581 PartOfSpeech=IN Lemma=towards NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=582 CharacterOffsetEnd=585 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=residential CharacterOffsetBegin=586 CharacterOffsetEnd=597 PartOfSpeech=JJ Lemma=residential NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=598 CharacterOffsetEnd=599 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=600 CharacterOffsetEnd=603 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=604 CharacterOffsetEnd=609 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=610 CharacterOffsetEnd=612 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=applicable CharacterOffsetBegin=613 CharacterOffsetEnd=623 PartOfSpeech=JJ Lemma=applicable NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=624 CharacterOffsetEnd=626 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=small CharacterOffsetBegin=627 CharacterOffsetEnd=632 PartOfSpeech=JJ Lemma=small NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=632 CharacterOffsetEnd=633 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=medium CharacterOffsetBegin=634 CharacterOffsetEnd=640 PartOfSpeech=JJ Lemma=medium NamedEntityTag=O]
+[Text=commercial CharacterOffsetBegin=641 CharacterOffsetEnd=651 PartOfSpeech=JJ Lemma=commercial NamedEntityTag=O]
+[Text=customers CharacterOffsetBegin=652 CharacterOffsetEnd=661 PartOfSpeech=NNS Lemma=customer NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=662 CharacterOffsetEnd=665 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=666 CharacterOffsetEnd=668 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=669 CharacterOffsetEnd=673 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=cases CharacterOffsetBegin=674 CharacterOffsetEnd=679 PartOfSpeech=NNS Lemma=case NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=680 CharacterOffsetEnd=681 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=depending CharacterOffsetBegin=681 CharacterOffsetEnd=690 PartOfSpeech=VBG Lemma=depend NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=691 CharacterOffsetEnd=693 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=utility CharacterOffsetBegin=694 CharacterOffsetEnd=701 PartOfSpeech=NN Lemma=utility NamedEntityTag=O]
+[Text=tariffs CharacterOffsetBegin=702 CharacterOffsetEnd=709 PartOfSpeech=NNS Lemma=tariff NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=710 CharacterOffsetEnd=713 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=714 CharacterOffsetEnd=718 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=719 CharacterOffsetEnd=721 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=available CharacterOffsetBegin=722 CharacterOffsetEnd=731 PartOfSpeech=JJ Lemma=available NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=731 CharacterOffsetEnd=732 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=732 CharacterOffsetEnd=733 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=larger CharacterOffsetBegin=734 CharacterOffsetEnd=740 PartOfSpeech=JJR Lemma=larger NamedEntityTag=O]
+[Text=customers CharacterOffsetBegin=741 CharacterOffsetEnd=750 PartOfSpeech=NNS Lemma=customer NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=750 CharacterOffsetEnd=751 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN product))
+    (VP
+      (VP (VBZ is)
+        (VP (VBN geared)
+          (PP (IN towards)
+            (NP (DT the) (JJ residential)))))
+      (, ,)
+      (CC but)
+      (VP (MD could)
+        (VP (VB be)
+          (ADJP (JJ applicable)
+            (PP
+              (PP (TO to)
+                (NP (JJ small) (, ,) (JJ medium) (JJ commercial) (NNS customers)))
+              (CC and)
+              (PP (IN in)
+                (NP
+                  (NP
+                    (NP (DT some) (NNS cases))
+                    (PRN (-LRB- -LRB-)
+                      (PP (VBG depending)
+                        (PP (IN on)
+                          (NP
+                            (NP
+                              (NP (NN utility))
+                              (NP (NNS tariffs)))
+                            (CC and)
+                            (SBAR
+                              (WHNP (WP what))
+                              (S
+                                (VP (VBZ is)
+                                  (ADJP (JJ available))))))))
+                      (-RRB- -RRB-)))
+                  (, ,)
+                  (NP (JJR larger) (NNS customers)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, geared-4)
+det(product-2, The-1)
+nsubjpass(geared-4, product-2)
+nsubj(applicable-12, product-2)
+auxpass(geared-4, is-3)
+case(residential-7, towards-5)
+det(residential-7, the-6)
+nmod:towards(geared-4, residential-7)
+punct(geared-4, ,-8)
+cc(geared-4, but-9)
+aux(applicable-12, could-10)
+cop(applicable-12, be-11)
+conj:but(geared-4, applicable-12)
+conj:but(geared-4, applicable-12')
+conj:and(applicable-12, applicable-12')
+case(customers-18, to-13)
+amod(customers-18, small-14)
+punct(customers-18, ,-15)
+amod(customers-18, medium-16)
+amod(customers-18, commercial-17)
+nmod:to(applicable-12, customers-18)
+cc(applicable-12, and-19)
+case(cases-22, in-20)
+det(cases-22, some-21)
+nmod:in(applicable-12', cases-22)
+punct(utility-26, -LRB--23)
+case(utility-26, depending-24)
+case(utility-26, on-25)
+nmod:depending(cases-22, utility-26)
+dep(utility-26, tariffs-27)
+cc(utility-26, and-28)
+nsubj(available-31, what-29)
+cop(available-31, is-30)
+nmod:depending(cases-22, available-31)
+conj:and(utility-26, available-31)
+punct(utility-26, -RRB--32)
+punct(cases-22, ,-33)
+amod(customers-35, larger-34)
+appos(cases-22, customers-35)
+punct(geared-4, .-36)
+
+Extracted the following NER entity mentions:
+
+Sentence #6 (22 tokens):
+The other angle would be to market this
+directly to customers, although that does not appear to be their focus.
+
+Tokens:
+[Text=The CharacterOffsetBegin=753 CharacterOffsetEnd=756 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=757 CharacterOffsetEnd=762 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=angle CharacterOffsetBegin=763 CharacterOffsetEnd=768 PartOfSpeech=NN Lemma=angle NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=769 CharacterOffsetEnd=774 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=775 CharacterOffsetEnd=777 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=778 CharacterOffsetEnd=780 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=market CharacterOffsetBegin=781 CharacterOffsetEnd=787 PartOfSpeech=VB Lemma=market NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=788 CharacterOffsetEnd=792 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=directly CharacterOffsetBegin=793 CharacterOffsetEnd=801 PartOfSpeech=RB Lemma=directly NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=802 CharacterOffsetEnd=804 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=customers CharacterOffsetBegin=805 CharacterOffsetEnd=814 PartOfSpeech=NNS Lemma=customer NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=814 CharacterOffsetEnd=815 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=although CharacterOffsetBegin=816 CharacterOffsetEnd=824 PartOfSpeech=IN Lemma=although NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=825 CharacterOffsetEnd=829 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=830 CharacterOffsetEnd=834 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=835 CharacterOffsetEnd=838 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=appear CharacterOffsetBegin=839 CharacterOffsetEnd=845 PartOfSpeech=VB Lemma=appear NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=846 CharacterOffsetEnd=848 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=849 CharacterOffsetEnd=851 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=852 CharacterOffsetEnd=857 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=focus CharacterOffsetBegin=858 CharacterOffsetEnd=863 PartOfSpeech=NN Lemma=focus NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=863 CharacterOffsetEnd=864 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (JJ other) (NN angle))
+    (VP (MD would)
+      (VP (VB be)
+        (S
+          (VP (TO to)
+            (VP (VB market)
+              (NP (DT this))
+              (ADVP (RB directly))
+              (PP (TO to)
+                (NP (NNS customers)))
+              (, ,)
+              (SBAR (IN although)
+                (S
+                  (NP (DT that))
+                  (VP (VBZ does) (RB not)
+                    (VP (VB appear)
+                      (S
+                        (VP (TO to)
+                          (VP (VB be)
+                            (NP (PRP$ their) (NN focus))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, be-5)
+det(angle-3, The-1)
+amod(angle-3, other-2)
+nsubj(be-5, angle-3)
+nsubj:xsubj(market-7, angle-3)
+aux(be-5, would-4)
+mark(market-7, to-6)
+xcomp(be-5, market-7)
+dobj(market-7, this-8)
+advmod(market-7, directly-9)
+case(customers-11, to-10)
+nmod:to(market-7, customers-11)
+punct(market-7, ,-12)
+mark(appear-17, although-13)
+nsubj(appear-17, that-14)
+nsubj:xsubj(focus-21, that-14)
+aux(appear-17, does-15)
+neg(appear-17, not-16)
+advcl:although(market-7, appear-17)
+mark(focus-21, to-18)
+cop(focus-21, be-19)
+nmod:poss(focus-21, their-20)
+xcomp(appear-17, focus-21)
+punct(be-5, .-22)
+
+Extracted the following NER entity mentions:
+
+Sentence #7 (12 tokens):
+I
+told Ed I would have someone get back to him.
+
+Tokens:
+[Text=I CharacterOffsetBegin=866 CharacterOffsetEnd=867 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=told CharacterOffsetBegin=868 CharacterOffsetEnd=872 PartOfSpeech=VBD Lemma=tell NamedEntityTag=O]
+[Text=Ed CharacterOffsetBegin=873 CharacterOffsetEnd=875 PartOfSpeech=NNP Lemma=Ed NamedEntityTag=PERSON]
+[Text=I CharacterOffsetBegin=876 CharacterOffsetEnd=877 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=878 CharacterOffsetEnd=883 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=884 CharacterOffsetEnd=888 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=someone CharacterOffsetBegin=889 CharacterOffsetEnd=896 PartOfSpeech=NN Lemma=someone NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=897 CharacterOffsetEnd=900 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=901 CharacterOffsetEnd=905 PartOfSpeech=RB Lemma=back NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=906 CharacterOffsetEnd=908 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=909 CharacterOffsetEnd=912 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=912 CharacterOffsetEnd=913 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD told)
+      (NP
+        (NP (NNP Ed))
+        (SBAR
+          (S
+            (NP (PRP I))
+            (VP (MD would)
+              (VP (VB have)
+                (S
+                  (NP (NN someone))
+                  (VP (VB get)
+                    (ADVP (RB back))
+                    (PP (TO to)
+                      (NP (PRP him)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, told-2)
+nsubj(told-2, I-1)
+dobj(told-2, Ed-3)
+nsubj(have-6, I-4)
+aux(have-6, would-5)
+acl:relcl(Ed-3, have-6)
+nsubj(get-8, someone-7)
+ccomp(have-6, get-8)
+advmod(get-8, back-9)
+case(him-11, to-10)
+nmod:to(get-8, him-11)
+punct(told-2, .-12)
+
+Extracted the following NER entity mentions:
+Ed	PERSON
+him	PERSON
+
+Sentence #8 (7 tokens):
+Please advise if you are
+interested.
+
+Tokens:
+[Text=Please CharacterOffsetBegin=915 CharacterOffsetEnd=921 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=advise CharacterOffsetBegin=922 CharacterOffsetEnd=928 PartOfSpeech=VB Lemma=advise NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=929 CharacterOffsetEnd=931 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=932 CharacterOffsetEnd=935 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=936 CharacterOffsetEnd=939 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=interested CharacterOffsetBegin=940 CharacterOffsetEnd=950 PartOfSpeech=JJ Lemma=interested NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=950 CharacterOffsetEnd=951 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Please)
+      (VP (VB advise)
+        (SBAR (IN if)
+          (S
+            (NP (PRP you))
+            (VP (VBP are)
+              (ADJP (JJ interested)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Please-1)
+xcomp(Please-1, advise-2)
+mark(interested-6, if-3)
+nsubj(interested-6, you-4)
+cop(interested-6, are-5)
+advcl:if(advise-2, interested-6)
+punct(Please-1, .-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #9 (5 tokens):
+Thanks,
+Janine
+
+p.s.
+
+Tokens:
+[Text=Thanks CharacterOffsetBegin=953 CharacterOffsetEnd=959 PartOfSpeech=NNS Lemma=thanks NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=959 CharacterOffsetEnd=960 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Janine CharacterOffsetBegin=961 CharacterOffsetEnd=967 PartOfSpeech=NNP Lemma=Janine NamedEntityTag=PERSON]
+[Text=p.s. CharacterOffsetBegin=969 CharacterOffsetEnd=972 PartOfSpeech=NNP Lemma=p.s. NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=972 CharacterOffsetEnd=973 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNS Thanks))
+    (, ,)
+    (NP (NNP Janine) (NNP p.s.))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Thanks-1)
+punct(Thanks-1, ,-2)
+compound(p.s.-4, Janine-3)
+appos(Thanks-1, p.s.-4)
+punct(Thanks-1, .-5)
+
+Extracted the following NER entity mentions:
+Janine	PERSON
+
+Sentence #10 (49 tokens):
+You probably know this, but just in case, according to Ed , TVA is
+getting squeezed by Duke and Southern and is quietly lobbying folks like the
+Coops to raise the issue of increasing transmission capacity by building
+additional transmission lines to better inteconnect the system.
+
+Tokens:
+[Text=You CharacterOffsetBegin=975 CharacterOffsetEnd=978 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=probably CharacterOffsetBegin=979 CharacterOffsetEnd=987 PartOfSpeech=RB Lemma=probably NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=988 CharacterOffsetEnd=992 PartOfSpeech=VBP Lemma=know NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=993 CharacterOffsetEnd=997 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=997 CharacterOffsetEnd=998 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=999 CharacterOffsetEnd=1002 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=1003 CharacterOffsetEnd=1007 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=1008 CharacterOffsetEnd=1010 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=case CharacterOffsetBegin=1011 CharacterOffsetEnd=1015 PartOfSpeech=NN Lemma=case NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1015 CharacterOffsetEnd=1016 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=according CharacterOffsetBegin=1017 CharacterOffsetEnd=1026 PartOfSpeech=VBG Lemma=accord NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1027 CharacterOffsetEnd=1029 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Ed CharacterOffsetBegin=1030 CharacterOffsetEnd=1032 PartOfSpeech=NNP Lemma=Ed NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=1033 CharacterOffsetEnd=1034 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=TVA CharacterOffsetBegin=1035 CharacterOffsetEnd=1038 PartOfSpeech=NNP Lemma=TVA NamedEntityTag=ORGANIZATION]
+[Text=is CharacterOffsetBegin=1039 CharacterOffsetEnd=1041 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=getting CharacterOffsetBegin=1042 CharacterOffsetEnd=1049 PartOfSpeech=VBG Lemma=get NamedEntityTag=O]
+[Text=squeezed CharacterOffsetBegin=1050 CharacterOffsetEnd=1058 PartOfSpeech=VBN Lemma=squeeze NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=1059 CharacterOffsetEnd=1061 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Duke CharacterOffsetBegin=1062 CharacterOffsetEnd=1066 PartOfSpeech=NNP Lemma=Duke NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=1067 CharacterOffsetEnd=1070 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Southern CharacterOffsetBegin=1071 CharacterOffsetEnd=1079 PartOfSpeech=NNP Lemma=Southern NamedEntityTag=MISC]
+[Text=and CharacterOffsetBegin=1080 CharacterOffsetEnd=1083 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=1084 CharacterOffsetEnd=1086 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=quietly CharacterOffsetBegin=1087 CharacterOffsetEnd=1094 PartOfSpeech=RB Lemma=quietly NamedEntityTag=O]
+[Text=lobbying CharacterOffsetBegin=1095 CharacterOffsetEnd=1103 PartOfSpeech=VBG Lemma=lobby NamedEntityTag=O]
+[Text=folks CharacterOffsetBegin=1104 CharacterOffsetEnd=1109 PartOfSpeech=NNS Lemma=folk NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=1110 CharacterOffsetEnd=1114 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1115 CharacterOffsetEnd=1118 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Coops CharacterOffsetBegin=1119 CharacterOffsetEnd=1124 PartOfSpeech=NNP Lemma=Coops NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1125 CharacterOffsetEnd=1127 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=raise CharacterOffsetBegin=1128 CharacterOffsetEnd=1133 PartOfSpeech=VB Lemma=raise NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1134 CharacterOffsetEnd=1137 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=issue CharacterOffsetBegin=1138 CharacterOffsetEnd=1143 PartOfSpeech=NN Lemma=issue NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=1144 CharacterOffsetEnd=1146 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=increasing CharacterOffsetBegin=1147 CharacterOffsetEnd=1157 PartOfSpeech=VBG Lemma=increase NamedEntityTag=O]
+[Text=transmission CharacterOffsetBegin=1158 CharacterOffsetEnd=1170 PartOfSpeech=NN Lemma=transmission NamedEntityTag=O]
+[Text=capacity CharacterOffsetBegin=1171 CharacterOffsetEnd=1179 PartOfSpeech=NN Lemma=capacity NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=1180 CharacterOffsetEnd=1182 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=building CharacterOffsetBegin=1183 CharacterOffsetEnd=1191 PartOfSpeech=VBG Lemma=build NamedEntityTag=O]
+[Text=additional CharacterOffsetBegin=1192 CharacterOffsetEnd=1202 PartOfSpeech=JJ Lemma=additional NamedEntityTag=O]
+[Text=transmission CharacterOffsetBegin=1203 CharacterOffsetEnd=1215 PartOfSpeech=NN Lemma=transmission NamedEntityTag=O]
+[Text=lines CharacterOffsetBegin=1216 CharacterOffsetEnd=1221 PartOfSpeech=NNS Lemma=line NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1222 CharacterOffsetEnd=1224 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=better CharacterOffsetBegin=1225 CharacterOffsetEnd=1231 PartOfSpeech=RBR Lemma=better NamedEntityTag=O]
+[Text=inteconnect CharacterOffsetBegin=1232 CharacterOffsetEnd=1243 PartOfSpeech=VB Lemma=inteconnect NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1244 CharacterOffsetEnd=1247 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=system CharacterOffsetBegin=1248 CharacterOffsetEnd=1254 PartOfSpeech=NN Lemma=system NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1254 CharacterOffsetEnd=1255 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP You))
+      (ADVP (RB probably))
+      (VP (VBP know)
+        (NP (DT this))))
+    (, ,)
+    (CC but)
+    (S
+      (ADVP (RB just)
+        (PP (IN in)
+          (NP (NN case))))
+      (, ,)
+      (PP (VBG according)
+        (PP (TO to)
+          (NP (NNP Ed))))
+      (, ,)
+      (NP (NNP TVA))
+      (VP
+        (VP (VBZ is)
+          (VP (VBG getting)
+            (S
+              (VP (VBN squeezed)
+                (PP (IN by)
+                  (NP (NNP Duke)
+                    (CC and)
+                    (NNP Southern)))))))
+        (CC and)
+        (VP (VBZ is)
+          (ADVP (RB quietly))
+          (VP (VBG lobbying)
+            (NP (NNS folks))
+            (PP (IN like)
+              (NP (DT the) (NNP Coops)))
+            (S
+              (VP (TO to)
+                (VP (VB raise)
+                  (NP
+                    (NP (DT the) (NN issue))
+                    (PP (IN of)
+                      (S
+                        (VP (VBG increasing)
+                          (NP (NN transmission) (NN capacity))
+                          (PP (IN by)
+                            (S
+                              (VP (VBG building)
+                                (NP (JJ additional) (NN transmission) (NNS lines))
+                                (S
+                                  (VP (TO to)
+                                    (VP
+                                      (ADVP (RBR better))
+                                      (VB inteconnect)
+                                      (NP (DT the) (NN system)))))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, know-3)
+nsubj(know-3, You-1)
+advmod(know-3, probably-2)
+dobj(know-3, this-4)
+punct(know-3, ,-5)
+cc(know-3, but-6)
+advmod(getting-17, just-7)
+case(case-9, in-8)
+nmod:in(just-7, case-9)
+punct(getting-17, ,-10)
+case(Ed-13, according-11)
+mwe(according-11, to-12)
+nmod:according_to(getting-17, Ed-13)
+punct(getting-17, ,-14)
+nsubj(getting-17, TVA-15)
+nsubj(lobbying-26, TVA-15)
+aux(getting-17, is-16)
+conj:but(know-3, getting-17)
+dep(getting-17, squeezed-18)
+case(Duke-20, by-19)
+nmod:by(squeezed-18, Duke-20)
+cc(Duke-20, and-21)
+nmod:by(squeezed-18, Southern-22)
+conj:and(Duke-20, Southern-22)
+cc(getting-17, and-23)
+aux(lobbying-26, is-24)
+advmod(lobbying-26, quietly-25)
+conj:but(know-3, lobbying-26)
+conj:and(getting-17, lobbying-26)
+dobj(lobbying-26, folks-27)
+nsubj:xsubj(raise-32, folks-27)
+case(Coops-30, like-28)
+det(Coops-30, the-29)
+nmod:like(lobbying-26, Coops-30)
+mark(raise-32, to-31)
+xcomp(lobbying-26, raise-32)
+det(issue-34, the-33)
+dobj(raise-32, issue-34)
+mark(increasing-36, of-35)
+acl:of(issue-34, increasing-36)
+compound(capacity-38, transmission-37)
+dobj(increasing-36, capacity-38)
+mark(building-40, by-39)
+advcl:by(increasing-36, building-40)
+amod(lines-43, additional-41)
+compound(lines-43, transmission-42)
+dobj(building-40, lines-43)
+mark(inteconnect-46, to-44)
+advmod(inteconnect-46, better-45)
+advcl:to(building-40, inteconnect-46)
+det(system-48, the-47)
+dobj(inteconnect-46, system-48)
+punct(know-3, .-49)
+
+Extracted the following NER entity mentions:
+Ed	PERSON
+TVA	ORGANIZATION
+Duke	PERSON
+Southern	MISC
+
+Coreference set:
+	(1,17,[17,18]) -> (1,2,[1,3]), that is: "his" -> "Mike Roan"
+	(2,2,[2,3]) -> (1,2,[1,3]), that is: "Mike" -> "Mike Roan"
+
+Coreference set:
+	(3,7,[6,8]) -> (1,8,[7,9]), that is: "Ed Martin" -> "Ed Martin"
+
+Coreference set:
+	(1,22,[22,23]) -> (1,2,[1,5]), that is: "their" -> "Mike Roan and I"
+	(2,10,[10,11]) -> (1,2,[1,5]), that is: "they" -> "Mike Roan and I"
+	(3,19,[19,20]) -> (1,2,[1,5]), that is: "them" -> "Mike Roan and I"
+	(4,1,[1,2]) -> (1,2,[1,5]), that is: "They" -> "Mike Roan and I"
+	(4,15,[15,16]) -> (1,2,[1,5]), that is: "they" -> "Mike Roan and I"
+	(4,24,[24,25]) -> (1,2,[1,5]), that is: "they" -> "Mike Roan and I"
+
+Coreference set:
+	(2,8,[8,9]) -> (1,4,[4,5]), that is: "I" -> "I"
+	(7,1,[1,2]) -> (1,4,[4,5]), that is: "I" -> "I"
+	(7,4,[4,5]) -> (1,4,[4,5]), that is: "I" -> "I"
+
+Coreference set:
+	(4,30,[30,32]) -> (4,6,[3,14]), that is: "it this" -> "a load management device that can be installed in air conditioners"
+
+Coreference set:
+	(6,8,[8,9]) -> (4,21,[21,22]), that is: "this" -> "this"
+
+Coreference set:
+	(7,11,[11,12]) -> (4,27,[26,28]), that is: "him" -> "a partner"
+
+Coreference set:
+	(6,11,[11,12]) -> (5,18,[14,19]), that is: "customers" -> "small , medium commercial customers"
+	(6,14,[14,15]) -> (5,18,[14,19]), that is: "that" -> "small , medium commercial customers"
+	(6,20,[20,21]) -> (5,18,[14,19]), that is: "their" -> "small , medium commercial customers"
+
+Coreference set:
+	(10,13,[13,14]) -> (7,3,[3,12]), that is: "Ed" -> "Ed I would have someone get back to him"

@@ -1,0 +1,451 @@
+Document: ID=2875.in (5 sentences, 115 tokens)
+
+Sentence #1 (19 tokens):
+FYI; Recently we successfully negotiated and executed an EEI Master Sales & Purchase Agreement with PP&L Montana.
+
+Tokens:
+[Text=FYI CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=FYI NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=Recently CharacterOffsetBegin=5 CharacterOffsetEnd=13 PartOfSpeech=RB Lemma=recently NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=successfully CharacterOffsetBegin=17 CharacterOffsetEnd=29 PartOfSpeech=RB Lemma=successfully NamedEntityTag=O]
+[Text=negotiated CharacterOffsetBegin=30 CharacterOffsetEnd=40 PartOfSpeech=VBD Lemma=negotiate NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=executed CharacterOffsetBegin=45 CharacterOffsetEnd=53 PartOfSpeech=VBD Lemma=execute NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=EEI CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=NNP Lemma=EEI NamedEntityTag=ORGANIZATION]
+[Text=Master CharacterOffsetBegin=61 CharacterOffsetEnd=67 PartOfSpeech=NNP Lemma=Master NamedEntityTag=O]
+[Text=Sales CharacterOffsetBegin=68 CharacterOffsetEnd=73 PartOfSpeech=NNP Lemma=Sales NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=74 CharacterOffsetEnd=75 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=Purchase CharacterOffsetBegin=76 CharacterOffsetEnd=84 PartOfSpeech=NNP Lemma=Purchase NamedEntityTag=O]
+[Text=Agreement CharacterOffsetBegin=85 CharacterOffsetEnd=94 PartOfSpeech=NNP Lemma=Agreement NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=95 CharacterOffsetEnd=99 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=PP&L CharacterOffsetBegin=100 CharacterOffsetEnd=104 PartOfSpeech=NNP Lemma=PP&L NamedEntityTag=O]
+[Text=Montana CharacterOffsetBegin=105 CharacterOffsetEnd=112 PartOfSpeech=NNP Lemma=Montana NamedEntityTag=STATE_OR_PROVINCE]
+[Text=. CharacterOffsetBegin=112 CharacterOffsetEnd=113 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP FYI))
+    (: ;)
+    (S
+      (ADVP (RB Recently))
+      (NP (PRP we))
+      (VP
+        (VP
+          (ADVP (RB successfully))
+          (VBD negotiated))
+        (CC and)
+        (VP (VBD executed)
+          (NP
+            (NP (DT an) (NNP EEI) (NNP Master) (NNP Sales)
+              (CC &)
+              (NNP Purchase) (NNP Agreement))
+            (PP (IN with)
+              (NP (NNP PP&L) (NNP Montana)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, negotiated-6)
+dep(negotiated-6, FYI-1)
+punct(negotiated-6, ;-2)
+advmod(negotiated-6, Recently-3)
+nsubj(negotiated-6, we-4)
+nsubj(executed-8, we-4)
+advmod(negotiated-6, successfully-5)
+cc(negotiated-6, and-7)
+conj:and(negotiated-6, executed-8)
+det(Sales-12, an-9)
+compound(Sales-12, EEI-10)
+compound(Sales-12, Master-11)
+dobj(executed-8, Sales-12)
+cc(Sales-12, &-13)
+compound(Agreement-15, Purchase-14)
+dobj(executed-8, Agreement-15)
+conj:&(Sales-12, Agreement-15)
+case(Montana-18, with-16)
+compound(Montana-18, PP&L-17)
+nmod:with(Sales-12, Montana-18)
+punct(negotiated-6, .-19)
+
+Extracted the following NER entity mentions:
+EEI	ORGANIZATION
+Montana	STATE_OR_PROVINCE
+
+Sentence #2 (45 tokens):
+Per a recent telephone conversation between PP&L and Marcus Nettelton, PP&L and intends is to use the WSPP Agreement for all physical transactions except in the rare instance of entering into a physical MW for MW exchange/swap which we recently completed with them.
+
+Tokens:
+[Text=Per CharacterOffsetBegin=115 CharacterOffsetEnd=118 PartOfSpeech=IN Lemma=per NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=119 CharacterOffsetEnd=120 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=recent CharacterOffsetBegin=121 CharacterOffsetEnd=127 PartOfSpeech=JJ Lemma=recent NamedEntityTag=O]
+[Text=telephone CharacterOffsetBegin=128 CharacterOffsetEnd=137 PartOfSpeech=NN Lemma=telephone NamedEntityTag=O]
+[Text=conversation CharacterOffsetBegin=138 CharacterOffsetEnd=150 PartOfSpeech=NN Lemma=conversation NamedEntityTag=O]
+[Text=between CharacterOffsetBegin=151 CharacterOffsetEnd=158 PartOfSpeech=IN Lemma=between NamedEntityTag=O]
+[Text=PP&L CharacterOffsetBegin=159 CharacterOffsetEnd=163 PartOfSpeech=NNP Lemma=PP&L NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=164 CharacterOffsetEnd=167 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Marcus CharacterOffsetBegin=168 CharacterOffsetEnd=174 PartOfSpeech=NNP Lemma=Marcus NamedEntityTag=PERSON]
+[Text=Nettelton CharacterOffsetBegin=175 CharacterOffsetEnd=184 PartOfSpeech=NNP Lemma=Nettelton NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=184 CharacterOffsetEnd=185 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=PP&L CharacterOffsetBegin=186 CharacterOffsetEnd=190 PartOfSpeech=NNP Lemma=PP&L NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=191 CharacterOffsetEnd=194 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=intends CharacterOffsetBegin=195 CharacterOffsetEnd=202 PartOfSpeech=VBZ Lemma=intend NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=203 CharacterOffsetEnd=205 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=206 CharacterOffsetEnd=208 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=use CharacterOffsetBegin=209 CharacterOffsetEnd=212 PartOfSpeech=VB Lemma=use NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=213 CharacterOffsetEnd=216 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=WSPP CharacterOffsetBegin=217 CharacterOffsetEnd=221 PartOfSpeech=NNP Lemma=WSPP NamedEntityTag=MISC]
+[Text=Agreement CharacterOffsetBegin=222 CharacterOffsetEnd=231 PartOfSpeech=NNP Lemma=Agreement NamedEntityTag=MISC]
+[Text=for CharacterOffsetBegin=232 CharacterOffsetEnd=235 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=236 CharacterOffsetEnd=239 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=physical CharacterOffsetBegin=240 CharacterOffsetEnd=248 PartOfSpeech=JJ Lemma=physical NamedEntityTag=O]
+[Text=transactions CharacterOffsetBegin=249 CharacterOffsetEnd=261 PartOfSpeech=NNS Lemma=transaction NamedEntityTag=O]
+[Text=except CharacterOffsetBegin=262 CharacterOffsetEnd=268 PartOfSpeech=IN Lemma=except NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=269 CharacterOffsetEnd=271 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=272 CharacterOffsetEnd=275 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=rare CharacterOffsetBegin=276 CharacterOffsetEnd=280 PartOfSpeech=JJ Lemma=rare NamedEntityTag=O]
+[Text=instance CharacterOffsetBegin=281 CharacterOffsetEnd=289 PartOfSpeech=NN Lemma=instance NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=290 CharacterOffsetEnd=292 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=entering CharacterOffsetBegin=293 CharacterOffsetEnd=301 PartOfSpeech=VBG Lemma=enter NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=302 CharacterOffsetEnd=306 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=307 CharacterOffsetEnd=308 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=physical CharacterOffsetBegin=309 CharacterOffsetEnd=317 PartOfSpeech=JJ Lemma=physical NamedEntityTag=O]
+[Text=MW CharacterOffsetBegin=318 CharacterOffsetEnd=320 PartOfSpeech=NN Lemma=mw NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=321 CharacterOffsetEnd=324 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=MW CharacterOffsetBegin=325 CharacterOffsetEnd=327 PartOfSpeech=NNP Lemma=MW NamedEntityTag=O]
+[Text=exchange/swap CharacterOffsetBegin=328 CharacterOffsetEnd=341 PartOfSpeech=NN Lemma=exchange/swap NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=342 CharacterOffsetEnd=347 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=348 CharacterOffsetEnd=350 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=recently CharacterOffsetBegin=351 CharacterOffsetEnd=359 PartOfSpeech=RB Lemma=recently NamedEntityTag=O]
+[Text=completed CharacterOffsetBegin=360 CharacterOffsetEnd=369 PartOfSpeech=VBD Lemma=complete NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=370 CharacterOffsetEnd=374 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=375 CharacterOffsetEnd=379 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=379 CharacterOffsetEnd=380 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (IN Per) (DT a) (JJ recent) (NN telephone))
+      (SBAR
+        (S
+          (VP
+            (VP
+              (NP (NN conversation))
+              (PP (IN between)
+                (NP
+                  (NP (NNP PP&L)
+                    (CC and)
+                    (NNP Marcus) (NNP Nettelton))
+                  (, ,)
+                  (NP (NNP PP&L)))))
+            (CC and)
+            (VP (VBZ intends))))))
+    (VP (VBZ is)
+      (S
+        (VP
+          (VP (TO to)
+            (VP (VB use)
+              (NP
+                (NP (DT the) (NNP WSPP) (NNP Agreement))
+                (PP (IN for)
+                  (NP (DT all) (JJ physical) (NNS transactions))))))
+          (IN except)
+          (VP
+            (PP (IN in)
+              (NP
+                (NP (DT the) (JJ rare) (NN instance))
+                (PP (IN of)
+                  (S
+                    (VP (VBG entering)
+                      (PP (IN into)
+                        (NP
+                          (NP (DT a) (JJ physical) (NN MW))
+                          (PP (IN for)
+                            (NP (NNP MW) (NN exchange/swap)))
+                          (SBAR
+                            (WHNP (WDT which))
+                            (S
+                              (NP (PRP we))
+                              (ADVP (RB recently))
+                              (VP (VBD completed)
+                                (PP (IN with)
+                                  (NP (PRP them)))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-15)
+amod(telephone-4, Per-1)
+det(telephone-4, a-2)
+amod(telephone-4, recent-3)
+nsubj(is-15, telephone-4)
+acl:relcl(telephone-4, conversation-5)
+case(Nettelton-10, between-6)
+compound(Nettelton-10, PP&L-7)
+cc(PP&L-7, and-8)
+conj:and(PP&L-7, Marcus-9)
+compound(Nettelton-10, Marcus-9)
+nmod:between(conversation-5, Nettelton-10)
+punct(Nettelton-10, ,-11)
+appos(Nettelton-10, PP&L-12)
+cc(conversation-5, and-13)
+acl:relcl(telephone-4, intends-14)
+conj:and(conversation-5, intends-14)
+mark(use-17, to-16)
+ccomp(is-15, use-17)
+det(Agreement-20, the-18)
+compound(Agreement-20, WSPP-19)
+dobj(use-17, Agreement-20)
+case(transactions-24, for-21)
+det(transactions-24, all-22)
+amod(transactions-24, physical-23)
+nmod:for(Agreement-20, transactions-24)
+dep(use-17, except-25)
+case(instance-29, in-26)
+det(instance-29, the-27)
+amod(instance-29, rare-28)
+dep(use-17, instance-29)
+mark(entering-31, of-30)
+acl:of(instance-29, entering-31)
+case(MW-35, into-32)
+det(MW-35, a-33)
+amod(MW-35, physical-34)
+nmod:into(entering-31, MW-35)
+dobj(completed-42, MW-35)
+case(exchange/swap-38, for-36)
+compound(exchange/swap-38, MW-37)
+nmod:for(MW-35, exchange/swap-38)
+ref(MW-35, which-39)
+nsubj(completed-42, we-40)
+advmod(completed-42, recently-41)
+acl:relcl(MW-35, completed-42)
+case(them-44, with-43)
+nmod:with(completed-42, them-44)
+punct(is-15, .-45)
+
+Extracted the following NER entity mentions:
+PP&L	ORGANIZATION
+Marcus Nettelton	PERSON
+PP&L	ORGANIZATION
+WSPP Agreement	MISC
+
+Sentence #3 (34 tokens):
+Net, net, plan on all transactions with PP&L be "papered" under the WSPP unless you and their Trader specifically agree to use the EEI which would be our preference.
+
+Tokens:
+[Text=Net CharacterOffsetBegin=382 CharacterOffsetEnd=385 PartOfSpeech=NN Lemma=net NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=385 CharacterOffsetEnd=386 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=net CharacterOffsetBegin=387 CharacterOffsetEnd=390 PartOfSpeech=NN Lemma=net NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=390 CharacterOffsetEnd=391 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=plan CharacterOffsetBegin=392 CharacterOffsetEnd=396 PartOfSpeech=NN Lemma=plan NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=397 CharacterOffsetEnd=399 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=400 CharacterOffsetEnd=403 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=transactions CharacterOffsetBegin=404 CharacterOffsetEnd=416 PartOfSpeech=NNS Lemma=transaction NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=417 CharacterOffsetEnd=421 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=PP&L CharacterOffsetBegin=422 CharacterOffsetEnd=426 PartOfSpeech=NNP Lemma=PP&L NamedEntityTag=ORGANIZATION]
+[Text=be CharacterOffsetBegin=427 CharacterOffsetEnd=429 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=430 CharacterOffsetEnd=431 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=papered CharacterOffsetBegin=431 CharacterOffsetEnd=438 PartOfSpeech=VBN Lemma=paper NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=438 CharacterOffsetEnd=439 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=under CharacterOffsetBegin=440 CharacterOffsetEnd=445 PartOfSpeech=IN Lemma=under NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=446 CharacterOffsetEnd=449 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=WSPP CharacterOffsetBegin=450 CharacterOffsetEnd=454 PartOfSpeech=NN Lemma=wspp NamedEntityTag=O]
+[Text=unless CharacterOffsetBegin=455 CharacterOffsetEnd=461 PartOfSpeech=IN Lemma=unless NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=462 CharacterOffsetEnd=465 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=466 CharacterOffsetEnd=469 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=470 CharacterOffsetEnd=475 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=Trader CharacterOffsetBegin=476 CharacterOffsetEnd=482 PartOfSpeech=NNP Lemma=Trader NamedEntityTag=TITLE]
+[Text=specifically CharacterOffsetBegin=483 CharacterOffsetEnd=495 PartOfSpeech=RB Lemma=specifically NamedEntityTag=O]
+[Text=agree CharacterOffsetBegin=496 CharacterOffsetEnd=501 PartOfSpeech=VBP Lemma=agree NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=502 CharacterOffsetEnd=504 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=use CharacterOffsetBegin=505 CharacterOffsetEnd=508 PartOfSpeech=VB Lemma=use NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=509 CharacterOffsetEnd=512 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=EEI CharacterOffsetBegin=513 CharacterOffsetEnd=516 PartOfSpeech=NNP Lemma=EEI NamedEntityTag=ORGANIZATION]
+[Text=which CharacterOffsetBegin=517 CharacterOffsetEnd=522 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=523 CharacterOffsetEnd=528 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=529 CharacterOffsetEnd=531 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=532 CharacterOffsetEnd=535 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=preference CharacterOffsetBegin=536 CharacterOffsetEnd=546 PartOfSpeech=NN Lemma=preference NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=546 CharacterOffsetEnd=547 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NN Net) (, ,) (NN net) (, ,) (NN plan))
+      (PP (IN on)
+        (NP
+          (NP (DT all) (NNS transactions))
+          (PP (IN with)
+            (NP (NNP PP&L))))))
+    (VP (VB be)
+      (VP (`` ``) (VBN papered) ('' '')
+        (PP (IN under)
+          (NP
+            (NP (DT the) (NN WSPP))
+            (SBAR (IN unless)
+              (S
+                (NP
+                  (NP (PRP you))
+                  (CC and)
+                  (NP (PRP$ their) (NNP Trader)))
+                (ADVP (RB specifically))
+                (VP (VBP agree)
+                  (S
+                    (VP (TO to)
+                      (VP (VB use)
+                        (NP
+                          (NP (DT the) (NNP EEI))
+                          (SBAR
+                            (WHNP (WDT which))
+                            (S
+                              (VP (MD would)
+                                (VP (VB be)
+                                  (NP (PRP$ our) (NN preference)))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, papered-13)
+compound(plan-5, Net-1)
+punct(plan-5, ,-2)
+dep(plan-5, net-3)
+punct(plan-5, ,-4)
+nsubjpass(papered-13, plan-5)
+case(transactions-8, on-6)
+det(transactions-8, all-7)
+nmod:on(plan-5, transactions-8)
+case(PP&L-10, with-9)
+nmod:with(transactions-8, PP&L-10)
+auxpass(papered-13, be-11)
+punct(papered-13, ``-12)
+punct(papered-13, ''-14)
+case(WSPP-17, under-15)
+det(WSPP-17, the-16)
+nmod:under(papered-13, WSPP-17)
+mark(agree-24, unless-18)
+nsubj(agree-24, you-19)
+nsubj:xsubj(use-26, you-19)
+cc(you-19, and-20)
+nmod:poss(Trader-22, their-21)
+conj:and(you-19, Trader-22)
+nsubj(agree-24, Trader-22)
+nsubj:xsubj(use-26, Trader-22)
+advmod(agree-24, specifically-23)
+acl:relcl(WSPP-17, agree-24)
+mark(use-26, to-25)
+xcomp(agree-24, use-26)
+det(EEI-28, the-27)
+dobj(use-26, EEI-28)
+nsubj(preference-33, EEI-28)
+ref(EEI-28, which-29)
+aux(preference-33, would-30)
+cop(preference-33, be-31)
+nmod:poss(preference-33, our-32)
+acl:relcl(EEI-28, preference-33)
+punct(papered-13, .-34)
+
+Extracted the following NER entity mentions:
+PP&L	ORGANIZATION
+Trader	TITLE
+EEI	ORGANIZATION
+
+Sentence #4 (14 tokens):
+Please do not hesitate to let me know if you have any questions.
+
+Tokens:
+[Text=Please CharacterOffsetBegin=549 CharacterOffsetEnd=555 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=556 CharacterOffsetEnd=558 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=559 CharacterOffsetEnd=562 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=hesitate CharacterOffsetBegin=563 CharacterOffsetEnd=571 PartOfSpeech=VB Lemma=hesitate NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=572 CharacterOffsetEnd=574 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=let CharacterOffsetBegin=575 CharacterOffsetEnd=578 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=579 CharacterOffsetEnd=581 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=582 CharacterOffsetEnd=586 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=587 CharacterOffsetEnd=589 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=590 CharacterOffsetEnd=593 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=594 CharacterOffsetEnd=598 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=599 CharacterOffsetEnd=602 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=questions CharacterOffsetBegin=603 CharacterOffsetEnd=612 PartOfSpeech=NNS Lemma=question NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=612 CharacterOffsetEnd=613 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Please)
+      (S
+        (VP (VB do) (RB not)
+          (VP (VB hesitate)
+            (S
+              (VP (TO to)
+                (VP (VB let)
+                  (S
+                    (NP (PRP me))
+                    (VP (VB know)
+                      (SBAR (IN if)
+                        (S
+                          (NP (PRP you))
+                          (VP (VBP have)
+                            (NP (DT any) (NNS questions))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Please-1)
+aux(hesitate-4, do-2)
+neg(hesitate-4, not-3)
+ccomp(Please-1, hesitate-4)
+mark(let-6, to-5)
+xcomp(hesitate-4, let-6)
+nsubj(know-8, me-7)
+ccomp(let-6, know-8)
+mark(have-11, if-9)
+nsubj(have-11, you-10)
+advcl:if(know-8, have-11)
+det(questions-13, any-12)
+dobj(have-11, questions-13)
+punct(Please-1, .-14)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (3 tokens):
+Thanks,    John
+
+Tokens:
+[Text=Thanks CharacterOffsetBegin=615 CharacterOffsetEnd=621 PartOfSpeech=NNS Lemma=thanks NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=621 CharacterOffsetEnd=622 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=John CharacterOffsetBegin=626 CharacterOffsetEnd=630 PartOfSpeech=NNP Lemma=John NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNS Thanks))
+    (, ,)
+    (NP (NNP John))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Thanks-1)
+punct(Thanks-1, ,-2)
+appos(Thanks-1, John-3)
+
+Extracted the following NER entity mentions:
+John	PERSON
+
+Coreference set:
+	(1,10,[10,11]) -> (3,28,[27,34]), that is: "EEI" -> "the EEI which would be our preference"
+
+Coreference set:
+	(2,40,[40,41]) -> (1,4,[4,5]), that is: "we" -> "we"
+	(3,32,[32,33]) -> (1,4,[4,5]), that is: "our" -> "we"
+
+Coreference set:
+	(2,12,[12,13]) -> (2,7,[7,8]), that is: "PP&L" -> "PP&L"
+	(3,10,[10,11]) -> (2,7,[7,8]), that is: "PP&L" -> "PP&L"
+
+Coreference set:
+	(2,44,[44,45]) -> (2,10,[7,11]), that is: "them" -> "PP&L and Marcus Nettelton"
+	(3,21,[21,22]) -> (2,10,[7,11]), that is: "their" -> "PP&L and Marcus Nettelton"

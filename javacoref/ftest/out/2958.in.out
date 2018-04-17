@@ -1,0 +1,457 @@
+Document: ID=2958.in (8 sentences, 108 tokens)
+
+Sentence #1 (8 tokens):
+this just in from our nuke guy.
+
+Tokens:
+[Text=this CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=nuke CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=JJ Lemma=nuke NamedEntityTag=O]
+[Text=guy CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=NN Lemma=guy NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (DT this))
+    (PP (RB just) (IN in)
+      (PP (IN from)
+        (NP (PRP$ our) (JJ nuke) (NN guy))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, this-1)
+advmod(guy-7, just-2)
+case(guy-7, in-3)
+case(guy-7, from-4)
+nmod:poss(guy-7, our-5)
+amod(guy-7, nuke-6)
+nmod:in(this-1, guy-7)
+punct(this-1, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (15 tokens):
+Subject: PaloVerde 3
+
+
+Palo Verde 3 began their refueling outage this past weekend.
+
+Tokens:
+[Text=Subject CharacterOffsetBegin=33 CharacterOffsetEnd=40 PartOfSpeech=NNP Lemma=Subject NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=PaloVerde CharacterOffsetBegin=42 CharacterOffsetEnd=51 PartOfSpeech=NNP Lemma=PaloVerde NamedEntityTag=O]
+[Text=3 CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=CD Lemma=3 NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0]
+[Text=Palo CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=NNP Lemma=Palo NamedEntityTag=ORGANIZATION]
+[Text=Verde CharacterOffsetBegin=61 CharacterOffsetEnd=66 PartOfSpeech=NNP Lemma=Verde NamedEntityTag=ORGANIZATION]
+[Text=3 CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=CD Lemma=3 NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0]
+[Text=began CharacterOffsetBegin=69 CharacterOffsetEnd=74 PartOfSpeech=VBD Lemma=begin NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=75 CharacterOffsetEnd=80 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=refueling CharacterOffsetBegin=81 CharacterOffsetEnd=90 PartOfSpeech=VBG Lemma=refuel NamedEntityTag=O]
+[Text=outage CharacterOffsetBegin=91 CharacterOffsetEnd=97 PartOfSpeech=NN Lemma=outage NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=98 CharacterOffsetEnd=102 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=past CharacterOffsetBegin=103 CharacterOffsetEnd=107 PartOfSpeech=JJ Lemma=past NamedEntityTag=O]
+[Text=weekend CharacterOffsetBegin=108 CharacterOffsetEnd=115 PartOfSpeech=NN Lemma=weekend NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=115 CharacterOffsetEnd=116 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Subject))
+    (: :)
+    (NP
+      (NP (NNP PaloVerde) (CD 3))
+      (SBAR
+        (S
+          (NP (NNP Palo) (NNP Verde) (CD 3))
+          (VP (VBD began)
+            (NP (PRP$ their) (VBG refueling) (NN outage))
+            (NP-TMP (DT this) (JJ past) (NN weekend))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Subject-1)
+punct(Subject-1, :-2)
+dep(Subject-1, PaloVerde-3)
+nummod(PaloVerde-3, 3-4)
+compound(Verde-6, Palo-5)
+nsubj(began-8, Verde-6)
+nummod(Verde-6, 3-7)
+acl:relcl(PaloVerde-3, began-8)
+nmod:poss(outage-11, their-9)
+amod(outage-11, refueling-10)
+dobj(began-8, outage-11)
+det(weekend-14, this-12)
+amod(weekend-14, past-13)
+nmod:tmod(began-8, weekend-14)
+punct(Subject-1, .-15)
+
+Extracted the following NER entity mentions:
+3	NUMBER
+Palo Verde	ORGANIZATION
+3	NUMBER
+
+Sentence #3 (23 tokens):
+During
+inspections at Mode 5 (cold shutdown) they discovered a couple cracks
+(leaks) in their reactor coolant system.
+
+Tokens:
+[Text=During CharacterOffsetBegin=118 CharacterOffsetEnd=124 PartOfSpeech=IN Lemma=during NamedEntityTag=O]
+[Text=inspections CharacterOffsetBegin=125 CharacterOffsetEnd=136 PartOfSpeech=NNS Lemma=inspection NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=137 CharacterOffsetEnd=139 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Mode CharacterOffsetBegin=140 CharacterOffsetEnd=144 PartOfSpeech=NNP Lemma=Mode NamedEntityTag=O]
+[Text=5 CharacterOffsetBegin=145 CharacterOffsetEnd=146 PartOfSpeech=CD Lemma=5 NamedEntityTag=NUMBER NormalizedNamedEntityTag=5.0]
+[Text=-LRB- CharacterOffsetBegin=147 CharacterOffsetEnd=148 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=cold CharacterOffsetBegin=148 CharacterOffsetEnd=152 PartOfSpeech=JJ Lemma=cold NamedEntityTag=TITLE]
+[Text=shutdown CharacterOffsetBegin=153 CharacterOffsetEnd=161 PartOfSpeech=NN Lemma=shutdown NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=161 CharacterOffsetEnd=162 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=163 CharacterOffsetEnd=167 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=discovered CharacterOffsetBegin=168 CharacterOffsetEnd=178 PartOfSpeech=VBD Lemma=discover NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=179 CharacterOffsetEnd=180 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=couple CharacterOffsetBegin=181 CharacterOffsetEnd=187 PartOfSpeech=NN Lemma=couple NamedEntityTag=O]
+[Text=cracks CharacterOffsetBegin=188 CharacterOffsetEnd=194 PartOfSpeech=NNS Lemma=crack NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=195 CharacterOffsetEnd=196 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=leaks CharacterOffsetBegin=196 CharacterOffsetEnd=201 PartOfSpeech=NNS Lemma=leak NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=201 CharacterOffsetEnd=202 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=203 CharacterOffsetEnd=205 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=206 CharacterOffsetEnd=211 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=reactor CharacterOffsetBegin=212 CharacterOffsetEnd=219 PartOfSpeech=NN Lemma=reactor NamedEntityTag=O]
+[Text=coolant CharacterOffsetBegin=220 CharacterOffsetEnd=227 PartOfSpeech=NN Lemma=coolant NamedEntityTag=O]
+[Text=system CharacterOffsetBegin=228 CharacterOffsetEnd=234 PartOfSpeech=NN Lemma=system NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=234 CharacterOffsetEnd=235 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN During)
+      (NP
+        (NP (NNS inspections))
+        (PP (IN at)
+          (NP
+            (NP (NNP Mode) (CD 5))
+            (PRN (-LRB- -LRB-)
+              (NP (JJ cold) (NN shutdown))
+              (-RRB- -RRB-))))))
+    (NP (PRP they))
+    (VP (VBD discovered)
+      (NP
+        (NP (DT a) (NN couple) (NNS cracks))
+        (PRN (-LRB- -LRB-)
+          (NP (NNS leaks))
+          (-RRB- -RRB-)))
+      (PP (IN in)
+        (NP (PRP$ their) (NN reactor) (NN coolant) (NN system))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, discovered-11)
+case(inspections-2, During-1)
+nmod:during(discovered-11, inspections-2)
+case(Mode-4, at-3)
+nmod:at(inspections-2, Mode-4)
+nummod(Mode-4, 5-5)
+punct(shutdown-8, -LRB--6)
+amod(shutdown-8, cold-7)
+appos(Mode-4, shutdown-8)
+punct(shutdown-8, -RRB--9)
+nsubj(discovered-11, they-10)
+det(cracks-14, a-12)
+compound(cracks-14, couple-13)
+dobj(discovered-11, cracks-14)
+punct(leaks-16, -LRB--15)
+appos(cracks-14, leaks-16)
+punct(leaks-16, -RRB--17)
+case(system-22, in-18)
+nmod:poss(system-22, their-19)
+compound(system-22, reactor-20)
+compound(system-22, coolant-21)
+nmod:in(discovered-11, system-22)
+punct(discovered-11, .-23)
+
+Extracted the following NER entity mentions:
+5	NUMBER
+cold	TITLE
+
+Sentence #4 (14 tokens):
+One was at a temperature detector,
+the other was at the pressurizer.
+
+Tokens:
+[Text=One CharacterOffsetBegin=237 CharacterOffsetEnd=240 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=was CharacterOffsetBegin=241 CharacterOffsetEnd=244 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=245 CharacterOffsetEnd=247 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=248 CharacterOffsetEnd=249 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=temperature CharacterOffsetBegin=250 CharacterOffsetEnd=261 PartOfSpeech=NN Lemma=temperature NamedEntityTag=O]
+[Text=detector CharacterOffsetBegin=262 CharacterOffsetEnd=270 PartOfSpeech=NN Lemma=detector NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=270 CharacterOffsetEnd=271 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=272 CharacterOffsetEnd=275 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=276 CharacterOffsetEnd=281 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=282 CharacterOffsetEnd=285 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=286 CharacterOffsetEnd=288 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=289 CharacterOffsetEnd=292 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=pressurizer CharacterOffsetBegin=293 CharacterOffsetEnd=304 PartOfSpeech=NN Lemma=pressurizer NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=304 CharacterOffsetEnd=305 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (CD One))
+      (VP (VBD was)
+        (PP (IN at)
+          (NP (DT a) (NN temperature) (NN detector)))))
+    (, ,)
+    (NP (DT the) (JJ other))
+    (VP (VBD was)
+      (PP (IN at)
+        (NP (DT the) (NN pressurizer))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, pressurizer-13)
+nsubj(detector-6, One-1)
+cop(detector-6, was-2)
+case(detector-6, at-3)
+det(detector-6, a-4)
+compound(detector-6, temperature-5)
+ccomp(pressurizer-13, detector-6)
+punct(pressurizer-13, ,-7)
+det(other-9, the-8)
+nsubj(pressurizer-13, other-9)
+cop(pressurizer-13, was-10)
+case(pressurizer-13, at-11)
+det(pressurizer-13, the-12)
+punct(pressurizer-13, .-14)
+
+Extracted the following NER entity mentions:
+One	NUMBER
+
+Sentence #5 (16 tokens):
+The refueling outage had been expected to
+last about a month (restart 10/30/01).
+
+Tokens:
+[Text=The CharacterOffsetBegin=307 CharacterOffsetEnd=310 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=refueling CharacterOffsetBegin=311 CharacterOffsetEnd=320 PartOfSpeech=VBG Lemma=refuel NamedEntityTag=O]
+[Text=outage CharacterOffsetBegin=321 CharacterOffsetEnd=327 PartOfSpeech=NN Lemma=outage NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=328 CharacterOffsetEnd=331 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=332 CharacterOffsetEnd=336 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=expected CharacterOffsetBegin=337 CharacterOffsetEnd=345 PartOfSpeech=VBN Lemma=expect NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=346 CharacterOffsetEnd=348 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=last CharacterOffsetBegin=349 CharacterOffsetEnd=353 PartOfSpeech=VB Lemma=last NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=354 CharacterOffsetEnd=359 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=360 CharacterOffsetEnd=361 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=month CharacterOffsetBegin=362 CharacterOffsetEnd=367 PartOfSpeech=NN Lemma=month NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=368 CharacterOffsetEnd=369 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=restart CharacterOffsetBegin=369 CharacterOffsetEnd=376 PartOfSpeech=VB Lemma=restart NamedEntityTag=O]
+[Text=10/30/01 CharacterOffsetBegin=377 CharacterOffsetEnd=385 PartOfSpeech=CD Lemma=10/30/01 NamedEntityTag=NUMBER]
+[Text=-RRB- CharacterOffsetBegin=385 CharacterOffsetEnd=386 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=386 CharacterOffsetEnd=387 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (VBG refueling) (NN outage))
+    (VP (VBD had)
+      (VP (VBN been)
+        (VP (VBN expected)
+          (S
+            (VP (TO to)
+              (VP (VB last)
+                (PP (IN about)
+                  (NP
+                    (NP-TMP (DT a) (NN month))
+                    (PRN (-LRB- -LRB-)
+                      (S
+                        (VP (VB restart)
+                          (NP (CD 10/30/01))))
+                      (-RRB- -RRB-))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, expected-6)
+det(outage-3, The-1)
+amod(outage-3, refueling-2)
+nsubjpass(expected-6, outage-3)
+nsubj:xsubj(last-8, outage-3)
+aux(expected-6, had-4)
+auxpass(expected-6, been-5)
+mark(last-8, to-7)
+xcomp(expected-6, last-8)
+case(month-11, about-9)
+det(month-11, a-10)
+nmod:about(last-8, month-11)
+punct(restart-13, -LRB--12)
+dep(month-11, restart-13)
+dobj(restart-13, 10/30/01-14)
+punct(restart-13, -RRB--15)
+punct(expected-6, .-16)
+
+Extracted the following NER entity mentions:
+10/30/01	NUMBER
+
+Sentence #6 (17 tokens):
+These cracks may delay restart due
+to very heightened NRC concern about this kind of cracking.
+
+Tokens:
+[Text=These CharacterOffsetBegin=389 CharacterOffsetEnd=394 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=cracks CharacterOffsetBegin=395 CharacterOffsetEnd=401 PartOfSpeech=NNS Lemma=crack NamedEntityTag=O]
+[Text=may CharacterOffsetBegin=402 CharacterOffsetEnd=405 PartOfSpeech=MD Lemma=may NamedEntityTag=O]
+[Text=delay CharacterOffsetBegin=406 CharacterOffsetEnd=411 PartOfSpeech=VB Lemma=delay NamedEntityTag=O]
+[Text=restart CharacterOffsetBegin=412 CharacterOffsetEnd=419 PartOfSpeech=VB Lemma=restart NamedEntityTag=O]
+[Text=due CharacterOffsetBegin=420 CharacterOffsetEnd=423 PartOfSpeech=JJ Lemma=due NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=424 CharacterOffsetEnd=426 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=427 CharacterOffsetEnd=431 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=heightened CharacterOffsetBegin=432 CharacterOffsetEnd=442 PartOfSpeech=VBN Lemma=heighten NamedEntityTag=O]
+[Text=NRC CharacterOffsetBegin=443 CharacterOffsetEnd=446 PartOfSpeech=NNP Lemma=NRC NamedEntityTag=ORGANIZATION]
+[Text=concern CharacterOffsetBegin=447 CharacterOffsetEnd=454 PartOfSpeech=NN Lemma=concern NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=455 CharacterOffsetEnd=460 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=461 CharacterOffsetEnd=465 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=kind CharacterOffsetBegin=466 CharacterOffsetEnd=470 PartOfSpeech=NN Lemma=kind NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=471 CharacterOffsetEnd=473 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=cracking CharacterOffsetBegin=474 CharacterOffsetEnd=482 PartOfSpeech=VBG Lemma=crack NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=482 CharacterOffsetEnd=483 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT These) (NNS cracks))
+    (VP (MD may)
+      (VP (VB delay)
+        (S
+          (VP (VB restart)
+            (ADJP (JJ due)
+              (PP (TO to)))))
+        (ADVP (RB very)
+          (S
+            (VP (VBN heightened)
+              (NP (NNP NRC) (NN concern))
+              (PP (IN about)
+                (NP
+                  (NP (DT this) (NN kind))
+                  (PP (IN of)
+                    (S
+                      (VP (VBG cracking)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, delay-4)
+det(cracks-2, These-1)
+nsubj(delay-4, cracks-2)
+aux(delay-4, may-3)
+ccomp(delay-4, restart-5)
+xcomp(restart-5, due-6)
+nmod(due-6, to-7)
+advmod(delay-4, very-8)
+dep(very-8, heightened-9)
+compound(concern-11, NRC-10)
+dobj(heightened-9, concern-11)
+case(kind-14, about-12)
+det(kind-14, this-13)
+nmod:about(heightened-9, kind-14)
+mark(cracking-16, of-15)
+acl:of(kind-14, cracking-16)
+punct(delay-4, .-17)
+
+Extracted the following NER entity mentions:
+NRC	ORGANIZATION
+
+Sentence #7 (14 tokens):
+We will keep
+you posted on plans and schedule changes for this outage.
+
+Tokens:
+[Text=We CharacterOffsetBegin=485 CharacterOffsetEnd=487 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=488 CharacterOffsetEnd=492 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=keep CharacterOffsetBegin=493 CharacterOffsetEnd=497 PartOfSpeech=VB Lemma=keep NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=498 CharacterOffsetEnd=501 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=posted CharacterOffsetBegin=502 CharacterOffsetEnd=508 PartOfSpeech=VBN Lemma=post NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=509 CharacterOffsetEnd=511 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=plans CharacterOffsetBegin=512 CharacterOffsetEnd=517 PartOfSpeech=NNS Lemma=plan NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=518 CharacterOffsetEnd=521 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=schedule CharacterOffsetBegin=522 CharacterOffsetEnd=530 PartOfSpeech=NN Lemma=schedule NamedEntityTag=O]
+[Text=changes CharacterOffsetBegin=531 CharacterOffsetEnd=538 PartOfSpeech=NNS Lemma=change NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=539 CharacterOffsetEnd=542 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=543 CharacterOffsetEnd=547 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=outage CharacterOffsetBegin=548 CharacterOffsetEnd=554 PartOfSpeech=NN Lemma=outage NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=554 CharacterOffsetEnd=555 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (MD will)
+      (VP (VB keep)
+        (S
+          (NP (PRP you))
+          (VP (VBN posted)
+            (PP (IN on)
+              (NP (NNS plans)
+                (CC and)
+                (NN schedule) (NNS changes)))
+            (PP (IN for)
+              (NP (DT this) (NN outage)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, keep-3)
+nsubj(keep-3, We-1)
+aux(keep-3, will-2)
+nsubj(posted-5, you-4)
+dep(keep-3, posted-5)
+case(plans-7, on-6)
+nmod:on(posted-5, plans-7)
+cc(plans-7, and-8)
+compound(changes-10, schedule-9)
+nmod:on(posted-5, changes-10)
+conj:and(plans-7, changes-10)
+case(outage-13, for-11)
+det(outage-13, this-12)
+nmod:for(posted-5, outage-13)
+punct(keep-3, .-14)
+
+Extracted the following NER entity mentions:
+
+Sentence #8 (1 tokens):
+Dan
+
+Tokens:
+[Text=Dan CharacterOffsetBegin=557 CharacterOffsetEnd=560 PartOfSpeech=NNP Lemma=Dan NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Dan)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Dan-1)
+
+Extracted the following NER entity mentions:
+Dan	PERSON
+
+Coreference set:
+	(2,9,[9,10]) -> (1,1,[1,9]), that is: "their" -> "this just in from our nuke guy ."
+	(3,10,[10,11]) -> (1,1,[1,9]), that is: "they" -> "this just in from our nuke guy ."
+	(3,19,[19,20]) -> (1,1,[1,9]), that is: "their" -> "this just in from our nuke guy ."
+
+Coreference set:
+	(2,7,[7,8]) -> (2,4,[4,5]), that is: "3" -> "3"
+
+Coreference set:
+	(5,3,[1,4]) -> (2,11,[9,12]), that is: "The refueling outage" -> "their refueling outage"
+	(7,13,[12,14]) -> (2,11,[9,12]), that is: "this outage" -> "their refueling outage"
+
+Coreference set:
+	(6,2,[1,3]) -> (3,14,[12,18]), that is: "These cracks" -> "a couple cracks -LRB- leaks -RRB-"

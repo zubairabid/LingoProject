@@ -1,0 +1,85 @@
+Document: ID=22243.in (2 sentences, 17 tokens)
+
+Sentence #1 (8 tokens):
+Here is the text of their spot.
+
+Tokens:
+[Text=Here CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=text CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=text NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=20 CharacterOffsetEnd=25 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=spot CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=NN Lemma=spot NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (RB Here))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN text))
+        (PP (IN of)
+          (NP (PRP$ their) (NN spot)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, text-4)
+nsubj(text-4, Here-1)
+cop(text-4, is-2)
+det(text-4, the-3)
+case(spot-7, of-5)
+nmod:poss(spot-7, their-6)
+nmod:of(text-4, spot-7)
+punct(text-4, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (9 tokens):
+Attn: PSI, dub will  arrive tomorrow.
+
+Tokens:
+[Text=Attn CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=VB Lemma=attn NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=PSI CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=NNP Lemma=PSI NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=dub CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=dub NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=arrive CharacterOffsetBegin=53 CharacterOffsetEnd=59 PartOfSpeech=VB Lemma=arrive NamedEntityTag=O]
+[Text=tomorrow CharacterOffsetBegin=60 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=tomorrow NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP
+        (VP (VB Attn))
+        (: :)
+        (VP (NNP PSI))))
+    (, ,)
+    (NP (NN dub))
+    (VP (MD will)
+      (VP (VB arrive)
+        (NP-TMP (NN tomorrow))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, arrive-7)
+ccomp(arrive-7, Attn-1)
+punct(Attn-1, :-2)
+dep(Attn-1, PSI-3)
+punct(arrive-7, ,-4)
+nsubj(arrive-7, dub-5)
+aux(arrive-7, will-6)
+nmod:tmod(arrive-7, tomorrow-8)
+punct(arrive-7, .-9)
+
+Extracted the following NER entity mentions:
+PSI	ORGANIZATION
+
+Coreference set:
+	(1,1,[1,2]) -> (1,4,[3,8]), that is: "Here" -> "the text of their spot"

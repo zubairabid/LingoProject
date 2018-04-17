@@ -1,0 +1,82 @@
+Document: ID=809949.in (2 sentences, 15 tokens)
+
+Sentence #1 (8 tokens):
+Just making sure everyone reads their emails.
+
+Tokens:
+[Text=Just CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=making CharacterOffsetBegin=5 CharacterOffsetEnd=11 PartOfSpeech=VBG Lemma=make NamedEntityTag=O]
+[Text=sure CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=JJ Lemma=sure NamedEntityTag=O]
+[Text=everyone CharacterOffsetBegin=17 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=everyone NamedEntityTag=O]
+[Text=reads CharacterOffsetBegin=26 CharacterOffsetEnd=31 PartOfSpeech=VBZ Lemma=read NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=32 CharacterOffsetEnd=37 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=emails CharacterOffsetBegin=38 CharacterOffsetEnd=44 PartOfSpeech=NNS Lemma=email NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP
+        (ADVP (RB Just))
+        (VBG making)
+        (NP
+          (ADJP (JJ sure))
+          (NN everyone))))
+    (VP (VBZ reads)
+      (NP (PRP$ their) (NNS emails)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, reads-5)
+advmod(making-2, Just-1)
+csubj(reads-5, making-2)
+amod(everyone-4, sure-3)
+dobj(making-2, everyone-4)
+nmod:poss(emails-7, their-6)
+dobj(reads-5, emails-7)
+punct(reads-5, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (7 tokens):
+The term is 4/15/2000 -
+3/31/2001.
+
+Tokens:
+[Text=The CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=term CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=term NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=4/15/2000 CharacterOffsetBegin=59 CharacterOffsetEnd=68 PartOfSpeech=CD Lemma=4/15/2000 NamedEntityTag=DATE NormalizedNamedEntityTag=20000415]
+[Text=- CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=3/31/2001 CharacterOffsetBegin=71 CharacterOffsetEnd=80 PartOfSpeech=CD Lemma=3/31/2001 NamedEntityTag=DATE NormalizedNamedEntityTag=20010331]
+[Text=. CharacterOffsetBegin=80 CharacterOffsetEnd=81 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN term))
+    (VP (VBZ is)
+      (NP
+        (NP (CD 4/15/2000))
+        (: -)
+        (NP (CD 3/31/2001))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 4/15/2000-4)
+det(term-2, The-1)
+nsubj(4/15/2000-4, term-2)
+cop(4/15/2000-4, is-3)
+punct(4/15/2000-4, --5)
+dep(4/15/2000-4, 3/31/2001-6)
+punct(4/15/2000-4, .-7)
+
+Extracted the following NER entity mentions:
+4/15/2000	DATE
+3/31/2001	DATE
+
+Coreference set:
+	(2,2,[1,3]) -> (2,4,[4,7]), that is: "The term" -> "4/15/2000 - 3/31/2001"

@@ -1,0 +1,564 @@
+Document: ID=873814.in (7 sentences, 141 tokens)
+
+Sentence #1 (9 tokens):
+New credit has been established for deemed ISDAs.
+
+Tokens:
+[Text=New CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=New NamedEntityTag=O]
+[Text=credit CharacterOffsetBegin=4 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=credit NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=established CharacterOffsetBegin=20 CharacterOffsetEnd=31 PartOfSpeech=VBN Lemma=establish NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=deemed CharacterOffsetBegin=36 CharacterOffsetEnd=42 PartOfSpeech=VBN Lemma=deem NamedEntityTag=O]
+[Text=ISDAs CharacterOffsetBegin=43 CharacterOffsetEnd=48 PartOfSpeech=NNS Lemma=isda NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP New) (NN credit))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (VP (VBN established)
+          (PP (IN for)
+            (NP
+              (ADJP (VBN deemed))
+              (NNS ISDAs))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, established-5)
+compound(credit-2, New-1)
+nsubjpass(established-5, credit-2)
+aux(established-5, has-3)
+auxpass(established-5, been-4)
+case(ISDAs-8, for-6)
+amod(ISDAs-8, deemed-7)
+nmod:for(established-5, ISDAs-8)
+punct(established-5, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (18 tokens):
+AIG...Ltd will be getting a deemed ISDA confirmation setting their independent amount to $570,000.
+
+Tokens:
+[Text=AIG CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=NNP Lemma=AIG NamedEntityTag=ORGANIZATION]
+[Text=... CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=: Lemma=... NamedEntityTag=ORGANIZATION]
+[Text=Ltd CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=NNP Lemma=Ltd NamedEntityTag=ORGANIZATION]
+[Text=will CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=66 CharacterOffsetEnd=68 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=getting CharacterOffsetBegin=69 CharacterOffsetEnd=76 PartOfSpeech=VBG Lemma=get NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=77 CharacterOffsetEnd=78 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=deemed CharacterOffsetBegin=79 CharacterOffsetEnd=85 PartOfSpeech=VBN Lemma=deem NamedEntityTag=O]
+[Text=ISDA CharacterOffsetBegin=86 CharacterOffsetEnd=90 PartOfSpeech=NNP Lemma=ISDA NamedEntityTag=ORGANIZATION]
+[Text=confirmation CharacterOffsetBegin=91 CharacterOffsetEnd=103 PartOfSpeech=NN Lemma=confirmation NamedEntityTag=O]
+[Text=setting CharacterOffsetBegin=104 CharacterOffsetEnd=111 PartOfSpeech=VBG Lemma=set NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=112 CharacterOffsetEnd=117 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=independent CharacterOffsetBegin=118 CharacterOffsetEnd=129 PartOfSpeech=JJ Lemma=independent NamedEntityTag=RELIGION]
+[Text=amount CharacterOffsetBegin=130 CharacterOffsetEnd=136 PartOfSpeech=NN Lemma=amount NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=137 CharacterOffsetEnd=139 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=140 CharacterOffsetEnd=141 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$570000.0]
+[Text=570,000 CharacterOffsetBegin=141 CharacterOffsetEnd=148 PartOfSpeech=CD Lemma=570,000 NamedEntityTag=MONEY NormalizedNamedEntityTag=$570000.0]
+[Text=. CharacterOffsetBegin=148 CharacterOffsetEnd=149 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP AIG))
+    (: ...)
+    (S
+      (NP (NNP Ltd))
+      (VP (MD will)
+        (VP (VB be)
+          (VP (VBG getting)
+            (NP
+              (NP (DT a) (VBN deemed) (NNP ISDA) (NN confirmation))
+              (VP (VBG setting)
+                (NP (PRP$ their) (JJ independent) (NN amount))
+                (PP (TO to)
+                  (NP ($ $) (CD 570,000)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, AIG-1)
+punct(AIG-1, ...-2)
+nsubj(getting-6, Ltd-3)
+aux(getting-6, will-4)
+aux(getting-6, be-5)
+parataxis(AIG-1, getting-6)
+det(confirmation-10, a-7)
+amod(confirmation-10, deemed-8)
+compound(confirmation-10, ISDA-9)
+dobj(getting-6, confirmation-10)
+acl(confirmation-10, setting-11)
+nmod:poss(amount-14, their-12)
+amod(amount-14, independent-13)
+dobj(setting-11, amount-14)
+case(570,000-17, to-15)
+dep(570,000-17, $-16)
+nmod:to(setting-11, 570,000-17)
+punct(AIG-1, .-18)
+
+Extracted the following NER entity mentions:
+AIG...Ltd	ORGANIZATION
+ISDA	ORGANIZATION
+independent	RELIGION
+$570,000	MONEY
+
+Sentence #3 (14 tokens):
+AIG LP will be getting one setting their independent amount at $150,000.
+
+Tokens:
+[Text=AIG CharacterOffsetBegin=151 CharacterOffsetEnd=154 PartOfSpeech=NNP Lemma=AIG NamedEntityTag=ORGANIZATION]
+[Text=LP CharacterOffsetBegin=155 CharacterOffsetEnd=157 PartOfSpeech=NN Lemma=lp NamedEntityTag=ORGANIZATION]
+[Text=will CharacterOffsetBegin=158 CharacterOffsetEnd=162 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=163 CharacterOffsetEnd=165 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=getting CharacterOffsetBegin=166 CharacterOffsetEnd=173 PartOfSpeech=VBG Lemma=get NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=174 CharacterOffsetEnd=177 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=setting CharacterOffsetBegin=178 CharacterOffsetEnd=185 PartOfSpeech=VBG Lemma=set NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=186 CharacterOffsetEnd=191 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=independent CharacterOffsetBegin=192 CharacterOffsetEnd=203 PartOfSpeech=JJ Lemma=independent NamedEntityTag=RELIGION]
+[Text=amount CharacterOffsetBegin=204 CharacterOffsetEnd=210 PartOfSpeech=NN Lemma=amount NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=211 CharacterOffsetEnd=213 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=214 CharacterOffsetEnd=215 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$150000.0]
+[Text=150,000 CharacterOffsetBegin=215 CharacterOffsetEnd=222 PartOfSpeech=CD Lemma=150,000 NamedEntityTag=MONEY NormalizedNamedEntityTag=$150000.0]
+[Text=. CharacterOffsetBegin=222 CharacterOffsetEnd=223 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP AIG) (NN LP))
+    (VP (MD will)
+      (VP (VB be)
+        (VP (VBG getting)
+          (NP (CD one))
+          (S
+            (VP (VBG setting)
+              (NP (PRP$ their) (JJ independent) (NN amount))
+              (PP (IN at)
+                (NP ($ $) (CD 150,000))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, getting-5)
+compound(LP-2, AIG-1)
+nsubj(getting-5, LP-2)
+aux(getting-5, will-3)
+aux(getting-5, be-4)
+dobj(getting-5, one-6)
+advcl(getting-5, setting-7)
+nmod:poss(amount-10, their-8)
+amod(amount-10, independent-9)
+dobj(setting-7, amount-10)
+case(150,000-13, at-11)
+dep(150,000-13, $-12)
+nmod:at(setting-7, 150,000-13)
+punct(getting-5, .-14)
+
+Extracted the following NER entity mentions:
+AIG LP	ORGANIZATION
+one	NUMBER
+independent	RELIGION
+$150,000	MONEY
+
+Sentence #4 (33 tokens):
+Michelle Nelson needs to be immediately informed when c/p's agree to changes in independent amount so that the confirmations can be properly prepared and the margin team can do their work.
+
+Tokens:
+[Text=Michelle CharacterOffsetBegin=225 CharacterOffsetEnd=233 PartOfSpeech=NNP Lemma=Michelle NamedEntityTag=PERSON]
+[Text=Nelson CharacterOffsetBegin=234 CharacterOffsetEnd=240 PartOfSpeech=NNP Lemma=Nelson NamedEntityTag=PERSON]
+[Text=needs CharacterOffsetBegin=241 CharacterOffsetEnd=246 PartOfSpeech=VBZ Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=247 CharacterOffsetEnd=249 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=250 CharacterOffsetEnd=252 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=immediately CharacterOffsetBegin=253 CharacterOffsetEnd=264 PartOfSpeech=RB Lemma=immediately NamedEntityTag=O]
+[Text=informed CharacterOffsetBegin=265 CharacterOffsetEnd=273 PartOfSpeech=VBN Lemma=inform NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=274 CharacterOffsetEnd=278 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=c/p CharacterOffsetBegin=279 CharacterOffsetEnd=282 PartOfSpeech=NN Lemma=c/p NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=282 CharacterOffsetEnd=284 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=agree CharacterOffsetBegin=285 CharacterOffsetEnd=290 PartOfSpeech=VBP Lemma=agree NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=291 CharacterOffsetEnd=293 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=changes CharacterOffsetBegin=294 CharacterOffsetEnd=301 PartOfSpeech=NNS Lemma=change NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=302 CharacterOffsetEnd=304 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=independent CharacterOffsetBegin=305 CharacterOffsetEnd=316 PartOfSpeech=JJ Lemma=independent NamedEntityTag=RELIGION]
+[Text=amount CharacterOffsetBegin=317 CharacterOffsetEnd=323 PartOfSpeech=NN Lemma=amount NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=324 CharacterOffsetEnd=326 PartOfSpeech=IN Lemma=so NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=327 CharacterOffsetEnd=331 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=332 CharacterOffsetEnd=335 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=confirmations CharacterOffsetBegin=336 CharacterOffsetEnd=349 PartOfSpeech=NNS Lemma=confirmation NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=350 CharacterOffsetEnd=353 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=354 CharacterOffsetEnd=356 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=properly CharacterOffsetBegin=357 CharacterOffsetEnd=365 PartOfSpeech=RB Lemma=properly NamedEntityTag=O]
+[Text=prepared CharacterOffsetBegin=366 CharacterOffsetEnd=374 PartOfSpeech=VBN Lemma=prepare NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=375 CharacterOffsetEnd=378 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=379 CharacterOffsetEnd=382 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=margin CharacterOffsetBegin=383 CharacterOffsetEnd=389 PartOfSpeech=NN Lemma=margin NamedEntityTag=O]
+[Text=team CharacterOffsetBegin=390 CharacterOffsetEnd=394 PartOfSpeech=NN Lemma=team NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=395 CharacterOffsetEnd=398 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=399 CharacterOffsetEnd=401 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=402 CharacterOffsetEnd=407 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=408 CharacterOffsetEnd=412 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=412 CharacterOffsetEnd=413 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NNP Michelle) (NNP Nelson))
+      (VP (VBZ needs)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (VP
+                (ADVP (RB immediately))
+                (VBN informed)
+                (SBAR
+                  (WHADVP (WRB when)
+                    (NP (NN c/p)))
+                  (S
+                    (NP (POS 's))
+                    (VP (VBP agree)
+                      (PP (TO to)
+                        (NP
+                          (NP (NNS changes))
+                          (PP (IN in)
+                            (NP (JJ independent) (NN amount)))))
+                      (SBAR (IN so) (IN that)
+                        (S
+                          (NP (DT the) (NNS confirmations))
+                          (VP (MD can)
+                            (VP (VB be)
+                              (VP
+                                (ADVP (RB properly))
+                                (VBN prepared)))))))))))))))
+    (CC and)
+    (S
+      (NP (DT the) (NN margin) (NN team))
+      (VP (MD can)
+        (VP (VB do)
+          (NP (PRP$ their) (NN work)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, needs-3)
+compound(Nelson-2, Michelle-1)
+nsubj(needs-3, Nelson-2)
+nsubjpass:xsubj(informed-7, Nelson-2)
+mark(informed-7, to-4)
+auxpass(informed-7, be-5)
+advmod(informed-7, immediately-6)
+xcomp(needs-3, informed-7)
+advmod(agree-11, when-8)
+dep(when-8, c/p-9)
+nsubj(agree-11, 's-10)
+advcl(informed-7, agree-11)
+case(changes-13, to-12)
+nmod:to(agree-11, changes-13)
+case(amount-16, in-14)
+amod(amount-16, independent-15)
+nmod:in(changes-13, amount-16)
+mark(prepared-24, so-17)
+mwe(so-17, that-18)
+det(confirmations-20, the-19)
+nsubjpass(prepared-24, confirmations-20)
+aux(prepared-24, can-21)
+auxpass(prepared-24, be-22)
+advmod(prepared-24, properly-23)
+advcl:so_that(agree-11, prepared-24)
+cc(needs-3, and-25)
+det(team-28, the-26)
+compound(team-28, margin-27)
+nsubj(do-30, team-28)
+aux(do-30, can-29)
+conj:and(needs-3, do-30)
+nmod:poss(work-32, their-31)
+dobj(do-30, work-32)
+punct(needs-3, .-33)
+
+Extracted the following NER entity mentions:
+Michelle Nelson	PERSON
+independent	RELIGION
+
+Sentence #5 (37 tokens):
+If in your view either Ltd or LP is expecting independent amounts different from those above, it is imperative that you immediately inform me and Marie Heard (she is preparing the updated confirmations).
+
+Tokens:
+[Text=If CharacterOffsetBegin=415 CharacterOffsetEnd=417 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=418 CharacterOffsetEnd=420 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=421 CharacterOffsetEnd=425 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=view CharacterOffsetBegin=426 CharacterOffsetEnd=430 PartOfSpeech=NN Lemma=view NamedEntityTag=O]
+[Text=either CharacterOffsetBegin=431 CharacterOffsetEnd=437 PartOfSpeech=CC Lemma=either NamedEntityTag=O]
+[Text=Ltd CharacterOffsetBegin=438 CharacterOffsetEnd=441 PartOfSpeech=NNP Lemma=Ltd NamedEntityTag=ORGANIZATION]
+[Text=or CharacterOffsetBegin=442 CharacterOffsetEnd=444 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=LP CharacterOffsetBegin=445 CharacterOffsetEnd=447 PartOfSpeech=NN Lemma=lp NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=448 CharacterOffsetEnd=450 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=expecting CharacterOffsetBegin=451 CharacterOffsetEnd=460 PartOfSpeech=VBG Lemma=expect NamedEntityTag=O]
+[Text=independent CharacterOffsetBegin=461 CharacterOffsetEnd=472 PartOfSpeech=JJ Lemma=independent NamedEntityTag=RELIGION]
+[Text=amounts CharacterOffsetBegin=473 CharacterOffsetEnd=480 PartOfSpeech=NNS Lemma=amount NamedEntityTag=O]
+[Text=different CharacterOffsetBegin=481 CharacterOffsetEnd=490 PartOfSpeech=JJ Lemma=different NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=491 CharacterOffsetEnd=495 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=496 CharacterOffsetEnd=501 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=above CharacterOffsetBegin=502 CharacterOffsetEnd=507 PartOfSpeech=IN Lemma=above NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=507 CharacterOffsetEnd=508 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=509 CharacterOffsetEnd=511 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=512 CharacterOffsetEnd=514 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=imperative CharacterOffsetBegin=515 CharacterOffsetEnd=525 PartOfSpeech=JJ Lemma=imperative NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=526 CharacterOffsetEnd=530 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=531 CharacterOffsetEnd=534 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=immediately CharacterOffsetBegin=535 CharacterOffsetEnd=546 PartOfSpeech=RB Lemma=immediately NamedEntityTag=O]
+[Text=inform CharacterOffsetBegin=547 CharacterOffsetEnd=553 PartOfSpeech=VB Lemma=inform NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=554 CharacterOffsetEnd=556 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=557 CharacterOffsetEnd=560 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Marie CharacterOffsetBegin=561 CharacterOffsetEnd=566 PartOfSpeech=NNP Lemma=Marie NamedEntityTag=PERSON]
+[Text=Heard CharacterOffsetBegin=567 CharacterOffsetEnd=572 PartOfSpeech=NNP Lemma=Heard NamedEntityTag=PERSON]
+[Text=-LRB- CharacterOffsetBegin=573 CharacterOffsetEnd=574 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=574 CharacterOffsetEnd=577 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=578 CharacterOffsetEnd=580 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=preparing CharacterOffsetBegin=581 CharacterOffsetEnd=590 PartOfSpeech=VBG Lemma=prepare NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=591 CharacterOffsetEnd=594 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=updated CharacterOffsetBegin=595 CharacterOffsetEnd=602 PartOfSpeech=VBN Lemma=update NamedEntityTag=O]
+[Text=confirmations CharacterOffsetBegin=603 CharacterOffsetEnd=616 PartOfSpeech=NNS Lemma=confirmation NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=616 CharacterOffsetEnd=617 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=617 CharacterOffsetEnd=618 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (PP (IN in)
+          (NP (PRP$ your) (NN view)))
+        (NP (CC either)
+          (NP (NNP Ltd))
+          (CC or)
+          (NP (NN LP)))
+        (VP (VBZ is)
+          (VP (VBG expecting)
+            (S
+              (NP (JJ independent) (NNS amounts))
+              (ADJP (JJ different)
+                (PP (IN from)
+                  (NP (DT those)))))
+            (ADVP (IN above))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ is)
+      (ADJP (JJ imperative)
+        (SBAR (IN that)
+          (S
+            (NP (PRP you))
+            (ADVP (RB immediately))
+            (VP (VB inform)
+              (NP
+                (NP (PRP me))
+                (CC and)
+                (NP (NNP Marie) (NNP Heard)))))))
+      (PRN (-LRB- -LRB-)
+        (S
+          (NP (PRP she))
+          (VP (VBZ is)
+            (VP (VBG preparing)
+              (NP (DT the) (VBN updated) (NNS confirmations)))))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, imperative-20)
+mark(expecting-10, If-1)
+case(view-4, in-2)
+nmod:poss(view-4, your-3)
+nmod:in(expecting-10, view-4)
+cc:preconj(Ltd-6, either-5)
+nsubj(expecting-10, Ltd-6)
+cc(Ltd-6, or-7)
+conj:or(Ltd-6, LP-8)
+nsubj(expecting-10, LP-8)
+aux(expecting-10, is-9)
+advcl:if(imperative-20, expecting-10)
+amod(amounts-12, independent-11)
+nsubj(different-13, amounts-12)
+xcomp(expecting-10, different-13)
+case(those-15, from-14)
+nmod:from(different-13, those-15)
+advmod(expecting-10, above-16)
+punct(imperative-20, ,-17)
+nsubj(imperative-20, it-18)
+cop(imperative-20, is-19)
+mark(inform-24, that-21)
+nsubj(inform-24, you-22)
+advmod(inform-24, immediately-23)
+ccomp(imperative-20, inform-24)
+dobj(inform-24, me-25)
+cc(me-25, and-26)
+compound(Heard-28, Marie-27)
+dobj(inform-24, Heard-28)
+conj:and(me-25, Heard-28)
+punct(preparing-32, -LRB--29)
+nsubj(preparing-32, she-30)
+aux(preparing-32, is-31)
+parataxis(imperative-20, preparing-32)
+det(confirmations-35, the-33)
+amod(confirmations-35, updated-34)
+dobj(preparing-32, confirmations-35)
+punct(preparing-32, -RRB--36)
+punct(imperative-20, .-37)
+
+Extracted the following NER entity mentions:
+Ltd	ORGANIZATION
+independent	RELIGION
+Marie Heard	PERSON
+she	PERSON
+
+Sentence #6 (29 tokens):
+By copy of this email, I am asking Marie to hold off sending out the credit until this afternoon in order to give you time to respond.
+
+Tokens:
+[Text=By CharacterOffsetBegin=620 CharacterOffsetEnd=622 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=copy CharacterOffsetBegin=623 CharacterOffsetEnd=627 PartOfSpeech=NN Lemma=copy NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=628 CharacterOffsetEnd=630 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=631 CharacterOffsetEnd=635 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=email CharacterOffsetBegin=636 CharacterOffsetEnd=641 PartOfSpeech=NN Lemma=email NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=641 CharacterOffsetEnd=642 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=643 CharacterOffsetEnd=644 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=645 CharacterOffsetEnd=647 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=asking CharacterOffsetBegin=648 CharacterOffsetEnd=654 PartOfSpeech=VBG Lemma=ask NamedEntityTag=O]
+[Text=Marie CharacterOffsetBegin=655 CharacterOffsetEnd=660 PartOfSpeech=NNP Lemma=Marie NamedEntityTag=PERSON]
+[Text=to CharacterOffsetBegin=661 CharacterOffsetEnd=663 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=hold CharacterOffsetBegin=664 CharacterOffsetEnd=668 PartOfSpeech=VB Lemma=hold NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=669 CharacterOffsetEnd=672 PartOfSpeech=RP Lemma=off NamedEntityTag=O]
+[Text=sending CharacterOffsetBegin=673 CharacterOffsetEnd=680 PartOfSpeech=VBG Lemma=send NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=681 CharacterOffsetEnd=684 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=685 CharacterOffsetEnd=688 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=credit CharacterOffsetBegin=689 CharacterOffsetEnd=695 PartOfSpeech=NN Lemma=credit NamedEntityTag=O]
+[Text=until CharacterOffsetBegin=696 CharacterOffsetEnd=701 PartOfSpeech=IN Lemma=until NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=702 CharacterOffsetEnd=706 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=afternoon CharacterOffsetBegin=707 CharacterOffsetEnd=716 PartOfSpeech=NN Lemma=afternoon NamedEntityTag=TIME NormalizedNamedEntityTag=A]
+[Text=in CharacterOffsetBegin=717 CharacterOffsetEnd=719 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=order CharacterOffsetBegin=720 CharacterOffsetEnd=725 PartOfSpeech=NN Lemma=order NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=726 CharacterOffsetEnd=728 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=give CharacterOffsetBegin=729 CharacterOffsetEnd=733 PartOfSpeech=VB Lemma=give NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=734 CharacterOffsetEnd=737 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=738 CharacterOffsetEnd=742 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=743 CharacterOffsetEnd=745 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=respond CharacterOffsetBegin=746 CharacterOffsetEnd=753 PartOfSpeech=VB Lemma=respond NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=753 CharacterOffsetEnd=754 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN By)
+      (NP
+        (NP (NN copy))
+        (PP (IN of)
+          (NP (DT this) (NN email)))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP am)
+      (VP (VBG asking)
+        (S
+          (NP (NNP Marie))
+          (VP (TO to)
+            (VP (VB hold)
+              (PRT (RP off))
+              (S
+                (VP (VBG sending)
+                  (PRT (RP out))
+                  (NP (DT the) (NN credit))
+                  (PP (IN until)
+                    (NP (DT this) (NN afternoon)))))
+              (SBAR (IN in) (NN order)
+                (S
+                  (VP (TO to)
+                    (VP (VB give)
+                      (NP (PRP you))
+                      (NP (NN time)
+                        (S
+                          (VP (TO to)
+                            (VP (VB respond))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, asking-9)
+case(copy-2, By-1)
+nmod:by(asking-9, copy-2)
+case(email-5, of-3)
+det(email-5, this-4)
+nmod:of(copy-2, email-5)
+punct(asking-9, ,-6)
+nsubj(asking-9, I-7)
+aux(asking-9, am-8)
+dobj(asking-9, Marie-10)
+nsubj:xsubj(hold-12, Marie-10)
+mark(hold-12, to-11)
+xcomp(asking-9, hold-12)
+compound:prt(hold-12, off-13)
+xcomp(hold-12, sending-14)
+compound:prt(sending-14, out-15)
+det(credit-17, the-16)
+dobj(sending-14, credit-17)
+case(afternoon-20, until-18)
+det(afternoon-20, this-19)
+nmod:until(sending-14, afternoon-20)
+mark(give-24, in-21)
+mwe(in-21, order-22)
+mark(give-24, to-23)
+advcl:in_order(hold-12, give-24)
+iobj(give-24, you-25)
+dobj(give-24, time-26)
+mark(respond-28, to-27)
+acl:to(time-26, respond-28)
+punct(asking-9, .-29)
+
+Extracted the following NER entity mentions:
+Marie	PERSON
+afternoon	TIME
+
+Sentence #7 (1 tokens):
+Paul
+
+Tokens:
+[Text=Paul CharacterOffsetBegin=756 CharacterOffsetEnd=760 PartOfSpeech=NNP Lemma=Paul NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Paul)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Paul-1)
+
+Extracted the following NER entity mentions:
+Paul	PERSON
+
+Coreference set:
+	(6,17,[16,18]) -> (1,2,[1,3]), that is: "the credit" -> "New credit"
+
+Coreference set:
+	(2,12,[12,13]) -> (1,8,[7,9]), that is: "their" -> "deemed ISDAs"
+	(3,8,[8,9]) -> (1,8,[7,9]), that is: "their" -> "deemed ISDAs"
+
+Coreference set:
+	(2,1,[1,4]) -> (3,2,[1,3]), that is: "AIG ... Ltd" -> "AIG LP"
+	(5,6,[6,7]) -> (3,2,[1,3]), that is: "Ltd" -> "AIG LP"
+
+Coreference set:
+	(3,10,[8,11]) -> (2,14,[12,15]), that is: "their independent amount" -> "their independent amount"
+
+Coreference set:
+	(4,31,[31,32]) -> (4,10,[10,11]), that is: "their" -> "'s"
+
+Coreference set:
+	(6,10,[10,11]) -> (5,28,[27,29]), that is: "Marie" -> "Marie Heard"
+
+Coreference set:
+	(5,30,[30,31]) -> (5,15,[15,16]), that is: "she" -> "those"
+
+Coreference set:
+	(6,7,[7,8]) -> (5,25,[25,26]), that is: "I" -> "me"

@@ -1,0 +1,2682 @@
+Document: ID=809973.in (31 sentences, 666 tokens)
+
+Sentence #1 (10 tokens):
+To ensure everyone is on the same page....
+
+Tokens:
+[Text=To CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=ensure CharacterOffsetBegin=3 CharacterOffsetEnd=9 PartOfSpeech=VB Lemma=ensure NamedEntityTag=O]
+[Text=everyone CharacterOffsetBegin=10 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=everyone NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=same CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=JJ Lemma=same NamedEntityTag=O]
+[Text=page CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=page NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (TO To)
+        (VP (VB ensure)
+          (NP (NN everyone)))))
+    (VP (VBZ is)
+      (PP (IN on)
+        (NP
+          (NP (DT the) (JJ same) (NN page))
+          (: ...))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, page-8)
+mark(ensure-2, To-1)
+csubj(page-8, ensure-2)
+dobj(ensure-2, everyone-3)
+cop(page-8, is-4)
+case(page-8, on-5)
+det(page-8, the-6)
+amod(page-8, same-7)
+punct(page-8, ...-9)
+punct(page-8, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (17 tokens):
+Steve Stonestreet at TCO and I had
+a conversation on how TCO works its storage ratchets.
+
+Tokens:
+[Text=Steve CharacterOffsetBegin=43 CharacterOffsetEnd=48 PartOfSpeech=NNP Lemma=Steve NamedEntityTag=PERSON]
+[Text=Stonestreet CharacterOffsetBegin=49 CharacterOffsetEnd=60 PartOfSpeech=NNP Lemma=Stonestreet NamedEntityTag=PERSON]
+[Text=at CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=TCO CharacterOffsetBegin=64 CharacterOffsetEnd=67 PartOfSpeech=NNP Lemma=TCO NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=conversation CharacterOffsetBegin=80 CharacterOffsetEnd=92 PartOfSpeech=NN Lemma=conversation NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=93 CharacterOffsetEnd=95 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=96 CharacterOffsetEnd=99 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=TCO CharacterOffsetBegin=100 CharacterOffsetEnd=103 PartOfSpeech=NNP Lemma=TCO NamedEntityTag=ORGANIZATION]
+[Text=works CharacterOffsetBegin=104 CharacterOffsetEnd=109 PartOfSpeech=VBZ Lemma=work NamedEntityTag=O]
+[Text=its CharacterOffsetBegin=110 CharacterOffsetEnd=113 PartOfSpeech=PRP$ Lemma=its NamedEntityTag=O]
+[Text=storage CharacterOffsetBegin=114 CharacterOffsetEnd=121 PartOfSpeech=NN Lemma=storage NamedEntityTag=O]
+[Text=ratchets CharacterOffsetBegin=122 CharacterOffsetEnd=130 PartOfSpeech=NNS Lemma=ratchet NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=130 CharacterOffsetEnd=131 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Steve) (NNP Stonestreet))
+      (PP (IN at)
+        (NP
+          (NP (NNP TCO))
+          (CC and)
+          (NP (PRP I)))))
+    (VP (VBD had)
+      (NP
+        (NP (DT a) (NN conversation))
+        (PP (IN on)
+          (SBAR
+            (WHADVP (WRB how))
+            (S
+              (NP (NNP TCO))
+              (VP (VBZ works)
+                (NP (PRP$ its) (NN storage) (NNS ratchets))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, had-7)
+compound(Stonestreet-2, Steve-1)
+nsubj(had-7, Stonestreet-2)
+case(TCO-4, at-3)
+nmod:at(Stonestreet-2, TCO-4)
+cc(TCO-4, and-5)
+nmod:at(Stonestreet-2, I-6)
+conj:and(TCO-4, I-6)
+det(conversation-9, a-8)
+dobj(had-7, conversation-9)
+mark(works-13, on-10)
+advmod(works-13, how-11)
+nsubj(works-13, TCO-12)
+acl:on(conversation-9, works-13)
+nmod:poss(ratchets-16, its-14)
+compound(ratchets-16, storage-15)
+dobj(works-13, ratchets-16)
+punct(had-7, .-17)
+
+Extracted the following NER entity mentions:
+Steve Stonestreet	PERSON
+TCO	ORGANIZATION
+TCO	ORGANIZATION
+
+Sentence #3 (13 tokens):
+Steve, if I have
+misstated something, please let us know.
+
+Tokens:
+[Text=Steve CharacterOffsetBegin=132 CharacterOffsetEnd=137 PartOfSpeech=NNP Lemma=Steve NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=137 CharacterOffsetEnd=138 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=139 CharacterOffsetEnd=141 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=142 CharacterOffsetEnd=143 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=144 CharacterOffsetEnd=148 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=misstated CharacterOffsetBegin=149 CharacterOffsetEnd=158 PartOfSpeech=VBN Lemma=misstate NamedEntityTag=O]
+[Text=something CharacterOffsetBegin=159 CharacterOffsetEnd=168 PartOfSpeech=NN Lemma=something NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=168 CharacterOffsetEnd=169 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=please CharacterOffsetBegin=170 CharacterOffsetEnd=176 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=let CharacterOffsetBegin=177 CharacterOffsetEnd=180 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=181 CharacterOffsetEnd=183 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=184 CharacterOffsetEnd=188 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=188 CharacterOffsetEnd=189 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Steve))
+      (, ,)
+      (SBAR (IN if)
+        (S
+          (NP (PRP I))
+          (VP (VBP have)
+            (VP (VBN misstated)
+              (NP (NN something))))))
+      (, ,))
+    (VP (VB please)
+      (VP (VB let)
+        (S
+          (NP (PRP us))
+          (VP (VB know)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, please-9)
+nsubj(please-9, Steve-1)
+punct(Steve-1, ,-2)
+mark(misstated-6, if-3)
+nsubj(misstated-6, I-4)
+aux(misstated-6, have-5)
+dep(Steve-1, misstated-6)
+dobj(misstated-6, something-7)
+punct(Steve-1, ,-8)
+xcomp(please-9, let-10)
+nsubj(know-12, us-11)
+ccomp(let-10, know-12)
+punct(please-9, .-13)
+
+Extracted the following NER entity mentions:
+Steve	PERSON
+
+Sentence #4 (18 tokens):
+There is a FSS schedule that tells the ratchets, minimum injections, maximum
+withdrawals, etc.
+
+Tokens:
+[Text=There CharacterOffsetBegin=191 CharacterOffsetEnd=196 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=197 CharacterOffsetEnd=199 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=200 CharacterOffsetEnd=201 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=FSS CharacterOffsetBegin=202 CharacterOffsetEnd=205 PartOfSpeech=NN Lemma=fss NamedEntityTag=ORGANIZATION]
+[Text=schedule CharacterOffsetBegin=206 CharacterOffsetEnd=214 PartOfSpeech=NN Lemma=schedule NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=215 CharacterOffsetEnd=219 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=tells CharacterOffsetBegin=220 CharacterOffsetEnd=225 PartOfSpeech=VBZ Lemma=tell NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=226 CharacterOffsetEnd=229 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=ratchets CharacterOffsetBegin=230 CharacterOffsetEnd=238 PartOfSpeech=NNS Lemma=ratchet NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=238 CharacterOffsetEnd=239 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=minimum CharacterOffsetBegin=240 CharacterOffsetEnd=247 PartOfSpeech=JJ Lemma=minimum NamedEntityTag=O]
+[Text=injections CharacterOffsetBegin=248 CharacterOffsetEnd=258 PartOfSpeech=NNS Lemma=injection NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=258 CharacterOffsetEnd=259 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=maximum CharacterOffsetBegin=260 CharacterOffsetEnd=267 PartOfSpeech=NN Lemma=maximum NamedEntityTag=O]
+[Text=withdrawals CharacterOffsetBegin=268 CharacterOffsetEnd=279 PartOfSpeech=NNS Lemma=withdrawal NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=279 CharacterOffsetEnd=280 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=etc. CharacterOffsetBegin=281 CharacterOffsetEnd=284 PartOfSpeech=FW Lemma=etc. NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=284 CharacterOffsetEnd=285 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN FSS) (NN schedule))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ tells)
+              (NP
+                (NP (DT the) (NNS ratchets))
+                (, ,)
+                (NP
+                  (NP (JJ minimum) (NNS injections))
+                  (, ,)
+                  (NP (NN maximum) (NNS withdrawals))
+                  (, ,) (FW etc.))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-2)
+expl(is-2, There-1)
+det(schedule-5, a-3)
+compound(schedule-5, FSS-4)
+nsubj(is-2, schedule-5)
+nsubj(tells-7, schedule-5)
+ref(schedule-5, that-6)
+acl:relcl(schedule-5, tells-7)
+det(ratchets-9, the-8)
+dobj(tells-7, ratchets-9)
+punct(ratchets-9, ,-10)
+amod(injections-12, minimum-11)
+appos(ratchets-9, injections-12)
+punct(injections-12, ,-13)
+compound(withdrawals-15, maximum-14)
+appos(injections-12, withdrawals-15)
+punct(injections-12, ,-16)
+dep(injections-12, etc.-17)
+punct(is-2, .-18)
+
+Extracted the following NER entity mentions:
+FSS	ORGANIZATION
+
+Sentence #5 (29 tokens):
+This FSS schedule has been updated in the attached
+spreadsheet with Enron's SCQ and Enron's MDSQ, which enables Enron to know
+its different volume requirements.
+
+Tokens:
+[Text=This CharacterOffsetBegin=286 CharacterOffsetEnd=290 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=FSS CharacterOffsetBegin=291 CharacterOffsetEnd=294 PartOfSpeech=NN Lemma=fss NamedEntityTag=ORGANIZATION]
+[Text=schedule CharacterOffsetBegin=295 CharacterOffsetEnd=303 PartOfSpeech=NN Lemma=schedule NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=304 CharacterOffsetEnd=307 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=308 CharacterOffsetEnd=312 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=updated CharacterOffsetBegin=313 CharacterOffsetEnd=320 PartOfSpeech=VBN Lemma=update NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=321 CharacterOffsetEnd=323 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=324 CharacterOffsetEnd=327 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=attached CharacterOffsetBegin=328 CharacterOffsetEnd=336 PartOfSpeech=VBN Lemma=attach NamedEntityTag=O]
+[Text=spreadsheet CharacterOffsetBegin=337 CharacterOffsetEnd=348 PartOfSpeech=NN Lemma=spreadsheet NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=349 CharacterOffsetEnd=353 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=354 CharacterOffsetEnd=359 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=359 CharacterOffsetEnd=361 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=SCQ CharacterOffsetBegin=362 CharacterOffsetEnd=365 PartOfSpeech=NNP Lemma=SCQ NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=366 CharacterOffsetEnd=369 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=370 CharacterOffsetEnd=375 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=375 CharacterOffsetEnd=377 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=MDSQ CharacterOffsetBegin=378 CharacterOffsetEnd=382 PartOfSpeech=NNP Lemma=MDSQ NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=382 CharacterOffsetEnd=383 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=384 CharacterOffsetEnd=389 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=enables CharacterOffsetBegin=390 CharacterOffsetEnd=397 PartOfSpeech=VBZ Lemma=enable NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=398 CharacterOffsetEnd=403 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=to CharacterOffsetBegin=404 CharacterOffsetEnd=406 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=407 CharacterOffsetEnd=411 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=its CharacterOffsetBegin=412 CharacterOffsetEnd=415 PartOfSpeech=PRP$ Lemma=its NamedEntityTag=O]
+[Text=different CharacterOffsetBegin=416 CharacterOffsetEnd=425 PartOfSpeech=JJ Lemma=different NamedEntityTag=O]
+[Text=volume CharacterOffsetBegin=426 CharacterOffsetEnd=432 PartOfSpeech=NN Lemma=volume NamedEntityTag=O]
+[Text=requirements CharacterOffsetBegin=433 CharacterOffsetEnd=445 PartOfSpeech=NNS Lemma=requirement NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=445 CharacterOffsetEnd=446 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This) (NN FSS) (NN schedule))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (VP (VBN updated)
+          (PP (IN in)
+            (NP
+              (NP
+                (NP (DT the) (VBN attached) (NN spreadsheet))
+                (PP (IN with)
+                  (NP
+                    (NP (NNP Enron) (POS 's))
+                    (NNP SCQ))))
+              (CC and)
+              (NP
+                (NP
+                  (NP (NNP Enron) (POS 's))
+                  (NNP MDSQ))
+                (, ,)
+                (SBAR
+                  (WHNP (WDT which))
+                  (S
+                    (VP (VBZ enables)
+                      (S
+                        (NP (NNP Enron))
+                        (VP (TO to)
+                          (VP (VB know)
+                            (NP (PRP$ its) (JJ different) (NN volume) (NNS requirements))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, updated-6)
+det(schedule-3, This-1)
+compound(schedule-3, FSS-2)
+nsubjpass(updated-6, schedule-3)
+aux(updated-6, has-4)
+auxpass(updated-6, been-5)
+case(spreadsheet-10, in-7)
+det(spreadsheet-10, the-8)
+amod(spreadsheet-10, attached-9)
+nmod:in(updated-6, spreadsheet-10)
+case(SCQ-14, with-11)
+nmod:poss(SCQ-14, Enron-12)
+case(Enron-12, 's-13)
+nmod:with(spreadsheet-10, SCQ-14)
+cc(spreadsheet-10, and-15)
+nmod:poss(MDSQ-18, Enron-16)
+case(Enron-16, 's-17)
+nmod:in(updated-6, MDSQ-18)
+conj:and(spreadsheet-10, MDSQ-18)
+nsubj(enables-21, MDSQ-18)
+punct(MDSQ-18, ,-19)
+ref(MDSQ-18, which-20)
+acl:relcl(MDSQ-18, enables-21)
+dobj(enables-21, Enron-22)
+nsubj:xsubj(know-24, Enron-22)
+mark(know-24, to-23)
+xcomp(enables-21, know-24)
+nmod:poss(requirements-28, its-25)
+amod(requirements-28, different-26)
+compound(requirements-28, volume-27)
+dobj(know-24, requirements-28)
+punct(updated-6, .-29)
+
+Extracted the following NER entity mentions:
+FSS	ORGANIZATION
+Enron	ORGANIZATION
+Enron	ORGANIZATION
+MDSQ	ORGANIZATION
+Enron	ORGANIZATION
+
+Sentence #6 (24 tokens):
+Based on the attached schedule, each month there are different Maximum
+Monthly Injection Quantities (MMIQ)  based on Enron's SCQ.
+
+Tokens:
+[Text=Based CharacterOffsetBegin=448 CharacterOffsetEnd=453 PartOfSpeech=VBN Lemma=base NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=454 CharacterOffsetEnd=456 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=457 CharacterOffsetEnd=460 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=attached CharacterOffsetBegin=461 CharacterOffsetEnd=469 PartOfSpeech=VBN Lemma=attach NamedEntityTag=O]
+[Text=schedule CharacterOffsetBegin=470 CharacterOffsetEnd=478 PartOfSpeech=NN Lemma=schedule NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=478 CharacterOffsetEnd=479 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=each CharacterOffsetBegin=480 CharacterOffsetEnd=484 PartOfSpeech=DT Lemma=each NamedEntityTag=O]
+[Text=month CharacterOffsetBegin=485 CharacterOffsetEnd=490 PartOfSpeech=NN Lemma=month NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=491 CharacterOffsetEnd=496 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=497 CharacterOffsetEnd=500 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=different CharacterOffsetBegin=501 CharacterOffsetEnd=510 PartOfSpeech=JJ Lemma=different NamedEntityTag=O]
+[Text=Maximum CharacterOffsetBegin=511 CharacterOffsetEnd=518 PartOfSpeech=NNP Lemma=Maximum NamedEntityTag=O]
+[Text=Monthly CharacterOffsetBegin=519 CharacterOffsetEnd=526 PartOfSpeech=JJ Lemma=monthly NamedEntityTag=O]
+[Text=Injection CharacterOffsetBegin=527 CharacterOffsetEnd=536 PartOfSpeech=NN Lemma=injection NamedEntityTag=O]
+[Text=Quantities CharacterOffsetBegin=537 CharacterOffsetEnd=547 PartOfSpeech=NNS Lemma=quantity NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=548 CharacterOffsetEnd=549 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=MMIQ CharacterOffsetBegin=549 CharacterOffsetEnd=553 PartOfSpeech=NN Lemma=mmiq NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=553 CharacterOffsetEnd=554 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=based CharacterOffsetBegin=556 CharacterOffsetEnd=561 PartOfSpeech=VBN Lemma=base NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=562 CharacterOffsetEnd=564 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=565 CharacterOffsetEnd=570 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=570 CharacterOffsetEnd=572 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=SCQ CharacterOffsetBegin=573 CharacterOffsetEnd=576 PartOfSpeech=NNP Lemma=SCQ NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=576 CharacterOffsetEnd=577 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (VBN Based)
+      (PP (IN on)
+        (NP
+          (NP (DT the) (VBN attached) (NN schedule))
+          (, ,)
+          (NP (DT each) (NN month)))))
+    (NP (EX there))
+    (VP (VBP are)
+      (NP
+        (NP
+          (ADJP (JJ different) (NNP Maximum))
+          (JJ Monthly) (NN Injection) (NNS Quantities))
+        (PRN (-LRB- -LRB-)
+          (NP (NN MMIQ))
+          (-RRB- -RRB-))
+        (PP (VBN based)
+          (PP (IN on)
+            (NP
+              (NP (NNP Enron) (POS 's))
+              (NNP SCQ))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, are-10)
+case(schedule-5, Based-1)
+mwe(Based-1, on-2)
+det(schedule-5, the-3)
+amod(schedule-5, attached-4)
+advcl:based_on(are-10, schedule-5)
+punct(schedule-5, ,-6)
+det(month-8, each-7)
+appos(schedule-5, month-8)
+expl(are-10, there-9)
+amod(Maximum-12, different-11)
+amod(Quantities-15, Maximum-12)
+amod(Quantities-15, Monthly-13)
+compound(Quantities-15, Injection-14)
+nsubj(are-10, Quantities-15)
+punct(MMIQ-17, -LRB--16)
+appos(Quantities-15, MMIQ-17)
+punct(MMIQ-17, -RRB--18)
+case(SCQ-23, based-19)
+mwe(based-19, on-20)
+nmod:poss(SCQ-23, Enron-21)
+case(Enron-21, 's-22)
+nmod:based_on(Quantities-15, SCQ-23)
+punct(are-10, .-24)
+
+Extracted the following NER entity mentions:
+Enron	ORGANIZATION
+
+Sentence #7 (10 tokens):
+There is no
+Minimum Injection Quantity required by TCO.
+
+Tokens:
+[Text=There CharacterOffsetBegin=578 CharacterOffsetEnd=583 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=584 CharacterOffsetEnd=586 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=587 CharacterOffsetEnd=589 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=Minimum CharacterOffsetBegin=590 CharacterOffsetEnd=597 PartOfSpeech=NNP Lemma=Minimum NamedEntityTag=O]
+[Text=Injection CharacterOffsetBegin=598 CharacterOffsetEnd=607 PartOfSpeech=NN Lemma=injection NamedEntityTag=O]
+[Text=Quantity CharacterOffsetBegin=608 CharacterOffsetEnd=616 PartOfSpeech=NN Lemma=quantity NamedEntityTag=O]
+[Text=required CharacterOffsetBegin=617 CharacterOffsetEnd=625 PartOfSpeech=VBN Lemma=require NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=626 CharacterOffsetEnd=628 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=TCO CharacterOffsetBegin=629 CharacterOffsetEnd=632 PartOfSpeech=NNP Lemma=TCO NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=632 CharacterOffsetEnd=633 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ is)
+      (NP
+        (NP (DT no) (NNP Minimum) (NN Injection) (NN Quantity))
+        (VP (VBN required)
+          (PP (IN by)
+            (NP (NNP TCO))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-2)
+expl(is-2, There-1)
+neg(Quantity-6, no-3)
+compound(Quantity-6, Minimum-4)
+compound(Quantity-6, Injection-5)
+nsubj(is-2, Quantity-6)
+acl(Quantity-6, required-7)
+case(TCO-9, by-8)
+nmod:by(required-7, TCO-9)
+punct(is-2, .-10)
+
+Extracted the following NER entity mentions:
+TCO	ORGANIZATION
+
+Sentence #8 (50 tokens):
+TCO Injection Session and % of SCQ;
+
+April = 15%
+May = 20%
+June = 20%
+July = 20%
+Aug = 20%
+Sept = 13%
+Oct = 7 %
+
+If you add these months up, the total Injection is 115%.
+
+Tokens:
+[Text=TCO CharacterOffsetBegin=635 CharacterOffsetEnd=638 PartOfSpeech=NNP Lemma=TCO NamedEntityTag=ORGANIZATION]
+[Text=Injection CharacterOffsetBegin=639 CharacterOffsetEnd=648 PartOfSpeech=NN Lemma=injection NamedEntityTag=O]
+[Text=Session CharacterOffsetBegin=649 CharacterOffsetEnd=656 PartOfSpeech=NN Lemma=session NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=657 CharacterOffsetEnd=660 PartOfSpeech=CC Lemma=and NamedEntityTag=PERCENT NormalizedNamedEntityTag=%0.0]
+[Text=% CharacterOffsetBegin=661 CharacterOffsetEnd=662 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%0.0]
+[Text=of CharacterOffsetBegin=663 CharacterOffsetEnd=665 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=SCQ CharacterOffsetBegin=666 CharacterOffsetEnd=669 PartOfSpeech=NN Lemma=scq NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=669 CharacterOffsetEnd=670 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=April CharacterOffsetBegin=672 CharacterOffsetEnd=677 PartOfSpeech=NNP Lemma=April NamedEntityTag=DATE NormalizedNamedEntityTag=****04]
+[Text== CharacterOffsetBegin=678 CharacterOffsetEnd=679 PartOfSpeech=JJ Lemma== NamedEntityTag=O]
+[Text=15 CharacterOffsetBegin=680 CharacterOffsetEnd=682 PartOfSpeech=CD Lemma=15 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%15.0]
+[Text=% CharacterOffsetBegin=682 CharacterOffsetEnd=683 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%15.0]
+[Text=May CharacterOffsetBegin=684 CharacterOffsetEnd=687 PartOfSpeech=NNP Lemma=May NamedEntityTag=O]
+[Text== CharacterOffsetBegin=688 CharacterOffsetEnd=689 PartOfSpeech=JJ Lemma== NamedEntityTag=O]
+[Text=20 CharacterOffsetBegin=690 CharacterOffsetEnd=692 PartOfSpeech=CD Lemma=20 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%20.0]
+[Text=% CharacterOffsetBegin=692 CharacterOffsetEnd=693 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%20.0]
+[Text=June CharacterOffsetBegin=694 CharacterOffsetEnd=698 PartOfSpeech=NNP Lemma=June NamedEntityTag=O]
+[Text== CharacterOffsetBegin=699 CharacterOffsetEnd=700 PartOfSpeech=JJ Lemma== NamedEntityTag=O]
+[Text=20 CharacterOffsetBegin=701 CharacterOffsetEnd=703 PartOfSpeech=CD Lemma=20 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%20.0]
+[Text=% CharacterOffsetBegin=703 CharacterOffsetEnd=704 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%20.0]
+[Text=July CharacterOffsetBegin=705 CharacterOffsetEnd=709 PartOfSpeech=NNP Lemma=July NamedEntityTag=O]
+[Text== CharacterOffsetBegin=710 CharacterOffsetEnd=711 PartOfSpeech=JJ Lemma== NamedEntityTag=O]
+[Text=20 CharacterOffsetBegin=712 CharacterOffsetEnd=714 PartOfSpeech=CD Lemma=20 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%20.0]
+[Text=% CharacterOffsetBegin=714 CharacterOffsetEnd=715 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%20.0]
+[Text=Aug CharacterOffsetBegin=716 CharacterOffsetEnd=719 PartOfSpeech=NN Lemma=aug NamedEntityTag=O]
+[Text== CharacterOffsetBegin=720 CharacterOffsetEnd=721 PartOfSpeech=JJ Lemma== NamedEntityTag=O]
+[Text=20 CharacterOffsetBegin=722 CharacterOffsetEnd=724 PartOfSpeech=CD Lemma=20 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%20.0]
+[Text=% CharacterOffsetBegin=724 CharacterOffsetEnd=725 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%20.0]
+[Text=Sept CharacterOffsetBegin=726 CharacterOffsetEnd=730 PartOfSpeech=NNP Lemma=Sept NamedEntityTag=O]
+[Text== CharacterOffsetBegin=731 CharacterOffsetEnd=732 PartOfSpeech=JJ Lemma== NamedEntityTag=O]
+[Text=13 CharacterOffsetBegin=733 CharacterOffsetEnd=735 PartOfSpeech=CD Lemma=13 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%13.0]
+[Text=% CharacterOffsetBegin=735 CharacterOffsetEnd=736 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%13.0]
+[Text=Oct CharacterOffsetBegin=737 CharacterOffsetEnd=740 PartOfSpeech=NN Lemma=oct NamedEntityTag=O]
+[Text== CharacterOffsetBegin=741 CharacterOffsetEnd=742 PartOfSpeech=JJ Lemma== NamedEntityTag=O]
+[Text=7 CharacterOffsetBegin=743 CharacterOffsetEnd=744 PartOfSpeech=CD Lemma=7 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%7.0]
+[Text=% CharacterOffsetBegin=745 CharacterOffsetEnd=746 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%7.0]
+[Text=If CharacterOffsetBegin=748 CharacterOffsetEnd=750 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=751 CharacterOffsetEnd=754 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=add CharacterOffsetBegin=755 CharacterOffsetEnd=758 PartOfSpeech=VBP Lemma=add NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=759 CharacterOffsetEnd=764 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=months CharacterOffsetBegin=765 CharacterOffsetEnd=771 PartOfSpeech=NNS Lemma=month NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=772 CharacterOffsetEnd=774 PartOfSpeech=RB Lemma=up NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=774 CharacterOffsetEnd=775 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=776 CharacterOffsetEnd=779 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=total CharacterOffsetBegin=780 CharacterOffsetEnd=785 PartOfSpeech=JJ Lemma=total NamedEntityTag=O]
+[Text=Injection CharacterOffsetBegin=786 CharacterOffsetEnd=795 PartOfSpeech=NN Lemma=injection NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=796 CharacterOffsetEnd=798 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=115 CharacterOffsetBegin=799 CharacterOffsetEnd=802 PartOfSpeech=CD Lemma=115 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%115.0]
+[Text=% CharacterOffsetBegin=802 CharacterOffsetEnd=803 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%115.0]
+[Text=. CharacterOffsetBegin=803 CharacterOffsetEnd=804 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP TCO) (NN Injection) (NN Session))
+      (CC and)
+      (NP
+        (NP
+          (NP (NN %))
+          (PP (IN of)
+            (NP (NN SCQ))))
+        (: ;)
+        (NP
+          (NP
+            (NP (NNP April))
+            (VP (JJ =)
+              (NP (CD 15) (NN %))
+              (NP
+                (NP (NNP May))
+                (VP (JJ =)
+                  (NP (CD 20) (NN %))
+                  (NP
+                    (NP
+                      (NP (NNP June))
+                      (VP (JJ =)
+                        (NP (CD 20) (NN %))
+                        (NP (NNP July)
+                          (ADJP (JJ =) (CD 20) (NN %))
+                          (NN Aug))))
+                    (ADJP (JJ =) (CD 20) (NN %)))))))
+          (NP-TMP (NNP Sept)))))
+    (VP (JJ =)
+      (NP
+        (NP (CD 13) (NN %) (NN Oct))
+        (ADJP (JJ =) (CD 7) (NN %))
+        (SBAR
+          (S
+            (SBAR (IN If)
+              (S
+                (NP (PRP you))
+                (VP (VBP add)
+                  (NP (DT these) (NNS months))
+                  (ADVP (RB up)))))
+            (, ,)
+            (NP (DT the) (JJ total) (NN Injection))
+            (VP (VBZ is)
+              (NP (CD 115) (NN %)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, =-30)
+compound(Session-3, TCO-1)
+compound(Session-3, Injection-2)
+nsubj(=-30, Session-3)
+cc(Session-3, and-4)
+conj:and(Session-3, %-5)
+nsubj(=-30, %-5)
+case(SCQ-7, of-6)
+nmod:of(%-5, SCQ-7)
+punct(%-5, ;-8)
+dep(%-5, April-9)
+dep(April-9, =-10)
+nummod(%-12, 15-11)
+iobj(=-10, %-12)
+dobj(=-10, May-13)
+dep(May-13, =-14)
+nummod(%-16, 20-15)
+iobj(=-14, %-16)
+dobj(=-14, June-17)
+dep(June-17, =-18)
+nummod(%-20, 20-19)
+iobj(=-18, %-20)
+compound(Aug-25, July-21)
+dep(%-24, =-22)
+compound(%-24, 20-23)
+amod(Aug-25, %-24)
+dobj(=-18, Aug-25)
+dep(%-28, =-26)
+compound(%-28, 20-27)
+amod(June-17, %-28)
+nmod:tmod(April-9, Sept-29)
+nummod(Oct-33, 13-31)
+compound(Oct-33, %-32)
+dobj(=-30, Oct-33)
+dep(%-36, =-34)
+compound(%-36, 7-35)
+amod(Oct-33, %-36)
+mark(add-39, If-37)
+nsubj(add-39, you-38)
+advcl:if(%-49, add-39)
+det(months-41, these-40)
+nmod:tmod(add-39, months-41)
+advmod(add-39, up-42)
+punct(%-49, ,-43)
+det(Injection-46, the-44)
+amod(Injection-46, total-45)
+nsubj(%-49, Injection-46)
+cop(%-49, is-47)
+nummod(%-49, 115-48)
+acl:relcl(Oct-33, %-49)
+punct(=-30, .-50)
+
+Extracted the following NER entity mentions:
+TCO	ORGANIZATION
+and %	PERCENT
+April	DATE
+15%	PERCENT
+20%	PERCENT
+20%	PERCENT
+20%	PERCENT
+20%	PERCENT
+13%	PERCENT
+7 %	PERCENT
+115%	PERCENT
+
+Sentence #9 (20 tokens):
+Essentially,
+shippers have an extra 15% that does not have to be used during the injection
+period.
+
+Tokens:
+[Text=Essentially CharacterOffsetBegin=805 CharacterOffsetEnd=816 PartOfSpeech=RB Lemma=essentially NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=816 CharacterOffsetEnd=817 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=shippers CharacterOffsetBegin=818 CharacterOffsetEnd=826 PartOfSpeech=NNS Lemma=shipper NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=827 CharacterOffsetEnd=831 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=832 CharacterOffsetEnd=834 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=extra CharacterOffsetBegin=835 CharacterOffsetEnd=840 PartOfSpeech=JJ Lemma=extra NamedEntityTag=O]
+[Text=15 CharacterOffsetBegin=841 CharacterOffsetEnd=843 PartOfSpeech=CD Lemma=15 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%15.0]
+[Text=% CharacterOffsetBegin=843 CharacterOffsetEnd=844 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%15.0]
+[Text=that CharacterOffsetBegin=845 CharacterOffsetEnd=849 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=850 CharacterOffsetEnd=854 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=855 CharacterOffsetEnd=858 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=859 CharacterOffsetEnd=863 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=864 CharacterOffsetEnd=866 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=867 CharacterOffsetEnd=869 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=used CharacterOffsetBegin=870 CharacterOffsetEnd=874 PartOfSpeech=VBN Lemma=use NamedEntityTag=O]
+[Text=during CharacterOffsetBegin=875 CharacterOffsetEnd=881 PartOfSpeech=IN Lemma=during NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=882 CharacterOffsetEnd=885 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=injection CharacterOffsetBegin=886 CharacterOffsetEnd=895 PartOfSpeech=NN Lemma=injection NamedEntityTag=O]
+[Text=period CharacterOffsetBegin=896 CharacterOffsetEnd=902 PartOfSpeech=NN Lemma=period NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=902 CharacterOffsetEnd=903 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Essentially))
+    (, ,)
+    (NP (NNS shippers))
+    (VP (VBP have)
+      (NP
+        (NP (DT an) (JJ extra) (CD 15) (NN %))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ does) (RB not)
+              (VP (VB have)
+                (S
+                  (VP (TO to)
+                    (VP (VB be)
+                      (VP (VBN used)
+                        (PP (IN during)
+                          (NP (DT the) (NN injection) (NN period)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-4)
+advmod(have-4, Essentially-1)
+punct(have-4, ,-2)
+nsubj(have-4, shippers-3)
+det(%-8, an-5)
+amod(%-8, extra-6)
+nummod(%-8, 15-7)
+dobj(have-4, %-8)
+nsubj(have-12, %-8)
+nsubjpass:xsubj(used-15, %-8)
+ref(%-8, that-9)
+aux(have-12, does-10)
+neg(have-12, not-11)
+acl:relcl(%-8, have-12)
+mark(used-15, to-13)
+auxpass(used-15, be-14)
+xcomp(have-12, used-15)
+case(period-19, during-16)
+det(period-19, the-17)
+compound(period-19, injection-18)
+nmod:during(used-15, period-19)
+punct(have-4, .-20)
+
+Extracted the following NER entity mentions:
+15%	PERCENT
+
+Sentence #10 (29 tokens):
+Please note, Shippers can inject all year around on TCO (November is
+5% and December through March is 10%... typically not done).
+
+Tokens:
+[Text=Please CharacterOffsetBegin=904 CharacterOffsetEnd=910 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=note CharacterOffsetBegin=911 CharacterOffsetEnd=915 PartOfSpeech=NN Lemma=note NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=915 CharacterOffsetEnd=916 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Shippers CharacterOffsetBegin=917 CharacterOffsetEnd=925 PartOfSpeech=NNP Lemma=Shippers NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=926 CharacterOffsetEnd=929 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=inject CharacterOffsetBegin=930 CharacterOffsetEnd=936 PartOfSpeech=VB Lemma=inject NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=937 CharacterOffsetEnd=940 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=year CharacterOffsetBegin=941 CharacterOffsetEnd=945 PartOfSpeech=NN Lemma=year NamedEntityTag=O]
+[Text=around CharacterOffsetBegin=946 CharacterOffsetEnd=952 PartOfSpeech=IN Lemma=around NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=953 CharacterOffsetEnd=955 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=TCO CharacterOffsetBegin=956 CharacterOffsetEnd=959 PartOfSpeech=NN Lemma=tco NamedEntityTag=ORGANIZATION]
+[Text=-LRB- CharacterOffsetBegin=960 CharacterOffsetEnd=961 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=November CharacterOffsetBegin=961 CharacterOffsetEnd=969 PartOfSpeech=NNP Lemma=November NamedEntityTag=DATE NormalizedNamedEntityTag=****11]
+[Text=is CharacterOffsetBegin=970 CharacterOffsetEnd=972 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=5 CharacterOffsetBegin=973 CharacterOffsetEnd=974 PartOfSpeech=CD Lemma=5 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%5.0]
+[Text=% CharacterOffsetBegin=974 CharacterOffsetEnd=975 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%5.0]
+[Text=and CharacterOffsetBegin=976 CharacterOffsetEnd=979 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=December CharacterOffsetBegin=980 CharacterOffsetEnd=988 PartOfSpeech=NNP Lemma=December NamedEntityTag=DATE NormalizedNamedEntityTag=****12]
+[Text=through CharacterOffsetBegin=989 CharacterOffsetEnd=996 PartOfSpeech=IN Lemma=through NamedEntityTag=O]
+[Text=March CharacterOffsetBegin=997 CharacterOffsetEnd=1002 PartOfSpeech=NNP Lemma=March NamedEntityTag=DATE NormalizedNamedEntityTag=****03]
+[Text=is CharacterOffsetBegin=1003 CharacterOffsetEnd=1005 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=10 CharacterOffsetBegin=1006 CharacterOffsetEnd=1008 PartOfSpeech=CD Lemma=10 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%10.0]
+[Text=% CharacterOffsetBegin=1008 CharacterOffsetEnd=1009 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%10.0]
+[Text=... CharacterOffsetBegin=1009 CharacterOffsetEnd=1012 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=typically CharacterOffsetBegin=1013 CharacterOffsetEnd=1022 PartOfSpeech=RB Lemma=typically NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=1023 CharacterOffsetEnd=1026 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=done CharacterOffsetBegin=1027 CharacterOffsetEnd=1031 PartOfSpeech=VBN Lemma=do NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=1031 CharacterOffsetEnd=1032 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1032 CharacterOffsetEnd=1033 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (VB Please)
+        (NP (NN note))))
+    (, ,)
+    (NP (NNP Shippers))
+    (VP (MD can)
+      (VP (VB inject)
+        (NP (DT all) (NN year))
+        (PP (IN around)
+          (PP (IN on)
+            (NP (NN TCO))))
+        (PRN (-LRB- -LRB-)
+          (S
+            (S
+              (NP (NNP November))
+              (VP (VBZ is)
+                (NP (CD 5) (NN %))))
+            (CC and)
+            (S
+              (NP
+                (NP (NNP December))
+                (PP (IN through)
+                  (NP (NNP March))))
+              (VP (VBZ is)
+                (NP (CD 10) (NN %))
+                (: ...)
+                (FRAG
+                  (ADJP (RB typically) (RB not) (VBN done))))))
+          (-RRB- -RRB-))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, inject-6)
+ccomp(inject-6, Please-1)
+dobj(Please-1, note-2)
+punct(inject-6, ,-3)
+nsubj(inject-6, Shippers-4)
+aux(inject-6, can-5)
+det(year-8, all-7)
+nmod:tmod(inject-6, year-8)
+case(TCO-11, around-9)
+case(TCO-11, on-10)
+nmod:on(inject-6, TCO-11)
+punct(%-16, -LRB--12)
+nsubj(%-16, November-13)
+cop(%-16, is-14)
+nummod(%-16, 5-15)
+parataxis(inject-6, %-16)
+cc(%-16, and-17)
+nsubj(%-23, December-18)
+case(March-20, through-19)
+nmod:through(December-18, March-20)
+cop(%-23, is-21)
+nummod(%-23, 10-22)
+parataxis(inject-6, %-23)
+conj:and(%-16, %-23)
+punct(%-23, ...-24)
+advmod(done-27, typically-25)
+neg(done-27, not-26)
+dep(%-23, done-27)
+punct(%-16, -RRB--28)
+punct(inject-6, .-29)
+
+Extracted the following NER entity mentions:
+TCO	ORGANIZATION
+November	DATE
+5%	PERCENT
+December	DATE
+March	DATE
+10%	PERCENT
+
+Sentence #11 (19 tokens):
+For example, Shippers do not have to inject the ratchet amount in April
+(15%).
+
+Tokens:
+[Text=For CharacterOffsetBegin=1035 CharacterOffsetEnd=1038 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=example CharacterOffsetBegin=1039 CharacterOffsetEnd=1046 PartOfSpeech=NN Lemma=example NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1046 CharacterOffsetEnd=1047 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Shippers CharacterOffsetBegin=1048 CharacterOffsetEnd=1056 PartOfSpeech=NNP Lemma=Shippers NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=1057 CharacterOffsetEnd=1059 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=1060 CharacterOffsetEnd=1063 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=1064 CharacterOffsetEnd=1068 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1069 CharacterOffsetEnd=1071 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=inject CharacterOffsetBegin=1072 CharacterOffsetEnd=1078 PartOfSpeech=VB Lemma=inject NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1079 CharacterOffsetEnd=1082 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=ratchet CharacterOffsetBegin=1083 CharacterOffsetEnd=1090 PartOfSpeech=NN Lemma=ratchet NamedEntityTag=O]
+[Text=amount CharacterOffsetBegin=1091 CharacterOffsetEnd=1097 PartOfSpeech=NN Lemma=amount NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=1098 CharacterOffsetEnd=1100 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=April CharacterOffsetBegin=1101 CharacterOffsetEnd=1106 PartOfSpeech=NNP Lemma=April NamedEntityTag=DATE NormalizedNamedEntityTag=****04]
+[Text=-LRB- CharacterOffsetBegin=1107 CharacterOffsetEnd=1108 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=15 CharacterOffsetBegin=1108 CharacterOffsetEnd=1110 PartOfSpeech=CD Lemma=15 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%15.0]
+[Text=% CharacterOffsetBegin=1110 CharacterOffsetEnd=1111 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%15.0]
+[Text=-RRB- CharacterOffsetBegin=1111 CharacterOffsetEnd=1112 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1112 CharacterOffsetEnd=1113 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN For)
+      (NP (NN example)))
+    (, ,)
+    (NP (NNP Shippers))
+    (VP (VBP do) (RB not)
+      (VP (VB have)
+        (S
+          (VP (TO to)
+            (VP (VB inject)
+              (NP (DT the) (NN ratchet) (NN amount))
+              (PP (IN in)
+                (NP
+                  (NP (NNP April))
+                  (PRN (-LRB- -LRB-)
+                    (NP (CD 15) (NN %))
+                    (-RRB- -RRB-)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-7)
+case(example-2, For-1)
+nmod:for(have-7, example-2)
+punct(have-7, ,-3)
+nsubj(have-7, Shippers-4)
+nsubj:xsubj(inject-9, Shippers-4)
+aux(have-7, do-5)
+neg(have-7, not-6)
+mark(inject-9, to-8)
+xcomp(have-7, inject-9)
+det(amount-12, the-10)
+compound(amount-12, ratchet-11)
+dobj(inject-9, amount-12)
+case(April-14, in-13)
+nmod:in(inject-9, April-14)
+punct(%-17, -LRB--15)
+nummod(%-17, 15-16)
+appos(April-14, %-17)
+punct(%-17, -RRB--18)
+punct(have-7, .-19)
+
+Extracted the following NER entity mentions:
+April	DATE
+15%	PERCENT
+
+Sentence #12 (54 tokens):
+If the Shipper falls behind on the STOI, and the Shipper needs to
+catch up on STOI in the future months, and the Shipper wants to go over the
+ratchet level for that month, then TCO will need to give its prior approval
+(I sound like a lawyer).
+
+Tokens:
+[Text=If CharacterOffsetBegin=1114 CharacterOffsetEnd=1116 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1117 CharacterOffsetEnd=1120 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Shipper CharacterOffsetBegin=1121 CharacterOffsetEnd=1128 PartOfSpeech=NN Lemma=shipper NamedEntityTag=O]
+[Text=falls CharacterOffsetBegin=1129 CharacterOffsetEnd=1134 PartOfSpeech=VBZ Lemma=fall NamedEntityTag=O]
+[Text=behind CharacterOffsetBegin=1135 CharacterOffsetEnd=1141 PartOfSpeech=IN Lemma=behind NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=1142 CharacterOffsetEnd=1144 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1145 CharacterOffsetEnd=1148 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=STOI CharacterOffsetBegin=1149 CharacterOffsetEnd=1153 PartOfSpeech=NNP Lemma=STOI NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1153 CharacterOffsetEnd=1154 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1155 CharacterOffsetEnd=1158 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1159 CharacterOffsetEnd=1162 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Shipper CharacterOffsetBegin=1163 CharacterOffsetEnd=1170 PartOfSpeech=NNP Lemma=Shipper NamedEntityTag=ORGANIZATION]
+[Text=needs CharacterOffsetBegin=1171 CharacterOffsetEnd=1176 PartOfSpeech=VBZ Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1177 CharacterOffsetEnd=1179 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=catch CharacterOffsetBegin=1180 CharacterOffsetEnd=1185 PartOfSpeech=VB Lemma=catch NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=1186 CharacterOffsetEnd=1188 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=1189 CharacterOffsetEnd=1191 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=STOI CharacterOffsetBegin=1192 CharacterOffsetEnd=1196 PartOfSpeech=NN Lemma=stoi NamedEntityTag=ORGANIZATION]
+[Text=in CharacterOffsetBegin=1197 CharacterOffsetEnd=1199 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1200 CharacterOffsetEnd=1203 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=future CharacterOffsetBegin=1204 CharacterOffsetEnd=1210 PartOfSpeech=JJ Lemma=future NamedEntityTag=O]
+[Text=months CharacterOffsetBegin=1211 CharacterOffsetEnd=1217 PartOfSpeech=NNS Lemma=month NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1217 CharacterOffsetEnd=1218 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1219 CharacterOffsetEnd=1222 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1223 CharacterOffsetEnd=1226 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Shipper CharacterOffsetBegin=1227 CharacterOffsetEnd=1234 PartOfSpeech=NN Lemma=shipper NamedEntityTag=O]
+[Text=wants CharacterOffsetBegin=1235 CharacterOffsetEnd=1240 PartOfSpeech=VBZ Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1241 CharacterOffsetEnd=1243 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=1244 CharacterOffsetEnd=1246 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=1247 CharacterOffsetEnd=1251 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1252 CharacterOffsetEnd=1255 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=ratchet CharacterOffsetBegin=1256 CharacterOffsetEnd=1263 PartOfSpeech=NN Lemma=ratchet NamedEntityTag=O]
+[Text=level CharacterOffsetBegin=1264 CharacterOffsetEnd=1269 PartOfSpeech=NN Lemma=level NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=1270 CharacterOffsetEnd=1273 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=1274 CharacterOffsetEnd=1278 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=month CharacterOffsetBegin=1279 CharacterOffsetEnd=1284 PartOfSpeech=NN Lemma=month NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1284 CharacterOffsetEnd=1285 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=1286 CharacterOffsetEnd=1290 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=TCO CharacterOffsetBegin=1291 CharacterOffsetEnd=1294 PartOfSpeech=NNP Lemma=TCO NamedEntityTag=ORGANIZATION]
+[Text=will CharacterOffsetBegin=1295 CharacterOffsetEnd=1299 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=1300 CharacterOffsetEnd=1304 PartOfSpeech=VB Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1305 CharacterOffsetEnd=1307 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=give CharacterOffsetBegin=1308 CharacterOffsetEnd=1312 PartOfSpeech=VB Lemma=give NamedEntityTag=O]
+[Text=its CharacterOffsetBegin=1313 CharacterOffsetEnd=1316 PartOfSpeech=PRP$ Lemma=its NamedEntityTag=O]
+[Text=prior CharacterOffsetBegin=1317 CharacterOffsetEnd=1322 PartOfSpeech=JJ Lemma=prior NamedEntityTag=O]
+[Text=approval CharacterOffsetBegin=1323 CharacterOffsetEnd=1331 PartOfSpeech=NN Lemma=approval NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=1332 CharacterOffsetEnd=1333 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=1333 CharacterOffsetEnd=1334 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=sound CharacterOffsetBegin=1335 CharacterOffsetEnd=1340 PartOfSpeech=VBP Lemma=sound NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=1341 CharacterOffsetEnd=1345 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=1346 CharacterOffsetEnd=1347 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=lawyer CharacterOffsetBegin=1348 CharacterOffsetEnd=1354 PartOfSpeech=NN Lemma=lawyer NamedEntityTag=TITLE]
+[Text=-RRB- CharacterOffsetBegin=1354 CharacterOffsetEnd=1355 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1355 CharacterOffsetEnd=1356 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (SBAR (IN If)
+        (S
+          (S
+            (NP (DT the) (NN Shipper))
+            (VP (VBZ falls)
+              (PP (IN behind)
+                (PP (IN on)
+                  (NP (DT the) (NNP STOI))))))
+          (, ,)
+          (CC and)
+          (S
+            (S
+              (NP (DT the) (NNP Shipper))
+              (VP (VBZ needs)
+                (S
+                  (VP (TO to)
+                    (VP (VB catch)
+                      (PRT (RP up))
+                      (PP (IN on)
+                        (NP
+                          (NP (NN STOI))
+                          (PP (IN in)
+                            (NP (DT the) (JJ future) (NNS months))))))))))
+            (, ,)
+            (CC and)
+            (S
+              (NP (DT the) (NN Shipper))
+              (VP (VBZ wants)
+                (S
+                  (VP (TO to)
+                    (VP (VB go)
+                      (PP (IN over)
+                        (NP
+                          (NP (DT the) (NN ratchet) (NN level))
+                          (PP (IN for)
+                            (NP (DT that) (NN month)))))))))))))
+      (, ,)
+      (ADVP (RB then))
+      (NP (NNP TCO))
+      (VP (MD will)
+        (VP (VB need)
+          (S
+            (VP (TO to)
+              (VP (VB give)
+                (NP (PRP$ its) (JJ prior) (NN approval))))))))
+    (PRN (-LRB- -LRB-)
+      (S
+        (NP (PRP I))
+        (VP (VBP sound)
+          (PP (IN like)
+            (NP (DT a) (NN lawyer)))))
+      (-RRB- -RRB-))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, need-41)
+mark(falls-4, If-1)
+det(Shipper-3, the-2)
+nsubj(falls-4, Shipper-3)
+advcl:if(need-41, falls-4)
+case(STOI-8, behind-5)
+case(STOI-8, on-6)
+det(STOI-8, the-7)
+nmod:on(falls-4, STOI-8)
+punct(falls-4, ,-9)
+cc(falls-4, and-10)
+det(Shipper-12, the-11)
+nsubj(needs-13, Shipper-12)
+nsubj:xsubj(catch-15, Shipper-12)
+conj:and(falls-4, needs-13)
+advcl:if(need-41, needs-13)
+mark(catch-15, to-14)
+xcomp(needs-13, catch-15)
+compound:prt(catch-15, up-16)
+case(STOI-18, on-17)
+nmod:on(catch-15, STOI-18)
+case(months-22, in-19)
+det(months-22, the-20)
+amod(months-22, future-21)
+nmod:in(STOI-18, months-22)
+punct(needs-13, ,-23)
+cc(needs-13, and-24)
+det(Shipper-26, the-25)
+nsubj(wants-27, Shipper-26)
+nsubj:xsubj(go-29, Shipper-26)
+conj:and(falls-4, wants-27)
+conj:and(needs-13, wants-27)
+mark(go-29, to-28)
+xcomp(wants-27, go-29)
+case(level-33, over-30)
+det(level-33, the-31)
+compound(level-33, ratchet-32)
+nmod:over(go-29, level-33)
+case(month-36, for-34)
+det(month-36, that-35)
+nmod:for(level-33, month-36)
+punct(need-41, ,-37)
+advmod(TCO-39, then-38)
+nsubj(need-41, TCO-39)
+nsubj:xsubj(give-43, TCO-39)
+aux(need-41, will-40)
+mark(give-43, to-42)
+xcomp(need-41, give-43)
+nmod:poss(approval-46, its-44)
+amod(approval-46, prior-45)
+dobj(give-43, approval-46)
+punct(sound-49, -LRB--47)
+nsubj(sound-49, I-48)
+dep(need-41, sound-49)
+case(lawyer-52, like-50)
+det(lawyer-52, a-51)
+nmod:like(sound-49, lawyer-52)
+punct(sound-49, -RRB--53)
+punct(need-41, .-54)
+
+Extracted the following NER entity mentions:
+Shipper	ORGANIZATION
+STOI	ORGANIZATION
+TCO	ORGANIZATION
+lawyer	TITLE
+
+Sentence #13 (29 tokens):
+Typically, TCO is more willing to approve
+overinjections in the early months of the injection session versus
+overinjecting in September and October, when TCO is full.
+
+Tokens:
+[Text=Typically CharacterOffsetBegin=1357 CharacterOffsetEnd=1366 PartOfSpeech=RB Lemma=typically NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1366 CharacterOffsetEnd=1367 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=TCO CharacterOffsetBegin=1368 CharacterOffsetEnd=1371 PartOfSpeech=NNP Lemma=TCO NamedEntityTag=ORGANIZATION]
+[Text=is CharacterOffsetBegin=1372 CharacterOffsetEnd=1374 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=1375 CharacterOffsetEnd=1379 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=willing CharacterOffsetBegin=1380 CharacterOffsetEnd=1387 PartOfSpeech=JJ Lemma=willing NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1388 CharacterOffsetEnd=1390 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=approve CharacterOffsetBegin=1391 CharacterOffsetEnd=1398 PartOfSpeech=VB Lemma=approve NamedEntityTag=O]
+[Text=overinjections CharacterOffsetBegin=1399 CharacterOffsetEnd=1413 PartOfSpeech=NNS Lemma=overinjection NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=1414 CharacterOffsetEnd=1416 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1417 CharacterOffsetEnd=1420 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=early CharacterOffsetBegin=1421 CharacterOffsetEnd=1426 PartOfSpeech=JJ Lemma=early NamedEntityTag=O]
+[Text=months CharacterOffsetBegin=1427 CharacterOffsetEnd=1433 PartOfSpeech=NNS Lemma=month NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=1434 CharacterOffsetEnd=1436 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1437 CharacterOffsetEnd=1440 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=injection CharacterOffsetBegin=1441 CharacterOffsetEnd=1450 PartOfSpeech=NN Lemma=injection NamedEntityTag=O]
+[Text=session CharacterOffsetBegin=1451 CharacterOffsetEnd=1458 PartOfSpeech=NN Lemma=session NamedEntityTag=O]
+[Text=versus CharacterOffsetBegin=1459 CharacterOffsetEnd=1465 PartOfSpeech=CC Lemma=versus NamedEntityTag=O]
+[Text=overinjecting CharacterOffsetBegin=1466 CharacterOffsetEnd=1479 PartOfSpeech=NN Lemma=overinjecting NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=1480 CharacterOffsetEnd=1482 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=September CharacterOffsetBegin=1483 CharacterOffsetEnd=1492 PartOfSpeech=NNP Lemma=September NamedEntityTag=DATE NormalizedNamedEntityTag=****09]
+[Text=and CharacterOffsetBegin=1493 CharacterOffsetEnd=1496 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=October CharacterOffsetBegin=1497 CharacterOffsetEnd=1504 PartOfSpeech=NNP Lemma=October NamedEntityTag=DATE NormalizedNamedEntityTag=****10]
+[Text=, CharacterOffsetBegin=1504 CharacterOffsetEnd=1505 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=1506 CharacterOffsetEnd=1510 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=TCO CharacterOffsetBegin=1511 CharacterOffsetEnd=1514 PartOfSpeech=NNP Lemma=TCO NamedEntityTag=ORGANIZATION]
+[Text=is CharacterOffsetBegin=1515 CharacterOffsetEnd=1517 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=full CharacterOffsetBegin=1518 CharacterOffsetEnd=1522 PartOfSpeech=JJ Lemma=full NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1522 CharacterOffsetEnd=1523 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Typically))
+    (, ,)
+    (NP (NNP TCO))
+    (VP (VBZ is)
+      (ADJP (RBR more) (JJ willing)
+        (S
+          (VP (TO to)
+            (VP (VB approve)
+              (NP (NNS overinjections))
+              (PP (IN in)
+                (NP
+                  (NP (DT the) (JJ early) (NNS months))
+                  (PP (IN of)
+                    (NP
+                      (NP (DT the) (NN injection) (NN session))
+                      (PP (CC versus)
+                        (NP
+                          (NP (NN overinjecting))
+                          (PP (IN in)
+                            (NP (NNP September)
+                              (CC and)
+                              (NNP October)))))))))))))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (NNP TCO))
+          (VP (VBZ is)
+            (ADJP (JJ full))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, willing-6)
+advmod(willing-6, Typically-1)
+punct(willing-6, ,-2)
+nsubj(willing-6, TCO-3)
+nsubj:xsubj(approve-8, TCO-3)
+cop(willing-6, is-4)
+advmod(willing-6, more-5)
+mark(approve-8, to-7)
+xcomp(willing-6, approve-8)
+dobj(approve-8, overinjections-9)
+case(months-13, in-10)
+det(months-13, the-11)
+amod(months-13, early-12)
+nmod:in(approve-8, months-13)
+case(session-17, of-14)
+det(session-17, the-15)
+compound(session-17, injection-16)
+nmod:of(months-13, session-17)
+case(overinjecting-19, versus-18)
+nmod:versus(session-17, overinjecting-19)
+case(September-21, in-20)
+nmod:in(overinjecting-19, September-21)
+cc(September-21, and-22)
+nmod:in(overinjecting-19, October-23)
+conj:and(September-21, October-23)
+punct(willing-6, ,-24)
+advmod(full-28, when-25)
+nsubj(full-28, TCO-26)
+cop(full-28, is-27)
+advcl(willing-6, full-28)
+punct(willing-6, .-29)
+
+Extracted the following NER entity mentions:
+TCO	ORGANIZATION
+September	DATE
+October	DATE
+TCO	ORGANIZATION
+
+Sentence #14 (17 tokens):
+Some other basic rules;
+
+Shippers do not have to fill storage 100% by October.
+
+Tokens:
+[Text=Some CharacterOffsetBegin=1526 CharacterOffsetEnd=1530 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=1531 CharacterOffsetEnd=1536 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=basic CharacterOffsetBegin=1537 CharacterOffsetEnd=1542 PartOfSpeech=JJ Lemma=basic NamedEntityTag=O]
+[Text=rules CharacterOffsetBegin=1543 CharacterOffsetEnd=1548 PartOfSpeech=NNS Lemma=rule NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=1548 CharacterOffsetEnd=1549 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=Shippers CharacterOffsetBegin=1551 CharacterOffsetEnd=1559 PartOfSpeech=NNS Lemma=shipper NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=1560 CharacterOffsetEnd=1562 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=1563 CharacterOffsetEnd=1566 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=1567 CharacterOffsetEnd=1571 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1572 CharacterOffsetEnd=1574 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=fill CharacterOffsetBegin=1575 CharacterOffsetEnd=1579 PartOfSpeech=VB Lemma=fill NamedEntityTag=O]
+[Text=storage CharacterOffsetBegin=1580 CharacterOffsetEnd=1587 PartOfSpeech=NN Lemma=storage NamedEntityTag=O]
+[Text=100 CharacterOffsetBegin=1588 CharacterOffsetEnd=1591 PartOfSpeech=CD Lemma=100 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%100.0]
+[Text=% CharacterOffsetBegin=1591 CharacterOffsetEnd=1592 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%100.0]
+[Text=by CharacterOffsetBegin=1593 CharacterOffsetEnd=1595 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=October CharacterOffsetBegin=1596 CharacterOffsetEnd=1603 PartOfSpeech=NNP Lemma=October NamedEntityTag=DATE NormalizedNamedEntityTag=****10]
+[Text=. CharacterOffsetBegin=1603 CharacterOffsetEnd=1604 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (DT Some) (JJ other) (JJ basic) (NNS rules))
+    (: ;)
+    (S
+      (NP (NNS Shippers))
+      (VP (VBP do) (RB not)
+        (VP (VB have)
+          (S
+            (VP (TO to)
+              (VP (VB fill)
+                (NP
+                  (NP (NN storage))
+                  (ADJP (CD 100) (NN %)))
+                (PP (IN by)
+                  (NP (NNP October)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, rules-4)
+det(rules-4, Some-1)
+amod(rules-4, other-2)
+amod(rules-4, basic-3)
+punct(rules-4, ;-5)
+nsubj(have-9, Shippers-6)
+nsubj:xsubj(fill-11, Shippers-6)
+aux(have-9, do-7)
+neg(have-9, not-8)
+dep(rules-4, have-9)
+mark(fill-11, to-10)
+xcomp(have-9, fill-11)
+dobj(fill-11, storage-12)
+compound(%-14, 100-13)
+amod(storage-12, %-14)
+case(October-16, by-15)
+nmod:by(fill-11, October-16)
+punct(rules-4, .-17)
+
+Extracted the following NER entity mentions:
+100%	PERCENT
+October	DATE
+
+Sentence #15 (21 tokens):
+Shippers cannot have more than  60% in storage by June 1st, unless
+overinjection is approved by TCO.
+
+Tokens:
+[Text=Shippers CharacterOffsetBegin=1606 CharacterOffsetEnd=1614 PartOfSpeech=NNS Lemma=shipper NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=1615 CharacterOffsetEnd=1618 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=1618 CharacterOffsetEnd=1621 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=1622 CharacterOffsetEnd=1626 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=1627 CharacterOffsetEnd=1631 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=1632 CharacterOffsetEnd=1636 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=60 CharacterOffsetBegin=1638 CharacterOffsetEnd=1640 PartOfSpeech=CD Lemma=60 NamedEntityTag=PERCENT NormalizedNamedEntityTag=>%60.0]
+[Text=% CharacterOffsetBegin=1640 CharacterOffsetEnd=1641 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=>%60.0]
+[Text=in CharacterOffsetBegin=1642 CharacterOffsetEnd=1644 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=storage CharacterOffsetBegin=1645 CharacterOffsetEnd=1652 PartOfSpeech=NN Lemma=storage NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=1653 CharacterOffsetEnd=1655 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=June CharacterOffsetBegin=1656 CharacterOffsetEnd=1660 PartOfSpeech=NNP Lemma=June NamedEntityTag=DATE NormalizedNamedEntityTag=****0601]
+[Text=1st CharacterOffsetBegin=1661 CharacterOffsetEnd=1664 PartOfSpeech=CD Lemma=1st NamedEntityTag=DATE NormalizedNamedEntityTag=****0601]
+[Text=, CharacterOffsetBegin=1664 CharacterOffsetEnd=1665 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=unless CharacterOffsetBegin=1666 CharacterOffsetEnd=1672 PartOfSpeech=IN Lemma=unless NamedEntityTag=O]
+[Text=overinjection CharacterOffsetBegin=1673 CharacterOffsetEnd=1686 PartOfSpeech=NN Lemma=overinjection NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=1687 CharacterOffsetEnd=1689 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=approved CharacterOffsetBegin=1690 CharacterOffsetEnd=1698 PartOfSpeech=VBN Lemma=approve NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=1699 CharacterOffsetEnd=1701 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=TCO CharacterOffsetBegin=1702 CharacterOffsetEnd=1705 PartOfSpeech=NNP Lemma=TCO NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=1705 CharacterOffsetEnd=1706 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNS Shippers))
+    (VP (MD can) (RB not)
+      (VP (VB have)
+        (NP
+          (NP
+            (QP (JJR more) (IN than) (CD 60))
+            (NN %))
+          (PP (IN in)
+            (NP (NN storage))))
+        (PP (IN by)
+          (NP (NNP June) (CD 1st)))
+        (, ,)
+        (SBAR (IN unless)
+          (S
+            (NP (NN overinjection))
+            (VP (VBZ is)
+              (VP (VBN approved)
+                (PP (IN by)
+                  (NP (NNP TCO)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-4)
+nsubj(have-4, Shippers-1)
+aux(have-4, can-2)
+neg(have-4, not-3)
+advmod(60-7, more-5)
+mwe(more-5, than-6)
+nummod(%-8, 60-7)
+dobj(have-4, %-8)
+case(storage-10, in-9)
+nmod:in(%-8, storage-10)
+case(June-12, by-11)
+nmod:by(have-4, June-12)
+nummod(June-12, 1st-13)
+punct(have-4, ,-14)
+mark(approved-18, unless-15)
+nsubjpass(approved-18, overinjection-16)
+auxpass(approved-18, is-17)
+advcl:unless(have-4, approved-18)
+case(TCO-20, by-19)
+nmod:agent(approved-18, TCO-20)
+punct(have-4, .-21)
+
+Extracted the following NER entity mentions:
+60%	PERCENT
+June 1st	DATE
+TCO	ORGANIZATION
+
+Sentence #16 (22 tokens):
+Shippers can have daily net withdrawals in the summer, and it works the same
+way it did in the Winter.
+
+Tokens:
+[Text=Shippers CharacterOffsetBegin=1708 CharacterOffsetEnd=1716 PartOfSpeech=NNS Lemma=shipper NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=1717 CharacterOffsetEnd=1720 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=1721 CharacterOffsetEnd=1725 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=daily CharacterOffsetBegin=1726 CharacterOffsetEnd=1731 PartOfSpeech=JJ Lemma=daily NamedEntityTag=O]
+[Text=net CharacterOffsetBegin=1732 CharacterOffsetEnd=1735 PartOfSpeech=NN Lemma=net NamedEntityTag=O]
+[Text=withdrawals CharacterOffsetBegin=1736 CharacterOffsetEnd=1747 PartOfSpeech=NNS Lemma=withdrawal NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=1748 CharacterOffsetEnd=1750 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1751 CharacterOffsetEnd=1754 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=summer CharacterOffsetBegin=1755 CharacterOffsetEnd=1761 PartOfSpeech=NN Lemma=summer NamedEntityTag=DATE NormalizedNamedEntityTag=summer ]
+[Text=, CharacterOffsetBegin=1761 CharacterOffsetEnd=1762 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1763 CharacterOffsetEnd=1766 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=1767 CharacterOffsetEnd=1769 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=works CharacterOffsetBegin=1770 CharacterOffsetEnd=1775 PartOfSpeech=VBZ Lemma=work NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1776 CharacterOffsetEnd=1779 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=same CharacterOffsetBegin=1780 CharacterOffsetEnd=1784 PartOfSpeech=JJ Lemma=same NamedEntityTag=O]
+[Text=way CharacterOffsetBegin=1785 CharacterOffsetEnd=1788 PartOfSpeech=NN Lemma=way NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=1789 CharacterOffsetEnd=1791 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=1792 CharacterOffsetEnd=1795 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=1796 CharacterOffsetEnd=1798 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1799 CharacterOffsetEnd=1802 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Winter CharacterOffsetBegin=1803 CharacterOffsetEnd=1809 PartOfSpeech=NNP Lemma=Winter NamedEntityTag=DATE NormalizedNamedEntityTag=Winter ]
+[Text=. CharacterOffsetBegin=1809 CharacterOffsetEnd=1810 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NNS Shippers))
+      (VP (MD can)
+        (VP (VB have)
+          (NP
+            (NP (JJ daily) (NN net) (NNS withdrawals))
+            (PP (IN in)
+              (NP (DT the) (NN summer)))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP it))
+      (VP (VBZ works)
+        (NP
+          (NP (DT the) (JJ same) (NN way))
+          (SBAR
+            (S
+              (NP (PRP it))
+              (VP (VBD did)
+                (PP (IN in)
+                  (NP (DT the) (NNP Winter)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-3)
+nsubj(have-3, Shippers-1)
+aux(have-3, can-2)
+amod(withdrawals-6, daily-4)
+compound(withdrawals-6, net-5)
+dobj(have-3, withdrawals-6)
+case(summer-9, in-7)
+det(summer-9, the-8)
+nmod:in(withdrawals-6, summer-9)
+punct(have-3, ,-10)
+cc(have-3, and-11)
+nsubj(works-13, it-12)
+conj:and(have-3, works-13)
+det(way-16, the-14)
+amod(way-16, same-15)
+dobj(works-13, way-16)
+nsubj(did-18, it-17)
+acl:relcl(way-16, did-18)
+case(Winter-21, in-19)
+det(Winter-21, the-20)
+nmod:in(did-18, Winter-21)
+punct(have-3, .-22)
+
+Extracted the following NER entity mentions:
+summer	DATE
+Winter	DATE
+
+Sentence #17 (12 tokens):
+Depending on the % SCQ, this will determine the
+MDWQ.
+
+Tokens:
+[Text=Depending CharacterOffsetBegin=1811 CharacterOffsetEnd=1820 PartOfSpeech=VBG Lemma=depend NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=1821 CharacterOffsetEnd=1823 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1824 CharacterOffsetEnd=1827 PartOfSpeech=DT Lemma=the NamedEntityTag=PERCENT NormalizedNamedEntityTag=%0.0]
+[Text=% CharacterOffsetBegin=1828 CharacterOffsetEnd=1829 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%0.0]
+[Text=SCQ CharacterOffsetBegin=1830 CharacterOffsetEnd=1833 PartOfSpeech=NN Lemma=scq NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1833 CharacterOffsetEnd=1834 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=1835 CharacterOffsetEnd=1839 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=1840 CharacterOffsetEnd=1844 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=determine CharacterOffsetBegin=1845 CharacterOffsetEnd=1854 PartOfSpeech=VB Lemma=determine NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1855 CharacterOffsetEnd=1858 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=MDWQ CharacterOffsetBegin=1859 CharacterOffsetEnd=1863 PartOfSpeech=NNP Lemma=MDWQ NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1863 CharacterOffsetEnd=1864 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (VBG Depending)
+      (PP (IN on)
+        (NP
+          (NP
+            (QP (DT the))
+            (NN %))
+          (NP (NN SCQ)))))
+    (, ,)
+    (NP (DT this))
+    (VP (MD will)
+      (VP (VB determine)
+        (NP (DT the) (NNP MDWQ))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, determine-9)
+case(%-4, Depending-1)
+case(%-4, on-2)
+nummod(%-4, the-3)
+advcl:depending(determine-9, %-4)
+dep(%-4, SCQ-5)
+punct(determine-9, ,-6)
+nsubj(determine-9, this-7)
+aux(determine-9, will-8)
+det(MDWQ-11, the-10)
+dobj(determine-9, MDWQ-11)
+punct(determine-9, .-12)
+
+Extracted the following NER entity mentions:
+the %	PERCENT
+
+Sentence #18 (17 tokens):
+As of today, 8.3% is in the ground so Enron can net withdraw 54,324.
+
+Tokens:
+[Text=As CharacterOffsetBegin=1865 CharacterOffsetEnd=1867 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=1868 CharacterOffsetEnd=1870 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=today CharacterOffsetBegin=1871 CharacterOffsetEnd=1876 PartOfSpeech=NN Lemma=today NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1876 CharacterOffsetEnd=1877 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=8.3 CharacterOffsetBegin=1878 CharacterOffsetEnd=1881 PartOfSpeech=CD Lemma=8.3 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%8.3]
+[Text=% CharacterOffsetBegin=1881 CharacterOffsetEnd=1882 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%8.3]
+[Text=is CharacterOffsetBegin=1883 CharacterOffsetEnd=1885 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=1886 CharacterOffsetEnd=1888 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1889 CharacterOffsetEnd=1892 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=ground CharacterOffsetBegin=1893 CharacterOffsetEnd=1899 PartOfSpeech=NN Lemma=ground NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=1900 CharacterOffsetEnd=1902 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=1903 CharacterOffsetEnd=1908 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=can CharacterOffsetBegin=1909 CharacterOffsetEnd=1912 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=net CharacterOffsetBegin=1913 CharacterOffsetEnd=1916 PartOfSpeech=VB Lemma=net NamedEntityTag=O]
+[Text=withdraw CharacterOffsetBegin=1917 CharacterOffsetEnd=1925 PartOfSpeech=VB Lemma=withdraw NamedEntityTag=O]
+[Text=54,324 CharacterOffsetBegin=1926 CharacterOffsetEnd=1932 PartOfSpeech=CD Lemma=54,324 NamedEntityTag=NUMBER NormalizedNamedEntityTag=54324.0]
+[Text=. CharacterOffsetBegin=1932 CharacterOffsetEnd=1933 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN As)
+      (PP (IN of)
+        (NP (NN today))))
+    (, ,)
+    (NP (CD 8.3) (NN %))
+    (VP (VBZ is)
+      (PP (IN in)
+        (NP (DT the) (NN ground)))
+      (SBAR (RB so)
+        (S
+          (NP (NNP Enron))
+          (VP (MD can)
+            (VP (VB net)
+              (VP (VB withdraw)
+                (NP (CD 54,324))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ground-10)
+case(today-3, As-1)
+mwe(As-1, of-2)
+nmod:as_of(ground-10, today-3)
+punct(ground-10, ,-4)
+nummod(%-6, 8.3-5)
+nsubj(ground-10, %-6)
+cop(ground-10, is-7)
+case(ground-10, in-8)
+det(ground-10, the-9)
+advmod(net-14, so-11)
+nsubj(net-14, Enron-12)
+aux(net-14, can-13)
+ccomp(ground-10, net-14)
+xcomp(net-14, withdraw-15)
+dobj(withdraw-15, 54,324-16)
+punct(ground-10, .-17)
+
+Extracted the following NER entity mentions:
+8.3%	PERCENT
+Enron	ORGANIZATION
+54,324	NUMBER
+
+Sentence #19 (41 tokens):
+Once Enron is between 10% to 20%, then the MDWQ is 70,521... but remember
+Enron's SST is only 54,324 until October 1st... so other transport will need
+to be used to avoid overrun charges.
+
+Tokens:
+[Text=Once CharacterOffsetBegin=1934 CharacterOffsetEnd=1938 PartOfSpeech=RB Lemma=once NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=1939 CharacterOffsetEnd=1944 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=is CharacterOffsetBegin=1945 CharacterOffsetEnd=1947 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=between CharacterOffsetBegin=1948 CharacterOffsetEnd=1955 PartOfSpeech=IN Lemma=between NamedEntityTag=O]
+[Text=10 CharacterOffsetBegin=1956 CharacterOffsetEnd=1958 PartOfSpeech=CD Lemma=10 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%10.0]
+[Text=% CharacterOffsetBegin=1958 CharacterOffsetEnd=1959 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%10.0]
+[Text=to CharacterOffsetBegin=1960 CharacterOffsetEnd=1962 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=20 CharacterOffsetBegin=1963 CharacterOffsetEnd=1965 PartOfSpeech=CD Lemma=20 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%20.0]
+[Text=% CharacterOffsetBegin=1965 CharacterOffsetEnd=1966 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%20.0]
+[Text=, CharacterOffsetBegin=1966 CharacterOffsetEnd=1967 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=1968 CharacterOffsetEnd=1972 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1973 CharacterOffsetEnd=1976 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=MDWQ CharacterOffsetBegin=1977 CharacterOffsetEnd=1981 PartOfSpeech=NN Lemma=mdwq NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=1982 CharacterOffsetEnd=1984 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=70,521 CharacterOffsetBegin=1985 CharacterOffsetEnd=1991 PartOfSpeech=CD Lemma=70,521 NamedEntityTag=NUMBER NormalizedNamedEntityTag=70521.0]
+[Text=... CharacterOffsetBegin=1991 CharacterOffsetEnd=1994 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=1995 CharacterOffsetEnd=1998 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=remember CharacterOffsetBegin=1999 CharacterOffsetEnd=2007 PartOfSpeech=VBP Lemma=remember NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=2008 CharacterOffsetEnd=2013 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=2013 CharacterOffsetEnd=2015 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=SST CharacterOffsetBegin=2016 CharacterOffsetEnd=2019 PartOfSpeech=NNP Lemma=SST NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=2020 CharacterOffsetEnd=2022 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=2023 CharacterOffsetEnd=2027 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=54,324 CharacterOffsetBegin=2028 CharacterOffsetEnd=2034 PartOfSpeech=CD Lemma=54,324 NamedEntityTag=NUMBER NormalizedNamedEntityTag=54324.0]
+[Text=until CharacterOffsetBegin=2035 CharacterOffsetEnd=2040 PartOfSpeech=IN Lemma=until NamedEntityTag=O]
+[Text=October CharacterOffsetBegin=2041 CharacterOffsetEnd=2048 PartOfSpeech=NNP Lemma=October NamedEntityTag=DATE NormalizedNamedEntityTag=****1001]
+[Text=1st CharacterOffsetBegin=2049 CharacterOffsetEnd=2052 PartOfSpeech=CD Lemma=1st NamedEntityTag=DATE NormalizedNamedEntityTag=****1001]
+[Text=... CharacterOffsetBegin=2052 CharacterOffsetEnd=2055 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=2056 CharacterOffsetEnd=2058 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=2059 CharacterOffsetEnd=2064 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=transport CharacterOffsetBegin=2065 CharacterOffsetEnd=2074 PartOfSpeech=NN Lemma=transport NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=2075 CharacterOffsetEnd=2079 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=2080 CharacterOffsetEnd=2084 PartOfSpeech=VB Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=2085 CharacterOffsetEnd=2087 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=2088 CharacterOffsetEnd=2090 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=used CharacterOffsetBegin=2091 CharacterOffsetEnd=2095 PartOfSpeech=VBN Lemma=use NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=2096 CharacterOffsetEnd=2098 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=avoid CharacterOffsetBegin=2099 CharacterOffsetEnd=2104 PartOfSpeech=VB Lemma=avoid NamedEntityTag=O]
+[Text=overrun CharacterOffsetBegin=2105 CharacterOffsetEnd=2112 PartOfSpeech=JJ Lemma=overrun NamedEntityTag=O]
+[Text=charges CharacterOffsetBegin=2113 CharacterOffsetEnd=2120 PartOfSpeech=NNS Lemma=charge NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=2120 CharacterOffsetEnd=2121 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (SBAR (RB Once)
+        (S
+          (NP (NNP Enron))
+          (VP (VBZ is)
+            (NP
+              (QP (IN between) (CD 10) (NN %) (TO to) (CD 20) (NN %))))))
+      (, ,)
+      (ADVP (RB then))
+      (NP (DT the) (NN MDWQ))
+      (VP
+        (VP (VBZ is)
+          (NP (CD 70,521)))
+        (: ...)
+        (CC but)
+        (VP (VBP remember)
+          (SBAR
+            (S
+              (NP
+                (NP (NNP Enron) (POS 's))
+                (NNP SST))
+              (VP (VBZ is)
+                (NP
+                  (NP
+                    (QP (RB only) (CD 54,324)))
+                  (PP (IN until)
+                    (NP (NNP October) (CD 1st))))))))))
+    (: ...)
+    (S
+      (NP (RB so) (JJ other) (NN transport))
+      (VP (MD will)
+        (VP (VB need)
+          (S
+            (VP (TO to)
+              (VP (VB be)
+                (VP (VBN used)
+                  (S
+                    (VP (TO to)
+                      (VP (VB avoid)
+                        (NP (JJ overrun) (NNS charges))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 70,521-15)
+advmod(%-9, Once-1)
+nsubj(%-9, Enron-2)
+cop(%-9, is-3)
+advmod(%-9, between-4)
+compound(%-9, 10-5)
+dep(%-9, %-6)
+dep(%-9, to-7)
+compound(%-9, 20-8)
+advcl(70,521-15, %-9)
+punct(70,521-15, ,-10)
+advmod(MDWQ-13, then-11)
+det(MDWQ-13, the-12)
+nsubj(70,521-15, MDWQ-13)
+nsubj(remember-18, MDWQ-13)
+cop(70,521-15, is-14)
+punct(70,521-15, ...-16)
+cc(70,521-15, but-17)
+conj:but(70,521-15, remember-18)
+nmod:poss(SST-21, Enron-19)
+case(Enron-19, 's-20)
+nsubj(54,324-24, SST-21)
+cop(54,324-24, is-22)
+advmod(54,324-24, only-23)
+ccomp(remember-18, 54,324-24)
+case(October-26, until-25)
+nmod:until(54,324-24, October-26)
+nummod(October-26, 1st-27)
+punct(70,521-15, ...-28)
+advmod(transport-31, so-29)
+amod(transport-31, other-30)
+nsubj(need-33, transport-31)
+nsubjpass:xsubj(used-36, transport-31)
+aux(need-33, will-32)
+parataxis(70,521-15, need-33)
+mark(used-36, to-34)
+auxpass(used-36, be-35)
+xcomp(need-33, used-36)
+mark(avoid-38, to-37)
+xcomp(used-36, avoid-38)
+amod(charges-40, overrun-39)
+dobj(avoid-38, charges-40)
+punct(70,521-15, .-41)
+
+Extracted the following NER entity mentions:
+Enron	ORGANIZATION
+10%	PERCENT
+20%	PERCENT
+70,521	NUMBER
+Enron	ORGANIZATION
+54,324	NUMBER
+October 1st	DATE
+
+Sentence #20 (10 tokens):
+Why do we care about all of this....
+
+Tokens:
+[Text=Why CharacterOffsetBegin=2124 CharacterOffsetEnd=2127 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=2128 CharacterOffsetEnd=2130 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=2131 CharacterOffsetEnd=2133 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=care CharacterOffsetBegin=2134 CharacterOffsetEnd=2138 PartOfSpeech=VB Lemma=care NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=2139 CharacterOffsetEnd=2144 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=2145 CharacterOffsetEnd=2148 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=2149 CharacterOffsetEnd=2151 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=2152 CharacterOffsetEnd=2156 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=2156 CharacterOffsetEnd=2159 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=2159 CharacterOffsetEnd=2160 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBP do)
+      (NP (PRP we))
+      (VP (VB care)
+        (PP (IN about)
+          (NP
+            (NP (DT all))
+            (PP (IN of)
+              (NP (DT this))
+              (: ...))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, care-4)
+advmod(care-4, Why-1)
+aux(care-4, do-2)
+nsubj(care-4, we-3)
+case(all-6, about-5)
+nmod:about(care-4, all-6)
+case(this-8, of-7)
+nmod:of(all-6, this-8)
+punct(this-8, ...-9)
+punct(care-4, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #21 (11 tokens):
+Enron wants to slow down on the injection into storage.
+
+Tokens:
+[Text=Enron CharacterOffsetBegin=2162 CharacterOffsetEnd=2167 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=wants CharacterOffsetBegin=2168 CharacterOffsetEnd=2173 PartOfSpeech=VBZ Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=2174 CharacterOffsetEnd=2176 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=slow CharacterOffsetBegin=2177 CharacterOffsetEnd=2181 PartOfSpeech=VB Lemma=slow NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=2182 CharacterOffsetEnd=2186 PartOfSpeech=RP Lemma=down NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=2187 CharacterOffsetEnd=2189 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=2190 CharacterOffsetEnd=2193 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=injection CharacterOffsetBegin=2194 CharacterOffsetEnd=2203 PartOfSpeech=NN Lemma=injection NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=2204 CharacterOffsetEnd=2208 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=storage CharacterOffsetBegin=2209 CharacterOffsetEnd=2216 PartOfSpeech=NN Lemma=storage NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=2216 CharacterOffsetEnd=2217 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Enron))
+    (VP (VBZ wants)
+      (S
+        (VP (TO to)
+          (VP (VB slow)
+            (PRT (RP down))
+            (PP (IN on)
+              (NP (DT the) (NN injection)))
+            (PP (IN into)
+              (NP (NN storage)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, wants-2)
+nsubj(wants-2, Enron-1)
+nsubj:xsubj(slow-4, Enron-1)
+mark(slow-4, to-3)
+xcomp(wants-2, slow-4)
+compound:prt(slow-4, down-5)
+case(injection-8, on-6)
+det(injection-8, the-7)
+nmod:on(slow-4, injection-8)
+case(storage-10, into-9)
+nmod:into(slow-4, storage-10)
+punct(wants-2, .-11)
+
+Extracted the following NER entity mentions:
+Enron	ORGANIZATION
+
+Sentence #22 (26 tokens):
+Because choice still
+uses storage withdrawal in April and storage withdrawal is used for
+Hopewell... there may be days that we are net withdrawing.
+
+Tokens:
+[Text=Because CharacterOffsetBegin=2218 CharacterOffsetEnd=2225 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=choice CharacterOffsetBegin=2226 CharacterOffsetEnd=2232 PartOfSpeech=NN Lemma=choice NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=2233 CharacterOffsetEnd=2238 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=uses CharacterOffsetBegin=2239 CharacterOffsetEnd=2243 PartOfSpeech=VBZ Lemma=use NamedEntityTag=O]
+[Text=storage CharacterOffsetBegin=2244 CharacterOffsetEnd=2251 PartOfSpeech=NN Lemma=storage NamedEntityTag=O]
+[Text=withdrawal CharacterOffsetBegin=2252 CharacterOffsetEnd=2262 PartOfSpeech=NN Lemma=withdrawal NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=2263 CharacterOffsetEnd=2265 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=April CharacterOffsetBegin=2266 CharacterOffsetEnd=2271 PartOfSpeech=NNP Lemma=April NamedEntityTag=DATE NormalizedNamedEntityTag=****04]
+[Text=and CharacterOffsetBegin=2272 CharacterOffsetEnd=2275 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=storage CharacterOffsetBegin=2276 CharacterOffsetEnd=2283 PartOfSpeech=NN Lemma=storage NamedEntityTag=O]
+[Text=withdrawal CharacterOffsetBegin=2284 CharacterOffsetEnd=2294 PartOfSpeech=NN Lemma=withdrawal NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=2295 CharacterOffsetEnd=2297 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=used CharacterOffsetBegin=2298 CharacterOffsetEnd=2302 PartOfSpeech=VBN Lemma=use NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=2303 CharacterOffsetEnd=2306 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Hopewell CharacterOffsetBegin=2307 CharacterOffsetEnd=2315 PartOfSpeech=NNP Lemma=Hopewell NamedEntityTag=ORGANIZATION]
+[Text=... CharacterOffsetBegin=2315 CharacterOffsetEnd=2318 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=2319 CharacterOffsetEnd=2324 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=may CharacterOffsetBegin=2325 CharacterOffsetEnd=2328 PartOfSpeech=MD Lemma=may NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=2329 CharacterOffsetEnd=2331 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=days CharacterOffsetBegin=2332 CharacterOffsetEnd=2336 PartOfSpeech=NNS Lemma=day NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=2337 CharacterOffsetEnd=2341 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=2342 CharacterOffsetEnd=2344 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=2345 CharacterOffsetEnd=2348 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=net CharacterOffsetBegin=2349 CharacterOffsetEnd=2352 PartOfSpeech=JJ Lemma=net NamedEntityTag=O]
+[Text=withdrawing CharacterOffsetBegin=2353 CharacterOffsetEnd=2364 PartOfSpeech=VBG Lemma=withdraw NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=2364 CharacterOffsetEnd=2365 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN Because)
+      (S
+        (S
+          (NP (NN choice))
+          (ADVP (RB still))
+          (VP (VBZ uses)
+            (NP
+              (NP (NN storage) (NN withdrawal))
+              (PP (IN in)
+                (NP (NNP April))))))
+        (CC and)
+        (S
+          (NP (NN storage) (NN withdrawal))
+          (VP (VBZ is)
+            (VP (VBN used)
+              (PP (IN for)
+                (NP (NNP Hopewell))))))))
+    (: ...)
+    (NP (EX there))
+    (VP (MD may)
+      (VP (VB be)
+        (NP (NNS days))
+        (SBAR (IN that)
+          (S
+            (NP (PRP we))
+            (VP (VBP are)
+              (NP
+                (NP (JJ net))
+                (VP (VBG withdrawing))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, days-20)
+mark(uses-4, Because-1)
+nsubj(uses-4, choice-2)
+advmod(uses-4, still-3)
+advcl:because(days-20, uses-4)
+compound(withdrawal-6, storage-5)
+dobj(uses-4, withdrawal-6)
+case(April-8, in-7)
+nmod:in(withdrawal-6, April-8)
+cc(uses-4, and-9)
+compound(withdrawal-11, storage-10)
+nsubjpass(used-13, withdrawal-11)
+auxpass(used-13, is-12)
+conj:and(uses-4, used-13)
+advcl:because(days-20, used-13)
+case(Hopewell-15, for-14)
+nmod:for(used-13, Hopewell-15)
+punct(days-20, ...-16)
+expl(days-20, there-17)
+aux(days-20, may-18)
+cop(days-20, be-19)
+mark(net-24, that-21)
+nsubj(net-24, we-22)
+cop(net-24, are-23)
+ccomp(days-20, net-24)
+acl(net-24, withdrawing-25)
+punct(days-20, .-26)
+
+Extracted the following NER entity mentions:
+April	DATE
+Hopewell	ORGANIZATION
+
+Sentence #23 (14 tokens):
+As long as we stay
+below 54,324... there will not be penalties.
+
+Tokens:
+[Text=As CharacterOffsetBegin=2366 CharacterOffsetEnd=2368 PartOfSpeech=RB Lemma=as NamedEntityTag=O]
+[Text=long CharacterOffsetBegin=2369 CharacterOffsetEnd=2373 PartOfSpeech=RB Lemma=long NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=2374 CharacterOffsetEnd=2376 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=2377 CharacterOffsetEnd=2379 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=stay CharacterOffsetBegin=2380 CharacterOffsetEnd=2384 PartOfSpeech=VBP Lemma=stay NamedEntityTag=O]
+[Text=below CharacterOffsetBegin=2385 CharacterOffsetEnd=2390 PartOfSpeech=IN Lemma=below NamedEntityTag=O]
+[Text=54,324 CharacterOffsetBegin=2391 CharacterOffsetEnd=2397 PartOfSpeech=CD Lemma=54,324 NamedEntityTag=NUMBER NormalizedNamedEntityTag=<54324.0]
+[Text=... CharacterOffsetBegin=2397 CharacterOffsetEnd=2400 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=2401 CharacterOffsetEnd=2406 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=2407 CharacterOffsetEnd=2411 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=2412 CharacterOffsetEnd=2415 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=2416 CharacterOffsetEnd=2418 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=penalties CharacterOffsetBegin=2419 CharacterOffsetEnd=2428 PartOfSpeech=NNS Lemma=penalty NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=2428 CharacterOffsetEnd=2429 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR
+      (ADVP (RB As) (RB long))
+      (IN as)
+      (S
+        (NP (PRP we))
+        (VP (VBP stay)
+          (PP (IN below)
+            (NP (CD 54,324))))))
+    (: ...)
+    (NP (EX there))
+    (VP (MD will) (RB not)
+      (VP (VB be)
+        (NP (NNS penalties))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, penalties-13)
+advmod(long-2, As-1)
+advmod(stay-5, long-2)
+mark(stay-5, as-3)
+nsubj(stay-5, we-4)
+advcl:as(penalties-13, stay-5)
+case(54,324-7, below-6)
+nmod:below(stay-5, 54,324-7)
+punct(penalties-13, ...-8)
+expl(penalties-13, there-9)
+aux(penalties-13, will-10)
+neg(penalties-13, not-11)
+cop(penalties-13, be-12)
+punct(penalties-13, .-14)
+
+Extracted the following NER entity mentions:
+54,324	NUMBER
+
+Sentence #24 (26 tokens):
+If we go over this amount, we
+will need to get gas controls approval... the same drill we use for
+overinjections above 36,304.
+
+Tokens:
+[Text=If CharacterOffsetBegin=2430 CharacterOffsetEnd=2432 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=2433 CharacterOffsetEnd=2435 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=2436 CharacterOffsetEnd=2438 PartOfSpeech=VBP Lemma=go NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=2439 CharacterOffsetEnd=2443 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=2444 CharacterOffsetEnd=2448 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=amount CharacterOffsetBegin=2449 CharacterOffsetEnd=2455 PartOfSpeech=NN Lemma=amount NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=2455 CharacterOffsetEnd=2456 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=2457 CharacterOffsetEnd=2459 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=2460 CharacterOffsetEnd=2464 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=2465 CharacterOffsetEnd=2469 PartOfSpeech=VB Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=2470 CharacterOffsetEnd=2472 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=2473 CharacterOffsetEnd=2476 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=gas CharacterOffsetBegin=2477 CharacterOffsetEnd=2480 PartOfSpeech=NN Lemma=gas NamedEntityTag=O]
+[Text=controls CharacterOffsetBegin=2481 CharacterOffsetEnd=2489 PartOfSpeech=NNS Lemma=control NamedEntityTag=O]
+[Text=approval CharacterOffsetBegin=2490 CharacterOffsetEnd=2498 PartOfSpeech=NN Lemma=approval NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=2498 CharacterOffsetEnd=2501 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=2502 CharacterOffsetEnd=2505 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=same CharacterOffsetBegin=2506 CharacterOffsetEnd=2510 PartOfSpeech=JJ Lemma=same NamedEntityTag=O]
+[Text=drill CharacterOffsetBegin=2511 CharacterOffsetEnd=2516 PartOfSpeech=NN Lemma=drill NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=2517 CharacterOffsetEnd=2519 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=use CharacterOffsetBegin=2520 CharacterOffsetEnd=2523 PartOfSpeech=VBP Lemma=use NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=2524 CharacterOffsetEnd=2527 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=overinjections CharacterOffsetBegin=2528 CharacterOffsetEnd=2542 PartOfSpeech=NNS Lemma=overinjection NamedEntityTag=O]
+[Text=above CharacterOffsetBegin=2543 CharacterOffsetEnd=2548 PartOfSpeech=IN Lemma=above NamedEntityTag=O]
+[Text=36,304 CharacterOffsetBegin=2549 CharacterOffsetEnd=2555 PartOfSpeech=CD Lemma=36,304 NamedEntityTag=NUMBER NormalizedNamedEntityTag=>36304.0]
+[Text=. CharacterOffsetBegin=2555 CharacterOffsetEnd=2556 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP we))
+        (VP (VBP go)
+          (PP (IN over)
+            (NP (DT this) (NN amount))))))
+    (, ,)
+    (NP (PRP we))
+    (VP (MD will)
+      (VP (VB need)
+        (S
+          (VP (TO to)
+            (VP
+              (VP (VB get)
+                (NP (NN gas) (NNS controls) (NN approval)))
+              (: ...)
+              (NP
+                (NP (DT the) (JJ same) (NN drill))
+                (SBAR
+                  (S
+                    (NP (PRP we))
+                    (VP (VBP use)
+                      (PP (IN for)
+                        (NP
+                          (NP (NNS overinjections))
+                          (PP (IN above)
+                            (NP (CD 36,304))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, need-10)
+mark(go-3, If-1)
+nsubj(go-3, we-2)
+advcl:if(need-10, go-3)
+case(amount-6, over-4)
+det(amount-6, this-5)
+nmod:over(go-3, amount-6)
+punct(need-10, ,-7)
+nsubj(need-10, we-8)
+nsubj:xsubj(get-12, we-8)
+aux(need-10, will-9)
+mark(get-12, to-11)
+xcomp(need-10, get-12)
+compound(approval-15, gas-13)
+compound(approval-15, controls-14)
+dobj(get-12, approval-15)
+punct(get-12, ...-16)
+det(drill-19, the-17)
+amod(drill-19, same-18)
+dobj(get-12, drill-19)
+nsubj(use-21, we-20)
+acl:relcl(drill-19, use-21)
+case(overinjections-23, for-22)
+nmod:for(use-21, overinjections-23)
+case(36,304-25, above-24)
+nmod:above(overinjections-23, 36,304-25)
+punct(need-10, .-26)
+
+Extracted the following NER entity mentions:
+36,304	NUMBER
+
+Sentence #25 (15 tokens):
+TCO Schedulers... we have been doing a great job monitoring this so far.
+
+Tokens:
+[Text=TCO CharacterOffsetBegin=2558 CharacterOffsetEnd=2561 PartOfSpeech=NNP Lemma=TCO NamedEntityTag=ORGANIZATION]
+[Text=Schedulers CharacterOffsetBegin=2562 CharacterOffsetEnd=2572 PartOfSpeech=NNPS Lemma=Schedulers NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=2572 CharacterOffsetEnd=2575 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=2576 CharacterOffsetEnd=2578 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=2579 CharacterOffsetEnd=2583 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=2584 CharacterOffsetEnd=2588 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=doing CharacterOffsetBegin=2589 CharacterOffsetEnd=2594 PartOfSpeech=VBG Lemma=do NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=2595 CharacterOffsetEnd=2596 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=2597 CharacterOffsetEnd=2602 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=job CharacterOffsetBegin=2603 CharacterOffsetEnd=2606 PartOfSpeech=NN Lemma=job NamedEntityTag=O]
+[Text=monitoring CharacterOffsetBegin=2607 CharacterOffsetEnd=2617 PartOfSpeech=NN Lemma=monitoring NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=2618 CharacterOffsetEnd=2622 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=2623 CharacterOffsetEnd=2625 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=far CharacterOffsetBegin=2626 CharacterOffsetEnd=2629 PartOfSpeech=RB Lemma=far NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=2629 CharacterOffsetEnd=2630 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP TCO) (NNPS Schedulers))
+    (: ...)
+    (S
+      (NP (PRP we))
+      (VP (VBP have)
+        (VP (VBN been)
+          (VP (VBG doing)
+            (NP (DT a) (JJ great) (NN job) (NN monitoring))
+            (ADVP
+              (NP (DT this) (RB so))
+              (RB far))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Schedulers-2)
+compound(Schedulers-2, TCO-1)
+punct(Schedulers-2, ...-3)
+nsubj(doing-7, we-4)
+aux(doing-7, have-5)
+aux(doing-7, been-6)
+parataxis(Schedulers-2, doing-7)
+det(monitoring-11, a-8)
+amod(monitoring-11, great-9)
+compound(monitoring-11, job-10)
+dobj(doing-7, monitoring-11)
+det(so-13, this-12)
+nmod:npmod(far-14, so-13)
+advmod(doing-7, far-14)
+punct(Schedulers-2, .-15)
+
+Extracted the following NER entity mentions:
+TCO	ORGANIZATION
+
+Sentence #26 (10 tokens):
+April is a very hard month to monitor storage.
+
+Tokens:
+[Text=April CharacterOffsetBegin=2631 CharacterOffsetEnd=2636 PartOfSpeech=NNP Lemma=April NamedEntityTag=DATE NormalizedNamedEntityTag=****04]
+[Text=is CharacterOffsetBegin=2637 CharacterOffsetEnd=2639 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=2640 CharacterOffsetEnd=2641 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=2642 CharacterOffsetEnd=2646 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=hard CharacterOffsetBegin=2647 CharacterOffsetEnd=2651 PartOfSpeech=JJ Lemma=hard NamedEntityTag=O]
+[Text=month CharacterOffsetBegin=2652 CharacterOffsetEnd=2657 PartOfSpeech=NN Lemma=month NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=2658 CharacterOffsetEnd=2660 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=monitor CharacterOffsetBegin=2661 CharacterOffsetEnd=2668 PartOfSpeech=VB Lemma=monitor NamedEntityTag=O]
+[Text=storage CharacterOffsetBegin=2669 CharacterOffsetEnd=2676 PartOfSpeech=NN Lemma=storage NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=2676 CharacterOffsetEnd=2677 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP April))
+    (VP (VBZ is)
+      (NP (DT a)
+        (ADJP (RB very) (JJ hard))
+        (NN month)
+        (S
+          (VP (TO to)
+            (VP (VB monitor)
+              (NP (NN storage)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, month-6)
+nsubj(month-6, April-1)
+cop(month-6, is-2)
+det(month-6, a-3)
+advmod(hard-5, very-4)
+amod(month-6, hard-5)
+mark(monitor-8, to-7)
+acl:to(month-6, monitor-8)
+dobj(monitor-8, storage-9)
+punct(month-6, .-10)
+
+Extracted the following NER entity mentions:
+April	DATE
+
+Sentence #27 (35 tokens):
+Remember, if we have problems
+running Storage reports from our PC's or Laptops, TCO has the ability to run
+the reports and TCO will run it on the weekends if necessary.
+
+Tokens:
+[Text=Remember CharacterOffsetBegin=2678 CharacterOffsetEnd=2686 PartOfSpeech=VB Lemma=remember NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=2686 CharacterOffsetEnd=2687 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=2688 CharacterOffsetEnd=2690 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=2691 CharacterOffsetEnd=2693 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=2694 CharacterOffsetEnd=2698 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=problems CharacterOffsetBegin=2699 CharacterOffsetEnd=2707 PartOfSpeech=NNS Lemma=problem NamedEntityTag=O]
+[Text=running CharacterOffsetBegin=2708 CharacterOffsetEnd=2715 PartOfSpeech=VBG Lemma=run NamedEntityTag=O]
+[Text=Storage CharacterOffsetBegin=2716 CharacterOffsetEnd=2723 PartOfSpeech=NNP Lemma=Storage NamedEntityTag=O]
+[Text=reports CharacterOffsetBegin=2724 CharacterOffsetEnd=2731 PartOfSpeech=NNS Lemma=report NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=2732 CharacterOffsetEnd=2736 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=2737 CharacterOffsetEnd=2740 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=PC CharacterOffsetBegin=2741 CharacterOffsetEnd=2743 PartOfSpeech=NN Lemma=pc NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=2743 CharacterOffsetEnd=2745 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=2746 CharacterOffsetEnd=2748 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=Laptops CharacterOffsetBegin=2749 CharacterOffsetEnd=2756 PartOfSpeech=NNPS Lemma=Laptops NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=2756 CharacterOffsetEnd=2757 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=TCO CharacterOffsetBegin=2758 CharacterOffsetEnd=2761 PartOfSpeech=NNP Lemma=TCO NamedEntityTag=ORGANIZATION]
+[Text=has CharacterOffsetBegin=2762 CharacterOffsetEnd=2765 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=2766 CharacterOffsetEnd=2769 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=ability CharacterOffsetBegin=2770 CharacterOffsetEnd=2777 PartOfSpeech=NN Lemma=ability NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=2778 CharacterOffsetEnd=2780 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=run CharacterOffsetBegin=2781 CharacterOffsetEnd=2784 PartOfSpeech=VB Lemma=run NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=2785 CharacterOffsetEnd=2788 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=reports CharacterOffsetBegin=2789 CharacterOffsetEnd=2796 PartOfSpeech=NNS Lemma=report NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=2797 CharacterOffsetEnd=2800 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=TCO CharacterOffsetBegin=2801 CharacterOffsetEnd=2804 PartOfSpeech=NNP Lemma=TCO NamedEntityTag=ORGANIZATION]
+[Text=will CharacterOffsetBegin=2805 CharacterOffsetEnd=2809 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=run CharacterOffsetBegin=2810 CharacterOffsetEnd=2813 PartOfSpeech=VB Lemma=run NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=2814 CharacterOffsetEnd=2816 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=2817 CharacterOffsetEnd=2819 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=2820 CharacterOffsetEnd=2823 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=weekends CharacterOffsetBegin=2824 CharacterOffsetEnd=2832 PartOfSpeech=NNS Lemma=weekend NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=2833 CharacterOffsetEnd=2835 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=necessary CharacterOffsetBegin=2836 CharacterOffsetEnd=2845 PartOfSpeech=JJ Lemma=necessary NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=2845 CharacterOffsetEnd=2846 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (S
+        (VP (VB Remember)))
+      (, ,)
+      (SBAR (IN if)
+        (S
+          (NP (PRP we))
+          (VP (VBP have)
+            (NP
+              (NP (NNS problems))
+              (VP (VBG running)
+                (NP (NNP Storage) (NNS reports))
+                (PP (IN from)
+                  (NP
+                    (NP (PRP$ our) (NN PC) (POS 's))
+                    (CC or)
+                    (NP (NNPS Laptops)))))))))
+      (, ,)
+      (NP (NNP TCO))
+      (VP (VBZ has)
+        (NP (DT the) (NN ability)
+          (S
+            (VP (TO to)
+              (VP (VB run)
+                (NP (DT the) (NNS reports))))))))
+    (CC and)
+    (S
+      (NP (NNP TCO))
+      (VP (MD will)
+        (VP (VB run)
+          (NP (PRP it))
+          (PP (IN on)
+            (NP
+              (NP (DT the) (NNS weekends))
+              (ADJP (IN if) (JJ necessary)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, has-18)
+ccomp(has-18, Remember-1)
+punct(has-18, ,-2)
+mark(have-5, if-3)
+nsubj(have-5, we-4)
+advcl:if(has-18, have-5)
+dobj(have-5, problems-6)
+acl(problems-6, running-7)
+compound(reports-9, Storage-8)
+dobj(running-7, reports-9)
+case(PC-12, from-10)
+nmod:poss(PC-12, our-11)
+nmod:'s(running-7, PC-12)
+case(PC-12, 's-13)
+cc(PC-12, or-14)
+nmod:'s(running-7, Laptops-15)
+conj:or(PC-12, Laptops-15)
+punct(has-18, ,-16)
+nsubj(has-18, TCO-17)
+det(ability-20, the-19)
+dobj(has-18, ability-20)
+mark(run-22, to-21)
+acl:to(ability-20, run-22)
+det(reports-24, the-23)
+dobj(run-22, reports-24)
+cc(has-18, and-25)
+nsubj(run-28, TCO-26)
+aux(run-28, will-27)
+conj:and(has-18, run-28)
+dobj(run-28, it-29)
+case(weekends-32, on-30)
+det(weekends-32, the-31)
+nmod:on(run-28, weekends-32)
+dep(necessary-34, if-33)
+amod(weekends-32, necessary-34)
+punct(has-18, .-35)
+
+Extracted the following NER entity mentions:
+TCO	ORGANIZATION
+TCO	ORGANIZATION
+
+Sentence #28 (23 tokens):
+From these
+reports, we can determine if we need to get the overwithdrawal or
+overinjection approval from TCO's Gas Control.
+
+Tokens:
+[Text=From CharacterOffsetBegin=2847 CharacterOffsetEnd=2851 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=2852 CharacterOffsetEnd=2857 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=reports CharacterOffsetBegin=2858 CharacterOffsetEnd=2865 PartOfSpeech=NNS Lemma=report NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=2865 CharacterOffsetEnd=2866 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=2867 CharacterOffsetEnd=2869 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=2870 CharacterOffsetEnd=2873 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=determine CharacterOffsetBegin=2874 CharacterOffsetEnd=2883 PartOfSpeech=VB Lemma=determine NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=2884 CharacterOffsetEnd=2886 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=2887 CharacterOffsetEnd=2889 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=2890 CharacterOffsetEnd=2894 PartOfSpeech=VBP Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=2895 CharacterOffsetEnd=2897 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=2898 CharacterOffsetEnd=2901 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=2902 CharacterOffsetEnd=2905 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=overwithdrawal CharacterOffsetBegin=2906 CharacterOffsetEnd=2920 PartOfSpeech=NN Lemma=overwithdrawal NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=2921 CharacterOffsetEnd=2923 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=overinjection CharacterOffsetBegin=2924 CharacterOffsetEnd=2937 PartOfSpeech=NN Lemma=overinjection NamedEntityTag=O]
+[Text=approval CharacterOffsetBegin=2938 CharacterOffsetEnd=2946 PartOfSpeech=NN Lemma=approval NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=2947 CharacterOffsetEnd=2951 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=TCO CharacterOffsetBegin=2952 CharacterOffsetEnd=2955 PartOfSpeech=NNP Lemma=TCO NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=2955 CharacterOffsetEnd=2957 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Gas CharacterOffsetBegin=2958 CharacterOffsetEnd=2961 PartOfSpeech=NNP Lemma=Gas NamedEntityTag=O]
+[Text=Control CharacterOffsetBegin=2962 CharacterOffsetEnd=2969 PartOfSpeech=NNP Lemma=Control NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=2969 CharacterOffsetEnd=2970 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN From)
+      (NP (DT these) (NNS reports)))
+    (, ,)
+    (NP (PRP we))
+    (VP (MD can)
+      (VP (VB determine)
+        (SBAR (IN if)
+          (S
+            (NP (PRP we))
+            (VP (VBP need)
+              (S
+                (VP (TO to)
+                  (VP (VB get)
+                    (NP (DT the) (NN overwithdrawal)
+                      (CC or)
+                      (NN overinjection) (NN approval))
+                    (PP (IN from)
+                      (NP
+                        (NP (NNP TCO) (POS 's))
+                        (NNP Gas) (NNP Control)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, determine-7)
+case(reports-3, From-1)
+det(reports-3, these-2)
+nmod:from(determine-7, reports-3)
+punct(determine-7, ,-4)
+nsubj(determine-7, we-5)
+aux(determine-7, can-6)
+mark(need-10, if-8)
+nsubj(need-10, we-9)
+nsubj:xsubj(get-12, we-9)
+advcl:if(determine-7, need-10)
+mark(get-12, to-11)
+xcomp(need-10, get-12)
+det(approval-17, the-13)
+compound(approval-17, overwithdrawal-14)
+cc(overwithdrawal-14, or-15)
+conj:or(overwithdrawal-14, overinjection-16)
+compound(approval-17, overinjection-16)
+dobj(get-12, approval-17)
+case(Control-22, from-18)
+nmod:poss(Control-22, TCO-19)
+case(TCO-19, 's-20)
+compound(Control-22, Gas-21)
+nmod:from(get-12, Control-22)
+punct(determine-7, .-23)
+
+Extracted the following NER entity mentions:
+TCO	ORGANIZATION
+
+Sentence #29 (24 tokens):
+TCO's gas control will need a
+volume amount to place in their book... which is the bible for TCO enforcing
+penalties.
+
+Tokens:
+[Text=TCO CharacterOffsetBegin=2971 CharacterOffsetEnd=2974 PartOfSpeech=NNP Lemma=TCO NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=2974 CharacterOffsetEnd=2976 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=gas CharacterOffsetBegin=2977 CharacterOffsetEnd=2980 PartOfSpeech=NN Lemma=gas NamedEntityTag=O]
+[Text=control CharacterOffsetBegin=2981 CharacterOffsetEnd=2988 PartOfSpeech=NN Lemma=control NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=2989 CharacterOffsetEnd=2993 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=2994 CharacterOffsetEnd=2998 PartOfSpeech=VB Lemma=need NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=2999 CharacterOffsetEnd=3000 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=volume CharacterOffsetBegin=3001 CharacterOffsetEnd=3007 PartOfSpeech=NN Lemma=volume NamedEntityTag=O]
+[Text=amount CharacterOffsetBegin=3008 CharacterOffsetEnd=3014 PartOfSpeech=NN Lemma=amount NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=3015 CharacterOffsetEnd=3017 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=place CharacterOffsetBegin=3018 CharacterOffsetEnd=3023 PartOfSpeech=NN Lemma=place NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=3024 CharacterOffsetEnd=3026 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=3027 CharacterOffsetEnd=3032 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=book CharacterOffsetBegin=3033 CharacterOffsetEnd=3037 PartOfSpeech=NN Lemma=book NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=3037 CharacterOffsetEnd=3040 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=3041 CharacterOffsetEnd=3046 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=3047 CharacterOffsetEnd=3049 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=3050 CharacterOffsetEnd=3053 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=bible CharacterOffsetBegin=3054 CharacterOffsetEnd=3059 PartOfSpeech=NN Lemma=bible NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=3060 CharacterOffsetEnd=3063 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=TCO CharacterOffsetBegin=3064 CharacterOffsetEnd=3067 PartOfSpeech=NNP Lemma=TCO NamedEntityTag=ORGANIZATION]
+[Text=enforcing CharacterOffsetBegin=3068 CharacterOffsetEnd=3077 PartOfSpeech=VBG Lemma=enforce NamedEntityTag=O]
+[Text=penalties CharacterOffsetBegin=3078 CharacterOffsetEnd=3087 PartOfSpeech=NNS Lemma=penalty NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=3087 CharacterOffsetEnd=3088 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP TCO) (POS 's))
+      (NN gas) (NN control))
+    (VP (MD will)
+      (VP (VB need)
+        (NP (DT a) (NN volume) (NN amount))
+        (PP (TO to)
+          (NP
+            (NP
+              (NP (NN place))
+              (PP (IN in)
+                (NP (PRP$ their) (NN book))))
+            (: ...)
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (VBZ is)
+                  (NP
+                    (NP (DT the) (NN bible))
+                    (PP (IN for)
+                      (NP
+                        (NP (NNP TCO))
+                        (VP (VBG enforcing)
+                          (NP (NNS penalties)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, need-6)
+nmod:poss(control-4, TCO-1)
+case(TCO-1, 's-2)
+compound(control-4, gas-3)
+nsubj(need-6, control-4)
+aux(need-6, will-5)
+det(amount-9, a-7)
+compound(amount-9, volume-8)
+dobj(need-6, amount-9)
+case(place-11, to-10)
+nmod:to(need-6, place-11)
+nsubj(bible-19, place-11)
+case(book-14, in-12)
+nmod:poss(book-14, their-13)
+nmod:in(place-11, book-14)
+punct(place-11, ...-15)
+ref(place-11, which-16)
+cop(bible-19, is-17)
+det(bible-19, the-18)
+acl:relcl(place-11, bible-19)
+case(TCO-21, for-20)
+nmod:for(bible-19, TCO-21)
+acl(TCO-21, enforcing-22)
+dobj(enforcing-22, penalties-23)
+punct(need-6, .-24)
+
+Extracted the following NER entity mentions:
+TCO	ORGANIZATION
+TCO	ORGANIZATION
+
+Sentence #30 (12 tokens):
+The penalties are pretty steep... max is $10 dkt.
+
+Tokens:
+[Text=The CharacterOffsetBegin=3089 CharacterOffsetEnd=3092 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=penalties CharacterOffsetBegin=3093 CharacterOffsetEnd=3102 PartOfSpeech=NNS Lemma=penalty NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=3103 CharacterOffsetEnd=3106 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=pretty CharacterOffsetBegin=3107 CharacterOffsetEnd=3113 PartOfSpeech=RB Lemma=pretty NamedEntityTag=O]
+[Text=steep CharacterOffsetBegin=3114 CharacterOffsetEnd=3119 PartOfSpeech=JJ Lemma=steep NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=3119 CharacterOffsetEnd=3122 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=max CharacterOffsetBegin=3123 CharacterOffsetEnd=3126 PartOfSpeech=NN Lemma=max NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=3127 CharacterOffsetEnd=3129 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=3130 CharacterOffsetEnd=3131 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$10.0]
+[Text=10 CharacterOffsetBegin=3131 CharacterOffsetEnd=3133 PartOfSpeech=CD Lemma=10 NamedEntityTag=MONEY NormalizedNamedEntityTag=$10.0]
+[Text=dkt CharacterOffsetBegin=3134 CharacterOffsetEnd=3137 PartOfSpeech=NN Lemma=dkt NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=3137 CharacterOffsetEnd=3138 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NNS penalties))
+      (VP (VBP are)
+        (ADJP (RB pretty) (JJ steep))))
+    (: ...)
+    (S
+      (NP (NN max))
+      (VP (VBZ is)
+        (NP
+          (ADJP ($ $) (CD 10))
+          (NN dkt))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, steep-5)
+det(penalties-2, The-1)
+nsubj(steep-5, penalties-2)
+cop(steep-5, are-3)
+advmod(steep-5, pretty-4)
+punct(steep-5, ...-6)
+nsubj(dkt-11, max-7)
+cop(dkt-11, is-8)
+amod(dkt-11, $-9)
+compound($-9, 10-10)
+parataxis(steep-5, dkt-11)
+punct(steep-5, .-12)
+
+Extracted the following NER entity mentions:
+$10	MONEY
+
+Sentence #31 (8 tokens):
+Please save this note for future reference.
+
+Tokens:
+[Text=Please CharacterOffsetBegin=3140 CharacterOffsetEnd=3146 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=save CharacterOffsetBegin=3147 CharacterOffsetEnd=3151 PartOfSpeech=VB Lemma=save NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=3152 CharacterOffsetEnd=3156 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=note CharacterOffsetBegin=3157 CharacterOffsetEnd=3161 PartOfSpeech=NN Lemma=note NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=3162 CharacterOffsetEnd=3165 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=future CharacterOffsetBegin=3166 CharacterOffsetEnd=3172 PartOfSpeech=JJ Lemma=future NamedEntityTag=O]
+[Text=reference CharacterOffsetBegin=3173 CharacterOffsetEnd=3182 PartOfSpeech=NN Lemma=reference NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=3182 CharacterOffsetEnd=3183 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Please)
+      (VP (VB save)
+        (NP
+          (NP (DT this) (NN note))
+          (PP (IN for)
+            (NP (JJ future) (NN reference))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Please-1)
+xcomp(Please-1, save-2)
+det(note-4, this-3)
+dobj(save-2, note-4)
+case(reference-7, for-5)
+amod(reference-7, future-6)
+nmod:for(note-4, reference-7)
+punct(Please-1, .-8)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(2,12,[12,13]) -> (2,4,[4,5]), that is: "TCO" -> "TCO"
+	(2,14,[14,15]) -> (2,4,[4,5]), that is: "its" -> "TCO"
+	(7,9,[9,10]) -> (2,4,[4,5]), that is: "TCO" -> "TCO"
+	(8,1,[1,2]) -> (2,4,[4,5]), that is: "TCO" -> "TCO"
+	(12,39,[39,40]) -> (2,4,[4,5]), that is: "TCO" -> "TCO"
+	(13,3,[3,4]) -> (2,4,[4,5]), that is: "TCO" -> "TCO"
+	(13,26,[26,27]) -> (2,4,[4,5]), that is: "TCO" -> "TCO"
+	(15,20,[20,21]) -> (2,4,[4,5]), that is: "TCO" -> "TCO"
+	(25,1,[1,2]) -> (2,4,[4,5]), that is: "TCO" -> "TCO"
+	(27,17,[17,18]) -> (2,4,[4,5]), that is: "TCO" -> "TCO"
+	(27,26,[26,27]) -> (2,4,[4,5]), that is: "TCO" -> "TCO"
+	(27,29,[29,30]) -> (2,4,[4,5]), that is: "it" -> "TCO"
+	(28,19,[19,21]) -> (2,4,[4,5]), that is: "TCO 's" -> "TCO"
+	(29,1,[1,3]) -> (2,4,[4,5]), that is: "TCO 's" -> "TCO"
+
+Coreference set:
+	(3,1,[1,2]) -> (2,2,[1,7]), that is: "Steve" -> "Steve Stonestreet at TCO and I"
+
+Coreference set:
+	(3,4,[4,5]) -> (2,6,[6,7]), that is: "I" -> "I"
+	(12,48,[48,49]) -> (2,6,[6,7]), that is: "I" -> "I"
+
+Coreference set:
+	(4,9,[8,10]) -> (2,16,[14,17]), that is: "the ratchets" -> "its storage ratchets"
+	(4,12,[11,13]) -> (2,16,[14,17]), that is: "minimum injections" -> "its storage ratchets"
+	(4,15,[14,16]) -> (2,16,[14,17]), that is: "maximum withdrawals" -> "its storage ratchets"
+
+Coreference set:
+	(5,3,[1,4]) -> (4,5,[3,6]), that is: "This FSS schedule" -> "a FSS schedule"
+
+Coreference set:
+	(5,12,[12,14]) -> (5,18,[16,19]), that is: "Enron 's" -> "Enron 's MDSQ"
+	(5,16,[16,18]) -> (5,18,[16,19]), that is: "Enron 's" -> "Enron 's MDSQ"
+	(5,22,[22,23]) -> (5,18,[16,19]), that is: "Enron" -> "Enron 's MDSQ"
+	(5,25,[25,26]) -> (5,18,[16,19]), that is: "its" -> "Enron 's MDSQ"
+	(6,21,[21,23]) -> (5,18,[16,19]), that is: "Enron 's" -> "Enron 's MDSQ"
+	(18,12,[12,13]) -> (5,18,[16,19]), that is: "Enron" -> "Enron 's MDSQ"
+	(19,2,[2,3]) -> (5,18,[16,19]), that is: "Enron" -> "Enron 's MDSQ"
+	(19,19,[19,21]) -> (5,18,[16,19]), that is: "Enron 's" -> "Enron 's MDSQ"
+	(21,1,[1,2]) -> (5,18,[16,19]), that is: "Enron" -> "Enron 's MDSQ"
+
+Coreference set:
+	(6,23,[21,24]) -> (5,14,[12,15]), that is: "Enron 's SCQ" -> "Enron 's SCQ"
+
+Coreference set:
+	(12,36,[35,37]) -> (6,8,[7,9]), that is: "that month" -> "each month"
+
+Coreference set:
+	(13,17,[15,18]) -> (8,3,[1,4]), that is: "the injection session" -> "TCO Injection Session"
+
+Coreference set:
+	(11,14,[14,19]) -> (8,9,[9,30]), that is: "April -LRB- 15 % -RRB-" -> "April = 15 % May = 20 % June = 20 % July = 20 % Aug = 20 % Sept"
+	(22,8,[8,9]) -> (8,9,[9,30]), that is: "April" -> "April = 15 % May = 20 % June = 20 % July = 20 % Aug = 20 % Sept"
+	(26,1,[1,2]) -> (8,9,[9,30]), that is: "April" -> "April = 15 % May = 20 % June = 20 % July = 20 % Aug = 20 % Sept"
+	(26,6,[3,10]) -> (8,9,[9,30]), that is: "a very hard month to monitor storage" -> "April = 15 % May = 20 % June = 20 % July = 20 % Aug = 20 % Sept"
+
+Coreference set:
+	(21,8,[7,9]) -> (8,46,[44,47]), that is: "the injection" -> "the total Injection"
+
+Coreference set:
+	(9,3,[3,4]) -> (10,4,[4,5]), that is: "shippers" -> "Shippers"
+	(11,4,[4,5]) -> (10,4,[4,5]), that is: "Shippers" -> "Shippers"
+	(14,6,[6,7]) -> (10,4,[4,5]), that is: "Shippers" -> "Shippers"
+	(15,1,[1,2]) -> (10,4,[4,5]), that is: "Shippers" -> "Shippers"
+	(16,1,[1,2]) -> (10,4,[4,5]), that is: "Shippers" -> "Shippers"
+
+Coreference set:
+	(24,6,[5,7]) -> (11,12,[10,13]), that is: "this amount" -> "the ratchet amount"
+
+Coreference set:
+	(12,3,[2,4]) -> (12,12,[11,13]), that is: "the Shipper" -> "the Shipper"
+	(12,26,[25,27]) -> (12,12,[11,13]), that is: "the Shipper" -> "the Shipper"
+	(12,44,[44,45]) -> (12,12,[11,13]), that is: "its" -> "the Shipper"
+
+Coreference set:
+	(14,16,[16,17]) -> (13,23,[23,24]), that is: "October" -> "October"
+
+Coreference set:
+	(16,12,[12,13]) -> (16,9,[8,10]), that is: "it" -> "the summer"
+	(16,17,[17,18]) -> (16,9,[8,10]), that is: "it" -> "the summer"
+
+Coreference set:
+	(19,13,[12,14]) -> (17,11,[10,12]), that is: "the MDWQ" -> "the MDWQ"
+
+Coreference set:
+	(23,7,[7,8]) -> (18,16,[16,17]), that is: "54,324" -> "54,324"
+
+Coreference set:
+	(19,21,[19,22]) -> (19,24,[23,28]), that is: "Enron 's SST" -> "only 54,324 until October 1st"
+
+Coreference set:
+	(22,22,[22,23]) -> (20,3,[3,4]), that is: "we" -> "we"
+	(23,4,[4,5]) -> (20,3,[3,4]), that is: "we" -> "we"
+	(24,2,[2,3]) -> (20,3,[3,4]), that is: "we" -> "we"
+	(24,8,[8,9]) -> (20,3,[3,4]), that is: "we" -> "we"
+	(24,20,[20,21]) -> (20,3,[3,4]), that is: "we" -> "we"
+	(25,4,[4,5]) -> (20,3,[3,4]), that is: "we" -> "we"
+	(27,4,[4,5]) -> (20,3,[3,4]), that is: "we" -> "we"
+	(27,11,[11,12]) -> (20,3,[3,4]), that is: "our" -> "we"
+	(28,5,[5,6]) -> (20,3,[3,4]), that is: "we" -> "we"
+	(28,9,[9,10]) -> (20,3,[3,4]), that is: "we" -> "we"
+
+Coreference set:
+	(22,11,[10,12]) -> (22,6,[5,9]), that is: "storage withdrawal" -> "storage withdrawal in April"
+
+Coreference set:
+	(23,13,[13,14]) -> (30,2,[1,3]), that is: "penalties" -> "The penalties"
+	(29,23,[23,24]) -> (30,2,[1,3]), that is: "penalties" -> "The penalties"
+
+Coreference set:
+	(27,24,[23,25]) -> (27,9,[8,10]), that is: "the reports" -> "Storage reports"
+	(28,3,[2,4]) -> (27,9,[8,10]), that is: "these reports" -> "Storage reports"
+
+Coreference set:
+	(29,4,[1,5]) -> (28,22,[19,23]), that is: "TCO 's gas control" -> "TCO 's Gas Control"

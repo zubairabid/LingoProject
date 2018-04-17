@@ -1,0 +1,937 @@
+Document: ID=204326.in (8 sentences, 248 tokens)
+
+Sentence #1 (25 tokens):
+News Briefs:
+
+Chevron and Texaco Agree to $100 Billion Merger
+
+Chevron Corp. and Texaco Inc. announced plans to merge and ChevronTexaco
+Corp.
+
+Tokens:
+[Text=News CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=News NamedEntityTag=MISC]
+[Text=Briefs CharacterOffsetBegin=5 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=Briefs NamedEntityTag=MISC]
+[Text=: CharacterOffsetBegin=11 CharacterOffsetEnd=12 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Chevron CharacterOffsetBegin=14 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=Chevron NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Texaco CharacterOffsetBegin=26 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Texaco NamedEntityTag=ORGANIZATION]
+[Text=Agree CharacterOffsetBegin=33 CharacterOffsetEnd=38 PartOfSpeech=NNP Lemma=Agree NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$1.0E11]
+[Text=100 CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=CD Lemma=100 NamedEntityTag=MONEY NormalizedNamedEntityTag=$1.0E11]
+[Text=Billion CharacterOffsetBegin=47 CharacterOffsetEnd=54 PartOfSpeech=NNP Lemma=Billion NamedEntityTag=MONEY NormalizedNamedEntityTag=$1.0E11]
+[Text=Merger CharacterOffsetBegin=55 CharacterOffsetEnd=61 PartOfSpeech=NNP Lemma=Merger NamedEntityTag=O]
+[Text=Chevron CharacterOffsetBegin=63 CharacterOffsetEnd=70 PartOfSpeech=NNP Lemma=Chevron NamedEntityTag=ORGANIZATION]
+[Text=Corp. CharacterOffsetBegin=71 CharacterOffsetEnd=76 PartOfSpeech=NNP Lemma=Corp. NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Texaco CharacterOffsetBegin=81 CharacterOffsetEnd=87 PartOfSpeech=NNP Lemma=Texaco NamedEntityTag=ORGANIZATION]
+[Text=Inc. CharacterOffsetBegin=88 CharacterOffsetEnd=92 PartOfSpeech=NNP Lemma=Inc. NamedEntityTag=ORGANIZATION]
+[Text=announced CharacterOffsetBegin=93 CharacterOffsetEnd=102 PartOfSpeech=VBD Lemma=announce NamedEntityTag=O]
+[Text=plans CharacterOffsetBegin=103 CharacterOffsetEnd=108 PartOfSpeech=NNS Lemma=plan NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=109 CharacterOffsetEnd=111 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=merge CharacterOffsetBegin=112 CharacterOffsetEnd=117 PartOfSpeech=VB Lemma=merge NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=118 CharacterOffsetEnd=121 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=ChevronTexaco CharacterOffsetBegin=122 CharacterOffsetEnd=135 PartOfSpeech=NNP Lemma=ChevronTexaco NamedEntityTag=ORGANIZATION]
+[Text=Corp. CharacterOffsetBegin=136 CharacterOffsetEnd=140 PartOfSpeech=NNP Lemma=Corp. NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=140 CharacterOffsetEnd=141 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP News) (NNP Briefs))
+    (: :)
+    (NP
+      (NP (NNP Chevron)
+        (CC and)
+        (NNP Texaco) (NNP Agree))
+      (PP (TO to)
+        (NP
+          (NP
+            (NP ($ $) (CD 100))
+            (SBAR
+              (S
+                (NP (NNP Billion) (NNP Merger) (NNP Chevron) (NNP Corp.)
+                  (CC and)
+                  (NNP Texaco) (NNP Inc.))
+                (VP (VBD announced)
+                  (NP (NNS plans))
+                  (S
+                    (VP (TO to)
+                      (VP (VB merge))))))))
+          (CC and)
+          (NP (NNP ChevronTexaco) (NNP Corp.)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Briefs-2)
+compound(Briefs-2, News-1)
+punct(Briefs-2, :-3)
+compound(Agree-7, Chevron-4)
+cc(Chevron-4, and-5)
+conj:and(Chevron-4, Texaco-6)
+compound(Agree-7, Texaco-6)
+dep(Briefs-2, Agree-7)
+case(100-10, to-8)
+dep(100-10, $-9)
+nmod:to(Agree-7, 100-10)
+compound(Corp.-14, Billion-11)
+compound(Corp.-14, Merger-12)
+compound(Corp.-14, Chevron-13)
+nsubj(announced-18, Corp.-14)
+cc(Corp.-14, and-15)
+compound(Inc.-17, Texaco-16)
+conj:and(Corp.-14, Inc.-17)
+nsubj(announced-18, Inc.-17)
+acl:relcl(100-10, announced-18)
+dobj(announced-18, plans-19)
+mark(merge-21, to-20)
+advcl:to(announced-18, merge-21)
+cc(100-10, and-22)
+compound(Corp.-24, ChevronTexaco-23)
+nmod:to(Agree-7, Corp.-24)
+conj:and(100-10, Corp.-24)
+punct(Briefs-2, .-25)
+
+Extracted the following NER entity mentions:
+News Briefs	MISC
+Chevron	ORGANIZATION
+Texaco	ORGANIZATION
+$100 Billion	MONEY
+Chevron Corp.	ORGANIZATION
+Texaco Inc.	ORGANIZATION
+ChevronTexaco Corp.	ORGANIZATION
+
+Sentence #2 (33 tokens):
+In the merger, Texaco shareholders will receive 0.77 shares of Chevron
+common stock for each share of Texaco common stock they own, and Chevron
+shareholders will retain their existing shares.
+
+Tokens:
+[Text=In CharacterOffsetBegin=143 CharacterOffsetEnd=145 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=146 CharacterOffsetEnd=149 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=merger CharacterOffsetBegin=150 CharacterOffsetEnd=156 PartOfSpeech=NN Lemma=merger NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=156 CharacterOffsetEnd=157 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Texaco CharacterOffsetBegin=158 CharacterOffsetEnd=164 PartOfSpeech=NNP Lemma=Texaco NamedEntityTag=ORGANIZATION]
+[Text=shareholders CharacterOffsetBegin=165 CharacterOffsetEnd=177 PartOfSpeech=NNS Lemma=shareholder NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=178 CharacterOffsetEnd=182 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=receive CharacterOffsetBegin=183 CharacterOffsetEnd=190 PartOfSpeech=VB Lemma=receive NamedEntityTag=O]
+[Text=0.77 CharacterOffsetBegin=191 CharacterOffsetEnd=195 PartOfSpeech=CD Lemma=0.77 NamedEntityTag=NUMBER NormalizedNamedEntityTag=0.77]
+[Text=shares CharacterOffsetBegin=196 CharacterOffsetEnd=202 PartOfSpeech=NNS Lemma=share NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=203 CharacterOffsetEnd=205 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Chevron CharacterOffsetBegin=206 CharacterOffsetEnd=213 PartOfSpeech=NNP Lemma=Chevron NamedEntityTag=ORGANIZATION]
+[Text=common CharacterOffsetBegin=214 CharacterOffsetEnd=220 PartOfSpeech=JJ Lemma=common NamedEntityTag=O]
+[Text=stock CharacterOffsetBegin=221 CharacterOffsetEnd=226 PartOfSpeech=NN Lemma=stock NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=227 CharacterOffsetEnd=230 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=each CharacterOffsetBegin=231 CharacterOffsetEnd=235 PartOfSpeech=DT Lemma=each NamedEntityTag=O]
+[Text=share CharacterOffsetBegin=236 CharacterOffsetEnd=241 PartOfSpeech=NN Lemma=share NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=242 CharacterOffsetEnd=244 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Texaco CharacterOffsetBegin=245 CharacterOffsetEnd=251 PartOfSpeech=NNP Lemma=Texaco NamedEntityTag=ORGANIZATION]
+[Text=common CharacterOffsetBegin=252 CharacterOffsetEnd=258 PartOfSpeech=JJ Lemma=common NamedEntityTag=O]
+[Text=stock CharacterOffsetBegin=259 CharacterOffsetEnd=264 PartOfSpeech=NN Lemma=stock NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=265 CharacterOffsetEnd=269 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=270 CharacterOffsetEnd=273 PartOfSpeech=VBP Lemma=own NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=273 CharacterOffsetEnd=274 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=275 CharacterOffsetEnd=278 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Chevron CharacterOffsetBegin=279 CharacterOffsetEnd=286 PartOfSpeech=NNP Lemma=Chevron NamedEntityTag=ORGANIZATION]
+[Text=shareholders CharacterOffsetBegin=287 CharacterOffsetEnd=299 PartOfSpeech=NNS Lemma=shareholder NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=300 CharacterOffsetEnd=304 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=retain CharacterOffsetBegin=305 CharacterOffsetEnd=311 PartOfSpeech=VB Lemma=retain NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=312 CharacterOffsetEnd=317 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=existing CharacterOffsetBegin=318 CharacterOffsetEnd=326 PartOfSpeech=VBG Lemma=exist NamedEntityTag=O]
+[Text=shares CharacterOffsetBegin=327 CharacterOffsetEnd=333 PartOfSpeech=NNS Lemma=share NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=333 CharacterOffsetEnd=334 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT the) (NN merger)))
+    (, ,)
+    (NP (NNP Texaco) (NNS shareholders))
+    (VP (MD will)
+      (VP (VB receive)
+        (NP
+          (NP (CD 0.77) (NNS shares))
+          (PP (IN of)
+            (NP (NNP Chevron) (JJ common) (NN stock))))
+        (SBAR (IN for)
+          (S
+            (S
+              (NP
+                (NP (DT each) (NN share))
+                (PP (IN of)
+                  (NP (NNP Texaco) (JJ common) (NN stock))))
+              (NP (PRP they))
+              (VP (VBP own)))
+            (, ,)
+            (CC and)
+            (S
+              (NP (NNP Chevron) (NNS shareholders))
+              (VP (MD will)
+                (VP (VB retain)
+                  (NP (PRP$ their) (VBG existing) (NNS shares)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, receive-8)
+case(merger-3, In-1)
+det(merger-3, the-2)
+nmod:in(receive-8, merger-3)
+punct(receive-8, ,-4)
+compound(shareholders-6, Texaco-5)
+nsubj(receive-8, shareholders-6)
+aux(receive-8, will-7)
+nummod(shares-10, 0.77-9)
+dobj(receive-8, shares-10)
+case(stock-14, of-11)
+compound(stock-14, Chevron-12)
+amod(stock-14, common-13)
+nmod:of(shares-10, stock-14)
+mark(own-23, for-15)
+det(share-17, each-16)
+nsubj(own-23, share-17)
+case(stock-21, of-18)
+compound(stock-21, Texaco-19)
+amod(stock-21, common-20)
+nmod:of(share-17, stock-21)
+nsubj(own-23, they-22)
+advcl:for(receive-8, own-23)
+punct(own-23, ,-24)
+cc(own-23, and-25)
+compound(shareholders-27, Chevron-26)
+nsubj(retain-29, shareholders-27)
+aux(retain-29, will-28)
+advcl:for(receive-8, retain-29)
+conj:and(own-23, retain-29)
+nmod:poss(shares-32, their-30)
+amod(shares-32, existing-31)
+dobj(retain-29, shares-32)
+punct(receive-8, .-33)
+
+Extracted the following NER entity mentions:
+Texaco	ORGANIZATION
+0.77	NUMBER
+Chevron	ORGANIZATION
+Texaco	ORGANIZATION
+Chevron	ORGANIZATION
+
+Sentence #3 (24 tokens):
+The exchange ratio
+represents approximately $64.87 per Texaco share based on Chevron's closing
+stock price of $84.25 on October 13.
+
+Tokens:
+[Text=The CharacterOffsetBegin=336 CharacterOffsetEnd=339 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=exchange CharacterOffsetBegin=340 CharacterOffsetEnd=348 PartOfSpeech=NN Lemma=exchange NamedEntityTag=O]
+[Text=ratio CharacterOffsetBegin=349 CharacterOffsetEnd=354 PartOfSpeech=NN Lemma=ratio NamedEntityTag=O]
+[Text=represents CharacterOffsetBegin=355 CharacterOffsetEnd=365 PartOfSpeech=VBZ Lemma=represent NamedEntityTag=O]
+[Text=approximately CharacterOffsetBegin=366 CharacterOffsetEnd=379 PartOfSpeech=RB Lemma=approximately NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=380 CharacterOffsetEnd=381 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=~$64.87]
+[Text=64.87 CharacterOffsetBegin=381 CharacterOffsetEnd=386 PartOfSpeech=CD Lemma=64.87 NamedEntityTag=MONEY NormalizedNamedEntityTag=~$64.87]
+[Text=per CharacterOffsetBegin=387 CharacterOffsetEnd=390 PartOfSpeech=IN Lemma=per NamedEntityTag=O]
+[Text=Texaco CharacterOffsetBegin=391 CharacterOffsetEnd=397 PartOfSpeech=NNP Lemma=Texaco NamedEntityTag=ORGANIZATION]
+[Text=share CharacterOffsetBegin=398 CharacterOffsetEnd=403 PartOfSpeech=NN Lemma=share NamedEntityTag=O]
+[Text=based CharacterOffsetBegin=404 CharacterOffsetEnd=409 PartOfSpeech=VBN Lemma=base NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=410 CharacterOffsetEnd=412 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Chevron CharacterOffsetBegin=413 CharacterOffsetEnd=420 PartOfSpeech=NNP Lemma=Chevron NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=420 CharacterOffsetEnd=422 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=closing CharacterOffsetBegin=423 CharacterOffsetEnd=430 PartOfSpeech=NN Lemma=closing NamedEntityTag=O]
+[Text=stock CharacterOffsetBegin=431 CharacterOffsetEnd=436 PartOfSpeech=NN Lemma=stock NamedEntityTag=O]
+[Text=price CharacterOffsetBegin=437 CharacterOffsetEnd=442 PartOfSpeech=NN Lemma=price NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=443 CharacterOffsetEnd=445 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=446 CharacterOffsetEnd=447 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$84.25]
+[Text=84.25 CharacterOffsetBegin=447 CharacterOffsetEnd=452 PartOfSpeech=CD Lemma=84.25 NamedEntityTag=MONEY NormalizedNamedEntityTag=$84.25]
+[Text=on CharacterOffsetBegin=453 CharacterOffsetEnd=455 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=October CharacterOffsetBegin=456 CharacterOffsetEnd=463 PartOfSpeech=NNP Lemma=October NamedEntityTag=DATE NormalizedNamedEntityTag=****1013]
+[Text=13 CharacterOffsetBegin=464 CharacterOffsetEnd=466 PartOfSpeech=CD Lemma=13 NamedEntityTag=DATE NormalizedNamedEntityTag=****1013]
+[Text=. CharacterOffsetBegin=466 CharacterOffsetEnd=467 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN exchange) (NN ratio))
+    (VP (VBZ represents)
+      (NP
+        (NP
+          (QP (RB approximately) ($ $) (CD 64.87)))
+        (PP (IN per)
+          (NP (NNP Texaco) (NN share))))
+      (PP (VBN based)
+        (PP (IN on)
+          (NP
+            (NP
+              (NP (NNP Chevron) (POS 's))
+              (NN closing) (NN stock) (NN price))
+            (PP (IN of)
+              (NP
+                (NP ($ $) (CD 84.25))
+                (PP (IN on)
+                  (NP (NNP October) (CD 13)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, represents-4)
+det(ratio-3, The-1)
+compound(ratio-3, exchange-2)
+nsubj(represents-4, ratio-3)
+advmod($-6, approximately-5)
+dobj(represents-4, $-6)
+nummod($-6, 64.87-7)
+case(share-10, per-8)
+compound(share-10, Texaco-9)
+nmod:per($-6, share-10)
+case(price-17, based-11)
+mwe(based-11, on-12)
+nmod:poss(price-17, Chevron-13)
+case(Chevron-13, 's-14)
+compound(price-17, closing-15)
+compound(price-17, stock-16)
+advcl:based_on(represents-4, price-17)
+case(84.25-20, of-18)
+dep(84.25-20, $-19)
+nmod:of(price-17, 84.25-20)
+case(October-22, on-21)
+nmod:on(84.25-20, October-22)
+nummod(October-22, 13-23)
+punct(represents-4, .-24)
+
+Extracted the following NER entity mentions:
+$64.87	MONEY
+Texaco	ORGANIZATION
+Chevron	ORGANIZATION
+$84.25	MONEY
+October 13	DATE
+
+Sentence #4 (42 tokens):
+The exchange ratio represents an 18%
+premium based upon Texaco's closing share price on October 13, and a 25%
+premium based upon the two companies' average relative share prices during
+the 30-day period through October 13.
+
+Tokens:
+[Text=The CharacterOffsetBegin=469 CharacterOffsetEnd=472 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=exchange CharacterOffsetBegin=473 CharacterOffsetEnd=481 PartOfSpeech=NN Lemma=exchange NamedEntityTag=O]
+[Text=ratio CharacterOffsetBegin=482 CharacterOffsetEnd=487 PartOfSpeech=NN Lemma=ratio NamedEntityTag=O]
+[Text=represents CharacterOffsetBegin=488 CharacterOffsetEnd=498 PartOfSpeech=VBZ Lemma=represent NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=499 CharacterOffsetEnd=501 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=18 CharacterOffsetBegin=502 CharacterOffsetEnd=504 PartOfSpeech=CD Lemma=18 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%18.0]
+[Text=% CharacterOffsetBegin=504 CharacterOffsetEnd=505 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%18.0]
+[Text=premium CharacterOffsetBegin=506 CharacterOffsetEnd=513 PartOfSpeech=NN Lemma=premium NamedEntityTag=O]
+[Text=based CharacterOffsetBegin=514 CharacterOffsetEnd=519 PartOfSpeech=VBN Lemma=base NamedEntityTag=O]
+[Text=upon CharacterOffsetBegin=520 CharacterOffsetEnd=524 PartOfSpeech=IN Lemma=upon NamedEntityTag=O]
+[Text=Texaco CharacterOffsetBegin=525 CharacterOffsetEnd=531 PartOfSpeech=NNP Lemma=Texaco NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=531 CharacterOffsetEnd=533 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=closing CharacterOffsetBegin=534 CharacterOffsetEnd=541 PartOfSpeech=NN Lemma=closing NamedEntityTag=O]
+[Text=share CharacterOffsetBegin=542 CharacterOffsetEnd=547 PartOfSpeech=NN Lemma=share NamedEntityTag=O]
+[Text=price CharacterOffsetBegin=548 CharacterOffsetEnd=553 PartOfSpeech=NN Lemma=price NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=554 CharacterOffsetEnd=556 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=October CharacterOffsetBegin=557 CharacterOffsetEnd=564 PartOfSpeech=NNP Lemma=October NamedEntityTag=DATE NormalizedNamedEntityTag=****1013]
+[Text=13 CharacterOffsetBegin=565 CharacterOffsetEnd=567 PartOfSpeech=CD Lemma=13 NamedEntityTag=DATE NormalizedNamedEntityTag=****1013]
+[Text=, CharacterOffsetBegin=567 CharacterOffsetEnd=568 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=569 CharacterOffsetEnd=572 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=573 CharacterOffsetEnd=574 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=25 CharacterOffsetBegin=575 CharacterOffsetEnd=577 PartOfSpeech=CD Lemma=25 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%25.0]
+[Text=% CharacterOffsetBegin=577 CharacterOffsetEnd=578 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%25.0]
+[Text=premium CharacterOffsetBegin=579 CharacterOffsetEnd=586 PartOfSpeech=NN Lemma=premium NamedEntityTag=O]
+[Text=based CharacterOffsetBegin=587 CharacterOffsetEnd=592 PartOfSpeech=VBN Lemma=base NamedEntityTag=O]
+[Text=upon CharacterOffsetBegin=593 CharacterOffsetEnd=597 PartOfSpeech=IN Lemma=upon NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=598 CharacterOffsetEnd=601 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=602 CharacterOffsetEnd=605 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=companies CharacterOffsetBegin=606 CharacterOffsetEnd=615 PartOfSpeech=NNS Lemma=company NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=615 CharacterOffsetEnd=616 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=average CharacterOffsetBegin=617 CharacterOffsetEnd=624 PartOfSpeech=JJ Lemma=average NamedEntityTag=O]
+[Text=relative CharacterOffsetBegin=625 CharacterOffsetEnd=633 PartOfSpeech=JJ Lemma=relative NamedEntityTag=O]
+[Text=share CharacterOffsetBegin=634 CharacterOffsetEnd=639 PartOfSpeech=NN Lemma=share NamedEntityTag=O]
+[Text=prices CharacterOffsetBegin=640 CharacterOffsetEnd=646 PartOfSpeech=NNS Lemma=price NamedEntityTag=O]
+[Text=during CharacterOffsetBegin=647 CharacterOffsetEnd=653 PartOfSpeech=IN Lemma=during NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=654 CharacterOffsetEnd=657 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=30-day CharacterOffsetBegin=658 CharacterOffsetEnd=664 PartOfSpeech=JJ Lemma=30-day NamedEntityTag=O]
+[Text=period CharacterOffsetBegin=665 CharacterOffsetEnd=671 PartOfSpeech=NN Lemma=period NamedEntityTag=O]
+[Text=through CharacterOffsetBegin=672 CharacterOffsetEnd=679 PartOfSpeech=IN Lemma=through NamedEntityTag=O]
+[Text=October CharacterOffsetBegin=680 CharacterOffsetEnd=687 PartOfSpeech=NNP Lemma=October NamedEntityTag=DATE NormalizedNamedEntityTag=****1013]
+[Text=13 CharacterOffsetBegin=688 CharacterOffsetEnd=690 PartOfSpeech=CD Lemma=13 NamedEntityTag=DATE NormalizedNamedEntityTag=****1013]
+[Text=. CharacterOffsetBegin=690 CharacterOffsetEnd=691 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN exchange) (NN ratio))
+    (VP (VBZ represents)
+      (NP
+        (NP
+          (NP (DT an)
+            (ADJP (CD 18) (NN %))
+            (NN premium))
+          (VP (VBN based)
+            (PP (IN upon)
+              (NP
+                (NP
+                  (NP (NNP Texaco) (POS 's))
+                  (NN closing) (NN share) (NN price))
+                (PP (IN on)
+                  (NP (NNP October) (CD 13)))))))
+        (, ,)
+        (CC and)
+        (NP
+          (NP (DT a)
+            (ADJP (CD 25) (NN %))
+            (NN premium))
+          (VP (VBN based)
+            (PP (IN upon)
+              (NP
+                (NP (DT the) (CD two) (NNS companies) (POS '))
+                (JJ average) (JJ relative) (NN share) (NNS prices)))
+            (PP (IN during)
+              (NP (DT the) (JJ 30-day) (NN period)))
+            (PP (IN through)
+              (NP (NNP October) (CD 13)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, represents-4)
+det(ratio-3, The-1)
+compound(ratio-3, exchange-2)
+nsubj(represents-4, ratio-3)
+det(premium-8, an-5)
+compound(%-7, 18-6)
+amod(premium-8, %-7)
+dobj(represents-4, premium-8)
+acl(premium-8, based-9)
+case(price-15, upon-10)
+nmod:poss(price-15, Texaco-11)
+case(Texaco-11, 's-12)
+compound(price-15, closing-13)
+compound(price-15, share-14)
+nmod:upon(based-9, price-15)
+case(October-17, on-16)
+nmod:on(price-15, October-17)
+nummod(October-17, 13-18)
+punct(premium-8, ,-19)
+cc(premium-8, and-20)
+det(premium-24, a-21)
+compound(%-23, 25-22)
+amod(premium-24, %-23)
+dobj(represents-4, premium-24)
+conj:and(premium-8, premium-24)
+acl(premium-24, based-25)
+case(prices-34, upon-26)
+det(companies-29, the-27)
+nummod(companies-29, two-28)
+nmod:poss(prices-34, companies-29)
+case(companies-29, '-30)
+amod(prices-34, average-31)
+amod(prices-34, relative-32)
+compound(prices-34, share-33)
+nmod:upon(based-25, prices-34)
+case(period-38, during-35)
+det(period-38, the-36)
+amod(period-38, 30-day-37)
+nmod:during(based-25, period-38)
+case(October-40, through-39)
+nmod:through(based-25, October-40)
+nummod(October-40, 13-41)
+punct(represents-4, .-42)
+
+Extracted the following NER entity mentions:
+18%	PERCENT
+Texaco	ORGANIZATION
+October 13	DATE
+25%	PERCENT
+two	NUMBER
+October 13	DATE
+
+Sentence #5 (28 tokens):
+As a result of the merger, Chevron
+shareholders will own approximately 61% of the combined equity, and Texaco
+shareholders will own about 39%.
+
+Tokens:
+[Text=As CharacterOffsetBegin=693 CharacterOffsetEnd=695 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=696 CharacterOffsetEnd=697 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=result CharacterOffsetBegin=698 CharacterOffsetEnd=704 PartOfSpeech=NN Lemma=result NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=705 CharacterOffsetEnd=707 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=708 CharacterOffsetEnd=711 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=merger CharacterOffsetBegin=712 CharacterOffsetEnd=718 PartOfSpeech=NN Lemma=merger NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=718 CharacterOffsetEnd=719 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Chevron CharacterOffsetBegin=720 CharacterOffsetEnd=727 PartOfSpeech=NNP Lemma=Chevron NamedEntityTag=ORGANIZATION]
+[Text=shareholders CharacterOffsetBegin=728 CharacterOffsetEnd=740 PartOfSpeech=NNS Lemma=shareholder NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=741 CharacterOffsetEnd=745 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=746 CharacterOffsetEnd=749 PartOfSpeech=VB Lemma=own NamedEntityTag=O]
+[Text=approximately CharacterOffsetBegin=750 CharacterOffsetEnd=763 PartOfSpeech=RB Lemma=approximately NamedEntityTag=O]
+[Text=61 CharacterOffsetBegin=764 CharacterOffsetEnd=766 PartOfSpeech=CD Lemma=61 NamedEntityTag=PERCENT NormalizedNamedEntityTag=~%61.0]
+[Text=% CharacterOffsetBegin=766 CharacterOffsetEnd=767 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=~%61.0]
+[Text=of CharacterOffsetBegin=768 CharacterOffsetEnd=770 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=771 CharacterOffsetEnd=774 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=combined CharacterOffsetBegin=775 CharacterOffsetEnd=783 PartOfSpeech=JJ Lemma=combined NamedEntityTag=O]
+[Text=equity CharacterOffsetBegin=784 CharacterOffsetEnd=790 PartOfSpeech=NN Lemma=equity NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=790 CharacterOffsetEnd=791 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=792 CharacterOffsetEnd=795 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Texaco CharacterOffsetBegin=796 CharacterOffsetEnd=802 PartOfSpeech=NNP Lemma=Texaco NamedEntityTag=ORGANIZATION]
+[Text=shareholders CharacterOffsetBegin=803 CharacterOffsetEnd=815 PartOfSpeech=NNS Lemma=shareholder NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=816 CharacterOffsetEnd=820 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=821 CharacterOffsetEnd=824 PartOfSpeech=VB Lemma=own NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=825 CharacterOffsetEnd=830 PartOfSpeech=RB Lemma=about NamedEntityTag=O]
+[Text=39 CharacterOffsetBegin=831 CharacterOffsetEnd=833 PartOfSpeech=CD Lemma=39 NamedEntityTag=PERCENT NormalizedNamedEntityTag=~%39.0]
+[Text=% CharacterOffsetBegin=833 CharacterOffsetEnd=834 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=~%39.0]
+[Text=. CharacterOffsetBegin=834 CharacterOffsetEnd=835 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN As)
+      (NP
+        (NP (DT a) (NN result))
+        (PP (IN of)
+          (NP (DT the) (NN merger)))))
+    (, ,)
+    (S
+      (NP (NNP Chevron) (NNS shareholders))
+      (VP (MD will)
+        (VP (VB own)
+          (NP
+            (NP
+              (QP (RB approximately) (CD 61))
+              (NN %))
+            (PP (IN of)
+              (NP (DT the) (JJ combined) (NN equity)))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (NNP Texaco) (NNS shareholders))
+      (VP (MD will)
+        (VP (VB own)
+          (NP
+            (QP (RB about) (CD 39))
+            (NN %)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, own-11)
+case(result-3, As-1)
+det(result-3, a-2)
+nmod:as(own-11, result-3)
+case(merger-6, of-4)
+det(merger-6, the-5)
+nmod:of(result-3, merger-6)
+punct(own-11, ,-7)
+compound(shareholders-9, Chevron-8)
+nsubj(own-11, shareholders-9)
+aux(own-11, will-10)
+advmod(61-13, approximately-12)
+nummod(%-14, 61-13)
+dobj(own-11, %-14)
+case(equity-18, of-15)
+det(equity-18, the-16)
+amod(equity-18, combined-17)
+nmod:of(%-14, equity-18)
+punct(own-11, ,-19)
+cc(own-11, and-20)
+compound(shareholders-22, Texaco-21)
+nsubj(own-24, shareholders-22)
+aux(own-24, will-23)
+conj:and(own-11, own-24)
+advmod(39-26, about-25)
+nummod(%-27, 39-26)
+dobj(own-24, %-27)
+punct(own-11, .-28)
+
+Extracted the following NER entity mentions:
+Chevron	ORGANIZATION
+61%	PERCENT
+Texaco	ORGANIZATION
+39%	PERCENT
+
+Sentence #6 (15 tokens):
+The combined company would have an
+enterprise value of more than $100 billion.
+
+Tokens:
+[Text=The CharacterOffsetBegin=837 CharacterOffsetEnd=840 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=combined CharacterOffsetBegin=841 CharacterOffsetEnd=849 PartOfSpeech=JJ Lemma=combined NamedEntityTag=O]
+[Text=company CharacterOffsetBegin=850 CharacterOffsetEnd=857 PartOfSpeech=NN Lemma=company NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=858 CharacterOffsetEnd=863 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=864 CharacterOffsetEnd=868 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=869 CharacterOffsetEnd=871 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=enterprise CharacterOffsetBegin=872 CharacterOffsetEnd=882 PartOfSpeech=NN Lemma=enterprise NamedEntityTag=O]
+[Text=value CharacterOffsetBegin=883 CharacterOffsetEnd=888 PartOfSpeech=NN Lemma=value NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=889 CharacterOffsetEnd=891 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=892 CharacterOffsetEnd=896 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=897 CharacterOffsetEnd=901 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=902 CharacterOffsetEnd=903 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=>$1.0E11]
+[Text=100 CharacterOffsetBegin=903 CharacterOffsetEnd=906 PartOfSpeech=CD Lemma=100 NamedEntityTag=MONEY NormalizedNamedEntityTag=>$1.0E11]
+[Text=billion CharacterOffsetBegin=907 CharacterOffsetEnd=914 PartOfSpeech=CD Lemma=billion NamedEntityTag=MONEY NormalizedNamedEntityTag=>$1.0E11]
+[Text=. CharacterOffsetBegin=914 CharacterOffsetEnd=915 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (JJ combined) (NN company))
+    (VP (MD would)
+      (VP (VB have)
+        (NP
+          (NP (DT an) (NN enterprise) (NN value))
+          (PP (IN of)
+            (NP
+              (QP (JJR more) (IN than) ($ $) (CD 100) (CD billion)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-5)
+det(company-3, The-1)
+amod(company-3, combined-2)
+nsubj(have-5, company-3)
+aux(have-5, would-4)
+det(value-8, an-6)
+compound(value-8, enterprise-7)
+dobj(have-5, value-8)
+case($-12, of-9)
+advmod($-12, more-10)
+mwe(more-10, than-11)
+nmod:of(value-8, $-12)
+compound(billion-14, 100-13)
+nummod($-12, billion-14)
+punct(have-5, .-15)
+
+Extracted the following NER entity mentions:
+$100 billion	MONEY
+
+Sentence #7 (36 tokens):
+The new company will have reserves of 11.2 billion barrels of oil equivalent
+(BOE), daily production of 2.7 million BOE, assets of $77 billion, and
+operations throughout the world.
+
+Tokens:
+[Text=The CharacterOffsetBegin=917 CharacterOffsetEnd=920 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=921 CharacterOffsetEnd=924 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=company CharacterOffsetBegin=925 CharacterOffsetEnd=932 PartOfSpeech=NN Lemma=company NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=933 CharacterOffsetEnd=937 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=938 CharacterOffsetEnd=942 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=reserves CharacterOffsetBegin=943 CharacterOffsetEnd=951 PartOfSpeech=NNS Lemma=reserve NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=952 CharacterOffsetEnd=954 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=11.2 CharacterOffsetBegin=955 CharacterOffsetEnd=959 PartOfSpeech=CD Lemma=11.2 NamedEntityTag=MONEY NormalizedNamedEntityTag=$1.12E10]
+[Text=billion CharacterOffsetBegin=960 CharacterOffsetEnd=967 PartOfSpeech=CD Lemma=billion NamedEntityTag=MONEY NormalizedNamedEntityTag=$1.12E10]
+[Text=barrels CharacterOffsetBegin=968 CharacterOffsetEnd=975 PartOfSpeech=NNS Lemma=barrel NamedEntityTag=MONEY NormalizedNamedEntityTag=$1.12E10]
+[Text=of CharacterOffsetBegin=976 CharacterOffsetEnd=978 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=oil CharacterOffsetBegin=979 CharacterOffsetEnd=982 PartOfSpeech=NN Lemma=oil NamedEntityTag=O]
+[Text=equivalent CharacterOffsetBegin=983 CharacterOffsetEnd=993 PartOfSpeech=NN Lemma=equivalent NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=994 CharacterOffsetEnd=995 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=BOE CharacterOffsetBegin=995 CharacterOffsetEnd=998 PartOfSpeech=NN Lemma=boe NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=998 CharacterOffsetEnd=999 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=999 CharacterOffsetEnd=1000 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=daily CharacterOffsetBegin=1001 CharacterOffsetEnd=1006 PartOfSpeech=JJ Lemma=daily NamedEntityTag=O]
+[Text=production CharacterOffsetBegin=1007 CharacterOffsetEnd=1017 PartOfSpeech=NN Lemma=production NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=1018 CharacterOffsetEnd=1020 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=2.7 CharacterOffsetBegin=1021 CharacterOffsetEnd=1024 PartOfSpeech=CD Lemma=2.7 NamedEntityTag=NUMBER NormalizedNamedEntityTag=2700000.0]
+[Text=million CharacterOffsetBegin=1025 CharacterOffsetEnd=1032 PartOfSpeech=CD Lemma=million NamedEntityTag=NUMBER NormalizedNamedEntityTag=2700000.0]
+[Text=BOE CharacterOffsetBegin=1033 CharacterOffsetEnd=1036 PartOfSpeech=NNP Lemma=BOE NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1036 CharacterOffsetEnd=1037 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=assets CharacterOffsetBegin=1038 CharacterOffsetEnd=1044 PartOfSpeech=NNS Lemma=asset NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=1045 CharacterOffsetEnd=1047 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=1048 CharacterOffsetEnd=1049 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$7.7E10]
+[Text=77 CharacterOffsetBegin=1049 CharacterOffsetEnd=1051 PartOfSpeech=CD Lemma=77 NamedEntityTag=MONEY NormalizedNamedEntityTag=$7.7E10]
+[Text=billion CharacterOffsetBegin=1052 CharacterOffsetEnd=1059 PartOfSpeech=CD Lemma=billion NamedEntityTag=MONEY NormalizedNamedEntityTag=$7.7E10]
+[Text=, CharacterOffsetBegin=1059 CharacterOffsetEnd=1060 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1061 CharacterOffsetEnd=1064 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=operations CharacterOffsetBegin=1065 CharacterOffsetEnd=1075 PartOfSpeech=NNS Lemma=operation NamedEntityTag=O]
+[Text=throughout CharacterOffsetBegin=1076 CharacterOffsetEnd=1086 PartOfSpeech=IN Lemma=throughout NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1087 CharacterOffsetEnd=1090 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=world CharacterOffsetBegin=1091 CharacterOffsetEnd=1096 PartOfSpeech=NN Lemma=world NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1096 CharacterOffsetEnd=1097 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (JJ new) (NN company))
+    (VP (MD will)
+      (VP (VB have)
+        (NP
+          (NP (NNS reserves))
+          (PP (IN of)
+            (NP
+              (NP
+                (QP (CD 11.2) (CD billion))
+                (NNS barrels))
+              (PP (IN of)
+                (NP
+                  (NP
+                    (NP (NN oil) (NN equivalent))
+                    (PRN (-LRB- -LRB-)
+                      (NP (NN BOE))
+                      (-RRB- -RRB-)))
+                  (, ,)
+                  (NP
+                    (NP (JJ daily) (NN production))
+                    (PP (IN of)
+                      (NP
+                        (NP
+                          (NP
+                            (QP (CD 2.7) (CD million)))
+                          (NP (NNP BOE)))
+                        (, ,)
+                        (NP
+                          (NP (NNS assets))
+                          (PP (IN of)
+                            (NP
+                              (NP
+                                (QP ($ $) (CD 77) (CD billion)))
+                              (, ,)
+                              (CC and)
+                              (NP
+                                (NP (NNS operations))
+                                (PP (IN throughout)
+                                  (NP (DT the) (NN world)))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-5)
+det(company-3, The-1)
+amod(company-3, new-2)
+nsubj(have-5, company-3)
+aux(have-5, will-4)
+dobj(have-5, reserves-6)
+case(barrels-10, of-7)
+compound(billion-9, 11.2-8)
+nummod(barrels-10, billion-9)
+nmod:of(reserves-6, barrels-10)
+case(equivalent-13, of-11)
+compound(equivalent-13, oil-12)
+nmod:of(barrels-10, equivalent-13)
+punct(BOE-15, -LRB--14)
+appos(equivalent-13, BOE-15)
+punct(BOE-15, -RRB--16)
+punct(equivalent-13, ,-17)
+amod(production-19, daily-18)
+appos(equivalent-13, production-19)
+case(million-22, of-20)
+compound(million-22, 2.7-21)
+nmod:of(production-19, million-22)
+appos(million-22, BOE-23)
+punct(million-22, ,-24)
+appos(million-22, assets-25)
+case($-27, of-26)
+nmod:of(assets-25, $-27)
+compound(billion-29, 77-28)
+nummod($-27, billion-29)
+punct($-27, ,-30)
+cc($-27, and-31)
+nmod:of(assets-25, operations-32)
+conj:and($-27, operations-32)
+case(world-35, throughout-33)
+det(world-35, the-34)
+nmod:throughout(operations-32, world-35)
+punct(have-5, .-36)
+
+Extracted the following NER entity mentions:
+11.2 billion barrels	MONEY
+2.7 million	NUMBER
+$77 billion	MONEY
+
+Sentence #8 (45 tokens):
+In the U.S.,  ChevronTexaco would be the
+nation's third largest producer of oil and gas, with production of 1.1
+million BOE per day, and hold the nation's third largest reserve position,
+with 4.2 billion BOE of proved reserves.
+
+Tokens:
+[Text=In CharacterOffsetBegin=1099 CharacterOffsetEnd=1101 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1102 CharacterOffsetEnd=1105 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=U.S. CharacterOffsetBegin=1106 CharacterOffsetEnd=1110 PartOfSpeech=NNP Lemma=U.S. NamedEntityTag=COUNTRY]
+[Text=, CharacterOffsetBegin=1110 CharacterOffsetEnd=1111 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=ChevronTexaco CharacterOffsetBegin=1113 CharacterOffsetEnd=1126 PartOfSpeech=NNP Lemma=ChevronTexaco NamedEntityTag=ORGANIZATION]
+[Text=would CharacterOffsetBegin=1127 CharacterOffsetEnd=1132 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=1133 CharacterOffsetEnd=1135 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1136 CharacterOffsetEnd=1139 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=nation CharacterOffsetBegin=1140 CharacterOffsetEnd=1146 PartOfSpeech=NN Lemma=nation NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=1146 CharacterOffsetEnd=1148 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=third CharacterOffsetBegin=1149 CharacterOffsetEnd=1154 PartOfSpeech=JJ Lemma=third NamedEntityTag=ORDINAL NormalizedNamedEntityTag=3.0]
+[Text=largest CharacterOffsetBegin=1155 CharacterOffsetEnd=1162 PartOfSpeech=JJS Lemma=largest NamedEntityTag=O]
+[Text=producer CharacterOffsetBegin=1163 CharacterOffsetEnd=1171 PartOfSpeech=NN Lemma=producer NamedEntityTag=TITLE]
+[Text=of CharacterOffsetBegin=1172 CharacterOffsetEnd=1174 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=oil CharacterOffsetBegin=1175 CharacterOffsetEnd=1178 PartOfSpeech=NN Lemma=oil NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1179 CharacterOffsetEnd=1182 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=gas CharacterOffsetBegin=1183 CharacterOffsetEnd=1186 PartOfSpeech=NN Lemma=gas NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1186 CharacterOffsetEnd=1187 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=1188 CharacterOffsetEnd=1192 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=production CharacterOffsetBegin=1193 CharacterOffsetEnd=1203 PartOfSpeech=NN Lemma=production NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=1204 CharacterOffsetEnd=1206 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=1.1 CharacterOffsetBegin=1207 CharacterOffsetEnd=1210 PartOfSpeech=CD Lemma=1.1 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1100000.0]
+[Text=million CharacterOffsetBegin=1211 CharacterOffsetEnd=1218 PartOfSpeech=CD Lemma=million NamedEntityTag=NUMBER NormalizedNamedEntityTag=1100000.0]
+[Text=BOE CharacterOffsetBegin=1219 CharacterOffsetEnd=1222 PartOfSpeech=NNP Lemma=BOE NamedEntityTag=O]
+[Text=per CharacterOffsetBegin=1223 CharacterOffsetEnd=1226 PartOfSpeech=IN Lemma=per NamedEntityTag=O]
+[Text=day CharacterOffsetBegin=1227 CharacterOffsetEnd=1230 PartOfSpeech=NN Lemma=day NamedEntityTag=TIME NormalizedNamedEntityTag=D]
+[Text=, CharacterOffsetBegin=1230 CharacterOffsetEnd=1231 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1232 CharacterOffsetEnd=1235 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=hold CharacterOffsetBegin=1236 CharacterOffsetEnd=1240 PartOfSpeech=VB Lemma=hold NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1241 CharacterOffsetEnd=1244 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=nation CharacterOffsetBegin=1245 CharacterOffsetEnd=1251 PartOfSpeech=NN Lemma=nation NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=1251 CharacterOffsetEnd=1253 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=third CharacterOffsetBegin=1254 CharacterOffsetEnd=1259 PartOfSpeech=JJ Lemma=third NamedEntityTag=ORDINAL NormalizedNamedEntityTag=3.0]
+[Text=largest CharacterOffsetBegin=1260 CharacterOffsetEnd=1267 PartOfSpeech=JJS Lemma=largest NamedEntityTag=O]
+[Text=reserve CharacterOffsetBegin=1268 CharacterOffsetEnd=1275 PartOfSpeech=NN Lemma=reserve NamedEntityTag=O]
+[Text=position CharacterOffsetBegin=1276 CharacterOffsetEnd=1284 PartOfSpeech=NN Lemma=position NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1284 CharacterOffsetEnd=1285 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=1286 CharacterOffsetEnd=1290 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=4.2 CharacterOffsetBegin=1291 CharacterOffsetEnd=1294 PartOfSpeech=CD Lemma=4.2 NamedEntityTag=NUMBER NormalizedNamedEntityTag=4.2E9]
+[Text=billion CharacterOffsetBegin=1295 CharacterOffsetEnd=1302 PartOfSpeech=CD Lemma=billion NamedEntityTag=NUMBER NormalizedNamedEntityTag=4.2E9]
+[Text=BOE CharacterOffsetBegin=1303 CharacterOffsetEnd=1306 PartOfSpeech=NNP Lemma=BOE NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=1307 CharacterOffsetEnd=1309 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=proved CharacterOffsetBegin=1310 CharacterOffsetEnd=1316 PartOfSpeech=JJ Lemma=proved NamedEntityTag=O]
+[Text=reserves CharacterOffsetBegin=1317 CharacterOffsetEnd=1325 PartOfSpeech=NNS Lemma=reserve NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1325 CharacterOffsetEnd=1326 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT the) (NNP U.S.)))
+    (, ,)
+    (NP (NNP ChevronTexaco))
+    (VP (MD would)
+      (VP
+        (VP (VB be)
+          (NP
+            (NP
+              (NP (DT the) (NN nation) (POS 's))
+              (JJ third) (JJS largest) (NN producer))
+            (PP (IN of)
+              (NP (NN oil)
+                (CC and)
+                (NN gas))))
+          (, ,)
+          (PP (IN with)
+            (NP
+              (NP (NN production))
+              (PP (IN of)
+                (NP
+                  (NP
+                    (QP (CD 1.1) (CD million))
+                    (NNP BOE))
+                  (PP (IN per)
+                    (NP (NN day))))))))
+        (, ,)
+        (CC and)
+        (VP (VB hold)
+          (NP
+            (NP
+              (NP (DT the) (NN nation) (POS 's))
+              (JJ third) (JJS largest) (NN reserve) (NN position))
+            (, ,)
+            (PP (IN with)
+              (NP
+                (NP
+                  (QP (CD 4.2) (CD billion))
+                  (NNP BOE))
+                (PP (IN of)
+                  (NP (JJ proved) (NNS reserves)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, producer-13)
+case(U.S.-3, In-1)
+det(U.S.-3, the-2)
+nmod:in(producer-13, U.S.-3)
+punct(producer-13, ,-4)
+nsubj(producer-13, ChevronTexaco-5)
+nsubj(hold-29, ChevronTexaco-5)
+aux(producer-13, would-6)
+cop(producer-13, be-7)
+det(nation-9, the-8)
+nmod:poss(producer-13, nation-9)
+case(nation-9, 's-10)
+amod(producer-13, third-11)
+amod(producer-13, largest-12)
+case(oil-15, of-14)
+nmod:of(producer-13, oil-15)
+cc(oil-15, and-16)
+nmod:of(producer-13, gas-17)
+conj:and(oil-15, gas-17)
+punct(producer-13, ,-18)
+case(production-20, with-19)
+nmod:with(producer-13, production-20)
+case(BOE-24, of-21)
+compound(million-23, 1.1-22)
+nummod(BOE-24, million-23)
+nmod:of(production-20, BOE-24)
+case(day-26, per-25)
+nmod:per(BOE-24, day-26)
+punct(producer-13, ,-27)
+cc(producer-13, and-28)
+conj:and(producer-13, hold-29)
+det(nation-31, the-30)
+nmod:poss(position-36, nation-31)
+case(nation-31, 's-32)
+amod(position-36, third-33)
+amod(position-36, largest-34)
+compound(position-36, reserve-35)
+dobj(hold-29, position-36)
+punct(position-36, ,-37)
+case(BOE-41, with-38)
+compound(billion-40, 4.2-39)
+nummod(BOE-41, billion-40)
+nmod:with(position-36, BOE-41)
+case(reserves-44, of-42)
+amod(reserves-44, proved-43)
+nmod:of(BOE-41, reserves-44)
+punct(producer-13, .-45)
+
+Extracted the following NER entity mentions:
+U.S.	COUNTRY
+ChevronTexaco	ORGANIZATION
+third	ORDINAL
+producer	TITLE
+1.1 million	NUMBER
+day	TIME
+third	ORDINAL
+4.2 billion	NUMBER
+
+Coreference set:
+	(1,13,[13,15]) -> (1,4,[4,5]), that is: "Chevron Corp." -> "Chevron"
+	(1,23,[23,25]) -> (1,4,[4,5]), that is: "ChevronTexaco Corp." -> "Chevron"
+	(2,12,[12,13]) -> (1,4,[4,5]), that is: "Chevron" -> "Chevron"
+	(2,26,[26,27]) -> (1,4,[4,5]), that is: "Chevron" -> "Chevron"
+	(3,13,[13,15]) -> (1,4,[4,5]), that is: "Chevron 's" -> "Chevron"
+	(5,8,[8,9]) -> (1,4,[4,5]), that is: "Chevron" -> "Chevron"
+	(8,5,[5,6]) -> (1,4,[4,5]), that is: "ChevronTexaco" -> "Chevron"
+
+Coreference set:
+	(2,5,[5,6]) -> (1,6,[6,7]), that is: "Texaco" -> "Texaco"
+	(2,19,[19,20]) -> (1,6,[6,7]), that is: "Texaco" -> "Texaco"
+	(3,9,[9,10]) -> (1,6,[6,7]), that is: "Texaco" -> "Texaco"
+	(4,11,[11,13]) -> (1,6,[6,7]), that is: "Texaco 's" -> "Texaco"
+	(5,21,[21,22]) -> (1,6,[6,7]), that is: "Texaco" -> "Texaco"
+
+Coreference set:
+	(2,3,[2,4]) -> (1,12,[12,13]), that is: "the merger" -> "Merger"
+	(5,6,[5,7]) -> (1,12,[12,13]), that is: "the merger" -> "Merger"
+
+Coreference set:
+	(2,22,[22,23]) -> (2,6,[5,7]), that is: "they" -> "Texaco shareholders"
+	(5,22,[21,23]) -> (2,6,[5,7]), that is: "Texaco shareholders" -> "Texaco shareholders"
+
+Coreference set:
+	(3,10,[9,11]) -> (2,17,[16,22]), that is: "Texaco share" -> "each share of Texaco common stock"
+
+Coreference set:
+	(2,30,[30,31]) -> (2,27,[26,28]), that is: "their" -> "Chevron shareholders"
+	(5,9,[8,10]) -> (2,27,[26,28]), that is: "Chevron shareholders" -> "Chevron shareholders"
+
+Coreference set:
+	(4,3,[1,4]) -> (3,3,[1,4]), that is: "The exchange ratio" -> "The exchange ratio"
+
+Coreference set:
+	(4,17,[17,19]) -> (3,22,[22,24]), that is: "October 13" -> "October 13"
+	(4,40,[40,42]) -> (3,22,[22,24]), that is: "October 13" -> "October 13"
+
+Coreference set:
+	(8,33,[33,34]) -> (8,11,[11,12]), that is: "third" -> "third"
+
+Coreference set:
+	(8,31,[30,33]) -> (8,9,[8,11]), that is: "the nation 's" -> "the nation 's"

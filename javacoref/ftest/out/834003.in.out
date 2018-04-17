@@ -1,0 +1,393 @@
+Document: ID=834003.in (4 sentences, 106 tokens)
+
+Sentence #1 (9 tokens):
+AEP will be in Houston conducting Benefit Meetings.
+
+Tokens:
+[Text=AEP CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=AEP NamedEntityTag=ORGANIZATION]
+[Text=will CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Houston CharacterOffsetBegin=15 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=Houston NamedEntityTag=CITY]
+[Text=conducting CharacterOffsetBegin=23 CharacterOffsetEnd=33 PartOfSpeech=VBG Lemma=conduct NamedEntityTag=O]
+[Text=Benefit CharacterOffsetBegin=34 CharacterOffsetEnd=41 PartOfSpeech=NNP Lemma=Benefit NamedEntityTag=O]
+[Text=Meetings CharacterOffsetBegin=42 CharacterOffsetEnd=50 PartOfSpeech=NNS Lemma=meeting NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP AEP))
+    (VP (MD will)
+      (VP (VB be)
+        (PP (IN in)
+          (NP (NNP Houston)))
+        (S
+          (VP (VBG conducting)
+            (NP (NNP Benefit) (NNS Meetings))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Houston-5)
+nsubj(Houston-5, AEP-1)
+aux(Houston-5, will-2)
+cop(Houston-5, be-3)
+case(Houston-5, in-4)
+xcomp(Houston-5, conducting-6)
+compound(Meetings-8, Benefit-7)
+dobj(conducting-6, Meetings-8)
+punct(Houston-5, .-9)
+
+Extracted the following NER entity mentions:
+AEP	ORGANIZATION
+Houston	CITY
+
+Sentence #2 (19 tokens):
+These meetings are
+designed to give an overview of their medical, dental, savings and retirement
+plans.
+
+Tokens:
+[Text=These CharacterOffsetBegin=53 CharacterOffsetEnd=58 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=meetings CharacterOffsetBegin=59 CharacterOffsetEnd=67 PartOfSpeech=NNS Lemma=meeting NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=designed CharacterOffsetBegin=72 CharacterOffsetEnd=80 PartOfSpeech=VBN Lemma=design NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=81 CharacterOffsetEnd=83 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=give CharacterOffsetBegin=84 CharacterOffsetEnd=88 PartOfSpeech=VB Lemma=give NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=overview CharacterOffsetBegin=92 CharacterOffsetEnd=100 PartOfSpeech=NN Lemma=overview NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=101 CharacterOffsetEnd=103 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=104 CharacterOffsetEnd=109 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=medical CharacterOffsetBegin=110 CharacterOffsetEnd=117 PartOfSpeech=JJ Lemma=medical NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=117 CharacterOffsetEnd=118 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=dental CharacterOffsetBegin=119 CharacterOffsetEnd=125 PartOfSpeech=JJ Lemma=dental NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=125 CharacterOffsetEnd=126 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=savings CharacterOffsetBegin=127 CharacterOffsetEnd=134 PartOfSpeech=NNS Lemma=savings NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=135 CharacterOffsetEnd=138 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=retirement CharacterOffsetBegin=139 CharacterOffsetEnd=149 PartOfSpeech=NN Lemma=retirement NamedEntityTag=O]
+[Text=plans CharacterOffsetBegin=150 CharacterOffsetEnd=155 PartOfSpeech=NNS Lemma=plan NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=155 CharacterOffsetEnd=156 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT These) (NNS meetings))
+    (VP (VBP are)
+      (VP (VBN designed)
+        (S
+          (VP (TO to)
+            (VP (VB give)
+              (NP (DT an) (NN overview))
+              (PP (IN of)
+                (NP (PRP$ their) (JJ medical)))
+              (, ,)
+              (NP (JJ dental) (, ,) (NNS savings)
+                (CC and)
+                (NN retirement) (NNS plans)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, designed-4)
+det(meetings-2, These-1)
+nsubjpass(designed-4, meetings-2)
+nsubj:xsubj(give-6, meetings-2)
+auxpass(designed-4, are-3)
+mark(give-6, to-5)
+xcomp(designed-4, give-6)
+det(overview-8, an-7)
+dobj(give-6, overview-8)
+case(medical-11, of-9)
+nmod:poss(medical-11, their-10)
+nmod:of(give-6, medical-11)
+punct(give-6, ,-12)
+amod(savings-15, dental-13)
+punct(savings-15, ,-14)
+dobj(give-6, savings-15)
+cc(savings-15, and-16)
+compound(plans-18, retirement-17)
+dobj(give-6, plans-18)
+conj:and(savings-15, plans-18)
+punct(designed-4, .-19)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (23 tokens):
+If you cannot attend the meeting you are assigned to, please feel
+free to attend one of the others listed.
+
+Tokens:
+[Text=If CharacterOffsetBegin=158 CharacterOffsetEnd=160 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=161 CharacterOffsetEnd=164 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=165 CharacterOffsetEnd=168 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=168 CharacterOffsetEnd=171 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=attend CharacterOffsetBegin=172 CharacterOffsetEnd=178 PartOfSpeech=VB Lemma=attend NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=179 CharacterOffsetEnd=182 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=meeting CharacterOffsetBegin=183 CharacterOffsetEnd=190 PartOfSpeech=NN Lemma=meeting NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=191 CharacterOffsetEnd=194 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=195 CharacterOffsetEnd=198 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=assigned CharacterOffsetBegin=199 CharacterOffsetEnd=207 PartOfSpeech=VBN Lemma=assign NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=208 CharacterOffsetEnd=210 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=210 CharacterOffsetEnd=211 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=please CharacterOffsetBegin=212 CharacterOffsetEnd=218 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=feel CharacterOffsetBegin=219 CharacterOffsetEnd=223 PartOfSpeech=VB Lemma=feel NamedEntityTag=O]
+[Text=free CharacterOffsetBegin=224 CharacterOffsetEnd=228 PartOfSpeech=JJ Lemma=free NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=229 CharacterOffsetEnd=231 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=attend CharacterOffsetBegin=232 CharacterOffsetEnd=238 PartOfSpeech=VB Lemma=attend NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=239 CharacterOffsetEnd=242 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=of CharacterOffsetBegin=243 CharacterOffsetEnd=245 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=246 CharacterOffsetEnd=249 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=others CharacterOffsetBegin=250 CharacterOffsetEnd=256 PartOfSpeech=NNS Lemma=other NamedEntityTag=O]
+[Text=listed CharacterOffsetBegin=257 CharacterOffsetEnd=263 PartOfSpeech=VBN Lemma=list NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=263 CharacterOffsetEnd=264 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (MD can) (RB not)
+          (VP (VB attend)
+            (NP (DT the) (NN meeting))))))
+    (NP (PRP you))
+    (VP (VBP are)
+      (VP (VBN assigned)
+        (S
+          (VP (TO to)
+            (PRN (, ,)
+              (INTJ (VB please)))
+            (VP (VB feel)
+              (ADJP (JJ free)
+                (S
+                  (VP (TO to)
+                    (VP (VB attend)
+                      (NP
+                        (NP (CD one))
+                        (PP (IN of)
+                          (NP
+                            (NP (DT the) (NNS others))
+                            (VP (VBN listed))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, assigned-10)
+mark(attend-5, If-1)
+nsubj(attend-5, you-2)
+aux(attend-5, can-3)
+neg(attend-5, not-4)
+advcl:if(assigned-10, attend-5)
+det(meeting-7, the-6)
+dobj(attend-5, meeting-7)
+nsubjpass(assigned-10, you-8)
+nsubj:xsubj(feel-14, you-8)
+auxpass(assigned-10, are-9)
+mark(feel-14, to-11)
+punct(please-13, ,-12)
+discourse(feel-14, please-13)
+xcomp(assigned-10, feel-14)
+xcomp(feel-14, free-15)
+mark(attend-17, to-16)
+xcomp(free-15, attend-17)
+det:qmod(others-21, one-18)
+mwe(one-18, of-19)
+det(others-21, the-20)
+dobj(attend-17, others-21)
+acl(others-21, listed-22)
+punct(assigned-10, .-23)
+
+Extracted the following NER entity mentions:
+one	NUMBER
+
+Sentence #4 (55 tokens):
+DATE   TIME    LOCATION     ATTENDEES
+
+Feb. 7, 2001  1:00pm-3:00pm  Hyatt Regency, Cottonwood Rm  Last Name    A-E
+3:00pm-5:00pm  Hyatt Regency, Cottonwood Rm  Last Name    F-L
+
+
+Feb. 8, 2001  9:00am-11:00am  EB 5C2      Last Name     M-S
+1:00pm-3:00pm  2AC, 12th Floor, Forum Room  Last Name      T-Z
+
+Tokens:
+[Text=DATE CharacterOffsetBegin=267 CharacterOffsetEnd=271 PartOfSpeech=NN Lemma=date NamedEntityTag=O]
+[Text=TIME CharacterOffsetBegin=274 CharacterOffsetEnd=278 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=LOCATION CharacterOffsetBegin=282 CharacterOffsetEnd=290 PartOfSpeech=NN Lemma=location NamedEntityTag=O]
+[Text=ATTENDEES CharacterOffsetBegin=295 CharacterOffsetEnd=304 PartOfSpeech=NNS Lemma=attendee NamedEntityTag=O]
+[Text=Feb. CharacterOffsetBegin=306 CharacterOffsetEnd=310 PartOfSpeech=NNP Lemma=Feb. NamedEntityTag=DATE NormalizedNamedEntityTag=20010207]
+[Text=7 CharacterOffsetBegin=311 CharacterOffsetEnd=312 PartOfSpeech=CD Lemma=7 NamedEntityTag=DATE NormalizedNamedEntityTag=20010207]
+[Text=, CharacterOffsetBegin=312 CharacterOffsetEnd=313 PartOfSpeech=, Lemma=, NamedEntityTag=DATE NormalizedNamedEntityTag=20010207]
+[Text=2001 CharacterOffsetBegin=314 CharacterOffsetEnd=318 PartOfSpeech=CD Lemma=2001 NamedEntityTag=DATE NormalizedNamedEntityTag=20010207]
+[Text=1:00 CharacterOffsetBegin=320 CharacterOffsetEnd=324 PartOfSpeech=CD Lemma=1:00 NamedEntityTag=TIME NormalizedNamedEntityTag=1:00]
+[Text=pm-3:00 CharacterOffsetBegin=324 CharacterOffsetEnd=331 PartOfSpeech=NN Lemma=pm-3:00 NamedEntityTag=O]
+[Text=pm CharacterOffsetBegin=331 CharacterOffsetEnd=333 PartOfSpeech=NN Lemma=pm NamedEntityTag=O]
+[Text=Hyatt CharacterOffsetBegin=335 CharacterOffsetEnd=340 PartOfSpeech=NNP Lemma=Hyatt NamedEntityTag=LOCATION]
+[Text=Regency CharacterOffsetBegin=341 CharacterOffsetEnd=348 PartOfSpeech=NNP Lemma=Regency NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=348 CharacterOffsetEnd=349 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Cottonwood CharacterOffsetBegin=350 CharacterOffsetEnd=360 PartOfSpeech=NNP Lemma=Cottonwood NamedEntityTag=MISC]
+[Text=Rm CharacterOffsetBegin=361 CharacterOffsetEnd=363 PartOfSpeech=NNP Lemma=Rm NamedEntityTag=MISC]
+[Text=Last CharacterOffsetBegin=365 CharacterOffsetEnd=369 PartOfSpeech=JJ Lemma=last NamedEntityTag=MISC]
+[Text=Name CharacterOffsetBegin=370 CharacterOffsetEnd=374 PartOfSpeech=NN Lemma=name NamedEntityTag=MISC]
+[Text=A-E CharacterOffsetBegin=378 CharacterOffsetEnd=381 PartOfSpeech=NN Lemma=a-e NamedEntityTag=MISC]
+[Text=3:00 CharacterOffsetBegin=382 CharacterOffsetEnd=386 PartOfSpeech=CD Lemma=3:00 NamedEntityTag=TIME NormalizedNamedEntityTag=3:00]
+[Text=pm-5:00 CharacterOffsetBegin=386 CharacterOffsetEnd=393 PartOfSpeech=NN Lemma=pm-5:00 NamedEntityTag=O]
+[Text=pm CharacterOffsetBegin=393 CharacterOffsetEnd=395 PartOfSpeech=NN Lemma=pm NamedEntityTag=O]
+[Text=Hyatt CharacterOffsetBegin=397 CharacterOffsetEnd=402 PartOfSpeech=NNP Lemma=Hyatt NamedEntityTag=LOCATION]
+[Text=Regency CharacterOffsetBegin=403 CharacterOffsetEnd=410 PartOfSpeech=NNP Lemma=Regency NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=410 CharacterOffsetEnd=411 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Cottonwood CharacterOffsetBegin=412 CharacterOffsetEnd=422 PartOfSpeech=NNP Lemma=Cottonwood NamedEntityTag=MISC]
+[Text=Rm CharacterOffsetBegin=423 CharacterOffsetEnd=425 PartOfSpeech=NNP Lemma=Rm NamedEntityTag=MISC]
+[Text=Last CharacterOffsetBegin=427 CharacterOffsetEnd=431 PartOfSpeech=JJ Lemma=last NamedEntityTag=MISC]
+[Text=Name CharacterOffsetBegin=432 CharacterOffsetEnd=436 PartOfSpeech=NN Lemma=name NamedEntityTag=MISC]
+[Text=F-L CharacterOffsetBegin=440 CharacterOffsetEnd=443 PartOfSpeech=NN Lemma=f-l NamedEntityTag=O]
+[Text=Feb. CharacterOffsetBegin=446 CharacterOffsetEnd=450 PartOfSpeech=NNP Lemma=Feb. NamedEntityTag=DATE NormalizedNamedEntityTag=20010208]
+[Text=8 CharacterOffsetBegin=451 CharacterOffsetEnd=452 PartOfSpeech=CD Lemma=8 NamedEntityTag=DATE NormalizedNamedEntityTag=20010208]
+[Text=, CharacterOffsetBegin=452 CharacterOffsetEnd=453 PartOfSpeech=, Lemma=, NamedEntityTag=DATE NormalizedNamedEntityTag=20010208]
+[Text=2001 CharacterOffsetBegin=454 CharacterOffsetEnd=458 PartOfSpeech=CD Lemma=2001 NamedEntityTag=DATE NormalizedNamedEntityTag=20010208]
+[Text=9:00 CharacterOffsetBegin=460 CharacterOffsetEnd=464 PartOfSpeech=CD Lemma=9:00 NamedEntityTag=TIME NormalizedNamedEntityTag=9:00]
+[Text=am-11:00 CharacterOffsetBegin=464 CharacterOffsetEnd=472 PartOfSpeech=NN Lemma=am-11:00 NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=472 CharacterOffsetEnd=474 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=EB CharacterOffsetBegin=476 CharacterOffsetEnd=478 PartOfSpeech=NNP Lemma=EB NamedEntityTag=O]
+[Text=5C2 CharacterOffsetBegin=479 CharacterOffsetEnd=482 PartOfSpeech=NNP Lemma=5C2 NamedEntityTag=O]
+[Text=Last CharacterOffsetBegin=488 CharacterOffsetEnd=492 PartOfSpeech=JJ Lemma=last NamedEntityTag=O]
+[Text=Name CharacterOffsetBegin=493 CharacterOffsetEnd=497 PartOfSpeech=NN Lemma=name NamedEntityTag=O]
+[Text=M-S CharacterOffsetBegin=502 CharacterOffsetEnd=505 PartOfSpeech=NN Lemma=m-s NamedEntityTag=O]
+[Text=1:00 CharacterOffsetBegin=506 CharacterOffsetEnd=510 PartOfSpeech=CD Lemma=1:00 NamedEntityTag=TIME NormalizedNamedEntityTag=1:00]
+[Text=pm-3:00 CharacterOffsetBegin=510 CharacterOffsetEnd=517 PartOfSpeech=NN Lemma=pm-3:00 NamedEntityTag=O]
+[Text=pm CharacterOffsetBegin=517 CharacterOffsetEnd=519 PartOfSpeech=NN Lemma=pm NamedEntityTag=O]
+[Text=2AC CharacterOffsetBegin=521 CharacterOffsetEnd=524 PartOfSpeech=NN Lemma=2ac NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=524 CharacterOffsetEnd=525 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=12th CharacterOffsetBegin=526 CharacterOffsetEnd=530 PartOfSpeech=JJ Lemma=12th NamedEntityTag=ORDINAL NormalizedNamedEntityTag=12.0]
+[Text=Floor CharacterOffsetBegin=531 CharacterOffsetEnd=536 PartOfSpeech=NN Lemma=floor NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=536 CharacterOffsetEnd=537 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Forum CharacterOffsetBegin=538 CharacterOffsetEnd=543 PartOfSpeech=NNP Lemma=Forum NamedEntityTag=O]
+[Text=Room CharacterOffsetBegin=544 CharacterOffsetEnd=548 PartOfSpeech=NNP Lemma=Room NamedEntityTag=O]
+[Text=Last CharacterOffsetBegin=550 CharacterOffsetEnd=554 PartOfSpeech=JJ Lemma=last NamedEntityTag=O]
+[Text=Name CharacterOffsetBegin=555 CharacterOffsetEnd=559 PartOfSpeech=NN Lemma=name NamedEntityTag=O]
+[Text=T-Z CharacterOffsetBegin=565 CharacterOffsetEnd=568 PartOfSpeech=NN Lemma=t-z NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (X
+    (X
+      (NP
+        (NP (NN DATE) (NN TIME))
+        (NP
+          (NP (NN LOCATION) (NNS ATTENDEES))
+          (NP-TMP (NNP Feb.) (CD 7) (, ,) (CD 2001))))
+      (NP (CD 1:00) (NN pm-3:00))
+      (NP
+        (NP (NN pm))
+        (NP (NNP Hyatt) (NNP Regency))))
+    (, ,)
+    (X
+      (NP
+        (NP (NNP Cottonwood) (NNP Rm))
+        (NP (JJ Last) (NN Name)))
+      (NP (NN A-E) (CD 3:00))
+      (NP
+        (NP (NN pm-5:00) (NN pm))
+        (NP
+          (NP (NNP Hyatt) (NNP Regency))
+          (, ,)
+          (NP
+            (NP (NNP Cottonwood) (NNP Rm) (JJ Last) (NN Name) (NN F-L))
+            (NP-TMP (NNP Feb.) (CD 8) (, ,) (CD 2001))))))
+    (NP
+      (NP (CD 9:00) (NN am-11:00))
+      (SBAR
+        (S
+          (VP (VBP am)
+            (NP
+              (NP
+                (NP (NNP EB) (NNP 5C2))
+                (NP (JJ Last) (NN Name) (NN M-S) (CD 1:00) (NN pm-3:00) (NN pm) (NN 2AC)))
+              (, ,)
+              (NP
+                (NP (JJ 12th) (NN Floor))
+                (, ,)
+                (NP (NNP Forum) (NNP Room) (JJ Last) (NN Name) (NN T-Z))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, am-11:00-36)
+compound(TIME-2, DATE-1)
+dep(pm-11, TIME-2)
+compound(ATTENDEES-4, LOCATION-3)
+dep(TIME-2, ATTENDEES-4)
+nmod:tmod(ATTENDEES-4, Feb.-5)
+nummod(Feb.-5, 7-6)
+punct(Feb.-5, ,-7)
+nummod(Feb.-5, 2001-8)
+nummod(pm-3:00-10, 1:00-9)
+dep(pm-11, pm-3:00-10)
+dep(am-11:00-36, pm-11)
+compound(Regency-13, Hyatt-12)
+dep(pm-11, Regency-13)
+punct(am-11:00-36, ,-14)
+compound(Rm-16, Cottonwood-15)
+dep(pm-22, Rm-16)
+amod(Name-18, Last-17)
+dep(Rm-16, Name-18)
+dep(pm-22, A-E-19)
+nummod(A-E-19, 3:00-20)
+compound(pm-22, pm-5:00-21)
+dep(am-11:00-36, pm-22)
+compound(Regency-24, Hyatt-23)
+dep(pm-22, Regency-24)
+punct(Regency-24, ,-25)
+compound(F-L-30, Cottonwood-26)
+compound(F-L-30, Rm-27)
+amod(F-L-30, Last-28)
+compound(F-L-30, Name-29)
+appos(Regency-24, F-L-30)
+nmod:tmod(F-L-30, Feb.-31)
+nummod(Feb.-31, 8-32)
+punct(Feb.-31, ,-33)
+nummod(Feb.-31, 2001-34)
+nummod(am-11:00-36, 9:00-35)
+cop(5C2-39, am-37)
+compound(5C2-39, EB-38)
+acl:relcl(am-11:00-36, 5C2-39)
+amod(2AC-46, Last-40)
+compound(2AC-46, Name-41)
+compound(2AC-46, M-S-42)
+nummod(2AC-46, 1:00-43)
+compound(2AC-46, pm-3:00-44)
+compound(2AC-46, pm-45)
+dep(5C2-39, 2AC-46)
+punct(5C2-39, ,-47)
+amod(Floor-49, 12th-48)
+appos(5C2-39, Floor-49)
+punct(Floor-49, ,-50)
+compound(T-Z-55, Forum-51)
+compound(T-Z-55, Room-52)
+amod(T-Z-55, Last-53)
+compound(T-Z-55, Name-54)
+appos(Floor-49, T-Z-55)
+
+Extracted the following NER entity mentions:
+Feb. 7, 2001	DATE
+1:00	TIME
+Hyatt Regency	LOCATION
+Cottonwood Rm Last Name A-E	MISC
+3:00	TIME
+Hyatt Regency	LOCATION
+Cottonwood Rm Last Name	MISC
+Feb. 8, 2001	DATE
+9:00	TIME
+1:00	TIME
+12th	ORDINAL
+
+Coreference set:
+	(2,2,[1,3]) -> (1,8,[7,9]), that is: "These meetings" -> "Benefit Meetings"
+
+Coreference set:
+	(4,24,[23,35]) -> (4,13,[12,14]), that is: "Hyatt Regency , Cottonwood Rm Last Name F-L Feb. 8 , 2001" -> "Hyatt Regency"
+	(4,24,[23,25]) -> (4,13,[12,14]), that is: "Hyatt Regency" -> "Hyatt Regency"
+	(4,30,[26,35]) -> (4,13,[12,14]), that is: "Cottonwood Rm Last Name F-L Feb. 8 , 2001" -> "Hyatt Regency"
+
+Coreference set:
+	(4,16,[15,20]) -> (4,29,[26,30]), that is: "Cottonwood Rm Last Name A-E" -> "Cottonwood Rm Last Name"

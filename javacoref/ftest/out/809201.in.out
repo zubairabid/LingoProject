@@ -1,0 +1,315 @@
+Document: ID=809201.in (6 sentences, 72 tokens)
+
+Sentence #1 (2 tokens):
+FYI!
+
+Tokens:
+[Text=FYI CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=FYI NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP FYI))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, FYI-1)
+punct(FYI-1, !-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (13 tokens):
+Elvis Energy is adding a new meter set to their existing contract.
+
+Tokens:
+[Text=Elvis CharacterOffsetBegin=6 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=Elvis NamedEntityTag=ORGANIZATION]
+[Text=Energy CharacterOffsetBegin=12 CharacterOffsetEnd=18 PartOfSpeech=NNP Lemma=Energy NamedEntityTag=ORGANIZATION]
+[Text=is CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=adding CharacterOffsetBegin=22 CharacterOffsetEnd=28 PartOfSpeech=VBG Lemma=add NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=meter CharacterOffsetBegin=35 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=meter NamedEntityTag=O]
+[Text=set CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=VBN Lemma=set NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=48 CharacterOffsetEnd=53 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=existing CharacterOffsetBegin=54 CharacterOffsetEnd=62 PartOfSpeech=VBG Lemma=exist NamedEntityTag=O]
+[Text=contract CharacterOffsetBegin=63 CharacterOffsetEnd=71 PartOfSpeech=NN Lemma=contract NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Elvis) (NNP Energy))
+    (VP (VBZ is)
+      (VP (VBG adding)
+        (NP
+          (NP (DT a) (JJ new) (NN meter))
+          (VP (VBN set)
+            (PP (TO to)
+              (NP (PRP$ their) (VBG existing) (NN contract)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, adding-4)
+compound(Energy-2, Elvis-1)
+nsubj(adding-4, Energy-2)
+aux(adding-4, is-3)
+det(meter-7, a-5)
+amod(meter-7, new-6)
+dobj(adding-4, meter-7)
+acl(meter-7, set-8)
+case(contract-12, to-9)
+nmod:poss(contract-12, their-10)
+amod(contract-12, existing-11)
+nmod:to(set-8, contract-12)
+punct(adding-4, .-13)
+
+Extracted the following NER entity mentions:
+Elvis Energy	ORGANIZATION
+
+Sentence #3 (17 tokens):
+The
+meter will be at Bridgeport and is estimated to do about 15 dths a day.
+
+Tokens:
+[Text=The CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=meter CharacterOffsetBegin=78 CharacterOffsetEnd=83 PartOfSpeech=NN Lemma=meter NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=84 CharacterOffsetEnd=88 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=92 CharacterOffsetEnd=94 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Bridgeport CharacterOffsetBegin=95 CharacterOffsetEnd=105 PartOfSpeech=NNP Lemma=Bridgeport NamedEntityTag=CITY]
+[Text=and CharacterOffsetBegin=106 CharacterOffsetEnd=109 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=110 CharacterOffsetEnd=112 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=estimated CharacterOffsetBegin=113 CharacterOffsetEnd=122 PartOfSpeech=VBN Lemma=estimate NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=123 CharacterOffsetEnd=125 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=126 CharacterOffsetEnd=128 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=129 CharacterOffsetEnd=134 PartOfSpeech=RB Lemma=about NamedEntityTag=O]
+[Text=15 CharacterOffsetBegin=135 CharacterOffsetEnd=137 PartOfSpeech=CD Lemma=15 NamedEntityTag=NUMBER NormalizedNamedEntityTag=~15.0]
+[Text=dths CharacterOffsetBegin=138 CharacterOffsetEnd=142 PartOfSpeech=NNS Lemma=dth NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=143 CharacterOffsetEnd=144 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=day CharacterOffsetBegin=145 CharacterOffsetEnd=148 PartOfSpeech=NN Lemma=day NamedEntityTag=TIME NormalizedNamedEntityTag=D]
+[Text=. CharacterOffsetBegin=148 CharacterOffsetEnd=149 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN meter))
+    (VP
+      (VP (MD will)
+        (VP (VB be)
+          (PP (IN at)
+            (NP (NNP Bridgeport)))))
+      (CC and)
+      (VP (VBZ is)
+        (VP (VBN estimated)
+          (S
+            (VP (TO to)
+              (VP (VB do)
+                (NP
+                  (NP
+                    (QP (RB about) (CD 15))
+                    (NNS dths))
+                  (NP (DT a) (NN day)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Bridgeport-6)
+det(meter-2, The-1)
+nsubj(Bridgeport-6, meter-2)
+nsubjpass(estimated-9, meter-2)
+nsubj:xsubj(do-11, meter-2)
+aux(Bridgeport-6, will-3)
+cop(Bridgeport-6, be-4)
+case(Bridgeport-6, at-5)
+cc(Bridgeport-6, and-7)
+auxpass(estimated-9, is-8)
+conj:and(Bridgeport-6, estimated-9)
+mark(do-11, to-10)
+xcomp(estimated-9, do-11)
+advmod(15-13, about-12)
+nummod(dths-14, 15-13)
+dobj(do-11, dths-14)
+det(day-16, a-15)
+dep(dths-14, day-16)
+punct(Bridgeport-6, .-17)
+
+Extracted the following NER entity mentions:
+Bridgeport	CITY
+15	NUMBER
+day	TIME
+
+Sentence #4 (28 tokens):
+The
+meter number is not known at this time, but the well name is Eulah Shaw #1
+and is located in Barbour County, WV.
+
+Tokens:
+[Text=The CharacterOffsetBegin=151 CharacterOffsetEnd=154 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=meter CharacterOffsetBegin=155 CharacterOffsetEnd=160 PartOfSpeech=NN Lemma=meter NamedEntityTag=O]
+[Text=number CharacterOffsetBegin=161 CharacterOffsetEnd=167 PartOfSpeech=NN Lemma=number NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=168 CharacterOffsetEnd=170 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=171 CharacterOffsetEnd=174 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=known CharacterOffsetBegin=175 CharacterOffsetEnd=180 PartOfSpeech=VBN Lemma=know NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=181 CharacterOffsetEnd=183 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=184 CharacterOffsetEnd=188 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=189 CharacterOffsetEnd=193 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=193 CharacterOffsetEnd=194 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=195 CharacterOffsetEnd=198 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=199 CharacterOffsetEnd=202 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=203 CharacterOffsetEnd=207 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=name CharacterOffsetBegin=208 CharacterOffsetEnd=212 PartOfSpeech=NN Lemma=name NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=213 CharacterOffsetEnd=215 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=Eulah CharacterOffsetBegin=216 CharacterOffsetEnd=221 PartOfSpeech=NNP Lemma=Eulah NamedEntityTag=PERSON]
+[Text=Shaw CharacterOffsetBegin=222 CharacterOffsetEnd=226 PartOfSpeech=NNP Lemma=Shaw NamedEntityTag=PERSON]
+[Text=# CharacterOffsetBegin=227 CharacterOffsetEnd=228 PartOfSpeech=# Lemma=# NamedEntityTag=MONEY NormalizedNamedEntityTag=£1.0]
+[Text=1 CharacterOffsetBegin=228 CharacterOffsetEnd=229 PartOfSpeech=CD Lemma=1 NamedEntityTag=MONEY NormalizedNamedEntityTag=£1.0]
+[Text=and CharacterOffsetBegin=230 CharacterOffsetEnd=233 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=234 CharacterOffsetEnd=236 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=located CharacterOffsetBegin=237 CharacterOffsetEnd=244 PartOfSpeech=JJ Lemma=located NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=245 CharacterOffsetEnd=247 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Barbour CharacterOffsetBegin=248 CharacterOffsetEnd=255 PartOfSpeech=NNP Lemma=Barbour NamedEntityTag=LOCATION]
+[Text=County CharacterOffsetBegin=256 CharacterOffsetEnd=262 PartOfSpeech=NNP Lemma=County NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=262 CharacterOffsetEnd=263 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=WV CharacterOffsetBegin=264 CharacterOffsetEnd=266 PartOfSpeech=NNP Lemma=WV NamedEntityTag=STATE_OR_PROVINCE]
+[Text=. CharacterOffsetBegin=266 CharacterOffsetEnd=267 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN meter) (NN number))
+      (VP (VBZ is) (RB not)
+        (VP (VBN known)
+          (PP (IN at)
+            (NP (DT this) (NN time))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (DT the) (RB well) (NN name))
+      (VP
+        (VP (VBZ is)
+          (NP
+            (NP (NNP Eulah) (NNP Shaw))
+            (ADJP (# #) (CD 1))))
+        (CC and)
+        (VP (VBZ is)
+          (ADJP (JJ located)
+            (PP (IN in)
+              (NP
+                (NP (NNP Barbour) (NNP County))
+                (, ,)
+                (NP (NNP WV))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, known-6)
+det(number-3, The-1)
+compound(number-3, meter-2)
+nsubjpass(known-6, number-3)
+auxpass(known-6, is-4)
+neg(known-6, not-5)
+case(time-9, at-7)
+det(time-9, this-8)
+nmod:at(known-6, time-9)
+punct(known-6, ,-10)
+cc(known-6, but-11)
+det(name-14, the-12)
+advmod(name-14, well-13)
+nsubj(Shaw-17, name-14)
+nsubj(located-22, name-14)
+cop(Shaw-17, is-15)
+compound(Shaw-17, Eulah-16)
+conj:but(known-6, Shaw-17)
+compound(1-19, #-18)
+amod(Shaw-17, 1-19)
+cc(Shaw-17, and-20)
+cop(located-22, is-21)
+conj:but(known-6, located-22)
+conj:and(Shaw-17, located-22)
+case(County-25, in-23)
+compound(County-25, Barbour-24)
+nmod:in(located-22, County-25)
+punct(County-25, ,-26)
+appos(County-25, WV-27)
+punct(known-6, .-28)
+
+Extracted the following NER entity mentions:
+Eulah Shaw	PERSON
+#1	MONEY
+Barbour County	LOCATION
+WV	STATE_OR_PROVINCE
+
+Sentence #5 (9 tokens):
+Let me know if you have any questions.
+
+Tokens:
+[Text=Let CharacterOffsetBegin=269 CharacterOffsetEnd=272 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=273 CharacterOffsetEnd=275 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=276 CharacterOffsetEnd=280 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=281 CharacterOffsetEnd=283 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=284 CharacterOffsetEnd=287 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=288 CharacterOffsetEnd=292 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=293 CharacterOffsetEnd=296 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=questions CharacterOffsetBegin=297 CharacterOffsetEnd=306 PartOfSpeech=NNS Lemma=question NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=306 CharacterOffsetEnd=307 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Let)
+      (S
+        (NP (PRP me))
+        (VP (VB know)
+          (SBAR (IN if)
+            (S
+              (NP (PRP you))
+              (VP (VBP have)
+                (NP (DT any) (NNS questions))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Let-1)
+nsubj(know-3, me-2)
+ccomp(Let-1, know-3)
+mark(have-6, if-4)
+nsubj(have-6, you-5)
+advcl:if(know-3, have-6)
+det(questions-8, any-7)
+dobj(have-6, questions-8)
+punct(Let-1, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #6 (3 tokens):
+Thanks,
+Heidi
+
+Tokens:
+[Text=Thanks CharacterOffsetBegin=309 CharacterOffsetEnd=315 PartOfSpeech=NNS Lemma=thanks NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=315 CharacterOffsetEnd=316 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Heidi CharacterOffsetBegin=317 CharacterOffsetEnd=322 PartOfSpeech=NNP Lemma=Heidi NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNS Thanks))
+    (, ,)
+    (NP (NNP Heidi))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Thanks-1)
+punct(Thanks-1, ,-2)
+appos(Thanks-1, Heidi-3)
+
+Extracted the following NER entity mentions:
+Heidi	PERSON
+
+Coreference set:
+	(3,2,[1,3]) -> (2,7,[5,13]), that is: "The meter" -> "a new meter set to their existing contract"

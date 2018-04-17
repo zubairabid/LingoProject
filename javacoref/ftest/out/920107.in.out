@@ -1,0 +1,470 @@
+Document: ID=920107.in (6 sentences, 117 tokens)
+
+Sentence #1 (8 tokens):
+Dear Mike,
+Thanks for your insight.
+
+Tokens:
+[Text=Dear CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Dear NamedEntityTag=PERSON]
+[Text=Mike CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=Mike NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Thanks CharacterOffsetBegin=11 CharacterOffsetEnd=17 PartOfSpeech=NNS Lemma=thanks NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=insight CharacterOffsetBegin=27 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=insight NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Dear) (NNP Mike))
+    (, ,)
+    (NP
+      (NP (NNS Thanks))
+      (PP (IN for)
+        (NP (PRP$ your) (NN insight))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Mike-2)
+compound(Mike-2, Dear-1)
+punct(Mike-2, ,-3)
+appos(Mike-2, Thanks-4)
+case(insight-7, for-5)
+nmod:poss(insight-7, your-6)
+nmod:for(Thanks-4, insight-7)
+punct(Mike-2, .-8)
+
+Extracted the following NER entity mentions:
+Dear Mike	PERSON
+
+Sentence #2 (19 tokens):
+In the past few months we have established a
+detailed approach to doorstep which includes interfacing with BRM.
+
+Tokens:
+[Text=In CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=past CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=JJ Lemma=past NamedEntityTag=O]
+[Text=few CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=JJ Lemma=few NamedEntityTag=O]
+[Text=months CharacterOffsetBegin=53 CharacterOffsetEnd=59 PartOfSpeech=NNS Lemma=month NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=60 CharacterOffsetEnd=62 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=63 CharacterOffsetEnd=67 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=established CharacterOffsetBegin=68 CharacterOffsetEnd=79 PartOfSpeech=VBN Lemma=establish NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=80 CharacterOffsetEnd=81 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=detailed CharacterOffsetBegin=82 CharacterOffsetEnd=90 PartOfSpeech=JJ Lemma=detailed NamedEntityTag=O]
+[Text=approach CharacterOffsetBegin=91 CharacterOffsetEnd=99 PartOfSpeech=NN Lemma=approach NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=100 CharacterOffsetEnd=102 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=doorstep CharacterOffsetBegin=103 CharacterOffsetEnd=111 PartOfSpeech=NN Lemma=doorstep NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=112 CharacterOffsetEnd=117 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=includes CharacterOffsetBegin=118 CharacterOffsetEnd=126 PartOfSpeech=VBZ Lemma=include NamedEntityTag=O]
+[Text=interfacing CharacterOffsetBegin=127 CharacterOffsetEnd=138 PartOfSpeech=VBG Lemma=interface NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=139 CharacterOffsetEnd=143 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=BRM CharacterOffsetBegin=144 CharacterOffsetEnd=147 PartOfSpeech=NNP Lemma=BRM NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=147 CharacterOffsetEnd=148 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT the) (JJ past) (JJ few) (NNS months)))
+    (NP (PRP we))
+    (VP (VBP have)
+      (VP (VBN established)
+        (NP (DT a) (JJ detailed) (NN approach))
+        (PP (TO to)
+          (NP
+            (NP (NN doorstep))
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (VBZ includes)
+                  (S
+                    (VP (VBG interfacing)
+                      (PP (IN with)
+                        (NP (NNP BRM))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, established-8)
+case(months-5, In-1)
+det(months-5, the-2)
+amod(months-5, past-3)
+amod(months-5, few-4)
+nmod:in(established-8, months-5)
+nsubj(established-8, we-6)
+aux(established-8, have-7)
+det(approach-11, a-9)
+amod(approach-11, detailed-10)
+dobj(established-8, approach-11)
+case(doorstep-13, to-12)
+nmod:to(established-8, doorstep-13)
+nsubj(includes-15, doorstep-13)
+ref(doorstep-13, which-14)
+acl:relcl(doorstep-13, includes-15)
+xcomp(includes-15, interfacing-16)
+case(BRM-18, with-17)
+nmod:with(interfacing-16, BRM-18)
+punct(established-8, .-19)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (44 tokens):
+Through
+my calls the past week, I've been trying to update you so we can determine
+how best to coordinate the Enron Europe work, as well as get an understanding
+of what resources you can supply for this global initiative.
+
+Tokens:
+[Text=Through CharacterOffsetBegin=150 CharacterOffsetEnd=157 PartOfSpeech=IN Lemma=through NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=158 CharacterOffsetEnd=160 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=calls CharacterOffsetBegin=161 CharacterOffsetEnd=166 PartOfSpeech=NNS Lemma=call NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=167 CharacterOffsetEnd=170 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=past CharacterOffsetBegin=171 CharacterOffsetEnd=175 PartOfSpeech=JJ Lemma=past NamedEntityTag=O]
+[Text=week CharacterOffsetBegin=176 CharacterOffsetEnd=180 PartOfSpeech=NN Lemma=week NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=180 CharacterOffsetEnd=181 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=182 CharacterOffsetEnd=183 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='ve CharacterOffsetBegin=183 CharacterOffsetEnd=186 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=187 CharacterOffsetEnd=191 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=trying CharacterOffsetBegin=192 CharacterOffsetEnd=198 PartOfSpeech=VBG Lemma=try NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=199 CharacterOffsetEnd=201 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=update CharacterOffsetBegin=202 CharacterOffsetEnd=208 PartOfSpeech=VB Lemma=update NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=209 CharacterOffsetEnd=212 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=213 CharacterOffsetEnd=215 PartOfSpeech=IN Lemma=so NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=216 CharacterOffsetEnd=218 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=219 CharacterOffsetEnd=222 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=determine CharacterOffsetBegin=223 CharacterOffsetEnd=232 PartOfSpeech=VB Lemma=determine NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=233 CharacterOffsetEnd=236 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=best CharacterOffsetBegin=237 CharacterOffsetEnd=241 PartOfSpeech=JJS Lemma=best NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=242 CharacterOffsetEnd=244 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=coordinate CharacterOffsetBegin=245 CharacterOffsetEnd=255 PartOfSpeech=VB Lemma=coordinate NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=256 CharacterOffsetEnd=259 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Enron CharacterOffsetBegin=260 CharacterOffsetEnd=265 PartOfSpeech=NNP Lemma=Enron NamedEntityTag=ORGANIZATION]
+[Text=Europe CharacterOffsetBegin=266 CharacterOffsetEnd=272 PartOfSpeech=NNP Lemma=Europe NamedEntityTag=ORGANIZATION]
+[Text=work CharacterOffsetBegin=273 CharacterOffsetEnd=277 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=277 CharacterOffsetEnd=278 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=279 CharacterOffsetEnd=281 PartOfSpeech=RB Lemma=as NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=282 CharacterOffsetEnd=286 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=287 CharacterOffsetEnd=289 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=290 CharacterOffsetEnd=293 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=294 CharacterOffsetEnd=296 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=understanding CharacterOffsetBegin=297 CharacterOffsetEnd=310 PartOfSpeech=NN Lemma=understanding NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=311 CharacterOffsetEnd=313 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=314 CharacterOffsetEnd=318 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=resources CharacterOffsetBegin=319 CharacterOffsetEnd=328 PartOfSpeech=NNS Lemma=resource NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=329 CharacterOffsetEnd=332 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=333 CharacterOffsetEnd=336 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=supply CharacterOffsetBegin=337 CharacterOffsetEnd=343 PartOfSpeech=VB Lemma=supply NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=344 CharacterOffsetEnd=347 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=348 CharacterOffsetEnd=352 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=global CharacterOffsetBegin=353 CharacterOffsetEnd=359 PartOfSpeech=JJ Lemma=global NamedEntityTag=O]
+[Text=initiative CharacterOffsetBegin=360 CharacterOffsetEnd=370 PartOfSpeech=NN Lemma=initiative NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=370 CharacterOffsetEnd=371 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN Through)
+      (NP (PRP$ my) (NNS calls)))
+    (NP-TMP (DT the) (JJ past) (NN week))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP 've)
+      (VP (VBN been)
+        (VP (VBG trying)
+          (S
+            (VP (TO to)
+              (VP (VB update)
+                (NP (PRP you))
+                (SBAR (IN so)
+                  (S
+                    (NP (PRP we))
+                    (VP (MD can)
+                      (VP (VB determine)
+                        (SBAR
+                          (WHADVP (WRB how))
+                          (S
+                            (NP (JJS best))
+                            (VP (TO to)
+                              (VP
+                                (VP (VB coordinate)
+                                  (NP (DT the) (NNP Enron) (NNP Europe) (NN work)))
+                                (, ,)
+                                (CONJP (RB as) (RB well) (IN as))
+                                (VP (VB get)
+                                  (NP
+                                    (NP (DT an) (NN understanding))
+                                    (SBAR
+                                      (WHPP (IN of)
+                                        (WHNP (WP what) (NNS resources)))
+                                      (S
+                                        (NP (PRP you))
+                                        (VP (MD can)
+                                          (VP (VB supply)
+                                            (PP (IN for)
+                                              (NP (DT this) (JJ global) (NN initiative)))))))))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, trying-11)
+case(calls-3, Through-1)
+nmod:poss(calls-3, my-2)
+nmod:through(trying-11, calls-3)
+det(week-6, the-4)
+amod(week-6, past-5)
+nmod:tmod(trying-11, week-6)
+punct(trying-11, ,-7)
+nsubj(trying-11, I-8)
+nsubj:xsubj(update-13, I-8)
+aux(trying-11, 've-9)
+aux(trying-11, been-10)
+mark(update-13, to-12)
+xcomp(trying-11, update-13)
+dobj(update-13, you-14)
+mark(determine-18, so-15)
+nsubj(determine-18, we-16)
+aux(determine-18, can-17)
+advcl:so(update-13, determine-18)
+advmod(coordinate-22, how-19)
+nsubj(coordinate-22, best-20)
+nsubj(get-31, best-20)
+mark(coordinate-22, to-21)
+ccomp(determine-18, coordinate-22)
+det(work-26, the-23)
+compound(work-26, Enron-24)
+compound(work-26, Europe-25)
+dobj(coordinate-22, work-26)
+punct(coordinate-22, ,-27)
+cc(coordinate-22, as-28)
+mwe(as-28, well-29)
+mwe(as-28, as-30)
+ccomp(determine-18, get-31)
+conj:and(coordinate-22, get-31)
+det(understanding-33, an-32)
+dobj(get-31, understanding-33)
+det(resources-36, understanding-33)
+case(resources-36, of-34)
+ref(understanding-33, what-35)
+nmod:of(supply-39, resources-36)
+nsubj(supply-39, you-37)
+aux(supply-39, can-38)
+acl:relcl(understanding-33, supply-39)
+case(initiative-43, for-40)
+det(initiative-43, this-41)
+amod(initiative-43, global-42)
+nmod:for(supply-39, initiative-43)
+punct(trying-11, .-44)
+
+Extracted the following NER entity mentions:
+Enron Europe	ORGANIZATION
+
+Sentence #4 (32 tokens):
+My next step is to contact some of the people on the list you gave me to
+determine their skill set and what locations/commodities they'd be best to
+work on.
+
+Tokens:
+[Text=My CharacterOffsetBegin=372 CharacterOffsetEnd=374 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=next CharacterOffsetBegin=375 CharacterOffsetEnd=379 PartOfSpeech=JJ Lemma=next NamedEntityTag=O]
+[Text=step CharacterOffsetBegin=380 CharacterOffsetEnd=384 PartOfSpeech=NN Lemma=step NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=385 CharacterOffsetEnd=387 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=388 CharacterOffsetEnd=390 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=contact CharacterOffsetBegin=391 CharacterOffsetEnd=398 PartOfSpeech=VB Lemma=contact NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=399 CharacterOffsetEnd=403 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=404 CharacterOffsetEnd=406 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=407 CharacterOffsetEnd=410 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=411 CharacterOffsetEnd=417 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=418 CharacterOffsetEnd=420 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=421 CharacterOffsetEnd=424 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=list CharacterOffsetBegin=425 CharacterOffsetEnd=429 PartOfSpeech=NN Lemma=list NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=430 CharacterOffsetEnd=433 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=gave CharacterOffsetBegin=434 CharacterOffsetEnd=438 PartOfSpeech=VBD Lemma=give NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=439 CharacterOffsetEnd=441 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=442 CharacterOffsetEnd=444 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=determine CharacterOffsetBegin=445 CharacterOffsetEnd=454 PartOfSpeech=VB Lemma=determine NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=455 CharacterOffsetEnd=460 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=skill CharacterOffsetBegin=461 CharacterOffsetEnd=466 PartOfSpeech=NN Lemma=skill NamedEntityTag=O]
+[Text=set CharacterOffsetBegin=467 CharacterOffsetEnd=470 PartOfSpeech=NN Lemma=set NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=471 CharacterOffsetEnd=474 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=475 CharacterOffsetEnd=479 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=locations/commodities CharacterOffsetBegin=480 CharacterOffsetEnd=501 PartOfSpeech=NNS Lemma=locations/commodities NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=502 CharacterOffsetEnd=506 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text='d CharacterOffsetBegin=506 CharacterOffsetEnd=508 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=509 CharacterOffsetEnd=511 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=best CharacterOffsetBegin=512 CharacterOffsetEnd=516 PartOfSpeech=RB Lemma=best NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=517 CharacterOffsetEnd=519 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=520 CharacterOffsetEnd=524 PartOfSpeech=VB Lemma=work NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=525 CharacterOffsetEnd=527 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=527 CharacterOffsetEnd=528 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP$ My) (JJ next) (NN step))
+    (VP (VBZ is)
+      (S
+        (VP (TO to)
+          (VP (VB contact)
+            (NP
+              (NP (DT some))
+              (PP (IN of)
+                (NP (DT the) (NNS people))))
+            (PP (IN on)
+              (NP (DT the) (NN list)))
+            (SBAR
+              (SBAR
+                (S
+                  (NP (PRP you))
+                  (VP (VBD gave)
+                    (S
+                      (NP (PRP me))
+                      (VP (TO to)
+                        (VP (VB determine)
+                          (NP (PRP$ their) (NN skill) (NN set))))))))
+              (CC and)
+              (SBAR
+                (X
+                  (X (WP what))
+                  (NP (NNS locations/commodities)))
+                (S
+                  (NP (PRP they))
+                  (VP (MD 'd)
+                    (VP (VB be)
+                      (ADJP (RB best)
+                        (S
+                          (VP (TO to)
+                            (VP (VB work)
+                              (PP (IN on)))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-4)
+nmod:poss(step-3, My-1)
+amod(step-3, next-2)
+nsubj(is-4, step-3)
+nsubj:xsubj(contact-6, step-3)
+mark(contact-6, to-5)
+xcomp(is-4, contact-6)
+det:qmod(people-10, some-7)
+mwe(some-7, of-8)
+det(people-10, the-9)
+dobj(contact-6, people-10)
+case(list-13, on-11)
+det(list-13, the-12)
+nmod:on(contact-6, list-13)
+nsubj(gave-15, you-14)
+dep(contact-6, gave-15)
+dobj(gave-15, me-16)
+nsubj:xsubj(determine-18, me-16)
+mark(determine-18, to-17)
+xcomp(gave-15, determine-18)
+nmod:poss(set-21, their-19)
+compound(set-21, skill-20)
+dobj(determine-18, set-21)
+cc(gave-15, and-22)
+dep(locations/commodities-24, what-23)
+dep(best-28, locations/commodities-24)
+nsubj(best-28, they-25)
+nsubj:xsubj(work-30, they-25)
+aux(best-28, 'd-26)
+cop(best-28, be-27)
+dep(contact-6, best-28)
+conj:and(gave-15, best-28)
+mark(work-30, to-29)
+xcomp(best-28, work-30)
+nmod(work-30, on-31)
+punct(is-4, .-32)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (13 tokens):
+I'll send you an updated schedule once I've finalized this.
+
+Tokens:
+[Text=I CharacterOffsetBegin=529 CharacterOffsetEnd=530 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='ll CharacterOffsetBegin=530 CharacterOffsetEnd=533 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=send CharacterOffsetBegin=534 CharacterOffsetEnd=538 PartOfSpeech=VB Lemma=send NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=539 CharacterOffsetEnd=542 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=543 CharacterOffsetEnd=545 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=updated CharacterOffsetBegin=546 CharacterOffsetEnd=553 PartOfSpeech=VBN Lemma=update NamedEntityTag=O]
+[Text=schedule CharacterOffsetBegin=554 CharacterOffsetEnd=562 PartOfSpeech=NN Lemma=schedule NamedEntityTag=O]
+[Text=once CharacterOffsetBegin=563 CharacterOffsetEnd=567 PartOfSpeech=IN Lemma=once NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=568 CharacterOffsetEnd=569 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='ve CharacterOffsetBegin=569 CharacterOffsetEnd=572 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=finalized CharacterOffsetBegin=573 CharacterOffsetEnd=582 PartOfSpeech=VBN Lemma=finalize NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=583 CharacterOffsetEnd=587 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=587 CharacterOffsetEnd=588 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD 'll)
+      (VP (VB send)
+        (NP (PRP you))
+        (NP
+          (NP (DT an) (VBN updated) (NN schedule))
+          (SBAR (IN once)
+            (S
+              (NP (PRP I))
+              (VP (VBP 've)
+                (VP (VBN finalized)
+                  (NP (DT this)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, send-3)
+nsubj(send-3, I-1)
+aux(send-3, 'll-2)
+iobj(send-3, you-4)
+det(schedule-7, an-5)
+amod(schedule-7, updated-6)
+dobj(send-3, schedule-7)
+mark(finalized-11, once-8)
+nsubj(finalized-11, I-9)
+aux(finalized-11, 've-10)
+dep(schedule-7, finalized-11)
+dobj(finalized-11, this-12)
+punct(send-3, .-13)
+
+Extracted the following NER entity mentions:
+
+Sentence #6 (1 tokens):
+Thanks
+
+Tokens:
+[Text=Thanks CharacterOffsetBegin=589 CharacterOffsetEnd=595 PartOfSpeech=NNS Lemma=thanks NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NNS Thanks)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Thanks-1)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(6,1,[1,2]) -> (1,4,[4,8]), that is: "Thanks" -> "Thanks for your insight"
+
+Coreference set:
+	(3,16,[16,17]) -> (2,6,[6,7]), that is: "we" -> "we"
+
+Coreference set:
+	(3,8,[8,9]) -> (3,2,[2,3]), that is: "I" -> "my"
+	(4,1,[1,2]) -> (3,2,[2,3]), that is: "My" -> "my"
+	(4,16,[16,17]) -> (3,2,[2,3]), that is: "me" -> "my"
+	(5,1,[1,2]) -> (3,2,[2,3]), that is: "I" -> "my"
+	(5,9,[9,10]) -> (3,2,[2,3]), that is: "I" -> "my"
+
+Coreference set:
+	(4,19,[19,20]) -> (4,7,[7,11]), that is: "their" -> "some of the people"
+
+Coreference set:
+	(4,25,[25,26]) -> (4,24,[24,25]), that is: "they" -> "locations/commodities"

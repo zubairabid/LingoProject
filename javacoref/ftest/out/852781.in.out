@@ -1,0 +1,107 @@
+Document: ID=852781.in (2 sentences, 23 tokens)
+
+Sentence #1 (21 tokens):
+Guys, I do not have any material that Brian, Tim or Wes would not  have in
+their files.
+
+Tokens:
+[Text=Guys CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNS Lemma=guy NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=material CharacterOffsetBegin=24 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=material NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=Brian CharacterOffsetBegin=38 CharacterOffsetEnd=43 PartOfSpeech=NNP Lemma=Brian NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Tim CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=NNP Lemma=Tim NamedEntityTag=PERSON]
+[Text=or CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=Wes CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=NNP Lemma=Wes NamedEntityTag=PERSON]
+[Text=would CharacterOffsetBegin=56 CharacterOffsetEnd=61 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=75 CharacterOffsetEnd=80 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=files CharacterOffsetBegin=81 CharacterOffsetEnd=86 PartOfSpeech=NNS Lemma=file NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=86 CharacterOffsetEnd=87 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNS Guys))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP do) (RB not)
+      (VP (VB have)
+        (NP
+          (NP (DT any) (NN material))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (NP (NNP Brian) (, ,) (NNP Tim)
+                (CC or)
+                (NNP Wes))
+              (VP (MD would) (RB not)
+                (VP (VB have)
+                  (PP (IN in)
+                    (NP (PRP$ their) (NNS files))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-6)
+nsubj(have-6, Guys-1)
+punct(have-6, ,-2)
+nsubj(have-6, I-3)
+aux(have-6, do-4)
+neg(have-6, not-5)
+det(material-8, any-7)
+dobj(have-6, material-8)
+dobj(have-17, material-8)
+ref(material-8, that-9)
+nsubj(have-17, Brian-10)
+punct(Brian-10, ,-11)
+conj:or(Brian-10, Tim-12)
+nsubj(have-17, Tim-12)
+cc(Brian-10, or-13)
+conj:or(Brian-10, Wes-14)
+nsubj(have-17, Wes-14)
+aux(have-17, would-15)
+neg(have-17, not-16)
+acl:relcl(material-8, have-17)
+case(files-20, in-18)
+nmod:poss(files-20, their-19)
+nmod:in(have-17, files-20)
+punct(have-6, .-21)
+
+Extracted the following NER entity mentions:
+Brian	PERSON
+Tim	PERSON
+Wes	PERSON
+
+Sentence #2 (2 tokens):
+Regards
+Delainey
+
+Tokens:
+[Text=Regards CharacterOffsetBegin=89 CharacterOffsetEnd=96 PartOfSpeech=VBZ Lemma=regard NamedEntityTag=O]
+[Text=Delainey CharacterOffsetBegin=97 CharacterOffsetEnd=105 PartOfSpeech=NNP Lemma=Delainey NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (SINV
+    (VP (VBZ Regards))
+    (NP (NNP Delainey))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Regards-1)
+nsubj(Regards-1, Delainey-2)
+
+Extracted the following NER entity mentions:
+Delainey	PERSON
+
+Coreference set:
+	(1,19,[19,20]) -> (1,10,[10,15]), that is: "their" -> "Brian , Tim or Wes"

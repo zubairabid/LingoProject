@@ -1,0 +1,100 @@
+Document: ID=920180.in (2 sentences, 22 tokens)
+
+Sentence #1 (21 tokens):
+Geynille:
+
+Here is the list of the women who attended the presentation at Wellesley
+along with their e-mail addresses.
+
+Tokens:
+[Text=Geynille CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Geynille NamedEntityTag=PERSON]
+[Text=: CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Here CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=list CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=list NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=women CharacterOffsetBegin=35 CharacterOffsetEnd=40 PartOfSpeech=NNS Lemma=woman NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=attended CharacterOffsetBegin=45 CharacterOffsetEnd=53 PartOfSpeech=VBD Lemma=attend NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=presentation CharacterOffsetBegin=58 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=presentation NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=71 CharacterOffsetEnd=73 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Wellesley CharacterOffsetBegin=74 CharacterOffsetEnd=83 PartOfSpeech=NNP Lemma=Wellesley NamedEntityTag=CITY]
+[Text=along CharacterOffsetBegin=84 CharacterOffsetEnd=89 PartOfSpeech=IN Lemma=along NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=90 CharacterOffsetEnd=94 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=95 CharacterOffsetEnd=100 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=e-mail CharacterOffsetBegin=101 CharacterOffsetEnd=107 PartOfSpeech=JJ Lemma=e-mail NamedEntityTag=O]
+[Text=addresses CharacterOffsetBegin=108 CharacterOffsetEnd=117 PartOfSpeech=NNS Lemma=address NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=117 CharacterOffsetEnd=118 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Geynille))
+    (: :)
+    (ADVP (RB Here))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN list))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNS women))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBD attended)
+                  (NP (DT the) (NN presentation))
+                  (PP (IN at)
+                    (NP (NNP Wellesley)))
+                  (PP (IN along)
+                    (PP (IN with)
+                      (NP (PRP$ their) (JJ e-mail) (NNS addresses)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, list-6)
+nsubj(list-6, Geynille-1)
+punct(list-6, :-2)
+advmod(list-6, Here-3)
+cop(list-6, is-4)
+det(list-6, the-5)
+case(women-9, of-7)
+det(women-9, the-8)
+nmod:of(list-6, women-9)
+nsubj(attended-11, women-9)
+ref(women-9, who-10)
+acl:relcl(women-9, attended-11)
+det(presentation-13, the-12)
+dobj(attended-11, presentation-13)
+case(Wellesley-15, at-14)
+nmod:at(attended-11, Wellesley-15)
+case(addresses-20, along-16)
+mwe(along-16, with-17)
+nmod:poss(addresses-20, their-18)
+amod(addresses-20, e-mail-19)
+nmod:along_with(attended-11, addresses-20)
+punct(list-6, .-21)
+
+Extracted the following NER entity mentions:
+Geynille	PERSON
+Wellesley	CITY
+
+Sentence #2 (1 tokens):
+Laura
+
+Tokens:
+[Text=Laura CharacterOffsetBegin=120 CharacterOffsetEnd=125 PartOfSpeech=NNP Lemma=Laura NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Laura)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Laura-1)
+
+Extracted the following NER entity mentions:
+Laura	PERSON

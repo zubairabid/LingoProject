@@ -1,0 +1,103 @@
+Document: ID=286370.in (3 sentences, 19 tokens)
+
+Sentence #1 (13 tokens):
+I asked everyone for their A/A needs and received very little feedback.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=asked CharacterOffsetBegin=2 CharacterOffsetEnd=7 PartOfSpeech=VBD Lemma=ask NamedEntityTag=O]
+[Text=everyone CharacterOffsetBegin=8 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=everyone NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=21 CharacterOffsetEnd=26 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=A/A CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=NN Lemma=a/a NamedEntityTag=O]
+[Text=needs CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=NNS Lemma=need NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=received CharacterOffsetBegin=41 CharacterOffsetEnd=49 PartOfSpeech=VBD Lemma=receive NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=little CharacterOffsetBegin=55 CharacterOffsetEnd=61 PartOfSpeech=JJ Lemma=little NamedEntityTag=O]
+[Text=feedback CharacterOffsetBegin=62 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=feedback NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP
+      (VP (VBD asked)
+        (NP (NN everyone))
+        (PP (IN for)
+          (NP (PRP$ their) (NN A/A) (NNS needs))))
+      (CC and)
+      (VP (VBD received)
+        (NP
+          (ADJP (RB very) (JJ little))
+          (NN feedback))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, asked-2)
+nsubj(asked-2, I-1)
+nsubj(received-9, I-1)
+dobj(asked-2, everyone-3)
+case(needs-7, for-4)
+nmod:poss(needs-7, their-5)
+compound(needs-7, A/A-6)
+nmod:for(asked-2, needs-7)
+cc(asked-2, and-8)
+conj:and(asked-2, received-9)
+advmod(little-11, very-10)
+amod(feedback-12, little-11)
+dobj(received-9, feedback-12)
+punct(asked-2, .-13)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (4 tokens):
+Please respond promptly.
+
+Tokens:
+[Text=Please CharacterOffsetBegin=73 CharacterOffsetEnd=79 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=respond CharacterOffsetBegin=80 CharacterOffsetEnd=87 PartOfSpeech=VB Lemma=respond NamedEntityTag=O]
+[Text=promptly CharacterOffsetBegin=88 CharacterOffsetEnd=96 PartOfSpeech=RB Lemma=promptly NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=96 CharacterOffsetEnd=97 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Please)
+      (VP (VB respond)
+        (ADVP (RB promptly))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Please-1)
+xcomp(Please-1, respond-2)
+advmod(respond-2, promptly-3)
+punct(Please-1, .-4)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (2 tokens):
+Thanks
+
+John
+
+Tokens:
+[Text=Thanks CharacterOffsetBegin=100 CharacterOffsetEnd=106 PartOfSpeech=NNS Lemma=thanks NamedEntityTag=O]
+[Text=John CharacterOffsetBegin=108 CharacterOffsetEnd=112 PartOfSpeech=NNP Lemma=John NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNS Thanks))
+    (NP (NNP John))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Thanks-1)
+appos(Thanks-1, John-2)
+
+Extracted the following NER entity mentions:
+John	PERSON

@@ -1,0 +1,119 @@
+Document: ID=995960.in (2 sentences, 26 tokens)
+
+Sentence #1 (13 tokens):
+Here are a few more to wet your...uh....whatever.
+
+Tokens:
+[Text=Here CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=few CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=JJ Lemma=few NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=wet CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=JJ Lemma=wet NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=uh CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=UH Lemma=uh NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=whatever CharacterOffsetBegin=40 CharacterOffsetEnd=48 PartOfSpeech=WDT Lemma=whatever NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SINV
+    (ADVP (RB Here))
+    (VBP are)
+    (NP (DT a) (JJ few))
+    (ADJP
+      (ADJP (JJR more))
+      (PP (TO to)
+        (S
+          (VP (JJ wet)
+            (S
+              (NP
+                (NP (PRP$ your))
+                (: ...)
+                (VP (UH uh))
+                (: ...))
+              (NP (WDT whatever)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, more-5)
+advmod(more-5, Here-1)
+cop(more-5, are-2)
+det(few-4, a-3)
+nsubj(more-5, few-4)
+mark(wet-7, to-6)
+advcl:to(more-5, wet-7)
+nsubj(whatever-12, your-8)
+punct(your-8, ...-9)
+dep(your-8, uh-10)
+punct(your-8, ...-11)
+xcomp(wet-7, whatever-12)
+punct(more-5, .-13)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (13 tokens):
+All I have to say is nice farmer's tan their Chim-Chim...
+
+Tokens:
+[Text=All CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=say CharacterOffsetBegin=64 CharacterOffsetEnd=67 PartOfSpeech=VB Lemma=say NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=68 CharacterOffsetEnd=70 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=nice CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=JJ Lemma=nice NamedEntityTag=O]
+[Text=farmer CharacterOffsetBegin=76 CharacterOffsetEnd=82 PartOfSpeech=NN Lemma=farmer NamedEntityTag=TITLE]
+[Text='s CharacterOffsetBegin=82 CharacterOffsetEnd=84 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=tan CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=NN Lemma=tan NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=89 CharacterOffsetEnd=94 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=Chim-Chim CharacterOffsetBegin=95 CharacterOffsetEnd=104 PartOfSpeech=NNP Lemma=Chim-Chim NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=104 CharacterOffsetEnd=107 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT All))
+      (SBAR
+        (S
+          (NP (PRP I))
+          (VP (VBP have)
+            (S
+              (VP (TO to)
+                (VP (VB say))))))))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (JJ nice) (NN farmer) (POS 's))
+          (NN tan))
+        (NP (PRP$ their) (NNP Chim-Chim))))
+    (: ...)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, tan-10)
+nsubj(tan-10, All-1)
+nsubj(have-3, I-2)
+nsubj:xsubj(say-5, I-2)
+acl:relcl(All-1, have-3)
+mark(say-5, to-4)
+xcomp(have-3, say-5)
+cop(tan-10, is-6)
+amod(farmer-8, nice-7)
+nmod:poss(tan-10, farmer-8)
+case(farmer-8, 's-9)
+nmod:poss(Chim-Chim-12, their-11)
+dep(tan-10, Chim-Chim-12)
+punct(tan-10, ...-13)
+
+Extracted the following NER entity mentions:
+farmer	TITLE
+
+Coreference set:
+	(1,8,[8,12]) -> (1,4,[3,5]), that is: "your ... uh ..." -> "a few"
+	(2,11,[11,12]) -> (1,4,[3,5]), that is: "their" -> "a few"
