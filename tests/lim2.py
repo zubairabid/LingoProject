@@ -10,7 +10,7 @@ db = client.enron
 c = 0
 
 # stores a list of dicts, where the dicts are the json objects (documents)
-allmails = db.emails.find({'recipients.5':{ '$exists' : 'true' }})
+allmails = db.emails.find()
 
 # pronoun list to be used for limiting scope
 #plist = ['he', 'she', 'they', 'her', 'hers', 'his', 'him', 'theirs', 'them', 'their']

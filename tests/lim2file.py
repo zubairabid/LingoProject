@@ -10,7 +10,7 @@ db = client.enron
 c = 0
 
 # stores a list of dicts, where the dicts are the json objects (documents)
-allmails = db.emails.find({'recipients.5':{ '$exists' : 'true' }})
+allmails = db.emails.find()
 
 # pronoun list to be used for limiting scope
 plist = ['he', 'she', 'they', 'her', 'hers', 'his', 'him', 'theirs', 'them', 'their']
@@ -73,7 +73,7 @@ for mail in allmails:
 			print("\nORIGINAL MESSAGE: \n\n\n" + str(origin) + "\n\n\n")
 			# print("*"*120 + "\nMESSAGE TYPE :::: " + str(mtype) + "\nSUBJECT :::: " + str(sub) + "\nKEY(s) :::: " + str(ll) + "\nSENDER :::: " + str(sender) + "\nSENDER EMAIL :::: " + str(eid) + "\nSENDER NAME(S) :::: " + str(nm) + "SENDER GENDER :::: " + str(gndr) + "\nRECEIVERS :::: " + str(rec) + "\nCOUNT :::: " + str(c) + "\n\n\n" + str(body) + "\n\n\n")
 
-			file = open('out/{0}.in'.format(str(uid)), 'w')
+			file = open('out2/{0}.in'.format(str(uid)), 'w')
 			file.write(str(origin))
 			file.close()
 
