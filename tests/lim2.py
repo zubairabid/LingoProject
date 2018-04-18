@@ -13,8 +13,8 @@ c = 0
 allmails = db.emails.find({'recipients.5':{ '$exists' : 'true' }})
 
 # pronoun list to be used for limiting scope
-plist = ['he', 'she', 'they', 'her', 'hers', 'his', 'him', 'theirs', 'them', 'their']
-# plist = ['(s)he', 'he/she', 'she/he', 'he\she', 'she\he', 'he or she', 'she or he', 'his/her', 'his/hers', 'his or hers', 'his or her', 'her/his', 'hers/his', 'hers or his', 'her or his']
+#plist = ['he', 'she', 'they', 'her', 'hers', 'his', 'him', 'theirs', 'them', 'their']
+plist = ['(s)he', 'he/she', 'she/he', 'he\she', 'she\he', 'he or she', 'she or he', 'his/her', 'his/hers', 'his or hers', 'his or her', 'her/his', 'hers/his', 'hers or his', 'her or his']
 
 for mail in allmails:
 	ll = []
