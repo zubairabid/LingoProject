@@ -23,9 +23,14 @@ for fil in filelist:
 		pl.append(key)
 		flag1 = True
 
-
+	
 	for word in wordlist:
-		if re.search(r'\b' + word + r'\b', text) is None:
+		repl = r'\033[44;33m' + word + r'\033[m'
+
+		temp = text
+		text = re.sub(r'\b' + word + r'\b', repl, text, 0)
+
+		if temp == text:
 			continue
 
 		wl.append(word)
@@ -42,3 +47,6 @@ for fil in filelist:
 		print(text)
 		print('@' * 100 + '\n\n')
 	
+	#	with open('res/{0}.fuck'.format(fil), 'w') as f:
+	#		f.write(st)
+
